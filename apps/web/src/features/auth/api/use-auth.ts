@@ -11,8 +11,6 @@ import type { RegisterFormValues } from '@/features/auth/register-form.schema';
 import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
-const authRoomQueryOptions = allQueriesOptions.auth;
-
 function getErrorMessage(error: unknown) {
   if (error instanceof Error) {
     return error.message;
@@ -22,38 +20,39 @@ function getErrorMessage(error: unknown) {
 }
 
 export function useMeSuspenseQuery() {
-  return useSuspenseQuery(authRoomQueryOptions.me());
+  return useSuspenseQuery(allQueriesOptions.auth.me());
+}
+
+function useAuthSuccess() {
+  const queryClient = useQueryClient();
+  const router = useRouter();
+
+  return (data: { token: string; user: unknown }) => {
+    setAuthToken(data.token);
+    queryClient.setQueryData(authKeys.me(), data.user);
+    void router.push('/');
+  };
 }
 
 export function useLoginMutation() {
-  const queryClient = useQueryClient();
-  const router = useRouter();
+  const onSuccess = useAuthSuccess();
 
   return useMutation({
     mutationFn: (input: { email: string; password: string }) =>
       client.auth.login(input),
-    onSuccess: data => {
-      setAuthToken(data.token);
-      queryClient.setQueryData(authKeys.me(), data.user);
-      void router.push('/');
-    },
+    onSuccess,
   });
 }
 
 export function useRegisterMutation() {
-  const queryClient = useQueryClient();
-  const router = useRouter();
+  const onSuccess = useAuthSuccess();
 
   return useMutation({
     mutationFn: (input: RegisterFormValues) => {
       const { confirmPassword: _confirmPassword, ...payload } = input;
       return client.auth.register(payload);
     },
-    onSuccess: data => {
-      setAuthToken(data.token);
-      queryClient.setQueryData(authKeys.me(), data.user);
-      void router.push('/');
-    },
+    onSuccess,
   });
 }
 

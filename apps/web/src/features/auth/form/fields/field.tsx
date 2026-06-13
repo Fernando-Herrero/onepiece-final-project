@@ -1,20 +1,20 @@
 import { useFieldContext } from '@/features/auth/form/auth-form.context';
 
-type TextFieldProps = {
+type FieldProps = {
   label: string;
   required?: boolean;
   placeholder?: string;
-  type?: 'text' | 'email';
+  type?: 'text' | 'email' | 'password';
   autoComplete?: string;
 };
 
-export function TextField({
+export function Field({
   label,
   required,
   placeholder,
   type = 'text',
   autoComplete,
-}: TextFieldProps) {
+}: FieldProps) {
   const field = useFieldContext<string>();
   const errorMsg = field.state.meta.isTouched
     ? field.state.meta.errors[0]?.message
@@ -23,7 +23,6 @@ export function TextField({
   return (
     <label className="flex flex-col gap-1 text-sm text-[#f4ede1]/85">
       {label}
-      {required ? <span className="sr-only">required</span> : null}
       <input
         className="rounded border border-[#f4ede1]/20 bg-[#05070d]/50 px-3 py-2 text-[#f4ede1] placeholder:text-[#f4ede1]/40"
         type={type}

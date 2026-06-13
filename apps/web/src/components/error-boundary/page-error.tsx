@@ -1,3 +1,5 @@
+import { useTranslation } from 'next-i18next/pages';
+
 type PageErrorProps = {
   title: string;
   message?: string;
@@ -11,6 +13,8 @@ export function PageError({
   onRetry,
   retryText,
 }: PageErrorProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col items-center justify-center gap-4 py-12 text-center">
       <p className="text-4xl">⚠️</p>
@@ -28,7 +32,7 @@ export function PageError({
         </button>
       ) : null}
       <a className="text-sm underline" href="/">
-        Volver al inicio
+        {t('errors.back_home')}
       </a>
     </div>
   );

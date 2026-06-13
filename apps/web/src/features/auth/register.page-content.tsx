@@ -1,8 +1,8 @@
 import { useTranslation } from 'next-i18next/pages';
 import { ErrorBoundary } from 'react-error-boundary';
 
+import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
 import { RegisterFormComponent } from '@/features/auth/ui/register-form.component';
-import { HomeErrorFallbackComponent } from '@/features/home/ui/home-error-fallback.component';
 import { LandingPublicLayout } from '@/features/landing/ui/landing-public-layout.component';
 
 export default function RegisterPageContent() {
@@ -11,7 +11,7 @@ export default function RegisterPageContent() {
   return (
     <LandingPublicLayout title={t('auth.register_title')} centered>
       <div className="flex justify-center">
-        <ErrorBoundary FallbackComponent={HomeErrorFallbackComponent}>
+        <ErrorBoundary FallbackComponent={QueryErrorFallback}>
           <RegisterFormComponent />
         </ErrorBoundary>
       </div>

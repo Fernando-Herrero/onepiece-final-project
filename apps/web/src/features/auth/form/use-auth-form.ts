@@ -4,15 +4,13 @@ import {
   fieldContext,
   formContext,
 } from '@/features/auth/form/auth-form.context';
-import { PasswordField } from '@/features/auth/form/fields/password-field';
-import { TextField } from '@/features/auth/form/fields/text-field';
+import { Field } from '@/features/auth/form/fields/field';
 
-export const { useAppForm, withForm } = createFormHook({
+export const { useAppForm } = createFormHook({
   fieldContext,
   formContext,
   fieldComponents: {
-    TextField,
-    PasswordField,
+    Field,
   },
   formComponents: {},
 });
