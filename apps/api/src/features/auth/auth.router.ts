@@ -6,7 +6,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 import { env } from '../../config/env.js';
-import { User, type UserDoc } from '../users/user.model.js';
+import { serializeUser, User, type UserDoc } from '../users/user.model.js';
 
 export type AuthPayload = {
   id: string;
@@ -21,34 +21,29 @@ export type ApiContext = {
 
 const os = implement(contract.auth).$context<ApiContext>();
 
-function serializeUser(user: UserDoc) {
-  const doc = user.toObject({ virtuals: true });
+export function getOptionalAuthUser(
+  headers: IncomingHttpHeaders,
+): AuthPayload | undefined {
+  const token = headers.authorization?.split(' ')[1];
+  if (!token) {
+    return undefined;
+  }
 
-  return {
-    _id: user._id.toString(),
-    username: doc.username,
-    firstName: doc.firstName,
-    lastName: doc.lastName,
-    email: doc.email,
-    displayName: doc.displayName,
-    bio: doc.bio,
-    phoneNumber: doc.phoneNumber,
-    avatar: doc.avatar,
-    coverImage: doc.coverImage,
-    address: doc.address,
-    role: doc.role,
-    verified: doc.verified,
-    isActive: doc.isActive,
-    experience: doc.experience,
-    serieProgress: doc.serieProgress,
-    unlockedCards: doc.unlockedCards,
-    privacy: doc.privacy,
-    followers: doc.followers.map(String),
-    following: doc.following.map(String),
-    createdAt: doc.createdAt?.toISOString(),
-    updatedAt: doc.updatedAt?.toISOString(),
-    fullName: doc.fullName,
-  };
+  try {
+    return jwt.verify(token, env.jwtSecret) as AuthPayload;
+  } catch {
+    throw new ORPCError('UNAUTHORIZED');
+  }
+}
+
+export function getRequiredAuthUser(headers: IncomingHttpHeaders): AuthPayload {
+  const user = getOptionalAuthUser(headers);
+
+  if (!user) {
+    throw new ORPCError('UNAUTHORIZED');
+  }
+
+  return user;
 }
 
 function signToken(user: UserDoc) {
@@ -60,18 +55,8 @@ function signToken(user: UserDoc) {
 }
 
 const requireAuth = os.middleware(async ({ context, next }) => {
-  const token = context.headers.authorization?.split(' ')[1];
-
-  if (!token) {
-    throw new ORPCError('UNAUTHORIZED');
-  }
-
-  try {
-    const decoded = jwt.verify(token, env.jwtSecret) as AuthPayload;
-    return next({ context: { ...context, user: decoded } });
-  } catch {
-    throw new ORPCError('UNAUTHORIZED');
-  }
+  const user = getRequiredAuthUser(context.headers);
+  return next({ context: { ...context, user } });
 });
 
 const register = os.register.handler(async ({ input }) => {
@@ -177,5 +162,3 @@ export const authRouter = os.router({
   changePassword,
   logout,
 });
-
-export const apiRouter = { auth: authRouter };

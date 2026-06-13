@@ -111,4 +111,52 @@ userSchema.virtual('fullName').get(function () {
 
 export const User = mongoose.model<UserDoc>('users', userSchema);
 
+export function serializeUser(user: UserDoc) {
+  const doc = user.toObject({ virtuals: true });
+
+  return {
+    _id: user._id.toString(),
+    username: doc.username,
+    firstName: doc.firstName,
+    lastName: doc.lastName,
+    email: doc.email,
+    displayName: doc.displayName,
+    bio: doc.bio,
+    phoneNumber: doc.phoneNumber,
+    avatar: doc.avatar,
+    coverImage: doc.coverImage,
+    address: doc.address,
+    role: doc.role,
+    verified: doc.verified,
+    isActive: doc.isActive,
+    experience: doc.experience,
+    serieProgress: doc.serieProgress,
+    unlockedCards: doc.unlockedCards,
+    privacy: doc.privacy,
+    followers: doc.followers.map(String),
+    following: doc.following.map(String),
+    createdAt: doc.createdAt?.toISOString(),
+    updatedAt: doc.updatedAt?.toISOString(),
+    fullName: doc.fullName,
+  };
+}
+
+export function serializeUserSummary(user: UserDoc) {
+  const doc = user.toObject({ virtuals: true });
+
+  return {
+    _id: user._id.toString(),
+    username: doc.username,
+    firstName: doc.firstName,
+    lastName: doc.lastName,
+    avatar: doc.avatar,
+    displayName: doc.displayName,
+    verified: doc.verified,
+    bio: doc.bio,
+    privacy: doc.privacy,
+    role: doc.role,
+    isActive: doc.isActive,
+  };
+}
+
 export type { UserRole };

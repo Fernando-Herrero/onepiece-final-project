@@ -1,0 +1,14 @@
+When Cursor auto-generates a Git commit message for this repository (Source Control sparkle button or commit message AI), ALWAYS use Conventional Commits:
+
+<type>(<scope>): <subject>
+
+- type: feat | fix | docs | refactor | chore | build | ci | test | perf | revert
+- scope (required): api | web | contracts | deps | ci | docs | root
+- subject: imperative English, no trailing period, max 100 chars on first line
+
+Examples:
+- feat(api): migrate posts and comments oRPC handlers
+- fix(api): remove duplicate /api prefix in oRPC handler
+- chore(deps): add commitlint for conventional commits
+
+Never use plain "Add ..." without type and scope. Never add Co-authored-by or AI attribution trailers.

@@ -9,16 +9,19 @@
         "start": "turbo run start",
         "format": "turbo run format",
         "format-check": "turbo run format-check",
+        "commitlint": "commitlint --edit",
         "prepare": "husky"
     },
     "devDependencies": {
+        "@commitlint/cli": "^21.0.2",
+        "@commitlint/config-conventional": "^21.0.2",
         "@types/node": "catalog:",
         "husky": "^9.1.7",
-        "turbo": "catalog:",
         "prettier": "catalog:",
         "prettier-plugin-packagejson": "catalog:",
         "prettier-plugin-sort-json": "catalog:",
         "prettier-plugin-tailwindcss": "catalog:",
+        "turbo": "catalog:",
         "typescript": "catalog:"
     },
     "packageManager": "pnpm@11.6.0+sha512.9a36518224080c6fe5165afdcfe79bfa118c29be703f3f462b1e32efe1e98e47e8750b148e08286250aad4113cc7993ca413c4e2cd447752708c2ee5751bc95f",

@@ -1,0 +1,12 @@
+feat(scope): imperative summary in English
+
+# Conventional Commits — LogPose
+# type: feat | fix | docs | refactor | chore | build | ci | test | perf | revert
+# scope (required): api | web | contracts | deps | ci | docs | root
+#
+# Examples:
+#   feat(api): migrate posts and comments oRPC handlers
+#   fix(web): correct login redirect after register
+#   chore(deps): bump turbo catalog version
+#
+# Body (optional): explain why, not what. No period at end of subject.

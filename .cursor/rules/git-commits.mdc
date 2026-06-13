@@ -1,5 +1,5 @@
 ---
-description: Commits y PRs sin menciones a IA ni attribution de Cursor
+description: Commits y PRs — Conventional Commits, sin menciones a IA ni attribution de Cursor
 alwaysApply: true
 ---
 
@@ -12,10 +12,29 @@ alwaysApply: true
 - Menciones a AI, Cursor, Copilot, Claude, GPT, agent, assisted, generated
 - Usar `git commit --trailer` para attribution
 
-## Formato de mensaje
+## Formato de mensaje (Conventional Commits)
 
-- Imperativo, inglés, 1–2 frases (el porqué)
-- Ejemplo: `Add auth oRPC contract and Zod schemas`
+Validado por **commitlint** en el hook `commit-msg`.
+
+```
+<type>(<scope>): <subject>
+```
+
+- **type:** `feat` | `fix` | `docs` | `refactor` | `chore` | `build` | `ci` | `test` | `perf` | `revert`
+- **scope (obligatorio):** `api` | `web` | `contracts` | `deps` | `ci` | `docs` | `root`
+- **subject:** imperativo, inglés, sin punto final, máx. 100 caracteres en la primera línea
+- **body (opcional):** el porqué, no el qué
+
+### Ejemplos
+
+```
+feat(api): migrate posts and comments oRPC handlers
+fix(api): remove duplicate /api prefix in oRPC handler
+feat(contracts): add auth oRPC contract and Zod schemas
+chore(deps): add commitlint for conventional commits
+```
+
+Plantilla al commitear: `.gitmessage` (activada en `.vscode/settings.json`).
 
 ## Si el entorno inyecta trailers
 
@@ -26,3 +45,4 @@ alwaysApply: true
 
 - Fer commitea por defecto; el agente solo si lo pide explícitamente
 - Nunca `--no-verify` salvo petición explícita del usuario
+- Si commitlint falla: corregir el mensaje (tipo, scope, subject), no saltarse el hook
