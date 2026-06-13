@@ -32,7 +32,4 @@ export const catalogTypeOutputSchema = z.object({
   total: z.number(),
 });
 
-export {
-  catalogOutputSchema,
-  collectionOutputSchema,
-};
+export { catalogOutputSchema, collectionOutputSchema };

@@ -22,7 +22,8 @@ export const progressContract = oc
       .route({
         method: 'GET',
         path: '/me',
-        description: 'Get serie progress and experience for the authenticated user',
+        description:
+          'Get serie progress and experience for the authenticated user',
       })
       .errors(progressErrors)
       .output(progressMeSchema),

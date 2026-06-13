@@ -8,9 +8,13 @@
       "types": "./dist/contract.d.ts",
       "default": "./dist/contract.js"
     },
-    "./auth/schemas": {
-      "types": "./dist/features/auth/schemas.d.ts",
-      "default": "./dist/features/auth/schemas.js"
+    "./features/*": {
+      "types": "./dist/features/*.d.ts",
+      "default": "./dist/features/*.js"
+    },
+    "./common/*": {
+      "types": "./dist/common/*.d.ts",
+      "default": "./dist/common/*.js"
     }
   },
   "scripts": {
