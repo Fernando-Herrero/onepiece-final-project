@@ -1,7 +1,10 @@
 import mongoose, { type HydratedDocument, Schema, type Types } from 'mongoose';
 
 import { Post, POST_AUTHOR_SELECT } from '../posts/post.model.js';
-import type { UserDoc } from '../users/user.model.js';
+import {
+  requirePopulatedAuthor,
+  serializeAuthorEmbed,
+} from '../users/user.model.js';
 
 export type CommentDoc = HydratedDocument<{
   _id: Types.ObjectId;
@@ -64,30 +67,8 @@ export async function syncPostCommentsCount(postId: string) {
   await Post.findByIdAndUpdate(postId, { commentsCount: count });
 }
 
-function serializeCommentAuthor(author: UserDoc) {
-  return {
-    _id: author._id.toString(),
-    username: author.username,
-    firstName: author.firstName,
-    lastName: author.lastName,
-    avatar: author.avatar,
-    displayName: author.displayName,
-    verified: author.verified,
-  };
-}
-
-function getPopulatedCommentAuthor(comment: CommentDoc): UserDoc {
-  const author = comment.author as UserDoc | Types.ObjectId;
-
-  if (!('username' in author)) {
-    throw new Error('Comment author must be populated before serialization');
-  }
-
-  return author;
-}
-
 export function serializeComment(comment: CommentDoc, viewerId?: string) {
-  const author = getPopulatedCommentAuthor(comment);
+  const author = requirePopulatedAuthor(comment.author);
 
   const doc = comment.toObject();
   const liked = viewerId
@@ -97,7 +78,7 @@ export function serializeComment(comment: CommentDoc, viewerId?: string) {
   return {
     _id: comment._id.toString(),
     postId: doc.postId.toString(),
-    userId: serializeCommentAuthor(author),
+    userId: serializeAuthorEmbed(author),
     text: doc.text,
     images: doc.images,
     likes: doc.likes.map(String),

@@ -3,8 +3,8 @@ import { implement, ORPCError } from '@orpc/server';
 
 import {
   type ApiContext,
-  getRequiredAuthUser,
-} from '../auth/auth.router.js';
+  requireAuth,
+} from '../../integrations/orpc/auth.middleware.js';
 import { User } from '../users/user.model.js';
 import {
   buildCollectionStats,
@@ -15,11 +15,6 @@ import {
 } from './catalog.js';
 
 const os = implement(contract.cards).$context<ApiContext>();
-
-const requireAuth = os.middleware(async ({ context, next }) => {
-  const user = getRequiredAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
 
 const getCatalog = os.getCatalog.handler(async () => {
   const catalog = getCatalogData();

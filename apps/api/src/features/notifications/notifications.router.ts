@@ -3,8 +3,8 @@ import { implement, ORPCError } from '@orpc/server';
 
 import {
   type ApiContext,
-  getRequiredAuthUser,
-} from '../auth/auth.router.js';
+  requireAuth,
+} from '../../integrations/orpc/auth.middleware.js';
 import {
   Notification,
   NOTIFICATION_FROM_POPULATE,
@@ -12,11 +12,6 @@ import {
 } from './notification.model.js';
 
 const os = implement(contract.notifications).$context<ApiContext>();
-
-const requireAuth = os.middleware(async ({ context, next }) => {
-  const user = getRequiredAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
 
 const list = os.list.use(requireAuth).handler(async ({ context }) => {
   const notifications = await Notification.find({ to: context.user!.id })

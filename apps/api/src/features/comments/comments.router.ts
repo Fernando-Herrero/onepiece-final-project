@@ -4,9 +4,10 @@ import mongoose from 'mongoose';
 
 import {
   type ApiContext,
-  getOptionalAuthUser,
-  getRequiredAuthUser,
-} from '../auth/auth.router.js';
+  assertOwnerOrAdmin,
+  optionalAuth,
+  requireAuth,
+} from '../../integrations/orpc/auth.middleware.js';
 import { createNotification } from '../notifications/notification.model.js';
 import { findActivePostById, Post } from '../posts/post.model.js';
 import { User } from '../users/user.model.js';
@@ -20,33 +21,6 @@ import {
 } from './comment.model.js';
 
 const os = implement(contract.comments).$context<ApiContext>();
-
-const requireAuth = os.middleware(async ({ context, next }) => {
-  const user = getRequiredAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
-
-const optionalAuth = os.middleware(async ({ context, next }) => {
-  const user = getOptionalAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
-
-function assertCommentOwner(
-  authorId: string,
-  viewerId?: string,
-  viewerRole?: 'user' | 'admin',
-) {
-  if (!viewerId) {
-    throw new ORPCError('UNAUTHORIZED');
-  }
-
-  const isOwner = authorId === viewerId;
-  const isAdmin = viewerRole === 'admin';
-
-  if (!isOwner && !isAdmin) {
-    throw new ORPCError('FORBIDDEN');
-  }
-}
 
 const listByPost = os.listByPost
   .use(optionalAuth)
@@ -144,11 +118,7 @@ const deleteComment = os.delete
       throw new ORPCError('COMMENT_NOT_FOUND');
     }
 
-    assertCommentOwner(
-      comment.author.toString(),
-      context.user!.id,
-      context.user!.role,
-    );
+    assertOwnerOrAdmin(comment.author.toString(), context.user!);
 
     const id = comment._id.toString();
     const postId = comment.postId.toString();

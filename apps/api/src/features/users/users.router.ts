@@ -4,9 +4,11 @@ import mongoose from 'mongoose';
 
 import {
   type ApiContext,
-  getOptionalAuthUser,
-  getRequiredAuthUser,
-} from '../auth/auth.router.js';
+  assertOwnerOrAdmin,
+  type AuthPayload,
+  optionalAuth,
+  requireAuth,
+} from '../../integrations/orpc/auth.middleware.js';
 import { Comment } from '../comments/comment.model.js';
 import { createNotification } from '../notifications/notification.model.js';
 import {
@@ -25,18 +27,22 @@ type PrivacyKey = keyof UserDoc['privacy'];
 
 const os = implement(contract.users).$context<ApiContext>();
 
-const requireAuth = os.middleware(async ({ context, next }) => {
-  const user = getRequiredAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
-
-const optionalAuth = os.middleware(async ({ context, next }) => {
-  const user = getOptionalAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
-
 async function findUserById(id: string) {
   return User.findById(id);
+}
+
+async function assertVisibleUser(
+  userId: string,
+  privacyKey: PrivacyKey,
+  viewer: AuthPayload | undefined,
+) {
+  const user = await findUserById(userId);
+
+  if (!user) {
+    throw new ORPCError('USER_NOT_FOUND');
+  }
+
+  assertPrivacy(user, privacyKey, viewer?.id, viewer?.role);
 }
 
 function assertPrivacy(
@@ -48,7 +54,7 @@ function assertPrivacy(
   const isSelf = viewerId === user._id.toString();
   const isAdmin = viewerRole === 'admin';
 
-  if (!isSelf && !isAdmin) {
+  if (isSelf || isAdmin) {
     return;
   }
 
@@ -57,26 +63,9 @@ function assertPrivacy(
   }
 }
 
-function assertSelf(
-  targetId: string,
-  viewerId?: string,
-  viewerRole?: 'user' | 'admin',
-) {
-  if (!viewerId) {
-    throw new ORPCError('UNAUTHORIZED');
-  }
-
-  const isSelf = targetId === viewerId;
-  const isAdmin = viewerRole === 'admin';
-
-  if (!isSelf && !isAdmin) {
-    throw new ORPCError('FORBIDDEN');
-  }
-}
-
-const list = os.list.handler(async () => {
+const list = os.list.use(requireAuth).handler(async () => {
   const users = await User.find();
-  return users.map(serializeUser);
+  return users.map(serializeUserSummary);
 });
 
 const getById = os.getById.handler(async ({ input }) => {
@@ -147,13 +136,7 @@ const getFollowing = os.getFollowing.handler(async ({ input }) => {
 const getPosts = os.getPosts
   .use(optionalAuth)
   .handler(async ({ input, context }) => {
-    const user = await findUserById(input.params.id);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
-
-    assertPrivacy(user, 'showPosts', context.user?.id, context.user?.role);
+    await assertVisibleUser(input.params.id, 'showPosts', context.user);
 
     const posts = await Post.find({
       userId: input.params.id,
@@ -167,17 +150,10 @@ const getPosts = os.getPosts
 const getLikedPosts = os.getLikedPosts
   .use(optionalAuth)
   .handler(async ({ input, context }) => {
-    const user = await findUserById(input.params.id);
+    await assertVisibleUser(input.params.id, 'showLikes', context.user);
 
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
-
-    assertPrivacy(user, 'showLikes', context.user?.id, context.user?.role);
-
-    const userObjectId = new mongoose.Types.ObjectId(input.params.id);
     const posts = await Post.find({
-      likes: userObjectId,
+      likes: new mongoose.Types.ObjectId(input.params.id),
       isDeleted: false,
     }).populate('userId', POST_AUTHOR_SELECT);
 
@@ -187,17 +163,10 @@ const getLikedPosts = os.getLikedPosts
 const getBookmarkedPosts = os.getBookmarkedPosts
   .use(optionalAuth)
   .handler(async ({ input, context }) => {
-    const user = await findUserById(input.params.id);
+    await assertVisibleUser(input.params.id, 'showBookmarked', context.user);
 
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
-
-    assertPrivacy(user, 'showBookmarked', context.user?.id, context.user?.role);
-
-    const userObjectId = new mongoose.Types.ObjectId(input.params.id);
     const posts = await Post.find({
-      bookmarks: userObjectId,
+      bookmarks: new mongoose.Types.ObjectId(input.params.id),
       isDeleted: false,
     }).populate('userId', POST_AUTHOR_SELECT);
 
@@ -207,13 +176,7 @@ const getBookmarkedPosts = os.getBookmarkedPosts
 const getCommentedPosts = os.getCommentedPosts
   .use(optionalAuth)
   .handler(async ({ input, context }) => {
-    const user = await findUserById(input.params.id);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
-
-    assertPrivacy(user, 'showComments', context.user?.id, context.user?.role);
+    await assertVisibleUser(input.params.id, 'showComments', context.user);
 
     const postIds = await Comment.distinct('postId', {
       author: input.params.id,
@@ -230,8 +193,7 @@ const getCommentedPosts = os.getCommentedPosts
 const update = os.update
   .use(requireAuth)
   .handler(async ({ input, context }) => {
-    const { id, role } = context.user!;
-    assertSelf(input.params.id, id, role);
+    assertOwnerOrAdmin(input.params.id, context.user!);
 
     const user = await User.findByIdAndUpdate(input.params.id, input.body, {
       new: true,
@@ -248,8 +210,7 @@ const update = os.update
 const deleteUser = os.delete
   .use(requireAuth)
   .handler(async ({ input, context }) => {
-    const { id: viewerId, role } = context.user!;
-    assertSelf(input.params.id, viewerId, role);
+    assertOwnerOrAdmin(input.params.id, context.user!);
 
     const user = await findUserById(input.params.id);
 

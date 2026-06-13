@@ -1,50 +1,16 @@
-import type { IncomingHttpHeaders } from 'node:http';
-
 import { contract } from '@logpose/contracts/contract';
 import { implement, ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 import { env } from '../../config/env.js';
+import {
+  type ApiContext,
+  requireAuth,
+} from '../../integrations/orpc/auth.middleware.js';
 import { serializeUser, User, type UserDoc } from '../users/user.model.js';
 
-export type AuthPayload = {
-  id: string;
-  email: string;
-  role: 'user' | 'admin';
-};
-
-export type ApiContext = {
-  headers: IncomingHttpHeaders;
-  user?: AuthPayload;
-};
-
 const os = implement(contract.auth).$context<ApiContext>();
-
-export function getOptionalAuthUser(
-  headers: IncomingHttpHeaders,
-): AuthPayload | undefined {
-  const token = headers.authorization?.split(' ')[1];
-  if (!token) {
-    return undefined;
-  }
-
-  try {
-    return jwt.verify(token, env.jwtSecret) as AuthPayload;
-  } catch {
-    throw new ORPCError('UNAUTHORIZED');
-  }
-}
-
-export function getRequiredAuthUser(headers: IncomingHttpHeaders): AuthPayload {
-  const user = getOptionalAuthUser(headers);
-
-  if (!user) {
-    throw new ORPCError('UNAUTHORIZED');
-  }
-
-  return user;
-}
 
 function signToken(user: UserDoc) {
   return jwt.sign(
@@ -53,11 +19,6 @@ function signToken(user: UserDoc) {
     { expiresIn: '1h' },
   );
 }
-
-const requireAuth = os.middleware(async ({ context, next }) => {
-  const user = getRequiredAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
 
 const register = os.register.handler(async ({ input }) => {
   const hashedPassword = await bcrypt.hash(input.password, 10);

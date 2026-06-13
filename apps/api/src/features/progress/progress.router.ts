@@ -3,17 +3,12 @@ import { implement, ORPCError } from '@orpc/server';
 
 import {
   type ApiContext,
-  getRequiredAuthUser,
-} from '../auth/auth.router.js';
+  requireAuth,
+} from '../../integrations/orpc/auth.middleware.js';
 import { isProgressGreater, mergeUnlockedCards } from '../cards/catalog.js';
 import { User } from '../users/user.model.js';
 
 const os = implement(contract.progress).$context<ApiContext>();
-
-const requireAuth = os.middleware(async ({ context, next }) => {
-  const user = getRequiredAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
 
 async function loadAuthUser(userId: string) {
   const user = await User.findById(userId);

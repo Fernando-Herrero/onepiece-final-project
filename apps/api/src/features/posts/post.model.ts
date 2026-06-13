@@ -1,6 +1,9 @@
 import mongoose, { type HydratedDocument, Schema, type Types } from 'mongoose';
 
-import type { UserDoc } from '../users/user.model.js';
+import {
+  requirePopulatedAuthor,
+  serializeAuthorEmbed,
+} from '../users/user.model.js';
 
 export type PostDoc = HydratedDocument<{
   _id: Types.ObjectId;
@@ -120,37 +123,15 @@ export async function togglePostField(
   return { updated, alreadyHad };
 }
 
-function serializePostAuthor(author: UserDoc) {
-  return {
-    _id: author._id.toString(),
-    username: author.username,
-    firstName: author.firstName,
-    lastName: author.lastName,
-    avatar: author.avatar,
-    displayName: author.displayName,
-    verified: author.verified,
-  };
-}
-
-function getPopulatedAuthor(post: PostDoc): UserDoc {
-  const author = post.userId as UserDoc | Types.ObjectId;
-
-  if (!('username' in author)) {
-    throw new Error('Post author must be populated before serialization');
-  }
-
-  return author;
-}
-
 export function serializePost(post: PostDoc, viewerId?: string) {
-  const author = getPopulatedAuthor(post);
+  const author = requirePopulatedAuthor(post.userId);
 
   const doc = post.toObject();
 
   return {
     _id: post._id.toString(),
     text: doc.text,
-    userId: serializePostAuthor(author),
+    userId: serializeAuthorEmbed(author),
     images: doc.images,
     visibility: doc.visibility,
     isDeleted: doc.isDeleted,

@@ -6,9 +6,10 @@ import mongoose, { type Types } from 'mongoose';
 
 import {
   type ApiContext,
-  getOptionalAuthUser,
-  getRequiredAuthUser,
-} from '../auth/auth.router.js';
+  assertOwnerOrAdmin,
+  optionalAuth,
+  requireAuth,
+} from '../../integrations/orpc/auth.middleware.js';
 import { createNotification } from '../notifications/notification.model.js';
 import { User, type UserDoc } from '../users/user.model.js';
 import {
@@ -21,16 +22,6 @@ import {
 } from './post.model.js';
 
 const os = implement(contract.posts).$context<ApiContext>();
-
-const requireAuth = os.middleware(async ({ context, next }) => {
-  const user = getRequiredAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
-
-const optionalAuth = os.middleware(async ({ context, next }) => {
-  const user = getOptionalAuthUser(context.headers);
-  return next({ context: { ...context, user } });
-});
 
 async function loadPost(id: string) {
   const post = await Post.findOne({ _id: id, isDeleted: false }).populate(
@@ -46,23 +37,6 @@ async function loadPost(id: string) {
 
 function getPostOwnerId(userId: Types.ObjectId | UserDoc) {
   return 'username' in userId ? userId._id.toString() : userId.toString();
-}
-
-function assertPostOwner(
-  postUserId: Types.ObjectId | UserDoc,
-  viewerId?: string,
-  viewerRole?: 'user' | 'admin',
-) {
-  if (!viewerId) {
-    throw new ORPCError('UNAUTHORIZED');
-  }
-
-  const isOwner = getPostOwnerId(postUserId) === viewerId;
-  const isAdmin = viewerRole === 'admin';
-
-  if (!isOwner && !isAdmin) {
-    throw new ORPCError('FORBIDDEN');
-  }
 }
 
 const list = os.list.use(optionalAuth).handler(async ({ context }) => {
@@ -125,7 +99,7 @@ const update = os.update
   .use(requireAuth)
   .handler(async ({ input, context }) => {
     const post = await loadPost(input.params.id);
-    assertPostOwner(post.userId, context.user!.id, context.user!.role);
+    assertOwnerOrAdmin(getPostOwnerId(post.userId), context.user!);
 
     if (input.body.text) {
       const author = await User.findById(post.userId);
@@ -155,7 +129,7 @@ const deletePost = os.delete
   .use(requireAuth)
   .handler(async ({ input, context }) => {
     const post = await loadPost(input.params.id);
-    assertPostOwner(post.userId, context.user!.id, context.user!.role);
+    assertOwnerOrAdmin(getPostOwnerId(post.userId), context.user!);
 
     const updated = await Post.findOneAndUpdate(
       { _id: input.params.id, isDeleted: false },

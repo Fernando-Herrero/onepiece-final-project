@@ -161,4 +161,26 @@ export function serializeUserSummary(user: UserDoc) {
   };
 }
 
+export function serializeAuthorEmbed(author: UserDoc) {
+  return {
+    _id: author._id.toString(),
+    username: author.username,
+    firstName: author.firstName,
+    lastName: author.lastName,
+    avatar: author.avatar,
+    displayName: author.displayName,
+    verified: author.verified,
+  };
+}
+
+export function requirePopulatedAuthor(
+  author: UserDoc | Types.ObjectId,
+): UserDoc {
+  if (!('username' in author)) {
+    throw new Error('Author must be populated before serialization');
+  }
+
+  return author;
+}
+
 export type { UserRole };
