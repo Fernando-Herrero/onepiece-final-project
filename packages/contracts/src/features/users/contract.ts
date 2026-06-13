@@ -16,7 +16,7 @@ import {
 export const usersErrors = {
   UNAUTHORIZED: {
     status: 401,
-    message: 'No authorized, no user found',
+    message: 'Not authorized, no user found',
   },
   FORBIDDEN: {
     status: 403,
@@ -54,7 +54,8 @@ export const usersContract = oc
         path: '/',
         description: 'List all users',
       })
-      .output(z.array(userPublicSchema)),
+      .errors(usersErrors)
+      .output(z.array(userSummarySchema)),
 
     getStats: oc
       .route({

@@ -1,12 +1,8 @@
 import { z } from 'zod';
 import { updatePostSchema } from '../../common/post.schemas.js';
-import { mongoIdSchema } from '../../common/user.schemas.js';
+import { mongoIdParamsSchema } from '../../common/user.schemas.js';
 
-export const postIdParamsSchema = z.object({
-  params: z.object({
-    id: mongoIdSchema,
-  }),
-});
+export const postIdParamsSchema = mongoIdParamsSchema();
 
 export const shareTokenParamsSchema = z.object({
   params: z.object({

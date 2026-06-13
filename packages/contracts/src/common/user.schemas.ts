@@ -68,11 +68,17 @@ export const mongoIdSchema = z
   .string()
   .regex(/^[0-9a-fA-F]{24}$/, 'ID de usuario no válido');
 
-export const userIdParamsSchema = z.object({
-  params: z.object({
-    id: mongoIdSchema,
-  }),
-});
+export const mongoIdParamsSchema = <Field extends string = 'id'>(
+  field: Field = 'id' as Field,
+) =>
+  z.object({
+    params: z.object({ [field]: mongoIdSchema } as Record<
+      Field,
+      typeof mongoIdSchema
+    >),
+  });
+
+export const userIdParamsSchema = mongoIdParamsSchema();
 
 export const userSummarySchema = z.object({
   _id: z.string(),

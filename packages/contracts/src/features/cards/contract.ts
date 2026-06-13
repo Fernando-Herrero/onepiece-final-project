@@ -1,16 +1,18 @@
 import { oc } from '@orpc/contract';
 import {
+  catalogOutputSchema,
+  collectionOutputSchema,
+} from '../../common/card.schemas.js';
+import {
   cardTypeParamsSchema,
   cardUserIdParamsSchema,
-  catalogOutputSchema,
   catalogTypeOutputSchema,
-  collectionOutputSchema,
 } from './schemas.js';
 
 export const cardsErrors = {
   UNAUTHORIZED: {
     status: 401,
-    message: 'No authorized, no user found',
+    message: 'Not authorized, no user found',
   },
   USER_NOT_FOUND: {
     status: 404,

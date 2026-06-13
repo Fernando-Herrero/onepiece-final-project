@@ -17,7 +17,7 @@ export const authErrors = {
   },
   UNAUTHORIZED: {
     status: 401,
-    message: 'No authorized, no user found',
+    message: 'Not authorized, no user found',
   },
   ACCOUNT_INACTIVE: {
     status: 403,

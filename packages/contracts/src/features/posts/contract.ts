@@ -15,7 +15,7 @@ import {
 export const postsErrors = {
   UNAUTHORIZED: {
     status: 401,
-    message: 'No authorized, no user found',
+    message: 'Not authorized, no user found',
   },
   FORBIDDEN: {
     status: 403,

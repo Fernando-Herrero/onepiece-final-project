@@ -1,6 +1,8 @@
 import { z } from 'zod';
-import { mongoIdSchema } from '../../common/user.schemas.js';
-import { userSummarySchema } from '../../common/user.schemas.js';
+import {
+  mongoIdParamsSchema,
+  userSummarySchema,
+} from '../../common/user.schemas.js';
 
 export const notificationTypeSchema = z.enum([
   'like',
@@ -36,8 +38,4 @@ export const deleteAllNotificationsOutputSchema = z.object({
   deletedCount: z.number(),
 });
 
-export const notificationIdParamsSchema = z.object({
-  params: z.object({
-    id: mongoIdSchema,
-  }),
-});
+export const notificationIdParamsSchema = mongoIdParamsSchema();

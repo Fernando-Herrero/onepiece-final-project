@@ -11,7 +11,7 @@ import {
 export const notificationsErrors = {
   UNAUTHORIZED: {
     status: 401,
-    message: 'No authorized, no user found',
+    message: 'Not authorized, no user found',
   },
   NOTIFICATION_NOT_FOUND: {
     status: 404,
