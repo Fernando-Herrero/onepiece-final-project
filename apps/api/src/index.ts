@@ -17,7 +17,6 @@ app.get('/api', (_req, res) => {
 
 app.use('/api', async (req, res, next) => {
   const { matched } = await orpcHandler.handle(req, res, {
-    prefix: '/api',
     context: createOrpcContext(req.headers),
   });
 

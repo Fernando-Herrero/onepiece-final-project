@@ -95,6 +95,9 @@ importers:
 
   .:
     devDependencies:
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.19.21
       husky:
         specifier: ^9.1.7
         version: 9.1.7

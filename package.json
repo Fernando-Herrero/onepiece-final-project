@@ -12,6 +12,7 @@
         "prepare": "husky"
     },
     "devDependencies": {
+        "@types/node": "catalog:",
         "husky": "^9.1.7",
         "turbo": "catalog:",
         "prettier": "catalog:",
