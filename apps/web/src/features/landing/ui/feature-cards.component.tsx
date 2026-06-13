@@ -26,7 +26,14 @@ export function FeatureCardsComponent() {
       '(prefers-reduced-motion: reduce)',
     ).matches;
 
-    if (prefersReduced) return;
+    if (prefersReduced) {
+      gsap.set('.landing-card', { autoAlpha: 1, y: 0, scale: 1 });
+      const headChildren = headRef.current?.children;
+      if (headChildren) {
+        gsap.set(headChildren, { autoAlpha: 1, y: 0 });
+      }
+      return;
+    }
 
     const ctx = gsap.context(() => {
       const cards = gsap.utils.toArray<HTMLElement>('.landing-card');
@@ -76,7 +83,7 @@ export function FeatureCardsComponent() {
     <section
       id="features"
       ref={sectionRef}
-      className="relative z-10 bg-gradient-to-b from-[#05070d] via-[#080d18] to-[#05070d] px-6 py-[clamp(5rem,12vh,10rem)] pb-[clamp(7rem,16vh,12rem)]"
+      className="relative z-10 bg-linear-to-b from-[#05070d] via-[#080d18] to-[#05070d] px-6 py-[clamp(5rem,12vh,10rem)] pb-[clamp(7rem,16vh,12rem)]"
     >
       <Flex
         ref={headRef}
@@ -89,7 +96,7 @@ export function FeatureCardsComponent() {
           as="h2"
           size="8"
           align="center"
-          className="font-[family-name:var(--font-one-piece)] tracking-wide text-[#f2d9a8]"
+          className="font-one-piece tracking-wide text-[#f2d9a8]"
         >
           {t('landing.features_title')}
         </Heading>
@@ -115,14 +122,14 @@ export function FeatureCardsComponent() {
           <Card
             key={key}
             size="3"
-            className="landing-card landing-card-shine max-w-[17rem] flex-[1_1_16rem] border border-[#f4ede1]/10 bg-gradient-to-br from-[#1b2742]/55 to-[#0b1120]/65 backdrop-blur-sm transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-[#f2d9a8]/35 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
+            className="landing-card landing-card-shine max-w-68 flex-[1_1_16rem] border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/55 to-[#0b1120]/65 backdrop-blur-sm transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-[#f2d9a8]/35 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
           >
             <Flex direction="column" gap="3">
               <Text size="6">{emoji}</Text>
               <Heading
                 as="h3"
                 size="4"
-                className="font-[family-name:var(--font-road-captain)] tracking-wide text-[#f2d9a8]/90"
+                className="font-road-captain tracking-wide text-[#f2d9a8]/90"
               >
                 {t(`landing.cards.${key}.title`)}
               </Heading>

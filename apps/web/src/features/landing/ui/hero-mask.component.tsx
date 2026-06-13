@@ -9,7 +9,13 @@ function HeroImage({ imgRef }: { imgRef?: Ref<HTMLImageElement> }) {
   return (
     <picture>
       <source media="(max-width: 767px)" srcSet="/landing/hero-mobile.webp" />
-      <img ref={imgRef} className="landing-img" src="/landing/hero.avif" alt="" />
+      <img
+        ref={imgRef}
+        className="landing-img"
+        src="/landing/hero.avif"
+        alt=""
+        aria-hidden="true"
+      />
     </picture>
   );
 }

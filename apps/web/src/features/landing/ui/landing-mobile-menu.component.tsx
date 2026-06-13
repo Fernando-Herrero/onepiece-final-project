@@ -23,6 +23,17 @@ export function LandingMobileMenuPanel({
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose();
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [open, onClose]);
+
   return (
     <div
       id="landing-mobile-menu"
@@ -30,7 +41,7 @@ export function LandingMobileMenuPanel({
         open
           ? 'visible translate-x-0 opacity-100'
           : 'pointer-events-none invisible translate-x-full opacity-0'
-      } bg-gradient-to-br from-[#05070d] via-[#0b1120] to-[#1b2742]/90 backdrop-blur-md`}
+      } bg-linear-to-br from-[#05070d] via-[#0b1120] to-[#1b2742]/90 backdrop-blur-md`}
       aria-hidden={!open}
     >
       <Flex direction="column" gap="6" className="min-h-0 flex-1 px-2 pt-6">
@@ -42,7 +53,7 @@ export function LandingMobileMenuPanel({
           <a
             href="#features"
             onClick={onClose}
-            className="font-[family-name:var(--font-road-captain)] text-lg uppercase tracking-[0.2em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8]"
+            className="font-road-captain text-lg uppercase tracking-[0.2em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8]"
           >
             {t('landing.nav.features')}
           </a>

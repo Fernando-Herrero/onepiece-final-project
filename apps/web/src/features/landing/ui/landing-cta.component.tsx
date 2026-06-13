@@ -67,7 +67,7 @@ export function LandingCtaComponent() {
         size="8"
         align="center"
         mb="6"
-        className="font-[family-name:var(--font-one-piece)] tracking-wide text-[#f2d9a8]"
+        className="font-one-piece tracking-wide text-[#f2d9a8]"
       >
         {t('landing.cta_title')}
       </Heading>

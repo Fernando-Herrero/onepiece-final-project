@@ -39,6 +39,8 @@
     "register": "Register"
   },
   "landing": {
+    "meta_title": "LogPose — Track your One Piece journey",
+    "meta_description": "Track your progress, collect cards and connect with fellow One Piece fans in a single crew log.",
     "tagline": "Track · Collect · Sail",
     "scroll": "Scroll",
     "features_title": "Your voyage starts here",

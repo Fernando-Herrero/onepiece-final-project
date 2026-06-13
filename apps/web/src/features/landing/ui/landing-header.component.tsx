@@ -25,6 +25,15 @@ export function LandingHeaderComponent() {
   }, []);
 
   useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    const onChange = () => {
+      if (mq.matches) setMenuOpen(false);
+    };
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+
+  useEffect(() => {
     const prefersReduced = window.matchMedia(
       '(prefers-reduced-motion: reduce)',
     ).matches;

@@ -1,8 +1,10 @@
 @import 'tw-preset-radix';
 
 @theme {
-  --font-one-piece: 'OnePiece', serif;
-  --font-road-captain: 'RoadCaptain', sans-serif;
+  --font-family-one-piece: 'OnePiece', serif;
+  --font-family-road-captain: 'RoadCaptain', sans-serif;
+  --font-one-piece: var(--font-family-one-piece);
+  --font-road-captain: var(--font-family-road-captain);
 }
 
 @font-face {
