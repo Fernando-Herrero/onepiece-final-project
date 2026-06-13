@@ -7,6 +7,10 @@
     "./contract": {
       "types": "./dist/contract.d.ts",
       "default": "./dist/contract.js"
+    },
+    "./auth/schemas": {
+      "types": "./dist/features/auth/schemas.d.ts",
+      "default": "./dist/features/auth/schemas.js"
     }
   },
   "scripts": {

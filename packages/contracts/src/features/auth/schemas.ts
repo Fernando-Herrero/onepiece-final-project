@@ -1,5 +1,10 @@
 import { z } from 'zod';
-import { userPublicSchema } from '../../common/user.schemas.js';
+import {
+  createUserSchema,
+  userPublicSchema,
+} from '../../common/user.schemas.js';
+
+export { createUserSchema };
 
 export const loginSchema = z
   .object({

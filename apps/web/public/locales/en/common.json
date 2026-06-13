@@ -1,0 +1,41 @@
+{
+  "auth": {
+    "login_title": "Login",
+    "register_title": "Sign up",
+    "email": "Email",
+    "email_placeholder": "you@example.com",
+    "password": "Password",
+    "password_placeholder": "Your password",
+    "first_name": "First name",
+    "first_name_placeholder": "John",
+    "last_name": "Last name",
+    "last_name_placeholder": "Doe",
+    "username": "Username",
+    "username_placeholder": "john123",
+    "confirm_password": "Confirm password",
+    "submit_login": "Sign in",
+    "submit_login_pending": "Signing in…",
+    "submit_register": "Create account",
+    "submit_register_pending": "Signing up…",
+    "not_registered": "Not registered yet?",
+    "register_link": "Sign up",
+    "already_registered": "Already have an account?",
+    "login_link": "Sign in",
+    "logout": "Sign out",
+    "session_active": "Signed in — @{{username}} ({{email}})",
+    "form_invalid": "Please check the form fields",
+    "generic_error": "Something went wrong"
+  },
+  "home": {
+    "title": "One Piece LogPose v3",
+    "api_ok": "API OK — {{count}} users",
+    "checking_api": "Checking API…",
+    "login": "Login",
+    "register": "Register"
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "retry": "Retry",
+    "back_home": "Back to home"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "auth": {
+    "login_title": "Login",
+    "register_title": "Formulario de registro",
+    "email": "Correo",
+    "email_placeholder": "correo@gmail.com",
+    "password": "Contraseña",
+    "password_placeholder": "Clave del tesoro",
+    "first_name": "Nombre",
+    "first_name_placeholder": "Juan",
+    "last_name": "Apellidos",
+    "last_name_placeholder": "Pérez Kurrikaga",
+    "username": "Username",
+    "username_placeholder": "Juan123",
+    "confirm_password": "Confirmar contraseña",
+    "submit_login": "Entrar",
+    "submit_login_pending": "Entrando…",
+    "submit_register": "Crear cuenta",
+    "submit_register_pending": "Registrando…",
+    "not_registered": "¿Aún no estás registrado, nakama?",
+    "register_link": "Regístrate",
+    "already_registered": "¿Ya tienes cuenta?",
+    "login_link": "Inicia sesión",
+    "logout": "Cerrar sesión",
+    "session_active": "Sesión activa — @{{username}} ({{email}})",
+    "form_invalid": "Revisa los campos del formulario",
+    "generic_error": "Ha ocurrido un error"
+  },
+  "home": {
+    "title": "One Piece LogPose v3",
+    "api_ok": "API OK — {{count}} usuarios",
+    "checking_api": "Comprobando API…",
+    "login": "Login",
+    "register": "Register"
+  },
+  "errors": {
+    "title": "Algo salió mal",
+    "retry": "Reintentar",
+    "back_home": "Volver al inicio"
+  }
+}

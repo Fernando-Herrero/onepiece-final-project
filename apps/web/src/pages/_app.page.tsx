@@ -1,15 +1,16 @@
 import '@/styles/globals.css';
 
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
-import { useState } from 'react';
+import { appWithTranslation } from 'next-i18next/pages';
 
-export default function App({ Component, pageProps }: AppProps) {
-  const [queryClient] = useState(() => new QueryClient());
+import Providers from '@/integrations/providers';
 
+function App({ Component, pageProps }: AppProps) {
   return (
-    <QueryClientProvider client={queryClient}>
+    <Providers>
       <Component {...pageProps} />
-    </QueryClientProvider>
+    </Providers>
   );
 }
+
+export default appWithTranslation(App);
