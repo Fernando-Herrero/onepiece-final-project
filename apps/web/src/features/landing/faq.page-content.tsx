@@ -1,7 +1,42 @@
 import { Heading, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
+import { useState } from 'react';
 
 import { LandingPublicLayout } from '@/features/landing/ui/landing-public-layout.component';
+import { Reveal } from '@/features/landing/ui/reveal.component';
+
+function FaqItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div
+      className="faq-item rounded-lg border border-[#f4ede1]/10 bg-[#0b1120]/60 backdrop-blur-sm transition-colors hover:border-[#f2d9a8]/25"
+      data-open={open || undefined}
+    >
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen(value => !value)}
+        className="font-road-captain flex w-full cursor-pointer items-center justify-between gap-3 px-4 py-3 text-left tracking-wide text-[#f2d9a8]/90"
+      >
+        {question}
+        <span className="faq-chevron text-[#f4ede1]/50">▾</span>
+      </button>
+      <div className="faq-panel">
+        <div className="faq-panel-inner">
+          <Text
+            as="p"
+            size="2"
+            color="gray"
+            className="faq-answer px-4 pb-4 leading-relaxed"
+          >
+            {answer}
+          </Text>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 const FAQ_ITEMS = [
   ['title_what_is', 'text_what_is'],
@@ -22,32 +57,24 @@ export default function FaqPageContent() {
 
   return (
     <LandingPublicLayout title={t('faq.meta_title')}>
-      <Heading
-        as="h1"
-        size="7"
-        mb="6"
-        className="font-one-piece tracking-wide text-[#f2d9a8]"
-      >
-        {t('landing.nav.faq')}
-      </Heading>
+      <Reveal>
+        <Heading
+          as="h1"
+          size="7"
+          mb="6"
+          className="font-one-piece tracking-wide text-[#f2d9a8]"
+        >
+          {t('landing.nav.faq')}
+        </Heading>
+      </Reveal>
       <div className="flex flex-col gap-3">
         {FAQ_ITEMS.map(([titleKey, textKey]) => (
-          <details
-            key={titleKey}
-            className="group rounded-lg border border-[#f4ede1]/10 bg-[#0b1120]/60 backdrop-blur-sm"
-          >
-            <summary className="cursor-pointer list-none px-4 py-3 font-road-captain tracking-wide text-[#f2d9a8]/90 marker:content-none [&::-webkit-details-marker]:hidden">
-              <span className="flex items-center justify-between gap-3">
-                {t(`faq.${titleKey}`)}
-                <span className="text-[#f4ede1]/50 transition-transform group-open:rotate-180">
-                  ▾
-                </span>
-              </span>
-            </summary>
-            <Text as="p" size="2" color="gray" className="px-4 pb-4 leading-relaxed">
-              {t(`faq.${textKey}`)}
-            </Text>
-          </details>
+          <Reveal key={titleKey} y={20}>
+            <FaqItem
+              question={t(`faq.${titleKey}`)}
+              answer={t(`faq.${textKey}`)}
+            />
+          </Reveal>
         ))}
       </div>
     </LandingPublicLayout>

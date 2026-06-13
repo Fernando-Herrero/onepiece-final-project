@@ -18,7 +18,7 @@ export function LandingFooterComponent() {
       >
         <nav
           aria-label="Footer"
-          className="flex flex-wrap justify-center gap-5 font-road-captain text-sm uppercase tracking-[0.15em]"
+          className="font-road-captain flex flex-wrap justify-center gap-5 text-sm tracking-[0.15em] uppercase"
         >
           <RadixLink asChild color="gray" highContrast>
             <Link href="/#features">{t('landing.nav.features')}</Link>

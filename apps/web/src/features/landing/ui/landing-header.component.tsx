@@ -12,8 +12,10 @@ import {
   LandingMobileMenuPanel,
 } from '@/features/landing/ui/landing-mobile-menu.component';
 
+let headerIntroPlayed = false;
+
 const NAV_LINK_CLASS =
-  'inline-flex shrink-0 cursor-pointer items-center rounded-md px-3 py-1.5 font-road-captain text-sm uppercase tracking-[0.12em] text-[#f4ede1]/85 transition-colors hover:bg-white/5 hover:text-[#f2d9a8]';
+  'relative inline-flex shrink-0 cursor-pointer items-center px-1 py-1.5 font-road-captain text-sm uppercase tracking-[0.12em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8] after:absolute after:inset-x-1 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-[#f2d9a8]/70 after:transition-transform after:duration-300 hover:after:scale-x-100';
 
 export function LandingHeaderComponent() {
   const { t } = useTranslation();
@@ -47,10 +49,16 @@ export function LandingHeaderComponent() {
 
     if (prefersReduced || !headerRef.current) return;
 
+    if (headerIntroPlayed) {
+      gsap.set(headerRef.current, { autoAlpha: 1, y: 0 });
+      return;
+    }
+
+    headerIntroPlayed = true;
     gsap.fromTo(
       headerRef.current,
-      { autoAlpha: 0, y: -24 },
-      { autoAlpha: 1, y: 0, duration: 0.9, delay: 0.35, ease: 'power2.out' },
+      { autoAlpha: 0, y: -20 },
+      { autoAlpha: 1, y: 0, duration: 0.8, delay: 0.15, ease: 'power3.out' },
     );
   }, []);
 
@@ -87,7 +95,7 @@ export function LandingHeaderComponent() {
 
           <Flex
             align="center"
-            gap="3"
+            gap="4"
             display={{ initial: 'none', md: 'flex' }}
             className="shrink-0"
           >
@@ -132,15 +140,22 @@ export function LandingHeaderComponent() {
 
             <LandingLocaleToggleComponent />
             <Button
-              variant="soft"
-              color="orange"
+              variant="outline"
+              highContrast
               size="2"
-              className="!m-0 shrink-0"
+              radius="full"
+              className="m-0! shrink-0"
               asChild
             >
               <Link href="/login">{t('landing.nav.sign_in')}</Link>
             </Button>
-            <Button color="orange" size="2" className="!m-0 shrink-0" asChild>
+            <Button
+              color="orange"
+              size="2"
+              radius="full"
+              className="m-0! shrink-0 shadow-[0_0_24px_rgba(220,150,70,0.35)] transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(220,150,70,0.55)]"
+              asChild
+            >
               <Link href="/register">{t('landing.nav.sign_up')}</Link>
             </Button>
           </Flex>

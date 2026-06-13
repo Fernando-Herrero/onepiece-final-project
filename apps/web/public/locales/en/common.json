@@ -71,6 +71,11 @@
         "text": "Smooth, fast navigation tuned for any screen size, so your journey never stops."
       }
     },
+    "showcase": {
+      "eyebrow": "One map. Every saga.",
+      "title": "Chart your own Grand Line",
+      "text": "From East Blue to the New World, follow every arc and let your LogPose point to the next great adventure."
+    },
     "cta_title": "Ready to set sail?",
     "nav": {
       "features": "Features",

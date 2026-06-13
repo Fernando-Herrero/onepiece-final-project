@@ -27,6 +27,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Lenis smooth scroll — neutralizes native smooth behavior while active */
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 /* ---------------------------------------------------------------------------
    Landing — cinematic mask reveal (CSS only: mask, grain, GSAP-driven layers)
    Layout, header, footer, cards and CTA use Tailwind in components.
@@ -240,6 +253,43 @@ html {
   transform: translateX(120%);
 }
 
+/* FAQ accordion — smooth open/close via grid-template-rows (controlled) */
+.faq-item > .faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item[data-open] > .faq-panel {
+  grid-template-rows: 1fr;
+}
+
+.faq-item > .faq-panel > .faq-panel-inner {
+  overflow: hidden;
+}
+
+.faq-item .faq-answer {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.faq-item[data-open] .faq-answer {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.faq-item .faq-chevron {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item[data-open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -252,5 +302,16 @@ html {
 
   .landing-card-shine::after {
     display: none;
+  }
+
+  .faq-item > .faq-panel,
+  .faq-item .faq-answer,
+  .faq-item .faq-chevron {
+    transition: none;
+  }
+
+  .faq-item .faq-answer {
+    opacity: 1;
+    transform: none;
   }
 }

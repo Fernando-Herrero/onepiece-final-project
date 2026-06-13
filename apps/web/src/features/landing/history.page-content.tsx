@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
 import { LandingPublicLayout } from '@/features/landing/ui/landing-public-layout.component';
+import { Reveal } from '@/features/landing/ui/reveal.component';
 
 const HISTORY_SECTIONS = [
   { section: 'section_intro', content: 'content_intro' },
@@ -91,44 +92,48 @@ export default function HistoryPageContent() {
   return (
     <LandingPublicLayout title={t('history.meta_title')}>
       <div className="rounded-xl border border-dashed border-[#a64242]/50 bg-[#0b1120]/40 p-6 shadow-lg">
-        <Heading
-          as="h1"
-          size="7"
-          mb="6"
-          className="font-one-piece tracking-wide text-[#f2d9a8]"
-        >
-          {t('landing.nav.history')}
-        </Heading>
+        <Reveal>
+          <Heading
+            as="h1"
+            size="7"
+            mb="6"
+            className="font-one-piece tracking-wide text-[#f2d9a8]"
+          >
+            {t('landing.nav.history')}
+          </Heading>
+        </Reveal>
 
         {HISTORY_SECTIONS.map(item => (
-          <section key={item.section} className="mb-6 flex flex-col gap-2">
-            <Heading
-              as="h2"
-              size="4"
-              className="font-road-captain text-[#f2d9a8]/90 underline"
-            >
-              {t(`history.${item.section}`)}
-            </Heading>
+          <Reveal key={item.section} y={24}>
+            <section className="mb-6 flex flex-col gap-2">
+              <Heading
+                as="h2"
+                size="4"
+                className="font-road-captain text-[#f2d9a8]/90 underline"
+              >
+                {t(`history.${item.section}`)}
+              </Heading>
 
-            {'charactersLink' in item ? (
-              <RadixLink asChild highContrast>
-                <Link
-                  href="/characters"
-                  className="inline-flex items-center gap-2 transition-transform hover:-translate-y-0.5"
-                >
-                  <span>→</span>
-                  {t('history.section_characters')}
-                  <span>←</span>
-                </Link>
-              </RadixLink>
-            ) : (
-              <Text as="p" size="2" color="gray" className="leading-relaxed">
-                {t(`history.${item.content}`)}
-              </Text>
-            )}
+              {'charactersLink' in item ? (
+                <RadixLink asChild highContrast>
+                  <Link
+                    href="/characters"
+                    className="inline-flex items-center gap-2 transition-transform hover:-translate-y-0.5"
+                  >
+                    <span>→</span>
+                    {t('history.section_characters')}
+                    <span>←</span>
+                  </Link>
+                </RadixLink>
+              ) : (
+                <Text as="p" size="2" color="gray" className="leading-relaxed">
+                  {t(`history.${item.content}`)}
+                </Text>
+              )}
 
-            <HistoryListItems section={item} />
-          </section>
+              <HistoryListItems section={item} />
+            </section>
+          </Reveal>
         ))}
       </div>
     </LandingPublicLayout>

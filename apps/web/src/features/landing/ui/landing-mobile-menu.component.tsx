@@ -53,53 +53,63 @@ export function LandingMobileMenuPanel({
           <Link
             href="/#features"
             onClick={onClose}
-            className="font-road-captain text-lg uppercase tracking-[0.2em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8]"
+            className="font-road-captain text-lg tracking-[0.2em] text-[#f4ede1]/85 uppercase transition-colors hover:text-[#f2d9a8]"
           >
             {t('landing.nav.features')}
           </Link>
 
           <div className="flex flex-col gap-3">
-            <Text as="span" size="1" color="gray" className="font-road-captain uppercase tracking-[0.2em]">
+            <Text
+              as="span"
+              size="1"
+              color="gray"
+              className="font-road-captain tracking-[0.2em] uppercase"
+            >
               {t('landing.nav.onepiece')}
             </Text>
             <Link
               href="/history"
               onClick={onClose}
-              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
             >
               {t('landing.nav.history')}
             </Link>
             <Link
               href="/characters"
               onClick={onClose}
-              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
             >
               {t('landing.nav.characters')}
             </Link>
             <Link
               href="/map"
               onClick={onClose}
-              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
             >
               {t('landing.nav.map')}
             </Link>
           </div>
 
           <div className="flex flex-col gap-3">
-            <Text as="span" size="1" color="gray" className="font-road-captain uppercase tracking-[0.2em]">
+            <Text
+              as="span"
+              size="1"
+              color="gray"
+              className="font-road-captain tracking-[0.2em] uppercase"
+            >
               {t('landing.nav.help')}
             </Text>
             <Link
               href="/faq"
               onClick={onClose}
-              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
             >
               {t('landing.nav.faq')}
             </Link>
             <Link
               href="/contact"
               onClick={onClose}
-              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
             >
               {t('landing.nav.contact')}
             </Link>
@@ -111,7 +121,7 @@ export function LandingMobileMenuPanel({
           pt="6"
           className="mt-auto w-full border-t border-white/15"
         >
-          <Button variant="soft" color="orange" className="flex-1" asChild>
+          <Button color="gold" className="flex-1" asChild>
             <Link href="/login" onClick={onClose}>
               {t('landing.nav.sign_in')}
             </Link>
@@ -144,8 +154,10 @@ export function LandingMenuToggleButton({
       onClick={onToggle}
       aria-expanded={open}
       aria-controls="landing-mobile-menu"
-      aria-label={open ? t('landing.nav.close_menu') : t('landing.nav.open_menu')}
-      className={`relative z-[60] flex h-10 w-10 shrink-0 cursor-pointer flex-col items-center justify-center rounded-full transition-colors duration-300 md:hidden ${
+      aria-label={
+        open ? t('landing.nav.close_menu') : t('landing.nav.open_menu')
+      }
+      className={`relative z-60 flex h-10 w-10 shrink-0 cursor-pointer flex-col items-center justify-center rounded-full transition-colors duration-300 md:hidden ${
         open
           ? 'border border-[#f2d9a8]/50 bg-[#05070d]/90 shadow-[0_0_20px_rgba(0,0,0,0.45)] hover:bg-[#05070d]'
           : 'hover:bg-white/10'

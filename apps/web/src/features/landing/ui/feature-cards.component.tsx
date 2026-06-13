@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect, useRef } from 'react';
 
+import { useTilt } from '@/features/landing/use-tilt';
+
 const FEATURES = [
   { emoji: '🎯', key: 'dashboard' },
   { emoji: '💬', key: 'social' },
@@ -18,6 +20,7 @@ export function FeatureCardsComponent() {
   const sectionRef = useRef<HTMLElement>(null);
   const headRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
+  const tilt = useTilt();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -122,7 +125,9 @@ export function FeatureCardsComponent() {
           <Card
             key={key}
             size="3"
-            className="landing-card landing-card-shine max-w-68 flex-[1_1_16rem] border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/55 to-[#0b1120]/65 backdrop-blur-sm transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-[#f2d9a8]/35 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
+            onMouseMove={tilt.onMouseMove}
+            onMouseLeave={tilt.onMouseLeave}
+            className="landing-card landing-card-shine max-w-68 flex-[1_1_16rem] border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/55 to-[#0b1120]/65 backdrop-blur-sm transition-[border-color,box-shadow] duration-300 hover:border-[#f2d9a8]/35 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
           >
             <Flex direction="column" gap="3">
               <Text size="6">{emoji}</Text>

@@ -43,6 +43,7 @@ export function HeroMaskComponent() {
         autoAlpha: 1,
         y: 0,
         filter: 'none',
+        clipPath: 'none',
       });
       gsap.set(scrollCueRef.current, { autoAlpha: 0 });
       return;
@@ -108,18 +109,31 @@ export function HeroMaskComponent() {
         0.22,
       );
 
+      gsap.set(titleRef.current, { clipPath: 'inset(0 0 100% 0)', y: 28 });
+
+      tl.to(
+        titleRef.current,
+        {
+          autoAlpha: 1,
+          clipPath: 'inset(0 0 0% 0)',
+          y: 0,
+          duration: 0.42,
+          ease: 'power3.out',
+        },
+        0.55,
+      );
+
       tl.fromTo(
-        [titleRef.current, taglineRef.current],
-        { autoAlpha: 0, y: 60, filter: 'blur(14px)' },
+        taglineRef.current,
+        { autoAlpha: 0, y: 28, filter: 'blur(8px)' },
         {
           autoAlpha: 1,
           y: 0,
           filter: 'blur(0px)',
-          duration: 0.32,
+          duration: 0.34,
           ease: 'power2.out',
-          stagger: 0.06,
         },
-        0.58,
+        0.7,
       );
     }, heroRef);
 
