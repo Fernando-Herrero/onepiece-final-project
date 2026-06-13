@@ -8,9 +8,11 @@
         "type-check": "turbo run type-check",
         "start": "turbo run start",
         "format": "turbo run format",
-        "format-check": "turbo run format-check"
+        "format-check": "turbo run format-check",
+        "prepare": "husky"
     },
     "devDependencies": {
+        "husky": "^9.1.7",
         "turbo": "catalog:",
         "prettier": "catalog:",
         "prettier-plugin-packagejson": "catalog:",

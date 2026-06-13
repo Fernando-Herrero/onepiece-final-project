@@ -1,0 +1,28 @@
+---
+description: Commits y PRs sin menciones a IA ni attribution de Cursor
+alwaysApply: true
+---
+
+# Git — commits y PRs
+
+## Prohibido en commits y PRs
+
+- `Co-authored-by: Cursor` o cualquier variante con `cursoragent@`
+- `Made-with: Cursor` u otros trailers de attribution
+- Menciones a AI, Cursor, Copilot, Claude, GPT, agent, assisted, generated
+- Usar `git commit --trailer` para attribution
+
+## Formato de mensaje
+
+- Imperativo, inglés, 1–2 frases (el porqué)
+- Ejemplo: `Add auth oRPC contract and Zod schemas`
+
+## Si el entorno inyecta trailers
+
+1. No pedir al usuario que limpie manualmente
+2. Usar el hook `prepare-commit-msg` del repo o `git commit --amend` para eliminarlos antes del push
+
+## Commits
+
+- Fer commitea por defecto; el agente solo si lo pide explícitamente
+- Nunca `--no-verify` salvo petición explícita del usuario
