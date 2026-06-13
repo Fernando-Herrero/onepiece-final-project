@@ -1,4 +1,4 @@
-import { Button, Flex } from '@radix-ui/themes';
+import { Button, Flex, Text } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect } from 'react';
@@ -49,14 +49,54 @@ export function LandingMobileMenuPanel({
           <LandingLocaleToggleComponent />
         </Flex>
 
-        <nav className="flex flex-col gap-4">
-          <a
-            href="#features"
+        <nav className="flex flex-col gap-6">
+          <Link
+            href="/#features"
             onClick={onClose}
             className="font-road-captain text-lg uppercase tracking-[0.2em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8]"
           >
             {t('landing.nav.features')}
-          </a>
+          </Link>
+
+          <div className="flex flex-col gap-3">
+            <Text as="span" size="1" color="gray" className="font-road-captain uppercase tracking-[0.2em]">
+              {t('landing.nav.onepiece')}
+            </Text>
+            <Link
+              href="/history"
+              onClick={onClose}
+              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+            >
+              {t('landing.nav.history')}
+            </Link>
+            <Link
+              href="/characters"
+              onClick={onClose}
+              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+            >
+              {t('landing.nav.characters')}
+            </Link>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <Text as="span" size="1" color="gray" className="font-road-captain uppercase tracking-[0.2em]">
+              {t('landing.nav.help')}
+            </Text>
+            <Link
+              href="/faq"
+              onClick={onClose}
+              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+            >
+              {t('landing.nav.faq')}
+            </Link>
+            <Link
+              href="/contact"
+              onClick={onClose}
+              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+            >
+              {t('landing.nav.contact')}
+            </Link>
+          </div>
         </nav>
 
         <Flex

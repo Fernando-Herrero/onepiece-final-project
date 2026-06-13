@@ -21,7 +21,19 @@ export function LandingFooterComponent() {
           className="flex flex-wrap justify-center gap-5 font-road-captain text-sm uppercase tracking-[0.15em]"
         >
           <RadixLink asChild color="gray" highContrast>
-            <a href="#features">{t('landing.nav.features')}</a>
+            <Link href="/#features">{t('landing.nav.features')}</Link>
+          </RadixLink>
+          <RadixLink asChild color="gray" highContrast>
+            <Link href="/history">{t('landing.nav.history')}</Link>
+          </RadixLink>
+          <RadixLink asChild color="gray" highContrast>
+            <Link href="/characters">{t('landing.nav.characters')}</Link>
+          </RadixLink>
+          <RadixLink asChild color="gray" highContrast>
+            <Link href="/faq">{t('landing.nav.faq')}</Link>
+          </RadixLink>
+          <RadixLink asChild color="gray" highContrast>
+            <Link href="/contact">{t('landing.nav.contact')}</Link>
           </RadixLink>
           <RadixLink asChild color="gray" highContrast>
             <Link href="/login">{t('landing.nav.sign_in')}</Link>

@@ -74,6 +74,12 @@
     "cta_title": "¿Listo para zarpar?",
     "nav": {
       "features": "Features",
+      "onepiece": "One Piece",
+      "characters": "Personajes",
+      "history": "Historia",
+      "help": "Ayuda",
+      "faq": "FAQ",
+      "contact": "Contacto",
       "language": "Idioma",
       "open_menu": "Abrir menú",
       "close_menu": "Cerrar menú",
@@ -88,5 +94,95 @@
       "disclaimer": "LogPose es una app de fans para el seguimiento de progreso de One Piece. Contenido para uso personal, sin fines comerciales.",
       "copyright": "LogPose. Todos los derechos reservados."
     }
+  },
+  "faq": {
+    "meta_title": "FAQ — LogPose",
+    "title_what_is": "¿Qué es esta app de One Piece?",
+    "text_what_is": "Es una red social inspirada en Twitter, pero ambientada en el mundo de One Piece. Puedes seguir los capítulos, desbloquear personajes, barcos e ítems, y gestionar todo desde tu propio Dashboard.",
+    "title_how_create_profile": "¿Cómo creo mi perfil?",
+    "text_how_create_profile": "Desde el Dashboard, ve a la sección 'Perfil'. Allí puedes personalizar tu avatar, nombre de usuario y biografía pirata.",
+    "title_how_unlock_characters": "¿Cómo desbloqueo personajes?",
+    "text_how_unlock_characters": "Los personajes se desbloquean siguiendo capítulos de la serie o completando retos dentro de la app. Cada avance en la historia te dará acceso a nuevos nakamas.",
+    "title_what_are_items": "¿Qué son los ítems?",
+    "text_what_are_items": "Los ítems son objetos coleccionables inspirados en el mundo de One Piece, como Frutas del Diablo o tesoros. Te permiten personalizar tu experiencia y mejorar tu perfil.",
+    "title_can_interact_users": "¿Puedo interactuar con otros usuarios?",
+    "text_can_interact_users": "¡Sí! Puedes seguir a otros piratas, dar 'me gusta' a sus publicaciones, comentar y compartir teorías sobre One Piece.",
+    "title_what_is_dashboard": "¿Qué es el Dashboard?",
+    "text_what_is_dashboard": "El Dashboard es tu base personal. Desde allí manejas tu perfil, ves tus personajes desbloqueados, barcos, ítems, cartas de la serie y controlas tu progreso.",
+    "title_what_are_series_cards": "¿Qué son las cartas de la serie?",
+    "text_what_are_series_cards": "Son representaciones coleccionables de capítulos, escenas y personajes. Al avanzar en la historia, desbloqueas nuevas cartas para tu colección.",
+    "title_need_to_pay": "¿Necesito pagar para usar la app?",
+    "text_need_to_pay": "La app es gratuita. Algunas funciones adicionales o coleccionables premium pueden estar disponibles como compras opcionales.",
+    "title_how_report_bug": "¿Cómo reporto un problema o bug?",
+    "text_how_report_bug": "En el Dashboard encontrarás la sección 'Ayuda'. Desde ahí puedes reportar errores o sugerir mejoras.",
+    "title_use_without_seen": "¿Puedo usar la app sin haber visto One Piece?",
+    "text_use_without_seen": "¡Claro! Aunque está diseñada para fans, también puede servirte como una guía divertida para seguir la serie y descubrir sus personajes poco a poco.",
+    "title_special_events": "¿Habrá eventos especiales?",
+    "text_special_events": "Sí. Periódicamente lanzamos eventos temáticos (como el aniversario de One Piece o sagas destacadas) que permiten desbloquear contenido único."
+  },
+  "history": {
+    "meta_title": "Historia — LogPose",
+    "section_intro": "Introducción",
+    "content_intro": "One Piece es un manga y anime japonés creado por Eiichiro Oda que combina aventura, acción y comedia. La historia sigue a Monkey D. Luffy y su tripulación de piratas, conocidos como los Sombrero de Paja, en su búsqueda del tesoro legendario One Piece para convertirse en el Rey de los Piratas.",
+    "section_synopsis": "Sinopsis",
+    "content_synopsis": "Luffy y su tripulación viajan por la Grand Line, enfrentando enemigos, descubriendo secretos y viviendo aventuras épicas. La historia combina combates, poderes sobrenaturales gracias a las Frutas del Diablo, y relaciones profundas entre los personajes.",
+    "section_characters": "Personajes Principales",
+    "section_arcs": "Arcos y Sagas Principales",
+    "content_arcs": "La historia se organiza en sagas que marcan grandes aventuras y desafíos:",
+    "sub_content_arcs": {
+      "east_blue": "East Blue – Origen de la tripulación",
+      "alabasta": "Alabasta – Conspiraciones y grandes batallas",
+      "enies_lobby": "Enies Lobby – Rescate y enfrentamientos con la justicia",
+      "marineford": "Marineford – Conflictos con la Marina y eventos históricos",
+      "dressrosa": "Dressrosa – Luchas por la libertad de un reino",
+      "wano": "Wano – Batallas épicas contra los Yonkou y secretos del pasado"
+    },
+    "section_world": "Mundo y Elementos Clave",
+    "content_world": "Elementos importantes del mundo de One Piece:",
+    "sub_content_world": {
+      "grand_line": "Grand Line: océano lleno de peligros y aventuras",
+      "devil_fruits": "Frutas del Diablo: poderes especiales que otorgan habilidades únicas",
+      "organizations": "Organizaciones: Marina, Shichibukai, Yonko y Revolucionarios",
+      "treasure": "Tesoro One Piece: la mayor motivación de los piratas y el misterio central de la historia"
+    },
+    "section_fun": "Curiosidades",
+    "content_fun": "Datos interesantes sobre One Piece:",
+    "sub_content_fun": {
+      "longest_manga": "One Piece es uno de los mangas más largos y populares del mundo",
+      "secrets": "Contiene secretos, referencias culturales y Easter eggs que enriquecen la historia",
+      "inspiration": "Inspira a otras series y juegos por su mundo detallado y creativo"
+    }
+  },
+  "contact": {
+    "meta_title": "Contacto — LogPose",
+    "message_title": "¿Necesitas ponerte en contacto con nuestro equipo? Cuéntanos tu duda o sugerencia y te responderemos lo antes posible.",
+    "title": "Contacto",
+    "subject": "Asunto",
+    "subject_placeholder": "¿Sobre qué quieres hablar?",
+    "area_message": "Escribe tu mensaje para la tripulación...",
+    "button": "Enviar",
+    "message": "Mensaje",
+    "success_message": "¡Mensaje recibido, nakama! Gracias por escribirnos. La tripulación revisará tu mensaje y nos pondremos en contacto contigo lo antes posible.",
+    "send_another": "Enviar otro mensaje"
+  },
+  "characters": {
+    "meta_title": "Personajes — LogPose",
+    "luffy_text": "El intrépido capitán con un corazón enorme y un sueño gigante: convertirse en el Rey de los Piratas. Su poder de goma le permite estirarse y resistir golpes que serían mortales para cualquier otro. Siempre optimista y valiente.",
+    "zoro_text": "El espadachín de tres espadas, leal hasta la médula y con una determinación inquebrantable. Sueña con ser el mejor espadachín del mundo. Fuerte, serio y a veces un poco despistado, especialmente con direcciones.",
+    "sanji_text": "El chef del barco con estilo y pasión por la cocina… y por las mujeres. Experto en combate con patadas que pueden derribar gigantes y con una elegancia inigualable. Siempre preocupado por la seguridad y el bienestar de sus nakamas.",
+    "nami_text": "La navegante y estratega del grupo. Inteligente, valiente y amante del dinero… pero sobre todo, dedicada a guiar la tripulación a salvo por mares traicioneros. Su conocimiento del clima y la cartografía es invaluable.",
+    "usopp_text": "El tirador y contador de historias. Siempre creativo con sus inventos y armas, un poco cobarde al principio, pero con un corazón enorme. Sueña con ser un valiente guerrero del mar y proteger a sus amigos.",
+    "chopper_text": "El adorable reno doctor que puede transformarse gracias a la fruta Hito Hito. Curioso, ingenuo y muy inteligente en medicina. Siempre dispuesto a ayudar a quien lo necesite.",
+    "robin_text": "La arqueóloga y erudita que busca conocer la verdadera historia del mundo. Inteligente, calmada y estratégica. Su poder le permite hacer florecer partes de su cuerpo en cualquier lugar, lo que la hace muy versátil en combate.",
+    "brook_text": "El músico esquelético con un alma alegre y elegante. Maestro espadachín y músico talentoso. A pesar de su aspecto macabro, es divertido, bromista y con un gran sentido de la música.",
+    "jimbe_text": "El timonel y hombre-pez, fuerte, honorable y sabio. Experto en artes marciales de los hombres-pez y gran protector de sus compañeros. Siempre mantiene la calma y el equilibrio en las situaciones más difíciles.",
+    "final_text": "Y aún hay más personajes… pero no vamos a estropear la sorpresa… o sí?",
+    "final_text_two": "Si quieres ver qué otros personajes se van uniendo a la tripulación a lo largo de la historia, esa ya es tu responsabilidad...",
+    "view_more": "Ver más"
+  },
+  "not_found": {
+    "meta_title": "Página no encontrada — LogPose",
+    "message": "¡Oops! No pudimos encontrar esta página.",
+    "back_home": "Volver al inicio"
   }
 }

@@ -74,6 +74,12 @@
     "cta_title": "Ready to set sail?",
     "nav": {
       "features": "Features",
+      "onepiece": "One Piece",
+      "characters": "Characters",
+      "history": "History",
+      "help": "Help",
+      "faq": "FAQ",
+      "contact": "Contact",
       "language": "Language",
       "open_menu": "Open menu",
       "close_menu": "Close menu",
@@ -88,5 +94,95 @@
       "disclaimer": "LogPose is a fan app for tracking One Piece progress. For personal use only, not for commercial purposes.",
       "copyright": "LogPose. All rights reserved."
     }
+  },
+  "faq": {
+    "meta_title": "FAQ — LogPose",
+    "title_what_is": "What is this One Piece app?",
+    "text_what_is": "It is a social network inspired by Twitter, but set in the world of One Piece. You can follow chapters, unlock characters, ships, and items, and manage everything from your own Dashboard.",
+    "title_how_create_profile": "How do I create my profile?",
+    "text_how_create_profile": "From the Dashboard, go to the 'Profile' section. There you can customize your avatar, username, and pirate biography.",
+    "title_how_unlock_characters": "How do I unlock characters?",
+    "text_how_unlock_characters": "Characters are unlocked by following chapters of the series or completing challenges within the app. Each story progress gives you access to new nakamas.",
+    "title_what_are_items": "What are items?",
+    "text_what_are_items": "Items are collectible objects inspired by the world of One Piece, such as Devil Fruits or treasures. They allow you to personalize your experience and improve your profile.",
+    "title_can_interact_users": "Can I interact with other users?",
+    "text_can_interact_users": "Yes! You can follow other pirates, like their posts, comment, and share theories about One Piece.",
+    "title_what_is_dashboard": "What is the Dashboard?",
+    "text_what_is_dashboard": "The Dashboard is your personal base. From there you manage your profile, see your unlocked characters, ships, items, series cards, and track your progress.",
+    "title_what_are_series_cards": "What are series cards?",
+    "text_what_are_series_cards": "They are collectible representations of chapters, scenes, and characters. As you progress in the story, you unlock new cards for your collection.",
+    "title_need_to_pay": "Do I need to pay to use the app?",
+    "text_need_to_pay": "The app is free. Some additional features or premium collectibles may be available as optional purchases.",
+    "title_how_report_bug": "How do I report a problem or bug?",
+    "text_how_report_bug": "In the Dashboard, you'll find the 'Help' section. From there you can report errors or suggest improvements.",
+    "title_use_without_seen": "Can I use the app without having seen One Piece?",
+    "text_use_without_seen": "Of course! Although it is designed for fans, it can also serve as a fun guide to follow the series and discover its characters gradually.",
+    "title_special_events": "Will there be special events?",
+    "text_special_events": "Yes. Periodically we launch themed events (like the One Piece anniversary or highlighted sagas) that allow you to unlock unique content."
+  },
+  "history": {
+    "meta_title": "History — LogPose",
+    "section_intro": "Introduction",
+    "content_intro": "One Piece is a Japanese manga and anime created by Eiichiro Oda that combines adventure, action, and comedy. The story follows Monkey D. Luffy and his pirate crew, known as the Straw Hats, in their search for the legendary treasure One Piece to become the Pirate King.",
+    "section_synopsis": "Synopsis",
+    "content_synopsis": "Luffy and his crew travel the Grand Line, facing enemies, discovering secrets, and living epic adventures. The story combines battles, supernatural powers from Devil Fruits, and deep relationships between characters.",
+    "section_characters": "Main Characters",
+    "section_arcs": "Main Arcs and Sagas",
+    "content_arcs": "The story is organized into sagas that mark great adventures and challenges:",
+    "sub_content_arcs": {
+      "east_blue": "East Blue – Origin of the crew",
+      "alabasta": "Alabasta – Conspiracies and great battles",
+      "enies_lobby": "Enies Lobby – Rescue and confrontations with justice",
+      "marineford": "Marineford – Conflicts with the Marines and historic events",
+      "dressrosa": "Dressrosa – Fights for a kingdom's freedom",
+      "wano": "Wano – Epic battles against the Yonko and secrets of the past"
+    },
+    "section_world": "World and Key Elements",
+    "content_world": "Important elements of the One Piece world:",
+    "sub_content_world": {
+      "grand_line": "Grand Line: ocean full of dangers and adventures",
+      "devil_fruits": "Devil Fruits: special powers that grant unique abilities",
+      "organizations": "Organizations: Marines, Shichibukai, Yonko, and Revolutionaries",
+      "treasure": "One Piece treasure: the greatest motivation for pirates and the central mystery of the story"
+    },
+    "section_fun": "Fun Facts",
+    "content_fun": "Interesting facts about One Piece:",
+    "sub_content_fun": {
+      "longest_manga": "One Piece is one of the longest and most popular manga in the world",
+      "secrets": "Contains secrets, cultural references, and Easter eggs that enrich the story",
+      "inspiration": "Inspires other series and games with its detailed and creative world"
+    }
+  },
+  "contact": {
+    "meta_title": "Contact — LogPose",
+    "message_title": "Need to reach our crew? Tell us your question or suggestion and we'll get back to you as soon as possible.",
+    "title": "Contact",
+    "subject": "Subject",
+    "subject_placeholder": "What would you like to talk about?",
+    "area_message": "Write your message for the crew...",
+    "button": "Send",
+    "message": "Message",
+    "success_message": "Message received, nakama! Thanks for reaching out. The crew will review your message and get back to you as soon as possible.",
+    "send_another": "Send another message"
+  },
+  "characters": {
+    "meta_title": "Characters — LogPose",
+    "luffy_text": "The fearless captain with a huge heart and an even bigger dream: to become the Pirate King. His rubber powers allow him to stretch and withstand blows that would be fatal to anyone else. Always optimistic and brave.",
+    "zoro_text": "The three-sword swordsman, loyal to the core and with unshakable determination. He dreams of becoming the greatest swordsman in the world. Strong, serious, and sometimes a bit absent-minded, especially with directions.",
+    "sanji_text": "The ship's chef with style and a passion for cooking… and for women. Expert in combat with kicks that can take down giants, and unmatched elegance. Always concerned with the safety and well-being of his crew.",
+    "nami_text": "The navigator and strategist of the crew. Intelligent, brave, and a lover of money… but above all, dedicated to guiding the crew safely through treacherous seas. Her knowledge of weather and cartography is invaluable.",
+    "usopp_text": "The sharpshooter and storyteller. Always creative with his inventions and weapons, a bit cowardly at first, but with a huge heart. He dreams of becoming a brave warrior of the sea and protecting his friends.",
+    "chopper_text": "The adorable reindeer doctor who can transform thanks to the Hito Hito fruit. Curious, naive, and very intelligent in medicine. Always willing to help those in need.",
+    "robin_text": "The archaeologist and scholar seeking to learn the true history of the world. Intelligent, calm, and strategic. Her power allows her to bloom parts of her body anywhere, making her very versatile in combat.",
+    "brook_text": "The skeletal musician with a cheerful and elegant soul. Master swordsman and talented musician. Despite his macabre appearance, he is fun, witty, and has a great sense of music.",
+    "jimbe_text": "The helmsman and fish-man, strong, honorable, and wise. Expert in fish-man martial arts and a great protector of his companions. Always keeps calm and balance in the toughest situations.",
+    "final_text": "And there are more characters… but we won't spoil the surprise… or will we?",
+    "final_text_two": "If you want to see which other characters join the crew throughout the story, that's on you...",
+    "view_more": "View more"
+  },
+  "not_found": {
+    "meta_title": "Page not found — LogPose",
+    "message": "Oops! We couldn't find this page.",
+    "back_home": "Back to home"
   }
 }
