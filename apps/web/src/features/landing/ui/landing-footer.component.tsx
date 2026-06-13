@@ -1,3 +1,4 @@
+import { Flex, Separator, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 
 import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
@@ -8,15 +9,21 @@ export function LandingFooterComponent() {
 
   return (
     <footer className="relative z-10 border-t border-[#a64242]/30 bg-[#080d18] px-6 py-8">
-      <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
+      <Flex
+        direction="column"
+        align="center"
+        gap="4"
+        className="mx-auto max-w-3xl text-center"
+      >
         <LandingLocaleToggleComponent />
-        <p className="text-xs leading-relaxed text-[#f4ede1]/55">
+        <Separator size="4" className="w-full max-w-xs bg-white/10" />
+        <Text as="p" size="1" color="gray" className="leading-relaxed">
           {t('landing.footer.disclaimer')}
-        </p>
-        <p className="text-xs text-[#f4ede1]/40">
+        </Text>
+        <Text as="p" size="1" color="gray" className="opacity-70">
           &copy; {year} {t('landing.footer.copyright')}
-        </p>
-      </div>
+        </Text>
+      </Flex>
     </footer>
   );
 }

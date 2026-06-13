@@ -1,3 +1,4 @@
+import { Button, DropdownMenu, Flex } from '@radix-ui/themes';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -41,7 +42,13 @@ export function LandingHeaderComponent() {
           : 'bg-transparent py-5 md:py-6'
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 md:px-8">
+      <Flex
+        align="center"
+        justify="between"
+        gap="4"
+        px="5"
+        className="mx-auto max-w-6xl md:px-8"
+      >
         <Link href="/" className="shrink-0 transition-opacity hover:opacity-90">
           <Image
             src="/landing/one-piece-logo.webp"
@@ -53,38 +60,41 @@ export function LandingHeaderComponent() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          <a
-            href="#features"
-            className="font-[family-name:var(--font-road-captain)] text-sm uppercase tracking-[0.2em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
-          >
-            {t('landing.nav.features')}
-          </a>
+        <Flex align="center" gap="4" display={{ initial: 'none', md: 'flex' }}>
+          <Button variant="ghost" highContrast asChild>
+            <a href="#features">{t('landing.nav.features')}</a>
+          </Button>
           <LandingLocaleToggleComponent />
-          <Link
-            href="/login"
-            className="font-[family-name:var(--font-road-captain)] text-sm uppercase tracking-[0.15em] text-[#f4ede1]/80 transition-colors hover:text-[#f2d9a8]"
-          >
-            {t('landing.nav.sign_in')}
-          </Link>
-          <Link
-            href="/register"
-            className="rounded-full bg-gradient-to-br from-[#f0713f] to-[#f5a261] px-5 py-2 font-[family-name:var(--font-road-captain)] text-sm uppercase tracking-[0.12em] text-[#1a0f08] shadow-[0_8px_24px_rgba(240,113,63,0.35)] transition-transform hover:-translate-y-0.5"
-          >
-            {t('landing.nav.sign_up')}
-          </Link>
-        </nav>
+          <Button variant="ghost" highContrast asChild>
+            <Link href="/login">{t('landing.nav.sign_in')}</Link>
+          </Button>
+          <Button color="orange" asChild>
+            <Link href="/register">{t('landing.nav.sign_up')}</Link>
+          </Button>
+        </Flex>
 
-        <div className="flex items-center gap-3 md:hidden">
+        <Flex align="center" gap="3" display={{ initial: 'flex', md: 'none' }}>
           <LandingLocaleToggleComponent />
-          <Link
-            href="/register"
-            className="rounded-full border border-[#f2d9a8]/40 px-3 py-1.5 font-[family-name:var(--font-road-captain)] text-xs uppercase tracking-wider text-[#f2d9a8]"
-          >
-            {t('landing.nav.sign_up')}
-          </Link>
-        </div>
-      </div>
+          <DropdownMenu.Root>
+            <DropdownMenu.Trigger>
+              <Button variant="soft" color="gray" size="2">
+                {t('landing.nav.menu')}
+              </Button>
+            </DropdownMenu.Trigger>
+            <DropdownMenu.Content align="end" size="2">
+              <DropdownMenu.Item asChild>
+                <a href="#features">{t('landing.nav.features')}</a>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item asChild>
+                <Link href="/login">{t('landing.nav.sign_in')}</Link>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item asChild>
+                <Link href="/register">{t('landing.nav.sign_up')}</Link>
+              </DropdownMenu.Item>
+            </DropdownMenu.Content>
+          </DropdownMenu.Root>
+        </Flex>
+      </Flex>
     </header>
   );
 }

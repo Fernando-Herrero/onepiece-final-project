@@ -1,3 +1,4 @@
+import { Card, Flex, Heading, Text } from '@radix-ui/themes';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'next-i18next/pages';
@@ -31,6 +32,7 @@ export function FeatureCardsComponent() {
       const cards = gsap.utils.toArray<HTMLElement>('.landing-card');
 
       gsap.set(cards, { autoAlpha: 0, y: 80, scale: 0.94 });
+
       const headChildren = headRef.current?.children;
       if (headChildren) {
         gsap.set(headChildren, { autoAlpha: 0, y: 40 });
@@ -76,37 +78,61 @@ export function FeatureCardsComponent() {
       ref={sectionRef}
       className="relative z-10 bg-gradient-to-b from-[#05070d] via-[#080d18] to-[#05070d] px-6 py-[clamp(5rem,12vh,10rem)] pb-[clamp(7rem,16vh,12rem)]"
     >
-      <div
+      <Flex
         ref={headRef}
+        direction="column"
+        align="center"
+        gap="4"
         className="mx-auto mb-[clamp(3rem,8vh,6rem)] max-w-3xl text-center"
       >
-        <h2 className="mb-4 font-[family-name:var(--font-one-piece)] text-[clamp(2rem,5vw,3.5rem)] tracking-wide text-[#f2d9a8]">
+        <Heading
+          as="h2"
+          size="8"
+          align="center"
+          className="font-[family-name:var(--font-one-piece)] tracking-wide text-[#f2d9a8]"
+        >
           {t('landing.features_title')}
-        </h2>
-        <p className="text-[clamp(1rem,2.2vw,1.2rem)] leading-relaxed text-[#f4ede1]/65">
+        </Heading>
+        <Text
+          as="p"
+          size="4"
+          color="gray"
+          align="center"
+          className="leading-relaxed"
+        >
           {t('landing.features_sub')}
-        </p>
-      </div>
+        </Text>
+      </Flex>
 
-      <div
+      <Flex
         ref={gridRef}
-        className="mx-auto flex max-w-6xl flex-wrap justify-center gap-5"
+        wrap="wrap"
+        justify="center"
+        gap="5"
+        className="mx-auto max-w-6xl"
       >
         {FEATURES.map(({ emoji, key }) => (
-          <article
+          <Card
             key={key}
-            className="landing-card landing-card-shine relative max-w-[17rem] flex-[1_1_16rem] overflow-hidden rounded-2xl border border-[#f4ede1]/10 bg-gradient-to-br from-[#1b2742]/55 to-[#0b1120]/65 p-8 backdrop-blur-sm transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-[#f2d9a8]/35 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
+            size="3"
+            className="landing-card landing-card-shine max-w-[17rem] flex-[1_1_16rem] border border-[#f4ede1]/10 bg-gradient-to-br from-[#1b2742]/55 to-[#0b1120]/65 backdrop-blur-sm transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1.5 hover:border-[#f2d9a8]/35 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
           >
-            <span className="mb-4 block text-3xl">{emoji}</span>
-            <h3 className="mb-3 font-[family-name:var(--font-road-captain)] text-xl tracking-wide text-[#f2d9a8]/90">
-              {t(`landing.cards.${key}.title`)}
-            </h3>
-            <p className="text-[0.95rem] leading-relaxed text-[#f4ede1]/62">
-              {t(`landing.cards.${key}.text`)}
-            </p>
-          </article>
+            <Flex direction="column" gap="3">
+              <Text size="6">{emoji}</Text>
+              <Heading
+                as="h3"
+                size="4"
+                className="font-[family-name:var(--font-road-captain)] tracking-wide text-[#f2d9a8]/90"
+              >
+                {t(`landing.cards.${key}.title`)}
+              </Heading>
+              <Text as="p" size="2" color="gray" className="leading-relaxed">
+                {t(`landing.cards.${key}.text`)}
+              </Text>
+            </Flex>
+          </Card>
         ))}
-      </div>
+      </Flex>
     </section>
   );
 }
