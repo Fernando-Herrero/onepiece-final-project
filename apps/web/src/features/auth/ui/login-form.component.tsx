@@ -35,7 +35,7 @@ export function LoginFormComponent() {
 
   return (
     <form
-      className="flex w-full max-w-sm flex-col gap-3 rounded-xl border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/55 to-[#0b1120]/65 p-6 shadow-[0_24px_60px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+      className="relative flex w-full max-w-sm flex-col gap-4 overflow-hidden rounded-xl border border-[#f2d9a8]/30 bg-linear-to-br from-[#1b2742]/85 via-[#101a30]/95 to-[#0b1120] p-7 shadow-[0_0_48px_rgba(242,217,168,0.1),0_28px_64px_rgba(0,0,0,0.55)] backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-[#f2d9a8]/70 before:to-transparent"
       onSubmit={event => {
         event.preventDefault();
         void form.handleSubmit();
@@ -71,7 +71,7 @@ export function LoginFormComponent() {
       <form.Subscribe selector={state => [state.isSubmitting, state.canSubmit]}>
         {([isSubmitting, canSubmit]) => (
           <button
-            className="rounded bg-orange-600 px-4 py-2 font-medium text-white disabled:opacity-60"
+            className="rounded-md bg-linear-to-r from-orange-600 to-[#a64242] px-4 py-2.5 font-road-captain text-sm uppercase tracking-wider text-white shadow-[0_8px_24px_rgba(166,66,66,0.4)] transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(166,66,66,0.5)] disabled:translate-y-0 disabled:opacity-60"
             type="submit"
             disabled={!canSubmit || isSubmitting || loginMutation.isPending}
           >

@@ -12,6 +12,9 @@ import {
   LandingMobileMenuPanel,
 } from '@/features/landing/ui/landing-mobile-menu.component';
 
+const NAV_LINK_CLASS =
+  'inline-flex shrink-0 cursor-pointer items-center rounded-md px-3 py-1.5 font-road-captain text-sm uppercase tracking-[0.12em] text-[#f4ede1]/85 transition-colors hover:bg-white/5 hover:text-[#f2d9a8]';
+
 export function LandingHeaderComponent() {
   const { t } = useTranslation();
   const router = useRouter();
@@ -84,18 +87,19 @@ export function LandingHeaderComponent() {
 
           <Flex
             align="center"
-            gap="2"
+            gap="3"
             display={{ initial: 'none', md: 'flex' }}
+            className="shrink-0"
           >
-            <Button variant="ghost" highContrast asChild>
-              <Link href="/#features">{t('landing.nav.features')}</Link>
-            </Button>
+            <Link href="/#features" className={NAV_LINK_CLASS}>
+              {t('landing.nav.features')}
+            </Link>
 
             <DropdownMenu.Root>
               <DropdownMenu.Trigger>
-                <Button variant="ghost" highContrast>
+                <button type="button" className={NAV_LINK_CLASS}>
                   {t('landing.nav.onepiece')}
-                </Button>
+                </button>
               </DropdownMenu.Trigger>
               <DropdownMenu.Content>
                 <DropdownMenu.Item asChild>
@@ -112,9 +116,9 @@ export function LandingHeaderComponent() {
 
             <DropdownMenu.Root>
               <DropdownMenu.Trigger>
-                <Button variant="ghost" highContrast>
+                <button type="button" className={NAV_LINK_CLASS}>
                   {t('landing.nav.help')}
-                </Button>
+                </button>
               </DropdownMenu.Trigger>
               <DropdownMenu.Content>
                 <DropdownMenu.Item asChild>
@@ -127,10 +131,16 @@ export function LandingHeaderComponent() {
             </DropdownMenu.Root>
 
             <LandingLocaleToggleComponent />
-            <Button variant="ghost" highContrast asChild>
+            <Button
+              variant="soft"
+              color="orange"
+              size="2"
+              className="!m-0 shrink-0"
+              asChild
+            >
               <Link href="/login">{t('landing.nav.sign_in')}</Link>
             </Button>
-            <Button color="orange" asChild>
+            <Button color="orange" size="2" className="!m-0 shrink-0" asChild>
               <Link href="/register">{t('landing.nav.sign_up')}</Link>
             </Button>
           </Flex>

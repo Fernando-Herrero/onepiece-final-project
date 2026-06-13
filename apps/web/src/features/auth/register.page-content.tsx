@@ -9,8 +9,8 @@ export default function RegisterPageContent() {
   const { t } = useTranslation();
 
   return (
-    <LandingPublicLayout title={t('auth.register_title')}>
-      <div className="flex justify-center py-8">
+    <LandingPublicLayout title={t('auth.register_title')} centered>
+      <div className="flex justify-center">
         <ErrorBoundary FallbackComponent={HomeErrorFallbackComponent}>
           <RegisterFormComponent />
         </ErrorBoundary>

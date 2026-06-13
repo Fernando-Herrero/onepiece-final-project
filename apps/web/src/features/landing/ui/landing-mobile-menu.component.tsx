@@ -111,7 +111,7 @@ export function LandingMobileMenuPanel({
           pt="6"
           className="mt-auto w-full border-t border-white/15"
         >
-          <Button variant="outline" highContrast className="flex-1" asChild>
+          <Button variant="soft" color="orange" className="flex-1" asChild>
             <Link href="/login" onClick={onClose}>
               {t('landing.nav.sign_in')}
             </Link>

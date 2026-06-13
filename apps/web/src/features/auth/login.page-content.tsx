@@ -9,8 +9,8 @@ export default function LoginPageContent() {
   const { t } = useTranslation();
 
   return (
-    <LandingPublicLayout title={t('auth.login_title')}>
-      <div className="flex justify-center py-8">
+    <LandingPublicLayout title={t('auth.login_title')} centered>
+      <div className="flex justify-center">
         <ErrorBoundary FallbackComponent={HomeErrorFallbackComponent}>
           <LoginFormComponent />
         </ErrorBoundary>
