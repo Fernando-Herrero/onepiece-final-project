@@ -1,4 +1,4 @@
-import { createUserSchema } from '@logpose/contracts/auth/schemas';
+import { createUserSchema } from '@logpose/contracts/features/auth/schemas';
 import * as z from 'zod/v4';
 
 const registerFormBaseSchema = createUserSchema.extend({

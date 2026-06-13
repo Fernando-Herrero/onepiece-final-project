@@ -1,0 +1,1 @@
+export { contract } from '@logpose/contracts/contract';

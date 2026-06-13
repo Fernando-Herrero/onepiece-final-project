@@ -1,4 +1,4 @@
-import { loginSchema } from '@logpose/contracts/auth/schemas';
+import { loginSchema } from '@logpose/contracts/features/auth/schemas';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { toast } from 'sonner';
@@ -6,10 +6,10 @@ import { toast } from 'sonner';
 import {
   getErrorMessage,
   useLoginMutation,
-} from '@/features/auth/api/auth.hooks';
+} from '@/features/auth/api/use-auth-room';
 import { useAppForm } from '@/features/auth/form/use-auth-form';
 
-export function LoginForm() {
+export function LoginFormComponent() {
   const { t } = useTranslation();
   const loginMutation = useLoginMutation();
 

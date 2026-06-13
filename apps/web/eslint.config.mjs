@@ -23,6 +23,13 @@ export default [
   },
   ...tseslint.configs.recommended,
   {
+    settings: {
+      'import/resolver': {
+        node: {
+          paths: [import.meta.dirname],
+        },
+      },
+    },
     plugins: {
       turbo: turboPlugin,
       'simple-import-sort': simpleImportSort,
@@ -42,7 +49,12 @@ export default [
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unsafe-function-type': 'warn',
       '@typescript-eslint/no-import-type-side-effects': 'error',
-      'import/no-extraneous-dependencies': 'error',
+      'import/no-extraneous-dependencies': [
+        'error',
+        {
+          packageDir: import.meta.dirname,
+        },
+      ],
       'no-restricted-imports': [
         'error',
         {

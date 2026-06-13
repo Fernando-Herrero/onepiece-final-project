@@ -26,16 +26,16 @@
     "form_invalid": "Revisa los campos del formulario",
     "generic_error": "Ha ocurrido un error"
   },
+  "errors": {
+    "title": "Algo salió mal",
+    "retry": "Reintentar",
+    "back_home": "Volver al inicio"
+  },
   "home": {
     "title": "One Piece LogPose v3",
     "api_ok": "API OK — {{count}} usuarios",
     "checking_api": "Comprobando API…",
     "login": "Login",
     "register": "Register"
-  },
-  "errors": {
-    "title": "Algo salió mal",
-    "retry": "Reintentar",
-    "back_home": "Volver al inicio"
   }
 }

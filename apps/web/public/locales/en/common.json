@@ -26,16 +26,16 @@
     "form_invalid": "Please check the form fields",
     "generic_error": "Something went wrong"
   },
+  "errors": {
+    "title": "Something went wrong",
+    "retry": "Retry",
+    "back_home": "Back to home"
+  },
   "home": {
     "title": "One Piece LogPose v3",
     "api_ok": "API OK — {{count}} users",
     "checking_api": "Checking API…",
     "login": "Login",
     "register": "Register"
-  },
-  "errors": {
-    "title": "Something went wrong",
-    "retry": "Retry",
-    "back_home": "Back to home"
   }
 }

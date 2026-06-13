@@ -6,16 +6,12 @@ import {
 import { useRouter } from 'next/router';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
-import {
-  authQueryOptions,
-  usersQueryOptions,
-} from '@/features/auth/api/query-options';
-import {
-  clearAuthToken,
-  setAuthToken,
-} from '@/features/auth/auth.storage';
+import { clearAuthToken, setAuthToken } from '@/features/auth/auth.storage';
 import type { RegisterFormValues } from '@/features/auth/register-form.schema';
 import { client } from '@/integrations/orpc/orpc.client';
+import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
+
+const authRoomQueryOptions = allQueriesOptions.auth;
 
 function getErrorMessage(error: unknown) {
   if (error instanceof Error) {
@@ -26,11 +22,7 @@ function getErrorMessage(error: unknown) {
 }
 
 export function useMeSuspenseQuery() {
-  return useSuspenseQuery(authQueryOptions.me());
-}
-
-export function useUsersListSuspenseQuery() {
-  return useSuspenseQuery(usersQueryOptions.list());
+  return useSuspenseQuery(authRoomQueryOptions.me());
 }
 
 export function useLoginMutation() {

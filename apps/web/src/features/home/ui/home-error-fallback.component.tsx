@@ -3,7 +3,10 @@ import type { FallbackProps } from 'react-error-boundary';
 
 import { PageError } from '@/components/error-boundary/page-error';
 
-export function HomeErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
+export function HomeErrorFallbackComponent({
+  error,
+  resetErrorBoundary,
+}: FallbackProps) {
   const { t } = useTranslation();
 
   return (

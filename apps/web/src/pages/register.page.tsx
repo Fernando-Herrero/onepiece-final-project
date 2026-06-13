@@ -1,6 +1,6 @@
 import type { GetServerSideProps } from 'next';
 
-import { RegisterPageContent } from '@/features/auth/ui/register-page-content';
+import RegisterPageContent from '@/features/auth/register.page-content';
 import { getDefaultI18nProps } from '@/integrations/i18n/server';
 
 export default function RegisterPage() {

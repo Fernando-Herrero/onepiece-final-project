@@ -5,11 +5,11 @@ import { toast } from 'sonner';
 import {
   getErrorMessage,
   useRegisterMutation,
-} from '@/features/auth/api/auth.hooks';
+} from '@/features/auth/api/use-auth-room';
 import { useAppForm } from '@/features/auth/form/use-auth-form';
 import { registerFormSchema } from '@/features/auth/register-form.schema';
 
-export function RegisterForm() {
+export function RegisterFormComponent() {
   const { t } = useTranslation();
   const registerMutation = useRegisterMutation();
 

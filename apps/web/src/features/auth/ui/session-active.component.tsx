@@ -1,12 +1,11 @@
-import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
 import {
   useLogoutMutation,
   useMeSuspenseQuery,
-} from '@/features/auth/api/auth.hooks';
+} from '@/features/auth/api/use-auth-room';
 
-export function HomeSession() {
+export function SessionActiveComponent() {
   const { t } = useTranslation();
   const { data: me } = useMeSuspenseQuery();
   const logoutMutation = useLogoutMutation();
@@ -28,16 +27,5 @@ export function HomeSession() {
         {t('auth.logout')}
       </button>
     </div>
-  );
-}
-
-export function HomeGuestLinks() {
-  const { t } = useTranslation();
-
-  return (
-    <nav className="flex gap-4 text-sm underline">
-      <Link href="/login">{t('home.login')}</Link>
-      <Link href="/register">{t('home.register')}</Link>
-    </nav>
   );
 }
