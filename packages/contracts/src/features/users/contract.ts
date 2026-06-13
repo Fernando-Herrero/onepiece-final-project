@@ -8,6 +8,7 @@ import {
 } from '../../common/user.schemas.js';
 import {
   deleteUserOutputSchema,
+  followOutputSchema,
   updateUserInputSchema,
   userStatsSchema,
 } from './schemas.js';
@@ -28,6 +29,18 @@ export const usersErrors = {
   PRIVACY_DENIED: {
     status: 403,
     message: 'Privacy settings prevent access',
+  },
+  CANNOT_FOLLOW_SELF: {
+    status: 400,
+    message: 'No puedes seguirte a ti mismo',
+  },
+  ALREADY_FOLLOWING: {
+    status: 400,
+    message: 'Ya sigues a este usuario',
+  },
+  NOT_FOLLOWING: {
+    status: 400,
+    message: 'No sigues a este usuario',
   },
 } as const;
 
@@ -152,4 +165,26 @@ export const usersContract = oc
       .input(userIdParamsSchema)
       .errors(usersErrors)
       .output(deleteUserOutputSchema),
+
+    follow: oc
+      .route({
+        method: 'POST',
+        path: '/{id}/follow',
+        inputStructure: 'detailed',
+        description: 'Follow a user',
+      })
+      .input(userIdParamsSchema)
+      .errors(usersErrors)
+      .output(followOutputSchema),
+
+    unfollow: oc
+      .route({
+        method: 'POST',
+        path: '/{id}/unfollow',
+        inputStructure: 'detailed',
+        description: 'Unfollow a user',
+      })
+      .input(userIdParamsSchema)
+      .errors(usersErrors)
+      .output(followOutputSchema),
   });

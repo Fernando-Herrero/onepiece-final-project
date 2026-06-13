@@ -79,7 +79,7 @@ function serializeCommentAuthor(author: UserDoc) {
 function getPopulatedCommentAuthor(comment: CommentDoc): UserDoc {
   const author = comment.author as UserDoc | Types.ObjectId;
 
-  if (!author || !('username' in author)) {
+  if (!('username' in author)) {
     throw new Error('Comment author must be populated before serialization');
   }
 

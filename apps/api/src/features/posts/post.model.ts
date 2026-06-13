@@ -135,7 +135,7 @@ function serializePostAuthor(author: UserDoc) {
 function getPopulatedAuthor(post: PostDoc): UserDoc {
   const author = post.userId as UserDoc | Types.ObjectId;
 
-  if (!author || !('username' in author)) {
+  if (!('username' in author)) {
     throw new Error('Post author must be populated before serialization');
   }
 

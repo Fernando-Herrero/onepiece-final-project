@@ -7,6 +7,7 @@ import {
   getOptionalAuthUser,
   getRequiredAuthUser,
 } from '../auth/auth.router.js';
+import { createNotification } from '../notifications/notification.model.js';
 import { findActivePostById, Post } from '../posts/post.model.js';
 import { User } from '../users/user.model.js';
 import {
@@ -122,6 +123,15 @@ const create = os.create
       throw new ORPCError('COMMENT_NOT_FOUND');
     }
 
+    const postOwnerId = post.userId.toString();
+    await createNotification({
+      type: 'comment',
+      to: postOwnerId,
+      from: context.user!.id,
+      postId: input.postId,
+      commentId: populated._id.toString(),
+    });
+
     return serializeComment(populated, context.user!.id);
   });
 
@@ -193,6 +203,16 @@ const toggleLike = os.toggleLike
     }
 
     const liked = !alreadyLiked;
+
+    if (liked) {
+      await createNotification({
+        type: 'like',
+        to: comment.author.toString(),
+        from: context.user!.id,
+        postId: comment.postId.toString(),
+        commentId: id,
+      });
+    }
 
     return {
       liked,

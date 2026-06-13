@@ -9,6 +9,7 @@ import {
   getOptionalAuthUser,
   getRequiredAuthUser,
 } from '../auth/auth.router.js';
+import { createNotification } from '../notifications/notification.model.js';
 import { User, type UserDoc } from '../users/user.model.js';
 import {
   assertTextLength,
@@ -172,7 +173,7 @@ const deletePost = os.delete
 const toggleLike = os.toggleLike
   .use(requireAuth)
   .handler(async ({ input, context }) => {
-    await loadPost(input.params.id);
+    const post = await loadPost(input.params.id);
 
     const userObjectId = new mongoose.Types.ObjectId(context.user!.id);
     const result = await togglePostField(
@@ -186,6 +187,17 @@ const toggleLike = os.toggleLike
     }
 
     const added = !result.alreadyHad;
+
+    if (added) {
+      const ownerId = getPostOwnerId(post.userId);
+      await createNotification({
+        type: 'like',
+        to: ownerId,
+        from: context.user!.id,
+        postId: input.params.id,
+      });
+    }
+
     return {
       liked: added,
       likesCount: Math.max(0, result.updated.likesCount),
@@ -196,7 +208,7 @@ const toggleLike = os.toggleLike
 const toggleBookmark = os.toggleBookmark
   .use(requireAuth)
   .handler(async ({ input, context }) => {
-    await loadPost(input.params.id);
+    const post = await loadPost(input.params.id);
 
     const userObjectId = new mongoose.Types.ObjectId(context.user!.id);
     const result = await togglePostField(
@@ -210,6 +222,17 @@ const toggleBookmark = os.toggleBookmark
     }
 
     const added = !result.alreadyHad;
+
+    if (added) {
+      const ownerId = getPostOwnerId(post.userId);
+      await createNotification({
+        type: 'bookmark',
+        to: ownerId,
+        from: context.user!.id,
+        postId: input.params.id,
+      });
+    }
+
     return {
       bookmarked: added,
       bookmarksCount: Math.max(0, result.updated.bookmarksCount),

@@ -21,3 +21,10 @@ export const deleteUserOutputSchema = z.object({
 export const updateUserInputSchema = userIdParamsSchema.extend({
   body: updateUserSchema,
 });
+
+export const followOutputSchema = z.object({
+  message: z.string(),
+  following: z.boolean(),
+  followersCount: z.number(),
+  followingCount: z.number(),
+});

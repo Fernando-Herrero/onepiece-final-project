@@ -8,6 +8,7 @@ import {
   getRequiredAuthUser,
 } from '../auth/auth.router.js';
 import { Comment } from '../comments/comment.model.js';
+import { createNotification } from '../notifications/notification.model.js';
 import {
   Post,
   POST_AUTHOR_SELECT,
@@ -271,6 +272,102 @@ const deleteUser = os.delete
     };
   });
 
+const follow = os.follow.use(requireAuth).handler(async ({ input, context }) => {
+  const viewerId = context.user!.id;
+
+  if (input.params.id === viewerId) {
+    throw new ORPCError('CANNOT_FOLLOW_SELF');
+  }
+
+  const target = await findUserById(input.params.id);
+
+  if (!target) {
+    throw new ORPCError('USER_NOT_FOUND');
+  }
+
+  const viewer = await findUserById(viewerId);
+
+  if (!viewer) {
+    throw new ORPCError('UNAUTHORIZED');
+  }
+
+  const targetObjectId = new mongoose.Types.ObjectId(input.params.id);
+  const viewerObjectId = new mongoose.Types.ObjectId(viewerId);
+
+  if (viewer.following.some(id => id.equals(targetObjectId))) {
+    throw new ORPCError('ALREADY_FOLLOWING');
+  }
+
+  await User.findByIdAndUpdate(viewerId, {
+    $addToSet: { following: targetObjectId },
+  });
+  await User.findByIdAndUpdate(input.params.id, {
+    $addToSet: { followers: viewerObjectId },
+  });
+
+  const updatedViewer = await findUserById(viewerId);
+  const updatedTarget = await findUserById(input.params.id);
+
+  await createNotification({
+    type: 'follow',
+    to: input.params.id,
+    from: viewerId,
+  });
+
+  return {
+    message: `Ahora sigues a @${target.username}`,
+    following: true,
+    followersCount: updatedTarget?.followers.length ?? 0,
+    followingCount: updatedViewer?.following.length ?? 0,
+  };
+});
+
+const unfollow = os.unfollow
+  .use(requireAuth)
+  .handler(async ({ input, context }) => {
+    const viewerId = context.user!.id;
+
+    if (input.params.id === viewerId) {
+      throw new ORPCError('CANNOT_FOLLOW_SELF');
+    }
+
+    const target = await findUserById(input.params.id);
+
+    if (!target) {
+      throw new ORPCError('USER_NOT_FOUND');
+    }
+
+    const viewer = await findUserById(viewerId);
+
+    if (!viewer) {
+      throw new ORPCError('UNAUTHORIZED');
+    }
+
+    const targetObjectId = new mongoose.Types.ObjectId(input.params.id);
+    const viewerObjectId = new mongoose.Types.ObjectId(viewerId);
+
+    if (!viewer.following.some(id => id.equals(targetObjectId))) {
+      throw new ORPCError('NOT_FOLLOWING');
+    }
+
+    await User.findByIdAndUpdate(viewerId, {
+      $pull: { following: targetObjectId },
+    });
+    await User.findByIdAndUpdate(input.params.id, {
+      $pull: { followers: viewerObjectId },
+    });
+
+    const updatedViewer = await findUserById(viewerId);
+    const updatedTarget = await findUserById(input.params.id);
+
+    return {
+      message: `Ya no sigues a @${target.username}`,
+      following: false,
+      followersCount: updatedTarget?.followers.length ?? 0,
+      followingCount: updatedViewer?.following.length ?? 0,
+    };
+  });
+
 export const usersRouter = os.router({
   list,
   getStats,
@@ -283,4 +380,6 @@ export const usersRouter = os.router({
   getById,
   update,
   delete: deleteUser,
+  follow,
+  unfollow,
 });

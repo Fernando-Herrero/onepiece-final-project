@@ -31,6 +31,7 @@ export type UserDoc = HydratedDocument<{
     swords: number[];
     boats: number[];
   };
+  completedEpisodes: number[];
   privacy: {
     showPosts: boolean;
     showLikes: boolean;
@@ -85,6 +86,7 @@ const userSchema = new Schema(
       swords: { type: [Number], default: [] },
       boats: { type: [Number], default: [] },
     },
+    completedEpisodes: { type: [Number], default: [] },
     privacy: {
       showPosts: { type: Boolean, default: true },
       showLikes: { type: Boolean, default: true },
