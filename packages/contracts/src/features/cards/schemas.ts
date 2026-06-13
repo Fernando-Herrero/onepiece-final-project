@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { mongoIdParamsSchema } from '../../common/user.schemas.js';
+import { mongoIdParamsSchema } from '../../common/id.schemas.js';
 import { cardTypeSchema } from '../../common/card.schemas.js';
 
 export const cardTypeParamsSchema = z.object({

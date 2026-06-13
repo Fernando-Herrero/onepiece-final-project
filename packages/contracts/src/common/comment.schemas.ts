@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { postAuthorSchema } from './post.schemas.js';
-import { mongoIdSchema } from './user.schemas.js';
+import { mongoIdSchema } from './id.schemas.js';
 
 export const createCommentSchema = z
   .object({

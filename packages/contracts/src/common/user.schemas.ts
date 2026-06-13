@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+import { mongoIdParamsSchema } from './id.schemas.js';
+
 export const userRoleSchema = z.enum(['user', 'admin']);
 
 export const privacySchema = z.object({
@@ -62,20 +64,6 @@ export const updateUserSchema = profileFieldsSchema
   .strict()
   .refine(data => Object.keys(data).length > 0, {
     message: 'Debes enviar al menos un campo para actualizar',
-  });
-
-export const mongoIdSchema = z
-  .string()
-  .regex(/^[0-9a-fA-F]{24}$/, 'ID de usuario no válido');
-
-export const mongoIdParamsSchema = <Field extends string = 'id'>(
-  field: Field = 'id' as Field,
-) =>
-  z.object({
-    params: z.object({ [field]: mongoIdSchema } as Record<
-      Field,
-      typeof mongoIdSchema
-    >),
   });
 
 export const userIdParamsSchema = mongoIdParamsSchema();

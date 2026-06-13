@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { mongoIdParamsSchema } from '../../common/user.schemas.js';
+import { mongoIdParamsSchema } from '../../common/id.schemas.js';
 
 export const commentIdParamsSchema = mongoIdParamsSchema();
 
