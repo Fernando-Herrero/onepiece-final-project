@@ -37,5 +37,38 @@
     "checking_api": "Comprobando API…",
     "login": "Login",
     "register": "Register"
+  },
+  "landing": {
+    "tagline": "Sigue · Colecciona · Navega",
+    "scroll": "Scroll",
+    "features_title": "Tu viaje empieza aquí",
+    "features_sub": "Sigue tu serie favorita, desbloquea recompensas y conecta con otros fans en un único diario de tripulación.",
+    "cards": {
+      "dashboard": {
+        "title": "Dashboard personal",
+        "text": "Notificaciones en tiempo real, último capítulo visto y el progreso de tu serie, todo en un mismo centro de control."
+      },
+      "social": {
+        "title": "Red social integrada",
+        "text": "Publica tus análisis, da like, comenta y repostea. Sigue a otros fans y descubre lo mejor de la tripulación."
+      },
+      "content": {
+        "title": "Contenido organizado",
+        "text": "Capítulos y arcos estructurados cronológicamente, desbloqueados poco a poco según avanzas."
+      },
+      "gamification": {
+        "title": "Niveles y rankings",
+        "text": "Cada capítulo suma experiencia. Sube de nivel, desbloquea coleccionables y compite en rankings globales."
+      },
+      "progress": {
+        "title": "Progreso de serie",
+        "text": "Mapea cada saga y arco. Tu LogPose siempre apunta hacia dónde se dirige tu aventura."
+      },
+      "mobile": {
+        "title": "Mobile-first",
+        "text": "Navegación fluida y rápida adaptada a cualquier pantalla, para que tu viaje no se detenga."
+      }
+    },
+    "cta_title": "¿Listo para zarpar?"
   }
 }

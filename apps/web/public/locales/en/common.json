@@ -37,5 +37,38 @@
     "checking_api": "Checking API…",
     "login": "Login",
     "register": "Register"
+  },
+  "landing": {
+    "tagline": "Track · Collect · Sail",
+    "scroll": "Scroll",
+    "features_title": "Your voyage starts here",
+    "features_sub": "Follow your favourite series, unlock rewards and connect with fans in a single crew log.",
+    "cards": {
+      "dashboard": {
+        "title": "Personal dashboard",
+        "text": "Real-time notifications, last episode watched and your series progress, all in one control center."
+      },
+      "social": {
+        "title": "Built-in social",
+        "text": "Post your takes, like, comment and repost. Follow other fans and discover the best of the crew."
+      },
+      "content": {
+        "title": "Organized content",
+        "text": "Chapters and arcs structured chronologically, unlocked gradually as you advance."
+      },
+      "gamification": {
+        "title": "Levels & rankings",
+        "text": "Every episode earns XP. Climb the ranks, unlock collectibles and compete on global leaderboards."
+      },
+      "progress": {
+        "title": "Series progress",
+        "text": "Map every saga and arc. Your LogPose always points to where your adventure is headed."
+      },
+      "mobile": {
+        "title": "Mobile-first",
+        "text": "Smooth, fast navigation tuned for any screen size, so your journey never stops."
+      }
+    },
+    "cta_title": "Ready to set sail?"
   }
 }

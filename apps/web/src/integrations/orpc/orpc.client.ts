@@ -11,7 +11,7 @@ const link = new OpenAPILink(contract, {
       throw new Error('oRPC client is only available in the browser');
     }
 
-    return `${window.location.origin}/api`;
+    return `${window.location.origin}`;
   },
   headers: () => {
     const token = getAuthToken();

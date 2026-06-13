@@ -1,1 +1,377 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'OnePiece';
+  src: url('/landing/fonts/OnePiece.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RoadCaptain';
+  src: url('/landing/fonts/RoadCaptain.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------------------------------------------------------------------
+   Landing — cinematic mask reveal (GTA VI inspired)
+   The hero image is clipped by the One Piece logo. A GPU-accelerated transform
+   on the mask layer (with a reciprocal counter-scale on the image) zooms the
+   logo from full-screen down to an emblem, while a veil dissolves the rest of
+   the frame into a deep cinematic gradient.
+--------------------------------------------------------------------------- */
+
+.landing {
+  --logo-size: clamp(280px, 58vh, 88vw);
+  background: #05070d;
+  color: #f4ede1;
+}
+
+.landing-hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Deep gradient that is revealed around the emblem as the veil dissolves. */
+.landing-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 80% at 50% 18%, #1b2742 0%, #0b1120 45%, #05070d 100%),
+    linear-gradient(180deg, #060912 0%, #0a0f1c 60%, #05070d 100%);
+}
+
+/* The image clipped to the logo shape. Scaled via transform for smoothness. */
+.landing-mask {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: url('/landing/logo-mask.svg');
+  mask-image: url('/landing/logo-mask.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: var(--logo-size) auto;
+  mask-size: var(--logo-size) auto;
+  transform: scale(8);
+  transform-origin: center center;
+  will-change: transform;
+  filter: drop-shadow(0 30px 80px rgba(0, 0, 0, 0.55));
+}
+
+/* Full-bleed copy of the hero image stacked above the mask at the start, so
+   the reveal begins on a complete frame and the mask's holes never show until
+   it has shrunk past the viewport. */
+.landing-veil {
+  position: absolute;
+  inset: 0;
+  will-change: opacity;
+}
+
+.landing-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.landing-mask .landing-img {
+  transform: scale(0.125);
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Cinematic darkening from the edges for depth. */
+.landing-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(
+      75% 60% at 50% 42%,
+      transparent 40%,
+      rgba(5, 7, 13, 0.85) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5, 7, 13, 0.4) 0%,
+      transparent 22%,
+      transparent 70%,
+      rgba(5, 7, 13, 0.92) 100%
+    );
+}
+
+/* Film grain overlay. */
+.landing-grain {
+  position: absolute;
+  inset: -50%;
+  pointer-events: none;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: landing-grain-shift 0.6s steps(2) infinite;
+}
+
+@keyframes landing-grain-shift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-4%, 3%);
+  }
+}
+
+.landing-title {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  margin: 0;
+  font-family: 'OnePiece', serif;
+  font-size: clamp(3.5rem, 13vw, 12rem);
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #f2d9a8;
+  opacity: 0;
+  text-shadow:
+    0 2px 0 #2a1c12,
+    0 0 24px rgba(242, 217, 168, 0.45),
+    0 0 60px rgba(220, 150, 70, 0.35);
+}
+
+.landing-tagline {
+  position: absolute;
+  left: 50%;
+  top: calc(58% + clamp(4rem, 14vw, 13rem));
+  transform: translate(-50%, 0);
+  z-index: 10;
+  margin: 0;
+  font-family: 'RoadCaptain', sans-serif;
+  font-size: clamp(0.9rem, 2.2vw, 1.4rem);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(244, 237, 225, 0.75);
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.landing-scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: 4vh;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'RoadCaptain', sans-serif;
+  letter-spacing: 0.3em;
+  font-size: clamp(0.95rem, 2.4vw, 1.15rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(244, 237, 225, 0.85);
+  text-shadow:
+    0 1px 12px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.45);
+}
+
+.landing-scroll-cue::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+  width: 240px;
+  height: 200px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(5, 7, 13, 0.6) 0%,
+    rgba(5, 7, 13, 0.32) 38%,
+    rgba(5, 7, 13, 0) 72%
+  );
+}
+
+.landing-scroll-cue svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: landing-bounce 1.8s ease-in-out infinite;
+}
+
+@keyframes landing-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
+
+/* ---- Features section ---------------------------------------------------- */
+
+.landing-features {
+  position: relative;
+  z-index: 1;
+  padding: clamp(5rem, 12vh, 10rem) 1.5rem clamp(7rem, 16vh, 12rem);
+  background: linear-gradient(180deg, #05070d 0%, #080d18 40%, #05070d 100%);
+}
+
+.landing-features-head {
+  max-width: 48rem;
+  margin: 0 auto clamp(3rem, 8vh, 6rem);
+  text-align: center;
+}
+
+.landing-features-title {
+  font-family: 'OnePiece', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #f2d9a8;
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+}
+
+.landing-features-sub {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.7;
+  color: rgba(244, 237, 225, 0.65);
+  margin: 0;
+}
+
+.landing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.landing-card {
+  flex: 1 1 16rem;
+  max-width: 17rem;
+  position: relative;
+  padding: 2rem 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(244, 237, 225, 0.1);
+  background: linear-gradient(
+    150deg,
+    rgba(27, 39, 66, 0.55) 0%,
+    rgba(11, 17, 32, 0.65) 100%
+  );
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+  will-change: transform, opacity;
+}
+
+.landing-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(242, 217, 168, 0.35);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.landing-card-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.landing-card-title {
+  font-family: 'RoadCaptain', sans-serif;
+  font-size: 1.35rem;
+  color: #f2d9a8;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.landing-card-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(244, 237, 225, 0.62);
+  margin: 0;
+}
+
+.landing-cta {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 1.5rem clamp(6rem, 14vh, 10rem);
+  background: #05070d;
+}
+
+.landing-cta-title {
+  font-family: 'OnePiece', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #f2d9a8;
+  margin: 0 0 2rem;
+}
+
+.landing-cta-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 11rem;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  font-family: 'RoadCaptain', sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.landing-btn-primary {
+  background: linear-gradient(135deg, #f0713f 0%, #f5a261 100%);
+  color: #1a0f08;
+  box-shadow: 0 12px 30px rgba(240, 113, 63, 0.35);
+}
+
+.landing-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 44px rgba(240, 113, 63, 0.5);
+}
+
+.landing-btn-ghost {
+  border: 1px solid rgba(244, 237, 225, 0.3);
+  color: #f4ede1;
+}
+
+.landing-btn-ghost:hover {
+  transform: translateY(-3px);
+  border-color: rgba(242, 217, 168, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-grain,
+  .landing-scroll-cue svg {
+    animation: none;
+  }
+}
