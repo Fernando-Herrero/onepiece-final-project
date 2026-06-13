@@ -42,6 +42,19 @@ export function HeroMaskComponent() {
       return;
     }
 
+    gsap.fromTo(
+      scrollCueRef.current,
+      { autoAlpha: 0, y: 20, filter: 'blur(10px)' },
+      {
+        autoAlpha: 1,
+        y: 0,
+        filter: 'blur(0px)',
+        duration: 1.1,
+        delay: 0.7,
+        ease: 'power2.out',
+      },
+    );
+
     const ctx = gsap.context(() => {
       const proxy = { s: MASK_SCALE };
 

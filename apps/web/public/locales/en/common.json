@@ -69,6 +69,15 @@
         "text": "Smooth, fast navigation tuned for any screen size, so your journey never stops."
       }
     },
-    "cta_title": "Ready to set sail?"
+    "cta_title": "Ready to set sail?",
+    "nav": {
+      "features": "Features",
+      "sign_in": "Sign in",
+      "sign_up": "Sign up"
+    },
+    "footer": {
+      "disclaimer": "LogPose is a fan app for tracking One Piece progress. For personal use only, not for commercial purposes.",
+      "copyright": "LogPose. All rights reserved."
+    }
   }
 }

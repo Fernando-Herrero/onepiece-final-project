@@ -1,28 +1,23 @@
-import Link from 'next/link';
-import { useTranslation } from 'next-i18next/pages';
-
 import { FeatureCardsComponent } from '@/features/landing/ui/feature-cards.component';
 import { HeroMaskComponent } from '@/features/landing/ui/hero-mask.component';
+import { LandingCtaComponent } from '@/features/landing/ui/landing-cta.component';
+import { LandingFooterComponent } from '@/features/landing/ui/landing-footer.component';
+import { LandingHeaderComponent } from '@/features/landing/ui/landing-header.component';
 
 export default function LandingPageContent() {
-  const { t } = useTranslation();
-
   return (
-    <div className="landing">
+    <div className="landing scroll-smooth bg-[#05070d] text-[#f4ede1]">
+      <LandingHeaderComponent />
       <HeroMaskComponent />
-      <FeatureCardsComponent />
 
-      <section className="landing-cta">
-        <h2 className="landing-cta-title">{t('landing.cta_title')}</h2>
-        <div className="landing-cta-actions">
-          <Link href="/register" className="landing-btn landing-btn-primary">
-            {t('home.register')}
-          </Link>
-          <Link href="/login" className="landing-btn landing-btn-ghost">
-            {t('home.login')}
-          </Link>
-        </div>
-      </section>
+      <div
+        className="relative z-10 mx-auto h-px max-w-4xl bg-gradient-to-r from-transparent via-[#f2d9a8]/35 to-transparent"
+        aria-hidden="true"
+      />
+
+      <FeatureCardsComponent />
+      <LandingCtaComponent />
+      <LandingFooterComponent />
     </div>
   );
 }

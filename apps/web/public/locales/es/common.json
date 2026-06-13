@@ -69,6 +69,15 @@
         "text": "Navegación fluida y rápida adaptada a cualquier pantalla, para que tu viaje no se detenga."
       }
     },
-    "cta_title": "¿Listo para zarpar?"
+    "cta_title": "¿Listo para zarpar?",
+    "nav": {
+      "features": "Features",
+      "sign_in": "Login",
+      "sign_up": "Registrarse"
+    },
+    "footer": {
+      "disclaimer": "LogPose es una app de fans para el seguimiento de progreso de One Piece. Contenido para uso personal, sin fines comerciales.",
+      "copyright": "LogPose. Todos los derechos reservados."
+    }
   }
 }
