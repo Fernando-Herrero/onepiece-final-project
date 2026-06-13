@@ -1,0 +1,43 @@
+---
+description: Convenciones del monorepo LogPose — stack, estructura, fases, skills obligatorias
+alwaysApply: true
+---
+
+# LogPose — Rules del proyecto
+
+## Antes de codificar
+
+1. Leer `AGENTS.md` y `docs/MIGRATION.md`
+2. Consultar `docs/CONVENTIONS.md` y `docs/REFERENCE-ADMIN.md` si aplica
+3. Identificar la fase y el módulo actual — no saltar pasos
+
+## Stack
+
+- Monorepo pnpm 11.6 + Turbo, Node 24.16.0
+- `@logpose/web`: Next 16.2.4, Pages Router (`*.page.tsx`), Tailwind 4, TanStack Query
+- `@logpose/api`: Express 5 + Mongoose (no NestJS)
+- `@logpose/contracts`: oRPC + Zod — fuente de verdad de tipos
+
+## Patrones obligatorios
+
+- Server state → TanStack Query + cliente oRPC (no Context, no axios directo)
+- Context solo UI: modal, device, i18n
+- Contrato oRPC en `packages/contracts` **antes** de implementar handler o pantalla
+- Migrar un módulo por turno; verificar en pantalla tras cada paso
+- JSX legacy → TSX progresivo al migrar
+
+## Anti-patrones (ver también ~/.cursor/rules/anti-patterns.mdc)
+
+- Helpers para `.length`, `!!`, checks triviales
+- `useMemo`/`useCallback`/`memo` sin evidencia
+- Archivos nuevos para un solo uso
+- NestJS, auth-next, MUI, K8s
+
+## Referencia
+
+- Replicar **estructura** de `admin` (monorepo, oRPC, Pages Router, turbo dev)
+- Código legacy en `One-piece-LogPose` y `api-onepiece` — solo migrar, no reescribir desde cero sin necesidad
+
+## Verificación
+
+Tras cada implementación indicar: `pnpm dev`, URL, resultado esperado en pantalla.

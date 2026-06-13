@@ -1,0 +1,19 @@
+{
+    "name": "@logpose/eslint-config",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "devDependencies": {
+        "@eslint/js": "catalog:",
+        "@tanstack/eslint-plugin-query": "catalog:",
+        "@typescript-eslint/parser": "catalog:",
+        "eslint": "catalog:",
+        "eslint-config-prettier": "catalog:",
+        "eslint-plugin-import": "catalog:",
+        "eslint-plugin-react-hooks": "catalog:",
+        "eslint-plugin-simple-import-sort": "catalog:",
+        "eslint-plugin-turbo": "catalog:",
+        "globals": "catalog:",
+        "typescript-eslint": "catalog:"
+    }
+}

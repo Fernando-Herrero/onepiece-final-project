@@ -1,0 +1,48 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+        "build": {
+            "dependsOn": ["^build"],
+            "inputs": ["$TURBO_DEFAULT$", ".env*"],
+            "outputs": [".next/**", "dist/**"]
+        },
+        "dev": {
+            "cache": false,
+            "dependsOn": ["^build"],
+            "persistent": true
+        },
+        "lint": {},
+        "format": {
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                ".prettierrc",
+                ".prettierrc.json",
+                ".prettierrc.js",
+                ".prettierrc.cjs"
+            ]
+        },
+        "format-check": {
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                ".prettierrc",
+                ".prettierrc.json",
+                ".prettierrc.js",
+                ".prettierrc.cjs"
+            ]
+        },
+        "type-check": {
+            "dependsOn": ["^build"]
+        },
+        "start": {
+            "cache": false,
+            "persistent": true
+        },
+        "@logpose/web#dev": {
+            "cache": false,
+            "dependsOn": ["^build"],
+            "persistent": true,
+            "with": ["@logpose/api#dev"]
+        }
+    },
+    "ui": "tui"
+}

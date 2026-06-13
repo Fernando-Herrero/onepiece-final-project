@@ -1,0 +1,17 @@
+node_modules
+.turbo
+.next/
+out/
+dist/
+build/
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+
+# Documentación local — README.md es la única excepción
+**/*.md
+!README.md
