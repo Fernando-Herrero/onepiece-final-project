@@ -1,50 +1,49 @@
-# One Piece LogPose v3
+# One Piece LogPose
 
-Monorepo para la aplicación **One Piece LogPose** — seguimiento de la serie, colección de cartas, red social y gamificación para fans de One Piece.
+Aplicación web para fans de **One Piece**: seguir el progreso del anime/manga, coleccionar cartas de personajes y elementos del universo, participar en una comunidad y desbloquear logros a medida que avanzas en la serie.
 
-**Repositorio:** [github.com/Fernando-Herrero/onepiece-final-project](https://github.com/Fernando-Herrero/onepiece-final-project)
+## Qué incluye
 
-## Stack
+- **Progreso de serie** — capítulos, arcos y sagas; XP y niveles según lo que vas viendo
+- **Colección de cartas** — personajes, frutas del diablo, espadas, barcos, objetos…
+- **Comunidad** — publicaciones, comentarios, perfiles y seguimiento entre usuarios
+- **Gamificación** — logros, notificaciones y recompensas ligadas al progreso
 
-- **Frontend:** Next.js 16 (Pages Router) + React 19 + Tailwind 4 + TanStack Query
-- **Backend:** Express 5 + TypeScript + MongoDB/Mongoose
-- **Contratos:** oRPC + Zod (`@logpose/contracts`)
-- **Tooling:** pnpm 11.6 + Turbo, Node 24.16.0
+## Arquitectura
 
-## Estructura
+Monorepo con tipado compartido entre frontend y backend:
 
 ```
-apps/web/          → UI (puerto 3000)
-apps/api/          → API REST + oRPC (puerto 4000)
-packages/contracts → Tipos y validación compartidos
+apps/web/          → interfaz (Next.js, puerto 3000)
+apps/api/          → API (Express, puerto 4000)
+packages/contracts → contratos oRPC + schemas Zod
 ```
+
+El cliente web consume la API a través de contratos tipados (oRPC + TanStack Query), sin duplicar tipos ni validaciones.
+
+## Tecnologías
+
+| Capa | Stack |
+|------|--------|
+| Frontend | Next.js 16, React 19, Tailwind CSS 4, TanStack Query |
+| Backend | Express 5, TypeScript, MongoDB con Mongoose |
+| Contratos | oRPC, Zod |
+| Monorepo | pnpm, Turbo |
 
 ## Inicio rápido
+
+Requisitos: Node 24.16.0, pnpm 11.6 (recomendado [mise](https://mise.jdx.dev) + `.node-version` en la raíz).
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-- Web: http://localhost:3000
-- API: http://localhost:4000/api
+- **Web:** http://localhost:3000
+- **API:** http://localhost:4000/api
 
-## Documentación
+Otros comandos útiles: `pnpm build`, `pnpm lint`, `pnpm type-check`, `pnpm format`.
 
-| Doc | Descripción |
-|-----|-------------|
-| [AGENTS.md](./AGENTS.md) | Guía para el agente de IA |
-| [docs/MIGRATION.md](./docs/MIGRATION.md) | Plan de migración completo |
-| [docs/CONVENTIONS.md](./docs/CONVENTIONS.md) | Convenciones de código |
-| [docs/REFERENCE-ADMIN.md](./docs/REFERENCE-ADMIN.md) | Patrones replicados del monorepo admin |
+## Origen del proyecto
 
-## Repos legacy (migración en curso)
-
-- Frontend v2: `5-REACT/PROYECTOS/One-piece-LogPose` (Vite SPA)
-- Backend v2: `7-NODE/proyectos/api-onepiece` (Express API)
-
-## Fase actual
-
-**Fase 0** — Scaffold ✅ → siguiente: **Fase 1** contratos oRPC
-
-Ver [docs/MIGRATION.md](./docs/MIGRATION.md) para el plan completo.
+LogPose v3 migra y unifica dos proyectos anteriores (SPA en Vite + API Express separada) en este monorepo, con contratos compartidos y la misma base de herramientas que un monorepo profesional de referencia.
