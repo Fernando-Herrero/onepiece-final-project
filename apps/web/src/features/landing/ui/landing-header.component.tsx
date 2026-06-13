@@ -104,6 +104,9 @@ export function LandingHeaderComponent() {
                 <DropdownMenu.Item asChild>
                   <Link href="/characters">{t('landing.nav.characters')}</Link>
                 </DropdownMenu.Item>
+                <DropdownMenu.Item asChild>
+                  <Link href="/map">{t('landing.nav.map')}</Link>
+                </DropdownMenu.Item>
               </DropdownMenu.Content>
             </DropdownMenu.Root>
 

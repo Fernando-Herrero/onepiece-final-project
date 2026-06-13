@@ -35,13 +35,15 @@ export function LoginFormComponent() {
 
   return (
     <form
-      className="flex w-full max-w-sm flex-col gap-3 rounded-xl border border-neutral-200 bg-white p-6 shadow-sm"
+      className="flex w-full max-w-sm flex-col gap-3 rounded-xl border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/55 to-[#0b1120]/65 p-6 shadow-[0_24px_60px_rgba(0,0,0,0.35)] backdrop-blur-sm"
       onSubmit={event => {
         event.preventDefault();
         void form.handleSubmit();
       }}
     >
-      <h1 className="text-center text-xl font-bold">{t('auth.login_title')}</h1>
+      <h1 className="text-center font-one-piece text-2xl tracking-wide text-[#f2d9a8]">
+        {t('auth.login_title')}
+      </h1>
 
       <form.AppField name="email">
         {field => (
@@ -80,9 +82,9 @@ export function LoginFormComponent() {
         )}
       </form.Subscribe>
 
-      <p className="text-center text-sm">
+      <p className="text-center text-sm text-[#f4ede1]/75">
         {t('auth.not_registered')}{' '}
-        <Link className="text-orange-700 underline" href="/register">
+        <Link className="text-[#f2d9a8] underline hover:text-[#f4ede1]" href="/register">
           {t('auth.register_link')}
         </Link>
       </p>

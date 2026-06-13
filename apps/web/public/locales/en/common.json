@@ -77,6 +77,7 @@
       "onepiece": "One Piece",
       "characters": "Characters",
       "history": "History",
+      "map": "Map",
       "help": "Help",
       "faq": "FAQ",
       "contact": "Contact",
@@ -184,5 +185,9 @@
     "meta_title": "Page not found — LogPose",
     "message": "Oops! We couldn't find this page.",
     "back_home": "Back to home"
+  },
+  "map": {
+    "meta_title": "Map — LogPose",
+    "alt": "One Piece world map"
   }
 }

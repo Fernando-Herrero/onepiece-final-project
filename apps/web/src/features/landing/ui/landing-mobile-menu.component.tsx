@@ -76,6 +76,13 @@ export function LandingMobileMenuPanel({
             >
               {t('landing.nav.characters')}
             </Link>
+            <Link
+              href="/map"
+              onClick={onClose}
+              className="font-road-captain text-base uppercase tracking-[0.15em] text-[#f4ede1]/75 transition-colors hover:text-[#f2d9a8]"
+            >
+              {t('landing.nav.map')}
+            </Link>
           </div>
 
           <div className="flex flex-col gap-3">

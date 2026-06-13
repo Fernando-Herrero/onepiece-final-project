@@ -30,6 +30,9 @@ export function LandingFooterComponent() {
             <Link href="/characters">{t('landing.nav.characters')}</Link>
           </RadixLink>
           <RadixLink asChild color="gray" highContrast>
+            <Link href="/map">{t('landing.nav.map')}</Link>
+          </RadixLink>
+          <RadixLink asChild color="gray" highContrast>
             <Link href="/faq">{t('landing.nav.faq')}</Link>
           </RadixLink>
           <RadixLink asChild color="gray" highContrast>
