@@ -3,6 +3,12 @@
     "version": "0.0.0",
     "private": true,
     "type": "module",
+    "types": "./eslint-config.d.ts",
+    "exports": {
+        "./node.eslint.config.js": "./node.eslint.config.js",
+        "./prettier.config.js": "./prettier.config.js",
+        "./prettier.react.config.js": "./prettier.react.config.js"
+    },
     "devDependencies": {
         "@eslint/js": "catalog:",
         "@tanstack/eslint-plugin-query": "catalog:",

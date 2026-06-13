@@ -5,6 +5,7 @@ out/
 dist/
 build/
 .DS_Store
+.vscode/
 *.local
 .env
 .env.*

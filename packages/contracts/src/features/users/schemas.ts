@@ -1,5 +1,9 @@
 import { z } from 'zod';
-import { updateUserSchema, userIdParamsSchema, userPublicSchema } from '../../common/user.schemas.js';
+import {
+  updateUserSchema,
+  userIdParamsSchema,
+  userPublicSchema,
+} from '../../common/user.schemas.js';
 
 export const userStatsSchema = z.object({
   myPosts: z.number(),

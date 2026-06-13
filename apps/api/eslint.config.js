@@ -19,6 +19,14 @@ const config = [
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    rules: {
+      'import/no-extraneous-dependencies': [
+        'error',
+        {
+          packageDir: import.meta.dirname,
+        },
+      ],
+    },
   },
 ];
 

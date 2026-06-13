@@ -24,7 +24,7 @@ export const createPostSchema = postFieldsSchema.strict();
 export const updatePostSchema = postFieldsSchema
   .partial()
   .strict()
-  .refine((data) => Object.keys(data).length > 0, {
+  .refine(data => Object.keys(data).length > 0, {
     message: 'Debes enviar al menos un campo para actualizar',
   });
 

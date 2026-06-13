@@ -19,8 +19,8 @@ alwaysApply: true
 
 ## Si el entorno inyecta trailers
 
-1. No pedir al usuario que limpie manualmente
-2. Usar el hook `prepare-commit-msg` del repo o `git commit --amend` para eliminarlos antes del push
+1. El hook `commit-msg` **rechaza** el commit (no lo elimina en silencio)
+2. Usar `git commit --amend` solo tras quitar manualmente la línea del mensaje
 
 ## Commits
 

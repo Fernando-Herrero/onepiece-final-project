@@ -1,6 +1,9 @@
 import { oc } from '@orpc/contract';
 import { z } from 'zod';
-import { createPostSchema, postPublicSchema } from '../../common/post.schemas.js';
+import {
+  createPostSchema,
+  postPublicSchema,
+} from '../../common/post.schemas.js';
 import {
   postIdParamsSchema,
   shareTokenParamsSchema,

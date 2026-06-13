@@ -1,5 +1,8 @@
 import { oc } from '@orpc/contract';
-import { createUserSchema, userPublicSchema } from '../../common/user.schemas.js';
+import {
+  createUserSchema,
+  userPublicSchema,
+} from '../../common/user.schemas.js';
 import {
   authMessageSchema,
   authSessionSchema,

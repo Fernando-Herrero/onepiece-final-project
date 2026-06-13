@@ -24,11 +24,23 @@ export const unlockedCardsSchema = z.object({
 });
 
 const profileFieldsSchema = z.object({
-  username: z.string().trim().min(3, 'El username debe tener al menos 3 caracteres'),
-  firstName: z.string().trim().min(2, 'El nombre debe tener al menos 2 caracteres'),
-  lastName: z.string().trim().min(2, 'El apellido debe tener al menos 2 caracteres'),
+  username: z
+    .string()
+    .trim()
+    .min(3, 'El username debe tener al menos 3 caracteres'),
+  firstName: z
+    .string()
+    .trim()
+    .min(2, 'El nombre debe tener al menos 2 caracteres'),
+  lastName: z
+    .string()
+    .trim()
+    .min(2, 'El apellido debe tener al menos 2 caracteres'),
   displayName: z.string().trim().optional(),
-  bio: z.string().max(2000, 'La bio no puede superar 2000 caracteres').optional(),
+  bio: z
+    .string()
+    .max(2000, 'La bio no puede superar 2000 caracteres')
+    .optional(),
   avatar: z.string().optional(),
   coverImage: z.string().optional(),
   phoneNumber: z.string().optional(),
@@ -39,14 +51,16 @@ const profileFieldsSchema = z.object({
 export const createUserSchema = profileFieldsSchema
   .extend({
     email: z.email('Email no válido'),
-    password: z.string().min(6, 'La contraseña debe tener al menos 6 caracteres'),
+    password: z
+      .string()
+      .min(6, 'La contraseña debe tener al menos 6 caracteres'),
   })
   .strict();
 
 export const updateUserSchema = profileFieldsSchema
   .partial()
   .strict()
-  .refine((data) => Object.keys(data).length > 0, {
+  .refine(data => Object.keys(data).length > 0, {
     message: 'Debes enviar al menos un campo para actualizar',
   });
 

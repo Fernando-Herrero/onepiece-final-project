@@ -1,6 +1,9 @@
 import { oc } from '@orpc/contract';
 import { z } from 'zod';
-import { commentPublicSchema, createCommentSchema } from '../../common/comment.schemas.js';
+import {
+  commentPublicSchema,
+  createCommentSchema,
+} from '../../common/comment.schemas.js';
 import {
   commentIdParamsSchema,
   postIdInPathParamsSchema,
