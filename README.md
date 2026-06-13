@@ -44,6 +44,17 @@ pnpm dev
 
 Otros comandos útiles: `pnpm build`, `pnpm lint`, `pnpm type-check`, `pnpm format`.
 
+## Estado del proyecto (jun 2026)
+
+| Hecho | Pendiente |
+|-------|-----------|
+| Contratos oRPC (7 módulos) | Dashboard web (Fase 4) |
+| API Express migrada | Protección rutas autenticadas |
+| Landing pública + login/register | Landing móvil sin animaciones (perf Vercel) |
+
+Detalle por fase, próximo paso y verificación: [`docs/MIGRATION.md`](docs/MIGRATION.md) §1.1.  
+Guía para el agente: [`AGENTS.md`](AGENTS.md).
+
 ## Origen del proyecto
 
 LogPose v3 migra y unifica dos proyectos anteriores (SPA en Vite + API Express separada) en este monorepo, con contratos compartidos y la misma base de herramientas que un monorepo profesional de referencia.

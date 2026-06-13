@@ -41,3 +41,5 @@ alwaysApply: true
 ## Verificación
 
 Tras cada implementación indicar: `pnpm dev`, URL, resultado esperado en pantalla.
+
+**Estado (jun 2026):** backend listo; landing + auth en web; **próximo:** motion off móvil → dashboard. Ver `docs/MIGRATION.md` §1.1.
