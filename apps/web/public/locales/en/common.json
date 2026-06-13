@@ -72,9 +72,15 @@
     "cta_title": "Ready to set sail?",
     "nav": {
       "features": "Features",
-      "menu": "Menu",
+      "language": "Language",
+      "open_menu": "Open menu",
+      "close_menu": "Close menu",
       "sign_in": "Sign in",
       "sign_up": "Sign up"
+    },
+    "locales": {
+      "es": "Español",
+      "en": "English"
     },
     "footer": {
       "disclaimer": "LogPose is a fan app for tracking One Piece progress. For personal use only, not for commercial purposes.",

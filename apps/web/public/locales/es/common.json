@@ -72,9 +72,15 @@
     "cta_title": "¿Listo para zarpar?",
     "nav": {
       "features": "Features",
-      "menu": "Menú",
+      "language": "Idioma",
+      "open_menu": "Abrir menú",
+      "close_menu": "Cerrar menú",
       "sign_in": "Login",
       "sign_up": "Registrarse"
+    },
+    "locales": {
+      "es": "Español",
+      "en": "English"
     },
     "footer": {
       "disclaimer": "LogPose es una app de fans para el seguimiento de progreso de One Piece. Contenido para uso personal, sin fines comerciales.",
