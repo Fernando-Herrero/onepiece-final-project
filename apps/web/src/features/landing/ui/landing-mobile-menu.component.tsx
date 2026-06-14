@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect } from 'react';
 
-import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
+const MOBILE_HEADER_OFFSET =
+  'calc(2.25rem + 3rem + env(safe-area-inset-top, 0px))';
 
 const MOBILE_NAV_LINK_CLASS =
   'font-road-captain block w-full rounded-lg px-3 py-3 text-center text-lg font-medium tracking-[0.12em] text-[#f4ede1]/90 uppercase transition-colors hover:bg-white/5 hover:text-[#f2d9a8]';
@@ -65,9 +66,9 @@ export function LandingMobileMenuPanel({
     <Flex
       id="landing-mobile-menu"
       direction="column"
-      px="6"
-      pt="24"
-      pb="10"
+      px="5"
+      pb="8"
+      style={{ paddingTop: MOBILE_HEADER_OFFSET }}
       className={`fixed inset-0 z-40 transition-all duration-300 ease-out md:hidden ${
         open
           ? 'visible translate-x-0 opacity-100'
@@ -75,12 +76,8 @@ export function LandingMobileMenuPanel({
       } bg-linear-to-br from-[#05070d] via-[#0b1120] to-[#1b2742]/90 backdrop-blur-md`}
       aria-hidden={!open}
     >
-      <Flex direction="column" gap="6" className="min-h-0 flex-1 px-2 pt-6">
-        <Flex justify="end">
-          <LandingLocaleToggleComponent />
-        </Flex>
-
-        <nav className="flex flex-col">
+      <Flex direction="column" gap="6" className="min-h-0 flex-1 overflow-y-auto">
+        <nav className="flex flex-col pt-4">
           {MOBILE_NAV_SECTIONS.map((section, sectionIndex) => (
             <div key={sectionIndex}>
               {sectionIndex > 0 ? (

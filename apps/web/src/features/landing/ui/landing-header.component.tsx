@@ -63,10 +63,10 @@ export function LandingHeaderComponent() {
     <>
       <header
         ref={headerRef}
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 py-3 max-md:pt-[max(0.75rem,env(safe-area-inset-top))] ${
           solidHeader
-            ? 'border-b border-white/10 bg-[#05070d]/90 py-3 backdrop-blur-md'
-            : 'bg-transparent py-5 md:py-6'
+            ? 'border-b border-white/10 bg-[#05070d]/90 backdrop-blur-md'
+            : 'bg-transparent md:py-6'
         }`}
       >
         <Flex
@@ -135,7 +135,7 @@ export function LandingHeaderComponent() {
               </DropdownMenu.Content>
             </DropdownMenu.Root>
 
-            <LandingLocaleToggleComponent />
+            <LandingLocaleToggleComponent compactLabel />
             <Button
               variant="outline"
               highContrast
@@ -157,10 +157,18 @@ export function LandingHeaderComponent() {
             </Button>
           </Flex>
 
-          <LandingMenuToggleButton
-            open={menuOpen}
-            onToggle={() => setMenuOpen(open => !open)}
-          />
+          <Flex
+            align="center"
+            gap="2"
+            display={{ initial: 'flex', md: 'none' }}
+            className="shrink-0"
+          >
+            <LandingLocaleToggleComponent compactLabel />
+            <LandingMenuToggleButton
+              open={menuOpen}
+              onToggle={() => setMenuOpen(open => !open)}
+            />
+          </Flex>
         </Flex>
       </header>
 

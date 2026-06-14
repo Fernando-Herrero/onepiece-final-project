@@ -10,10 +10,19 @@ const LOCALE_FLAGS: Record<(typeof LOCALES)[number], string> = {
   ja: '🇯🇵',
 };
 
-export function LandingLocaleToggleComponent() {
+type LandingLocaleToggleComponentProps = {
+  compactLabel?: boolean;
+};
+
+export function LandingLocaleToggleComponent({
+  compactLabel = false,
+}: LandingLocaleToggleComponentProps) {
   const router = useRouter();
   const { t } = useTranslation();
   const activeLocale = (router.locale ?? 'es') as (typeof LOCALES)[number];
+  const triggerLabel = compactLabel
+    ? activeLocale.toUpperCase()
+    : t(`landing.locales.${activeLocale}`);
 
   return (
     <Select.Root
@@ -33,11 +42,16 @@ export function LandingLocaleToggleComponent() {
         <Flex as="span" align="center" gap="2">
           <span aria-hidden>{LOCALE_FLAGS[activeLocale]}</span>
           <Text size="2" className="uppercase">
-            {t(`landing.locales.${activeLocale}`)}
+            {triggerLabel}
           </Text>
         </Flex>
       </Select.Trigger>
-      <Select.Content position="popper" sideOffset={6} highContrast>
+      <Select.Content
+        position="popper"
+        sideOffset={6}
+        highContrast
+        className="z-70"
+      >
         {LOCALES.map(locale => (
           <Select.Item key={locale} value={locale}>
             <Flex align="center" gap="2">
