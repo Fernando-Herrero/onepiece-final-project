@@ -23,12 +23,12 @@ El cliente web consume la API a través de contratos tipados (oRPC + TanStack Qu
 
 ## Tecnologías
 
-| Capa | Stack |
-|------|--------|
-| Frontend | Next.js 16, React 19, Tailwind CSS 4, TanStack Query |
-| Backend | Express 5, TypeScript, MongoDB con Mongoose |
-| Contratos | oRPC, Zod |
-| Monorepo | pnpm, Turbo |
+| Capa      | Stack                                                |
+| --------- | ---------------------------------------------------- |
+| Frontend  | Next.js 16, React 19, Tailwind CSS 4, TanStack Query |
+| Backend   | Express 5, TypeScript, MongoDB con Mongoose          |
+| Contratos | oRPC, Zod                                            |
+| Monorepo  | pnpm, Turbo                                          |
 
 ## Inicio rápido
 
@@ -40,20 +40,10 @@ pnpm dev
 ```
 
 - **Web:** http://localhost:3000
-- **API:** http://localhost:4000/api
+- **API health:** http://localhost:4000/api/health/ → `{ "status": "ok", "service": "@logpose/api" }`
+- **API Swagger:** http://localhost:4000/api/orpc
 
 Otros comandos útiles: `pnpm build`, `pnpm lint`, `pnpm type-check`, `pnpm format`.
-
-## Estado del proyecto (jun 2026)
-
-| Hecho | Pendiente |
-|-------|-----------|
-| Contratos oRPC (7 módulos) | Dashboard web (Fase 4) |
-| API Express migrada | Protección rutas autenticadas |
-| Landing pública + login/register | Landing móvil sin animaciones (perf Vercel) |
-
-Detalle por fase, próximo paso y verificación: [`docs/MIGRATION.md`](docs/MIGRATION.md) §1.1.  
-Guía para el agente: [`AGENTS.md`](AGENTS.md).
 
 ## Origen del proyecto
 

@@ -3,7 +3,7 @@ import { implement, ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
-import { env } from '../../config/env.js';
+import { env } from '../../integrations/env/server.js';
 import {
   type ApiContext,
   requireAuth,

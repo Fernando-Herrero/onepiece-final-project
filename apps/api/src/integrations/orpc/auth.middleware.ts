@@ -3,7 +3,7 @@ import type { IncomingHttpHeaders } from 'node:http';
 import { ORPCError, os } from '@orpc/server';
 import jwt from 'jsonwebtoken';
 
-import { env } from '../../config/env.js';
+import { env } from '../../integrations/env/server.js';
 
 export type AuthPayload = {
   id: string;
