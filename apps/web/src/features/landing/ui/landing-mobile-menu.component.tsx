@@ -1,9 +1,36 @@
-import { Button, Flex, Text } from '@radix-ui/themes';
+import { Button, Flex, Separator } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect } from 'react';
 
 import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
+
+const MOBILE_NAV_LINK_CLASS =
+  'font-road-captain block w-full rounded-lg px-3 py-3 text-center text-lg font-medium tracking-[0.12em] text-[#f4ede1]/90 uppercase transition-colors hover:bg-white/5 hover:text-[#f2d9a8]';
+
+type MobileNavItem = {
+  href: string;
+  labelKey:
+    | 'landing.nav.features'
+    | 'landing.nav.history'
+    | 'landing.nav.characters'
+    | 'landing.nav.map'
+    | 'landing.nav.faq'
+    | 'landing.nav.contact';
+};
+
+const MOBILE_NAV_SECTIONS: MobileNavItem[][] = [
+  [{ href: '/#features', labelKey: 'landing.nav.features' }],
+  [
+    { href: '/history', labelKey: 'landing.nav.history' },
+    { href: '/characters', labelKey: 'landing.nav.characters' },
+    { href: '/map', labelKey: 'landing.nav.map' },
+  ],
+  [
+    { href: '/faq', labelKey: 'landing.nav.faq' },
+    { href: '/contact', labelKey: 'landing.nav.contact' },
+  ],
+];
 
 type LandingMobileMenuPanelProps = {
   open: boolean;
@@ -35,9 +62,13 @@ export function LandingMobileMenuPanel({
   }, [open, onClose]);
 
   return (
-    <div
+    <Flex
       id="landing-mobile-menu"
-      className={`fixed inset-0 z-40 flex flex-col px-6 pt-24 pb-10 transition-all duration-300 ease-out md:hidden ${
+      direction="column"
+      px="6"
+      pt="24"
+      pb="10"
+      className={`fixed inset-0 z-40 transition-all duration-300 ease-out md:hidden ${
         open
           ? 'visible translate-x-0 opacity-100'
           : 'pointer-events-none invisible translate-x-full opacity-0'
@@ -49,79 +80,34 @@ export function LandingMobileMenuPanel({
           <LandingLocaleToggleComponent />
         </Flex>
 
-        <nav className="flex flex-col gap-6">
-          <Link
-            href="/#features"
-            onClick={onClose}
-            className="font-road-captain text-lg tracking-[0.2em] text-[#f4ede1]/85 uppercase transition-colors hover:text-[#f2d9a8]"
-          >
-            {t('landing.nav.features')}
-          </Link>
-
-          <div className="flex flex-col gap-3">
-            <Text
-              as="span"
-              size="1"
-              color="gray"
-              className="font-road-captain tracking-[0.2em] uppercase"
-            >
-              {t('landing.nav.onepiece')}
-            </Text>
-            <Link
-              href="/history"
-              onClick={onClose}
-              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
-            >
-              {t('landing.nav.history')}
-            </Link>
-            <Link
-              href="/characters"
-              onClick={onClose}
-              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
-            >
-              {t('landing.nav.characters')}
-            </Link>
-            <Link
-              href="/map"
-              onClick={onClose}
-              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
-            >
-              {t('landing.nav.map')}
-            </Link>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <Text
-              as="span"
-              size="1"
-              color="gray"
-              className="font-road-captain tracking-[0.2em] uppercase"
-            >
-              {t('landing.nav.help')}
-            </Text>
-            <Link
-              href="/faq"
-              onClick={onClose}
-              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
-            >
-              {t('landing.nav.faq')}
-            </Link>
-            <Link
-              href="/contact"
-              onClick={onClose}
-              className="font-road-captain text-base tracking-[0.15em] text-[#f4ede1]/75 uppercase transition-colors hover:text-[#f2d9a8]"
-            >
-              {t('landing.nav.contact')}
-            </Link>
-          </div>
+        <nav className="flex flex-col">
+          {MOBILE_NAV_SECTIONS.map((section, sectionIndex) => (
+            <div key={sectionIndex}>
+              {sectionIndex > 0 ? (
+                <Separator size="4" className="my-4 bg-white/10" />
+              ) : null}
+              <Flex direction="column" gap="1">
+                {section.map(item => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={onClose}
+                    className={MOBILE_NAV_LINK_CLASS}
+                  >
+                    {t(item.labelKey)}
+                  </Link>
+                ))}
+              </Flex>
+            </div>
+          ))}
         </nav>
 
         <Flex
           gap="3"
-          pt="6"
+          py="6"
           className="mt-auto w-full border-t border-white/15"
         >
-          <Button color="gold" className="flex-1" asChild>
+          <Button variant="outline" highContrast className="flex-1" asChild>
             <Link href="/login" onClick={onClose}>
               {t('landing.nav.sign_in')}
             </Link>
@@ -133,7 +119,7 @@ export function LandingMobileMenuPanel({
           </Button>
         </Flex>
       </Flex>
-    </div>
+    </Flex>
   );
 }
 

@@ -131,7 +131,7 @@ export function FeatureCardsComponent() {
               <Heading
                 as="h3"
                 size="4"
-                className="font-road-captain tracking-wide text-[#f2d9a8]/90"
+                className="font-road-captain text-xl font-bold tracking-wide text-[#f2d9a8]/90"
               >
                 {t(`landing.cards.${key}.title`)}
               </Heading>

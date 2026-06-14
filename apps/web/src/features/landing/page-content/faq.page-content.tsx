@@ -17,7 +17,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         type="button"
         aria-expanded={open}
         onClick={() => setOpen(value => !value)}
-        className="font-road-captain flex w-full cursor-pointer items-center justify-between gap-3 px-4 py-3 text-left tracking-wide text-[#f2d9a8]/90"
+        className="font-road-captain flex w-full cursor-pointer items-center justify-between gap-3 px-4 py-3 text-left text-lg font-bold tracking-wide text-[#f2d9a8]/90"
       >
         {question}
         <span className="faq-chevron text-[#f4ede1]/50">▾</span>
@@ -62,7 +62,7 @@ export default function FaqPageContent() {
           as="h1"
           size="7"
           mb="6"
-          className="font-one-piece tracking-wide text-[#f2d9a8]"
+          className="font-one-piece font-bold tracking-wide text-[#f2d9a8]"
         >
           {t('landing.nav.faq')}
         </Heading>

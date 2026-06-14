@@ -149,7 +149,7 @@ html {
   z-index: 10;
   margin: 0;
   font-family: var(--font-one-piece);
-  font-size: clamp(3.5rem, 13vw, 12rem);
+  font-size: clamp(3.5rem, 13vw, 8rem);
   line-height: 0.9;
   letter-spacing: 0.04em;
   text-align: center;
