@@ -65,3 +65,11 @@ export function assertOwnerOrAdmin(
     throw new ORPCError('FORBIDDEN');
   }
 }
+
+export const requireAdmin = base.middleware(async ({ context, next }) => {
+  const user = getRequiredAuthUser(context.headers);
+  if (user.role !== 'admin') {
+    throw new ORPCError('FORBIDDEN');
+  }
+  return next({ context: { ...context, user } });
+});

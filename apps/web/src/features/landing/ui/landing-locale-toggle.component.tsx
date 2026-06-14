@@ -2,11 +2,12 @@ import { Flex, Select, Text } from '@radix-ui/themes';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
-const LOCALES = ['es', 'en'] as const;
+const LOCALES = ['es', 'en', 'ja'] as const;
 
 const LOCALE_FLAGS: Record<(typeof LOCALES)[number], string> = {
   es: '🇪🇸',
   en: '🇬🇧',
+  ja: '🇯🇵',
 };
 
 export function LandingLocaleToggleComponent() {
