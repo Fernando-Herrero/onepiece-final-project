@@ -7,7 +7,7 @@ import { HeroMaskComponent } from '@/features/landing/ui/hero-mask.component';
 import { LandingCtaComponent } from '@/features/landing/ui/landing-cta.component';
 import { LandingFooterComponent } from '@/features/landing/ui/landing-footer.component';
 import { LandingHeaderComponent } from '@/features/landing/ui/landing-header.component';
-import { useSmoothScroll } from '@/features/landing/use-smooth-scroll';
+import { useSmoothScroll } from '@/features/landing/motion/use-smooth-scroll';
 
 export default function LandingPageContent() {
   const { t } = useTranslation();

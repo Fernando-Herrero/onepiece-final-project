@@ -1,14 +1,14 @@
 import { gsap } from 'gsap';
 import { type MouseEvent as ReactMouseEvent, useRef } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+
 export function useTilt(max = 7) {
   const reducedRef = useRef<boolean | null>(null);
 
   const isReduced = () => {
     if (reducedRef.current === null) {
-      reducedRef.current = window.matchMedia(
-        '(prefers-reduced-motion: reduce)',
-      ).matches;
+      reducedRef.current = isMotionDisabled();
     }
     return reducedRef.current;
   };

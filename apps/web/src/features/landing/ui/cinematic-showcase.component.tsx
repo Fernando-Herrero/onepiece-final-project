@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect, useRef } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+
 export function CinematicShowcaseComponent() {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
@@ -13,13 +15,9 @@ export function CinematicShowcaseComponent() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const prefersReduced = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches;
-
     const items = contentRef.current?.children;
 
-    if (prefersReduced) {
+    if (isMotionDisabled()) {
       if (items) gsap.set(items, { autoAlpha: 1, y: 0, clipPath: 'none' });
       return;
     }

@@ -1,4 +1,4 @@
-import { useTilt } from '@/features/landing/use-tilt';
+import { useTilt } from '@/features/landing/motion/use-tilt';
 
 type CharacterCardProps = {
   name: string;

@@ -3,6 +3,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import type { ReactNode } from 'react';
 import { useEffect, useRef } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+
 type RevealProps = {
   children: ReactNode;
   className?: string;
@@ -24,7 +26,7 @@ export function Reveal({
 
     gsap.registerPlugin(ScrollTrigger);
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (isMotionDisabled()) return;
 
     const ctx = gsap.context(() => {
       gsap.set(el, { autoAlpha: 0, y });

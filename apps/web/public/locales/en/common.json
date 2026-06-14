@@ -188,8 +188,11 @@
   },
   "not_found": {
     "meta_title": "Page not found — LogPose",
+    "title": "404 — Page not found",
     "message": "Oops! We couldn't find this page.",
-    "back_home": "Back to home"
+    "back_home": "Back to home",
+    "bg_alt": "Sunny sailing the sea",
+    "crew_alt": "Straw Hat crew"
   },
   "map": {
     "meta_title": "Map — LogPose",

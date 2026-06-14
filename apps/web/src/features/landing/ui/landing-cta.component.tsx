@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { type MouseEvent as ReactMouseEvent, useEffect, useRef } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+
 export function LandingCtaComponent() {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
@@ -38,12 +40,9 @@ export function LandingCtaComponent() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const prefersReduced = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches;
-    reduceMotionRef.current = prefersReduced;
+    reduceMotionRef.current = isMotionDisabled();
 
-    if (prefersReduced) return;
+    if (reduceMotionRef.current) return;
 
     const ctx = gsap.context(() => {
       gsap.set(titleRef.current, { autoAlpha: 0, y: 50 });

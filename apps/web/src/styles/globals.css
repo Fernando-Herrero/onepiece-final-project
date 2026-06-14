@@ -41,8 +41,8 @@ html {
 }
 
 /* ---------------------------------------------------------------------------
-   Landing — cinematic mask reveal (CSS only: mask, grain, GSAP-driven layers)
-   Layout, header, footer, cards and CTA use Tailwind in components.
+   Landing — revealación de máscara cinemática (CSS solo: máscara, grano, capas impulsadas por GSAP)
+   Layout, header, footer, cards y CTA usan Tailwind en componentes.
 --------------------------------------------------------------------------- */
 
 .landing {
@@ -233,7 +233,6 @@ html {
   }
 }
 
-/* Card shine sweep — pseudo-element not practical in Tailwind alone */
 .landing-card-shine::after {
   content: '';
   position: absolute;
@@ -253,7 +252,6 @@ html {
   transform: translateX(120%);
 }
 
-/* FAQ accordion — smooth open/close via grid-template-rows (controlled) */
 .faq-item > .faq-panel {
   display: grid;
   grid-template-rows: 0fr;
@@ -290,13 +288,28 @@ html {
   transform: rotate(180deg);
 }
 
+.not-found-bg {
+  animation: not-found-wave 6s ease-in-out infinite;
+}
+
+@keyframes not-found-wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
   .landing-grain,
-  .landing-scroll-cue svg {
+  .landing-scroll-cue svg,
+  .not-found-bg {
     animation: none;
   }
 
@@ -313,5 +326,33 @@ html {
   .faq-item .faq-answer {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Mobile / touch — desactivar efectos de GPU pesados: repintados infinitos,
+layer-backed blur y will-change idle. El movimiento JS se omite mediante `isMotionDisabled()`. */
+@media (max-width: 767px), (pointer: coarse) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .landing-grain,
+  .landing-scroll-cue svg,
+  .not-found-bg {
+    animation: none;
+  }
+
+  .landing-card-shine::after {
+    display: none;
+  }
+
+  .landing-card {
+    backdrop-filter: none;
+  }
+
+  .landing-mask,
+  .landing-veil,
+  .landing-mask .landing-img {
+    will-change: auto;
   }
 }

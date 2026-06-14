@@ -188,8 +188,11 @@
   },
   "not_found": {
     "meta_title": "Página no encontrada — LogPose",
+    "title": "404 — Página no encontrada",
     "message": "¡Oops! No pudimos encontrar esta página.",
-    "back_home": "Volver al inicio"
+    "back_home": "Volver al inicio",
+    "bg_alt": "Sunny navegando por el mar",
+    "crew_alt": "Tripulación del Sombrero de Paja"
   },
   "map": {
     "meta_title": "Mapa — LogPose",

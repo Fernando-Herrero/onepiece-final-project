@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect, useRef, useState } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { CharacterCardComponent } from '@/features/landing/ui/character-card.component';
 import { LandingPublicLayout } from '@/features/landing/ui/landing-public-layout.component';
 import { Reveal } from '@/features/landing/ui/reveal.component';
@@ -106,7 +107,7 @@ export default function CharactersPageContent() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (isMotionDisabled()) return;
 
     const ctx = gsap.context(() => {
       const cards = gsap.utils.toArray<HTMLElement>('.landing-card');

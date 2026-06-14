@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 
 import { LandingFooterComponent } from '@/features/landing/ui/landing-footer.component';
 import { LandingHeaderComponent } from '@/features/landing/ui/landing-header.component';
-import { useSmoothScroll } from '@/features/landing/use-smooth-scroll';
+import { useSmoothScroll } from '@/features/landing/motion/use-smooth-scroll';
 
 type LandingPublicLayoutProps = {
   children: ReactNode;

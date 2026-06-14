@@ -3,6 +3,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'next-i18next/pages';
 import { type Ref, useEffect, useRef } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+
 const MASK_SCALE = 8;
 
 function HeroImage({ imgRef }: { imgRef?: Ref<HTMLImageElement> }) {
@@ -34,11 +36,7 @@ export function HeroMaskComponent() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const prefersReduced = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches;
-
-    if (prefersReduced) {
+    if (isMotionDisabled()) {
       gsap.set([titleRef.current, taglineRef.current], {
         autoAlpha: 1,
         y: 0,

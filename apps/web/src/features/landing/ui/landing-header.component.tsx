@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect, useRef, useState } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
 import {
   LandingMenuToggleButton,
@@ -43,11 +44,7 @@ export function LandingHeaderComponent() {
   }, []);
 
   useEffect(() => {
-    const prefersReduced = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches;
-
-    if (prefersReduced || !headerRef.current) return;
+    if (isMotionDisabled() || !headerRef.current) return;
 
     if (headerIntroPlayed) {
       gsap.set(headerRef.current, { autoAlpha: 1, y: 0 });

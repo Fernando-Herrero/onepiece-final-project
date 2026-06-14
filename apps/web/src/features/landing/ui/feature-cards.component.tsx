@@ -4,7 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect, useRef } from 'react';
 
-import { useTilt } from '@/features/landing/use-tilt';
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+import { useTilt } from '@/features/landing/motion/use-tilt';
 
 const FEATURES = [
   { emoji: '🎯', key: 'dashboard' },
@@ -25,11 +26,7 @@ export function FeatureCardsComponent() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const prefersReduced = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches;
-
-    if (prefersReduced) {
+    if (isMotionDisabled()) {
       gsap.set('.landing-card', { autoAlpha: 1, y: 0, scale: 1 });
       const headChildren = headRef.current?.children;
       if (headChildren) {

@@ -1,6 +1,6 @@
 import type { GetServerSideProps } from 'next';
 
-import FaqPageContent from '@/features/landing/faq.page-content';
+import FaqPageContent from '@/features/landing/page-content/faq.page-content';
 import { getDefaultI18nProps } from '@/integrations/i18n/server';
 
 export default function FaqPage() {

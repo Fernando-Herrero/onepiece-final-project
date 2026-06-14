@@ -3,9 +3,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 import { useEffect } from 'react';
 
+import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+
 export function useSmoothScroll() {
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (isMotionDisabled()) return;
 
     gsap.registerPlugin(ScrollTrigger);
 
