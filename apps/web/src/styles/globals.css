@@ -327,6 +327,15 @@ html {
     opacity: 1;
     transform: none;
   }
+  /* Hero text is visible without GSAP (effect early-returns under reduced motion) */
+  .landing-title,
+  .landing-tagline {
+    opacity: 1;
+  }
+
+  .landing-scroll-cue {
+    display: none;
+  }
 }
 
 /* Mobile / touch — desactivar efectos de GPU pesados: repintados infinitos,
@@ -354,5 +363,46 @@ layer-backed blur y will-change idle. El movimiento JS se omite mediante `isMoti
   .landing-veil,
   .landing-mask .landing-img {
     will-change: auto;
+  }
+}
+
+/* Mobile hero — render el estado final estático en CSS puro para que el título se pinte
+   en el primer fotograma (sin esperar a GSAP). La imagen queda detrás, no hay transición de máscara. */
+@media (max-width: 767px) {
+  .landing-hero {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .landing-mask {
+    display: none;
+  }
+
+  .landing-veil {
+    opacity: 1;
+  }
+
+  .landing-vignette {
+    opacity: 0.7;
+  }
+
+  .landing-scroll-cue {
+    display: none;
+  }
+
+  .landing-title,
+  .landing-tagline {
+    position: static;
+    transform: none;
+    opacity: 1;
+  }
+
+  .landing-tagline {
+    white-space: normal;
+    text-align: center;
   }
 }

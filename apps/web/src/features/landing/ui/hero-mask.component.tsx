@@ -36,16 +36,9 @@ export function HeroMaskComponent() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (isMotionDisabled()) {
-      gsap.set([titleRef.current, taglineRef.current], {
-        autoAlpha: 1,
-        y: 0,
-        filter: 'none',
-        clipPath: 'none',
-      });
-      gsap.set(scrollCueRef.current, { autoAlpha: 0 });
-      return;
-    }
+    // Mobile/touch: the static hero is rendered entirely in CSS, so it paints
+    // on first frame without waiting for this effect. Nothing to animate here.
+    if (isMotionDisabled()) return;
 
     gsap.fromTo(
       scrollCueRef.current,
