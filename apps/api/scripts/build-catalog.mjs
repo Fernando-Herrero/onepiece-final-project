@@ -1,3 +1,32 @@
+/**
+ * build-catalog.mjs — script de migración one-shot (legacy v2 → monorepo v3)
+ *
+ * Por qué existe:
+ * El catálogo de cartas vivía en One-piece-LogPose como módulos JS
+ * (`src/dashboard/data/serieData/*.js`) con imports de imágenes Vite.
+ * Este script los convirtió a JSON estático en `apps/api/src/data/catalog/`.
+ *
+ * Qué hace (truco one-shot):
+ * 1. Lee cada .js del legacy
+ * 2. Regex sobre `import X from "@/assets/images/cards/..."` → paths públicos
+ * 3. Quita imports, evalúa el array con `new Function`, renombra `*_id` → `id`
+ * 4. Escribe characters.json, items.json, fruits.json, swords.json, boats.json
+ *
+ * Por qué lo mantengo:
+ * Referencia de cómo se hizo la primera importación. Hoy la API lee los JSON
+ * con `catalog.ts`; no hace falta ejecutarlo salvo que actualices el legacy.
+ *
+ * Nota sobre paths (el código de abajo NO lo cambies):
+ * Este script sigue escribiendo `/assets/images/cards/...` como en la primera
+ * pasada (reflejo del alias Vite `@/assets/images/cards/` del legacy). En el
+ * monorepo ya simplificamos a `/cards/...` en los JSON y las imágenes viven
+ * en `apps/web/public/cards/`. Si algún día lo vuelves a ejecutar, tendrás
+ * que sustituir ese prefijo en los JSON generados o ajustarlos a mano.
+ *
+ * Origen legacy (ruta de la máquina donde se generó):
+ *   .../One-piece-LogPose/src/dashboard/data/serieData/
+ */
+
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

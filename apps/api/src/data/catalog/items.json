@@ -5,7 +5,7 @@
     "type": "legendary",
     "owner": "Monkey D. Luffy",
     "origin": "Given by Shanks",
-    "image": "/assets/images/cards/straw-hat.webp"
+    "image": "/cards/straw-hat.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "type": "rare",
     "owner": "Buggy",
     "origin": "Buggy's signature weapon",
-    "image": "/assets/images/cards/buggy-ball.webp"
+    "image": "/cards/buggy-ball.webp"
   },
   {
     "id": 3,

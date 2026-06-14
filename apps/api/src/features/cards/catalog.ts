@@ -18,12 +18,13 @@ export type CatalogCard = {
   id: number;
   name: string;
   image: string;
+  //[key: string]: unknown; permite campos extra con id, name e image como obligatorios
   [key: string]: unknown;
 };
 
 type CatalogData = Record<CardType, CatalogCard[]>;
 
-const DEFAULT_CARD_IMAGE = '/assets/images/cards/placeholder.webp';
+const DEFAULT_CARD_IMAGE = '/cards/placeholder.webp';
 
 const catalogDir = path.join(
   path.dirname(fileURLToPath(import.meta.url)),

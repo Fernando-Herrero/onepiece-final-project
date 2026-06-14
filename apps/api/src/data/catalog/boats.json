@@ -7,7 +7,7 @@
       "Alvida"
     ],
     "description": "Standard pirate ship",
-    "image": "/assets/images/cards/alvida-ship.webp"
+    "image": "/cards/alvida-ship.webp"
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@
       "Red Hair Pirates"
     ],
     "description": "Yonko flagship",
-    "image": "/assets/images/cards/red-force.webp"
+    "image": "/cards/red-force.webp"
   },
   {
     "id": 3,
@@ -31,7 +31,7 @@
       "Richie"
     ],
     "description": "Buggy's circus-themed ship",
-    "image": "/assets/images/cards/big-top.webp"
+    "image": "/cards/big-top.webp"
   },
   {
     "id": 4,

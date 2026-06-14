@@ -6,7 +6,7 @@
     "type": "Paramecia",
     "description": "Gomu Gomu no Mi, also known as the Fruit of Gum-Gum, is a Paramecia-type Devil Fruit that grants the user's body the properties of rubber, making them a Rubber Human (ゴム人間, Gomu Ningen).",
     "current_user": "Monkey D. Luffy",
-    "image": "/assets/images/cards/gumgum-fruit.webp"
+    "image": "/cards/gumgum-fruit.webp"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "type": "Paramecia",
     "description": "Bara Bara no Mi allows the user to split their body into pieces and control them independently. The user is immune to slashing attacks but remains vulnerable to blunt attacks.",
     "current_user": "Buggy",
-    "image": "/assets/images/cards/chop-chop-fruit.webp"
+    "image": "/cards/chop-chop-fruit.webp"
   },
   {
     "id": 3,

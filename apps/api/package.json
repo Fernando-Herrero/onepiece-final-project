@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build-catalog": "node scripts/build-catalog.mjs",
     "build": "tsc && cp -r src/data dist/data",
     "dev": "tsx watch src/index.ts",
     "format": "prettier --write \"**/*.{ts,tsx,md,json,html}\"",

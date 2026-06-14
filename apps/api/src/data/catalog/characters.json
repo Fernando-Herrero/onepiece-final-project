@@ -33,7 +33,7 @@
     "fruit": "Gomu Gomu no Mi",
     "crew": "Straw Hat Pirates",
     "position": "Captain",
-    "image": "/assets/images/cards/luffy.webp"
+    "image": "/cards/luffy.webp"
   },
   {
     "id": 2,
@@ -52,7 +52,7 @@
     "fruit": "Sube Sube no Mi",
     "crew": "Alvida Pirates",
     "position": "Captain",
-    "image": "/assets/images/cards/alvida.webp"
+    "image": "/cards/alvida.webp"
   },
   {
     "id": 3,
@@ -72,7 +72,7 @@
     "fruit": null,
     "crew": "Marines",
     "position": "Marine",
-    "image": "/assets/images/cards/koby.webp"
+    "image": "/cards/koby.webp"
   },
   {
     "id": 4,
@@ -98,7 +98,7 @@
     "fruit": null,
     "crew": "Straw Hat Pirates",
     "position": "Swordsman/First Mate",
-    "image": "/assets/images/cards/zoro.webp"
+    "image": "/cards/zoro.webp"
   },
   {
     "id": 5,
@@ -116,7 +116,7 @@
     "fruit": null,
     "crew": "Marines",
     "position": "Captain",
-    "image": "/assets/images/cards/captain-morgan.webp"
+    "image": "/cards/captain-morgan.webp"
   },
   {
     "id": 6,
@@ -134,7 +134,7 @@
     "fruit": null,
     "crew": "Marines",
     "position": "Marine",
-    "image": "/assets/images/cards/helmeppo.webp"
+    "image": "/cards/helmeppo.webp"
   },
   {
     "id": 7,
@@ -160,7 +160,7 @@
     "fruit": null,
     "crew": "Straw Hat Pirates",
     "position": "Navigator",
-    "image": "/assets/images/cards/nami.webp"
+    "image": "/cards/nami.webp"
   },
   {
     "id": 8,
@@ -178,7 +178,7 @@
     "fruit": null,
     "crew": "Red Hair Pirates",
     "position": "Captain/Yonko",
-    "image": "/assets/images/cards/shanks.webp"
+    "image": "/cards/shanks.webp"
   },
   {
     "id": 9,
@@ -203,7 +203,7 @@
     "fruit": "Bara Bara no Mi",
     "crew": "Buggy Pirates",
     "position": "Captain",
-    "image": "/assets/images/cards/buggy.webp"
+    "image": "/cards/buggy.webp"
   },
   {
     "id": 10,
@@ -221,7 +221,7 @@
     "fruit": null,
     "crew": "Buggy Pirates",
     "position": "Chief of Staff",
-    "image": "/assets/images/cards/mohji.webp"
+    "image": "/cards/mohji.webp"
   },
   {
     "id": 11,
@@ -239,7 +239,7 @@
     "fruit": null,
     "crew": "Buggy Pirates",
     "position": "Beast",
-    "image": "/assets/images/cards/richie.webp"
+    "image": "/cards/richie.webp"
   },
   {
     "id": 12,
@@ -258,7 +258,7 @@
     "fruit": null,
     "crew": "Buggy Pirates",
     "position": "Chief of Staff",
-    "image": "/assets/images/cards/cabaji.webp"
+    "image": "/cards/cabaji.webp"
   },
   {
     "id": 13,
@@ -276,7 +276,7 @@
     "fruit": null,
     "crew": "Independent",
     "position": "Pet store guardian",
-    "image": "/assets/images/cards/chouchou.webp"
+    "image": "/cards/chouchou.webp"
   },
   {
     "id": 14,
