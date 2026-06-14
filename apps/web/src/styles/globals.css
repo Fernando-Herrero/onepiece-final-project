@@ -143,9 +143,9 @@ html {
 
 .landing-title {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   top: 58%;
-  transform: translate(-50%, 0);
   z-index: 10;
   margin: 0;
   font-family: var(--font-one-piece);
@@ -163,15 +163,16 @@ html {
 
 .landing-tagline {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   top: calc(58% + clamp(4rem, 14vw, 13rem));
-  transform: translate(-50%, 0);
   z-index: 10;
   margin: 0;
   font-family: var(--font-road-captain);
   font-size: clamp(0.9rem, 2.2vw, 1.4rem);
   letter-spacing: 0.35em;
   text-transform: uppercase;
+  text-align: center;
   color: rgba(244, 237, 225, 0.75);
   opacity: 0;
   white-space: nowrap;
@@ -405,6 +406,6 @@ layer-backed blur y will-change idle. El movimiento JS se omite mediante `isMoti
   /* la tagline en desktop va en una línea; en móvil la dejo envolver */
   .landing-tagline {
     white-space: normal;
-    width: min(90vw, 28rem);
+    padding-inline: 1.5rem;
   }
 }
