@@ -366,24 +366,26 @@ layer-backed blur y will-change idle. El movimiento JS se omite mediante `isMoti
   }
 }
 
-/* Mobile hero — render el estado final estático en CSS puro para que el título se pinte
-   en el primer fotograma (sin esperar a GSAP). La imagen queda detrás, no hay transición de máscara. */
+/* Mobile hero — render el estado FINAL de la transición en CSS puro: escena oscura
+   con la imagen vista a través del recorte del logo (mask), sin velo ni animación.
+   Se pinta en el primer fotograma, sin esperar a GSAP. */
 @media (max-width: 767px) {
   .landing-hero {
     height: 100svh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.25rem;
   }
 
-  .landing-mask {
+  /* ocultar la imagen completa de encima */
+  .landing-veil {
     display: none;
   }
 
-  .landing-veil {
-    opacity: 1;
+  /* máscara en su tamaño final: imagen vista por el recorte del logo */
+  .landing-mask {
+    transform: scale(1);
+  }
+
+  .landing-mask .landing-img {
+    transform: scale(1);
   }
 
   .landing-vignette {
@@ -394,15 +396,15 @@ layer-backed blur y will-change idle. El movimiento JS se omite mediante `isMoti
     display: none;
   }
 
+  /* título y tagline visibles al instante */
   .landing-title,
   .landing-tagline {
-    position: static;
-    transform: none;
     opacity: 1;
   }
 
+  /* la tagline en desktop va en una línea; en móvil la dejo envolver */
   .landing-tagline {
     white-space: normal;
-    text-align: center;
+    width: min(90vw, 28rem);
   }
 }
