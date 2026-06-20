@@ -1,8 +1,9 @@
 import {
   useMutation,
+  useQuery,
   useQueryClient,
-  useSuspenseQuery,
 } from '@tanstack/react-query';
+import type { TFunction } from 'i18next';
 import { useRouter } from 'next/router';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
@@ -10,16 +11,34 @@ import type { RegisterFormValues } from '@/features/auth/register-form.schema';
 import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
-function getErrorMessage(error: unknown) {
-  if (error instanceof Error) {
-    return error.message;
+function getAuthErrorMessage(error: unknown, t: TFunction): string {
+  if (
+    typeof error === 'object' &&
+    error !== null &&
+    'code' in error &&
+    typeof error.code === 'string'
+  ) {
+    switch (error.code) {
+      case 'DUPLICATE_ACCOUNT':
+        return t('auth.errors.DUPLICATE_ACCOUNT');
+      case 'INVALID_CREDENTIALS':
+        return t('auth.errors.INVALID_CREDENTIALS');
+      case 'UNAUTHORIZED':
+        return t('auth.errors.UNAUTHORIZED');
+      case 'ACCOUNT_INACTIVE':
+        return t('auth.errors.ACCOUNT_INACTIVE');
+      case 'USER_NOT_FOUND':
+        return t('auth.errors.USER_NOT_FOUND');
+      case 'INVALID_CURRENT_PASSWORD':
+        return t('auth.errors.INVALID_CURRENT_PASSWORD');
+    }
   }
 
-  return 'Ha ocurrido un error';
+  return t('auth.generic_error');
 }
 
-export function useMeSuspenseQuery() {
-  return useSuspenseQuery(allQueriesOptions.auth.me());
+export function useMeQuery() {
+  return useQuery(allQueriesOptions.auth.me());
 }
 
 function useAuthSuccess() {
@@ -67,4 +86,4 @@ export function useLogoutMutation() {
   });
 }
 
-export { getErrorMessage };
+export { getAuthErrorMessage };

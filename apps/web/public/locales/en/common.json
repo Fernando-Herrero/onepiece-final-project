@@ -24,7 +24,17 @@
     "logout": "Sign out",
     "session_active": "Signed in — @{{username}} ({{email}})",
     "form_invalid": "Please check the form fields",
-    "generic_error": "Something went wrong"
+    "generic_error": "Something went wrong",
+    "show_password": "Show password",
+    "hide_password": "Hide password",
+    "errors": {
+      "INVALID_CREDENTIALS": "Invalid email or password",
+      "UNAUTHORIZED": "Not authorized",
+      "ACCOUNT_INACTIVE": "Your account is not active",
+      "USER_NOT_FOUND": "User not found",
+      "INVALID_CURRENT_PASSWORD": "Current password is incorrect",
+      "DUPLICATE_ACCOUNT": "Email or username is already registered"
+    }
   },
   "errors": {
     "title": "Something went wrong",

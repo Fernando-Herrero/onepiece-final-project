@@ -52,9 +52,7 @@ const register = os.register.handler(async ({ input, context }) => {
       'code' in error &&
       error.code === 11000
     ) {
-      throw new ORPCError('INTERNAL_SERVER_ERROR', {
-        message: 'Email or username already exists',
-      });
+      throw new ORPCError('DUPLICATE_ACCOUNT');
     }
     throw error;
   }

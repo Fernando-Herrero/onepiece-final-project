@@ -1,4 +1,4 @@
-import { Flex } from '@radix-ui/themes';
+import { Box, Flex, IconButton, Tooltip } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
@@ -39,16 +39,21 @@ export function DashboardNavRail({
         ))}
       </nav>
 
-      <div className="px-2">
-        <button
-          type="button"
-          onClick={onToggleExpanded}
-          className="flex w-full items-center justify-center rounded-lg py-2 text-[#f2d9a8]/80 transition-colors hover:bg-[#f2d9a8]/10"
-          aria-label={t('dashboard.nav.expand')}
-        >
-          »
-        </button>
-      </div>
+      <Box px="2">
+        <Tooltip content={t('dashboard.nav.expand')}>
+          <IconButton
+            type="button"
+            variant="ghost"
+            color="orange"
+            highContrast
+            className="w-full"
+            aria-label={t('dashboard.nav.expand')}
+            onClick={onToggleExpanded}
+          >
+            »
+          </IconButton>
+        </Tooltip>
+      </Box>
     </aside>
   );
 }
@@ -63,14 +68,17 @@ function NavRailLink({
   const { t } = useTranslation();
 
   return (
-    <Link
-      href={item.href}
-      title={t(item.labelKey)}
-      className={`flex items-center justify-center rounded-lg py-2 text-lg transition-colors ${
-        active ? 'bg-[#f2d9a8]/15 ring-1 ring-[#f2d9a8]/30' : 'hover:bg-white/5'
-      }`}
-    >
-      <span aria-hidden>{item.icon}</span>
-    </Link>
+    <Tooltip content={t(item.labelKey)}>
+      <Link
+        href={item.href}
+        className={`flex items-center justify-center rounded-lg py-2 text-lg transition-colors ${
+          active
+            ? 'bg-[#f2d9a8]/15 ring-1 ring-[#f2d9a8]/30'
+            : 'hover:bg-white/5'
+        }`}
+      >
+        <span aria-hidden>{item.icon}</span>
+      </Link>
+    </Tooltip>
   );
 }

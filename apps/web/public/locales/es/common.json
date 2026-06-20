@@ -24,7 +24,17 @@
     "logout": "Cerrar sesión",
     "session_active": "Sesión activa — @{{username}} ({{email}})",
     "form_invalid": "Revisa los campos del formulario",
-    "generic_error": "Ha ocurrido un error"
+    "generic_error": "Ha ocurrido un error",
+    "show_password": "Mostrar contraseña",
+    "hide_password": "Ocultar contraseña",
+    "errors": {
+      "INVALID_CREDENTIALS": "Correo o contraseña incorrectos",
+      "UNAUTHORIZED": "No autorizado",
+      "ACCOUNT_INACTIVE": "Tu cuenta no está activa",
+      "USER_NOT_FOUND": "Usuario no encontrado",
+      "INVALID_CURRENT_PASSWORD": "La contraseña actual no es correcta",
+      "DUPLICATE_ACCOUNT": "El correo o el username ya están registrados"
+    }
   },
   "errors": {
     "title": "Algo salió mal",

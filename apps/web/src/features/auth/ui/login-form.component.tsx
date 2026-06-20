@@ -2,7 +2,10 @@ import { loginSchema } from '@logpose/contracts/features/auth/schemas';
 import { useTranslation } from 'next-i18next/pages';
 import { toast } from 'sonner';
 
-import { getErrorMessage, useLoginMutation } from '@/features/auth/api/use-auth';
+import {
+  getAuthErrorMessage,
+  useLoginMutation,
+} from '@/features/auth/api/use-auth';
 import { useAppForm } from '@/features/auth/form/use-auth-form';
 import {
   AuthFormShell,
@@ -25,7 +28,7 @@ export function LoginFormComponent() {
       try {
         await loginMutation.mutateAsync(value);
       } catch (error) {
-        toast.error(getErrorMessage(error));
+        toast.error(getAuthErrorMessage(error, t));
       }
     },
     onSubmitInvalid: () => {
@@ -60,6 +63,7 @@ export function LoginFormComponent() {
             type="password"
             autoComplete="current-password"
             placeholder={t('auth.password_placeholder')}
+            passwordToggle
             required
           />
         )}

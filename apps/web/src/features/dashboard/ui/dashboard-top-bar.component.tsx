@@ -1,9 +1,7 @@
 import { Button, Flex, Text } from '@radix-ui/themes';
-import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'next-i18next/pages';
 
-import { useLogoutMutation } from '@/features/auth/api/use-auth';
-import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
+import { useLogoutMutation, useMeQuery } from '@/features/auth/api/use-auth';
 
 type DashboardTopBarProps = {
   sectionLabel: string;
@@ -12,7 +10,7 @@ type DashboardTopBarProps = {
 export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
   const { t } = useTranslation();
   const logout = useLogoutMutation();
-  const meQuery = useQuery(allQueriesOptions.auth.me());
+  const meQuery = useMeQuery();
 
   return (
     <header className="flex h-14 shrink-0 items-center justify-between border-b border-[#f2d9a8]/15 bg-[#0b1120]/95 px-4 backdrop-blur-md">

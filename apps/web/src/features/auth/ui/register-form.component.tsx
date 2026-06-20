@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next/pages';
 import { toast } from 'sonner';
 
 import {
-  getErrorMessage,
+  getAuthErrorMessage,
   useRegisterMutation,
 } from '@/features/auth/api/use-auth';
 import { useAppForm } from '@/features/auth/form/use-auth-form';
@@ -32,7 +32,7 @@ export function RegisterFormComponent() {
       try {
         await registerMutation.mutateAsync(value);
       } catch (error) {
-        toast.error(getErrorMessage(error));
+        toast.error(getAuthErrorMessage(error, t));
       }
     },
     onSubmitInvalid: () => {
@@ -96,6 +96,7 @@ export function RegisterFormComponent() {
             label={t('auth.password')}
             type="password"
             autoComplete="new-password"
+            passwordToggle
             required
           />
         )}
@@ -107,6 +108,7 @@ export function RegisterFormComponent() {
             label={t('auth.confirm_password')}
             type="password"
             autoComplete="new-password"
+            passwordToggle
             required
           />
         )}

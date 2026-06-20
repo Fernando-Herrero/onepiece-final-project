@@ -24,7 +24,17 @@
     "logout": "ログアウト",
     "session_active": "ログイン中 — @{{username}} ({{email}})",
     "form_invalid": "フォームの項目を確認してください",
-    "generic_error": "エラーが発生しました"
+    "generic_error": "エラーが発生しました",
+    "show_password": "パスワードを表示",
+    "hide_password": "パスワードを非表示",
+    "errors": {
+      "INVALID_CREDENTIALS": "メールまたはパスワードが正しくありません",
+      "UNAUTHORIZED": "認証されていません",
+      "ACCOUNT_INACTIVE": "アカウントが有効ではありません",
+      "USER_NOT_FOUND": "ユーザーが見つかりません",
+      "INVALID_CURRENT_PASSWORD": "現在のパスワードが正しくありません",
+      "DUPLICATE_ACCOUNT": "メールまたはユーザー名は既に登録されています"
+    }
   },
   "errors": {
     "title": "問題が発生しました",

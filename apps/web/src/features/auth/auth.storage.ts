@@ -1,4 +1,4 @@
-export const SESSION_COOKIE_NAME = 'logpose_session';
+export { SESSION_COOKIE_NAME } from '@logpose/contracts/features/auth/constants';
 
 export function clearLegacyAuthToken() {
   if (typeof window === 'undefined') {

@@ -1,3 +1,4 @@
+import { Button } from '@radix-ui/themes';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
@@ -28,7 +29,7 @@ export function AuthFormShell({
         onSubmit();
       }}
     >
-      <h1 className="text-center font-one-piece text-2xl tracking-wide text-[#f2d9a8]">
+      <h1 className="font-one-piece text-center text-2xl tracking-wide text-[#f2d9a8]">
         {title}
       </h1>
 
@@ -61,12 +62,13 @@ export function AuthSubmitButton({
   disabled,
 }: AuthSubmitButtonProps) {
   return (
-    <button
-      className="rounded-md bg-linear-to-r from-orange-600 to-[#a64242] px-4 py-2.5 font-road-captain text-sm uppercase tracking-wider text-white shadow-[0_8px_24px_rgba(166,66,66,0.4)] transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(166,66,66,0.5)] disabled:translate-y-0 disabled:opacity-60"
+    <Button
       type="submit"
+      size="3"
       disabled={disabled}
+      className="font-road-captain tracking-wider uppercase shadow-[0_8px_24px_rgba(166,66,66,0.4)] hover:shadow-[0_12px_28px_rgba(166,66,66,0.5)]"
     >
       {pending ? pendingLabel : label}
-    </button>
+    </Button>
   );
 }

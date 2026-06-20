@@ -31,6 +31,10 @@ export const authErrors = {
     status: 401,
     message: 'Invalid current password',
   },
+  DUPLICATE_ACCOUNT: {
+    status: 409,
+    message: 'Email or username already exists',
+  },
 } as const;
 
 export const authContract = oc
@@ -44,6 +48,7 @@ export const authContract = oc
         description: 'Register a new user',
       })
       .input(createUserSchema)
+      .errors(authErrors)
       .output(authSessionSchema),
 
     login: oc
