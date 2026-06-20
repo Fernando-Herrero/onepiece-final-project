@@ -22,19 +22,15 @@ export function DashboardNavSidebar({
     <aside className="flex h-full w-[220px] shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] text-[#f4ede1]">
       <Flex
         align="center"
-        gap="3"
         px="4"
-        py="4"
-        className="border-b border-[#f2d9a8]/10"
+        className="h-14 shrink-0 border-b border-[#f2d9a8]/15"
       >
-        <Button
-          asChild
-          variant="ghost"
-          highContrast
-          className="font-one-piece -m-0.5 text-xl text-[#f2d9a8]"
+        <Link
+          href="/dashboard/profile"
+          className="font-one-piece text-lg text-[#f2d9a8] no-underline hover:text-[#f2d9a8]"
         >
-          <Link href="/dashboard/profile">LogPose</Link>
-        </Button>
+          LOGPOSE
+        </Link>
       </Flex>
 
       <nav className="flex flex-1 flex-col gap-2 px-3 py-4">

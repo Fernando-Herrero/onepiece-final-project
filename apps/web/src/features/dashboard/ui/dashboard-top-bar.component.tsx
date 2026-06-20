@@ -18,7 +18,7 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
       align="center"
       justify="between"
       px="4"
-      className="h-14 shrink-0 border-b border-[#f2d9a8]/15 bg-[#0b1120]/95 backdrop-blur-md"
+      className="h-14 shrink-0 border-b border-[#f2d9a8]/15 bg-[#05070d] backdrop-blur-md"
     >
       <header>
         <Text size="2" weight="medium" className="text-[#f4ede1]/90">

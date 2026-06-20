@@ -19,16 +19,18 @@ export function DashboardNavRail({
   const { t } = useTranslation();
 
   return (
-    <aside className="flex h-full w-14 shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] py-3 text-[#f4ede1]">
-      <Flex justify="center" pb="3" className="border-b border-[#f2d9a8]/10">
-        <Button
-          asChild
-          variant="ghost"
-          highContrast
-          className="font-one-piece text-lg text-[#f2d9a8]"
+    <aside className="flex h-full w-14 shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] text-[#f4ede1]">
+      <Flex
+        align="center"
+        justify="center"
+        className="h-14 shrink-0 border-b border-[#f2d9a8]/15"
+      >
+        <Link
+          href="/dashboard/profile"
+          className="font-one-piece text-lg text-[#f2d9a8] no-underline hover:text-[#f2d9a8]"
         >
-          <Link href="/dashboard/profile">LP</Link>
-        </Button>
+          LP
+        </Link>
       </Flex>
 
       <nav className="flex flex-1 flex-col items-center gap-2 px-2 py-6">

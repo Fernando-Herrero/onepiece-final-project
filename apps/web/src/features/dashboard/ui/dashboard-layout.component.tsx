@@ -42,7 +42,7 @@ export function DashboardLayout({ children }: PropsWithChildren) {
 
       <Flex direction="column" className="min-w-0 flex-1 overflow-hidden">
         <DashboardTopBar sectionLabel={sectionLabel} />
-        <Box asChild className="min-h-0 flex-1 overflow-auto p-4 md:p-6">
+        <Box asChild className="min-h-0 flex-1 overflow-auto px-4 py-6 md:p-6">
           <main>{children}</main>
         </Box>
       </Flex>
