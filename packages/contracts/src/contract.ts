@@ -6,6 +6,7 @@ import { commentsContract } from './features/comments/contract.js';
 import { notificationsContract } from './features/notifications/contract.js';
 import { postsContract } from './features/posts/contract.js';
 import { progressContract } from './features/progress/contract.js';
+import { serieContract } from './features/serie/contract.js';
 import { usersContract } from './features/users/contract.js';
 
 export const contract = oc.prefix('/api').router({
@@ -17,4 +18,5 @@ export const contract = oc.prefix('/api').router({
   progress: progressContract,
   cards: cardsContract,
   notifications: notificationsContract,
+  serie: serieContract,
 });

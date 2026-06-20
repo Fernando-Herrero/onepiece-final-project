@@ -1,0 +1,186 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "slug": "monkey-d-luffy",
+      "name": "Monkey D. Luffy",
+      "crew": "Straw Hat Pirates",
+      "position": "Captain",
+      "fruit": "Gomu Gomu no Mi"
+    },
+    {
+      "id": 4,
+      "slug": "roronoa-zoro",
+      "name": "Roronoa Zoro",
+      "crew": "Straw Hat Pirates",
+      "position": "Swordsman/First Mate",
+      "fruit": null
+    },
+    {
+      "id": 7,
+      "slug": "nami",
+      "name": "Nami",
+      "crew": "Straw Hat Pirates",
+      "position": "Navigator",
+      "fruit": null
+    }
+  ],
+  "cards": [
+    {
+      "id": 1001,
+      "category": "character",
+      "refId": 1,
+      "slug": "luffy-romance-dawn",
+      "title": "Monkey D. Luffy — Romance Dawn",
+      "rarity": "common",
+      "image": "/cards/luffy.webp",
+      "description": "Luffy al inicio de su aventura, recién salido de Foosha Village.",
+      "abilities": ["Gomu Gomu no Pistol"],
+      "bounty": 0,
+      "unlock": { "kind": "episode", "episodeId": 1 }
+    },
+    {
+      "id": 1002,
+      "category": "character",
+      "refId": 1,
+      "slug": "luffy-shell-town",
+      "title": "Monkey D. Luffy — Shell Town",
+      "rarity": "uncommon",
+      "image": "/cards/luffy.webp",
+      "description": "Luffy libera Shell Town y recluta a Zoro como primer nakama.",
+      "abilities": ["Gomu Gomu no Bazooka"],
+      "bounty": 30000000,
+      "unlock": { "kind": "episode", "episodeId": 3 }
+    },
+    {
+      "id": 1003,
+      "category": "character",
+      "refId": 1,
+      "slug": "luffy-arlong-park",
+      "title": "Monkey D. Luffy — Arlong Park",
+      "rarity": "rare",
+      "image": "/cards/luffy.webp",
+      "description": "Luffy derrota a Arlong y demuestra que protegerá a Nami.",
+      "abilities": ["Gomu Gomu no Storm"],
+      "bounty": 30000000,
+      "unlock": { "kind": "episode", "episodeId": 38 }
+    },
+    {
+      "id": 1004,
+      "category": "character",
+      "refId": 1,
+      "slug": "luffy-loguetown",
+      "title": "Monkey D. Luffy — Loguetown",
+      "rarity": "legendary",
+      "image": "/cards/luffy.webp",
+      "description": "Luffy sobrevive a la ejecución simbólica y zarpa hacia el Grand Line.",
+      "abilities": ["Gomu Gomu no Gatling", "Gear Second"],
+      "bounty": 30000000,
+      "unlock": { "kind": "arc", "arcId": 7 }
+    },
+    {
+      "id": 1005,
+      "category": "character",
+      "refId": 4,
+      "slug": "zoro-pirate-hunter",
+      "title": "Roronoa Zoro — Pirate Hunter",
+      "rarity": "common",
+      "image": "/cards/zoro.webp",
+      "description": "Zoro encadenado en Shell Town, famoso cazador de piratas.",
+      "abilities": ["Oni Giri"],
+      "bounty": 0,
+      "unlock": { "kind": "episode", "episodeId": 2 }
+    },
+    {
+      "id": 1006,
+      "category": "character",
+      "refId": 4,
+      "slug": "zoro-shell-town",
+      "title": "Roronoa Zoro — Shell Town",
+      "rarity": "uncommon",
+      "image": "/cards/zoro.webp",
+      "description": "Zoro se une a Luffy tras enfrentar al Capitán Morgan.",
+      "abilities": ["Santoryu Ogi: Oni Giri"],
+      "bounty": 0,
+      "unlock": { "kind": "episode", "episodeId": 3 }
+    },
+    {
+      "id": 1007,
+      "category": "character",
+      "refId": 4,
+      "slug": "zoro-baratie",
+      "title": "Roronoa Zoro — Baratie",
+      "rarity": "rare",
+      "image": "/cards/zoro.webp",
+      "description": "Zoro demuestra su lealtad y poder en el restaurante flotante.",
+      "abilities": ["Santoryu Ogi: Sanzen Sekai"],
+      "bounty": 60000000,
+      "unlock": { "kind": "episode", "episodeId": 24 }
+    },
+    {
+      "id": 1008,
+      "category": "character",
+      "refId": 4,
+      "slug": "zoro-arlong-park",
+      "title": "Roronoa Zoro — Arlong Park",
+      "rarity": "legendary",
+      "image": "/cards/zoro.webp",
+      "description": "Zoro promete a Nami que la tripulación la apoyará siempre.",
+      "abilities": ["Santoryu Ogi: Rokudo no Tsuji"],
+      "bounty": 60000000,
+      "unlock": { "kind": "episode", "episodeId": 44 }
+    },
+    {
+      "id": 1009,
+      "category": "character",
+      "refId": 7,
+      "slug": "nami-orange-town",
+      "title": "Nami — Orange Town",
+      "rarity": "common",
+      "image": "/cards/nami.webp",
+      "description": "Nami aparece como ladrona en Orange Town aliada temporalmente con Luffy.",
+      "abilities": ["Thievery", "Navigation skills"],
+      "bounty": 0,
+      "unlock": { "kind": "episode", "episodeId": 4 }
+    },
+    {
+      "id": 1010,
+      "category": "character",
+      "refId": 7,
+      "slug": "nami-syrup-village",
+      "title": "Nami — Syrup Village",
+      "rarity": "uncommon",
+      "image": "/cards/nami.webp",
+      "description": "Nami planea robar el Going Merry mientras ayuda contra los piratas del Gato Negro.",
+      "abilities": ["Navigation skills", "Weather reading"],
+      "bounty": 0,
+      "unlock": { "kind": "episode", "episodeId": 9 }
+    },
+    {
+      "id": 1011,
+      "category": "character",
+      "refId": 7,
+      "slug": "nami-arlong-park",
+      "title": "Nami — Arlong Park",
+      "rarity": "rare",
+      "image": "/cards/nami.webp",
+      "description": "Nami pide ayuda a Luffy tras años bajo el yugo de Arlong.",
+      "abilities": ["Climatact basics"],
+      "bounty": 16000000,
+      "unlock": { "kind": "episode", "episodeId": 37 }
+    },
+    {
+      "id": 1012,
+      "category": "character",
+      "refId": 7,
+      "slug": "nami-straw-hat",
+      "title": "Nami — Official Nakama",
+      "rarity": "legendary",
+      "image": "/cards/nami.webp",
+      "description": "Nami se une oficialmente a los Sombrero de Paja tras derrotar a Arlong.",
+      "abilities": ["Climatact", "Weather manipulation"],
+      "bounty": 16000000,
+      "unlock": { "kind": "episode", "episodeId": 44 }
+    }
+  ]
+}

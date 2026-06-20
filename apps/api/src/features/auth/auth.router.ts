@@ -16,7 +16,7 @@ function signToken(user: UserDoc) {
   return jwt.sign(
     { id: user._id.toString(), email: user.email, role: user.role },
     env.jwtSecret,
-    { expiresIn: '1h' },
+    { expiresIn: '2h' },
   );
 }
 

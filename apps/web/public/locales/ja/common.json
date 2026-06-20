@@ -81,7 +81,9 @@
       "features": "機能",
       "onepiece": "ワンピース",
       "characters": "キャラクター",
+      "cards": "カード",
       "history": "歴史",
+      "serie": "年表",
       "map": "地図",
       "help": "ヘルプ",
       "faq": "よくある質問",
@@ -198,5 +200,44 @@
   "map": {
     "meta_title": "地図 — LogPose",
     "alt": "ワンピースの世界地図"
+  },
+  "serie": {
+    "meta_title": "年表 — LogPose",
+    "title": "アニメ年表",
+    "subtitle": "ワンピースのサガ、アーク、エピソードを探索します。報酬データはAPIから取得されます。",
+    "loading": "読み込み中…",
+    "error": "年表を読み込めませんでした",
+    "sagas_heading": "サガ ({{count}})",
+    "saga_meta": "{{arcs}} アーク · {{episodes}} 話",
+    "arcs_heading": "{{saga}} のアーク",
+    "arcs_placeholder": "アーク",
+    "select_saga": "サガを選択",
+    "arc_meta": "{{episodes}} 話",
+    "episodes_heading": "{{arc}} のエピソード",
+    "episodes_placeholder": "エピソード",
+    "select_arc": "アークを選択",
+    "episode_number": "第{{number}}話",
+    "episode_xp": "+{{xp}} XP",
+    "no_episodes": "このアークのエピソードはまだインポートされていません",
+    "filler": "フィラー"
+  },
+  "cards": {
+    "meta_title": "カード — LogPose",
+    "title": "バージョン付きコレクション",
+    "subtitle": "各キャラクターには物語の特定の瞬間に紐づく複数のカードがあります。",
+    "loading": "読み込み中…",
+    "error": "ギャラリーを読み込めませんでした",
+    "characters_heading": "キャラクター ({{count}})",
+    "versions_heading": "{{name}} のバージョン",
+    "versions_placeholder": "バージョン",
+    "select_character": "キャラクターを選択",
+    "unlock_label": "解放: {{kind}} #{{id}}",
+    "bounty": "懸賞金: {{value}} ベリー",
+    "rarity": {
+      "common": "コモン",
+      "uncommon": "アンコモン",
+      "rare": "レア",
+      "legendary": "レジェンダリー"
+    }
   }
 }

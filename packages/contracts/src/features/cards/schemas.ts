@@ -10,13 +10,19 @@ export const cardTypeParamsSchema = z.object({
 
 export const cardUserIdParamsSchema = mongoIdParamsSchema('userId');
 
+export const characterIdParamsSchema = z.object({
+  params: z.object({
+    characterId: z.coerce.number().int().positive(),
+  }),
+});
+
 const catalogCardSchema = z
   .object({
     id: z.number(),
     name: z.string(),
     image: z.string(),
   })
-  .passthrough();
+  .loose();
 
 export const catalogTypeOutputSchema = z.object({
   type: cardTypeSchema,

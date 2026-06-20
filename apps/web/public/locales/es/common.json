@@ -81,7 +81,9 @@
       "features": "Features",
       "onepiece": "One Piece",
       "characters": "Personajes",
+      "cards": "Cartas",
       "history": "Historia",
+      "serie": "Cronología",
       "map": "Mapa",
       "help": "Ayuda",
       "faq": "FAQ",
@@ -198,5 +200,44 @@
   "map": {
     "meta_title": "Mapa — LogPose",
     "alt": "Mapa del mundo de One Piece"
+  },
+  "serie": {
+    "meta_title": "Cronología — LogPose",
+    "title": "Cronología del anime",
+    "subtitle": "Explora sagas, arcos y episodios reales de One Piece. Los datos de recompensas vienen del servidor.",
+    "loading": "Cargando…",
+    "error": "No se pudo cargar la cronología",
+    "sagas_heading": "Sagas ({{count}})",
+    "saga_meta": "{{arcs}} arcos · {{episodes}} episodios",
+    "arcs_heading": "Arcos de {{saga}}",
+    "arcs_placeholder": "Arcos",
+    "select_saga": "Selecciona una saga",
+    "arc_meta": "{{episodes}} episodios",
+    "episodes_heading": "Episodios de {{arc}}",
+    "episodes_placeholder": "Episodios",
+    "select_arc": "Selecciona un arco",
+    "episode_number": "Ep. {{number}}",
+    "episode_xp": "+{{xp}} XP",
+    "no_episodes": "Aún no hay episodios importados para este arco",
+    "filler": "Relleno"
+  },
+  "cards": {
+    "meta_title": "Cartas — LogPose",
+    "title": "Colección versionada",
+    "subtitle": "Cada personaje tiene varias cartas ancladas a momentos concretos de la historia.",
+    "loading": "Cargando…",
+    "error": "No se pudo cargar la galería",
+    "characters_heading": "Personajes ({{count}})",
+    "versions_heading": "Versiones de {{name}}",
+    "versions_placeholder": "Versiones",
+    "select_character": "Selecciona un personaje",
+    "unlock_label": "Desbloqueo: {{kind}} #{{id}}",
+    "bounty": "Recompensa: {{value}} Berries",
+    "rarity": {
+      "common": "Común",
+      "uncommon": "Poco común",
+      "rare": "Rara",
+      "legendary": "Legendaria"
+    }
   }
 }

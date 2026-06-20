@@ -114,6 +114,12 @@ export function LandingHeaderComponent() {
                   <Link href="/characters">{t('landing.nav.characters')}</Link>
                 </DropdownMenu.Item>
                 <DropdownMenu.Item asChild>
+                  <Link href="/cards">{t('landing.nav.cards')}</Link>
+                </DropdownMenu.Item>
+                <DropdownMenu.Item asChild>
+                  <Link href="/serie">{t('landing.nav.serie')}</Link>
+                </DropdownMenu.Item>
+                <DropdownMenu.Item asChild>
                   <Link href="/map">{t('landing.nav.map')}</Link>
                 </DropdownMenu.Item>
               </DropdownMenu.Content>

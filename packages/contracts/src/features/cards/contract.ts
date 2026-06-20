@@ -4,9 +4,15 @@ import {
   collectionOutputSchema,
 } from '../../common/card.schemas.js';
 import {
+  characterListOutputSchema,
+  characterCardsOutputSchema,
+  versionedCatalogOutputSchema,
+} from '../../common/cards-v2.schemas.js';
+import {
   cardTypeParamsSchema,
   cardUserIdParamsSchema,
   catalogTypeOutputSchema,
+  characterIdParamsSchema,
 } from './schemas.js';
 
 export const cardsErrors = {
@@ -21,6 +27,10 @@ export const cardsErrors = {
   INVALID_CARD_TYPE: {
     status: 400,
     message: 'Tipo de carta no válido',
+  },
+  CHARACTER_NOT_FOUND: {
+    status: 404,
+    message: 'Character not found',
   },
 } as const;
 
@@ -77,4 +87,31 @@ export const cardsContract = oc
       .input(cardUserIdParamsSchema)
       .errors(cardsErrors)
       .output(collectionOutputSchema),
+
+    listCharactersV2: oc
+      .route({
+        method: 'GET',
+        path: '/v2/characters',
+        description: 'List stable character entities for versioned cards',
+      })
+      .output(characterListOutputSchema),
+
+    getCatalogV2: oc
+      .route({
+        method: 'GET',
+        path: '/v2/catalog',
+        description: 'Get the full read-only versioned card catalog',
+      })
+      .output(versionedCatalogOutputSchema),
+
+    listCharacterCardsV2: oc
+      .route({
+        method: 'GET',
+        path: '/v2/characters/{characterId}/cards',
+        inputStructure: 'detailed',
+        description: 'List versioned cards for a character',
+      })
+      .input(characterIdParamsSchema)
+      .errors(cardsErrors)
+      .output(characterCardsOutputSchema),
   });

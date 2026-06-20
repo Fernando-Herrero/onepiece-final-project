@@ -11,6 +11,7 @@ import { healthRouter } from '../../features/health/health.router.js';
 import { notificationsRouter } from '../../features/notifications/notifications.router.js';
 import { postsRouter } from '../../features/posts/posts.router.js';
 import { progressRouter } from '../../features/progress/progress.router.js';
+import { serieRouter } from '../../features/serie/serie.router.js';
 import { usersRouter } from '../../features/users/users.router.js';
 
 export const apiRouter = {
@@ -22,6 +23,7 @@ export const apiRouter = {
   progress: progressRouter,
   cards: cardsRouter,
   notifications: notificationsRouter,
+  serie: serieRouter,
 };
 
 export const orpcHandler = new OpenAPIHandler(apiRouter, {

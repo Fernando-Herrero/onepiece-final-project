@@ -81,7 +81,9 @@
       "features": "Features",
       "onepiece": "One Piece",
       "characters": "Characters",
+      "cards": "Cards",
       "history": "History",
+      "serie": "Timeline",
       "map": "Map",
       "help": "Help",
       "faq": "FAQ",
@@ -198,5 +200,44 @@
   "map": {
     "meta_title": "Map — LogPose",
     "alt": "One Piece world map"
+  },
+  "serie": {
+    "meta_title": "Timeline — LogPose",
+    "title": "Anime timeline",
+    "subtitle": "Browse real One Piece sagas, arcs and episodes. Reward metadata is served from the API.",
+    "loading": "Loading…",
+    "error": "Could not load the timeline",
+    "sagas_heading": "Sagas ({{count}})",
+    "saga_meta": "{{arcs}} arcs · {{episodes}} episodes",
+    "arcs_heading": "{{saga}} arcs",
+    "arcs_placeholder": "Arcs",
+    "select_saga": "Select a saga",
+    "arc_meta": "{{episodes}} episodes",
+    "episodes_heading": "{{arc}} episodes",
+    "episodes_placeholder": "Episodes",
+    "select_arc": "Select an arc",
+    "episode_number": "Ep. {{number}}",
+    "episode_xp": "+{{xp}} XP",
+    "no_episodes": "No episodes imported for this arc yet",
+    "filler": "Filler"
+  },
+  "cards": {
+    "meta_title": "Cards — LogPose",
+    "title": "Versioned collection",
+    "subtitle": "Each character has multiple cards tied to specific story moments.",
+    "loading": "Loading…",
+    "error": "Could not load the gallery",
+    "characters_heading": "Characters ({{count}})",
+    "versions_heading": "{{name}} versions",
+    "versions_placeholder": "Versions",
+    "select_character": "Select a character",
+    "unlock_label": "Unlock: {{kind}} #{{id}}",
+    "bounty": "Bounty: {{value}} Berries",
+    "rarity": {
+      "common": "Common",
+      "uncommon": "Uncommon",
+      "rare": "Rare",
+      "legendary": "Legendary"
+    }
   }
 }
