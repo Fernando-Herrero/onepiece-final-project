@@ -21,12 +21,17 @@ export function DashboardNavRail({
   return (
     <aside className="flex h-full w-14 shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] py-3 text-[#f4ede1]">
       <Flex justify="center" pb="3" className="border-b border-[#f2d9a8]/10">
-        <Button asChild variant="ghost" highContrast className="-m-0.5 font-one-piece text-lg text-[#f2d9a8]">
+        <Button
+          asChild
+          variant="ghost"
+          highContrast
+          className="font-one-piece text-lg text-[#f2d9a8]"
+        >
           <Link href="/dashboard/profile">LP</Link>
         </Button>
       </Flex>
 
-      <nav className="flex flex-1 flex-col gap-1 px-2 py-3">
+      <nav className="flex flex-1 flex-col items-center gap-2 px-2 py-6">
         {DASHBOARD_NAV_ITEMS.map(item => (
           <NavRailLink
             key={item.id}
@@ -37,13 +42,13 @@ export function DashboardNavRail({
       </nav>
 
       <Box px="2">
-        <Tooltip content={t('dashboard.nav.expand')}>
+        <Tooltip side="right" content={t('dashboard.nav.expand')}>
           <IconButton
             type="button"
             variant="ghost"
             color="orange"
             highContrast
-            className="w-full"
+            className="m-0! box-border size-9 p-0 text-lg"
             aria-label={t('dashboard.nav.expand')}
             onClick={onToggleExpanded}
           >
@@ -65,13 +70,13 @@ function NavRailLink({
   const { t } = useTranslation();
 
   return (
-    <Tooltip content={t(item.labelKey)}>
+    <Tooltip side="right" content={t(item.labelKey)}>
       <Button
         asChild
         variant={active ? 'soft' : 'ghost'}
         color={active ? 'orange' : 'gray'}
         highContrast={active}
-        className="w-full text-lg"
+        className="m-0! box-border size-9 p-0 text-lg"
       >
         <Link href={item.href}>
           <span aria-hidden>{item.icon}</span>

@@ -27,12 +27,17 @@ export function DashboardNavSidebar({
         py="4"
         className="border-b border-[#f2d9a8]/10"
       >
-        <Button asChild variant="ghost" highContrast className="-m-0.5 font-one-piece text-xl text-[#f2d9a8]">
+        <Button
+          asChild
+          variant="ghost"
+          highContrast
+          className="font-one-piece -m-0.5 text-xl text-[#f2d9a8]"
+        >
           <Link href="/dashboard/profile">LogPose</Link>
         </Button>
       </Flex>
 
-      <nav className="flex flex-1 flex-col gap-1 px-3 py-4">
+      <nav className="flex flex-1 flex-col gap-2 px-3 py-4">
         {DASHBOARD_NAV_ITEMS.map(item => (
           <NavSidebarLink
             key={item.id}
@@ -80,7 +85,7 @@ function NavSidebarLink({
       variant={active ? 'soft' : 'ghost'}
       color={active ? 'orange' : 'gray'}
       highContrast={active}
-      className="h-auto w-full justify-start gap-3 px-3 py-2"
+      className="box-border h-auto w-full justify-start gap-3 px-3 py-2"
     >
       <Link href={item.href}>
         <span aria-hidden>{item.icon}</span>
