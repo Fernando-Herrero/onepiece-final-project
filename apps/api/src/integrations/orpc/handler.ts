@@ -3,6 +3,7 @@ import type { IncomingHttpHeaders } from 'node:http';
 import { OpenAPIHandler } from '@orpc/openapi/node';
 import { onError } from '@orpc/server';
 import { ZodSmartCoercionPlugin } from '@orpc/zod';
+import type { Response } from 'express';
 
 import { authRouter } from '../../features/auth/auth.router.js';
 import { cardsRouter } from '../../features/cards/cards.router.js';
@@ -31,6 +32,6 @@ export const orpcHandler = new OpenAPIHandler(apiRouter, {
   interceptors: [onError(error => console.error('[orpc]', error))],
 });
 
-export function createOrpcContext(headers: IncomingHttpHeaders) {
-  return { headers };
+export function createOrpcContext(headers: IncomingHttpHeaders, res: Response) {
+  return { headers, res };
 }

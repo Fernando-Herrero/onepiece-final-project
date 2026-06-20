@@ -33,7 +33,6 @@ export const changePasswordSchema = z
 
 export const authSessionSchema = z.object({
   user: userPublicSchema,
-  token: z.string(),
 });
 
 export const authMessageSchema = z.object({

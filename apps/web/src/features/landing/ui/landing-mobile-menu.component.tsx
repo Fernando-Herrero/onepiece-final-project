@@ -14,9 +14,7 @@ type MobileNavItem = {
   labelKey:
     | 'landing.nav.features'
     | 'landing.nav.history'
-    | 'landing.nav.serie'
     | 'landing.nav.characters'
-    | 'landing.nav.cards'
     | 'landing.nav.map'
     | 'landing.nav.faq'
     | 'landing.nav.contact';
@@ -26,9 +24,7 @@ const MOBILE_NAV_SECTIONS: MobileNavItem[][] = [
   [{ href: '/#features', labelKey: 'landing.nav.features' }],
   [
     { href: '/history', labelKey: 'landing.nav.history' },
-    { href: '/serie', labelKey: 'landing.nav.serie' },
     { href: '/characters', labelKey: 'landing.nav.characters' },
-    { href: '/cards', labelKey: 'landing.nav.cards' },
     { href: '/map', labelKey: 'landing.nav.map' },
   ],
   [

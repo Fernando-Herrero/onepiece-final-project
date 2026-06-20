@@ -13,7 +13,12 @@ const app = express();
 // Reverse proxy (Vercel, nginx): req.protocol respects X-Forwarded-Proto in OpenAPI spec
 app.set('trust proxy', 1);
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
+    credentials: true,
+  }),
+);
 
 // Docs OpenAPI — rutas Express normales, NO oRPC
 app.get('/api/orpc/spec.json', serveOpenApiSpec);
@@ -22,7 +27,7 @@ app.get('/api/orpc', serveSwaggerUi);
 // Procedimientos oRPC (health, auth, posts…)
 app.use('/api', async (req, res, next) => {
   const { matched } = await orpcHandler.handle(req, res, {
-    context: createOrpcContext(req.headers),
+    context: createOrpcContext(req.headers, res),
   });
 
   if (matched) {

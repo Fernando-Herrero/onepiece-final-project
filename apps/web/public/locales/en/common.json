@@ -239,5 +239,43 @@
       "rare": "Rare",
       "legendary": "Legendary"
     }
+  },
+  "dashboard": {
+    "nav": {
+      "profile": "Profile",
+      "community": "Community",
+      "serie": "Series",
+      "cards": "Cards",
+      "search": "Search",
+      "notifications": "Notifications",
+      "settings": "Settings",
+      "expand": "Expand menu",
+      "collapse": "Collapse menu"
+    },
+    "topbar": {
+      "logout": "Log out"
+    },
+    "pages": {
+      "profile": {
+        "title": "Your profile",
+        "body": "Coming soon: avatar, progress, followers and profile editing."
+      },
+      "community": {
+        "title": "Community",
+        "body": "Coming soon: posts feed, likes and comments."
+      },
+      "search": {
+        "title": "Search",
+        "body": "Coming soon: search users and posts."
+      },
+      "notifications": {
+        "title": "Notifications",
+        "body": "Coming soon: activity alerts and mentions."
+      },
+      "settings": {
+        "title": "Settings",
+        "body": "Coming soon: privacy, language and account."
+      }
+    }
   }
 }

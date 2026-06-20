@@ -9,8 +9,8 @@ import { User } from '../users/user.model.js';
 import {
   getCardsV2ByCharacterId,
   getCardsV2Data,
-  getCharacterV2ById,
   getCharactersV2Data,
+  getCharacterV2ById,
 } from './cards-v2-data.js';
 import {
   buildCollectionStats,

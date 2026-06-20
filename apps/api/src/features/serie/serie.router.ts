@@ -1,7 +1,7 @@
 import { contract } from '@logpose/contracts/contract';
 import { implement, ORPCError } from '@orpc/server';
 
-import { type ApiContext } from '../../integrations/orpc/auth.middleware.js';
+import type { ApiContext } from '../../integrations/orpc/auth.middleware.js';
 import {
   getArcById,
   getArcsBySagaId,

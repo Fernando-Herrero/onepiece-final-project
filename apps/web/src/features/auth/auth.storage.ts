@@ -1,41 +1,9 @@
-const TOKEN_KEY = 'token';
+export const SESSION_COOKIE_NAME = 'logpose_session';
 
-const listeners = new Set<() => void>();
-
-function notifyAuthTokenListeners() {
-  for (const listener of listeners) {
-    listener();
-  }
-}
-
-export function subscribeAuthToken(listener: () => void) {
-  const onStorage = () => {
-    listener();
-  };
-
-  listeners.add(listener);
-  window.addEventListener('storage', onStorage);
-
-  return () => {
-    listeners.delete(listener);
-    window.removeEventListener('storage', onStorage);
-  };
-}
-
-export function getAuthToken() {
+export function clearLegacyAuthToken() {
   if (typeof window === 'undefined') {
-    return null;
+    return;
   }
 
-  return localStorage.getItem(TOKEN_KEY);
-}
-
-export function setAuthToken(token: string) {
-  localStorage.setItem(TOKEN_KEY, token);
-  notifyAuthTokenListeners();
-}
-
-export function clearAuthToken() {
-  localStorage.removeItem(TOKEN_KEY);
-  notifyAuthTokenListeners();
+  localStorage.removeItem('token');
 }

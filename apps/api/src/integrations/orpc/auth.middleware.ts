@@ -1,8 +1,10 @@
 import type { IncomingHttpHeaders } from 'node:http';
 
 import { ORPCError, os } from '@orpc/server';
+import type { Response } from 'express';
 import jwt from 'jsonwebtoken';
 
+import { getSessionTokenFromCookieHeader } from '../../features/auth/auth.cookies.js';
 import { env } from '../../integrations/env/server.js';
 
 export type AuthPayload = {
@@ -13,13 +15,17 @@ export type AuthPayload = {
 
 export type ApiContext = {
   headers: IncomingHttpHeaders;
+  res: Response;
   user?: AuthPayload;
 };
 
 export function getOptionalAuthUser(
   headers: IncomingHttpHeaders,
 ): AuthPayload | undefined {
-  const token = headers.authorization?.split(' ')[1];
+  const bearer = headers.authorization?.split(' ')[1];
+  const cookieToken = getSessionTokenFromCookieHeader(headers.cookie);
+  const token = bearer ?? cookieToken;
+
   if (!token) {
     return undefined;
   }

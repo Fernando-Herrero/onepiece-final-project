@@ -2,7 +2,6 @@ import { createORPCClient } from '@orpc/client';
 import type { ContractRouterClient } from '@orpc/contract';
 import { OpenAPILink } from '@orpc/openapi-client/fetch';
 
-import { getAuthToken } from '@/features/auth/auth.storage';
 import { contract } from '@/integrations/orpc/orpc.contract';
 
 const link = new OpenAPILink(contract, {
@@ -13,11 +12,11 @@ const link = new OpenAPILink(contract, {
 
     return `${window.location.origin}`;
   },
-  headers: () => {
-    const token = getAuthToken();
-
-    return token ? { Authorization: `Bearer ${token}` } : {};
-  },
+  fetch: (input, init) =>
+    fetch(input, {
+      ...init,
+      credentials: 'include',
+    }),
 });
 
 export const client =

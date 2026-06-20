@@ -9,6 +9,7 @@ import {
   requireAuth,
 } from '../../integrations/orpc/auth.middleware.js';
 import { serializeUser, User, type UserDoc } from '../users/user.model.js';
+import { clearSessionCookie, setSessionCookie } from './auth.cookies.js';
 
 const os = implement(contract.auth).$context<ApiContext>();
 
@@ -20,7 +21,7 @@ function signToken(user: UserDoc) {
   );
 }
 
-const register = os.register.handler(async ({ input }) => {
+const register = os.register.handler(async ({ input, context }) => {
   const hashedPassword = await bcrypt.hash(input.password, 10);
 
   try {
@@ -39,9 +40,10 @@ const register = os.register.handler(async ({ input }) => {
       privacy: input.privacy,
     });
 
+    setSessionCookie(context.res, signToken(newUser));
+
     return {
       user: serializeUser(newUser),
-      token: signToken(newUser),
     };
   } catch (error) {
     if (
@@ -58,7 +60,7 @@ const register = os.register.handler(async ({ input }) => {
   }
 });
 
-const login = os.login.handler(async ({ input }) => {
+const login = os.login.handler(async ({ input, context }) => {
   const user = await User.findOne({ email: input.email }).select('+password');
   const valid = user
     ? await bcrypt.compare(input.password, user.password)
@@ -72,9 +74,10 @@ const login = os.login.handler(async ({ input }) => {
     throw new ORPCError('ACCOUNT_INACTIVE');
   }
 
+  setSessionCookie(context.res, signToken(user));
+
   return {
     user: serializeUser(user),
-    token: signToken(user),
   };
 });
 
@@ -112,7 +115,8 @@ const changePassword = os.changePassword
     return { message: 'Password changed successfully' };
   });
 
-const logout = os.logout.use(requireAuth).handler(async () => {
+const logout = os.logout.use(requireAuth).handler(async ({ context }) => {
+  clearSessionCookie(context.res);
   return { message: 'Logout successful' };
 });
 

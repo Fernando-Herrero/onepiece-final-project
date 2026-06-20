@@ -239,5 +239,43 @@
       "rare": "レア",
       "legendary": "レジェンダリー"
     }
+  },
+  "dashboard": {
+    "nav": {
+      "profile": "プロフィール",
+      "community": "コミュニティ",
+      "serie": "シリーズ",
+      "cards": "カード",
+      "search": "検索",
+      "notifications": "通知",
+      "settings": "設定",
+      "expand": "メニューを展開",
+      "collapse": "メニューを折りたたむ"
+    },
+    "topbar": {
+      "logout": "ログアウト"
+    },
+    "pages": {
+      "profile": {
+        "title": "プロフィール",
+        "body": "近日公開：アバター、進捗、フォロワー、プロフィール編集。"
+      },
+      "community": {
+        "title": "コミュニティ",
+        "body": "近日公開：投稿フィード、いいね、コメント。"
+      },
+      "search": {
+        "title": "検索",
+        "body": "近日公開：ユーザーと投稿の検索。"
+      },
+      "notifications": {
+        "title": "通知",
+        "body": "近日公開：アクティビティ通知とメンション。"
+      },
+      "settings": {
+        "title": "設定",
+        "body": "近日公開：プライバシー、言語、アカウント。"
+      }
+    }
   }
 }

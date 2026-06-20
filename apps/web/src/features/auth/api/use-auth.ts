@@ -6,7 +6,6 @@ import {
 import { useRouter } from 'next/router';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
-import { clearAuthToken, setAuthToken } from '@/features/auth/auth.storage';
 import type { RegisterFormValues } from '@/features/auth/register-form.schema';
 import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
@@ -27,10 +26,9 @@ function useAuthSuccess() {
   const queryClient = useQueryClient();
   const router = useRouter();
 
-  return (data: { token: string; user: unknown }) => {
-    setAuthToken(data.token);
+  return (data: { user: unknown }) => {
     queryClient.setQueryData(authKeys.me(), data.user);
-    void router.push('/');
+    void router.push('/dashboard/profile');
   };
 }
 
@@ -63,7 +61,6 @@ export function useLogoutMutation() {
   return useMutation({
     mutationFn: () => client.auth.logout(),
     onSettled: () => {
-      clearAuthToken();
       queryClient.removeQueries({ queryKey: authKeys.all });
       void router.push('/login');
     },
