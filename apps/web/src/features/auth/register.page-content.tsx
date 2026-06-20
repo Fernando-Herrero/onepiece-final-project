@@ -1,3 +1,4 @@
+import { Flex } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { ErrorBoundary } from 'react-error-boundary';
 
@@ -10,11 +11,11 @@ export default function RegisterPageContent() {
 
   return (
     <LandingPublicLayout title={t('auth.register_title')} centered>
-      <div className="flex justify-center">
+      <Flex justify="center">
         <ErrorBoundary FallbackComponent={QueryErrorFallback}>
           <RegisterFormComponent />
         </ErrorBoundary>
-      </div>
+      </Flex>
     </LandingPublicLayout>
   );
 }

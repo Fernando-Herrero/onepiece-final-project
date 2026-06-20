@@ -1,4 +1,4 @@
-import { Heading, Link as RadixLink, Text } from '@radix-ui/themes';
+import { Card, Heading, Link as RadixLink, Text } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
@@ -91,7 +91,7 @@ export default function HistoryPageContent() {
 
   return (
     <LandingPublicLayout title={t('history.meta_title')}>
-      <div className="rounded-xl border border-dashed border-[#a64242]/50 bg-[#0b1120]/40 p-6 shadow-lg">
+      <Card className="rounded-xl border border-dashed border-[#a64242]/50 bg-[#0b1120]/40 p-6 shadow-lg">
         <Reveal>
           <Heading
             as="h1"
@@ -135,7 +135,7 @@ export default function HistoryPageContent() {
             </section>
           </Reveal>
         ))}
-      </div>
+      </Card>
     </LandingPublicLayout>
   );
 }

@@ -1,4 +1,9 @@
-import { Button } from '@radix-ui/themes';
+import {
+  Button,
+  Heading,
+  Link as RadixLink,
+  Text,
+} from '@radix-ui/themes';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
@@ -29,21 +34,23 @@ export function AuthFormShell({
         onSubmit();
       }}
     >
-      <h1 className="font-one-piece text-center text-2xl tracking-wide text-[#f2d9a8]">
+      <Heading
+        as="h1"
+        size="5"
+        align="center"
+        className="font-one-piece tracking-wide text-[#f2d9a8]"
+      >
         {title}
-      </h1>
+      </Heading>
 
       {children}
 
-      <p className="text-center text-sm text-[#f4ede1]/75">
+      <Text as="p" size="2" align="center" className="text-[#f4ede1]/75">
         {footerText}{' '}
-        <Link
-          className="text-[#f2d9a8] underline hover:text-[#f4ede1]"
-          href={footerLinkHref}
-        >
-          {footerLinkText}
-        </Link>
-      </p>
+        <RadixLink asChild className="text-[#f2d9a8] underline hover:text-[#f4ede1]">
+          <Link href={footerLinkHref}>{footerLinkText}</Link>
+        </RadixLink>
+      </Text>
     </form>
   );
 }

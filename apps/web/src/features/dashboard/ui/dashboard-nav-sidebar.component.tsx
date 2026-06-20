@@ -1,4 +1,4 @@
-import { Flex, Text } from '@radix-ui/themes';
+import { Button, Flex, IconButton, Text } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
@@ -27,9 +27,9 @@ export function DashboardNavSidebar({
         py="4"
         className="border-b border-[#f2d9a8]/10"
       >
-        <Link href="/dashboard/profile" className="font-one-piece text-xl text-[#f2d9a8]">
-          LogPose
-        </Link>
+        <Button asChild variant="ghost" highContrast className="-m-0.5 font-one-piece text-xl text-[#f2d9a8]">
+          <Link href="/dashboard/profile">LogPose</Link>
+        </Button>
       </Flex>
 
       <nav className="flex flex-1 flex-col gap-1 px-3 py-4">
@@ -42,15 +42,25 @@ export function DashboardNavSidebar({
         ))}
       </nav>
 
-      <div className="border-t border-[#f2d9a8]/10 px-3 py-3">
-        <button
+      <Flex
+        align="center"
+        justify="end"
+        px="3"
+        py="3"
+        className="border-t border-[#f2d9a8]/10"
+      >
+        <IconButton
           type="button"
+          variant="ghost"
+          color="orange"
+          highContrast
+          className="-m-0.5"
+          aria-label={t('dashboard.nav.collapse')}
           onClick={onToggleExpanded}
-          className="flex w-full items-center justify-end rounded-lg px-2 py-2 text-sm text-[#f2d9a8]/80 transition-colors hover:bg-[#f2d9a8]/10"
         >
-          {t('dashboard.nav.collapse')} «
-        </button>
-      </div>
+          «
+        </IconButton>
+      </Flex>
     </aside>
   );
 }
@@ -65,18 +75,19 @@ function NavSidebarLink({
   const { t } = useTranslation();
 
   return (
-    <Link
-      href={item.href}
-      className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-colors ${
-        active
-          ? 'bg-[#f2d9a8]/15 text-[#f2d9a8]'
-          : 'text-[#f4ede1]/85 hover:bg-white/5'
-      }`}
+    <Button
+      asChild
+      variant={active ? 'soft' : 'ghost'}
+      color={active ? 'orange' : 'gray'}
+      highContrast={active}
+      className="h-auto w-full justify-start gap-3 px-3 py-2"
     >
-      <span aria-hidden>{item.icon}</span>
-      <Text as="span" size="2" weight="medium">
-        {t(item.labelKey)}
-      </Text>
-    </Link>
+      <Link href={item.href}>
+        <span aria-hidden>{item.icon}</span>
+        <Text as="span" size="2" weight="medium">
+          {t(item.labelKey)}
+        </Text>
+      </Link>
+    </Button>
   );
 }

@@ -1,4 +1,13 @@
-import { Badge, Heading, Text } from '@radix-ui/themes';
+import {
+  Badge,
+  Button,
+  Callout,
+  Card,
+  Grid,
+  Heading,
+  Spinner,
+  Text,
+} from '@radix-ui/themes';
 import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
@@ -30,36 +39,42 @@ export default function CardsPageContent() {
   );
 
   return (
-    <div className="mx-auto max-w-6xl">
+    <Grid columns="1" gap="6" className="mx-auto max-w-6xl lg:grid-cols-[0.9fr_1.4fr]">
       <Heading
         as="h1"
         size="6"
         mb="2"
-        className="font-one-piece tracking-wide text-[#f2d9a8]"
+        className="font-one-piece col-span-full tracking-wide text-[#f2d9a8]"
       >
         {t('cards.title')}
       </Heading>
-      <Text as="p" size="2" color="gray" mb="6" className="text-[#f4ede1]/75">
+      <Text
+        as="p"
+        size="2"
+        color="gray"
+        mb="6"
+        className="col-span-full text-[#f4ede1]/75"
+      >
         {t('cards.subtitle')}
       </Text>
 
       {charactersQuery.isPending ? (
-        <Text align="center" color="gray">
-          {t('cards.loading')}
-        </Text>
+        <FlexCenteredSpinner label={t('cards.loading')} />
       ) : null}
 
       {charactersQuery.isError ? (
-        <Text align="center" color="red">
-          {charactersQuery.error instanceof Error
-            ? charactersQuery.error.message
-            : t('cards.error')}
-        </Text>
+        <Callout.Root color="red" variant="soft" className="col-span-full">
+          <Callout.Text>
+            {charactersQuery.error instanceof Error
+              ? charactersQuery.error.message
+              : t('cards.error')}
+          </Callout.Text>
+        </Callout.Root>
       ) : null}
 
       {charactersQuery.data ? (
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)]">
-          <section className="rounded-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+        <>
+          <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
             <Heading as="h2" size="4" mb="4" className="text-[#f2d9a8]">
               {t('cards.characters_heading', {
                 count: charactersQuery.data.total,
@@ -68,14 +83,17 @@ export default function CardsPageContent() {
             <ul className="space-y-2">
               {charactersQuery.data.characters.map(character => (
                 <li key={character.id}>
-                  <button
+                  <Button
                     type="button"
+                    variant={
+                      selectedCharacterId === character.id ? 'soft' : 'ghost'
+                    }
+                    color={
+                      selectedCharacterId === character.id ? 'orange' : 'gray'
+                    }
+                    highContrast={selectedCharacterId === character.id}
+                    className="h-auto w-full justify-start px-3 py-2 text-left"
                     onClick={() => setSelectedCharacterId(character.id)}
-                    className={`w-full rounded-lg px-3 py-2 text-left transition-colors ${
-                      selectedCharacterId === character.id
-                        ? 'bg-[#f2d9a8]/15 text-[#f2d9a8]'
-                        : 'text-[#f4ede1]/85 hover:bg-white/5'
-                    }`}
                   >
                     <Text as="span" size="2" weight="medium">
                       {character.name}
@@ -85,13 +103,13 @@ export default function CardsPageContent() {
                         {character.position}
                       </Text>
                     ) : null}
-                  </button>
+                  </Button>
                 </li>
               ))}
             </ul>
-          </section>
+          </Card>
 
-          <section className="rounded-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+          <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
             <Heading as="h2" size="4" mb="4" className="text-[#f2d9a8]">
               {selectedCharacter
                 ? t('cards.versions_heading', {
@@ -107,17 +125,15 @@ export default function CardsPageContent() {
             ) : null}
 
             {selectedCharacterId && characterCardsQuery.isPending ? (
-              <Text size="2" color="gray">
-                {t('cards.loading')}
-              </Text>
+              <FlexCenteredSpinner label={t('cards.loading')} />
             ) : null}
 
             {selectedCharacterId && characterCardsQuery.data ? (
-              <div className="grid gap-4 sm:grid-cols-2">
+              <Grid columns={{ initial: '1', sm: '2' }} gap="4">
                 {characterCardsQuery.data.cards.map(card => (
-                  <article
+                  <Card
                     key={card.id}
-                    className={`overflow-hidden rounded-xl border p-3 ${RARITY_CLASS[card.rarity]}`}
+                    className={`overflow-hidden p-3 ${RARITY_CLASS[card.rarity]}`}
                   >
                     <div className="relative mb-3 aspect-3/4 overflow-hidden rounded-lg bg-[#05070d]/60">
                       <Image
@@ -171,13 +187,24 @@ export default function CardsPageContent() {
                         </Text>
                       ) : null}
                     </div>
-                  </article>
+                  </Card>
                 ))}
-              </div>
+              </Grid>
             ) : null}
-          </section>
-        </div>
+          </Card>
+        </>
       ) : null}
+    </Grid>
+  );
+}
+
+function FlexCenteredSpinner({ label }: { label: string }) {
+  return (
+    <div className="col-span-full flex flex-col items-center gap-3 py-6">
+      <Spinner size="3" />
+      <Text align="center" color="gray">
+        {label}
+      </Text>
     </div>
   );
 }

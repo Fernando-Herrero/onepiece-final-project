@@ -1,5 +1,11 @@
 @import 'tw-preset-radix';
 
+/* Radix ghost controls: avoid flex/grid collapse (skip full-width list rows) */
+.rt-Button.rt-variant-ghost:not(.w-full),
+.rt-IconButton.rt-variant-ghost {
+  margin: -0.125rem;
+}
+
 @theme {
   --font-family-one-piece: 'OnePiece', serif;
   --font-family-road-captain: 'RoadCaptain', sans-serif;
@@ -251,6 +257,11 @@ html {
 
 .landing-card-shine:hover::after {
   transform: translateX(120%);
+}
+
+.faq-item > button {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .faq-item > .faq-panel {

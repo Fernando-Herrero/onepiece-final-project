@@ -1,4 +1,4 @@
-import { Button, Card, Flex, Heading, Text } from '@radix-ui/themes';
+import { Button, Card, Flex, Grid, Heading, Text } from '@radix-ui/themes';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
@@ -153,7 +153,11 @@ export default function CharactersPageContent() {
           </Heading>
         </Reveal>
 
-        <div className="grid w-full grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 lg:justify-items-stretch lg:overflow-visible">
+        <Grid
+          columns={{ initial: '1', sm: '2', md: '3', lg: '2' }}
+          gap="4"
+          className="w-full justify-items-center lg:justify-items-stretch lg:overflow-visible"
+        >
           {visibleCrew.map((char, index) => (
             <CharacterCardComponent
               key={char.name}
@@ -163,7 +167,7 @@ export default function CharactersPageContent() {
               isLast={index === visibleCrew.length - 1}
             />
           ))}
-        </div>
+        </Grid>
 
         {visibleCount < CREW.length ? (
           <Card

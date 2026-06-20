@@ -1,3 +1,11 @@
+import {
+  Button,
+  Callout,
+  Flex,
+  Heading,
+  Link as RadixLink,
+  Text,
+} from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 
 type PageErrorProps = {
@@ -16,24 +24,35 @@ export function PageError({
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-12 text-center">
-      <p className="text-4xl">⚠️</p>
-      <h2 className="text-lg font-semibold text-red-700">{title}</h2>
-      {message ? (
-        <p className="max-w-md text-sm text-neutral-600">{message}</p>
-      ) : null}
+    <Flex
+      direction="column"
+      align="center"
+      justify="center"
+      gap="4"
+      py="9"
+      className="text-center"
+    >
+      <Callout.Root color="red" variant="soft" className="max-w-md text-left">
+        <Callout.Icon>⚠️</Callout.Icon>
+        <Callout.Text>
+          <Heading as="h2" size="4" mb={message ? '2' : '0'}>
+            {title}
+          </Heading>
+          {message ? (
+            <Text as="p" size="2" color="gray">
+              {message}
+            </Text>
+          ) : null}
+        </Callout.Text>
+      </Callout.Root>
       {onRetry ? (
-        <button
-          className="rounded bg-red-600 px-4 py-2 text-sm text-white"
-          type="button"
-          onClick={onRetry}
-        >
+        <Button type="button" color="red" onClick={onRetry}>
           {retryText}
-        </button>
+        </Button>
       ) : null}
-      <a className="text-sm underline" href="/">
-        {t('errors.back_home')}
-      </a>
-    </div>
+      <RadixLink asChild color="orange" highContrast>
+        <a href="/">{t('errors.back_home')}</a>
+      </RadixLink>
+    </Flex>
   );
 }

@@ -90,6 +90,7 @@ export function Field({
               type="button"
               color="gray"
               highContrast
+              className="-m-0.5"
               aria-label={
                 passwordVisible
                   ? t('auth.hide_password')

@@ -1,4 +1,4 @@
-import { Flex } from '@radix-ui/themes';
+import { Box, Flex } from '@radix-ui/themes';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 import type { PropsWithChildren } from 'react';
@@ -22,7 +22,7 @@ export function DashboardLayout({ children }: PropsWithChildren) {
 
   return (
     <Flex direction="row" className="h-dvh min-h-0 bg-[#0b1120]">
-      <div
+      <Box
         className={`shrink-0 overflow-hidden transition-[width] duration-200 ${
           navExpanded ? 'w-[220px]' : 'w-14'
         }`}
@@ -38,13 +38,13 @@ export function DashboardLayout({ children }: PropsWithChildren) {
             onToggleExpanded={toggleNavExpanded}
           />
         )}
-      </div>
+      </Box>
 
       <Flex direction="column" className="min-w-0 flex-1 overflow-hidden">
         <DashboardTopBar sectionLabel={sectionLabel} />
-        <main className="min-h-0 flex-1 overflow-auto p-4 md:p-6">
-          {children}
-        </main>
+        <Box asChild className="min-h-0 flex-1 overflow-auto p-4 md:p-6">
+          <main>{children}</main>
+        </Box>
       </Flex>
     </Flex>
   );

@@ -1,4 +1,13 @@
-import { Badge, Heading, Text } from '@radix-ui/themes';
+import {
+  Badge,
+  Button,
+  Callout,
+  Card,
+  Grid,
+  Heading,
+  Spinner,
+  Text,
+} from '@radix-ui/themes';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
@@ -40,39 +49,38 @@ export default function SeriePageContent() {
       </Text>
 
       {sagasQuery.isPending ? (
-        <Text align="center" color="gray">
-          {t('serie.loading')}
-        </Text>
+        <LoadingState label={t('serie.loading')} />
       ) : null}
 
       {sagasQuery.isError ? (
-        <Text align="center" color="red">
-          {sagasQuery.error instanceof Error
-            ? sagasQuery.error.message
-            : t('serie.error')}
-        </Text>
+        <Callout.Root color="red" variant="soft" mb="4">
+          <Callout.Text>
+            {sagasQuery.error instanceof Error
+              ? sagasQuery.error.message
+              : t('serie.error')}
+          </Callout.Text>
+        </Callout.Root>
       ) : null}
 
       {sagasQuery.data ? (
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.4fr)]">
-          <section className="rounded-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+        <Grid columns={{ initial: '1', lg: '3' }} gap="6">
+          <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
             <Heading as="h2" size="4" mb="4" className="text-[#f2d9a8]">
               {t('serie.sagas_heading', { count: sagasQuery.data.total })}
             </Heading>
             <ul className="space-y-2">
               {sagasQuery.data.sagas.map(saga => (
                 <li key={saga.id}>
-                  <button
+                  <Button
                     type="button"
+                    variant={selectedSagaId === saga.id ? 'soft' : 'ghost'}
+                    color={selectedSagaId === saga.id ? 'orange' : 'gray'}
+                    highContrast={selectedSagaId === saga.id}
+                    className="h-auto w-full justify-start px-3 py-2 text-left"
                     onClick={() => {
                       setSelectedSagaId(saga.id);
                       setSelectedArcId(null);
                     }}
-                    className={`w-full rounded-lg px-3 py-2 text-left transition-colors ${
-                      selectedSagaId === saga.id
-                        ? 'bg-[#f2d9a8]/15 text-[#f2d9a8]'
-                        : 'text-[#f4ede1]/85 hover:bg-white/5'
-                    }`}
                   >
                     <Text as="span" size="2" weight="medium">
                       {saga.name}
@@ -83,13 +91,13 @@ export default function SeriePageContent() {
                         episodes: saga.totalEpisodes,
                       })}
                     </Text>
-                  </button>
+                  </Button>
                 </li>
               ))}
             </ul>
-          </section>
+          </Card>
 
-          <section className="rounded-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+          <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
             <Heading as="h2" size="4" mb="4" className="text-[#f2d9a8]">
               {selectedSaga
                 ? t('serie.arcs_heading', { saga: selectedSaga.name })
@@ -103,23 +111,20 @@ export default function SeriePageContent() {
             ) : null}
 
             {selectedSagaId && arcsQuery.isPending ? (
-              <Text size="2" color="gray">
-                {t('serie.loading')}
-              </Text>
+              <LoadingState label={t('serie.loading')} />
             ) : null}
 
             {selectedSagaId && arcsQuery.data ? (
               <ul className="space-y-2">
                 {arcsQuery.data.arcs.map(arc => (
                   <li key={arc.id}>
-                    <button
+                    <Button
                       type="button"
+                      variant={selectedArcId === arc.id ? 'soft' : 'ghost'}
+                      color={selectedArcId === arc.id ? 'orange' : 'gray'}
+                      highContrast={selectedArcId === arc.id}
+                      className="h-auto w-full justify-start px-3 py-2 text-left"
                       onClick={() => setSelectedArcId(arc.id)}
-                      className={`w-full rounded-lg px-3 py-2 text-left transition-colors ${
-                        selectedArcId === arc.id
-                          ? 'bg-[#f2d9a8]/15 text-[#f2d9a8]'
-                          : 'text-[#f4ede1]/85 hover:bg-white/5'
-                      }`}
                     >
                       <FlexArcTitle arc={arc} />
                       <Text as="p" size="1" color="gray" className="mt-1">
@@ -127,14 +132,14 @@ export default function SeriePageContent() {
                           episodes: arc.totalEpisodes,
                         })}
                       </Text>
-                    </button>
+                    </Button>
                   </li>
                 ))}
               </ul>
             ) : null}
-          </section>
+          </Card>
 
-          <section className="rounded-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+          <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
             <Heading as="h2" size="4" mb="4" className="text-[#f2d9a8]">
               {selectedArc
                 ? t('serie.episodes_heading', { arc: selectedArc.name })
@@ -148,40 +153,37 @@ export default function SeriePageContent() {
             ) : null}
 
             {selectedArcId && episodesQuery.isPending ? (
-              <Text size="2" color="gray">
-                {t('serie.loading')}
-              </Text>
+              <LoadingState label={t('serie.loading')} />
             ) : null}
 
             {selectedArcId && episodesQuery.data ? (
               <ul className="max-h-128 space-y-3 overflow-y-auto pr-1">
                 {episodesQuery.data.episodes.map(episode => (
-                  <li
-                    key={episode.id}
-                    className="rounded-lg border border-white/10 bg-[#05070d]/40 p-3"
-                  >
-                    <Text as="p" size="1" color="gray" mb="1">
-                      {t('serie.episode_number', { number: episode.id })}
-                    </Text>
-                    <Text
-                      as="p"
-                      size="2"
-                      weight="medium"
-                      className="text-[#f4ede1]"
-                    >
-                      {episode.name}
-                    </Text>
-                    <Text
-                      as="p"
-                      size="1"
-                      color="gray"
-                      className="mt-2 line-clamp-2"
-                    >
-                      {episode.description}
-                    </Text>
-                    <Text as="p" size="1" className="mt-2 text-[#f2d9a8]/90">
-                      {t('serie.episode_xp', { xp: episode.experience })}
-                    </Text>
+                  <li key={episode.id}>
+                    <Card className="border border-white/10 bg-[#05070d]/40 p-3">
+                      <Text as="p" size="1" color="gray" mb="1">
+                        {t('serie.episode_number', { number: episode.id })}
+                      </Text>
+                      <Text
+                        as="p"
+                        size="2"
+                        weight="medium"
+                        className="text-[#f4ede1]"
+                      >
+                        {episode.name}
+                      </Text>
+                      <Text
+                        as="p"
+                        size="1"
+                        color="gray"
+                        className="mt-2 line-clamp-2"
+                      >
+                        {episode.description}
+                      </Text>
+                      <Text as="p" size="1" className="mt-2 text-[#f2d9a8]/90">
+                        {t('serie.episode_xp', { xp: episode.experience })}
+                      </Text>
+                    </Card>
                   </li>
                 ))}
               </ul>
@@ -194,9 +196,20 @@ export default function SeriePageContent() {
                 {t('serie.no_episodes')}
               </Text>
             ) : null}
-          </section>
-        </div>
+          </Card>
+        </Grid>
       ) : null}
+    </div>
+  );
+}
+
+function LoadingState({ label }: { label: string }) {
+  return (
+    <div className="flex flex-col items-center gap-3 py-4">
+      <Spinner size="3" />
+      <Text align="center" color="gray">
+        {label}
+      </Text>
     </div>
   );
 }

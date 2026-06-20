@@ -1,3 +1,5 @@
+import { Card, Flex, Heading, Text } from '@radix-ui/themes';
+
 import { useTilt } from '@/features/landing/motion/use-tilt';
 
 type CharacterCardProps = {
@@ -16,7 +18,7 @@ export function CharacterCardComponent({
   const tilt = useTilt(6);
 
   return (
-    <article
+    <Card
       onMouseMove={tilt.onMouseMove}
       onMouseLeave={tilt.onMouseLeave}
       className="landing-card group flex w-full max-w-[300px] flex-col items-center overflow-hidden rounded-xl border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/70 to-[#0b1120]/75 backdrop-blur-sm transition-shadow duration-300 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)] lg:min-h-80 lg:max-w-full lg:flex-row lg:gap-4 lg:overflow-visible"
@@ -48,14 +50,14 @@ export function CharacterCardComponent({
         </picture>
       </div>
 
-      <div className="flex flex-col gap-2 px-6 pb-4 text-center lg:max-w-55 lg:justify-center lg:pr-8 lg:text-right">
-        <h2 className="font-road-captain text-xl tracking-wide text-[#f2d9a8]">
+      <Flex direction="column" gap="2" className="px-6 pb-4 text-center lg:max-w-55 lg:justify-center lg:pr-8 lg:text-right">
+        <Heading as="h2" size="4" className="font-road-captain tracking-wide text-[#f2d9a8]">
           {name}
-        </h2>
-        <p className="text-sm leading-relaxed text-[#f4ede1]/75 lg:pl-7">
+        </Heading>
+        <Text as="p" size="2" className="leading-relaxed text-[#f4ede1]/75 lg:pl-7">
           {text}
-        </p>
-      </div>
-    </article>
+        </Text>
+      </Flex>
+    </Card>
   );
 }

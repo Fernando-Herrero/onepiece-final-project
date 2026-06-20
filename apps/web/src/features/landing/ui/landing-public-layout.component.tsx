@@ -1,3 +1,4 @@
+import { Flex } from '@radix-ui/themes';
 import Head from 'next/head';
 import type { ReactNode } from 'react';
 
@@ -23,7 +24,10 @@ export function LandingPublicLayout({
   useSmoothScroll();
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#05070d] text-[#f4ede1]">
+    <Flex
+      direction="column"
+      className="min-h-screen bg-[#05070d] text-[#f4ede1]"
+    >
       <Head>
         <title>{title}</title>
         {description ? <meta name="description" content={description} /> : null}
@@ -35,6 +39,6 @@ export function LandingPublicLayout({
         {children}
       </main>
       <LandingFooterComponent />
-    </div>
+    </Flex>
   );
 }

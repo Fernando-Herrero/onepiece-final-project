@@ -1,4 +1,4 @@
-import { Box, Flex, IconButton, Tooltip } from '@radix-ui/themes';
+import { Box, Button, Flex, IconButton, Tooltip } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
@@ -21,12 +21,9 @@ export function DashboardNavRail({
   return (
     <aside className="flex h-full w-14 shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] py-3 text-[#f4ede1]">
       <Flex justify="center" pb="3" className="border-b border-[#f2d9a8]/10">
-        <Link
-          href="/dashboard/profile"
-          className="font-one-piece text-lg text-[#f2d9a8]"
-        >
-          LP
-        </Link>
+        <Button asChild variant="ghost" highContrast className="-m-0.5 font-one-piece text-lg text-[#f2d9a8]">
+          <Link href="/dashboard/profile">LP</Link>
+        </Button>
       </Flex>
 
       <nav className="flex flex-1 flex-col gap-1 px-2 py-3">
@@ -69,16 +66,17 @@ function NavRailLink({
 
   return (
     <Tooltip content={t(item.labelKey)}>
-      <Link
-        href={item.href}
-        className={`flex items-center justify-center rounded-lg py-2 text-lg transition-colors ${
-          active
-            ? 'bg-[#f2d9a8]/15 ring-1 ring-[#f2d9a8]/30'
-            : 'hover:bg-white/5'
-        }`}
+      <Button
+        asChild
+        variant={active ? 'soft' : 'ghost'}
+        color={active ? 'orange' : 'gray'}
+        highContrast={active}
+        className="w-full text-lg"
       >
-        <span aria-hidden>{item.icon}</span>
-      </Link>
+        <Link href={item.href}>
+          <span aria-hidden>{item.icon}</span>
+        </Link>
+      </Button>
     </Tooltip>
   );
 }

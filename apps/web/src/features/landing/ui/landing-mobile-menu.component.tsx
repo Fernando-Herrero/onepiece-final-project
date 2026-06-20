@@ -85,14 +85,17 @@ export function LandingMobileMenuPanel({
               ) : null}
               <Flex direction="column" gap="1">
                 {section.map(item => (
-                  <Link
+                  <Button
                     key={item.href}
-                    href={item.href}
-                    onClick={onClose}
-                    className={MOBILE_NAV_LINK_CLASS}
+                    asChild
+                    variant="ghost"
+                    highContrast
+                    className={`h-auto ${MOBILE_NAV_LINK_CLASS}`}
                   >
-                    {t(item.labelKey)}
-                  </Link>
+                    <Link href={item.href} onClick={onClose}>
+                      {t(item.labelKey)}
+                    </Link>
+                  </Button>
                 ))}
               </Flex>
             </div>
@@ -132,15 +135,17 @@ export function LandingMenuToggleButton({
   const { t } = useTranslation();
 
   return (
-    <button
+    <Button
       type="button"
+      variant="ghost"
+      highContrast
       onClick={onToggle}
       aria-expanded={open}
       aria-controls="landing-mobile-menu"
       aria-label={
         open ? t('landing.nav.close_menu') : t('landing.nav.open_menu')
       }
-      className={`relative z-60 flex h-10 w-10 shrink-0 cursor-pointer flex-col items-center justify-center rounded-full transition-colors duration-300 md:hidden ${
+      className={`-m-0.5 relative z-60 h-10 w-10 shrink-0 rounded-full p-0 md:hidden ${
         open
           ? 'border border-[#f2d9a8]/50 bg-[#05070d]/90 shadow-[0_0_20px_rgba(0,0,0,0.45)] hover:bg-[#05070d]'
           : 'hover:bg-white/10'
@@ -160,6 +165,6 @@ export function LandingMenuToggleButton({
             : 'w-6 translate-y-1 rotate-0 bg-[#f4ede1]'
         }`}
       />
-    </button>
+    </Button>
   );
 }

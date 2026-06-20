@@ -1,3 +1,4 @@
+import { Heading, Text } from '@radix-ui/themes';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
@@ -91,15 +92,26 @@ export function CinematicShowcaseComponent() {
         ref={contentRef}
         className="mx-auto max-w-3xl px-6 text-center *:will-change-[transform,opacity]"
       >
-        <p className="font-road-captain mb-5 text-sm tracking-[0.4em] text-[#f2d9a8]/70 uppercase">
+        <Text
+          as="p"
+          size="1"
+          className="font-road-captain mb-5 tracking-[0.4em] text-[#f2d9a8]/70 uppercase"
+        >
           {t('landing.showcase.eyebrow')}
-        </p>
-        <h2 className="font-one-piece text-[clamp(2.4rem,7vw,5.5rem)] leading-[0.95] tracking-wide text-[#f2d9a8] [text-shadow:0_2px_0_#2a1c12,0_0_40px_rgba(220,150,70,0.3)]">
+        </Text>
+        <Heading
+          as="h2"
+          className="font-one-piece text-[clamp(2.4rem,7vw,5.5rem)] leading-[0.95] tracking-wide text-[#f2d9a8] [text-shadow:0_2px_0_#2a1c12,0_0_40px_rgba(220,150,70,0.3)]"
+        >
           {t('landing.showcase.title')}
-        </h2>
-        <p className="mx-auto mt-7 max-w-xl text-base leading-relaxed text-[#f4ede1]/80 md:text-lg">
+        </Heading>
+        <Text
+          as="p"
+          size="3"
+          className="mx-auto mt-7 max-w-xl leading-relaxed text-[#f4ede1]/80 md:text-lg"
+        >
           {t('landing.showcase.text')}
-        </p>
+        </Text>
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ import {
 let headerIntroPlayed = false;
 
 const NAV_LINK_CLASS =
-  'relative inline-flex shrink-0 cursor-pointer items-center px-1 py-1.5 font-road-captain font-bold text-sm uppercase tracking-[0.12em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8] after:absolute after:inset-x-1 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-[#f2d9a8]/70 after:transition-transform after:duration-300 hover:after:scale-x-100';
+  '-m-0.5 relative inline-flex shrink-0 cursor-pointer items-center px-1 py-1.5 font-road-captain font-bold text-sm uppercase tracking-[0.12em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8] after:absolute after:inset-x-1 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-[#f2d9a8]/70 after:transition-transform after:duration-300 hover:after:scale-x-100';
 
 export function LandingHeaderComponent() {
   const { t } = useTranslation();
@@ -102,9 +102,9 @@ export function LandingHeaderComponent() {
 
             <DropdownMenu.Root>
               <DropdownMenu.Trigger>
-                <button type="button" className={NAV_LINK_CLASS}>
+                <Button type="button" variant="ghost" highContrast className={NAV_LINK_CLASS}>
                   {t('landing.nav.onepiece')}
-                </button>
+                </Button>
               </DropdownMenu.Trigger>
               <DropdownMenu.Content>
                 <DropdownMenu.Item asChild>
@@ -121,9 +121,9 @@ export function LandingHeaderComponent() {
 
             <DropdownMenu.Root>
               <DropdownMenu.Trigger>
-                <button type="button" className={NAV_LINK_CLASS}>
+                <Button type="button" variant="ghost" highContrast className={NAV_LINK_CLASS}>
                   {t('landing.nav.help')}
-                </button>
+                </Button>
               </DropdownMenu.Trigger>
               <DropdownMenu.Content>
                 <DropdownMenu.Item asChild>

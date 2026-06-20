@@ -1,3 +1,4 @@
+import { Box } from '@radix-ui/themes';
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next/pages';
 
@@ -14,7 +15,7 @@ export default function LandingPageContent() {
   useSmoothScroll();
 
   return (
-    <div className="landing scroll-smooth bg-[#05070d] text-[#f4ede1]">
+    <Box className="landing scroll-smooth bg-[#05070d] text-[#f4ede1]">
       <Head>
         <title>{t('landing.meta_title')}</title>
         <meta name="description" content={t('landing.meta_description')} />
@@ -25,6 +26,6 @@ export default function LandingPageContent() {
       <CinematicShowcaseComponent />
       <LandingCtaComponent />
       <LandingFooterComponent />
-    </div>
+    </Box>
   );
 }
