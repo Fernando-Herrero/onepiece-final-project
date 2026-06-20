@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
 import {
-  DASHBOARD_NAV_ITEMS,
+  DASHBOARD_MAIN_NAV_ITEMS,
+  DASHBOARD_SETTINGS_NAV_ITEM,
   type DashboardNavItem,
 } from '@/features/dashboard/dashboard-navigation';
 
@@ -34,7 +35,7 @@ export function DashboardNavSidebar({
       </Flex>
 
       <nav className="flex flex-1 flex-col gap-2 px-3 py-4">
-        {DASHBOARD_NAV_ITEMS.map(item => (
+        {DASHBOARD_MAIN_NAV_ITEMS.map(item => (
           <NavSidebarLink
             key={item.id}
             item={item}
@@ -44,23 +45,29 @@ export function DashboardNavSidebar({
       </nav>
 
       <Flex
-        align="center"
-        justify="end"
+        direction="column"
+        gap="2"
         px="3"
         py="3"
-        className="border-t border-[#f2d9a8]/10"
+        className="border-t border-[#f2d9a8]/15"
       >
-        <IconButton
-          type="button"
-          variant="ghost"
-          color="orange"
-          highContrast
-          className="-m-0.5"
-          aria-label={t('dashboard.nav.collapse')}
-          onClick={onToggleExpanded}
-        >
-          «
-        </IconButton>
+        <NavSidebarLink
+          item={DASHBOARD_SETTINGS_NAV_ITEM}
+          active={activeTab === DASHBOARD_SETTINGS_NAV_ITEM.id}
+        />
+        <Flex justify="end">
+          <IconButton
+            type="button"
+            variant="ghost"
+            color="orange"
+            highContrast
+            className="m-0!"
+            aria-label={t('dashboard.nav.collapse')}
+            onClick={onToggleExpanded}
+          >
+            «
+          </IconButton>
+        </Flex>
       </Flex>
     </aside>
   );

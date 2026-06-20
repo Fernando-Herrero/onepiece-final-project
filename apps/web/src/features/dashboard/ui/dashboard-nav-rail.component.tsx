@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
 import {
-  DASHBOARD_NAV_ITEMS,
+  DASHBOARD_MAIN_NAV_ITEMS,
+  DASHBOARD_SETTINGS_NAV_ITEM,
   type DashboardNavItem,
 } from '@/features/dashboard/dashboard-navigation';
 
@@ -34,7 +35,7 @@ export function DashboardNavRail({
       </Flex>
 
       <nav className="flex flex-1 flex-col items-center gap-2 px-2 py-6">
-        {DASHBOARD_NAV_ITEMS.map(item => (
+        {DASHBOARD_MAIN_NAV_ITEMS.map(item => (
           <NavRailLink
             key={item.id}
             item={item}
@@ -43,7 +44,15 @@ export function DashboardNavRail({
         ))}
       </nav>
 
-      <Box px="2">
+      <Box
+        px="2"
+        py="3"
+        className="flex flex-col items-center gap-2 border-t border-[#f2d9a8]/15"
+      >
+        <NavRailLink
+          item={DASHBOARD_SETTINGS_NAV_ITEM}
+          active={activeTab === DASHBOARD_SETTINGS_NAV_ITEM.id}
+        />
         <Tooltip side="right" content={t('dashboard.nav.expand')}>
           <IconButton
             type="button"

@@ -1,13 +1,18 @@
-import { Button, Flex, Text } from '@radix-ui/themes';
+import { Button, Flex, IconButton, Text } from '@radix-ui/themes';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
 import { useLogoutMutation, useMeQuery } from '@/features/auth/api/use-auth';
+import { DASHBOARD_TOPBAR_NAV_ITEMS } from '@/features/dashboard/dashboard-navigation';
+import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
 
 type DashboardTopBarProps = {
   sectionLabel: string;
 };
 
 export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
+  const router = useRouter();
   const { t } = useTranslation();
   const logout = useLogoutMutation();
   const meQuery = useMeQuery();
@@ -26,6 +31,28 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
         </Text>
 
         <Flex align="center" gap="3">
+          {DASHBOARD_TOPBAR_NAV_ITEMS.map(item => {
+            const active = router.pathname.startsWith(item.href);
+
+            return (
+              <IconButton
+                key={item.id}
+                asChild
+                variant={active ? 'soft' : 'ghost'}
+                color={active ? 'orange' : 'gray'}
+                highContrast={active}
+                className="m-0! box-border size-9 p-0 text-lg"
+                aria-label={t(item.labelKey)}
+              >
+                <Link href={item.href}>
+                  <span aria-hidden>{item.icon}</span>
+                </Link>
+              </IconButton>
+            );
+          })}
+
+          <LandingLocaleToggleComponent compactLabel />
+
           {meQuery.data ? (
             <Text size="2" className="hidden text-[#f4ede1]/75 sm:inline">
               {meQuery.data.username}
