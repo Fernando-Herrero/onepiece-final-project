@@ -9,8 +9,6 @@ import {
   TextField,
   Tooltip,
 } from '@radix-ui/themes';
-import { useQuery } from '@tanstack/react-query';
-import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
@@ -24,7 +22,6 @@ import {
   ProfileEditableField,
   profileFieldClassName,
 } from '@/features/profile/ui/profile-editable-field.component';
-import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
 import { ProfileViewMore } from './profile-view-more.component';
 
@@ -37,9 +34,15 @@ type EditableField = 'displayName' | 'bio' | 'coverImage';
 
 type ProfileIdentityCardProps = {
   user: ProfileUser;
+  viewMoreOpen: boolean;
+  onViewMoreOpenChange: (open: boolean) => void;
 };
 
-export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
+export function ProfileIdentityCard({
+  user,
+  viewMoreOpen,
+  onViewMoreOpenChange,
+}: ProfileIdentityCardProps) {
   const { t } = useTranslation();
   const { save, isSaving } = useSaveProfileField(user._id);
   const [coverLoadError, setCoverLoadError] = useState(false);
@@ -55,29 +58,6 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
   const isEditingCover = editingField === 'coverImage';
   const resolvedAvatar = user.avatar?.trim() || DEFAULT_AVATAR_SRC;
   const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
-
-  const { saga, arc, episode } = user.serieProgress;
-  const hasSerieProgress = saga > 0 && arc > 0 && episode > 0;
-
-  const sagasQuery = useQuery({
-    ...allQueriesOptions.serie.sagas(),
-    enabled: hasSerieProgress,
-  });
-  const arcsQuery = useQuery({
-    ...allQueriesOptions.serie.arcsBySaga(saga),
-    enabled: hasSerieProgress,
-  });
-
-  const sagaName = sagasQuery.data?.sagas.find(item => item.id === saga)?.name;
-  const arcName = arcsQuery.data?.arcs.find(item => item.id === arc)?.name;
-
-  const progressLabel: string = hasSerieProgress
-    ? [
-        sagaName ?? t('profile.progress_saga_fallback', { id: saga }),
-        arcName ?? t('profile.progress_arc_fallback', { id: arc }),
-        t('serie.episode_number', { number: episode }),
-      ].join(' · ')
-    : t('profile.progress_empty');
 
   async function saveProfileField(
     body: UpdateProfileBody,
@@ -108,7 +88,7 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
       <Card className="overflow-hidden border border-[#f2d9a8]/15 bg-[#05070d]/50 p-0">
         <Box
           position="relative"
-          className="group h-32 w-full overflow-hidden bg-linear-to-r from-[#1a0f05] via-[#3d2010] to-[#0b1120]"
+          className="group h-36 w-full overflow-hidden bg-linear-to-r from-[#1a0f05] via-[#3d2010] to-[#0b1120] sm:h-40 lg:h-44"
         >
           {isEditingCover ? (
             <Flex
@@ -287,27 +267,11 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
             }
           />
 
-          <ProfileViewMore user={user} />
-
-          <Link
-            href="/dashboard/serie"
-            className="block rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2 transition hover:border-[#f2d9a8]/25 hover:bg-[#05070d]/60"
-          >
-            <Text as="p" size="1" color="gray" mb="1">
-              {t('profile.progress_label')}
-            </Text>
-            <Text
-              as="p"
-              size="2"
-              className={
-                hasSerieProgress
-                  ? 'text-[#f2d9a8]/90'
-                  : 'text-[#f4ede1]/50 italic'
-              }
-            >
-              {progressLabel}
-            </Text>
-          </Link>
+          <ProfileViewMore
+            user={user}
+            open={viewMoreOpen}
+            onOpenChange={onViewMoreOpenChange}
+          />
 
           <Flex gap="2" wrap="wrap">
             <Badge color="orange" variant="soft">

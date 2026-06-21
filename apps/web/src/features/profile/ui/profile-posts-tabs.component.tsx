@@ -1,4 +1,12 @@
-import { Card, Flex, SegmentedControl, Skeleton, Text } from '@radix-ui/themes';
+import {
+  Card,
+  Flex,
+  Heading,
+  SegmentedControl,
+  Skeleton,
+  Text,
+} from '@radix-ui/themes';
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 
@@ -107,33 +115,70 @@ export function ProfilePostsTabs({ userId, privacy }: ProfilePostsTabsProps) {
     privateMessageKey,
   } = useProfilePostsTabs(privacy);
 
+  const tabsScrollMaskClass =
+    activeTab === 'comments'
+      ? 'mask-[linear-gradient(to_left,black_85%,transparent_100%)]'
+      : activeTab === 'posts'
+        ? 'mask-[linear-gradient(to_right,black_85%,transparent_100%)]'
+        : 'mask-[linear-gradient(to_right,transparent_0%,black_12%,black_88%,transparent_100%)]';
+
   return (
     <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
-      <SegmentedControl.Root
-        size="2"
-        value={activeTab}
-        onValueChange={value => {
-          if (value) {
-            setActiveTab(value as ProfilePostsTab);
-          }
-        }}
-        className="profile-posts-segmented mb-4 w-full border border-[#f2d9a8]/15"
+      <Flex align="start" justify="between" gap="3" mb="4" wrap="wrap">
+        <Heading as="h2" size="3" className="text-[#f2d9a8]">
+          {t('profile.activity_title')}
+        </Heading>
+        <Link
+          href="/dashboard/settings"
+          className="text-xs text-[#f2d9a8]/75 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
+        >
+          {t('profile.activity_manage_visibility')}
+        </Link>
+      </Flex>
+      <div
+        className={`relative mb-4 min-w-0 scrollbar-none overflow-x-auto pb-1 [-ms-overflow-style:none] md:overflow-x-visible md:mask-none [&::-webkit-scrollbar]:hidden ${tabsScrollMaskClass}`}
       >
-        {tabs.map(tab => (
-          <SegmentedControl.Item
-            key={tab.key}
-            value={tab.key}
-            className={!tab.visible ? 'opacity-50' : undefined}
-          >
-            {tab.label}
-          </SegmentedControl.Item>
-        ))}
-      </SegmentedControl.Root>
+        <SegmentedControl.Root
+          size="2"
+          value={activeTab}
+          onValueChange={value => {
+            if (!value) {
+              return;
+            }
+
+            const selectedTab = tabs.find(tab => tab.key === value);
+            if (selectedTab?.visible) {
+              setActiveTab(value as ProfilePostsTab);
+            }
+          }}
+          className="profile-posts-segmented w-max min-w-full border border-[#f2d9a8]/15 [&_.rt-SegmentedControlItem]:shrink-0 [&_.rt-SegmentedControlItem]:whitespace-nowrap"
+        >
+          {tabs.map(tab => (
+            <SegmentedControl.Item
+              key={tab.key}
+              value={tab.key}
+              className={
+                !tab.visible ? 'pointer-events-none opacity-50' : undefined
+              }
+            >
+              {tab.label}
+            </SegmentedControl.Item>
+          ))}
+        </SegmentedControl.Root>
+      </div>
 
       {isActiveTabPrivate ? (
-        <Text as="p" size="2" align="center" className="py-8 text-[#f4ede1]/50">
-          {t(privateMessageKey)}
-        </Text>
+        <Flex direction="column" align="center" gap="2" className="py-8">
+          <Text as="p" size="2" align="center" className="text-[#f4ede1]/50">
+            {t(privateMessageKey)}
+          </Text>
+          <Link
+            href="/dashboard/settings"
+            className="text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+          >
+            {t('profile.activity_private_settings_link')}
+          </Link>
+        </Flex>
       ) : (
         <Suspense key={activeTab} fallback={<ProfilePostListSkeleton />}>
           <ProfilePostList userId={userId} tab={activeTab} />

@@ -24,6 +24,11 @@
   box-shadow: 0 0 0 1px var(--orange-a7);
 }
 
+.profile-xp-progress.rt-ProgressRoot {
+  --progress-indicator-background-color: var(--orange-9);
+  background-color: rgb(242 217 168 / 0.12);
+}
+
 @theme {
   --font-family-one-piece: 'OnePiece', serif;
   --font-family-road-captain: 'RoadCaptain', sans-serif;

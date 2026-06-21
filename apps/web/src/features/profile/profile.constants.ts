@@ -11,6 +11,17 @@ export const DEFAULT_AVATAR_SRC =
   AVATAR_OPTIONS.find(option => option.id === 'luffy')?.path ??
   '/avatars/luffy/luffy-happy-400.webp';
 
+/** Suma XP de `apps/api/src/data/serie/episodes.json` (semilla actual). */
+export const SERIE_TOTAL_XP = 8900;
+
+export const PROFILE_UNLOCKED_CARD_KEYS = [
+  'characters',
+  'items',
+  'fruits',
+  'swords',
+  'boats',
+] as const;
+
 export const PROFILE_POSTS_TAB_CONFIG: ProfilePostsTabConfig[] = [
   { key: 'posts', labelKey: 'profile.posts', privacyKey: 'showPosts' },
   { key: 'liked', labelKey: 'profile.likes', privacyKey: 'showLikes' },

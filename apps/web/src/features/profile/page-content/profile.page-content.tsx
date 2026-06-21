@@ -5,10 +5,9 @@ import { ErrorBoundary } from 'react-error-boundary';
 
 import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
 import { useAuthSession } from '@/features/auth/api/use-auth';
-import { ProfileIdentityCard } from '@/features/profile/ui/profile-identity-card.component';
-import {
-  ProfilePostsTabs,
-} from '@/features/profile/ui/profile-posts-tabs.component';
+import { ProfileIdentityRow } from '@/features/profile/ui/profile-identity-row.component';
+import { ProfilePostsTabs } from '@/features/profile/ui/profile-posts-tabs.component';
+import { ProfileProgressCard } from '@/features/profile/ui/profile-progress-card.component';
 import {
   ProfileRankingSidebar,
   ProfileRankingSidebarSkeleton,
@@ -42,7 +41,8 @@ export default function ProfilePageContent() {
 
       <Grid columns={{ initial: '1', lg: '3' }} gap="6">
         <div className="flex flex-col gap-6 lg:col-span-2">
-          <ProfileIdentityCard user={user} />
+          <ProfileIdentityRow user={user} />
+          <ProfileProgressCard user={user} />
           <ErrorBoundary FallbackComponent={QueryErrorFallback}>
             <Suspense fallback={<ProfileStatsCardSkeleton />}>
               <ProfileStatsCard userId={user._id} />

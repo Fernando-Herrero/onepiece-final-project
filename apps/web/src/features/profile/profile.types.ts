@@ -25,7 +25,13 @@ export type ProfileViewMoreUser = Pick<
 
 export type UpdateProfileBody = Pick<
   z.infer<typeof updateUserSchema>,
-  'displayName' | 'bio' | 'coverImage' | 'avatar' | 'address' | 'phoneNumber'
+  | 'displayName'
+  | 'bio'
+  | 'coverImage'
+  | 'avatar'
+  | 'address'
+  | 'phoneNumber'
+  | 'privacy'
 >;
 
 export type ProfilePostsTabConfig = {
