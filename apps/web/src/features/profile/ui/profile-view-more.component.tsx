@@ -1,12 +1,8 @@
 import { Button, Card, Flex, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
-import { toast } from 'sonner';
 
-import {
-  type UpdateProfileBody,
-  useUpdateProfileMutation,
-} from '@/features/profile/api/use-update-profile';
+import { useSaveProfileField } from '@/features/profile/api/use-save-profile-field';
 import { ProfileEditableField } from '@/features/profile/ui/profile-editable-field.component';
 import { ProfileReadonlyRow } from '@/features/profile/ui/profile-readonly-row.component';
 
@@ -21,14 +17,13 @@ type ProfileViewMoreProps = {
     email: string;
     address?: string;
     phoneNumber?: string;
-    role: 'user' | 'admin';
     createdAt?: string;
   };
 };
 
 export function ProfileViewMore({ user }: ProfileViewMoreProps) {
-  const { t } = useTranslation();
-  const updateProfile = useUpdateProfileMutation();
+  const { t, i18n } = useTranslation();
+  const { save, isSaving } = useSaveProfileField(user._id);
   const [open, setOpen] = useState(false);
   const [editingField, setEditingField] = useState<EditableField | null>(null);
 
@@ -37,18 +32,8 @@ export function ProfileViewMore({ user }: ProfileViewMoreProps) {
   const address = user.address?.trim() ?? '';
   const phoneNumber = user.phoneNumber?.trim() ?? '';
   const createdAtLabel = user.createdAt
-    ? new Date(user.createdAt).toLocaleDateString()
+    ? new Date(user.createdAt).toLocaleDateString(i18n.language)
     : '';
-
-  async function saveField(body: UpdateProfileBody) {
-    try {
-      await updateProfile.mutateAsync({ userId: user._id, body });
-      toast.success(t('profile.save_success'));
-      setEditingField(null);
-    } catch {
-      toast.error(t('profile.save_error'));
-    }
-  }
 
   return (
     <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
@@ -57,7 +42,7 @@ export function ProfileViewMore({ user }: ProfileViewMoreProps) {
         variant="ghost"
         color="gray"
         highContrast
-        className="-m-0.5 mb-0 flex h-auto w-full cursor-pointer justify-between p-0 hover:bg-transparent active:bg-transparent"
+        className="flex h-auto w-full cursor-pointer justify-between p-0 hover:bg-transparent active:bg-transparent"
         onClick={() => setOpen(current => !current)}
       >
         <Text as="span" size="2" weight="medium" className="text-[#f2d9a8]">
@@ -89,13 +74,15 @@ export function ProfileViewMore({ user }: ProfileViewMoreProps) {
               emptyText={t('profile.input_address')}
               placeholder={t('profile.input_address')}
               isEditing={editingField === 'address'}
-              isSaving={updateProfile.isPending}
+              isSaving={isSaving('address')}
               onStartEdit={() => setEditingField('address')}
               onCancel={() => setEditingField(null)}
               onSave={value =>
-                void saveField({
-                  address: value.trim() || undefined,
-                })
+                void save(
+                  { address: value.trim() || undefined },
+                  'address',
+                  () => setEditingField(null),
+                )
               }
             />
           </Flex>
@@ -109,21 +96,19 @@ export function ProfileViewMore({ user }: ProfileViewMoreProps) {
               emptyText={t('profile.phone_placeholder')}
               placeholder={t('profile.phone_placeholder')}
               isEditing={editingField === 'phoneNumber'}
-              isSaving={updateProfile.isPending}
+              isSaving={isSaving('phoneNumber')}
               onStartEdit={() => setEditingField('phoneNumber')}
               onCancel={() => setEditingField(null)}
               onSave={value =>
-                void saveField({
-                  phoneNumber: value.trim() || undefined,
-                })
+                void save(
+                  { phoneNumber: value.trim() || undefined },
+                  'phoneNumber',
+                  () => setEditingField(null),
+                )
               }
             />
           </Flex>
 
-          <ProfileReadonlyRow
-            label={t('profile.role_label')}
-            value={t(`profile.role.${user.role}`)}
-          />
           <ProfileReadonlyRow
             label={t('profile.created_at_label')}
             value={createdAtLabel}

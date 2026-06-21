@@ -10,16 +10,19 @@ import {
   TextField,
   Tooltip,
 } from '@radix-ui/themes';
+import { useQuery } from '@tanstack/react-query';
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
-import { toast } from 'sonner';
 
-import {
-  type UpdateProfileBody,
-  useUpdateProfileMutation,
-} from '@/features/profile/api/use-update-profile';
+import { useSaveProfileField } from '@/features/profile/api/use-save-profile-field';
+import type { UpdateProfileBody } from '@/features/profile/api/use-update-profile';
 import { ProfileAvatarPickerOverlay } from '@/features/profile/ui/profile-avatar-picker-overlay.component';
-import { ProfileEditableField } from '@/features/profile/ui/profile-editable-field.component';
+import {
+  ProfileEditableField,
+  profileFieldClassName,
+} from '@/features/profile/ui/profile-editable-field.component';
+import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
 import { ProfileViewMore } from './profile-view-more.component';
 
@@ -31,9 +34,6 @@ const avatarFallback = (
   // eslint-disable-next-line @next/next/no-img-element
   <img src={DEFAULT_AVATAR_SRC} alt="" className="size-full object-cover" />
 );
-
-const fieldClassName =
-  'bg-[#05070d]/50 text-[#f4ede1] placeholder:text-[#f4ede1]/40 border-[#f4ede1]/20';
 
 type EditableField = 'displayName' | 'bio' | 'coverImage';
 
@@ -48,10 +48,13 @@ type ProfileIdentityCardProps = {
     bio?: string;
     avatar?: string;
     coverImage?: string;
+    address?: string;
+    phoneNumber?: string;
     role: 'user' | 'admin';
     verified: boolean;
     experience: number;
     isActive: boolean;
+    createdAt?: string;
     serieProgress: {
       saga: number;
       arc: number;
@@ -62,7 +65,7 @@ type ProfileIdentityCardProps = {
 
 export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
   const { t } = useTranslation();
-  const updateProfile = useUpdateProfileMutation();
+  const { save, isSaving } = useSaveProfileField(user._id);
   const [coverLoadError, setCoverLoadError] = useState(false);
   const [avatarLoadError, setAvatarLoadError] = useState(false);
   const [editingField, setEditingField] = useState<EditableField | null>(null);
@@ -77,17 +80,39 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
   const resolvedAvatar = user.avatar?.trim() || DEFAULT_AVATAR_SRC;
   const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
 
-  async function saveProfileField(body: UpdateProfileBody) {
-    try {
-      await updateProfile.mutateAsync({ userId: user._id, body });
-      toast.success(t('profile.save_success'));
+  const { saga, arc, episode } = user.serieProgress;
+  const hasSerieProgress = saga > 0 && arc > 0 && episode > 0;
+
+  const sagasQuery = useQuery({
+    ...allQueriesOptions.serie.sagas(),
+    enabled: hasSerieProgress,
+  });
+  const arcsQuery = useQuery({
+    ...allQueriesOptions.serie.arcsBySaga(saga),
+    enabled: hasSerieProgress,
+  });
+
+  const sagaName = sagasQuery.data?.sagas.find(item => item.id === saga)?.name;
+  const arcName = arcsQuery.data?.arcs.find(item => item.id === arc)?.name;
+
+  const progressLabel: string = hasSerieProgress
+    ? [
+        sagaName ?? t('profile.progress_saga_fallback', { id: saga }),
+        arcName ?? t('profile.progress_arc_fallback', { id: arc }),
+        t('serie.episode_number', { number: episode }),
+      ].join(' · ')
+    : t('profile.progress_empty');
+
+  async function saveProfileField(
+    body: UpdateProfileBody,
+    field: EditableField,
+  ) {
+    await save(body, field, () => {
       setEditingField(null);
       if ('coverImage' in body) {
         setCoverLoadError(false);
       }
-    } catch {
-      toast.error(t('profile.save_error'));
-    }
+    });
   }
 
   function startCoverEdit() {
@@ -96,9 +121,10 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
   }
 
   function saveCover() {
-    void saveProfileField({
-      coverImage: coverDraft.trim() || undefined,
-    });
+    void saveProfileField(
+      { coverImage: coverDraft.trim() || undefined },
+      'coverImage',
+    );
   }
 
   return (
@@ -106,7 +132,7 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
       <Card className="overflow-hidden border border-[#f2d9a8]/15 bg-[#05070d]/50 p-0">
         <Box
           position="relative"
-          className="h-32 w-full overflow-hidden bg-linear-to-r from-[#1a0f05] via-[#3d2010] to-[#0b1120]"
+          className="group h-32 w-full overflow-hidden bg-linear-to-r from-[#1a0f05] via-[#3d2010] to-[#0b1120]"
         >
           {isEditingCover ? (
             <Flex
@@ -116,7 +142,7 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
               className="absolute inset-0 bg-[#0b1120]/92 p-4"
             >
               <TextField.Root
-                className={fieldClassName}
+                className={profileFieldClassName}
                 value={coverDraft}
                 placeholder={t('profile.input_cover_image')}
                 autoFocus
@@ -135,10 +161,10 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
                   type="button"
                   size="1"
                   color="orange"
-                  disabled={updateProfile.isPending}
+                  disabled={isSaving('coverImage')}
                   onClick={saveCover}
                 >
-                  {updateProfile.isPending
+                  {isSaving('coverImage')
                     ? t('profile.saving')
                     : t('profile.save_button')}
                 </Button>
@@ -147,7 +173,7 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
                   size="1"
                   variant="soft"
                   color="gray"
-                  disabled={updateProfile.isPending}
+                  disabled={isSaving('coverImage')}
                   onClick={() => setEditingField(null)}
                 >
                   {t('profile.cancel')}
@@ -181,12 +207,26 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
                   </Text>
                 </Flex>
               )}
+              <Flex
+                align="center"
+                justify="center"
+                className="pointer-events-none absolute inset-0 z-10 bg-[#0b1120]/0 opacity-0 transition duration-200 group-hover:bg-[#0b1120]/50 group-hover:opacity-100"
+              >
+                <Text
+                  as="span"
+                  size="2"
+                  weight="medium"
+                  className="text-[#f2d9a8]"
+                >
+                  {t('profile.change_cover_img')}
+                </Text>
+              </Flex>
               <Button
                 type="button"
                 variant="ghost"
                 color="gray"
                 aria-label={t('profile.change_cover_img')}
-                className="absolute inset-0 h-full w-full cursor-pointer rounded-none hover:bg-[#0b1120]/25 active:bg-[#0b1120]/35"
+                className="absolute inset-0 z-20 h-full w-full cursor-pointer rounded-none hover:bg-transparent active:bg-transparent"
                 onClick={startCoverEdit}
               />
             </>
@@ -194,7 +234,7 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
         </Box>
 
         <Flex direction="column" gap="3" className="relative px-5 pt-0 pb-5">
-          <Box position="relative" className="-mt-10 w-fit">
+          <Box position="relative" className="z-50 -mt-10 w-fit">
             <Tooltip content={t('profile.change_avatar')}>
               <Button
                 type="button"
@@ -242,13 +282,14 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
               placeholder={t('profile.display_name_placeholder')}
               prominent
               isEditing={editingField === 'displayName'}
-              isSaving={updateProfile.isPending}
+              isSaving={isSaving('displayName')}
               onStartEdit={() => setEditingField('displayName')}
               onCancel={() => setEditingField(null)}
               onSave={value =>
-                void saveProfileField({
-                  displayName: value.trim() || undefined,
-                })
+                void saveProfileField(
+                  { displayName: value.trim() || undefined },
+                  'displayName',
+                )
               }
             />
             <Text as="p" size="2" color="gray">
@@ -262,17 +303,35 @@ export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
             placeholder={t('profile.bio_placeholder')}
             multiline
             isEditing={editingField === 'bio'}
-            isSaving={updateProfile.isPending}
+            isSaving={isSaving('bio')}
             onStartEdit={() => setEditingField('bio')}
             onCancel={() => setEditingField(null)}
             onSave={value =>
-              void saveProfileField({
-                bio: value.trim() || undefined,
-              })
+              void saveProfileField({ bio: value.trim() || undefined }, 'bio')
             }
           />
 
           <ProfileViewMore user={user} />
+
+          <Link
+            href="/dashboard/serie"
+            className="block rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2 transition hover:border-[#f2d9a8]/25 hover:bg-[#05070d]/60"
+          >
+            <Text as="p" size="1" color="gray" mb="1">
+              {t('profile.progress_label')}
+            </Text>
+            <Text
+              as="p"
+              size="2"
+              className={
+                hasSerieProgress
+                  ? 'text-[#f2d9a8]/90'
+                  : 'text-[#f4ede1]/50 italic'
+              }
+            >
+              {progressLabel}
+            </Text>
+          </Link>
 
           <Flex gap="2" wrap="wrap">
             <Badge color="orange" variant="soft">

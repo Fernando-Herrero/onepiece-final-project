@@ -1,7 +1,7 @@
 import type { SerieProgress } from '@logpose/contracts/common/avatar.schemas';
 import { Button, Card, Flex, IconButton } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 
 import { AvatarPickerComponent } from '@/features/avatar/ui/avatar-picker.component';
@@ -31,6 +31,18 @@ export function ProfileAvatarPickerOverlay({
     onClose();
   }
 
+  useEffect(() => {
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setSelectedAvatar(currentAvatar);
+        onClose();
+      }
+    }
+
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [currentAvatar, onClose]);
+
   async function handleSave() {
     if (selectedAvatar === currentAvatar) {
       handleClose();
@@ -57,8 +69,16 @@ export function ProfileAvatarPickerOverlay({
       role="dialog"
       aria-modal="true"
       aria-label={t('avatar.change_title')}
+      onClick={event => {
+        if (event.target === event.currentTarget) {
+          handleClose();
+        }
+      }}
     >
-      <Card className="relative max-h-[90vh] w-full max-w-md overflow-y-auto border border-[#f2d9a8]/15 bg-[#0b1120]/95 p-6">
+      <Card
+        className="relative max-h-[90vh] w-full max-w-md overflow-y-auto border border-[#f2d9a8]/15 bg-[#0b1120]/95 p-6"
+        onClick={event => event.stopPropagation()}
+      >
         <IconButton
           type="button"
           variant="ghost"

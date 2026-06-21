@@ -2,7 +2,7 @@ import { Button, Flex, Text, TextArea, TextField } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { type KeyboardEvent, useState } from 'react';
 
-const fieldClassName =
+export const profileFieldClassName =
   'bg-[#05070d]/50 text-[#f4ede1] placeholder:text-[#f4ede1]/40 border-[#f4ede1]/20';
 
 type ProfileEditableFieldProps = {
@@ -57,7 +57,7 @@ export function ProfileEditableField({
       <Flex direction="column" gap="2" onKeyDown={handleKeyDown}>
         {multiline ? (
           <TextArea
-            className={fieldClassName}
+            className={profileFieldClassName}
             rows={4}
             maxLength={2000}
             value={draft}
@@ -67,7 +67,7 @@ export function ProfileEditableField({
           />
         ) : (
           <TextField.Root
-            className={fieldClassName}
+            className={profileFieldClassName}
             value={draft}
             placeholder={placeholder}
             autoFocus
@@ -110,7 +110,7 @@ export function ProfileEditableField({
       variant="ghost"
       color="gray"
       highContrast={hasValue}
-      className="h-auto max-w-full cursor-pointer justify-start p-0 text-left hover:bg-transparent active:bg-transparent"
+      className="group h-auto w-full max-w-full cursor-pointer justify-between rounded-md border border-transparent px-2 py-1 text-left hover:border-[#f2d9a8]/20 hover:bg-[#f2d9a8]/5 active:bg-[#f2d9a8]/8"
       onClick={startEdit}
     >
       {hasValue ? (
@@ -131,6 +131,15 @@ export function ProfileEditableField({
           {emptyText}
         </Text>
       )}
+
+      <Text
+        as="span"
+        size="1"
+        className="shrink-0 text-[#f2d9a8]/0 transition group-hover:text-[#f2d9a8]/70"
+        aria-hidden
+      >
+        ✎
+      </Text>
     </Button>
   );
 }
