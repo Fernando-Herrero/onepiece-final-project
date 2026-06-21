@@ -1,8 +1,10 @@
 import {
   Badge,
+  Box,
   Button,
   Callout,
   Card,
+  Flex,
   Grid,
   Heading,
   Spinner,
@@ -135,7 +137,7 @@ export default function CardsPageContent() {
                     key={card.id}
                     className={`overflow-hidden p-3 ${RARITY_CLASS[card.rarity]}`}
                   >
-                    <div className="relative mb-3 aspect-3/4 overflow-hidden rounded-lg bg-[#05070d]/60">
+                    <Box className="relative mb-3 aspect-3/4 overflow-hidden rounded-lg bg-[#05070d]/60">
                       <Image
                         src={card.image}
                         alt={card.title}
@@ -143,9 +145,9 @@ export default function CardsPageContent() {
                         className="object-cover"
                         sizes="(max-width: 640px) 100vw, 240px"
                       />
-                    </div>
-                    <div className="space-y-2">
-                      <div className="flex flex-wrap items-center gap-2">
+                    </Box>
+                    <Flex direction="column" gap="2">
+                      <Flex wrap="wrap" align="center" gap="2">
                         <Badge color="orange" variant="soft" size="1">
                           {t(`cards.rarity.${card.rarity}`)}
                         </Badge>
@@ -160,7 +162,7 @@ export default function CardsPageContent() {
                                   : card.unlock.eventId,
                           })}
                         </Text>
-                      </div>
+                      </Flex>
                       <Text
                         as="p"
                         size="2"
@@ -186,7 +188,7 @@ export default function CardsPageContent() {
                           })}
                         </Text>
                       ) : null}
-                    </div>
+                    </Flex>
                   </Card>
                 ))}
               </Grid>
@@ -200,11 +202,16 @@ export default function CardsPageContent() {
 
 function FlexCenteredSpinner({ label }: { label: string }) {
   return (
-    <div className="col-span-full flex flex-col items-center gap-3 py-6">
+    <Flex
+      direction="column"
+      align="center"
+      gap="3"
+      className="col-span-full py-6"
+    >
       <Spinner size="3" />
       <Text align="center" color="gray">
         {label}
       </Text>
-    </div>
+    </Flex>
   );
 }

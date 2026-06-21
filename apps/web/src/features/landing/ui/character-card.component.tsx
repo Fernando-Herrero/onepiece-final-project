@@ -1,4 +1,4 @@
-import { Card, Flex, Heading, Text } from '@radix-ui/themes';
+import { Box, Card, Flex, Heading, Text } from '@radix-ui/themes';
 
 import { useTilt } from '@/features/landing/motion/use-tilt';
 
@@ -23,7 +23,7 @@ export function CharacterCardComponent({
       onMouseLeave={tilt.onMouseLeave}
       className="landing-card group flex w-full max-w-[300px] flex-col items-center overflow-hidden rounded-xl border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/70 to-[#0b1120]/75 backdrop-blur-sm transition-shadow duration-300 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)] lg:min-h-80 lg:max-w-full lg:flex-row lg:gap-4 lg:overflow-visible"
     >
-      <div className="relative w-full lg:h-full lg:min-h-80 lg:rounded-tl-xl lg:rounded-bl-xl lg:bg-[#a64242]/25">
+      <Box className="relative w-full lg:h-full lg:min-h-80 lg:rounded-tl-xl lg:rounded-bl-xl lg:bg-[#a64242]/25">
         <picture className="z-20 block h-full w-full transition-transform duration-300 group-hover:scale-105 lg:absolute lg:top-0 lg:left-3 lg:group-hover:scale-110">
           <source
             srcSet={images[2]}
@@ -48,7 +48,7 @@ export function CharacterCardComponent({
             }`}
           />
         </picture>
-      </div>
+      </Box>
 
       <Flex direction="column" gap="2" className="px-6 pb-4 text-center lg:max-w-55 lg:justify-center lg:pr-8 lg:text-right">
         <Heading as="h2" size="4" className="font-road-captain tracking-wide text-[#f2d9a8]">
