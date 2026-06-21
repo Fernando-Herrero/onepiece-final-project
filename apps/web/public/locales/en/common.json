@@ -36,6 +36,26 @@
       "DUPLICATE_ACCOUNT": "Email or username is already registered"
     }
   },
+  "avatar": {
+    "pick_title": "Choose your avatar",
+    "pick_hint": "Pick a Straw Hat crew member",
+    "change_title": "Change avatar",
+    "save": "Save avatar",
+    "saving": "Saving…",
+    "save_success": "Avatar updated",
+    "save_error": "Could not update avatar",
+    "characters": {
+      "luffy": "Luffy",
+      "zoro": "Zoro",
+      "nami": "Nami",
+      "sanji": "Sanji",
+      "usopp": "Usopp",
+      "chopper": "Chopper",
+      "robin": "Robin",
+      "brook": "Brook",
+      "jimbe": "Jinbe"
+    }
+  },
   "cards": {
     "meta_title": "Cards — LogPose",
     "title": "Versioned collection",

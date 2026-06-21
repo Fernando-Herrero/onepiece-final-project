@@ -36,6 +36,26 @@
       "DUPLICATE_ACCOUNT": "メールまたはユーザー名は既に登録されています"
     }
   },
+  "avatar": {
+    "pick_title": "アバターを選ぶ",
+    "pick_hint": "麦わらの一味から選んでください",
+    "change_title": "アバターを変更",
+    "save": "アバターを保存",
+    "saving": "保存中…",
+    "save_success": "アバターを更新しました",
+    "save_error": "アバターを更新できませんでした",
+    "characters": {
+      "luffy": "ルフィ",
+      "zoro": "ゾロ",
+      "nami": "ナミ",
+      "sanji": "サンジ",
+      "usopp": "ウソップ",
+      "chopper": "チョッパー",
+      "robin": "ロビン",
+      "brook": "ブルック",
+      "jimbe": "ジンベエ"
+    }
+  },
   "cards": {
     "meta_title": "カード — LogPose",
     "title": "バージョン付きコレクション",

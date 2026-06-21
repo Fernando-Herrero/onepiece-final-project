@@ -2,6 +2,9 @@ import { Button, Heading, Link as RadixLink, Text } from '@radix-ui/themes';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
+const authFormCardClassName =
+  'relative flex w-full flex-col gap-4 overflow-hidden rounded-xl border border-[#f2d9a8]/30 bg-linear-to-br from-[#1b2742]/85 via-[#101a30]/95 to-[#0b1120] p-7 shadow-[0_0_48px_rgba(242,217,168,0.1),0_28px_64px_rgba(0,0,0,0.55)] backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-[#f2d9a8]/70 before:to-transparent';
+
 type AuthFormShellProps = {
   title: string;
   maxWidthClass?: string;
@@ -9,6 +12,7 @@ type AuthFormShellProps = {
   footerText: string;
   footerLinkText: string;
   footerLinkHref: string;
+  asCard?: boolean;
   children: ReactNode;
 };
 
@@ -19,16 +23,13 @@ export function AuthFormShell({
   footerText,
   footerLinkText,
   footerLinkHref,
+  asCard = false,
   children,
 }: AuthFormShellProps) {
-  return (
-    <form
-      className={`relative flex w-full ${maxWidthClass} flex-col gap-4 overflow-hidden rounded-xl border border-[#f2d9a8]/30 bg-linear-to-br from-[#1b2742]/85 via-[#101a30]/95 to-[#0b1120] p-7 shadow-[0_0_48px_rgba(242,217,168,0.1),0_28px_64px_rgba(0,0,0,0.55)] backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-[#f2d9a8]/70 before:to-transparent`}
-      onSubmit={event => {
-        event.preventDefault();
-        onSubmit();
-      }}
-    >
+  const className = `${authFormCardClassName} ${maxWidthClass}`;
+
+  const content = (
+    <>
       <Heading
         as="h1"
         size="5"
@@ -49,6 +50,22 @@ export function AuthFormShell({
           <Link href={footerLinkHref}>{footerLinkText}</Link>
         </RadixLink>
       </Text>
+    </>
+  );
+
+  if (asCard) {
+    return <div className={className}>{content}</div>;
+  }
+
+  return (
+    <form
+      className={className}
+      onSubmit={event => {
+        event.preventDefault();
+        onSubmit();
+      }}
+    >
+      {content}
     </form>
   );
 }

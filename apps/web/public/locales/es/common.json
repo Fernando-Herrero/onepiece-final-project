@@ -36,6 +36,26 @@
       "DUPLICATE_ACCOUNT": "El correo o el username ya están registrados"
     }
   },
+  "avatar": {
+    "pick_title": "Elige tu avatar",
+    "pick_hint": "Selecciona un personaje de la tripulación",
+    "change_title": "Cambiar avatar",
+    "save": "Guardar avatar",
+    "saving": "Guardando…",
+    "save_success": "Avatar actualizado",
+    "save_error": "No se pudo actualizar el avatar",
+    "characters": {
+      "luffy": "Luffy",
+      "zoro": "Zoro",
+      "nami": "Nami",
+      "sanji": "Sanji",
+      "usopp": "Usopp",
+      "chopper": "Chopper",
+      "robin": "Robin",
+      "brook": "Brook",
+      "jimbe": "Jinbe"
+    }
+  },
   "cards": {
     "meta_title": "Cartas — LogPose",
     "title": "Colección versionada",

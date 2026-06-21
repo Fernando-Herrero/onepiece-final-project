@@ -1,3 +1,4 @@
+import { isAvatarPathSelectable } from '@logpose/contracts/common/avatar.schemas';
 import { contract } from '@logpose/contracts/contract';
 import { implement, ORPCError } from '@orpc/server';
 import mongoose from 'mongoose';
@@ -196,16 +197,37 @@ const update = os.update
   .handler(async ({ input, context }) => {
     assertOwnerOrAdmin(input.params.id, context.user!);
 
-    const user = await User.findByIdAndUpdate(input.params.id, input.body, {
-      new: true,
-      runValidators: true,
-    });
+    const user = await User.findById(input.params.id);
 
     if (!user) {
       throw new ORPCError('USER_NOT_FOUND');
     }
 
-    return serializeUser(user);
+    if (
+      input.body.avatar !== undefined &&
+      !isAvatarPathSelectable(
+        input.body.avatar,
+        user.serieProgress,
+        user.avatar,
+      )
+    ) {
+      throw new ORPCError('FORBIDDEN');
+    }
+
+    const updatedUser = await User.findByIdAndUpdate(
+      input.params.id,
+      input.body,
+      {
+        new: true,
+        runValidators: true,
+      },
+    );
+
+    if (!updatedUser) {
+      throw new ORPCError('USER_NOT_FOUND');
+    }
+
+    return serializeUser(updatedUser);
   });
 
 const deleteUser = os.delete

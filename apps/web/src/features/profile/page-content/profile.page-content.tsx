@@ -2,6 +2,7 @@ import { Card, Grid, Heading, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 
 import { useAuthSession } from '@/features/auth/api/use-auth';
+import { ProfileAvatarSection } from '@/features/profile/ui/profile-avatar-section.component';
 import { ProfileIdentityCard } from '@/features/profile/ui/profile-identity-card.component';
 
 export default function ProfilePageContent() {
@@ -29,6 +30,11 @@ export default function ProfilePageContent() {
       <Grid columns={{ initial: '1', lg: '3' }} gap="6">
         <div className="flex flex-col gap-6 lg:col-span-2">
           <ProfileIdentityCard user={user} />
+          <ProfileAvatarSection
+            userId={user._id}
+            currentAvatar={user.avatar ?? ''}
+            serieProgress={user.serieProgress}
+          />
           {/* 2B: edit card · 2C: progress · 2D: stats · 2H: posts tabs */}
         </div>
 

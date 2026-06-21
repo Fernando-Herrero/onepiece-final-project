@@ -67,7 +67,7 @@ const userSchema = new Schema(
     displayName: { type: String },
     bio: { type: String, maxLength: 2000 },
     phoneNumber: { type: String },
-    avatar: { type: String, default: '/pictures/user/default-avatar.png' },
+    avatar: { type: String, required: true },
     coverImage: { type: String },
     address: { type: String },
     role: { type: String, enum: ['user', 'admin'], default: 'user' },

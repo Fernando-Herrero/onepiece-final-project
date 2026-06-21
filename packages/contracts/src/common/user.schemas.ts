@@ -1,5 +1,9 @@
 import { z } from 'zod';
 
+import {
+  avatarPathSchema,
+  registerAvatarPathSchema,
+} from './avatar.schemas.js';
 import { mongoIdParamsSchema } from './id.schemas.js';
 
 export const userRoleSchema = z.enum(['user', 'admin']);
@@ -43,7 +47,7 @@ const profileFieldsSchema = z.object({
     .string()
     .max(2000, 'La bio no puede superar 2000 caracteres')
     .optional(),
-  avatar: z.string().optional(),
+  avatar: avatarPathSchema.optional(),
   coverImage: z.string().optional(),
   phoneNumber: z.string().optional(),
   address: z.string().optional(),
@@ -56,6 +60,10 @@ export const createUserSchema = profileFieldsSchema
     password: z
       .string()
       .min(6, 'La contraseña debe tener al menos 6 caracteres'),
+    avatar: z
+      .string()
+      .min(1, 'Debes seleccionar un avatar')
+      .pipe(registerAvatarPathSchema),
   })
   .strict();
 
