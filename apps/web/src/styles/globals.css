@@ -6,6 +6,24 @@
   margin: -0.125rem;
 }
 
+/* Profile posts tabs — SegmentedControl has no color prop; orange active pill */
+.profile-posts-segmented.rt-SegmentedControlRoot {
+  --segmented-control-indicator-background-color: var(--orange-9);
+  color: var(--gray-11);
+  background-color: rgb(5 7 13 / 0.6);
+  background-image: none;
+}
+
+.profile-posts-segmented :where(.rt-SegmentedControlItem[data-state='on']) {
+  color: var(--orange-contrast);
+}
+
+.profile-posts-segmented
+  :where(.rt-SegmentedControlItem:not([disabled]))
+  ~ :where(.rt-SegmentedControlIndicator)::before {
+  box-shadow: 0 0 0 1px var(--orange-a7);
+}
+
 @theme {
   --font-family-one-piece: 'OnePiece', serif;
   --font-family-road-captain: 'RoadCaptain', sans-serif;

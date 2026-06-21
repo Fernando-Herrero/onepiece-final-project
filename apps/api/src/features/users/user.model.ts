@@ -161,6 +161,22 @@ export function serializeUserSummary(user: UserDoc) {
   };
 }
 
+export function serializeUserRankingEntry(user: UserDoc) {
+  const doc = user.toObject({ virtuals: true });
+
+  return {
+    _id: user._id.toString(),
+    username: doc.username,
+    firstName: doc.firstName,
+    lastName: doc.lastName,
+    avatar: doc.avatar,
+    displayName: doc.displayName,
+    verified: doc.verified,
+    isActive: doc.isActive,
+    experience: doc.experience,
+  };
+}
+
 export function serializeAuthorEmbed(author: UserDoc) {
   return {
     _id: author._id.toString(),

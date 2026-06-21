@@ -20,10 +20,13 @@ import {
 } from '../posts/post.model.js';
 import {
   serializeUser,
+  serializeUserRankingEntry,
   serializeUserSummary,
   User,
   type UserDoc,
 } from './user.model.js';
+
+const RANKING_LIMIT = 20;
 
 type PrivacyKey = keyof UserDoc['privacy'];
 
@@ -68,6 +71,14 @@ function assertPrivacy(
 const list = os.list.use(requireAdmin).handler(async () => {
   const users = await User.find();
   return users.map(serializeUserSummary);
+});
+
+const ranking = os.ranking.use(requireAuth).handler(async () => {
+  const users = await User.find()
+    .sort({ experience: -1 })
+    .limit(RANKING_LIMIT);
+
+  return users.map(serializeUserRankingEntry);
 });
 
 const getById = os.getById.handler(async ({ input }) => {
@@ -356,6 +367,7 @@ const unfollow = os.unfollow
 
 export const usersRouter = os.router({
   list,
+  ranking,
   getStats,
   getFollowers,
   getFollowing,

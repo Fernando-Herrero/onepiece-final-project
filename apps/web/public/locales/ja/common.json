@@ -309,7 +309,8 @@
       "admin": "管理者"
     },
     "sidebar_ranking_title": "ランキング",
-    "sidebar_ranking_soon": "近日公開：トップ海賊とあなたの順位。",
+    "sidebar_ranking_empty": "まだランキングに海賊がいません。",
+    "ranking_you": "あなた",
     "progress_label": "シリーズ進捗",
     "progress_empty": "まだエピソードがありません — 年表から始めましょう",
     "progress_saga_fallback": "サガ {{id}}",
@@ -342,7 +343,21 @@
     "liked_posts": "いいね",
     "bookmarked_posts": "ブックマーク",
     "commented_posts": "コメントした投稿",
-    "total_comments": "コメント総数"
+    "total_comments": "コメント総数",
+    "posts": "投稿",
+    "likes": "いいね",
+    "bookmarks": "ブックマーク",
+    "comments": "コメント",
+    "no_posts": "投稿が見つかりません",
+    "no_liked_posts": "いいねした投稿がありません",
+    "no_bookmarked_posts": "ブックマークした投稿がありません",
+    "no_commented_posts": "コメントした投稿がありません",
+    "private_content": "このコンテンツは非公開です",
+    "private_likes": "いいねは非公開に設定されています",
+    "private_bookmarks": "ブックマークは非公開に設定されています",
+    "private_comments": "コメントは非公開に設定されています",
+    "post_likes_count": "いいね {{count}}",
+    "post_comments_count": "コメント {{count}}"
   },
   "serie": {
     "meta_title": "年表 — LogPose",

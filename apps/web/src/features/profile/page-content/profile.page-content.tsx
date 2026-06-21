@@ -1,4 +1,4 @@
-import { Card, Grid, Heading, Text } from '@radix-ui/themes';
+import { Grid, Heading, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
@@ -6,6 +6,13 @@ import { ErrorBoundary } from 'react-error-boundary';
 import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
 import { useAuthSession } from '@/features/auth/api/use-auth';
 import { ProfileIdentityCard } from '@/features/profile/ui/profile-identity-card.component';
+import {
+  ProfilePostsTabs,
+} from '@/features/profile/ui/profile-posts-tabs.component';
+import {
+  ProfileRankingSidebar,
+  ProfileRankingSidebarSkeleton,
+} from '@/features/profile/ui/profile-ranking-sidebar.component';
 import {
   ProfileStatsCard,
   ProfileStatsCardSkeleton,
@@ -42,18 +49,17 @@ export default function ProfilePageContent() {
             </Suspense>
           </ErrorBoundary>
 
-          {/* 2E-b: posts tabs */}
+          <ErrorBoundary FallbackComponent={QueryErrorFallback}>
+            <ProfilePostsTabs userId={user._id} privacy={user.privacy} />
+          </ErrorBoundary>
         </div>
 
         <aside className="flex flex-col gap-6">
-          <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
-            <Text as="p" size="2" weight="medium" className="text-[#f2d9a8]">
-              {t('profile.sidebar_ranking_title')}
-            </Text>
-            <Text as="p" size="1" color="gray" mt="2">
-              {t('profile.sidebar_ranking_soon')}
-            </Text>
-          </Card>
+          <ErrorBoundary FallbackComponent={QueryErrorFallback}>
+            <Suspense fallback={<ProfileRankingSidebarSkeleton />}>
+              <ProfileRankingSidebar currentUserId={user._id} />
+            </Suspense>
+          </ErrorBoundary>
         </aside>
       </Grid>
     </div>

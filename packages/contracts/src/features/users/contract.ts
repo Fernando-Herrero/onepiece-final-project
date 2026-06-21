@@ -10,6 +10,7 @@ import {
   deleteUserOutputSchema,
   followOutputSchema,
   updateUserInputSchema,
+  userRankingEntrySchema,
   userStatsSchema,
 } from './schemas.js';
 
@@ -56,6 +57,15 @@ export const usersContract = oc
       })
       .errors(usersErrors)
       .output(z.array(userSummarySchema)),
+
+    ranking: oc
+      .route({
+        method: 'GET',
+        path: '/ranking',
+        description: 'Top users by experience for profile sidebar',
+      })
+      .errors(usersErrors)
+      .output(z.array(userRankingEntrySchema)),
 
     getStats: oc
       .route({

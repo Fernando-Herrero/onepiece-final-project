@@ -309,7 +309,8 @@
       "admin": "Admin"
     },
     "sidebar_ranking_title": "Ranking",
-    "sidebar_ranking_soon": "Próximamente: top piratas y tu posición.",
+    "sidebar_ranking_empty": "Aún no hay piratas en el ranking.",
+    "ranking_you": "Tú",
     "progress_label": "Progreso en la serie",
     "progress_empty": "Sin episodios marcados — explora la cronología para empezar",
     "progress_saga_fallback": "Saga {{id}}",
@@ -342,7 +343,21 @@
     "liked_posts": "Me gusta",
     "bookmarked_posts": "Favoritos",
     "commented_posts": "Posts comentados",
-    "total_comments": "Total de comentarios"
+    "total_comments": "Total de comentarios",
+    "posts": "Posts",
+    "likes": "Likes",
+    "bookmarks": "Favoritos",
+    "comments": "Comentarios",
+    "no_posts": "No se encontraron posts",
+    "no_liked_posts": "No se encontraron posts con like",
+    "no_bookmarked_posts": "No se encontraron posts guardados",
+    "no_commented_posts": "No se encontraron posts comentados",
+    "private_content": "Este contenido está marcado como privado",
+    "private_likes": "Tus likes están marcados como privados",
+    "private_bookmarks": "Tus favoritos están marcados como privados",
+    "private_comments": "Tus comentarios están marcados como privados",
+    "post_likes_count": "{{count}} likes",
+    "post_comments_count": "{{count}} comentarios"
   },
   "serie": {
     "meta_title": "Cronología — LogPose",

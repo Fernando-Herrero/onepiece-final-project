@@ -3,22 +3,14 @@ import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
 import { useSaveProfileField } from '@/features/profile/api/use-profile';
+import type { ProfileViewMoreUser } from '@/features/profile/profile.types';
 import { ProfileEditableField } from '@/features/profile/ui/profile-editable-field.component';
 import { ProfileReadonlyRow } from '@/features/profile/ui/profile-readonly-row.component';
 
 type EditableField = 'address' | 'phoneNumber';
 
 type ProfileViewMoreProps = {
-  user: {
-    _id: string;
-    firstName: string;
-    lastName: string;
-    fullName?: string;
-    email: string;
-    address?: string;
-    phoneNumber?: string;
-    createdAt?: string;
-  };
+  user: ProfileViewMoreUser;
 };
 
 export function ProfileViewMore({ user }: ProfileViewMoreProps) {

@@ -13,6 +13,18 @@ export const userStatsSchema = z.object({
   totalComments: z.number(),
 });
 
+export const userRankingEntrySchema = z.object({
+  _id: z.string(),
+  username: z.string(),
+  firstName: z.string(),
+  lastName: z.string(),
+  avatar: z.string().optional(),
+  displayName: z.string().optional(),
+  verified: z.boolean(),
+  isActive: z.boolean(),
+  experience: z.number(),
+});
+
 export const deleteUserOutputSchema = z.object({
   ok: z.literal(true),
   removed: userPublicSchema,

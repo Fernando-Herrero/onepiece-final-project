@@ -1,4 +1,3 @@
-import type { updateUserSchema } from '@logpose/contracts/common/user.schemas';
 import {
   useMutation,
   useQueryClient,
@@ -7,19 +6,25 @@ import {
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 import { toast } from 'sonner';
-import * as z from 'zod/v4';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
+import type {
+  ProfilePostsTab,
+  UpdateProfileBody,
+} from '@/features/profile/profile.types';
 import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
-export type UpdateProfileBody = Pick<
-  z.infer<typeof updateUserSchema>,
-  'displayName' | 'bio' | 'coverImage' | 'avatar' | 'address' | 'phoneNumber'
->;
-
 export function useProfileStats(userId: string) {
   return useSuspenseQuery(allQueriesOptions.profile.stats(userId));
+}
+
+export function useProfileRanking() {
+  return useSuspenseQuery(allQueriesOptions.profile.ranking());
+}
+
+export function useProfilePosts(userId: string, tab: ProfilePostsTab) {
+  return useSuspenseQuery(allQueriesOptions.profile.postsTab(userId, tab));
 }
 
 export function useUpdateProfileMutation() {

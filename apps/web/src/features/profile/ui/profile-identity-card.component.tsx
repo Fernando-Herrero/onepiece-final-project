@@ -1,4 +1,3 @@
-import { AVATAR_OPTIONS } from '@logpose/contracts/common/avatar.schemas';
 import {
   Avatar,
   Badge,
@@ -16,9 +15,10 @@ import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
 import {
-  type UpdateProfileBody,
   useSaveProfileField,
 } from '@/features/profile/api/use-profile';
+import { DEFAULT_AVATAR_SRC } from '@/features/profile/profile.constants';
+import type { ProfileUser, UpdateProfileBody } from '@/features/profile/profile.types';
 import { ProfileAvatarPickerOverlay } from '@/features/profile/ui/profile-avatar-picker-overlay.component';
 import {
   ProfileEditableField,
@@ -28,10 +28,6 @@ import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options
 
 import { ProfileViewMore } from './profile-view-more.component';
 
-const DEFAULT_AVATAR_SRC =
-  AVATAR_OPTIONS.find(option => option.id === 'luffy')?.path ??
-  '/avatars/luffy/luffy-happy-400.webp';
-
 const avatarFallback = (
   // eslint-disable-next-line @next/next/no-img-element
   <img src={DEFAULT_AVATAR_SRC} alt="" className="size-full object-cover" />
@@ -40,29 +36,7 @@ const avatarFallback = (
 type EditableField = 'displayName' | 'bio' | 'coverImage';
 
 type ProfileIdentityCardProps = {
-  user: {
-    _id: string;
-    username: string;
-    firstName: string;
-    lastName: string;
-    email: string;
-    displayName?: string;
-    bio?: string;
-    avatar?: string;
-    coverImage?: string;
-    address?: string;
-    phoneNumber?: string;
-    role: 'user' | 'admin';
-    verified: boolean;
-    experience: number;
-    isActive: boolean;
-    createdAt?: string;
-    serieProgress: {
-      saga: number;
-      arc: number;
-      episode: number;
-    };
-  };
+  user: ProfileUser;
 };
 
 export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
