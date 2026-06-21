@@ -7,12 +7,10 @@ import type { ProfileUser } from '@/features/profile/profile.types';
 
 type ProfileCollectionTeaserProps = {
   unlockedCards: ProfileUser['unlockedCards'];
-  className?: string;
 };
 
 export function ProfileCollectionTeaser({
   unlockedCards,
-  className,
 }: ProfileCollectionTeaserProps) {
   const { t } = useTranslation();
 
@@ -28,9 +26,7 @@ export function ProfileCollectionTeaser({
   })).filter(item => item.count > 0);
 
   return (
-    <Card
-      className={`border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4 ${className ?? ''}`}
-    >
+    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
       <Flex align="center" justify="between" gap="3" mb="4">
         <Heading as="h2" size="3" className="text-[#f2d9a8]">
           {t('profile.collection_title')}

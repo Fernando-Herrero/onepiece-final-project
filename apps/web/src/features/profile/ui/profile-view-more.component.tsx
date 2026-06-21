@@ -11,17 +11,12 @@ type EditableField = 'address' | 'phoneNumber';
 
 type ProfileViewMoreProps = {
   user: ProfileViewMoreUser;
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
 };
 
-export function ProfileViewMore({
-  user,
-  open,
-  onOpenChange,
-}: ProfileViewMoreProps) {
+export function ProfileViewMore({ user }: ProfileViewMoreProps) {
   const { t, i18n } = useTranslation();
   const { save, isSaving } = useSaveProfileField(user._id);
+  const [open, setOpen] = useState(false);
   const [editingField, setEditingField] = useState<EditableField | null>(null);
 
   const fullName =
@@ -40,7 +35,7 @@ export function ProfileViewMore({
         color="gray"
         highContrast
         className="flex h-auto w-full cursor-pointer justify-between p-0 hover:bg-transparent active:bg-transparent"
-        onClick={() => onOpenChange(!open)}
+        onClick={() => setOpen(current => !current)}
       >
         <Text as="span" size="2" weight="medium" className="text-[#f2d9a8]">
           {open ? t('profile.view_less') : t('profile.view_more')}
@@ -51,7 +46,7 @@ export function ProfileViewMore({
       </Button>
 
       {open ? (
-        <Flex direction="column" gap="4" mt="4">
+        <Flex direction="column" gap="4" mt="4" className="motion-safe:animate-[profile-fade-up_0.5s_ease-out_both]">
           <ProfileReadonlyRow
             label={t('profile.full_name_label')}
             value={fullName}

@@ -34,15 +34,9 @@ type EditableField = 'displayName' | 'bio' | 'coverImage';
 
 type ProfileIdentityCardProps = {
   user: ProfileUser;
-  viewMoreOpen: boolean;
-  onViewMoreOpenChange: (open: boolean) => void;
 };
 
-export function ProfileIdentityCard({
-  user,
-  viewMoreOpen,
-  onViewMoreOpenChange,
-}: ProfileIdentityCardProps) {
+export function ProfileIdentityCard({ user }: ProfileIdentityCardProps) {
   const { t } = useTranslation();
   const { save, isSaving } = useSaveProfileField(user._id);
   const [coverLoadError, setCoverLoadError] = useState(false);
@@ -267,11 +261,7 @@ export function ProfileIdentityCard({
             }
           />
 
-          <ProfileViewMore
-            user={user}
-            open={viewMoreOpen}
-            onOpenChange={onViewMoreOpenChange}
-          />
+          <ProfileViewMore user={user} />
 
           <Flex gap="2" wrap="wrap">
             <Badge color="orange" variant="soft">

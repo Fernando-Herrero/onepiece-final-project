@@ -29,6 +29,17 @@
   background-color: rgb(242 217 168 / 0.12);
 }
 
+@keyframes profile-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @theme {
   --font-family-one-piece: 'OnePiece', serif;
   --font-family-road-captain: 'RoadCaptain', sans-serif;

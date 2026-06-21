@@ -1,11 +1,13 @@
-import { Grid, Heading, Text } from '@radix-ui/themes';
+import { Heading, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 
 import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
 import { useAuthSession } from '@/features/auth/api/use-auth';
-import { ProfileIdentityRow } from '@/features/profile/ui/profile-identity-row.component';
+import { ProfileCollectionTeaser } from '@/features/profile/ui/profile-collection-teaser.component';
+import { ProfileFollowCountsCard } from '@/features/profile/ui/profile-follow-counts-card.component';
+import { ProfileIdentityCard } from '@/features/profile/ui/profile-identity-card.component';
 import { ProfilePostsTabs } from '@/features/profile/ui/profile-posts-tabs.component';
 import { ProfileProgressCard } from '@/features/profile/ui/profile-progress-card.component';
 import {
@@ -39,10 +41,21 @@ export default function ProfilePageContent() {
         {t('profile.subtitle')}
       </Text>
 
-      <Grid columns={{ initial: '1', lg: '3' }} gap="6">
-        <div className="flex flex-col gap-6 lg:col-span-2">
-          <ProfileIdentityRow user={user} />
+      <div className="motion-safe:animate-[profile-fade-up_0.5s_ease-out_both] grid gap-6 md:grid-cols-3">
+        <div className="flex flex-col gap-6 md:col-span-2">
+          <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <ProfileIdentityCard user={user} />
+            <div className="grid grid-rows-2 gap-6 sm:grid-cols-2 sm:grid-rows-1 lg:grid-cols-1 lg:grid-rows-2">
+              <ProfileFollowCountsCard
+                followersCount={user.followers.length}
+                followingCount={user.following.length}
+              />
+              <ProfileCollectionTeaser unlockedCards={user.unlockedCards} />
+            </div>
+          </div>
+
           <ProfileProgressCard user={user} />
+
           <ErrorBoundary FallbackComponent={QueryErrorFallback}>
             <Suspense fallback={<ProfileStatsCardSkeleton />}>
               <ProfileStatsCard userId={user._id} />
@@ -61,7 +74,7 @@ export default function ProfilePageContent() {
             </Suspense>
           </ErrorBoundary>
         </aside>
-      </Grid>
+      </div>
     </div>
   );
 }

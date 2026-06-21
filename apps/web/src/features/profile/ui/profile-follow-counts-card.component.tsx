@@ -4,13 +4,11 @@ import { useTranslation } from 'next-i18next/pages';
 type ProfileFollowCountsCardProps = {
   followersCount: number;
   followingCount: number;
-  className?: string;
 };
 
 export function ProfileFollowCountsCard({
   followersCount,
   followingCount,
-  className,
 }: ProfileFollowCountsCardProps) {
   const { t } = useTranslation();
 
@@ -20,9 +18,7 @@ export function ProfileFollowCountsCard({
   ];
 
   return (
-    <Card
-      className={`border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4 ${className ?? ''}`}
-    >
+    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
       <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
         {t('profile.follow_title')}
       </Heading>
