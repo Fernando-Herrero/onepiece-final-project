@@ -9,9 +9,13 @@ import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options
 
 type ProfileProgressCardProps = {
   user: ProfileUser;
+  isOwner?: boolean;
 };
 
-export function ProfileProgressCard({ user }: ProfileProgressCardProps) {
+export function ProfileProgressCard({
+  user,
+  isOwner = true,
+}: ProfileProgressCardProps) {
   const { t } = useTranslation();
   const { saga, arc, episode } = user.serieProgress;
   const hasSerieProgress = saga > 0 && arc > 0 && episode > 0;
@@ -55,12 +59,14 @@ export function ProfileProgressCard({ user }: ProfileProgressCardProps) {
         <Heading as="h2" size="3" className="text-[#f2d9a8]">
           {t('profile.progress_card_title')}
         </Heading>
-        <Link
-          href="/dashboard/serie"
-          className="text-xs text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
-        >
-          {t('profile.progress_view_serie')}
-        </Link>
+        {isOwner ? (
+          <Link
+            href="/dashboard/serie"
+            className="text-xs text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+          >
+            {t('profile.progress_view_serie')}
+          </Link>
+        ) : null}
       </Flex>
 
       {hasSerieProgress ? (
@@ -112,7 +118,9 @@ export function ProfileProgressCard({ user }: ProfileProgressCardProps) {
         </Flex>
       ) : (
         <Text as="p" size="2" className="text-[#f4ede1]/50 italic">
-          {t('profile.progress_empty')}
+          {t(
+            isOwner ? 'profile.progress_empty' : 'profile.progress_empty_other',
+          )}
         </Text>
       )}
     </Card>

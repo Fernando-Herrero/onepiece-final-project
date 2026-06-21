@@ -5,6 +5,15 @@ import type { ProfilePostsTab } from '@/features/profile/profile.types';
 import type { OrpcClient } from '@/integrations/orpc/orpc.client';
 
 export const getProfileQueriesOptions = (client: OrpcClient) => ({
+  byId: (userId: string) =>
+    queryOptions({
+      queryKey: profileKeys.byId(userId),
+      queryFn: () =>
+        client.users.getById({
+          params: { id: userId },
+        }),
+    }),
+
   stats: (userId: string) =>
     queryOptions({
       queryKey: profileKeys.stats(userId),

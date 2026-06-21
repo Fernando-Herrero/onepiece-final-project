@@ -7,10 +7,12 @@ import type { ProfileUser } from '@/features/profile/profile.types';
 
 type ProfileCollectionTeaserProps = {
   unlockedCards: ProfileUser['unlockedCards'];
+  isOwner?: boolean;
 };
 
 export function ProfileCollectionTeaser({
   unlockedCards,
+  isOwner = true,
 }: ProfileCollectionTeaserProps) {
   const { t } = useTranslation();
 
@@ -31,12 +33,14 @@ export function ProfileCollectionTeaser({
         <Heading as="h2" size="3" className="text-[#f2d9a8]">
           {t('profile.collection_title')}
         </Heading>
-        <Link
-          href="/dashboard/cards"
-          className="text-xs text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
-        >
-          {t('profile.collection_view_all')}
-        </Link>
+        {isOwner ? (
+          <Link
+            href="/dashboard/cards"
+            className="text-xs text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+          >
+            {t('profile.collection_view_all')}
+          </Link>
+        ) : null}
       </Flex>
 
       <Text as="p" size="2" mb="3" className="text-[#f4ede1]/85">
@@ -45,7 +49,11 @@ export function ProfileCollectionTeaser({
 
       {breakdown.length === 0 ? (
         <Text as="p" size="2" className="text-[#f4ede1]/50 italic">
-          {t('profile.collection_empty')}
+          {t(
+            isOwner
+              ? 'profile.collection_empty'
+              : 'profile.collection_empty_other',
+          )}
         </Text>
       ) : (
         <Flex direction="column" gap="2">

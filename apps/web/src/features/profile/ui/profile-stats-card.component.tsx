@@ -12,7 +12,7 @@ export function ProfileStatsCard({ userId }: ProfileStatsCardProps) {
   const { data } = useProfileStats(userId);
 
   const statItems = [
-    { label: t('profile.my_posts'), value: data.myPosts },
+    { label: t('profile.stats_posts'), value: data.myPosts },
     { label: t('profile.liked_posts'), value: data.likedPosts },
     { label: t('profile.bookmarked_posts'), value: data.bookmarkedPosts },
     { label: t('profile.commented_posts'), value: data.commentedPosts },
@@ -22,7 +22,7 @@ export function ProfileStatsCard({ userId }: ProfileStatsCardProps) {
   return (
     <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
       <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
-        {t('profile.my_stats')}
+        {t('profile.stats_title')}
       </Heading>
       <Flex direction="column" gap="2">
         {statItems.map(item => (
@@ -52,7 +52,7 @@ export function ProfileStatsCardSkeleton() {
   return (
     <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
       <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
-        {t('profile.my_stats')}
+        {t('profile.stats_title')}
       </Heading>
       <Flex direction="column" gap="2">
         {Array.from({ length: 5 }, (_, index) => (

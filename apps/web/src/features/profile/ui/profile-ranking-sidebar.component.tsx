@@ -1,11 +1,24 @@
 import type { userRankingEntrySchema } from '@logpose/contracts/features/users/schemas';
-import { Avatar, Box, Card, Flex, Heading, Skeleton, Text } from '@radix-ui/themes';
+import {
+  Avatar,
+  Box,
+  Card,
+  Flex,
+  Heading,
+  Progress,
+  Skeleton,
+  Text,
+} from '@radix-ui/themes';
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 import type * as z from 'zod/v4';
 
 import { useProfileRanking } from '@/features/profile/api/use-profile';
-import { DEFAULT_AVATAR_SRC } from '@/features/profile/profile.constants';
+import {
+  DEFAULT_AVATAR_SRC,
+  SERIE_TOTAL_XP,
+} from '@/features/profile/profile.constants';
 
 type ProfileRankingEntry = z.infer<typeof userRankingEntrySchema>;
 
@@ -37,12 +50,15 @@ function ProfileRankingRow({
   const resolvedAvatar = entry.avatar?.trim() || DEFAULT_AVATAR_SRC;
   const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
   const name = rankingDisplayName(entry);
+  const xpPercent = Math.min(
+    100,
+    Math.round((entry.experience / SERIE_TOTAL_XP) * 100),
+  );
 
   return (
-    <Flex
-      align="center"
-      gap="3"
-      className={`rounded-md border px-3 py-2 ${
+    <Link
+      href={`/dashboard/users/${entry._id}`}
+      className={`flex items-center gap-3 rounded-md border px-3 py-2 transition-colors hover:border-[#f2d9a8]/25 ${
         isCurrentUser
           ? 'border-[#f2d9a8]/40 bg-[#f2d9a8]/10'
           : 'border-[#f2d9a8]/10 bg-[#05070d]/40'
@@ -78,8 +94,13 @@ function ProfileRankingRow({
         />
       </Box>
 
-      <Flex direction="column" gap="0" className="min-w-0 flex-1">
-        <Text as="span" size="2" weight="medium" className="truncate text-[#f4ede1]">
+      <Flex direction="column" gap="1" className="min-w-0 flex-1">
+        <Text
+          as="span"
+          size="2"
+          weight="medium"
+          className="truncate text-[#f4ede1]"
+        >
           {name}
           {isCurrentUser ? (
             <Text as="span" size="1" className="ml-1.5 text-[#f2d9a8]">
@@ -90,16 +111,29 @@ function ProfileRankingRow({
         <Text as="span" size="1" color="gray" className="truncate">
           @{entry.username}
         </Text>
+        <Flex align="center" gap="2" className="pt-0.5">
+          <Progress
+            value={xpPercent}
+            size="2"
+            className="profile-xp-progress min-w-0 flex-1"
+          />
+          <Text
+            as="span"
+            size="1"
+            weight="bold"
+            className="shrink-0 text-[#f2d9a8]"
+          >
+            {t('profile.experience', { value: entry.experience })}
+          </Text>
+        </Flex>
       </Flex>
-
-      <Text as="span" size="1" weight="bold" className="shrink-0 text-[#f2d9a8]">
-        {t('profile.experience', { value: entry.experience })}
-      </Text>
-    </Flex>
+    </Link>
   );
 }
 
-export function ProfileRankingSidebar({ currentUserId }: ProfileRankingSidebarProps) {
+export function ProfileRankingSidebar({
+  currentUserId,
+}: ProfileRankingSidebarProps) {
   const { t } = useTranslation();
   const { data: ranking } = useProfileRanking();
 
@@ -150,8 +184,11 @@ export function ProfileRankingSidebarSkeleton() {
             <Flex direction="column" gap="1" className="flex-1">
               <Skeleton height="14px" width="70%" />
               <Skeleton height="12px" width="45%" />
+              <Flex align="center" gap="2" className="pt-0.5">
+                <Skeleton height="6px" className="min-w-0 flex-1" />
+                <Skeleton height="12px" width="40px" />
+              </Flex>
             </Flex>
-            <Skeleton height="14px" width="48px" />
           </Flex>
         ))}
       </Flex>

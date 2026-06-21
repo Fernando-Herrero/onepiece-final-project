@@ -1,7 +1,7 @@
 import type { GetServerSideProps } from 'next';
 
 import { withDashboardLayout } from '@/features/dashboard/with-dashboard-layout';
-import ProfilePageContent from '@/features/profile/page-content/profile.page-content';
+import ProfilePageContent from '@/features/profile/profile.page-content';
 import { getDashboardPageProps } from '@/integrations/auth/server';
 
 function DashboardProfilePage() {

@@ -55,3 +55,9 @@ export type ProfilePostsPrivateMessageKey =
   | 'profile.private_likes'
   | 'profile.private_bookmarks'
   | 'profile.private_comments';
+
+export type ProfilePostsPrivateMessageOtherKey =
+  | 'profile.private_content_other'
+  | 'profile.private_likes_other'
+  | 'profile.private_bookmarks_other'
+  | 'profile.private_comments_other';

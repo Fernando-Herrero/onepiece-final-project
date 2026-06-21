@@ -3,6 +3,7 @@ import { AVATAR_OPTIONS } from '@logpose/contracts/common/avatar.schemas';
 import type {
   ProfilePostsEmptyMessageKey,
   ProfilePostsPrivateMessageKey,
+  ProfilePostsPrivateMessageOtherKey,
   ProfilePostsTab,
   ProfilePostsTabConfig,
 } from '@/features/profile/profile.types';
@@ -55,4 +56,14 @@ export const PROFILE_POSTS_PRIVATE_MESSAGE_KEY: Record<
   liked: 'profile.private_likes',
   bookmarked: 'profile.private_bookmarks',
   comments: 'profile.private_comments',
+};
+
+export const PROFILE_POSTS_PRIVATE_MESSAGE_KEY_OTHER: Record<
+  ProfilePostsTab,
+  ProfilePostsPrivateMessageOtherKey
+> = {
+  posts: 'profile.private_content_other',
+  liked: 'profile.private_likes_other',
+  bookmarked: 'profile.private_bookmarks_other',
+  comments: 'profile.private_comments_other',
 };

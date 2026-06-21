@@ -44,4 +44,4 @@ alwaysApply: true
 
 Tras cada implementación indicar: `pnpm dev`, URL, resultado esperado en pantalla.
 
-**Estado (jun 2026):** landing ✅ · auth 🟡 · dashboard shell ✅ · **perfil MVP ✅** · serie/cards smoke test ✅ · **próximo:** auth backbone → community. Ver `docs/MIGRATION.md` §1.1–§1.2.
+**Estado (jun 2026):** landing ✅ · auth 🟡 · dashboard shell ✅ · **perfil MVP ✅** (ampliaciones §1.3) · serie/cards smoke test ✅ · **próximo:** auth backbone → community. Ver `docs/MIGRATION.md` §1.1–§1.3.

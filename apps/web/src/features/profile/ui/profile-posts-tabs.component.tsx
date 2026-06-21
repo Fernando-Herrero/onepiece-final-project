@@ -11,16 +11,20 @@ import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 
 import { useProfilePosts } from '@/features/profile/api/use-profile';
-import { useProfilePostsTabs } from '@/features/profile/api/use-profile-posts-tabs';
-import { PROFILE_POSTS_EMPTY_MESSAGE_KEY } from '@/features/profile/profile.constants';
+import {
+  PROFILE_POSTS_EMPTY_MESSAGE_KEY,
+  PROFILE_POSTS_PRIVATE_MESSAGE_KEY_OTHER,
+} from '@/features/profile/profile.constants';
 import type {
   ProfilePostsTab,
   ProfilePrivacy,
 } from '@/features/profile/profile.types';
+import { useProfilePostsTabs } from '@/features/profile/use-profile-posts-tabs';
 
 type ProfilePostsTabsProps = {
   userId: string;
   privacy: ProfilePrivacy;
+  isOwner?: boolean;
 };
 
 export function ProfilePostListSkeleton() {
@@ -105,7 +109,11 @@ function ProfilePostList({
   );
 }
 
-export function ProfilePostsTabs({ userId, privacy }: ProfilePostsTabsProps) {
+export function ProfilePostsTabs({
+  userId,
+  privacy,
+  isOwner = true,
+}: ProfilePostsTabsProps) {
   const { t } = useTranslation();
   const {
     activeTab,
@@ -114,6 +122,10 @@ export function ProfilePostsTabs({ userId, privacy }: ProfilePostsTabsProps) {
     isActiveTabPrivate,
     privateMessageKey,
   } = useProfilePostsTabs(privacy);
+
+  const privateMessage = isOwner
+    ? privateMessageKey
+    : PROFILE_POSTS_PRIVATE_MESSAGE_KEY_OTHER[activeTab];
 
   const tabsScrollMaskClass =
     activeTab === 'comments'
@@ -128,12 +140,14 @@ export function ProfilePostsTabs({ userId, privacy }: ProfilePostsTabsProps) {
         <Heading as="h2" size="3" className="text-[#f2d9a8]">
           {t('profile.activity_title')}
         </Heading>
-        <Link
-          href="/dashboard/settings"
-          className="text-xs text-[#f2d9a8]/75 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
-        >
-          {t('profile.activity_manage_visibility')}
-        </Link>
+        {isOwner ? (
+          <Link
+            href="/dashboard/settings"
+            className="text-xs text-[#f2d9a8]/75 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
+          >
+            {t('profile.activity_manage_visibility')}
+          </Link>
+        ) : null}
       </Flex>
       <div
         className={`relative mb-4 min-w-0 scrollbar-none overflow-x-auto pb-1 [-ms-overflow-style:none] md:overflow-x-visible md:mask-none [&::-webkit-scrollbar]:hidden ${tabsScrollMaskClass}`}
@@ -170,14 +184,16 @@ export function ProfilePostsTabs({ userId, privacy }: ProfilePostsTabsProps) {
       {isActiveTabPrivate ? (
         <Flex direction="column" align="center" gap="2" className="py-8">
           <Text as="p" size="2" align="center" className="text-[#f4ede1]/50">
-            {t(privateMessageKey)}
+            {t(privateMessage)}
           </Text>
-          <Link
-            href="/dashboard/settings"
-            className="text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
-          >
-            {t('profile.activity_private_settings_link')}
-          </Link>
+          {isOwner ? (
+            <Link
+              href="/dashboard/settings"
+              className="text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+            >
+              {t('profile.activity_private_settings_link')}
+            </Link>
+          ) : null}
         </Flex>
       ) : (
         <Suspense key={activeTab} fallback={<ProfilePostListSkeleton />}>

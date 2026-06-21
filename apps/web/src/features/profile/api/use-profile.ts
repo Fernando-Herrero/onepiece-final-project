@@ -8,12 +8,18 @@ import { useState } from 'react';
 import { toast } from 'sonner';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
+import { profileKeys } from '@/features/profile/api/profile.keys';
 import type {
   ProfilePostsTab,
+  ProfileUser,
   UpdateProfileBody,
 } from '@/features/profile/profile.types';
 import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
+
+export function useProfileUser(userId: string) {
+  return useSuspenseQuery(allQueriesOptions.profile.byId(userId));
+}
 
 export function useProfileStats(userId: string) {
   return useSuspenseQuery(allQueriesOptions.profile.stats(userId));
@@ -69,4 +75,98 @@ export function useSaveProfileField(userId: string) {
   }
 
   return { save, isSaving };
+}
+
+export function useFollowUserMutation() {
+  const queryClient = useQueryClient();
+  const { t } = useTranslation();
+
+  return useMutation({
+    mutationFn: (targetUserId: string) =>
+      client.users.follow({ params: { id: targetUserId } }),
+    onSuccess: (_result, targetUserId) => {
+      queryClient.setQueryData(authKeys.me(), (old: ProfileUser | undefined) => {
+        if (!old || old.following.includes(targetUserId)) {
+          return old;
+        }
+
+        return {
+          ...old,
+          following: [...old.following, targetUserId],
+        };
+      });
+
+      queryClient.setQueryData(
+        profileKeys.byId(targetUserId),
+        (old: ProfileUser | undefined) => {
+          if (!old) {
+            return old;
+          }
+
+          const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+
+          if (!viewerId || old.followers.includes(viewerId)) {
+            return old;
+          }
+
+          return {
+            ...old,
+            followers: [...old.followers, viewerId],
+          };
+        },
+      );
+
+      toast.success(t('profile.follow_success'));
+    },
+    onError: () => {
+      toast.error(t('profile.follow_error'));
+    },
+  });
+}
+
+export function useUnfollowUserMutation() {
+  const queryClient = useQueryClient();
+  const { t } = useTranslation();
+
+  return useMutation({
+    mutationFn: (targetUserId: string) =>
+      client.users.unfollow({ params: { id: targetUserId } }),
+    onSuccess: (_result, targetUserId) => {
+      queryClient.setQueryData(authKeys.me(), (old: ProfileUser | undefined) => {
+        if (!old) {
+          return old;
+        }
+
+        return {
+          ...old,
+          following: old.following.filter(id => id !== targetUserId),
+        };
+      });
+
+      queryClient.setQueryData(
+        profileKeys.byId(targetUserId),
+        (old: ProfileUser | undefined) => {
+          if (!old) {
+            return old;
+          }
+
+          const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+
+          if (!viewerId) {
+            return old;
+          }
+
+          return {
+            ...old,
+            followers: old.followers.filter(id => id !== viewerId),
+          };
+        },
+      );
+
+      toast.success(t('profile.unfollow_success'));
+    },
+    onError: () => {
+      toast.error(t('profile.unfollow_error'));
+    },
+  });
 }
