@@ -335,7 +335,14 @@
     "input_address": "住所を入力",
     "phone_label": "電話番号",
     "phone_placeholder": "電話番号",
-    "created_at_label": "登録日"
+    "created_at_label": "登録日",
+    "my_stats": "私の統計",
+    "stats_error": "統計を読み込めませんでした",
+    "my_posts": "自分の投稿",
+    "liked_posts": "いいね",
+    "bookmarked_posts": "ブックマーク",
+    "commented_posts": "コメントした投稿",
+    "total_comments": "コメント総数"
   },
   "serie": {
     "meta_title": "年表 — LogPose",

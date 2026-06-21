@@ -335,7 +335,14 @@
     "input_address": "Ingresa tu dirección",
     "phone_label": "Teléfono",
     "phone_placeholder": "Tu número de teléfono",
-    "created_at_label": "Creado el"
+    "created_at_label": "Creado el",
+    "my_stats": "Mis estadísticas",
+    "stats_error": "No se pudieron cargar las estadísticas",
+    "my_posts": "Posts propios",
+    "liked_posts": "Me gusta",
+    "bookmarked_posts": "Favoritos",
+    "commented_posts": "Posts comentados",
+    "total_comments": "Total de comentarios"
   },
   "serie": {
     "meta_title": "Cronología — LogPose",

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 
 import { AvatarPickerComponent } from '@/features/avatar/ui/avatar-picker.component';
-import { useUpdateProfileMutation } from '@/features/profile/api/use-update-profile';
+import { useUpdateProfileMutation } from '@/features/profile/api/use-profile';
 
 type ProfileAvatarPickerOverlayProps = {
   userId: string;

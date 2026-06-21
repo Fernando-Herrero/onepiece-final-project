@@ -2,7 +2,7 @@ import { Button, Card, Flex, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
-import { useSaveProfileField } from '@/features/profile/api/use-save-profile-field';
+import { useSaveProfileField } from '@/features/profile/api/use-profile';
 import { ProfileEditableField } from '@/features/profile/ui/profile-editable-field.component';
 import { ProfileReadonlyRow } from '@/features/profile/ui/profile-readonly-row.component';
 

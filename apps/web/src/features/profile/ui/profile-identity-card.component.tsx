@@ -15,8 +15,10 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
-import { useSaveProfileField } from '@/features/profile/api/use-save-profile-field';
-import type { UpdateProfileBody } from '@/features/profile/api/use-update-profile';
+import {
+  type UpdateProfileBody,
+  useSaveProfileField,
+} from '@/features/profile/api/use-profile';
 import { ProfileAvatarPickerOverlay } from '@/features/profile/ui/profile-avatar-picker-overlay.component';
 import {
   ProfileEditableField,

@@ -335,7 +335,14 @@
     "input_address": "Enter your address",
     "phone_label": "Phone",
     "phone_placeholder": "Your phone number",
-    "created_at_label": "Created on"
+    "created_at_label": "Created on",
+    "my_stats": "My stats",
+    "stats_error": "Could not load stats",
+    "my_posts": "My posts",
+    "liked_posts": "Likes",
+    "bookmarked_posts": "Bookmarks",
+    "commented_posts": "Commented posts",
+    "total_comments": "Total comments"
   },
   "serie": {
     "meta_title": "Timeline — LogPose",
