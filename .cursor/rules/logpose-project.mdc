@@ -8,13 +8,13 @@ alwaysApply: true
 ## Antes de codificar
 
 1. Leer `AGENTS.md` y `docs/MIGRATION.md`
-2. Consultar `docs/CONVENTIONS.md` y `docs/REFERENCE-ADMIN.md` si aplica
+2. Consultar `docs/ROADMAP.md` (serie/cartas/admin/expansión), `docs/CONVENTIONS.md` y `docs/REFERENCE-ADMIN.md` si aplica
 3. Identificar la fase y el módulo actual — no saltar pasos
 
 ## Stack
 
 - Monorepo pnpm 11.6 + Turbo, Node 24.16.0
-- `@logpose/web`: Next 16.2.4, Pages Router (`*.page.tsx`), Tailwind 4, TanStack Query
+- `@logpose/web`: Next 16.2.4, Pages Router (`*.page.tsx`), Tailwind 4, **Radix UI Themes**, TanStack Query
 - `@logpose/api`: Express 5 + Mongoose (no NestJS)
 - `@logpose/contracts`: oRPC + Zod — fuente de verdad de tipos
 
@@ -36,10 +36,12 @@ alwaysApply: true
 ## Referencia
 
 - Replicar **estructura** de `admin` (monorepo, oRPC, Pages Router, turbo dev)
+- **No** replicar auth-next RBAC; LogPose usa rol `user`/`admin` simple
 - Código legacy en `One-piece-LogPose` y `api-onepiece` — solo migrar, no reescribir desde cero sin necesidad
+- **Visión ampliada** (cartas versionadas, economía, ranking): `docs/ROADMAP.md`
 
 ## Verificación
 
 Tras cada implementación indicar: `pnpm dev`, URL, resultado esperado en pantalla.
 
-**Estado (jun 2026):** backend listo; landing + auth en web; **próximo:** motion off móvil → dashboard. Ver `docs/MIGRATION.md` §1.1.
+**Estado (jun 2026):** landing ✅ · auth 🟡 · dashboard shell ✅ · serie/cards smoke test ✅ · **próximo:** auth backbone → perfil. Ver `docs/MIGRATION.md` §1.1 y `docs/ROADMAP.md`.

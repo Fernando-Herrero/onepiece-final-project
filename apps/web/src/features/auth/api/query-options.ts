@@ -9,5 +9,6 @@ export const getAuthQueriesOptions = (client: OrpcClient) => ({
       queryKey: authKeys.me(),
       queryFn: () => client.auth.me(),
       retry: false,
+      staleTime: 60_000, // 1 min, no espamear el servidor con peticiones
     }),
 });

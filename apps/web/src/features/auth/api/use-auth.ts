@@ -1,8 +1,4 @@
-import {
-  useMutation,
-  useQuery,
-  useQueryClient,
-} from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import type { TFunction } from 'i18next';
 import { useRouter } from 'next/router';
 
@@ -87,3 +83,37 @@ export function useLogoutMutation() {
 }
 
 export { getAuthErrorMessage };
+
+const SESSION_INVALID_ERROR_CODES = new Set([
+  'UNAUTHORIZED',
+  'ACCOUNT_INACTIVE',
+  'USER_NOT_FOUND',
+]);
+
+function isSessionInvalidError(error: unknown): boolean {
+  return (
+    typeof error === 'object' &&
+    error !== null &&
+    'code' in error &&
+    typeof error.code === 'string' &&
+    SESSION_INVALID_ERROR_CODES.has(error.code)
+  );
+}
+
+export function useAuthSession() {
+  const meQuery = useMeQuery();
+  const user = meQuery.data;
+  const isAdmin = user?.role === 'admin';
+
+  return {
+    user,
+    isAdmin,
+    isLoading: meQuery.isPending,
+    isAuthenticated: !!user,
+    isSessionInvalid:
+      meQuery.isError && isSessionInvalidError(meQuery.error),
+    error: meQuery.isError ? meQuery.error : null,
+  };
+}
+
+export { isSessionInvalidError };

@@ -3,7 +3,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
-import { useLogoutMutation, useMeQuery } from '@/features/auth/api/use-auth';
+import {
+  useAuthSession,
+  useLogoutMutation,
+} from '@/features/auth/api/use-auth';
 import { DASHBOARD_TOPBAR_NAV_ITEMS } from '@/features/dashboard/dashboard-navigation';
 import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
 
@@ -15,7 +18,7 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
   const router = useRouter();
   const { t } = useTranslation();
   const logout = useLogoutMutation();
-  const meQuery = useMeQuery();
+  const { user } = useAuthSession();
 
   return (
     <Flex
@@ -53,9 +56,9 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
 
           <LandingLocaleToggleComponent compactLabel />
 
-          {meQuery.data ? (
+          {user ? (
             <Text size="2" className="hidden text-[#f4ede1]/75 sm:inline">
-              {meQuery.data.username}
+              {user.username}
             </Text>
           ) : null}
           <Button

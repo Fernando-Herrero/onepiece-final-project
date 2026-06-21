@@ -7,6 +7,7 @@ import {
   getDashboardActiveTab,
   getDashboardSectionLabelKey,
 } from '@/features/dashboard/dashboard-navigation';
+import { DashboardAuthGate } from '@/features/dashboard/ui/dashboard-auth-gate.component';
 import { DashboardNavRail } from '@/features/dashboard/ui/dashboard-nav-rail.component';
 import { DashboardNavSidebar } from '@/features/dashboard/ui/dashboard-nav-sidebar.component';
 import { DashboardTopBar } from '@/features/dashboard/ui/dashboard-top-bar.component';
@@ -21,31 +22,36 @@ export function DashboardLayout({ children }: PropsWithChildren) {
   const sectionLabel = t(getDashboardSectionLabelKey(router.pathname));
 
   return (
-    <Flex direction="row" className="h-dvh min-h-0 bg-[#0b1120]">
-      <Box
-        className={`shrink-0 overflow-hidden transition-[width] duration-200 ${
-          navExpanded ? 'w-[220px]' : 'w-14'
-        }`}
-      >
-        {navExpanded ? (
-          <DashboardNavSidebar
-            activeTab={activeTab}
-            onToggleExpanded={toggleNavExpanded}
-          />
-        ) : (
-          <DashboardNavRail
-            activeTab={activeTab}
-            onToggleExpanded={toggleNavExpanded}
-          />
-        )}
-      </Box>
-
-      <Flex direction="column" className="min-w-0 flex-1 overflow-hidden">
-        <DashboardTopBar sectionLabel={sectionLabel} />
-        <Box asChild className="min-h-0 flex-1 overflow-auto px-4 py-6 md:p-6">
-          <main>{children}</main>
+    <DashboardAuthGate>
+      <Flex direction="row" className="h-dvh min-h-0 bg-[#0b1120]">
+        <Box
+          className={`shrink-0 overflow-hidden transition-[width] duration-200 ${
+            navExpanded ? 'w-[220px]' : 'w-14'
+          }`}
+        >
+          {navExpanded ? (
+            <DashboardNavSidebar
+              activeTab={activeTab}
+              onToggleExpanded={toggleNavExpanded}
+            />
+          ) : (
+            <DashboardNavRail
+              activeTab={activeTab}
+              onToggleExpanded={toggleNavExpanded}
+            />
+          )}
         </Box>
+
+        <Flex direction="column" className="min-w-0 flex-1 overflow-hidden">
+          <DashboardTopBar sectionLabel={sectionLabel} />
+          <Box
+            asChild
+            className="min-h-0 flex-1 overflow-auto px-4 py-6 md:p-6"
+          >
+            <main>{children}</main>
+          </Box>
+        </Flex>
       </Flex>
-    </Flex>
+    </DashboardAuthGate>
   );
 }
