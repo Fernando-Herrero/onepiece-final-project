@@ -1,4 +1,4 @@
-import { Heading, Skeleton, Text } from '@radix-ui/themes';
+import { Box, Flex, Grid, Heading, Skeleton, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
@@ -36,7 +36,7 @@ function ProfilePageBody({ user, isOwner, isFollowing }: ProfilePageBodyProps) {
   const showRanking = isOwner;
 
   return (
-    <div className="mx-auto max-w-6xl">
+    <Box className="mx-auto max-w-6xl">
       <Heading
         as="h1"
         size="6"
@@ -51,22 +51,33 @@ function ProfilePageBody({ user, isOwner, isFollowing }: ProfilePageBodyProps) {
         {isOwner ? t('profile.subtitle') : t('profile.user_profile_subtitle')}
       </Text>
 
-      <div
-        className={`motion-safe:animate-[profile-fade-up_0.5s_ease-out_both] grid gap-6 ${
-          showRanking ? 'md:grid-cols-3' : ''
-        }`}
+      <Grid
+        columns={{ initial: '1', md: showRanking ? '3' : '1' }}
+        gap="6"
+        className="motion-safe:animate-[profile-fade-up_0.5s_ease-out_both]"
       >
-        <div
-          className={`flex flex-col gap-6 ${showRanking ? 'md:col-span-2' : ''}`}
+        <Flex
+          direction="column"
+          gap="6"
+          className={showRanking ? 'md:col-span-2' : undefined}
         >
-          <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+          <Grid
+            columns={{ initial: '1', lg: '2' }}
+            gap="6"
+            className="items-start lg:grid-cols-[1.15fr_0.85fr]"
+          >
             <ProfileIdentityCard
               user={user}
               isOwner={isOwner}
               isFollowing={isFollowing}
             />
-            <div className="grid grid-rows-2 gap-6 sm:grid-cols-2 sm:grid-rows-1 lg:grid-cols-1 lg:grid-rows-2">
+            <Grid
+              columns={{ initial: '1', sm: '2', lg: '1' }}
+              gap="6"
+              className="items-start"
+            >
               <ProfileFollowCountsCard
+                userId={user._id}
                 followersCount={user.followers.length}
                 followingCount={user.following.length}
               />
@@ -74,8 +85,8 @@ function ProfilePageBody({ user, isOwner, isFollowing }: ProfilePageBodyProps) {
                 unlockedCards={user.unlockedCards}
                 isOwner={isOwner}
               />
-            </div>
-          </div>
+            </Grid>
+          </Grid>
 
           <ProfileProgressCard user={user} isOwner={isOwner} />
 
@@ -92,19 +103,21 @@ function ProfilePageBody({ user, isOwner, isFollowing }: ProfilePageBodyProps) {
               isOwner={isOwner}
             />
           </ErrorBoundary>
-        </div>
+        </Flex>
 
         {showRanking ? (
-          <aside className="flex flex-col gap-6">
-            <ErrorBoundary FallbackComponent={QueryErrorFallback}>
-              <Suspense fallback={<ProfileRankingSidebarSkeleton />}>
-                <ProfileRankingSidebar currentUserId={user._id} />
-              </Suspense>
-            </ErrorBoundary>
+          <aside>
+            <Flex direction="column" gap="6">
+              <ErrorBoundary FallbackComponent={QueryErrorFallback}>
+                <Suspense fallback={<ProfileRankingSidebarSkeleton />}>
+                  <ProfileRankingSidebar currentUserId={user._id} />
+                </Suspense>
+              </ErrorBoundary>
+            </Flex>
           </aside>
         ) : null}
-      </div>
-    </div>
+      </Grid>
+    </Box>
   );
 }
 
@@ -128,15 +141,17 @@ function ProfilePageContentRemote({ userId }: { userId: string }) {
 
 function ProfilePageContentSkeleton() {
   return (
-    <div className="mx-auto max-w-6xl">
+    <Box className="mx-auto max-w-6xl">
       <Skeleton height="32px" width="240px" mb="2" />
       <Skeleton height="16px" width="320px" mb="6" />
       <Skeleton height="320px" />
-    </div>
+    </Box>
   );
 }
 
-export default function ProfilePageContent({ userId }: ProfilePageContentProps) {
+export default function ProfilePageContent({
+  userId,
+}: ProfilePageContentProps) {
   const { user: sessionUser } = useAuthSession();
 
   if (userId) {
@@ -153,7 +168,5 @@ export default function ProfilePageContent({ userId }: ProfilePageContentProps) 
     return null;
   }
 
-  return (
-    <ProfilePageBody user={sessionUser} isOwner isFollowing={false} />
-  );
+  return <ProfilePageBody user={sessionUser} isOwner isFollowing={false} />;
 }

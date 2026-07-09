@@ -116,6 +116,7 @@
       "search": "検索",
       "notifications": "通知",
       "settings": "設定",
+      "user_profile": "ユーザープロフィール",
       "expand": "メニューを展開",
       "collapse": "メニューを折りたたむ"
     },
@@ -392,6 +393,8 @@
     "followers": "フォロワー",
     "following": "フォロー中",
     "follow_lists_soon": "近日公開：フォロワーとフォロー中のリスト。",
+    "follow_list_empty_followers": "まだフォロワーがいません。",
+    "follow_list_empty_following": "まだ誰もフォローしていません。",
     "collection_title": "コレクション",
     "collection_view_all": "カードを見る",
     "collection_total": "{{count}} 枚のカードを解除",

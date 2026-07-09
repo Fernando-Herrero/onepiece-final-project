@@ -116,6 +116,7 @@
       "search": "Search",
       "notifications": "Notifications",
       "settings": "Settings",
+      "user_profile": "User profile",
       "expand": "Expand menu",
       "collapse": "Collapse menu"
     },
@@ -392,6 +393,8 @@
     "followers": "Followers",
     "following": "Following",
     "follow_lists_soon": "Coming soon: follower and following lists.",
+    "follow_list_empty_followers": "No followers yet.",
+    "follow_list_empty_following": "Not following anyone yet.",
     "collection_title": "Collection",
     "collection_view_all": "View cards",
     "collection_total": "{{count}} cards unlocked",

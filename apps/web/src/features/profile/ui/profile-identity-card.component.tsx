@@ -17,7 +17,10 @@ import {
   useSaveProfileField,
   useUnfollowUserMutation,
 } from '@/features/profile/api/use-profile';
-import { DEFAULT_AVATAR_SRC } from '@/features/profile/profile.constants';
+import {
+  DEFAULT_AVATAR_SRC,
+  resolveProfileAvatarSrc,
+} from '@/features/profile/profile.constants';
 import type { ProfileUser, UpdateProfileBody } from '@/features/profile/profile.types';
 import { ProfileAvatarPickerOverlay } from '@/features/profile/ui/profile-avatar-picker-overlay.component';
 import {
@@ -60,7 +63,7 @@ export function ProfileIdentityCard({
   const coverImage = user.coverImage?.trim() ?? '';
   const hasCoverImage = !!coverImage && !coverLoadError;
   const isEditingCover = editingField === 'coverImage';
-  const resolvedAvatar = user.avatar?.trim() || DEFAULT_AVATAR_SRC;
+  const resolvedAvatar = resolveProfileAvatarSrc(user.avatar);
   const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
 
   async function saveProfileField(

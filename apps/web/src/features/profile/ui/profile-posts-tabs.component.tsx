@@ -1,4 +1,5 @@
 import {
+  Box,
   Card,
   Flex,
   Heading,
@@ -149,7 +150,7 @@ export function ProfilePostsTabs({
           </Link>
         ) : null}
       </Flex>
-      <div
+      <Box
         className={`relative mb-4 min-w-0 scrollbar-none overflow-x-auto pb-1 [-ms-overflow-style:none] md:overflow-x-visible md:mask-none [&::-webkit-scrollbar]:hidden ${tabsScrollMaskClass}`}
       >
         <SegmentedControl.Root
@@ -179,7 +180,7 @@ export function ProfilePostsTabs({
             </SegmentedControl.Item>
           ))}
         </SegmentedControl.Root>
-      </div>
+      </Box>
 
       {isActiveTabPrivate ? (
         <Flex direction="column" align="center" gap="2" className="py-8">

@@ -1,13 +1,16 @@
+export type DashboardNavLabelKey =
+  | 'dashboard.nav.profile'
+  | 'dashboard.nav.community'
+  | 'dashboard.nav.serie'
+  | 'dashboard.nav.cards'
+  | 'dashboard.nav.search'
+  | 'dashboard.nav.notifications'
+  | 'dashboard.nav.settings'
+  | 'dashboard.nav.user_profile';
+
 export type DashboardNavItem = {
   id: string;
-  labelKey:
-    | 'dashboard.nav.profile'
-    | 'dashboard.nav.community'
-    | 'dashboard.nav.serie'
-    | 'dashboard.nav.cards'
-    | 'dashboard.nav.search'
-    | 'dashboard.nav.notifications'
-    | 'dashboard.nav.settings';
+  labelKey: Exclude<DashboardNavLabelKey, 'dashboard.nav.user_profile'>;
   href: string;
   icon: string;
 };
@@ -78,7 +81,13 @@ export function getDashboardActiveTab(pathname: string) {
   return match?.id ?? 'profile';
 }
 
-export function getDashboardSectionLabelKey(pathname: string) {
+export function getDashboardSectionLabelKey(
+  pathname: string,
+): DashboardNavLabelKey {
+  if (pathname.startsWith('/dashboard/users/')) {
+    return 'dashboard.nav.user_profile';
+  }
+
   const match = DASHBOARD_NAV_ITEMS.find(item => pathname.startsWith(item.href));
   return match?.labelKey ?? 'dashboard.nav.profile';
 }

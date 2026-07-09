@@ -29,6 +29,14 @@ export function useProfileRanking() {
   return useSuspenseQuery(allQueriesOptions.profile.ranking());
 }
 
+export function useProfileFollowers(userId: string) {
+  return useSuspenseQuery(allQueriesOptions.profile.followers(userId));
+}
+
+export function useProfileFollowing(userId: string) {
+  return useSuspenseQuery(allQueriesOptions.profile.following(userId));
+}
+
 export function useProfilePosts(userId: string, tab: ProfilePostsTab) {
   return useSuspenseQuery(allQueriesOptions.profile.postsTab(userId, tab));
 }
@@ -116,6 +124,17 @@ export function useFollowUserMutation() {
         },
       );
 
+      const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+
+      void queryClient.invalidateQueries({
+        queryKey: profileKeys.followers(targetUserId),
+      });
+      if (viewerId) {
+        void queryClient.invalidateQueries({
+          queryKey: profileKeys.following(viewerId),
+        });
+      }
+
       toast.success(t('profile.follow_success'));
     },
     onError: () => {
@@ -162,6 +181,17 @@ export function useUnfollowUserMutation() {
           };
         },
       );
+
+      const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+
+      void queryClient.invalidateQueries({
+        queryKey: profileKeys.followers(targetUserId),
+      });
+      if (viewerId) {
+        void queryClient.invalidateQueries({
+          queryKey: profileKeys.following(viewerId),
+        });
+      }
 
       toast.success(t('profile.unfollow_success'));
     },

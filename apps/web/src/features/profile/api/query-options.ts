@@ -29,6 +29,24 @@ export const getProfileQueriesOptions = (client: OrpcClient) => ({
       queryFn: () => client.users.ranking(),
     }),
 
+  followers: (userId: string) =>
+    queryOptions({
+      queryKey: profileKeys.followers(userId),
+      queryFn: () =>
+        client.users.getFollowers({
+          params: { id: userId },
+        }),
+    }),
+
+  following: (userId: string) =>
+    queryOptions({
+      queryKey: profileKeys.following(userId),
+      queryFn: () =>
+        client.users.getFollowing({
+          params: { id: userId },
+        }),
+    }),
+
   postsTab: (userId: string, tab: ProfilePostsTab) =>
     queryOptions({
       queryKey: profileKeys.postsTab(userId, tab),

@@ -36,7 +36,7 @@ export function ProfileCollectionTeaser({
         {isOwner ? (
           <Link
             href="/dashboard/cards"
-            className="text-xs text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+            className="text-xs text-[#f2d9a8]/80 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
           >
             {t('profile.collection_view_all')}
           </Link>

@@ -116,6 +116,7 @@
       "search": "Buscar",
       "notifications": "Notificaciones",
       "settings": "Ajustes",
+      "user_profile": "Perfil de usuario",
       "expand": "Expandir menú",
       "collapse": "Contraer menú"
     },
@@ -392,6 +393,8 @@
     "followers": "Seguidores",
     "following": "Siguiendo",
     "follow_lists_soon": "Próximamente: listas de seguidores y seguidos.",
+    "follow_list_empty_followers": "Aún no tiene seguidores.",
+    "follow_list_empty_following": "Aún no sigue a nadie.",
     "collection_title": "Colección",
     "collection_view_all": "Ver cartas",
     "collection_total": "{{count}} cartas desbloqueadas",
