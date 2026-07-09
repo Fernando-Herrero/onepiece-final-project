@@ -26,11 +26,8 @@ const mode = process.env.NODE_ENV ?? 'development';
     }),
     ORPCModule.forRootAsync({
       imports: [AuthModule],
-      useFactory: (
-        request: Request,
-        authSessionService: AuthSessionService,
-      ) => ({
-        context: { request: authSessionService.attachUserToRequest(request) },
+      useFactory: (request: Request, authSession: AuthSessionService) => ({
+        context: { request: authSession.attachUserToRequest(request) },
         interceptors: [onError(logOrpcError)],
       }),
       inject: [REQUEST, AuthSessionService],

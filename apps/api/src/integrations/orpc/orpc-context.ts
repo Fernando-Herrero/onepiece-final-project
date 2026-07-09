@@ -1,14 +1,12 @@
 import type { Request } from 'express';
 
-export type AuthPayload = {
+/** Usuario de sesión — solo el id del JWT (`sub`). Rol y perfil vienen de Mongo en cada handler. */
+export type SessionUser = {
   id: string;
-  email: string;
-  role: 'user' | 'admin';
 };
 
 declare module '@orpc/nest' {
   interface ORPCGlobalContext {
-    // JWT opcional: anónimo si no hay token o es inválido (mismo comportamiento que optionalAuth).
-    request: Request & { user?: AuthPayload };
+    request: Request & { user?: SessionUser };
   }
 }
