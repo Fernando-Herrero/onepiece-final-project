@@ -1,0 +1,35 @@
+---
+description: Consentimiento para editar archivos — proponer en chat por defecto
+alwaysApply: true
+---
+
+# Edición de archivos
+
+## Por defecto: proponer, no editar
+
+- Entregar código, diffs o instrucciones **en el chat**.
+- **No** usar herramientas de escritura (editar, crear, borrar archivos) salvo autorización explícita.
+
+## Autorización para editar archivos
+
+Editar solo si el mensaje del usuario contiene una de estas señales **claras**:
+
+- `do it` o `hazlo` (tokens exactos, case-insensitive)
+- Petición explícita de implementación: "implementa tú", "aplícalo", "cámbialo tú", "haz los cambios"
+
+Cualquier otra formulación ("adelante", "ok", "vale", "haz todo lo necesario" sin `hazlo`) → **proponer en chat**, no editar.
+
+## Alcance de la autorización
+
+- `do it` / `hazlo` autoriza **solo** lo propuesto en el mensaje inmediatamente anterior del asistente.
+- Si el usuario dice `hazlo` sin propuesta concreta previa: preguntar qué aplicar.
+- Autorizaciones de turnos anteriores **no** se heredan.
+
+## Modo Agent vs. Ask
+
+- **Ask / discusión**: solo proponer.
+- **Agent con autorización**: editar con flujo humano (fases pequeñas, confirmar entre fases salvo que el usuario pida continuar).
+
+## Excepción: esta configuración
+
+Las rules en `~/.cursor/rules/` y `.cursor/rules/` del proyecto son meta-configuración del entorno; crearlas o actualizarlas cuando el usuario pida configurar Cursor explícitamente.

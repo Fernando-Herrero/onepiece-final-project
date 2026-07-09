@@ -1,6 +1,5 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 import type { UserDoc } from '../users/user.model.js';
 
@@ -26,10 +25,7 @@ type CatalogData = Record<CardType, CatalogCard[]>;
 
 const DEFAULT_CARD_IMAGE = '/cards/placeholder.webp';
 
-const catalogDir = path.join(
-  path.dirname(fileURLToPath(import.meta.url)),
-  '../../data/catalog',
-);
+const catalogDir = path.join(__dirname, '../../data/catalog');
 
 let catalogCache: CatalogData | null = null;
 

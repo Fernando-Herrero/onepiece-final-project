@@ -15,7 +15,7 @@ Monorepo con tipado compartido entre frontend y backend:
 
 ```
 apps/web/          → interfaz (Next.js, puerto 3000)
-apps/api/          → API (Express, puerto 4000)
+apps/api/          → API (NestJS 11, puerto 4000)
 packages/contracts → contratos oRPC + schemas Zod
 ```
 
@@ -26,7 +26,7 @@ El cliente web consume la API a través de contratos tipados (oRPC + TanStack Qu
 | Capa      | Stack                                                |
 | --------- | ---------------------------------------------------- |
 | Frontend  | Next.js 16, React 19, Tailwind CSS 4, TanStack Query |
-| Backend   | Express 5, TypeScript, MongoDB con Mongoose          |
+| Backend   | NestJS 11, `@orpc/nest`, MongoDB (`@jperezmart/nest-mongodb`) |
 | Contratos | oRPC, Zod                                            |
 | Monorepo  | pnpm, Turbo                                          |
 
@@ -47,4 +47,4 @@ Otros comandos útiles: `pnpm build`, `pnpm lint`, `pnpm type-check`, `pnpm form
 
 ## Origen del proyecto
 
-LogPose v3 migra y unifica dos proyectos anteriores (SPA en Vite + API Express separada) en este monorepo, con contratos compartidos y la misma base de herramientas que un monorepo profesional de referencia.
+LogPose v3 migra y unifica dos proyectos anteriores (SPA en Vite + API Express separada) en este monorepo, con contratos compartidos y la misma base de herramientas que el monorepo **admin** (Nest + oRPC). Ver `docs/NEST-MIGRATION.md` para el estado de la migración del backend.

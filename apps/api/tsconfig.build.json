@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.router.ts",
+    "src/integrations/orpc/auth.middleware.ts"
+  ]
+}

@@ -8,14 +8,15 @@ alwaysApply: true
 ## Antes de codificar
 
 1. Leer `AGENTS.md` y `docs/MIGRATION.md`
-2. Consultar `docs/ROADMAP.md` (serie/cartas/admin/expansión), `docs/CONVENTIONS.md` y `docs/REFERENCE-ADMIN.md` si aplica
-3. Identificar la fase y el módulo actual — no saltar pasos
+2. Si tocas `apps/api`: leer `docs/NEST-MIGRATION.md` (fase Nest actual)
+3. Consultar `docs/ROADMAP.md` (serie/cartas/admin/expansión), `docs/CONVENTIONS.md` y `docs/REFERENCE-ADMIN.md` si aplica
+4. Identificar la fase y el módulo actual — no saltar pasos
 
 ## Stack
 
 - Monorepo pnpm 11.6 + Turbo, Node 24.16.0
 - `@logpose/web`: Next 16.2.4, Pages Router (`*.page.tsx`), Tailwind 4, **Radix UI Themes**, TanStack Query
-- `@logpose/api`: Express 5 + Mongoose (no NestJS)
+- `@logpose/api`: **NestJS 11** + `@orpc/nest` + `@jperezmart/nest-mongodb` (migración desde Express — `docs/NEST-MIGRATION.md`)
 - `@logpose/contracts`: oRPC + Zod — fuente de verdad de tipos
 
 ## Patrones obligatorios
@@ -23,19 +24,24 @@ alwaysApply: true
 - Server state → TanStack Query + cliente oRPC (no Context, no axios directo)
 - Context solo UI: modal, device, i18n
 - Contrato oRPC en `packages/contracts` **antes** de implementar handler o pantalla
+- API Nest: **un procedimiento = un método `@Implement`** en controller (como admin)
 - Migrar un módulo por turno; verificar en pantalla tras cada paso
 - JSX legacy → TSX progresivo al migrar
 
-## Anti-patrones (ver también ~/.cursor/rules/anti-patterns.mdc)
+## Anti-patrones
 
-- Helpers para `.length`, `!!`, checks triviales
-- `useMemo`/`useCallback`/`memo` sin evidencia
-- Archivos nuevos para un solo uso
-- NestJS, auth-next, MUI, K8s
+Ver `coding-principles.mdc` y `~/.cursor/rules/anti-patterns.mdc`. Resumen: helpers triviales, `useMemo`/`useCallback`/`memo` sin evidencia, archivos nuevos para un solo uso, auth-next, MUI, K8s.
+
+## Flujo de trabajo en este repo
+
+- **Migración Nest:** Fer aplica el código propuesto en chat; verificar curl/Swagger y, cuando aplique, pantalla en `apps/web`.
+- Fases pequeñas comprobables; parar y confirmar antes del siguiente sub-paso.
+- Código en chat por defecto; editar archivos solo con `do it` / `hazlo` o petición explícita (ver `edit-consent.mdc`).
+- Reglas de flujo: `human-workflow.mdc` · principios de código: `coding-principles.mdc`.
 
 ## Referencia
 
-- Replicar **estructura** de `admin` (monorepo, oRPC, Pages Router, turbo dev)
+- Replicar **estructura** de `admin` (monorepo, Nest, oRPC, Pages Router, turbo dev)
 - **No** replicar auth-next RBAC; LogPose usa rol `user`/`admin` simple
 - Código legacy en `One-piece-LogPose` y `api-onepiece` — solo migrar, no reescribir desde cero sin necesidad
 - **Visión ampliada** (cartas versionadas, economía, ranking): `docs/ROADMAP.md`
@@ -44,4 +50,4 @@ alwaysApply: true
 
 Tras cada implementación indicar: `pnpm dev`, URL, resultado esperado en pantalla.
 
-**Estado (jun 2026):** landing ✅ · auth 🟡 · dashboard shell ✅ · **perfil MVP ✅** (ampliaciones §1.3) · serie/cards smoke test ✅ · **próximo:** auth backbone → community. Ver `docs/MIGRATION.md` §1.1–§1.3.
+**Estado (jul 2026):** landing ✅ · auth ✅ (front) · dashboard shell ✅ · **perfil 4.3 + 4.4 ✅** (front) · **API → Nest en curso** (Fase 1). Ver `docs/NEST-MIGRATION.md`.

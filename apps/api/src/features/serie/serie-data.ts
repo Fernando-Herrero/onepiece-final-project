@@ -1,6 +1,5 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 export type Saga = {
   id: number;
@@ -39,10 +38,7 @@ export type Episode = {
   };
 };
 
-const serieDir = path.join(
-  path.dirname(fileURLToPath(import.meta.url)),
-  '../../data/serie',
-);
+const serieDir = path.join(__dirname, '../../data/serie');
 
 let sagasCache: Saga[] | null = null;
 let arcsCache: Arc[] | null = null;

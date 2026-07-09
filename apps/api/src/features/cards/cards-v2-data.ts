@@ -1,6 +1,5 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 export type CharacterEntity = {
   id: number;
@@ -33,10 +32,7 @@ type CardsV2Data = {
   cards: VersionedCard[];
 };
 
-const catalogDir = path.join(
-  path.dirname(fileURLToPath(import.meta.url)),
-  '../../data/catalog',
-);
+const catalogDir = path.join(__dirname, '../../data/catalog');
 
 let cache: CardsV2Data | null = null;
 
