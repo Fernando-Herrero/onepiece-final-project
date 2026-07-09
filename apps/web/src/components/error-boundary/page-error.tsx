@@ -34,15 +34,17 @@ export function PageError({
     >
       <Callout.Root color="red" variant="soft" className="max-w-md text-left">
         <Callout.Icon>⚠️</Callout.Icon>
-        <Callout.Text>
-          <Heading as="h2" size="4" mb={message ? '2' : '0'}>
-            {title}
-          </Heading>
-          {message ? (
-            <Text as="p" size="2" color="gray">
-              {message}
-            </Text>
-          ) : null}
+        <Callout.Text asChild>
+          <div>
+            <Heading as="h2" size="4" mb={message ? '2' : '0'}>
+              {title}
+            </Heading>
+            {message ? (
+              <Text as="div" size="2" color="gray">
+                {message}
+              </Text>
+            ) : null}
+          </div>
         </Callout.Text>
       </Callout.Root>
       {onRetry ? (

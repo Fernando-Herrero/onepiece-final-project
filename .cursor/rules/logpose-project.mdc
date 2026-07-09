@@ -24,7 +24,7 @@ alwaysApply: true
 - Server state → TanStack Query + cliente oRPC (no Context, no axios directo)
 - Context solo UI: modal, device, i18n
 - Contrato oRPC en `packages/contracts` **antes** de implementar handler o pantalla
-- API Nest: **un procedimiento = un método `@Implement`** en controller (como admin)
+- API Nest: **un procedimiento = un `@Implement`**; Zod en contracts; `*Persistence` para Mongo; `parseOrThrow` en salidas críticas
 - Migrar un módulo por turno; verificar en pantalla tras cada paso
 - JSX legacy → TSX progresivo al migrar
 
@@ -50,4 +50,4 @@ Ver `coding-principles.mdc` y `~/.cursor/rules/anti-patterns.mdc`. Resumen: help
 
 Tras cada implementación indicar: `pnpm dev`, URL, resultado esperado en pantalla.
 
-**Estado (jul 2026):** landing ✅ · auth ✅ (front) · dashboard shell ✅ · **perfil 4.3 + 4.4 ✅** (front) · **API → Nest en curso** (Fase 1). Ver `docs/NEST-MIGRATION.md`.
+**Estado (jul 2026):** landing ✅ · auth ✅ · dashboard shell ✅ · **perfil 4.3 + 4.4 ✅** · **API Nest: health + auth + users ✅** (sin Mongoose) · **próximo: serie (Fase 6)**. Ver `docs/NEST-MIGRATION.md`.

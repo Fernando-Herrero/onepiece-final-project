@@ -15,6 +15,7 @@ import type {
   UpdateProfileBody,
 } from '@/features/profile/profile.types';
 import { client } from '@/integrations/orpc/orpc.client';
+import { getOrpcErrorCode } from '@/integrations/orpc/orpc-error';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
 export function useProfileUser(userId: string) {
@@ -137,7 +138,14 @@ export function useFollowUserMutation() {
 
       toast.success(t('profile.follow_success'));
     },
-    onError: () => {
+    onError: error => {
+      const code = getOrpcErrorCode(error);
+
+      if (code === 'ALREADY_FOLLOWING') {
+        toast.message(t('profile.follow_error'));
+        return;
+      }
+
       toast.error(t('profile.follow_error'));
     },
   });
@@ -195,7 +203,14 @@ export function useUnfollowUserMutation() {
 
       toast.success(t('profile.unfollow_success'));
     },
-    onError: () => {
+    onError: error => {
+      const code = getOrpcErrorCode(error);
+
+      if (code === 'NOT_FOLLOWING') {
+        toast.message(t('profile.unfollow_error'));
+        return;
+      }
+
       toast.error(t('profile.unfollow_error'));
     },
   });
