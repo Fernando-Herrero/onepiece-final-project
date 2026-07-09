@@ -34,7 +34,7 @@ export function PageError({
     >
       <Callout.Root color="red" variant="soft" className="max-w-md text-left">
         <Callout.Icon>⚠️</Callout.Icon>
-        <Callout.Text asChild>
+        <Callout.Text>
           <div>
             <Heading as="h2" size="4" mb={message ? '2' : '0'}>
               {title}

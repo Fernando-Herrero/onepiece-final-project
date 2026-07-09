@@ -63,7 +63,7 @@ export function LandingHeaderComponent() {
     <>
       <header
         ref={headerRef}
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 py-3 max-md:pt-[max(0.75rem,env(safe-area-inset-top))] ${
+        className={`fixed inset-x-0 top-0 z-50 py-3 transition-all duration-500 max-md:pt-[max(0.75rem,env(safe-area-inset-top))] ${
           solidHeader
             ? 'border-b border-white/10 bg-[#05070d]/90 backdrop-blur-md'
             : 'bg-transparent md:py-6'
@@ -86,6 +86,7 @@ export function LandingHeaderComponent() {
               width={80}
               height={40}
               className="h-9 w-auto md:h-10"
+              style={{ width: 'auto' }}
               priority
             />
           </Link>
@@ -102,7 +103,12 @@ export function LandingHeaderComponent() {
 
             <DropdownMenu.Root>
               <DropdownMenu.Trigger>
-                <Button type="button" variant="ghost" highContrast className={NAV_LINK_CLASS}>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  highContrast
+                  className={NAV_LINK_CLASS}
+                >
                   {t('landing.nav.onepiece')}
                 </Button>
               </DropdownMenu.Trigger>
@@ -121,7 +127,12 @@ export function LandingHeaderComponent() {
 
             <DropdownMenu.Root>
               <DropdownMenu.Trigger>
-                <Button type="button" variant="ghost" highContrast className={NAV_LINK_CLASS}>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  highContrast
+                  className={NAV_LINK_CLASS}
+                >
                   {t('landing.nav.help')}
                 </Button>
               </DropdownMenu.Trigger>
