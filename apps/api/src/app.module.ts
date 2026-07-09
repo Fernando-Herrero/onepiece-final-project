@@ -1,12 +1,17 @@
+import './integrations/orpc/orpc-context.js';
+
 import { MongoModule } from '@jperezmart/nest-mongodb';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { REQUEST } from '@nestjs/core';
+import { APP_FILTER, REQUEST } from '@nestjs/core';
 import { onError, ORPCModule } from '@orpc/nest';
 import type { Request } from 'express';
 
+import { AuthModule } from './features/auth/auth.module.js';
+import { AuthSessionService } from './features/auth/auth-session.service.js';
 import { HealthModule } from './features/health/health.module.js';
 import { ServerEnv, validateEnv } from './integrations/env/server.js';
+import { AllExceptionsFilter } from './integrations/http/all-exceptions.filter.js';
 import { OrpcDocsController } from './integrations/orpc/orpc-docs.controller.js';
 import { logOrpcError } from './integrations/orpc/orpc-error-logger.js';
 
@@ -20,11 +25,15 @@ const mode = process.env.NODE_ENV ?? 'development';
       validate: validateEnv,
     }),
     ORPCModule.forRootAsync({
-      useFactory: (request: Request) => ({
-        context: { request },
+      imports: [AuthModule],
+      useFactory: (
+        request: Request,
+        authSessionService: AuthSessionService,
+      ) => ({
+        context: { request: authSessionService.attachUserToRequest(request) },
         interceptors: [onError(logOrpcError)],
       }),
-      inject: [REQUEST],
+      inject: [REQUEST, AuthSessionService],
     }),
     MongoModule.forRootAsync({
       inject: [ConfigService],
@@ -33,8 +42,15 @@ const mode = process.env.NODE_ENV ?? 'development';
         dbName: config.get('MONGODB_DBNAME', { infer: true }),
       }),
     }),
+    AuthModule,
     HealthModule,
   ],
   controllers: [OrpcDocsController],
+  providers: [
+    {
+      provide: APP_FILTER,
+      useClass: AllExceptionsFilter,
+    },
+  ],
 })
 export class AppModule {}
