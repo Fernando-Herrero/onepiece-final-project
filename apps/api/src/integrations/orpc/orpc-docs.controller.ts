@@ -9,6 +9,12 @@ const generator = new OpenAPIGenerator({
   schemaConverters: [new ZodToJsonSchemaConverter()],
 });
 
+/**
+ * Public origin (`https://host/`) for the OpenAPI `servers` entry. Because this
+ * is a regular Nest controller, `req.protocol` honours the reverse proxy's
+ * `X-Forwarded-Proto` (via `trust proxy`), so the spec advertises https in
+ * production — unlike oRPC's node adapter, which only inspects the raw socket.
+ */
 function resolvePublicOrigin(req: Request): string {
   return `${req.protocol}://${req.get('host') ?? 'localhost'}/`;
 }
@@ -42,6 +48,11 @@ const SWAGGER_HTML = `<!doctype html>
 </html>
 `;
 
+/**
+ * Serves the OpenAPI reference UI and spec for the contract. `@orpc/nest`
+ * registers the procedure routes but does not expose the docs, so we generate
+ * the spec straight from the contract here.
+ */
 @Controller('api/orpc')
 export class OrpcDocsController {
   @Get('spec.json')
@@ -52,7 +63,11 @@ export class OrpcDocsController {
         version: '1.0.0',
       },
       servers: [{ url: resolvePublicOrigin(req) }],
-      tags: [{ name: 'Health', description: 'Liveness checks' }],
+      tags: [
+        { name: 'Health', description: 'Liveness and readiness checks' },
+        { name: 'Auth', description: 'Session, login and registration' },
+        { name: 'Users', description: 'Profiles, ranking and social graph' },
+      ],
     });
   }
 

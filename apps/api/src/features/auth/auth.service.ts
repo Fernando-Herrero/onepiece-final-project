@@ -1,27 +1,19 @@
-import { Injectable, OnModuleInit } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
+import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
 import type { Response } from 'express';
-import mongoose from 'mongoose';
 
-import type { ServerEnv } from '../../integrations/env/server.js';
-import { serializeUser, User, type UserDoc } from '../users/user.model.js';
+import { serializeUser, type UserDocument } from '../users/user.model.js';
+import { UsersPersistence } from '../users/users.persistence.js';
 import { clearSessionCookie, setSessionCookie } from './auth.cookies.js';
 import { AuthSessionService } from './auth-session.service.js';
 
 @Injectable()
-export class AuthService implements OnModuleInit {
+export class AuthService {
   constructor(
-    private readonly config: ConfigService<ServerEnv, true>,
     private readonly authSession: AuthSessionService,
+    private readonly usersPersistence: UsersPersistence,
   ) {}
-
-  async onModuleInit() {
-    if (mongoose.connection.readyState === 0) {
-      await mongoose.connect(this.config.get('MONGODB_URI', { infer: true }));
-    }
-  }
 
   async register(
     input: {
@@ -36,13 +28,13 @@ export class AuthService implements OnModuleInit {
       coverImage?: string;
       phoneNumber?: string;
       address?: string;
-      privacy?: UserDoc['privacy'];
+      privacy?: UserDocument['privacy'];
     },
     res: Response,
   ) {
     const hashedPassword = await bcrypt.hash(input.password, 10);
 
-    const newUser = await User.create({
+    const newUser = await this.usersPersistence.insert({
       username: input.username,
       firstName: input.firstName,
       lastName: input.lastName,
@@ -54,7 +46,27 @@ export class AuthService implements OnModuleInit {
       coverImage: input.coverImage,
       phoneNumber: input.phoneNumber,
       address: input.address,
-      privacy: input.privacy,
+      privacy: input.privacy ?? {
+        showPosts: true,
+        showLikes: true,
+        showBookmarked: true,
+        showComments: true,
+      },
+      role: 'user',
+      verified: false,
+      isActive: true,
+      experience: 0,
+      serieProgress: { saga: 0, arc: 0, episode: 0 },
+      unlockedCards: {
+        characters: [],
+        items: [],
+        fruits: [],
+        swords: [],
+        boats: [],
+      },
+      completedEpisodes: [],
+      followers: [],
+      following: [],
     });
 
     setSessionCookie(res, this.authSession.signToken(newUser._id.toString()));
@@ -63,7 +75,7 @@ export class AuthService implements OnModuleInit {
   }
 
   async login(input: { email: string; password: string }, res: Response) {
-    const user = await User.findOne({ email: input.email }).select('+password');
+    const user = await this.usersPersistence.findByEmail(input.email, true);
     const valid = user
       ? await bcrypt.compare(input.password, user.password)
       : false;
@@ -82,7 +94,7 @@ export class AuthService implements OnModuleInit {
   }
 
   async getMe(userId: string) {
-    const user = await User.findById(userId);
+    const user = await this.usersPersistence.findById(userId);
 
     if (!user) {
       throw new ORPCError('USER_NOT_FOUND');
@@ -95,7 +107,7 @@ export class AuthService implements OnModuleInit {
     userId: string,
     input: { currentPassword: string; newPassword: string },
   ) {
-    const user = await User.findById(userId).select('+password');
+    const user = await this.usersPersistence.findById(userId);
 
     if (!user) {
       throw new ORPCError('USER_NOT_FOUND');
@@ -110,8 +122,10 @@ export class AuthService implements OnModuleInit {
       throw new ORPCError('INVALID_CURRENT_PASSWORD');
     }
 
-    user.password = await bcrypt.hash(input.newPassword, 10);
-    await user.save();
+    await this.usersPersistence.updatePassword(
+      userId,
+      await bcrypt.hash(input.newPassword, 10),
+    );
 
     return { message: 'Password changed successfully' };
   }

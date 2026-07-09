@@ -1,8 +1,13 @@
+import { userPublicSchema } from '@logpose/contracts/common/user.schemas';
+import { authSessionSchema } from '@logpose/contracts/features/auth/schemas';
 import { Controller } from '@nestjs/common';
 import { Implement, implement } from '@orpc/nest';
 import type { Response } from 'express';
 
+import { throwContractOutputInvalid } from '../../integrations/orpc/contract-output-invalid.js';
 import { contract } from '../../integrations/orpc/orpc.contract.js';
+import { parseOrThrow } from '../../integrations/orpc/parse-or-throw.js';
+import { handleRegisterError } from './auth.errors.js';
 import { AuthService } from './auth.service.js';
 import { AuthSessionService } from './auth-session.service.js';
 
@@ -25,20 +30,18 @@ export class AuthController {
     return implement(contract.auth.register).handler(
       async ({ input, context, errors }) => {
         try {
-          return await this.authService.register(
+          const result = await this.authService.register(
             input,
             this.response(context.request.res),
           );
+
+          return parseOrThrow(
+            authSessionSchema,
+            result,
+            throwContractOutputInvalid,
+          );
         } catch (error) {
-          if (
-            typeof error === 'object' &&
-            error !== null &&
-            'code' in error &&
-            error.code === 11000
-          ) {
-            throw errors.DUPLICATE_ACCOUNT();
-          }
-          throw error;
+          handleRegisterError(error, errors);
         }
       },
     );
@@ -46,16 +49,31 @@ export class AuthController {
 
   @Implement(contract.auth.login)
   login() {
-    return implement(contract.auth.login).handler(async ({ input, context }) =>
-      this.authService.login(input, this.response(context.request.res)),
+    return implement(contract.auth.login).handler(
+      async ({ input, context }) => {
+        const result = await this.authService.login(
+          input,
+          this.response(context.request.res),
+        );
+
+        return parseOrThrow(
+          authSessionSchema,
+          result,
+          throwContractOutputInvalid,
+        );
+      },
     );
   }
 
   @Implement(contract.auth.me)
   me() {
-    return implement(contract.auth.me).handler(async ({ context }) =>
-      this.authService.getMe(this.authSession.requireUser(context.request).id),
-    );
+    return implement(contract.auth.me).handler(async ({ context }) => {
+      const user = await this.authService.getMe(
+        this.authSession.requireUser(context.request).id,
+      );
+
+      return parseOrThrow(userPublicSchema, user, throwContractOutputInvalid);
+    });
   }
 
   @Implement(contract.auth.changePassword)

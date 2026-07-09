@@ -1,10 +1,4 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.router.ts",
-    "src/config/db.ts",
-    "src/integrations/orpc/auth.middleware.ts"
-  ]
+  "exclude": ["node_modules", "dist"]
 }

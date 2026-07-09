@@ -1,9 +1,9 @@
-import mongoose, { type HydratedDocument, Schema, type Types } from 'mongoose';
+import type { ObjectId, WithId } from 'mongodb';
 
-type UserRole = 'user' | 'admin';
+export type UserRole = 'user' | 'admin';
 
-export type UserDoc = HydratedDocument<{
-  _id: Types.ObjectId;
+export type UserDocument = {
+  _id: ObjectId;
   username: string;
   firstName: string;
   lastName: string;
@@ -12,7 +12,7 @@ export type UserDoc = HydratedDocument<{
   displayName?: string;
   bio?: string;
   phoneNumber?: string;
-  avatar?: string;
+  avatar: string;
   coverImage?: string;
   address?: string;
   role: UserRole;
@@ -38,146 +38,84 @@ export type UserDoc = HydratedDocument<{
     showBookmarked: boolean;
     showComments: boolean;
   };
-  followers: Types.ObjectId[];
-  following: Types.ObjectId[];
-  fullName?: string;
+  followers: ObjectId[];
+  following: ObjectId[];
   createdAt?: Date;
   updatedAt?: Date;
-}>;
+};
 
-const userSchema = new Schema(
-  {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-      index: true,
-      trim: true,
-    },
-    firstName: { type: String, required: true },
-    lastName: { type: String, required: true },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-      lowercase: true,
-      immutable: true,
-    },
-    password: { type: String, required: true, select: false },
-    displayName: { type: String },
-    bio: { type: String, maxLength: 2000 },
-    phoneNumber: { type: String },
-    avatar: { type: String, required: true },
-    coverImage: { type: String },
-    address: { type: String },
-    role: { type: String, enum: ['user', 'admin'], default: 'user' },
-    verified: { type: Boolean, default: false },
-    isActive: { type: Boolean, default: true },
-    experience: { type: Number, default: 0 },
-    serieProgress: {
-      saga: { type: Number, default: 0 },
-      arc: { type: Number, default: 0 },
-      episode: { type: Number, default: 0 },
-    },
-    unlockedCards: {
-      characters: { type: [Number], default: [] },
-      items: { type: [Number], default: [] },
-      fruits: { type: [Number], default: [] },
-      swords: { type: [Number], default: [] },
-      boats: { type: [Number], default: [] },
-    },
-    completedEpisodes: { type: [Number], default: [] },
-    privacy: {
-      showPosts: { type: Boolean, default: true },
-      showLikes: { type: Boolean, default: true },
-      showBookmarked: { type: Boolean, default: true },
-      showComments: { type: Boolean, default: true },
-    },
-    followers: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'users' }],
-      default: [],
-    },
-    following: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'users' }],
-      default: [],
-    },
-  },
-  { timestamps: true },
-);
+/** @deprecated Use UserDocument */
+export type UserDoc = UserDocument;
 
-userSchema.virtual('fullName').get(function () {
-  const doc = this as UserDoc;
-  if (doc.firstName && doc.lastName) return `${doc.firstName} ${doc.lastName}`;
+function fullName(
+  doc: Pick<UserDocument, 'firstName' | 'lastName' | 'displayName' | 'username'>,
+) {
+  if (doc.firstName && doc.lastName) {
+    return `${doc.firstName} ${doc.lastName}`;
+  }
+
   return doc.displayName || doc.username;
-});
+}
 
-export const User = mongoose.model<UserDoc>('users', userSchema);
-
-export function serializeUser(user: UserDoc) {
-  const doc = user.toObject({ virtuals: true });
-
+export function serializeUser(user: WithId<UserDocument>) {
   return {
     _id: user._id.toString(),
-    username: doc.username,
-    firstName: doc.firstName,
-    lastName: doc.lastName,
-    email: doc.email,
-    displayName: doc.displayName,
-    bio: doc.bio,
-    phoneNumber: doc.phoneNumber,
-    avatar: doc.avatar,
-    coverImage: doc.coverImage,
-    address: doc.address,
-    role: doc.role,
-    verified: doc.verified,
-    isActive: doc.isActive,
-    experience: doc.experience,
-    serieProgress: doc.serieProgress,
-    unlockedCards: doc.unlockedCards,
-    privacy: doc.privacy,
-    followers: doc.followers.map(String),
-    following: doc.following.map(String),
-    createdAt: doc.createdAt?.toISOString(),
-    updatedAt: doc.updatedAt?.toISOString(),
-    fullName: doc.fullName,
+    username: user.username,
+    firstName: user.firstName,
+    lastName: user.lastName,
+    email: user.email,
+    displayName: user.displayName,
+    bio: user.bio,
+    phoneNumber: user.phoneNumber,
+    avatar: user.avatar,
+    coverImage: user.coverImage,
+    address: user.address,
+    role: user.role,
+    verified: user.verified,
+    isActive: user.isActive,
+    experience: user.experience,
+    serieProgress: user.serieProgress,
+    unlockedCards: user.unlockedCards,
+    privacy: user.privacy,
+    followers: user.followers.map(String),
+    following: user.following.map(String),
+    createdAt: user.createdAt?.toISOString(),
+    updatedAt: user.updatedAt?.toISOString(),
+    fullName: fullName(user),
   };
 }
 
-export function serializeUserSummary(user: UserDoc) {
-  const doc = user.toObject({ virtuals: true });
-
+export function serializeUserSummary(user: WithId<UserDocument>) {
   return {
     _id: user._id.toString(),
-    username: doc.username,
-    firstName: doc.firstName,
-    lastName: doc.lastName,
-    avatar: doc.avatar,
-    displayName: doc.displayName,
-    verified: doc.verified,
-    bio: doc.bio,
-    privacy: doc.privacy,
-    role: doc.role,
-    isActive: doc.isActive,
+    username: user.username,
+    firstName: user.firstName,
+    lastName: user.lastName,
+    avatar: user.avatar,
+    displayName: user.displayName,
+    verified: user.verified,
+    bio: user.bio,
+    privacy: user.privacy,
+    role: user.role,
+    isActive: user.isActive,
   };
 }
 
-export function serializeUserRankingEntry(user: UserDoc) {
-  const doc = user.toObject({ virtuals: true });
-
+export function serializeUserRankingEntry(user: WithId<UserDocument>) {
   return {
     _id: user._id.toString(),
-    username: doc.username,
-    firstName: doc.firstName,
-    lastName: doc.lastName,
-    avatar: doc.avatar,
-    displayName: doc.displayName,
-    verified: doc.verified,
-    isActive: doc.isActive,
-    experience: doc.experience,
+    username: user.username,
+    firstName: user.firstName,
+    lastName: user.lastName,
+    avatar: user.avatar,
+    displayName: user.displayName,
+    verified: user.verified,
+    isActive: user.isActive,
+    experience: user.experience,
   };
 }
 
-export function serializeAuthorEmbed(author: UserDoc) {
+export function serializeAuthorEmbed(author: WithId<UserDocument>) {
   return {
     _id: author._id.toString(),
     username: author.username,
@@ -188,15 +126,3 @@ export function serializeAuthorEmbed(author: UserDoc) {
     verified: author.verified,
   };
 }
-
-export function requirePopulatedAuthor(
-  author: UserDoc | Types.ObjectId,
-): UserDoc {
-  if (!('username' in author)) {
-    throw new Error('Author must be populated before serialization');
-  }
-
-  return author;
-}
-
-export type { UserRole };

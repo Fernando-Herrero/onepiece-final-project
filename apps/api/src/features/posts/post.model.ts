@@ -1,14 +1,14 @@
-import mongoose, { type HydratedDocument, Schema, type Types } from 'mongoose';
+import type { ObjectId, WithId } from 'mongodb';
 
 import {
-  requirePopulatedAuthor,
   serializeAuthorEmbed,
+  type UserDocument,
 } from '../users/user.model.js';
 
-export type PostDoc = HydratedDocument<{
-  _id: Types.ObjectId;
+export type PostDocument = {
+  _id: ObjectId;
   text: string;
-  userId: Types.ObjectId;
+  userId: ObjectId;
   images?: string[];
   visibility: 'public' | 'private' | 'followers';
   isDeleted: boolean;
@@ -17,75 +17,23 @@ export type PostDoc = HydratedDocument<{
   isReply: boolean;
   isPinned: boolean;
   language: string;
-  likes: Types.ObjectId[];
-  bookmarks: Types.ObjectId[];
+  likes: ObjectId[];
+  bookmarks: ObjectId[];
   likesCount: number;
   bookmarksCount: number;
   commentsCount: number;
   retweetsCount: number;
   hashtags: string[];
   mentions: string[];
-  retweets: Types.ObjectId[];
+  retweets: ObjectId[];
   createdAt?: Date;
   updatedAt?: Date;
-}>;
-
-const postSchema = new Schema(
-  {
-    text: { type: String, required: true },
-    userId: { type: Schema.Types.ObjectId, ref: 'users', required: true },
-    images: [{ type: String }],
-    isDeleted: { type: Boolean, default: false },
-    visibility: {
-      type: String,
-      enum: ['public', 'private', 'followers'],
-      default: 'public',
-    },
-    shareToken: { type: String },
-    isRetweet: { type: Boolean, default: false },
-    isReply: { type: Boolean, default: false },
-    isPinned: { type: Boolean, default: false },
-    language: { type: String, default: 'es' },
-    likes: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'users' }],
-      default: [],
-    },
-    bookmarks: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'users' }],
-      default: [],
-    },
-    likesCount: { type: Number, default: 0 },
-    bookmarksCount: { type: Number, default: 0 },
-    commentsCount: { type: Number, default: 0 },
-    retweetsCount: { type: Number, default: 0 },
-    hashtags: { type: [String], default: [] },
-    mentions: { type: [String], default: [] },
-    retweets: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'posts' }],
-      default: [],
-    },
-  },
-  { timestamps: true },
-);
-
-export const Post = mongoose.model<PostDoc>('posts', postSchema);
-
-export const POST_AUTHOR_SELECT =
-  'username firstName lastName avatar displayName verified';
-
-export const POST_AUTHOR_POPULATE = {
-  path: 'userId',
-  select: POST_AUTHOR_SELECT,
-} as const;
+};
 
 export const PUBLIC_POST_FILTER = {
   visibility: 'public' as const,
   isDeleted: false,
 };
-
-export async function findActivePostById(id: string) {
-  return Post.findOne({ _id: id, isDeleted: false });
-}
 
 export function getTextMaxLength(verified: boolean) {
   return verified ? 600 : 280;
@@ -99,62 +47,38 @@ export function assertTextLength(text: string, verified: boolean) {
   return null;
 }
 
-export async function togglePostField(
-  postId: string,
-  userId: Types.ObjectId,
-  field: 'likes' | 'bookmarks',
+export function serializePost(
+  post: WithId<PostDocument>,
+  author: WithId<UserDocument>,
+  viewerId?: string,
 ) {
-  const post = await findActivePostById(postId);
-  if (!post) {
-    return null;
-  }
-
-  const countField = `${field}Count` as 'likesCount' | 'bookmarksCount';
-  const alreadyHad = post[field].some(id => id.equals(userId));
-
-  const updated = await Post.findByIdAndUpdate(
-    postId,
-    alreadyHad
-      ? { $pull: { [field]: userId }, $inc: { [countField]: -1 } }
-      : { $addToSet: { [field]: userId }, $inc: { [countField]: 1 } },
-    { new: true },
-  );
-
-  return { updated, alreadyHad };
-}
-
-export function serializePost(post: PostDoc, viewerId?: string) {
-  const author = requirePopulatedAuthor(post.userId);
-
-  const doc = post.toObject();
-
   return {
     _id: post._id.toString(),
-    text: doc.text,
+    text: post.text,
     userId: serializeAuthorEmbed(author),
-    images: doc.images,
-    visibility: doc.visibility,
-    isDeleted: doc.isDeleted,
-    shareToken: doc.shareToken,
-    isRetweet: doc.isRetweet,
-    isReply: doc.isReply,
-    isPinned: doc.isPinned,
-    language: doc.language,
-    likes: doc.likes.map(String),
-    bookmarks: doc.bookmarks.map(String),
-    likesCount: doc.likesCount,
-    bookmarksCount: doc.bookmarksCount,
-    commentsCount: doc.commentsCount,
-    retweetsCount: doc.retweetsCount,
-    hashtags: doc.hashtags,
-    mentions: doc.mentions,
-    retweets: doc.retweets.map(String),
-    createdAt: doc.createdAt?.toISOString(),
-    updatedAt: doc.updatedAt?.toISOString(),
+    images: post.images,
+    visibility: post.visibility,
+    isDeleted: post.isDeleted,
+    shareToken: post.shareToken,
+    isRetweet: post.isRetweet,
+    isReply: post.isReply,
+    isPinned: post.isPinned,
+    language: post.language,
+    likes: post.likes.map(String),
+    bookmarks: post.bookmarks.map(String),
+    likesCount: post.likesCount,
+    bookmarksCount: post.bookmarksCount,
+    commentsCount: post.commentsCount,
+    retweetsCount: post.retweetsCount,
+    hashtags: post.hashtags,
+    mentions: post.mentions,
+    retweets: post.retweets.map(String),
+    createdAt: post.createdAt?.toISOString(),
+    updatedAt: post.updatedAt?.toISOString(),
     ...(viewerId
       ? {
-          userLiked: doc.likes.some(id => id.toString() === viewerId),
-          userBookmarked: doc.bookmarks.some(id => id.toString() === viewerId),
+          userLiked: post.likes.some(id => id.toString() === viewerId),
+          userBookmarked: post.bookmarks.some(id => id.toString() === viewerId),
         }
       : {}),
   };

@@ -29,17 +29,16 @@ export class AuthSessionService {
     try {
       const payload = jwt.verify(token, this.jwtSecret);
 
-      if (
-        typeof payload !== 'object' ||
-        payload === null ||
-        !('sub' in payload) ||
-        typeof payload.sub !== 'string' ||
-        !payload.sub
-      ) {
+      if (typeof payload === 'string') {
         return undefined;
       }
 
-      return { id: payload.sub };
+      const sub = payload.sub;
+      if (typeof sub !== 'string' || !sub) {
+        return undefined;
+      }
+
+      return { id: sub };
     } catch {
       return undefined;
     }
