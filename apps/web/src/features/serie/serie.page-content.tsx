@@ -8,36 +8,81 @@ import {
   Spinner,
   Text,
 } from '@radix-ui/themes';
-import { useQuery } from '@tanstack/react-query';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
-import { useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
 
+import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
 import { useMeQuery } from '@/features/auth/api/use-auth';
 import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
-import { SERIE_TOTAL_XP } from '@/features/profile/profile.constants';
+import { useSuspenseSerieSagas } from '@/features/serie/api/use-serie';
+import {
+  DEFAULT_SERIE_PROGRESS,
+  SERIE_TOTAL_XP,
+} from '@/features/serie/serie.constants';
+import { getSerieXpPercent } from '@/features/serie/serie.selectors';
+import type { SerieProgress } from '@/features/serie/serie.types';
 import { SerieSagaBlock } from '@/features/serie/ui/serie-saga-block.component';
-import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
+
+type SerieSagaListProps = {
+  progress: SerieProgress;
+  openSagaIds: Record<number, boolean>;
+  onToggleSaga: (sagaId: number) => void;
+  openArcIds: Record<number, boolean>;
+  onToggleArc: (arcId: number) => void;
+};
+
+function SerieSagaList({
+  progress,
+  openSagaIds,
+  onToggleSaga,
+  openArcIds,
+  onToggleArc,
+}: SerieSagaListProps) {
+  const { data } = useSuspenseSerieSagas();
+
+  return (
+    <Flex direction="column" gap="3">
+      {data.sagas.map(saga => (
+        <SerieSagaBlock
+          key={saga.id}
+          saga={saga}
+          isOpen={openSagaIds[saga.id] ?? false}
+          onToggle={() => onToggleSaga(saga.id)}
+          openArcIds={openArcIds}
+          onToggleArc={onToggleArc}
+          progress={progress}
+        />
+      ))}
+    </Flex>
+  );
+}
+
+function SerieSagaListSkeleton() {
+  const { t } = useTranslation();
+
+  return (
+    <Flex direction="column" align="center" gap="3" py="8">
+      <Spinner size="3" />
+      <Text align="center" color="gray">
+        {t('serie.loading')}
+      </Text>
+    </Flex>
+  );
+}
 
 export default function SeriePageContent() {
   const { t } = useTranslation();
   const meQuery = useMeQuery();
-  const sagasQuery = useQuery(allQueriesOptions.serie.sagas());
   const heroRef = useRef<HTMLDivElement>(null);
   const [openSagaIds, setOpenSagaIds] = useState<Record<number, boolean>>({});
   const [openArcIds, setOpenArcIds] = useState<Record<number, boolean>>({});
 
-  const progress = meQuery.data?.serieProgress ?? {
-    saga: 0,
-    arc: 0,
-    episode: 0,
-  };
+  const progress = meQuery.data?.serieProgress ?? DEFAULT_SERIE_PROGRESS;
   const experience = meQuery.data?.experience ?? 0;
-  const xpPercent = Math.min(
-    100,
-    Math.round((experience / SERIE_TOTAL_XP) * 100),
-  );
+  const xpPercent = getSerieXpPercent(experience);
 
   useEffect(() => {
     if (isMotionDisabled() || !heroRef.current) {
@@ -142,46 +187,17 @@ export default function SeriePageContent() {
         </Box>
       </Card>
 
-      {sagasQuery.isPending ? (
-        <LoadingState label={t('serie.loading')} />
-      ) : null}
-
-      {sagasQuery.isError ? (
-        <Callout.Root color="red" variant="soft" mb="4">
-          <Callout.Text>
-            {sagasQuery.error instanceof Error
-              ? sagasQuery.error.message
-              : t('serie.error')}
-          </Callout.Text>
-        </Callout.Root>
-      ) : null}
-
-      {sagasQuery.data ? (
-        <Flex direction="column" gap="3">
-          {sagasQuery.data.sagas.map(saga => (
-            <SerieSagaBlock
-              key={saga.id}
-              saga={saga}
-              isOpen={openSagaIds[saga.id] ?? false}
-              onToggle={() => toggleSaga(saga.id)}
-              openArcIds={openArcIds}
-              onToggleArc={toggleArc}
-              progress={progress}
-            />
-          ))}
-        </Flex>
-      ) : null}
+      <ErrorBoundary FallbackComponent={QueryErrorFallback}>
+        <Suspense fallback={<SerieSagaListSkeleton />}>
+          <SerieSagaList
+            progress={progress}
+            openSagaIds={openSagaIds}
+            onToggleSaga={toggleSaga}
+            openArcIds={openArcIds}
+            onToggleArc={toggleArc}
+          />
+        </Suspense>
+      </ErrorBoundary>
     </Box>
-  );
-}
-
-function LoadingState({ label }: { label: string }) {
-  return (
-    <Flex direction="column" align="center" gap="3" py="8">
-      <Spinner size="3" />
-      <Text align="center" color="gray">
-        {label}
-      </Text>
-    </Flex>
   );
 }
