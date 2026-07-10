@@ -1,23 +1,34 @@
-import { Controller, Get, Header, Req } from '@nestjs/common';
+import { authContract } from '@logpose/contracts/features/auth/contract';
+import { healthContract } from '@logpose/contracts/features/health/contract';
+import { serieContract } from '@logpose/contracts/features/serie/contract';
+import { usersContract } from '@logpose/contracts/features/users/contract';
+import { Controller, Get, Header } from '@nestjs/common';
+import { oc } from '@orpc/contract';
 import { OpenAPIGenerator } from '@orpc/openapi';
 import { ZodToJsonSchemaConverter } from '@orpc/zod/zod4';
-import type { Request } from 'express';
 
-import { contract } from './orpc.contract.js';
+const implementedContract = oc.prefix('/api').router({
+  health: healthContract,
+  auth: authContract,
+  users: usersContract,
+  serie: serieContract,
+});
 
 const generator = new OpenAPIGenerator({
   schemaConverters: [new ZodToJsonSchemaConverter()],
 });
 
 /**
- * Public origin (`https://host/`) for the OpenAPI `servers` entry. Because this
- * is a regular Nest controller, `req.protocol` honours the reverse proxy's
- * `X-Forwarded-Proto` (via `trust proxy`), so the spec advertises https in
- * production — unlike oRPC's node adapter, which only inspects the raw socket.
+ * Relative OpenAPI server so Swagger "Try it out" hits the same origin as the UI.
+ *
+ * In dev, `pnpm dev` serves the web on :3000 with a rewrite of `/api/*` → Nest :4000.
+ * If the spec advertised `http://localhost:4000/`, the browser would call :4000 from a
+ * page on :3000 and fail with "Failed to fetch" (no CORS on the API). With `/`, requests
+ * go to :3000/api/... and the Next proxy forwards them — same pattern as admin.
+ *
+ * Direct access at http://localhost:4000/api/orpc also works: `/` resolves to :4000.
  */
-function resolvePublicOrigin(req: Request): string {
-  return `${req.protocol}://${req.get('host') ?? 'localhost'}/`;
-}
+const OPENAPI_SERVER = { url: '/' as const };
 
 const SWAGGER_HTML = `<!doctype html>
 <html>
@@ -49,24 +60,27 @@ const SWAGGER_HTML = `<!doctype html>
 `;
 
 /**
- * Serves the OpenAPI reference UI and spec for the contract. `@orpc/nest`
- * registers the procedure routes but does not expose the docs, so we generate
- * the spec straight from the contract here.
+ * Serves the OpenAPI reference UI and spec for implemented procedures only.
+ * `@orpc/nest` registers the procedure routes but does not expose the docs.
  */
 @Controller('api/orpc')
 export class OrpcDocsController {
   @Get('spec.json')
-  spec(@Req() req: Request) {
-    return generator.generate(contract, {
+  spec() {
+    return generator.generate(implementedContract, {
       info: {
         title: 'LogPose API (Nest)',
         version: '1.0.0',
       },
-      servers: [{ url: resolvePublicOrigin(req) }],
+      servers: [OPENAPI_SERVER],
       tags: [
         { name: 'Health', description: 'Liveness and readiness checks' },
         { name: 'Auth', description: 'Session, login and registration' },
         { name: 'Users', description: 'Profiles, ranking and social graph' },
+        {
+          name: 'Serie',
+          description: 'Sagas, arcs and episodes (static data)',
+        },
       ],
     });
   }

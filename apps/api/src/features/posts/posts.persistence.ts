@@ -2,7 +2,7 @@ import { InjectCollection } from '@jperezmart/nest-mongodb';
 import { Injectable } from '@nestjs/common';
 import { type Collection, ObjectId, type WithId } from 'mongodb';
 
-import { type PostDocument, PUBLIC_POST_FILTER } from './post.model.js';
+import { type PostDocument, PUBLIC_POST_FILTER } from './post.mappers.js';
 
 @Injectable()
 export class PostsPersistence {

@@ -1,5 +1,8 @@
 import { userPublicSchema } from '@logpose/contracts/common/user.schemas';
-import { authSessionSchema } from '@logpose/contracts/features/auth/schemas';
+import {
+  authMessageSchema,
+  authSessionSchema,
+} from '@logpose/contracts/features/auth/schemas';
 import { Controller } from '@nestjs/common';
 import { Implement, implement } from '@orpc/nest';
 import type { Response } from 'express';
@@ -7,7 +10,7 @@ import type { Response } from 'express';
 import { throwContractOutputInvalid } from '../../integrations/orpc/contract-output-invalid.js';
 import { contract } from '../../integrations/orpc/orpc.contract.js';
 import { parseOrThrow } from '../../integrations/orpc/parse-or-throw.js';
-import { handleRegisterError } from './auth.errors.js';
+import { handleAuthError } from './auth.errors.js';
 import { AuthService } from './auth.service.js';
 import { AuthSessionService } from './auth-session.service.js';
 
@@ -41,7 +44,7 @@ export class AuthController {
             throwContractOutputInvalid,
           );
         } catch (error) {
-          handleRegisterError(error, errors);
+          handleAuthError(error, errors);
         }
       },
     );
@@ -50,48 +53,81 @@ export class AuthController {
   @Implement(contract.auth.login)
   login() {
     return implement(contract.auth.login).handler(
-      async ({ input, context }) => {
-        const result = await this.authService.login(
-          input,
-          this.response(context.request.res),
-        );
+      async ({ input, context, errors }) => {
+        try {
+          const result = await this.authService.login(
+            input,
+            this.response(context.request.res),
+          );
 
-        return parseOrThrow(
-          authSessionSchema,
-          result,
-          throwContractOutputInvalid,
-        );
+          return parseOrThrow(
+            authSessionSchema,
+            result,
+            throwContractOutputInvalid,
+          );
+        } catch (error) {
+          handleAuthError(error, errors);
+        }
       },
     );
   }
 
   @Implement(contract.auth.me)
   me() {
-    return implement(contract.auth.me).handler(async ({ context }) => {
-      const user = await this.authService.getMe(
-        this.authSession.requireUser(context.request).id,
-      );
+    return implement(contract.auth.me).handler(async ({ context, errors }) => {
+      try {
+        const user = await this.authService.getMe(
+          this.authSession.requireUser(context.request).id,
+        );
 
-      return parseOrThrow(userPublicSchema, user, throwContractOutputInvalid);
+        return parseOrThrow(userPublicSchema, user, throwContractOutputInvalid);
+      } catch (error) {
+        handleAuthError(error, errors);
+      }
     });
   }
 
   @Implement(contract.auth.changePassword)
   changePassword() {
     return implement(contract.auth.changePassword).handler(
-      async ({ input, context }) =>
-        this.authService.changePassword(
-          this.authSession.requireUser(context.request).id,
-          input,
-        ),
+      async ({ input, context, errors }) => {
+        try {
+          const result = await this.authService.changePassword(
+            this.authSession.requireUser(context.request).id,
+            input,
+          );
+
+          return parseOrThrow(
+            authMessageSchema,
+            result,
+            throwContractOutputInvalid,
+          );
+        } catch (error) {
+          handleAuthError(error, errors);
+        }
+      },
     );
   }
 
   @Implement(contract.auth.logout)
   logout() {
-    return implement(contract.auth.logout).handler(async ({ context }) => {
-      this.authSession.requireUser(context.request);
-      return this.authService.logout(this.response(context.request.res));
-    });
+    return implement(contract.auth.logout).handler(
+      async ({ context, errors }) => {
+        try {
+          this.authSession.requireUser(context.request);
+          const result = await this.authService.logout(
+            this.response(context.request.res),
+          );
+
+          return parseOrThrow(
+            authMessageSchema,
+            result,
+            throwContractOutputInvalid,
+          );
+        } catch (error) {
+          handleAuthError(error, errors);
+        }
+      },
+    );
   }
 }

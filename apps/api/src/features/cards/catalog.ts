@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
-import type { UserDoc } from '../users/user.model.js';
+import type { UserDocument } from '../users/user.mappers.js';
 
 export const CARD_TYPES = [
   'characters',
@@ -96,7 +96,7 @@ export function resolveCardIds(type: CardType, ids: number[]) {
     .filter((card): card is CatalogCard => card !== undefined);
 }
 
-export function resolveUnlockedCards(unlockedCards: UserDoc['unlockedCards']) {
+export function resolveUnlockedCards(unlockedCards: UserDocument['unlockedCards']) {
   return {
     characters: resolveCardIds('characters', unlockedCards.characters),
     items: resolveCardIds('items', unlockedCards.items),
@@ -106,7 +106,7 @@ export function resolveUnlockedCards(unlockedCards: UserDoc['unlockedCards']) {
   };
 }
 
-export function buildCollectionStats(unlockedCards: UserDoc['unlockedCards']) {
+export function buildCollectionStats(unlockedCards: UserDocument['unlockedCards']) {
   const totals = getCatalogTotals();
   const unlocked = resolveUnlockedCards(unlockedCards);
 
@@ -137,8 +137,8 @@ export function buildCollectionStats(unlockedCards: UserDoc['unlockedCards']) {
 }
 
 export function mergeUnlockedCards(
-  current: UserDoc['unlockedCards'],
-  incoming: UserDoc['unlockedCards'],
+  current: UserDocument['unlockedCards'],
+  incoming: UserDocument['unlockedCards'],
 ) {
   const newlyUnlocked: Record<CardType, CatalogCard[]> = {
     characters: [],
@@ -172,7 +172,7 @@ export function mergeUnlockedCards(
 }
 
 export function isProgressGreater(
-  current: UserDoc['serieProgress'],
+  current: UserDocument['serieProgress'],
   next: { saga: number; arc: number; episode: number },
 ) {
   if (next.saga !== current.saga) {

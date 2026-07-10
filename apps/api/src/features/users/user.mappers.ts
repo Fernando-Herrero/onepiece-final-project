@@ -44,9 +44,6 @@ export type UserDocument = {
   updatedAt?: Date;
 };
 
-/** @deprecated Use UserDocument */
-export type UserDoc = UserDocument;
-
 function fullName(
   doc: Pick<UserDocument, 'firstName' | 'lastName' | 'displayName' | 'username'>,
 ) {

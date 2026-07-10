@@ -7,14 +7,14 @@ import * as z from 'zod/v4';
 
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
-import { serializePost } from '../posts/post.model.js';
+import { serializePost } from '../posts/post.mappers.js';
 import { PostsPersistence } from '../posts/posts.persistence.js';
 import {
   serializeUser,
   serializeUserRankingEntry,
   serializeUserSummary,
   type UserDocument,
-} from './user.model.js';
+} from './user.mappers.js';
 import { UsersPersistence } from './users.persistence.js';
 
 type PrivacyKey = keyof UserDocument['privacy'];

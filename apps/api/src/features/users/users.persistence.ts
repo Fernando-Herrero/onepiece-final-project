@@ -6,7 +6,7 @@ import {
   type WithId,
 } from 'mongodb';
 
-import type { UserDocument, UserRole } from './user.model.js';
+import type { UserDocument, UserRole } from './user.mappers.js';
 
 @Injectable()
 export class UsersPersistence implements OnModuleInit {

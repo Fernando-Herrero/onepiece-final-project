@@ -3,7 +3,7 @@ import type { ObjectId, WithId } from 'mongodb';
 import {
   serializeAuthorEmbed,
   type UserDocument,
-} from '../users/user.model.js';
+} from '../users/user.mappers.js';
 
 export type PostDocument = {
   _id: ObjectId;

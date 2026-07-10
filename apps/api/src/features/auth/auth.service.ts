@@ -3,7 +3,7 @@ import { ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
 import type { Response } from 'express';
 
-import { serializeUser, type UserDocument } from '../users/user.model.js';
+import { serializeUser, type UserDocument } from '../users/user.mappers.js';
 import { UsersPersistence } from '../users/users.persistence.js';
 import { clearSessionCookie, setSessionCookie } from './auth.cookies.js';
 import { AuthSessionService } from './auth-session.service.js';
