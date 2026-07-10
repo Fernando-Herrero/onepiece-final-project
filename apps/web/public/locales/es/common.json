@@ -409,7 +409,10 @@
   "serie": {
     "meta_title": "Cronología — LogPose",
     "title": "Cronología del anime",
-    "subtitle": "Explora sagas, arcos y episodios reales de One Piece. Los datos de recompensas vienen del servidor.",
+    "subtitle": "Despliega sagas y arcos como en tu LogPose original. Los datos vienen del servidor Nest.",
+    "hero_eyebrow": "Grand Line · Tu travesía",
+    "progress_label": "Experiencia acumulada",
+    "progress_save_hint": "Marcar capítulos y desbloquear cartas llegará con el módulo progress en la API.",
     "loading": "Cargando…",
     "error": "No se pudo cargar la cronología",
     "sagas_heading": "Sagas ({{count}})",
@@ -424,6 +427,10 @@
     "episode_number": "Ep. {{number}}",
     "episode_xp": "+{{xp}} XP",
     "no_episodes": "Aún no hay episodios importados para este arco",
-    "filler": "Relleno"
+    "filler": "Relleno",
+    "achievements_heading": "Recompensas",
+    "viewed_chapter": "Capítulo visto",
+    "show_rewards": "Ver recompensas",
+    "hide_rewards": "Ocultar recompensas"
   }
 }

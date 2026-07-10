@@ -326,14 +326,6 @@ html {
   transition-delay: 0.1s;
 }
 
-.faq-item .faq-chevron {
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.faq-item[data-open] .faq-chevron {
-  transform: rotate(180deg);
-}
-
 .not-found-bg {
   animation: not-found-wave 6s ease-in-out infinite;
 }
@@ -364,8 +356,7 @@ html {
   }
 
   .faq-item > .faq-panel,
-  .faq-item .faq-answer,
-  .faq-item .faq-chevron {
+  .faq-item .faq-answer {
     transition: none;
   }
 

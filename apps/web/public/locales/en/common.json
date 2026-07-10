@@ -409,7 +409,10 @@
   "serie": {
     "meta_title": "Timeline — LogPose",
     "title": "Anime timeline",
-    "subtitle": "Browse real One Piece sagas, arcs and episodes. Reward metadata is served from the API.",
+    "subtitle": "Expand sagas and arcs like your original LogPose. Data is served from the Nest API.",
+    "hero_eyebrow": "Grand Line · Your voyage",
+    "progress_label": "Experience earned",
+    "progress_save_hint": "Marking episodes and unlocking cards will arrive with the progress API module.",
     "loading": "Loading…",
     "error": "Could not load the timeline",
     "sagas_heading": "Sagas ({{count}})",
@@ -424,6 +427,10 @@
     "episode_number": "Ep. {{number}}",
     "episode_xp": "+{{xp}} XP",
     "no_episodes": "No episodes imported for this arc yet",
-    "filler": "Filler"
+    "filler": "Filler",
+    "achievements_heading": "Rewards",
+    "viewed_chapter": "Episode watched",
+    "show_rewards": "View rewards",
+    "hide_rewards": "Hide rewards"
   }
 }

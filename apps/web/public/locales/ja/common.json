@@ -409,7 +409,10 @@
   "serie": {
     "meta_title": "年表 — LogPose",
     "title": "アニメ年表",
-    "subtitle": "ワンピースのサガ、アーク、エピソードを探索します。報酬データはAPIから取得されます。",
+    "subtitle": "旧LogPoseのようにサガとアークを展開。データはNest APIから取得します。",
+    "hero_eyebrow": "グランドライン · あなたの航海",
+    "progress_label": "獲得経験値",
+    "progress_save_hint": "エピソードのチェックとカード解放は、progress APIモジュールで対応予定です。",
     "loading": "読み込み中…",
     "error": "年表を読み込めませんでした",
     "sagas_heading": "サガ ({{count}})",
@@ -424,6 +427,10 @@
     "episode_number": "第{{number}}話",
     "episode_xp": "+{{xp}} XP",
     "no_episodes": "このアークのエピソードはまだインポートされていません",
-    "filler": "フィラー"
+    "filler": "フィラー",
+    "achievements_heading": "報酬",
+    "viewed_chapter": "視聴済み",
+    "show_rewards": "報酬を見る",
+    "hide_rewards": "報酬を隠す"
   }
 }

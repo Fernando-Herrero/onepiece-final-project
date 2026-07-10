@@ -1,7 +1,7 @@
 import type { GetServerSideProps } from 'next';
 
-import SeriePageContent from '@/features/serie/page-content/serie.page-content';
 import { withDashboardLayout } from '@/features/dashboard/with-dashboard-layout';
+import SeriePageContent from '@/features/serie/serie.page-content';
 import { getDashboardPageProps } from '@/integrations/auth/server';
 
 function DashboardSeriePage() {
