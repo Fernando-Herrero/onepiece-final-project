@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
+import { Icon } from '@/components/icons/icon';
 import {
   useAuthSession,
   useLogoutMutation,
@@ -36,6 +37,7 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
         <Flex align="center" gap="3">
           {DASHBOARD_TOPBAR_NAV_ITEMS.map(item => {
             const active = router.pathname.startsWith(item.href);
+            const NavIcon = Icon[item.icon];
 
             return (
               <IconButton
@@ -44,11 +46,11 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
                 variant={active ? 'soft' : 'ghost'}
                 color={active ? 'orange' : 'gray'}
                 highContrast={active}
-                className="m-0! box-border size-9 p-0 text-lg"
+                className="m-0! box-border size-9 p-0"
                 aria-label={t(item.labelKey)}
               >
                 <Link href={item.href}>
-                  <span aria-hidden>{item.icon}</span>
+                  <NavIcon aria-hidden />
                 </Link>
               </IconButton>
             );

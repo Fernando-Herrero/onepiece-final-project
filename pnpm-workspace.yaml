@@ -46,6 +46,7 @@ catalog:
     "@nestjs/platform-express": ^11.0.0
     "@nestjs/config": ^4.0.0
     "@nestjs/terminus": ^11.1.1
+    "@phosphor-icons/react": ^2.1.10
 
 minimumReleaseAgeExclude:
     - "@jperezmart/nest-mongodb@0.1.0"

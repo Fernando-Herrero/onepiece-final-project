@@ -2,6 +2,7 @@ import { Box, Button, Flex, IconButton, Tooltip } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
+import { Icon } from '@/components/icons/icon';
 import {
   DASHBOARD_MAIN_NAV_ITEMS,
   DASHBOARD_SETTINGS_NAV_ITEM,
@@ -63,7 +64,7 @@ export function DashboardNavRail({
             aria-label={t('dashboard.nav.expand')}
             onClick={onToggleExpanded}
           >
-            »
+            <Icon.CaretRight />
           </IconButton>
         </Tooltip>
       </Box>
@@ -79,6 +80,7 @@ function NavRailLink({
   active: boolean;
 }) {
   const { t } = useTranslation();
+  const NavIcon = Icon[item.icon];
 
   return (
     <Tooltip side="right" content={t(item.labelKey)}>
@@ -87,10 +89,10 @@ function NavRailLink({
         variant={active ? 'soft' : 'ghost'}
         color={active ? 'orange' : 'gray'}
         highContrast={active}
-        className="m-0! box-border size-9 p-0 text-lg"
+        className="m-0! box-border size-9 p-0"
       >
         <Link href={item.href}>
-          <span aria-hidden>{item.icon}</span>
+          <NavIcon aria-hidden />
         </Link>
       </Button>
     </Tooltip>

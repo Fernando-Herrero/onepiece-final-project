@@ -2,6 +2,7 @@ import { Box, Button, Card, Flex, Heading, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
+import { Icon } from '@/components/icons/icon';
 import { LandingPublicLayout } from '@/features/landing/ui/landing-public-layout.component';
 import { Reveal } from '@/features/landing/ui/reveal.component';
 
@@ -10,7 +11,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 
   return (
     <Card
-      className="faq-item rounded-lg border border-[#f4ede1]/10 bg-[#0b1120]/60 backdrop-blur-sm transition-colors hover:border-[#f2d9a8]/25"
+      className="faq-item group rounded-lg border border-[#f4ede1]/10 bg-[#0b1120]/60 backdrop-blur-sm transition-colors hover:border-[#f2d9a8]/25"
       data-open={open || undefined}
     >
       <Button
@@ -24,9 +25,12 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         <Text as="span" className="min-w-0 flex-1 text-left">
           {question}
         </Text>
-        <Text as="span" className="faq-chevron shrink-0 text-[#f4ede1]/50">
-          ▾
-        </Text>
+        <Box
+          aria-hidden="true"
+          className="shrink-0 text-[#f4ede1]/50 transition-transform duration-300 ease-in-out group-data-open:rotate-180 motion-reduce:transition-none"
+        >
+          <Icon.CaretDown />
+        </Box>
       </Button>
       <Box className="faq-panel">
         <Box className="faq-panel-inner">

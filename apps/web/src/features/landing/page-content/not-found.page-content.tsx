@@ -59,7 +59,7 @@ export default function NotFoundPageContent() {
             width={120}
             height={60}
             className="h-auto w-28 md:w-32"
-            style={{ height: 'auto' }}
+            style={{ width: 'auto', height: 'auto' }}
             priority
           />
           <Heading

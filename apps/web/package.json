@@ -16,6 +16,7 @@
     "@orpc/client": "catalog:",
     "@orpc/contract": "catalog:",
     "@orpc/openapi-client": "catalog:",
+    "@phosphor-icons/react": "catalog:",
     "@radix-ui/themes": "^3.3.0",
     "@tailwindcss/postcss": "^4.2.4",
     "@tanstack/react-form": "^1.29.1",

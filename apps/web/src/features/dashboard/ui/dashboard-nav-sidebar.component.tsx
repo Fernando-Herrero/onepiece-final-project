@@ -2,6 +2,7 @@ import { Button, Flex, IconButton, Text } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
+import { Icon } from '@/components/icons/icon';
 import {
   DASHBOARD_MAIN_NAV_ITEMS,
   DASHBOARD_SETTINGS_NAV_ITEM,
@@ -65,7 +66,7 @@ export function DashboardNavSidebar({
             aria-label={t('dashboard.nav.collapse')}
             onClick={onToggleExpanded}
           >
-            «
+            <Icon.CaretLeft />
           </IconButton>
         </Flex>
       </Flex>
@@ -81,6 +82,7 @@ function NavSidebarLink({
   active: boolean;
 }) {
   const { t } = useTranslation();
+  const NavIcon = Icon[item.icon];
 
   return (
     <Button
@@ -91,7 +93,7 @@ function NavSidebarLink({
       className="box-border h-auto w-full justify-start gap-3 px-3 py-2"
     >
       <Link href={item.href}>
-        <span aria-hidden>{item.icon}</span>
+        <NavIcon aria-hidden />
         <Text as="span" size="2" weight="medium">
           {t(item.labelKey)}
         </Text>

@@ -34,6 +34,28 @@ export function HeroMaskComponent() {
   const scrollCueRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const hero = heroRef.current;
+    const mask = maskRef.current;
+    const maskImg = maskImgRef.current;
+    const veil = veilRef.current;
+    const vignette = vignetteRef.current;
+    const title = titleRef.current;
+    const tagline = taglineRef.current;
+    const scrollCue = scrollCueRef.current;
+
+    if (
+      !hero ||
+      !mask ||
+      !maskImg ||
+      !veil ||
+      !vignette ||
+      !title ||
+      !tagline ||
+      !scrollCue
+    ) {
+      return;
+    }
+
     gsap.registerPlugin(ScrollTrigger);
 
     // Mobile/touch: the static hero is rendered entirely in CSS, so it paints
@@ -41,7 +63,7 @@ export function HeroMaskComponent() {
     if (isMotionDisabled()) return;
 
     gsap.fromTo(
-      scrollCueRef.current,
+      scrollCue,
       { autoAlpha: 0, y: 20, filter: 'blur(10px)' },
       {
         autoAlpha: 1,
@@ -58,7 +80,7 @@ export function HeroMaskComponent() {
 
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: heroRef.current,
+          trigger: hero,
           start: 'top top',
           end: '+=1800',
           scrub: 1,
@@ -74,36 +96,32 @@ export function HeroMaskComponent() {
           duration: 1,
           ease: 'power2.inOut',
           onUpdate: () => {
-            gsap.set(maskRef.current, { scale: proxy.s });
-            gsap.set(maskImgRef.current, { scale: 1 / proxy.s });
+            gsap.set(mask, { scale: proxy.s });
+            gsap.set(maskImg, { scale: 1 / proxy.s });
           },
         },
         0,
       );
 
-      tl.to(
-        scrollCueRef.current,
-        { autoAlpha: 0, duration: 0.12, ease: 'power1.out' },
-        0,
-      );
+      tl.to(scrollCue, { autoAlpha: 0, duration: 0.12, ease: 'power1.out' }, 0);
 
       tl.fromTo(
-        veilRef.current,
+        veil,
         { autoAlpha: 1 },
         { autoAlpha: 0, duration: 0.42, ease: 'power1.inOut' },
         0.12,
       );
 
       tl.to(
-        vignetteRef.current,
+        vignette,
         { autoAlpha: 0.7, duration: 0.4, ease: 'power1.out' },
         0.22,
       );
 
-      gsap.set(titleRef.current, { clipPath: 'inset(0 0 100% 0)', y: 28 });
+      gsap.set(title, { clipPath: 'inset(0 0 100% 0)', y: 28 });
 
       tl.to(
-        titleRef.current,
+        title,
         {
           autoAlpha: 1,
           clipPath: 'inset(0 0 0% 0)',
@@ -115,7 +133,7 @@ export function HeroMaskComponent() {
       );
 
       tl.fromTo(
-        taglineRef.current,
+        tagline,
         { autoAlpha: 0, y: 28, filter: 'blur(8px)' },
         {
           autoAlpha: 1,
@@ -126,7 +144,7 @@ export function HeroMaskComponent() {
         },
         0.7,
       );
-    }, heroRef);
+    }, hero);
 
     return () => ctx.revert();
   }, []);

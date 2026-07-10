@@ -45,6 +45,9 @@ catalogs:
     '@orpc/zod':
       specifier: ^1.14.0
       version: 1.14.6
+    '@phosphor-icons/react':
+      specifier: ^2.1.10
+      version: 2.1.10
     '@tanstack/eslint-plugin-query':
       specifier: ^5.81.2
       version: 5.101.0
@@ -167,6 +170,9 @@ importers:
       '@nestjs/terminus':
         specifier: 'catalog:'
         version: 11.1.1(@nestjs/common@11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.28)(mongoose@9.7.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@orpc/contract':
+        specifier: 'catalog:'
+        version: 1.14.6
       '@orpc/nest':
         specifier: 'catalog:'
         version: 1.14.7(@nestjs/common@11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.28)(express@5.2.1)(rxjs@7.8.2)
@@ -182,9 +188,6 @@ importers:
       bcrypt:
         specifier: ^6.0.0
         version: 6.0.0
-      dotenv:
-        specifier: ^17.4.2
-        version: 17.4.2
       jsonwebtoken:
         specifier: ^9.0.3
         version: 9.0.3
@@ -246,6 +249,9 @@ importers:
       '@orpc/openapi-client':
         specifier: 'catalog:'
         version: 1.14.6
+      '@phosphor-icons/react':
+        specifier: 'catalog:'
+        version: 2.1.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@radix-ui/themes':
         specifier: ^3.3.0
         version: 3.3.0(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -1347,6 +1353,13 @@ packages:
       '@orpc/contract': 1.14.6
       '@orpc/server': 1.14.6
       zod: '>=3.25.0'
+
+  '@phosphor-icons/react@2.1.10':
+    resolution: {integrity: sha512-vt8Tvq8GLjheAZZYa+YG/pW7HDbov8El/MANW8pOAz4eGxrwhnbfrQZq0Cp4q8zBEu8NIhHdnr+r8thnfRSNYA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>= 16.8'
+      react-dom: '>= 16.8'
 
   '@radix-ui/colors@3.0.0':
     resolution: {integrity: sha512-FUOsGBkHrYJwCSEtWRCIfQbZG7q1e6DgxCIOe1SUQzDe/7rXXeA47s8yCn6fuTNQAj1Zq4oTFi9Yjp3wzElcxg==}
@@ -3054,10 +3067,6 @@ packages:
 
   dotenv@17.4.1:
     resolution: {integrity: sha512-k8DaKGP6r1G30Lx8V4+pCsLzKr8vLmV2paqEj1Y55GdAgJuIqpRp5FfajGF8KtwMxCz9qJc6wUIJnm053d/WCw==}
-    engines: {node: '>=12'}
-
-  dotenv@17.4.2:
-    resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
     engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
@@ -6220,6 +6229,11 @@ snapshots:
       - fastify
       - ws
 
+  '@phosphor-icons/react@2.1.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+    dependencies:
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
+
   '@radix-ui/colors@3.0.0': {}
 
   '@radix-ui/number@1.1.2': {}
@@ -7954,8 +7968,6 @@ snapshots:
   dotenv@16.6.1: {}
 
   dotenv@17.4.1: {}
-
-  dotenv@17.4.2: {}
 
   dunder-proto@1.0.1:
     dependencies:

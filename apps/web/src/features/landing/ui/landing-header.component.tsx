@@ -86,7 +86,7 @@ export function LandingHeaderComponent() {
               width={80}
               height={40}
               className="h-9 w-auto md:h-10"
-              style={{ width: 'auto' }}
+              style={{ width: 'auto', height: 'auto' }}
               priority
             />
           </Link>

@@ -1,3 +1,5 @@
+import type { DashboardNavIcon } from '@/components/icons/icon';
+
 export type DashboardNavLabelKey =
   | 'dashboard.nav.profile'
   | 'dashboard.nav.community'
@@ -12,7 +14,7 @@ export type DashboardNavItem = {
   id: string;
   labelKey: Exclude<DashboardNavLabelKey, 'dashboard.nav.user_profile'>;
   href: string;
-  icon: string;
+  icon: DashboardNavIcon;
 };
 
 export const DASHBOARD_NAV_ITEMS: DashboardNavItem[] = [
@@ -20,43 +22,43 @@ export const DASHBOARD_NAV_ITEMS: DashboardNavItem[] = [
     id: 'profile',
     labelKey: 'dashboard.nav.profile',
     href: '/dashboard/profile',
-    icon: '👤',
+    icon: 'User',
   },
   {
     id: 'community',
     labelKey: 'dashboard.nav.community',
     href: '/dashboard/community',
-    icon: '💬',
+    icon: 'Community',
   },
   {
     id: 'serie',
     labelKey: 'dashboard.nav.serie',
     href: '/dashboard/serie',
-    icon: '📺',
+    icon: 'Serie',
   },
   {
     id: 'cards',
     labelKey: 'dashboard.nav.cards',
     href: '/dashboard/cards',
-    icon: '🃏',
+    icon: 'Cards',
   },
   {
     id: 'search',
     labelKey: 'dashboard.nav.search',
     href: '/dashboard/search',
-    icon: '🔍',
+    icon: 'Search',
   },
   {
     id: 'notifications',
     labelKey: 'dashboard.nav.notifications',
     href: '/dashboard/notifications',
-    icon: '🔔',
+    icon: 'Bell',
   },
   {
     id: 'settings',
     labelKey: 'dashboard.nav.settings',
     href: '/dashboard/settings',
-    icon: '⚙️',
+    icon: 'Settings',
   },
 ];
 
