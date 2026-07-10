@@ -1,47 +1,47 @@
 ---
-description: Principios de código obligatorios al escribir, proponer o revisar cambios
+description: Mandatory coding principles when writing, proposing, or reviewing changes
 alwaysApply: true
 ---
 
-# Principios de código (obligatorio)
+# Coding principles (mandatory)
 
-Aplicar **siempre** al proponer o editar código. Detalle y ejemplos en `~/.cursor/skills/`.
+Apply **always** when proposing or editing code. Details and examples in `~/.cursor/skills/`.
 
-## 1. Alcance estricto
+## 1. Strict scope
 
-- Solo lo pedido. Diff mínimo. Sin refactors colaterales ni "ya que estamos".
-- Archivo nuevo solo con justificación real (repetición 2+, límite claro de responsabilidad).
-- Si hace falta tocar algo fuera del pedido: **proponer primero**, no editar en silencio.
+- Only what was asked. Minimal diff. No collateral refactors or "while we're here".
+- New file only with real justification (2+ repetitions, clear responsibility boundary).
+- If something outside the request must change: **propose first**, do not edit silently.
 
-## 2. Código simple
+## 2. Simple code
 
-- Extender el archivo existente antes de crear capas (`*.store`, `use-*`, `*.types`, `*.utils`).
-- Inline > helper local > archivo hermano > capa nueva.
-- Código aburrido y legible: early return, nombres obvios, sin arquitectura "por si acaso".
+- Extend the existing file before creating layers (`*.store`, `use-*`, `*.types`, `*.utils`).
+- Inline > local helper > sibling file > new layer.
+- Boring, readable code: early return, obvious names, no "just in case" architecture.
 
-## 3. Declarativo
+## 3. Declarative
 
-- Derivar en render; `filter`/`map`/`reduce` en lugar de bucles manuales.
-- `useEffect` solo para efectos externos (fetch, suscripción, DOM), no para transformar props en state.
-- Sin helpers de una línea que solo envuelven una expresión.
+- Derive in render; use `filter`/`map`/`reduce` instead of manual loops.
+- `useEffect` only for external effects (fetch, subscription, DOM), not to transform props into state.
+- No one-line helpers that only wrap an expression.
 
-## 4. Sin optimización prematura
+## 4. No premature optimization
 
-- Sin `useMemo`, `useCallback`, `React.memo` por defecto.
-- Sin caché, debounce o virtualización "por si acaso".
-- Optimizar solo con evidencia (profiling, restricción real documentada).
+- No `useMemo`, `useCallback`, `React.memo` by default.
+- No cache, debounce, or virtualization "just in case".
+- Optimize only with evidence (profiling, documented real constraint).
 
-## Red flags — parar y simplificar
+## Red flags — stop and simplify
 
-- Archivo nuevo para un solo consumidor.
-- Hook o store más corto que sus imports.
-- `useState` + `useEffect` para datos derivables de props/state.
-- Tipos o interfaces para funcionalidad que aún no existe (código muerto).
-- Abstracción genérica con una sola implementación y sin segundo uso a la vista.
-- Context para server state — usar TanStack Query + oRPC en este repo.
+- New file for a single consumer.
+- Hook or store shorter than its imports.
+- `useState` + `useEffect` for data derivable from props/state.
+- Types or interfaces for functionality that does not exist yet (dead code).
+- Generic abstraction with one implementation and no second use in sight.
+- Context for server state — use TanStack Query + oRPC in this repo.
 
 ## Mantras
 
-> No construyas un rascacielos para un cobertizo.
+> Don't build a skyscraper for a shed.
 
-> Hazlo funcionar, hazlo claro, hazlo rápido — en ese orden.
+> Make it work, make it clear, make it fast — in that order.

@@ -1,53 +1,53 @@
 ---
-description: Convenciones del monorepo LogPose — stack, estructura, fases, skills obligatorias
+description: LogPose monorepo conventions — stack, structure, phases, mandatory skills
 alwaysApply: true
 ---
 
-# LogPose — Rules del proyecto
+# LogPose — project rules
 
-## Antes de codificar
+## Before coding
 
-1. Leer `AGENTS.md` y `docs/MIGRATION.md`
-2. Si tocas `apps/api`: leer `docs/NEST-MIGRATION.md` (fase Nest actual)
-3. Consultar `docs/ROADMAP.md` (serie/cartas/admin/expansión), `docs/CONVENTIONS.md` y `docs/REFERENCE-ADMIN.md` si aplica
-4. Identificar la fase y el módulo actual — no saltar pasos
+1. Read `AGENTS.md` and `docs/MIGRATION.md`
+2. If touching `apps/api`: read `docs/NEST-MIGRATION.md` (current Nest phase)
+3. Check `docs/ROADMAP.md` (serie/cards/admin/expansion), `docs/CONVENTIONS.md`, and `docs/REFERENCE-ADMIN.md` when applicable
+4. Identify the current phase and module — do not skip steps
 
 ## Stack
 
 - Monorepo pnpm 11.6 + Turbo, Node 24.16.0
 - `@logpose/web`: Next 16.2.4, Pages Router (`*.page.tsx`), Tailwind 4, **Radix UI Themes**, TanStack Query
-- `@logpose/api`: **NestJS 11** + `@orpc/nest` + `@jperezmart/nest-mongodb` (migración desde Express — `docs/NEST-MIGRATION.md`)
-- `@logpose/contracts`: oRPC + Zod — fuente de verdad de tipos
+- `@logpose/api`: **NestJS 11** + `@orpc/nest` + `@jperezmart/nest-mongodb` (migrating from Express — `docs/NEST-MIGRATION.md`)
+- `@logpose/contracts`: oRPC + Zod — single source of truth for types
 
-## Patrones obligatorios
+## Mandatory patterns
 
-- Server state → TanStack Query + cliente oRPC (no Context, no axios directo)
-- Context solo UI: modal, device, i18n
-- Contrato oRPC en `packages/contracts` **antes** de implementar handler o pantalla
-- API Nest: **un procedimiento = un `@Implement`**; Zod en contracts; `*Persistence` para Mongo; `parseOrThrow` en salidas críticas
-- Migrar un módulo por turno; verificar en pantalla tras cada paso
-- JSX legacy → TSX progresivo al migrar
+- Server state → TanStack Query + oRPC client (no Context, no direct axios)
+- Context for UI only: modal, device, i18n
+- oRPC contract in `packages/contracts` **before** implementing handler or screen
+- Nest API: **one procedure = one `@Implement`**; Zod in contracts; `*Persistence` for Mongo; `parseOrThrow` on critical outputs
+- Migrate one module per turn; verify on screen after each step
+- Legacy JSX → progressive TSX migration
 
-## Anti-patrones
+## Anti-patterns
 
-Ver `coding-principles.mdc` y `~/.cursor/rules/anti-patterns.mdc`. Resumen: helpers triviales, `useMemo`/`useCallback`/`memo` sin evidencia, archivos nuevos para un solo uso, auth-next, MUI, K8s.
+See `coding-principles.mdc` and `~/.cursor/rules/anti-patterns.mdc`. Summary: trivial helpers, `useMemo`/`useCallback`/`memo` without evidence, new files for single use, auth-next, MUI, K8s.
 
-## Flujo de trabajo en este repo
+## Workflow in this repo
 
-- **Migración Nest:** Fer aplica el código propuesto en chat; verificar curl/Swagger y, cuando aplique, pantalla en `apps/web`.
-- Fases pequeñas comprobables; parar y confirmar antes del siguiente sub-paso.
-- Código en chat por defecto; editar archivos solo con `do it` / `hazlo` o petición explícita (ver `edit-consent.mdc`).
-- Reglas de flujo: `human-workflow.mdc` · principios de código: `coding-principles.mdc`.
+- **Nest migration:** Fer applies code proposed in chat; verify curl/Swagger and, when applicable, screen in `apps/web`.
+- Small verifiable phases; stop and confirm before the next sub-step.
+- Code in chat by default; edit files only with `do it` / `hazlo` or explicit request (see `edit-consent.mdc`).
+- Workflow rules: `human-workflow.mdc` · coding principles: `coding-principles.mdc`.
 
-## Referencia
+## Reference
 
-- Replicar **estructura** de `admin` (monorepo, Nest, oRPC, Pages Router, turbo dev)
-- **No** replicar auth-next RBAC; LogPose usa rol `user`/`admin` simple
-- Código legacy en `One-piece-LogPose` y `api-onepiece` — solo migrar, no reescribir desde cero sin necesidad
-- **Visión ampliada** (cartas versionadas, economía, ranking): `docs/ROADMAP.md`
+- Replicate **structure** from `admin` (monorepo, Nest, oRPC, Pages Router, turbo dev)
+- **Do not** replicate auth-next RBAC; LogPose uses simple `user`/`admin` role
+- Legacy code in `One-piece-LogPose` and `api-onepiece` — migrate only, do not rewrite from scratch unnecessarily
+- **Expanded vision** (versioned cards, economy, ranking): `docs/ROADMAP.md`
 
-## Verificación
+## Verification
 
-Tras cada implementación indicar: `pnpm dev`, URL, resultado esperado en pantalla.
+After each implementation state: `pnpm dev`, URL, expected on-screen result.
 
-**Estado (jul 2026):** landing ✅ · auth ✅ · dashboard shell ✅ · **perfil 4.3 + 4.4 ✅** · **API Nest: health + auth + users ✅** (sin Mongoose) · **próximo: serie (Fase 6)**. Ver `docs/NEST-MIGRATION.md`.
+**Status (Jul 2026):** landing ✅ · auth ✅ · dashboard shell ✅ · **profile 4.3 + 4.4 ✅** · **Nest API: health + auth + users ✅** (no Mongoose) · **next: serie (Phase 6)**. See `docs/NEST-MIGRATION.md`.

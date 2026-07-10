@@ -1,31 +1,31 @@
 ---
-description: Commits y PRs — Conventional Commits, sin menciones a IA ni attribution de Cursor
+description: Commits and PRs — Conventional Commits, no AI mentions or Cursor attribution
 alwaysApply: true
 ---
 
-# Git — commits y PRs
+# Git — commits and PRs
 
-## Prohibido en commits y PRs
+## Forbidden in commits and PRs
 
-- `Co-authored-by: Cursor` o cualquier variante con `cursoragent@`
-- `Made-with: Cursor` u otros trailers de attribution
-- Menciones a AI, Cursor, Copilot, Claude, GPT, agent, assisted, generated
-- Usar `git commit --trailer` para attribution
+- `Co-authored-by: Cursor` or any variant with `cursoragent@`
+- `Made-with: Cursor` or other attribution trailers
+- Mentions of AI, Cursor, Copilot, Claude, GPT, agent, assisted, generated
+- Using `git commit --trailer` for attribution
 
-## Formato de mensaje (Conventional Commits)
+## Message format (Conventional Commits)
 
-Validado por **commitlint** en el hook `commit-msg`.
+Validated by **commitlint** in the `commit-msg` hook.
 
 ```
 <type>(<scope>): <subject>
 ```
 
 - **type:** `feat` | `fix` | `docs` | `refactor` | `chore` | `build` | `ci` | `test` | `perf` | `revert`
-- **scope (obligatorio):** `api` | `web` | `contracts` | `deps` | `ci` | `docs` | `root`
-- **subject:** imperativo, inglés, sin punto final, máx. 100 caracteres en la primera línea
-- **body (opcional):** el porqué, no el qué
+- **scope (required):** `api` | `web` | `contracts` | `deps` | `ci` | `docs` | `root`
+- **subject:** imperative, English, no trailing period, max 100 chars on first line
+- **body (optional):** the why, not the what
 
-### Ejemplos
+### Examples
 
 ```
 feat(api): migrate posts and comments oRPC handlers
@@ -34,15 +34,15 @@ feat(contracts): add auth oRPC contract and Zod schemas
 chore(deps): add commitlint for conventional commits
 ```
 
-Plantilla al commitear: `.gitmessage` (activada en `.vscode/settings.json`).
+Commit template: `.gitmessage` (enabled in `.vscode/settings.json`).
 
-## Si el entorno inyecta trailers
+## If the environment injects trailers
 
-1. El hook `commit-msg` **rechaza** el commit (no lo elimina en silencio)
-2. Usar `git commit --amend` solo tras quitar manualmente la línea del mensaje
+1. The `commit-msg` hook **rejects** the commit (does not silently remove them)
+2. Use `git commit --amend` only after manually removing the trailer line
 
 ## Commits
 
-- Fer commitea por defecto; el agente solo si lo pide explícitamente
-- Nunca `--no-verify` salvo petición explícita del usuario
-- Si commitlint falla: corregir el mensaje (tipo, scope, subject), no saltarse el hook
+- Fer commits by default; the agent only when explicitly asked
+- Never `--no-verify` unless the user explicitly requests it
+- If commitlint fails: fix the message (type, scope, subject), do not skip the hook

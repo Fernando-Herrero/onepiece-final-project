@@ -1,0 +1,36 @@
+---
+description: Forbidden anti-patterns in all code — trivial helpers, memoization without evidence, unnecessary abstractions
+alwaysApply: true
+---
+
+# Anti-patterns — NEVER
+
+## Trivial helpers and abstractions
+
+- Do not create functions, helpers, or utils for one-line logic.
+- Forbidden examples:
+  - `const hasItems = (items) => items.length > 0` → use `items.length > 0` inline
+  - `const isEmpty = (x) => !x` → use `!x` inline
+  - `const getLength = (arr) => arr.length` → use `arr.length` inline
+- Do not wrap `.length`, `!!`, boolean comparisons, or trivial `.map()` in named functions.
+
+## React / performance
+
+- No `useMemo` / `useCallback` / `React.memo` without concrete perf evidence.
+- No `useEffect` to derive state from props/state — derive inline in render.
+- No Context for server state — use TanStack Query when the project has it.
+
+## File structure
+
+- No new files (`hook`, `util`, `types`, `store`) for a single use.
+- No "just in case", "future-proof", or "more professional" abstractions.
+- No wrappers that only rename or forward props without logic.
+
+## Scope
+
+- No refactors, renames, or formatting in unrequested files.
+- No "while we're here" fixes outside explicit scope.
+
+## Default decision
+
+When two valid options exist, always choose **fewer files**, **fewer concepts**, and **fewer layers**.

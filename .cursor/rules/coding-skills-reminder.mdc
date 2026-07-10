@@ -1,0 +1,26 @@
+---
+description: Apply coding skills in every implementation — strict-scope, incremental, simple-code, declarative, no premature optimization
+alwaysApply: true
+---
+
+# Mandatory coding skills in implementation
+
+When writing, modifying, or proposing code, apply in this order:
+
+1. **strict-scope** — only what was asked; confirm before touching extra files
+2. **incremental-development** — one step → verify → next; dependencies before consumers
+3. **simple-code** — same value, less surface; inline before new file
+4. **declarative-abstractions** — `map`/`filter`/derive inline; no loops or `useEffect` to transform data
+5. **avoid-premature-optimization** — no `useMemo`/`useCallback`/`memo` without evidence
+
+## Mental checklist before delivering code
+
+- Can this be done inline without a new function/file?
+- Am I touching only files in scope?
+- Is there a `useEffect` that only transforms props/state? → derive inline
+- Am I creating a helper for `.length`, `!!`, or similar? → NO
+- Can the user verify this on screen after the step?
+
+## When proposing
+
+For non-trivial changes, briefly state: what it does, what it improves, why this approach (not the more "architected" one).

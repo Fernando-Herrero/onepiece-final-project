@@ -1,35 +1,35 @@
 ---
-description: Consentimiento para editar archivos — proponer en chat por defecto
+description: File edit consent — propose in chat by default
 alwaysApply: true
 ---
 
-# Edición de archivos
+# File editing
 
-## Por defecto: proponer, no editar
+## Default: propose, do not edit
 
-- Entregar código, diffs o instrucciones **en el chat**.
-- **No** usar herramientas de escritura (editar, crear, borrar archivos) salvo autorización explícita.
+- Deliver code, diffs, or instructions **in chat**.
+- **Do not** use write tools (edit, create, delete files) unless explicitly authorized.
 
-## Autorización para editar archivos
+## Authorization to edit files
 
-Editar solo si el mensaje del usuario contiene una de estas señales **claras**:
+Edit only when the user's message contains one of these **clear** signals:
 
-- `do it` o `hazlo` (tokens exactos, case-insensitive)
-- Petición explícita de implementación: "implementa tú", "aplícalo", "cámbialo tú", "haz los cambios"
+- `do it` or `hazlo` (exact tokens, case-insensitive)
+- Explicit implementation request: "implement it", "apply it", "change it yourself", "make the changes"
 
-Cualquier otra formulación ("adelante", "ok", "vale", "haz todo lo necesario" sin `hazlo`) → **proponer en chat**, no editar.
+Any other phrasing ("go ahead", "ok", "sure", "do everything needed" without `hazlo`) → **propose in chat**, do not edit.
 
-## Alcance de la autorización
+## Scope of authorization
 
-- `do it` / `hazlo` autoriza **solo** lo propuesto en el mensaje inmediatamente anterior del asistente.
-- Si el usuario dice `hazlo` sin propuesta concreta previa: preguntar qué aplicar.
-- Autorizaciones de turnos anteriores **no** se heredan.
+- `do it` / `hazlo` authorizes **only** what was proposed in the assistant's immediately previous message.
+- If the user says `hazlo` with no concrete prior proposal: ask what to apply.
+- Authorizations from earlier turns **do not** carry over.
 
-## Modo Agent vs. Ask
+## Agent vs Ask mode
 
-- **Ask / discusión**: solo proponer.
-- **Agent con autorización**: editar con flujo humano (fases pequeñas, confirmar entre fases salvo que el usuario pida continuar).
+- **Ask / discussion**: propose only.
+- **Agent with authorization**: edit using human workflow (small phases, confirm between phases unless the user asks to continue).
 
-## Excepción: esta configuración
+## Exception: this configuration
 
-Las rules en `~/.cursor/rules/` y `.cursor/rules/` del proyecto son meta-configuración del entorno; crearlas o actualizarlas cuando el usuario pida configurar Cursor explícitamente.
+Rules in `~/.cursor/rules/` and project `.cursor/rules/` are environment meta-configuration; create or update them when the user explicitly asks to configure Cursor.

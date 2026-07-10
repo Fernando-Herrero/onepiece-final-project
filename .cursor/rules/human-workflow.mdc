@@ -1,73 +1,73 @@
 ---
-description: Trabajar como una persona real — fases pequeñas, verificar en front, código en chat por defecto
+description: Work like a real developer — small phases, verify in UI, code in chat by default
 alwaysApply: true
 ---
 
-# Flujo humano (obligatorio)
+# Human workflow (mandatory)
 
-Trabajar como un desarrollador en el día a día, **no** como una máquina que vuelca todo de memoria.
+Work like a day-to-day developer, **not** like a machine dumping everything from memory.
 
-## Modo de entrega por defecto: código en el chat
+## Default delivery mode: code in chat
 
-- **Por defecto**: pasar el código necesario **aquí en el chat** para que el usuario lo aplique.
-- **Solo editar archivos** cuando el usuario lo pida de forma explícita (`do it`, `hazlo`, "implementa tú", "aplícalo", etc.).
-- Si implementas tú: aplicar las mismas reglas de fases pequeñas (no un volcado masivo).
+- **By default**: pass the needed code **here in chat** for the user to apply.
+- **Edit files only** when the user asks explicitly (`do it`, `hazlo`, "implement it", "apply it", etc.).
+- If you implement: use the same small-phase rules (no massive file dump).
 
-## Fases pequeñas con confirmación
+## Small phases with confirmation
 
-1. **Una fase = lo mínimo para comprobar algo** (un botón visible, un tipado mínimo, un happy path).
-2. **Verificar antes de seguir**: `pnpm type-check`, lint, o comprobar en `apps/web` cuando aplique.
-3. **Parar y esperar confirmación** del usuario antes de la siguiente fase.
-4. Indicar siempre: qué hace esta fase, qué comprobar, cuál sería el siguiente paso.
+1. **One phase = the minimum to verify something** (one visible button, minimal typing, one happy path).
+2. **Verify before continuing**: `pnpm type-check`, lint, or check in `apps/web` when applicable.
+3. **Stop and wait** for user confirmation before the next phase.
+4. Always state: what this phase does, how to verify it, what the next step would be.
 
-### Ejemplo (PostCard en community)
+### Example (PostCard in community)
 
-| Fase | Qué entregar | Qué comprobar |
-|------|--------------|---------------|
-| 1 | JSX mínimo del PostCard en el componente existente | Se ve en pantalla (`/dashboard/community`) |
-| 2 | Handler stub o acción mínima | Click hace algo visible |
-| 3 | Tipado/contrato solo de lo que ya se usa | `pnpm type-check` sin errores nuevos |
-| 4 | Integración real (oRPC, datos) | Flujo completo en front |
+| Phase | Deliver | Verify |
+|-------|---------|--------|
+| 1 | Minimal PostCard JSX in the existing component | Visible on screen (`/dashboard/community`) |
+| 2 | Stub handler or minimal action | Click does something visible |
+| 3 | Typing/contract only for what is already used | `pnpm type-check` with no new errors |
+| 4 | Real integration (oRPC, data) | Full flow in front |
 
-**No** entregar en fase 1 un `*.types.ts` con todos los tipos del feature final.
+**Do not** deliver a `*.types.ts` with all final feature types in phase 1.
 
-## Código vivo, no código muerto
+## Live code, not dead code
 
-- Tipos, interfaces, mocks y archivos auxiliares **solo cuando la fase actual los necesite**.
-- No anticipar fases futuras: sin stubs, sin `TODO` masivos, sin carpetas vacías "para después".
-- Contrato oRPC en `packages/contracts` **antes** de handler o pantalla — pero solo el schema mínimo de la fase actual.
-- Si el back es inevitable en algún paso, aislarlo en la fase más pequeña posible y volver al front en cuanto se pueda comprobar algo visual.
+- Types, interfaces, mocks, and helper files **only when the current phase needs them**.
+- Do not anticipate future phases: no stubs, no massive `TODO`s, no empty folders "for later".
+- oRPC contract in `packages/contracts` **before** handler or screen — but only the minimal schema for the current phase.
+- If back end is unavoidable in a step, isolate it in the smallest possible phase and return to front as soon as something visual can be verified.
 
-## Comunicación en cada fase
+## Communication in each phase
 
-Incluir brevemente:
+Briefly include:
 
-1. **Qué hace** el cambio (comportamiento, UI).
-2. **Dónde pegarlo** (archivo y zona, o diff claro).
-3. **Cómo comprobarlo** (`pnpm dev`, URL, acción en UI).
-4. **Siguiente fase** (solo como propuesta; no ejecutarla hasta confirmación).
+1. **What** the change does (behavior, UI).
+2. **Where** to put it (file and area, or clear diff).
+3. **How to verify** (`pnpm dev`, URL, UI action).
+4. **Next phase** (proposal only; do not run it until confirmed).
 
-## Cuándo saltar fases
+## When to skip phases
 
-Solo si el usuario pide ir más rápido o el cambio es trivial (typo, rename, un import).
+Only if the user asks to go faster or the change is trivial (typo, rename, one import).
 
-## Migración Nest (`apps/api`)
+## Nest migration (`apps/api`)
 
-Flujo acordado (jul 2026):
+Agreed flow (Jul 2026):
 
-1. **Fer implementa** el código que el asistente pasa en el chat (no volcado masivo de archivos por el agente salvo `hazlo` explícito).
-2. **Un sub-paso** = un criterio de verificación (health, login, un endpoint users, etc.).
-3. **Back:** `pnpm dev`, curl o Swagger (`/api/orpc`).
-4. **Front:** cuando el módulo migrado lo permita — p. ej. perfil tras `auth` + `users` + `serie`.
-5. **Esperar confirmación** antes de la siguiente fase de `docs/NEST-MIGRATION.md`.
+1. **Fer implements** code the assistant passes in chat (no massive agent file dump unless explicit `hazlo`).
+2. **One sub-step** = one verification criterion (health, login, one users endpoint, etc.).
+3. **Back:** `pnpm dev`, curl or Swagger (`/api/orpc`).
+4. **Front:** when the migrated module allows it — e.g. profile after `auth` + `users` + `serie`.
+5. **Wait for confirmation** before the next phase in `docs/NEST-MIGRATION.md`.
 
-Durante Fases 1–3 Nest el perfil puede no cargar; es esperado hasta migrar auth/users.
+During Nest Phases 1–3 the profile may not load; expected until auth/users are migrated.
 
-## Relación con otras reglas
+## Related rules
 
-- `coding-principles.mdc`: cómo escribir cada línea.
-- `edit-consent.mdc`: cuándo tocar archivos vs. proponer en chat.
-- `logpose-project.mdc`: stack, fases de migración, verificación.
-- `docs/NEST-MIGRATION.md`: fases Nest API.
-- `git-commits.mdc`: formato de commits y PRs.
-- Skill `incremental-development`: detalle ampliado y tablas de dependencias.
+- `coding-principles.mdc`: how to write each line.
+- `edit-consent.mdc`: when to touch files vs propose in chat.
+- `logpose-project.mdc`: stack, migration phases, verification.
+- `docs/NEST-MIGRATION.md`: Nest API phases.
+- `git-commits.mdc`: commit and PR format.
+- Skill `incremental-development`: expanded detail and dependency tables.

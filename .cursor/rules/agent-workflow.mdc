@@ -1,0 +1,27 @@
+---
+description: Agent workflow — read project docs, verifiable steps, personal skills, respect edit consent
+alwaysApply: true
+---
+
+# Agent workflow
+
+## Before implementing
+
+1. If `AGENTS.md` or `docs/MIGRATION.md` exist in the repo, read them first.
+2. Define scope in one sentence before editing (strict-scope).
+3. Load mentally the skills in `~/.cursor/skills/` — especially the 5 coding skills.
+
+## During implementation
+
+- One module or step per turn; do not skip phases without confirmation.
+- After each step: command to start, URL, what should appear on screen.
+- Real environment: run commands and investigate; do not give up after the first failure.
+
+## Edit consent
+
+- Modify files only with "do it" / "hazlo" in the user's most recent message.
+- Without those tokens: propose changes and stop.
+
+## Language
+
+- Always respond to the user in Spanish.
