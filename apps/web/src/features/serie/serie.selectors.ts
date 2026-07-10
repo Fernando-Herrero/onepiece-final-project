@@ -1,8 +1,5 @@
-export type SerieProgress = {
-  saga: number;
-  arc: number;
-  episode: number;
-};
+import { SERIE_TOTAL_XP } from '@/features/serie/serie.constants';
+import type { SerieProgress } from '@/features/serie/serie.types';
 
 export function isEpisodeWatched(
   episodeId: number,
@@ -21,4 +18,8 @@ export function isEpisodeWatched(
       arcId === progress.arc &&
       episodeId <= progress.episode)
   );
+}
+
+export function getSerieXpPercent(experience: number) {
+  return Math.min(100, Math.round((experience / SERIE_TOTAL_XP) * 100));
 }

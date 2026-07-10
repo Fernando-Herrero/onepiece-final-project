@@ -11,30 +11,17 @@ import {
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
-type EpisodeAchievements = {
-  characters: number[];
-  items: number[];
-  fruits: number[];
-  swords: number[];
-  boats: number[];
-};
+import { SERIE_ACHIEVEMENT_TYPES } from '@/features/serie/serie.constants';
+import type { SerieEpisodeAchievements } from '@/features/serie/serie.types';
 
 type SerieEpisodeCardProps = {
   episodeId: number;
   name: string;
   description: string;
   experience: number;
-  achievements: EpisodeAchievements;
+  achievements: SerieEpisodeAchievements;
   watched: boolean;
 };
-
-const ACHIEVEMENT_TYPES = [
-  { key: 'characters', labelKey: 'profile.collection_characters' },
-  { key: 'items', labelKey: 'profile.collection_items' },
-  { key: 'fruits', labelKey: 'profile.collection_fruits' },
-  { key: 'swords', labelKey: 'profile.collection_swords' },
-  { key: 'boats', labelKey: 'profile.collection_boats' },
-] as const;
 
 export function SerieEpisodeCard({
   episodeId,
@@ -122,7 +109,7 @@ export function SerieEpisodeCard({
                     </Text>
 
                     <Flex direction="column" gap="1">
-                      {ACHIEVEMENT_TYPES.map(({ key, labelKey }) => {
+                      {SERIE_ACHIEVEMENT_TYPES.map(({ key, labelKey }) => {
                         const ids = achievements[key];
                         if (!ids.length) {
                           return null;

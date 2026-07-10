@@ -1,11 +1,11 @@
 import { Card, Flex, Heading, Progress, Text } from '@radix-ui/themes';
-import { useQuery } from '@tanstack/react-query';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
-import { SERIE_TOTAL_XP } from '@/features/profile/profile.constants';
 import type { ProfileUser } from '@/features/profile/profile.types';
-import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
+import { useSerieArcs, useSerieSagas } from '@/features/serie/api/use-serie';
+import { SERIE_TOTAL_XP } from '@/features/serie/serie.constants';
+import { getSerieXpPercent } from '@/features/serie/serie.selectors';
 
 type ProfileProgressCardProps = {
   user: ProfileUser;
@@ -20,21 +20,12 @@ export function ProfileProgressCard({
   const { saga, arc, episode } = user.serieProgress;
   const hasSerieProgress = saga > 0 && arc > 0 && episode > 0;
 
-  const sagasQuery = useQuery({
-    ...allQueriesOptions.serie.sagas(),
-    enabled: hasSerieProgress,
-  });
-  const arcsQuery = useQuery({
-    ...allQueriesOptions.serie.arcsBySaga(saga),
-    enabled: hasSerieProgress,
-  });
+  const sagasQuery = useSerieSagas({ enabled: hasSerieProgress });
+  const arcsQuery = useSerieArcs(saga, { enabled: hasSerieProgress });
 
   const sagaName = sagasQuery.data?.sagas.find(item => item.id === saga)?.name;
   const arcName = arcsQuery.data?.arcs.find(item => item.id === arc)?.name;
-  const xpPercent = Math.min(
-    100,
-    Math.round((user.experience / SERIE_TOTAL_XP) * 100),
-  );
+  const xpPercent = getSerieXpPercent(user.experience);
 
   const progressItems = hasSerieProgress
     ? [

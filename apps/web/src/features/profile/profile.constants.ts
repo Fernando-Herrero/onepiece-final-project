@@ -29,9 +29,6 @@ export function resolveProfileAvatarSrc(avatar?: string): string {
   return DEFAULT_AVATAR_SRC;
 }
 
-/** Suma XP de `apps/api/src/data/serie/episodes.json` (semilla actual). */
-export const SERIE_TOTAL_XP = 8900;
-
 export const PROFILE_UNLOCKED_CARD_KEYS = [
   'characters',
   'items',

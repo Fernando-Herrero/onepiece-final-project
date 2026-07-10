@@ -18,8 +18,8 @@ import { useProfileRanking } from '@/features/profile/api/use-profile';
 import {
   DEFAULT_AVATAR_SRC,
   resolveProfileAvatarSrc,
-  SERIE_TOTAL_XP,
 } from '@/features/profile/profile.constants';
+import { getSerieXpPercent } from '@/features/serie/serie.selectors';
 
 type ProfileRankingEntry = z.infer<typeof userRankingEntrySchema>;
 
@@ -51,10 +51,7 @@ function ProfileRankingRow({
   const resolvedAvatar = resolveProfileAvatarSrc(entry.avatar);
   const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
   const name = rankingDisplayName(entry);
-  const xpPercent = Math.min(
-    100,
-    Math.round((entry.experience / SERIE_TOTAL_XP) * 100),
-  );
+  const xpPercent = getSerieXpPercent(entry.experience);
 
   return (
     <Link

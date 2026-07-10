@@ -1,26 +1,14 @@
 import { Badge, Box, Flex, Spinner, Text } from '@radix-ui/themes';
-import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'next-i18next/pages';
 
-import { isEpisodeWatched } from '@/features/serie/serie-progress';
+import { useSerieEpisodes } from '@/features/serie/api/use-serie';
+import { isEpisodeWatched } from '@/features/serie/serie.selectors';
+import type { SerieArc, SerieProgress } from '@/features/serie/serie.types';
 import { SerieAccordion } from '@/features/serie/ui/serie-accordion.component';
 import { SerieEpisodeCard } from '@/features/serie/ui/serie-episode-card.component';
-import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
-
-type SerieProgress = {
-  saga: number;
-  arc: number;
-  episode: number;
-};
 
 type SerieArcBlockProps = {
-  arc: {
-    id: number;
-    name: string;
-    description: string;
-    totalEpisodes: number;
-    isFiller: boolean;
-  };
+  arc: SerieArc;
   sagaId: number;
   isOpen: boolean;
   onToggle: () => void;
@@ -35,10 +23,7 @@ export function SerieArcBlock({
   progress,
 }: SerieArcBlockProps) {
   const { t } = useTranslation();
-  const episodesQuery = useQuery({
-    ...allQueriesOptions.serie.episodesByArc(arc.id),
-    enabled: isOpen,
-  });
+  const episodesQuery = useSerieEpisodes(arc.id, { enabled: isOpen });
 
   return (
     <SerieAccordion

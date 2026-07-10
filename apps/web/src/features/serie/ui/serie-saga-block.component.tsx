@@ -1,25 +1,13 @@
 import { Flex, Spinner, Text } from '@radix-ui/themes';
-import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'next-i18next/pages';
 
+import { useSerieArcs } from '@/features/serie/api/use-serie';
+import type { SerieProgress, SerieSaga } from '@/features/serie/serie.types';
 import { SerieAccordion } from '@/features/serie/ui/serie-accordion.component';
 import { SerieArcBlock } from '@/features/serie/ui/serie-arc-block.component';
-import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
-
-type SerieProgress = {
-  saga: number;
-  arc: number;
-  episode: number;
-};
 
 type SerieSagaBlockProps = {
-  saga: {
-    id: number;
-    name: string;
-    titleJa: string;
-    totalEpisodes: number;
-    arcNames: string[];
-  };
+  saga: SerieSaga;
   isOpen: boolean;
   onToggle: () => void;
   openArcIds: Record<number, boolean>;
@@ -36,10 +24,7 @@ export function SerieSagaBlock({
   progress,
 }: SerieSagaBlockProps) {
   const { t } = useTranslation();
-  const arcsQuery = useQuery({
-    ...allQueriesOptions.serie.arcsBySaga(saga.id),
-    enabled: isOpen,
-  });
+  const arcsQuery = useSerieArcs(saga.id, { enabled: isOpen });
 
   return (
     <SerieAccordion
