@@ -1,15 +1,23 @@
-import { SESSION_COOKIE_NAME } from '@logpose/contracts/features/auth/constants';
+import { userPublicSchema } from '@logpose/contracts/common/user.schemas';
+import { dehydrate, QueryClient } from '@tanstack/react-query';
 import type { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
+import type * as z from 'zod/v4';
 
+import { authKeys } from '@/features/auth/api/auth.keys';
+import { getAuthenticatedHomePath } from '@/features/auth/auth-routes';
 import { getDefaultI18nProps } from '@/integrations/i18n/server';
 
 const API_INTERNAL_URL =
   process.env.API_INTERNAL_URL ?? 'http://localhost:4000';
 
-async function fetchSessionUser(context: GetServerSidePropsContext) {
+type SessionUser = z.infer<typeof userPublicSchema>;
+
+async function fetchSessionUser(
+  context: GetServerSidePropsContext,
+): Promise<SessionUser | null> {
   const cookie = context.req.headers.cookie;
 
-  if (!cookie?.includes(SESSION_COOKIE_NAME)) {
+  if (!cookie) {
     return null;
   }
 
@@ -22,15 +30,33 @@ async function fetchSessionUser(context: GetServerSidePropsContext) {
       return null;
     }
 
-    return response.json();
+    const parsed = userPublicSchema.safeParse(await response.json());
+
+    return parsed.success ? parsed.data : null;
   } catch {
     return null;
   }
 }
 
-export async function getDashboardPageProps(
+async function buildAuthenticatedPageProps(
   context: GetServerSidePropsContext,
-): Promise<GetServerSidePropsResult<Record<string, unknown>>> {
+  user: SessionUser,
+) {
+  const queryClient = new QueryClient();
+  queryClient.setQueryData(authKeys.me(), user);
+  return {
+    ...(await getDefaultI18nProps(context)),
+    dehydratedState: dehydrate(queryClient),
+  };
+}
+
+type SessionRedirect = {
+  redirect: { destination: string; permanent: false };
+};
+
+async function requireSessionUser(
+  context: GetServerSidePropsContext,
+): Promise<SessionUser | SessionRedirect> {
   const user = await fetchSessionUser(context);
 
   if (!user) {
@@ -42,8 +68,20 @@ export async function getDashboardPageProps(
     };
   }
 
+  return user;
+}
+
+export async function getDashboardPageProps(
+  context: GetServerSidePropsContext,
+): Promise<GetServerSidePropsResult<Record<string, unknown>>> {
+  const result = await requireSessionUser(context);
+
+  if ('redirect' in result) {
+    return { redirect: result.redirect };
+  }
+
   return {
-    props: await getDefaultI18nProps(context),
+    props: await buildAuthenticatedPageProps(context, result),
   };
 }
 
@@ -55,7 +93,7 @@ export async function getGuestAuthPageProps(
   if (user) {
     return {
       redirect: {
-        destination: '/dashboard/profile',
+        destination: getAuthenticatedHomePath(user),
         permanent: false,
       },
     };
@@ -63,5 +101,28 @@ export async function getGuestAuthPageProps(
 
   return {
     props: await getDefaultI18nProps(context),
+  };
+}
+
+export async function getAdminDashboardPageProps(
+  context: GetServerSidePropsContext,
+): Promise<GetServerSidePropsResult<Record<string, unknown>>> {
+  const result = await requireSessionUser(context);
+
+  if ('redirect' in result) {
+    return { redirect: result.redirect };
+  }
+
+  if (result.role !== 'admin') {
+    return {
+      redirect: {
+        destination: '/dashboard/profile',
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: await buildAuthenticatedPageProps(context, result),
   };
 }

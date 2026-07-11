@@ -1,10 +1,10 @@
-import { createFormHook } from '@tanstack/react-form';
+import { createFormHook, createFormHookContexts } from '@tanstack/react-form';
 
-import {
-  fieldContext,
-  formContext,
-} from '@/features/auth/form/auth-form.context';
 import { Field } from '@/features/auth/form/fields/field';
+
+const { fieldContext, formContext, useFieldContext } = createFormHookContexts();
+
+export { useFieldContext };
 
 export const { useAppForm } = createFormHook({
   fieldContext,

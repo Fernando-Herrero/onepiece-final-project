@@ -15,6 +15,7 @@
     "confirm_password": "Confirmar contraseña",
     "submit_login": "Entrar",
     "submit_login_pending": "Entrando…",
+    "submit_redirect_pending": "Entrando al dashboard…",
     "submit_register": "Crear cuenta",
     "submit_register_pending": "Registrando…",
     "not_registered": "¿Aún no estás registrado, nakama?",
@@ -33,7 +34,8 @@
       "ACCOUNT_INACTIVE": "Tu cuenta no está activa",
       "USER_NOT_FOUND": "Usuario no encontrado",
       "INVALID_CURRENT_PASSWORD": "La contraseña actual no es correcta",
-      "DUPLICATE_ACCOUNT": "El correo o el username ya están registrados"
+      "DUPLICATE_ACCOUNT": "El correo o el username ya están registrados",
+      "ALREADY_AUTHENTICATED": "Ya tienes una sesión activa. Cierra sesión antes de registrarte"
     }
   },
   "avatar": {
@@ -116,6 +118,7 @@
       "search": "Buscar",
       "notifications": "Notificaciones",
       "settings": "Ajustes",
+      "admin": "Admin",
       "user_profile": "Perfil de usuario",
       "expand": "Expandir menú",
       "collapse": "Contraer menú"

@@ -1,14 +1,19 @@
+import { userPublicSchema } from '@logpose/contracts/common/user.schemas';
 import { type InferClientErrorUnion, isDefinedError } from '@orpc/client';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import type { TFunction } from 'i18next';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import type * as z from 'zod/v4';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
+import { getAuthenticatedHomePath } from '@/features/auth/auth-routes';
 import type { RegisterFormValues } from '@/features/auth/register-form.schema';
 import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
 type AuthClientError = InferClientErrorUnion<typeof client.auth>;
+type AuthUser = z.infer<typeof userPublicSchema>;
 
 function getAuthErrorMessage(error: unknown, t: TFunction): string {
   const typedError = error as AuthClientError;
@@ -17,6 +22,8 @@ function getAuthErrorMessage(error: unknown, t: TFunction): string {
     switch (typedError.code) {
       case 'DUPLICATE_ACCOUNT':
         return t('auth.errors.DUPLICATE_ACCOUNT');
+      case 'ALREADY_AUTHENTICATED':
+        return t('auth.errors.ALREADY_AUTHENTICATED');
       case 'INVALID_CREDENTIALS':
         return t('auth.errors.INVALID_CREDENTIALS');
       case 'UNAUTHORIZED':
@@ -34,39 +41,74 @@ function getAuthErrorMessage(error: unknown, t: TFunction): string {
 }
 
 export function useMeQuery() {
-  return useQuery(allQueriesOptions.auth.me());
-}
-
-function useAuthSuccess() {
-  const queryClient = useQueryClient();
   const router = useRouter();
 
-  return (data: { user: unknown }) => {
+  return useQuery({
+    ...allQueriesOptions.auth.me(),
+    enabled: router.pathname.startsWith('/dashboard'),
+  });
+}
+
+function useAuthSubmitFlow() {
+  const queryClient = useQueryClient();
+  const router = useRouter();
+  const [isRedirecting, setIsRedirecting] = useState(false);
+
+  useEffect(() => {
+    if (!isRedirecting) {
+      return;
+    }
+
+    // `mutation.isPending` vuelve a `false` en cuanto responde el login/register,
+    // pero el `router.push()` a /dashboard tarda un poco más (SSR de la página
+    // destino) y el botón parecía "colgado" en ese hueco. Mantenemos el estado
+    // de carga hasta que la navegación termine — incluyendo `routeChangeError`,
+    // por si se aborta a medio camino (p. ej. el usuario navega a otro sitio o
+    // el SSR de destino falla), para no dejar el botón en pending para siempre.
+    const finish = () => setIsRedirecting(false);
+
+    router.events.on('routeChangeComplete', finish);
+    router.events.on('routeChangeError', finish);
+
+    return () => {
+      router.events.off('routeChangeComplete', finish);
+      router.events.off('routeChangeError', finish);
+    };
+  }, [isRedirecting, router.events]);
+
+  const onSuccess = (data: { user: AuthUser }) => {
     queryClient.setQueryData(authKeys.me(), data.user);
-    void router.push('/dashboard/profile');
+    setIsRedirecting(true);
+    void router.push(getAuthenticatedHomePath(data.user));
   };
+
+  return { onSuccess, isRedirecting };
 }
 
 export function useLoginMutation() {
-  const onSuccess = useAuthSuccess();
+  const { onSuccess, isRedirecting } = useAuthSubmitFlow();
 
-  return useMutation({
+  const mutation = useMutation({
     mutationFn: (input: { email: string; password: string }) =>
       client.auth.login(input),
     onSuccess,
   });
+
+  return { ...mutation, isRedirecting };
 }
 
 export function useRegisterMutation() {
-  const onSuccess = useAuthSuccess();
+  const { onSuccess, isRedirecting } = useAuthSubmitFlow();
 
-  return useMutation({
+  const mutation = useMutation({
     mutationFn: (input: RegisterFormValues) => {
       const { confirmPassword: _confirmPassword, ...payload } = input;
       return client.auth.register(payload);
     },
     onSuccess,
   });
+
+  return { ...mutation, isRedirecting };
 }
 
 export function useLogoutMutation() {
@@ -75,9 +117,10 @@ export function useLogoutMutation() {
 
   return useMutation({
     mutationFn: () => client.auth.logout(),
-    onSettled: () => {
+    onSettled: async () => {
+      await queryClient.cancelQueries({ queryKey: authKeys.all });
+      await router.push('/login');
       queryClient.removeQueries({ queryKey: authKeys.all });
-      void router.push('/login');
     },
   });
 }
@@ -113,5 +156,3 @@ export function useAuthSession() {
     error: meQuery.isError ? meQuery.error : null,
   };
 }
-
-export { isSessionInvalidError };

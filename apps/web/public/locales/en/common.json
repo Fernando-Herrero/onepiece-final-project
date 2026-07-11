@@ -15,6 +15,7 @@
     "confirm_password": "Confirm password",
     "submit_login": "Sign in",
     "submit_login_pending": "Signing in…",
+    "submit_redirect_pending": "Opening dashboard…",
     "submit_register": "Create account",
     "submit_register_pending": "Signing up…",
     "not_registered": "Not registered yet?",
@@ -33,7 +34,8 @@
       "ACCOUNT_INACTIVE": "Your account is not active",
       "USER_NOT_FOUND": "User not found",
       "INVALID_CURRENT_PASSWORD": "Current password is incorrect",
-      "DUPLICATE_ACCOUNT": "Email or username is already registered"
+      "DUPLICATE_ACCOUNT": "Email or username is already registered",
+      "ALREADY_AUTHENTICATED": "You are already signed in. Log out before registering"
     }
   },
   "avatar": {
@@ -116,6 +118,7 @@
       "search": "Search",
       "notifications": "Notifications",
       "settings": "Settings",
+      "admin": "Admin",
       "user_profile": "User profile",
       "expand": "Expand menu",
       "collapse": "Collapse menu"

@@ -12,7 +12,7 @@ type AuthFormShellProps = {
   footerText: string;
   footerLinkText: string;
   footerLinkHref: string;
-  asCard?: boolean;
+  errorMessage?: string | null;
   children: ReactNode;
 };
 
@@ -23,13 +23,17 @@ export function AuthFormShell({
   footerText,
   footerLinkText,
   footerLinkHref,
-  asCard = false,
+  errorMessage = null,
   children,
 }: AuthFormShellProps) {
-  const className = `${authFormCardClassName} ${maxWidthClass}`;
-
-  const content = (
-    <>
+  return (
+    <form
+      className={`${authFormCardClassName} ${maxWidthClass}`}
+      onSubmit={event => {
+        event.preventDefault();
+        onSubmit();
+      }}
+    >
       <Heading
         as="h1"
         size="5"
@@ -41,6 +45,12 @@ export function AuthFormShell({
 
       {children}
 
+      {errorMessage ? (
+        <Text role="alert" size="2" align="center" className="text-red-400">
+          {errorMessage}
+        </Text>
+      ) : null}
+
       <Text as="p" size="2" align="center" className="text-[#f4ede1]/75">
         {footerText}{' '}
         <RadixLink
@@ -50,22 +60,6 @@ export function AuthFormShell({
           <Link href={footerLinkHref}>{footerLinkText}</Link>
         </RadixLink>
       </Text>
-    </>
-  );
-
-  if (asCard) {
-    return <div className={className}>{content}</div>;
-  }
-
-  return (
-    <form
-      className={className}
-      onSubmit={event => {
-        event.preventDefault();
-        onSubmit();
-      }}
-    >
-      {content}
     </form>
   );
 }

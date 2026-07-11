@@ -15,6 +15,7 @@
     "confirm_password": "パスワード確認",
     "submit_login": "ログイン",
     "submit_login_pending": "ログイン中…",
+    "submit_redirect_pending": "ダッシュボードへ移動中…",
     "submit_register": "アカウント作成",
     "submit_register_pending": "登録中…",
     "not_registered": "まだ登録していない、仲間?",
@@ -33,7 +34,8 @@
       "ACCOUNT_INACTIVE": "アカウントが有効ではありません",
       "USER_NOT_FOUND": "ユーザーが見つかりません",
       "INVALID_CURRENT_PASSWORD": "現在のパスワードが正しくありません",
-      "DUPLICATE_ACCOUNT": "メールまたはユーザー名は既に登録されています"
+      "DUPLICATE_ACCOUNT": "メールまたはユーザー名は既に登録されています",
+      "ALREADY_AUTHENTICATED": "既にログインしています。登録する前にログアウトしてください"
     }
   },
   "avatar": {
@@ -116,6 +118,7 @@
       "search": "検索",
       "notifications": "通知",
       "settings": "設定",
+      "admin": "管理者",
       "user_profile": "ユーザープロフィール",
       "expand": "メニューを展開",
       "collapse": "メニューを折りたたむ"

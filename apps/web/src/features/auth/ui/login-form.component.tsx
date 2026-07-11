@@ -1,12 +1,12 @@
 import { loginSchema } from '@logpose/contracts/features/auth/schemas';
 import { useTranslation } from 'next-i18next/pages';
-import { toast } from 'sonner';
+import { useState } from 'react';
 
 import {
   getAuthErrorMessage,
   useLoginMutation,
 } from '@/features/auth/api/use-auth';
-import { useAppForm } from '@/features/auth/form/use-auth-form';
+import { useAppForm } from '@/features/auth/form/auth-form';
 import {
   AuthFormShell,
   AuthSubmitButton,
@@ -15,6 +15,8 @@ import {
 export function LoginFormComponent() {
   const { t } = useTranslation();
   const loginMutation = useLoginMutation();
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const isBusy = loginMutation.isPending || loginMutation.isRedirecting;
 
   const form = useAppForm({
     defaultValues: {
@@ -25,20 +27,23 @@ export function LoginFormComponent() {
       onChange: loginSchema,
     },
     onSubmit: async ({ value }) => {
+      setSubmitError(null);
+
       try {
         await loginMutation.mutateAsync(value);
       } catch (error) {
-        toast.error(getAuthErrorMessage(error, t));
+        setSubmitError(getAuthErrorMessage(error, t));
       }
     },
     onSubmitInvalid: () => {
-      toast.error(t('auth.form_invalid'));
+      setSubmitError(t('auth.form_invalid'));
     },
   });
 
   return (
     <AuthFormShell
       title={t('auth.login_title')}
+      errorMessage={submitError}
       onSubmit={() => void form.handleSubmit()}
       footerText={t('auth.not_registered')}
       footerLinkText={t('auth.register_link')}
@@ -73,9 +78,13 @@ export function LoginFormComponent() {
         {([isSubmitting, canSubmit]) => (
           <AuthSubmitButton
             label={t('auth.submit_login')}
-            pendingLabel={t('auth.submit_login_pending')}
-            pending={isSubmitting || loginMutation.isPending}
-            disabled={!canSubmit || isSubmitting || loginMutation.isPending}
+            pendingLabel={
+              loginMutation.isRedirecting
+                ? t('auth.submit_redirect_pending')
+                : t('auth.submit_login_pending')
+            }
+            pending={isSubmitting || isBusy}
+            disabled={!canSubmit || isSubmitting || isBusy}
           />
         )}
       </form.Subscribe>

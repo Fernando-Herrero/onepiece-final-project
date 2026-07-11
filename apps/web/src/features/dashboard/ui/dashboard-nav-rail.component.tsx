@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
 import { Icon } from '@/components/icons/icon';
+import { useAuthSession } from '@/features/auth/api/use-auth';
 import {
-  DASHBOARD_MAIN_NAV_ITEMS,
   DASHBOARD_SETTINGS_NAV_ITEM,
   type DashboardNavItem,
+  getDashboardNavItems,
 } from '@/features/dashboard/dashboard-navigation';
 
 type DashboardNavRailProps = {
@@ -19,6 +20,8 @@ export function DashboardNavRail({
   onToggleExpanded,
 }: DashboardNavRailProps) {
   const { t } = useTranslation();
+  const { isAdmin } = useAuthSession();
+  const navItems = getDashboardNavItems(isAdmin);
 
   return (
     <aside className="flex h-full w-14 shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] text-[#f4ede1]">
@@ -36,7 +39,7 @@ export function DashboardNavRail({
       </Flex>
 
       <nav className="flex flex-1 flex-col items-center gap-2 px-2 py-6">
-        {DASHBOARD_MAIN_NAV_ITEMS.map(item => (
+        {navItems.map(item => (
           <NavRailLink
             key={item.id}
             item={item}

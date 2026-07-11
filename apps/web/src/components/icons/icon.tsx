@@ -8,6 +8,7 @@ import {
   ChatsCircleIcon,
   GearSixIcon,
   MagnifyingGlassIcon,
+  ShieldIcon,
   TelevisionIcon,
   UserIcon,
 } from '@phosphor-icons/react';
@@ -25,9 +26,17 @@ export const Icon = {
   Search: (p: IconProps) => <MagnifyingGlassIcon size={18} {...p} />,
   Bell: (p: IconProps) => <BellIcon size={18} {...p} />,
   Settings: (p: IconProps) => <GearSixIcon size={18} {...p} />,
+  Admin: (p: IconProps) => <ShieldIcon size={18} {...p} />,
 } as const;
 
 export type DashboardNavIcon = keyof Pick<
   typeof Icon,
-  'User' | 'Community' | 'Serie' | 'Cards' | 'Search' | 'Bell' | 'Settings'
+  | 'User'
+  | 'Community'
+  | 'Serie'
+  | 'Cards'
+  | 'Search'
+  | 'Bell'
+  | 'Settings'
+  | 'Admin'
 >;

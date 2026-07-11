@@ -34,18 +34,16 @@ export function PageError({
     >
       <Callout.Root color="red" variant="soft" className="max-w-md text-left">
         <Callout.Icon>⚠️</Callout.Icon>
-        <Callout.Text>
-          <div>
-            <Heading as="h2" size="4" mb={message ? '2' : '0'}>
-              {title}
-            </Heading>
-            {message ? (
-              <Text as="div" size="2" color="gray">
-                {message}
-              </Text>
-            ) : null}
-          </div>
-        </Callout.Text>
+        <Flex direction="column" gap="2" className="flex-1">
+          <Heading as="h2" size="4">
+            {title}
+          </Heading>
+          {message ? (
+            <Text as="p" size="2" color="gray">
+              {message}
+            </Text>
+          ) : null}
+        </Flex>
       </Callout.Root>
       {onRetry ? (
         <Button type="button" color="red" onClick={onRetry}>
