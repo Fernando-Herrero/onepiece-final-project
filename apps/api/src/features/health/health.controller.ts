@@ -5,8 +5,10 @@ import { Implement, implement } from '@orpc/nest';
 import { throwContractOutputInvalid } from '../../integrations/orpc/contract-output-invalid.js';
 import { contract } from '../../integrations/orpc/orpc.contract.js';
 import { parseOrThrow } from '../../integrations/orpc/parse-or-throw.js';
+import { Public } from '../auth/public.decorator.js';
 
 @Controller()
+@Public()
 export class HealthController {
   @Implement(contract.health.check)
   check() {

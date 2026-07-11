@@ -69,9 +69,11 @@ export class AuthService {
       following: [],
     });
 
+    const session = { user: serializeUser(newUser) };
+
     setSessionCookie(res, this.authSession.signToken(newUser._id.toString()));
 
-    return { user: serializeUser(newUser) };
+    return session;
   }
 
   async login(input: { email: string; password: string }, res: Response) {

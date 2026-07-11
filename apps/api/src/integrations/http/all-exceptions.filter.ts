@@ -7,6 +7,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { ORPCError } from '@orpc/server';
 import type { Request, Response } from 'express';
 
 import type { ServerEnv } from '../env/server.js';
@@ -23,12 +24,24 @@ export class AllExceptionsFilter implements ExceptionFilter {
     const request = ctx.getRequest<Request>();
 
     const isHttpException = exception instanceof HttpException;
+    const isOrpcError = exception instanceof ORPCError;
     const status = isHttpException
       ? exception.getStatus()
-      : HttpStatus.INTERNAL_SERVER_ERROR;
+      : isOrpcError
+        ? exception.status
+        : HttpStatus.INTERNAL_SERVER_ERROR;
 
     const isProduction =
       this.config.get('NODE_ENV', { infer: true }) === 'production';
+
+    if (isOrpcError) {
+      response.status(status).json({
+        statusCode: status,
+        code: exception.code,
+        message: exception.message,
+      });
+      return;
+    }
 
     if (isHttpException) {
       const body = exception.getResponse();

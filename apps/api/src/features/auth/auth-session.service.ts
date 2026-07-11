@@ -2,13 +2,14 @@ import type { IncomingHttpHeaders } from 'node:http';
 
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { ORPCError } from '@orpc/server';
-import type { Request } from 'express';
 import jwt from 'jsonwebtoken';
 
 import type { ServerEnv } from '../../integrations/env/server.js';
 import type { SessionUser } from '../../integrations/orpc/orpc-context.js';
-import { getSessionTokenFromCookieHeader } from './auth.cookies.js';
+import {
+  getSessionTokenFromCookieHeader,
+  SESSION_MAX_AGE_SEC,
+} from './auth.cookies.js';
 
 @Injectable()
 export class AuthSessionService {
@@ -19,8 +20,7 @@ export class AuthSessionService {
   }
 
   getOptionalUser(headers: IncomingHttpHeaders): SessionUser | undefined {
-    const bearer = headers.authorization?.split(' ')[1];
-    const token = bearer ?? getSessionTokenFromCookieHeader(headers.cookie);
+    const token = getSessionTokenFromCookieHeader(headers.cookie);
 
     if (!token) {
       return undefined;
@@ -44,23 +44,9 @@ export class AuthSessionService {
     }
   }
 
-  requireUser(request: Request & { user?: SessionUser }): SessionUser {
-    const user = request.user ?? this.getOptionalUser(request.headers);
-
-    if (!user) {
-      throw new ORPCError('UNAUTHORIZED');
-    }
-
-    return user;
-  }
-
-  attachUserToRequest(request: Request): Request & { user?: SessionUser } {
-    return Object.assign(request, {
-      user: this.getOptionalUser(request.headers),
-    });
-  }
-
   signToken(userId: string): string {
-    return jwt.sign({ sub: userId }, this.jwtSecret, { expiresIn: '2h' });
+    return jwt.sign({ sub: userId }, this.jwtSecret, {
+      expiresIn: SESSION_MAX_AGE_SEC,
+    });
   }
 }

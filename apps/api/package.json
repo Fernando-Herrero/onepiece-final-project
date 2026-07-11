@@ -27,6 +27,8 @@
     "@orpc/server": "catalog:",
     "@orpc/zod": "catalog:",
     "bcrypt": "^6.0.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.0.0",
     "reflect-metadata": "^0.2.2",

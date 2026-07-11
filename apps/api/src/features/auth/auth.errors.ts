@@ -1,22 +1,9 @@
-import { ORPCError } from '@orpc/server';
+import { authErrors } from '@logpose/contracts/features/auth/contract';
 
-function isMongoDuplicateKey(error: unknown): boolean {
-  return (
-    typeof error === 'object' &&
-    error !== null &&
-    'code' in error &&
-    error.code === 11000
-  );
-}
-
-type AuthContractErrors = {
-  INVALID_CREDENTIALS: (...args: never[]) => unknown;
-  UNAUTHORIZED: (...args: never[]) => unknown;
-  ACCOUNT_INACTIVE: (...args: never[]) => unknown;
-  USER_NOT_FOUND: (...args: never[]) => unknown;
-  INVALID_CURRENT_PASSWORD: (...args: never[]) => unknown;
-  DUPLICATE_ACCOUNT: (...args: never[]) => unknown;
-};
+import {
+  type ContractErrorHandlers,
+  handleContractError,
+} from '../../integrations/orpc/handle-contract-error.js';
 
 const AUTH_ERROR_CODES = [
   'INVALID_CREDENTIALS',
@@ -24,25 +11,20 @@ const AUTH_ERROR_CODES = [
   'ACCOUNT_INACTIVE',
   'USER_NOT_FOUND',
   'INVALID_CURRENT_PASSWORD',
-] as const satisfies readonly (keyof AuthContractErrors)[];
-
-type AuthErrorCode = (typeof AUTH_ERROR_CODES)[number];
-
-function isAuthErrorCode(code: string): code is AuthErrorCode {
-  return (AUTH_ERROR_CODES as readonly string[]).includes(code);
-}
+] as const satisfies readonly (keyof typeof authErrors)[];
 
 export function handleAuthError(
   error: unknown,
-  errors: AuthContractErrors,
+  errors: ContractErrorHandlers<typeof authErrors>,
 ): never {
-  if (isMongoDuplicateKey(error)) {
+  if (
+    typeof error === 'object' &&
+    error !== null &&
+    'code' in error &&
+    error.code === 11000
+  ) {
     throw errors.DUPLICATE_ACCOUNT();
   }
 
-  if (error instanceof ORPCError && isAuthErrorCode(error.code)) {
-    throw errors[error.code]();
-  }
-
-  throw error;
+  handleContractError(error, AUTH_ERROR_CODES, errors);
 }

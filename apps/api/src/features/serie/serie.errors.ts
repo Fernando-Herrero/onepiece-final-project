@@ -1,30 +1,19 @@
-import { ORPCError } from '@orpc/server';
+import { serieErrors } from '@logpose/contracts/features/serie/contract';
 
-type SerieContractErrors = {
-  SAGA_NOT_FOUND: (...args: never[]) => unknown;
-  ARC_NOT_FOUND: (...args: never[]) => unknown;
-  EPISODE_NOT_FOUND: (...args: never[]) => unknown;
-};
+import {
+  type ContractErrorHandlers,
+  handleContractError,
+} from '../../integrations/orpc/handle-contract-error.js';
 
 const SERIE_ERROR_CODES = [
   'SAGA_NOT_FOUND',
   'ARC_NOT_FOUND',
   'EPISODE_NOT_FOUND',
-] as const satisfies readonly (keyof SerieContractErrors)[];
-
-type SerieErrorCode = (typeof SERIE_ERROR_CODES)[number];
-
-function isSerieErrorCode(code: string): code is SerieErrorCode {
-  return (SERIE_ERROR_CODES as readonly string[]).includes(code);
-}
+] as const satisfies readonly (keyof typeof serieErrors)[];
 
 export function handleSerieError(
   error: unknown,
-  errors: SerieContractErrors,
+  errors: ContractErrorHandlers<typeof serieErrors>,
 ): never {
-  if (error instanceof ORPCError && isSerieErrorCode(error.code)) {
-    throw errors[error.code]();
-  }
-
-  throw error;
+  handleContractError(error, SERIE_ERROR_CODES, errors);
 }

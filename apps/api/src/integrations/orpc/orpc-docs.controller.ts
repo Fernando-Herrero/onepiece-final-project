@@ -1,18 +1,11 @@
-import { authContract } from '@logpose/contracts/features/auth/contract';
-import { healthContract } from '@logpose/contracts/features/health/contract';
-import { serieContract } from '@logpose/contracts/features/serie/contract';
-import { usersContract } from '@logpose/contracts/features/users/contract';
-import { Controller, Get, Header } from '@nestjs/common';
-import { oc } from '@orpc/contract';
+import { implementedContract } from '@logpose/contracts/implemented-contract';
+import { Controller, Get, Header, NotFoundException } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { OpenAPIGenerator } from '@orpc/openapi';
 import { ZodToJsonSchemaConverter } from '@orpc/zod/zod4';
 
-const implementedContract = oc.prefix('/api').router({
-  health: healthContract,
-  auth: authContract,
-  users: usersContract,
-  serie: serieContract,
-});
+import { Public } from '../../features/auth/public.decorator.js';
+import type { ServerEnv } from '../env/server.js';
 
 const generator = new OpenAPIGenerator({
   schemaConverters: [new ZodToJsonSchemaConverter()],
@@ -64,9 +57,20 @@ const SWAGGER_HTML = `<!doctype html>
  * `@orpc/nest` registers the procedure routes but does not expose the docs.
  */
 @Controller('api/orpc')
+@Public()
 export class OrpcDocsController {
+  constructor(private readonly config: ConfigService<ServerEnv, true>) {}
+
+  private assertDocsEnabled(): void {
+    if (this.config.get('NODE_ENV', { infer: true }) === 'production') {
+      throw new NotFoundException();
+    }
+  }
+
   @Get('spec.json')
   spec() {
+    this.assertDocsEnabled();
+
     return generator.generate(implementedContract, {
       info: {
         title: 'LogPose API (Nest)',
@@ -88,6 +92,8 @@ export class OrpcDocsController {
   @Get()
   @Header('Content-Type', 'text/html; charset=utf-8')
   docs(): string {
+    this.assertDocsEnabled();
+
     return SWAGGER_HTML;
   }
 }

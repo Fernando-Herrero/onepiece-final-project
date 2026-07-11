@@ -9,17 +9,15 @@ import type { Response } from 'express';
 
 import { throwContractOutputInvalid } from '../../integrations/orpc/contract-output-invalid.js';
 import { contract } from '../../integrations/orpc/orpc.contract.js';
+import { requireUser } from '../../integrations/orpc/orpc-context.js';
 import { parseOrThrow } from '../../integrations/orpc/parse-or-throw.js';
 import { handleAuthError } from './auth.errors.js';
 import { AuthService } from './auth.service.js';
-import { AuthSessionService } from './auth-session.service.js';
+import { Public } from './public.decorator.js';
 
 @Controller()
 export class AuthController {
-  constructor(
-    private readonly authService: AuthService,
-    private readonly authSession: AuthSessionService,
-  ) {}
+  constructor(private readonly authService: AuthService) {}
 
   private response(res: Response | undefined): Response {
     if (!res) {
@@ -28,10 +26,15 @@ export class AuthController {
     return res;
   }
 
+  @Public()
   @Implement(contract.auth.register)
   register() {
     return implement(contract.auth.register).handler(
       async ({ input, context, errors }) => {
+        if (context.request.user) {
+          throw errors.ALREADY_AUTHENTICATED();
+        }
+
         try {
           const result = await this.authService.register(
             input,
@@ -50,10 +53,15 @@ export class AuthController {
     );
   }
 
+  @Public()
   @Implement(contract.auth.login)
   login() {
     return implement(contract.auth.login).handler(
       async ({ input, context, errors }) => {
+        if (context.request.user) {
+          throw errors.ALREADY_AUTHENTICATED();
+        }
+
         try {
           const result = await this.authService.login(
             input,
@@ -77,7 +85,7 @@ export class AuthController {
     return implement(contract.auth.me).handler(async ({ context, errors }) => {
       try {
         const user = await this.authService.getMe(
-          this.authSession.requireUser(context.request).id,
+          requireUser(context.request).id,
         );
 
         return parseOrThrow(userPublicSchema, user, throwContractOutputInvalid);
@@ -93,7 +101,7 @@ export class AuthController {
       async ({ input, context, errors }) => {
         try {
           const result = await this.authService.changePassword(
-            this.authSession.requireUser(context.request).id,
+            requireUser(context.request).id,
             input,
           );
 
@@ -114,7 +122,6 @@ export class AuthController {
     return implement(contract.auth.logout).handler(
       async ({ context, errors }) => {
         try {
-          this.authSession.requireUser(context.request);
           const result = await this.authService.logout(
             this.response(context.request.res),
           );

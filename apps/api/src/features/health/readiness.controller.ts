@@ -1,6 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { HealthCheck, HealthCheckService } from '@nestjs/terminus';
 
+import { Public } from '../auth/public.decorator.js';
 import { MongoHealthIndicator } from './mongo-health.indicator.js';
 
 @Controller('api/health')
@@ -10,6 +11,7 @@ export class ReadinessController {
     private readonly mongo: MongoHealthIndicator,
   ) {}
 
+  @Public()
   @Get('ready')
   @HealthCheck()
   ready() {

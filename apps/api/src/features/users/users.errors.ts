@@ -1,14 +1,9 @@
-import { ORPCError } from '@orpc/server';
+import { usersErrors } from '@logpose/contracts/features/users/contract';
 
-type UsersContractErrors = {
-  UNAUTHORIZED: (...args: never[]) => unknown;
-  FORBIDDEN: (...args: never[]) => unknown;
-  USER_NOT_FOUND: (...args: never[]) => unknown;
-  PRIVACY_DENIED: (...args: never[]) => unknown;
-  CANNOT_FOLLOW_SELF: (...args: never[]) => unknown;
-  ALREADY_FOLLOWING: (...args: never[]) => unknown;
-  NOT_FOLLOWING: (...args: never[]) => unknown;
-};
+import {
+  type ContractErrorHandlers,
+  handleContractError,
+} from '../../integrations/orpc/handle-contract-error.js';
 
 const USERS_ERROR_CODES = [
   'UNAUTHORIZED',
@@ -18,21 +13,11 @@ const USERS_ERROR_CODES = [
   'CANNOT_FOLLOW_SELF',
   'ALREADY_FOLLOWING',
   'NOT_FOLLOWING',
-] as const satisfies readonly (keyof UsersContractErrors)[];
-
-type UsersErrorCode = (typeof USERS_ERROR_CODES)[number];
-
-function isUsersErrorCode(code: string): code is UsersErrorCode {
-  return (USERS_ERROR_CODES as readonly string[]).includes(code);
-}
+] as const satisfies readonly (keyof typeof usersErrors)[];
 
 export function handleUsersError(
   error: unknown,
-  errors: UsersContractErrors,
+  errors: ContractErrorHandlers<typeof usersErrors>,
 ): never {
-  if (error instanceof ORPCError && isUsersErrorCode(error.code)) {
-    throw errors[error.code]();
-  }
-
-  throw error;
+  handleContractError(error, USERS_ERROR_CODES, errors);
 }

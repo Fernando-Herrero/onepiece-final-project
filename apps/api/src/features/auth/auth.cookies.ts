@@ -2,7 +2,9 @@ import { SESSION_COOKIE_NAME } from '@logpose/contracts/features/auth/constants'
 import type { Response } from 'express';
 
 export { SESSION_COOKIE_NAME };
-const SESSION_MAX_AGE_MS = 2 * 60 * 60 * 1000;
+
+export const SESSION_MAX_AGE_MS = 2 * 60 * 60 * 1000;
+export const SESSION_MAX_AGE_SEC = SESSION_MAX_AGE_MS / 1000;
 
 const cookieBaseOptions = {
   httpOnly: true,

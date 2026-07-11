@@ -8,7 +8,6 @@ import { onError, ORPCModule } from '@orpc/nest';
 import type { Request } from 'express';
 
 import { AuthModule } from './features/auth/auth.module.js';
-import { AuthSessionService } from './features/auth/auth-session.service.js';
 import { HealthModule } from './features/health/health.module.js';
 import { SerieModule } from './features/serie/serie.module.js';
 import { UsersModule } from './features/users/users.module.js';
@@ -27,12 +26,11 @@ const mode = process.env.NODE_ENV ?? 'development';
       validate: validateEnv,
     }),
     ORPCModule.forRootAsync({
-      imports: [AuthModule],
-      useFactory: (request: Request, authSession: AuthSessionService) => ({
-        context: { request: authSession.attachUserToRequest(request) },
+      useFactory: (request: Request) => ({
+        context: { request },
         interceptors: [onError(logOrpcError)],
       }),
-      inject: [REQUEST, AuthSessionService],
+      inject: [REQUEST],
     }),
     MongoModule.forRootAsync({
       inject: [ConfigService],

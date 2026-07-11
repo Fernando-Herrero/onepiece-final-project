@@ -15,17 +15,15 @@ import * as z from 'zod/v4';
 
 import { throwContractOutputInvalid } from '../../integrations/orpc/contract-output-invalid.js';
 import { contract } from '../../integrations/orpc/orpc.contract.js';
+import { requireUser } from '../../integrations/orpc/orpc-context.js';
 import { parseOrThrow } from '../../integrations/orpc/parse-or-throw.js';
-import { AuthSessionService } from '../auth/auth-session.service.js';
+import { Public } from '../auth/public.decorator.js';
 import { handleUsersError } from './users.errors.js';
 import { UsersService } from './users.service.js';
 
 @Controller()
 export class UsersController {
-  constructor(
-    private readonly usersService: UsersService,
-    private readonly authSession: AuthSessionService,
-  ) {}
+  constructor(private readonly usersService: UsersService) {}
 
   /** Rutas estáticas antes de `/{id}` — si no, `/ranking` matchea como id. */
   @Implement(contract.users.list)
@@ -33,7 +31,7 @@ export class UsersController {
     return implement(contract.users.list).handler(
       async ({ context, errors }) => {
         try {
-          const viewer = this.authSession.requireUser(context.request);
+          const viewer = requireUser(context.request);
           const users = await this.usersService.list(viewer.id);
 
           return parseOrThrow(
@@ -50,24 +48,22 @@ export class UsersController {
 
   @Implement(contract.users.ranking)
   ranking() {
-    return implement(contract.users.ranking).handler(
-      async ({ context, errors }) => {
-        try {
-          this.authSession.requireUser(context.request);
-          const users = await this.usersService.ranking();
+    return implement(contract.users.ranking).handler(async ({ errors }) => {
+      try {
+        const users = await this.usersService.ranking();
 
-          return parseOrThrow(
-            z.array(userRankingEntrySchema),
-            users,
-            throwContractOutputInvalid,
-          );
-        } catch (error) {
-          handleUsersError(error, errors);
-        }
-      },
-    );
+        return parseOrThrow(
+          z.array(userRankingEntrySchema),
+          users,
+          throwContractOutputInvalid,
+        );
+      } catch (error) {
+        handleUsersError(error, errors);
+      }
+    });
   }
 
+  @Public()
   @Implement(contract.users.getStats)
   getStats() {
     return implement(contract.users.getStats).handler(
@@ -87,6 +83,7 @@ export class UsersController {
     );
   }
 
+  @Public()
   @Implement(contract.users.getFollowers)
   getFollowers() {
     return implement(contract.users.getFollowers).handler(
@@ -108,6 +105,7 @@ export class UsersController {
     );
   }
 
+  @Public()
   @Implement(contract.users.getFollowing)
   getFollowing() {
     return implement(contract.users.getFollowing).handler(
@@ -129,6 +127,7 @@ export class UsersController {
     );
   }
 
+  @Public()
   @Implement(contract.users.getPosts)
   getPosts() {
     return implement(contract.users.getPosts).handler(
@@ -151,6 +150,7 @@ export class UsersController {
     );
   }
 
+  @Public()
   @Implement(contract.users.getLikedPosts)
   getLikedPosts() {
     return implement(contract.users.getLikedPosts).handler(
@@ -173,6 +173,7 @@ export class UsersController {
     );
   }
 
+  @Public()
   @Implement(contract.users.getBookmarkedPosts)
   getBookmarkedPosts() {
     return implement(contract.users.getBookmarkedPosts).handler(
@@ -195,6 +196,7 @@ export class UsersController {
     );
   }
 
+  @Public()
   @Implement(contract.users.getCommentedPosts)
   getCommentedPosts() {
     return implement(contract.users.getCommentedPosts).handler(
@@ -217,6 +219,7 @@ export class UsersController {
     );
   }
 
+  @Public()
   @Implement(contract.users.getById)
   getById() {
     return implement(contract.users.getById).handler(
@@ -241,7 +244,7 @@ export class UsersController {
     return implement(contract.users.follow).handler(
       async ({ input, context, errors }) => {
         try {
-          const viewer = this.authSession.requireUser(context.request);
+          const viewer = requireUser(context.request);
           const result = await this.usersService.follow(
             viewer.id,
             input.params.id,
@@ -264,7 +267,7 @@ export class UsersController {
     return implement(contract.users.unfollow).handler(
       async ({ input, context, errors }) => {
         try {
-          const viewer = this.authSession.requireUser(context.request);
+          const viewer = requireUser(context.request);
           const result = await this.usersService.unfollow(
             viewer.id,
             input.params.id,
@@ -287,7 +290,7 @@ export class UsersController {
     return implement(contract.users.update).handler(
       async ({ input, context, errors }) => {
         try {
-          const viewer = this.authSession.requireUser(context.request);
+          const viewer = requireUser(context.request);
           const user = await this.usersService.update(
             input.params.id,
             viewer.id,
@@ -311,7 +314,7 @@ export class UsersController {
     return implement(contract.users.delete).handler(
       async ({ input, context, errors }) => {
         try {
-          const viewer = this.authSession.requireUser(context.request);
+          const viewer = requireUser(context.request);
           const result = await this.usersService.delete(
             input.params.id,
             viewer.id,
