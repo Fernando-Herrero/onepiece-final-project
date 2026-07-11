@@ -50,11 +50,23 @@ export function CharacterCardComponent({
         </picture>
       </Box>
 
-      <Flex direction="column" gap="2" className="px-6 pb-4 text-center lg:max-w-55 lg:justify-center lg:pr-8 lg:text-right">
-        <Heading as="h2" size="4" className="font-road-captain tracking-wide text-[#f2d9a8]">
+      <Flex
+        direction="column"
+        gap="2"
+        className="px-6 pb-4 text-center lg:max-w-55 lg:justify-center lg:pr-8 lg:text-right"
+      >
+        <Heading
+          as="h2"
+          size="4"
+          className="font-road-captain tracking-wide text-[#f2d9a8]"
+        >
           {name}
         </Heading>
-        <Text as="p" size="2" className="leading-relaxed text-[#f4ede1]/75 lg:pl-7">
+        <Text
+          as="p"
+          size="2"
+          className="leading-relaxed text-[#f4ede1]/75 lg:pl-7"
+        >
           {text}
         </Text>
       </Flex>

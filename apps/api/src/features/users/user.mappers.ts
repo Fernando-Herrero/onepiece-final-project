@@ -45,7 +45,10 @@ export type UserDocument = {
 };
 
 function fullName(
-  doc: Pick<UserDocument, 'firstName' | 'lastName' | 'displayName' | 'username'>,
+  doc: Pick<
+    UserDocument,
+    'firstName' | 'lastName' | 'displayName' | 'username'
+  >,
 ) {
   if (doc.firstName && doc.lastName) {
     return `${doc.firstName} ${doc.lastName}`;

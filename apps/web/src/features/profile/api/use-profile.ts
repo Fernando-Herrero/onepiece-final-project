@@ -94,16 +94,19 @@ export function useFollowUserMutation() {
     mutationFn: (targetUserId: string) =>
       client.users.follow({ params: { id: targetUserId } }),
     onSuccess: (_result, targetUserId) => {
-      queryClient.setQueryData(authKeys.me(), (old: ProfileUser | undefined) => {
-        if (!old || old.following.includes(targetUserId)) {
-          return old;
-        }
+      queryClient.setQueryData(
+        authKeys.me(),
+        (old: ProfileUser | undefined) => {
+          if (!old || old.following.includes(targetUserId)) {
+            return old;
+          }
 
-        return {
-          ...old,
-          following: [...old.following, targetUserId],
-        };
-      });
+          return {
+            ...old,
+            following: [...old.following, targetUserId],
+          };
+        },
+      );
 
       queryClient.setQueryData(
         profileKeys.byId(targetUserId),
@@ -112,7 +115,9 @@ export function useFollowUserMutation() {
             return old;
           }
 
-          const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+          const viewerId = queryClient.getQueryData<ProfileUser>(
+            authKeys.me(),
+          )?._id;
 
           if (!viewerId || old.followers.includes(viewerId)) {
             return old;
@@ -125,7 +130,9 @@ export function useFollowUserMutation() {
         },
       );
 
-      const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+      const viewerId = queryClient.getQueryData<ProfileUser>(
+        authKeys.me(),
+      )?._id;
 
       void queryClient.invalidateQueries({
         queryKey: profileKeys.followers(targetUserId),
@@ -159,16 +166,19 @@ export function useUnfollowUserMutation() {
     mutationFn: (targetUserId: string) =>
       client.users.unfollow({ params: { id: targetUserId } }),
     onSuccess: (_result, targetUserId) => {
-      queryClient.setQueryData(authKeys.me(), (old: ProfileUser | undefined) => {
-        if (!old) {
-          return old;
-        }
+      queryClient.setQueryData(
+        authKeys.me(),
+        (old: ProfileUser | undefined) => {
+          if (!old) {
+            return old;
+          }
 
-        return {
-          ...old,
-          following: old.following.filter(id => id !== targetUserId),
-        };
-      });
+          return {
+            ...old,
+            following: old.following.filter(id => id !== targetUserId),
+          };
+        },
+      );
 
       queryClient.setQueryData(
         profileKeys.byId(targetUserId),
@@ -177,7 +187,9 @@ export function useUnfollowUserMutation() {
             return old;
           }
 
-          const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+          const viewerId = queryClient.getQueryData<ProfileUser>(
+            authKeys.me(),
+          )?._id;
 
           if (!viewerId) {
             return old;
@@ -190,7 +202,9 @@ export function useUnfollowUserMutation() {
         },
       );
 
-      const viewerId = queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
+      const viewerId = queryClient.getQueryData<ProfileUser>(
+        authKeys.me(),
+      )?._id;
 
       void queryClient.invalidateQueries({
         queryKey: profileKeys.followers(targetUserId),

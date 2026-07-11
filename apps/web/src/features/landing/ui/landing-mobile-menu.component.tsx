@@ -76,7 +76,11 @@ export function LandingMobileMenuPanel({
       } bg-linear-to-br from-[#05070d] via-[#0b1120] to-[#1b2742]/90 backdrop-blur-md`}
       aria-hidden={!open}
     >
-      <Flex direction="column" gap="6" className="min-h-0 flex-1 overflow-y-auto">
+      <Flex
+        direction="column"
+        gap="6"
+        className="min-h-0 flex-1 overflow-y-auto"
+      >
         <nav className="flex flex-col pt-4">
           {MOBILE_NAV_SECTIONS.map((section, sectionIndex) => (
             <div key={sectionIndex}>
@@ -145,7 +149,7 @@ export function LandingMenuToggleButton({
       aria-label={
         open ? t('landing.nav.close_menu') : t('landing.nav.open_menu')
       }
-      className={`-m-0.5 relative z-60 h-10 w-10 shrink-0 rounded-full p-0 md:hidden ${
+      className={`relative z-60 -m-0.5 h-10 w-10 shrink-0 rounded-full p-0 md:hidden ${
         open
           ? 'border border-[#f2d9a8]/50 bg-[#05070d]/90 shadow-[0_0_20px_rgba(0,0,0,0.45)] hover:bg-[#05070d]'
           : 'hover:bg-white/10'

@@ -134,7 +134,9 @@ export function getProfileAvatarPickerOptions(
   const ids = new Set(getSelectableAvatarIds(serieProgress));
 
   if (currentAvatarPath) {
-    const current = AVATAR_OPTIONS.find(option => option.path === currentAvatarPath);
+    const current = AVATAR_OPTIONS.find(
+      option => option.path === currentAvatarPath,
+    );
     if (current) {
       ids.add(current.id);
     }

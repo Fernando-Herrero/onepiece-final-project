@@ -21,7 +21,10 @@ import {
   DEFAULT_AVATAR_SRC,
   resolveProfileAvatarSrc,
 } from '@/features/profile/profile.constants';
-import type { ProfileUser, UpdateProfileBody } from '@/features/profile/profile.types';
+import type {
+  ProfileUser,
+  UpdateProfileBody,
+} from '@/features/profile/profile.types';
 import { ProfileAvatarPickerOverlay } from '@/features/profile/ui/profile-avatar-picker-overlay.component';
 import {
   ProfileEditableField,
@@ -284,7 +287,7 @@ export function ProfileIdentityCard({
                 className={
                   displayName
                     ? 'text-[#f4ede1]'
-                    : 'text-[#f4ede1]/50 italic font-normal text-base'
+                    : 'text-base font-normal text-[#f4ede1]/50 italic'
                 }
               >
                 {displayName || t('profile.empty_displayname_other')}
@@ -313,9 +316,7 @@ export function ProfileIdentityCard({
             <Text
               as="p"
               size="2"
-              className={
-                bio ? 'text-[#f4ede1]/85' : 'text-[#f4ede1]/50 italic'
-              }
+              className={bio ? 'text-[#f4ede1]/85' : 'text-[#f4ede1]/50 italic'}
             >
               {bio || t('profile.empty_bio_other')}
             </Text>

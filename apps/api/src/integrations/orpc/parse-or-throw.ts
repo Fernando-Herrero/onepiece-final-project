@@ -9,7 +9,9 @@ export function parseOrThrow<T>(
 
   if (!parsed.success) {
     throwInvalid(
-      parsed.error.issues.map(issue => `${issue.path.join('.')}: ${issue.message}`),
+      parsed.error.issues.map(
+        issue => `${issue.path.join('.')}: ${issue.message}`,
+      ),
     );
   }
 

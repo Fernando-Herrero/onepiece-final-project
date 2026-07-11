@@ -97,7 +97,6 @@ export function getEpisodesByArcId(arcId: number) {
   }
 
   return getEpisodesData().filter(
-    episode =>
-      episode.id >= arc.firstEpisode && episode.id <= arc.lastEpisode,
+    episode => episode.id >= arc.firstEpisode && episode.id <= arc.lastEpisode,
   );
 }

@@ -41,7 +41,11 @@ export default function CardsPageContent() {
   );
 
   return (
-    <Grid columns="1" gap="6" className="mx-auto max-w-6xl lg:grid-cols-[0.9fr_1.4fr]">
+    <Grid
+      columns="1"
+      gap="6"
+      className="mx-auto max-w-6xl lg:grid-cols-[0.9fr_1.4fr]"
+    >
       <Heading
         as="h1"
         size="6"

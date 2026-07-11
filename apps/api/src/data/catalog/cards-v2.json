@@ -1,30 +1,4 @@
 {
-  "characters": [
-    {
-      "id": 1,
-      "slug": "monkey-d-luffy",
-      "name": "Monkey D. Luffy",
-      "crew": "Straw Hat Pirates",
-      "position": "Captain",
-      "fruit": "Gomu Gomu no Mi"
-    },
-    {
-      "id": 4,
-      "slug": "roronoa-zoro",
-      "name": "Roronoa Zoro",
-      "crew": "Straw Hat Pirates",
-      "position": "Swordsman/First Mate",
-      "fruit": null
-    },
-    {
-      "id": 7,
-      "slug": "nami",
-      "name": "Nami",
-      "crew": "Straw Hat Pirates",
-      "position": "Navigator",
-      "fruit": null
-    }
-  ],
   "cards": [
     {
       "id": 1001,
@@ -181,6 +155,32 @@
       "abilities": ["Climatact", "Weather manipulation"],
       "bounty": 16000000,
       "unlock": { "kind": "episode", "episodeId": 44 }
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "slug": "monkey-d-luffy",
+      "name": "Monkey D. Luffy",
+      "crew": "Straw Hat Pirates",
+      "position": "Captain",
+      "fruit": "Gomu Gomu no Mi"
+    },
+    {
+      "id": 4,
+      "slug": "roronoa-zoro",
+      "name": "Roronoa Zoro",
+      "crew": "Straw Hat Pirates",
+      "position": "Swordsman/First Mate",
+      "fruit": null
+    },
+    {
+      "id": 7,
+      "slug": "nami",
+      "name": "Nami",
+      "crew": "Straw Hat Pirates",
+      "position": "Navigator",
+      "fruit": null
     }
   ]
 }

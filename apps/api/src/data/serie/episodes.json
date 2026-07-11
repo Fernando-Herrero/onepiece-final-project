@@ -6,19 +6,11 @@
     "arc": "Romance Dawn",
     "experience": 100,
     "achievements": {
-      "characters": [
-        1,
-        2,
-        3
-      ],
+      "characters": [1, 2, 3],
       "items": [],
-      "fruits": [
-        1
-      ],
+      "fruits": [1],
       "swords": [],
-      "boats": [
-        1
-      ]
+      "boats": [1]
     }
   },
   {
@@ -28,16 +20,10 @@
     "arc": "Romance Dawn",
     "experience": 100,
     "achievements": {
-      "characters": [
-        4,
-        5,
-        6
-      ],
+      "characters": [4, 5, 6],
       "items": [],
       "fruits": [],
-      "swords": [
-        2
-      ],
+      "swords": [2],
       "boats": []
     }
   },
@@ -48,9 +34,7 @@
     "arc": "Romance Dawn",
     "experience": 500,
     "achievements": {
-      "characters": [
-        7
-      ],
+      "characters": [7],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -64,20 +48,11 @@
     "arc": "Orange Town",
     "experience": 100,
     "achievements": {
-      "characters": [
-        8,
-        9,
-        38,
-        13
-      ],
-      "items": [
-        1
-      ],
+      "characters": [8, 9, 38, 13],
+      "items": [1],
       "fruits": [],
       "swords": [],
-      "boats": [
-        2
-      ]
+      "boats": [2]
     }
   },
   {
@@ -87,22 +62,11 @@
     "arc": "Orange Town",
     "experience": 100,
     "achievements": {
-      "characters": [
-        10,
-        11,
-        12
-      ],
-      "items": [
-        2,
-        3
-      ],
-      "fruits": [
-        2
-      ],
+      "characters": [10, 11, 12],
+      "items": [2, 3],
+      "fruits": [2],
       "swords": [],
-      "boats": [
-        3
-      ]
+      "boats": [3]
     }
   },
   {
@@ -127,9 +91,7 @@
     "experience": 100,
     "achievements": {
       "characters": [],
-      "items": [
-        4
-      ],
+      "items": [4],
       "fruits": [],
       "swords": [],
       "boats": []
@@ -142,9 +104,7 @@
     "arc": "Orange Town",
     "experience": 500,
     "achievements": {
-      "characters": [
-        14
-      ],
+      "characters": [14],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -158,18 +118,8 @@
     "arc": "Syrup Village",
     "experience": 100,
     "achievements": {
-      "characters": [
-        15,
-        16,
-        18,
-        19,
-        20,
-        17
-      ],
-      "items": [
-        5,
-        6
-      ],
+      "characters": [15, 16, 18, 19, 20, 17],
+      "items": [5, 6],
       "swords": [],
       "boats": [],
       "fruits": []
@@ -182,14 +132,8 @@
     "arc": "Syrup Village",
     "experience": 100,
     "achievements": {
-      "characters": [
-        21,
-        22
-      ],
-      "items": [
-        7,
-        8
-      ],
+      "characters": [21, 22],
+      "items": [7, 8],
       "swords": [],
       "boats": [],
       "fruits": []
@@ -203,9 +147,7 @@
     "experience": 100,
     "achievements": {
       "characters": [],
-      "items": [
-        9
-      ],
+      "items": [9],
       "swords": [],
       "boats": [],
       "fruits": []
@@ -218,15 +160,10 @@
     "arc": "Syrup Village",
     "experience": 100,
     "achievements": {
-      "characters": [
-        23,
-        24
-      ],
+      "characters": [23, 24],
       "items": [],
       "swords": [],
-      "boats": [
-        4
-      ],
+      "boats": [4],
       "fruits": []
     }
   },
@@ -296,9 +233,7 @@
       "characters": [],
       "items": [],
       "swords": [],
-      "boats": [
-        5
-      ],
+      "boats": [5],
       "fruits": []
     }
   },
@@ -323,12 +258,7 @@
     "arc": "Baratie",
     "experience": 100,
     "achievements": {
-      "characters": [
-        25,
-        26,
-        27,
-        28
-      ],
+      "characters": [25, 26, 27, 28],
       "items": [],
       "swords": [],
       "boats": [],
@@ -342,18 +272,10 @@
     "arc": "Baratie",
     "experience": 100,
     "achievements": {
-      "characters": [
-        29,
-        30,
-        31,
-        32,
-        33
-      ],
+      "characters": [29, 30, 31, 32, 33],
       "items": [],
       "swords": [],
-      "boats": [
-        6
-      ],
+      "boats": [6],
       "fruits": []
     }
   },
@@ -364,12 +286,8 @@
     "arc": "Baratie",
     "experience": 100,
     "achievements": {
-      "characters": [
-        34
-      ],
-      "items": [
-        10
-      ],
+      "characters": [34],
+      "items": [10],
       "swords": [],
       "boats": [],
       "fruits": []
@@ -382,18 +300,10 @@
     "arc": "Baratie",
     "experience": 100,
     "achievements": {
-      "characters": [
-        35,
-        36
-      ],
-      "items": [
-        11,
-        12
-      ],
+      "characters": [35, 36],
+      "items": [11, 12],
       "swords": [],
-      "boats": [
-        7
-      ],
+      "boats": [7],
       "fruits": []
     }
   },
@@ -418,16 +328,10 @@
     "arc": "Baratie",
     "experience": 100,
     "achievements": {
-      "characters": [
-        37
-      ],
+      "characters": [37],
       "items": [],
-      "swords": [
-        1
-      ],
-      "boats": [
-        8
-      ],
+      "swords": [1],
+      "boats": [8],
       "fruits": []
     }
   },
@@ -481,10 +385,7 @@
     "experience": 100,
     "achievements": {
       "characters": [],
-      "items": [
-        18,
-        19
-      ],
+      "items": [18, 19],
       "swords": [],
       "boats": [],
       "fruits": []
@@ -525,9 +426,7 @@
     "arc": "Arlong Park",
     "experience": 100,
     "achievements": {
-      "characters": [
-        39
-      ],
+      "characters": [39],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -541,14 +440,8 @@
     "arc": "Arlong Park",
     "experience": 100,
     "achievements": {
-      "characters": [
-        40,
-        42,
-        41
-      ],
-      "items": [
-        24
-      ],
+      "characters": [40, 42, 41],
+      "items": [24],
       "fruits": [],
       "swords": [],
       "boats": []
@@ -561,10 +454,7 @@
     "arc": "Arlong Park",
     "experience": 100,
     "achievements": {
-      "characters": [
-        43,
-        44
-      ],
+      "characters": [43, 44],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -620,9 +510,7 @@
     "arc": "Arlong Park",
     "experience": 100,
     "achievements": {
-      "characters": [
-        46
-      ],
+      "characters": [46],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -636,9 +524,7 @@
     "arc": "Arlong Park",
     "experience": 100,
     "achievements": {
-      "characters": [
-        45
-      ],
+      "characters": [45],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -655,9 +541,7 @@
       "characters": [],
       "items": [],
       "fruits": [],
-      "swords": [
-        22
-      ],
+      "swords": [22],
       "boats": []
     }
   },
@@ -669,9 +553,7 @@
     "experience": 100,
     "achievements": {
       "characters": [],
-      "items": [
-        23
-      ],
+      "items": [23],
       "fruits": [],
       "swords": [],
       "boats": []
@@ -699,9 +581,7 @@
     "experience": 100,
     "achievements": {
       "characters": [],
-      "items": [
-        21
-      ],
+      "items": [21],
       "fruits": [],
       "swords": [],
       "boats": []
@@ -743,9 +623,7 @@
     "experience": 500,
     "achievements": {
       "characters": [],
-      "items": [
-        25
-      ],
+      "items": [25],
       "fruits": [],
       "swords": [],
       "boats": []
@@ -786,19 +664,10 @@
     "arc": "Logue Town",
     "experience": 100,
     "achievements": {
-      "characters": [
-        47,
-        48
-      ],
-      "items": [
-        29
-      ],
-      "fruits": [
-        4
-      ],
-      "swords": [
-        3
-      ],
+      "characters": [47, 48],
+      "items": [29],
+      "fruits": [4],
+      "swords": [3],
       "boats": []
     }
   },
@@ -809,15 +678,10 @@
     "arc": "Logue Town",
     "experience": 100,
     "achievements": {
-      "characters": [
-        49
-      ],
+      "characters": [49],
       "items": [],
       "fruits": [],
-      "swords": [
-        4,
-        5
-      ],
+      "swords": [4, 5],
       "boats": []
     }
   },
@@ -828,10 +692,7 @@
     "arc": "Logue Town",
     "experience": 100,
     "achievements": {
-      "characters": [
-        50,
-        51
-      ],
+      "characters": [50, 51],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -845,12 +706,8 @@
     "arc": "Logue Town",
     "experience": 100,
     "achievements": {
-      "characters": [
-        52
-      ],
-      "items": [
-        27
-      ],
+      "characters": [52],
+      "items": [27],
       "fruits": [],
       "swords": [],
       "boats": []
@@ -863,13 +720,9 @@
     "arc": "Logue Town",
     "experience": 100,
     "achievements": {
-      "characters": [
-        53
-      ],
+      "characters": [53],
       "items": [],
-      "fruits": [
-        3
-      ],
+      "fruits": [3],
       "swords": [],
       "boats": []
     }
@@ -882,9 +735,7 @@
     "experience": 500,
     "achievements": {
       "characters": [],
-      "items": [
-        20
-      ],
+      "items": [20],
       "fruits": [],
       "swords": [],
       "boats": []
@@ -897,15 +748,9 @@
     "arc": "Warship Island",
     "experience": 100,
     "achievements": {
-      "characters": [
-        54,
-        55
-      ],
+      "characters": [54, 55],
       "items": [],
-      "fruits": [
-        5,
-        6
-      ],
+      "fruits": [5, 6],
       "swords": [],
       "boats": []
     }
@@ -917,10 +762,7 @@
     "arc": "Warship Island",
     "experience": 100,
     "achievements": {
-      "characters": [
-        56,
-        57
-      ],
+      "characters": [56, 57],
       "items": [],
       "fruits": [],
       "swords": [],
@@ -934,17 +776,11 @@
     "arc": "Warship Island",
     "experience": 100,
     "achievements": {
-      "characters": [
-        58
-      ],
-      "items": [
-        28
-      ],
+      "characters": [58],
+      "items": [28],
       "fruits": [],
       "swords": [],
-      "boats": [
-        12
-      ]
+      "boats": [12]
     }
   },
   {
@@ -969,9 +805,7 @@
     "experience": 100,
     "achievements": {
       "characters": [],
-      "items": [
-        30
-      ],
+      "items": [30],
       "fruits": [],
       "swords": [],
       "boats": []

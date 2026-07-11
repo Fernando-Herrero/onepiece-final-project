@@ -101,10 +101,7 @@
     "totalEpisodes": 58,
     "firstArc": 36,
     "lastArc": 37,
-    "arcNames": [
-      "Return to Sabaody Arc",
-      "Fishman Island Arc"
-    ]
+    "arcNames": ["Return to Sabaody Arc", "Fishman Island Arc"]
   },
   {
     "id": 8,

@@ -14,7 +14,10 @@ type ProfileViewMoreProps = {
   isOwner?: boolean;
 };
 
-export function ProfileViewMore({ user, isOwner = true }: ProfileViewMoreProps) {
+export function ProfileViewMore({
+  user,
+  isOwner = true,
+}: ProfileViewMoreProps) {
   const { t, i18n } = useTranslation();
   const { save, isSaving } = useSaveProfileField(user._id);
   const [open, setOpen] = useState(false);

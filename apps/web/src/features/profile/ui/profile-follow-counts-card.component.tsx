@@ -48,27 +48,32 @@ function ProfileFollowUserRow({ user }: { user: UserSummary }) {
       href={`/dashboard/users/${user._id}`}
       className="flex items-center gap-3 rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2 transition-colors hover:border-[#f2d9a8]/25"
     >
-        <Avatar
-          src={avatarSrc}
-          fallback={name.slice(0, 1).toUpperCase()}
+      <Avatar
+        src={avatarSrc}
+        fallback={name.slice(0, 1).toUpperCase()}
+        size="2"
+        radius="full"
+        className="shrink-0 border border-[#f2d9a8]/20"
+      />
+      <Flex direction="column" gap="0" className="min-w-0 flex-1">
+        <Text
+          as="span"
           size="2"
-          radius="full"
-          className="shrink-0 border border-[#f2d9a8]/20"
-        />
-        <Flex direction="column" gap="0" className="min-w-0 flex-1">
-          <Text as="span" size="2" weight="medium" className="truncate text-[#f4ede1]">
-            {name}
-          </Text>
-          <Text as="span" size="1" color="gray" className="truncate">
-            @{user.username}
-          </Text>
-        </Flex>
-        <Box
-          className={`size-2 shrink-0 rounded-full border border-[#0b1120] ${
-            user.isActive ? 'bg-green-400' : 'bg-red-400'
-          }`}
-          aria-hidden
-        />
+          weight="medium"
+          className="truncate text-[#f4ede1]"
+        >
+          {name}
+        </Text>
+        <Text as="span" size="1" color="gray" className="truncate">
+          @{user.username}
+        </Text>
+      </Flex>
+      <Box
+        className={`size-2 shrink-0 rounded-full border border-[#0b1120] ${
+          user.isActive ? 'bg-green-400' : 'bg-red-400'
+        }`}
+        aria-hidden
+      />
     </Link>
   );
 }
@@ -192,7 +197,7 @@ export function ProfileFollowCountsCard({
       {expandedList ? (
         <Box
           id={`profile-follow-list-${expandedList}`}
-          className="motion-safe:animate-[profile-fade-up_0.5s_ease-out_both] mt-4 border-t border-[#f2d9a8]/10 pt-4"
+          className="mt-4 border-t border-[#f2d9a8]/10 pt-4 motion-safe:animate-[profile-fade-up_0.5s_ease-out_both]"
         >
           <Suspense fallback={<ProfileFollowListSkeleton />}>
             {expandedList === 'followers' ? (

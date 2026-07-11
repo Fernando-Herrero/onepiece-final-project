@@ -1,10 +1,6 @@
 import { InjectCollection } from '@jperezmart/nest-mongodb';
 import { Injectable, type OnModuleInit } from '@nestjs/common';
-import {
-  type Collection,
-  ObjectId,
-  type WithId,
-} from 'mongodb';
+import { type Collection, ObjectId, type WithId } from 'mongodb';
 
 import type { UserDocument, UserRole } from './user.mappers.js';
 
@@ -51,9 +47,7 @@ export class UsersPersistence implements OnModuleInit {
     return this.users.find({ _id: { $in: ids } }).toArray();
   }
 
-  async insert(
-    doc: Omit<UserDocument, '_id'>,
-  ): Promise<WithId<UserDocument>> {
+  async insert(doc: Omit<UserDocument, '_id'>): Promise<WithId<UserDocument>> {
     const now = new Date();
     const result = await this.users.insertOne({
       ...doc,

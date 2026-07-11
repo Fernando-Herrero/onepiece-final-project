@@ -110,8 +110,7 @@ export function useAuthSession() {
     isAdmin,
     isLoading: meQuery.isPending,
     isAuthenticated: !!user,
-    isSessionInvalid:
-      meQuery.isError && isSessionInvalidError(meQuery.error),
+    isSessionInvalid: meQuery.isError && isSessionInvalidError(meQuery.error),
     error: meQuery.isError ? meQuery.error : null,
   };
 }

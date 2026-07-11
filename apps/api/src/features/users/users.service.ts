@@ -88,9 +88,7 @@ export class UsersService {
     posts: Awaited<ReturnType<PostsPersistence['findPublicByUserId']>>,
     viewerId?: string,
   ) {
-    const authorIds = [
-      ...new Set(posts.map(post => post.userId.toString())),
-    ];
+    const authorIds = [...new Set(posts.map(post => post.userId.toString()))];
     const authors = await this.usersPersistence.findByIds(
       authorIds.map(id => new ObjectId(id)),
     );

@@ -1,4 +1,7 @@
-import type { SerieEpisodeAchievements, SerieProgress } from '@/features/serie/serie.types';
+import type {
+  SerieEpisodeAchievements,
+  SerieProgress,
+} from '@/features/serie/serie.types';
 
 /** Suma XP de `apps/api/src/data/serie/episodes.json` (semilla actual). */
 export const SERIE_TOTAL_XP = 8900;

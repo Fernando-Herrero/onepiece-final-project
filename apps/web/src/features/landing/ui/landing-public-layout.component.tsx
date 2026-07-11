@@ -2,9 +2,9 @@ import { Flex } from '@radix-ui/themes';
 import Head from 'next/head';
 import type { ReactNode } from 'react';
 
+import { useSmoothScroll } from '@/features/landing/motion/use-smooth-scroll';
 import { LandingFooterComponent } from '@/features/landing/ui/landing-footer.component';
 import { LandingHeaderComponent } from '@/features/landing/ui/landing-header.component';
-import { useSmoothScroll } from '@/features/landing/motion/use-smooth-scroll';
 
 type LandingPublicLayoutProps = {
   children: ReactNode;

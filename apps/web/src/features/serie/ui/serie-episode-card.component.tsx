@@ -45,7 +45,7 @@ export function SerieEpisodeCard({
                 as="p"
                 size="1"
                 weight="bold"
-                className="shrink-0 font-road-captain text-[#f2d9a8]"
+                className="font-road-captain shrink-0 text-[#f2d9a8]"
               >
                 {t('serie.episode_number', { number: episodeId })}
               </Text>
@@ -60,7 +60,11 @@ export function SerieEpisodeCard({
             </Flex>
 
             <Flex align="start" justify="between" gap="3">
-              <Text as="p" size="1" className="min-w-0 flex-1 text-[#f4ede1]/75">
+              <Text
+                as="p"
+                size="1"
+                className="min-w-0 flex-1 text-[#f4ede1]/75"
+              >
                 {description}
               </Text>
 
@@ -122,7 +126,11 @@ export function SerieEpisodeCard({
                             size="1"
                             className="text-[#f4ede1]/80"
                           >
-                            <Text as="span" weight="medium" className="text-[#f4ede1]">
+                            <Text
+                              as="span"
+                              weight="medium"
+                              className="text-[#f4ede1]"
+                            >
                               {t(labelKey)}:
                             </Text>{' '}
                             {ids.join(', ')}

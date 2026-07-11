@@ -96,7 +96,9 @@ export function resolveCardIds(type: CardType, ids: number[]) {
     .filter((card): card is CatalogCard => card !== undefined);
 }
 
-export function resolveUnlockedCards(unlockedCards: UserDocument['unlockedCards']) {
+export function resolveUnlockedCards(
+  unlockedCards: UserDocument['unlockedCards'],
+) {
   return {
     characters: resolveCardIds('characters', unlockedCards.characters),
     items: resolveCardIds('items', unlockedCards.items),
@@ -106,7 +108,9 @@ export function resolveUnlockedCards(unlockedCards: UserDocument['unlockedCards'
   };
 }
 
-export function buildCollectionStats(unlockedCards: UserDocument['unlockedCards']) {
+export function buildCollectionStats(
+  unlockedCards: UserDocument['unlockedCards'],
+) {
   const totals = getCatalogTotals();
   const unlocked = resolveUnlockedCards(unlockedCards);
 

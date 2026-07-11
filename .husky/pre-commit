@@ -1,0 +1,39 @@
+#!/usr/bin/env sh
+
+# Git hooks no cargan tu shell — usar Node del proyecto (mise), no el del sistema
+export PATH="$HOME/.local/share/mise/shims:$PATH"
+
+# Comprobar que pnpm-lock.yaml está al día
+pnpm install --frozen-lockfile || (
+    echo '🧶🔒🚨 pnpm-lock.yaml desactualizado o hay un problema de dependencias. Ejecuta "pnpm install" y vuelve a intentarlo.';
+    false;
+)
+
+# Formato
+pnpm format-check ||
+(
+    echo '🤢 Prettier check falló. Ejecuta "pnpm format", añade los cambios y vuelve a commitear.';
+    false;
+)
+
+# Lint
+pnpm lint ||
+(
+    echo '😤 ESLint falló. Corrige lo indicado arriba y vuelve a commitear.'
+    false;
+)
+
+# Tipos
+pnpm type-check || (
+    echo '🤓 Type-check falló. TypeScript encontró errores. Corrígelos y vuelve a intentarlo.';
+    false;
+)
+
+# Build de los apps desplegables
+pnpm build ||
+(
+    echo '❌ Build falló: revisa los errores de arriba.'
+    false;
+)
+
+echo '✅ Checks pasados — commiteando.'

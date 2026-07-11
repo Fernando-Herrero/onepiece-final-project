@@ -62,70 +62,70 @@ function ProfileRankingRow({
           : 'border-[#f2d9a8]/10 bg-[#05070d]/40'
       }`}
     >
+      <Text
+        as="span"
+        size="1"
+        weight="bold"
+        className="w-5 shrink-0 text-center text-[#f2d9a8]/70"
+      >
+        {rank}
+      </Text>
+
+      <Box position="relative" className="shrink-0">
+        <Avatar
+          src={avatarSrc}
+          fallback={name.slice(0, 1).toUpperCase()}
+          size="2"
+          radius="full"
+          className="border border-[#f2d9a8]/20"
+          onLoadingStatusChange={status => {
+            if (status === 'error') {
+              setAvatarLoadError(true);
+            }
+          }}
+        />
+        <Box
+          position="absolute"
+          className={`right-0 bottom-0 size-2 rounded-full border border-[#0b1120] ${
+            entry.isActive ? 'bg-green-400' : 'bg-red-400'
+          }`}
+          aria-hidden
+        />
+      </Box>
+
+      <Flex direction="column" gap="1" className="min-w-0 flex-1">
         <Text
           as="span"
-          size="1"
-          weight="bold"
-          className="w-5 shrink-0 text-center text-[#f2d9a8]/70"
+          size="2"
+          weight="medium"
+          className="truncate text-[#f4ede1]"
         >
-          {rank}
+          {name}
+          {isCurrentUser ? (
+            <Text as="span" size="1" className="ml-1.5 text-[#f2d9a8]">
+              ({t('profile.ranking_you')})
+            </Text>
+          ) : null}
         </Text>
-
-        <Box position="relative" className="shrink-0">
-          <Avatar
-            src={avatarSrc}
-            fallback={name.slice(0, 1).toUpperCase()}
+        <Text as="span" size="1" color="gray" className="truncate">
+          @{entry.username}
+        </Text>
+        <Flex align="center" gap="2" className="pt-0.5">
+          <Progress
+            value={xpPercent}
             size="2"
-            radius="full"
-            className="border border-[#f2d9a8]/20"
-            onLoadingStatusChange={status => {
-              if (status === 'error') {
-                setAvatarLoadError(true);
-              }
-            }}
+            className="profile-xp-progress min-w-0 flex-1"
           />
-          <Box
-            position="absolute"
-            className={`right-0 bottom-0 size-2 rounded-full border border-[#0b1120] ${
-              entry.isActive ? 'bg-green-400' : 'bg-red-400'
-            }`}
-            aria-hidden
-          />
-        </Box>
-
-        <Flex direction="column" gap="1" className="min-w-0 flex-1">
           <Text
             as="span"
-            size="2"
-            weight="medium"
-            className="truncate text-[#f4ede1]"
+            size="1"
+            weight="bold"
+            className="shrink-0 text-[#f2d9a8]"
           >
-            {name}
-            {isCurrentUser ? (
-              <Text as="span" size="1" className="ml-1.5 text-[#f2d9a8]">
-                ({t('profile.ranking_you')})
-              </Text>
-            ) : null}
+            {t('profile.experience', { value: entry.experience })}
           </Text>
-          <Text as="span" size="1" color="gray" className="truncate">
-            @{entry.username}
-          </Text>
-          <Flex align="center" gap="2" className="pt-0.5">
-            <Progress
-              value={xpPercent}
-              size="2"
-              className="profile-xp-progress min-w-0 flex-1"
-            />
-            <Text
-              as="span"
-              size="1"
-              weight="bold"
-              className="shrink-0 text-[#f2d9a8]"
-            >
-              {t('profile.experience', { value: entry.experience })}
-            </Text>
-          </Flex>
         </Flex>
+      </Flex>
     </Link>
   );
 }
