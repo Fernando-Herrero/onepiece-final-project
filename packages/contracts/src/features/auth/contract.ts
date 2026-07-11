@@ -35,6 +35,10 @@ export const authErrors = {
     status: 409,
     message: 'Email or username already exists',
   },
+  ALREADY_AUTHENTICATED: {
+    status: 403,
+    message: 'Already signed in',
+  },
 } as const;
 
 export const authContract = oc
