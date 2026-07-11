@@ -50,4 +50,4 @@ See `coding-principles.mdc` and `~/.cursor/rules/anti-patterns.mdc`. Summary: tr
 
 After each implementation state: `pnpm dev`, URL, expected on-screen result.
 
-**Status (Jul 2026):** landing ✅ · auth ✅ · dashboard shell ✅ · **profile 4.3 + 4.4 ✅** · **Nest API: health + auth + users ✅** (no Mongoose) · **next: serie (Phase 6)**. See `docs/NEST-MIGRATION.md`.
+**Status (Jul 2026):** landing ✅ · auth ✅ · dashboard shell ✅ · **profile 4.3 + 4.4 ✅** · **serie dashboard UX ✅** · **Nest API: health + auth + users + serie ✅** · **next: i18n serie JSON (ES/EN/JA)** → community 4.2. See `docs/NEST-MIGRATION.md` and `docs/MIGRATION.md` §1.1.

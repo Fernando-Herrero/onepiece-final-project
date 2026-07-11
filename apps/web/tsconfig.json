@@ -15,9 +15,8 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "plugins": [{ "name": "next" }],
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "exclude": ["node_modules"],
