@@ -6,6 +6,7 @@
     "types": "./eslint-config.d.ts",
     "exports": {
         "./node.eslint.config.js": "./node.eslint.config.js",
+        "./nest.eslint.config.js": "./nest.eslint.config.js",
         "./prettier.config.js": "./prettier.config.js",
         "./prettier.react.config.js": "./prettier.react.config.js"
     },
