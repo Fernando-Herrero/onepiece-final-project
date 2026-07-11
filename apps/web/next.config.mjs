@@ -17,16 +17,19 @@ const nextConfig = {
   i18n: nextI18nConfig.i18n,
 
   async rewrites() {
-    const apiUrl = process.env.API_INTERNAL_URL;
+    const apiUrl =
+      process.env.API_INTERNAL_URL ?? 'https://logpose-api-47dr.onrender.com';
 
     if (!apiUrl) return [];
 
-    return [
-      {
-        source: '/api/:path*',
-        destination: `${apiUrl}/api/:path*`,
-      },
-    ];
+    return {
+      beforeFiles: [
+        {
+          source: '/api/:path*',
+          destination: `${apiUrl}/api/:path*`,
+        },
+      ],
+    };
   },
 };
 
