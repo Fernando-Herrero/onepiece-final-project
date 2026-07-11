@@ -1,4 +1,4 @@
-import nodeConfig from '@logpose/eslint-config/node.eslint.config.js';
+import nestConfig from '@logpose/eslint-config/nest.eslint.config.js';
 
 /** @type {import('typescript-eslint').ConfigArray} */
 const config = [
@@ -13,7 +13,7 @@ const config = [
       '*.config.cjs',
     ],
   },
-  ...nodeConfig,
+  ...nestConfig,
   {
     languageOptions: {
       parserOptions: {
