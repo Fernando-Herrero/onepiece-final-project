@@ -29,16 +29,22 @@ export class UsersService {
     private readonly notificationsPersistence: NotificationsPersistence,
   ) {}
 
+  private async requireUser(id: string) {
+    const user = await this.usersPersistence.findById(id);
+
+    if (!user) {
+      throw new ORPCError('USER_NOT_FOUND');
+    }
+
+    return user;
+  }
+
   private async assertVisibleUser(
     userId: string,
     privacyKey: PrivacyKey,
     viewerId?: string,
   ) {
-    const user = await this.usersPersistence.findById(userId);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const user = await this.requireUser(userId);
 
     if (viewerId === userId) {
       return;
@@ -108,21 +114,13 @@ export class UsersService {
   }
 
   async getById(userId: string) {
-    const user = await this.usersPersistence.findById(userId);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const user = await this.requireUser(userId);
 
     return serializeUser(user);
   }
 
   async getStats(userId: string) {
-    const user = await this.usersPersistence.findById(userId);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    await this.requireUser(userId);
 
     const [
       myPosts,
@@ -153,22 +151,14 @@ export class UsersService {
   }
 
   async getFollowers(userId: string) {
-    const user = await this.usersPersistence.findById(userId);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const user = await this.requireUser(userId);
 
     const followers = await this.usersPersistence.findByIds(user.followers);
     return followers.map(serializeUserSummary);
   }
 
   async getFollowing(userId: string) {
-    const user = await this.usersPersistence.findById(userId);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const user = await this.requireUser(userId);
 
     const following = await this.usersPersistence.findByIds(user.following);
     return following.map(serializeUserSummary);
@@ -179,11 +169,7 @@ export class UsersService {
       throw new ORPCError('CANNOT_FOLLOW_SELF');
     }
 
-    const target = await this.usersPersistence.findById(targetUserId);
-
-    if (!target) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const target = await this.requireUser(targetUserId);
 
     const viewer = await this.usersPersistence.findById(viewerId);
 
@@ -217,11 +203,7 @@ export class UsersService {
       throw new ORPCError('CANNOT_FOLLOW_SELF');
     }
 
-    const target = await this.usersPersistence.findById(targetUserId);
-
-    if (!target) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const target = await this.requireUser(targetUserId);
 
     const viewer = await this.usersPersistence.findById(viewerId);
 
@@ -282,11 +264,7 @@ export class UsersService {
   async update(targetUserId: string, viewerId: string, body: UpdateUserBody) {
     await this.assertOwnerOrAdmin(targetUserId, viewerId);
 
-    const user = await this.usersPersistence.findById(targetUserId);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const user = await this.requireUser(targetUserId);
 
     if (
       body.avatar !== undefined &&
@@ -317,11 +295,7 @@ export class UsersService {
   async delete(targetUserId: string, viewerId: string) {
     await this.assertOwnerOrAdmin(targetUserId, viewerId);
 
-    const user = await this.usersPersistence.findById(targetUserId);
-
-    if (!user) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+    const user = await this.requireUser(targetUserId);
 
     const userId = user._id.toString();
     const userPosts = await this.postsPersistence.findIdsByUserId(userId);

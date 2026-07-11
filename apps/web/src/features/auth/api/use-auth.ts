@@ -1,3 +1,4 @@
+import { type InferClientErrorUnion, isDefinedError } from '@orpc/client';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import type { TFunction } from 'i18next';
 import { useRouter } from 'next/router';
@@ -7,14 +8,13 @@ import type { RegisterFormValues } from '@/features/auth/register-form.schema';
 import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
+type AuthClientError = InferClientErrorUnion<typeof client.auth>;
+
 function getAuthErrorMessage(error: unknown, t: TFunction): string {
-  if (
-    typeof error === 'object' &&
-    error !== null &&
-    'code' in error &&
-    typeof error.code === 'string'
-  ) {
-    switch (error.code) {
+  const typedError = error as AuthClientError;
+
+  if (isDefinedError(typedError)) {
+    switch (typedError.code) {
       case 'DUPLICATE_ACCOUNT':
         return t('auth.errors.DUPLICATE_ACCOUNT');
       case 'INVALID_CREDENTIALS':
@@ -91,12 +91,11 @@ const SESSION_INVALID_ERROR_CODES = new Set([
 ]);
 
 function isSessionInvalidError(error: unknown): boolean {
+  const typedError = error as AuthClientError;
+
   return (
-    typeof error === 'object' &&
-    error !== null &&
-    'code' in error &&
-    typeof error.code === 'string' &&
-    SESSION_INVALID_ERROR_CODES.has(error.code)
+    isDefinedError(typedError) &&
+    SESSION_INVALID_ERROR_CODES.has(typedError.code)
   );
 }
 
