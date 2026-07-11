@@ -18,7 +18,8 @@ const nextConfig = {
 
   async rewrites() {
     const apiUrl =
-      process.env.API_INTERNAL_URL ?? 'https://logpose-api-47dr.onrender.com';
+      process.env.API_INTERNAL_URL ??
+      (process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : null);
 
     if (!apiUrl) return [];
 
