@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
 import type { ProfileUser } from '@/features/profile/profile.types';
-import { useSerieArcs, useSerieSagas } from '@/features/serie/api/use-serie';
 import { SERIE_TOTAL_XP } from '@/features/serie/serie.constants';
 import { getSerieXpPercent } from '@/features/serie/serie.selectors';
 
@@ -16,26 +15,26 @@ export function ProfileProgressCard({
   user,
   isOwner = true,
 }: ProfileProgressCardProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'serie']);
   const { saga, arc, episode } = user.serieProgress;
   const hasSerieProgress = saga > 0 && arc > 0 && episode > 0;
-
-  const sagasQuery = useSerieSagas({ enabled: hasSerieProgress });
-  const arcsQuery = useSerieArcs(saga, { enabled: hasSerieProgress });
-
-  const sagaName = sagasQuery.data?.sagas.find(item => item.id === saga)?.name;
-  const arcName = arcsQuery.data?.arcs.find(item => item.id === arc)?.name;
   const xpPercent = getSerieXpPercent(user.experience);
 
   const progressItems = hasSerieProgress
     ? [
         {
           label: t('profile.progress_saga_label'),
-          value: sagaName ?? t('profile.progress_saga_fallback', { id: saga }),
+          value: t(`sagas.${saga}.name`, {
+            ns: 'serie',
+            defaultValue: t('profile.progress_saga_fallback', { id: saga }),
+          }),
         },
         {
           label: t('profile.progress_arc_label'),
-          value: arcName ?? t('profile.progress_arc_fallback', { id: arc }),
+          value: t(`arcs.${arc}.name`, {
+            ns: 'serie',
+            defaultValue: t('profile.progress_arc_fallback', { id: arc }),
+          }),
         },
         {
           label: t('profile.progress_episode_label'),

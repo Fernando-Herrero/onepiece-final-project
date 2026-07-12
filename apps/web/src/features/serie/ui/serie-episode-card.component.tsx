@@ -31,7 +31,7 @@ export function SerieEpisodeCard({
   achievements,
   watched,
 }: SerieEpisodeCardProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'serie']);
   const [previewRewards, setPreviewRewards] = useState(false);
   const showRewards = watched || previewRewards;
 
@@ -55,7 +55,10 @@ export function SerieEpisodeCard({
                 weight="medium"
                 className="min-w-0 text-[#f4ede1]"
               >
-                {name}
+                {t(`episodes.${episodeId}.name`, {
+                  ns: 'serie',
+                  defaultValue: name,
+                })}
               </Text>
             </Flex>
 
@@ -65,7 +68,10 @@ export function SerieEpisodeCard({
                 size="1"
                 className="min-w-0 flex-1 text-[#f4ede1]/75"
               >
-                {description}
+                {t(`episodes.${episodeId}.description`, {
+                  ns: 'serie',
+                  defaultValue: description,
+                })}
               </Text>
 
               <Tooltip content={t('serie.viewed_chapter')}>

@@ -1,0 +1,486 @@
+{
+  "arcs": {
+    "1": {
+      "name": "Romance Dawn",
+      "description": "ルフィが旅を始め、海賊となり、最初の仲間と共に初の試練に立ち向かう。"
+    },
+    "2": {
+      "name": "Orange Town",
+      "description": "ルフィとゾロがオレンジの町に到着し、ナミと出会い、バギーから町を解放する。"
+    },
+    "3": {
+      "name": "Syrup Village",
+      "description": "仲間たちが船を探し、ウソップと出会い、クロネコの海賊団と対峙する。"
+    },
+    "4": {
+      "name": "Baratie",
+      "description": "浮遊レストランでコックを探し、サンジが加わり、クリークとの争いが起きる。"
+    },
+    "5": {
+      "name": "Arlong Park",
+      "description": "ナミの過去が明かされ、アーロンの支配と対峙する。"
+    },
+    "6": {
+      "name": "Buggy Side Story (Filler)",
+      "description": "バギーと一味のサイドストーリー。軽快でユーモラスな展開。"
+    },
+    "7": {
+      "name": "Loguetown",
+      "description": "グランドライン前の最後の寄港地ローグタウンでの対決。"
+    },
+    "8": {
+      "name": "Warship Island (Filler)",
+      "description": "謎の少女を助けながら海賊と秘密に立ち向かうフィラー編。"
+    },
+    "9": {
+      "name": "Reverse Mountain/Laboon",
+      "description": "グランドライン入り、ラブーンとの出会い。"
+    },
+    "10": {
+      "name": "Whisky Peak",
+      "description": "祝祭的な町に隠された危険と敵。"
+    },
+    "11": {
+      "name": "Koby and Helmeppo (Filler)",
+      "description": "コビーとヘルメッポの成長を描く短編。"
+    },
+    "12": {
+      "name": "Little Garden",
+      "description": "先史時代の島と巨人の戦士たち。"
+    },
+    "13": {
+      "name": "Drum Island",
+      "description": "氷の島で医者を探す旅。"
+    },
+    "14": {
+      "name": "Alabasta",
+      "description": "アラバスタでクロコダイルの陰謀を止める。"
+    },
+    "15": {
+      "name": "Post-Alabasta",
+      "description": "アラバスタ後の休息と次の航路へ。"
+    },
+    "16": {
+      "name": "Goat Island (Filler)",
+      "description": "ヤギの島フィラー。"
+    },
+    "17": {
+      "name": "Ruluka Island (Filler)",
+      "description": "ルルカ島フィラー。"
+    },
+    "18": {
+      "name": "Jaya",
+      "description": "ジャヤ島到着、空の島への手がかり。"
+    },
+    "19": {
+      "name": "Skypiea",
+      "description": "スカイピア編、神々との戦い。"
+    },
+    "20": {
+      "name": "G-8 (Filler)",
+      "description": "G-8基地フィラー。"
+    },
+    "21": {
+      "name": "Long Ring Long Land",
+      "description": "フォクシーとのデーヴィ・バック・ファイト。"
+    },
+    "22": {
+      "name": "Ocean's Dream (Filler)",
+      "description": "記憶喪失フィラー。"
+    },
+    "23": {
+      "name": "Foxy's Return (Filler)",
+      "description": "フォクシー再登場フィラー。"
+    },
+    "24": {
+      "name": "Water 7",
+      "description": "ウォーターセブン、新たな船と対立。"
+    },
+    "25": {
+      "name": "Enies Lobby",
+      "description": "エニエス・ロビー救出作戦。"
+    },
+    "26": {
+      "name": "Post-Enies Lobby",
+      "description": "エニエス・ロビー後の休息。"
+    },
+    "27": {
+      "name": "Ice Hunter (Filler)",
+      "description": "アイスハンター編フィラー。"
+    },
+    "28": {
+      "name": "Thriller Bark",
+      "description": "スリラーバーク、モリアとの戦い。"
+    },
+    "29": {
+      "name": "Spa Island (Filler)",
+      "description": "スパ島フィラー。"
+    },
+    "30": {
+      "name": "Sabaody Archipelago",
+      "description": "シャボンディ諸島、新世界への入口。"
+    },
+    "31": {
+      "name": "Amazon Lily",
+      "description": "アマゾン・リリー、エースを探すルフィ。"
+    },
+    "32": {
+      "name": "Impel Down",
+      "description": "インペルダウン潜入。"
+    },
+    "33": {
+      "name": "Little East Blue (Filler)",
+      "description": "リトルイーストブルー編フィラー。"
+    },
+    "34": {
+      "name": "Marineford",
+      "description": "マリンフォード頂上戦争。"
+    },
+    "35": {
+      "name": "Post-War",
+      "description": "戦争後の世界と仲間たち。"
+    },
+    "36": {
+      "name": "Return to Sabaody",
+      "description": "2年後、シャボンディ再集結。"
+    },
+    "37": {
+      "name": "Fish-Man Island",
+      "description": "魚人島、海底の文化と真実。"
+    },
+    "38": {
+      "name": "Z's Ambition (Filler)",
+      "description": "Zの野望編フィラー。"
+    },
+    "39": {
+      "name": "Punk Hazard",
+      "description": "パンクハザード、火と氷の島。"
+    },
+    "40": {
+      "name": "Caesar Retrieval (Filler)",
+      "description": "シーザー奪還フィラー。"
+    },
+    "41": {
+      "name": "Dressrosa",
+      "description": "ドレスローザ、ドフラミンゴとの戦い。"
+    },
+    "42": {
+      "name": "Silver Mine (Filler)",
+      "description": "シルバーマイン編フィラー。"
+    },
+    "43": {
+      "name": "Zou",
+      "description": "ゾウ、歴史の texto と新たな試練。"
+    },
+    "44": {
+      "name": "Marine Rookie (Filler)",
+      "description": "海軍ルーキー編フィラー。"
+    },
+    "45": {
+      "name": "Whole Cake Island",
+      "description": "ホールケーキアイランド、サンジとビッグ・マム。"
+    },
+    "46": {
+      "name": "Levely",
+      "description": "世界会議レヴェリー。"
+    },
+    "47": {
+      "name": "Wano Country (Part 1)",
+      "description": "ワノ国到着（前編）。"
+    },
+    "48": {
+      "name": "Cidre Guild (Filler)",
+      "description": "シードルギルド編フィラー。"
+    },
+    "49": {
+      "name": "Wano Country (Part 2)",
+      "description": "ワノ国編（中編）。"
+    },
+    "50": {
+      "name": "Uta's Past (Filler)",
+      "description": "ウタの過去編フィラー。"
+    },
+    "51": {
+      "name": "Wano Country (Part 3)",
+      "description": "ワノ国決戦（後編）。"
+    }
+  },
+  "episodes": {
+    "1": {
+      "name": "I'm Luffy! The Man Who's Gonna Be King of the Pirates!",
+      "description": "海の真ん中の樽から現れた謎の少年。アルビダの海賊に襲われた客船で、海軍を目指すコビーと出会う。"
+    },
+    "2": {
+      "name": "Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!",
+      "description": "ルフィとコビーがシェルタウンで、モーガン大佐の囚人となったロロノア・ゾロと出会う。"
+    },
+    "3": {
+      "name": "Morgan vs. Luffy! Who's This Beautiful Young Woman?",
+      "description": "ルフィとゾロが暴君モーガン大佐と対峙。謎の女が影から戦いを見守る。"
+    },
+    "4": {
+      "name": "Luffy's Past! The Red-Haired Shanks Appears!",
+      "description": "シャンクスとの幼少期のフラッシュバックでルフィの能力と麦わら帽子の由来が明かされる。一行はオレンジの町へ。"
+    },
+    "5": {
+      "name": "A Terrifying Mysterious Power! Captain Buggy, the Clown Pirate!",
+      "description": "悪魔の実の能力者バギーとオレンジの町を舞台にした戦い。"
+    },
+    "6": {
+      "name": "Desperate Situation! Beast Tamer Mohji vs. Luffy!",
+      "description": "ルフィが忠犬と店を守るため、猛獣使いモージとライオンのリッチーと戦う。"
+    },
+    "7": {
+      "name": "Epic Showdown! Swordsman Zoro vs. Acrobat Cabaji!",
+      "description": "負傷したゾロがバギー一味のアクロバットキャバジと剣術勝負。"
+    },
+    "8": {
+      "name": "Who's the Lucky One? The Devil Fruit Power Showdown!",
+      "description": "ルフィ対バギー最終決戦。悪魔の実の力が激突し、町の運命が決まる。"
+    },
+    "9": {
+      "name": "The Honorable Liar? Captain Usopp!",
+      "description": "シロップ村で船を探す一行が、子供たちに空想話を語るウソップと出会う。"
+    },
+    "10": {
+      "name": "The Weirdest Guy Ever! Jango the Hypnotist!",
+      "description": "催眠術師ジャンゴ登場。カヤの執事をめぐる陰謀が明らかに。"
+    },
+    "11": {
+      "name": "Expose the Plot! Pirate Butler, Captain Kuro!",
+      "description": "クラハドールが「百計のクロ」だったと判明。ウソップが暗殺計画を知る。"
+    },
+    "12": {
+      "name": "Clash with the Black Cat Pirates! The Great Battle on the Slope!",
+      "description": "北の坂での決戦開始。麦わらの一味とウソップ対クロネコの海賊団。"
+    },
+    "13": {
+      "name": "The Terrifying Duo! Meowban Brothers vs. Zoro!",
+      "description": "ゾロ対シャムとブチ。ルフィたちも残りの海賊と戦う。"
+    },
+    "14": {
+      "name": "Luffy Back in Action! Miss Kaya's Desperate Resistance!",
+      "description": "ルフィがジャンゴの催眠から回復。カヤが脅威に抵抗。"
+    },
+    "15": {
+      "name": "Beat Kuro! Usopp the Man's Tearful Resolve!",
+      "description": "ウソップが恐れと向き合い、クロとの最終対決へ。"
+    },
+    "16": {
+      "name": "Protect Kaya! The Usopp Pirates' Great Efforts!",
+      "description": "ウソップの仲間たちがカヤを守る。"
+    },
+    "17": {
+      "name": "Anger Explosion! Kuro vs. Luffy! How It Ends!",
+      "description": "ルフィ対クロ最終決戦で村とカヤの運命が決まる。"
+    },
+    "18": {
+      "name": "You're the Weird One! Jango vs. Usopp!",
+      "description": "ウソップ対ジャンゴ。狙撃手としての実力を示す。"
+    },
+    "19": {
+      "name": "The Three-Sword Style's Past! Zoro and Kuina's Vow!",
+      "description": "ゾロと幼馴染クイナの誓い。三刀流を志した理由。"
+    },
+    "20": {
+      "name": "Famous Cook! Sanji of the Sea Restaurant!",
+      "description": "海上レストラン「バラティエ」でサンジと出会う。"
+    },
+    "21": {
+      "name": "Unwelcome Customer! Sanji's Food and Ghin's Debt!",
+      "description": "空腹のギンがバラティエの「誰でも食べさせる」理念を試す。"
+    },
+    "22": {
+      "name": "The Strongest Pirate Fleet! Commodore Don Krieg!",
+      "description": "東の海最大の海賊艦隊、ドン・クリークがバラティエを狙う。"
+    },
+    "23": {
+      "name": "Protect Baratie! The Great Pirate, Red Foot Zeff!",
+      "description": "ゼフの「赤足」時代とサンジとの過去が明かされる。"
+    },
+    "24": {
+      "name": "Hawk-Eye Mihawk! The Great Swordsman vs. Pirate Hunter Zoro!",
+      "description": "世界最強の剣士ミホークがゾロとの決闘を求めて来る。"
+    },
+    "25": {
+      "name": "The Emerge of the Deadly Weapon! Zoro's New Special Attack!",
+      "description": "絶体絶命のゾロが新技を放つ。"
+    },
+    "26": {
+      "name": "Zoro's Vow to His Captain! I'll Never Lose Again!",
+      "description": "ミホークに敗れたゾロがルフィに誓う「二度と負けない」。"
+    },
+    "27": {
+      "name": "Cool-headed, Cold-hearted Demon! Pirate Fleet Chief Commander Ghin!",
+      "description": "ギンがクリークへの忠義とサンジへの恩義の間で揺れる。"
+    },
+    "28": {
+      "name": "I Won't Die! Fierce Battle, Luffy vs. Krieg!",
+      "description": "ルフィ対クリーク決戦。ギンが毒ガスからルフィを救う。"
+    },
+    "29": {
+      "name": "The Conclusion of the Deadly Battle! A Spear of Blind Determination!",
+      "description": "ルフィのゴムゴムのバズーカでクリークを倒すクライマックス。"
+    },
+    "30": {
+      "name": "Set Sail! The Seafaring Cook Sets off With Luffy!",
+      "description": "サンジがオールブルーを目指し一味に加わる。"
+    },
+    "31": {
+      "name": "The Worst Man in the Eastern Seas! Fishman Pirate Arlong!",
+      "description": "ナミがメリー号を持ち去る。ジョニーとヨサクがアーロンの情報を持つ。"
+    },
+    "32": {
+      "name": "Witch of Cocoyashi Village! Arlong's Female Leader!",
+      "description": "ゾロとウソップがココヤシ村でナミの正体を知る。"
+    },
+    "33": {
+      "name": "Usopp Dead?! When is Luffy Going to Make Landfall?!",
+      "description": "ウソップがアーロンに敗北。ルフィとサンジが向かう。"
+    },
+    "34": {
+      "name": "Everyone's Gathered! Usopp Speaks the Truth About Nami!",
+      "description": "ウソップがナミの過去とアーロンとの関係を明かす。"
+    },
+    "35": {
+      "name": "Untold Past! Female Warrior Bellemere!",
+      "description": "ベルメールとナミ、ノジコのフラッシュバック。"
+    },
+    "36": {
+      "name": "Survive! Mother Bellemere and Nami's Bond!",
+      "description": "アーロンがベルメールを殺し、ナミが村を救うために働く。"
+    },
+    "37": {
+      "name": "Luffy Rises! Result of the Broken Promise!",
+      "description": "ネズミ軍曹の策略でナミが助けを求める。ルフィが麦わら帽子を渡す。"
+    },
+    "38": {
+      "name": "Luffy in Big Trouble! Fishmen vs. the Luffy Pirates!",
+      "description": "アーロンパークでの戦い開始。ルフィが水の中に閉じ込められる。"
+    },
+    "39": {
+      "name": "Luffy Submerged! Zoro vs. Hatchan the Octopus!",
+      "description": "ゾロ対六刀流のハッチアン。"
+    },
+    "40": {
+      "name": "Proud Warriors! Sanji and Usopp's Fierce Battles!",
+      "description": "サンジ対クロオビ、ウソップ対チュウ。"
+    },
+    "41": {
+      "name": "Luffy at Full Power! Nami's Determination and the Straw Hat!",
+      "description": "ゲンゾとノジコがルフィを救う。ナミが生きる決意。"
+    },
+    "42": {
+      "name": "Explosion! Fishman Arlong's Fierce Assault From the Sea!",
+      "description": "アーロンの本気の魚人パワー。"
+    },
+    "43": {
+      "name": "End of the Fishman Empire! Nami's My Friend!",
+      "description": "ルフィがアーロンを倒し「お前は仲間だ」と宣言。"
+    },
+    "44": {
+      "name": "Departure! Farewell to the Brave Cocoyashi Village!",
+      "description": "ナミが故郷を離れ navigator として正式加入。"
+    },
+    "45": {
+      "name": "Bounty! Straw Hat Luffy Becomes Known to the World!",
+      "description": "ルフィ初懸賞金3000万ベリー。"
+    },
+    "46": {
+      "name": "Chase Straw Hat! Little Buggy's Big Adventure!",
+      "description": "バギーの復讐を描くスペシャル。"
+    },
+    "47": {
+      "name": "You've Been Waiting For It! The Return of Captain Buggy!",
+      "description": "バギー再登場、一味再建を目指す。"
+    },
+    "48": {
+      "name": "The Town of the Beginning and the End! Landfall at Logue Town!",
+      "description": "ローグタウン到着。ロジャーが生まれ、処刑された町。"
+    },
+    "49": {
+      "name": "Kitetsu III and Yubashiri! Zoro's New Swords and the Woman Sergeant Major!",
+      "description": "ゾロが三代鬼徹と雪走を手に入れ、タシギと出会う。"
+    },
+    "50": {
+      "name": "Usopp vs. Daddy the Father! Showdown at High Noon!",
+      "description": "ウソップ対狙撃手ダディの正午の決闘。"
+    },
+    "51": {
+      "name": "Fiery Cooking Battle? Sanji vs. the Beautiful Chef!",
+      "description": "サンジ対美女シェフカルメンの料理勝負。"
+    },
+    "52": {
+      "name": "Buggy's Revenge! The Man Who Smiles On the Execution Platform!",
+      "description": "バギーが処刑台でルフィを狙う。嵐がルフィを救う。"
+    },
+    "53": {
+      "name": "The Legend Has Started! Head for the Grand Line!",
+      "description": "スモーカーから逃れグランドラインへ。"
+    },
+    "54": {
+      "name": "Precursor to a New Adventure! Apis, a Mysterious Girl!",
+      "description": "謎の少女アピスを助ける。"
+    },
+    "55": {
+      "name": "Miraculous Creature! Apis's Secret and the Legendary Island!",
+      "description": "千年竜リュウジとの交流。伝説の島を目指す。"
+    },
+    "56": {
+      "name": "Eric Attacks! Great Escape from Warship Island!",
+      "description": "エリックが軍艦島を襲撃。"
+    },
+    "57": {
+      "name": "Lone Island in a Distant Sea! The Legendary Lost Island!",
+      "description": "失われた島への旅が続く。"
+    },
+    "58": {
+      "name": "Duel in the Ruins! Tense Zoro vs. Eric!",
+      "description": "ゾロ対エリック、遺跡での決闘。"
+    },
+    "59": {
+      "name": "Luffy, Completely Surrounded! Admiral Nelson's Secret Strategy!",
+      "description": "ネルソン提督の作戦でルフィが包囲される。"
+    },
+    "60": {
+      "name": "Those Who Soar in the Open Sky! Revival of the 1000 Year Legend!",
+      "description": "千年竜たちが再び空を翔ける。"
+    },
+    "61": {
+      "name": "An Angry Showdown! Cross the Red Line!",
+      "description": "東の海編最終回。赤い土の大陸を越えグランドラインへ。"
+    }
+  },
+  "sagas": {
+    "1": {
+      "name": "イーストブルー編"
+    },
+    "2": {
+      "name": "アラバスタ編"
+    },
+    "3": {
+      "name": "空島編"
+    },
+    "4": {
+      "name": "ウォーターセブン編"
+    },
+    "5": {
+      "name": "スリラーバーク編"
+    },
+    "6": {
+      "name": "頂上戦争編"
+    },
+    "7": {
+      "name": "魚人島編"
+    },
+    "8": {
+      "name": "ドレスローザ編"
+    },
+    "9": {
+      "name": "ホールケーキアイランド編"
+    },
+    "10": {
+      "name": "ワノ国編"
+    }
+  }
+}

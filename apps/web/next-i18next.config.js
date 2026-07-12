@@ -4,7 +4,7 @@ module.exports = {
     defaultLocale: 'es',
     locales: ['es', 'en', 'ja'],
   },
-  ns: ['common'],
+  ns: ['common', 'serie'],
   defaultNS: 'common',
   reloadOnPrerender: process.env.NODE_ENV === 'development',
 };

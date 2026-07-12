@@ -1,0 +1,486 @@
+{
+  "arcs": {
+    "1": {
+      "name": "Romance Dawn",
+      "description": "Luffy begins his journey, becomes a pirate, and forms the initial crew while facing their first challenges."
+    },
+    "2": {
+      "name": "Orange Town",
+      "description": "Luffy and Zoro arrive at Orange Town, meet Nami, and fight to free the town from Buggy the Clown."
+    },
+    "3": {
+      "name": "Syrup Village",
+      "description": "The crew searches for a ship and meets Usopp while facing the Black Cat Pirates."
+    },
+    "4": {
+      "name": "Baratie",
+      "description": "The group visits a floating restaurant seeking a cook; Sanji joins and conflict with Don Krieg erupts."
+    },
+    "5": {
+      "name": "Arlong Park",
+      "description": "Nami's past is revealed as they confront Arlong's rule over her homeland."
+    },
+    "6": {
+      "name": "Buggy Side Story (Filler)",
+      "description": "Side story showing Buggy and his crew with lighthearted and humorous moments."
+    },
+    "7": {
+      "name": "Loguetown",
+      "description": "Last stop before the Grand Line: Loguetown brings confrontations before the great voyage."
+    },
+    "8": {
+      "name": "Warship Island (Filler)",
+      "description": "Filler arc where Luffy and his crew help a mysterious girl while facing pirates and hidden secrets."
+    },
+    "9": {
+      "name": "Reverse Mountain/Laboon",
+      "description": "The crew enters the Grand Line, faces the currents, and discovers Laboon, a giant whale with a mysterious bond."
+    },
+    "10": {
+      "name": "Whisky Peak",
+      "description": "The Straw Hats arrive at a festive town hiding dangerous secrets and unexpected enemies."
+    },
+    "11": {
+      "name": "Koby and Helmeppo (Filler)",
+      "description": "Short arc focused on Koby and Helmeppo, showing their development as marines."
+    },
+    "12": {
+      "name": "Little Garden",
+      "description": "The crew explores a prehistoric island with two warrior giants and enormous creatures."
+    },
+    "13": {
+      "name": "Drum Island",
+      "description": "The Straw Hats seek a doctor on a frozen island, facing illness and local mysteries."
+    },
+    "14": {
+      "name": "Alabasta",
+      "description": "Luffy and company help Vivi and the kingdom of Alabasta stop a war provoked by Crocodile."
+    },
+    "15": {
+      "name": "Post-Alabasta",
+      "description": "The crew reflects on Alabasta and prepares for the next stage of the Grand Line."
+    },
+    "16": {
+      "name": "Goat Island (Filler)",
+      "description": "Filler arc on a quiet island inhabited by goats with comic situations."
+    },
+    "17": {
+      "name": "Ruluka Island (Filler)",
+      "description": "Filler following the Straw Hats on a mysterious island with peculiar inhabitants."
+    },
+    "18": {
+      "name": "Jaya",
+      "description": "The crew reaches Jaya, discovering New World secrets and clues about ancient civilizations."
+    },
+    "19": {
+      "name": "Skypiea",
+      "description": "The Straw Hats ascend to the sky island, facing divine conflicts and ancestral trials."
+    },
+    "20": {
+      "name": "G-8 (Filler)",
+      "description": "Filler set in a heavily guarded marine base where the crew infiltrates and faces challenges."
+    },
+    "21": {
+      "name": "Long Ring Long Land",
+      "description": "The crew faces Foxy in a game of challenges and tricks testing wit and endurance."
+    },
+    "22": {
+      "name": "Ocean's Dream (Filler)",
+      "description": "Filler where the crew temporarily loses memory with comic adventures."
+    },
+    "23": {
+      "name": "Foxy's Return (Filler)",
+      "description": "Filler showing Foxy’s return and a new showdown with the crew."
+    },
+    "24": {
+      "name": "Water 7",
+      "description": "The crew arrives at Water 7, facing political tensions while seeking a new ship."
+    },
+    "25": {
+      "name": "Enies Lobby",
+      "description": "A bold rescue mission against the World Government; the crew faces powerful enemies."
+    },
+    "26": {
+      "name": "Post-Enies Lobby",
+      "description": "After Enies Lobby, the crew recovers and prepares for the next stage."
+    },
+    "27": {
+      "name": "Ice Hunter (Filler)",
+      "description": "Filler where the crew faces bounty hunters during their travels."
+    },
+    "28": {
+      "name": "Thriller Bark",
+      "description": "The Straw Hats reach a mysterious island of ghosts and zombies facing supernatural dangers."
+    },
+    "29": {
+      "name": "Spa Island (Filler)",
+      "description": "Short filler where the crew visits a spa island with lighthearted situations."
+    },
+    "30": {
+      "name": "Sabaody Archipelago",
+      "description": "Gateway to the New World: the Straw Hats face powerful forces and natural barriers."
+    },
+    "31": {
+      "name": "Amazon Lily",
+      "description": "Luffy reaches an island of warrior women while searching for Ace."
+    },
+    "32": {
+      "name": "Impel Down",
+      "description": "Luffy tries to infiltrate the most feared prison to save a loved one."
+    },
+    "33": {
+      "name": "Little East Blue (Filler)",
+      "description": "Filler where the crew recalls past adventures before reuniting for new challenges."
+    },
+    "34": {
+      "name": "Marineford",
+      "description": "An epic battle between pirates, marines, and allies that changes the world."
+    },
+    "35": {
+      "name": "Post-War",
+      "description": "The world after Marineford, with wounds, losses, and new directions for the crew."
+    },
+    "36": {
+      "name": "Return to Sabaody",
+      "description": "After the time skip, the Straw Hats return to Sabaody to reunite and resume their journey."
+    },
+    "37": {
+      "name": "Fish-Man Island",
+      "description": "Undersea exploration, forgotten cultures, and confrontations revealing deep truths."
+    },
+    "38": {
+      "name": "Z's Ambition (Filler)",
+      "description": "Filler where the crew faces a mysterious villain while heading to the New World."
+    },
+    "39": {
+      "name": "Punk Hazard",
+      "description": "The crew reaches an island split between fire and ice, facing dangerous experiments."
+    },
+    "40": {
+      "name": "Caesar Retrieval (Filler)",
+      "description": "Filler where the Straw Hats try to rescue Caesar Clown amid comic obstacles."
+    },
+    "41": {
+      "name": "Dressrosa",
+      "description": "Fight against a corrupt lord who manipulated an entire kingdom."
+    },
+    "42": {
+      "name": "Silver Mine (Filler)",
+      "description": "Filler where the crew faces thieves and traps in a mine."
+    },
+    "43": {
+      "name": "Zou",
+      "description": "The crew reaches the elephant island, discovers Poneglyph secrets, and prepares for new challenges."
+    },
+    "44": {
+      "name": "Marine Rookie (Filler)",
+      "description": "Filler where the Straw Hats infiltrate a minor marine base."
+    },
+    "45": {
+      "name": "Whole Cake Island",
+      "description": "Sanji is separated and the crew enters Big Mom’s territory facing deadly challenges."
+    },
+    "46": {
+      "name": "Levely",
+      "description": "World congress where great powers gather amid rising political tensions."
+    },
+    "47": {
+      "name": "Wano Country (Part 1)",
+      "description": "The crew arrives at Wano, an isolated samurai country, and discovers its traditions."
+    },
+    "48": {
+      "name": "Cidre Guild (Filler)",
+      "description": "Filler where the crew faces a group of criminals in the New World."
+    },
+    "49": {
+      "name": "Wano Country (Part 2)",
+      "description": "The crew continues fighting the Shogun’s allies and plans to defeat the main enemy."
+    },
+    "50": {
+      "name": "Uta's Past (Filler)",
+      "description": "Filler exploring Uta’s memories and past before current Wano events."
+    },
+    "51": {
+      "name": "Wano Country (Part 3)",
+      "description": "The final battle in Wano intensifies with epic confrontations and crucial revelations."
+    }
+  },
+  "episodes": {
+    "1": {
+      "name": "I'm Luffy! The Man Who's Gonna Be King of the Pirates!",
+      "description": "A mysterious young man emerges from a barrel in the middle of the ocean. When a cruise ship is attacked by Alvida's pirates, he meets Coby, who dreams of becoming a marine."
+    },
+    "2": {
+      "name": "Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!",
+      "description": "Luffy and Coby reach Shell Town and meet the famous pirate hunter Roronoa Zoro, held prisoner by the corrupt Captain Morgan."
+    },
+    "3": {
+      "name": "Morgan vs. Luffy! Who's This Beautiful Young Woman?",
+      "description": "Luffy and Zoro face the tyrannical Captain Morgan in Shell Town. A mysterious thief watches the battle from the shadows."
+    },
+    "4": {
+      "name": "Luffy's Past! The Red-Haired Shanks Appears!",
+      "description": "A flashback reveals how Luffy gained his powers and straw hat through his childhood with Shanks. The crew reaches Orange Town."
+    },
+    "5": {
+      "name": "A Terrifying Mysterious Power! Captain Buggy, the Clown Pirate!",
+      "description": "The crew faces Buggy the Clown, a dangerous Devil Fruit pirate terrorizing Orange Town."
+    },
+    "6": {
+      "name": "Desperate Situation! Beast Tamer Mohji vs. Luffy!",
+      "description": "Luffy protects a loyal dog and its pet food shop while fighting beast tamer Mohji and his lion Richie."
+    },
+    "7": {
+      "name": "Epic Showdown! Swordsman Zoro vs. Acrobat Cabaji!",
+      "description": "Zoro proves his swordsmanship against acrobat Cabaji of Buggy's crew despite being injured."
+    },
+    "8": {
+      "name": "Who's the Lucky One? The Devil Fruit Power Showdown!",
+      "description": "Final showdown between Luffy and Buggy as Devil Fruit powers clash and Orange Town's fate is decided."
+    },
+    "9": {
+      "name": "The Honorable Liar? Captain Usopp!",
+      "description": "The crew reaches Syrup Village seeking a ship and meets Usopp, a young liar telling fantastical stories to the village children."
+    },
+    "10": {
+      "name": "The Weirdest Guy Ever! Jango the Hypnotist!",
+      "description": "A strange hypnotist named Jango arrives. A conspiracy involving Kaya's butler and a sinister plan is revealed."
+    },
+    "11": {
+      "name": "Expose the Plot! Pirate Butler, Captain Kuro!",
+      "description": "Klahadore is revealed to be the feared Captain Kuro. Usopp discovers the plan to kill Kaya and steal her fortune."
+    },
+    "12": {
+      "name": "Clash with the Black Cat Pirates! The Great Battle on the Slope!",
+      "description": "The decisive battle begins on the north slope as the Straw Hats and Usopp face the Black Cat Pirates."
+    },
+    "13": {
+      "name": "The Terrifying Duo! Meowban Brothers vs. Zoro!",
+      "description": "Zoro fights the Meowban Brothers Sham and Buchi while Luffy and the others battle the rest of the pirate crew."
+    },
+    "14": {
+      "name": "Luffy Back in Action! Miss Kaya's Desperate Resistance!",
+      "description": "Luffy recovers from Jango's hypnosis. Kaya tries to resist threats as the battle intensifies."
+    },
+    "15": {
+      "name": "Beat Kuro! Usopp the Man's Tearful Resolve!",
+      "description": "Usopp finds courage to face his fears and defend the village, preparing for the final confrontation with Kuro."
+    },
+    "16": {
+      "name": "Protect Kaya! The Usopp Pirates' Great Efforts!",
+      "description": "Usopp's friends Onion, Pepper, and Carrot do everything to protect Kaya from the invading pirates."
+    },
+    "17": {
+      "name": "Anger Explosion! Kuro vs. Luffy! How It Ends!",
+      "description": "The final confrontation between Luffy and Captain Kuro decides the village's fate and Kaya's safety."
+    },
+    "18": {
+      "name": "You're the Weird One! Jango vs. Usopp!",
+      "description": "Final showdown between Usopp and Jango as Usopp proves his marksmanship in a decisive battle."
+    },
+    "19": {
+      "name": "The Three-Sword Style's Past! Zoro and Kuina's Vow!",
+      "description": "Flashback to Zoro's past and his vow with childhood friend Kuina, revealing why he became a swordsman."
+    },
+    "20": {
+      "name": "Famous Cook! Sanji of the Sea Restaurant!",
+      "description": "The crew reaches the floating restaurant Baratie and meets Sanji, a cook dreaming of finding the All Blue."
+    },
+    "21": {
+      "name": "Unwelcome Customer! Sanji's Food and Ghin's Debt!",
+      "description": "A hungry pirate named Gin tests Baratie's principle of feeding anyone in need."
+    },
+    "22": {
+      "name": "The Strongest Pirate Fleet! Commodore Don Krieg!",
+      "description": "Don Krieg, leader of the East Blue's largest pirate fleet, arrives at Baratie intending to conquer the restaurant."
+    },
+    "23": {
+      "name": "Protect Baratie! The Great Pirate, Red Foot Zeff!",
+      "description": "Zeff's past as the pirate Red Leg and his connection to Sanji through a tragedy at sea is revealed."
+    },
+    "24": {
+      "name": "Hawk-Eye Mihawk! The Great Swordsman vs. Pirate Hunter Zoro!",
+      "description": "Dracule Mihawk, the world's strongest swordsman, arrives at Baratie seeking Zoro for an epic duel."
+    },
+    "25": {
+      "name": "The Emerge of the Deadly Weapon! Zoro's New Special Attack!",
+      "description": "Zoro unleashes a new special technique in his desperate battle against the world's most powerful swordsman."
+    },
+    "26": {
+      "name": "Zoro's Vow to His Captain! I'll Never Lose Again!",
+      "description": "After his crushing defeat by Mihawk, Zoro makes a solemn promise to Luffy that will define his future."
+    },
+    "27": {
+      "name": "Cool-headed, Cold-hearted Demon! Pirate Fleet Chief Commander Ghin!",
+      "description": "Gin struggles between loyalty to Don Krieg and gratitude toward Sanji."
+    },
+    "28": {
+      "name": "I Won't Die! Fierce Battle, Luffy vs. Krieg!",
+      "description": "The decisive battle between Luffy and Don Krieg begins while Gin sacrifices himself to save Luffy from poison gas."
+    },
+    "29": {
+      "name": "The Conclusion of the Deadly Battle! A Spear of Blind Determination!",
+      "description": "The final battle between Luffy and Don Krieg reaches its climax with Luffy's Gomu Gomu no Bazooka."
+    },
+    "30": {
+      "name": "Set Sail! The Seafaring Cook Sets off With Luffy!",
+      "description": "After the battle, Sanji joins Luffy's crew to pursue his All Blue dream and bids an emotional farewell to Baratie and Zeff."
+    },
+    "31": {
+      "name": "The Worst Man in the Eastern Seas! Fishman Pirate Arlong!",
+      "description": "The crew learns Nami left with the Going Merry. Johnny and Yosaku bring news of Nami and the fish-man pirates led by Arlong."
+    },
+    "32": {
+      "name": "Witch of Cocoyashi Village! Arlong's Female Leader!",
+      "description": "Zoro and Usopp follow Nami to her hometown and discover she works for the fish-men as the \"witch\" who draws maps for Arlong."
+    },
+    "33": {
+      "name": "Usopp Dead?! When is Luffy Going to Make Landfall?!",
+      "description": "Usopp is defeated by Arlong's men while Luffy and Sanji sail toward Cocoyashi guided by Yosaku."
+    },
+    "34": {
+      "name": "Everyone's Gathered! Usopp Speaks the Truth About Nami!",
+      "description": "Usopp reveals Nami's tragic story and why she works for Arlong. The crew gathers to learn the truth about their navigator."
+    },
+    "35": {
+      "name": "Untold Past! Female Warrior Bellemere!",
+      "description": "Flashback revealing Nami's past: how retired marine Bell-mère found her as a baby and raised her with Nojiko."
+    },
+    "36": {
+      "name": "Survive! Mother Bellemere and Nami's Bond!",
+      "description": "The flashback continues as Arlong arrives, kills Bell-mère, and Nami agrees to work for him to save the villagers."
+    },
+    "37": {
+      "name": "Luffy Rises! Result of the Broken Promise!",
+      "description": "Arlong breaks his promise using corrupt marine Nezumi. When Nami finally asks for help, Luffy gives her his straw hat."
+    },
+    "38": {
+      "name": "Luffy in Big Trouble! Fishmen vs. the Luffy Pirates!",
+      "description": "Battle begins at Arlong Park as the Straw Hats face fish-man pirates while Luffy is trapped underwater."
+    },
+    "39": {
+      "name": "Luffy Submerged! Zoro vs. Hatchan the Octopus!",
+      "description": "Zoro faces octopus swordsman Hatchan in a six-sword versus three duel while Luffy remains trapped underwater."
+    },
+    "40": {
+      "name": "Proud Warriors! Sanji and Usopp's Fierce Battles!",
+      "description": "Sanji fights Kuroobi in the water while Usopp faces karateka Chu with his slingshot and wit."
+    },
+    "41": {
+      "name": "Luffy at Full Power! Nami's Determination and the Straw Hat!",
+      "description": "Genzo and Nojiko save Luffy from the water. Nami confronts her past and declares she wants to keep living."
+    },
+    "42": {
+      "name": "Explosion! Fishman Arlong's Fierce Assault From the Sea!",
+      "description": "Arlong shows his true fish-man power with superhuman strength and shark teeth against Luffy."
+    },
+    "43": {
+      "name": "End of the Fishman Empire! Nami's My Friend!",
+      "description": "Luffy destroys the room where Nami was forced to draw maps, proclaiming she is his nakama, and defeats Arlong."
+    },
+    "44": {
+      "name": "Departure! Farewell to the Brave Cocoyashi Village!",
+      "description": "The villagers celebrate freedom. Nami officially leaves her hometown and joins the Straw Hats as navigator."
+    },
+    "45": {
+      "name": "Bounty! Straw Hat Luffy Becomes Known to the World!",
+      "description": "Corrupt marine Nezumi reports Luffy. His first bounty of 30,000,000 berries makes him an officially wanted pirate."
+    },
+    "46": {
+      "name": "Chase Straw Hat! Little Buggy's Big Adventure!",
+      "description": "Special episode following Buggy's adventures after his defeat as he seeks revenge against Luffy."
+    },
+    "47": {
+      "name": "You've Been Waiting For It! The Return of Captain Buggy!",
+      "description": "Buggy's adventures continue as the clown pirate seeks revenge while rebuilding his crew."
+    },
+    "48": {
+      "name": "The Town of the Beginning and the End! Landfall at Logue Town!",
+      "description": "The Straw Hats reach Logue Town, where Pirate King Gol D. Roger was born and executed — their last stop before the Grand Line."
+    },
+    "49": {
+      "name": "Kitetsu III and Yubashiri! Zoro's New Swords and the Woman Sergeant Major!",
+      "description": "Zoro seeks new katanas in Logue Town, meets Tashigi, and obtains Sandai Kitetsu and Yubashiri."
+    },
+    "50": {
+      "name": "Usopp vs. Daddy the Father! Showdown at High Noon!",
+      "description": "Usopp faces famous sharpshooter Daddy Masterson in a high-noon duel."
+    },
+    "51": {
+      "name": "Fiery Cooking Battle? Sanji vs. the Beautiful Chef!",
+      "description": "Sanji competes in a cooking battle against beautiful chef Carmen."
+    },
+    "52": {
+      "name": "Buggy's Revenge! The Man Who Smiles On the Execution Platform!",
+      "description": "Buggy tries to publicly execute Luffy on the same platform where Roger died. A mysterious storm saves Luffy."
+    },
+    "53": {
+      "name": "The Legend Has Started! Head for the Grand Line!",
+      "description": "The Straw Hats escape Logue Town as Smoker pursues them, heading toward the Grand Line."
+    },
+    "54": {
+      "name": "Precursor to a New Adventure! Apis, a Mysterious Girl!",
+      "description": "The Straw Hats rescue Apis, a mysterious girl who can talk to animals and is fleeing the Marines."
+    },
+    "55": {
+      "name": "Miraculous Creature! Apis's Secret and the Legendary Island!",
+      "description": "Apis reveals she can communicate with millennium dragon Ryuji. Pirates and Marines seek the legendary dragon island."
+    },
+    "56": {
+      "name": "Eric Attacks! Great Escape from Warship Island!",
+      "description": "Eric attacks Warship Island seeking Dragonite. The Straw Hats help villagers evacuate while protecting Apis and the elder dragon."
+    },
+    "57": {
+      "name": "Lone Island in a Distant Sea! The Legendary Lost Island!",
+      "description": "The search for Lost Island continues as Ryuji guides them toward the ancestral home of millennium dragons."
+    },
+    "58": {
+      "name": "Duel in the Ruins! Tense Zoro vs. Eric!",
+      "description": "Zoro faces Eric in the ruins of Lost Island in an intense blade versus wind-scythe battle."
+    },
+    "59": {
+      "name": "Luffy, Completely Surrounded! Admiral Nelson's Secret Strategy!",
+      "description": "Luffy falls into Nelson's trap surrounded by the Marine fleet as Admiral Nelson reveals his plan."
+    },
+    "60": {
+      "name": "Those Who Soar in the Open Sky! Revival of the 1000 Year Legend!",
+      "description": "Ryuji finds fellow dragons on Lost Island and regains vitality as millennium dragons fly together once more."
+    },
+    "61": {
+      "name": "An Angry Showdown! Cross the Red Line!",
+      "description": "Final East Blue episode. The Straw Hats bid farewell to Apis and cross the Red Line into the Grand Line."
+    }
+  },
+  "sagas": {
+    "1": {
+      "name": "East Blue"
+    },
+    "2": {
+      "name": "Alabasta"
+    },
+    "3": {
+      "name": "Sky Island"
+    },
+    "4": {
+      "name": "Water 7"
+    },
+    "5": {
+      "name": "Thriller Bark Saga"
+    },
+    "6": {
+      "name": "Summit War Saga"
+    },
+    "7": {
+      "name": "Fishman Island"
+    },
+    "8": {
+      "name": "Dressrosa"
+    },
+    "9": {
+      "name": "Whole Cake Island"
+    },
+    "10": {
+      "name": "Wano Country"
+    }
+  }
+}

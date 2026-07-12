@@ -22,14 +22,17 @@ export function SerieArcBlock({
   onToggle,
   progress,
 }: SerieArcBlockProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'serie']);
   const episodesQuery = useSerieEpisodes(arc.id, { enabled: isOpen });
 
   return (
     <SerieAccordion
       variant="arc"
-      title={arc.name}
-      subtitle={arc.description}
+      title={t(`arcs.${arc.id}.name`, { ns: 'serie', defaultValue: arc.name })}
+      subtitle={t(`arcs.${arc.id}.description`, {
+        ns: 'serie',
+        defaultValue: arc.description,
+      })}
       meta={t('serie.arc_meta', { episodes: arc.totalEpisodes })}
       isOpen={isOpen}
       onToggle={onToggle}

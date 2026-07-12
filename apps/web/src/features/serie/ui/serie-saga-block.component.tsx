@@ -1,4 +1,5 @@
 import { Flex, Spinner, Text } from '@radix-ui/themes';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
 import { useSerieArcs } from '@/features/serie/api/use-serie';
@@ -23,14 +24,18 @@ export function SerieSagaBlock({
   onToggleArc,
   progress,
 }: SerieSagaBlockProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'serie']);
+  const router = useRouter();
   const arcsQuery = useSerieArcs(saga.id, { enabled: isOpen });
 
   return (
     <SerieAccordion
       variant="saga"
-      title={saga.name}
-      subtitle={saga.titleJa}
+      title={t(`sagas.${saga.id}.name`, {
+        ns: 'serie',
+        defaultValue: saga.name,
+      })}
+      subtitle={router.locale === 'ja' ? undefined : saga.titleJa}
       meta={t('serie.saga_meta', {
         arcs: saga.arcNames.length,
         episodes: saga.totalEpisodes,

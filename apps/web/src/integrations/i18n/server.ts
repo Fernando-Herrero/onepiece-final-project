@@ -8,3 +8,13 @@ export async function getDefaultI18nProps(context: GetServerSidePropsContext) {
     ...(await serverSideTranslations(locale, ['common'])),
   };
 }
+
+export async function getDashboardI18nProps(
+  context: GetServerSidePropsContext,
+) {
+  const locale = context.locale ?? 'es';
+
+  return {
+    ...(await serverSideTranslations(locale, ['common', 'serie'])),
+  };
+}
