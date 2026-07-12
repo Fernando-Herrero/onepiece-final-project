@@ -26,38 +26,36 @@ async function bootstrap() {
   expressApp.disable('x-powered-by');
   expressApp.set('trust proxy', 1);
 
-  if (nodeEnv !== 'test') {
-    expressApp.use(
-      helmet({
-        // Swagger UI (solo dev) carga scripts de unpkg.
-        contentSecurityPolicy:
-          nodeEnv === 'development'
-            ? {
-                directives: {
-                  defaultSrc: ["'self'"],
-                  scriptSrc: ["'self'", "'unsafe-inline'", 'https://unpkg.com'],
-                  styleSrc: ["'self'", "'unsafe-inline'", 'https://unpkg.com'],
-                  imgSrc: ["'self'", 'data:', 'https:'],
-                },
-              }
-            : true,
-      }),
-    );
+  expressApp.use(
+    helmet({
+      // Swagger UI (solo dev) carga scripts de unpkg.
+      contentSecurityPolicy:
+        nodeEnv === 'development'
+          ? {
+              directives: {
+                defaultSrc: ["'self'"],
+                scriptSrc: ["'self'", "'unsafe-inline'", 'https://unpkg.com'],
+                styleSrc: ["'self'", "'unsafe-inline'", 'https://unpkg.com'],
+                imgSrc: ["'self'", 'data:', 'https:'],
+              },
+            }
+          : true,
+    }),
+  );
 
-    const authLimiter = rateLimit({
-      windowMs: 15 * 60 * 1000,
-      max: 30,
-      standardHeaders: true,
-      legacyHeaders: false,
-      message: {
-        statusCode: 429,
-        message: 'Too many requests, try again later',
-      },
-    });
+  const authLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 30,
+    standardHeaders: true,
+    legacyHeaders: false,
+    message: {
+      statusCode: 429,
+      message: 'Too many requests, try again later',
+    },
+  });
 
-    expressApp.use('/api/auth/login', authLimiter);
-    expressApp.use('/api/auth/register', authLimiter);
-  }
+  expressApp.use('/api/auth/login', authLimiter);
+  expressApp.use('/api/auth/register', authLimiter);
 
   expressApp.use(requestLogMiddleware);
   await app.listen(port);
