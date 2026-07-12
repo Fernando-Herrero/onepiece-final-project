@@ -1,6 +1,10 @@
 import { z } from 'zod';
-import { updatePostSchema } from '../../common/post.schemas.js';
 import { mongoIdParamsSchema } from '../../common/id.schemas.js';
+import {
+  POST_FEED_PAGE_SIZE,
+  postPublicSchema,
+  updatePostSchema,
+} from '../../common/post.schemas.js';
 
 export const postIdParamsSchema = mongoIdParamsSchema();
 
@@ -25,3 +29,25 @@ export const toggleBookmarkOutputSchema = z.object({
   bookmarksCount: z.number(),
   userBookmarked: z.boolean(),
 });
+
+export const toggleRetweetOutputSchema = z.object({
+  retweeted: z.boolean(),
+  retweetsCount: z.number(),
+  userRetweeted: z.boolean(),
+  /** Post-retweet creado; presente cuando `retweeted` es true. */
+  retweetPost: postPublicSchema.optional(),
+  /** Id del post-retweet eliminado al deshacer; presente cuando `retweeted` es false. */
+  removedRetweetPostId: z.string().optional(),
+});
+
+export const listPostsInputSchema = z.object({
+  limit: z.coerce.number().int().min(1).max(50).optional(),
+  cursor: z.string().optional(),
+});
+
+export const listPostsOutputSchema = z.object({
+  posts: z.array(postPublicSchema),
+  nextCursor: z.string().nullable(),
+});
+
+export { POST_FEED_PAGE_SIZE };

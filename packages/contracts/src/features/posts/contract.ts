@@ -5,10 +5,13 @@ import {
   postPublicSchema,
 } from '../../common/post.schemas.js';
 import {
+  listPostsInputSchema,
+  listPostsOutputSchema,
   postIdParamsSchema,
   shareTokenParamsSchema,
   toggleBookmarkOutputSchema,
   toggleLikeOutputSchema,
+  toggleRetweetOutputSchema,
   updatePostInputSchema,
 } from './schemas.js';
 
@@ -35,9 +38,11 @@ export const postsContract = oc
       .route({
         method: 'GET',
         path: '/',
-        description: 'List public posts',
+        description: 'List public posts (cursor pagination)',
       })
-      .output(z.array(postPublicSchema)),
+      .input(listPostsInputSchema)
+      .errors(postsErrors)
+      .output(listPostsOutputSchema),
 
     getByShareToken: oc
       .route({
@@ -114,4 +119,15 @@ export const postsContract = oc
       .input(postIdParamsSchema)
       .errors(postsErrors)
       .output(toggleBookmarkOutputSchema),
+
+    toggleRetweet: oc
+      .route({
+        method: 'POST',
+        path: '/{id}/retweet',
+        inputStructure: 'detailed',
+        description: 'Toggle retweet on a post',
+      })
+      .input(postIdParamsSchema)
+      .errors(postsErrors)
+      .output(toggleRetweetOutputSchema),
   });
