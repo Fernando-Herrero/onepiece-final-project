@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 
+import { PostCard } from '@/features/posts/ui/post-card.component';
 import { useProfilePosts } from '@/features/profile/api/use-profile';
 import {
   PROFILE_POSTS_EMPTY_MESSAGE_KEY,
@@ -56,7 +57,7 @@ function ProfilePostList({
   userId: string;
   tab: ProfilePostsTab;
 }) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { data: posts } = useProfilePosts(userId, tab);
 
   if (posts.length === 0) {
@@ -74,38 +75,9 @@ function ProfilePostList({
 
   return (
     <Flex direction="column" gap="2" className="max-h-96 overflow-y-auto">
-      {posts.map(post => {
-        const authorName =
-          post.userId.displayName?.trim() || `@${post.userId.username}`;
-        const createdAtLabel = post.createdAt
-          ? new Date(post.createdAt).toLocaleDateString(i18n.language)
-          : null;
-
-        return (
-          <Card
-            key={post._id}
-            className="border border-[#f2d9a8]/10 bg-[#05070d]/40 p-4"
-          >
-            <Text as="p" size="1" color="gray" mb="1">
-              {authorName}
-              {createdAtLabel ? ` · ${createdAtLabel}` : ''}
-            </Text>
-            <Text as="p" size="2" className="text-[#f4ede1]/90">
-              {post.text}
-            </Text>
-            <Flex gap="3" mt="2">
-              <Text as="span" size="1" color="gray">
-                {t('profile.post_likes_count', { count: post.likesCount })}
-              </Text>
-              <Text as="span" size="1" color="gray">
-                {t('profile.post_comments_count', {
-                  count: post.commentsCount,
-                })}
-              </Text>
-            </Flex>
-          </Card>
-        );
-      })}
+      {posts.map(post => (
+        <PostCard key={post._id} post={post} />
+      ))}
     </Flex>
   );
 }
