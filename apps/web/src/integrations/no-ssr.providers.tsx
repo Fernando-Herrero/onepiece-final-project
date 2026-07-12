@@ -21,7 +21,7 @@ export default function NoSSRProviders({ children }: PropsWithChildren) {
   return (
     <RadixThemesProvider>
       {children}
-      <Toaster position="top-right" closeButton />
+      <Toaster position="top-right" theme="dark" richColors closeButton />
       {process.env.NODE_ENV === 'development' ? (
         <ReactQueryDevtools initialIsOpen={false} />
       ) : null}

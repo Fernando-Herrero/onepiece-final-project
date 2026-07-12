@@ -3,6 +3,7 @@ import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
 import { useSaveProfileField } from '@/features/profile/api/use-profile';
+import { getUserDisplayName } from '@/features/profile/profile.constants';
 import type { ProfileViewMoreUser } from '@/features/profile/profile.types';
 import { ProfileEditableField } from '@/features/profile/ui/profile-editable-field.component';
 import { ProfileReadonlyRow } from '@/features/profile/ui/profile-readonly-row.component';
@@ -23,8 +24,7 @@ export function ProfileViewMore({
   const [open, setOpen] = useState(false);
   const [editingField, setEditingField] = useState<EditableField | null>(null);
 
-  const fullName =
-    user.fullName?.trim() || `${user.firstName} ${user.lastName}`.trim();
+  const fullName = user.fullName?.trim() || getUserDisplayName(user);
   const address = user.address?.trim() ?? '';
   const phoneNumber = user.phoneNumber?.trim() ?? '';
   const createdAtLabel = user.createdAt

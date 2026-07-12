@@ -1,5 +1,6 @@
 import { getAuthQueriesOptions } from '@/features/auth/api/query-options';
 import { getCardsQueriesOptions } from '@/features/cards/api/query-options';
+import { getPostsQueriesOptions } from '@/features/posts/api/query-options';
 import { getProfileQueriesOptions } from '@/features/profile/api/query-options';
 import { getSerieQueriesOptions } from '@/features/serie/api/query-options';
 import { client, type OrpcClient } from '@/integrations/orpc/orpc.client';
@@ -9,6 +10,7 @@ export const getAllQueriesOptions = (client: OrpcClient) => ({
   serie: getSerieQueriesOptions(client),
   cards: getCardsQueriesOptions(client),
   profile: getProfileQueriesOptions(client),
+  posts: getPostsQueriesOptions(client),
 });
 
 export const allQueriesOptions = getAllQueriesOptions(client);

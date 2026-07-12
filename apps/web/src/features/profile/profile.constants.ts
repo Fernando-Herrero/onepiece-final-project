@@ -1,5 +1,3 @@
-import { AVATAR_OPTIONS } from '@logpose/contracts/common/avatar.schemas';
-
 import type {
   ProfilePostsEmptyMessageKey,
   ProfilePostsPrivateMessageKey,
@@ -8,25 +6,21 @@ import type {
   ProfilePostsTabConfig,
 } from '@/features/profile/profile.types';
 
-export const DEFAULT_AVATAR_SRC =
-  AVATAR_OPTIONS.find(option => option.id === 'luffy')?.path ??
-  '/avatars/luffy/luffy-happy-400.webp';
+export type UserDisplayNameFields = {
+  displayName?: string;
+  firstName: string;
+  lastName: string;
+  username: string;
+};
 
-const KNOWN_AVATAR_PATHS = new Set(AVATAR_OPTIONS.map(option => option.path));
+export function getUserDisplayName(user: UserDisplayNameFields): string {
+  const displayName = user.displayName?.trim();
+  if (displayName) {
+    return displayName;
+  }
 
-/** Maps v3 `/avatars/...` paths; legacy v2 `/pictures/user/...` → default (avoids 404). */
-export function resolveProfileAvatarSrc(avatar?: string): string {
-  const trimmed = avatar?.trim();
-  if (!trimmed) {
-    return DEFAULT_AVATAR_SRC;
-  }
-  if (KNOWN_AVATAR_PATHS.has(trimmed)) {
-    return trimmed;
-  }
-  if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
-    return trimmed;
-  }
-  return DEFAULT_AVATAR_SRC;
+  const fullName = `${user.firstName} ${user.lastName}`.trim();
+  return fullName || user.username;
 }
 
 export const PROFILE_UNLOCKED_CARD_KEYS = [

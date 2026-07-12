@@ -1,13 +1,17 @@
 import type { IconProps } from '@phosphor-icons/react';
 import {
   BellIcon,
+  BookmarkSimpleIcon,
   CardsIcon,
   CaretDownIcon,
   CaretLeftIcon,
   CaretRightIcon,
+  ChatCircleIcon,
   ChatsCircleIcon,
   GearSixIcon,
+  HeartIcon,
   MagnifyingGlassIcon,
+  RepeatIcon,
   ShieldIcon,
   TelevisionIcon,
   UserIcon,
@@ -27,6 +31,15 @@ export const Icon = {
   Bell: (p: IconProps) => <BellIcon size={18} {...p} />,
   Settings: (p: IconProps) => <GearSixIcon size={18} {...p} />,
   Admin: (p: IconProps) => <ShieldIcon size={18} {...p} />,
+  Heart: (p: IconProps) => <HeartIcon size={16} {...p} />,
+  HeartFill: (p: IconProps) => <HeartIcon size={16} weight="fill" {...p} />,
+  Bookmark: (p: IconProps) => <BookmarkSimpleIcon size={16} {...p} />,
+  BookmarkFill: (p: IconProps) => (
+    <BookmarkSimpleIcon size={16} weight="fill" {...p} />
+  ),
+  Comment: (p: IconProps) => <ChatCircleIcon size={16} {...p} />,
+  Repeat: (p: IconProps) => <RepeatIcon size={16} {...p} />,
+  RepeatFill: (p: IconProps) => <RepeatIcon size={16} weight="fill" {...p} />,
 } as const;
 
 export type DashboardNavIcon = keyof Pick<

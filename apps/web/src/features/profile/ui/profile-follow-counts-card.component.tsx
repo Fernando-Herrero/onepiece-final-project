@@ -14,11 +14,12 @@ import { useTranslation } from 'next-i18next/pages';
 import { Suspense, useState } from 'react';
 import type * as z from 'zod/v4';
 
+import { resolveAvatarSrc } from '@/features/avatar/avatar.constants';
 import {
   useProfileFollowers,
   useProfileFollowing,
 } from '@/features/profile/api/use-profile';
-import { resolveProfileAvatarSrc } from '@/features/profile/profile.constants';
+import { getUserDisplayName } from '@/features/profile/profile.constants';
 
 type UserSummary = z.infer<typeof userSummarySchema>;
 
@@ -30,18 +31,9 @@ type ProfileFollowCountsCardProps = {
 
 type FollowListKind = 'followers' | 'following';
 
-function followDisplayName(user: UserSummary) {
-  const displayName = user.displayName?.trim();
-  if (displayName) {
-    return displayName;
-  }
-
-  return `${user.firstName}${user.lastName}`.trim() || user.username;
-}
-
 function ProfileFollowUserRow({ user }: { user: UserSummary }) {
-  const name = followDisplayName(user);
-  const avatarSrc = resolveProfileAvatarSrc(user.avatar);
+  const name = getUserDisplayName(user);
+  const avatarSrc = resolveAvatarSrc(user.avatar);
 
   return (
     <Link

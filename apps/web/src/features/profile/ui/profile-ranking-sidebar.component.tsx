@@ -14,11 +14,12 @@ import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 import type * as z from 'zod/v4';
 
-import { useProfileRanking } from '@/features/profile/api/use-profile';
 import {
   DEFAULT_AVATAR_SRC,
-  resolveProfileAvatarSrc,
-} from '@/features/profile/profile.constants';
+  resolveAvatarSrc,
+} from '@/features/avatar/avatar.constants';
+import { useProfileRanking } from '@/features/profile/api/use-profile';
+import { getUserDisplayName } from '@/features/profile/profile.constants';
 import { getSerieXpPercent } from '@/features/serie/serie.selectors';
 
 type ProfileRankingEntry = z.infer<typeof userRankingEntrySchema>;
@@ -26,16 +27,6 @@ type ProfileRankingEntry = z.infer<typeof userRankingEntrySchema>;
 type ProfileRankingSidebarProps = {
   currentUserId: string;
 };
-
-function rankingDisplayName(entry: ProfileRankingEntry) {
-  const displayName = entry.displayName?.trim();
-  if (displayName) {
-    return displayName;
-  }
-
-  const fullName = `${entry.firstName}${entry.lastName}`.trim();
-  return fullName || entry.username;
-}
 
 function ProfileRankingRow({
   entry,
@@ -48,9 +39,9 @@ function ProfileRankingRow({
 }) {
   const { t } = useTranslation();
   const [avatarLoadError, setAvatarLoadError] = useState(false);
-  const resolvedAvatar = resolveProfileAvatarSrc(entry.avatar);
+  const resolvedAvatar = resolveAvatarSrc(entry.avatar);
   const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
-  const name = rankingDisplayName(entry);
+  const name = getUserDisplayName(entry);
   const xpPercent = getSerieXpPercent(entry.experience);
 
   return (

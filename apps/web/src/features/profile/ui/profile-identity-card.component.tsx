@@ -13,14 +13,14 @@ import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
 import {
+  DEFAULT_AVATAR_SRC,
+  resolveAvatarSrc,
+} from '@/features/avatar/avatar.constants';
+import {
   useFollowUserMutation,
   useSaveProfileField,
   useUnfollowUserMutation,
 } from '@/features/profile/api/use-profile';
-import {
-  DEFAULT_AVATAR_SRC,
-  resolveProfileAvatarSrc,
-} from '@/features/profile/profile.constants';
 import type {
   ProfileUser,
   UpdateProfileBody,
@@ -66,7 +66,7 @@ export function ProfileIdentityCard({
   const coverImage = user.coverImage?.trim() ?? '';
   const hasCoverImage = !!coverImage && !coverLoadError;
   const isEditingCover = editingField === 'coverImage';
-  const resolvedAvatar = resolveProfileAvatarSrc(user.avatar);
+  const resolvedAvatar = resolveAvatarSrc(user.avatar);
   const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
 
   async function saveProfileField(

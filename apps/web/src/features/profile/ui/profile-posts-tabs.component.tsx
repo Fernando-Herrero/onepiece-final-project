@@ -4,14 +4,15 @@ import {
   Flex,
   Heading,
   SegmentedControl,
-  Skeleton,
   Text,
 } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 
+import { useDeletePostMutation } from '@/features/posts/api/use-posts';
 import { PostCard } from '@/features/posts/ui/post-card.component';
+import { PostFeedSkeleton } from '@/features/posts/ui/post-card-skeleton.component';
 import { useProfilePosts } from '@/features/profile/api/use-profile';
 import {
   PROFILE_POSTS_EMPTY_MESSAGE_KEY,
@@ -29,27 +30,6 @@ type ProfilePostsTabsProps = {
   isOwner?: boolean;
 };
 
-export function ProfilePostListSkeleton() {
-  return (
-    <Flex direction="column" gap="2">
-      {Array.from({ length: 2 }, (_, index) => (
-        <Card
-          key={index}
-          className="border border-[#f2d9a8]/10 bg-[#05070d]/40 p-4"
-        >
-          <Skeleton height="14px" width="30%" mb="3" />
-          <Skeleton height="16px" width="100%" mb="2" />
-          <Skeleton height="16px" width="85%" mb="3" />
-          <Flex gap="3">
-            <Skeleton height="12px" width="48px" />
-            <Skeleton height="12px" width="64px" />
-          </Flex>
-        </Card>
-      ))}
-    </Flex>
-  );
-}
-
 function ProfilePostList({
   userId,
   tab,
@@ -59,6 +39,7 @@ function ProfilePostList({
 }) {
   const { t } = useTranslation();
   const { data: posts } = useProfilePosts(userId, tab);
+  const deletePost = useDeletePostMutation();
 
   if (posts.length === 0) {
     return (
@@ -74,9 +55,25 @@ function ProfilePostList({
   }
 
   return (
-    <Flex direction="column" gap="2" className="max-h-96 overflow-y-auto">
+    <Flex
+      direction="column"
+      gap="2"
+      className={
+        posts.length > 1
+          ? 'max-h-[min(480px,55vh)] min-h-0 overflow-y-auto overscroll-y-contain'
+          : undefined
+      }
+    >
       {posts.map(post => (
-        <PostCard key={post._id} post={post} />
+        <Box key={post._id} className="shrink-0">
+          <PostCard
+            post={post}
+            onDeletePost={postId => deletePost.mutate(postId)}
+            isDeleting={
+              deletePost.isPending && deletePost.variables === post._id
+            }
+          />
+        </Box>
       ))}
     </Flex>
   );
@@ -100,12 +97,15 @@ export function ProfilePostsTabs({
     ? privateMessageKey
     : PROFILE_POSTS_PRIVATE_MESSAGE_KEY_OTHER[activeTab];
 
-  const tabsScrollMaskClass =
-    activeTab === 'comments'
+  const activeTabIndex = tabs.findIndex(tab => tab.key === activeTab);
+  const isFirstTab = activeTabIndex === 0;
+  const isLastTab = activeTabIndex === tabs.length - 1;
+
+  const tabsScrollMaskClass = isFirstTab
+    ? 'mask-[linear-gradient(to_right,black_85%,transparent_100%)]'
+    : isLastTab
       ? 'mask-[linear-gradient(to_left,black_85%,transparent_100%)]'
-      : activeTab === 'posts'
-        ? 'mask-[linear-gradient(to_right,black_85%,transparent_100%)]'
-        : 'mask-[linear-gradient(to_right,transparent_0%,black_12%,black_88%,transparent_100%)]';
+      : 'mask-[linear-gradient(to_right,transparent_0%,black_12%,black_88%,transparent_100%)]';
 
   return (
     <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
@@ -169,7 +169,7 @@ export function ProfilePostsTabs({
           ) : null}
         </Flex>
       ) : (
-        <Suspense key={activeTab} fallback={<ProfilePostListSkeleton />}>
+        <Suspense key={activeTab} fallback={<PostFeedSkeleton count={2} />}>
           <ProfilePostList userId={userId} tab={activeTab} />
         </Suspense>
       )}

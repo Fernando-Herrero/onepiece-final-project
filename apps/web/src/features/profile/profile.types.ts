@@ -14,6 +14,7 @@ export type ProfileUser = z.infer<typeof userPublicSchema>;
 export type ProfileViewMoreUser = Pick<
   ProfileUser,
   | '_id'
+  | 'username'
   | 'firstName'
   | 'lastName'
   | 'fullName'
@@ -21,6 +22,7 @@ export type ProfileViewMoreUser = Pick<
   | 'address'
   | 'phoneNumber'
   | 'createdAt'
+  | 'displayName'
 >;
 
 export type UpdateProfileBody = Pick<

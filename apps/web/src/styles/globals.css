@@ -40,6 +40,79 @@
   }
 }
 
+@keyframes community-backdrop-in {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(12px);
+  }
+}
+
+@keyframes community-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.94);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes community-fab-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes community-image-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .community-create-fab,
+  .community-modal-backdrop,
+  .community-modal-panel {
+    animation: none !important;
+  }
+
+  .community-create-fab-ring {
+    animation: none !important;
+  }
+}
+
+.community-create-fab-ring {
+  animation: community-fab-pulse 2.8s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgb(242 217 168 / 0.35);
+}
+
+@keyframes community-fab-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(242 217 168 / 0.18);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgb(242 217 168 / 0);
+  }
+}
+
 @theme {
   --font-family-one-piece: 'OnePiece', serif;
   --font-family-road-captain: 'RoadCaptain', sans-serif;
