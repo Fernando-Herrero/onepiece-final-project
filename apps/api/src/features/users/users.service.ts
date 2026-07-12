@@ -2,12 +2,16 @@ import { isAvatarPathSelectable } from '@logpose/contracts/common/avatar.schemas
 import { updateUserSchema } from '@logpose/contracts/common/user.schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
-import { ObjectId } from 'mongodb';
+import { ObjectId, type WithId } from 'mongodb';
 import * as z from 'zod/v4';
 
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
-import { serializePost } from '../posts/post.mappers.js';
+import {
+  collectRetweetCheckIds,
+  type PostDocument,
+  serializePostsWithAuthors,
+} from '../posts/posts.mappers.js';
 import { PostsPersistence } from '../posts/posts.persistence.js';
 import {
   serializeUser,
@@ -97,28 +101,75 @@ export class UsersService {
     }
   }
 
-  /** Enriquece posts públicos con datos del autor y flags de interacción del viewer. */
-  private async serializePostsWithAuthors(
-    posts: Awaited<ReturnType<PostsPersistence['findPublicByUserId']>>,
+  private async serializePostsForViewer(
+    posts: WithId<PostDocument>[],
     viewerId?: string,
   ) {
-    const authorIds = [...new Set(posts.map(post => post.userId.toString()))];
-    const authors = await this.usersPersistence.findByIds(
-      authorIds.map(id => new ObjectId(id)),
+    const originalIds = [
+      ...new Set(
+        posts
+          .filter(post => post.isRetweet && post.retweetOf)
+          .map(post => post.retweetOf!.toString()),
+      ),
+    ];
+    const originals =
+      originalIds.length > 0
+        ? await this.postsPersistence.findByIds(
+            originalIds.map(id => new ObjectId(id)),
+          )
+        : [];
+    const originalPostsById = new Map(
+      originals.map(post => [post._id.toString(), post]),
     );
-    const authorById = new Map(
-      authors.map(author => [author._id.toString(), author]),
+    const retweetedOriginalIds = viewerId
+      ? await this.postsPersistence.findRetweetedOriginalIds(
+          viewerId,
+          collectRetweetCheckIds(posts),
+        )
+      : undefined;
+
+    return serializePostsWithAuthors(
+      posts,
+      this.usersPersistence,
+      viewerId,
+      retweetedOriginalIds,
+      originalPostsById,
     );
+  }
 
-    return posts.map(post => {
-      const author = authorById.get(post.userId.toString());
+  /** Posts publicados por el perfil; respeta showPosts si el viewer no es el dueño. */
+  async getPosts(profileUserId: string, viewerId?: string) {
+    await this.assertVisibleUser(profileUserId, 'showPosts', viewerId);
 
-      if (!author) {
-        throw new ORPCError('USER_NOT_FOUND');
-      }
+    const posts = await this.postsPersistence.findPublicByUserId(profileUserId);
+    return this.serializePostsForViewer(posts, viewerId);
+  }
 
-      return serializePost(post, author, viewerId);
-    });
+  /** Posts que el perfil ha marcado con like; respeta showLikes. */
+  async getLikedPosts(profileUserId: string, viewerId?: string) {
+    await this.assertVisibleUser(profileUserId, 'showLikes', viewerId);
+
+    const posts = await this.postsPersistence.findLikedByUserId(profileUserId);
+    return this.serializePostsForViewer(posts, viewerId);
+  }
+
+  /** Posts guardados en bookmarks del perfil; respeta showBookmarked. */
+  async getBookmarkedPosts(profileUserId: string, viewerId?: string) {
+    await this.assertVisibleUser(profileUserId, 'showBookmarked', viewerId);
+
+    const posts =
+      await this.postsPersistence.findBookmarkedByUserId(profileUserId);
+    return this.serializePostsForViewer(posts, viewerId);
+  }
+
+  /** Posts en los que el perfil ha comentado; respeta showComments. */
+  async getCommentedPosts(profileUserId: string, viewerId?: string) {
+    await this.assertVisibleUser(profileUserId, 'showComments', viewerId);
+
+    const postIds =
+      await this.commentsPersistence.distinctPostIdsByAuthor(profileUserId);
+    const posts = await this.postsPersistence.findByIds(postIds);
+    return this.serializePostsForViewer(posts, viewerId);
   }
 
   /** Perfil público completo por id (userPublic). */
@@ -243,41 +294,6 @@ export class UsersService {
       followersCount: updatedTarget?.followers.length ?? 0,
       followingCount: updatedViewer?.following.length ?? 0,
     };
-  }
-
-  /** Posts publicados por el perfil; respeta showPosts si el viewer no es el dueño. */
-  async getPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showPosts', viewerId);
-
-    const posts = await this.postsPersistence.findPublicByUserId(profileUserId);
-    return this.serializePostsWithAuthors(posts, viewerId);
-  }
-
-  /** Posts que el perfil ha marcado con like; respeta showLikes. */
-  async getLikedPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showLikes', viewerId);
-
-    const posts = await this.postsPersistence.findLikedByUserId(profileUserId);
-    return this.serializePostsWithAuthors(posts, viewerId);
-  }
-
-  /** Posts guardados en bookmarks del perfil; respeta showBookmarked. */
-  async getBookmarkedPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showBookmarked', viewerId);
-
-    const posts =
-      await this.postsPersistence.findBookmarkedByUserId(profileUserId);
-    return this.serializePostsWithAuthors(posts, viewerId);
-  }
-
-  /** Posts en los que el perfil ha comentado; respeta showComments. */
-  async getCommentedPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showComments', viewerId);
-
-    const postIds =
-      await this.commentsPersistence.distinctPostIdsByAuthor(profileUserId);
-    const posts = await this.postsPersistence.findByIds(postIds);
-    return this.serializePostsWithAuthors(posts, viewerId);
   }
 
   /** Actualiza campos del perfil; valida avatar desbloqueado según progreso de serie. */

@@ -40,4 +40,42 @@ export class NotificationsPersistence {
 
     return result.insertedId;
   }
+
+  async createLike(to: string, from: string, postId: string) {
+    if (to === from) {
+      return null;
+    }
+
+    const now = new Date();
+    const result = await this.notifications.insertOne({
+      type: 'like',
+      to: new ObjectId(to),
+      from: new ObjectId(from),
+      postId: new ObjectId(postId),
+      read: false,
+      createdAt: now,
+      updatedAt: now,
+    } as NotificationDocument);
+
+    return result.insertedId;
+  }
+
+  async createBookmark(to: string, from: string, postId: string) {
+    if (to === from) {
+      return null;
+    }
+
+    const now = new Date();
+    const result = await this.notifications.insertOne({
+      type: 'bookmark',
+      to: new ObjectId(to),
+      from: new ObjectId(from),
+      postId: new ObjectId(postId),
+      read: false,
+      createdAt: now,
+      updatedAt: now,
+    } as NotificationDocument);
+
+    return result.insertedId;
+  }
 }

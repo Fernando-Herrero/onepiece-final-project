@@ -9,7 +9,9 @@ import type { Request } from 'express';
 
 import { AuthModule } from './features/auth/auth.module.js';
 import { HealthModule } from './features/health/health.module.js';
+import { PostsModule } from './features/posts/posts.module.js';
 import { SerieModule } from './features/serie/serie.module.js';
+import { UploadModule } from './features/upload/upload.module.js';
 import { UsersModule } from './features/users/users.module.js';
 import { ServerEnv, validateEnv } from './integrations/env/server.js';
 import { AllExceptionsFilter } from './integrations/http/all-exceptions.filter.js';
@@ -43,6 +45,8 @@ const mode = process.env.NODE_ENV ?? 'development';
     UsersModule,
     HealthModule,
     SerieModule,
+    PostsModule,
+    UploadModule,
   ],
   controllers: [OrpcDocsController],
   providers: [
