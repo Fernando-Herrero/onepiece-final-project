@@ -29,6 +29,7 @@ export class UsersService {
     private readonly notificationsPersistence: NotificationsPersistence,
   ) {}
 
+  /** Comprueba que el usuario existe en Mongo; lanza USER_NOT_FOUND si no. */
   private async requireUser(id: string) {
     const user = await this.usersPersistence.findById(id);
 
@@ -39,6 +40,10 @@ export class UsersService {
     return user;
   }
 
+  /**
+   * Respeta privacidad del perfil para un tab concreto (posts, likes…).
+   * El propio usuario y los admin siempre pueden ver; el resto depende de user.privacy.
+   */
   private async assertVisibleUser(
     userId: string,
     privacyKey: PrivacyKey,
@@ -62,6 +67,7 @@ export class UsersService {
     }
   }
 
+  /** Solo el dueño del perfil o un admin pueden modificar/eliminar ese usuario. */
   private async assertOwnerOrAdmin(targetUserId: string, viewerId: string) {
     if (targetUserId === viewerId) {
       return;
@@ -78,6 +84,7 @@ export class UsersService {
     }
   }
 
+  /** Exige rol admin; usado en listado de usuarios. */
   private async assertAdmin(viewerId: string) {
     const role = await this.usersPersistence.findRoleById(viewerId);
 
@@ -90,6 +97,7 @@ export class UsersService {
     }
   }
 
+  /** Enriquece posts públicos con datos del autor y flags de interacción del viewer. */
   private async serializePostsWithAuthors(
     posts: Awaited<ReturnType<PostsPersistence['findPublicByUserId']>>,
     viewerId?: string,
@@ -113,12 +121,14 @@ export class UsersService {
     });
   }
 
+  /** Perfil público completo por id (userPublic). */
   async getById(userId: string) {
     const user = await this.requireUser(userId);
 
     return serializeUser(user);
   }
 
+  /** Contadores de actividad del perfil: posts, likes, bookmarks y comentarios. */
   async getStats(userId: string) {
     await this.requireUser(userId);
 
@@ -145,11 +155,13 @@ export class UsersService {
     };
   }
 
+  /** Top 20 usuarios por experiencia (sidebar ranking del perfil). */
   async ranking() {
     const users = await this.usersPersistence.findRanking(20);
     return users.map(serializeUserRankingEntry);
   }
 
+  /** Lista resumida de seguidores del usuario. */
   async getFollowers(userId: string) {
     const user = await this.requireUser(userId);
 
@@ -157,6 +169,7 @@ export class UsersService {
     return followers.map(serializeUserSummary);
   }
 
+  /** Lista resumida de cuentas que sigue el usuario. */
   async getFollowing(userId: string) {
     const user = await this.requireUser(userId);
 
@@ -164,6 +177,7 @@ export class UsersService {
     return following.map(serializeUserSummary);
   }
 
+  /** El viewer sigue al target; actualiza grafos y crea notificación de follow. */
   async follow(viewerId: string, targetUserId: string) {
     if (targetUserId === viewerId) {
       throw new ORPCError('CANNOT_FOLLOW_SELF');
@@ -198,6 +212,7 @@ export class UsersService {
     };
   }
 
+  /** El viewer deja de seguir al target y devuelve contadores actualizados. */
   async unfollow(viewerId: string, targetUserId: string) {
     if (targetUserId === viewerId) {
       throw new ORPCError('CANNOT_FOLLOW_SELF');
@@ -230,6 +245,7 @@ export class UsersService {
     };
   }
 
+  /** Posts publicados por el perfil; respeta showPosts si el viewer no es el dueño. */
   async getPosts(profileUserId: string, viewerId?: string) {
     await this.assertVisibleUser(profileUserId, 'showPosts', viewerId);
 
@@ -237,6 +253,7 @@ export class UsersService {
     return this.serializePostsWithAuthors(posts, viewerId);
   }
 
+  /** Posts que el perfil ha marcado con like; respeta showLikes. */
   async getLikedPosts(profileUserId: string, viewerId?: string) {
     await this.assertVisibleUser(profileUserId, 'showLikes', viewerId);
 
@@ -244,6 +261,7 @@ export class UsersService {
     return this.serializePostsWithAuthors(posts, viewerId);
   }
 
+  /** Posts guardados en bookmarks del perfil; respeta showBookmarked. */
   async getBookmarkedPosts(profileUserId: string, viewerId?: string) {
     await this.assertVisibleUser(profileUserId, 'showBookmarked', viewerId);
 
@@ -252,6 +270,7 @@ export class UsersService {
     return this.serializePostsWithAuthors(posts, viewerId);
   }
 
+  /** Posts en los que el perfil ha comentado; respeta showComments. */
   async getCommentedPosts(profileUserId: string, viewerId?: string) {
     await this.assertVisibleUser(profileUserId, 'showComments', viewerId);
 
@@ -261,6 +280,7 @@ export class UsersService {
     return this.serializePostsWithAuthors(posts, viewerId);
   }
 
+  /** Actualiza campos del perfil; valida avatar desbloqueado según progreso de serie. */
   async update(targetUserId: string, viewerId: string, body: UpdateUserBody) {
     await this.assertOwnerOrAdmin(targetUserId, viewerId);
 
@@ -285,6 +305,7 @@ export class UsersService {
     return serializeUser(updatedUser);
   }
 
+  /** Listado de todos los usuarios (solo admin). */
   async list(viewerId: string) {
     await this.assertAdmin(viewerId);
 
@@ -292,6 +313,10 @@ export class UsersService {
     return users.map(serializeUserSummary);
   }
 
+  /**
+   * Borra cuenta y datos relacionados (posts y comentarios).
+   * Solo el propio usuario o un admin.
+   */
   async delete(targetUserId: string, viewerId: string) {
     await this.assertOwnerOrAdmin(targetUserId, viewerId);
 
