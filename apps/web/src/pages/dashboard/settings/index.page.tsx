@@ -1,16 +1,11 @@
 import type { GetServerSideProps } from 'next';
 
-import { DashboardPlaceholderPageContent } from '@/features/dashboard/page-content/placeholder.page-content';
 import { withDashboardLayout } from '@/features/dashboard/with-dashboard-layout';
+import SettingsPageContent from '@/features/settings/settings.page-content';
 import { getDashboardPageProps } from '@/integrations/auth/server';
 
 function DashboardSettingsPage() {
-  return (
-    <DashboardPlaceholderPageContent
-      titleKey="dashboard.pages.settings.title"
-      bodyKey="dashboard.pages.settings.body"
-    />
-  );
+  return <SettingsPageContent />;
 }
 
 export const getServerSideProps: GetServerSideProps = getDashboardPageProps;

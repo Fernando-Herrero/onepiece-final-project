@@ -25,12 +25,16 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
     return null;
   }
 
-  const authorId = post.userId._id;
-  const isOwner = user._id === authorId;
-  const isFollowing = user.following.includes(authorId);
+  const contentAuthorId =
+    post.isRetweet && post.originalAuthor
+      ? post.originalAuthor._id
+      : post.userId._id;
+  const isContentAuthor = user._id === contentAuthorId;
+  const isFollowing = user.following.includes(contentAuthorId);
   // Retweet = eco: no se elimina la publicación; solo deshacer RT con el botón.
-  const canDelete = !post.isRetweet && (isOwner || isAdmin);
-  const showAuthorActions = !isOwner;
+  const canDelete =
+    !post.isRetweet && (user._id === post.userId._id || isAdmin);
+  const showAuthorActions = !isContentAuthor;
   const isBusy = followUser.isPending || unfollowUser.isPending;
 
   if (!showAuthorActions && !(canDelete && onDeletePost)) {
@@ -47,11 +51,11 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
 
   function handleFollowToggle() {
     if (isFollowing) {
-      unfollowUser.mutate(authorId);
+      unfollowUser.mutate(contentAuthorId);
       return;
     }
 
-    followUser.mutate(authorId);
+    followUser.mutate(contentAuthorId);
   }
 
   return (
@@ -74,7 +78,7 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
         {showAuthorActions ? (
           <>
             <DropdownMenu.Item asChild>
-              <Link href={`/dashboard/users/${authorId}`}>
+              <Link href={`/dashboard/users/${contentAuthorId}`}>
                 {t('posts.menu_view_profile')}
               </Link>
             </DropdownMenu.Item>

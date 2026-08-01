@@ -346,6 +346,33 @@
     "create_images_pick_pending": "Opening picker…",
     "create_char_limit_reached": "You reached the maximum of {{max}} characters"
   },
+  "settings": {
+    "subtitle": "Manage your account, privacy and preferences",
+    "coming_soon": "Coming soon",
+    "back": "Back to settings",
+    "title_security": "Security and account access",
+    "text_security": "Manage your account security, review active sessions and connected apps.",
+    "title_monetisation": "Monetisation",
+    "text_monetisation": "Discover tools to earn from your content and manage monetisation preferences.",
+    "title_premium": "Premium",
+    "text_premium": "Unlock exclusive features and enhance your experience with Premium.",
+    "title_timeline": "Timeline",
+    "text_timeline": "Control how posts appear in your timeline and customise feed order.",
+    "title_privacy": "Privacy and safety",
+    "text_privacy": "Adjust who can interact with you and manage content visibility and safety controls.",
+    "title_notifications": "Notifications",
+    "text_notifications": "Choose which notifications you receive and how you are alerted.",
+    "title_accessibility": "Accessibility",
+    "text_accessibility": "Customise accessibility, display preferences and interface language.",
+    "title_resources": "Additional resources",
+    "text_resources": "Find help, guides and resources to get the most out of the platform.",
+    "privacy": {
+      "title": "Activity privacy",
+      "description": "Choose which activity tabs are visible on your profile.",
+      "save_success": "Privacy updated",
+      "save_error": "Could not save privacy settings"
+    }
+  },
   "profile": {
     "title": "Your profile",
     "subtitle": "Your identity and progress in the crew",

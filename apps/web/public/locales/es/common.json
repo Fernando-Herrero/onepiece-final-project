@@ -346,6 +346,33 @@
     "create_images_pick_pending": "Abriendo selector…",
     "create_char_limit_reached": "Has alcanzado el máximo de {{max}} caracteres"
   },
+  "settings": {
+    "subtitle": "Gestiona tu cuenta, privacidad y preferencias",
+    "coming_soon": "Próximamente",
+    "back": "Volver a ajustes",
+    "title_security": "Seguridad y acceso a la cuenta",
+    "text_security": "Administra la seguridad de tu cuenta, revisa tus sesiones activas y controla las aplicaciones conectadas.",
+    "title_monetisation": "Monetización",
+    "text_monetisation": "Descubre herramientas para generar ingresos con tu contenido y gestiona tus preferencias de monetización.",
+    "title_premium": "Premium",
+    "text_premium": "Desbloquea funciones exclusivas y mejora tu experiencia en la plataforma con las opciones Premium.",
+    "title_timeline": "Cronología",
+    "text_timeline": "Controla cómo se muestran las publicaciones en tu cronología y personaliza el orden del contenido.",
+    "title_privacy": "Privacidad y seguridad",
+    "text_privacy": "Configura quién puede interactuar contigo y gestiona la visibilidad de tu contenido y las opciones de seguridad.",
+    "title_notifications": "Notificaciones",
+    "text_notifications": "Elige qué tipo de notificaciones deseas recibir y cómo quieres que se te notifiquen.",
+    "title_accessibility": "Accesibilidad",
+    "text_accessibility": "Personaliza las opciones de accesibilidad, las preferencias de visualización y el idioma de la interfaz.",
+    "title_resources": "Recursos adicionales",
+    "text_resources": "Encuentra ayuda, guías y recursos para aprovechar al máximo tu experiencia en la plataforma.",
+    "privacy": {
+      "title": "Privacidad de actividad",
+      "description": "Elige qué pestañas de actividad son visibles en tu perfil.",
+      "save_success": "Privacidad actualizada",
+      "save_error": "No se pudo guardar la privacidad"
+    }
+  },
   "profile": {
     "title": "Tu perfil",
     "subtitle": "Tu identidad y progreso en la tripulación",

@@ -2,19 +2,26 @@ import type { IconProps } from '@phosphor-icons/react';
 import {
   BellIcon,
   BookmarkSimpleIcon,
+  BookOpenIcon,
   CardsIcon,
   CaretDownIcon,
   CaretLeftIcon,
   CaretRightIcon,
   ChatCircleIcon,
   ChatsCircleIcon,
+  ClockIcon,
+  CurrencyCircleDollarIcon,
   GearSixIcon,
   HeartIcon,
+  LockKeyIcon,
   MagnifyingGlassIcon,
   RepeatIcon,
+  ShieldCheckIcon,
   ShieldIcon,
+  StarIcon,
   TelevisionIcon,
   UserIcon,
+  WheelchairIcon,
 } from '@phosphor-icons/react';
 
 export const Icon = {
@@ -40,6 +47,21 @@ export const Icon = {
   Comment: (p: IconProps) => <ChatCircleIcon size={16} {...p} />,
   Repeat: (p: IconProps) => <RepeatIcon size={16} {...p} />,
   RepeatFill: (p: IconProps) => <RepeatIcon size={16} weight="fill" {...p} />,
+  Lock: (p: IconProps) => <LockKeyIcon size={22} weight="duotone" {...p} />,
+  Monetisation: (p: IconProps) => (
+    <CurrencyCircleDollarIcon size={22} weight="duotone" {...p} />
+  ),
+  Star: (p: IconProps) => <StarIcon size={22} weight="duotone" {...p} />,
+  Clock: (p: IconProps) => <ClockIcon size={22} weight="duotone" {...p} />,
+  ShieldCheck: (p: IconProps) => (
+    <ShieldCheckIcon size={22} weight="duotone" {...p} />
+  ),
+  Accessibility: (p: IconProps) => (
+    <WheelchairIcon size={22} weight="duotone" {...p} />
+  ),
+  BookOpen: (p: IconProps) => (
+    <BookOpenIcon size={22} weight="duotone" {...p} />
+  ),
 } as const;
 
 export type DashboardNavIcon = keyof Pick<
