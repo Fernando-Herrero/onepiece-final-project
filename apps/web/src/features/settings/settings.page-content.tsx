@@ -91,9 +91,8 @@ export default function SettingsPageContent() {
   const tilt = useTilt();
 
   useEffect(() => {
-    const cards = sectionRef.current?.querySelectorAll<HTMLElement>(
-      '.settings-hub-card',
-    );
+    const cards =
+      sectionRef.current?.querySelectorAll<HTMLElement>('.settings-hub-card');
     if (!cards?.length) {
       return;
     }

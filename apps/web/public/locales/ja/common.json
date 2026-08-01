@@ -346,33 +346,6 @@
     "create_images_pick_pending": "選択中…",
     "create_char_limit_reached": "最大 {{max}} 文字に達しました"
   },
-  "settings": {
-    "subtitle": "アカウント、プライバシー、設定を管理",
-    "coming_soon": "近日公開",
-    "back": "設定に戻る",
-    "title_security": "セキュリティとアカウントアクセス",
-    "text_security": "アカウントのセキュリティを管理し、ログインセッションと接続アプリを確認します。",
-    "title_monetisation": "収益化",
-    "text_monetisation": "コンテンツで収益を得るツールと収益化設定を管理します。",
-    "title_premium": "プレミアム",
-    "text_premium": "プレミアムで独占機能をアンロックし、体験を向上させます。",
-    "title_timeline": "タイムライン",
-    "text_timeline": "投稿の表示方法とフィードの順序をカスタマイズします。",
-    "title_privacy": "プライバシーと安全",
-    "text_privacy": "交流できる相手やコンテンツの公開範囲、安全コントロールを調整します。",
-    "title_notifications": "通知",
-    "text_notifications": "受け取る通知の種類とアラート方法を選択します。",
-    "title_accessibility": "アクセシビリティ",
-    "text_accessibility": "アクセシビリティ、表示設定、言語オプションをカスタマイズします。",
-    "title_resources": "追加リソース",
-    "text_resources": "プラットフォームを最大限に活用するためのヘルプとガイドを見つけます。",
-    "privacy": {
-      "title": "アクティビティの公開設定",
-      "description": "プロフィールで表示するアクティビティタブを選べます。",
-      "save_success": "公開設定を更新しました",
-      "save_error": "公開設定を保存できませんでした"
-    }
-  },
   "profile": {
     "title": "プロフィール",
     "subtitle": "クルーでのあなたの身份と進捗",
@@ -509,5 +482,32 @@
     "viewed_chapter": "視聴済み",
     "show_rewards": "報酬を見る",
     "hide_rewards": "報酬を隠す"
+  },
+  "settings": {
+    "subtitle": "アカウント、プライバシー、設定を管理",
+    "coming_soon": "近日公開",
+    "back": "設定に戻る",
+    "title_security": "セキュリティとアカウントアクセス",
+    "text_security": "アカウントのセキュリティを管理し、ログインセッションと接続アプリを確認します。",
+    "title_monetisation": "収益化",
+    "text_monetisation": "コンテンツで収益を得るツールと収益化設定を管理します。",
+    "title_premium": "プレミアム",
+    "text_premium": "プレミアムで独占機能をアンロックし、体験を向上させます。",
+    "title_timeline": "タイムライン",
+    "text_timeline": "投稿の表示方法とフィードの順序をカスタマイズします。",
+    "title_privacy": "プライバシーと安全",
+    "text_privacy": "交流できる相手やコンテンツの公開範囲、安全コントロールを調整します。",
+    "title_notifications": "通知",
+    "text_notifications": "受け取る通知の種類とアラート方法を選択します。",
+    "title_accessibility": "アクセシビリティ",
+    "text_accessibility": "アクセシビリティ、表示設定、言語オプションをカスタマイズします。",
+    "title_resources": "追加リソース",
+    "text_resources": "プラットフォームを最大限に活用するためのヘルプとガイドを見つけます。",
+    "privacy": {
+      "title": "アクティビティの公開設定",
+      "description": "プロフィールで表示するアクティビティタブを選べます。",
+      "save_success": "公開設定を更新しました",
+      "save_error": "公開設定を保存できませんでした"
+    }
   }
 }
