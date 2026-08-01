@@ -66,7 +66,7 @@ export function PostCardActions({
         type="button"
         aria-pressed={userRetweeted}
         aria-label={t('posts.retweet_action')}
-        disabled={isTogglingRetweet || isPending || post.isRetweet}
+        disabled={isTogglingRetweet || isPending}
         onClick={() =>
           requireSession(() => toggleRetweet.mutate(interactionPostId))
         }

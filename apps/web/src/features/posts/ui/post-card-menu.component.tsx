@@ -28,8 +28,14 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
   const authorId = post.userId._id;
   const isOwner = user._id === authorId;
   const isFollowing = user.following.includes(authorId);
-  const canDelete = isOwner || isAdmin;
+  // Retweet = eco: no se elimina la publicación; solo deshacer RT con el botón.
+  const canDelete = !post.isRetweet && (isOwner || isAdmin);
+  const showAuthorActions = !isOwner;
   const isBusy = followUser.isPending || unfollowUser.isPending;
+
+  if (!showAuthorActions && !(canDelete && onDeletePost)) {
+    return null;
+  }
 
   function handleDelete() {
     if (post._id.startsWith('optimistic-') || !onDeletePost) {
@@ -65,7 +71,7 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
         </IconButton>
       </DropdownMenu.Trigger>
       <DropdownMenu.Content align="end" sideOffset={4}>
-        {!isOwner ? (
+        {showAuthorActions ? (
           <>
             <DropdownMenu.Item asChild>
               <Link href={`/dashboard/users/${authorId}`}>
