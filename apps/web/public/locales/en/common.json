@@ -508,6 +508,17 @@
       "description": "Choose which activity tabs are visible on your profile.",
       "save_success": "Privacy updated",
       "save_error": "Could not save privacy settings"
+    },
+    "danger_zone": {
+      "title": "Danger zone",
+      "description": "Deleting your account is permanent. Your data will be erased and cannot be recovered.",
+      "delete_button": "Delete account",
+      "confirm_title": "Delete your account?",
+      "confirm_description": "This action cannot be undone. Your account and all your data will be permanently deleted.",
+      "confirm_cancel": "Cancel",
+      "confirm_action": "Yes, delete",
+      "delete_error": "Could not delete the account",
+      "confirm_email_label": "Type {{email}} to confirm"
     }
   }
 }

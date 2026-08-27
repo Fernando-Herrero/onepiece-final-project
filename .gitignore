@@ -13,6 +13,8 @@ build/
 *.tsbuildinfo
 next-env.d.ts
 
+graphify-out/
+
 # Documentación local — README.md es la única excepción
 **/*.md
 !README.md

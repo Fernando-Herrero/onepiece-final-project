@@ -508,6 +508,17 @@
       "description": "プロフィールで表示するアクティビティタブを選べます。",
       "save_success": "公開設定を更新しました",
       "save_error": "公開設定を保存できませんでした"
+    },
+    "danger_zone": {
+      "title": "危険な操作",
+      "description": "アカウントの削除は取り消せません。データは完全に削除され、復元できません。",
+      "delete_button": "アカウントを削除",
+      "confirm_title": "アカウントを削除しますか？",
+      "confirm_description": "この操作は取り消せません。アカウントとすべてのデータが完全に削除されます。",
+      "confirm_cancel": "キャンセル",
+      "confirm_action": "削除する",
+      "delete_error": "アカウントを削除できませんでした",
+      "confirm_email_label": "確認のため {{email}} を入力してください"
     }
   }
 }

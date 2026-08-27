@@ -15,7 +15,7 @@ import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options
 type AuthClientError = InferClientErrorUnion<typeof client.auth>;
 type AuthUser = z.infer<typeof userPublicSchema>;
 
-function getAuthErrorMessage(error: unknown, t: TFunction): string {
+export function getAuthErrorMessage(error: unknown, t: TFunction): string {
   const typedError = error as AuthClientError;
 
   if (isDefinedError(typedError)) {
@@ -125,7 +125,17 @@ export function useLogoutMutation() {
   });
 }
 
-export { getAuthErrorMessage };
+export function useDeleteAccountMutation() {
+  const logout = useLogoutMutation();
+
+  return useMutation({
+    mutationFn: (userId: string) =>
+      client.users.delete({ params: { id: userId } }),
+    onSuccess: () => {
+      logout.mutate();
+    },
+  });
+}
 
 const SESSION_INVALID_ERROR_CODES = new Set([
   'UNAUTHORIZED',

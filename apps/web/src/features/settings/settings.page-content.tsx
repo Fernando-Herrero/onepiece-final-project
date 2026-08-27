@@ -14,6 +14,7 @@ const SETTINGS_MENU = [
     icon: 'Lock',
     titleKey: 'settings.title_security',
     textKey: 'settings.text_security',
+    href: '/dashboard/settings/account',
   },
   {
     id: 'monetisation',

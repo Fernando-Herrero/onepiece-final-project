@@ -508,6 +508,17 @@
       "description": "Elige qué pestañas de actividad son visibles en tu perfil.",
       "save_success": "Privacidad actualizada",
       "save_error": "No se pudo guardar la privacidad"
+    },
+    "danger_zone": {
+      "title": "Zona de peligro",
+      "description": "Eliminar tu cuenta es una acción permanente. Se borrarán tus datos y no podrás recuperarlos.",
+      "delete_button": "Eliminar cuenta",
+      "confirm_title": "¿Eliminar tu cuenta?",
+      "confirm_description": "Esta acción no se puede deshacer. Se eliminará tu cuenta y todos tus datos de forma permanente.",
+      "confirm_cancel": "Cancelar",
+      "confirm_action": "Sí, eliminar",
+      "delete_error": "No se pudo eliminar la cuenta",
+      "confirm_email_label": "Escribe {{email}} para confirmar"
     }
   }
 }
