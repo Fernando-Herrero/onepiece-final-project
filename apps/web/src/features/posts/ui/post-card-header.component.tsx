@@ -2,6 +2,7 @@ import { Flex, Text } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 
+import { VerifiedBadge } from '@/components/verified-badge/verified-badge.component';
 import type { PostPublic } from '@/features/posts/posts.types';
 import { PostCardMenu } from '@/features/posts/ui/post-card-menu.component';
 import { getUserDisplayName } from '@/features/profile/profile.constants';
@@ -43,11 +44,12 @@ export function PostCardHeader({
       >
         <Link
           href={profileHref}
-          className="max-w-[45%] truncate text-[#f2d9a8] underline-offset-2 hover:underline"
+          className="flex max-w-[45%] items-center gap-1 truncate text-[#f2d9a8] underline-offset-2 hover:underline"
         >
-          <Text as="span" size="2" weight="medium">
+          <Text as="span" size="2" weight="medium" className="truncate">
             {authorName}
           </Text>
+          {author.verified ? <VerifiedBadge /> : null}
         </Link>
         <Text as="span" size="1" color="gray">
           ·

@@ -14,6 +14,7 @@ import { useTranslation } from 'next-i18next/pages';
 import { Suspense, useState } from 'react';
 import type * as z from 'zod/v4';
 
+import { VerifiedBadge } from '@/components/verified-badge/verified-badge.component';
 import { resolveAvatarSrc } from '@/features/avatar/avatar.constants';
 import {
   useProfileFollowers,
@@ -48,14 +49,17 @@ function ProfileFollowUserRow({ user }: { user: UserSummary }) {
         className="shrink-0 border border-[#f2d9a8]/20"
       />
       <Flex direction="column" gap="0" className="min-w-0 flex-1">
-        <Text
-          as="span"
-          size="2"
-          weight="medium"
-          className="truncate text-[#f4ede1]"
-        >
-          {name}
-        </Text>
+        <Flex align="center" gap="1" className="min-w-0">
+          <Text
+            as="span"
+            size="2"
+            weight="medium"
+            className="truncate text-[#f4ede1]"
+          >
+            {name}
+          </Text>
+          {user.verified ? <VerifiedBadge /> : null}
+        </Flex>
         <Text as="span" size="1" color="gray" className="truncate">
           @{user.username}
         </Text>

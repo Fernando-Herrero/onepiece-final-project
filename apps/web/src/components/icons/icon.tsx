@@ -16,6 +16,7 @@ import {
   LockKeyIcon,
   MagnifyingGlassIcon,
   RepeatIcon,
+  SealCheckIcon,
   ShieldCheckIcon,
   ShieldIcon,
   StarIcon,
@@ -46,6 +47,7 @@ export const Icon = {
   ),
   Comment: (p: IconProps) => <ChatCircleIcon size={16} {...p} />,
   Repeat: (p: IconProps) => <RepeatIcon size={16} {...p} />,
+  Verified: (p: IconProps) => <SealCheckIcon size={16} weight="fill" {...p} />,
   RepeatFill: (p: IconProps) => <RepeatIcon size={16} weight="fill" {...p} />,
   Lock: (p: IconProps) => <LockKeyIcon size={22} weight="duotone" {...p} />,
   Monetisation: (p: IconProps) => (
