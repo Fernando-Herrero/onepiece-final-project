@@ -15,6 +15,55 @@ export const privacySchema = z.object({
   showComments: z.boolean(),
 });
 
+export const notificationPreferencesSchema = z.object({
+  likes: z.boolean(),
+  comments: z.boolean(),
+  follows: z.boolean(),
+  bookmarks: z.boolean(),
+  retweets: z.boolean(),
+});
+
+export const timelinePreferencesSchema = z.object({
+  showRetweets: z.boolean(),
+  compactMode: z.boolean(),
+  blurMedia: z.boolean(),
+});
+
+export const fontScaleSchema = z.enum(['sm', 'md', 'lg']);
+
+export const accessibilityPreferencesSchema = z.object({
+  reduceMotion: z.boolean(),
+  fontScale: fontScaleSchema,
+  highContrast: z.boolean(),
+});
+
+export const userPreferencesSchema = z.object({
+  notifications: notificationPreferencesSchema,
+  timeline: timelinePreferencesSchema,
+  accessibility: accessibilityPreferencesSchema,
+});
+
+/** Valores por defecto: se aplican al registrar y al serializar usuarios antiguos. */
+export const DEFAULT_USER_PREFERENCES: z.infer<typeof userPreferencesSchema> = {
+  notifications: {
+    likes: true,
+    comments: true,
+    follows: true,
+    bookmarks: true,
+    retweets: true,
+  },
+  timeline: {
+    showRetweets: true,
+    compactMode: false,
+    blurMedia: false,
+  },
+  accessibility: {
+    reduceMotion: false,
+    fontScale: 'md',
+    highContrast: false,
+  },
+};
+
 export const serieProgressSchema = z.object({
   saga: z.number(),
   arc: z.number(),
@@ -109,6 +158,7 @@ export const userPublicSchema = z.object({
   serieProgress: serieProgressSchema,
   unlockedCards: unlockedCardsSchema,
   privacy: privacySchema,
+  preferences: userPreferencesSchema,
   followers: z.array(z.string()),
   following: z.array(z.string()),
   createdAt: z.string().optional(),

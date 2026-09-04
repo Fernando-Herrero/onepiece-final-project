@@ -1,5 +1,8 @@
 import { z } from 'zod';
 import {
+  accessibilityPreferencesSchema,
+  notificationPreferencesSchema,
+  timelinePreferencesSchema,
   updateUserSchema,
   userIdParamsSchema,
   userPublicSchema,
@@ -28,6 +31,28 @@ export const userRankingEntrySchema = z.object({
 export const deleteUserOutputSchema = z.object({
   ok: z.literal(true),
   removed: userPublicSchema,
+});
+
+/** Salida de verify/unverify: devuelve el usuario ya actualizado para refrescar la sesión. */
+export const verifyUserOutputSchema = z.object({
+  ok: z.literal(true),
+  user: userPublicSchema,
+});
+
+/** Cada grupo es opcional: se hace merge parcial sobre las preferencias guardadas. */
+export const updatePreferencesSchema = z
+  .object({
+    notifications: notificationPreferencesSchema.optional(),
+    timeline: timelinePreferencesSchema.optional(),
+    accessibility: accessibilityPreferencesSchema.optional(),
+  })
+  .strict()
+  .refine(data => Object.keys(data).length > 0, {
+    message: 'Debes enviar al menos un grupo de preferencias',
+  });
+
+export const updatePreferencesInputSchema = userIdParamsSchema.extend({
+  body: updatePreferencesSchema,
 });
 
 export const updateUserInputSchema = userIdParamsSchema.extend({

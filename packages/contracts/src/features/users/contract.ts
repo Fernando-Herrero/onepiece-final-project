@@ -9,9 +9,11 @@ import {
 import {
   deleteUserOutputSchema,
   followOutputSchema,
+  updatePreferencesInputSchema,
   updateUserInputSchema,
   userRankingEntrySchema,
   userStatsSchema,
+  verifyUserOutputSchema,
 } from './schemas.js';
 
 export const usersErrors = {
@@ -143,6 +145,40 @@ export const usersContract = oc
       .input(userIdParamsSchema)
       .errors(usersErrors)
       .output(z.array(postPublicSchema)),
+
+    updatePreferences: oc
+      .route({
+        method: 'PATCH',
+        path: '/{id}/preferences',
+        inputStructure: 'detailed',
+        description:
+          'Update own notification, timeline and accessibility preferences',
+      })
+      .input(updatePreferencesInputSchema)
+      .errors(usersErrors)
+      .output(userPublicSchema),
+
+    verify: oc
+      .route({
+        method: 'POST',
+        path: '/{id}/verify',
+        inputStructure: 'detailed',
+        description: 'Verify own account after a simulated premium payment',
+      })
+      .input(userIdParamsSchema)
+      .errors(usersErrors)
+      .output(verifyUserOutputSchema),
+
+    unverify: oc
+      .route({
+        method: 'POST',
+        path: '/{id}/unverify',
+        inputStructure: 'detailed',
+        description: 'Cancel premium and drop the verified badge',
+      })
+      .input(userIdParamsSchema)
+      .errors(usersErrors)
+      .output(verifyUserOutputSchema),
 
     getById: oc
       .route({
