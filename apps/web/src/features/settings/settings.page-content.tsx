@@ -27,12 +27,14 @@ const SETTINGS_MENU = [
     icon: 'Star',
     titleKey: 'settings.title_premium',
     textKey: 'settings.text_premium',
+    href: '/dashboard/settings/premium',
   },
   {
     id: 'timeline',
     icon: 'Clock',
     titleKey: 'settings.title_timeline',
     textKey: 'settings.text_timeline',
+    href: '/dashboard/settings/timeline',
   },
   {
     id: 'privacy',
@@ -46,18 +48,21 @@ const SETTINGS_MENU = [
     icon: 'Bell',
     titleKey: 'settings.title_notifications',
     textKey: 'settings.text_notifications',
+    href: '/dashboard/settings/notifications',
   },
   {
     id: 'accessibility',
     icon: 'Accessibility',
     titleKey: 'settings.title_accessibility',
     textKey: 'settings.text_accessibility',
+    href: '/dashboard/settings/accessibility',
   },
   {
     id: 'resources',
     icon: 'BookOpen',
     titleKey: 'settings.title_resources',
     textKey: 'settings.text_resources',
+    href: '/dashboard/settings/resources',
   },
 ] as const;
 

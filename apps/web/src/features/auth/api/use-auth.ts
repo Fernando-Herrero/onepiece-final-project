@@ -1,4 +1,5 @@
 import { userPublicSchema } from '@logpose/contracts/common/user.schemas';
+import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
 import { type InferClientErrorUnion, isDefinedError } from '@orpc/client';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import type { TFunction } from 'i18next';
@@ -14,6 +15,7 @@ import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options
 
 type AuthClientError = InferClientErrorUnion<typeof client.auth>;
 type AuthUser = z.infer<typeof userPublicSchema>;
+type UpdatePreferencesBody = z.infer<typeof updatePreferencesSchema>;
 
 export function getAuthErrorMessage(error: unknown, t: TFunction): string {
   const typedError = error as AuthClientError;
@@ -134,6 +136,54 @@ export function useDeleteAccountMutation() {
     onSuccess: () => {
       logout.mutate();
     },
+  });
+}
+
+/**
+ * Escribe el usuario devuelto directamente en la caché de sesión en lugar de
+ * invalidar: la respuesta ya trae el usuario completo, así el badge de
+ * verificado y las preferencias se reflejan sin un refetch extra.
+ */
+function useSessionUserWriter() {
+  const queryClient = useQueryClient();
+
+  return (user: AuthUser) => {
+    queryClient.setQueryData(authKeys.me(), user);
+  };
+}
+
+export function useVerifyAccountMutation() {
+  const writeSessionUser = useSessionUserWriter();
+
+  return useMutation({
+    mutationFn: (userId: string) =>
+      client.users.verify({ params: { id: userId } }),
+    onSuccess: result => writeSessionUser(result.user),
+  });
+}
+
+export function useUnverifyAccountMutation() {
+  const writeSessionUser = useSessionUserWriter();
+
+  return useMutation({
+    mutationFn: (userId: string) =>
+      client.users.unverify({ params: { id: userId } }),
+    onSuccess: result => writeSessionUser(result.user),
+  });
+}
+
+export function useUpdatePreferencesMutation() {
+  const writeSessionUser = useSessionUserWriter();
+
+  return useMutation({
+    mutationFn: ({
+      userId,
+      body,
+    }: {
+      userId: string;
+      body: UpdatePreferencesBody;
+    }) => client.users.updatePreferences({ params: { id: userId }, body }),
+    onSuccess: user => writeSessionUser(user),
   });
 }
 
