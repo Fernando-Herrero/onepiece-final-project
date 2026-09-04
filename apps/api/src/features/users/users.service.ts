@@ -1,5 +1,6 @@
 import { isAvatarPathSelectable } from '@logpose/contracts/common/avatar.schemas';
 import { updateUserSchema } from '@logpose/contracts/common/user.schemas';
+import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import { ObjectId, type WithId } from 'mongodb';
@@ -18,11 +19,13 @@ import {
   serializeUserRankingEntry,
   serializeUserSummary,
   type UserDocument,
+  withPreferenceDefaults,
 } from './user.mappers.js';
 import { UsersPersistence } from './users.persistence.js';
 
 type PrivacyKey = keyof UserDocument['privacy'];
 type UpdateUserBody = z.infer<typeof updateUserSchema>;
+type UpdatePreferencesBody = z.infer<typeof updatePreferencesSchema>;
 
 @Injectable()
 export class UsersService {
@@ -351,5 +354,70 @@ export class UsersService {
       ok: true as const,
       removed: serializeUser(user),
     };
+  }
+
+  /**
+   * Marca la cuenta como verificada tras el pago simulado de premium.
+   * `verified` no puede viajar por `update` (updateUserSchema es strict sobre
+   * campos de perfil), de ahí el endpoint dedicado.
+   */
+  async verify(targetUserId: string, viewerId: string) {
+    return this.setVerified(targetUserId, viewerId, true);
+  }
+
+  /** Cancela premium y retira la insignia. */
+  async unverify(targetUserId: string, viewerId: string) {
+    return this.setVerified(targetUserId, viewerId, false);
+  }
+
+  private async setVerified(
+    targetUserId: string,
+    viewerId: string,
+    verified: boolean,
+  ) {
+    await this.assertOwnerOrAdmin(targetUserId, viewerId);
+    await this.requireUser(targetUserId);
+
+    const updated = await this.usersPersistence.updateById(targetUserId, {
+      verified,
+    });
+
+    if (!updated) {
+      throw new ORPCError('USER_NOT_FOUND');
+    }
+
+    return {
+      ok: true as const,
+      user: serializeUser(updated),
+    };
+  }
+
+  /**
+   * Merge parcial por grupo: el cliente envía solo el bloque que ha tocado
+   * (notifications | timeline | accessibility) y el resto se conserva.
+   */
+  async updatePreferences(
+    targetUserId: string,
+    viewerId: string,
+    body: UpdatePreferencesBody,
+  ) {
+    await this.assertOwnerOrAdmin(targetUserId, viewerId);
+
+    const user = await this.requireUser(targetUserId);
+    const current = withPreferenceDefaults(user.preferences);
+
+    const updated = await this.usersPersistence.updateById(targetUserId, {
+      preferences: {
+        notifications: { ...current.notifications, ...body.notifications },
+        timeline: { ...current.timeline, ...body.timeline },
+        accessibility: { ...current.accessibility, ...body.accessibility },
+      },
+    });
+
+    if (!updated) {
+      throw new ORPCError('USER_NOT_FOUND');
+    }
+
+    return serializeUser(updated);
   }
 }

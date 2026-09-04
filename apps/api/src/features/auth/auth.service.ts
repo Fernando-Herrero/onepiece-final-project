@@ -1,3 +1,4 @@
+import { DEFAULT_USER_PREFERENCES } from '@logpose/contracts/common/user.schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
@@ -52,6 +53,7 @@ export class AuthService {
         showBookmarked: true,
         showComments: true,
       },
+      preferences: DEFAULT_USER_PREFERENCES,
       role: 'user',
       verified: false,
       isActive: true,

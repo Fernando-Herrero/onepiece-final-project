@@ -1,4 +1,11 @@
+import {
+  DEFAULT_USER_PREFERENCES,
+  type userPreferencesSchema,
+} from '@logpose/contracts/common/user.schemas';
 import type { ObjectId, WithId } from 'mongodb';
+import type * as z from 'zod/v4';
+
+export type UserPreferences = z.infer<typeof userPreferencesSchema>;
 
 export type UserRole = 'user' | 'admin';
 
@@ -38,11 +45,37 @@ export type UserDocument = {
     showBookmarked: boolean;
     showComments: boolean;
   };
+  /** Opcional en Mongo: los usuarios creados antes de settings no lo tienen. */
+  preferences?: UserPreferences;
   followers: ObjectId[];
   following: ObjectId[];
   createdAt?: Date;
   updatedAt?: Date;
 };
+
+/**
+ * Rellena las preferencias que falten con los valores por defecto, grupo a grupo.
+ * Sin esto, un usuario antiguo (sin `preferences` en Mongo) rompería
+ * `userPublicSchema` al serializar.
+ */
+export function withPreferenceDefaults(
+  preferences: Partial<UserPreferences> | undefined,
+): UserPreferences {
+  return {
+    notifications: {
+      ...DEFAULT_USER_PREFERENCES.notifications,
+      ...preferences?.notifications,
+    },
+    timeline: {
+      ...DEFAULT_USER_PREFERENCES.timeline,
+      ...preferences?.timeline,
+    },
+    accessibility: {
+      ...DEFAULT_USER_PREFERENCES.accessibility,
+      ...preferences?.accessibility,
+    },
+  };
+}
 
 function fullName(
   doc: Pick<
@@ -77,6 +110,7 @@ export function serializeUser(user: WithId<UserDocument>) {
     serieProgress: user.serieProgress,
     unlockedCards: user.unlockedCards,
     privacy: user.privacy,
+    preferences: withPreferenceDefaults(user.preferences),
     followers: user.followers.map(String),
     following: user.following.map(String),
     createdAt: user.createdAt?.toISOString(),

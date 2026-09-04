@@ -8,6 +8,7 @@ import {
   followOutputSchema,
   userRankingEntrySchema,
   userStatsSchema,
+  verifyUserOutputSchema,
 } from '@logpose/contracts/features/users/schemas';
 import { Controller } from '@nestjs/common';
 import { Implement, implement } from '@orpc/nest';
@@ -322,6 +323,76 @@ export class UsersController {
 
           return parseOrThrow(
             deleteUserOutputSchema,
+            result,
+            throwContractOutputInvalid,
+          );
+        } catch (error) {
+          handleUsersError(error, errors);
+        }
+      },
+    );
+  }
+
+  @Implement(contract.users.updatePreferences)
+  updatePreferences() {
+    return implement(contract.users.updatePreferences).handler(
+      async ({ input, context, errors }) => {
+        try {
+          const viewer = requireUser(context.request);
+          const user = await this.usersService.updatePreferences(
+            input.params.id,
+            viewer.id,
+            input.body,
+          );
+
+          return parseOrThrow(
+            userPublicSchema,
+            user,
+            throwContractOutputInvalid,
+          );
+        } catch (error) {
+          handleUsersError(error, errors);
+        }
+      },
+    );
+  }
+
+  @Implement(contract.users.verify)
+  verify() {
+    return implement(contract.users.verify).handler(
+      async ({ input, context, errors }) => {
+        try {
+          const viewer = requireUser(context.request);
+          const result = await this.usersService.verify(
+            input.params.id,
+            viewer.id,
+          );
+
+          return parseOrThrow(
+            verifyUserOutputSchema,
+            result,
+            throwContractOutputInvalid,
+          );
+        } catch (error) {
+          handleUsersError(error, errors);
+        }
+      },
+    );
+  }
+
+  @Implement(contract.users.unverify)
+  unverify() {
+    return implement(contract.users.unverify).handler(
+      async ({ input, context, errors }) => {
+        try {
+          const viewer = requireUser(context.request);
+          const result = await this.usersService.unverify(
+            input.params.id,
+            viewer.id,
+          );
+
+          return parseOrThrow(
+            verifyUserOutputSchema,
             result,
             throwContractOutputInvalid,
           );
