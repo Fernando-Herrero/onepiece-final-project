@@ -594,6 +594,7 @@
     },
     "resources": {
       "description": "LogPoseを活用するためのヘルプ、ガイド、リンク。",
+      "back": "リソースに戻る",
       "external": "外部",
       "faq_title": "よくある質問",
       "faq_text": "アプリについての代表的な質問。",

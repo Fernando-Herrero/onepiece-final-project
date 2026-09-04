@@ -594,6 +594,7 @@
     },
     "resources": {
       "description": "Ayuda, guías y enlaces para sacar partido a LogPose.",
+      "back": "Volver a recursos",
       "external": "Externo",
       "faq_title": "Preguntas frecuentes",
       "faq_text": "Las dudas más habituales sobre la aplicación.",

@@ -16,25 +16,29 @@ type ResourceLink = {
   textKey: TranslationKey;
 };
 
-/** Enlaces a páginas que ya existen en la app, más el repositorio del proyecto. */
+/**
+ * Todo lo interno se queda dentro del dashboard: sacar a un usuario con sesión
+ * a la landing (con su cabecera de login/registro) no tiene sentido. Solo el
+ * enlace marcado `external` abre fuera, y lo hace en otra pestaña.
+ */
 const RESOURCES: ResourceLink[] = [
   {
     id: 'faq',
-    href: '/faq',
+    href: '/dashboard/settings/resources/faq',
     icon: <Icon.BookOpen />,
     titleKey: 'settings.resources.faq_title',
     textKey: 'settings.resources.faq_text',
   },
   {
     id: 'contact',
-    href: '/contact',
+    href: '/dashboard/settings/resources/contact',
     icon: <Icon.Comment />,
     titleKey: 'settings.resources.contact_title',
     textKey: 'settings.resources.contact_text',
   },
   {
     id: 'characters',
-    href: '/characters',
+    href: '/dashboard/settings/resources/characters',
     icon: <Icon.User />,
     titleKey: 'settings.resources.characters_title',
     textKey: 'settings.resources.characters_text',

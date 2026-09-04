@@ -5,96 +5,11 @@ import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect, useRef, useState } from 'react';
 
+import { CREW } from '@/features/help/help.constants';
 import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { CharacterCardComponent } from '@/features/landing/ui/character-card.component';
 import { LandingPublicLayout } from '@/features/landing/ui/landing-public-layout.component';
 import { Reveal } from '@/features/landing/ui/reveal.component';
-
-const AVATAR = '/landing/characters/avatars';
-
-const CREW = [
-  {
-    name: 'Monkey D. Luffy',
-    key: 'luffy_text',
-    images: [
-      `${AVATAR}/luffy-happy-400.webp`,
-      `${AVATAR}/luffy-700.webp`,
-      `${AVATAR}/luffy-modal.webp`,
-    ],
-  },
-  {
-    name: 'Roronoa Zoro',
-    key: 'zoro_text',
-    images: [
-      `${AVATAR}/zoro-happy-400.webp`,
-      `${AVATAR}/zoro-700.webp`,
-      `${AVATAR}/zoro-modal.webp`,
-    ],
-  },
-  {
-    name: 'Sanji',
-    key: 'sanji_text',
-    images: [
-      `${AVATAR}/sanji-happy-400.webp`,
-      `${AVATAR}/sanji-700.webp`,
-      `${AVATAR}/sanji-modal.webp`,
-    ],
-  },
-  {
-    name: 'Nami',
-    key: 'nami_text',
-    images: [
-      `${AVATAR}/nami-happy-400.webp`,
-      `${AVATAR}/nami-700.webp`,
-      `${AVATAR}/nami-modal.webp`,
-    ],
-  },
-  {
-    name: 'Usopp',
-    key: 'usopp_text',
-    images: [
-      `${AVATAR}/usopp-happy-400.webp`,
-      `${AVATAR}/usopp-700.webp`,
-      `${AVATAR}/usopp-modal.webp`,
-    ],
-  },
-  {
-    name: 'Tony Tony Chopper',
-    key: 'chopper_text',
-    images: [
-      `${AVATAR}/chopper-preskip-400.webp`,
-      `${AVATAR}/chopper-700.webp`,
-      `${AVATAR}/chopper-modal.webp`,
-    ],
-  },
-  {
-    name: 'Nico Robin',
-    key: 'robin_text',
-    images: [
-      `${AVATAR}/robin-happy-400.webp`,
-      `${AVATAR}/robin-700.webp`,
-      `${AVATAR}/robin-modal.webp`,
-    ],
-  },
-  {
-    name: 'Brook',
-    key: 'brook_text',
-    images: [
-      `${AVATAR}/brook-preskip-400.webp`,
-      `${AVATAR}/brook-700.webp`,
-      `${AVATAR}/brook-modal.webp`,
-    ],
-  },
-  {
-    name: 'Jinbe',
-    key: 'jimbe_text',
-    images: [
-      `${AVATAR}/jimbe-preskip-400.webp`,
-      `${AVATAR}/jimbe-700.webp`,
-      `${AVATAR}/jimbe-modal.webp`,
-    ],
-  },
-] as const;
 
 const INITIAL_VISIBLE = 5;
 

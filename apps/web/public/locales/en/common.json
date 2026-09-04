@@ -594,6 +594,7 @@
     },
     "resources": {
       "description": "Help, guides and links to get the most out of LogPose.",
+      "back": "Back to resources",
       "external": "External",
       "faq_title": "FAQ",
       "faq_text": "The most common questions about the app.",
