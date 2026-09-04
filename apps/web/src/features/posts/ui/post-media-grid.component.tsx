@@ -1,11 +1,14 @@
 type PostMediaGridProps = {
   images: string[];
+  /** Ajustes › cronología: difumina hasta pasar el ratón o enfocar. */
+  blurred?: boolean;
 };
 
-export function PostMediaGrid({ images }: PostMediaGridProps) {
+export function PostMediaGrid({ images, blurred = false }: PostMediaGridProps) {
   const items = images.slice(0, 4);
-  const shellClassName =
-    'overflow-hidden rounded-2xl border border-[#f2d9a8]/10 bg-[#05070d]/50';
+  const shellClassName = `overflow-hidden rounded-2xl border border-[#f2d9a8]/10 bg-[#05070d]/50${
+    blurred ? ' post-media--blurred' : ''
+  }`;
 
   if (items.length === 1) {
     return (

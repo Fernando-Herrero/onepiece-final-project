@@ -518,3 +518,62 @@ layer-backed blur y will-change idle. El movimiento JS se omite mediante `isMoti
     padding-inline: 1.5rem;
   }
 }
+
+/* ---------------------------------------------------------------------------
+ * Preferencias de accesibilidad (ajustes › accesibilidad).
+ * `useApplyAccessibilityPreferences` escribe estos data-attributes en <html>.
+ * ------------------------------------------------------------------------- */
+
+html[data-font-scale='sm'] {
+  font-size: 14px;
+}
+
+html[data-font-scale='md'] {
+  font-size: 16px;
+}
+
+html[data-font-scale='lg'] {
+  font-size: 18px;
+}
+
+/* Sube el contraste del texto secundario, que en el tema pirata va muy velado. */
+html[data-high-contrast='true'] {
+  --logpose-text-muted: rgb(244 237 225 / 0.95);
+}
+
+html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/50),
+html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/65),
+html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/75),
+html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/85) {
+  color: var(--logpose-text-muted);
+}
+
+html[data-high-contrast='true'] :where(.rt-Card, .rt-BaseCard) {
+  border-color: rgb(242 217 168 / 0.45);
+}
+
+/* Corta animaciones y transiciones, incluidas las de GSAP ya aplicadas. */
+html[data-reduce-motion='true'] *,
+html[data-reduce-motion='true'] *::before,
+html[data-reduce-motion='true'] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Timeline › modo compacto y difuminar multimedia. */
+.post-card--compact {
+  --post-card-padding: 0.625rem;
+}
+
+.post-media--blurred img {
+  filter: blur(18px);
+  transform: scale(1.04);
+  transition: filter 0.2s ease;
+}
+
+.post-media--blurred:hover img,
+.post-media--blurred:focus-within img {
+  filter: blur(0);
+}

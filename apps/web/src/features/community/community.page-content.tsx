@@ -4,6 +4,7 @@ import { Suspense, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 
 import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
+import { useAuthSession } from '@/features/auth/api/use-auth';
 import {
   useCreatePostMutation,
   useDeletePostMutation,
@@ -22,9 +23,16 @@ function CommunityFeed({
   deletingPostId?: string;
 }) {
   const { t } = useTranslation();
+  const { user } = useAuthSession();
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage } =
     usePostsFeedInfinite();
-  const posts = data.pages.flatMap(page => page.posts);
+
+  // Ajustes › cronología: ocultar retweets se filtra en cliente para no romper
+  // el cursor de paginación, que ordena por createdAt en el servidor.
+  const showRetweets = user?.preferences.timeline.showRetweets ?? true;
+  const posts = data.pages
+    .flatMap(page => page.posts)
+    .filter(post => showRetweets || !post.isRetweet);
 
   if (posts.length === 0) {
     return (

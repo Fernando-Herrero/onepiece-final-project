@@ -32,6 +32,11 @@ export function PostCard({
   const { user } = useAuthSession();
   const [avatarLoadError, setAvatarLoadError] = useState(false);
 
+  // Ajustes › cronología. Sin sesión (o antes de que cargue) se usa el layout normal.
+  const timeline = user?.preferences.timeline;
+  const isCompact = timeline?.compactMode ?? false;
+  const shouldBlurMedia = timeline?.blurMedia ?? false;
+
   const contentAuthor =
     post.isRetweet && post.originalAuthor ? post.originalAuthor : post.userId;
   const authorName = getUserDisplayName(contentAuthor);
@@ -49,9 +54,9 @@ export function PostCard({
   return (
     <Card
       asChild
-      className={`border border-[#f2d9a8]/10 bg-[#05070d]/40 p-4 transition-opacity ${
-        isPending ? 'opacity-85' : ''
-      }`}
+      className={`border border-[#f2d9a8]/10 bg-[#05070d]/40 transition-opacity ${
+        isCompact ? 'post-card--compact p-2.5' : 'p-4'
+      } ${isPending ? 'opacity-85' : ''}`}
     >
       <article>
         {post.isRetweet ? (
@@ -114,7 +119,7 @@ export function PostCard({
             </Text>
 
             {post.images?.length ? (
-              <PostMediaGrid images={post.images} />
+              <PostMediaGrid images={post.images} blurred={shouldBlurMedia} />
             ) : null}
 
             <PostCardActions
