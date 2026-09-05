@@ -5,7 +5,6 @@ import { useTranslation } from 'next-i18next/pages';
 import { Icon } from '@/components/icons/icon';
 import { useAuthSession } from '@/features/auth/api/use-auth';
 import {
-  DASHBOARD_SETTINGS_NAV_ITEM,
   type DashboardNavItem,
   getDashboardNavItems,
 } from '@/features/dashboard/dashboard-navigation';
@@ -24,7 +23,7 @@ export function DashboardNavSidebar({
   const navItems = getDashboardNavItems(isAdmin);
 
   return (
-    <aside className="flex h-full w-[220px] shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] text-[#f4ede1]">
+    <aside className="flex h-full w-55 shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] text-[#f4ede1]">
       <Flex
         align="center"
         px="4"
@@ -55,10 +54,6 @@ export function DashboardNavSidebar({
         py="3"
         className="border-t border-[#f2d9a8]/15"
       >
-        <NavSidebarLink
-          item={DASHBOARD_SETTINGS_NAV_ITEM}
-          active={activeTab === DASHBOARD_SETTINGS_NAV_ITEM.id}
-        />
         <Flex justify="end">
           <IconButton
             type="button"

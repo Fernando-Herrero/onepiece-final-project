@@ -1,41 +1,46 @@
-import { Button, Flex, IconButton, Text } from '@radix-ui/themes';
+import { Flex, IconButton, Text } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
 import { Icon } from '@/components/icons/icon';
-import {
-  useAuthSession,
-  useLogoutMutation,
-} from '@/features/auth/api/use-auth';
 import { DASHBOARD_TOPBAR_NAV_ITEMS } from '@/features/dashboard/dashboard-navigation';
-import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
+import { DashboardAccountMenu } from '@/features/dashboard/ui/dashboard-account-menu.component';
+import { DashboardSearchBar } from '@/features/dashboard/ui/dashboard-search-bar.component';
 
 type DashboardTopBarProps = {
   sectionLabel: string;
 };
 
+const TOPBAR_ICON_ITEMS = DASHBOARD_TOPBAR_NAV_ITEMS.filter(
+  item => item.id !== 'search',
+);
+
 export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
   const router = useRouter();
   const { t } = useTranslation();
-  const logout = useLogoutMutation();
-  const { user } = useAuthSession();
 
   return (
     <Flex
       asChild
       align="center"
-      justify="between"
+      justify={{ initial: 'end', md: 'between' }}
       px="4"
       className="h-14 shrink-0 border-b border-[#f2d9a8]/15 bg-[#05070d] backdrop-blur-md"
     >
       <header>
-        <Text size="2" weight="medium" className="text-[#f4ede1]/90">
+        <Text
+          size="2"
+          weight="medium"
+          className="hidden text-[#f4ede1]/90 md:block"
+        >
           LogPose / {sectionLabel}
         </Text>
 
         <Flex align="center" gap="3">
-          {DASHBOARD_TOPBAR_NAV_ITEMS.map(item => {
+          <DashboardSearchBar />
+
+          {TOPBAR_ICON_ITEMS.map(item => {
             const active = router.pathname.startsWith(item.href);
             const NavIcon = Icon[item.icon];
 
@@ -56,22 +61,7 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
             );
           })}
 
-          <LandingLocaleToggleComponent compactLabel />
-
-          {user ? (
-            <Text size="2" className="hidden text-[#f4ede1]/75 sm:inline">
-              {user.username}
-            </Text>
-          ) : null}
-          <Button
-            variant="outline"
-            color="orange"
-            size="2"
-            disabled={logout.isPending}
-            onClick={() => logout.mutate()}
-          >
-            {t('dashboard.topbar.logout')}
-          </Button>
+          <DashboardAccountMenu />
         </Flex>
       </header>
     </Flex>

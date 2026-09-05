@@ -5,7 +5,6 @@ import { useTranslation } from 'next-i18next/pages';
 import { Icon } from '@/components/icons/icon';
 import { useAuthSession } from '@/features/auth/api/use-auth';
 import {
-  DASHBOARD_SETTINGS_NAV_ITEM,
   type DashboardNavItem,
   getDashboardNavItems,
 } from '@/features/dashboard/dashboard-navigation';
@@ -53,10 +52,6 @@ export function DashboardNavRail({
         py="3"
         className="flex flex-col items-center gap-2 border-t border-[#f2d9a8]/15"
       >
-        <NavRailLink
-          item={DASHBOARD_SETTINGS_NAV_ITEM}
-          active={activeTab === DASHBOARD_SETTINGS_NAV_ITEM.id}
-        />
         <Tooltip side="right" content={t('dashboard.nav.expand')}>
           <IconButton
             type="button"

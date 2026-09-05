@@ -132,6 +132,10 @@
       "collapse": "Contraer menú"
     },
     "topbar": {
+      "account_menu": "Menú de cuenta",
+      "help": "Ayuda",
+      "search_placeholder": "Buscar en LogPose",
+      "search_close": "Cerrar búsqueda",
       "logout": "Salir"
     },
     "pages": {

@@ -132,6 +132,10 @@
       "collapse": "メニューを折りたたむ"
     },
     "topbar": {
+      "account_menu": "アカウントメニュー",
+      "help": "ヘルプ",
+      "search_placeholder": "LogPose内を検索",
+      "search_close": "検索を閉じる",
       "logout": "ログアウト"
     },
     "pages": {

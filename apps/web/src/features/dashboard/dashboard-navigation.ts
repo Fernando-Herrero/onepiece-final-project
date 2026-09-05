@@ -88,10 +88,6 @@ export const DASHBOARD_TOPBAR_NAV_ITEMS = DASHBOARD_NAV_ITEMS.filter(
   item => item.id === 'search' || item.id === 'notifications',
 );
 
-export const DASHBOARD_SETTINGS_NAV_ITEM = DASHBOARD_NAV_ITEMS.find(
-  item => item.id === 'settings',
-)!;
-
 export function getDashboardActiveTab(pathname: string) {
   if (pathname.startsWith('/dashboard/admin')) {
     return 'admin';

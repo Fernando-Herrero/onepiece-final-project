@@ -19,6 +19,7 @@ import {
   SealCheckIcon,
   ShieldCheckIcon,
   ShieldIcon,
+  SignOutIcon,
   StarIcon,
   TelevisionIcon,
   UserIcon,
@@ -65,6 +66,7 @@ export const Icon = {
   BookOpen: (p: IconProps) => (
     <BookOpenIcon size={22} weight="duotone" {...p} />
   ),
+  SignOut: (p: IconProps) => <SignOutIcon size={16} {...p} />,
 } as const;
 
 export type DashboardNavIcon = keyof Pick<
