@@ -10,14 +10,24 @@ import type {
   ProfilePrivacy,
 } from '@/features/profile/profile.types';
 
-export function useProfilePostsTabs(privacy: ProfilePrivacy) {
+/**
+ * La privacidad de actividad solo protege de visitantes externos: el dueño
+ * del perfil y los admin siempre ven todas las pestañas, igual que ya hace
+ * la API en `assertVisibleUser`.
+ */
+export function useProfilePostsTabs(
+  privacy: ProfilePrivacy,
+  isOwner: boolean,
+  isAdmin: boolean,
+) {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<ProfilePostsTab>('posts');
 
+  const bypassPrivacy = isOwner || isAdmin;
   const tabs = PROFILE_POSTS_TAB_CONFIG.map(tab => ({
     key: tab.key,
     label: t(tab.labelKey),
-    visible: privacy[tab.privacyKey],
+    visible: bypassPrivacy || privacy[tab.privacyKey],
   }));
 
   const activeTabConfig = tabs.find(tab => tab.key === activeTab);

@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
 import { Suspense } from 'react';
 
+import { useAuthSession } from '@/features/auth/api/use-auth';
 import { useDeletePostMutation } from '@/features/posts/api/use-posts';
 import { PostCard } from '@/features/posts/ui/post-card.component';
 import { PostFeedSkeleton } from '@/features/posts/ui/post-card-skeleton.component';
@@ -85,13 +86,14 @@ export function ProfilePostsTabs({
   isOwner = true,
 }: ProfilePostsTabsProps) {
   const { t } = useTranslation();
+  const { isAdmin } = useAuthSession();
   const {
     activeTab,
     setActiveTab,
     tabs,
     isActiveTabPrivate,
     privateMessageKey,
-  } = useProfilePostsTabs(privacy);
+  } = useProfilePostsTabs(privacy, isOwner, isAdmin);
 
   const privateMessage = isOwner
     ? privateMessageKey
@@ -115,7 +117,7 @@ export function ProfilePostsTabs({
         </Heading>
         {isOwner ? (
           <Link
-            href="/dashboard/settings"
+            href="/dashboard/settings/privacy"
             className="text-xs text-[#f2d9a8]/75 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
           >
             {t('profile.activity_manage_visibility')}
