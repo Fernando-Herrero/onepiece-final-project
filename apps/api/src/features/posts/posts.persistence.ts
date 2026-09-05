@@ -87,6 +87,20 @@ export class PostsPersistence {
     return this.posts.deleteMany({ userId: new ObjectId(userId) });
   }
 
+  /**
+   * Retweets ajenos de estos posts. Al borrar una cuenta se llama antes de
+   * `deleteByUserId`: sin esto, los retweets que OTRA gente hizo de sus posts
+   * quedan huérfanos (`retweetOf` apuntando a nada) — invisibles gracias al
+   * filtro en `serializePostsWithAuthors`, pero acumulándose sin límite.
+   */
+  deleteRetweetsOf(postIds: ObjectId[]) {
+    if (postIds.length === 0) {
+      return Promise.resolve({ deletedCount: 0 });
+    }
+
+    return this.posts.deleteMany({ retweetOf: { $in: postIds } });
+  }
+
   findPublicFeedPage(limit = POST_FEED_PAGE_SIZE, cursor?: string) {
     const filter: Filter<PostDocument> = { ...PUBLIC_POST_FILTER };
     const decoded = cursor ? decodePostCursor(cursor) : null;
@@ -151,12 +165,29 @@ export class PostsPersistence {
     return { post: updated, alreadyHad };
   }
 
+  /**
+   * Un retweet es un eco de un original: si el original desaparece, sus
+   * copias también. Se cascada aquí (no solo en `posts.service.delete`)
+   * porque los otros dos llamantes (deshacer retweet propio, rollback de
+   * `toggleRetweet`) siempre operan sobre wrappers, que nunca tienen hijos
+   * — el `updateMany` no encuentra nada y es un no-op barato.
+   */
   async softDeleteById(id: string) {
-    return this.posts.findOneAndUpdate(
-      { _id: new ObjectId(id), isDeleted: false },
+    const objectId = new ObjectId(id);
+    const deleted = await this.posts.findOneAndUpdate(
+      { _id: objectId, isDeleted: false },
       { $set: { isDeleted: true, updatedAt: new Date() } },
       { returnDocument: 'after' },
     );
+
+    if (deleted && !deleted.isRetweet) {
+      await this.posts.updateMany(
+        { retweetOf: objectId, isDeleted: false },
+        { $set: { isDeleted: true, updatedAt: new Date() } },
+      );
+    }
+
+    return deleted;
   }
 
   async findRetweetedOriginalIds(userId: string, originalIds: string[]) {

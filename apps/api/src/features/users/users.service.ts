@@ -347,6 +347,7 @@ export class UsersService {
 
     await this.commentsPersistence.deleteByPostIds(postIds);
     await this.commentsPersistence.deleteByAuthor(userId);
+    await this.postsPersistence.deleteRetweetsOf(postIds);
     await this.postsPersistence.deleteByUserId(userId);
     await this.usersPersistence.deleteById(userId);
 

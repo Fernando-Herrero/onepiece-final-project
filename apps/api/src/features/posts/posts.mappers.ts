@@ -226,7 +226,7 @@ export async function serializePostsWithAuthors(
     authors.map(author => [author._id.toString(), author]),
   );
 
-  return posts.map(post => {
+  const serializedOrDropped = posts.map(post => {
     const author = authorById.get(post.userId.toString());
 
     if (!author) {
@@ -246,7 +246,10 @@ export async function serializePostsWithAuthors(
 
     const original = originalPostsById.get(post.retweetOf.toString());
     if (!original) {
-      return serialized;
+      // El original ya no está (borrado, o huérfano si la cascada de
+      // softDeleteById no llegó a completarse): no mostramos la copia
+      // congelada del wrapper, se descarta como si nunca hubiera existido.
+      return null;
     }
 
     const originalAuthor = authorById.get(original.userId.toString());
@@ -262,4 +265,6 @@ export async function serializePostsWithAuthors(
       retweetedOriginalIds,
     );
   });
+
+  return serializedOrDropped.filter(post => post !== null);
 }
