@@ -49,7 +49,7 @@ export function PostCardHeader({
           <Text as="span" size="2" weight="medium" className="truncate">
             {authorName}
           </Text>
-          {author.verified ? <VerifiedBadge /> : null}
+          <VerifiedBadge verified={author.verified} />
         </Link>
         <Text as="span" size="1" color="gray">
           ·

@@ -47,8 +47,9 @@ export const Icon = {
   ),
   Comment: (p: IconProps) => <ChatCircleIcon size={16} {...p} />,
   Repeat: (p: IconProps) => <RepeatIcon size={16} {...p} />,
-  Verified: (p: IconProps) => <SealCheckIcon size={16} weight="fill" {...p} />,
   RepeatFill: (p: IconProps) => <RepeatIcon size={16} weight="fill" {...p} />,
+  /** El grosor lo decide quien lo use: relleno = verificado. */
+  Badge: (p: IconProps) => <SealCheckIcon size={16} {...p} />,
   Lock: (p: IconProps) => <LockKeyIcon size={22} weight="duotone" {...p} />,
   Monetisation: (p: IconProps) => (
     <CurrencyCircleDollarIcon size={22} weight="duotone" {...p} />

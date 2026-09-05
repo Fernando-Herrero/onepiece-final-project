@@ -262,44 +262,44 @@ export function ProfileIdentityCard({
             />
           </Box>
 
-          <Flex direction="column" gap="1" align="start" className="min-w-0">
-            <Flex align="center" gap="1" className="w-full min-w-0">
-              {isOwner ? (
-                <ProfileEditableField
-                  value={displayName}
-                  emptyText={t('profile.empty_displayname')}
-                  placeholder={t('profile.display_name_placeholder')}
-                  prominent
-                  isEditing={editingField === 'displayName'}
-                  isSaving={isSaving('displayName')}
-                  onStartEdit={() => setEditingField('displayName')}
-                  onCancel={() => setEditingField(null)}
-                  onSave={value =>
-                    void saveProfileField(
-                      { displayName: value.trim() || undefined },
-                      'displayName',
-                    )
-                  }
-                />
-              ) : (
-                <Text
-                  as="p"
-                  size="5"
-                  weight="bold"
-                  className={
-                    displayName
-                      ? 'truncate text-[#f4ede1]'
-                      : 'truncate text-base font-normal text-[#f4ede1]/50 italic'
-                  }
-                >
-                  {displayName || t('profile.empty_displayname_other')}
-                </Text>
-              )}
-              {user.verified ? <VerifiedBadge size="md" /> : null}
+          <Flex direction="column" gap="1" align="start">
+            {isOwner ? (
+              <ProfileEditableField
+                value={displayName}
+                emptyText={t('profile.empty_displayname')}
+                placeholder={t('profile.display_name_placeholder')}
+                prominent
+                isEditing={editingField === 'displayName'}
+                isSaving={isSaving('displayName')}
+                onStartEdit={() => setEditingField('displayName')}
+                onCancel={() => setEditingField(null)}
+                onSave={value =>
+                  void saveProfileField(
+                    { displayName: value.trim() || undefined },
+                    'displayName',
+                  )
+                }
+              />
+            ) : (
+              <Text
+                as="p"
+                size="5"
+                weight="bold"
+                className={
+                  displayName
+                    ? 'text-[#f4ede1]'
+                    : 'text-base font-normal text-[#f4ede1]/50 italic'
+                }
+              >
+                {displayName || t('profile.empty_displayname_other')}
+              </Text>
+            )}
+            <Flex align="center" gap="1">
+              <Text as="p" size="2" color="gray">
+                @{user.username}
+              </Text>
+              <VerifiedBadge verified={user.verified} />
             </Flex>
-            <Text as="p" size="2" color="gray">
-              @{user.username}
-            </Text>
           </Flex>
 
           {isOwner ? (

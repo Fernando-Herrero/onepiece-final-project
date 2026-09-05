@@ -58,7 +58,7 @@ function ProfileFollowUserRow({ user }: { user: UserSummary }) {
           >
             {name}
           </Text>
-          {user.verified ? <VerifiedBadge /> : null}
+          <VerifiedBadge verified={user.verified} />
         </Flex>
         <Text as="span" size="1" color="gray" className="truncate">
           @{user.username}
