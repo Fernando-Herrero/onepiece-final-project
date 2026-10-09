@@ -15,9 +15,8 @@ next-env.d.ts
 
 graphify-out/
 
-# Documentación local — README.md es la única excepción
-**/*.md
-!README.md
+# Notas locales
+*.local.*
 
 # Hooks locales de graphify: llevan la ruta absoluta del intérprete de cada
 # máquina, así que se instalan con "graphify hook install", no se versionan.

@@ -23,12 +23,12 @@ El cliente web consume la API a través de contratos tipados (oRPC + TanStack Qu
 
 ## Tecnologías
 
-| Capa      | Stack                                                |
-| --------- | ---------------------------------------------------- |
-| Frontend  | Next.js 16, React 19, Tailwind CSS 4, TanStack Query |
+| Capa      | Stack                                                         |
+| --------- | ------------------------------------------------------------- |
+| Frontend  | Next.js 16, React 19, Tailwind CSS 4, TanStack Query          |
 | Backend   | NestJS 11, `@orpc/nest`, MongoDB (`@jperezmart/nest-mongodb`) |
-| Contratos | oRPC, Zod                                            |
-| Monorepo  | pnpm, Turbo                                          |
+| Contratos | oRPC, Zod                                                     |
+| Monorepo  | pnpm, Turbo                                                   |
 
 ## Inicio rápido
 
@@ -47,4 +47,4 @@ Otros comandos útiles: `pnpm build`, `pnpm lint`, `pnpm type-check`, `pnpm form
 
 ## Origen del proyecto
 
-LogPose v3 migra y unifica dos proyectos anteriores (SPA en Vite + API Express separada) en este monorepo, con contratos compartidos y la misma base de herramientas que el monorepo **admin** (Nest + oRPC). Ver `docs/NEST-MIGRATION.md` para el estado de la migración del backend.
+LogPose v3 migra y unifica dos proyectos anteriores (SPA en Vite + API Express separada) en este monorepo, con contratos compartidos entre la API (Nest) y la web (oRPC).
