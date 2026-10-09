@@ -10,6 +10,7 @@
     "lint": "turbo run lint",
     "prepare": "husky",
     "start": "turbo run start",
+    "test": "turbo run test",
     "type-check": "turbo run type-check"
   },
   "devDependencies": {

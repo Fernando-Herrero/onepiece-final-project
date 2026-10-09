@@ -11,6 +11,8 @@
     "format-check": "prettier --check \"**/*.{ts,tsx,md,json,html}\"",
     "lint": "eslint . --max-warnings 0",
     "start": "node dist/main.js",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
@@ -50,6 +52,7 @@
     "@types/node": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }

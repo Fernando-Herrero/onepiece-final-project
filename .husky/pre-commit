@@ -29,6 +29,13 @@ pnpm type-check || (
     false;
 )
 
+# Tests
+pnpm test ||
+(
+    echo '🧪 Tests fallaron. Corrige lo indicado arriba y vuelve a commitear.'
+    false;
+)
+
 # Build de los apps desplegables
 pnpm build ||
 (

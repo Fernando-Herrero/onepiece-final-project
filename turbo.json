@@ -13,6 +13,9 @@
       "persistent": true
     },
     "lint": {},
+    "test": {
+      "dependsOn": ["^build"]
+    },
     "format": {},
     "format-check": {},
     "type-check": {
