@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@logpose/eslint-config": "workspace:*",
+    "@logpose/typescript-config": "workspace:*",
     "@tanstack/eslint-plugin-query": "catalog:",
     "@tanstack/react-query-devtools": "^5.100.0",
     "@types/react": "catalog:",

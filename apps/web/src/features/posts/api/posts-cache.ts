@@ -82,14 +82,14 @@ export function prependPostToFeed(queryClient: QueryClient, post: PostPublic) {
   }
 
   queryClient.setQueryData<PostsFeedInfiniteData>(postsKeys.feed(), old => {
-    if (!old?.pages.length) {
+    const [firstPage, ...restPages] = old?.pages ?? [];
+
+    if (!old || !firstPage) {
       return {
         pages: [{ posts: [post], nextCursor: null }],
         pageParams: [undefined],
       };
     }
-
-    const [firstPage, ...restPages] = old.pages;
 
     return {
       ...old,

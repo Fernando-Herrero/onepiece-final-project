@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@logpose/eslint-config": "workspace:*",
+    "@logpose/typescript-config": "workspace:*",
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@types/bcrypt": "^6.0.0",

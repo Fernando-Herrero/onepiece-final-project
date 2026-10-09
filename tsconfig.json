@@ -1,6 +1,6 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "types": ["node"]
-    }
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "extends": "@logpose/typescript-config/base.json"
 }

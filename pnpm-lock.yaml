@@ -122,6 +122,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^21.0.2
         version: 21.0.2
+      '@logpose/typescript-config':
+        specifier: workspace:*
+        version: link:packages/typescript-config
       '@types/node':
         specifier: 'catalog:'
         version: 22.19.21
@@ -222,6 +225,9 @@ importers:
       '@logpose/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@logpose/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       '@nestjs/cli':
         specifier: ^11.0.0
         version: 11.0.23(@types/node@22.19.21)(prettier@3.8.4)
@@ -334,6 +340,9 @@ importers:
       '@logpose/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@logpose/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       '@tanstack/eslint-plugin-query':
         specifier: 'catalog:'
         version: 5.101.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
@@ -386,6 +395,9 @@ importers:
       '@logpose/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      '@logpose/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       prettier:
         specifier: 'catalog:'
         version: 3.8.4
@@ -428,6 +440,8 @@ importers:
       typescript-eslint:
         specifier: 'catalog:'
         version: 8.61.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
+
+  packages/typescript-config: {}
 
 packages:
 
@@ -3304,6 +3318,7 @@ packages:
   eslint@9.39.4:
     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
