@@ -7,7 +7,7 @@
     "dev": "next dev --port 3000",
     "format": "prettier --write \"**/*.{ts,tsx,md,json,html}\"",
     "format-check": "prettier --check \"**/*.{ts,tsx,md,json,html}\"",
-    "lint": "eslint .",
+    "lint": "eslint . --max-warnings 0",
     "start": "next start",
     "type-check": "tsc --noEmit"
   },

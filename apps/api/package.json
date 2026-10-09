@@ -12,7 +12,6 @@
     "lint": "eslint . --max-warnings 0",
     "start": "node dist/main.js",
     "test": "vitest run --passWithNoTests",
-    "test:watch": "vitest",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
