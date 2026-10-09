@@ -122,6 +122,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^21.0.2
         version: 21.0.2
+      '@logpose/eslint-config':
+        specifier: workspace:*
+        version: link:packages/eslint-config
       '@logpose/typescript-config':
         specifier: workspace:*
         version: link:packages/typescript-config
