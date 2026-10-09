@@ -13,6 +13,8 @@ export function DashboardSearchBar() {
   const [query, setQuery] = useState('');
   const formRef = useRef<HTMLFormElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
   const active = router.pathname.startsWith('/dashboard/search');
 
   useEffect(() => {
@@ -33,9 +35,12 @@ export function DashboardSearchBar() {
     return () => document.removeEventListener('pointerdown', handlePointerDown);
   }, [isOpen]);
 
-  function close() {
+  function close(restoreFocus = false) {
     setIsOpen(false);
     setQuery('');
+    if (restoreFocus) {
+      buttonRef.current?.focus();
+    }
   }
 
   function handleSubmit(event: React.SubmitEvent<HTMLFormElement>) {
@@ -48,19 +53,31 @@ export function DashboardSearchBar() {
 
     const trimmed = query.trim();
     if (trimmed) {
-      void router.push(`/dashboard/search?q=${encodeURIComponent(trimmed)}`);
+      void router.push({
+        pathname: '/dashboard/search',
+        query: { q: trimmed },
+      });
     }
 
     close();
   }
 
+  const buttonVisualProps = {
+    variant: active ? ('soft' as const) : ('ghost' as const),
+    color: active ? ('orange' as const) : ('gray' as const),
+    highContrast: active,
+  };
+
+  const isCloseAction = isOpen && !query.trim();
+  const desktopButtonLabel = t(
+    isCloseAction ? 'dashboard.topbar.search_close' : 'dashboard.nav.search',
+  );
+
   return (
     <>
       <IconButton
         asChild
-        variant={active ? 'soft' : 'ghost'}
-        color={active ? 'orange' : 'gray'}
-        highContrast={active}
+        {...buttonVisualProps}
         className="m-0! box-border size-9 p-0 md:hidden"
         aria-label={t('dashboard.nav.search')}
       >
@@ -71,6 +88,7 @@ export function DashboardSearchBar() {
 
       <form
         ref={formRef}
+        role="search"
         onSubmit={handleSubmit}
         className={`hidden items-center rounded-full border transition-colors md:flex ${
           isOpen
@@ -82,6 +100,8 @@ export function DashboardSearchBar() {
           ref={inputRef}
           type="search"
           value={query}
+          tabIndex={isOpen ? 0 : -1}
+          aria-hidden={!isOpen}
           placeholder={t('dashboard.topbar.search_placeholder')}
           aria-label={t('dashboard.nav.search')}
           className={`bg-transparent text-sm text-[#f4ede1] transition-[width,opacity] duration-200 ease-out outline-none placeholder:text-[#f4ede1]/40 ${
@@ -90,19 +110,16 @@ export function DashboardSearchBar() {
           onChange={event => setQuery(event.target.value)}
           onKeyDown={event => {
             if (event.key === 'Escape') {
-              close();
+              close(true);
             }
           }}
         />
         <IconButton
+          ref={buttonRef}
           type="submit"
-          variant={active ? 'soft' : 'ghost'}
-          color={active ? 'orange' : 'gray'}
-          highContrast={active}
+          {...buttonVisualProps}
           className="m-0! box-border size-9 shrink-0 p-0"
-          aria-label={t(
-            isOpen ? 'dashboard.topbar.search_close' : 'dashboard.nav.search',
-          )}
+          aria-label={desktopButtonLabel}
           aria-expanded={isOpen}
         >
           <Icon.Search aria-hidden />
