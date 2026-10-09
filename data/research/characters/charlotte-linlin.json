@@ -1,0 +1,152 @@
+{
+  "slug": "charlotte-linlin",
+  "name": {
+    "en": "Charlotte Linlin",
+    "ja": "シャーロット・リンリン"
+  },
+  "origin": null,
+  "fruit": "soru-soru-no-mi",
+  "firstAppearance": {
+    "chapter": 651,
+    "episode": 571
+  },
+  "affiliations": [
+    {
+      "group": "big-mom-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 571,
+        "chapter": 651
+      },
+      "to": null
+    },
+    {
+      "group": "rocks-pirates",
+      "role": "member (flashback)",
+      "from": {
+        "episode": 958,
+        "chapter": 957
+      },
+      "to": {
+        "episode": 958,
+        "chapter": 957
+      }
+    },
+    {
+      "group": "four-emperors",
+      "role": "emperor",
+      "from": {
+        "episode": 314,
+        "chapter": 432
+      },
+      "to": {
+        "episode": 1080,
+        "chapter": 1053
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 50000000,
+      "episode": 838,
+      "chapter": 868,
+      "eventSlug": null
+    },
+    {
+      "amount": 500000000,
+      "episode": 838,
+      "chapter": 868,
+      "eventSlug": null
+    },
+    {
+      "amount": 4388000000,
+      "episode": 958,
+      "chapter": 957,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "charlotte-linlin-big-mom",
+      "name": {
+        "es": "Big Mom",
+        "en": "Big Mom",
+        "ja": "ビッグ・マム"
+      },
+      "firstAppearance": {
+        "episode": 571,
+        "chapter": 651
+      },
+      "description": {
+        "es": "Yonko y reina de Totto Land."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Soul Pocus"
+      ]
+    },
+    {
+      "slug": "charlotte-linlin-homies",
+      "name": {
+        "es": "Big Mom con Zeus, Prometheus y Napoleon",
+        "en": "Big Mom with Zeus, Prometheus and Napoleon",
+        "ja": "ゼウス・プロメテウス・ナポレオン"
+      },
+      "firstAppearance": {
+        "episode": 788,
+        "chapter": 829
+      },
+      "description": {
+        "es": "Con sus tres homies con fragmentos de su alma."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "charlotte-linlin-young",
+      "name": {
+        "es": "Linlin de niña",
+        "en": "Young Linlin",
+        "ja": "幼少期のリンリン"
+      },
+      "firstAppearance": {
+        "episode": 836,
+        "chapter": 866
+      },
+      "description": {
+        "es": "Flashback de su infancia en Elbaph."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "charlotte-linlin-obasan",
+      "name": {
+        "es": "Big Mom amnésica (Obasan)",
+        "en": "Amnesiac Big Mom",
+        "ja": "おリン"
+      },
+      "firstAppearance": {
+        "episode": 924,
+        "chapter": 931
+      },
+      "description": {
+        "es": "Pierde la memoria en Wano y protege a Tama."
+      },
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Charlotte_Linlin",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Charlotte_Linlin",
+      "field": "forms[charlotte-linlin-obasan].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Charlotte_Linlin",
+      "field": "forms[charlotte-linlin-homies].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

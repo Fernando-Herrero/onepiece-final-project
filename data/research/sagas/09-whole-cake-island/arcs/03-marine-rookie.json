@@ -1,0 +1,119 @@
+{
+  "slug": "marine-rookie",
+  "sagaSlug": "whole-cake-island",
+  "order": 3,
+  "title": {
+    "es": "Novatos de la Marina",
+    "en": "Marine Rookie",
+    "ja": "海軍超新星編"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 780,
+    "last": 782
+  },
+  "episodes": [
+    {
+      "number": 780,
+      "title": {
+        "en": "A Hungry Front - Luffy and the Marine Rookies!",
+        "ja": "空腹戦線 ルフィと海軍超新星!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2017-03-19"
+      },
+      "appearances": [
+        "carrot",
+        "nami",
+        "monkey-d-luffy",
+        "brook",
+        "tony-tony-chopper",
+        "pedro",
+        "pekoms"
+      ]
+    },
+    {
+      "number": 781,
+      "title": {
+        "en": "The Persistent Trio — The Great Pursuit for the Straw Hats!",
+        "ja": "執念の３人 麦わら一味大追撃戦！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2017-03-26"
+      },
+      "appearances": [
+        "carrot",
+        "monkey-d-luffy",
+        "nami",
+        "tony-tony-chopper",
+        "brook"
+      ]
+    },
+    {
+      "number": 782,
+      "title": {
+        "en": "Fist of the Devil — Showdown! Luffy vs. Grount",
+        "ja": "悪魔の拳 決戦！ルフィVSグラント"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2017-04-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "carrot",
+        "tony-tony-chopper",
+        "nami",
+        "brook",
+        "pekoms",
+        "pedro"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-vs-grount",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 782,
+      "chapter": null,
+      "description": {
+        "es": "Luffy derrota al novato de la Marina Grount."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marine_Rookie_Arc",
+      "field": "slug/ranges"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Whole_Cake_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Wano_Country_Saga",
+      "field": "episodes.title (Cidre Guild)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_760",
+      "field": "episodes.adaptsChapters/airDate (infobox de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_903",
+      "field": "events (bounties, raid suit)"
+    }
+  ]
+}

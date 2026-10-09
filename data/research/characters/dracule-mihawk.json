@@ -1,0 +1,117 @@
+{
+  "slug": "dracule-mihawk",
+  "name": {
+    "en": "Dracule Mihawk",
+    "ja": "ジュラキュール・ミホーク"
+  },
+  "origin": "desconocido",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 23,
+    "chapter": 49
+  },
+  "affiliations": [
+    {
+      "group": "seven-warlords",
+      "role": "Shichibukai",
+      "from": {
+        "episode": 31,
+        "chapter": 69
+      },
+      "to": {
+        "episode": 957,
+        "chapter": 956
+      }
+    },
+    {
+      "group": "cross-guild",
+      "role": "oficial",
+      "from": {
+        "episode": 1083,
+        "chapter": 1056
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 3590000000,
+      "episode": 1086,
+      "chapter": 1058,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "dracule-mihawk-baratie",
+      "name": {
+        "es": "Ojos de Halcón (Baratie)",
+        "en": "\"Hawk-Eyes\" Mihawk",
+        "ja": "鷹の目のミホーク"
+      },
+      "firstAppearance": {
+        "episode": 23,
+        "chapter": 49
+      },
+      "description": {
+        "es": "Derrota a Zoro en el Baratie con un cuchillito."
+      },
+      "abilities": [
+        "Yoru",
+        "Esgrima"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "dracule-mihawk-marineford",
+      "name": {
+        "es": "Mihawk en Marineford",
+        "en": "Mihawk (Marineford)",
+        "ja": "頂上戦争のミホーク"
+      },
+      "firstAppearance": {
+        "episode": 462,
+        "chapter": 553
+      },
+      "description": {
+        "es": "Partiendo icebergs y persiguiendo a Luffy en la Guerra en la Cumbre."
+      },
+      "abilities": [
+        "Yoru",
+        "Haki"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "dracule-mihawk-cross-guild",
+      "name": {
+        "es": "Mihawk, Cross Guild",
+        "en": "Mihawk (Cross Guild)",
+        "ja": "クロスギルドのミホーク"
+      },
+      "firstAppearance": {
+        "episode": 1083,
+        "chapter": 1056
+      },
+      "description": {
+        "es": "Líder de facto de Cross Guild con Crocodile y Buggy."
+      },
+      "abilities": [
+        "Yoru",
+        "Haki"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Dracule_Mihawk",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Dracule_Mihawk",
+      "field": "forms[dracule-mihawk-marineford] (dudoso)"
+    }
+  ]
+}

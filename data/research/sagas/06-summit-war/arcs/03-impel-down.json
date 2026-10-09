@@ -1,0 +1,1046 @@
+{
+  "slug": "impel-down",
+  "sagaSlug": "summit-war",
+  "order": 3,
+  "title": {
+    "es": "Arco de Impel Down",
+    "en": "Impel Down Arc",
+    "ja": null
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 525,
+    "last": 549
+  },
+  "episodeRange": {
+    "first": 422,
+    "last": 456
+  },
+  "episodes": [
+    {
+      "number": 422,
+      "title": {
+        "es": null,
+        "en": "A deadly Infiltration! The Underwater Prison Impel Down!",
+        "ja": "決死の潜入！海底監獄インペルダウン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        525,
+        526
+      ],
+      "airDate": {
+        "ja": "2009-10-18"
+      },
+      "appearances": [
+        "monkey-d-garp",
+        "monkey-d-dragon",
+        "edward-newgate",
+        "monkey-d-luffy",
+        "boa-hancock",
+        "buggy",
+        "jinbe",
+        "crocodile"
+      ]
+    },
+    {
+      "number": 423,
+      "title": {
+        "es": null,
+        "en": "Reunion in Hell!? The User of the Bara Bara No Mi!",
+        "ja": "地獄で再会！？バラバラの実の能力者！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        526
+      ],
+      "airDate": {
+        "ja": "2009-10-25"
+      },
+      "appearances": [
+        "boa-hancock",
+        "monkey-d-luffy",
+        "buggy",
+        "portgas-d-ace",
+        "jinbe",
+        "crocodile",
+        "shiryu",
+        "nami",
+        "shanks"
+      ]
+    },
+    {
+      "number": 424,
+      "title": {
+        "es": null,
+        "en": "Break through Crimson Hell! Buggys great Uproar Plan",
+        "ja": "破れ！紅蓮地獄　バギーのド派手大作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        527
+      ],
+      "airDate": {
+        "ja": "2009-11-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "buggy",
+        "portgas-d-ace",
+        "boa-hancock",
+        "galdino"
+      ]
+    },
+    {
+      "number": 425,
+      "title": {
+        "es": null,
+        "en": "The Prison's strongest Man! Introduction of the Poison-Man Magellan",
+        "ja": "監獄最強の男！毒人間・マゼラン登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        528,
+        530
+      ],
+      "airDate": {
+        "ja": "2009-11-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "buggy",
+        "boa-hancock",
+        "magellan",
+        "usopp",
+        "galdino",
+        "roronoa-zoro",
+        "nami",
+        "sengoku",
+        "shiki"
+      ]
+    },
+    {
+      "number": 430,
+      "title": {
+        "es": null,
+        "en": "The Imprisoned Royal Shichibukai! Jinbe, Knight of the Sea",
+        "ja": "囚われの王下七武海！海侠のジンベエ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        528,
+        529
+      ],
+      "airDate": {
+        "ja": "2009-12-13"
+      },
+      "appearances": [
+        "crocodile",
+        "shiryu",
+        "jinbe",
+        "portgas-d-ace",
+        "galdino",
+        "monkey-d-luffy",
+        "buggy",
+        "edward-newgate"
+      ]
+    },
+    {
+      "number": 431,
+      "title": {
+        "es": null,
+        "en": "The Trap of Chief Guard Saldeath - Level 3 Starvation Hell",
+        "ja": "牢番長サルデスの罠　LV3・飢餓地獄"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        530
+      ],
+      "airDate": {
+        "ja": "2009-12-20"
+      },
+      "appearances": [
+        "buggy",
+        "galdino",
+        "monkey-d-luffy",
+        "sengoku",
+        "monkey-d-garp",
+        "nico-robin",
+        "usopp",
+        "tony-tony-chopper",
+        "sanji",
+        "nami",
+        "roronoa-zoro",
+        "boa-hancock",
+        "magellan",
+        "bentham"
+      ]
+    },
+    {
+      "number": 432,
+      "title": {
+        "es": null,
+        "en": "The Liberated Swan! Reunion! Bon Kurei",
+        "ja": "解き放たれた白鳥！再会！ボン・クレー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        530,
+        531
+      ],
+      "airDate": {
+        "ja": "2009-12-27"
+      },
+      "appearances": [
+        "buggy",
+        "galdino",
+        "bentham",
+        "monkey-d-luffy",
+        "magellan",
+        "jinbe",
+        "portgas-d-ace",
+        "boa-hancock",
+        "crocodile",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "sanji",
+        "nami"
+      ]
+    },
+    {
+      "number": 433,
+      "title": {
+        "es": null,
+        "en": "Chief Warden Magellan Moves - The Net to Trap Straw Hat Is Complete!",
+        "ja": "署長マゼラン動く 完成！麦わら包囲網"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        532
+      ],
+      "airDate": {
+        "ja": "2010-01-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bentham",
+        "buggy",
+        "galdino",
+        "boa-hancock",
+        "magellan",
+        "emporio-ivankov",
+        "portgas-d-ace",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 434,
+      "title": {
+        "es": null,
+        "en": "Preparations for War! A Decisive Battle in Level 4 - Blazing Hell",
+        "ja": "全戦力集結！ LV4·焦熱地獄の決戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        533
+      ],
+      "airDate": {
+        "ja": "2010-01-17"
+      },
+      "appearances": [
+        "boa-hancock",
+        "monkey-d-luffy",
+        "buggy",
+        "galdino",
+        "bentham",
+        "edward-newgate",
+        "borsalino",
+        "kuzan",
+        "sakazuki",
+        "bartholomew-kuma",
+        "dracule-mihawk",
+        "gecko-moria",
+        "donquixote-doflamingo",
+        "marshall-d-teach",
+        "magellan"
+      ]
+    },
+    {
+      "number": 435,
+      "title": {
+        "es": null,
+        "en": "Magellan's Strength! Bon Kurei Flees Before His Enemy",
+        "ja": "マゼラン強し！ボン・クレー敵前逃亡"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        533,
+        534
+      ],
+      "airDate": {
+        "ja": "2010-01-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "magellan",
+        "bentham",
+        "boa-hancock",
+        "buggy",
+        "galdino"
+      ]
+    },
+    {
+      "number": 436,
+      "title": {
+        "es": null,
+        "en": "The Fight Finished! Luffy's Final Life Risking Attack",
+        "ja": "雌雄決す！捨て身のルフィ最後の一撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        535
+      ],
+      "airDate": {
+        "ja": "2010-01-31"
+      },
+      "appearances": [
+        "buggy",
+        "galdino",
+        "monkey-d-luffy",
+        "magellan",
+        "bentham",
+        "portgas-d-ace",
+        "jinbe",
+        "boa-hancock"
+      ]
+    },
+    {
+      "number": 437,
+      "title": {
+        "es": null,
+        "en": "Because He's My Friend - Bon Kurei's Do-or-Die Rescue",
+        "ja": "友達だから　ボン・クレー決死の救出行"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        535,
+        536
+      ],
+      "airDate": {
+        "ja": "2010-02-07"
+      },
+      "appearances": [
+        "magellan",
+        "monkey-d-luffy",
+        "bentham",
+        "galdino",
+        "buggy",
+        "emporio-ivankov",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 438,
+      "title": {
+        "es": null,
+        "en": "Paradise in Hell - Impel Down Level 5.5",
+        "ja": "地獄に楽園 インペルダウンLV5.5"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        536,
+        537
+      ],
+      "airDate": {
+        "ja": "2010-02-14"
+      },
+      "appearances": [
+        "buggy",
+        "galdino",
+        "bentham",
+        "monkey-d-luffy",
+        "nami",
+        "magellan",
+        "emporio-ivankov"
+      ]
+    },
+    {
+      "number": 439,
+      "title": {
+        "es": null,
+        "en": "Luffy's Treatment Begins - Iva's Miraculous Power!!",
+        "ja": "ルフィ治療開始 イワさん奇跡の能力！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        537,
+        538
+      ],
+      "airDate": {
+        "ja": "2010-02-21"
+      },
+      "appearances": [
+        "emporio-ivankov",
+        "bentham",
+        "monkey-d-luffy",
+        "buggy",
+        "galdino",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 440,
+      "title": {
+        "es": null,
+        "en": "Believe in Miracles! Bon Kurei Cheers From His Heart",
+        "ja": "奇跡を信じて！ボン・クレー魂の声援"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        538,
+        539
+      ],
+      "airDate": {
+        "ja": "2010-02-28"
+      },
+      "appearances": [
+        "emporio-ivankov",
+        "bentham",
+        "monkey-d-luffy",
+        "shiryu",
+        "magellan",
+        "crocodile",
+        "nico-robin",
+        "roronoa-zoro",
+        "sanji",
+        "nami",
+        "usopp",
+        "tony-tony-chopper",
+        "portgas-d-ace",
+        "jinbe",
+        "boa-hancock"
+      ]
+    },
+    {
+      "number": 441,
+      "title": {
+        "es": null,
+        "en": "Luffy Revives! Iva-san's Jailbreak Plan Begins!!",
+        "ja": "ルフィ復活！イワさん脱獄計画始動！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        539
+      ],
+      "airDate": {
+        "ja": "2010-03-07"
+      },
+      "appearances": [
+        "emporio-ivankov",
+        "bentham",
+        "monkey-d-luffy",
+        "sengoku",
+        "monkey-d-garp",
+        "edward-newgate",
+        "shanks",
+        "monkey-d-dragon",
+        "galdino",
+        "buggy",
+        "magellan",
+        "portgas-d-ace",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 442,
+      "title": {
+        "es": null,
+        "en": "Ace's Convoy Starts - The Offense and Defense of the Lowest Level, Level 6!",
+        "ja": "エース護送開始 最下層LV6の攻防！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        540
+      ],
+      "airDate": {
+        "ja": "2010-03-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "emporio-ivankov",
+        "jinbe",
+        "portgas-d-ace",
+        "magellan",
+        "buggy",
+        "galdino",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "edward-newgate",
+        "dracule-mihawk",
+        "bartholomew-kuma",
+        "donquixote-doflamingo",
+        "marshall-d-teach",
+        "gecko-moria",
+        "boa-hancock",
+        "borsalino",
+        "kuzan",
+        "sakazuki",
+        "bentham",
+        "monkey-d-dragon",
+        "crocodile",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 443,
+      "title": {
+        "es": null,
+        "en": "The Strongest Team is Formed - Shake Impel Down to it's Core!",
+        "ja": "最強チーム結成 震撼！インペルダウン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        540,
+        541
+      ],
+      "airDate": {
+        "ja": "2010-03-21"
+      },
+      "appearances": [
+        "crocodile",
+        "monkey-d-luffy",
+        "emporio-ivankov",
+        "jinbe",
+        "shiryu",
+        "bentham",
+        "portgas-d-ace",
+        "magellan",
+        "buggy",
+        "galdino"
+      ]
+    },
+    {
+      "number": 444,
+      "title": {
+        "es": null,
+        "en": "Even More Chaos! Blackbeard Teach Invades",
+        "ja": "さらなる混乱！黒ひげ・ティーチ襲来"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        541,
+        542
+      ],
+      "airDate": {
+        "ja": "2010-03-28"
+      },
+      "appearances": [
+        "galdino",
+        "buggy",
+        "emporio-ivankov",
+        "bentham",
+        "jinbe",
+        "monkey-d-luffy",
+        "crocodile",
+        "roronoa-zoro",
+        "portgas-d-ace",
+        "sengoku",
+        "marshall-d-teach",
+        "magellan",
+        "shiryu"
+      ]
+    },
+    {
+      "number": 445,
+      "title": {
+        "es": null,
+        "en": "A Dangerous Meeting! Blackbeard and Shiryu of the Rain",
+        "ja": "危険な出会い！黒ひげと雨のシリュウ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        542,
+        543
+      ],
+      "airDate": {
+        "ja": "2010-04-04"
+      },
+      "appearances": [
+        "emporio-ivankov",
+        "monkey-d-luffy",
+        "jinbe",
+        "crocodile",
+        "buggy",
+        "galdino",
+        "marshall-d-teach",
+        "shiryu",
+        "magellan",
+        "bentham"
+      ]
+    },
+    {
+      "number": 446,
+      "title": {
+        "es": null,
+        "en": "His Spirit Won't Break! Hannyabal Goes All Out",
+        "ja": "意地でも倒れぬ！本気のハンニャバル"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        543,
+        544
+      ],
+      "airDate": {
+        "ja": "2010-04-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "magellan",
+        "crocodile",
+        "jinbe",
+        "emporio-ivankov",
+        "bentham",
+        "buggy",
+        "galdino",
+        "marshall-d-teach",
+        "portgas-d-ace",
+        "roronoa-zoro",
+        "nami"
+      ]
+    },
+    {
+      "number": 447,
+      "title": {
+        "es": null,
+        "en": "The Jet Pistol of Rage - Luffy vs. Blackbeard",
+        "ja": "怒りのJETピストル　ルフィVS黒ひげ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        544
+      ],
+      "airDate": {
+        "ja": "2010-04-18"
+      },
+      "appearances": [
+        "marshall-d-teach",
+        "monkey-d-luffy",
+        "jinbe",
+        "bentham",
+        "crocodile",
+        "portgas-d-ace",
+        "emporio-ivankov",
+        "magellan",
+        "shiryu",
+        "buggy",
+        "galdino",
+        "nami",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 448,
+      "title": {
+        "es": null,
+        "en": "Stop Magellan! Iva-san Unleashes His Secret Attack",
+        "ja": "マゼランを止めろ！イワさん奥義炸裂"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        545
+      ],
+      "airDate": {
+        "ja": "2010-04-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "crocodile",
+        "jinbe",
+        "bentham",
+        "magellan",
+        "emporio-ivankov",
+        "buggy",
+        "galdino"
+      ]
+    },
+    {
+      "number": 449,
+      "title": {
+        "es": null,
+        "en": "Magellan's Clever Scheme! The Jailbreak Plan is Obstructed",
+        "ja": "マゼランの奇策！はばまれた脱獄計画"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        545,
+        546
+      ],
+      "airDate": {
+        "ja": "2010-05-02"
+      },
+      "appearances": [
+        "magellan",
+        "galdino",
+        "jinbe",
+        "monkey-d-luffy",
+        "bentham",
+        "emporio-ivankov",
+        "crocodile",
+        "buggy"
+      ]
+    },
+    {
+      "number": 450,
+      "title": {
+        "es": null,
+        "en": "The Jailbreak Team Driven Into a Corner - Forbidden Move 'Venom Demon'",
+        "ja": "脱獄チーム絶体絶命 禁じ手\"毒の巨兵\""
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        546,
+        547
+      ],
+      "airDate": {
+        "ja": "2010-05-09"
+      },
+      "appearances": [
+        "emporio-ivankov",
+        "crocodile",
+        "buggy",
+        "jinbe",
+        "monkey-d-luffy",
+        "magellan",
+        "galdino",
+        "bentham"
+      ]
+    },
+    {
+      "number": 451,
+      "title": {
+        "es": null,
+        "en": "Cause the Last Miracle - Breaking Through the Gate of Justice",
+        "ja": "起こせ最後の奇跡 正義の門を突破せよ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        548
+      ],
+      "airDate": {
+        "ja": "2010-05-16"
+      },
+      "appearances": [
+        "magellan",
+        "jinbe",
+        "monkey-d-luffy",
+        "emporio-ivankov",
+        "galdino",
+        "buggy",
+        "crocodile",
+        "bentham",
+        "tony-tony-chopper",
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "shiryu",
+        "marshall-d-teach"
+      ]
+    },
+    {
+      "number": 452,
+      "title": {
+        "es": null,
+        "en": "The Destination is Marine Headquarters - The Ship Sets Out to Rescue Ace!",
+        "ja": "目指せ海軍本部 エース救出への船出！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        549
+      ],
+      "airDate": {
+        "ja": "2010-05-23"
+      },
+      "appearances": [
+        "shiryu",
+        "marshall-d-teach",
+        "buggy",
+        "emporio-ivankov",
+        "galdino",
+        "monkey-d-luffy",
+        "bentham",
+        "jinbe",
+        "crocodile",
+        "sengoku",
+        "borsalino",
+        "kuzan",
+        "sakazuki",
+        "boa-hancock",
+        "donquixote-doflamingo",
+        "bartholomew-kuma",
+        "dracule-mihawk",
+        "gecko-moria",
+        "edward-newgate",
+        "silvers-rayleigh",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 453,
+      "title": {
+        "es": null,
+        "en": "The Crewmates' Whereabouts - Weatheria Report and Cyborg Animals",
+        "ja": "仲間達の行方 空島リポートと改造動物"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        548,
+        549,
+        555,
+        556
+      ],
+      "airDate": {
+        "ja": "2010-05-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "jinbe",
+        "nami",
+        "franky",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 454,
+      "title": {
+        "es": null,
+        "en": "The Crewmates' Whereabouts - Giant Bird Chicks and a Pink Showdown",
+        "ja": "仲間達の行方 巨鳥のヒナと桃色の対決"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        543,
+        544,
+        552,
+        554
+      ],
+      "airDate": {
+        "ja": "2010-06-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "jinbe",
+        "borsalino",
+        "sakazuki",
+        "kuzan",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "boa-hancock",
+        "bartholomew-kuma",
+        "gecko-moria",
+        "sanji",
+        "emporio-ivankov",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 455,
+      "title": {
+        "es": null,
+        "en": "The Crewmates' Whereabouts - The Revolutionary Army and the Forest of Gluttony's Trap!",
+        "ja": "仲間達の行方 革命軍と暴食の森の罠！"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        545,
+        546,
+        550,
+        551
+      ],
+      "airDate": {
+        "ja": "2010-06-13"
+      },
+      "appearances": [
+        "nico-robin",
+        "roronoa-zoro",
+        "bartholomew-kuma",
+        "brook",
+        "sanji",
+        "franky",
+        "nami",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "jinbe",
+        "usopp"
+      ]
+    },
+    {
+      "number": 456,
+      "title": {
+        "es": null,
+        "en": "The Crewmates' Whereabouts - The Giant Gravestone and Panties of Gratitude",
+        "ja": "仲間達の行方 巨大な墓標とパンツの恩"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        557,
+        558,
+        559,
+        560
+      ],
+      "airDate": {
+        "ja": "2010-06-20"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "sanji",
+        "franky",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "sentomaru",
+        "borsalino",
+        "usopp",
+        "bartholomew-kuma",
+        "brook",
+        "monkey-d-luffy",
+        "jinbe",
+        "crocodile",
+        "portgas-d-ace"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-infiltrates-impel-down",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "boa-hancock"
+      ],
+      "episode": 422,
+      "chapter": 526,
+      "description": {
+        "es": "Luffy se cuela en Impel Down con ayuda de Hancock."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-buggy-mr3-alliance",
+      "kind": "recruitment",
+      "characters": [
+        "monkey-d-luffy",
+        "buggy",
+        "galdino"
+      ],
+      "episode": 425,
+      "chapter": 528,
+      "description": {
+        "es": "Luffy se alía con Buggy y Mr. 3 en la prisión."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-magellan",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "magellan"
+      ],
+      "episode": 435,
+      "chapter": 534,
+      "description": {
+        "es": "Luffy cae envenenado frente al alcaide Magellan."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "ivankov-tension-hormones",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "emporio-ivankov"
+      ],
+      "episode": 440,
+      "chapter": 539,
+      "description": {
+        "es": "Ivankov salva a Luffy del veneno con las hormonas de tensión."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "jinbe-crocodile-freed",
+      "kind": "recruitment",
+      "characters": [
+        "monkey-d-luffy",
+        "jinbe",
+        "crocodile",
+        "portgas-d-ace"
+      ],
+      "episode": 443,
+      "chapter": 541,
+      "description": {
+        "es": "Luffy libera a Jinbe y Crocodile en el nivel 6."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "blackbeard-invades-impel-down",
+      "kind": "reveal",
+      "characters": [
+        "marshall-d-teach",
+        "shiryu",
+        "magellan"
+      ],
+      "episode": 445,
+      "chapter": 543,
+      "description": {
+        "es": "Barbanegra asalta Impel Down y recluta a Shiryu."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "bon-kurei-sacrifice",
+      "kind": "other",
+      "characters": [
+        "bentham",
+        "monkey-d-luffy"
+      ],
+      "episode": 451,
+      "chapter": 548,
+      "description": {
+        "es": "Bon Clay se queda atrás para abrir las puertas de la justicia."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Summit_War_Saga",
+      "field": "episodes.title,episodes.airDate,episodeRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Impel_Down_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_490",
+      "field": "episodes.adaptsChapters (secciones \"Anime:\" de cada página Chapter_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_385",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Summit_War_Saga",
+      "field": "episodeRange: incluye 422-425 y 430-456; 426-429 son Little East Blue"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "slug": "nami",
+  "name": {
+    "en": "Nami",
+    "ja": "ナミ"
+  },
+  "origin": "cocoyasi-village",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 8,
+    "episode": 1
+  },
+  "affiliations": [
+    {
+      "group": "arlong-pirates",
+      "role": "cartographer",
+      "from": {
+        "episode": 31,
+        "chapter": 69
+      },
+      "to": {
+        "episode": 44,
+        "chapter": 95
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "navigator",
+      "from": {
+        "episode": 1,
+        "chapter": 8
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 16000000,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 66000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 366000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "nami-pre-timeskip",
+      "name": {
+        "es": "Nami (pre-salto temporal)",
+        "en": "Nami (Pre-Timeskip)",
+        "ja": "ナミ"
+      },
+      "firstAppearance": {
+        "episode": 1,
+        "chapter": 8
+      },
+      "description": {
+        "es": "Ladrona y navegante de Cocoyasi."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "nami-clima-tact",
+      "name": {
+        "es": "Nami con Clima-Tact",
+        "en": "Nami (Clima-Tact)",
+        "ja": "天候棒"
+      },
+      "firstAppearance": {
+        "episode": 117,
+        "chapter": 191
+      },
+      "description": {
+        "es": "Primer uso del Clima-Tact de Usopp contra Miss Doublefinger."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Thunderbolt Tempo"
+      ]
+    },
+    {
+      "slug": "nami-post-timeskip",
+      "name": {
+        "es": "Nami (post-salto temporal)",
+        "en": "Nami (Post-Timeskip)",
+        "ja": "ナミ"
+      },
+      "firstAppearance": {
+        "episode": 517,
+        "chapter": 598
+      },
+      "description": {
+        "es": "Vuelve de Weatheria con el Sorcery Clima-Tact."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Sorcery Clima-Tact"
+      ]
+    },
+    {
+      "slug": "nami-zeus",
+      "name": {
+        "es": "Nami con Zeus",
+        "en": "Nami (Zeus)",
+        "ja": "ゼウス"
+      },
+      "firstAppearance": {
+        "episode": 1034,
+        "chapter": 1013
+      },
+      "description": {
+        "es": "Zeus, la nube de Big Mom, se une al Clima-Tact."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Zeus Breeze Tempo"
+      ]
+    }
+  ],
+  "keyEvents": [
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nami/Abilities_and_Powers",
+      "field": "forms"
+    }
+  ]
+}

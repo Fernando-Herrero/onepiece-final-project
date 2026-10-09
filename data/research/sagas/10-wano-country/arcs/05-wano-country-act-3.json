@@ -1,0 +1,5212 @@
+{
+  "slug": "wano-country-act-3",
+  "sagaSlug": "wano-country",
+  "order": 5,
+  "title": {
+    "es": "País de Wano: Acto 3",
+    "en": "Wano Country Arc: Act 3",
+    "ja": "ワノ国編 第三幕"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 957,
+    "last": 1057
+  },
+  "episodeRange": {
+    "first": 958,
+    "last": 1085
+  },
+  "episodes": [
+    {
+      "number": 958,
+      "title": {
+        "en": "A Legendary Battle! Garp and Roger!",
+        "ja": "伝説の戦い! ガープとロジャー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        957
+      ],
+      "airDate": {
+        "ja": "2021-01-17"
+      },
+      "appearances": [
+        "edward-newgate",
+        "charlotte-linlin",
+        "kaido",
+        "gol-d-roger",
+        "shanks",
+        "buggy",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "kozuki-oden",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 959,
+      "title": {
+        "en": "The Rendezvous Port! The Land of Wano Act Three Begins!",
+        "ja": "約束の港! ワノ国編第三幕開幕"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        958,
+        959
+      ],
+      "airDate": {
+        "ja": "2021-01-24"
+      },
+      "appearances": [
+        "buggy",
+        "shanks",
+        "gol-d-roger",
+        "kozuki-oden",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "kaido",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "inuarashi",
+        "raizo",
+        "kikunojo",
+        "ashura-doji",
+        "kawamatsu",
+        "kozuki-momonosuke",
+        "shinobu",
+        "kozuki-toki",
+        "usopp",
+        "franky",
+        "hyogoro",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "brook",
+        "nico-robin",
+        "tama",
+        "carrot",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "nami",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 960,
+      "title": {
+        "en": "The Number-One Samurai in the Land of Wano! Here comes Kozuki Oden!",
+        "ja": "ワノ国一の侍! 光月おでん登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        959,
+        960
+      ],
+      "airDate": {
+        "ja": "2021-01-31"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "kozuki-oden",
+        "kikunojo",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "raizo",
+        "kawamatsu",
+        "shimotsuki-yasuie",
+        "ashura-doji",
+        "inuarashi",
+        "shinobu",
+        "kozuki-momonosuke",
+        "hyogoro",
+        "denjiro"
+      ]
+    },
+    {
+      "number": 961,
+      "title": {
+        "en": "Tearfully Swearing Allegiance! Oden and Kin'emon!",
+        "ja": "涙の弟子入り おでんと錦えもん"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        961,
+        962
+      ],
+      "airDate": {
+        "ja": "2021-02-07"
+      },
+      "appearances": [
+        "kinemon",
+        "kozuki-oden",
+        "denjiro",
+        "hyogoro",
+        "kurozumi-orochi",
+        "shimotsuki-yasuie",
+        "ashura-doji",
+        "izo",
+        "kikunojo",
+        "kurozumi-kanjuro",
+        "raizo"
+      ]
+    },
+    {
+      "number": 962,
+      "title": {
+        "en": "Changing Destiny! The Whitebeard Pirates Cast Ashore!",
+        "ja": "動く運命 漂着! 白ひげ海賊団!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        962,
+        963
+      ],
+      "airDate": {
+        "ja": "2021-02-14"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "raizo",
+        "izo",
+        "denjiro",
+        "kinemon",
+        "kikunojo",
+        "shimotsuki-yasuie",
+        "edward-newgate",
+        "kaido",
+        "charlotte-linlin",
+        "kawamatsu",
+        "inuarashi",
+        "nekomamushi",
+        "kurozumi-orochi",
+        "marco"
+      ]
+    },
+    {
+      "number": 963,
+      "title": {
+        "en": "Oden's Determination! Whitebeard's Test!",
+        "ja": "おでんの決意! 白ひげの試練!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        963,
+        964
+      ],
+      "airDate": {
+        "ja": "2021-02-21"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "edward-newgate",
+        "kurozumi-kanjuro",
+        "marco",
+        "kinemon",
+        "izo",
+        "raizo",
+        "denjiro",
+        "nekomamushi",
+        "inuarashi",
+        "kikunojo",
+        "ashura-doji",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 964,
+      "title": {
+        "en": "Whitebeard's Little Brother! Oden's Great Adventure!",
+        "ja": "白ひげの弟! おでんの大冒険!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        964,
+        965
+      ],
+      "airDate": {
+        "ja": "2021-02-28"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "kozuki-toki",
+        "marco",
+        "edward-newgate",
+        "izo",
+        "nekomamushi",
+        "inuarashi",
+        "kozuki-momonosuke",
+        "shimotsuki-yasuie",
+        "kurozumi-orochi",
+        "shanks",
+        "buggy",
+        "gol-d-roger"
+      ]
+    },
+    {
+      "number": 965,
+      "title": {
+        "en": "Crossing Swords! Roger and Whitebeard!",
+        "ja": "交える刃! ロジャーと白ひげ!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        965,
+        966
+      ],
+      "airDate": {
+        "ja": "2021-03-07"
+      },
+      "appearances": [
+        "shimotsuki-yasuie",
+        "kurozumi-orochi",
+        "kozuki-oden",
+        "denjiro",
+        "kozuki-momonosuke",
+        "kozuki-hiyori",
+        "kozuki-toki",
+        "izo",
+        "edward-newgate",
+        "marco",
+        "gol-d-roger",
+        "buggy",
+        "shanks"
+      ]
+    },
+    {
+      "number": 966,
+      "title": {
+        "en": "Roger's Wish! A New Journey!",
+        "ja": "ロジャーの願い! 新たな旅立ち"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        966
+      ],
+      "airDate": {
+        "ja": "2021-03-21"
+      },
+      "appearances": [
+        "edward-newgate",
+        "gol-d-roger",
+        "marco",
+        "buggy",
+        "shanks",
+        "kozuki-oden",
+        "izo",
+        "inuarashi",
+        "nekomamushi",
+        "kozuki-hiyori",
+        "kozuki-momonosuke",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 967,
+      "title": {
+        "en": "Devoting His Life! Roger's Adventure!",
+        "ja": "生涯をかけて! ロジャーの冒険"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        966,
+        967
+      ],
+      "airDate": {
+        "ja": "2021-03-28"
+      },
+      "appearances": [
+        "nekomamushi",
+        "inuarashi",
+        "buggy",
+        "shanks",
+        "gol-d-roger",
+        "kozuki-oden",
+        "kozuki-toki",
+        "charlotte-linlin",
+        "franky",
+        "kozuki-hiyori",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 968,
+      "title": {
+        "en": "The King of the Pirates is Born! Arriving at the Last Island!",
+        "ja": "海賊王誕生 到達! \"最後の島\""
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        967
+      ],
+      "airDate": {
+        "ja": "2021-04-04"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "gol-d-roger",
+        "shanks",
+        "buggy",
+        "kozuki-toki",
+        "kozuki-hiyori",
+        "kozuki-momonosuke",
+        "nekomamushi",
+        "inuarashi",
+        "kinemon",
+        "raizo",
+        "kawamatsu",
+        "kikunojo",
+        "kurozumi-kanjuro",
+        "kurozumi-orochi",
+        "edward-newgate"
+      ]
+    },
+    {
+      "number": 969,
+      "title": {
+        "en": "To the Land of Wano! The Roger Pirates Disband!",
+        "ja": "ワノ国へ！ロジャー海賊団解散"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        968
+      ],
+      "airDate": {
+        "ja": "2021-04-11"
+      },
+      "appearances": []
+    },
+    {
+      "number": 970,
+      "title": {
+        "en": "Sad News! The Opening of the Great Pirate Era!",
+        "ja": "悲しき知らせ 大海賊時代幕開け"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        968,
+        969
+      ],
+      "airDate": {
+        "ja": "2021-04-18"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "kinemon",
+        "kozuki-toki",
+        "raizo",
+        "kurozumi-orochi",
+        "kozuki-momonosuke",
+        "kaido",
+        "shinobu",
+        "inuarashi",
+        "kikunojo",
+        "gol-d-roger",
+        "edward-newgate",
+        "buggy",
+        "shanks"
+      ]
+    },
+    {
+      "number": 971,
+      "title": {
+        "en": "Raid! Oden and the Akazaya Nine!",
+        "ja": "討ち入り！おでんと赤鞘九人男"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        969,
+        970
+      ],
+      "airDate": {
+        "ja": "2021-04-25"
+      },
+      "appearances": [
+        "kaido",
+        "kozuki-oden",
+        "shimotsuki-yasuie",
+        "kawamatsu",
+        "nekomamushi",
+        "inuarashi",
+        "kikunojo",
+        "raizo",
+        "kinemon",
+        "kozuki-hiyori",
+        "kozuki-momonosuke",
+        "kozuki-toki",
+        "hyogoro",
+        "kurozumi-orochi",
+        "denjiro",
+        "kurozumi-kanjuro",
+        "ashura-doji",
+        "edward-newgate",
+        "gol-d-roger"
+      ]
+    },
+    {
+      "number": 972,
+      "title": {
+        "en": "The End of the Battle! Oden vs. Kaido!",
+        "ja": "決着の時！おでんVSカイドウ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        970,
+        971
+      ],
+      "airDate": {
+        "ja": "2021-05-02"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "kinemon",
+        "denjiro",
+        "kikunojo",
+        "shinobu",
+        "kurozumi-orochi",
+        "raizo",
+        "kozuki-toki",
+        "kozuki-hiyori",
+        "shimotsuki-yasuie",
+        "kozuki-momonosuke",
+        "kaido",
+        "queen",
+        "king",
+        "nekomamushi",
+        "inuarashi",
+        "kawamatsu",
+        "ashura-doji",
+        "izo",
+        "kurozumi-kanjuro",
+        "yamato"
+      ]
+    },
+    {
+      "number": 973,
+      "title": {
+        "en": "Boiled to Death! Oden's One-hour Struggle!",
+        "ja": "釜茹での刑 おでん決死の一時間"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        971
+      ],
+      "airDate": {
+        "ja": "2021-05-09"
+      },
+      "appearances": [
+        "kozuki-toki",
+        "kozuki-hiyori",
+        "kaido",
+        "kozuki-oden",
+        "kurozumi-orochi",
+        "raizo",
+        "kikunojo",
+        "denjiro",
+        "kawamatsu",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "inuarashi",
+        "nekomamushi",
+        "ashura-doji",
+        "shinobu",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 974,
+      "title": {
+        "en": "Oden Wouldn't Be Oden If It Wasn't Boiled!",
+        "ja": "\"煮えてなんぼのおでんに候\""
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        972
+      ],
+      "airDate": {
+        "ja": "2021-05-16"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "kikunojo",
+        "kawamatsu",
+        "inuarashi",
+        "kinemon",
+        "raizo",
+        "denjiro",
+        "nekomamushi",
+        "kaido",
+        "kurozumi-orochi",
+        "shinobu",
+        "shimotsuki-yasuie",
+        "edward-newgate",
+        "marco",
+        "gol-d-roger",
+        "shanks",
+        "buggy",
+        "izo",
+        "kozuki-toki",
+        "kozuki-momonosuke",
+        "kozuki-hiyori"
+      ]
+    },
+    {
+      "number": 975,
+      "title": {
+        "en": "The Castle on Fire! The Fate of the Kozuki Clan!",
+        "ja": "燃える城！光月の一族の運命！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        972,
+        973
+      ],
+      "airDate": {
+        "ja": "2021-05-23"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "kaido",
+        "kozuki-momonosuke",
+        "kozuki-hiyori",
+        "kozuki-toki",
+        "kozuki-oden",
+        "raizo",
+        "kawamatsu",
+        "kikunojo",
+        "denjiro",
+        "nekomamushi",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "inuarashi",
+        "kinemon",
+        "shinobu",
+        "king",
+        "gol-d-roger",
+        "shanks"
+      ]
+    },
+    {
+      "number": 976,
+      "title": {
+        "en": "Back to the Present Day! 20 Years Later!",
+        "ja": "再び現在！二十年の時をこえて"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        973,
+        974
+      ],
+      "airDate": {
+        "ja": "2021-05-30"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "ashura-doji",
+        "kawamatsu",
+        "denjiro",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "raizo",
+        "kikunojo",
+        "nekomamushi",
+        "inuarashi",
+        "kozuki-toki",
+        "kozuki-hiyori",
+        "kozuki-oden",
+        "kaido",
+        "kozuki-momonosuke",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "brook",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "franky",
+        "tony-tony-chopper",
+        "nico-robin",
+        "tama",
+        "shimotsuki-yasuie",
+        "shinobu",
+        "charlotte-linlin",
+        "hyogoro"
+      ]
+    },
+    {
+      "number": 977,
+      "title": {
+        "en": "The Sea Is For Pirates! Raid! To Onigashima!",
+        "ja": "海は海賊！討入り！いざ鬼ヶ島"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        974
+      ],
+      "airDate": {
+        "ja": "2021-06-06"
+      },
+      "appearances": [
+        "shinobu",
+        "kozuki-momonosuke",
+        "ashura-doji",
+        "kikunojo",
+        "kawamatsu",
+        "kinemon",
+        "raizo",
+        "kurozumi-kanjuro",
+        "inuarashi",
+        "kozuki-toki",
+        "shimotsuki-yasuie",
+        "vinsmoke-sanji",
+        "x-drake",
+        "franky",
+        "nico-robin",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "hyogoro",
+        "tony-tony-chopper",
+        "nami",
+        "kaido",
+        "kozuki-oden",
+        "denjiro",
+        "nekomamushi",
+        "kurozumi-orochi",
+        "jack",
+        "carrot",
+        "trafalgar-d-water-law",
+        "eustass-kid"
+      ]
+    },
+    {
+      "number": 978,
+      "title": {
+        "en": "The Worst Generation Charges in! The Battle of the Stormy Sea!",
+        "ja": "最悪の世代進撃！嵐の海の戦い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        975
+      ],
+      "airDate": {
+        "ja": "2021-06-13"
+      },
+      "appearances": [
+        "carrot",
+        "nami",
+        "franky",
+        "brook",
+        "tony-tony-chopper",
+        "nico-robin",
+        "usopp",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "kinemon",
+        "inuarashi",
+        "kikunojo",
+        "trafalgar-d-water-law",
+        "raizo",
+        "killer",
+        "eustass-kid",
+        "shinobu",
+        "kurozumi-kanjuro",
+        "kozuki-momonosuke",
+        "kurozumi-orochi",
+        "kawamatsu",
+        "ashura-doji",
+        "kaido",
+        "charlotte-linlin",
+        "denjiro"
+      ]
+    },
+    {
+      "number": 979,
+      "title": {
+        "en": "Good Luck?! Leader Kin'emon's Plot!",
+        "ja": "強運！？リーダー錦えもんの一計"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        975,
+        976
+      ],
+      "airDate": {
+        "ja": "2021-06-20"
+      },
+      "appearances": [
+        "denjiro",
+        "kurozumi-kanjuro",
+        "kozuki-momonosuke",
+        "kinemon",
+        "ashura-doji",
+        "raizo",
+        "inuarashi",
+        "kawamatsu",
+        "kikunojo",
+        "vinsmoke-sanji",
+        "nami",
+        "roronoa-zoro",
+        "brook",
+        "franky",
+        "nico-robin",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "kozuki-oden",
+        "tony-tony-chopper",
+        "carrot",
+        "kurozumi-orochi",
+        "hyogoro"
+      ]
+    },
+    {
+      "number": 980,
+      "title": {
+        "en": "A Tearful Promise! The Kidnapped Momonosuke!",
+        "ja": "涙の約束！さらわれたモモの助"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        976
+      ],
+      "airDate": {
+        "ja": "2021-06-27"
+      },
+      "appearances": [
+        "kurozumi-kanjuro",
+        "kozuki-momonosuke",
+        "kawamatsu",
+        "kinemon",
+        "shinobu",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "franky",
+        "usopp",
+        "carrot",
+        "roronoa-zoro",
+        "nami",
+        "kozuki-oden",
+        "inuarashi",
+        "ashura-doji",
+        "raizo",
+        "kikunojo",
+        "nekomamushi",
+        "denjiro",
+        "kozuki-hiyori",
+        "kozuki-toki",
+        "kaido",
+        "brook",
+        "eustass-kid",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 981,
+      "title": {
+        "en": "A New Member! 'First Son of the Sea' Jimbei!",
+        "ja": "新たな仲間！海侠のジンベエ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        977
+      ],
+      "airDate": {
+        "ja": "2021-07-04"
+      },
+      "appearances": [
+        "jinbe",
+        "monkey-d-luffy",
+        "franky",
+        "brook",
+        "usopp",
+        "nico-robin",
+        "nami",
+        "carrot",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "charlotte-linlin",
+        "portgas-d-ace",
+        "kinemon",
+        "kikunojo",
+        "raizo",
+        "ashura-doji",
+        "denjiro",
+        "inuarashi",
+        "kawamatsu",
+        "hyogoro",
+        "kaido"
+      ]
+    },
+    {
+      "number": 982,
+      "title": {
+        "en": "Kaido's Trump Card! The Tobi Roppo Appear!",
+        "ja": "カイドウの切り札 飛び六胞登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        977,
+        978
+      ],
+      "airDate": {
+        "ja": "2021-07-11"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "denjiro",
+        "inuarashi",
+        "kikunojo",
+        "hyogoro",
+        "kinemon",
+        "raizo",
+        "kawamatsu",
+        "ashura-doji",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "brook",
+        "nico-robin",
+        "jinbe",
+        "franky",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "kurozumi-orochi",
+        "queen",
+        "yamato",
+        "kaido",
+        "charlotte-linlin",
+        "ulti",
+        "sasaki",
+        "x-drake",
+        "page-one",
+        "black-maria",
+        "whos-who",
+        "scratchmen-apoo",
+        "king",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 983,
+      "title": {
+        "en": "The Samurai Warriors' Earnestness! The Straw Hats Land at Onigashima!",
+        "ja": "侍たちの本気！一味鬼ヶ島上陸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        977,
+        978
+      ],
+      "airDate": {
+        "ja": "2021-07-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "jinbe",
+        "tony-tony-chopper",
+        "carrot",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "brook",
+        "vinsmoke-sanji",
+        "eustass-kid",
+        "killer",
+        "kinemon",
+        "denjiro",
+        "raizo",
+        "hyogoro",
+        "kikunojo",
+        "ashura-doji",
+        "trafalgar-d-water-law",
+        "kawamatsu",
+        "inuarashi"
+      ]
+    },
+    {
+      "number": 984,
+      "title": {
+        "en": "Luffy Goes Out of Control?! Sneaking into Kaido's Banquet!",
+        "ja": "ルフィ暴走！？潜入カイドウの宴"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        979
+      ],
+      "airDate": {
+        "ja": "2021-07-25"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "kurozumi-kanjuro",
+        "kikunojo",
+        "ashura-doji",
+        "raizo",
+        "inuarashi",
+        "kawamatsu",
+        "kinemon",
+        "monkey-d-luffy",
+        "carrot",
+        "shinobu",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nico-robin",
+        "nami",
+        "vinsmoke-sanji",
+        "usopp",
+        "jinbe",
+        "brook",
+        "franky",
+        "eustass-kid",
+        "killer",
+        "hyogoro",
+        "denjiro",
+        "nekomamushi",
+        "kozuki-oden",
+        "kozuki-toki",
+        "kozuki-momonosuke",
+        "trafalgar-d-water-law",
+        "kaido",
+        "scratchmen-apoo",
+        "yamato",
+        "ulti",
+        "page-one",
+        "whos-who",
+        "black-maria",
+        "x-drake",
+        "sasaki",
+        "shimotsuki-yasuie",
+        "queen",
+        "tama"
+      ]
+    },
+    {
+      "number": 985,
+      "title": {
+        "en": "Thinking of Otama! Luffy's Furious Strike!",
+        "ja": "お玉への思い ルフィ怒りの一撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        979,
+        980
+      ],
+      "airDate": {
+        "ja": "2021-08-01"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "whos-who",
+        "black-maria",
+        "sasaki",
+        "ulti",
+        "page-one",
+        "x-drake",
+        "kaido",
+        "jack",
+        "charlotte-linlin",
+        "king",
+        "yamato",
+        "monkey-d-luffy",
+        "tama",
+        "killer",
+        "eustass-kid"
+      ]
+    },
+    {
+      "number": 986,
+      "title": {
+        "en": "Fighting Music! An Ability That Harms Luffy!",
+        "ja": "戦う{{Ruby|音楽|ミュージック}}！ルフィを襲う能力！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        980
+      ],
+      "airDate": {
+        "ja": "2021-08-08"
+      },
+      "appearances": [
+        "tama",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "queen",
+        "killer",
+        "eustass-kid",
+        "scratchmen-apoo",
+        "ulti",
+        "page-one",
+        "black-maria",
+        "x-drake",
+        "sasaki",
+        "whos-who",
+        "basil-hawkins",
+        "kaido"
+      ]
+    },
+    {
+      "number": 987,
+      "title": {
+        "en": "His Dream Broken?! The Trap That Lures Sanji!",
+        "ja": "夢やぶれる！？サンジを誘う罠！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        981
+      ],
+      "airDate": {
+        "ja": "2021-08-15"
+      },
+      "appearances": [
+        "eustass-kid",
+        "scratchmen-apoo",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "queen",
+        "killer",
+        "basil-hawkins",
+        "charlotte-linlin",
+        "kinemon",
+        "tony-tony-chopper",
+        "nami",
+        "carrot",
+        "shinobu",
+        "kaido",
+        "kurozumi-orochi",
+        "usopp",
+        "trafalgar-d-water-law",
+        "raizo",
+        "kawamatsu",
+        "kikunojo",
+        "inuarashi",
+        "ashura-doji",
+        "denjiro",
+        "hyogoro",
+        "nico-robin",
+        "jinbe",
+        "franky",
+        "brook",
+        "vinsmoke-sanji",
+        "kozuki-momonosuke",
+        "kurozumi-kanjuro",
+        "whos-who",
+        "x-drake",
+        "page-one",
+        "ulti",
+        "black-maria",
+        "sasaki"
+      ]
+    },
+    {
+      "number": 988,
+      "title": {
+        "en": "Reinforcements Arrive! The Commander of the Whitebeard Pirates!",
+        "ja": "援軍到着！白ひげ海賊団隊長！"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        981,
+        982
+      ],
+      "airDate": {
+        "ja": "2021-08-22"
+      },
+      "appearances": [
+        "eustass-kid",
+        "monkey-d-luffy",
+        "killer",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "kinemon",
+        "nami",
+        "shinobu",
+        "carrot",
+        "tony-tony-chopper",
+        "usopp",
+        "charlotte-linlin",
+        "king",
+        "marco",
+        "nekomamushi",
+        "izo",
+        "portgas-d-ace",
+        "kaido",
+        "black-maria",
+        "kurozumi-orochi",
+        "kozuki-oden",
+        "kawamatsu",
+        "raizo",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "denjiro",
+        "kikunojo",
+        "inuarashi",
+        "kozuki-momonosuke",
+        "trafalgar-d-water-law",
+        "ulti",
+        "page-one"
+      ]
+    },
+    {
+      "number": 989,
+      "title": {
+        "en": "The Pact Between Men! The Fierce Fighting of Brachio Tank!",
+        "ja": "漢の誓い！激闘ブラキオタンク"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        982
+      ],
+      "airDate": {
+        "ja": "2021-08-29"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "charlotte-linlin",
+        "usopp",
+        "brook",
+        "nami",
+        "shinobu",
+        "carrot",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "kozuki-momonosuke",
+        "kurozumi-orochi",
+        "kaido",
+        "black-maria",
+        "inuarashi",
+        "ashura-doji",
+        "kawamatsu",
+        "denjiro",
+        "raizo",
+        "nekomamushi",
+        "kikunojo",
+        "kozuki-oden",
+        "monkey-d-luffy",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "killer",
+        "scratchmen-apoo",
+        "queen",
+        "sasaki",
+        "whos-who",
+        "ulti",
+        "x-drake",
+        "page-one",
+        "jack",
+        "king",
+        "izo",
+        "marco",
+        "edward-newgate",
+        "hyogoro",
+        "franky"
+      ]
+    },
+    {
+      "number": 990,
+      "title": {
+        "en": "Thunder Bagua! Here Comes Kaido's Son!",
+        "ja": "雷鳴八卦！登場カイドウの息子"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        983
+      ],
+      "airDate": {
+        "ja": "2021-09-05"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "yamato",
+        "eustass-kid",
+        "raizo",
+        "trafalgar-d-water-law",
+        "kawamatsu",
+        "kikunojo",
+        "inuarashi",
+        "ashura-doji",
+        "ulti",
+        "page-one",
+        "monkey-d-luffy",
+        "killer",
+        "kaido"
+      ]
+    },
+    {
+      "number": 991,
+      "title": {
+        "en": "Enemy or Ally? Luffy and Yamato!",
+        "ja": "敵か？味方か？ルフィとヤマト"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        983,
+        984
+      ],
+      "airDate": {
+        "ja": "2021-09-12"
+      },
+      "appearances": [
+        "king",
+        "marco",
+        "charlotte-linlin",
+        "tony-tony-chopper",
+        "usopp",
+        "nami",
+        "shinobu",
+        "carrot",
+        "vinsmoke-sanji",
+        "kinemon",
+        "nico-robin",
+        "jinbe",
+        "hyogoro",
+        "kozuki-momonosuke",
+        "queen",
+        "kurozumi-orochi",
+        "roronoa-zoro",
+        "yamato",
+        "monkey-d-luffy",
+        "ulti",
+        "page-one",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 992,
+      "title": {
+        "en": "Desire to be Oden! Yamato's Dream!",
+        "ja": "おでんになりたい ヤマトの思い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        984
+      ],
+      "airDate": {
+        "ja": "2021-09-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "yamato",
+        "page-one",
+        "kozuki-momonosuke",
+        "nico-robin",
+        "jinbe",
+        "hyogoro",
+        "kurozumi-orochi",
+        "queen",
+        "kozuki-oden",
+        "kozuki-toki",
+        "trafalgar-d-water-law",
+        "inuarashi",
+        "ashura-doji",
+        "raizo",
+        "kikunojo",
+        "nekomamushi",
+        "marco",
+        "izo",
+        "denjiro",
+        "kaido",
+        "king",
+        "jack",
+        "kurozumi-kanjuro",
+        "edward-newgate",
+        "gol-d-roger",
+        "buggy",
+        "shanks",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 993,
+      "title": {
+        "en": "Explosive?! The Handcuffs that Shackle Yamato's Freedom!",
+        "ja": "爆発！？ヤマトの自由を縛る錠！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        985
+      ],
+      "airDate": {
+        "ja": "2021-09-26"
+      },
+      "appearances": [
+        "nico-robin",
+        "jinbe",
+        "hyogoro",
+        "yamato",
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "ashura-doji",
+        "inuarashi",
+        "nekomamushi",
+        "kikunojo",
+        "kawamatsu",
+        "raizo",
+        "izo",
+        "trafalgar-d-water-law",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "denjiro",
+        "kozuki-oden",
+        "kozuki-momonosuke",
+        "kaido",
+        "king",
+        "jack",
+        "shinobu",
+        "nami",
+        "carrot",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 994,
+      "title": {
+        "en": "The Akazaya Face-off! Kikunojo vs. Kanjuro!",
+        "ja": "赤鞘一騎打ち 菊之丞VSカン十郎"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        985,
+        986
+      ],
+      "airDate": {
+        "ja": "2021-10-03"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "nico-robin",
+        "jinbe",
+        "carrot",
+        "nami",
+        "hyogoro",
+        "kaido",
+        "monkey-d-luffy",
+        "yamato",
+        "queen",
+        "king",
+        "jack",
+        "kurozumi-orochi",
+        "kozuki-momonosuke",
+        "kozuki-hiyori",
+        "kozuki-toki",
+        "kikunojo",
+        "kurozumi-kanjuro",
+        "ashura-doji",
+        "izo",
+        "kawamatsu",
+        "inuarashi",
+        "nekomamushi",
+        "kozuki-oden",
+        "raizo",
+        "kinemon",
+        "denjiro"
+      ]
+    },
+    {
+      "number": 995,
+      "title": {
+        "en": "Raid! Inheriting Oden's Will",
+        "ja": "討入り！受け継ぐおでんの意志"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        986
+      ],
+      "airDate": {
+        "ja": "2021-10-10"
+      },
+      "appearances": [
+        "kozuki-oden",
+        "kaido",
+        "queen",
+        "kozuki-momonosuke",
+        "king",
+        "jack",
+        "kurozumi-orochi",
+        "charlotte-linlin",
+        "hyogoro",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "raizo",
+        "inuarashi",
+        "nekomamushi",
+        "denjiro",
+        "kawamatsu",
+        "ashura-doji",
+        "kikunojo",
+        "izo",
+        "nami",
+        "carrot",
+        "shinobu",
+        "nico-robin",
+        "jinbe",
+        "yamato",
+        "monkey-d-luffy",
+        "whos-who",
+        "ulti",
+        "tony-tony-chopper",
+        "usopp",
+        "marco",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 996,
+      "title": {
+        "en": "Onigashima in Tumult! Luffy's All-Out War Begins!",
+        "ja": "鬼ヶ島激動 ルフィ全面戦争開始"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        987
+      ],
+      "airDate": {
+        "ja": "2021-10-24"
+      },
+      "appearances": [
+        "inuarashi",
+        "kikunojo",
+        "raizo",
+        "denjiro",
+        "kinemon",
+        "ashura-doji",
+        "nekomamushi",
+        "kawamatsu",
+        "izo",
+        "kaido",
+        "kozuki-oden",
+        "yamato",
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "jinbe",
+        "nico-robin",
+        "nami",
+        "carrot",
+        "jack",
+        "king",
+        "queen",
+        "kozuki-momonosuke",
+        "hyogoro",
+        "ulti",
+        "trafalgar-d-water-law",
+        "whos-who",
+        "page-one",
+        "shinobu",
+        "kozuki-toki",
+        "kurozumi-kanjuro"
+      ]
+    },
+    {
+      "number": 997,
+      "title": {
+        "en": "The Battle Under the Moon! The Berserker, Sulong the Moon Lion!",
+        "ja": "月下の戦い 狂戦士“{{Ruby|月の獅子|スーロン}}”"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        987,
+        988
+      ],
+      "airDate": {
+        "ja": "2021-10-31"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "yamato",
+        "hyogoro",
+        "kaido",
+        "nekomamushi",
+        "inuarashi",
+        "ashura-doji",
+        "raizo",
+        "kinemon",
+        "izo",
+        "denjiro",
+        "kikunojo",
+        "kawamatsu",
+        "queen",
+        "roronoa-zoro",
+        "killer",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "marco",
+        "kozuki-momonosuke",
+        "shinobu",
+        "jack",
+        "king",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 998,
+      "title": {
+        "en": "Zeus' Treason?! The Cornered Nami!",
+        "ja": "ゼウスの反逆！？ナミ絶体絶命！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        988
+      ],
+      "airDate": {
+        "ja": "2021-11-07"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "yamato",
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "queen",
+        "king",
+        "shinobu",
+        "nico-robin",
+        "jinbe",
+        "hyogoro",
+        "ulti",
+        "nami",
+        "jack",
+        "carrot",
+        "vinsmoke-sanji",
+        "kaido",
+        "brook",
+        "sasaki",
+        "franky"
+      ]
+    },
+    {
+      "number": 999,
+      "title": {
+        "en": "I'll Protect You! Yamato Meets Momonosuke!",
+        "ja": "君を守る 邂逅ヤマトとモモの助"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        989
+      ],
+      "airDate": {
+        "ja": "2021-11-14"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "brook",
+        "franky",
+        "nami",
+        "carrot",
+        "hyogoro",
+        "nico-robin",
+        "jinbe",
+        "monkey-d-luffy",
+        "usopp",
+        "tony-tony-chopper",
+        "yamato",
+        "ulti",
+        "kozuki-momonosuke",
+        "shinobu",
+        "kozuki-oden",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "raizo",
+        "kinemon",
+        "izo",
+        "denjiro",
+        "ashura-doji",
+        "kikunojo",
+        "kawamatsu",
+        "kaido"
+      ]
+    },
+    {
+      "number": 1000,
+      "title": {
+        "en": "Overwhelming Strength! The Straw Hats Come Together!",
+        "ja": "圧倒的戦力！麦わらの一味集結"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        989,
+        990
+      ],
+      "airDate": {
+        "ja": "2021-11-21"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "marco",
+        "sasaki",
+        "denjiro",
+        "kaido",
+        "jack",
+        "ashura-doji",
+        "kikunojo",
+        "kawamatsu",
+        "izo",
+        "kinemon",
+        "raizo",
+        "inuarashi",
+        "nekomamushi",
+        "monkey-d-luffy",
+        "queen",
+        "roronoa-zoro",
+        "king",
+        "hyogoro",
+        "franky",
+        "usopp",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "shanks",
+        "portgas-d-ace",
+        "nami",
+        "nico-robin",
+        "brook",
+        "jinbe",
+        "black-maria",
+        "whos-who",
+        "ulti"
+      ]
+    },
+    {
+      "number": 1001,
+      "title": {
+        "en": "A Risky Invitation! A Plot to Eliminate Queen!",
+        "ja": "危険な誘い！クイーン抹殺計画"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        990
+      ],
+      "airDate": {
+        "ja": "2021-11-28"
+      },
+      "appearances": [
+        "x-drake",
+        "basil-hawkins",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "brook",
+        "jinbe",
+        "nami",
+        "queen",
+        "king",
+        "charlotte-linlin",
+        "hyogoro",
+        "eustass-kid",
+        "scratchmen-apoo",
+        "killer",
+        "sasaki",
+        "whos-who",
+        "black-maria",
+        "page-one",
+        "ulti",
+        "trafalgar-d-water-law",
+        "franky"
+      ]
+    },
+    {
+      "number": 1002,
+      "title": {
+        "en": "A New Rivalry! Nami and Ulti!",
+        "ja": "新たな因縁！ナミとうるティ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        991
+      ],
+      "airDate": {
+        "ja": "2021-12-05"
+      },
+      "appearances": [
+        "x-drake",
+        "monkey-d-luffy",
+        "hyogoro",
+        "usopp",
+        "nico-robin",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "brook",
+        "nami",
+        "shinobu",
+        "franky",
+        "jinbe",
+        "roronoa-zoro",
+        "page-one",
+        "ulti",
+        "scratchmen-apoo",
+        "queen"
+      ]
+    },
+    {
+      "number": 1003,
+      "title": {
+        "en": "A Heroic Blade! Akazaya vs. Kaido, Again Once More!",
+        "ja": "悲壮の刃！赤鞘VSカイドウ再び"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        991,
+        992
+      ],
+      "airDate": {
+        "ja": "2021-12-12"
+      },
+      "appearances": [
+        "queen",
+        "roronoa-zoro",
+        "x-drake",
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "kozuki-oden",
+        "kaido",
+        "kinemon",
+        "jack",
+        "raizo",
+        "nekomamushi",
+        "inuarashi",
+        "denjiro",
+        "ashura-doji",
+        "kikunojo",
+        "izo",
+        "kawamatsu",
+        "carrot",
+        "charlotte-linlin",
+        "marco",
+        "black-maria",
+        "edward-newgate",
+        "monkey-d-luffy",
+        "jinbe",
+        "nami",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 1004,
+      "title": {
+        "en": "An Inherited Technique! Unleashing Oden's Secret Swordplay!",
+        "ja": "受け継ぎし技 炸裂おでんの秘剣"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        992
+      ],
+      "airDate": {
+        "ja": "2021-12-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "queen",
+        "roronoa-zoro",
+        "x-drake",
+        "king",
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "black-maria",
+        "kaido",
+        "nekomamushi",
+        "denjiro",
+        "kikunojo",
+        "kawamatsu",
+        "kinemon",
+        "raizo",
+        "izo",
+        "ashura-doji",
+        "inuarashi",
+        "kurozumi-kanjuro",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 1005,
+      "title": {
+        "en": "The Power of Ice Oni! A New Version of the Plague Rounds!",
+        "ja": "「氷鬼」の威力！新たな{{Ruby|疫災|エキサイト}}弾"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        993
+      ],
+      "airDate": {
+        "ja": "2022-01-09"
+      },
+      "appearances": [
+        "kaido",
+        "ashura-doji",
+        "kinemon",
+        "denjiro",
+        "inuarashi",
+        "kawamatsu",
+        "izo",
+        "raizo",
+        "nekomamushi",
+        "kikunojo",
+        "x-drake",
+        "roronoa-zoro",
+        "queen",
+        "tony-tony-chopper",
+        "brook",
+        "nico-robin",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "jinbe",
+        "kozuki-oden",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 1006,
+      "title": {
+        "en": "I Won't Forgive Him! Chopper's Determination!",
+        "ja": "許さねェ！チョッパーの決意！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        993,
+        994
+      ],
+      "airDate": {
+        "ja": "2022-01-16"
+      },
+      "appearances": [
+        "shinobu",
+        "kozuki-momonosuke",
+        "yamato",
+        "king",
+        "kikunojo",
+        "whos-who",
+        "sasaki",
+        "page-one",
+        "nami",
+        "usopp",
+        "ulti",
+        "monkey-d-luffy",
+        "shimotsuki-yasuie",
+        "inuarashi",
+        "nekomamushi",
+        "tony-tony-chopper",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "kawamatsu",
+        "raizo",
+        "kozuki-toki",
+        "queen",
+        "roronoa-zoro",
+        "nico-robin",
+        "brook",
+        "hyogoro",
+        "vinsmoke-sanji",
+        "jinbe",
+        "kaido",
+        "ashura-doji",
+        "izo",
+        "denjiro",
+        "gol-d-roger",
+        "edward-newgate",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 1007,
+      "title": {
+        "en": "Zoro's Pursuit! Ice Oni Tag!",
+        "ja": "ゾロの追撃！氷鬼in鬼ゴッコ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        994
+      ],
+      "airDate": {
+        "ja": "2022-01-23"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "queen",
+        "hyogoro",
+        "monkey-d-luffy",
+        "scratchmen-apoo",
+        "roronoa-zoro",
+        "nico-robin",
+        "brook",
+        "x-drake",
+        "kaido",
+        "izo",
+        "kikunojo",
+        "inuarashi",
+        "kinemon",
+        "kawamatsu",
+        "ashura-doji",
+        "denjiro",
+        "raizo",
+        "nekomamushi",
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "sasaki",
+        "kozuki-oden",
+        "kurozumi-kanjuro"
+      ]
+    },
+    {
+      "number": 1008,
+      "title": {
+        "en": "Nami's Surrender?! Ulti's Fierce Headbutt!",
+        "ja": "ナミ降伏！？うるティの猛頭突き"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        995
+      ],
+      "airDate": {
+        "ja": "2022-01-30"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "marco",
+        "scratchmen-apoo",
+        "x-drake",
+        "roronoa-zoro",
+        "queen",
+        "vinsmoke-sanji",
+        "usopp",
+        "nami",
+        "ulti",
+        "page-one",
+        "brook",
+        "tony-tony-chopper",
+        "nico-robin",
+        "monkey-d-luffy",
+        "tama"
+      ]
+    },
+    {
+      "number": 1009,
+      "title": {
+        "en": "Sasaki's Onslaught! Armored Division vs. Yamato!",
+        "ja": "ササキの猛攻 装甲部隊VSヤマト"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        995,
+        996
+      ],
+      "airDate": {
+        "ja": "2022-02-06"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "marco",
+        "carrot",
+        "monkey-d-luffy",
+        "jinbe",
+        "nami",
+        "page-one",
+        "ulti",
+        "tama",
+        "usopp",
+        "yamato",
+        "sasaki",
+        "kozuki-momonosuke",
+        "shinobu",
+        "kozuki-oden",
+        "franky"
+      ]
+    },
+    {
+      "number": 1010,
+      "title": {
+        "en": "Eliminate the Ice Oni! Chopper's Fire Trick!",
+        "ja": "氷鬼を破れ チョッパーの火策！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        996,
+        997
+      ],
+      "airDate": {
+        "ja": "2022-02-13"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "brook",
+        "nami",
+        "inuarashi",
+        "nekomamushi",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "roronoa-zoro",
+        "franky",
+        "raizo",
+        "usopp",
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "kaido",
+        "shanks",
+        "queen",
+        "scratchmen-apoo",
+        "x-drake",
+        "tony-tony-chopper",
+        "eustass-kid",
+        "killer",
+        "kawamatsu",
+        "ashura-doji",
+        "denjiro",
+        "kikunojo",
+        "izo",
+        "kozuki-oden",
+        "hyogoro",
+        "vinsmoke-sanji",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 1011,
+      "title": {
+        "en": "It's Not Okay! The Spider lures Sanji!",
+        "ja": "よかねェよ！！サンジを誘う蜘蛛"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        997
+      ],
+      "airDate": {
+        "ja": "2022-02-20"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "jinbe",
+        "black-maria",
+        "king",
+        "hyogoro",
+        "eustass-kid",
+        "kaido",
+        "kinemon",
+        "brook",
+        "tony-tony-chopper",
+        "queen",
+        "scratchmen-apoo",
+        "roronoa-zoro",
+        "nico-robin",
+        "nami",
+        "tama",
+        "usopp",
+        "killer",
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "kikunojo",
+        "charlotte-linlin",
+        "marco",
+        "kawamatsu",
+        "inuarashi",
+        "izo"
+      ]
+    },
+    {
+      "number": 1012,
+      "title": {
+        "en": "A Turnaround Move! The Flames of Marco the Phoenix!",
+        "ja": "逆転の一手！不死鳥マルコの炎"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        998
+      ],
+      "airDate": {
+        "ja": "2022-02-27"
+      },
+      "appearances": [
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "kaido",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nico-robin",
+        "brook",
+        "queen",
+        "marco",
+        "hyogoro",
+        "scratchmen-apoo",
+        "x-drake",
+        "jinbe",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "black-maria",
+        "whos-who",
+        "franky",
+        "sasaki",
+        "page-one",
+        "ulti",
+        "nami",
+        "tama",
+        "usopp",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 1013,
+      "title": {
+        "en": "Yamato's Past! The Man Who Came for an Emperor of the Sea!",
+        "ja": "ヤマトの過去 四皇の首を狙う男"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        998,
+        999
+      ],
+      "airDate": {
+        "ja": "2022-03-06"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "black-maria",
+        "monkey-d-luffy",
+        "whos-who",
+        "jinbe",
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "portgas-d-ace",
+        "kaido",
+        "gol-d-roger",
+        "edward-newgate",
+        "kozuki-oden",
+        "marco",
+        "kinemon",
+        "kawamatsu",
+        "denjiro",
+        "kurozumi-kanjuro",
+        "nekomamushi",
+        "raizo",
+        "kikunojo",
+        "inuarashi",
+        "ashura-doji",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "nami",
+        "tama",
+        "usopp"
+      ]
+    },
+    {
+      "number": 1014,
+      "title": {
+        "en": "Marco's Tears! The Bond of the Whitebeard Pirates!",
+        "ja": "マルコの涙！白ひげ海賊団の絆"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        999,
+        1000
+      ],
+      "airDate": {
+        "ja": "2022-04-17"
+      },
+      "appearances": [
+        "queen",
+        "tony-tony-chopper",
+        "hyogoro",
+        "marco",
+        "roronoa-zoro",
+        "brook",
+        "nico-robin",
+        "portgas-d-ace",
+        "edward-newgate",
+        "izo",
+        "tama",
+        "yamato",
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "jinbe",
+        "kozuki-momonosuke",
+        "shinobu",
+        "charlotte-linlin",
+        "king",
+        "kaido",
+        "raizo",
+        "kikunojo",
+        "denjiro",
+        "inuarashi",
+        "kawamatsu",
+        "ashura-doji",
+        "nekomamushi",
+        "kinemon"
+      ]
+    },
+    {
+      "number": 1015,
+      "title": {
+        "en": "Straw Hat Luffy! The Man Who Will Become the King of the Pirates!",
+        "ja": "麦わらのルフィ 海賊王になる男"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1000
+      ],
+      "airDate": {
+        "ja": "2022-04-24"
+      },
+      "appearances": [
+        "yamato",
+        "portgas-d-ace",
+        "kozuki-momonosuke",
+        "shinobu",
+        "gol-d-roger",
+        "kozuki-oden",
+        "edward-newgate",
+        "monkey-d-luffy",
+        "kaido",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "killer",
+        "roronoa-zoro",
+        "charlotte-linlin",
+        "kinemon",
+        "ashura-doji",
+        "denjiro",
+        "kawamatsu",
+        "nekomamushi",
+        "inuarashi",
+        "kikunojo",
+        "izo",
+        "raizo",
+        "hyogoro",
+        "kurozumi-kanjuro",
+        "nami",
+        "carrot",
+        "tony-tony-chopper",
+        "brook",
+        "vinsmoke-sanji",
+        "franky",
+        "nico-robin",
+        "usopp",
+        "shimotsuki-yasuie",
+        "queen",
+        "tama",
+        "marco"
+      ]
+    },
+    {
+      "number": 1016,
+      "title": {
+        "en": "The Battle of the Monsters! The Three Stubborn Captains!",
+        "ja": "怪物決戦！意地張りあう三船長"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1001
+      ],
+      "airDate": {
+        "ja": "2022-05-08"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "eustass-kid",
+        "killer",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "kaido",
+        "hyogoro",
+        "gol-d-roger",
+        "edward-newgate",
+        "kozuki-oden",
+        "shanks",
+        "vinsmoke-sanji",
+        "black-maria"
+      ]
+    },
+    {
+      "number": 1017,
+      "title": {
+        "en": "A Barrage of Powerful Techniques! The Fierce Attacks of the Worst Generation!",
+        "ja": "大技連発！最悪の世代の猛攻！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1001,
+        1002
+      ],
+      "airDate": {
+        "ja": "2022-05-15"
+      },
+      "appearances": [
+        "kaido",
+        "monkey-d-luffy",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "killer",
+        "roronoa-zoro",
+        "charlotte-linlin",
+        "edward-newgate",
+        "gol-d-roger",
+        "kozuki-oden",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "jinbe",
+        "kawamatsu",
+        "kinemon",
+        "ashura-doji",
+        "kikunojo",
+        "raizo",
+        "izo",
+        "denjiro"
+      ]
+    },
+    {
+      "number": 1018,
+      "title": {
+        "en": "Kaido Laughs! The Emperors of the Sea vs. New Generation!",
+        "ja": "笑うカイドウ！四皇VS新世代！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1003
+      ],
+      "airDate": {
+        "ja": "2022-05-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "charlotte-linlin",
+        "roronoa-zoro",
+        "killer",
+        "usopp",
+        "tama",
+        "nami",
+        "yamato",
+        "kozuki-momonosuke",
+        "shinobu",
+        "black-maria",
+        "vinsmoke-sanji",
+        "hyogoro",
+        "franky",
+        "sasaki",
+        "jinbe",
+        "nico-robin",
+        "brook",
+        "kozuki-oden",
+        "kurozumi-orochi",
+        "ulti"
+      ]
+    },
+    {
+      "number": 1019,
+      "title": {
+        "en": "Otama's Secret Plan! Operation Kibi Dango!",
+        "ja": "お玉の秘策！きびだんご大作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1004
+      ],
+      "airDate": {
+        "ja": "2022-05-29"
+      },
+      "appearances": [
+        "tama",
+        "nami",
+        "usopp",
+        "tony-tony-chopper",
+        "queen",
+        "scratchmen-apoo",
+        "hyogoro",
+        "x-drake",
+        "franky",
+        "sasaki",
+        "ulti",
+        "page-one"
+      ]
+    },
+    {
+      "number": 1020,
+      "title": {
+        "en": "Sanji's Scream! An SOS Echoes Over the Island!",
+        "ja": "サンジ絶叫！島中に響くSOS"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1004,
+        1005
+      ],
+      "airDate": {
+        "ja": "2022-06-05"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "black-maria",
+        "monkey-d-luffy",
+        "kinemon",
+        "ashura-doji",
+        "kawamatsu",
+        "nekomamushi",
+        "kikunojo",
+        "izo",
+        "raizo",
+        "inuarashi",
+        "denjiro",
+        "kaido",
+        "trafalgar-d-water-law",
+        "marco",
+        "king",
+        "carrot",
+        "tony-tony-chopper",
+        "hyogoro",
+        "nico-robin",
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "franky",
+        "x-drake",
+        "scratchmen-apoo",
+        "jinbe",
+        "whos-who",
+        "sasaki"
+      ]
+    },
+    {
+      "number": 1021,
+      "title": {
+        "en": "Spank Strikes! Sanji's Woman-trouble!",
+        "ja": "スパンク炸裂！サンジの女難！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1005,
+        1006
+      ],
+      "airDate": {
+        "ja": "2022-06-12"
+      },
+      "appearances": [
+        "black-maria",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "brook",
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "carrot",
+        "monkey-d-luffy",
+        "jinbe",
+        "nami",
+        "charlotte-linlin",
+        "trafalgar-d-water-law",
+        "killer",
+        "eustass-kid",
+        "roronoa-zoro",
+        "kaido",
+        "jack",
+        "nekomamushi",
+        "raizo",
+        "kinemon",
+        "inuarashi",
+        "kawamatsu",
+        "kikunojo",
+        "ashura-doji",
+        "denjiro",
+        "izo"
+      ]
+    },
+    {
+      "number": 1022,
+      "title": {
+        "en": "No Regrets! Luffy and Boss, a Master-Disciple Bond!",
+        "ja": "悔いなし ルフィと親分師弟の絆"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1006
+      ],
+      "airDate": {
+        "ja": "2022-06-19"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "hyogoro",
+        "scratchmen-apoo",
+        "queen",
+        "x-drake",
+        "monkey-d-luffy",
+        "eustass-kid",
+        "killer",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "kaido",
+        "charlotte-linlin",
+        "marco",
+        "king",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 1023,
+      "title": {
+        "en": "All Set! Chopperhage Nebulizer!",
+        "ja": "準備OK！チョパファージ{{ruby|霧砲|ネブライザー}}"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1007
+      ],
+      "airDate": {
+        "ja": "2022-07-03"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "marco",
+        "queen",
+        "king",
+        "scratchmen-apoo",
+        "hyogoro",
+        "x-drake",
+        "monkey-d-luffy",
+        "kaido",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "killer",
+        "roronoa-zoro",
+        "kinemon",
+        "kikunojo",
+        "nekomamushi",
+        "raizo",
+        "kawamatsu",
+        "ashura-doji",
+        "denjiro",
+        "izo",
+        "inuarashi"
+      ]
+    },
+    {
+      "number": 1024,
+      "title": {
+        "en": "Oden Appears! The Confused Hearts of the Akazaya Members!",
+        "ja": "おでん現る！揺れる赤鞘の心！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1007,
+        1008
+      ],
+      "airDate": {
+        "ja": "2022-07-10"
+      },
+      "appearances": [
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "kaido",
+        "kinemon",
+        "kozuki-oden",
+        "kawamatsu",
+        "raizo",
+        "denjiro",
+        "ashura-doji",
+        "kikunojo",
+        "izo",
+        "nekomamushi",
+        "inuarashi",
+        "kurozumi-kanjuro",
+        "kozuki-hiyori",
+        "kozuki-toki",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "eustass-kid",
+        "killer",
+        "trafalgar-d-water-law",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 1025,
+      "title": {
+        "en": "The Worst Generation Gets Wiped Out?! The Emperors' Deadly Attack!",
+        "ja": "最悪の世代全滅！？四皇の大技！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1008,
+        1009
+      ],
+      "airDate": {
+        "ja": "2022-07-17"
+      },
+      "appearances": [
+        "denjiro",
+        "kozuki-oden",
+        "ashura-doji",
+        "izo",
+        "kikunojo",
+        "kinemon",
+        "raizo",
+        "inuarashi",
+        "kawamatsu",
+        "nekomamushi",
+        "kurozumi-kanjuro",
+        "kurozumi-orochi",
+        "jack",
+        "tony-tony-chopper",
+        "marco",
+        "queen",
+        "hyogoro",
+        "kaido",
+        "eustass-kid",
+        "killer",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 1026,
+      "title": {
+        "en": "The Supernovas Strike Back! The Mission to Tear Apart the Emperors!",
+        "ja": "超新星反撃！四皇分解作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1009
+      ],
+      "airDate": {
+        "ja": "2022-07-24"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "kinemon",
+        "denjiro",
+        "kikunojo",
+        "izo",
+        "raizo",
+        "nekomamushi",
+        "kawamatsu",
+        "kozuki-oden",
+        "ashura-doji",
+        "inuarashi",
+        "monkey-d-luffy",
+        "kaido",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "killer",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 1027,
+      "title": {
+        "en": "Defend Luffy! Zoro and Law's Sword Technique!",
+        "ja": "ルフィを守れ！ゾロとローの剣技"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1010
+      ],
+      "airDate": {
+        "ja": "2022-07-31"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "kaido",
+        "killer",
+        "monkey-d-luffy",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 1028,
+      "title": {
+        "en": "Surpass the Emperor of the Sea! Luffy Strikes Back with an Iron Fist!",
+        "ja": "四皇を超えろ ルフィ反撃の鉄拳"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1010,
+        1011
+      ],
+      "airDate": {
+        "ja": "2022-08-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "charlotte-linlin",
+        "eustass-kid",
+        "killer",
+        "usopp",
+        "nami",
+        "tama",
+        "page-one",
+        "basil-hawkins",
+        "scratchmen-apoo",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "hyogoro",
+        "kinemon"
+      ]
+    },
+    {
+      "number": 1031,
+      "title": {
+        "en": "Nami Screams - A Deadly Death Race!",
+        "ja": "ナミ絶叫 絶体絶命デスレース！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1011
+      ],
+      "airDate": {
+        "ja": "2022-09-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "trafalgar-d-water-law",
+        "kozuki-momonosuke",
+        "shinobu",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "yamato",
+        "usopp",
+        "page-one",
+        "nami",
+        "tama",
+        "charlotte-linlin",
+        "eustass-kid",
+        "tony-tony-chopper",
+        "kikunojo",
+        "ulti"
+      ]
+    },
+    {
+      "number": 1032,
+      "title": {
+        "en": "The Dawn of the Land of Wano - The All-Out Battle Heats Up!",
+        "ja": "ワノ国の夜明け 全面対決激化！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1012
+      ],
+      "airDate": {
+        "ja": "2022-09-11"
+      },
+      "appearances": [
+        "denjiro",
+        "kinemon",
+        "kikunojo",
+        "izo",
+        "nekomamushi",
+        "kawamatsu",
+        "ashura-doji",
+        "edward-newgate",
+        "kozuki-oden",
+        "kurozumi-kanjuro",
+        "kozuki-momonosuke",
+        "shinobu",
+        "yamato",
+        "monkey-d-luffy",
+        "kaido",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "queen",
+        "tony-tony-chopper",
+        "hyogoro",
+        "ulti",
+        "charlotte-linlin",
+        "page-one",
+        "usopp",
+        "nami",
+        "tama"
+      ]
+    },
+    {
+      "number": 1033,
+      "title": {
+        "en": "The Conclusion! Luffy, Accelerating Fist of the Supreme King",
+        "ja": "決着！ルフィ加速する覇王の拳"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1012,
+        1013
+      ],
+      "airDate": {
+        "ja": "2022-09-18"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "kawamatsu",
+        "izo",
+        "monkey-d-luffy",
+        "kaido",
+        "ulti",
+        "nami",
+        "charlotte-linlin",
+        "usopp",
+        "tama"
+      ]
+    },
+    {
+      "number": 1034,
+      "title": {
+        "en": "Luffy Defeated! The Straw Hats in Jeopardy?!",
+        "ja": "ルフィ敗北！麦わらの一味窮地!?"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1013,
+        1014
+      ],
+      "airDate": {
+        "ja": "2022-09-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "nami",
+        "usopp",
+        "tama",
+        "charlotte-linlin",
+        "queen",
+        "tony-tony-chopper",
+        "hyogoro",
+        "yamato",
+        "shinobu",
+        "kozuki-momonosuke",
+        "kozuki-oden",
+        "marco",
+        "edward-newgate",
+        "kozuki-toki",
+        "gol-d-roger",
+        "izo",
+        "shanks",
+        "buggy",
+        "eustass-kid"
+      ]
+    },
+    {
+      "number": 1035,
+      "title": {
+        "en": "The Animal Kingdom Pirates Trample Down! The End of the Kozuki Clan!",
+        "ja": "百獣蹂躙！光月家の終焉！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1014
+      ],
+      "airDate": {
+        "ja": "2022-10-02"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "shinobu",
+        "kinemon",
+        "kikunojo",
+        "tony-tony-chopper",
+        "queen",
+        "hyogoro",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "jinbe",
+        "vinsmoke-sanji",
+        "usopp",
+        "nico-robin",
+        "nami",
+        "brook",
+        "franky",
+        "king",
+        "marco",
+        "sasaki",
+        "whos-who",
+        "charlotte-linlin",
+        "eustass-kid",
+        "tama",
+        "kaido",
+        "black-maria",
+        "kawamatsu",
+        "trafalgar-d-water-law",
+        "kurozumi-kanjuro",
+        "kozuki-oden",
+        "ashura-doji",
+        "denjiro",
+        "inuarashi"
+      ]
+    },
+    {
+      "number": 1036,
+      "title": {
+        "en": "Fight Against the Dark Night - The Commander-in-Chief of the Land of Wano Sounds Off",
+        "ja": "闇夜に抗え ワノ国総大将吠える"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1015
+      ],
+      "airDate": {
+        "ja": "2022-10-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "queen",
+        "hyogoro",
+        "usopp",
+        "tama",
+        "nami",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "kaido",
+        "izo",
+        "kawamatsu",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "marco",
+        "kinemon",
+        "kozuki-momonosuke",
+        "shinobu",
+        "kikunojo",
+        "kurozumi-kanjuro",
+        "raizo",
+        "inuarashi",
+        "denjiro",
+        "ashura-doji",
+        "nekomamushi",
+        "kozuki-oden",
+        "king",
+        "yamato",
+        "brook",
+        "nico-robin",
+        "black-maria",
+        "sasaki",
+        "franky",
+        "jinbe",
+        "whos-who",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 1037,
+      "title": {
+        "en": "Believe in Luffy! The Alliance's Counterattack Begins!",
+        "ja": "ルフィを信じろ！同盟反撃開始！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1015,
+        1016
+      ],
+      "airDate": {
+        "ja": "2022-10-23"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "shinobu",
+        "monkey-d-luffy",
+        "kaido",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "hyogoro",
+        "queen",
+        "king",
+        "marco",
+        "sasaki",
+        "franky",
+        "jinbe",
+        "trafalgar-d-water-law",
+        "black-maria",
+        "brook",
+        "nico-robin",
+        "charlotte-linlin",
+        "eustass-kid",
+        "nami",
+        "tama",
+        "usopp",
+        "basil-hawkins",
+        "killer",
+        "inuarashi",
+        "jack",
+        "yamato",
+        "shimotsuki-yasuie",
+        "ulti"
+      ]
+    },
+    {
+      "number": 1038,
+      "title": {
+        "en": "Nami's Lethal Attack! Otama's Desperate Challenge!",
+        "ja": "ナミ必殺！お玉決死の大一番！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1016,
+        1017
+      ],
+      "airDate": {
+        "ja": "2022-10-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "shinobu",
+        "kozuki-momonosuke",
+        "kinemon",
+        "kikunojo",
+        "kaido",
+        "ulti",
+        "tama",
+        "nami",
+        "usopp",
+        "page-one",
+        "queen",
+        "sasaki",
+        "franky",
+        "black-maria",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "jinbe",
+        "inuarashi",
+        "jack",
+        "roronoa-zoro",
+        "brook",
+        "nico-robin",
+        "yamato"
+      ]
+    },
+    {
+      "number": 1039,
+      "title": {
+        "en": "A Dramatic Increase of Allies! Straw Hats Fight Back!",
+        "ja": "味方激増！麦わらの一味逆襲！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1017,
+        1018
+      ],
+      "airDate": {
+        "ja": "2022-11-06"
+      },
+      "appearances": [
+        "jack",
+        "inuarashi",
+        "usopp",
+        "nami",
+        "tama",
+        "jinbe",
+        "whos-who",
+        "franky",
+        "sasaki",
+        "queen",
+        "vinsmoke-sanji",
+        "hyogoro",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "marco",
+        "ulti",
+        "monkey-d-luffy",
+        "shanks"
+      ]
+    },
+    {
+      "number": 1040,
+      "title": {
+        "en": "The Pride of a Helmsman - The Enraged Jimbei!",
+        "ja": "操舵手の誇り 怒りのジンベエ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1018
+      ],
+      "airDate": {
+        "ja": "2022-11-13"
+      },
+      "appearances": [
+        "tama",
+        "nami",
+        "usopp",
+        "charlotte-linlin",
+        "whos-who",
+        "jinbe",
+        "shanks",
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "tony-tony-chopper",
+        "nico-robin",
+        "vinsmoke-sanji",
+        "brook",
+        "roronoa-zoro",
+        "carrot"
+      ]
+    },
+    {
+      "number": 1041,
+      "title": {
+        "en": "Showdown Battles of the Monsters! Yamato and Franky",
+        "ja": "怪獣大決戦！ヤマトとフランキー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1019
+      ],
+      "airDate": {
+        "ja": "2022-11-20"
+      },
+      "appearances": [
+        "kaido",
+        "yamato",
+        "monkey-d-luffy",
+        "queen",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "franky",
+        "sasaki",
+        "tama"
+      ]
+    },
+    {
+      "number": 1042,
+      "title": {
+        "en": "The Predator's Trap - Black Maria's Temptation",
+        "ja": "捕食者の罠 ブラックマリアの誘惑"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1019,
+        1020
+      ],
+      "airDate": {
+        "ja": "2022-11-27"
+      },
+      "appearances": [
+        "yamato",
+        "kaido",
+        "sasaki",
+        "franky",
+        "brook",
+        "nico-robin",
+        "black-maria",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1043,
+      "title": {
+        "en": "Slash the Nightmare - Brook Draws His Freezing Sword!",
+        "ja": "悪夢を斬る ブルックの氷の抜刀！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1020,
+        1021
+      ],
+      "airDate": {
+        "ja": "2022-12-04"
+      },
+      "appearances": [
+        "nico-robin",
+        "brook",
+        "black-maria",
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "nami",
+        "tony-tony-chopper",
+        "franky",
+        "roronoa-zoro",
+        "kozuki-momonosuke",
+        "shinobu",
+        "kurozumi-kanjuro",
+        "kozuki-oden",
+        "kikunojo",
+        "kinemon",
+        "kaido"
+      ]
+    },
+    {
+      "number": 1044,
+      "title": {
+        "en": "Clutch! A Demon Incarnate, Robin!",
+        "ja": "クラッチ！悪魔の化身 ロビン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1021
+      ],
+      "airDate": {
+        "ja": "2022-12-11"
+      },
+      "appearances": [
+        "black-maria",
+        "nico-robin",
+        "kaido",
+        "brook",
+        "nami",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "franky",
+        "jinbe",
+        "kozuki-momonosuke",
+        "shinobu",
+        "kinemon",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 1045,
+      "title": {
+        "en": "A Spell! Kid and Zoro Facing Threats!",
+        "ja": "呪縛！迫る脅威 キッドとゾロ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1022
+      ],
+      "airDate": {
+        "ja": "2022-12-18"
+      },
+      "appearances": [
+        "nico-robin",
+        "black-maria",
+        "tama",
+        "nami",
+        "ulti",
+        "whos-who",
+        "jinbe",
+        "franky",
+        "sasaki",
+        "page-one",
+        "monkey-d-luffy",
+        "raizo",
+        "kozuki-oden",
+        "kinemon",
+        "kikunojo",
+        "kurozumi-kanjuro",
+        "denjiro",
+        "kawamatsu",
+        "inuarashi",
+        "nekomamushi",
+        "ashura-doji",
+        "izo",
+        "jack",
+        "kozuki-momonosuke",
+        "shinobu",
+        "killer",
+        "basil-hawkins",
+        "eustass-kid",
+        "charlotte-linlin",
+        "trafalgar-d-water-law",
+        "queen",
+        "vinsmoke-sanji",
+        "king",
+        "marco",
+        "hyogoro",
+        "roronoa-zoro",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 1046,
+      "title": {
+        "en": "Taking a Chance! The Two Arms Go into Battle!",
+        "ja": "一か八かの大勝負！両翼出陣！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1022,
+        1023
+      ],
+      "airDate": {
+        "ja": "2023-01-08"
+      },
+      "appearances": [
+        "king",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "queen",
+        "tony-tony-chopper",
+        "marco",
+        "hyogoro",
+        "kawamatsu",
+        "edward-newgate",
+        "izo",
+        "jack",
+        "kaido",
+        "kozuki-oden",
+        "kozuki-hiyori",
+        "monkey-d-luffy",
+        "shinobu",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 1047,
+      "title": {
+        "en": "Ascend to the Dawn! A Pink Dragon Gets Agitated",
+        "ja": "夜明けへと昇れ！桃色の龍猛る"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1023,
+        1024
+      ],
+      "airDate": {
+        "ja": "2023-01-15"
+      },
+      "appearances": [
+        "hyogoro",
+        "kawamatsu",
+        "vinsmoke-sanji",
+        "queen",
+        "roronoa-zoro",
+        "king",
+        "sasaki",
+        "franky",
+        "nami",
+        "usopp",
+        "tama",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "charlotte-linlin",
+        "ulti",
+        "page-one",
+        "kozuki-momonosuke",
+        "brook",
+        "nico-robin",
+        "black-maria",
+        "jinbe",
+        "yamato",
+        "kaido",
+        "jack",
+        "inuarashi",
+        "ashura-doji",
+        "izo",
+        "raizo",
+        "kinemon",
+        "kikunojo",
+        "denjiro",
+        "nekomamushi",
+        "carrot",
+        "kurozumi-kanjuro",
+        "kozuki-oden",
+        "monkey-d-luffy",
+        "shinobu"
+      ]
+    },
+    {
+      "number": 1048,
+      "title": {
+        "en": "For the Future! Yamato and the Great Swordsmen's Pledge",
+        "ja": "未来へ！ヤマトと大剣豪の誓い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1024
+      ],
+      "airDate": {
+        "ja": "2023-01-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "shinobu",
+        "yamato",
+        "kaido",
+        "kozuki-oden",
+        "gol-d-roger",
+        "edward-newgate",
+        "buggy",
+        "shanks"
+      ]
+    },
+    {
+      "number": 1049,
+      "title": {
+        "en": "Luffy Soars! Revenge Against the King of the Beasts",
+        "ja": "ルフィ飛翔！百獣へのリベンジ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1025
+      ],
+      "airDate": {
+        "ja": "2023-01-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "shinobu",
+        "yamato",
+        "kaido",
+        "portgas-d-ace",
+        "kinemon",
+        "king",
+        "roronoa-zoro",
+        "marco",
+        "hyogoro",
+        "kawamatsu",
+        "queen",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 1050,
+      "title": {
+        "en": "Two Dragons Face Off! Momonosuke's Determination!",
+        "ja": "双龍相搏つ！モモの助の覚悟！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1025,
+        1026
+      ],
+      "airDate": {
+        "ja": "2023-02-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "yamato",
+        "kaido",
+        "shimotsuki-yasuie",
+        "tama",
+        "queen",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "king",
+        "tony-tony-chopper",
+        "nami",
+        "usopp",
+        "franky",
+        "brook",
+        "nico-robin",
+        "jinbe",
+        "jack",
+        "inuarashi",
+        "nekomamushi",
+        "carrot",
+        "kozuki-hiyori",
+        "kozuki-toki",
+        "kozuki-oden",
+        "hyogoro"
+      ]
+    },
+    {
+      "number": 1051,
+      "title": {
+        "en": "A Legend All Over Again! Luffy's Fist Roars in the Sky!",
+        "ja": "伝説の再来！天に轟くルフィの拳"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1026,
+        1027
+      ],
+      "airDate": {
+        "ja": "2023-02-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "yamato",
+        "kaido",
+        "hyogoro",
+        "kawamatsu",
+        "tony-tony-chopper",
+        "franky",
+        "charlotte-linlin",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "usopp",
+        "tama",
+        "nami",
+        "brook",
+        "nico-robin",
+        "jinbe",
+        "vinsmoke-sanji",
+        "queen",
+        "roronoa-zoro",
+        "king",
+        "edward-newgate",
+        "gol-d-roger",
+        "inuarashi",
+        "jack",
+        "nekomamushi",
+        "kinemon",
+        "kikunojo",
+        "carrot",
+        "kurozumi-orochi"
+      ]
+    },
+    {
+      "number": 1052,
+      "title": {
+        "en": "The Situation Has Grown Tense! The End of Onigashima!",
+        "ja": "風雲急を告げる！鬼ヶ島の末路！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1027,
+        1028
+      ],
+      "airDate": {
+        "ja": "2023-02-19"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "yamato",
+        "monkey-d-luffy",
+        "kaido",
+        "hyogoro",
+        "kawamatsu",
+        "king",
+        "roronoa-zoro",
+        "queen",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "franky"
+      ]
+    },
+    {
+      "number": 1053,
+      "title": {
+        "en": "Sanji's Mutation? The Two Arms in Crisis!",
+        "ja": "サンジの異変 両翼黄色信号！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1028
+      ],
+      "airDate": {
+        "ja": "2023-02-26"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "yamato",
+        "kozuki-oden",
+        "kaido",
+        "monkey-d-luffy",
+        "nico-robin",
+        "brook",
+        "queen",
+        "vinsmoke-sanji",
+        "hyogoro",
+        "tony-tony-chopper",
+        "izo",
+        "marco"
+      ]
+    },
+    {
+      "number": 1054,
+      "title": {
+        "en": "Death to Your Partner! Killer's Deadly Gamble!",
+        "ja": "相棒に死を！キラー決死の大博打"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1029
+      ],
+      "airDate": {
+        "ja": "2023-03-19"
+      },
+      "appearances": [
+        "killer",
+        "eustass-kid",
+        "basil-hawkins",
+        "kurozumi-orochi",
+        "charlotte-linlin",
+        "trafalgar-d-water-law",
+        "kaido",
+        "scratchmen-apoo"
+      ]
+    },
+    {
+      "number": 1055,
+      "title": {
+        "en": "A Shadowy Figure Pulls the Strings! Onigashima in Flames",
+        "ja": "闇の者の暗躍！鬼ヶ島炎上"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1029,
+        1030
+      ],
+      "airDate": {
+        "ja": "2023-03-26"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "queen",
+        "vinsmoke-sanji",
+        "page-one",
+        "franky",
+        "trafalgar-d-water-law",
+        "usopp",
+        "king",
+        "kozuki-momonosuke",
+        "x-drake",
+        "scratchmen-apoo",
+        "tama",
+        "nami",
+        "kinemon",
+        "kikunojo",
+        "kurozumi-kanjuro",
+        "nico-robin",
+        "brook",
+        "kaido",
+        "kurozumi-orochi",
+        "denjiro",
+        "izo",
+        "marco",
+        "kawamatsu",
+        "roronoa-zoro",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1056,
+      "title": {
+        "en": "A Countercharge! Law and Kid's Return-Attack Combination",
+        "ja": "逆襲！ローとキッドの反撃同盟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1030,
+        1031
+      ],
+      "airDate": {
+        "ja": "2023-04-02"
+      },
+      "appearances": [
+        "yamato",
+        "kozuki-momonosuke",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "charlotte-linlin",
+        "kurozumi-orochi",
+        "raizo",
+        "hyogoro",
+        "marco",
+        "izo",
+        "kawamatsu",
+        "tony-tony-chopper",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1057,
+      "title": {
+        "en": "For Luffy ? Sanji and Zoro's Oath",
+        "ja": "ルフィの為に サンジとゾロの誓い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1031
+      ],
+      "airDate": {
+        "ja": "2023-04-09"
+      },
+      "appearances": [
+        "scratchmen-apoo",
+        "x-drake",
+        "yamato",
+        "brook",
+        "nico-robin",
+        "vinsmoke-sanji",
+        "queen",
+        "monkey-d-luffy",
+        "king",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 1058,
+      "title": {
+        "en": "The Onslaught of Kazenbo - Orochi's Evil Clutches Close in",
+        "ja": "火前坊襲来 迫るオロチの魔の手"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1032
+      ],
+      "airDate": {
+        "ja": "2023-04-16"
+      },
+      "appearances": [
+        "eustass-kid",
+        "charlotte-linlin",
+        "trafalgar-d-water-law",
+        "marco",
+        "izo",
+        "brook",
+        "nico-robin",
+        "yamato",
+        "scratchmen-apoo",
+        "x-drake",
+        "kurozumi-orochi",
+        "kozuki-hiyori",
+        "kozuki-momonosuke",
+        "king",
+        "roronoa-zoro",
+        "kaido",
+        "queen",
+        "denjiro"
+      ]
+    },
+    {
+      "number": 1059,
+      "title": {
+        "en": "Zoro Faces Adversity - A Monster! King the Wildfire",
+        "ja": "逆境のゾロ 怪物！火災のキング"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1032,
+        1033
+      ],
+      "airDate": {
+        "ja": "2023-04-23"
+      },
+      "appearances": [
+        "yamato",
+        "brook",
+        "nico-robin",
+        "scratchmen-apoo",
+        "x-drake",
+        "kozuki-momonosuke",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "roronoa-zoro",
+        "king",
+        "queen",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 1060,
+      "title": {
+        "en": "The Secret of Enma! The Cursed Sword Entrusted to Zoro",
+        "ja": "閻魔の秘密！ゾロに託されし妖刀"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1033,
+        1034
+      ],
+      "airDate": {
+        "ja": "2023-04-30"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "king",
+        "kozuki-momonosuke",
+        "x-drake",
+        "scratchmen-apoo",
+        "kozuki-hiyori",
+        "kozuki-oden",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1061,
+      "title": {
+        "en": "The Strike of an Ifrit! Sanji vs. Queen",
+        "ja": "魔神の一撃！サンジVSクイーン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1034,
+        1035
+      ],
+      "airDate": {
+        "ja": "2023-05-07"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "queen",
+        "franky",
+        "nico-robin",
+        "tony-tony-chopper",
+        "usopp",
+        "monkey-d-luffy",
+        "jinbe",
+        "roronoa-zoro",
+        "nami",
+        "brook"
+      ]
+    },
+    {
+      "number": 1062,
+      "title": {
+        "en": "The Three-Sword Style of the Supreme King! Zoro vs. King",
+        "ja": "覇王の三刀流！ゾロVSキング"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1035,
+        1036
+      ],
+      "airDate": {
+        "ja": "2023-05-21"
+      },
+      "appearances": [
+        "king",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "kaido"
+      ]
+    },
+    {
+      "number": 1063,
+      "title": {
+        "en": "Luffy is on the Move! A Turning Point to a New Era!",
+        "ja": "ルフィ躍動！新時代の分岐点！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1036
+      ],
+      "airDate": {
+        "ja": "2023-05-28"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "king",
+        "monkey-d-luffy",
+        "kaido",
+        "charlotte-linlin",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "kozuki-momonosuke",
+        "yamato",
+        "kinemon",
+        "usopp",
+        "kikunojo",
+        "izo",
+        "raizo",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "x-drake",
+        "scratchmen-apoo",
+        "vinsmoke-sanji",
+        "killer"
+      ]
+    },
+    {
+      "number": 1064,
+      "title": {
+        "en": "Drunken Dragon Bagua! The Lawless Dragon Closing in on Luffy",
+        "ja": "酒龍八卦！ルフィに迫る無法の龍"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1037
+      ],
+      "airDate": {
+        "ja": "2023-06-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "kozuki-momonosuke",
+        "shimotsuki-yasuie"
+      ]
+    },
+    {
+      "number": 1065,
+      "title": {
+        "en": "The Destruction of the Alliance?! Fire up, the Will of the New Generation!",
+        "ja": "同盟壊滅！？燃えろ新世代の意志！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1038
+      ],
+      "airDate": {
+        "ja": "2023-06-11"
+      },
+      "appearances": [
+        "raizo",
+        "jinbe",
+        "charlotte-linlin",
+        "tony-tony-chopper",
+        "queen",
+        "marco",
+        "roronoa-zoro",
+        "franky",
+        "izo",
+        "yamato",
+        "trafalgar-d-water-law",
+        "eustass-kid"
+      ]
+    },
+    {
+      "number": 1066,
+      "title": {
+        "en": "Here Comes Main Act! Powerful Techniques of Shockwave and Magnetism",
+        "ja": "大トリ来る！波動と磁気の大技"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1039
+      ],
+      "airDate": {
+        "ja": "2023-06-25"
+      },
+      "appearances": [
+        "eustass-kid",
+        "killer",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "scratchmen-apoo",
+        "basil-hawkins",
+        "kaido",
+        "yamato",
+        "kozuki-momonosuke",
+        "inuarashi",
+        "denjiro",
+        "kinemon",
+        "raizo",
+        "ashura-doji",
+        "kawamatsu",
+        "kikunojo",
+        "izo",
+        "nekomamushi",
+        "shinobu",
+        "kozuki-oden",
+        "kozuki-hiyori",
+        "kozuki-toki",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 1067,
+      "title": {
+        "en": "To the New Era! Settled! The Determination of the Brats",
+        "ja": "新時代へ！決着！ガキ共の覚悟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1040
+      ],
+      "airDate": {
+        "ja": "2023-07-02"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "kozuki-momonosuke",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "yamato",
+        "gol-d-roger",
+        "buggy",
+        "shanks",
+        "hyogoro",
+        "tony-tony-chopper",
+        "nico-robin",
+        "brook",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "killer",
+        "raizo",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "nami",
+        "carrot",
+        "jinbe",
+        "kaido"
+      ]
+    },
+    {
+      "number": 1068,
+      "title": {
+        "en": "Moon Princess Echoes! The Final Phase of the Land of Wano!",
+        "ja": "月姫が響く！ワノ国最終局面！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1041
+      ],
+      "airDate": {
+        "ja": "2023-07-09"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "yamato",
+        "kozuki-oden",
+        "gol-d-roger",
+        "carrot",
+        "nekomamushi",
+        "franky",
+        "roronoa-zoro",
+        "kikunojo",
+        "kinemon",
+        "usopp",
+        "izo",
+        "tama",
+        "nami",
+        "marco",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "x-drake",
+        "kurozumi-orochi",
+        "kozuki-hiyori",
+        "monkey-d-luffy",
+        "kaido",
+        "charlotte-linlin",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 1069,
+      "title": {
+        "en": "There is Only One Winner - Luffy vs. Kaido",
+        "ja": "勝者はひとり ルフィVSカイドウ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1041,
+        1042
+      ],
+      "airDate": {
+        "ja": "2023-07-16"
+      },
+      "appearances": [
+        "raizo",
+        "kozuki-oden",
+        "kurozumi-kanjuro",
+        "kawamatsu",
+        "kinemon",
+        "denjiro",
+        "jinbe",
+        "izo",
+        "x-drake",
+        "monkey-d-luffy",
+        "kaido",
+        "tony-tony-chopper",
+        "hyogoro",
+        "yamato",
+        "kozuki-momonosuke",
+        "tama",
+        "shimotsuki-yasuie"
+      ]
+    },
+    {
+      "number": 1070,
+      "title": {
+        "en": "Luffy Is Defeated?! The Determination of Those Left Behind",
+        "ja": "ルフィ敗北！？残された者の覚悟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1043
+      ],
+      "airDate": {
+        "ja": "2023-07-30"
+      },
+      "appearances": [
+        "kaido",
+        "monkey-d-luffy",
+        "tama",
+        "nami",
+        "marco",
+        "usopp",
+        "kikunojo",
+        "kinemon",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "brook",
+        "tony-tony-chopper",
+        "raizo",
+        "jinbe",
+        "franky",
+        "roronoa-zoro",
+        "kozuki-momonosuke",
+        "kawamatsu",
+        "hyogoro",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "nekomamushi",
+        "carrot",
+        "yamato"
+      ]
+    },
+    {
+      "number": 1071,
+      "title": {
+        "en": "Luffy's Peak - Attained! Gear Five",
+        "ja": "ルフィの最高地点 到達！〝ギア5〟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1044
+      ],
+      "airDate": {
+        "ja": "2023-08-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "hyogoro",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "nami",
+        "marco",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "kozuki-momonosuke",
+        "yamato",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "kozuki-oden",
+        "buggy"
+      ]
+    },
+    {
+      "number": 1072,
+      "title": {
+        "en": "The Ridiculous Power! Gear Five in Full Play",
+        "ja": "ふざけた能力！躍動するギア5"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1045,
+        1046
+      ],
+      "airDate": {
+        "ja": "2023-08-13"
+      },
+      "appearances": [
+        "kaido",
+        "monkey-d-luffy",
+        "king",
+        "queen",
+        "jack",
+        "sasaki",
+        "page-one",
+        "black-maria",
+        "ulti",
+        "whos-who",
+        "yamato",
+        "kozuki-momonosuke",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "nekomamushi",
+        "carrot",
+        "hyogoro",
+        "tony-tony-chopper",
+        "marco",
+        "nami",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "usopp"
+      ]
+    },
+    {
+      "number": 1073,
+      "title": {
+        "en": "No Way Out! A Hellish Scene on Onigashima",
+        "ja": "逃げ場なし！地獄絵図の鬼ヶ島"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1046
+      ],
+      "airDate": {
+        "ja": "2023-08-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "jack",
+        "inuarashi",
+        "vinsmoke-sanji",
+        "queen",
+        "roronoa-zoro",
+        "king",
+        "tony-tony-chopper",
+        "nami",
+        "brook",
+        "nico-robin",
+        "jinbe",
+        "raizo",
+        "scratchmen-apoo",
+        "usopp",
+        "kikunojo",
+        "kinemon",
+        "franky",
+        "kawamatsu",
+        "kurozumi-kanjuro",
+        "killer",
+        "yamato",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 1074,
+      "title": {
+        "en": "I Trust Momo - Luffy's Final Powerful Technique!",
+        "ja": "モモを信じる ルフィ最後の大技！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1047
+      ],
+      "airDate": {
+        "ja": "2023-09-03"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "yamato",
+        "kozuki-toki",
+        "kozuki-hiyori",
+        "raizo",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "kawamatsu",
+        "kikunojo",
+        "monkey-d-luffy",
+        "kaido",
+        "kozuki-oden",
+        "kurozumi-orochi",
+        "hyogoro",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "usopp"
+      ]
+    },
+    {
+      "number": 1075,
+      "title": {
+        "en": "20 Years Worth of Prayers! Take Back the Land of Wano",
+        "ja": "二十年の祈り！ワノ国を取り戻せ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1048
+      ],
+      "airDate": {
+        "ja": "2023-09-10"
+      },
+      "appearances": [
+        "kaido",
+        "kozuki-momonosuke",
+        "yamato",
+        "monkey-d-luffy",
+        "hyogoro",
+        "usopp",
+        "kawamatsu",
+        "kozuki-oden",
+        "kurozumi-kanjuro",
+        "ashura-doji",
+        "kikunojo",
+        "kinemon",
+        "denjiro",
+        "raizo",
+        "inuarashi",
+        "nekomamushi",
+        "kurozumi-orochi",
+        "shimotsuki-yasuie",
+        "kozuki-toki",
+        "kozuki-hiyori",
+        "izo"
+      ]
+    },
+    {
+      "number": 1076,
+      "title": {
+        "en": "The World That Luffy Wants!",
+        "ja": "ルフィの目指す世界！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1049
+      ],
+      "airDate": {
+        "ja": "2023-09-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "kozuki-momonosuke",
+        "yamato",
+        "hyogoro",
+        "kawamatsu",
+        "nami",
+        "tony-tony-chopper",
+        "eustass-kid",
+        "usopp",
+        "kinemon",
+        "kikunojo",
+        "franky",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "brook",
+        "nico-robin",
+        "edward-newgate",
+        "charlotte-linlin",
+        "king",
+        "izo",
+        "ashura-doji",
+        "denjiro",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "trafalgar-d-water-law",
+        "raizo",
+        "jinbe",
+        "scratchmen-apoo",
+        "kozuki-oden",
+        "inuarashi"
+      ]
+    },
+    {
+      "number": 1077,
+      "title": {
+        "en": "The Curtain Falls! The Winner, Straw Hat Luffy!",
+        "ja": "幕引き！勝者 麦わらのルフィ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1050
+      ],
+      "airDate": {
+        "ja": "2023-09-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "charlotte-linlin",
+        "yamato",
+        "kozuki-momonosuke",
+        "nekomamushi",
+        "kozuki-oden",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "kawamatsu",
+        "kikunojo",
+        "inuarashi",
+        "kinemon",
+        "raizo",
+        "denjiro",
+        "carrot",
+        "usopp",
+        "hyogoro",
+        "kozuki-hiyori",
+        "eustass-kid",
+        "killer",
+        "trafalgar-d-water-law",
+        "scratchmen-apoo",
+        "nami",
+        "marco",
+        "jinbe",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "franky",
+        "roronoa-zoro",
+        "brook",
+        "nico-robin",
+        "shimotsuki-yasuie",
+        "shinobu"
+      ]
+    },
+    {
+      "number": 1078,
+      "title": {
+        "en": "He Returns! The Shogun of the Land of Wano, Kouzuki Momonosuke",
+        "ja": "帰還！ワノ国将軍 光月モモの助"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1051
+      ],
+      "airDate": {
+        "ja": "2023-10-01"
+      },
+      "appearances": [
+        "denjiro",
+        "kozuki-hiyori",
+        "kinemon",
+        "kawamatsu",
+        "inuarashi",
+        "shinobu",
+        "raizo",
+        "nekomamushi",
+        "kikunojo",
+        "kozuki-toki",
+        "usopp",
+        "franky",
+        "brook",
+        "yamato",
+        "nami",
+        "nico-robin",
+        "jinbe",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kozuki-momonosuke",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "carrot",
+        "ashura-doji",
+        "izo",
+        "shimotsuki-yasuie",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 1079,
+      "title": {
+        "en": "The Morning Comes! Luffy and the Others Rest!",
+        "ja": "朝が来た！ルフィ達の休息！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1052
+      ],
+      "airDate": {
+        "ja": "2023-10-15"
+      },
+      "appearances": [
+        "kaido",
+        "charlotte-linlin",
+        "x-drake",
+        "basil-hawkins",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "yamato",
+        "kawamatsu",
+        "kinemon",
+        "marco",
+        "kozuki-hiyori",
+        "kozuki-momonosuke",
+        "kikunojo",
+        "nekomamushi",
+        "brook",
+        "nami",
+        "vinsmoke-sanji",
+        "jinbe",
+        "shinobu",
+        "carrot",
+        "usopp",
+        "franky",
+        "killer",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "scratchmen-apoo"
+      ]
+    },
+    {
+      "number": 1080,
+      "title": {
+        "en": "A Celebration Banquet! The New Emperors of the Sea!",
+        "ja": "祝祭の宴！新しき海の皇帝達！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1053
+      ],
+      "airDate": {
+        "ja": "2023-10-22"
+      },
+      "appearances": [
+        "kaido",
+        "charlotte-linlin",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "brook",
+        "nami",
+        "vinsmoke-sanji",
+        "franky",
+        "nico-robin",
+        "usopp",
+        "jinbe",
+        "scratchmen-apoo",
+        "killer",
+        "yamato",
+        "kozuki-hiyori",
+        "queen",
+        "king",
+        "denjiro",
+        "inuarashi",
+        "nekomamushi",
+        "carrot",
+        "kikunojo",
+        "raizo",
+        "hyogoro",
+        "kozuki-momonosuke",
+        "kawamatsu",
+        "shinobu",
+        "kinemon",
+        "buggy",
+        "shanks"
+      ]
+    },
+    {
+      "number": 1081,
+      "title": {
+        "en": "The World Will Burn! The Onslaught of a Navy Admiral!",
+        "ja": "世界が燃える！海軍大将襲来！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1054
+      ],
+      "airDate": {
+        "ja": "2023-10-29"
+      },
+      "appearances": [
+        "shanks",
+        "kozuki-oden",
+        "buggy",
+        "monkey-d-luffy",
+        "eustass-kid",
+        "usopp",
+        "roronoa-zoro",
+        "denjiro",
+        "franky",
+        "brook",
+        "kawamatsu",
+        "shinobu",
+        "yamato",
+        "nami",
+        "vinsmoke-sanji",
+        "jinbe",
+        "inuarashi",
+        "carrot",
+        "nekomamushi",
+        "killer",
+        "raizo",
+        "kozuki-momonosuke",
+        "hyogoro",
+        "whos-who"
+      ]
+    },
+    {
+      "number": 1082,
+      "title": {
+        "en": "The Coming of the New Era! The Red-Haired's Imperial Rage",
+        "ja": "新時代到来！赤髪の皇帝の怒り"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1055
+      ],
+      "airDate": {
+        "ja": "2023-11-05"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "nami",
+        "usopp",
+        "brook",
+        "denjiro",
+        "inuarashi",
+        "yamato",
+        "kozuki-momonosuke",
+        "kawamatsu",
+        "raizo",
+        "nekomamushi",
+        "shinobu",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "jack",
+        "kozuki-oden",
+        "kurozumi-kanjuro",
+        "ashura-doji",
+        "kikunojo",
+        "kinemon",
+        "killer",
+        "monkey-d-luffy",
+        "shanks",
+        "kozuki-toki",
+        "kozuki-hiyori",
+        "franky",
+        "jinbe",
+        "roronoa-zoro",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 1083,
+      "title": {
+        "en": "The World That Moves On! A New Organization, Cross Guild",
+        "ja": "動く世界！新組織クロスギルド"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1056
+      ],
+      "airDate": {
+        "ja": "2023-11-12"
+      },
+      "appearances": [
+        "kikunojo",
+        "kinemon",
+        "raizo",
+        "shinobu",
+        "inuarashi",
+        "nekomamushi",
+        "denjiro",
+        "kawamatsu",
+        "yamato",
+        "kozuki-momonosuke",
+        "carrot",
+        "kozuki-hiyori",
+        "franky",
+        "roronoa-zoro",
+        "nico-robin",
+        "usopp",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "tony-tony-chopper",
+        "jinbe",
+        "brook",
+        "kozuki-oden",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "buggy",
+        "killer"
+      ]
+    },
+    {
+      "number": 1084,
+      "title": {
+        "en": "Time to Depart - The Land of Wano and the Straw Hats",
+        "ja": "旅立ちの時 ワノ国と麦わらの一味"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2023-11-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "trafalgar-d-water-law",
+        "kozuki-oden",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "izo",
+        "kikunojo",
+        "denjiro",
+        "raizo",
+        "ashura-doji",
+        "nekomamushi",
+        "brook",
+        "shinobu",
+        "kawamatsu",
+        "tony-tony-chopper",
+        "nami",
+        "inuarashi",
+        "king",
+        "carrot",
+        "jinbe",
+        "charlotte-linlin",
+        "shimotsuki-yasuie",
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "franky",
+        "usopp",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "portgas-d-ace",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 1085,
+      "title": {
+        "en": "The Last Curtain! Luffy and Momonosuke's Vow",
+        "ja": "終幕！ルフィとモモの助の誓い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1057
+      ],
+      "airDate": {
+        "ja": "2023-11-26"
+      },
+      "appearances": [
+        "ashura-doji",
+        "kozuki-momonosuke",
+        "yamato",
+        "kinemon",
+        "kaido",
+        "monkey-d-luffy",
+        "usopp",
+        "kurozumi-kanjuro",
+        "shinobu",
+        "queen",
+        "king",
+        "jack",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "nami",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "brook",
+        "jinbe",
+        "nico-robin",
+        "franky",
+        "killer",
+        "charlotte-linlin",
+        "kurozumi-orochi",
+        "kozuki-hiyori",
+        "denjiro",
+        "kozuki-oden",
+        "kozuki-toki",
+        "kawamatsu",
+        "kikunojo",
+        "inuarashi",
+        "nekomamushi",
+        "raizo"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "roger-reaches-laugh-tale",
+      "kind": "reveal",
+      "characters": [
+        "gol-d-roger",
+        "kozuki-oden",
+        "edward-newgate"
+      ],
+      "episode": 968,
+      "chapter": 967,
+      "description": {
+        "es": "La tripulación de Roger, con Oden, llega a Laugh Tale; nace el Rey de los Piratas."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "oden-wounds-kaido",
+      "kind": "battle",
+      "characters": [
+        "kozuki-oden",
+        "kaido"
+      ],
+      "episode": 972,
+      "chapter": 970,
+      "description": {
+        "es": "Oden hiere a Kaido con Togen Totsuka antes de la traición de Higurashi."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "oden-boiled-death",
+      "kind": "death",
+      "characters": [
+        "kozuki-oden",
+        "kaido",
+        "kurozumi-orochi"
+      ],
+      "episode": 974,
+      "chapter": 972,
+      "description": {
+        "es": "Oden aguanta una hora en el aceite hirviendo y es ejecutado."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kanjuro-traitor-reveal",
+      "kind": "reveal",
+      "characters": [
+        "kurozumi-kanjuro"
+      ],
+      "episode": 976,
+      "chapter": 974,
+      "description": {
+        "es": "Kanjuro se revela como espía de Orochi."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "jinbe-joins-straw-hats",
+      "kind": "recruitment",
+      "characters": [
+        "jinbe",
+        "monkey-d-luffy"
+      ],
+      "episode": 981,
+      "chapter": 976,
+      "description": {
+        "es": "Jinbe se une oficialmente a los Piratas de Sombrero de Paja."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "yamato-meets-luffy",
+      "kind": "reveal",
+      "characters": [
+        "yamato",
+        "monkey-d-luffy"
+      ],
+      "episode": 991,
+      "chapter": 984,
+      "description": {
+        "es": "Yamato, hijo de Kaido, se presenta como seguidor de Oden y se alía con Luffy."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "minks-sulong-transformation",
+      "kind": "transformation",
+      "characters": [
+        "inuarashi",
+        "nekomamushi",
+        "carrot"
+      ],
+      "episode": 997,
+      "chapter": 987,
+      "description": {
+        "es": "Los minks se transforman en Sulong bajo la luna llena."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "scabbards-strike-kaido",
+      "kind": "battle",
+      "characters": [
+        "kinemon",
+        "kikunojo",
+        "kawamatsu",
+        "raizo",
+        "denjiro",
+        "ashura-doji",
+        "inuarashi",
+        "nekomamushi",
+        "kaido"
+      ],
+      "episode": 1004,
+      "chapter": 992,
+      "description": {
+        "es": "Los Akazaya hieren a Kaido con la técnica heredada de Oden."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "rooftop-worst-generation-vs-emperors",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "killer",
+        "kaido",
+        "charlotte-linlin"
+      ],
+      "episode": 1016,
+      "chapter": 1001,
+      "description": {
+        "es": "Luffy, Zoro, Law, Kid y Killer se enfrentan a Kaido y Big Mom en el tejado."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "chopper-cures-ice-oni",
+      "kind": "other",
+      "characters": [
+        "tony-tony-chopper",
+        "marco"
+      ],
+      "episode": 1023,
+      "chapter": 1007,
+      "description": {
+        "es": "Chopper dispersa la vacuna contra el virus Ice Oni."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-conquerors-haki-coating",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "kaido"
+      ],
+      "episode": 1028,
+      "chapter": 1010,
+      "description": {
+        "es": "Luffy recubre sus golpes de Haki del Rey y hiere a Kaido."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-falls-to-kaido",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "kaido"
+      ],
+      "episode": 1034,
+      "chapter": 1014,
+      "description": {
+        "es": "Kaido derrota a Luffy y lo arroja al mar."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "jinbe-defeats-whos-who",
+      "kind": "battle",
+      "characters": [
+        "jinbe",
+        "whos-who"
+      ],
+      "episode": 1040,
+      "chapter": 1018,
+      "description": {
+        "es": "Jinbe derrota a Who's-Who."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "robin-demonio-fleur",
+      "kind": "transformation",
+      "characters": [
+        "nico-robin",
+        "black-maria"
+      ],
+      "episode": 1044,
+      "chapter": 1021,
+      "description": {
+        "es": "Robin despierta Demonio Fleur y vence a Black Maria."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "momonosuke-adult-dragon",
+      "kind": "transformation",
+      "characters": [
+        "kozuki-momonosuke",
+        "shinobu"
+      ],
+      "episode": 1047,
+      "chapter": 1023,
+      "description": {
+        "es": "Shinobu envejece a Momonosuke 20 años para que sostenga Onigashima."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-germa-exoskeleton",
+      "kind": "transformation",
+      "characters": [
+        "vinsmoke-sanji",
+        "queen"
+      ],
+      "episode": 1057,
+      "chapter": 1031,
+      "description": {
+        "es": "Se manifiesta en Sanji el exoesqueleto Germa: su cuerpo resiste y sana."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-awakens-conquerors-haki",
+      "kind": "transformation",
+      "characters": [
+        "roronoa-zoro",
+        "king"
+      ],
+      "episode": 1060,
+      "chapter": 1033,
+      "description": {
+        "es": "Zoro domina a Enma y revela que posee Haki del Rey."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-defeats-queen",
+      "kind": "battle",
+      "characters": [
+        "vinsmoke-sanji",
+        "queen"
+      ],
+      "episode": 1061,
+      "chapter": 1035,
+      "description": {
+        "es": "Sanji vence a Queen con Ifrit Jambe."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-defeats-king",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "king"
+      ],
+      "episode": 1062,
+      "chapter": 1035,
+      "description": {
+        "es": "Zoro derrota a King con Rengoku Oni Giri."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "law-kid-defeat-big-mom",
+      "kind": "battle",
+      "characters": [
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "charlotte-linlin"
+      ],
+      "episode": 1067,
+      "chapter": 1040,
+      "description": {
+        "es": "Law y Kid derrotan a Big Mom con sus técnicas despertadas."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-gear-5-awakening",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "kaido"
+      ],
+      "episode": 1071,
+      "chapter": 1044,
+      "description": {
+        "es": "Luffy despierta su fruta, la Hito Hito no Mi modelo Nika: Gear 5."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kaido-defeated",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "kaido"
+      ],
+      "episode": 1076,
+      "chapter": 1049,
+      "description": {
+        "es": "Luffy derrota a Kaido con Gomu Gomu no Bajrang Gun."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "momonosuke-becomes-shogun",
+      "kind": "other",
+      "characters": [
+        "kozuki-momonosuke"
+      ],
+      "episode": 1078,
+      "chapter": 1051,
+      "description": {
+        "es": "Momonosuke se proclama shogun de Wano."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "post-wano-bounties",
+      "kind": "bounty",
+      "characters": [
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "jinbe",
+        "nico-robin",
+        "franky",
+        "brook",
+        "nami",
+        "usopp",
+        "tony-tony-chopper",
+        "buggy"
+      ],
+      "episode": 1080,
+      "chapter": 1053,
+      "description": {
+        "es": "Nuevas recompensas tras Wano: Luffy, Kid y Law a 3.000 millones; Luffy y Buggy, nuevos Emperadores."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "shanks-repels-ryokugyu",
+      "kind": "other",
+      "characters": [
+        "shanks"
+      ],
+      "episode": 1082,
+      "chapter": 1055,
+      "description": {
+        "es": "El Haki de Shanks frena al almirante Ryokugyu en Wano."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_<n> (infobox Chapters/Airdate/Characters)",
+      "field": "episodes"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc#Acts",
+      "field": "episodeRange (actos oficiales; interludios ep 917 -> acto 2, 957 -> acto 2, 958 -> acto 3; rellenos 895-896, 907, 1029-1030 en arcos aparte)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[1084].canon (AnimeFillerList: anime canon, sin capítulo adaptado)"
+    }
+  ]
+}

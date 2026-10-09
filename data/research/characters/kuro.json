@@ -1,0 +1,85 @@
+{
+  "slug": "kuro",
+  "name": {
+    "en": "Kuro",
+    "ja": "クロ"
+  },
+  "origin": null,
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 23,
+    "episode": 9
+  },
+  "affiliations": [
+    {
+      "group": "black-cat-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 9,
+        "chapter": 23
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 16000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "kuro-klahadore",
+      "name": {
+        "es": "Klahadore",
+        "en": "Klahadore",
+        "ja": "クラハドール"
+      },
+      "firstAppearance": {
+        "episode": 9,
+        "chapter": 23
+      },
+      "description": {
+        "es": "Disfrazado de mayordomo de Kaya en el Pueblo Syrup."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "kuro-thousand-plans",
+      "name": {
+        "es": "Kuro de los Mil Planes",
+        "en": "Kuro of a Hundred Plans",
+        "ja": "百計のクロ"
+      },
+      "firstAppearance": {
+        "episode": 14,
+        "chapter": 33
+      },
+      "description": {
+        "es": "Capitán con garras de gato y Nuki Ashi."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Nuki Ashi",
+        "Shakushi"
+      ]
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kuro",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kuro",
+      "field": "bounties[16000000] (Databook, sin capítulo) (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kuro",
+      "field": "forms[kuro-thousand-plans].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

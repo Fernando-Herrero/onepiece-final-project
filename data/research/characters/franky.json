@@ -1,0 +1,158 @@
+{
+  "slug": "franky",
+  "name": {
+    "en": "Franky",
+    "ja": "フランキー"
+  },
+  "origin": "south-blue",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 329,
+    "episode": 233
+  },
+  "affiliations": [
+    {
+      "group": "franky-family",
+      "role": "boss",
+      "from": {
+        "episode": 233,
+        "chapter": 329
+      },
+      "to": {
+        "episode": 324,
+        "chapter": 439
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "shipwright",
+      "from": {
+        "episode": 324,
+        "chapter": 439
+      },
+      "to": null
+    },
+    {
+      "group": "straw-hat-grand-fleet",
+      "role": "senior-officer",
+      "from": {
+        "episode": 746,
+        "chapter": 800
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 44000000,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 94000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 394000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "franky-pre-timeskip",
+      "name": {
+        "es": "Franky (pre-salto temporal)",
+        "en": "Franky (Pre-Timeskip)",
+        "ja": "フランキー"
+      },
+      "firstAppearance": {
+        "episode": 233,
+        "chapter": 329
+      },
+      "description": {
+        "es": "Cyborg funcionando a cola, jefe de la Franky Family."
+      },
+      "suggestedRarity": "common",
+      "abilities": [
+        "Fresh Fire",
+        "Strong Right"
+      ]
+    },
+    {
+      "slug": "franky-post-timeskip",
+      "name": {
+        "es": "Franky (post-salto temporal)",
+        "en": "Franky (Post-Timeskip)",
+        "ja": "フランキー"
+      },
+      "firstAppearance": {
+        "episode": 514,
+        "chapter": 596
+      },
+      "description": {
+        "es": "Cuerpo Iron Pirate (BF-37) reconstruido en Baldimore."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Radical Beam",
+        "Franky Nipple Light"
+      ]
+    },
+    {
+      "slug": "general-franky",
+      "name": {
+        "es": "General Franky",
+        "en": "Iron Pirate General Franky",
+        "ja": "将軍フランキー"
+      },
+      "firstAppearance": {
+        "episode": 621,
+        "chapter": 695
+      },
+      "description": {
+        "es": "Armadura mecánica pilotada (Iron Pirate General Franky)."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "franky-shogun",
+      "name": {
+        "es": "Franky Shogun",
+        "en": "Iron Pirate Franky Shogun",
+        "ja": "フランキー将軍"
+      },
+      "firstAppearance": {
+        "episode": 668,
+        "chapter": 739
+      },
+      "description": {
+        "es": "Robot gigante formado por la unión de General Franky y sus vehículos."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Franky/Abilities_and_Powers",
+      "field": "forms[general-franky,franky-post-timeskip]"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Franky",
+      "field": "firstAppearance, affiliations, forms[franky-shogun] (cap/ep de memoria, verificar)"
+    }
+  ]
+}

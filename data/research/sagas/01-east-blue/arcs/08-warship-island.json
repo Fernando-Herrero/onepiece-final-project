@@ -1,0 +1,244 @@
+{
+  "slug": "warship-island",
+  "sagaSlug": "east-blue",
+  "order": 8,
+  "title": {
+    "es": "Isla Buque de Guerra",
+    "en": "Warship Island Arc",
+    "ja": "軍艦島編"
+  },
+  "summary": {
+    "es": "Relleno: los Sombrero de Paja protegen a Apis y al dragón milenario Ryuji de la Marina hasta llegar a la Isla Perdida."
+  },
+  "type": "filler",
+  "chapterRange": null,
+  "episodeRange": {
+    "first": 54,
+    "last": 61
+  },
+  "chapters": [],
+  "episodes": [
+    {
+      "number": 54,
+      "title": {
+        "en": "Foreboding of a New Adventure! The Puzzling Girl, Apis",
+        "ja": "新たなる冒険の予感！謎の少女アピス"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-01-17"
+      },
+      "appearances": [
+        "apis",
+        "eric",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "usopp",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 55,
+      "title": {
+        "en": "The Holy Beast! Apis' Secret and the Legendary Island",
+        "ja": "奇跡の生物！アピスの秘密と伝説の島"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-01-24"
+      },
+      "appearances": [
+        "apis",
+        "nami",
+        "roronoa-zoro",
+        "usopp",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "eric"
+      ]
+    },
+    {
+      "number": 56,
+      "title": {
+        "en": "Eric's Raid! Great Escape from Warship Island!",
+        "ja": "エリック出撃！軍艦島からの大脱出！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-01-31"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "eric",
+        "apis"
+      ]
+    },
+    {
+      "number": 57,
+      "title": {
+        "en": "Lone Island in a Distant Sea! The Legendary Lost Island",
+        "ja": "絶海の孤島！伝説のロストアイランド"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-02-07"
+      },
+      "appearances": [
+        "eric",
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "apis",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 58,
+      "title": {
+        "en": "Duel in the Ruins! Strained Zoro vs. Eric",
+        "ja": "廃墟の決闘！緊迫のゾロ対エリック！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-02-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "vinsmoke-sanji",
+        "apis",
+        "eric"
+      ]
+    },
+    {
+      "number": 59,
+      "title": {
+        "en": "Luffy, Completely Surrounded! Admiral Nelson's Secret Plan",
+        "ja": "ルフィ完全包囲！提督ネルソンの秘策"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-02-21"
+      },
+      "appearances": [
+        "eric",
+        "usopp",
+        "apis",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 60,
+      "title": {
+        "en": "Those Who Soar in the Open Skies! Revival of the 1000 Year Legend",
+        "ja": "大空を舞うもの！蘇る千年の伝説！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-02-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "apis",
+        "nami",
+        "usopp",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "eric"
+      ]
+    },
+    {
+      "number": 61,
+      "title": {
+        "en": "Angry Finale! Cross the Red Line!",
+        "ja": "怒りの決着！赤い大陸を乗り越えろ！"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        101
+      ],
+      "airDate": {
+        "ja": "2001-03-07"
+      },
+      "appearances": [
+        "apis",
+        "monkey-d-luffy",
+        "eric",
+        "nami",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "usopp"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "zoro-vs-eric",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "eric"
+      ],
+      "episode": 58,
+      "chapter": null,
+      "description": {
+        "es": "Zoro vence a Eric en las ruinas."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "ryuji-revival",
+      "kind": "other",
+      "characters": [
+        "apis",
+        "monkey-d-luffy"
+      ],
+      "episode": 60,
+      "chapter": null,
+      "description": {
+        "es": "Renace la leyenda del dragón milenario."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Warship_Island_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/East_Blue_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_54",
+      "field": "episodes.adaptsChapters,episodes.appearances (rendered Statistics + Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "ep 61 mixed (entrada a Reverse Mountain, cap. 101); 55 filler aunque Fandom cita el cap. 101"
+    }
+  ]
+}

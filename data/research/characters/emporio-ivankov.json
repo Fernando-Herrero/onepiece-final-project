@@ -1,0 +1,109 @@
+{
+  "slug": "emporio-ivankov",
+  "name": {
+    "en": "Emporio Ivankov",
+    "ja": "エンポリオ・イワンコフ"
+  },
+  "origin": "desconocido",
+  "fruit": "horu-horu-no-mi",
+  "firstAppearance": {
+    "episode": 438,
+    "chapter": 537
+  },
+  "affiliations": [
+    {
+      "group": "newkama-land",
+      "role": "reina",
+      "from": {
+        "episode": 438,
+        "chapter": 537
+      },
+      "to": {
+        "episode": 455,
+        "chapter": 547
+      }
+    },
+    {
+      "group": "revolutionary-army",
+      "role": "comandante del Ejército G",
+      "from": {
+        "episode": 438,
+        "chapter": 537
+      },
+      "to": null
+    },
+    {
+      "group": "kamabakka-kingdom",
+      "role": "reina",
+      "from": {
+        "episode": 509,
+        "chapter": 593
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 100000000,
+      "episode": 438,
+      "chapter": 536,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "emporio-ivankov-queen",
+      "name": {
+        "es": "Ivankov, reina de Newkama Land",
+        "en": "Queen Ivankov",
+        "ja": "イワンコフ女王"
+      },
+      "firstAppearance": {
+        "episode": 438,
+        "chapter": 537
+      },
+      "description": {
+        "es": "Reina del nivel 5.5 de Impel Down; salva a Luffy con hormonas."
+      },
+      "abilities": [
+        "Horu Horu no Mi",
+        "Death Wink"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "emporio-ivankov-female",
+      "name": {
+        "es": "Ivankov forma femenina",
+        "en": "Ivankov (female)",
+        "ja": "イワ子"
+      },
+      "firstAppearance": {
+        "episode": 446,
+        "chapter": 540
+      },
+      "description": {
+        "es": "Se transforma en mujer con sus propias hormonas."
+      },
+      "abilities": [
+        "Horu Horu no Mi"
+      ],
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Emporio_Ivankov",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Emporio_Ivankov",
+      "field": "bounties[0] (al menos 100M)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Emporio_Ivankov",
+      "field": "affiliations[*], forms[emporio-ivankov-female] (dudoso)"
+    }
+  ]
+}

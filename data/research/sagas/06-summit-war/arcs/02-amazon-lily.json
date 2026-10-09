@@ -1,0 +1,520 @@
+{
+  "slug": "amazon-lily",
+  "sagaSlug": "summit-war",
+  "order": 2,
+  "title": {
+    "es": "Arco de Amazon Lily",
+    "en": "Amazon Lily Arc",
+    "ja": null
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 514,
+    "last": 524
+  },
+  "episodeRange": {
+    "first": 408,
+    "last": 421
+  },
+  "episodes": [
+    {
+      "number": 408,
+      "title": {
+        "es": null,
+        "en": "Landing! No-Boys-Allowed Island Amazon Lily",
+        "ja": "上陸！男子禁制の島アマゾン・リリー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        514
+      ],
+      "airDate": {
+        "ja": "2009-07-05"
+      },
+      "appearances": [
+        "camie",
+        "hatchan",
+        "monkey-d-luffy",
+        "bartholomew-kuma",
+        "sentomaru",
+        "borsalino",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "brook",
+        "sanji",
+        "franky",
+        "tony-tony-chopper",
+        "nico-robin",
+        "monkey-d-garp"
+      ]
+    },
+    {
+      "number": 409,
+      "title": {
+        "es": null,
+        "en": "Hurry! Back to the Crew - Adventure on the Isle of Women",
+        "ja": "急げ！仲間のもとへ 女ヶ島の冒険"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        515
+      ],
+      "airDate": {
+        "ja": "2009-07-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartholomew-kuma",
+        "roronoa-zoro",
+        "brook",
+        "usopp",
+        "sanji",
+        "franky",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "boa-hancock",
+        "boa-sandersonia",
+        "boa-marigold"
+      ]
+    },
+    {
+      "number": 410,
+      "title": {
+        "es": null,
+        "en": "Everyone's Drunk on Love! Pirate Empress Hancock",
+        "ja": "みんなメロメロ！海賊女帝ハンコック"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        516
+      ],
+      "airDate": {
+        "ja": "2009-07-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "sentomaru",
+        "borsalino",
+        "roronoa-zoro",
+        "bartholomew-kuma",
+        "boa-hancock",
+        "nami",
+        "usopp",
+        "boa-marigold",
+        "boa-sandersonia",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 411,
+      "title": {
+        "es": null,
+        "en": "The Secret Hidden on Their Backs - Luffy Encounters the Snake Princess",
+        "ja": "背中に隠された秘密 遭遇ルフィと蛇姫"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        517
+      ],
+      "airDate": {
+        "ja": "2009-08-02"
+      },
+      "appearances": [
+        "boa-hancock",
+        "boa-marigold",
+        "boa-sandersonia",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 412,
+      "title": {
+        "es": null,
+        "en": "The Heartless Judgment! Marguerite Turned to Stone!!",
+        "ja": "非情の裁き！石にされたマーガレット！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        518
+      ],
+      "airDate": {
+        "ja": "2009-08-09"
+      },
+      "appearances": [
+        "boa-sandersonia",
+        "monkey-d-luffy",
+        "boa-hancock",
+        "usopp"
+      ]
+    },
+    {
+      "number": 413,
+      "title": {
+        "es": null,
+        "en": "Luffy's Hard Trial! The Power of the Snake Sisters' Haki!!",
+        "ja": "ルフィ第苦戦！ヘビ姉妹の覇気の力！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        519
+      ],
+      "airDate": {
+        "ja": "2009-08-16"
+      },
+      "appearances": [
+        "boa-hancock",
+        "boa-marigold",
+        "boa-sandersonia",
+        "monkey-d-luffy",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 414,
+      "title": {
+        "es": null,
+        "en": "Battle with Full-Powered Abilities!! Gomu Gomu vs. Hebi Hebi",
+        "ja": "能力全開バトル！！ゴムゴムVSヘビヘビ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        520
+      ],
+      "airDate": {
+        "ja": "2009-08-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "boa-marigold",
+        "boa-sandersonia",
+        "boa-hancock"
+      ]
+    },
+    {
+      "number": 415,
+      "title": {
+        "es": null,
+        "en": "Hancock's Confession - The Sisters' Disgusting Past",
+        "ja": "ハンコックの告白　姉妹の忌まわしき過去"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        521
+      ],
+      "airDate": {
+        "ja": "2009-08-30"
+      },
+      "appearances": [
+        "boa-sandersonia",
+        "monkey-d-luffy",
+        "boa-hancock",
+        "boa-marigold",
+        "hatchan",
+        "buggy",
+        "tony-tony-chopper",
+        "nico-robin",
+        "brook",
+        "camie",
+        "nami"
+      ]
+    },
+    {
+      "number": 416,
+      "title": {
+        "es": null,
+        "en": "Rescue Ace! The New Destination is the Great Prison",
+        "ja": "エースを救え！新たな目的地は大監獄"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        522
+      ],
+      "airDate": {
+        "ja": "2009-09-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "boa-marigold",
+        "boa-sandersonia",
+        "buggy",
+        "marshall-d-teach",
+        "portgas-d-ace",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "kuzan",
+        "borsalino",
+        "sakazuki",
+        "dracule-mihawk",
+        "donquixote-doflamingo",
+        "bartholomew-kuma",
+        "gecko-moria",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 417,
+      "title": {
+        "es": null,
+        "en": "Love is a Hurricane! Hancock in Love",
+        "ja": "恋はハリケーン！メロメロハンコック"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        522,
+        523
+      ],
+      "airDate": {
+        "ja": "2009-09-13"
+      },
+      "appearances": [
+        "boa-sandersonia",
+        "boa-marigold",
+        "boa-hancock",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "nami",
+        "franky",
+        "usopp",
+        "nico-robin",
+        "roronoa-zoro",
+        "sanji",
+        "brook",
+        "sengoku",
+        "dracule-mihawk",
+        "bartholomew-kuma",
+        "donquixote-doflamingo",
+        "gecko-moria",
+        "marshall-d-teach",
+        "jinbe",
+        "monkey-d-garp",
+        "edward-newgate",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 418,
+      "title": {
+        "es": null,
+        "en": "The Crewmates' Whereabouts - Weather Science and Karakuri Island",
+        "ja": "仲間達の行方　天候の科学とからくり島"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        523
+      ],
+      "airDate": {
+        "ja": "2009-09-20"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "brook",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "monkey-d-luffy",
+        "boa-hancock",
+        "nami",
+        "franky"
+      ]
+    },
+    {
+      "number": 419,
+      "title": {
+        "es": null,
+        "en": "The Crewmates' Whereabouts - The Island of Giant Birds and the Pink Paradise!",
+        "ja": "仲間達の行方　巨鳥の島と桃色の楽園"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        523,
+        524
+      ],
+      "airDate": {
+        "ja": "2009-09-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "sentomaru",
+        "borsalino",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "brook",
+        "sanji",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 420,
+      "title": {
+        "es": null,
+        "en": "The Crewmates' Whereabouts - The Bridge that Connects Islands and Man-Eating Plants",
+        "ja": "仲間達の行方　島をつなぐ橋と食人植物"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        524
+      ],
+      "airDate": {
+        "ja": "2009-10-04"
+      },
+      "appearances": [
+        "boa-hancock",
+        "monkey-d-luffy",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "sanji",
+        "tony-tony-chopper",
+        "franky",
+        "brook"
+      ]
+    },
+    {
+      "number": 421,
+      "title": {
+        "es": null,
+        "en": " The Crewmates' Whereabouts - The Negative Princess and the Devil King!",
+        "ja": "仲間達の行方！ネガティブ王女と悪魔王！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        524
+      ],
+      "airDate": {
+        "ja": "2009-10-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "boa-hancock",
+        "nico-robin",
+        "nami",
+        "bartholomew-kuma",
+        "roronoa-zoro",
+        "usopp",
+        "sanji",
+        "franky",
+        "brook",
+        "kuzan",
+        "borsalino",
+        "sengoku",
+        "donquixote-doflamingo",
+        "marshall-d-teach",
+        "dracule-mihawk",
+        "gecko-moria",
+        "portgas-d-ace",
+        "monkey-d-garp",
+        "edward-newgate"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-meets-boa-hancock",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "boa-hancock"
+      ],
+      "episode": 410,
+      "chapter": 516,
+      "description": {
+        "es": "Luffy conoce a la Emperatriz Pirata."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-gorgon-sisters",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "boa-sandersonia",
+        "boa-marigold"
+      ],
+      "episode": 413,
+      "chapter": 519,
+      "description": {
+        "es": "Luffy pelea contra las hermanas Gorgona en la arena."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-awakens-conquerors-haki",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 413,
+      "chapter": 519,
+      "description": {
+        "es": "Luffy manifiesta por primera vez el Haki del Rey de forma consciente ante Hancock."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "gorgon-sisters-mark-reveal",
+      "kind": "reveal",
+      "characters": [
+        "boa-hancock",
+        "boa-sandersonia",
+        "boa-marigold"
+      ],
+      "episode": 415,
+      "chapter": 521,
+      "description": {
+        "es": "Hancock revela el pasado de las hermanas como esclavas de los Dragones Celestiales."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "ace-execution-news",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "boa-hancock"
+      ],
+      "episode": 416,
+      "chapter": 522,
+      "description": {
+        "es": "Luffy se entera de que Ace va a ser ejecutado."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Summit_War_Saga",
+      "field": "episodes.title,episodes.airDate,episodeRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Amazon_Lily_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_490",
+      "field": "episodes.adaptsChapters (secciones \"Anime:\" de cada página Chapter_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_385",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "slug": "return-to-sabaody",
+  "sagaSlug": "fish-man-island",
+  "order": 1,
+  "title": {
+    "es": "Regreso a Sabaody",
+    "en": "Return to Sabaody Arc"
+  },
+  "summary": {
+    "es": "Dos años después de Marineford, los Mugiwara se reencuentran en el archipiélago Sabaody con sus nuevas formas, se enfrentan a la tripulación falsa de los Sombrero de Paja y a los Pacifista, y parten hacia el Nuevo Mundo con el Sunny recubierto."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 598,
+    "last": 602
+  },
+  "chapters": [
+    {
+      "number": 598,
+      "title": {
+        "en": "2 Years Later",
+        "ja": "2年後"
+      }
+    },
+    {
+      "number": 599,
+      "title": {
+        "en": "Nine Pirates",
+        "ja": "九人の海賊"
+      }
+    },
+    {
+      "number": 600,
+      "title": {
+        "en": "Island of New Beginnings",
+        "ja": "再出発の島"
+      }
+    },
+    {
+      "number": 601,
+      "title": {
+        "en": "Romance Dawn For the New World: The Dawn of an Adventure into a New World",
+        "ja": "ROMANCE DAWN for the new world ―新しい世界への冒険の夜明け―"
+      }
+    },
+    {
+      "number": 602,
+      "title": {
+        "en": "Downward Ho!!",
+        "ja": "下舵いっぱい!!"
+      }
+    }
+  ],
+  "episodeRange": {
+    "first": 517,
+    "last": 522
+  },
+  "episodes": [
+    {
+      "number": 517,
+      "title": {
+        "en": "The Beginning of The New Chapter! The Straw Hats Reunited!",
+        "ja": "新章開幕 再集結！麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        598
+      ],
+      "airDate": {
+        "ja": "2011-10-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "boa-hancock",
+        "silvers-rayleigh",
+        "roronoa-zoro",
+        "nami",
+        "brook",
+        "vinsmoke-sanji",
+        "caribou",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 518,
+      "title": {
+        "en": "An Explosive Situation! Luffy vs. Fake Luffy!",
+        "ja": "一触即発！ルフィVSニセルフィ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        598,
+        599
+      ],
+      "airDate": {
+        "ja": "2011-10-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "boa-hancock",
+        "vinsmoke-sanji",
+        "brook",
+        "silvers-rayleigh",
+        "tony-tony-chopper",
+        "nico-robin",
+        "usopp",
+        "nami",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 519,
+      "title": {
+        "en": "The Navy Has Set Out! The Straw Hats in Danger!",
+        "ja": "海軍出動 狙われた麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        599
+      ],
+      "airDate": {
+        "ja": "2011-10-16"
+      },
+      "appearances": [
+        "nico-robin",
+        "franky",
+        "brook",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "sentomaru",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "caribou"
+      ]
+    },
+    {
+      "number": 520,
+      "title": {
+        "en": "Big Guns Assembled! The Danger of the Fake Straw Hats!",
+        "ja": "大物集結 ニセ麦わら一味の脅威"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        599,
+        600
+      ],
+      "airDate": {
+        "ja": "2011-10-23"
+      },
+      "appearances": [
+        "brook",
+        "caribou",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "usopp",
+        "franky",
+        "nico-robin",
+        "nami",
+        "silvers-rayleigh",
+        "roronoa-zoro",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 521,
+      "title": {
+        "en": "The Battle is on! Show Them What You Got From Training!",
+        "ja": "戦闘開始！見せろ修行の成果！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        600
+      ],
+      "airDate": {
+        "ja": "2011-10-30"
+      },
+      "appearances": [
+        "silvers-rayleigh",
+        "nami",
+        "usopp",
+        "nico-robin",
+        "tony-tony-chopper",
+        "franky",
+        "brook",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "caribou",
+        "monkey-d-luffy",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 522,
+      "title": {
+        "en": "Everyone Together! Luffy, Setting Out for the New World!",
+        "ja": "全員集合 ルフィ新世界への船出"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        601,
+        602
+      ],
+      "airDate": {
+        "ja": "2011-11-06"
+      },
+      "appearances": [
+        "boa-hancock",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "silvers-rayleigh",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "nico-robin",
+        "brook",
+        "franky",
+        "tony-tony-chopper"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-post-timeskip-return",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "boa-hancock"
+      ],
+      "episode": 517,
+      "chapter": 598,
+      "description": {
+        "es": "Luffy recupera su sombrero en Rusukaina y vuelve a Sabaody con su aspecto post-timeskip."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-post-timeskip-return",
+      "kind": "transformation",
+      "characters": [
+        "roronoa-zoro"
+      ],
+      "episode": 517,
+      "chapter": 598,
+      "description": {
+        "es": "Zoro llega a Sabaody tras dos años con Mihawk, con la cicatriz en el ojo izquierdo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nami-post-timeskip-return",
+      "kind": "transformation",
+      "characters": [
+        "nami"
+      ],
+      "episode": 517,
+      "chapter": 598,
+      "description": {
+        "es": "Nami regresa de Weatheria con el nuevo Sorcery Clima-Tact."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-post-timeskip-return",
+      "kind": "transformation",
+      "characters": [
+        "vinsmoke-sanji"
+      ],
+      "episode": 517,
+      "chapter": 598,
+      "description": {
+        "es": "Sanji escapa del Reino Kamabakka y vuelve con su nuevo aspecto."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-post-timeskip-return",
+      "kind": "transformation",
+      "characters": [
+        "usopp"
+      ],
+      "episode": 517,
+      "chapter": 598,
+      "description": {
+        "es": "Usopp vuelve musculado tras entrenar en la isla Boin con Heracles."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "chopper-post-timeskip-return",
+      "kind": "transformation",
+      "characters": [
+        "tony-tony-chopper"
+      ],
+      "episode": 518,
+      "chapter": 598,
+      "description": {
+        "es": "Chopper reaparece tras estudiar medicina en Torino."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "brook-soul-king-concert",
+      "kind": "transformation",
+      "characters": [
+        "brook"
+      ],
+      "episode": 519,
+      "chapter": 599,
+      "description": {
+        "es": "Brook, convertido en el Soul King, da su concierto de despedida en Sabaody."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "robin-post-timeskip-return",
+      "kind": "transformation",
+      "characters": [
+        "nico-robin"
+      ],
+      "episode": 519,
+      "chapter": 599,
+      "description": {
+        "es": "Robin llega a Sabaody tras dos años con el Ejército Revolucionario."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "franky-new-body-bf37",
+      "kind": "transformation",
+      "characters": [
+        "franky"
+      ],
+      "episode": 520,
+      "chapter": 599,
+      "description": {
+        "es": "Franky muestra su nuevo cuerpo cyborg BF-37 construido con la tecnología de Vegapunk."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-conquerors-haki-sabaody",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-luffy",
+        "caribou"
+      ],
+      "episode": 521,
+      "chapter": 600,
+      "description": {
+        "es": "Luffy deja inconscientes a decenas de piratas con el Haki del Rey."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-pacifista",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "sentomaru"
+      ],
+      "episode": 521,
+      "chapter": 600,
+      "description": {
+        "es": "Luffy, Zoro y Sanji destruyen un Pacifista en segundos con sus nuevas técnicas."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "straw-hats-set-sail-new-world",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "silvers-rayleigh"
+      ],
+      "episode": 522,
+      "chapter": 602,
+      "description": {
+        "es": "Los nueve Mugiwara reunidos zarpan bajo el mar en el Sunny recubierto."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Return_to_Sabaody_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Fish-Man_Island_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_517",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_574",
+      "field": "episodes.adaptsChapters: el wiki no expone capitulo por episodio salvo 574; el resto es reparto aproximado por orden argumental"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Fish-Man_Island_Saga",
+      "field": "episodes.airDate 575-578: extrapolado semanalmente desde 574, dudoso"
+    }
+  ]
+}

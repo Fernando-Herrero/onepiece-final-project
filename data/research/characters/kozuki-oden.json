@@ -1,0 +1,133 @@
+{
+  "slug": "kozuki-oden",
+  "name": {
+    "en": "Kozuki Oden",
+    "ja": "光月おでん"
+  },
+  "origin": "Wano (Kuri)",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 910,
+    "chapter": 920
+  },
+  "affiliations": [
+    {
+      "group": "kouzuki-family",
+      "role": "daimyo de Kuri",
+      "from": {
+        "episode": 960,
+        "chapter": 961
+      },
+      "to": {
+        "episode": 973,
+        "chapter": 972
+      }
+    },
+    {
+      "group": "whitebeard-pirates",
+      "role": "comandante de la 2.ª división",
+      "from": {
+        "episode": 962,
+        "chapter": 963
+      },
+      "to": {
+        "episode": 966,
+        "chapter": 966
+      }
+    },
+    {
+      "group": "roger-pirates",
+      "role": "miembro",
+      "from": {
+        "episode": 966,
+        "chapter": 966
+      },
+      "to": {
+        "episode": 969,
+        "chapter": 968
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": null,
+      "episode": 964,
+      "chapter": 965,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "kozuki-oden-young",
+      "name": {
+        "es": "Oden joven",
+        "en": "Young Oden",
+        "ja": "若き日のおでん"
+      },
+      "firstAppearance": {
+        "episode": 959,
+        "chapter": 960
+      },
+      "description": {
+        "es": "El samurái salvaje de Wano antes de hacerse a la mar."
+      },
+      "abilities": [
+        "Oden Nitoryu",
+        "Haki del Rey"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "kozuki-oden-roger-pirates",
+      "name": {
+        "es": "Oden con los Piratas de Roger",
+        "en": "Oden (Roger Pirates)",
+        "ja": "ロジャー海賊団のおでん"
+      },
+      "firstAppearance": {
+        "episode": 966,
+        "chapter": 966
+      },
+      "description": {
+        "es": "Viaja con Roger hasta Laugh Tale y lee los Poneglyph."
+      },
+      "abilities": [
+        "Togen Totsuka",
+        "Oden Nitoryu"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "kozuki-oden-boiled",
+      "name": {
+        "es": "Oden en la olla hirviendo",
+        "en": "Oden (execution)",
+        "ja": "釜茹でのおでん"
+      },
+      "firstAppearance": {
+        "episode": 972,
+        "chapter": 971
+      },
+      "description": {
+        "es": "Aguanta una hora en la olla para salvar a sus vasallos."
+      },
+      "abilities": [],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kozuki_Oden",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kozuki_Oden",
+      "field": "bounties[0] (cuantía desconocida)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kozuki_Oden",
+      "field": "affiliations[*], forms[*] (dudoso)"
+    }
+  ]
+}

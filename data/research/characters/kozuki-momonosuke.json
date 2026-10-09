@@ -1,0 +1,132 @@
+{
+  "slug": "kozuki-momonosuke",
+  "name": {
+    "en": "Kozuki Momonosuke",
+    "ja": "光月モモの助"
+  },
+  "origin": "Wano",
+  "fruit": "uo-uo-no-mi-model-seiryu",
+  "firstAppearance": {
+    "episode": 609,
+    "chapter": 684
+  },
+  "affiliations": [
+    {
+      "group": "kouzuki-family",
+      "role": "heredero",
+      "from": {
+        "episode": 768,
+        "chapter": 817
+      },
+      "to": null
+    },
+    {
+      "group": "ninja-pirate-mink-samurai-alliance",
+      "role": "líder",
+      "from": {
+        "episode": 772,
+        "chapter": 819
+      },
+      "to": {
+        "episode": 1085,
+        "chapter": 1057
+      }
+    },
+    {
+      "group": "wano-country",
+      "role": "shogun",
+      "from": {
+        "episode": 1078,
+        "chapter": 1051
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "kozuki-momonosuke-dragon",
+      "name": {
+        "es": "Momonosuke dragón",
+        "en": "Momonosuke (dragon)",
+        "ja": "モモの助 (龍)"
+      },
+      "firstAppearance": {
+        "episode": 609,
+        "chapter": 684
+      },
+      "description": {
+        "es": "Dragoncito rosa en Punk Hazard tras comer la fruta artificial de Vegapunk."
+      },
+      "abilities": [
+        "Uo Uo no Mi artificial"
+      ],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "kozuki-momonosuke-child",
+      "name": {
+        "es": "Momonosuke niño",
+        "en": "Momonosuke (child)",
+        "ja": "モモの助 (子供)"
+      },
+      "firstAppearance": {
+        "episode": 624,
+        "chapter": 698
+      },
+      "description": {
+        "es": "Hijo de Oden, viaja con los Sombrero de Paja hasta Wano."
+      },
+      "abilities": [],
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "kozuki-momonosuke-adult",
+      "name": {
+        "es": "Momonosuke adulto",
+        "en": "Momonosuke (adult)",
+        "ja": "モモの助 (大人)"
+      },
+      "firstAppearance": {
+        "episode": 1043,
+        "chapter": 1023
+      },
+      "description": {
+        "es": "Shinobu lo envejece 20 años para que levante Onigashima como gran dragón."
+      },
+      "abilities": [
+        "Uo Uo no Mi, Modelo Seiryu",
+        "Bolas de fuego"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "kozuki-momonosuke-shogun",
+      "name": {
+        "es": "Shogun Momonosuke",
+        "en": "Shogun Momonosuke",
+        "ja": "将軍モモの助"
+      },
+      "firstAppearance": {
+        "episode": 1078,
+        "chapter": 1051
+      },
+      "description": {
+        "es": "Nuevo shogun de Wano tras la caída de Kaido."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kozuki_Momonosuke",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kozuki_Momonosuke",
+      "field": "forms[kozuki-momonosuke-child], forms[kozuki-momonosuke-adult], affiliations[1].from (dudoso)"
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "slug": "monkey-d-luffy",
+  "name": {
+    "en": "Monkey D. Luffy",
+    "ja": "モンキー・D・ルフィ"
+  },
+  "origin": "foosha-village",
+  "fruit": "hito-hito-no-mi-model-nika",
+  "firstAppearance": {
+    "chapter": 1,
+    "episode": 1
+  },
+  "affiliations": [
+    {
+      "group": "straw-hat-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 1,
+        "chapter": 2
+      },
+      "to": null
+    },
+    {
+      "group": "straw-hat-grand-fleet",
+      "role": "leader",
+      "from": {
+        "episode": 746,
+        "chapter": 800
+      },
+      "to": null
+    },
+    {
+      "group": "four-emperors",
+      "role": "emperor",
+      "from": {
+        "episode": 1086,
+        "chapter": 1053
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 30000000,
+      "episode": 45,
+      "chapter": 96,
+      "eventSlug": "luffy-first-bounty"
+    },
+    {
+      "amount": 100000000,
+      "episode": 128,
+      "chapter": 213,
+      "eventSlug": "alabasta-bounties"
+    },
+    {
+      "amount": 300000000,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 400000000,
+      "episode": 518,
+      "chapter": 599,
+      "eventSlug": "marineford-bounties"
+    },
+    {
+      "amount": 500000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 1500000000,
+      "episode": 879,
+      "chapter": 903,
+      "eventSlug": "whole-cake-island-bounties"
+    },
+    {
+      "amount": 3000000000,
+      "episode": 1086,
+      "chapter": 1053,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "luffy-pre-timeskip",
+      "name": {
+        "es": "Luffy (pre-salto temporal)",
+        "en": "Luffy (Pre-Timeskip)",
+        "ja": "ルフィ"
+      },
+      "firstAppearance": {
+        "episode": 1,
+        "chapter": 1
+      },
+      "description": {
+        "es": "Aspecto clásico con chaleco rojo y sombrero de paja."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "luffy-gear-second",
+      "name": {
+        "es": "Luffy Gear Second",
+        "en": "Gear Second",
+        "ja": "ギア2"
+      },
+      "firstAppearance": {
+        "episode": 272,
+        "chapter": 387
+      },
+      "description": {
+        "es": "Bombea sangre a mayor velocidad: cuerpo humeante y velocidad extrema. Estrenado contra Blueno."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Jet Pistol",
+        "Jet Gatling"
+      ]
+    },
+    {
+      "slug": "luffy-gear-third",
+      "name": {
+        "es": "Luffy Gear Third",
+        "en": "Gear Third",
+        "ja": "ギア3"
+      },
+      "firstAppearance": {
+        "episode": 273,
+        "chapter": 388
+      },
+      "description": {
+        "es": "Infla los huesos para crear extremidades gigantes. Estrenado contra Blueno."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Giant Pistol",
+        "Giant Axe"
+      ]
+    },
+    {
+      "slug": "luffy-nightmare",
+      "name": {
+        "es": "Nightmare Luffy",
+        "en": "Nightmare Luffy",
+        "ja": "ナイトメアルフィ"
+      },
+      "firstAppearance": {
+        "episode": 371,
+        "chapter": 481
+      },
+      "description": {
+        "es": "Luffy absorbe 100 sombras en Thriller Bark y se vuelve gigante y azulado."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "luffy-post-timeskip",
+      "name": {
+        "es": "Luffy (post-salto temporal)",
+        "en": "Luffy (Post-Timeskip)",
+        "ja": "ルフィ"
+      },
+      "firstAppearance": {
+        "episode": 517,
+        "chapter": 598
+      },
+      "description": {
+        "es": "Regreso a Sabaody tras dos años de entrenamiento con Rayleigh: cicatriz en X y Haki."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Haki de Armadura",
+        "Haki de Observación",
+        "Haki del Rey"
+      ]
+    },
+    {
+      "slug": "luffy-lucy",
+      "name": {
+        "es": "Lucy",
+        "en": "Lucy",
+        "ja": "ルーシー"
+      },
+      "firstAppearance": {
+        "episode": 633,
+        "chapter": 705
+      },
+      "description": {
+        "es": "Disfraz de gladiador en el Coliseo Corrida de Dressrosa."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "luffy-gear-fourth-boundman",
+      "name": {
+        "es": "Luffy Gear Fourth: Boundman",
+        "en": "Gear Fourth: Boundman",
+        "ja": "ギア4 バウンドマン"
+      },
+      "firstAppearance": {
+        "episode": 726,
+        "chapter": 784
+      },
+      "description": {
+        "es": "Músculo hinchado y recubierto de Haki de Armadura; rebota sin parar. Estrenado contra Doflamingo."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Kong Gun",
+        "Leo Bazooka",
+        "King Kong Gun"
+      ]
+    },
+    {
+      "slug": "luffy-gear-fourth-tankman",
+      "name": {
+        "es": "Luffy Gear Fourth: Tankman",
+        "en": "Gear Fourth: Tankman",
+        "ja": "ギア4 タンクマン"
+      },
+      "firstAppearance": {
+        "episode": 806,
+        "chapter": 842
+      },
+      "description": {
+        "es": "Forma esférica tras comer galletas, usada contra Cracker."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "luffy-gear-fourth-snakeman",
+      "name": {
+        "es": "Luffy Gear Fourth: Snakeman",
+        "en": "Gear Fourth: Snakeman",
+        "ja": "ギア4 スネイクマン"
+      },
+      "firstAppearance": {
+        "episode": 870,
+        "chapter": 895
+      },
+      "description": {
+        "es": "Forma de velocidad con golpes que cambian de trayectoria, creada contra Katakuri."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Python",
+        "King Cobra"
+      ]
+    },
+    {
+      "slug": "luffytaro",
+      "name": {
+        "es": "Luffytaro",
+        "en": "Luffytaro",
+        "ja": "ルフィ太郎"
+      },
+      "firstAppearance": {
+        "episode": 892,
+        "chapter": 911
+      },
+      "description": {
+        "es": "Disfraz de kimono en el País de Wano."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "luffy-advanced-conquerors-haki",
+      "name": {
+        "es": "Luffy (Haki del Rey avanzado)",
+        "en": "Luffy (Advanced Conqueror's Haki)",
+        "ja": "覇王色の覇気を纏う"
+      },
+      "firstAppearance": {
+        "episode": 1028,
+        "chapter": 1010
+      },
+      "description": {
+        "es": "Recubre sus ataques con Haki del Rey en el tejado de Onigashima contra Kaido."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "luffy-gear-fifth",
+      "name": {
+        "es": "Luffy Gear Fifth",
+        "en": "Gear Fifth",
+        "ja": "ギア5"
+      },
+      "firstAppearance": {
+        "episode": 1071,
+        "chapter": 1044
+      },
+      "description": {
+        "es": "Despertar de la fruta Hito Hito modelo Nika: el Dios Sol Nika."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Bajrang Gun",
+        "Dawn Whip"
+      ]
+    }
+  ],
+  "keyEvents": [
+    "alabasta-bounties",
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "whole-cake-island-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_213",
+      "field": "bounties[100000000]"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_599",
+      "field": "bounties[400000000] (Demalo Black lo menciona; cartel visible en cap. 601)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy/Abilities_and_Powers",
+      "field": "forms"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy/Abilities_and_Powers",
+      "field": "forms[luffy-nightmare] (cap/ep dudoso, 481/371 de memoria)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Luffy",
+      "field": "forms[luffy-lucy,luffytaro] (cap/ep de memoria, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Straw_Hat_Grand_Fleet",
+      "field": "affiliations[straw-hat-grand-fleet] (ep 746 aprox.)"
+    }
+  ]
+}

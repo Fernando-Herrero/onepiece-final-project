@@ -1,0 +1,119 @@
+{
+  "slug": "monkey-d-dragon",
+  "name": {
+    "en": "Monkey D. Dragon",
+    "ja": "モンキー・D・ドラゴン"
+  },
+  "origin": "East Blue (villa Foosha)",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 52,
+    "chapter": 100
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "marine (desertor)",
+      "from": {
+        "episode": 1131,
+        "chapter": 1097
+      },
+      "to": {
+        "episode": 1131,
+        "chapter": 1097
+      }
+    },
+    {
+      "group": "freedom-fighters",
+      "role": "capitán",
+      "from": {
+        "episode": 1097,
+        "chapter": 1066
+      },
+      "to": {
+        "episode": 1097,
+        "chapter": 1066
+      }
+    },
+    {
+      "group": "revolutionary-army",
+      "role": "comandante supremo",
+      "from": {
+        "episode": 314,
+        "chapter": 432
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "monkey-d-dragon-loguetown",
+      "name": {
+        "es": "Dragon en Loguetown",
+        "en": "Dragon (Loguetown)",
+        "ja": "ローグタウンのドラゴン"
+      },
+      "firstAppearance": {
+        "episode": 52,
+        "chapter": 100
+      },
+      "description": {
+        "es": "Salva a Luffy de Smoker bajo la tormenta."
+      },
+      "abilities": [
+        "Control del viento"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "monkey-d-dragon-revolutionary",
+      "name": {
+        "es": "Dragon el Revolucionario",
+        "en": "Dragon the Revolutionary",
+        "ja": "革命家ドラゴン"
+      },
+      "firstAppearance": {
+        "episode": 314,
+        "chapter": 432
+      },
+      "description": {
+        "es": "Garp revela que es el padre de Luffy."
+      },
+      "abilities": [],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "monkey-d-dragon-young",
+      "name": {
+        "es": "Dragon joven (Marina)",
+        "en": "Young Dragon",
+        "ja": "若き日のドラゴン"
+      },
+      "firstAppearance": {
+        "episode": 1131,
+        "chapter": 1097
+      },
+      "description": {
+        "es": "Le cuenta a Kuma que fue marine antes de la revolución."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Dragon",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Dragon",
+      "field": "bounties (desconocida)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Dragon",
+      "field": "forms[monkey-d-dragon-young] (dudoso)"
+    }
+  ]
+}

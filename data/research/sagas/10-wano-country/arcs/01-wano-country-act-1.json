@@ -1,0 +1,773 @@
+{
+  "slug": "wano-country-act-1",
+  "sagaSlug": "wano-country",
+  "order": 1,
+  "title": {
+    "es": "País de Wano: Acto 1",
+    "en": "Wano Country Arc: Act 1",
+    "ja": "ワノ国編 第一幕"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 909,
+    "last": 924
+  },
+  "episodeRange": {
+    "first": 890,
+    "last": 916
+  },
+  "episodes": [
+    {
+      "number": 890,
+      "title": {
+        "en": "Marco! The Keeper of Whitebeard's Last Memento!",
+        "ja": "マルコ! 白ひげの形見の守護者"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        909
+      ],
+      "airDate": {
+        "ja": "2019-06-23"
+      },
+      "appearances": [
+        "edward-newgate",
+        "marco",
+        "nekomamushi",
+        "portgas-d-ace",
+        "izo",
+        "monkey-d-luffy",
+        "shanks",
+        "kaido"
+      ]
+    },
+    {
+      "number": 891,
+      "title": {
+        "en": "Climbing Up a Waterfall! A Great Journey Through the Land of Wano's Sea Zone!",
+        "ja": "滝登り! ワノ国の海域大航海!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        910
+      ],
+      "airDate": {
+        "ja": "2019-06-30"
+      },
+      "appearances": [
+        "carrot",
+        "tony-tony-chopper",
+        "kaido",
+        "charlotte-linlin",
+        "nami",
+        "monkey-d-luffy",
+        "brook",
+        "vinsmoke-sanji",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "nekomamushi",
+        "inuarashi",
+        "usopp",
+        "nico-robin",
+        "roronoa-zoro",
+        "franky",
+        "kozuki-momonosuke",
+        "raizo",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 892,
+      "title": {
+        "en": "The Land of Wano! To the Samurai Country where Cherry Blossoms Flutter!",
+        "ja": "ワノ国! 桜舞うサムライの国へ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        909,
+        910
+      ],
+      "airDate": {
+        "ja": "2019-07-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kozuki-hiyori",
+        "roronoa-zoro",
+        "franky",
+        "kinemon",
+        "usopp",
+        "nico-robin",
+        "kurozumi-kanjuro",
+        "kurozumi-orochi",
+        "raizo"
+      ]
+    },
+    {
+      "number": 893,
+      "title": {
+        "en": "Otama Appears! Luffy vs. Kaido's Army!",
+        "ja": "お玉登場 ルフィVSカイドウ軍!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        910,
+        911
+      ],
+      "airDate": {
+        "ja": "2019-07-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "tony-tony-chopper",
+        "carrot",
+        "brook",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "tama",
+        "kozuki-oden",
+        "kozuki-toki",
+        "kozuki-momonosuke",
+        "kozuki-hiyori",
+        "basil-hawkins",
+        "franky",
+        "nico-robin",
+        "usopp"
+      ]
+    },
+    {
+      "number": 894,
+      "title": {
+        "en": "He'll Come! The Legend of Ace in the Land of Wano!",
+        "ja": "必ず来る ワノ国のエース伝説!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        911,
+        912
+      ],
+      "airDate": {
+        "ja": "2019-07-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tama",
+        "kaido",
+        "portgas-d-ace",
+        "x-drake",
+        "basil-hawkins"
+      ]
+    },
+    {
+      "number": 897,
+      "title": {
+        "en": "Save Otama! Straw Hat, Bounding through the Wasteland!",
+        "ja": "お玉救え 麦わら荒野を駆ける!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        912
+      ],
+      "airDate": {
+        "ja": "2019-08-11"
+      },
+      "appearances": [
+        "tama",
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "basil-hawkins"
+      ]
+    },
+    {
+      "number": 898,
+      "title": {
+        "en": "The Headliner! Hawkins the Magician Appears!",
+        "ja": "真打ち! 魔術師ホーキンス登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        913
+      ],
+      "airDate": {
+        "ja": "2019-08-18"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "basil-hawkins",
+        "tama",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 899,
+      "title": {
+        "en": "Defeat is Inevitable! The Strawman's Fierce Attack!",
+        "ja": "敗北確定 ストローマンの猛攻!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        913,
+        915
+      ],
+      "airDate": {
+        "ja": "2019-08-25"
+      },
+      "appearances": [
+        "basil-hawkins",
+        "monkey-d-luffy",
+        "tama",
+        "roronoa-zoro",
+        "kikunojo",
+        "trafalgar-d-water-law",
+        "kaido"
+      ]
+    },
+    {
+      "number": 900,
+      "title": {
+        "en": "The Greatest Day of My Life! Otama and Her Sweet Red-bean Soup!",
+        "ja": "最高の日 お玉初めてのおしるこ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        914
+      ],
+      "airDate": {
+        "ja": "2019-09-01"
+      },
+      "appearances": [
+        "tama",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kikunojo",
+        "kaido",
+        "kurozumi-orochi"
+      ]
+    },
+    {
+      "number": 901,
+      "title": {
+        "en": "Charging into the Enemy's Territory! Bakura Town - Where Officials Thrive!",
+        "ja": "敵陣突入 役人はびこる博羅町!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        914,
+        915
+      ],
+      "airDate": {
+        "ja": "2019-09-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kikunojo",
+        "roronoa-zoro",
+        "tama",
+        "basil-hawkins",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 902,
+      "title": {
+        "en": "The Yokozuna Appears! The Invincible Urashima Goes After Okiku!",
+        "ja": "横綱登場 お菊狙う無敵の浦島!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        915,
+        916
+      ],
+      "airDate": {
+        "ja": "2019-09-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kikunojo",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 903,
+      "title": {
+        "en": "A Climatic Sumo Battle! Straw Hat vs. the Strongest Ever Yokozuna!",
+        "ja": "相撲決戦 麦わらVS最強の横綱!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        916
+      ],
+      "airDate": {
+        "ja": "2019-09-22"
+      },
+      "appearances": [
+        "kikunojo",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "tama",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 904,
+      "title": {
+        "en": "Luffy Rages! Rescue Otama from Danger!",
+        "ja": "ルフィ激怒 ピンチのお玉を救え!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        916,
+        917
+      ],
+      "airDate": {
+        "ja": "2019-09-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kikunojo",
+        "basil-hawkins",
+        "tama",
+        "ashura-doji",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 905,
+      "title": {
+        "en": "Taking Back Otama! A Fierce Fight Against Holed'em!",
+        "ja": "お玉奪還 激闘! ホールデム戦!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        917
+      ],
+      "airDate": {
+        "ja": "2019-10-06"
+      },
+      "appearances": [
+        "kikunojo",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "tama",
+        "ashura-doji",
+        "kaido",
+        "jack",
+        "basil-hawkins",
+        "trafalgar-d-water-law",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 906,
+      "title": {
+        "en": "Duel! The Magician and the Surgeon of Death!",
+        "ja": "一騎打ち 魔術師と死の外科医!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        918
+      ],
+      "airDate": {
+        "ja": "2019-10-13"
+      },
+      "appearances": [
+        "tama",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kikunojo",
+        "portgas-d-ace",
+        "basil-hawkins",
+        "trafalgar-d-water-law",
+        "kaido"
+      ]
+    },
+    {
+      "number": 908,
+      "title": {
+        "en": "The Coming of the Treasure Ship! Luffytaro Returns the Favor!",
+        "ja": "宝船到来 ルフィ太郎の恩返し!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        918,
+        919
+      ],
+      "airDate": {
+        "ja": "2019-10-27"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "kikunojo",
+        "tama",
+        "monkey-d-luffy",
+        "basil-hawkins",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 909,
+      "title": {
+        "en": "Mysterious Grave Markers! A Reunion at the Ruins of Oden Castle!",
+        "ja": "謎の墓標 おでん城跡での再会!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        919
+      ],
+      "airDate": {
+        "ja": "2019-11-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kikunojo",
+        "trafalgar-d-water-law",
+        "kinemon",
+        "nekomamushi",
+        "kawamatsu",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "raizo",
+        "inuarashi",
+        "kurozumi-orochi",
+        "denjiro",
+        "nico-robin",
+        "kozuki-toki",
+        "kozuki-momonosuke",
+        "carrot",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "brook",
+        "nami"
+      ]
+    },
+    {
+      "number": 910,
+      "title": {
+        "en": "A Legendary Samurai! The Man Who Roger Admired!",
+        "ja": "伝説の侍 ロジャーが惚れた男!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        920
+      ],
+      "airDate": {
+        "ja": "2019-11-17"
+      },
+      "appearances": [
+        "kozuki-toki",
+        "kinemon",
+        "brook",
+        "nami",
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "carrot",
+        "kikunojo",
+        "trafalgar-d-water-law",
+        "kozuki-oden",
+        "ashura-doji",
+        "inuarashi",
+        "nekomamushi",
+        "kaido",
+        "kurozumi-orochi",
+        "roronoa-zoro",
+        "raizo",
+        "kurozumi-kanjuro",
+        "king",
+        "queen",
+        "jack",
+        "kozuki-hiyori",
+        "kawamatsu"
+      ]
+    },
+    {
+      "number": 911,
+      "title": {
+        "en": "Bringing Down the Emperor of the Sea! A Secret Raid Operation Begins!",
+        "ja": "打倒四皇 極秘討ち入り作戦発動"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        920,
+        921
+      ],
+      "airDate": {
+        "ja": "2019-11-24"
+      },
+      "appearances": [
+        "kinemon",
+        "kikunojo",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "nami",
+        "kozuki-momonosuke",
+        "carrot",
+        "brook",
+        "raizo",
+        "kurozumi-kanjuro",
+        "kurozumi-orochi",
+        "kaido",
+        "kozuki-toki",
+        "nekomamushi",
+        "kawamatsu",
+        "denjiro",
+        "ashura-doji",
+        "inuarashi",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "roronoa-zoro",
+        "usopp",
+        "franky",
+        "shinobu"
+      ]
+    },
+    {
+      "number": 912,
+      "title": {
+        "en": "The Strongest Man in the World! Shutenmaru, the Thieves Brigade Chief!",
+        "ja": "最強の男 盗賊団棟梁・酒天丸!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        921,
+        922
+      ],
+      "airDate": {
+        "ja": "2019-12-01"
+      },
+      "appearances": [
+        "usopp",
+        "franky",
+        "nico-robin",
+        "ashura-doji",
+        "kikunojo",
+        "kinemon",
+        "monkey-d-luffy",
+        "brook",
+        "shinobu",
+        "nami",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "kozuki-momonosuke",
+        "trafalgar-d-water-law",
+        "kawamatsu",
+        "denjiro",
+        "jack",
+        "kaido",
+        "kozuki-oden",
+        "basil-hawkins",
+        "carrot"
+      ]
+    },
+    {
+      "number": 913,
+      "title": {
+        "en": "Everyone is Annihilated! Kaido's Furious Blast Breath!",
+        "ja": "全員消滅 カイドウ怒りのボロブレス!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        922
+      ],
+      "airDate": {
+        "ja": "2019-12-08"
+      },
+      "appearances": [
+        "kaido",
+        "vinsmoke-sanji",
+        "nami",
+        "kinemon",
+        "monkey-d-luffy",
+        "brook",
+        "shinobu",
+        "trafalgar-d-water-law",
+        "kozuki-momonosuke",
+        "carrot",
+        "tony-tony-chopper",
+        "kikunojo",
+        "basil-hawkins",
+        "jack",
+        "queen",
+        "king",
+        "roronoa-zoro",
+        "tama",
+        "ashura-doji"
+      ]
+    },
+    {
+      "number": 914,
+      "title": {
+        "en": "Finally Clashing! The Ferocious Luffy vs. Kaido!",
+        "ja": "遂に激突 猛攻ルフィVSカイドウ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        922,
+        923
+      ],
+      "airDate": {
+        "ja": "2019-12-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "ashura-doji",
+        "jack",
+        "basil-hawkins",
+        "kaido",
+        "kinemon",
+        "kikunojo",
+        "tony-tony-chopper",
+        "nami",
+        "vinsmoke-sanji",
+        "tama"
+      ]
+    },
+    {
+      "number": 915,
+      "title": {
+        "en": "Destructive! One Shot, One Kill - Thunder Bagua!",
+        "ja": "破壊的! 一撃必殺の雷鳴八卦!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        923,
+        924
+      ],
+      "airDate": {
+        "ja": "2019-12-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kaido",
+        "trafalgar-d-water-law",
+        "basil-hawkins",
+        "jack",
+        "ashura-doji"
+      ]
+    },
+    {
+      "number": 916,
+      "title": {
+        "en": "A Living Hell! Luffy, Humiliated in the Great Mine!",
+        "ja": "生き地獄 ルフィ屈辱の大採掘場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        924
+      ],
+      "airDate": {
+        "ja": "2020-01-05"
+      },
+      "appearances": [
+        "kaido",
+        "monkey-d-luffy",
+        "ashura-doji",
+        "kozuki-oden",
+        "trafalgar-d-water-law",
+        "basil-hawkins",
+        "kinemon",
+        "kikunojo",
+        "tony-tony-chopper",
+        "brook",
+        "kozuki-momonosuke",
+        "carrot",
+        "vinsmoke-sanji",
+        "shinobu",
+        "nami",
+        "tama",
+        "inuarashi",
+        "franky",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "shimotsuki-yasuie",
+        "kawamatsu",
+        "eustass-kid",
+        "kozuki-hiyori"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-defeats-holedem",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "tama"
+      ],
+      "episode": 905,
+      "chapter": 917,
+      "description": {
+        "es": "Luffy derrota a Holed'em para rescatar a Tama en Bakura."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "kaido-first-appearance",
+      "kind": "reveal",
+      "characters": [
+        "kaido"
+      ],
+      "episode": 909,
+      "chapter": 919,
+      "description": {
+        "es": "Kaido aparece en Wano lanzándose desde las alturas."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "kaido-defeats-luffy-thunder-bagua",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "kaido"
+      ],
+      "episode": 915,
+      "chapter": 923,
+      "description": {
+        "es": "Kaido tumba a Luffy de un solo golpe con Thunder Bagua."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-imprisoned-udon",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 916,
+      "chapter": 924,
+      "description": {
+        "es": "Luffy es encarcelado en la Gran Mina de Udon."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_<n> (infobox Chapters/Airdate/Characters)",
+      "field": "episodes"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc#Acts",
+      "field": "episodeRange (actos oficiales; interludios ep 917 -> acto 2, 957 -> acto 2, 958 -> acto 3; rellenos 895-896, 907, 1029-1030 en arcos aparte)"
+    }
+  ]
+}

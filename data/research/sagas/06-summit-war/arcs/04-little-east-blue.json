@@ -1,0 +1,139 @@
+{
+  "slug": "little-east-blue",
+  "sagaSlug": "summit-war",
+  "order": 4,
+  "title": {
+    "es": "Arco de Little East Blue",
+    "en": "Little East Blue Arc",
+    "ja": null
+  },
+  "type": "filler",
+  "chapterRange": null,
+  "episodeRange": {
+    "first": 426,
+    "last": 429
+  },
+  "episodes": [
+    {
+      "number": 426,
+      "title": {
+        "es": null,
+        "en": "Movie-connected Special: The 'Gold Lion's' Ambition Moves Forward",
+        "ja": "映画連動特別編　動き出す金獅子の野望"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2009-11-15"
+      },
+      "appearances": [
+        "shiki",
+        "magellan",
+        "tony-tony-chopper",
+        "brook",
+        "usopp",
+        "monkey-d-luffy",
+        "sanji",
+        "roronoa-zoro",
+        "nico-robin",
+        "nami",
+        "franky"
+      ]
+    },
+    {
+      "number": 427,
+      "title": {
+        "es": null,
+        "en": "Movie-connected Special: 'Little East Blue' is Targeted",
+        "ja": "映画連動特別編　狙われた小さな東の海"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2009-11-22"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "sanji",
+        "franky",
+        "brook",
+        "nico-robin",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 428,
+      "title": {
+        "es": null,
+        "en": "Movie-connected Special: The Amigo Pirate Crew's Vicious Assault",
+        "ja": "映画連動特別編　アミーゴ海賊団の猛攻"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2009-11-29"
+      },
+      "appearances": [
+        "brook",
+        "franky",
+        "nico-robin",
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "sanji",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 429,
+      "title": {
+        "es": null,
+        "en": "Movie-connected Special: The Decisive Battle! Luffy vs. Largo",
+        "ja": "映画連動特別編　決戦！ルフィVSラルゴ"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2009-12-06"
+      },
+      "appearances": [
+        "sanji",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "franky",
+        "tony-tony-chopper",
+        "brook",
+        "nico-robin",
+        "shiki"
+      ]
+    }
+  ],
+  "events": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Summit_War_Saga",
+      "field": "episodes.title,episodes.airDate,episodeRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Little_East_Blue_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_490",
+      "field": "episodes.adaptsChapters (secciones \"Anime:\" de cada página Chapter_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_385",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

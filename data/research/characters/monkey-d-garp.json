@@ -1,0 +1,140 @@
+{
+  "slug": "monkey-d-garp",
+  "name": {
+    "en": "Monkey D. Garp",
+    "ja": "モンキー・D・ガープ"
+  },
+  "origin": "East Blue (villa Foosha)",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 68,
+    "chapter": 92
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "vicealmirante",
+      "from": {
+        "episode": 313,
+        "chapter": 431
+      },
+      "to": null
+    },
+    {
+      "group": "marines",
+      "role": "instructor (semiretirado)",
+      "from": {
+        "episode": 511,
+        "chapter": 594
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 3000000000,
+      "episode": 1121,
+      "chapter": 1087,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "monkey-d-garp-hero",
+      "name": {
+        "es": "Garp el Puño",
+        "en": "Garp \"The Fist\"",
+        "ja": "拳骨のガープ"
+      },
+      "firstAppearance": {
+        "episode": 313,
+        "chapter": 431
+      },
+      "description": {
+        "es": "Héroe de la Marina y abuelo de Luffy en Water 7."
+      },
+      "abilities": [
+        "Fist of Love",
+        "Haki"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "monkey-d-garp-marineford",
+      "name": {
+        "es": "Garp en Marineford",
+        "en": "Garp (Marineford)",
+        "ja": "頂上戦争のガープ"
+      },
+      "firstAppearance": {
+        "episode": 462,
+        "chapter": 553
+      },
+      "description": {
+        "es": "Se enfrenta a su dilema entre la justicia y su nieto Ace."
+      },
+      "abilities": [
+        "Haki"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "monkey-d-garp-galaxy-impact",
+      "name": {
+        "es": "Garp: Galaxy Impact",
+        "en": "Garp: Galaxy Impact",
+        "ja": "ギャラクシーインパクト"
+      },
+      "firstAppearance": {
+        "episode": 1121,
+        "chapter": 1087
+      },
+      "description": {
+        "es": "Rescate de Koby en Hachinosu; arrasa la ciudad con un solo puñetazo."
+      },
+      "abilities": [
+        "Galaxy Impact",
+        "Haki del Rey"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "monkey-d-garp-young",
+      "name": {
+        "es": "Garp joven (God Valley)",
+        "en": "Young Garp",
+        "ja": "若き日のガープ"
+      },
+      "firstAppearance": {
+        "episode": 1128,
+        "chapter": 1096
+      },
+      "description": {
+        "es": "Héroe del incidente de God Valley junto a Roger."
+      },
+      "abilities": [
+        "Haki"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Garp",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Garp",
+      "field": "firstAppearance (portada del cap. 92; primera aparición en la historia: cap. 431)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Garp",
+      "field": "bounties[0] (recompensa de la Marina en estrellas: ★★★)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Monkey_D._Garp",
+      "field": "forms[monkey-d-garp-marineford], forms[monkey-d-garp-young] (dudoso)"
+    }
+  ]
+}

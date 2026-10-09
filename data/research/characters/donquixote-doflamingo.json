@@ -1,0 +1,124 @@
+{
+  "slug": "donquixote-doflamingo",
+  "name": {
+    "en": "Donquixote Doflamingo",
+    "ja": "ドンキホーテ・ドフラミンゴ"
+  },
+  "origin": null,
+  "fruit": "ito-ito-no-mi",
+  "firstAppearance": {
+    "chapter": 233,
+    "episode": 151
+  },
+  "affiliations": [
+    {
+      "group": "donquixote-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 151,
+        "chapter": 233
+      },
+      "to": null
+    },
+    {
+      "group": "seven-warlords-of-the-sea",
+      "role": "warlord",
+      "from": {
+        "episode": 151,
+        "chapter": 233
+      },
+      "to": {
+        "episode": 735,
+        "chapter": 792
+      }
+    },
+    {
+      "group": "dressrosa",
+      "role": "king",
+      "from": {
+        "episode": 625,
+        "chapter": 699
+      },
+      "to": {
+        "episode": 735,
+        "chapter": 792
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 340000000,
+      "episode": 151,
+      "chapter": 234,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "donquixote-doflamingo-warlord",
+      "name": {
+        "es": "Doflamingo (Shichibukai)",
+        "en": "Heavenly Yaksha Doflamingo",
+        "ja": "天夜叉ドフラミンゴ"
+      },
+      "firstAppearance": {
+        "episode": 151,
+        "chapter": 233
+      },
+      "description": {
+        "es": "Shichibukai con abrigo de plumas rosa y Ito Ito no Mi."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Parasite",
+        "Overheat"
+      ]
+    },
+    {
+      "slug": "donquixote-doflamingo-birdcage",
+      "name": {
+        "es": "Doflamingo (Jaula de Pájaro)",
+        "en": "Doflamingo (Birdcage)",
+        "ja": "鳥カゴ"
+      },
+      "firstAppearance": {
+        "episode": 699,
+        "chapter": 760
+      },
+      "description": {
+        "es": "Encierra Dressrosa en una jaula de hilos."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "donquixote-doflamingo-awakened",
+      "name": {
+        "es": "Doflamingo despertado",
+        "en": "Awakened Doflamingo",
+        "ja": "ドフラミンゴ（覚醒）"
+      },
+      "firstAppearance": {
+        "episode": 733,
+        "chapter": 785
+      },
+      "description": {
+        "es": "Despertar de la Ito Ito no Mi: convierte el entorno en hilos."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Haki del Rey"
+      ]
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Donquixote_Doflamingo",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Donquixote_Doflamingo",
+      "field": "forms[donquixote-doflamingo-birdcage].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

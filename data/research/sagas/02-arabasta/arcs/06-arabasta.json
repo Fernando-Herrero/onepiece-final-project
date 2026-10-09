@@ -1,0 +1,1530 @@
+{
+  "slug": "arabasta",
+  "sagaSlug": "arabasta",
+  "order": 6,
+  "title": {
+    "es": "Arabasta",
+    "en": "Arabasta",
+    "ja": "アラバスタ編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 155,
+    "last": 217
+  },
+  "episodeRange": {
+    "first": 92,
+    "last": 130
+  },
+  "episodes": [
+    {
+      "number": 92,
+      "title": {
+        "es": "El héroe de Arabasta y la bailarina de a bordo",
+        "en": "The Hero of Arabasta and the Ballerina on Deck",
+        "ja": "アラバスタの英雄と船上のバレリーナ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        155,
+        156,
+        157
+      ],
+      "airDate": {
+        "ja": "2001-12-09"
+      },
+      "appearances": [
+        "crocodile",
+        "pell",
+        "chaka",
+        "nefertari-cobra",
+        "nami",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "karoo",
+        "tony-tony-chopper",
+        "usopp",
+        "roronoa-zoro",
+        "bentham"
+      ]
+    },
+    {
+      "number": 93,
+      "title": {
+        "es": "¡Rumbo al reino de la arena! Un polvo que trae la lluvia y el Ejército Rebelde",
+        "en": "Coming to the Desert Kingdom! The Rain-Calling Powder and the Rebel Army",
+        "ja": "いざ砂漠の国へ！雨を呼ぶ粉と反乱軍"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        158
+      ],
+      "airDate": {
+        "ja": "2001-12-16"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "karoo",
+        "nami",
+        "roronoa-zoro",
+        "usopp",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "koza"
+      ]
+    },
+    {
+      "number": 94,
+      "title": {
+        "es": "¡Reunión de poderosos! Su nombre es Ace Puño de Fuego",
+        "en": "Reunion of the Powerful! His Name is Fire Fist Ace",
+        "ja": "豪傑達の再会！奴の名は火拳のエース"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        157,
+        158
+      ],
+      "airDate": {
+        "ja": "2001-12-23"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "tony-tony-chopper",
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "tashigi",
+        "smoker",
+        "monkey-d-luffy",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "karoo"
+      ]
+    },
+    {
+      "number": 95,
+      "title": {
+        "es": "¡Ace y Luffy! Recuerdos ardientes y lazos fraternales",
+        "en": "Ace and Luffy! Warm Memories and Brotherly Bonds",
+        "ja": "エースとルフィ！熱き想いと兄弟の絆"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        159
+      ],
+      "airDate": {
+        "ja": "2002-01-06"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "smoker",
+        "usopp",
+        "nefertari-vivi",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "karoo",
+        "tashigi"
+      ]
+    },
+    {
+      "number": 96,
+      "title": {
+        "es": "¡La ciudad verde Erumalu y los Kung-Fu Dugong!",
+        "en": "The Green City, Erumalu and the Kung Fu Dugongs!",
+        "ja": "緑の町エルマルとクンフージュゴン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        159,
+        160,
+        161
+      ],
+      "airDate": {
+        "ja": "2002-01-13"
+      },
+      "appearances": [
+        "nefertari-cobra",
+        "chaka",
+        "pell",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "usopp",
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "karoo",
+        "nami",
+        "crocodile",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 97,
+      "title": {
+        "es": "¡Aventura en el país de la arena! Los demonios que viven en la abrasadora tierra",
+        "en": "Adventure in the Country of Sand! The Demons that Live in the Scorching Earth",
+        "ja": "砂の国の冒険！炎熱の大地に棲む魔物"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        162
+      ],
+      "airDate": {
+        "ja": "2002-01-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "usopp",
+        "portgas-d-ace",
+        "vinsmoke-sanji",
+        "nefertari-vivi"
+      ]
+    },
+    {
+      "number": 98,
+      "title": {
+        "es": "¡Aquí llegan los Piratas de las Arenas! Hombres que viven libremente",
+        "en": "Here Come the Desert Pirates! The Men Who Live Free",
+        "ja": "砂漠の海賊団登場！自由に生きる男達"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        162
+      ],
+      "airDate": {
+        "ja": "2002-01-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "portgas-d-ace",
+        "igaram",
+        "nefertari-cobra"
+      ]
+    },
+    {
+      "number": 99,
+      "title": {
+        "es": "¡El orgullo de un impostor! ¡Camus, corazón del Ejército Rebelde!",
+        "en": "Spirit of the Fakes! Heart of the Rebel Army, Kamyu!",
+        "ja": "ニセモノの意地！心の反乱軍カミュ!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-02-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nefertari-vivi",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "usopp",
+        "nami",
+        "portgas-d-ace",
+        "chaka",
+        "pell"
+      ]
+    },
+    {
+      "number": 100,
+      "title": {
+        "es": "¡Koza, guerrero del Ejército Rebelde! ¡El sueño que él juró a Vivi!",
+        "en": "Rebel Warrior Koza! The Dream Sworn to Vivi!",
+        "ja": "反乱軍戦士コーザ！ビビに誓った夢！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        163,
+        164
+      ],
+      "airDate": {
+        "ja": "2002-02-10"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "nami",
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "portgas-d-ace",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "nefertari-cobra",
+        "koza",
+        "karoo",
+        "igaram",
+        "chaka",
+        "pell"
+      ]
+    },
+    {
+      "number": 101,
+      "title": {
+        "es": "¡Duelo en una neblina de calor! Ace vs. Scorpion",
+        "en": "Heat Haze Duel! Ace vs. Scorpion Man",
+        "ja": "陽炎の決闘！エースVS男スコーピオン"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        159
+      ],
+      "airDate": {
+        "ja": "2002-02-17"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "nefertari-vivi",
+        "nami",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 102,
+      "title": {
+        "es": "¡Ruinas antiguas y almas perdidas! Vivi, amigos y la forma del país",
+        "en": "Ruins and Lost Ways! Vivi, Her Friends, and the Country's Form",
+        "ja": "遺跡と迷子！ビビと仲間と国のかたち"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-02-24"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "usopp",
+        "nefertari-vivi",
+        "nami",
+        "crocodile"
+      ]
+    },
+    {
+      "number": 103,
+      "title": {
+        "es": "Los oficiales enemigos se reúnen en el Spiders Cafe a las 8:00PM",
+        "en": "At Spiders Cafe - The Enemy Ringleaders Meet at 8 o'clock",
+        "ja": "スパイダーズカフェに8時敵幹部集合"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        160,
+        161,
+        162,
+        163,
+        164,
+        165
+      ],
+      "airDate": {
+        "ja": "2002-03-03"
+      },
+      "appearances": [
+        "usopp",
+        "roronoa-zoro",
+        "nefertari-vivi",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "nami",
+        "crocodile",
+        "nico-robin",
+        "zala",
+        "drophy",
+        "babe",
+        "bentham",
+        "galdino",
+        "daz-bonez",
+        "koza"
+      ]
+    },
+    {
+      "number": 104,
+      "title": {
+        "es": "¡Luffy vs. Vivi! Juramento de lágrimas que crean compañeros",
+        "en": "Luffy vs. Vivi! A Tearful Vow for Comrades",
+        "ja": "ルフィVSビビ!仲間に賭ける涙の誓い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        165,
+        166
+      ],
+      "airDate": {
+        "ja": "2002-03-10"
+      },
+      "appearances": [
+        "usopp",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "nami",
+        "monkey-d-luffy",
+        "bentham",
+        "zala",
+        "babe",
+        "drophy",
+        "nico-robin",
+        "daz-bonez",
+        "crocodile",
+        "galdino",
+        "koza",
+        "chaka",
+        "pell",
+        "igaram"
+      ]
+    },
+    {
+      "number": 105,
+      "title": {
+        "es": "¡Guerra de Arabasta! Rainbase, la Ciudad de los Sueños",
+        "en": "The Arabasta War Front! City of Dreams, Rainbase",
+        "ja": "アラバスタ戦線！夢の町レインベース"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        167,
+        168
+      ],
+      "airDate": {
+        "ja": "2002-03-17"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "usopp",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "nami",
+        "monkey-d-luffy",
+        "koza",
+        "chaka",
+        "pell",
+        "nefertari-cobra",
+        "karoo",
+        "crocodile",
+        "smoker",
+        "tashigi",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 106,
+      "title": {
+        "es": "¡La trampa del final absoluto! Asaltando Rain Dinners",
+        "en": "Trap in a Desperate Situation! Breaking Into Rain Dinners",
+        "ja": "絶体絶命の罠!レインディナーズ突入"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        169,
+        170
+      ],
+      "airDate": {
+        "ja": "2002-03-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "smoker",
+        "nico-robin",
+        "tony-tony-chopper",
+        "tashigi",
+        "vinsmoke-sanji",
+        "crocodile",
+        "nefertari-vivi",
+        "pell",
+        "karoo",
+        "nefertari-cobra",
+        "koza"
+      ]
+    },
+    {
+      "number": 107,
+      "title": {
+        "es": "¡La Operación Utopía ha comenzado! Los Rebeldes se ponen en movimiento",
+        "en": "Operation Utopia Commences! The Wave of Rebellion Begins to Move",
+        "ja": "ユートピア作戦発動!動き出した反乱"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        171,
+        172
+      ],
+      "airDate": {
+        "ja": "2002-04-14"
+      },
+      "appearances": [
+        "koza",
+        "nefertari-cobra",
+        "chaka",
+        "crocodile",
+        "nefertari-vivi",
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "nico-robin",
+        "roronoa-zoro",
+        "smoker",
+        "bentham",
+        "daz-bonez",
+        "zala"
+      ]
+    },
+    {
+      "number": 108,
+      "title": {
+        "es": "El terrible Bananawani y Mr. Prince",
+        "en": "The Fearsome Bananawani and Mr. Prince",
+        "ja": "恐怖のバナナワニとミスタープリンス"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        172,
+        173,
+        174
+      ],
+      "airDate": {
+        "ja": "2002-04-21"
+      },
+      "appearances": [
+        "chaka",
+        "koza",
+        "nefertari-vivi",
+        "crocodile",
+        "roronoa-zoro",
+        "smoker",
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "nico-robin",
+        "igaram",
+        "galdino",
+        "bentham",
+        "tony-tony-chopper",
+        "daz-bonez",
+        "zala",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 109,
+      "title": {
+        "es": "¡La llave a una revelación y escape! ¡Doru Doru Ball!",
+        "en": "The Key to Turning the Tide and a Great Escape! Doru Doru Ball!",
+        "ja": "逆転大脱出への鍵！ドルドルボール！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        175,
+        176
+      ],
+      "airDate": {
+        "ja": "2002-04-28"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "nefertari-vivi",
+        "crocodile",
+        "nico-robin",
+        "usopp",
+        "monkey-d-luffy",
+        "nami",
+        "roronoa-zoro",
+        "smoker",
+        "galdino"
+      ]
+    },
+    {
+      "number": 110,
+      "title": {
+        "es": "¡Combate a muerte sin piedad! Luffy vs. Crocodile",
+        "en": "Merciless Fight to the Death! Luffy vs. Crocodile",
+        "ja": "情無用の死闘！ルフィVSクロコダイル"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        176,
+        177,
+        178
+      ],
+      "airDate": {
+        "ja": "2002-05-05"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "usopp",
+        "nefertari-vivi",
+        "nami",
+        "monkey-d-luffy",
+        "smoker",
+        "tony-tony-chopper",
+        "crocodile",
+        "nico-robin",
+        "tashigi"
+      ]
+    },
+    {
+      "number": 111,
+      "title": {
+        "es": "¡Correr hacia un milagro! Arabasta, reino animal",
+        "en": "The Miracle Sprint! Arabasta the Animal Land",
+        "ja": "奇跡への疾走！アラバスタ動物ランド"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        179,
+        180
+      ],
+      "airDate": {
+        "ja": "2002-05-12"
+      },
+      "appearances": [
+        "crocodile",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "nami",
+        "tashigi",
+        "smoker",
+        "karoo",
+        "nico-robin",
+        "pell",
+        "koza",
+        "chaka",
+        "drophy",
+        "babe",
+        "nefertari-cobra",
+        "bentham",
+        "daz-bonez",
+        "zala",
+        "igaram"
+      ]
+    },
+    {
+      "number": 112,
+      "title": {
+        "es": "¡Ejército Rebelde vs. Ejército Real! ¡El combate final será en Alubarna!",
+        "en": "Rebel Army vs. Royal Army! The Battle will be in Alubarna!",
+        "ja": "反乱軍VS国王軍！決戦はアルバーナ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        180,
+        181,
+        182,
+        183
+      ],
+      "airDate": {
+        "ja": "2002-05-19"
+      },
+      "appearances": [
+        "pell",
+        "monkey-d-luffy",
+        "koza",
+        "chaka",
+        "bentham",
+        "drophy",
+        "daz-bonez",
+        "zala",
+        "babe",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "karoo",
+        "nefertari-vivi",
+        "igaram"
+      ]
+    },
+    {
+      "number": 113,
+      "title": {
+        "es": "¡Alubarna llora! ¡La fiera lucha del Capitán Karoo!",
+        "en": "Alubarna is Crying! Fierce Fight of Captain Karoo!",
+        "ja": "嘆きのアルバーナ!激闘カルー隊長!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        182,
+        183,
+        184
+      ],
+      "airDate": {
+        "ja": "2002-06-02"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "usopp",
+        "tony-tony-chopper",
+        "babe",
+        "drophy",
+        "bentham",
+        "nefertari-vivi",
+        "karoo",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "portgas-d-ace",
+        "nefertari-cobra",
+        "igaram",
+        "daz-bonez",
+        "zala"
+      ]
+    },
+    {
+      "number": 114,
+      "title": {
+        "es": "¡Jura por el sueño de tu compañero! Batalla en la 4ª madriguera",
+        "en": "Swear on Your Crewmate's Dream! Battle at Molehill 4th Avenue",
+        "ja": "仲間の夢に誓う！決闘モグラ塚4番街"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        184,
+        185,
+        186
+      ],
+      "airDate": {
+        "ja": "2002-06-09"
+      },
+      "appearances": [
+        "usopp",
+        "babe",
+        "drophy",
+        "tony-tony-chopper",
+        "nefertari-vivi",
+        "koza",
+        "nefertari-cobra",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "karoo",
+        "crocodile"
+      ]
+    },
+    {
+      "number": 115,
+      "title": {
+        "es": "¡La gran interpretación de hoy! ¡Mane Mane montage!",
+        "en": "Today's Grand Performance! Mane Mane Montage!",
+        "ja": "本日大公開！マネマネモンタージュ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        186,
+        187,
+        188
+      ],
+      "airDate": {
+        "ja": "2002-06-16"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "usopp",
+        "drophy",
+        "babe",
+        "monkey-d-luffy",
+        "koza",
+        "nefertari-vivi",
+        "bentham",
+        "vinsmoke-sanji",
+        "nami",
+        "chaka",
+        "nefertari-cobra",
+        "pell"
+      ]
+    },
+    {
+      "number": 116,
+      "title": {
+        "es": "¡Transformándose en Nami! El poderoso Ballet Kenpo de Bon Kurei",
+        "en": "Transforming Into Nami! Bon Kurei's Hard-Hitting Ballet Kenpo",
+        "ja": "ナミに変身！ボンクレ－連発バレエ拳法"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        188,
+        189,
+        190
+      ],
+      "airDate": {
+        "ja": "2002-06-23"
+      },
+      "appearances": [
+        "bentham",
+        "vinsmoke-sanji",
+        "nefertari-vivi",
+        "chaka",
+        "monkey-d-luffy",
+        "nami",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "daz-bonez",
+        "zala",
+        "karoo",
+        "nefertari-cobra",
+        "crocodile",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 117,
+      "title": {
+        "es": "¡La advertencia del tornado de Nami! Explosión del Clima-Tact",
+        "en": "Nami's Whirlwind Warning! Clima-Tact Explosion",
+        "ja": "ナミの旋風注意報！クリマタクト炸裂"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        190,
+        191,
+        192
+      ],
+      "airDate": {
+        "ja": "2002-06-30"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "crocodile",
+        "nefertari-cobra",
+        "chaka",
+        "nico-robin",
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "zala"
+      ]
+    },
+    {
+      "number": 118,
+      "title": {
+        "es": "¡El secreto de la familia Real! Pluton, el arma ancestral",
+        "en": "Secret of the Royal Family! The Ancient Weapon, Pluton",
+        "ja": "王家に伝わる秘密！古代兵器プルトン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        192,
+        193
+      ],
+      "airDate": {
+        "ja": "2002-07-14"
+      },
+      "appearances": [
+        "chaka",
+        "nefertari-vivi",
+        "crocodile",
+        "nefertari-cobra",
+        "nico-robin",
+        "nami",
+        "zala",
+        "usopp",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "daz-bonez"
+      ]
+    },
+    {
+      "number": 119,
+      "title": {
+        "es": "¡La esencia de una espada poderosa! El poder para cortar el acero y el aliento de todas las cosas",
+        "en": "Essence of a Mighty Sword! The Power to Cut Steel and the Breath of All Things",
+        "ja": "豪剣の極意！鋼鉄を斬る力と物の呼吸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        194,
+        195
+      ],
+      "airDate": {
+        "ja": "2002-07-21"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "daz-bonez",
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "nefertari-vivi",
+        "nami",
+        "tony-tony-chopper",
+        "crocodile"
+      ]
+    },
+    {
+      "number": 120,
+      "title": {
+        "es": "¡La batalla ha terminado! Koza alza la bandera blanca",
+        "en": "The Battle is Over! Koza Flies the White Flag",
+        "ja": "戦いは終わった！コーザが掲げた白い旗"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        196,
+        197
+      ],
+      "airDate": {
+        "ja": "2002-08-04"
+      },
+      "appearances": [
+        "nico-robin",
+        "nefertari-vivi",
+        "chaka",
+        "crocodile",
+        "nefertari-cobra",
+        "daz-bonez",
+        "roronoa-zoro",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nami",
+        "zala",
+        "karoo",
+        "monkey-d-luffy",
+        "koza"
+      ]
+    },
+    {
+      "number": 121,
+      "title": {
+        "es": "¡La voz de Vivi pasa inadvertida! ¡Un héroe desciende!",
+        "en": "Vivi's Voice Goes Unheard! A Hero Descends!",
+        "ja": "ビビの声の行方！英雄は舞い降りた！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        198,
+        199
+      ],
+      "airDate": {
+        "ja": "2002-08-11"
+      },
+      "appearances": [
+        "koza",
+        "nefertari-vivi",
+        "crocodile",
+        "chaka",
+        "nico-robin",
+        "nefertari-cobra",
+        "monkey-d-luffy",
+        "pell",
+        "roronoa-zoro",
+        "nami",
+        "tony-tony-chopper",
+        "usopp",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 122,
+      "title": {
+        "es": "¡Crocodile de arena y Luffy de Agua! Combate a muerte: Ronda 2",
+        "en": "Sand Crocodile and Water Luffy! Death Match: Round 2",
+        "ja": "砂ワニと水ルフィ！決闘第2ラウンド"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        200,
+        201
+      ],
+      "airDate": {
+        "ja": "2002-08-18"
+      },
+      "appearances": [
+        "crocodile",
+        "nico-robin",
+        "nefertari-cobra",
+        "monkey-d-luffy",
+        "usopp",
+        "nefertari-vivi",
+        "nami",
+        "tony-tony-chopper",
+        "pell",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "tashigi"
+      ]
+    },
+    {
+      "number": 123,
+      "title": {
+        "es": "¡Huele a cocodrilo! ¡Corre a la tumba de la Familia Real, Luffy!",
+        "en": "Smells Like Croc! Run to the Tomb of the Royal Family, Luffy!",
+        "ja": "ワニっぽい！王家の墓へ走れルフィ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        202,
+        203
+      ],
+      "airDate": {
+        "ja": "2002-08-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "crocodile",
+        "nico-robin",
+        "nefertari-cobra",
+        "tashigi",
+        "usopp",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "nami",
+        "vinsmoke-sanji",
+        "nefertari-vivi",
+        "pell"
+      ]
+    },
+    {
+      "number": 124,
+      "title": {
+        "es": "¡La pesadilla se acerca! La base secreta del clan Suna Suna",
+        "en": "The Nightmare Draws Near! Secret Base of the Suna Suna Clan",
+        "ja": "悪夢の時迫る！ここは砂砂団秘密基地"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        204,
+        205
+      ],
+      "airDate": {
+        "ja": "2002-09-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nefertari-vivi",
+        "usopp",
+        "koza",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nami",
+        "nico-robin",
+        "crocodile",
+        "nefertari-cobra",
+        "karoo",
+        "tashigi",
+        "smoker",
+        "pell"
+      ]
+    },
+    {
+      "number": 125,
+      "title": {
+        "es": "¡Alas magníficas! Mi nombre es Pell, espíritu guardián del reino",
+        "en": "Magnificent Wings! My Name is Pell, Guardian Spirit of the Kingdom",
+        "ja": "偉大なる翼！我が名は国の守護神ペル"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        206,
+        207,
+        208
+      ],
+      "airDate": {
+        "ja": "2002-09-08"
+      },
+      "appearances": [
+        "tashigi",
+        "nefertari-cobra",
+        "nico-robin",
+        "crocodile",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "pell",
+        "chaka",
+        "koza",
+        "igaram",
+        "karoo"
+      ]
+    },
+    {
+      "number": 126,
+      "title": {
+        "es": "¡Te superaré! ¡La lluvia cae en Arabasta!",
+        "en": "I Will Surpass You! Rain Falls on Arabasta!",
+        "ja": "越えていく！アラバスタに雨が降る！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        208,
+        209,
+        210
+      ],
+      "airDate": {
+        "ja": "2002-09-15"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "tashigi",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "pell",
+        "smoker",
+        "nefertari-cobra",
+        "nico-robin",
+        "crocodile",
+        "monkey-d-luffy",
+        "zala",
+        "koza"
+      ]
+    },
+    {
+      "number": 127,
+      "title": {
+        "es": "¡Adiós a las armas! Piratas y un poco de justicia",
+        "en": "A Farewell to Arms! Pirates and a Little Justice",
+        "ja": "武器よさらば！海賊といくつかの正義"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        211,
+        212
+      ],
+      "airDate": {
+        "ja": "2002-10-06"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "chaka",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "nami",
+        "usopp",
+        "igaram",
+        "tony-tony-chopper",
+        "bentham",
+        "koza",
+        "nefertari-cobra",
+        "monkey-d-luffy",
+        "crocodile",
+        "tashigi",
+        "karoo",
+        "drophy",
+        "babe",
+        "zala",
+        "daz-bonez",
+        "smoker"
+      ]
+    },
+    {
+      "number": 128,
+      "title": {
+        "es": "¡El banquete de los piratas y la operación escape de Arabasta!",
+        "en": "The Pirates' Banquet and Operation Escape Arabasta!",
+        "ja": "海賊たちの宴とアラバスタ脱出作戦!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        213,
+        214
+      ],
+      "airDate": {
+        "ja": "2002-10-06"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "nefertari-vivi",
+        "karoo",
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "daz-bonez",
+        "nefertari-cobra",
+        "nami",
+        "chaka",
+        "igaram",
+        "bentham"
+      ]
+    },
+    {
+      "number": 129,
+      "title": {
+        "es": "¡Todo comenzó aquel día! ¡Vivi cuenta sus aventuras!",
+        "en": "Everything Began That Day! Vivi Tells of Her Adventures!",
+        "ja": "始まりはあの日!ビビが語る冒険譚"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        215,
+        216
+      ],
+      "airDate": {
+        "ja": "2002-10-20"
+      },
+      "appearances": [
+        "igaram",
+        "nefertari-vivi",
+        "nefertari-cobra",
+        "chaka",
+        "monkey-d-luffy",
+        "nami",
+        "roronoa-zoro",
+        "bentham",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "usopp",
+        "koza",
+        "karoo",
+        "galdino"
+      ]
+    },
+    {
+      "number": 130,
+      "title": {
+        "es": "¡Cuidado con su aroma! ¡La séptima es Nico Robin!",
+        "en": "Beware Her Scent! The Seventh One is Nico Robin!",
+        "ja": "危険な香り！七人目はニコ・ロビン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        217,
+        218
+      ],
+      "airDate": {
+        "ja": "2002-10-27"
+      },
+      "appearances": [
+        "nefertari-cobra",
+        "chaka",
+        "nefertari-vivi",
+        "karoo",
+        "koza",
+        "pell",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "usopp",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "smoker",
+        "tashigi",
+        "nico-robin",
+        "crocodile"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "bon-clay-friendship",
+      "kind": "other",
+      "characters": [
+        "bentham",
+        "monkey-d-luffy",
+        "karoo"
+      ],
+      "episode": 92,
+      "chapter": 156,
+      "description": {
+        "es": "El barco se encuentra con Mr. 2 Bon Clay, que se hace amigo de los Sombrero de Paja."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "ace-reunion",
+      "kind": "reveal",
+      "characters": [
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "smoker"
+      ],
+      "episode": 94,
+      "chapter": 158,
+      "description": {
+        "es": "Ace, comandante de los Piratas de Barbablanca, detiene a Smoker y se reencuentra con Luffy."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-vivi-yuba",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "nefertari-vivi"
+      ],
+      "episode": 104,
+      "chapter": 166,
+      "description": {
+        "es": "Luffy pelea con Vivi en Yuba y la obliga a admitir que no puede salvar el país sin arriesgar a nadie."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "crocodile-unmasked-rain-dinners",
+      "kind": "reveal",
+      "characters": [
+        "crocodile",
+        "nefertari-vivi",
+        "monkey-d-luffy"
+      ],
+      "episode": 106,
+      "chapter": 170,
+      "description": {
+        "es": "Crocodile atrapa a los Sombrero de Paja en Rain Dinners y desvela la Operación Utopía."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-crocodile-round-1",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "crocodile"
+      ],
+      "episode": 110,
+      "chapter": 178,
+      "description": {
+        "es": "Primer combate: Crocodile seca a Luffy y lo deja medio muerto en el desierto."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-chopper-vs-mr4-miss-merry-christmas",
+      "kind": "battle",
+      "characters": [
+        "usopp",
+        "tony-tony-chopper",
+        "babe",
+        "drophy"
+      ],
+      "episode": 114,
+      "chapter": 186,
+      "description": {
+        "es": "Usopp y Chopper derrotan a Mr. 4 y Miss Merry Christmas."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-vs-mr2-bon-clay",
+      "kind": "battle",
+      "characters": [
+        "vinsmoke-sanji",
+        "bentham"
+      ],
+      "episode": 116,
+      "chapter": 189,
+      "description": {
+        "es": "Sanji vence a Mr. 2 Bon Clay y su Okama Kenpo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nami-vs-miss-doublefinger",
+      "kind": "battle",
+      "characters": [
+        "nami",
+        "zala"
+      ],
+      "episode": 117,
+      "chapter": 191,
+      "description": {
+        "es": "Nami derrota a Miss Doublefinger con el Clima-Tact."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "cobra-reveals-pluton",
+      "kind": "reveal",
+      "characters": [
+        "nefertari-cobra",
+        "crocodile",
+        "nico-robin"
+      ],
+      "episode": 118,
+      "chapter": 193,
+      "description": {
+        "es": "Cobra confirma que Crocodile busca el arma ancestral Pluton."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "zoro-vs-mr1",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "daz-bonez"
+      ],
+      "episode": 119,
+      "chapter": 195,
+      "description": {
+        "es": "Zoro aprende a cortar el acero y vence a Mr. 1 con Shishi Sonson."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "water-luffy",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "crocodile"
+      ],
+      "episode": 122,
+      "chapter": 201,
+      "description": {
+        "es": "Luffy se empapa de agua para poder golpear el cuerpo de arena de Crocodile."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-crocodile-round-2",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "crocodile"
+      ],
+      "episode": 122,
+      "chapter": 201,
+      "description": {
+        "es": "Segundo combate: Water Luffy toca a Crocodile pero cae atravesado por su garfio."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "pell-carries-the-bomb",
+      "kind": "other",
+      "characters": [
+        "pell",
+        "nefertari-vivi"
+      ],
+      "episode": 125,
+      "chapter": 208,
+      "description": {
+        "es": "Pell se lleva la bomba de la plaza de Alubarna en vuelo y estalla en el aire."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-crocodile",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "crocodile"
+      ],
+      "episode": 126,
+      "chapter": 209,
+      "description": {
+        "es": "Luffy derrota a Crocodile en el tercer combate y la lluvia vuelve a Arabasta."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "bon-clay-decoy",
+      "kind": "other",
+      "characters": [
+        "bentham",
+        "monkey-d-luffy"
+      ],
+      "episode": 128,
+      "chapter": 214,
+      "description": {
+        "es": "Bon Clay se sacrifica para que los Sombrero de Paja escapen del bloqueo de la Marina."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "vivi-farewell-x-mark",
+      "kind": "other",
+      "characters": [
+        "nefertari-vivi",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper"
+      ],
+      "episode": 129,
+      "chapter": 216,
+      "description": {
+        "es": "Vivi se despide desde el muelle y la tripulación levanta el brazo con la marca X."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nico-robin-joins-straw-hats",
+      "kind": "recruitment",
+      "characters": [
+        "nico-robin",
+        "monkey-d-luffy"
+      ],
+      "episode": 130,
+      "chapter": 218,
+      "description": {
+        "es": "Nico Robin aparece en el Going Merry y pide unirse a la tripulación."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/it/wiki/Episodio_{n}",
+      "field": "episodes.adaptsChapters (campo capitoli de la wiki italiana)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/es/wiki/Episodio_{n}",
+      "field": "episodes.title.es"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_{n}",
+      "field": "episodes.appearances (Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Arabasta_Arc",
+      "field": "chapterRange,episodeRange"
+    }
+  ]
+}

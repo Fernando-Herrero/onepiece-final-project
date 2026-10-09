@@ -1,0 +1,490 @@
+{
+  "slug": "syrup-village",
+  "sagaSlug": "east-blue",
+  "order": 3,
+  "title": {
+    "es": "Villa Syrup",
+    "en": "Syrup Village Arc",
+    "ja": "シロップ村編"
+  },
+  "summary": {
+    "es": "En Villa Syrup, Usopp descubre el plan del capitán Kuro para asesinar a Kaya; Luffy y los suyos frenan a los Piratas del Gato Negro y Usopp se une a la tripulación."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 22,
+    "last": 41
+  },
+  "episodeRange": {
+    "first": 9,
+    "last": 18
+  },
+  "chapters": [
+    {
+      "number": 22,
+      "title": {
+        "en": "You're the Rare Breed",
+        "ja": "あんたが珍獣"
+      }
+    },
+    {
+      "number": 23,
+      "title": {
+        "en": "Introducing Captain Usopp",
+        "ja": "キャプテン･ウソップ登場"
+      }
+    },
+    {
+      "number": 24,
+      "title": {
+        "en": "Things That Can't Be Faked",
+        "ja": "偽れぬもの"
+      }
+    },
+    {
+      "number": 25,
+      "title": {
+        "en": "800 Lies",
+        "ja": "ウソ800"
+      }
+    },
+    {
+      "number": 26,
+      "title": {
+        "en": "Captain Kuro's Plan",
+        "ja": "キャプテン･クロの一計"
+      }
+    },
+    {
+      "number": 27,
+      "title": {
+        "en": "Plan",
+        "ja": "筋"
+      }
+    },
+    {
+      "number": 28,
+      "title": {
+        "en": "Crescent Moon",
+        "ja": "三日月"
+      }
+    },
+    {
+      "number": 29,
+      "title": {
+        "en": "Hill Road",
+        "ja": "坂道"
+      }
+    },
+    {
+      "number": 30,
+      "title": {
+        "en": "Great!!!",
+        "ja": "{{Ruby|GREAT|グレイト}}!!!"
+      }
+    },
+    {
+      "number": 31,
+      "title": {
+        "en": "Truth",
+        "ja": "真実"
+      }
+    },
+    {
+      "number": 32,
+      "title": {
+        "en": "Great Misfortune",
+        "ja": "大凶"
+      }
+    },
+    {
+      "number": 33,
+      "title": {
+        "en": "The Man Who Makes No Sound",
+        "ja": "音無き男"
+      }
+    },
+    {
+      "number": 34,
+      "title": {
+        "en": "Butler Klahadore",
+        "ja": "執事クラハドール"
+      }
+    },
+    {
+      "number": 35,
+      "title": {
+        "en": "Neo Hill Road",
+        "ja": "ネオ坂道"
+      }
+    },
+    {
+      "number": 36,
+      "title": {
+        "en": "After Them!!",
+        "ja": "追え!!"
+      }
+    },
+    {
+      "number": 37,
+      "title": {
+        "en": "The Pirate \"Kuro of a Hundred Plans\"",
+        "ja": "海賊\"百計のクロ\""
+      }
+    },
+    {
+      "number": 38,
+      "title": {
+        "en": "Pirate Crew",
+        "ja": "海賊団"
+      }
+    },
+    {
+      "number": 39,
+      "title": {
+        "en": "For Whom the Bell Tolls",
+        "ja": "誰が為に鐘は鳴る"
+      }
+    },
+    {
+      "number": 40,
+      "title": {
+        "en": "The Usopp Pirates",
+        "ja": "ウソップ海賊団"
+      }
+    },
+    {
+      "number": 41,
+      "title": {
+        "en": "To the Sea",
+        "ja": "海へ"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 9,
+      "title": {
+        "en": "Honorable Liar? Captain Usopp",
+        "ja": "正義のうそつき?キャプテンウソップ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        23,
+        24
+      ],
+      "airDate": {
+        "ja": "2000-01-12"
+      },
+      "appearances": [
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "kaya",
+        "kuro",
+        "jango"
+      ]
+    },
+    {
+      "number": 10,
+      "title": {
+        "en": "The World's Strongest Weirdo! Jango the Hypnotist!",
+        "ja": "史上最強の変な奴！催眠術師ジャンゴ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        24,
+        25,
+        26
+      ],
+      "airDate": {
+        "ja": "2000-01-19"
+      },
+      "appearances": [
+        "usopp",
+        "kaya",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "kuro",
+        "jango"
+      ]
+    },
+    {
+      "number": 11,
+      "title": {
+        "en": "Revealing the Conspiracy! The Pirate Caretaker, Captain Kuro!",
+        "ja": "陰謀を暴け！海賊執事キャプテンクロ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        26,
+        27
+      ],
+      "airDate": {
+        "ja": "2000-01-26"
+      },
+      "appearances": [
+        "jango",
+        "kuro",
+        "usopp",
+        "monkey-d-luffy",
+        "nami",
+        "roronoa-zoro",
+        "kaya"
+      ]
+    },
+    {
+      "number": 12,
+      "title": {
+        "en": "Battle! The Black Cat Pirate Crew. Battle on the Slope!",
+        "ja": "激突！クロネコ海賊団坂道の大攻防！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        28,
+        29,
+        30
+      ],
+      "airDate": {
+        "ja": "2000-02-02"
+      },
+      "appearances": [
+        "usopp",
+        "kaya",
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kuro",
+        "jango"
+      ]
+    },
+    {
+      "number": 13,
+      "title": {
+        "en": "The Terrifying Duo! Nyaban Brothers vs. Zoro",
+        "ja": "恐怖の二人組！ニャーバン兄弟VSゾロ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        30,
+        31,
+        32
+      ],
+      "airDate": {
+        "ja": "2000-02-09"
+      },
+      "appearances": [
+        "kuro",
+        "usopp",
+        "monkey-d-luffy",
+        "nami",
+        "roronoa-zoro",
+        "jango",
+        "kaya"
+      ]
+    },
+    {
+      "number": 14,
+      "title": {
+        "en": "Luffy's Revival! Miss Kaya's Life and Death Confrontation",
+        "ja": "ルフィ復活！カヤお嬢様の決死の抵抗"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        33,
+        34
+      ],
+      "airDate": {
+        "ja": "2000-02-16"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "jango",
+        "nami",
+        "kuro",
+        "monkey-d-luffy",
+        "usopp",
+        "kaya"
+      ]
+    },
+    {
+      "number": 15,
+      "title": {
+        "en": "Defeat Kuro! Usopp's Tear-filled Determination!",
+        "ja": "クロを倒せ！男ウソップ涙の決意！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        35,
+        36,
+        37
+      ],
+      "airDate": {
+        "ja": "2000-02-23"
+      },
+      "appearances": [
+        "kuro",
+        "jango",
+        "roronoa-zoro",
+        "nami",
+        "monkey-d-luffy",
+        "kaya",
+        "usopp",
+        "morgan"
+      ]
+    },
+    {
+      "number": 16,
+      "title": {
+        "en": "Protect Kaya! Usopp Pirate Gang Takes Action!",
+        "ja": "カヤを守れ！ウソップ海賊団大活躍！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        38,
+        39
+      ],
+      "airDate": {
+        "ja": "2000-03-01"
+      },
+      "appearances": [
+        "kaya",
+        "jango",
+        "monkey-d-luffy",
+        "kuro",
+        "nami",
+        "usopp",
+        "roronoa-zoro",
+        "shanks"
+      ]
+    },
+    {
+      "number": 17,
+      "title": {
+        "en": "Completely Infuriated! Kuro vs. Luffy, Final Battle!",
+        "ja": "怒り爆発！クロVSルフィ決着の行方！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        39,
+        40,
+        41
+      ],
+      "airDate": {
+        "ja": "2000-03-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kuro",
+        "jango",
+        "kaya",
+        "roronoa-zoro",
+        "usopp",
+        "nami"
+      ]
+    },
+    {
+      "number": 18,
+      "title": {
+        "en": "You Are a Special Animal! Gaimon and His Bizarre Friends",
+        "ja": "あんたが珍獣！ガイモンと奇妙な仲間"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        22,
+        42
+      ],
+      "airDate": {
+        "ja": "2000-03-15"
+      },
+      "appearances": [
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "monkey-d-luffy",
+        "gaimon"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "zoro-vs-nyaban-brothers",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "sham",
+        "buchi"
+      ],
+      "episode": 16,
+      "chapter": 38,
+      "description": {
+        "es": "Zoro vence a los hermanos Nyaban."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-kuro",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "kuro"
+      ],
+      "episode": 17,
+      "chapter": 40,
+      "description": {
+        "es": "Luffy derrota al capitán Kuro."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-joins-crew",
+      "kind": "recruitment",
+      "characters": [
+        "usopp",
+        "monkey-d-luffy"
+      ],
+      "episode": 17,
+      "chapter": 41,
+      "description": {
+        "es": "Usopp se une a la tripulación."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "going-merry-obtained",
+      "kind": "other",
+      "characters": [
+        "kaya",
+        "usopp",
+        "monkey-d-luffy",
+        "merry"
+      ],
+      "episode": 17,
+      "chapter": 41,
+      "description": {
+        "es": "Kaya regala el Going Merry a la tripulación."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Syrup_Village_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/East_Blue_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_9",
+      "field": "episodes.adaptsChapters,episodes.appearances (rendered Statistics + Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

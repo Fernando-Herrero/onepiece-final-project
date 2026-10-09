@@ -1,0 +1,1207 @@
+{
+  "slug": "elbaph",
+  "sagaSlug": "final-saga",
+  "order": 2,
+  "title": {
+    "es": "Arco de Elbaph",
+    "en": "Elbaph Arc",
+    "ja": "エルバフ編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 1126,
+    "last": 1194
+  },
+  "episodeRange": {
+    "first": 1156,
+    "last": 1180
+  },
+  "episodes": [
+    {
+      "number": 1156,
+      "title": {
+        "en": "The Long-Sought Elbaph! The Big Reunion Banquet",
+        "ja": "憧れのエルバフ！再会のでっけェ宴"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1126
+      ],
+      "airDate": {
+        "ja": "2026-04-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "brogy",
+        "dorry",
+        "vegapunk-lilith",
+        "tony-tony-chopper",
+        "sanji",
+        "brook",
+        "nami",
+        "nico-robin",
+        "roronoa-zoro",
+        "franky",
+        "jinbe",
+        "shanks",
+        "marshall-d-teach",
+        "kuzan",
+        "monkey-d-garp",
+        "jewelry-bonney"
+      ]
+    },
+    {
+      "number": 1157,
+      "title": {
+        "en": "Nami in a Fix! An Adventure in Block Kingdom",
+        "ja": "ナミ困惑！ブロックの国の冒険"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1127,
+        1128
+      ],
+      "airDate": {
+        "ja": "2026-04-12"
+      },
+      "appearances": [
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "sanji",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 1158,
+      "title": {
+        "en": "A Quest in the Land of Mystery! The Secret of the Sun God",
+        "ja": "謎の国の探索！太陽神の秘密"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1128
+      ],
+      "airDate": {
+        "ja": "2026-04-19"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "usopp",
+        "monkey-d-luffy",
+        "nami",
+        "sanji",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 1159,
+      "title": {
+        "en": "Destroy the Miniature Garden - Escape Block Kingdom",
+        "ja": "箱庭をブッ壊せ 脱出！ブロックの国"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1129
+      ],
+      "airDate": {
+        "ja": "2026-04-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "tony-tony-chopper",
+        "sanji",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 1160,
+      "title": {
+        "en": "An Encounter on a Snowfield - Loki, the Accursed Prince",
+        "ja": "雪原の邂逅 呪いの王子ロキ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1130
+      ],
+      "airDate": {
+        "ja": "2026-05-03"
+      },
+      "appearances": [
+        "brogy",
+        "dorry",
+        "franky",
+        "nico-robin",
+        "jinbe",
+        "brook",
+        "monkey-d-luffy",
+        "usopp",
+        "sanji",
+        "roronoa-zoro",
+        "nami",
+        "tony-tony-chopper",
+        "vegapunk-lilith",
+        "hajrudin",
+        "loki"
+      ]
+    },
+    {
+      "number": 1161,
+      "title": {
+        "en": "A Dangerous Deal! Loki of the Underworld and Luffy",
+        "ja": "危険な取引！冥界のロキとルフィ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1131
+      ],
+      "airDate": {
+        "ja": "2026-05-10"
+      },
+      "appearances": [
+        "loki",
+        "monkey-d-luffy",
+        "usopp",
+        "tony-tony-chopper",
+        "nami",
+        "roronoa-zoro",
+        "sanji",
+        "hajrudin",
+        "nico-robin",
+        "brook",
+        "jewelry-bonney",
+        "vegapunk-lilith",
+        "franky",
+        "jinbe",
+        "brogy",
+        "dorry",
+        "jaguar-d-saul"
+      ]
+    },
+    {
+      "number": 1162,
+      "title": {
+        "en": "A Gargantuan Wave of Emotion - The Dreamlike Scenery of Elbaph",
+        "ja": "巨大な感動 夢の絶景エルバフ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1132
+      ],
+      "airDate": {
+        "ja": "2026-05-17"
+      },
+      "appearances": [
+        "usopp",
+        "tony-tony-chopper",
+        "nami",
+        "sanji",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "dorry",
+        "brogy",
+        "hajrudin",
+        "jewelry-bonney",
+        "brook",
+        "franky",
+        "nico-robin",
+        "jinbe",
+        "vegapunk-lilith",
+        "scopper-gaban"
+      ]
+    },
+    {
+      "number": 1163,
+      "title": {
+        "en": "I Want You to Praise Me - The Reunion of Robin and Saul",
+        "ja": "褒めてほしい ロビンとサウロの再会"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1133
+      ],
+      "airDate": {
+        "ja": "2026-05-24"
+      },
+      "appearances": [
+        "nico-robin",
+        "jaguar-d-saul",
+        "franky",
+        "jinbe",
+        "dorry",
+        "brogy",
+        "brook",
+        "jewelry-bonney",
+        "vegapunk-lilith",
+        "monkey-d-luffy",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nami",
+        "roronoa-zoro",
+        "hajrudin"
+      ]
+    },
+    {
+      "number": 1164,
+      "title": {
+        "en": "Saul's Resolve - The Inherited Will of Ohara",
+        "ja": "サウロの想い 受け継がれたオハラの意志"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1134
+      ],
+      "airDate": {
+        "ja": "2026-05-31"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "jaguar-d-saul",
+        "nico-robin",
+        "roronoa-zoro",
+        "usopp",
+        "jinbe",
+        "nami",
+        "sanji",
+        "tony-tony-chopper",
+        "franky",
+        "brook",
+        "vegapunk-lilith",
+        "jewelry-bonney",
+        "vegapunk",
+        "loki",
+        "brogy",
+        "figarland-shamrock",
+        "manmayer-gunko"
+      ]
+    },
+    {
+      "number": 1165,
+      "title": {
+        "en": "A Welcome with Friends' Cups and Intruders Seeking Loki",
+        "ja": "歓迎の〝友の盃〟とロキを探す侵入者"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1135
+      ],
+      "airDate": {
+        "ja": "2026-06-07"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "jewelry-bonney",
+        "jaguar-d-saul",
+        "nico-robin",
+        "vegapunk-lilith",
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "brook",
+        "jinbe",
+        "sanji",
+        "nami",
+        "franky",
+        "brogy",
+        "dorry",
+        "hajrudin",
+        "jarul",
+        "manmayer-gunko",
+        "figarland-shamrock"
+      ]
+    },
+    {
+      "number": 1166,
+      "title": {
+        "en": "Encountering Loki - Gunko of the Knights of God",
+        "ja": "ロキとの遭遇 神の騎士団 軍子"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1136
+      ],
+      "airDate": {
+        "ja": "2026-06-14"
+      },
+      "appearances": [
+        "manmayer-gunko",
+        "figarland-shamrock",
+        "monkey-d-luffy",
+        "jarul",
+        "hajrudin",
+        "usopp",
+        "jinbe",
+        "sanji",
+        "nami",
+        "roronoa-zoro",
+        "brook",
+        "loki"
+      ]
+    },
+    {
+      "number": 1167,
+      "title": {
+        "en": "Shamrock Appears - Commander of the Knights of God",
+        "ja": "神の騎士団 団長 シャムロック登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1137
+      ],
+      "airDate": {
+        "ja": "2026-06-21"
+      },
+      "appearances": [
+        "figarland-shamrock",
+        "loki",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "hajrudin",
+        "usopp",
+        "manmayer-gunko"
+      ]
+    },
+    {
+      "number": 1168,
+      "title": {
+        "en": "Ancient History - The Harley Passed Down by Elbaph",
+        "ja": "太古の歴史 エルバフが語り継ぐ〝神典〟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1138
+      ],
+      "airDate": {
+        "ja": "2026-06-28"
+      },
+      "appearances": [
+        "figarland-shamrock",
+        "manmayer-gunko",
+        "loki",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "scopper-gaban",
+        "franky",
+        "jaguar-d-saul",
+        "nico-robin",
+        "tony-tony-chopper",
+        "jinbe",
+        "brook",
+        "brogy",
+        "hajrudin",
+        "usopp",
+        "jarul"
+      ]
+    },
+    {
+      "number": 1169,
+      "title": {
+        "en": "The Legend Lurking in Elbaph - The Identity of the Mountain-Eater",
+        "ja": "エルバフに潜む伝説 〝山喰らい〟の正体"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1139
+      ],
+      "airDate": {
+        "ja": "2026-07-12"
+      },
+      "appearances": [
+        "nami",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "scopper-gaban",
+        "jarul",
+        "sanji",
+        "jinbe",
+        "usopp",
+        "brook"
+      ]
+    },
+    {
+      "number": 1170,
+      "title": {
+        "en": "Get the Key! Luffy vs. Scopper Gaban",
+        "ja": "鍵を奪え！ルフィVSスコッパー・ギャバン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1140
+      ],
+      "airDate": {
+        "ja": "2026-07-19"
+      },
+      "appearances": [
+        "scopper-gaban",
+        "monkey-d-luffy",
+        "nami",
+        "roronoa-zoro",
+        "manmayer-gunko",
+        "figarland-shamrock",
+        "shepherd-sommers",
+        "rimoshifu-killingham"
+      ]
+    },
+    {
+      "number": 1171,
+      "title": {
+        "en": "The Heinous Sinner - Loki of the Underworld Freed?!",
+        "ja": "エルバフの大罪人 冥界のロキ解放!?"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1141
+      ],
+      "airDate": {
+        "ja": "2026-07-26"
+      },
+      "appearances": [
+        "nami",
+        "franky",
+        "hajrudin",
+        "brogy",
+        "usopp",
+        "dorry",
+        "jarul",
+        "jinbe",
+        "brook",
+        "sanji",
+        "shepherd-sommers",
+        "rimoshifu-killingham",
+        "manmayer-gunko",
+        "loki",
+        "roronoa-zoro",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1172,
+      "title": {
+        "en": "Monsters Appear in Elbaph - 'What I Fear Most'",
+        "ja": "怪物出現 エルバフを襲う〝こわいもの〟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1142
+      ],
+      "airDate": {
+        "ja": "2026-08-02"
+      },
+      "appearances": [
+        "jaguar-d-saul",
+        "nico-robin",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "sanji",
+        "loki",
+        "hajrudin",
+        "nami",
+        "jinbe",
+        "jarul",
+        "manmayer-gunko",
+        "shepherd-sommers",
+        "rimoshifu-killingham"
+      ]
+    },
+    {
+      "number": 1173,
+      "title": {
+        "en": "A Nightmarish Game - The Dark Plot of the Knights of God",
+        "ja": "悪夢のゲーム 神の騎士団の陰謀"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1143
+      ],
+      "airDate": {
+        "ja": "2026-08-09"
+      },
+      "appearances": [
+        "jaguar-d-saul",
+        "tony-tony-chopper",
+        "nico-robin",
+        "dorry",
+        "brook",
+        "nami",
+        "jinbe",
+        "brogy",
+        "jarul",
+        "usopp",
+        "shepherd-sommers",
+        "manmayer-gunko",
+        "rimoshifu-killingham",
+        "loki",
+        "monkey-d-luffy",
+        "hajrudin",
+        "sanji",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 1174,
+      "title": {
+        "en": "Save the Children! The Elbaph Warriors Rise Up",
+        "ja": "子供達を救え！エルバフの戦士出撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1144
+      ],
+      "airDate": {
+        "ja": "2026-08-16"
+      },
+      "appearances": [
+        "franky",
+        "vegapunk-lilith",
+        "jewelry-bonney",
+        "brook",
+        "nami",
+        "usopp",
+        "jinbe",
+        "jarul",
+        "manmayer-gunko",
+        "shepherd-sommers",
+        "rimoshifu-killingham",
+        "jaguar-d-saul",
+        "nico-robin",
+        "tony-tony-chopper",
+        "brogy",
+        "dorry",
+        "scopper-gaban"
+      ]
+    },
+    {
+      "number": 1175,
+      "title": {
+        "en": "Elbaph in Flames! Jinbe's Shoulder Throw Explodes!",
+        "ja": "エルバフ炎上 炸裂！ジンベエの一本背負い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1145
+      ],
+      "airDate": {
+        "ja": "2026-08-23"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "sanji",
+        "loki",
+        "monkey-d-luffy",
+        "hajrudin",
+        "dorry",
+        "brogy",
+        "scopper-gaban",
+        "nami",
+        "jinbe",
+        "brook",
+        "usopp",
+        "jaguar-d-saul",
+        "nico-robin",
+        "tony-tony-chopper",
+        "shepherd-sommers",
+        "manmayer-gunko",
+        "jarul"
+      ]
+    },
+    {
+      "number": 1176,
+      "title": {
+        "en": "The Threat of the Arrow-Arrow Fruit - Gunko vs. the Straw Hats",
+        "ja": "アロアロの実の脅威 軍子VS麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1146
+      ],
+      "airDate": {
+        "ja": "2026-08-30"
+      },
+      "appearances": [
+        "manmayer-gunko",
+        "usopp",
+        "nami",
+        "brook",
+        "jinbe",
+        "brogy",
+        "dorry",
+        "loki",
+        "monkey-d-luffy",
+        "vegapunk-lilith",
+        "jewelry-bonney",
+        "franky",
+        "rimoshifu-killingham",
+        "shepherd-sommers",
+        "jaguar-d-saul",
+        "nico-robin",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 1177,
+      "title": {
+        "en": "A Despicable Hostage Game - Sommers's Brazen Demands",
+        "ja": "卑劣な人質ゲーム ソマーズの不敵な脅迫"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1147
+      ],
+      "airDate": {
+        "ja": "2026-09-06"
+      },
+      "appearances": [
+        "jaguar-d-saul",
+        "nico-robin",
+        "tony-tony-chopper",
+        "shepherd-sommers",
+        "manmayer-gunko",
+        "nami",
+        "usopp",
+        "jinbe",
+        "brook",
+        "rimoshifu-killingham",
+        "jarul",
+        "scopper-gaban",
+        "dorry",
+        "brogy",
+        "franky",
+        "vegapunk-lilith",
+        "jewelry-bonney"
+      ]
+    },
+    {
+      "number": 1178,
+      "title": {
+        "en": "Protect History and the Future - Robin and Gaban Go on the Attack",
+        "ja": "歴史と未来を守れ ロビンとギャバン出撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1148
+      ],
+      "airDate": {
+        "ja": "2026-09-13"
+      },
+      "appearances": [
+        "manmayer-gunko",
+        "shepherd-sommers",
+        "jarul",
+        "nami",
+        "usopp",
+        "brook",
+        "jinbe",
+        "scopper-gaban",
+        "jaguar-d-saul",
+        "tony-tony-chopper",
+        "nico-robin",
+        "dorry",
+        "brogy",
+        "jewelry-bonney",
+        "vegapunk-lilith",
+        "franky",
+        "rimoshifu-killingham"
+      ]
+    },
+    {
+      "number": 1179,
+      "title": {
+        "en": "One Do-or-Die Second - Gaban vs. the Knights of God",
+        "ja": "決死の一秒 ギャバンVS神の騎士団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1149
+      ],
+      "airDate": {
+        "ja": "2026-09-20"
+      },
+      "appearances": [
+        "scopper-gaban",
+        "shepherd-sommers",
+        "nico-robin",
+        "brook",
+        "jinbe",
+        "usopp",
+        "nami",
+        "jaguar-d-saul",
+        "tony-tony-chopper",
+        "manmayer-gunko",
+        "rimoshifu-killingham",
+        "jarul",
+        "brogy"
+      ]
+    },
+    {
+      "number": 1180,
+      "title": {
+        "en": "Elbaph in Despair - Diabolical Covenant, 'Domi Reversi'",
+        "ja": "絶望のエルバフ 悪魔の契約〝黒転支配〟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1150,
+        1151
+      ],
+      "airDate": {
+        "ja": "2026-09-27"
+      },
+      "appearances": [
+        "manmayer-gunko",
+        "shepherd-sommers",
+        "rimoshifu-killingham",
+        "brogy",
+        "dorry",
+        "jarul",
+        "usopp",
+        "nami",
+        "jinbe",
+        "brook",
+        "nico-robin",
+        "jaguar-d-saul",
+        "sanji",
+        "roronoa-zoro",
+        "loki",
+        "monkey-d-luffy"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "land-of-gods",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "roronoa-zoro",
+        "sanji",
+        "tony-tony-chopper"
+      ],
+      "episode": 1157,
+      "chapter": 1127,
+      "description": {
+        "es": "Seis Sombrero de Paja acaban en la misteriosa Tierra de los Dioses."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-meets-loki",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-luffy",
+        "loki"
+      ],
+      "episode": 1160,
+      "chapter": 1130,
+      "description": {
+        "es": "Luffy conoce a Loki, el príncipe maldito encadenado."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "robin-saul-reunion",
+      "kind": "other",
+      "characters": [
+        "nico-robin",
+        "jaguar-d-saul"
+      ],
+      "episode": 1163,
+      "chapter": 1133,
+      "description": {
+        "es": "Robin se reencuentra con Saul."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "shamrock-shanks-twin",
+      "kind": "reveal",
+      "characters": [
+        "figarland-shamrock",
+        "shanks",
+        "loki"
+      ],
+      "episode": 1168,
+      "chapter": 1138,
+      "description": {
+        "es": "Shamrock, comandante de los Caballeros de Dios, es el gemelo de Shanks."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "harley-reveal",
+      "kind": "reveal",
+      "characters": [
+        "nico-robin",
+        "jaguar-d-saul"
+      ],
+      "episode": 1168,
+      "chapter": 1138,
+      "description": {
+        "es": "Se cuenta la historia antigua del Harley."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-scopper-gaban",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "scopper-gaban"
+      ],
+      "episode": 1170,
+      "chapter": 1140,
+      "description": {
+        "es": "Luffy se enfrenta a Scopper Gaban, ex Pirata de Roger."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "loki-freed",
+      "kind": "other",
+      "characters": [
+        "loki",
+        "monkey-d-luffy",
+        "roronoa-zoro"
+      ],
+      "episode": 1171,
+      "chapter": 1141,
+      "description": {
+        "es": "Luffy y Zoro liberan a Loki."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "knights-of-god-attack",
+      "kind": "battle",
+      "characters": [
+        "shepherd-sommers",
+        "rimoshifu-killingham",
+        "manmayer-gunko"
+      ],
+      "episode": 1173,
+      "chapter": 1143,
+      "description": {
+        "es": "Los Caballeros de Dios atacan Elbaph para raptar a los niños gigantes."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "gaban-vs-sommers",
+      "kind": "battle",
+      "characters": [
+        "scopper-gaban",
+        "shepherd-sommers"
+      ],
+      "episode": 1179,
+      "chapter": 1149,
+      "description": {
+        "es": "Gaban decapita a Sommers en un segundo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "imu-domi-reversi",
+      "kind": "reveal",
+      "characters": [
+        "imu",
+        "manmayer-gunko",
+        "brogy"
+      ],
+      "episode": 1180,
+      "chapter": 1150,
+      "description": {
+        "es": "Imu posee a Gunko y usa Domi Reversi."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "rocks-pirates-formed",
+      "kind": "other",
+      "characters": [
+        "rocks-d-xebec",
+        "harald"
+      ],
+      "episode": null,
+      "chapter": 1155,
+      "description": {
+        "es": "Rocks forma su tripulación tras chocar con el rey Harald."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "rocks-vs-harald",
+      "kind": "battle",
+      "characters": [
+        "rocks-d-xebec",
+        "harald"
+      ],
+      "episode": null,
+      "chapter": 1158,
+      "description": {
+        "es": "Rocks y Harald combaten y quedan en tablas."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "god-valley-incident",
+      "kind": "battle",
+      "characters": [
+        "rocks-d-xebec",
+        "gol-d-roger",
+        "monkey-d-garp",
+        "monkey-d-dragon",
+        "figarland-garling",
+        "shanks"
+      ],
+      "episode": null,
+      "chapter": 1160,
+      "description": {
+        "es": "Incidente de God Valley."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "rocks-demon-transformation",
+      "kind": "transformation",
+      "characters": [
+        "rocks-d-xebec",
+        "imu"
+      ],
+      "episode": null,
+      "chapter": 1164,
+      "description": {
+        "es": "Imu convierte a Rocks en demonio."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "garp-roger-defeat-rocks",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-garp",
+        "gol-d-roger",
+        "rocks-d-xebec"
+      ],
+      "episode": null,
+      "chapter": 1165,
+      "description": {
+        "es": "Garp y Roger derrotan a Rocks con Haki del Rey combinado."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "rocks-death",
+      "kind": "death",
+      "characters": [
+        "rocks-d-xebec",
+        "figarland-garling"
+      ],
+      "episode": null,
+      "chapter": 1166,
+      "description": {
+        "es": "Garling mata a Rocks."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "loki-eats-legendary-fruit",
+      "kind": "transformation",
+      "characters": [
+        "loki",
+        "harald"
+      ],
+      "episode": null,
+      "chapter": 1170,
+      "description": {
+        "es": "Loki come la fruta legendaria de Elbaph con ayuda de Ragnir."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "loki-kills-harald",
+      "kind": "death",
+      "characters": [
+        "loki",
+        "harald",
+        "scopper-gaban",
+        "shanks"
+      ],
+      "episode": null,
+      "chapter": 1171,
+      "description": {
+        "es": "Loki mata a Harald, controlado por Imu."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "loki-nidhoggr",
+      "kind": "transformation",
+      "characters": [
+        "loki",
+        "monkey-d-luffy"
+      ],
+      "episode": null,
+      "chapter": 1174,
+      "description": {
+        "es": "Loki transformado vuela con Luffy en Gear 5."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-loki-defeat-sommers",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "loki",
+        "roronoa-zoro",
+        "shepherd-sommers"
+      ],
+      "episode": null,
+      "chapter": 1175,
+      "description": {
+        "es": "Luffy y Loki derriban a Sommers."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "imu-descends-elbaph",
+      "kind": "reveal",
+      "characters": [
+        "imu"
+      ],
+      "episode": null,
+      "chapter": 1179,
+      "description": {
+        "es": "Nerona Imu baja en persona a Elbaph."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "loki-vs-imu",
+      "kind": "battle",
+      "characters": [
+        "loki",
+        "imu"
+      ],
+      "episode": null,
+      "chapter": 1181,
+      "description": {
+        "es": "Loki se enfrenta a Imu en su forma Nidhöggr."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "brook-esperia-past",
+      "kind": "reveal",
+      "characters": [
+        "brook",
+        "manmayer-gunko"
+      ],
+      "episode": null,
+      "chapter": 1183,
+      "description": {
+        "es": "Pasado de Brook en el reino de Esperia y la princesa Shuri."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-imu",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "imu"
+      ],
+      "episode": null,
+      "chapter": 1186,
+      "description": {
+        "es": "Luffy entra en combate contra Imu."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "gaban-vs-imu",
+      "kind": "battle",
+      "characters": [
+        "scopper-gaban",
+        "imu"
+      ],
+      "episode": null,
+      "chapter": 1190,
+      "description": {
+        "es": "Gaban se enfrenta a Imu con Kamudo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "imu-identity-reveal",
+      "kind": "reveal",
+      "characters": [
+        "scopper-gaban",
+        "imu",
+        "monkey-d-luffy"
+      ],
+      "episode": null,
+      "chapter": 1191,
+      "description": {
+        "es": "Gaban revela a Luffy la identidad de Imu."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "dawn-thor-bullet",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "loki",
+        "hajrudin",
+        "usopp"
+      ],
+      "episode": null,
+      "chapter": 1192,
+      "description": {
+        "es": "Luffy y Loki atraviesan el escudo de Imu con Dawn Thor Bullet."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-conquerors-haki-sommers",
+      "kind": "transformation",
+      "characters": [
+        "roronoa-zoro",
+        "shepherd-sommers"
+      ],
+      "episode": null,
+      "chapter": 1194,
+      "description": {
+        "es": "Zoro domina su Haki del Rey en las espadas y supera la inmortalidad de Sommers."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Elbaph_Arc",
+      "field": "chapterRange (en curso: último capítulo publicado 1194, 27-09-2026; 1195 sale el 11-10-2026)"
+    },
+    {
+      "url": "https://animecorner.me/one-piece-anime-to-continue-in-2027-finished-for-this-year-after-episode-1180/",
+      "field": "episodeRange.last (en curso: pausa tras el 1180 hasta 2027)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/One_Piece_season_22",
+      "field": "episodes.title.en/airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_1150",
+      "field": "events.chapter 1150-1194 (episode null: aún no adaptados)"
+    }
+  ]
+}

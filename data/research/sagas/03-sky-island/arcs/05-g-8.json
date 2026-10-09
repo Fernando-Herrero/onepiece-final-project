@@ -1,0 +1,318 @@
+{
+  "slug": "g-8",
+  "sagaSlug": "sky-island",
+  "order": 5,
+  "title": {
+    "es": "G-8",
+    "en": "G-8",
+    "ja": "G-8編"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 196,
+    "last": 206
+  },
+  "episodes": [
+    {
+      "number": 196,
+      "title": {
+        "en": "Emergency Official Announcement! Notorious Pirate Ship Infiltration!",
+        "ja": "非常事態発令！悪名高き海賊船潜入！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-06-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 197,
+      "title": {
+        "en": "Sanji the Cook! Showing His Real Worth at the Marine Dining-room!",
+        "ja": "料理人サンジ！海軍食堂で真価発揮！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-07-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 198,
+      "title": {
+        "en": "Zoro's Imprisonment and Chopper's Emergency Operation!",
+        "ja": "囚われたゾロとチョッパー緊急執刀！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-07-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 199,
+      "title": {
+        "en": "The Search of the Approaching Marines! The Second Person Who Was Captured!",
+        "ja": "迫る海軍の捜査網！囚われた二人目！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-07-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 200,
+      "title": {
+        "en": "Luffy and Sanji's Desperate Decision! Large Rescue Maneuvers!",
+        "ja": "決死のルフィとサンジ！救出大作戦！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-08-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 201,
+      "title": {
+        "en": "Hot Blood Special Unit Participation! Bridge Offensive and Defensive Battle!",
+        "ja": "熱血特別部隊参戦！ブリッジ攻防戦！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-09-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 202,
+      "title": {
+        "en": "Breaking Through the Siege! The Going Merry is Recovered",
+        "ja": "包囲網突破！奪還ゴーイングメリー号"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-09-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 203,
+      "title": {
+        "en": "The Missing Pirate Ship! 2nd Round Assault on the Fortress",
+        "ja": "消えた海賊船！要塞攻防第2ラウンド"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        303
+      ],
+      "airDate": {
+        "ja": "2004-09-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 204,
+      "title": {
+        "en": "The Gold Recovery Plan and the Waver Recovery Plan!",
+        "ja": "黄金奪還作戦とウエイバー回収作戦!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-10-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 205,
+      "title": {
+        "en": "Catch Them All in One Net! Jonathan's Secret Scheme!",
+        "ja": "一網打尽計画！ジョナサン自信の秘策"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-10-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    },
+    {
+      "number": 206,
+      "title": {
+        "en": "So Long, Marine Base! The Final Battle for Freedom",
+        "ja": "さらば海軍要塞！脱出への最後の攻防"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-10-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "sanji-marine-kitchen",
+      "kind": "other",
+      "characters": [
+        "vinsmoke-sanji"
+      ],
+      "episode": 197,
+      "chapter": null,
+      "description": {
+        "es": "Sanji se infiltra como cocinero en el comedor de la base G-8."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "escape-g8",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "jonathan"
+      ],
+      "episode": 206,
+      "chapter": null,
+      "description": {
+        "es": "Los Sombrero de Paja escapan de la fortaleza Navarone del vicealmirante Jonathan."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_196",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_203",
+      "field": "episodes.canon (203 mixed: incluye páginas del cap. 303)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

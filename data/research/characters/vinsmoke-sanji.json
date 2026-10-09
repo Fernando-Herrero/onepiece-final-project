@@ -1,0 +1,226 @@
+{
+  "slug": "vinsmoke-sanji",
+  "name": {
+    "en": "Vinsmoke Sanji",
+    "ja": "ヴィンスモーク・サンジ"
+  },
+  "origin": "germa-kingdom",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 43,
+    "episode": 20
+  },
+  "affiliations": [
+    {
+      "group": "baratie",
+      "role": "sous-chef",
+      "from": {
+        "episode": 20,
+        "chapter": 43
+      },
+      "to": {
+        "episode": 30,
+        "chapter": 68
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "cook",
+      "from": {
+        "episode": 30,
+        "chapter": 68
+      },
+      "to": null
+    },
+    {
+      "group": "germa-66",
+      "role": "prince",
+      "from": {
+        "episode": 783,
+        "chapter": 825
+      },
+      "to": {
+        "episode": 843,
+        "chapter": 876
+      }
+    },
+    {
+      "group": "straw-hat-grand-fleet",
+      "role": "senior-officer",
+      "from": {
+        "episode": 746,
+        "chapter": 800
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 77000000,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 177000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 330000000,
+      "episode": 879,
+      "chapter": 903,
+      "eventSlug": "whole-cake-island-bounties"
+    },
+    {
+      "amount": 1032000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "sanji-pre-timeskip",
+      "name": {
+        "es": "Sanji (pre-salto temporal)",
+        "en": "Sanji (Pre-Timeskip)",
+        "ja": "サンジ"
+      },
+      "firstAppearance": {
+        "episode": 20,
+        "chapter": 43
+      },
+      "description": {
+        "es": "Cocinero del Baratie de traje negro."
+      },
+      "suggestedRarity": "common",
+      "abilities": [
+        "Estilo Pierna Negra"
+      ]
+    },
+    {
+      "slug": "sanji-mr-prince",
+      "name": {
+        "es": "Mr. Prince",
+        "en": "Mr. Prince",
+        "ja": "Mr.プリンス"
+      },
+      "firstAppearance": {
+        "episode": 109,
+        "chapter": 177
+      },
+      "description": {
+        "es": "Alias que usa en Alabasta para infiltrarse en Rain Dinners."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "sanji-diable-jambe",
+      "name": {
+        "es": "Sanji Diable Jambe",
+        "en": "Diable Jambe",
+        "ja": "悪魔風脚"
+      },
+      "firstAppearance": {
+        "episode": 305,
+        "chapter": 421
+      },
+      "description": {
+        "es": "Pierna al rojo vivo por fricción; estrenada contra Jabra en Enies Lobby."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Diable Jambe: Flanchet Shoot"
+      ]
+    },
+    {
+      "slug": "sanji-post-timeskip",
+      "name": {
+        "es": "Sanji (post-salto temporal)",
+        "en": "Sanji (Post-Timeskip)",
+        "ja": "サンジ"
+      },
+      "firstAppearance": {
+        "episode": 519,
+        "chapter": 602
+      },
+      "description": {
+        "es": "Vuelve del Reino Kamabakka con el flequillo cambiado de lado y Sky Walk."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Sky Walk",
+        "Haki de Observación"
+      ]
+    },
+    {
+      "slug": "sanji-stealth-black",
+      "name": {
+        "es": "Sanji Raid Suit: Stealth Black",
+        "en": "Raid Suit: Stealth Black",
+        "ja": "レイドスーツ ステルスブラック"
+      },
+      "firstAppearance": {
+        "episode": 794,
+        "chapter": 833
+      },
+      "description": {
+        "es": "Traje de Germa que lo hace invisible."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Invisibilidad"
+      ]
+    },
+    {
+      "slug": "sanji-ifrit-jambe",
+      "name": {
+        "es": "Sanji Ifrit Jambe",
+        "en": "Ifrit Jambe",
+        "ja": "魔神風脚"
+      },
+      "firstAppearance": {
+        "episode": 1061,
+        "chapter": 1034
+      },
+      "description": {
+        "es": "Llamas azules tras despertar su exoesqueleto Germa, contra Queen en Onigashima."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Exoesqueleto",
+        "Haki de Armadura"
+      ]
+    }
+  ],
+  "keyEvents": [
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "whole-cake-island-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sanji/History",
+      "field": "bounties[77000000]"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sanji/Abilities_and_Powers",
+      "field": "forms[sanji-stealth-black,sanji-ifrit-jambe]"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sanji",
+      "field": "forms[sanji-mr-prince,sanji-diable-jambe,sanji-post-timeskip] (cap/ep de memoria, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Germa_66",
+      "field": "affiliations[germa-66] (fechas aproximadas)"
+    }
+  ]
+}

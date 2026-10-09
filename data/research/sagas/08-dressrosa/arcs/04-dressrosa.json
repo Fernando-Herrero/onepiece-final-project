@@ -1,0 +1,4795 @@
+{
+  "slug": "dressrosa",
+  "sagaSlug": "dressrosa",
+  "order": 4,
+  "title": {
+    "es": "Arco de Dressrosa",
+    "en": "Dressrosa Arc",
+    "ja": "ドレスローザ編"
+  },
+  "summary": {
+    "es": "La alianza llega a Dressrosa para acabar con la fábrica de SMILE de Doflamingo. Luffy entra en el torneo del Coliseo Corrida por el Mera Mera no Mi, que acaba en manos de Sabo; Usopp derrota a Sugar y libera a los juguetes, y tras la Jaula de Doflamingo, Luffy lo vence con el Gear 4. La Gran Flota de los Sombrero de Paja se forma y llegan nuevas recompensas."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 700,
+    "last": 801
+  },
+  "episodeRange": {
+    "first": 629,
+    "last": 746
+  },
+  "chapters": [
+    {
+      "number": 700,
+      "title": {
+        "en": "His Momentum",
+        "ja": "奴のペース"
+      },
+      "releaseDate": "2013-03-04"
+    },
+    {
+      "number": 701,
+      "title": {
+        "en": "Adventure in the Land of Love, Passion and Toys",
+        "ja": "愛と情熱とオモチャの国の冒険"
+      },
+      "releaseDate": "2013-03-11"
+    },
+    {
+      "number": 702,
+      "title": {
+        "en": "Corrida Coliseum",
+        "ja": "コリーダコロシアム"
+      },
+      "releaseDate": "2013-03-25"
+    },
+    {
+      "number": 703,
+      "title": {
+        "en": "Waiting Room",
+        "ja": "控室"
+      },
+      "releaseDate": "2013-04-01"
+    },
+    {
+      "number": 704,
+      "title": {
+        "en": "Lucy and the Statue of Kyros",
+        "ja": "ルーシーとキュロスの像"
+      },
+      "releaseDate": "2013-04-08"
+    },
+    {
+      "number": 705,
+      "title": {
+        "en": "Maynard the Pursuer",
+        "ja": "追撃のメイナード"
+      },
+      "releaseDate": "2013-04-15"
+    },
+    {
+      "number": 706,
+      "title": {
+        "en": "I Ain't Gonna Laugh at Ya",
+        "ja": "お前を笑わない"
+      },
+      "releaseDate": "2013-04-22"
+    },
+    {
+      "number": 707,
+      "title": {
+        "en": "Block B",
+        "ja": "{{Ruby|B|ビー}}ブロック"
+      },
+      "releaseDate": "2013-04-27"
+    },
+    {
+      "number": 708,
+      "title": {
+        "en": "Coliseum of Scoundrels",
+        "ja": "曲者達のコロシアム"
+      },
+      "releaseDate": "2013-05-13"
+    },
+    {
+      "number": 709,
+      "title": {
+        "en": "King Punch!!",
+        "ja": "キング・パンチ!!"
+      },
+      "releaseDate": "2013-05-20"
+    },
+    {
+      "number": 710,
+      "title": {
+        "en": "To Greenbit",
+        "ja": "グリーンビットへ"
+      },
+      "releaseDate": "2013-06-10"
+    },
+    {
+      "number": 711,
+      "title": {
+        "en": "Adventure in the Land of the Little People",
+        "ja": "小人の国の冒険"
+      },
+      "releaseDate": "2013-06-17"
+    },
+    {
+      "number": 712,
+      "title": {
+        "en": "Violet",
+        "ja": "ヴァイオレット"
+      },
+      "releaseDate": "2013-07-01"
+    },
+    {
+      "number": 713,
+      "title": {
+        "en": "Usoland",
+        "ja": "ウソランド"
+      },
+      "releaseDate": "2013-07-08"
+    },
+    {
+      "number": 714,
+      "title": {
+        "en": "Lucy and Moocy",
+        "ja": "ルーシーとウーシー"
+      },
+      "releaseDate": "2013-07-13"
+    },
+    {
+      "number": 715,
+      "title": {
+        "en": "The Battleground of Block C",
+        "ja": "激戦区{{Ruby|C|シー}}ブロック"
+      },
+      "releaseDate": "2013-07-22"
+    },
+    {
+      "number": 716,
+      "title": {
+        "en": "Don Chin Jao",
+        "ja": "{{Ruby|首領|ドン}}・チンジャオ"
+      },
+      "releaseDate": "2013-08-05"
+    },
+    {
+      "number": 717,
+      "title": {
+        "en": "Dressrosa's Forgotten",
+        "ja": "ドレスローザの忘れ物"
+      },
+      "releaseDate": "2013-08-12"
+    },
+    {
+      "number": 718,
+      "title": {
+        "en": "Riku Army at the Flower Field",
+        "ja": "お花畑のリク王軍"
+      },
+      "releaseDate": "2013-08-26"
+    },
+    {
+      "number": 719,
+      "title": {
+        "en": "Open, Chin Jao",
+        "ja": "開けチンジャオ"
+      },
+      "releaseDate": "2013-09-02"
+    },
+    {
+      "number": 720,
+      "title": {
+        "en": "Prisoner-Gladiators",
+        "ja": "囚人剣闘士"
+      },
+      "releaseDate": "2013-09-09"
+    },
+    {
+      "number": 721,
+      "title": {
+        "en": "Rebecca and the Soldier",
+        "ja": "レベッカと兵隊さん"
+      },
+      "releaseDate": "2013-09-14"
+    },
+    {
+      "number": 722,
+      "title": {
+        "en": "Royal Bloodlines",
+        "ja": "王族の血統"
+      },
+      "releaseDate": "2013-09-30"
+    },
+    {
+      "number": 723,
+      "title": {
+        "en": "Change of Plans",
+        "ja": "変更作戦"
+      },
+      "releaseDate": "2013-10-07"
+    },
+    {
+      "number": 724,
+      "title": {
+        "en": "Law's Plan",
+        "ja": "ローの作戦"
+      },
+      "releaseDate": "2013-10-12"
+    },
+    {
+      "number": 725,
+      "title": {
+        "en": "The Undefeated Woman",
+        "ja": "無敗の女"
+      },
+      "releaseDate": "2013-10-21"
+    },
+    {
+      "number": 726,
+      "title": {
+        "en": "The Riku Family",
+        "ja": "リク一族"
+      },
+      "releaseDate": "2013-11-02"
+    },
+    {
+      "number": 727,
+      "title": {
+        "en": "The Hero's Ambush",
+        "ja": "待ち伏せるヒーロー"
+      },
+      "releaseDate": "2013-11-11"
+    },
+    {
+      "number": 728,
+      "title": {
+        "en": "The Number of Tragedies",
+        "ja": "悲劇の数"
+      },
+      "releaseDate": "2013-11-18"
+    },
+    {
+      "number": 729,
+      "title": {
+        "en": "Warlord Doflamingo vs. Warlord Law",
+        "ja": "七武海ドフラミンゴ{{Ruby|vs.|バーサス}}七武海ロー"
+      },
+      "releaseDate": "2013-11-25"
+    },
+    {
+      "number": 730,
+      "title": {
+        "en": "Three Cards",
+        "ja": "3枚のカード"
+      },
+      "releaseDate": "2013-12-09"
+    },
+    {
+      "number": 731,
+      "title": {
+        "en": "Operation Dressrosa S.O.P.",
+        "ja": "ドレスローザ{{Ruby|S|エス}}{{Ruby|O|オー}}{{Ruby|P|ピー}}作戦"
+      },
+      "releaseDate": "2013-12-16"
+    },
+    {
+      "number": 732,
+      "title": {
+        "en": "An Underground World",
+        "ja": "地下の世界"
+      },
+      "releaseDate": "2013-12-21"
+    },
+    {
+      "number": 733,
+      "title": {
+        "en": "What the Soldier Wants",
+        "ja": "兵隊さんの欲しいもの"
+      },
+      "releaseDate": "2014-01-04"
+    },
+    {
+      "number": 734,
+      "title": {
+        "en": "The Slicing Winds of Rommel",
+        "ja": "ロンメルのカマイタチ"
+      },
+      "releaseDate": "2014-01-20"
+    },
+    {
+      "number": 735,
+      "title": {
+        "en": "Fujitora's Plan",
+        "ja": "藤虎の思惑"
+      },
+      "releaseDate": "2014-01-27"
+    },
+    {
+      "number": 736,
+      "title": {
+        "en": "Supreme Officer Diamante",
+        "ja": "最高幹部ディアマンテ"
+      },
+      "releaseDate": "2014-02-03"
+    },
+    {
+      "number": 737,
+      "title": {
+        "en": "Officer's Tower",
+        "ja": "幹部塔"
+      },
+      "releaseDate": "2014-02-10"
+    },
+    {
+      "number": 738,
+      "title": {
+        "en": "Trebol Army, Special Officer Sugar",
+        "ja": "トレーボル軍 特別幹部シュガー"
+      },
+      "releaseDate": "2014-02-24"
+    },
+    {
+      "number": 739,
+      "title": {
+        "en": "Captain",
+        "ja": "隊長"
+      },
+      "releaseDate": "2014-03-03"
+    },
+    {
+      "number": 740,
+      "title": {
+        "en": "It's in Your Hands!!!",
+        "ja": "頼む!!!"
+      },
+      "releaseDate": "2014-03-10"
+    },
+    {
+      "number": 741,
+      "title": {
+        "en": "Usoland the Liar",
+        "ja": "うそつきウソランド"
+      },
+      "releaseDate": "2014-03-17"
+    },
+    {
+      "number": 742,
+      "title": {
+        "en": "Ever at Your Side",
+        "ja": "いつでもキミのそばにいる"
+      },
+      "releaseDate": "2014-03-31"
+    },
+    {
+      "number": 743,
+      "title": {
+        "en": "Dressrosa Trembles",
+        "ja": "激震のドレスローザ"
+      },
+      "releaseDate": "2014-04-07"
+    },
+    {
+      "number": 744,
+      "title": {
+        "en": "Revolutionary Army Chief of Staff",
+        "ja": "革命軍参謀総長"
+      },
+      "releaseDate": "2014-04-14"
+    },
+    {
+      "number": 745,
+      "title": {
+        "en": "The Birdcage",
+        "ja": "鳥カゴ"
+      },
+      "releaseDate": "2014-04-28"
+    },
+    {
+      "number": 746,
+      "title": {
+        "en": "Stars",
+        "ja": "星"
+      },
+      "releaseDate": "2014-05-12"
+    },
+    {
+      "number": 747,
+      "title": {
+        "en": "Supreme Officer Pica",
+        "ja": "最高幹部ピーカ"
+      },
+      "releaseDate": "2014-05-19"
+    },
+    {
+      "number": 748,
+      "title": {
+        "en": "Repaying the Debt",
+        "ja": "おれの恩返し"
+      },
+      "releaseDate": "2014-05-26"
+    },
+    {
+      "number": 749,
+      "title": {
+        "en": "Onward, Gallery of Rogues!!",
+        "ja": "すすめ!! 曲者軍団"
+      },
+      "releaseDate": "2014-06-02"
+    },
+    {
+      "number": 750,
+      "title": {
+        "en": "Flash Points",
+        "ja": "戦局"
+      },
+      "releaseDate": "2014-06-23"
+    },
+    {
+      "number": 751,
+      "title": {
+        "en": "Sabo vs. Admiral Fujitora",
+        "ja": "サボ{{Ruby|vs.|バーサス}}大将藤虎"
+      },
+      "releaseDate": "2014-06-30"
+    },
+    {
+      "number": 752,
+      "title": {
+        "en": "Palm",
+        "ja": "掌"
+      },
+      "releaseDate": "2014-07-07"
+    },
+    {
+      "number": 753,
+      "title": {
+        "en": "Battle",
+        "ja": "戦"
+      },
+      "releaseDate": "2014-07-19"
+    },
+    {
+      "number": 754,
+      "title": {
+        "en": "Making Acquaintance",
+        "ja": "お見知り置きを"
+      },
+      "releaseDate": "2014-07-28"
+    },
+    {
+      "number": 755,
+      "title": {
+        "en": "A Man's World",
+        "ja": "男の世界"
+      },
+      "releaseDate": "2014-08-04"
+    },
+    {
+      "number": 756,
+      "title": {
+        "en": "The Fourth Step",
+        "ja": "4段目"
+      },
+      "releaseDate": "2014-08-11"
+    },
+    {
+      "number": 757,
+      "title": {
+        "en": "Trump Card",
+        "ja": "切り札"
+      },
+      "releaseDate": "2014-08-25"
+    },
+    {
+      "number": 758,
+      "title": {
+        "en": "Just Keep Going",
+        "ja": "構わず進め"
+      },
+      "releaseDate": "2014-09-01"
+    },
+    {
+      "number": 759,
+      "title": {
+        "en": "Secret Plan",
+        "ja": "秘策"
+      },
+      "releaseDate": "2014-09-08"
+    },
+    {
+      "number": 760,
+      "title": {
+        "en": "The Same Bet",
+        "ja": "同じ賭け"
+      },
+      "releaseDate": "2014-09-13"
+    },
+    {
+      "number": 761,
+      "title": {
+        "en": "The Op-Op Fruit",
+        "ja": "オペオペの実"
+      },
+      "releaseDate": "2014-09-22"
+    },
+    {
+      "number": 762,
+      "title": {
+        "en": "The White Town",
+        "ja": "白い町"
+      },
+      "releaseDate": "2014-10-06"
+    },
+    {
+      "number": 763,
+      "title": {
+        "en": "Declaration of Humanity",
+        "ja": "人間宣言"
+      },
+      "releaseDate": "2014-10-11"
+    },
+    {
+      "number": 764,
+      "title": {
+        "en": "White Monster",
+        "ja": "ホワイトモンスター"
+      },
+      "releaseDate": "2014-10-20"
+    },
+    {
+      "number": 765,
+      "title": {
+        "en": "Minion, the Isle of Fate",
+        "ja": "運命の島ミニオン"
+      },
+      "releaseDate": "2014-10-27"
+    },
+    {
+      "number": 766,
+      "title": {
+        "en": "Smile",
+        "ja": "スマイル"
+      },
+      "releaseDate": "2014-11-10"
+    },
+    {
+      "number": 767,
+      "title": {
+        "en": "Cora",
+        "ja": "コラさん"
+      },
+      "releaseDate": "2014-11-17"
+    },
+    {
+      "number": 768,
+      "title": {
+        "en": "The Trigger That Day",
+        "ja": "あの日の引鉄"
+      },
+      "releaseDate": "2014-11-22"
+    },
+    {
+      "number": 769,
+      "title": {
+        "en": "Bellamy the Pirate",
+        "ja": "海賊ベラミー"
+      },
+      "releaseDate": "2014-12-01"
+    },
+    {
+      "number": 770,
+      "title": {
+        "en": "The Spear of Elbaph",
+        "ja": "エルバフの槍"
+      },
+      "releaseDate": "2014-12-15"
+    },
+    {
+      "number": 771,
+      "title": {
+        "en": "Sai, Don of the Happosui Army",
+        "ja": "八宝水軍{{Ruby|首領|ドン}}・サイ"
+      },
+      "releaseDate": "2014-12-22"
+    },
+    {
+      "number": 772,
+      "title": {
+        "en": "Cabbage & Lomeo",
+        "ja": "キャベツ{{Ruby|&|アンド}}ロメオ"
+      },
+      "releaseDate": "2015-01-05"
+    },
+    {
+      "number": 773,
+      "title": {
+        "en": "Half 'n Half",
+        "ja": "ハーフ{{Ruby|&|アンド}}ハーフ"
+      },
+      "releaseDate": "2015-01-19"
+    },
+    {
+      "number": 774,
+      "title": {
+        "en": "Leo, Captain of the Tontatta Warriors",
+        "ja": "トンタッタ族戦士長 レオ"
+      },
+      "releaseDate": "2015-01-26"
+    },
+    {
+      "number": 775,
+      "title": {
+        "en": "To Russian With Love",
+        "ja": "ルシアンに愛を込めて"
+      },
+      "releaseDate": "2015-02-02"
+    },
+    {
+      "number": 776,
+      "title": {
+        "en": "Hero of the Coliseum",
+        "ja": "コロシアムの英雄"
+      },
+      "releaseDate": "2015-02-16"
+    },
+    {
+      "number": 777,
+      "title": {
+        "en": "Zolo vs. Pica",
+        "ja": "ゾロ{{Ruby|vs.|バーサス}}ピーカ"
+      },
+      "releaseDate": "2015-02-23"
+    },
+    {
+      "number": 778,
+      "title": {
+        "en": "Tactics No. 5",
+        "ja": "{{Ruby|TACTICS|タクティクス}} No.5"
+      },
+      "releaseDate": "2015-03-02"
+    },
+    {
+      "number": 779,
+      "title": {
+        "en": "His Final Battle",
+        "ja": "最期のケンカ"
+      },
+      "releaseDate": "2015-03-09"
+    },
+    {
+      "number": 780,
+      "title": {
+        "en": "The Heart Curse",
+        "ja": "ハートの呪縛"
+      },
+      "releaseDate": "2015-03-23"
+    },
+    {
+      "number": 781,
+      "title": {
+        "en": "Desire",
+        "ja": "本懐"
+      },
+      "releaseDate": "2015-03-30"
+    },
+    {
+      "number": 782,
+      "title": {
+        "en": "Champion of Evil",
+        "ja": "悪のカリスマ"
+      },
+      "releaseDate": "2015-04-06"
+    },
+    {
+      "number": 783,
+      "title": {
+        "en": "In My Way",
+        "ja": "邪魔だ"
+      },
+      "releaseDate": "2015-04-13"
+    },
+    {
+      "number": 784,
+      "title": {
+        "en": "Gear Four",
+        "ja": "ギア{{Ruby|4|フォース}}"
+      },
+      "releaseDate": "2015-04-27"
+    },
+    {
+      "number": 785,
+      "title": {
+        "en": "On Broken Legs",
+        "ja": "足が折れても"
+      },
+      "releaseDate": "2015-05-11"
+    },
+    {
+      "number": 786,
+      "title": {
+        "en": "Gyats",
+        "ja": "ギャッツ"
+      },
+      "releaseDate": "2015-05-18"
+    },
+    {
+      "number": 787,
+      "title": {
+        "en": "Four Minutes Before",
+        "ja": "4分前"
+      },
+      "releaseDate": "2015-05-25"
+    },
+    {
+      "number": 788,
+      "title": {
+        "en": "My Battle",
+        "ja": "私の戦い"
+      },
+      "releaseDate": "2015-06-01"
+    },
+    {
+      "number": 789,
+      "title": {
+        "en": "Lucy!!",
+        "ja": "{{Ruby|LUCY|ルーシー}}!!"
+      },
+      "releaseDate": "2015-06-08"
+    },
+    {
+      "number": 790,
+      "title": {
+        "en": "Heaven and Earth",
+        "ja": "天と地"
+      },
+      "releaseDate": "2015-06-22"
+    },
+    {
+      "number": 791,
+      "title": {
+        "en": "Rubble",
+        "ja": "ガレキ"
+      },
+      "releaseDate": "2015-06-29"
+    },
+    {
+      "number": 792,
+      "title": {
+        "en": "On Hands and Knees",
+        "ja": "土下座"
+      },
+      "releaseDate": "2015-07-06"
+    },
+    {
+      "number": 793,
+      "title": {
+        "en": "Tiger and Dog",
+        "ja": "虎と犬"
+      },
+      "releaseDate": "2015-07-13"
+    },
+    {
+      "number": 794,
+      "title": {
+        "en": "Sabo's Adventure",
+        "ja": "サボの冒険"
+      },
+      "releaseDate": "2015-07-18"
+    },
+    {
+      "number": 795,
+      "title": {
+        "en": "Suicide",
+        "ja": "自殺"
+      },
+      "releaseDate": "2015-08-03"
+    },
+    {
+      "number": 796,
+      "title": {
+        "en": "Soldier's Conviction",
+        "ja": "兵隊さんの決意"
+      },
+      "releaseDate": "2015-08-10"
+    },
+    {
+      "number": 797,
+      "title": {
+        "en": "Rebecca",
+        "ja": "レベッカ"
+      },
+      "releaseDate": "2015-08-24"
+    },
+    {
+      "number": 798,
+      "title": {
+        "en": "Heart",
+        "ja": "ハート"
+      },
+      "releaseDate": "2015-08-31"
+    },
+    {
+      "number": 799,
+      "title": {
+        "en": "Father and Sons",
+        "ja": "親と子"
+      },
+      "releaseDate": "2015-09-07"
+    },
+    {
+      "number": 800,
+      "title": {
+        "en": "Sons' Cups",
+        "ja": "子分盃"
+      },
+      "releaseDate": "2015-09-19"
+    },
+    {
+      "number": 801,
+      "title": {
+        "en": "Opening Speech",
+        "ja": "開幕宣言"
+      },
+      "releaseDate": "2015-09-28"
+    }
+  ],
+  "episodes": [
+    {
+      "number": 629,
+      "title": {
+        "en": "Startling! The Big News Shakes Up the New World",
+        "ja": "激震！新世界動かす大ニュース"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        700
+      ],
+      "airDate": {
+        "ja": "2014-01-19"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "nico-robin",
+        "sanji",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "kinemon",
+        "caesar-clown",
+        "franky",
+        "roronoa-zoro",
+        "brook",
+        "pica",
+        "diamante",
+        "sugar",
+        "trebol"
+      ]
+    },
+    {
+      "number": 630,
+      "title": {
+        "en": "Adventure! The Country of Love and Passion, Dressrosa",
+        "ja": "冒険！愛と情熱の国ドレスローザ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        701
+      ],
+      "airDate": {
+        "ja": "2014-01-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "franky",
+        "nico-robin",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "kozuki-momonosuke",
+        "nami",
+        "sanji",
+        "brook",
+        "kinemon",
+        "caesar-clown",
+        "issho"
+      ]
+    },
+    {
+      "number": 631,
+      "title": {
+        "en": "Full of Enthusiasm - Corrida Colosseum",
+        "ja": "熱狂渦巻く コリーダコロシアム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        701,
+        702
+      ],
+      "airDate": {
+        "ja": "2014-02-02"
+      },
+      "appearances": [
+        "issho",
+        "monkey-d-luffy",
+        "sanji",
+        "franky",
+        "roronoa-zoro",
+        "kinemon",
+        "kyros"
+      ]
+    },
+    {
+      "number": 632,
+      "title": {
+        "en": "A Dangerous Love - Dancing Girl Violet",
+        "ja": "危険な恋 踊り娘ヴァイオレット"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        702,
+        703
+      ],
+      "airDate": {
+        "ja": "2014-02-09"
+      },
+      "appearances": [
+        "chinjao",
+        "cavendish",
+        "bellamy",
+        "diamante",
+        "issho",
+        "franky",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "sanji",
+        "viola",
+        "kinemon",
+        "kyros"
+      ]
+    },
+    {
+      "number": 633,
+      "title": {
+        "en": "A Formidable, Unknown Warrior! Lucy Appears",
+        "ja": "最強の無名戦士！ルーシー登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        703,
+        704
+      ],
+      "airDate": {
+        "ja": "2014-02-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "diamante",
+        "franky",
+        "kyros",
+        "viola",
+        "sanji",
+        "chinjao",
+        "rebecca",
+        "bellamy",
+        "cavendish",
+        "bartolomeo"
+      ]
+    },
+    {
+      "number": 634,
+      "title": {
+        "en": "The Pirate Prince Cavendish",
+        "ja": "海賊貴公子 キャベンディッシュ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        704,
+        705,
+        706
+      ],
+      "airDate": {
+        "ja": "2014-02-23"
+      },
+      "appearances": [
+        "cavendish",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "usopp",
+        "rebecca",
+        "franky",
+        "issho",
+        "kyros",
+        "bartolomeo",
+        "bellamy"
+      ]
+    },
+    {
+      "number": 635,
+      "title": {
+        "en": "The Fateful Reunion - Bellamy the Hyena",
+        "ja": "運命の再会 ハイエナのベラミー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        705,
+        706
+      ],
+      "airDate": {
+        "ja": "2014-03-02"
+      },
+      "appearances": [
+        "bellamy",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "bartolomeo",
+        "trafalgar-d-water-law",
+        "caesar-clown",
+        "usopp",
+        "nico-robin",
+        "kinemon",
+        "sanji",
+        "viola",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "nami",
+        "brook",
+        "cavendish"
+      ]
+    },
+    {
+      "number": 636,
+      "title": {
+        "en": "Supernova! Bartolomeo the Cannibal",
+        "ja": "超新星！人食いのバルトロメオ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        706,
+        707
+      ],
+      "airDate": {
+        "ja": "2014-03-16"
+      },
+      "appearances": [
+        "bartolomeo",
+        "cavendish",
+        "monkey-d-luffy",
+        "bellamy",
+        "riku-doldo-iii",
+        "chinjao"
+      ]
+    },
+    {
+      "number": 637,
+      "title": {
+        "en": "Big Names Duke It Out! The Heated Block B Battle!",
+        "ja": "群雄割拠！白熱のBブロック！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        707,
+        708
+      ],
+      "airDate": {
+        "ja": "2014-03-23"
+      },
+      "appearances": [
+        "chinjao",
+        "monkey-d-luffy",
+        "cavendish",
+        "riku-doldo-iii",
+        "bellamy",
+        "bartolomeo"
+      ]
+    },
+    {
+      "number": 638,
+      "title": {
+        "en": "A Deadly Blow! The Astonishing King Punch",
+        "ja": "一撃必殺！驚異のキング・パンチ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        709
+      ],
+      "airDate": {
+        "ja": "2014-03-30"
+      },
+      "appearances": [
+        "bartolomeo",
+        "monkey-d-luffy",
+        "bellamy",
+        "riku-doldo-iii",
+        "donquixote-doflamingo",
+        "kyros",
+        "franky"
+      ]
+    },
+    {
+      "number": 639,
+      "title": {
+        "en": "The Fighting Fish Strike! Break through the Deadly Iron Bridge",
+        "ja": "闘魚襲来！死の鉄橋を突破せよ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        710
+      ],
+      "airDate": {
+        "ja": "2014-04-06"
+      },
+      "appearances": [
+        "bartolomeo",
+        "monkey-d-luffy",
+        "bellamy",
+        "nico-robin",
+        "caesar-clown",
+        "usopp",
+        "trafalgar-d-water-law",
+        "chinjao",
+        "sanji",
+        "viola"
+      ]
+    },
+    {
+      "number": 640,
+      "title": {
+        "en": "Adventure! The Island of Fairies, Green Bit",
+        "ja": "冒険！妖精の島グリーンビット"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        710,
+        711,
+        712
+      ],
+      "airDate": {
+        "ja": "2014-04-13"
+      },
+      "appearances": [
+        "usopp",
+        "caesar-clown",
+        "nico-robin",
+        "trafalgar-d-water-law",
+        "leo",
+        "roronoa-zoro",
+        "nami",
+        "kozuki-momonosuke",
+        "tony-tony-chopper",
+        "brook",
+        "chinjao",
+        "monkey-d-luffy",
+        "viola",
+        "sanji",
+        "franky",
+        "kinemon"
+      ]
+    },
+    {
+      "number": 641,
+      "title": {
+        "en": "The Unknown World - The Tontatta Kingdom",
+        "ja": "知られざる世界 トンタッタ王国"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        711,
+        712
+      ],
+      "airDate": {
+        "ja": "2014-04-20"
+      },
+      "appearances": [
+        "viola",
+        "sanji",
+        "monkey-d-luffy",
+        "chinjao",
+        "kyros",
+        "rebecca",
+        "franky",
+        "nico-robin",
+        "usopp",
+        "leo",
+        "trafalgar-d-water-law",
+        "caesar-clown"
+      ]
+    },
+    {
+      "number": 642,
+      "title": {
+        "en": "The Stratagem of the Century - Doflamingo Makes His Move!",
+        "ja": "世紀の謀略 ドフラミンゴ動く！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        706,
+        711,
+        712
+      ],
+      "airDate": {
+        "ja": "2014-04-27"
+      },
+      "appearances": [
+        "caesar-clown",
+        "trafalgar-d-water-law",
+        "sanji",
+        "viola",
+        "donquixote-doflamingo",
+        "issho",
+        "nico-robin",
+        "chinjao",
+        "monkey-d-luffy",
+        "cavendish"
+      ]
+    },
+    {
+      "number": 643,
+      "title": {
+        "en": "Shaking Heaven and Earth! Admiral Fujitora's Power",
+        "ja": "天地ゆるがす！大将藤虎の実力"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        713,
+        714
+      ],
+      "airDate": {
+        "ja": "2014-05-04"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "caesar-clown",
+        "issho",
+        "franky",
+        "sanji",
+        "viola",
+        "kyros",
+        "monkey-d-luffy",
+        "kinemon",
+        "usopp",
+        "nico-robin",
+        "leo"
+      ]
+    },
+    {
+      "number": 644,
+      "title": {
+        "en": "A Blow of Anger! A Giant vs. Lucy",
+        "ja": "怒りの一撃！巨人VSルーシー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        714
+      ],
+      "airDate": {
+        "ja": "2014-05-11"
+      },
+      "appearances": [
+        "brook",
+        "tony-tony-chopper",
+        "nami",
+        "kozuki-momonosuke",
+        "riku-doldo-iii",
+        "rebecca",
+        "diamante",
+        "bellamy",
+        "bartolomeo",
+        "cavendish",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 645,
+      "title": {
+        "en": "Destruction Cannon Blasts! Lucy in Trouble",
+        "ja": "破壊砲炸裂！ルーシー危機一髪"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        715
+      ],
+      "airDate": {
+        "ja": "2014-05-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "cavendish",
+        "rebecca",
+        "roronoa-zoro",
+        "donquixote-doflamingo",
+        "issho",
+        "trafalgar-d-water-law",
+        "caesar-clown",
+        "chinjao"
+      ]
+    },
+    {
+      "number": 646,
+      "title": {
+        "en": "The Legendary Pirate - Don Chinjao!",
+        "ja": "伝説の海賊 {{Ruby|首領|ドン}}・チンジャオ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        716
+      ],
+      "airDate": {
+        "ja": "2014-05-25"
+      },
+      "appearances": [
+        "chinjao",
+        "monkey-d-luffy",
+        "nami",
+        "kozuki-momonosuke",
+        "brook",
+        "tony-tony-chopper",
+        "bartolomeo",
+        "cavendish",
+        "rebecca",
+        "diamante"
+      ]
+    },
+    {
+      "number": 647,
+      "title": {
+        "en": "Light and Shadow - Darkness behind Dressrosa!",
+        "ja": "光と影 ドレスローザに潜む闇！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        717
+      ],
+      "airDate": {
+        "ja": "2014-06-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "chinjao",
+        "kinemon",
+        "sanji",
+        "kyros",
+        "franky",
+        "sugar",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "issho",
+        "leo",
+        "usopp",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 648,
+      "title": {
+        "en": "Making a Sortie - The Legendary Hero Usoland",
+        "ja": "出撃 伝説のヒーローウソランド"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        718,
+        726
+      ],
+      "airDate": {
+        "ja": "2014-06-08"
+      },
+      "appearances": [
+        "usopp",
+        "nico-robin",
+        "leo",
+        "franky",
+        "kyros",
+        "roronoa-zoro",
+        "sanji",
+        "monkey-d-luffy",
+        "kinemon",
+        "chinjao",
+        "rebecca",
+        "cavendish",
+        "bartolomeo",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "caesar-clown",
+        "nami",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "brook"
+      ]
+    },
+    {
+      "number": 649,
+      "title": {
+        "en": "The Fierce Battle Coming to the End - Lucy vs. Chinjao",
+        "ja": "激戦決着 ルーシーVSチンジャオ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        718,
+        719
+      ],
+      "airDate": {
+        "ja": "2014-06-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "chinjao",
+        "cavendish",
+        "rebecca",
+        "bartolomeo",
+        "bellamy"
+      ]
+    },
+    {
+      "number": 650,
+      "title": {
+        "en": "Luffy and the Gladiator of Fate - Rebecca",
+        "ja": "ルフィと宿命の剣闘士レベッカ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        720
+      ],
+      "airDate": {
+        "ja": "2014-06-22"
+      },
+      "appearances": [
+        "bartolomeo",
+        "monkey-d-luffy",
+        "cavendish",
+        "roronoa-zoro",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "sanji",
+        "nico-robin",
+        "franky",
+        "chinjao",
+        "rebecca"
+      ]
+    },
+    {
+      "number": 651,
+      "title": {
+        "en": "Protect You to the End! Rebecca and the Toy Soldier",
+        "ja": "守り抜く！レベッカとおもちゃの兵隊"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        721
+      ],
+      "airDate": {
+        "ja": "2014-06-29"
+      },
+      "appearances": [
+        "rebecca",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 652,
+      "title": {
+        "en": "The Last and Bloodiest Block - Block D Battle Begins",
+        "ja": "最後の超激戦区 Dブロック開戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        722
+      ],
+      "airDate": {
+        "ja": "2014-07-06"
+      },
+      "appearances": [
+        "rebecca",
+        "monkey-d-luffy",
+        "chinjao",
+        "cavendish",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "issho",
+        "leo",
+        "usopp",
+        "nico-robin",
+        "kyros",
+        "franky",
+        "roronoa-zoro",
+        "kinemon",
+        "sanji",
+        "viola"
+      ]
+    },
+    {
+      "number": 653,
+      "title": {
+        "en": "A Decisive Battle! Giolla vs. the Straw Hats",
+        "ja": "決戦！ジョーラVS麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        722,
+        723
+      ],
+      "airDate": {
+        "ja": "2014-07-13"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "issho",
+        "trafalgar-d-water-law",
+        "brook",
+        "nami",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "roronoa-zoro",
+        "kinemon",
+        "sanji",
+        "bartolomeo",
+        "rebecca",
+        "monkey-d-luffy",
+        "viola"
+      ]
+    },
+    {
+      "number": 654,
+      "title": {
+        "en": "Beautiful Sword! Cavendish of the White Horse",
+        "ja": "美剣！白馬のキャベンディッシュ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        706,
+        723
+      ],
+      "airDate": {
+        "ja": "2014-07-20"
+      },
+      "appearances": [
+        "nami",
+        "tony-tony-chopper",
+        "brook",
+        "kozuki-momonosuke",
+        "trafalgar-d-water-law",
+        "cavendish",
+        "monkey-d-luffy",
+        "rebecca",
+        "issho",
+        "donquixote-doflamingo",
+        "caesar-clown",
+        "sanji"
+      ]
+    },
+    {
+      "number": 655,
+      "title": {
+        "en": "A Big Clash! Sanji vs. Doflamingo",
+        "ja": "大激突！サンジVSドフラミンゴ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        724
+      ],
+      "airDate": {
+        "ja": "2014-08-03"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "sanji",
+        "brook",
+        "kozuki-momonosuke",
+        "nami",
+        "tony-tony-chopper",
+        "trafalgar-d-water-law",
+        "caesar-clown",
+        "issho",
+        "roronoa-zoro",
+        "kinemon",
+        "bartolomeo",
+        "cavendish",
+        "rebecca",
+        "monkey-d-luffy",
+        "usopp",
+        "franky",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 656,
+      "title": {
+        "en": "Rebecca's Special Attack! Back-to-the-Water Sword Dance",
+        "ja": "レベッカ必殺剣！背水の剣舞"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        725
+      ],
+      "airDate": {
+        "ja": "2014-08-10"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "tony-tony-chopper",
+        "nami",
+        "brook",
+        "caesar-clown",
+        "sanji",
+        "kozuki-momonosuke",
+        "kinemon",
+        "viola",
+        "rebecca",
+        "bartolomeo",
+        "roronoa-zoro",
+        "cavendish",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 657,
+      "title": {
+        "en": "The Most Violent Fighter! Logan vs. Rebecca",
+        "ja": "最凶の戦士！ローガンVSレベッカ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        725,
+        726,
+        727,
+        731
+      ],
+      "airDate": {
+        "ja": "2014-08-17"
+      },
+      "appearances": [
+        "bartolomeo",
+        "usopp",
+        "sanji",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "chinjao",
+        "rebecca",
+        "monkey-d-luffy",
+        "cavendish"
+      ]
+    },
+    {
+      "number": 658,
+      "title": {
+        "en": "A Big Surprise! A True Identity of the Toy Soldier!",
+        "ja": "衝撃！おもちゃの兵隊の正体！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        726
+      ],
+      "airDate": {
+        "ja": "2014-08-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "chinjao",
+        "riku-doldo-iii",
+        "koala",
+        "trebol",
+        "sugar",
+        "nico-robin",
+        "usopp",
+        "kyros",
+        "franky",
+        "leo",
+        "rebecca"
+      ]
+    },
+    {
+      "number": 659,
+      "title": {
+        "en": "A Horrible Past! The Secret of Dressrosa",
+        "ja": "戦慄の過去！ドレスローザの秘密"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        727
+      ],
+      "airDate": {
+        "ja": "2014-08-31"
+      },
+      "appearances": [
+        "bartolomeo",
+        "monkey-d-luffy",
+        "rebecca",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "kyros",
+        "leo"
+      ]
+    },
+    {
+      "number": 660,
+      "title": {
+        "en": "A Nightmare! The Tragic Night of Dressrosa",
+        "ja": "悪夢！ドレスローザ悲劇の一夜"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        728
+      ],
+      "airDate": {
+        "ja": "2014-09-07"
+      },
+      "appearances": [
+        "rebecca",
+        "kyros",
+        "usopp",
+        "franky",
+        "nico-robin",
+        "leo",
+        "chinjao",
+        "monkey-d-luffy",
+        "kinemon",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 661,
+      "title": {
+        "en": "A Showdown Between the Warlords - Law vs. Doflamingo",
+        "ja": "七武海対決 ローVSドフラミンゴ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        728,
+        729
+      ],
+      "airDate": {
+        "ja": "2014-09-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kinemon",
+        "bellamy",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "tony-tony-chopper",
+        "brook",
+        "sanji",
+        "kozuki-momonosuke",
+        "nami",
+        "nico-robin",
+        "franky",
+        "usopp",
+        "leo",
+        "kyros",
+        "caesar-clown",
+        "issho"
+      ]
+    },
+    {
+      "number": 662,
+      "title": {
+        "en": "Two Great Rivals Meet Each Other! Straw Hat and Heavenly Yaksha",
+        "ja": "両雄相まみえる！麦わらと天夜叉"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        730
+      ],
+      "airDate": {
+        "ja": "2014-09-21"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "kinemon",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "nico-robin",
+        "franky",
+        "usopp",
+        "tony-tony-chopper",
+        "brook",
+        "sanji",
+        "nami",
+        "kozuki-momonosuke",
+        "issho",
+        "caesar-clown",
+        "kyros",
+        "rebecca",
+        "viola",
+        "sabo"
+      ]
+    },
+    {
+      "number": 663,
+      "title": {
+        "en": "Luffy Astonished - The Man Who Inherits Ace's Will",
+        "ja": "ルフィ驚愕 エースの意志を継ぐ男"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        731
+      ],
+      "airDate": {
+        "ja": "2014-09-28"
+      },
+      "appearances": [
+        "bellamy",
+        "bartolomeo",
+        "diamante",
+        "nico-robin",
+        "franky",
+        "usopp",
+        "kyros",
+        "issho",
+        "leo",
+        "sugar",
+        "trebol",
+        "monkey-d-luffy",
+        "sabo",
+        "kinemon",
+        "roronoa-zoro",
+        "koala",
+        "sanji",
+        "nami",
+        "tony-tony-chopper",
+        "brook"
+      ]
+    },
+    {
+      "number": 664,
+      "title": {
+        "en": "Operation SOP Starts - Usoland Charges Forth",
+        "ja": "SOP作戦開始　ウソランド突撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        732
+      ],
+      "airDate": {
+        "ja": "2014-10-05"
+      },
+      "appearances": [
+        "kinemon",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "kyros",
+        "leo",
+        "sugar",
+        "nico-robin",
+        "franky",
+        "usopp",
+        "issho",
+        "donquixote-doflamingo",
+        "diamante",
+        "pica",
+        "trebol",
+        "viola",
+        "rebecca"
+      ]
+    },
+    {
+      "number": 665,
+      "title": {
+        "en": "A Burning Passion - Rebecca vs. Suleiman",
+        "ja": "熱き思い レベッカVSスレイマン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        733
+      ],
+      "airDate": {
+        "ja": "2014-10-12"
+      },
+      "appearances": [
+        "rebecca",
+        "cavendish",
+        "monkey-d-luffy",
+        "kinemon",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "leo",
+        "sugar",
+        "kyros",
+        "bartolomeo",
+        "sabo"
+      ]
+    },
+    {
+      "number": 666,
+      "title": {
+        "en": "Winner Decided!? A Surprising Result of Block D",
+        "ja": "勝者決定!? Dブロック衝撃の結末"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        734
+      ],
+      "airDate": {
+        "ja": "2014-10-19"
+      },
+      "appearances": [
+        "rebecca",
+        "cavendish",
+        "bartolomeo",
+        "sabo",
+        "franky",
+        "riku-doldo-iii",
+        "donquixote-doflamingo",
+        "viola",
+        "trafalgar-d-water-law",
+        "usopp",
+        "nico-robin",
+        "leo",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "kinemon"
+      ]
+    },
+    {
+      "number": 667,
+      "title": {
+        "en": "The Admiral's Decision — Fujitora vs. Doflamingo",
+        "ja": "大将の決断 藤虎VSドフラミンゴ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        735
+      ],
+      "airDate": {
+        "ja": "2014-10-26"
+      },
+      "appearances": [
+        "diamante",
+        "rebecca",
+        "cavendish",
+        "sabo",
+        "bartolomeo",
+        "viola",
+        "kinemon",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "franky",
+        "donquixote-doflamingo",
+        "issho",
+        "riku-doldo-iii",
+        "trafalgar-d-water-law",
+        "kaido",
+        "koala"
+      ]
+    },
+    {
+      "number": 668,
+      "title": {
+        "en": "The Final Round Starts - Diamante the Hero Shows Up",
+        "ja": "決勝開始 英雄ディアマンテ登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        736
+      ],
+      "airDate": {
+        "ja": "2014-11-02"
+      },
+      "appearances": [
+        "sabo",
+        "bartolomeo",
+        "rebecca",
+        "diamante",
+        "kinemon",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "viola",
+        "donquixote-doflamingo",
+        "riku-doldo-iii"
+      ]
+    },
+    {
+      "number": 669,
+      "title": {
+        "en": "A Moving Castle! Executive Officer Pica Rises Up",
+        "ja": "動く城！最高幹部ピーカ出現"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        736,
+        737
+      ],
+      "airDate": {
+        "ja": "2014-11-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "viola",
+        "roronoa-zoro",
+        "kinemon",
+        "pica",
+        "franky",
+        "usopp",
+        "nico-robin",
+        "leo",
+        "cavendish",
+        "trebol",
+        "sugar"
+      ]
+    },
+    {
+      "number": 670,
+      "title": {
+        "en": "Dragon Claw Strikes! Lucy's Intimidating Attack!",
+        "ja": "竜の爪炸裂！ルーシー脅威の一撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        736,
+        737,
+        738
+      ],
+      "airDate": {
+        "ja": "2014-11-16"
+      },
+      "appearances": [
+        "sugar",
+        "trebol",
+        "usopp",
+        "nico-robin",
+        "leo",
+        "rebecca",
+        "bartolomeo",
+        "sabo",
+        "diamante",
+        "kyros",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "viola",
+        "pica",
+        "kinemon",
+        "franky"
+      ]
+    },
+    {
+      "number": 671,
+      "title": {
+        "en": "Defeat Sugar - The Dwarf Soldiers Charge!",
+        "ja": "打倒シュガー 小人の兵隊突撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        738,
+        739
+      ],
+      "airDate": {
+        "ja": "2014-11-23"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "viola",
+        "pica",
+        "kyros",
+        "nico-robin",
+        "leo",
+        "trebol",
+        "usopp",
+        "sugar",
+        "sanji",
+        "tony-tony-chopper",
+        "nami",
+        "franky",
+        "brook"
+      ]
+    },
+    {
+      "number": 672,
+      "title": {
+        "en": "The Last Light — The Secret of Our Commander!",
+        "ja": "最後の光 我らが隊長の秘密！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        739,
+        740
+      ],
+      "airDate": {
+        "ja": "2014-11-30"
+      },
+      "appearances": [
+        "leo",
+        "trebol",
+        "sugar",
+        "usopp",
+        "nico-robin",
+        "monkey-d-luffy",
+        "viola",
+        "roronoa-zoro",
+        "pica",
+        "rebecca",
+        "diamante",
+        "sabo",
+        "bartolomeo",
+        "kyros"
+      ]
+    },
+    {
+      "number": 673,
+      "title": {
+        "en": "The Rupture Human — Gladius Blows Up Big Time!",
+        "ja": "{{Ruby|破裂|パンク}}人間 グラディウス大爆発！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        740
+      ],
+      "airDate": {
+        "ja": "2014-12-07"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "pica",
+        "kyros",
+        "rebecca",
+        "monkey-d-luffy",
+        "viola",
+        "kinemon",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "sugar",
+        "trebol",
+        "nico-robin",
+        "usopp",
+        "leo"
+      ]
+    },
+    {
+      "number": 674,
+      "title": {
+        "en": "Liar Usoland on the Run!",
+        "ja": "ウソつき ウソランド逃走中！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        740,
+        741
+      ],
+      "airDate": {
+        "ja": "2014-12-14"
+      },
+      "appearances": [
+        "trebol",
+        "sugar",
+        "leo",
+        "nico-robin",
+        "franky",
+        "viola",
+        "monkey-d-luffy",
+        "kyros",
+        "usopp"
+      ]
+    },
+    {
+      "number": 675,
+      "title": {
+        "en": "A Fateful Encounter — Kyros and King Riku",
+        "ja": "運命の出会い キュロスとリク王"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        741,
+        742
+      ],
+      "airDate": {
+        "ja": "2014-12-21"
+      },
+      "appearances": [
+        "trebol",
+        "usopp",
+        "leo",
+        "sugar",
+        "nico-robin",
+        "trafalgar-d-water-law",
+        "riku-doldo-iii",
+        "donquixote-doflamingo",
+        "kyros",
+        "viola",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 676,
+      "title": {
+        "en": "The Operation Failed! Hero Usoland Dies!?",
+        "ja": "作戦失敗! 英雄ウソランド死す!?"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        742
+      ],
+      "airDate": {
+        "ja": "2014-12-28"
+      },
+      "appearances": [
+        "sugar",
+        "monkey-d-luffy",
+        "kinemon",
+        "sabo",
+        "bartolomeo",
+        "franky",
+        "leo",
+        "usopp",
+        "trebol",
+        "cavendish",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 677,
+      "title": {
+        "en": "The Legend is Back! Kyros' All-out Blow",
+        "ja": "伝説復活！キュロス渾身の一撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        743
+      ],
+      "airDate": {
+        "ja": "2015-01-11"
+      },
+      "appearances": [
+        "sugar",
+        "usopp",
+        "trebol",
+        "nico-robin",
+        "chinjao",
+        "cavendish",
+        "leo",
+        "franky",
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "viola",
+        "riku-doldo-iii",
+        "bartolomeo",
+        "rebecca",
+        "diamante",
+        "sabo",
+        "roronoa-zoro",
+        "issho",
+        "trafalgar-d-water-law",
+        "kyros"
+      ]
+    },
+    {
+      "number": 678,
+      "title": {
+        "en": "The Fire Fist Strikes! The Power of the Mera Mera no Mi Returns",
+        "ja": "火拳炸裂！復活メラメラの実の力"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        743,
+        744
+      ],
+      "airDate": {
+        "ja": "2015-01-18"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "viola",
+        "kyros",
+        "riku-doldo-iii",
+        "diamante",
+        "bartolomeo",
+        "rebecca",
+        "sabo",
+        "koala",
+        "trebol",
+        "sugar",
+        "nico-robin",
+        "usopp",
+        "leo",
+        "cavendish"
+      ]
+    },
+    {
+      "number": 679,
+      "title": {
+        "en": "Dashing onto the Scene - The Chief of Staff of the Revolutionary Army, Sabo!",
+        "ja": "颯爽登場 革命軍参謀総長サボ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        744,
+        745
+      ],
+      "airDate": {
+        "ja": "2015-01-25"
+      },
+      "appearances": [
+        "sabo",
+        "rebecca",
+        "koala",
+        "usopp",
+        "trebol",
+        "nico-robin",
+        "sugar",
+        "diamante",
+        "bartolomeo",
+        "issho",
+        "franky",
+        "roronoa-zoro",
+        "kinemon",
+        "sanji",
+        "tony-tony-chopper",
+        "nami",
+        "brook",
+        "kyros",
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "viola",
+        "trafalgar-d-water-law",
+        "riku-doldo-iii",
+        "pica"
+      ]
+    },
+    {
+      "number": 680,
+      "title": {
+        "en": "The Devil's Trap — A Dressrosa Extermination Plan",
+        "ja": "悪魔の罠 ドレスローザ殲滅作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        745
+      ],
+      "airDate": {
+        "ja": "2015-02-01"
+      },
+      "appearances": [
+        "diamante",
+        "trebol",
+        "donquixote-doflamingo",
+        "pica",
+        "trafalgar-d-water-law",
+        "kyros",
+        "monkey-d-luffy",
+        "viola",
+        "riku-doldo-iii",
+        "issho",
+        "bartolomeo",
+        "nico-robin",
+        "koala",
+        "sabo",
+        "cavendish"
+      ]
+    },
+    {
+      "number": 681,
+      "title": {
+        "en": "The 500 Million Man — The Target is Usoland!",
+        "ja": "五億の男 狙われたウソランド！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        746,
+        747
+      ],
+      "airDate": {
+        "ja": "2015-02-08"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "issho",
+        "bartolomeo",
+        "usopp",
+        "nico-robin",
+        "rebecca",
+        "koala",
+        "sabo",
+        "kinemon",
+        "leo",
+        "riku-doldo-iii",
+        "trafalgar-d-water-law",
+        "viola",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "franky",
+        "diamante",
+        "trebol",
+        "kyros"
+      ]
+    },
+    {
+      "number": 682,
+      "title": {
+        "en": "Breaking through Enemy Lines - Luffy and Zoro Launch the Counter-Attack",
+        "ja": "敵陣突破 ルフィ・ゾロ反撃開始"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        746,
+        747
+      ],
+      "airDate": {
+        "ja": "2015-02-15"
+      },
+      "appearances": [
+        "nico-robin",
+        "rebecca",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "riku-doldo-iii",
+        "viola",
+        "leo",
+        "sabo",
+        "koala",
+        "roronoa-zoro",
+        "issho",
+        "kyros",
+        "chinjao",
+        "cavendish",
+        "trebol",
+        "sugar",
+        "diamante",
+        "donquixote-doflamingo",
+        "usopp",
+        "franky"
+      ]
+    },
+    {
+      "number": 683,
+      "title": {
+        "en": "With a Rumbling of the Ground - The God of Destruction, Giant Pica Descends",
+        "ja": "大地鳴動 破壊神巨大ピーカ降臨"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        747,
+        748
+      ],
+      "airDate": {
+        "ja": "2015-03-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "issho",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "pica",
+        "nico-robin",
+        "rebecca",
+        "leo",
+        "bartolomeo",
+        "viola"
+      ]
+    },
+    {
+      "number": 684,
+      "title": {
+        "en": "Gathering into a Powerful Front! Luffy and a Group of Brutal Warriors!",
+        "ja": "大集結！ルフィと凶悪戦士軍団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        748
+      ],
+      "airDate": {
+        "ja": "2015-03-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "pica",
+        "cavendish",
+        "chinjao"
+      ]
+    },
+    {
+      "number": 685,
+      "title": {
+        "en": "Steady Progress! Luffy's Army vs. Pica!",
+        "ja": "快進撃！ルフィ軍団VSピーカ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        749,
+        750
+      ],
+      "airDate": {
+        "ja": "2015-03-22"
+      },
+      "appearances": [
+        "pica",
+        "chinjao",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "cavendish",
+        "issho",
+        "kyros",
+        "rebecca",
+        "usopp",
+        "nico-robin",
+        "bartolomeo"
+      ]
+    },
+    {
+      "number": 686,
+      "title": {
+        "en": "A Shocking Confession! Law's Soulful Vow!",
+        "ja": "衝撃告白！ロー熱き魂の誓い！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        749,
+        750
+      ],
+      "airDate": {
+        "ja": "2015-03-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "pica",
+        "issho",
+        "kyros",
+        "nico-robin",
+        "riku-doldo-iii",
+        "viola",
+        "bartolomeo",
+        "leo",
+        "rebecca",
+        "franky"
+      ]
+    },
+    {
+      "number": 687,
+      "title": {
+        "en": "A Big Collision! Chief of Staff Sabo vs. Admiral Fujitora",
+        "ja": "大激突！参謀総長サボVS大将藤虎"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        750,
+        751
+      ],
+      "airDate": {
+        "ja": "2015-04-05"
+      },
+      "appearances": [
+        "cavendish",
+        "chinjao",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "issho",
+        "sabo",
+        "roronoa-zoro",
+        "pica",
+        "franky",
+        "viola",
+        "rebecca",
+        "usopp",
+        "bartolomeo",
+        "nico-robin",
+        "kyros"
+      ]
+    },
+    {
+      "number": 688,
+      "title": {
+        "en": "A Desperate Situation - Luffy Gets Caught in a Trap!",
+        "ja": "絶体絶命 罠にかかったルフィ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        751,
+        752
+      ],
+      "airDate": {
+        "ja": "2015-04-12"
+      },
+      "appearances": [
+        "bartolomeo",
+        "rebecca",
+        "nico-robin",
+        "leo",
+        "riku-doldo-iii",
+        "viola",
+        "roronoa-zoro",
+        "pica",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "cavendish"
+      ]
+    },
+    {
+      "number": 689,
+      "title": {
+        "en": "A Great Escape! Luffy's Tide-turning Elephant Gun",
+        "ja": "大脱出！ルフィ起死回生の{{Ruby|象銃|エレファントガン}}"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        752
+      ],
+      "airDate": {
+        "ja": "2015-04-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "kyros",
+        "cavendish",
+        "chinjao",
+        "issho",
+        "sabo",
+        "franky",
+        "nico-robin",
+        "bartolomeo",
+        "rebecca",
+        "bellamy",
+        "trebol",
+        "diamante"
+      ]
+    },
+    {
+      "number": 690,
+      "title": {
+        "en": "A United Front - Luffy's Breakthrough to the Victory",
+        "ja": "共同戦線 ルフィ勝利への突破口"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        752,
+        753
+      ],
+      "airDate": {
+        "ja": "2015-04-26"
+      },
+      "appearances": [
+        "bellamy",
+        "donquixote-doflamingo",
+        "chinjao",
+        "riku-doldo-iii",
+        "usopp",
+        "cavendish",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "kyros"
+      ]
+    },
+    {
+      "number": 691,
+      "title": {
+        "en": "The Second Samurai — Evening Shower Kanjuro Appears",
+        "ja": "二人目の侍 夕立ちカン十郎登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        753,
+        754,
+        755
+      ],
+      "airDate": {
+        "ja": "2015-05-03"
+      },
+      "appearances": [
+        "cavendish",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "kyros",
+        "chinjao",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "sabo",
+        "issho",
+        "franky"
+      ]
+    },
+    {
+      "number": 692,
+      "title": {
+        "en": "A Hard-Fought Battle Against Pica - Zoro's Deadly Attack!",
+        "ja": "激闘ピーカ戦 ゾロ必殺の一撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        754,
+        755
+      ],
+      "airDate": {
+        "ja": "2015-05-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kyros",
+        "cavendish",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "pica",
+        "nico-robin",
+        "rebecca",
+        "bartolomeo",
+        "leo",
+        "franky"
+      ]
+    },
+    {
+      "number": 693,
+      "title": {
+        "en": "The Little People's Princess - Captive Mansherry",
+        "ja": "小人の姫 囚われのマンシェリー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        755,
+        756
+      ],
+      "airDate": {
+        "ja": "2015-05-17"
+      },
+      "appearances": [
+        "franky",
+        "kyros",
+        "monkey-d-luffy",
+        "cavendish",
+        "trafalgar-d-water-law",
+        "pica",
+        "roronoa-zoro",
+        "bartolomeo",
+        "nico-robin",
+        "rebecca",
+        "leo",
+        "riku-doldo-iii",
+        "usopp",
+        "viola",
+        "kinemon",
+        "kurozumi-kanjuro"
+      ]
+    },
+    {
+      "number": 694,
+      "title": {
+        "en": "Invincible! A Gruesome Army of Headcracker Dolls",
+        "ja": "不死身！恐怖の頭割り人形軍団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        756,
+        758
+      ],
+      "airDate": {
+        "ja": "2015-05-24"
+      },
+      "appearances": [
+        "bartolomeo",
+        "nico-robin",
+        "rebecca",
+        "leo",
+        "chinjao",
+        "monkey-d-luffy",
+        "viola",
+        "cavendish",
+        "kyros",
+        "trafalgar-d-water-law",
+        "usopp",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "sugar",
+        "riku-doldo-iii"
+      ]
+    },
+    {
+      "number": 695,
+      "title": {
+        "en": "Risking Their Lives! Luffy is the Trump Card for Victory",
+        "ja": "命かけて！ルフィは勝利の切り札"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        756,
+        757
+      ],
+      "airDate": {
+        "ja": "2015-05-31"
+      },
+      "appearances": [
+        "rebecca",
+        "leo",
+        "kyros",
+        "diamante",
+        "monkey-d-luffy",
+        "bartolomeo",
+        "trafalgar-d-water-law",
+        "cavendish",
+        "nico-robin",
+        "sabo",
+        "issho",
+        "chinjao",
+        "kurozumi-kanjuro",
+        "usopp",
+        "franky",
+        "roronoa-zoro",
+        "pica"
+      ]
+    },
+    {
+      "number": 696,
+      "title": {
+        "en": "A Tearful Reunion — Rebecca and Kyros!",
+        "ja": "涙の再会 レベッカとキュロス！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        757,
+        758
+      ],
+      "airDate": {
+        "ja": "2015-06-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "rebecca",
+        "diamante",
+        "kyros",
+        "sugar",
+        "usopp",
+        "kurozumi-kanjuro",
+        "viola"
+      ]
+    },
+    {
+      "number": 697,
+      "title": {
+        "en": "One Shot One Kill - The Man Who Will Save Dressrosa",
+        "ja": "一撃必殺 ドレスローザを救う男"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        758,
+        759
+      ],
+      "airDate": {
+        "ja": "2015-06-14"
+      },
+      "appearances": [
+        "kurozumi-kanjuro",
+        "kinemon",
+        "usopp",
+        "viola",
+        "riku-doldo-iii",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "sugar",
+        "nico-robin",
+        "bartolomeo",
+        "cavendish",
+        "donquixote-doflamingo",
+        "trebol"
+      ]
+    },
+    {
+      "number": 698,
+      "title": {
+        "en": "Anger Erupts - Luffy and Law's Ultimate Stratagem",
+        "ja": "怒り爆発 ルフィ・ロー最強の秘策"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        759
+      ],
+      "airDate": {
+        "ja": "2015-06-21"
+      },
+      "appearances": [
+        "bartolomeo",
+        "cavendish",
+        "nico-robin",
+        "sugar",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "trebol",
+        "monkey-d-luffy",
+        "bellamy",
+        "diamante",
+        "donquixote-rosinante",
+        "chinjao",
+        "franky",
+        "kyros",
+        "rebecca"
+      ]
+    },
+    {
+      "number": 699,
+      "title": {
+        "en": "A Noble Family - The True Identity of Doflamingo!",
+        "ja": "気高き一族 ドフラミンゴの正体！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        760
+      ],
+      "airDate": {
+        "ja": "2015-06-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "trebol",
+        "trafalgar-d-water-law",
+        "bellamy",
+        "sabo",
+        "issho",
+        "koala",
+        "usopp",
+        "viola",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "riku-doldo-iii",
+        "donquixote-rosinante"
+      ]
+    },
+    {
+      "number": 700,
+      "title": {
+        "en": "The Ultimate Power - The Secret of the Ope Ope no Mi!",
+        "ja": "究極の力 オペオペの実の秘密！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        761
+      ],
+      "airDate": {
+        "ja": "2015-07-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "bellamy",
+        "trebol",
+        "trafalgar-d-water-law",
+        "donquixote-rosinante"
+      ]
+    },
+    {
+      "number": 701,
+      "title": {
+        "en": "Sad Memories - Law the Boy from the White City!",
+        "ja": "悲しき記憶 白い町の少年ロー！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        762
+      ],
+      "airDate": {
+        "ja": "2015-07-12"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "donquixote-rosinante",
+        "donquixote-doflamingo",
+        "diamante",
+        "trebol",
+        "pica"
+      ]
+    },
+    {
+      "number": 702,
+      "title": {
+        "en": "A Celestial Dragon! Doffy's Stormy Past",
+        "ja": "天竜人！ドフィの壮絶なる過去"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        763
+      ],
+      "airDate": {
+        "ja": "2015-07-19"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "donquixote-rosinante",
+        "trafalgar-d-water-law",
+        "diamante",
+        "trebol",
+        "pica"
+      ]
+    },
+    {
+      "number": 703,
+      "title": {
+        "en": "A Rocky Road - Law and Corazon's Journey of Life",
+        "ja": "苦難の道 ローとコラソン命の旅"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        764
+      ],
+      "airDate": {
+        "ja": "2015-08-02"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "donquixote-rosinante",
+        "donquixote-doflamingo",
+        "diamante",
+        "pica",
+        "trebol",
+        "vergo",
+        "monkey-d-luffy",
+        "bellamy"
+      ]
+    },
+    {
+      "number": 704,
+      "title": {
+        "en": "The Time is Ticking Down! Seize the Ope Ope no Mi!",
+        "ja": "時迫る！オペオペの実を奪え！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        764,
+        765
+      ],
+      "airDate": {
+        "ja": "2015-08-09"
+      },
+      "appearances": [
+        "bellamy",
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "donquixote-rosinante",
+        "diamante",
+        "pica",
+        "trebol"
+      ]
+    },
+    {
+      "number": 705,
+      "title": {
+        "en": "The Moment of Resolution - Corazon's Farewell Smile!",
+        "ja": "覚悟の時 コラソン別れの笑顔！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        766
+      ],
+      "airDate": {
+        "ja": "2015-08-16"
+      },
+      "appearances": [
+        "donquixote-rosinante",
+        "trafalgar-d-water-law",
+        "vergo",
+        "donquixote-doflamingo",
+        "trebol",
+        "pica",
+        "diamante"
+      ]
+    },
+    {
+      "number": 706,
+      "title": {
+        "en": "Advance, Law - The Kindhearted Man's Final Fight!",
+        "ja": "行けロー 優しき男最期の戦い！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        767
+      ],
+      "airDate": {
+        "ja": "2015-08-23"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "pica",
+        "diamante",
+        "trebol",
+        "vergo",
+        "donquixote-rosinante",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 707,
+      "title": {
+        "en": "To Be Free! Law's Injection Shot Blasts",
+        "ja": "自由へ！ロー{{Ruby|注射|インジェクション}}ショット炸裂"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        768
+      ],
+      "airDate": {
+        "ja": "2015-08-30"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "trebol",
+        "donquixote-rosinante",
+        "bellamy",
+        "monkey-d-luffy",
+        "viola",
+        "riku-doldo-iii",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "usopp",
+        "pica",
+        "diamante",
+        "kyros",
+        "rebecca",
+        "franky",
+        "roronoa-zoro",
+        "bartolomeo",
+        "nico-robin",
+        "cavendish",
+        "chinjao",
+        "leo",
+        "sabo",
+        "koala",
+        "issho"
+      ]
+    },
+    {
+      "number": 708,
+      "title": {
+        "en": "An Intense Battle - Law vs. Doflamingo",
+        "ja": "熱き闘い ローVSドフラミンゴ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        769,
+        770
+      ],
+      "airDate": {
+        "ja": "2015-09-06"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "trebol",
+        "monkey-d-luffy",
+        "bellamy",
+        "pica",
+        "roronoa-zoro",
+        "donquixote-rosinante"
+      ]
+    },
+    {
+      "number": 709,
+      "title": {
+        "en": "A Decisive Battle Against the Executives - Proud Hajrudin",
+        "ja": "幹部決戦 誇り高きハイルディン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        769,
+        770
+      ],
+      "airDate": {
+        "ja": "2015-09-13"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "bellamy",
+        "diamante",
+        "trebol",
+        "roronoa-zoro",
+        "pica"
+      ]
+    },
+    {
+      "number": 710,
+      "title": {
+        "en": "The Battle of Love - The New Leader Sai vs. Baby 5",
+        "ja": "愛の決戦 新棟梁サイVSベビー5"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        769,
+        771
+      ],
+      "airDate": {
+        "ja": "2015-09-20"
+      },
+      "appearances": [
+        "bellamy",
+        "monkey-d-luffy",
+        "pica",
+        "roronoa-zoro",
+        "chinjao"
+      ]
+    },
+    {
+      "number": 711,
+      "title": {
+        "en": "The Man's Pride - Bellamy's Last Charge!",
+        "ja": "男の意地 ベラミー最期の突撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        769,
+        770,
+        771,
+        772,
+        780
+      ],
+      "airDate": {
+        "ja": "2015-09-27"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "chinjao",
+        "pica",
+        "kyros",
+        "diamante",
+        "rebecca",
+        "sabo",
+        "bellamy",
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "trebol",
+        "trafalgar-d-water-law",
+        "cavendish",
+        "bartolomeo"
+      ]
+    },
+    {
+      "number": 712,
+      "title": {
+        "en": "Storm and Stress - Hakuba vs. Dellinger",
+        "ja": "疾風怒濤 ハクバVSデリンジャー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        772,
+        773
+      ],
+      "airDate": {
+        "ja": "2015-10-04"
+      },
+      "appearances": [
+        "bartolomeo",
+        "cavendish",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 713,
+      "title": {
+        "en": "Bari-Bari - Homage God Fist Strikes!",
+        "ja": "バリバリ オマージュ神拳発動！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        773
+      ],
+      "airDate": {
+        "ja": "2015-10-11"
+      },
+      "appearances": [
+        "cavendish",
+        "nico-robin",
+        "bartolomeo",
+        "franky",
+        "sanji",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "rebecca",
+        "diamante",
+        "kyros"
+      ]
+    },
+    {
+      "number": 714,
+      "title": {
+        "en": "The Healing Princess — Save Mansherry!",
+        "ja": "癒しの姫 マンシェリーを救え！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        774,
+        779
+      ],
+      "airDate": {
+        "ja": "2015-10-18"
+      },
+      "appearances": [
+        "nico-robin",
+        "kyros",
+        "rebecca",
+        "diamante",
+        "bartolomeo",
+        "viola",
+        "riku-doldo-iii",
+        "franky",
+        "leo",
+        "sugar",
+        "usopp",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "bellamy",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 715,
+      "title": {
+        "en": "The Manly Duel — Senor's Elegy of Love",
+        "ja": "男の決闘　セニョール愛の挽歌"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        775,
+        779
+      ],
+      "airDate": {
+        "ja": "2015-10-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bellamy",
+        "leo",
+        "franky"
+      ]
+    },
+    {
+      "number": 716,
+      "title": {
+        "en": "Stardust of Death - Diamante's Storm of Vicious Attacks",
+        "ja": "死の星屑 ディアマンテ猛攻の嵐"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        775,
+        776
+      ],
+      "airDate": {
+        "ja": "2015-11-01"
+      },
+      "appearances": [
+        "diamante",
+        "franky",
+        "monkey-d-luffy",
+        "nico-robin",
+        "rebecca",
+        "kyros",
+        "viola",
+        "riku-doldo-iii"
+      ]
+    },
+    {
+      "number": 717,
+      "title": {
+        "en": "Trueno Bastardo! Kyros' Furious Strike!",
+        "ja": "{{Ruby|雷の破壊剣|トゥルエノバスタード}}！キュロス怒りの一撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        776,
+        777
+      ],
+      "airDate": {
+        "ja": "2015-11-08"
+      },
+      "appearances": [
+        "kyros",
+        "diamante",
+        "nico-robin",
+        "rebecca",
+        "riku-doldo-iii",
+        "viola",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "usopp",
+        "bellamy",
+        "pica",
+        "trebol",
+        "donquixote-doflamingo",
+        "issho",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 718,
+      "title": {
+        "en": "Moving Across the Ground! The Giant Statue Pica's Surprise Maneuver!",
+        "ja": "大地横断 巨像ピーカ奇襲作戦！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        777,
+        778
+      ],
+      "airDate": {
+        "ja": "2015-11-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bellamy",
+        "pica",
+        "kyros",
+        "rebecca",
+        "diamante",
+        "riku-doldo-iii",
+        "nico-robin",
+        "bartolomeo",
+        "roronoa-zoro",
+        "chinjao",
+        "usopp",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "viola"
+      ]
+    },
+    {
+      "number": 719,
+      "title": {
+        "en": "A Decisive Battle in Midair - Zoro's New Special Secret Technique Blasts!",
+        "ja": "空中決戦 ゾロ新必殺奥義炸裂！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        778
+      ],
+      "airDate": {
+        "ja": "2015-11-22"
+      },
+      "appearances": [
+        "pica",
+        "usopp",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "riku-doldo-iii",
+        "viola",
+        "kyros",
+        "nico-robin",
+        "rebecca",
+        "bartolomeo",
+        "chinjao",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 720,
+      "title": {
+        "en": "So Long! Bellamy's Farewell Blow!",
+        "ja": "あばよ！ベラミー別れの一撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        779
+      ],
+      "airDate": {
+        "ja": "2015-11-29"
+      },
+      "appearances": [
+        "pica",
+        "roronoa-zoro",
+        "issho",
+        "chinjao",
+        "bartolomeo",
+        "kyros",
+        "nico-robin",
+        "rebecca",
+        "trebol",
+        "leo",
+        "riku-doldo-iii",
+        "koala",
+        "sabo",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "usopp",
+        "viola",
+        "bellamy",
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 721,
+      "title": {
+        "en": "Law Dies - Luffy's Raging Onslaught!",
+        "ja": "ロー死す ルフィ憤怒の猛攻撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        780
+      ],
+      "airDate": {
+        "ja": "2015-12-06"
+      },
+      "appearances": [
+        "viola",
+        "riku-doldo-iii",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "roronoa-zoro",
+        "usopp",
+        "trebol",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "donquixote-rosinante",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 722,
+      "title": {
+        "en": "A Blade of Tenacity - The Gamma Knife Counterattack!",
+        "ja": "執念の刃 逆襲のガンマナイフ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        781
+      ],
+      "airDate": {
+        "ja": "2015-12-13"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "trebol",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "roronoa-zoro",
+        "usopp",
+        "viola",
+        "riku-doldo-iii",
+        "chinjao",
+        "kyros",
+        "rebecca",
+        "nico-robin",
+        "leo",
+        "sabo",
+        "bellamy",
+        "donquixote-rosinante"
+      ]
+    },
+    {
+      "number": 723,
+      "title": {
+        "en": "A Collision of Haki - Luffy vs. Doflamingo",
+        "ja": "覇気激突 ルフィVSドフラミンゴ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        781,
+        782
+      ],
+      "airDate": {
+        "ja": "2015-12-20"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "trebol",
+        "donquixote-rosinante",
+        "bartolomeo",
+        "roronoa-zoro",
+        "viola",
+        "kurozumi-kanjuro",
+        "usopp",
+        "kinemon",
+        "nico-robin",
+        "rebecca",
+        "kyros",
+        "riku-doldo-iii",
+        "sabo"
+      ]
+    },
+    {
+      "number": 724,
+      "title": {
+        "en": "Unassailable - The Stunning Secret of Trebol",
+        "ja": "攻撃不能 トレーボル衝撃の秘密"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        782,
+        783
+      ],
+      "airDate": {
+        "ja": "2015-12-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "trebol",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "donquixote-rosinante",
+        "leo",
+        "kyros",
+        "rebecca",
+        "nico-robin",
+        "franky",
+        "viola",
+        "kinemon",
+        "usopp",
+        "kurozumi-kanjuro",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 725,
+      "title": {
+        "en": "Anger Erupts - I Will Take Everything upon Myself",
+        "ja": "怒り爆発 おれが全部引き受ける"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        783
+      ],
+      "airDate": {
+        "ja": "2016-01-10"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "kyros",
+        "rebecca",
+        "leo",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "cavendish",
+        "bartolomeo",
+        "roronoa-zoro",
+        "viola",
+        "usopp",
+        "kinemon",
+        "kurozumi-kanjuro"
+      ]
+    },
+    {
+      "number": 726,
+      "title": {
+        "en": "Gear 4! The Phenomenal Boundman!",
+        "ja": "ギア4！驚異のバウンドマン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        784
+      ],
+      "airDate": {
+        "ja": "2016-01-17"
+      },
+      "appearances": [
+        "chinjao",
+        "viola",
+        "usopp",
+        "kurozumi-kanjuro",
+        "roronoa-zoro",
+        "kinemon",
+        "trafalgar-d-water-law",
+        "cavendish",
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "kyros",
+        "nico-robin",
+        "bartolomeo",
+        "rebecca"
+      ]
+    },
+    {
+      "number": 727,
+      "title": {
+        "en": "A Massive Counterattack! Doflamingo's Awakening!",
+        "ja": "大逆襲！ドフラミンゴの覚醒！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        785
+      ],
+      "airDate": {
+        "ja": "2016-01-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "cavendish",
+        "koala",
+        "viola",
+        "usopp",
+        "riku-doldo-iii",
+        "roronoa-zoro",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "franky",
+        "nico-robin",
+        "kyros",
+        "rebecca",
+        "bartolomeo",
+        "chinjao",
+        "issho"
+      ]
+    },
+    {
+      "number": 728,
+      "title": {
+        "en": "Luffy! An All-Out Leo Bazooka!",
+        "ja": "ルフィ！渾身の獅子バズーカ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        785,
+        786
+      ],
+      "airDate": {
+        "ja": "2016-01-31"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "riku-doldo-iii",
+        "cavendish",
+        "trafalgar-d-water-law",
+        "chinjao",
+        "issho",
+        "viola",
+        "usopp",
+        "koala"
+      ]
+    },
+    {
+      "number": 729,
+      "title": {
+        "en": "Kaen Ryuo - Protect Luffy's Life",
+        "ja": "火炎竜王 ルフィの命を守りぬけ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        786,
+        787
+      ],
+      "airDate": {
+        "ja": "2016-02-14"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "sabo"
+      ]
+    },
+    {
+      "number": 730,
+      "title": {
+        "en": "Tears of Miracles - Mansherry's Fight!",
+        "ja": "奇跡の涙 マンシェリーの戦い！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        787,
+        788
+      ],
+      "airDate": {
+        "ja": "2016-02-21"
+      },
+      "appearances": [
+        "riku-doldo-iii",
+        "chinjao",
+        "nico-robin",
+        "kyros",
+        "bartolomeo",
+        "leo",
+        "roronoa-zoro",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "franky",
+        "viola",
+        "usopp",
+        "donquixote-doflamingo",
+        "sabo",
+        "trafalgar-d-water-law",
+        "issho",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 731,
+      "title": {
+        "en": "As Long as We Breathe - Stop the Deadly Birdcage!",
+        "ja": "命の限り 死の鳥カゴを止めろ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        788,
+        789
+      ],
+      "airDate": {
+        "ja": "2016-02-28"
+      },
+      "appearances": [
+        "usopp",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "viola",
+        "rebecca",
+        "chinjao",
+        "kyros",
+        "bartolomeo",
+        "roronoa-zoro",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "franky",
+        "issho",
+        "leo",
+        "nico-robin",
+        "riku-doldo-iii"
+      ]
+    },
+    {
+      "number": 732,
+      "title": {
+        "en": "Dead or Alive — A Fateful Countdown",
+        "ja": "生か死か 運命のカウントダウン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        789
+      ],
+      "airDate": {
+        "ja": "2016-03-06"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "issho",
+        "franky",
+        "chinjao",
+        "bartolomeo",
+        "nico-robin",
+        "donquixote-doflamingo",
+        "viola",
+        "rebecca",
+        "kyros",
+        "cavendish",
+        "monkey-d-luffy",
+        "usopp",
+        "riku-doldo-iii",
+        "leo",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 733,
+      "title": {
+        "en": "Attack on a Celestial - Luffy's King Kong Gun of Anger",
+        "ja": "天を討つ ルフィ怒りの{{Ruby|大猿王銃|キングコングガン}}"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        790
+      ],
+      "airDate": {
+        "ja": "2016-03-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "issho",
+        "franky",
+        "trafalgar-d-water-law",
+        "viola",
+        "rebecca",
+        "donquixote-doflamingo",
+        "chinjao",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "leo",
+        "riku-doldo-iii",
+        "donquixote-rosinante"
+      ]
+    },
+    {
+      "number": 734,
+      "title": {
+        "en": "To Be Free! Dressrosa's Delight!",
+        "ja": "自由へ！喜びのドレスローザ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        791
+      ],
+      "airDate": {
+        "ja": "2016-03-27"
+      },
+      "appearances": [
+        "donquixote-doflamingo",
+        "monkey-d-luffy",
+        "rebecca",
+        "viola",
+        "usopp",
+        "franky",
+        "roronoa-zoro",
+        "nico-robin",
+        "trafalgar-d-water-law",
+        "chinjao",
+        "bartolomeo",
+        "leo",
+        "issho",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "riku-doldo-iii",
+        "kyros"
+      ]
+    },
+    {
+      "number": 735,
+      "title": {
+        "en": "The Unheard-of - Admiral Fujitora's Surprising Decision!",
+        "ja": "前代未聞 大将藤虎衝撃の決断！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        792
+      ],
+      "airDate": {
+        "ja": "2016-04-03"
+      },
+      "appearances": [
+        "sabo",
+        "koala",
+        "sugar",
+        "pica",
+        "diamante",
+        "trebol",
+        "donquixote-doflamingo",
+        "chinjao",
+        "issho",
+        "riku-doldo-iii",
+        "viola",
+        "rebecca",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 736,
+      "title": {
+        "en": "Sending a Shock Wave - The Worst Generation Goes Into Action!",
+        "ja": "激震走る 動き出す最悪の世代！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        793
+      ],
+      "airDate": {
+        "ja": "2016-04-10"
+      },
+      "appearances": [
+        "riku-doldo-iii",
+        "issho",
+        "monkey-d-luffy",
+        "viola",
+        "rebecca",
+        "trafalgar-d-water-law",
+        "usopp",
+        "nico-robin",
+        "bartolomeo",
+        "roronoa-zoro",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "franky",
+        "kyros",
+        "leo",
+        "kuzan",
+        "kaido",
+        "smoker",
+        "tashigi"
+      ]
+    },
+    {
+      "number": 737,
+      "title": {
+        "en": "The Birth of the Legend - The Adventures of the Revolutionary Warrior Sabo!",
+        "ja": "伝説誕生 革命戦士サボの冒険！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        794
+      ],
+      "airDate": {
+        "ja": "2016-04-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kyros",
+        "franky",
+        "bellamy",
+        "usopp",
+        "nico-robin",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "sabo",
+        "chinjao",
+        "bartolomeo",
+        "cavendish"
+      ]
+    },
+    {
+      "number": 738,
+      "title": {
+        "en": "The Brothers' Bond - The Untold Story Behind Luffy and Sabo's Reunion",
+        "ja": "兄弟の絆 ルフィ・サボ再会秘話"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        794,
+        795
+      ],
+      "airDate": {
+        "ja": "2016-04-24"
+      },
+      "appearances": [
+        "sabo",
+        "monkey-d-luffy",
+        "koala",
+        "usopp",
+        "kyros",
+        "bellamy",
+        "nico-robin",
+        "franky",
+        "roronoa-zoro",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "bartolomeo",
+        "issho",
+        "cavendish",
+        "chinjao",
+        "rebecca",
+        "riku-doldo-iii"
+      ]
+    },
+    {
+      "number": 739,
+      "title": {
+        "en": "The Strongest Creature - Emperor - Kaidou of the Beasts",
+        "ja": "最強の生物 四皇・百獣のカイドウ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        795
+      ],
+      "airDate": {
+        "ja": "2016-05-01"
+      },
+      "appearances": [
+        "usopp",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "nico-robin",
+        "monkey-d-luffy",
+        "franky",
+        "kyros",
+        "tony-tony-chopper",
+        "nami",
+        "sanji",
+        "brook",
+        "caesar-clown",
+        "kozuki-momonosuke",
+        "kaido"
+      ]
+    },
+    {
+      "number": 740,
+      "title": {
+        "en": "Fujitora Takes Action - The Complete Siege of the Straw Hats",
+        "ja": "藤虎動く 麦わらの一味完全包囲網"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        796
+      ],
+      "airDate": {
+        "ja": "2016-05-08"
+      },
+      "appearances": [
+        "issho",
+        "viola",
+        "rebecca",
+        "riku-doldo-iii",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "kyros",
+        "monkey-d-luffy",
+        "usopp",
+        "bellamy",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "franky",
+        "nico-robin",
+        "bartolomeo",
+        "leo"
+      ]
+    },
+    {
+      "number": 741,
+      "title": {
+        "en": "A State of Emergency - Rebecca Is Kidnapped!",
+        "ja": "非常事態 さらわれたレベッカ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        796,
+        797
+      ],
+      "airDate": {
+        "ja": "2016-05-15"
+      },
+      "appearances": [
+        "issho",
+        "kyros",
+        "usopp",
+        "nico-robin",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "leo",
+        "bartolomeo",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "franky",
+        "cavendish",
+        "bellamy",
+        "riku-doldo-iii",
+        "rebecca",
+        "viola"
+      ]
+    },
+    {
+      "number": 742,
+      "title": {
+        "en": "The Bond Between Father and Daughter - Kyros and Rebecca!",
+        "ja": "父娘の絆 キュロスとレベッカ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        797,
+        798
+      ],
+      "airDate": {
+        "ja": "2016-05-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "rebecca",
+        "kyros",
+        "riku-doldo-iii",
+        "viola",
+        "chinjao",
+        "bartolomeo",
+        "issho",
+        "roronoa-zoro",
+        "usopp",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "nico-robin",
+        "franky",
+        "cavendish",
+        "leo",
+        "trafalgar-d-water-law",
+        "donquixote-rosinante"
+      ]
+    },
+    {
+      "number": 743,
+      "title": {
+        "en": "Men's Pride - Luffy vs. Fujitora, Head-to-Head",
+        "ja": "男の意地 ルフィVS藤虎真向勝負"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        798,
+        799
+      ],
+      "airDate": {
+        "ja": "2016-05-29"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "donquixote-rosinante",
+        "issho",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "franky",
+        "bartolomeo",
+        "chinjao",
+        "cavendish",
+        "bellamy",
+        "leo",
+        "riku-doldo-iii",
+        "viola",
+        "rebecca",
+        "kyros",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 744,
+      "title": {
+        "en": "No Way Out - Admiral Fujitora's Ruthless Pursuit!",
+        "ja": "逃場無し 大将藤虎非情の追撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        799
+      ],
+      "airDate": {
+        "ja": "2016-06-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "cavendish",
+        "roronoa-zoro",
+        "bartolomeo",
+        "usopp",
+        "chinjao",
+        "issho",
+        "trafalgar-d-water-law",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "nico-robin",
+        "franky",
+        "riku-doldo-iii",
+        "viola",
+        "rebecca",
+        "kyros",
+        "leo"
+      ]
+    },
+    {
+      "number": 745,
+      "title": {
+        "en": "Sons' Cups - Straw Hat Fleet is Formed!",
+        "ja": "子分の盃 結成！麦わら大船団！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        800
+      ],
+      "airDate": {
+        "ja": "2016-06-12"
+      },
+      "appearances": [
+        "bartolomeo",
+        "cavendish",
+        "leo",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "franky",
+        "bellamy",
+        "chinjao",
+        "issho",
+        "rebecca",
+        "kyros"
+      ]
+    },
+    {
+      "number": 746,
+      "title": {
+        "en": "The Numerous Rivals Struggle Amongst Themselves - The Raging Monsters of the New World",
+        "ja": "群雄割拠 荒狂う新世界の怪物達"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        801
+      ],
+      "airDate": {
+        "ja": "2016-06-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "franky",
+        "bartolomeo",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "nico-robin",
+        "leo",
+        "chinjao",
+        "roronoa-zoro",
+        "usopp",
+        "trafalgar-d-water-law",
+        "viola",
+        "riku-doldo-iii",
+        "rebecca",
+        "issho",
+        "donquixote-doflamingo",
+        "kaido"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "doflamingo-fake-resignation",
+      "kind": "reveal",
+      "characters": [
+        "donquixote-doflamingo"
+      ],
+      "episode": 629,
+      "chapter": 700,
+      "description": {
+        "es": "La prensa anuncia que Doflamingo deja de ser Shichibukai y rey de Dressrosa (luego resulta ser falso)."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "sanji-vs-doflamingo",
+      "kind": "battle",
+      "characters": [
+        "sanji",
+        "donquixote-doflamingo"
+      ],
+      "episode": 655,
+      "chapter": 724,
+      "description": {
+        "es": "Sanji frena a Doflamingo para proteger a Caesar y al grupo de Green Bit."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "law-vs-doflamingo-green-bit",
+      "kind": "battle",
+      "characters": [
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "issho"
+      ],
+      "episode": 661,
+      "chapter": 729,
+      "description": {
+        "es": "Law se enfrenta a Doflamingo y cae capturado."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "sabo-alive-revealed",
+      "kind": "reveal",
+      "characters": [
+        "sabo",
+        "monkey-d-luffy"
+      ],
+      "episode": 663,
+      "chapter": 731,
+      "description": {
+        "es": "Luffy descubre que Lucy es Sabo, vivo y heredero de la voluntad de Ace."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-defeats-sugar",
+      "kind": "battle",
+      "characters": [
+        "usopp",
+        "sugar"
+      ],
+      "episode": 676,
+      "chapter": 742,
+      "description": {
+        "es": "Usopp desmaya a Sugar y deshace la maldición de los juguetes; nace el «Dios Usopp»."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kyros-strikes-doflamingo",
+      "kind": "battle",
+      "characters": [
+        "kyros",
+        "donquixote-doflamingo",
+        "riku-doldo-iii"
+      ],
+      "episode": 677,
+      "chapter": 743,
+      "description": {
+        "es": "Kyros recupera su forma humana y decapita a lo que resulta ser un clon de hilo de Doflamingo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sabo-eats-mera-mera-no-mi",
+      "kind": "transformation",
+      "characters": [
+        "sabo"
+      ],
+      "episode": 678,
+      "chapter": 744,
+      "description": {
+        "es": "Sabo se come el Mera Mera no Mi y hereda el poder de Ace."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "birdcage-activated",
+      "kind": "other",
+      "characters": [
+        "donquixote-doflamingo"
+      ],
+      "episode": 680,
+      "chapter": 745,
+      "description": {
+        "es": "Doflamingo encierra la isla con la Jaula y pone precio a las cabezas de sus enemigos."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "sabo-vs-fujitora",
+      "kind": "battle",
+      "characters": [
+        "sabo",
+        "issho"
+      ],
+      "episode": 687,
+      "chapter": 751,
+      "description": {
+        "es": "Sabo frena al almirante Fujitora en el Coliseo."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "corazon-death",
+      "kind": "death",
+      "characters": [
+        "donquixote-rosinante",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo"
+      ],
+      "episode": 705,
+      "chapter": 766,
+      "description": {
+        "es": "En el pasado de Law, Corazón muere a manos de su hermano Doflamingo tras dar a Law el Ope Ope no Mi."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "franky-defeats-senor-pink",
+      "kind": "battle",
+      "characters": [
+        "franky",
+        "senor-pink"
+      ],
+      "episode": 715,
+      "chapter": 775,
+      "description": {
+        "es": "Franky vence a Senor Pink."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "kyros-defeats-diamante",
+      "kind": "battle",
+      "characters": [
+        "kyros",
+        "diamante"
+      ],
+      "episode": 717,
+      "chapter": 777,
+      "description": {
+        "es": "Kyros derrota a Diamante con el Trueno Bastardo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-defeats-pica",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "pica"
+      ],
+      "episode": 719,
+      "chapter": 778,
+      "description": {
+        "es": "Zoro corta a Pica con el Ittoryu Daishinkan en pleno aire."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "law-gamma-knife",
+      "kind": "battle",
+      "characters": [
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo"
+      ],
+      "episode": 722,
+      "chapter": 781,
+      "description": {
+        "es": "Law golpea a Doflamingo con el Gamma Knife."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "gear-fourth-boundman",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "donquixote-doflamingo"
+      ],
+      "episode": 726,
+      "chapter": 784,
+      "description": {
+        "es": "Luffy estrena el Gear 4 Boundman contra Doflamingo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "doflamingo-awakening",
+      "kind": "transformation",
+      "characters": [
+        "donquixote-doflamingo"
+      ],
+      "episode": 727,
+      "chapter": 785,
+      "description": {
+        "es": "Doflamingo despierta el Ito Ito no Mi."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-doflamingo",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "donquixote-doflamingo"
+      ],
+      "episode": 733,
+      "chapter": 790,
+      "description": {
+        "es": "Luffy derrota a Doflamingo con el King Kong Gun y la Jaula desaparece."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "fujitora-bows-to-dressrosa",
+      "kind": "other",
+      "characters": [
+        "issho",
+        "riku-doldo-iii"
+      ],
+      "episode": 735,
+      "chapter": 792,
+      "description": {
+        "es": "Fujitora se arrodilla y se disculpa ante el pueblo de Dressrosa."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "kaido-introduced",
+      "kind": "reveal",
+      "characters": [
+        "kaido"
+      ],
+      "episode": 739,
+      "chapter": 795,
+      "description": {
+        "es": "Primera aparición completa de Kaido, el Emperador de las Bestias."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-fujitora",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "issho"
+      ],
+      "episode": 743,
+      "chapter": 798,
+      "description": {
+        "es": "Luffy y Fujitora chocan cara a cara durante la huida."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "straw-hat-grand-fleet-formed",
+      "kind": "recruitment",
+      "characters": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "cavendish",
+        "leo",
+        "sai",
+        "orlumbus",
+        "ideo",
+        "hajrudin"
+      ],
+      "episode": 745,
+      "chapter": 800,
+      "description": {
+        "es": "Siete tripulaciones beben el sake de hermanos con Luffy y forman la Gran Flota de los Sombrero de Paja."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-bounty-500m",
+      "kind": "bounty",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Luffy: 500.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "law-bounty-500m",
+      "kind": "bounty",
+      "characters": [
+        "trafalgar-d-water-law"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Law: 500.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-bounty-320m",
+      "kind": "bounty",
+      "characters": [
+        "roronoa-zoro"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Zoro: 320.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-bounty-200m",
+      "kind": "bounty",
+      "characters": [
+        "usopp"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Usopp («Dios Usopp»): 200.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-bounty-177m",
+      "kind": "bounty",
+      "characters": [
+        "sanji"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Sanji: 177.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "robin-bounty-130m",
+      "kind": "bounty",
+      "characters": [
+        "nico-robin"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Robin: 130.000.000 berries."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "chopper-bounty-100",
+      "kind": "bounty",
+      "characters": [
+        "tony-tony-chopper"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Chopper: 100 berries."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "franky-bounty-94m",
+      "kind": "bounty",
+      "characters": [
+        "franky"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Franky: 94.000.000 berries."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "brook-bounty-83m",
+      "kind": "bounty",
+      "characters": [
+        "brook"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Brook: 83.000.000 berries."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "nami-bounty-66m",
+      "kind": "bounty",
+      "characters": [
+        "nami"
+      ],
+      "episode": 746,
+      "chapter": 801,
+      "description": {
+        "es": "Recompensa de Nami: 66.000.000 berries."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Dressrosa_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Template:WC",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Template:WhichMangaDate",
+      "field": "chapters.releaseDate"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Dressrosa_Arc",
+      "field": "arc"
+    }
+  ]
+}

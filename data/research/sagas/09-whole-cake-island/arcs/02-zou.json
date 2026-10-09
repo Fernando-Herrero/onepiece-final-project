@@ -1,0 +1,1233 @@
+{
+  "slug": "zou",
+  "sagaSlug": "whole-cake-island",
+  "order": 2,
+  "title": {
+    "es": "Zou",
+    "en": "Zou",
+    "ja": "ゾウ編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 802,
+    "last": 824
+  },
+  "episodeRange": {
+    "first": 751,
+    "last": 779
+  },
+  "chapters": [
+    {
+      "number": 802,
+      "title": {
+        "en": "Zou",
+        "ja": "ゾウ"
+      }
+    },
+    {
+      "number": 803,
+      "title": {
+        "en": "Elephant Climbing",
+        "ja": "登象"
+      }
+    },
+    {
+      "number": 804,
+      "title": {
+        "en": "Adventure in the Land Atop the Elephant's Back",
+        "ja": "象の背の国の冒険"
+      }
+    },
+    {
+      "number": 805,
+      "title": {
+        "en": "The Mink Tribe",
+        "ja": "ミンク族"
+      }
+    },
+    {
+      "number": 806,
+      "title": {
+        "en": "At the Fortress of Right Belly",
+        "ja": "右腹の砦にて"
+      }
+    },
+    {
+      "number": 807,
+      "title": {
+        "en": "10 Days Earlier",
+        "ja": "10日前"
+      }
+    },
+    {
+      "number": 808,
+      "title": {
+        "en": "Duke Inuarashi",
+        "ja": "イヌアラシ公爵"
+      }
+    },
+    {
+      "number": 809,
+      "title": {
+        "en": "Master Nekomamushi",
+        "ja": "ネコマムシの旦那"
+      }
+    },
+    {
+      "number": 810,
+      "title": {
+        "en": "The Curly Hat Pirates Arrive",
+        "ja": "ぐるわらの一味、上陸"
+      }
+    },
+    {
+      "number": 811,
+      "title": {
+        "en": "Roko",
+        "ja": "{{Ruby|ROKO|ロコ}}"
+      }
+    },
+    {
+      "number": 812,
+      "title": {
+        "en": "Capone \"Gang\" Bege",
+        "ja": "カポネ・“ギャング”ベッジ"
+      }
+    },
+    {
+      "number": 813,
+      "title": {
+        "en": "Tea Party Invitation",
+        "ja": "お茶会の招待状"
+      }
+    },
+    {
+      "number": 814,
+      "title": {
+        "en": "Let's Go See Master Nekomamushi",
+        "ja": "ネコマムシの旦那に会いに行こう"
+      }
+    },
+    {
+      "number": 815,
+      "title": {
+        "en": "Take Me with You!!",
+        "ja": "おれも連れてけ!!"
+      }
+    },
+    {
+      "number": 816,
+      "title": {
+        "en": "Dog vs. Cat",
+        "ja": "イヌ{{Ruby|vs.|バーサス}}ネコ"
+      }
+    },
+    {
+      "number": 817,
+      "title": {
+        "en": "Raizo of the Mist",
+        "ja": "霧の雷ぞう"
+      }
+    },
+    {
+      "number": 818,
+      "title": {
+        "en": "Inside the Whale",
+        "ja": "くじらの中で"
+      }
+    },
+    {
+      "number": 819,
+      "title": {
+        "en": "Momonosuke, Heir to the Kouzuki Family",
+        "ja": "光月家跡取り・モモの助"
+      }
+    },
+    {
+      "number": 820,
+      "title": {
+        "en": "Dog and Cat Have a History",
+        "ja": "犬と猫に歴史あり"
+      }
+    },
+    {
+      "number": 821,
+      "title": {
+        "en": "Understood",
+        "ja": "承知した"
+      }
+    },
+    {
+      "number": 822,
+      "title": {
+        "en": "Descending the Elephant",
+        "ja": "下象"
+      }
+    },
+    {
+      "number": 823,
+      "title": {
+        "en": "The World is Restless",
+        "ja": "ざわつく世界"
+      }
+    },
+    {
+      "number": 824,
+      "title": {
+        "en": "Whim",
+        "ja": "気まぐれ"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 751,
+      "title": {
+        "en": "The Start of a New Adventure - Arrival at the Mysterious Island, 'Zou'!",
+        "ja": "冒険開幕 幻の島「ゾウ」到着！"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        802
+      ],
+      "airDate": {
+        "ja": "2016-07-31"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "edward-weevil",
+        "kinemon",
+        "trafalgar-d-water-law",
+        "kurozumi-kanjuro",
+        "zunesha"
+      ]
+    },
+    {
+      "number": 752,
+      "title": {
+        "en": "The New Warlord - Son of the Legendary Whitebeard Arrives",
+        "ja": "新七武海 伝説・白ひげの息子登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        802,
+        803
+      ],
+      "airDate": {
+        "ja": "2016-08-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "trafalgar-d-water-law",
+        "zunesha",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "monkey-d-dragon",
+        "koala",
+        "sabo",
+        "edward-weevil"
+      ]
+    },
+    {
+      "number": 753,
+      "title": {
+        "en": "A Deadly Elephant Climb - A Great Adventure on the Back of the Giant Elephant!",
+        "ja": "決死の登象 巨象の背の大冒険!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        803,
+        804
+      ],
+      "airDate": {
+        "ja": "2016-08-21"
+      },
+      "appearances": [
+        "zunesha",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "trafalgar-d-water-law",
+        "franky",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "carrot",
+        "wanda",
+        "nami"
+      ]
+    },
+    {
+      "number": 754,
+      "title": {
+        "en": "Battle Starts! Luffy vs. the Mink Tribe!",
+        "ja": "戦闘開始 ルフィＶＳミンク族！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        805
+      ],
+      "airDate": {
+        "ja": "2016-08-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "pedro",
+        "carrot",
+        "roronoa-zoro",
+        "franky",
+        "usopp",
+        "nico-robin",
+        "trafalgar-d-water-law",
+        "wanda"
+      ]
+    },
+    {
+      "number": 755,
+      "title": {
+        "en": "Garchu! The Straw Hat Crew Reunites",
+        "ja": "ガルチュー！麦わらの一味再集結"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        806
+      ],
+      "airDate": {
+        "ja": "2016-09-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "wanda",
+        "carrot",
+        "franky",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "nico-robin",
+        "usopp",
+        "zunesha",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "nami",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 756,
+      "title": {
+        "en": "The Counterattack Begins! The Curly Hat Pirates moves out!",
+        "ja": "反撃開始  ぐるわらの一味大活躍！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        807
+      ],
+      "airDate": {
+        "ja": "2016-09-11"
+      },
+      "appearances": [
+        "zunesha",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "franky",
+        "nami",
+        "nico-robin",
+        "monkey-d-luffy",
+        "usopp",
+        "wanda",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "carrot",
+        "brook",
+        "trafalgar-d-water-law",
+        "inuarashi",
+        "nekomamushi"
+      ]
+    },
+    {
+      "number": 757,
+      "title": {
+        "en": "An Incoming Threat - Jack of the Beasts Pirates!",
+        "ja": "脅威襲来 百獣海賊団ジャック！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        807,
+        808
+      ],
+      "airDate": {
+        "ja": "2016-09-25"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "wanda",
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "franky",
+        "brook",
+        "monkey-d-luffy",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 758,
+      "title": {
+        "en": "Ruler of Day - Enter Duke Inuarashi!",
+        "ja": "昼の王 イヌアラシ公爵登場！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        808,
+        809
+      ],
+      "airDate": {
+        "ja": "2016-10-02"
+      },
+      "appearances": [
+        "usopp",
+        "wanda",
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nico-robin",
+        "brook",
+        "franky",
+        "tony-tony-chopper",
+        "inuarashi",
+        "nekomamushi"
+      ]
+    },
+    {
+      "number": 759,
+      "title": {
+        "en": "Ruler of Night - Nekomamushi Appears",
+        "ja": "夜の王 ネコマムシの旦那見参"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        809,
+        810
+      ],
+      "airDate": {
+        "ja": "2016-10-09"
+      },
+      "appearances": [
+        "wanda",
+        "inuarashi",
+        "brook",
+        "monkey-d-luffy",
+        "nico-robin",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "franky",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 760,
+      "title": {
+        "en": "Destruction of the Capital - Curly Hat Pirates Arrive on Land!",
+        "ja": "首都壊滅 ぐるわらの一味上陸！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        808,
+        809,
+        810
+      ],
+      "airDate": {
+        "ja": "2016-10-16"
+      },
+      "appearances": [
+        "franky",
+        "inuarashi",
+        "nami",
+        "monkey-d-luffy",
+        "wanda",
+        "tony-tony-chopper",
+        "usopp",
+        "brook",
+        "roronoa-zoro",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 761,
+      "title": {
+        "en": "Race Against Time - The Bond of the Minks and the Crew!",
+        "ja": "刻限迫る ミンク族と一味の絆！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        811
+      ],
+      "airDate": {
+        "ja": "2016-10-23"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "usopp",
+        "brook",
+        "inuarashi",
+        "nico-robin",
+        "franky",
+        "nami",
+        "wanda",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 762,
+      "title": {
+        "en": "The Rascal Returns Home - Emperor Big Mom's Assassin",
+        "ja": "悪童帰郷 四皇ビッグマムの刺客"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        811,
+        812
+      ],
+      "airDate": {
+        "ja": "2016-10-30"
+      },
+      "appearances": [
+        "wanda",
+        "nami",
+        "monkey-d-luffy",
+        "brook",
+        "carrot",
+        "nico-robin",
+        "usopp",
+        "franky",
+        "tony-tony-chopper",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 763,
+      "title": {
+        "en": "The Truth Behind His Disappearance - Sanji's Shocking Invitation",
+        "ja": "失踪の真実 サンジ驚愕の招待状"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        812,
+        813
+      ],
+      "airDate": {
+        "ja": "2016-11-06"
+      },
+      "appearances": [
+        "brook",
+        "nami",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "wanda",
+        "roronoa-zoro",
+        "nico-robin",
+        "franky",
+        "usopp"
+      ]
+    },
+    {
+      "number": 764,
+      "title": {
+        "en": "To My Buds! Sanji's Farewell Note!",
+        "ja": "野郎共へ サンジ別れの置手紙"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        813,
+        814
+      ],
+      "airDate": {
+        "ja": "2016-11-13"
+      },
+      "appearances": [
+        "nami",
+        "charlotte-linlin",
+        "napoleon",
+        "tony-tony-chopper",
+        "brook",
+        "wanda",
+        "carrot",
+        "monkey-d-luffy",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "roronoa-zoro",
+        "kaido",
+        "jack"
+      ]
+    },
+    {
+      "number": 765,
+      "title": {
+        "en": "Let's Go See Master Nekomamushi",
+        "ja": "ネコマムシの旦那に会いに行こう"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        814,
+        815
+      ],
+      "airDate": {
+        "ja": "2016-11-20"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "brook",
+        "monkey-d-luffy",
+        "wanda",
+        "nami",
+        "franky",
+        "tony-tony-chopper",
+        "pekoms",
+        "carrot",
+        "usopp",
+        "nico-robin",
+        "nekomamushi",
+        "pedro"
+      ]
+    },
+    {
+      "number": 766,
+      "title": {
+        "en": "Luffy's Decision - Sanji on the Brink of Quitting!",
+        "ja": "ルフィ決断 サンジ脱退の危機！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        815
+      ],
+      "airDate": {
+        "ja": "2016-11-27"
+      },
+      "appearances": [
+        "pekoms",
+        "nami",
+        "monkey-d-luffy",
+        "carrot",
+        "wanda",
+        "pedro",
+        "franky",
+        "brook",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nico-robin",
+        "usopp",
+        "zeff",
+        "nekomamushi",
+        "trafalgar-d-water-law",
+        "zunesha",
+        "kinemon",
+        "kurozumi-kanjuro"
+      ]
+    },
+    {
+      "number": 767,
+      "title": {
+        "en": "A Volatile Situation - The Dog and the Cat and the Samurai!",
+        "ja": "一触即発 イヌとネコと侍！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        816
+      ],
+      "airDate": {
+        "ja": "2016-12-04"
+      },
+      "appearances": [
+        "franky",
+        "nico-robin",
+        "brook",
+        "inuarashi",
+        "wanda",
+        "carrot",
+        "nekomamushi",
+        "pedro",
+        "monkey-d-luffy",
+        "usopp",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nami",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "kouzuki-momonosuke"
+      ]
+    },
+    {
+      "number": 768,
+      "title": {
+        "en": "The Third One! Raizo of the Mist, the Ninja, Appears!",
+        "ja": "三人目! 忍者・霧の雷ぞう登場！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        817
+      ],
+      "airDate": {
+        "ja": "2016-12-11"
+      },
+      "appearances": [
+        "jack",
+        "zunesha",
+        "inuarashi",
+        "kinemon",
+        "kouzuki-momonosuke",
+        "kurozumi-kanjuro",
+        "nekomamushi",
+        "carrot",
+        "wanda",
+        "pedro",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "brook",
+        "franky",
+        "nico-robin",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "trafalgar-d-water-law",
+        "kirikaku-raizo"
+      ]
+    },
+    {
+      "number": 769,
+      "title": {
+        "en": "A Red Stone! A Guide to the One Piece",
+        "ja": "赤い石! “ひとつなぎの大秘宝”への道標"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        817,
+        818
+      ],
+      "airDate": {
+        "ja": "2016-12-18"
+      },
+      "appearances": [
+        "kirikaku-raizo",
+        "nekomamushi",
+        "franky",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "usopp",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "kinemon",
+        "kouzuki-momonosuke",
+        "kurozumi-kanjuro",
+        "nico-robin",
+        "nami",
+        "brook",
+        "inuarashi"
+      ]
+    },
+    {
+      "number": 770,
+      "title": {
+        "en": "The Secret of Wano Country — The Kouzuki Clan and the Poneglyph",
+        "ja": "ワノ国の秘密 光月家と歴史の本文"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        818,
+        819
+      ],
+      "airDate": {
+        "ja": "2016-12-25"
+      },
+      "appearances": [
+        "nico-robin",
+        "nekomamushi",
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "brook",
+        "roronoa-zoro",
+        "inuarashi",
+        "tony-tony-chopper",
+        "franky",
+        "trafalgar-d-water-law",
+        "kurozumi-kanjuro",
+        "kinemon",
+        "jack",
+        "kirikaku-raizo",
+        "kouzuki-momonosuke"
+      ]
+    },
+    {
+      "number": 771,
+      "title": {
+        "en": "A Man’s Vow — Luffy and Kouzuki Momonosuke",
+        "ja": "男の誓い ルフィと光月モモの助"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        819
+      ],
+      "airDate": {
+        "ja": "2017-01-08"
+      },
+      "appearances": [
+        "kouzuki-momonosuke",
+        "monkey-d-luffy",
+        "kirikaku-raizo",
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "brook",
+        "franky",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "nico-robin",
+        "trafalgar-d-water-law",
+        "nekomamushi",
+        "inuarashi"
+      ]
+    },
+    {
+      "number": 772,
+      "title": {
+        "en": "The Legendary Journey! The Dog and the Cat and the Pirate King!",
+        "ja": "伝説の航海 イヌとネコと海賊王！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        819,
+        820
+      ],
+      "airDate": {
+        "ja": "2017-01-15"
+      },
+      "appearances": [
+        "wanda",
+        "carrot",
+        "inuarashi",
+        "nekomamushi",
+        "pedro",
+        "monkey-d-luffy",
+        "kouzuki-momonosuke",
+        "kirikaku-raizo",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "trafalgar-d-water-law",
+        "tony-tony-chopper",
+        "usopp",
+        "nami",
+        "roronoa-zoro",
+        "franky",
+        "brook",
+        "pekoms",
+        "zunesha",
+        "jack",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 773,
+      "title": {
+        "en": "Returning Nightmare - Assault of the Invulnerable Jack",
+        "ja": "悪夢再び 不死身のジャック強襲"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        820,
+        821
+      ],
+      "airDate": {
+        "ja": "2017-01-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nekomamushi",
+        "nico-robin",
+        "nami",
+        "usopp",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "kinemon",
+        "franky",
+        "tony-tony-chopper",
+        "kirikaku-raizo",
+        "brook",
+        "inuarashi",
+        "kurozumi-kanjuro",
+        "kouzuki-momonosuke",
+        "carrot",
+        "wanda",
+        "pedro",
+        "zunesha",
+        "pekoms",
+        "jack"
+      ]
+    },
+    {
+      "number": 774,
+      "title": {
+        "en": "Defensive Battle of Zou - Luffy and Zunisha!",
+        "ja": "ゾウ防衛戦 ルフィとズニーシャ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        821
+      ],
+      "airDate": {
+        "ja": "2017-01-29"
+      },
+      "appearances": [
+        "kouzuki-momonosuke",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "nekomamushi",
+        "inuarashi",
+        "franky",
+        "kirikaku-raizo",
+        "pedro",
+        "nico-robin",
+        "brook",
+        "tony-tony-chopper",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "wanda",
+        "carrot",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "jack",
+        "zunesha",
+        "eustass-kid",
+        "kaido"
+      ]
+    },
+    {
+      "number": 775,
+      "title": {
+        "en": "Save the Giant Elephant - The Straw Hats Rescue Operation!",
+        "ja": "巨象を救え 麦わら救急大作戦!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2017-02-05"
+      },
+      "appearances": [
+        "zunesha",
+        "nekomamushi",
+        "inuarashi",
+        "kurozumi-kanjuro",
+        "carrot",
+        "monkey-d-luffy",
+        "kinemon",
+        "tony-tony-chopper",
+        "usopp",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "franky",
+        "brook",
+        "nico-robin",
+        "nami",
+        "wanda",
+        "pedro",
+        "kirikaku-raizo"
+      ]
+    },
+    {
+      "number": 776,
+      "title": {
+        "en": "Descending the Elephant — Setting Sail for Sanji’s Retrieval!",
+        "ja": "別れの下象 サンジ奪還の船出！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        822
+      ],
+      "airDate": {
+        "ja": "2017-02-12"
+      },
+      "appearances": [
+        "zunesha",
+        "tony-tony-chopper",
+        "kinemon",
+        "kouzuki-momonosuke",
+        "kirikaku-raizo",
+        "kurozumi-kanjuro",
+        "inuarashi",
+        "nekomamushi",
+        "pekoms",
+        "monkey-d-luffy",
+        "nami",
+        "brook",
+        "trafalgar-d-water-law",
+        "franky",
+        "roronoa-zoro",
+        "nico-robin",
+        "usopp",
+        "pedro",
+        "wanda",
+        "nefertari-vivi",
+        "nefertari-cobra"
+      ]
+    },
+    {
+      "number": 777,
+      "title": {
+        "en": "To the Levely - Princess Vivi and Princess Shirahoshi",
+        "ja": "世界会議へ 王女ビビとしらほし姫"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        823
+      ],
+      "airDate": {
+        "ja": "2017-02-19"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "nami",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "nefertari-cobra",
+        "shirahoshi",
+        "fukaboshi",
+        "neptune",
+        "brook",
+        "pekoms",
+        "pedro",
+        "carrot"
+      ]
+    },
+    {
+      "number": 778,
+      "title": {
+        "en": "To the Levely - Rebecca and the Sakura Kingdom",
+        "ja": "世界会議へ レベッカとサクラ王国"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        823
+      ],
+      "airDate": {
+        "ja": "2017-02-26"
+      },
+      "appearances": [
+        "carrot",
+        "nami",
+        "brook",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "pekoms",
+        "pedro",
+        "rebecca",
+        "monkey-d-dragon",
+        "sabo",
+        "koala"
+      ]
+    },
+    {
+      "number": 779,
+      "title": {
+        "en": "Kaido Returns - The Worst Generation Threatened!",
+        "ja": "カイドウ再び 脅威迫る最悪の世代！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        824
+      ],
+      "airDate": {
+        "ja": "2017-03-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "pekoms",
+        "tony-tony-chopper",
+        "pedro",
+        "brook",
+        "carrot",
+        "nami",
+        "monkey-d-dragon",
+        "sabo",
+        "zunesha",
+        "inuarashi",
+        "wanda",
+        "jack",
+        "kaido",
+        "trafalgar-d-water-law",
+        "eustass-kid"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "straw-hats-reunite-on-zou",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook"
+      ],
+      "episode": 755,
+      "chapter": 806,
+      "description": {
+        "es": "Los Sombrero de Paja se reencuentran en Zou con el grupo de Nami."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "jack-destroys-mokomo-dukedom",
+      "kind": "battle",
+      "characters": [
+        "jack",
+        "inuarashi",
+        "nekomamushi"
+      ],
+      "episode": 760,
+      "chapter": 810,
+      "description": {
+        "es": "Flashback del asalto de Jack a Zou durante cinco días y cinco noches."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "sanji-leaves-for-whole-cake",
+      "kind": "other",
+      "characters": [
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "pekoms",
+        "capone-bege"
+      ],
+      "episode": 764,
+      "chapter": 813,
+      "description": {
+        "es": "Sanji se marcha con Capone Bege para su boda con Charlotte Pudding y deja una carta de despedida."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "raizo-revealed-on-zou",
+      "kind": "reveal",
+      "characters": [
+        "kirikaku-raizo",
+        "inuarashi",
+        "nekomamushi"
+      ],
+      "episode": 768,
+      "chapter": 817,
+      "description": {
+        "es": "Los minks revelan que protegían al ninja Raizo de Kaido."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "road-poneglyph-revealed",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-luffy",
+        "nico-robin",
+        "inuarashi",
+        "nekomamushi"
+      ],
+      "episode": 769,
+      "chapter": 818,
+      "description": {
+        "es": "Robin descubre el Road Poneglyph rojo de Zou, guía hacia Raftel."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "ninja-pirate-mink-samurai-alliance",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "kouzuki-momonosuke",
+        "kinemon",
+        "inuarashi",
+        "nekomamushi"
+      ],
+      "episode": 771,
+      "chapter": 819,
+      "description": {
+        "es": "Luffy y Momonosuke sellan la alianza ninja-pirata-mink-samurái contra Kaido."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zunesha-crushes-jack",
+      "kind": "battle",
+      "characters": [
+        "zunesha",
+        "kouzuki-momonosuke",
+        "jack"
+      ],
+      "episode": 774,
+      "chapter": 821,
+      "description": {
+        "es": "Momonosuke ordena a Zunesha atacar y la flota de Jack queda destrozada."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "kaido-tries-suicide",
+      "kind": "reveal",
+      "characters": [
+        "kaido"
+      ],
+      "episode": 779,
+      "chapter": 824,
+      "description": {
+        "es": "Presentación de Kaido, que se lanza desde Punk Hazard al vacío sin morir."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Zou_Arc",
+      "field": "slug/ranges"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Whole_Cake_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Wano_Country_Saga",
+      "field": "episodes.title (Cidre Guild)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_760",
+      "field": "episodes.adaptsChapters/airDate (infobox de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_903",
+      "field": "events (bounties, raid suit)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[775].canon: anime canon (original), marcado filler"
+    }
+  ]
+}

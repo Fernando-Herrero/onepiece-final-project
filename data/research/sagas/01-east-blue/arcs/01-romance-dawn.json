@@ -1,0 +1,227 @@
+{
+  "slug": "romance-dawn",
+  "sagaSlug": "east-blue",
+  "order": 1,
+  "title": {
+    "es": "Romance Dawn",
+    "en": "Romance Dawn Arc",
+    "ja": "ロマンス・ドーン編"
+  },
+  "summary": {
+    "es": "Luffy zarpa, derrota a Alvida, conoce a Koby y recluta a Zoro tras vencer al capitán Morgan en Shells Town."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 1,
+    "last": 7
+  },
+  "episodeRange": {
+    "first": 1,
+    "last": 3
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": {
+        "en": "Romance Dawn —The Dawn of the Adventure—",
+        "ja": "{{Ruby|ROMANCE DAWN|ロマンスドーン}}—冒険の夜明け—"
+      }
+    },
+    {
+      "number": 2,
+      "title": {
+        "en": "That Guy, \"Straw Hat Luffy\"",
+        "ja": "その男〝麦わらのルフィ〟"
+      }
+    },
+    {
+      "number": 3,
+      "title": {
+        "en": "Introducing Pirate Hunter Zoro",
+        "ja": "”海賊狩りのゾロ\"登場"
+      }
+    },
+    {
+      "number": 4,
+      "title": {
+        "en": "Marine Captain \"Axe-Hand Morgan\"",
+        "ja": "海軍大佐”斧手のモーガン”"
+      }
+    },
+    {
+      "number": 5,
+      "title": {
+        "en": "The Pirate King and the Great Swordsman",
+        "ja": "海賊王と大剣豪"
+      }
+    },
+    {
+      "number": 6,
+      "title": {
+        "en": "The First",
+        "ja": "1人目"
+      }
+    },
+    {
+      "number": 7,
+      "title": {
+        "en": "Friends",
+        "ja": "友達"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 1,
+      "title": {
+        "en": "I'm Luffy! The Man Who Will Become the Pirate King!",
+        "ja": "俺はルフィ！海賊王になる男だ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        2
+      ],
+      "airDate": {
+        "ja": "1999-10-20"
+      },
+      "appearances": [
+        "nami",
+        "alvida",
+        "koby",
+        "monkey-d-luffy",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 2,
+      "title": {
+        "en": "The Great Swordsman Appears! Pirate Hunter Roronoa Zoro",
+        "ja": "大剣豪現る！海賊狩りロロノア・ゾロ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        3,
+        4,
+        5
+      ],
+      "airDate": {
+        "ja": "1999-11-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "koby",
+        "roronoa-zoro",
+        "helmeppo",
+        "nami",
+        "morgan",
+        "shimotsuki-kuina"
+      ]
+    },
+    {
+      "number": 3,
+      "title": {
+        "en": "Morgan vs. Luffy! Who's This Mysterious Beautiful Young Girl?",
+        "ja": "モーガンVSルフィ！謎の美少女は誰？"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        5,
+        6,
+        7
+      ],
+      "airDate": {
+        "ja": "1999-11-24"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "morgan",
+        "koby",
+        "helmeppo",
+        "nami",
+        "buggy",
+        "gol-d-roger",
+        "shanks"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-vs-alvida",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "alvida",
+        "koby"
+      ],
+      "episode": 1,
+      "chapter": 2,
+      "description": {
+        "es": "Luffy derrota a Alvida con su Gomu Gomu no Pistol."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-joins-crew",
+      "kind": "recruitment",
+      "characters": [
+        "roronoa-zoro",
+        "monkey-d-luffy"
+      ],
+      "episode": 3,
+      "chapter": 5,
+      "description": {
+        "es": "Zoro acepta unirse a Luffy para salir del cautiverio de Morgan."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-morgan",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "morgan",
+        "helmeppo"
+      ],
+      "episode": 3,
+      "chapter": 6,
+      "description": {
+        "es": "Luffy y Zoro derrotan al capitán Morgan en Shells Town."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "koby-joins-marines",
+      "kind": "other",
+      "characters": [
+        "koby",
+        "helmeppo"
+      ],
+      "episode": 3,
+      "chapter": 7,
+      "description": {
+        "es": "Koby se alista en la Marina."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Romance_Dawn_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/East_Blue_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_1",
+      "field": "episodes.adaptsChapters,episodes.appearances (rendered Statistics + Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

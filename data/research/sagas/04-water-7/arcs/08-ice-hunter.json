@@ -1,0 +1,260 @@
+{
+  "slug": "ice-hunter",
+  "sagaSlug": "water-7",
+  "order": 8,
+  "title": {
+    "es": "Cazadores de hielo",
+    "en": "Ice Hunter",
+    "ja": "アイスハンター編"
+  },
+  "summary": {
+    "es": "Arco de relleno: los piratas de Accino, cazadores de banderas, intentan robar la del Thousand Sunny."
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 326,
+    "last": 335
+  },
+  "episodes": [
+    {
+      "number": 326,
+      "title": {
+        "en": "The Mysterious Band of Pirates! Sunny and the Dangerous Trap!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-10-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 327,
+      "title": {
+        "en": "Sunny in a Pinch! Roar, Secret Superspeed Mecha!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-10-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 328,
+      "title": {
+        "en": "The Dream Sinking in the New World! The Disillusioned Pirate, Puzzle!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-10-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 329,
+      "title": {
+        "en": "The Assassins Attack! The Great Battle on Ice Begins!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-11-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 330,
+      "title": {
+        "en": "The Straw Hat’s Hard Battles! A Pirate Soul Risking It All for the Flag!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-11-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 331,
+      "title": {
+        "en": "Hot Full Throttle! The Twin’s Magnetic Power Drawing Near!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-11-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 332,
+      "title": {
+        "en": "Mansion of Great Chaos! The Enraged Don and the Captured Crew!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-11-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 333,
+      "title": {
+        "en": "The Return of the Phoenix! The Dream of the Pirate Flag Sworn to a Friend!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-12-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 334,
+      "title": {
+        "en": "The Red Hot Decisive Battle! Luffy vs. the Scorching Don!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-12-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    },
+    {
+      "number": 335,
+      "title": {
+        "en": "Waiting in the New World! Farewell to the Brave Pirates!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-12-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-vs-accino",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "accino"
+      ],
+      "episode": 334,
+      "chapter": null,
+      "description": {
+        "es": "Luffy derrota a Don Accino."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[].title.en, episodes[].canon, episodes[].airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Ice_Hunter_Arc",
+      "field": "chapterRange, episodeRange, events"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide",
+      "field": "episodes[].adaptsChapters (adaptsChapters reconstruido de memoria sobre One Piece Wiki (Cloudflare bloqueó la descarga); reparto aproximado ±1 capítulo)"
+    }
+  ]
+}

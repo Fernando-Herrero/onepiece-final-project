@@ -1,0 +1,100 @@
+{
+  "slug": "tashigi",
+  "name": {
+    "en": "Tashigi",
+    "ja": "たしぎ"
+  },
+  "origin": "East Blue (Shimotsuki?)",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 48,
+    "chapter": 96
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "sargento mayor en Loguetown",
+      "from": {
+        "episode": 52,
+        "chapter": 98
+      },
+      "to": {
+        "episode": 572,
+        "chapter": 652
+      }
+    },
+    {
+      "group": "g-5",
+      "role": "capitana",
+      "from": {
+        "episode": 572,
+        "chapter": 652
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 100000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "tashigi-loguetown",
+      "name": {
+        "es": "Tashigi (Loguetown)",
+        "en": "Tashigi (Loguetown)",
+        "ja": "たしぎ (ローグタウン)"
+      },
+      "firstAppearance": {
+        "episode": 48,
+        "chapter": 96
+      },
+      "description": {
+        "es": "Espadachina de la Marina que choca con Zoro en Loguetown."
+      },
+      "abilities": [
+        "Shigure"
+      ],
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "tashigi-post-timeskip",
+      "name": {
+        "es": "Tashigi capitana (G-5)",
+        "en": "Tashigi (post-timeskip)",
+        "ja": "たしぎ (2年後)"
+      },
+      "firstAppearance": {
+        "episode": 572,
+        "chapter": 652
+      },
+      "description": {
+        "es": "Capitana de la G-5 en Punk Hazard."
+      },
+      "abilities": [
+        "Shigure",
+        "Haki"
+      ],
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Tashigi",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Tashigi",
+      "field": "bounties[0] (recompensa de la Marina en estrellas: al menos ★, sin capítulo)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Tashigi",
+      "field": "origin (no confirmado)"
+    }
+  ]
+}

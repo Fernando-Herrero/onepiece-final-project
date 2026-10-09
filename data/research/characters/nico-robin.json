@@ -1,0 +1,166 @@
+{
+  "slug": "nico-robin",
+  "name": {
+    "en": "Nico Robin",
+    "ja": "ニコ・ロビン"
+  },
+  "origin": "ohara",
+  "fruit": "hana-hana-no-mi",
+  "firstAppearance": {
+    "chapter": 114,
+    "episode": 67
+  },
+  "affiliations": [
+    {
+      "group": "baroque-works",
+      "role": "vice-president",
+      "from": {
+        "episode": 67,
+        "chapter": 114
+      },
+      "to": {
+        "episode": 130,
+        "chapter": 218
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "archaeologist",
+      "from": {
+        "episode": 130,
+        "chapter": 218
+      },
+      "to": null
+    },
+    {
+      "group": "revolutionary-army",
+      "role": "guest",
+      "from": {
+        "episode": 509,
+        "chapter": 592
+      },
+      "to": {
+        "episode": 517,
+        "chapter": 598
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 79000000,
+      "episode": 122,
+      "chapter": 201,
+      "eventSlug": "robin-identity-revealed"
+    },
+    {
+      "amount": 80000000,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 130000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 930000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "miss-all-sunday",
+      "name": {
+        "es": "Miss All Sunday",
+        "en": "Miss All Sunday",
+        "ja": "ミス・オールサンデー"
+      },
+      "firstAppearance": {
+        "episode": 67,
+        "chapter": 114
+      },
+      "description": {
+        "es": "Vicepresidenta de Baroque Works y socia de Crocodile."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "robin-pre-timeskip",
+      "name": {
+        "es": "Robin (pre-salto temporal)",
+        "en": "Robin (Pre-Timeskip)",
+        "ja": "ロビン"
+      },
+      "firstAppearance": {
+        "episode": 130,
+        "chapter": 218
+      },
+      "description": {
+        "es": "Arqueóloga de los Mugiwara."
+      },
+      "suggestedRarity": "common",
+      "abilities": [
+        "Hana Hana no Mi"
+      ]
+    },
+    {
+      "slug": "robin-post-timeskip",
+      "name": {
+        "es": "Robin (post-salto temporal)",
+        "en": "Robin (Post-Timeskip)",
+        "ja": "ロビン"
+      },
+      "firstAppearance": {
+        "episode": 517,
+        "chapter": 598
+      },
+      "description": {
+        "es": "Vuelve tras dos años con el Ejército Revolucionario."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Gigantesco Mano",
+        "Mil Fleur"
+      ]
+    },
+    {
+      "slug": "robin-demonio-fleur",
+      "name": {
+        "es": "Robin Demonio Fleur",
+        "en": "Demonio Fleur",
+        "ja": "悪魔咲き"
+      },
+      "firstAppearance": {
+        "episode": 1044,
+        "chapter": 1021
+      },
+      "description": {
+        "es": "Forma demoníaca gigante contra Black Maria en Onigashima."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nico_Robin/History",
+      "field": "bounties[79000000] (revelada a Tashigi; primera mención)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nico_Robin",
+      "field": "forms[robin-demonio-fleur], affiliations[revolutionary-army] (fechas aproximadas)"
+    }
+  ]
+}

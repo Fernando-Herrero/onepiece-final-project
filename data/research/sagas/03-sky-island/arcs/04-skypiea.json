@@ -1,0 +1,1437 @@
+{
+  "slug": "skypiea",
+  "sagaSlug": "sky-island",
+  "order": 4,
+  "title": {
+    "es": "Skypiea",
+    "en": "Skypiea",
+    "ja": "空島スカイピア編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 237,
+    "last": 302
+  },
+  "episodeRange": {
+    "first": 153,
+    "last": 195
+  },
+  "episodes": [
+    {
+      "number": 153,
+      "title": {
+        "en": "This is the Sea of the Sky! The Knight of the Sky and Heaven's Gate",
+        "ja": "ここは空の海！空の騎士と天国の門"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        237,
+        238,
+        239
+      ],
+      "airDate": {
+        "ja": "2003-05-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "wyper"
+      ]
+    },
+    {
+      "number": 154,
+      "title": {
+        "en": "Godland Skypiea! The Angels of the Cloud Beach",
+        "ja": "神の国スカイピア！雲の渚の天使たち"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        239,
+        240
+      ],
+      "airDate": {
+        "ja": "2003-05-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis"
+      ]
+    },
+    {
+      "number": 155,
+      "title": {
+        "en": "Sacred Ground! The Island Where God Resides and Heaven's Judgement!",
+        "ja": "禁断の聖地！神の住む島と天の裁き！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        241,
+        242
+      ],
+      "airDate": {
+        "ja": "2003-05-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis"
+      ]
+    },
+    {
+      "number": 156,
+      "title": {
+        "en": "Criminals Already!? Skypiea's Upholders of the Law",
+        "ja": "早くも犯罪者！？スカイピアの法の番人"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        242
+      ],
+      "airDate": {
+        "ja": "2003-06-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis"
+      ]
+    },
+    {
+      "number": 157,
+      "title": {
+        "en": "Can we Escape!? God's Ordeals are Set in Motion!",
+        "ja": "脱出なるか！？動きはじめた神の試練！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        243
+      ],
+      "airDate": {
+        "ja": "2003-06-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis"
+      ]
+    },
+    {
+      "number": 158,
+      "title": {
+        "en": "Trap on Lovely Street! Almighty God Enel",
+        "ja": "ラブリー通りの罠！全能なる神エネル"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        244
+      ],
+      "airDate": {
+        "ja": "2003-06-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis",
+        "enel"
+      ]
+    },
+    {
+      "number": 159,
+      "title": {
+        "en": "Go Forth, Little Crow! To the Sacrificial Altar",
+        "ja": "すすめカラス丸！生贄の祭壇を目指せ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        245
+      ],
+      "airDate": {
+        "ja": "2003-07-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis"
+      ]
+    },
+    {
+      "number": 160,
+      "title": {
+        "en": "Survival Rate: 10%! Priest Satori with the Power of Mantra!",
+        "ja": "生存率10%！心綱使いの神官サトリ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        246,
+        247
+      ],
+      "airDate": {
+        "ja": "2003-07-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "satori"
+      ]
+    },
+    {
+      "number": 161,
+      "title": {
+        "en": "Peril of the Ordeal of Balls! Fight to the Death in the Lost Forest",
+        "ja": "「玉の試練」の脅威！迷いの森の死闘"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        247,
+        248
+      ],
+      "airDate": {
+        "ja": "2003-07-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "satori"
+      ]
+    },
+    {
+      "number": 162,
+      "title": {
+        "en": "Chopper's in Danger! Former God vs. Priest Shura",
+        "ja": "チョッパー危うし！元神VS神官シュラ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        248,
+        249
+      ],
+      "airDate": {
+        "ja": "2003-08-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "shura"
+      ]
+    },
+    {
+      "number": 163,
+      "title": {
+        "en": "Ever Mysterious! Ordeal of String and Ordeal of Love!?",
+        "ja": "摩訶不思議！紐の試練と恋の試練！？"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        249,
+        250
+      ],
+      "airDate": {
+        "ja": "2003-08-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 164,
+      "title": {
+        "en": "Light the Fire of Shandia! Wyper the Warrior",
+        "ja": "シャンドラの灯を燈せ！戦士ワイパー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        251
+      ],
+      "airDate": {
+        "ja": "2003-08-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper",
+        "aisa"
+      ]
+    },
+    {
+      "number": 165,
+      "title": {
+        "en": "Floating Land of Gold, Jaya! To God's Shrine!",
+        "ja": "天空の黄金郷ジャヤ！目指せ神の社"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        252
+      ],
+      "airDate": {
+        "ja": "2003-08-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis"
+      ]
+    },
+    {
+      "number": 166,
+      "title": {
+        "en": "Eve of Gold Festival! Feelings Toward 'Vearth'!",
+        "ja": "黄金前夜祭!「ヴァース」への想い!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        253
+      ],
+      "airDate": {
+        "ja": "2003-09-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis",
+        "aisa"
+      ]
+    },
+    {
+      "number": 167,
+      "title": {
+        "en": "God Enel Appears!! Aubade to the Survivors",
+        "ja": "神・エネル登場!! 生き残りへの夜明曲"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        254
+      ],
+      "airDate": {
+        "ja": "2003-09-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper",
+        "enel"
+      ]
+    },
+    {
+      "number": 168,
+      "title": {
+        "en": "The Python Strikes! The Survival Game Begins",
+        "ja": "牙むく大蛇!遂に始まる生き残り合戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        255,
+        256
+      ],
+      "airDate": {
+        "ja": "2003-10-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper",
+        "shura"
+      ]
+    },
+    {
+      "number": 169,
+      "title": {
+        "en": "The Life-Threatening Reject! War Demon Wyper's Resolve",
+        "ja": "捨て身の排撃!『戦鬼』ワイパーの覚悟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        256,
+        257,
+        258
+      ],
+      "airDate": {
+        "ja": "2003-10-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper"
+      ]
+    },
+    {
+      "number": 170,
+      "title": {
+        "en": "Fierce Sky Battle! Pirate Zoro vs. Fighter Braham",
+        "ja": "空中の激戦!海賊ゾロVS戦士ブラハム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        258,
+        259
+      ],
+      "airDate": {
+        "ja": "2003-10-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper"
+      ]
+    },
+    {
+      "number": 171,
+      "title": {
+        "en": "Howling Burn Bazooka!! Luffy vs. War Demon Wyper",
+        "ja": "唸る燃焼砲!! ルフィVS戦鬼ワイパー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        260,
+        261
+      ],
+      "airDate": {
+        "ja": "2003-10-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper"
+      ]
+    },
+    {
+      "number": 172,
+      "title": {
+        "en": "Ordeal of Swamp! Chopper vs. Priest Gedatsu!!",
+        "ja": "沼の試練! チョッパーVS神官ゲダツ!!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        261,
+        262,
+        263
+      ],
+      "airDate": {
+        "ja": "2003-11-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gedatsu"
+      ]
+    },
+    {
+      "number": 173,
+      "title": {
+        "en": "The Invincible Ability! Enel's True Nature Revealed",
+        "ja": "無敵の能力！明かされるエネルの正体"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        263,
+        264
+      ],
+      "airDate": {
+        "ja": "2003-11-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 174,
+      "title": {
+        "en": "The Vanished City! The Magnificent Ruins of Shandora!!",
+        "ja": "幻の都！雄大なるシャンドラの遺跡！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        265,
+        266
+      ],
+      "airDate": {
+        "ja": "2003-11-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "aisa"
+      ]
+    },
+    {
+      "number": 175,
+      "title": {
+        "en": "Chance of Survival: 0%!! Chopper vs. Priest Ohm",
+        "ja": "生存率0%！！チョッパーVS神官オーム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        266,
+        267
+      ],
+      "airDate": {
+        "ja": "2003-12-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "ohm",
+        "aisa"
+      ]
+    },
+    {
+      "number": 176,
+      "title": {
+        "en": "Climb Giant Jack!! Showdown in the Upper Ruins",
+        "ja": "\"巨大豆蔓”を登れ！！上層遺跡の死闘"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        268,
+        269
+      ],
+      "airDate": {
+        "ja": "2004-01-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "ohm",
+        "aisa"
+      ]
+    },
+    {
+      "number": 177,
+      "title": {
+        "en": "Ultimate Test of the Ordeal of Iron! The White-Barbed Death Match!!",
+        "ja": "鉄の試練の真骨頂！白荊デスマッチ！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        270,
+        271
+      ],
+      "airDate": {
+        "ja": "2004-01-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "ohm",
+        "aisa"
+      ]
+    },
+    {
+      "number": 178,
+      "title": {
+        "en": "Gushing Blade Attack! Zoro vs. Priest Ohm!!",
+        "ja": "ほとばしる斬撃！ゾロVS神官オーム！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        271,
+        272
+      ],
+      "airDate": {
+        "ja": "2004-01-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "ohm",
+        "aisa"
+      ]
+    },
+    {
+      "number": 179,
+      "title": {
+        "en": "The Upper Ruins Crumble! The Quintet Finale!!",
+        "ja": "崩れゆく上層遺跡！終曲への五重奏！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        272,
+        273
+      ],
+      "airDate": {
+        "ja": "2004-02-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "ohm",
+        "aisa"
+      ]
+    },
+    {
+      "number": 180,
+      "title": {
+        "en": "Battle in the Ancient Ruins! God Enel's Desire!!",
+        "ja": "古代遺跡の対決！神・エネルの目的！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        274,
+        275
+      ],
+      "airDate": {
+        "ja": "2004-02-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 181,
+      "title": {
+        "en": "Ambitions of Fairy Vearth - The Ark, Maxim!!",
+        "ja": "限りない大地への野望方舟マクシム！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        275,
+        276,
+        277
+      ],
+      "airDate": {
+        "ja": "2004-02-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 182,
+      "title": {
+        "en": "Finally Clashing! Pirate Luffy vs. God Enel!!",
+        "ja": "遂に激突！海賊ルフィVS神・エネル！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        276,
+        277,
+        278,
+        279
+      ],
+      "airDate": {
+        "ja": "2004-02-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 183,
+      "title": {
+        "en": "Maxim Rises! The Start of Deathpiea!!",
+        "ja": "マクシム浮上！動き始めたデスピア！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        280,
+        281
+      ],
+      "airDate": {
+        "ja": "2004-02-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 184,
+      "title": {
+        "en": "Luffy's Fall! God's Judgement and Nami's Desire!!",
+        "ja": "ルフィ落下！神の裁きとナミの望み！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        282,
+        283
+      ],
+      "airDate": {
+        "ja": "2004-03-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 185,
+      "title": {
+        "en": "Two People Awaken! A Rescue in Front of Burning Love!!",
+        "ja": "目覚めた二人！燃える恋の救出前線！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        283,
+        284
+      ],
+      "airDate": {
+        "ja": "2004-03-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 186,
+      "title": {
+        "en": "Capriccio to Destruction! The Impending Doom of Sky Island!!",
+        "ja": "絶望への狂想曲迫り来る空島の消滅！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        284,
+        285,
+        286
+      ],
+      "airDate": {
+        "ja": "2004-03-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 187,
+      "title": {
+        "en": "Guidance from the Sound of a Bell! The Great Warrior and Tales of an Explorer",
+        "ja": "鐘の音の導き！大戦士と探検家の物語"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        286,
+        287,
+        288
+      ],
+      "airDate": {
+        "ja": "2004-03-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "mont-blanc-noland",
+        "conis",
+        "wyper",
+        "enel",
+        "kalgara",
+        "aisa"
+      ]
+    },
+    {
+      "number": 188,
+      "title": {
+        "en": "Released from Disgrace! The Tears of the Great Warrior!!",
+        "ja": "呪縛からの解放！大戦士が流した涙！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        289,
+        290,
+        291
+      ],
+      "airDate": {
+        "ja": "2004-03-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "mont-blanc-noland",
+        "conis",
+        "wyper",
+        "enel",
+        "kalgara",
+        "aisa"
+      ]
+    },
+    {
+      "number": 189,
+      "title": {
+        "en": "Eternal Friendship! The Bell of Oath Echoes Throughout the Giant Ocean!!",
+        "ja": "永遠の親友！大海原に響く誓いの鐘！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        291,
+        292,
+        293
+      ],
+      "airDate": {
+        "ja": "2004-04-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "mont-blanc-noland",
+        "conis",
+        "wyper",
+        "enel",
+        "kalgara",
+        "aisa"
+      ]
+    },
+    {
+      "number": 190,
+      "title": {
+        "en": "The Destruction of Angel Island! Terror of the Descending Raigo!!",
+        "ja": "エンジェル島消滅！雷迎降臨の恐怖！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        294,
+        295
+      ],
+      "airDate": {
+        "ja": "2004-04-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 191,
+      "title": {
+        "en": "Chop Down Giant Jack! The Last Hope of Escaping",
+        "ja": "巨大豆蔓を倒せ！脱出への最後の望み"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        295,
+        296,
+        297
+      ],
+      "airDate": {
+        "ja": "2004-05-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 192,
+      "title": {
+        "en": "The Miracle in God's Country! A Love Song Heard by Angels",
+        "ja": "神の国の奇跡！天使に届いた島の歌声"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        297,
+        298
+      ],
+      "airDate": {
+        "ja": "2004-05-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "conis",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 193,
+      "title": {
+        "en": "The War Draws to a Close! Ringing Far and Wide, the Proud Fantasia",
+        "ja": "戦いの終焉！遠く響く誇り高き幻想曲"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        299,
+        300
+      ],
+      "airDate": {
+        "ja": "2004-05-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis",
+        "wyper",
+        "enel",
+        "aisa"
+      ]
+    },
+    {
+      "number": 194,
+      "title": {
+        "en": "I Have Come Here! The Weaving of the Poneglyphs",
+        "ja": "我ここに至る！歴史の本文が紡ぐもの"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        301
+      ],
+      "airDate": {
+        "ja": "2004-06-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis"
+      ]
+    },
+    {
+      "number": 195,
+      "title": {
+        "en": "Now Heading Towards the Blue Sea!! Memories of an Interwoven Finale",
+        "ja": "いざ青海へ！！想いが織りなす最終楽章"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        302,
+        303
+      ],
+      "airDate": {
+        "ja": "2004-06-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "conis"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "arrival-white-sea",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "gan-fall",
+        "wyper"
+      ],
+      "episode": 153,
+      "chapter": 237,
+      "description": {
+        "es": "Llegada al Mar Blanco; Gan Fall salva a la tripulación del ataque de Wyper."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-defeats-satori",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "satori"
+      ],
+      "episode": 161,
+      "chapter": 248,
+      "description": {
+        "es": "Luffy derrota al sacerdote Satori en el Bosque Perdido."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "gan-fall-vs-shura",
+      "kind": "battle",
+      "characters": [
+        "gan-fall",
+        "shura",
+        "tony-tony-chopper"
+      ],
+      "episode": 162,
+      "chapter": 249,
+      "description": {
+        "es": "Gan Fall pierde contra Shura defendiendo el Going Merry."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "enel-first-appearance",
+      "kind": "reveal",
+      "characters": [
+        "enel"
+      ],
+      "episode": 167,
+      "chapter": 254,
+      "description": {
+        "es": "Primera aparición de Enel ante sus sacerdotes."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-vs-braham",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "braham"
+      ],
+      "episode": 170,
+      "chapter": 258,
+      "description": {
+        "es": "Zoro derrota a Braham durante el Juego de Supervivencia."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-wyper",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "wyper"
+      ],
+      "episode": 171,
+      "chapter": 260,
+      "description": {
+        "es": "Luffy se enfrenta a Wyper y su Burn Bazooka."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-gedatsu",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "gedatsu"
+      ],
+      "episode": 172,
+      "chapter": 262,
+      "description": {
+        "es": "Luffy derrota al sacerdote Gedatsu en el pantano."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "enel-goro-goro-reveal",
+      "kind": "reveal",
+      "characters": [
+        "enel"
+      ],
+      "episode": 173,
+      "chapter": 264,
+      "description": {
+        "es": "Enel revela su poder: la Goro Goro no Mi, una Logia de rayo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-defeats-ohm",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "ohm"
+      ],
+      "episode": 179,
+      "chapter": 273,
+      "description": {
+        "es": "Zoro derrota al sacerdote Ohm en las ruinas superiores."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "wyper-reject-enel",
+      "kind": "battle",
+      "characters": [
+        "wyper",
+        "enel"
+      ],
+      "episode": 180,
+      "chapter": 274,
+      "description": {
+        "es": "Wyper usa el Reject Dial contra Enel, que se reanima con su propio rayo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "ark-maxim-reveal",
+      "kind": "reveal",
+      "characters": [
+        "enel",
+        "nami"
+      ],
+      "episode": 181,
+      "chapter": 276,
+      "description": {
+        "es": "Enel muestra el arca Maxim y su plan de viajar a la Tierra Infinita."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-enel-rubber",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "enel"
+      ],
+      "episode": 182,
+      "chapter": 279,
+      "description": {
+        "es": "Luffy se enfrenta a Enel y resulta inmune a su rayo por ser de goma."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "noland-kalgara-friendship",
+      "kind": "reveal",
+      "characters": [
+        "mont-blanc-noland",
+        "kalgara"
+      ],
+      "episode": 188,
+      "chapter": 290,
+      "description": {
+        "es": "Flashback de la amistad entre Noland y Calgara, 400 años atrás."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-golden-arm",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 191,
+      "chapter": 297,
+      "description": {
+        "es": "Luffy usa la bola de oro pegada a su brazo como arma contra Enel."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-enel",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "enel"
+      ],
+      "episode": 192,
+      "chapter": 298,
+      "description": {
+        "es": "Luffy derrota a Enel con el Gomu Gomu no Ougon Rifle y hace sonar la campana dorada."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "robin-roger-poneglyph",
+      "kind": "reveal",
+      "characters": [
+        "nico-robin"
+      ],
+      "episode": 194,
+      "chapter": 301,
+      "description": {
+        "es": "Robin lee el poneglifo de la campana y descubre el mensaje de Gol D. Roger."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "straw-hats-take-gold",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ],
+      "episode": 195,
+      "chapter": 302,
+      "description": {
+        "es": "La tripulación se lleva oro de Shandora y desciende al Mar Azul."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_153",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_153",
+      "field": "episodes.adaptsChapters (interpolado en [153, 154, 157, 161, 163, 174, 175, 183, 187]: la wiki no lo indica)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

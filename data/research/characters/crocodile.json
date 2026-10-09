@@ -1,0 +1,136 @@
+{
+  "slug": "crocodile",
+  "name": {
+    "en": "Crocodile",
+    "ja": "クロコダイル"
+  },
+  "origin": null,
+  "fruit": "suna-suna-no-mi",
+  "firstAppearance": {
+    "chapter": 126,
+    "episode": 76
+  },
+  "affiliations": [
+    {
+      "group": "baroque-works",
+      "role": "president (Mr. 0)",
+      "from": {
+        "episode": 66,
+        "chapter": 111
+      },
+      "to": {
+        "episode": 127,
+        "chapter": 211
+      }
+    },
+    {
+      "group": "seven-warlords-of-the-sea",
+      "role": "warlord",
+      "from": {
+        "episode": 67,
+        "chapter": 113
+      },
+      "to": {
+        "episode": 127,
+        "chapter": 211
+      }
+    },
+    {
+      "group": "cross-guild",
+      "role": "officer",
+      "from": {
+        "episode": 1083,
+        "chapter": 1056
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 81000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    },
+    {
+      "amount": 1965000000,
+      "episode": 1086,
+      "chapter": 1058,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "crocodile-mr-0",
+      "name": {
+        "es": "Sir Crocodile (Mr. 0)",
+        "en": "Sir Crocodile (Mr. 0)",
+        "ja": "サー・クロコダイル"
+      },
+      "firstAppearance": {
+        "episode": 76,
+        "chapter": 126
+      },
+      "description": {
+        "es": "Shichibukai y líder secreto de Baroque Works en Arabasta."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Desert Spada",
+        "Sables",
+        "Ground Death"
+      ]
+    },
+    {
+      "slug": "crocodile-impel-down",
+      "name": {
+        "es": "Crocodile (Impel Down y Marineford)",
+        "en": "Crocodile (Impel Down)",
+        "ja": "クロコダイル（インペルダウン）"
+      },
+      "firstAppearance": {
+        "episode": 446,
+        "chapter": 540
+      },
+      "description": {
+        "es": "Liberado del nivel 6 se alía con Luffy en la fuga y en Marineford."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "crocodile-cross-guild",
+      "name": {
+        "es": "Crocodile (Cross Guild)",
+        "en": "Crocodile (Cross Guild)",
+        "ja": "クロコダイル（クロスギルド）"
+      },
+      "firstAppearance": {
+        "episode": 1083,
+        "chapter": 1056
+      },
+      "description": {
+        "es": "Aspecto post-timeskip como cofundador de Cross Guild."
+      },
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Crocodile",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Crocodile",
+      "field": "bounties[81000000] (capítulo/episodio no localizados) (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Crocodile",
+      "field": "forms[crocodile-impel-down].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Crocodile",
+      "field": "forms[crocodile-cross-guild].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

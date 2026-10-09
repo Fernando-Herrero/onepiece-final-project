@@ -1,0 +1,211 @@
+{
+  "slug": "trafalgar-d-water-law",
+  "name": {
+    "en": "Trafalgar D. Water Law",
+    "ja": "トラファルガー・D・ワーテル・ロー"
+  },
+  "origin": "North Blue (Flevance)",
+  "fruit": "ope-ope-no-mi",
+  "firstAppearance": {
+    "episode": 392,
+    "chapter": 498
+  },
+  "affiliations": [
+    {
+      "group": "donquixote-pirates",
+      "role": "miembro (desertor)",
+      "from": {
+        "episode": 599,
+        "chapter": 673
+      },
+      "to": {
+        "episode": 599,
+        "chapter": 673
+      }
+    },
+    {
+      "group": "heart-pirates",
+      "role": "capitán",
+      "from": {
+        "episode": 392,
+        "chapter": 498
+      },
+      "to": null
+    },
+    {
+      "group": "seven-warlords",
+      "role": "Shichibukai",
+      "from": {
+        "episode": 584,
+        "chapter": 659
+      },
+      "to": {
+        "episode": 681,
+        "chapter": 746
+      }
+    },
+    {
+      "group": "straw-hat-heart-alliance",
+      "role": "aliado",
+      "from": {
+        "episode": 592,
+        "chapter": 667
+      },
+      "to": {
+        "episode": 746,
+        "chapter": 801
+      }
+    },
+    {
+      "group": "ninja-pirate-mink-samurai-alliance",
+      "role": "aliado",
+      "from": {
+        "episode": 770,
+        "chapter": 818
+      },
+      "to": {
+        "episode": 1085,
+        "chapter": 1057
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 200000000,
+      "episode": 392,
+      "chapter": 498,
+      "eventSlug": null
+    },
+    {
+      "amount": 440000000,
+      "episode": 584,
+      "chapter": 659,
+      "eventSlug": null
+    },
+    {
+      "amount": 500000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": null
+    },
+    {
+      "amount": 3000000000,
+      "episode": 1080,
+      "chapter": 1053,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "trafalgar-law-pre-timeskip",
+      "name": {
+        "es": "Law (Sabaody)",
+        "en": "Law (pre-timeskip)",
+        "ja": "トラファルガー・ロー (2年前)"
+      },
+      "firstAppearance": {
+        "episode": 392,
+        "chapter": 498
+      },
+      "description": {
+        "es": "Capitán de los Piratas Heart y uno de los Supernovas en Sabaody."
+      },
+      "abilities": [
+        "Room",
+        "Shambles"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "trafalgar-law-child",
+      "name": {
+        "es": "Law niño (Flevance)",
+        "en": "Young Law",
+        "ja": "幼少期のロー"
+      },
+      "firstAppearance": {
+        "episode": 699,
+        "chapter": 761
+      },
+      "description": {
+        "es": "Superviviente de Flevance con el síndrome del plomo ámbar, junto a Corazón."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "trafalgar-law-warlord",
+      "name": {
+        "es": "Law Shichibukai",
+        "en": "Law (Warlord)",
+        "ja": "七武海ロー"
+      },
+      "firstAppearance": {
+        "episode": 584,
+        "chapter": 659
+      },
+      "description": {
+        "es": "Tras la elipsis, Shichibukai en Punk Hazard."
+      },
+      "abilities": [
+        "Room",
+        "Shambles",
+        "Mes",
+        "Takt"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "trafalgar-law-gamma-knife",
+      "name": {
+        "es": "Law: Gamma Knife",
+        "en": "Law: Gamma Knife",
+        "ja": "ガンマナイフ"
+      },
+      "firstAppearance": {
+        "episode": 715,
+        "chapter": 781
+      },
+      "description": {
+        "es": "Usa Gamma Knife contra Doflamingo en Dressrosa."
+      },
+      "abilities": [
+        "Gamma Knife",
+        "Counter Shock"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "trafalgar-law-awakened",
+      "name": {
+        "es": "Law despertado",
+        "en": "Law (Awakened)",
+        "ja": "覚醒ロー"
+      },
+      "firstAppearance": {
+        "episode": 1035,
+        "chapter": 1037
+      },
+      "description": {
+        "es": "Despierta la Ope Ope no Mi contra Big Mom en Onigashima."
+      },
+      "abilities": [
+        "Shock Wille",
+        "Puncture Wille",
+        "K-Room"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Trafalgar_D._Water_Law",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Trafalgar_D._Water_Law",
+      "field": "affiliations[0], affiliations[3], affiliations[4].from, forms[trafalgar-law-child], forms[trafalgar-law-gamma-knife], forms[trafalgar-law-awakened] (dudoso)"
+    }
+  ]
+}

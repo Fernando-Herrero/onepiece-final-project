@@ -1,0 +1,251 @@
+{
+  "slug": "whisky-peak",
+  "sagaSlug": "arabasta",
+  "order": 2,
+  "title": {
+    "es": "Whisky Peak",
+    "en": "Whisky Peak",
+    "ja": "ウイスキーピーク編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 106,
+    "last": 114
+  },
+  "episodeRange": {
+    "first": 64,
+    "last": 67
+  },
+  "episodes": [
+    {
+      "number": 64,
+      "title": {
+        "es": "¿Un pueblo de amantes de los piratas? Llegada a Whisky Peak",
+        "en": "A Pirate-Loving Town? Arrival at Whisky Peak",
+        "ja": "海賊歓迎の町?ウイスキーピーク上陸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        106,
+        107
+      ],
+      "airDate": {
+        "ja": "2001-04-15"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "usopp",
+        "vinsmoke-sanji",
+        "mr-9",
+        "nefertari-vivi",
+        "roronoa-zoro",
+        "igaram",
+        "miss-monday"
+      ]
+    },
+    {
+      "number": 65,
+      "title": {
+        "es": "¡Santōryū explosivo! ¡Zoro vs. Baroque Works!",
+        "en": "Exploding Santoryu! Zoro vs. Baroque Works!",
+        "ja": "炸裂三刀流！ゾロVSバロックワークス"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        107,
+        108,
+        109,
+        110
+      ],
+      "airDate": {
+        "ja": "2001-04-15"
+      },
+      "appearances": [
+        "mr-9",
+        "igaram",
+        "nefertari-vivi",
+        "miss-monday",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "usopp",
+        "nami",
+        "karoo",
+        "gem",
+        "mikita"
+      ]
+    },
+    {
+      "number": 66,
+      "title": {
+        "es": "¡Una seria batalla! Luffy vs. Zoro ¡El duelo inesperado!",
+        "en": "A Serious Fight! Luffy vs. Zoro: the Baffling Duel!",
+        "ja": "真剣勝負！ルフィVSゾロ謎の大決闘！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        110,
+        111,
+        112
+      ],
+      "airDate": {
+        "ja": "2001-04-22"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "igaram",
+        "nefertari-vivi",
+        "mr-9",
+        "gem",
+        "mikita",
+        "monkey-d-luffy",
+        "karoo",
+        "nami",
+        "miss-monday"
+      ]
+    },
+    {
+      "number": 67,
+      "title": {
+        "es": "¡Entregar a la princesa Vivi! Huida de los piratas de Luffy",
+        "en": "Deliver Princess Vivi! Luffy Pirates Depart",
+        "ja": "王女ビビを届けろ！ルフィ海賊団出航"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        113,
+        114
+      ],
+      "airDate": {
+        "ja": "2001-04-29"
+      },
+      "appearances": [
+        "gem",
+        "mikita",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "karoo",
+        "nefertari-vivi",
+        "nami",
+        "igaram",
+        "usopp",
+        "vinsmoke-sanji",
+        "nico-robin"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "zoro-vs-whisky-peak-bounty-hunters",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro"
+      ],
+      "episode": 65,
+      "chapter": 108,
+      "description": {
+        "es": "Zoro derrota él solo a los cien cazarrecompensas de Baroque Works."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-zoro-whisky-peak",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro"
+      ],
+      "episode": 66,
+      "chapter": 111,
+      "description": {
+        "es": "Malentendido: Luffy y Zoro se enfrentan pensando que Zoro ha traicionado a la gente del pueblo."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-zoro-vs-mr5-miss-valentine",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "gem",
+        "mikita"
+      ],
+      "episode": 67,
+      "chapter": 113,
+      "description": {
+        "es": "Luffy y Zoro derrotan a Mr. 5 y Miss Valentine para proteger a Vivi."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "vivi-reveals-crocodile",
+      "kind": "reveal",
+      "characters": [
+        "nefertari-vivi",
+        "crocodile"
+      ],
+      "episode": 67,
+      "chapter": 113,
+      "description": {
+        "es": "Vivi revela sin querer que el jefe de Baroque Works es Crocodile, uno de los Siete Señores de la Guerra."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "miss-all-sunday-debut",
+      "kind": "reveal",
+      "characters": [
+        "nico-robin"
+      ],
+      "episode": 67,
+      "chapter": 114,
+      "description": {
+        "es": "Primera aparición de Nico Robin como Miss All Sunday, socia de Mr. 0."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "vivi-joins-straw-hats",
+      "kind": "recruitment",
+      "characters": [
+        "nefertari-vivi",
+        "karoo",
+        "monkey-d-luffy"
+      ],
+      "episode": 67,
+      "chapter": 114,
+      "description": {
+        "es": "Los Sombrero de Paja aceptan escoltar a Vivi y a Karoo hasta Arabasta."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/it/wiki/Episodio_{n}",
+      "field": "episodes.adaptsChapters (campo capitoli de la wiki italiana)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/es/wiki/Episodio_{n}",
+      "field": "episodes.title.es"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_{n}",
+      "field": "episodes.appearances (Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Whisky_Peak_Arc",
+      "field": "chapterRange,episodeRange"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "slug": "ruluka-island",
+  "sagaSlug": "sky-island",
+  "order": 2,
+  "title": {
+    "es": "Isla Ruluka",
+    "en": "Ruluka Island",
+    "ja": "ルルカ島編"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 139,
+    "last": 143
+  },
+  "episodes": [
+    {
+      "number": 139,
+      "title": {
+        "en": "Legend of the Rainbow Mist! Ruluka Island and the Old Man Henzo",
+        "ja": "虹色の霧伝説！ルルカ島の老人ヘンゾ"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2003-01-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "henzo"
+      ]
+    },
+    {
+      "number": 140,
+      "title": {
+        "en": "Inhabitants of Neverland! The Pumpkin Pirates!",
+        "ja": "永遠の国の住人！パンプキン海賊団！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2003-01-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "henzo"
+      ]
+    },
+    {
+      "number": 141,
+      "title": {
+        "en": "A Longing for Home! The Inescapable Pirate Graveyard!",
+        "ja": "故郷への想い！脱出不能の海賊墓場！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2003-01-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "henzo"
+      ]
+    },
+    {
+      "number": 142,
+      "title": {
+        "en": "Frantic Struggle! Wetton's Plans and the Rainbow Tower!",
+        "ja": "乱戦必至！ウエットンの野望と虹の塔"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2003-01-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "henzo"
+      ]
+    },
+    {
+      "number": 143,
+      "title": {
+        "en": "And Then the Legend Begins! To the End of the Rainbow!",
+        "ja": "そして伝説が始まる！いざ虹の彼方へ"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2003-02-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "henzo"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-vs-wetton",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "wetton"
+      ],
+      "episode": 142,
+      "chapter": null,
+      "description": {
+        "es": "Luffy se enfrenta a Wetton por el control de la Torre del Arcoíris."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "rainbow-mist-escape",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "henzo"
+      ],
+      "episode": 143,
+      "chapter": null,
+      "description": {
+        "es": "La tripulación escapa de la Niebla Arcoíris y Henzo cumple su leyenda."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_139",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "vegapunk",
+  "name": {
+    "en": "Vegapunk",
+    "ja": "Dr.ベガパンク"
+  },
+  "origin": "South Blue (Isla Baldimore)",
+  "fruit": "nomi-nomi-no-mi",
+  "firstAppearance": {
+    "episode": 610,
+    "chapter": 684
+  },
+  "affiliations": [
+    {
+      "group": "mads",
+      "role": "científico",
+      "from": {
+        "episode": 802,
+        "chapter": 840
+      },
+      "to": {
+        "episode": 802,
+        "chapter": 840
+      }
+    },
+    {
+      "group": "marines",
+      "role": "jefe científico (SSG)",
+      "from": {
+        "episode": 610,
+        "chapter": 684
+      },
+      "to": {
+        "episode": 1144,
+        "chapter": 1113
+      }
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "vegapunk-lilith",
+      "name": {
+        "es": "Vegapunk Lilith (Mal)",
+        "en": "Vegapunk Lilith",
+        "ja": "ベガパンク・リリス"
+      },
+      "firstAppearance": {
+        "episode": 1090,
+        "chapter": 1061
+      },
+      "description": {
+        "es": "Satélite del mal; recibe a los Sombrero de Paja en Egghead."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "vegapunk-shaka",
+      "name": {
+        "es": "Vegapunk Shaka (Bien)",
+        "en": "Vegapunk Shaka",
+        "ja": "ベガパンク・シャカ"
+      },
+      "firstAppearance": {
+        "episode": 1091,
+        "chapter": 1062
+      },
+      "description": {
+        "es": "Satélite del bien que coordina a los demás."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "vegapunk-stella",
+      "name": {
+        "es": "Vegapunk Stella",
+        "en": "Vegapunk Stella",
+        "ja": "ベガパンク・ステラ"
+      },
+      "firstAppearance": {
+        "episode": 1096,
+        "chapter": 1066
+      },
+      "description": {
+        "es": "Cuerpo original de Vegapunk, el hombre con el cerebro de 500 años."
+      },
+      "abilities": [
+        "Nomi Nomi no Mi"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "vegapunk-broadcast",
+      "name": {
+        "es": "Mensaje de Vegapunk",
+        "en": "Vegapunk's Broadcast",
+        "ja": "ベガパンクの放送"
+      },
+      "firstAppearance": {
+        "episode": 1144,
+        "chapter": 1113
+      },
+      "description": {
+        "es": "Su mensaje póstumo al mundo sobre el Siglo Vacío."
+      },
+      "abilities": [],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Vegapunk",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Vegapunk",
+      "field": "affiliations[1].to (muerte, dudoso)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Vegapunk",
+      "field": "forms[vegapunk-shaka], forms[vegapunk-broadcast] (dudoso)"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "slug": "yamato",
+  "name": {
+    "en": "Yamato",
+    "ja": "ヤマト"
+  },
+  "origin": "Wano",
+  "fruit": "inu-inu-no-mi-model-okuchi-no-makami",
+  "firstAppearance": {
+    "episode": 972,
+    "chapter": 971
+  },
+  "affiliations": [
+    {
+      "group": "beasts-pirates",
+      "role": "hijo de Kaido (desertor)",
+      "from": {
+        "episode": 983,
+        "chapter": 984
+      },
+      "to": {
+        "episode": 1007,
+        "chapter": 994
+      }
+    },
+    {
+      "group": "ninja-pirate-mink-samurai-alliance",
+      "role": "aliado",
+      "from": {
+        "episode": 1007,
+        "chapter": 994
+      },
+      "to": {
+        "episode": 1085,
+        "chapter": 1057
+      }
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "yamato-oden",
+      "name": {
+        "es": "Yamato, 'Kozuki Oden'",
+        "en": "Yamato",
+        "ja": "ヤマト"
+      },
+      "firstAppearance": {
+        "episode": 983,
+        "chapter": 984
+      },
+      "description": {
+        "es": "Se presenta como Oden en el bosque de Onigashima con su kanabo."
+      },
+      "abilities": [
+        "Haki del Rey",
+        "Kanabo"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "yamato-hybrid",
+      "name": {
+        "es": "Yamato forma híbrida (Okuchi no Makami)",
+        "en": "Yamato (Hybrid Form)",
+        "ja": "ヤマト 人獣型"
+      },
+      "firstAppearance": {
+        "episode": 1033,
+        "chapter": 1018
+      },
+      "description": {
+        "es": "Forma lobo divino contra Kaido en el tejado de Onigashima."
+      },
+      "abilities": [
+        "Narikabura Arrow",
+        "Thunder Bagua",
+        "Haki del Rey"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "yamato-child",
+      "name": {
+        "es": "Yamato niño",
+        "en": "Young Yamato",
+        "ja": "幼少期のヤマト"
+      },
+      "firstAppearance": {
+        "episode": 987,
+        "chapter": 985
+      },
+      "description": {
+        "es": "Presenció la ejecución de Oden y heredó su diario."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Yamato",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Yamato",
+      "field": "firstAppearance (aparición parcial en el cap. 971)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Yamato",
+      "field": "forms[*].firstAppearance (dudoso)"
+    }
+  ]
+}

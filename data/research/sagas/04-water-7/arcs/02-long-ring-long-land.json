@@ -1,0 +1,451 @@
+{
+  "slug": "long-ring-long-land",
+  "sagaSlug": "water-7",
+  "order": 2,
+  "title": {
+    "es": "Long Ring Long Land",
+    "en": "Long Ring Long Land",
+    "ja": "ロングリングロングランド編"
+  },
+  "summary": {
+    "es": "Los Sombrero de Paja llegan a la isla de los anillos largos, se enfrentan a los piratas de Foxy en el Davy Back Fight y conocen al almirante Aokiji."
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 303,
+    "last": 321
+  },
+  "episodeRange": {
+    "first": 207,
+    "last": 228
+  },
+  "episodes": [
+    {
+      "number": 207,
+      "title": {
+        "en": "Great Adventure in Long Ring Long Land!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        303,
+        304
+      ],
+      "airDate": {
+        "ja": "2004-10-31"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 208,
+      "title": {
+        "en": "A Davy Back With the Foxy Pirates!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        305
+      ],
+      "airDate": {
+        "ja": "2004-11-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 209,
+      "title": {
+        "en": "Round 1! One Lap of the Donut Race!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        306,
+        307
+      ],
+      "airDate": {
+        "ja": "2004-11-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 210,
+      "title": {
+        "en": "Silver Fox Foxy! The Merciless Interference!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        307,
+        308
+      ],
+      "airDate": {
+        "ja": "2004-11-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 211,
+      "title": {
+        "en": "Round 2! Shoot It Into the Groggy Ring!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        308,
+        309
+      ],
+      "airDate": {
+        "ja": "2004-11-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 212,
+      "title": {
+        "en": "A Barrage of Red Cards in Groggy Ring!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        309,
+        310
+      ],
+      "airDate": {
+        "ja": "2004-12-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 213,
+      "title": {
+        "en": "Round 3! The Round-and-Round Roller Race!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-12-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 214,
+      "title": {
+        "en": "A Seriously Heated Race! Into the Final Round!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2004-12-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 215,
+      "title": {
+        "en": "Screaming-Hot Bombardment! Pirate Dodgeball!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-01-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 216,
+      "title": {
+        "en": "Showdown on the Cliff! Red Light, Green Light!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-01-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 217,
+      "title": {
+        "en": "The Captains Square Off! The Final Combat Round!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        311,
+        312
+      ],
+      "airDate": {
+        "ja": "2005-01-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 218,
+      "title": {
+        "en": "Full-Blast Slow-Slow Onslaught vs. Invulnerable Luffy!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        313,
+        314,
+        315
+      ],
+      "airDate": {
+        "ja": "2005-01-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 219,
+      "title": {
+        "en": "Epic, Heated Combat! The Fateful Final Conclusion!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        316,
+        317,
+        318
+      ],
+      "airDate": {
+        "ja": "2005-01-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 227,
+      "title": {
+        "en": "Navy Headquarters Admiral Aokiji! The Ferocity of an Ultimate Powerhouse!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        319,
+        320
+      ],
+      "airDate": {
+        "ja": "2005-03-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "kuzan"
+      ]
+    },
+    {
+      "number": 228,
+      "title": {
+        "en": "Duel Between Rubber and Ice! Luffy vs. Aokiji!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        320,
+        321
+      ],
+      "airDate": {
+        "ja": "2005-03-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "kuzan"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "davy-back-fight",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "usopp",
+        "tony-tony-chopper",
+        "nami",
+        "foxy"
+      ],
+      "episode": 208,
+      "chapter": 305,
+      "description": {
+        "es": "Foxy desafía a los Sombrero de Paja a un Davy Back Fight."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "chopper-taken-by-foxy",
+      "kind": "other",
+      "characters": [
+        "tony-tony-chopper",
+        "foxy"
+      ],
+      "episode": 210,
+      "chapter": 308,
+      "description": {
+        "es": "Foxy gana la Donut Race y se lleva a Chopper."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-foxy",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "foxy"
+      ],
+      "episode": 219,
+      "chapter": 317,
+      "description": {
+        "es": "Combate final del Davy Back Fight: Luffy vence a Foxy pese al Noro Noro."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-aokiji",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "kuzan",
+        "nico-robin"
+      ],
+      "episode": 228,
+      "chapter": 321,
+      "description": {
+        "es": "El almirante Aokiji congela a Robin y derrota a Luffy en un uno contra uno."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[].title.en, episodes[].canon, episodes[].airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Long_Ring_Long_Land_Arc",
+      "field": "chapterRange, episodeRange, events"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide",
+      "field": "episodes[].adaptsChapters (adaptsChapters reconstruido de memoria sobre One Piece Wiki (Cloudflare bloqueó la descarga); reparto aproximado ±1 capítulo)"
+    }
+  ]
+}

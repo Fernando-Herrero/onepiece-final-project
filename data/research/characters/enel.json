@@ -1,0 +1,97 @@
+{
+  "slug": "enel",
+  "name": {
+    "en": "Enel",
+    "ja": "エネル"
+  },
+  "origin": null,
+  "fruit": "goro-goro-no-mi",
+  "firstAppearance": {
+    "chapter": 254,
+    "episode": 167
+  },
+  "affiliations": [
+    {
+      "group": "gods-army",
+      "role": "god of skypiea",
+      "from": {
+        "episode": 155,
+        "chapter": 241
+      },
+      "to": {
+        "episode": 195,
+        "chapter": 300
+      }
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "enel-god",
+      "name": {
+        "es": "Dios Enel",
+        "en": "God Enel",
+        "ja": "神・エネル"
+      },
+      "firstAppearance": {
+        "episode": 167,
+        "chapter": 254
+      },
+      "description": {
+        "es": "Dios autoproclamado de Skypiea; Logia del rayo y Mantra."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "El Thor",
+        "Mantra"
+      ]
+    },
+    {
+      "slug": "enel-raigo",
+      "name": {
+        "es": "Enel (Raigo)",
+        "en": "Enel (Raigo)",
+        "ja": "エネル（雷迎）"
+      },
+      "firstAppearance": {
+        "episode": 190,
+        "chapter": 294
+      },
+      "description": {
+        "es": "Condensa las nubes en una esfera de tormenta para borrar Skypiea."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "enel-amaru",
+      "name": {
+        "es": "Enel 200 millones de voltios Amaru",
+        "en": "Max 200,000,000 Volt Amaru",
+        "ja": "MAX2億V・雷神"
+      },
+      "firstAppearance": {
+        "episode": 192,
+        "chapter": 296
+      },
+      "description": {
+        "es": "Forma de dios del trueno al máximo voltaje contra Luffy."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Enel",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Enel",
+      "field": "forms[enel-amaru].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Enel",
+      "field": "affiliations[gods-army].to (dudoso, verificar)"
+    }
+  ]
+}

@@ -1,0 +1,1197 @@
+{
+  "slug": "water-7",
+  "sagaSlug": "water-7",
+  "order": 5,
+  "title": {
+    "es": "Water 7",
+    "en": "Water 7",
+    "ja": "ウォーターセブン編"
+  },
+  "summary": {
+    "es": "En la ciudad de los astilleros, el Going Merry es desahuciado, Usopp deja la tripulación y Robin desaparece con el CP9."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 322,
+    "last": 374
+  },
+  "episodeRange": {
+    "first": 229,
+    "last": 263
+  },
+  "episodes": [
+    {
+      "number": 229,
+      "title": {
+        "en": "The Dashing Sea Train and the City of Water: Water Seven!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        322,
+        323
+      ],
+      "airDate": {
+        "ja": "2005-04-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 230,
+      "title": {
+        "en": "Adventure in the City on the Water! Head to the Mammoth Shipbuilding Plant!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        323,
+        324
+      ],
+      "airDate": {
+        "ja": "2005-04-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 231,
+      "title": {
+        "en": "The Franky Family and Iceburg!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        324,
+        325
+      ],
+      "airDate": {
+        "ja": "2005-05-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 232,
+      "title": {
+        "en": "Galley-La Company! A Grand Sight: Dock #1!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        325,
+        326
+      ],
+      "airDate": {
+        "ja": "2005-05-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 233,
+      "title": {
+        "en": "Pirate Abduction Incident! A Pirate Ship That Can Only Await Her End!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        326,
+        327
+      ],
+      "airDate": {
+        "ja": "2005-05-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 234,
+      "title": {
+        "en": "Rescuing Our Friend! Raid on the Franky House!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        327,
+        328
+      ],
+      "airDate": {
+        "ja": "2005-06-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 235,
+      "title": {
+        "en": "Big Fight Under the Moon! The Pirate Flag Flutters With Sorrow!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        328,
+        329
+      ],
+      "airDate": {
+        "ja": "2005-06-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 236,
+      "title": {
+        "en": "Luffy vs. Usopp! Collision of Two Men's Pride!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        330,
+        331,
+        332
+      ],
+      "airDate": {
+        "ja": "2005-06-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 237,
+      "title": {
+        "en": "Severe Shock Hits the City of Water! Iceburg Targeted!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        333,
+        334
+      ],
+      "airDate": {
+        "ja": "2005-07-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 238,
+      "title": {
+        "en": "Gum-Gum Human vs. Fire-Breathing Cyborg!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        334,
+        335
+      ],
+      "airDate": {
+        "ja": "2005-07-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 239,
+      "title": {
+        "en": "The Straw Hat Pirates Are the Culprits? The Protectors of the City of Water!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        335,
+        336
+      ],
+      "airDate": {
+        "ja": "2005-07-31"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 240,
+      "title": {
+        "en": "Eternal Farewell? Nico Robin: The Woman Who Draws Darkness!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        337,
+        338
+      ],
+      "airDate": {
+        "ja": "2005-08-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 241,
+      "title": {
+        "en": "Capture Robin! The Determination of the Straw Hats!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        339,
+        340
+      ],
+      "airDate": {
+        "ja": "2005-08-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 242,
+      "title": {
+        "en": "Cannon Fire Is the Signal! CP9 Goes Into Action!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        341,
+        342
+      ],
+      "airDate": {
+        "ja": "2005-08-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 243,
+      "title": {
+        "en": "CP9 Takes Off Their Masks! Their Shocking True Faces!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        342,
+        343
+      ],
+      "airDate": {
+        "ja": "2005-09-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 244,
+      "title": {
+        "en": "Secret Bond! Iceburg and Franky!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        343,
+        344
+      ],
+      "airDate": {
+        "ja": "2005-09-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 245,
+      "title": {
+        "en": "Come Back, Robin! Showdown With CP9!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        345,
+        346
+      ],
+      "airDate": {
+        "ja": "2005-09-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 246,
+      "title": {
+        "en": "The Straw Hat Pirates Annihilated? The Menace of the Leopard Model!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        346,
+        347
+      ],
+      "airDate": {
+        "ja": "2005-10-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 247,
+      "title": {
+        "en": "The Man Who Is Loved Even by His Ship! Usopp's Tears!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        348,
+        349,
+        350
+      ],
+      "airDate": {
+        "ja": "2005-10-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 248,
+      "title": {
+        "en": "Franky's Past! The Day the Sea Train First Ran"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        351,
+        352,
+        353
+      ],
+      "airDate": {
+        "ja": "2005-11-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 249,
+      "title": {
+        "en": "Spandam's Scheme! The Day the Sea Train Shook"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        354,
+        355
+      ],
+      "airDate": {
+        "ja": "2005-11-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 250,
+      "title": {
+        "en": "The End of the Legendary Man! The Day the Sea Train Cried!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        355,
+        356,
+        357
+      ],
+      "airDate": {
+        "ja": "2005-11-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 251,
+      "title": {
+        "en": "The Truth Behind Her Betrayal! Robin’s Sorrowful Decision!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        358,
+        359
+      ],
+      "airDate": {
+        "ja": "2005-11-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 252,
+      "title": {
+        "en": "The Steam Whistle Forces Friends Apart! The Sea Train Starts To Run"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        359,
+        360
+      ],
+      "airDate": {
+        "ja": "2005-12-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 253,
+      "title": {
+        "en": "Sanji Barges In! Sea Train Battle in the Storm!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        360,
+        361
+      ],
+      "airDate": {
+        "ja": "2005-12-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 254,
+      "title": {
+        "en": "Nami's Soul Cries Out! Straw Hat Luffy Makes a Comeback!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        361,
+        362
+      ],
+      "airDate": {
+        "ja": "2006-01-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 255,
+      "title": {
+        "en": "Another Sea Train? Rocketman Charges Forth!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        363,
+        364
+      ],
+      "airDate": {
+        "ja": "2006-01-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 256,
+      "title": {
+        "en": "Rescue Our Friends! A Bond Among Foes Sworn With Fists!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        364,
+        365
+      ],
+      "airDate": {
+        "ja": "2006-02-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 257,
+      "title": {
+        "en": "Smash the Wave! Luffy and Zoro Use the Strongest Combo!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        365,
+        366
+      ],
+      "airDate": {
+        "ja": "2006-02-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 258,
+      "title": {
+        "en": "A Mysterious Man Appears?! His Name Is Sniperking!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        366,
+        367
+      ],
+      "airDate": {
+        "ja": "2006-03-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 259,
+      "title": {
+        "en": "Showdown Between Cooks! Sanji vs. Ramen Kenpo"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        368,
+        369
+      ],
+      "airDate": {
+        "ja": "2006-03-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 260,
+      "title": {
+        "en": "Rooftop Duel! Franky vs. Nero"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        369,
+        370
+      ],
+      "airDate": {
+        "ja": "2006-03-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 261,
+      "title": {
+        "en": "Clash! Demon-Slasher Zoro vs. Ship-Slasher T-Bone!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        370,
+        371
+      ],
+      "airDate": {
+        "ja": "2006-04-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 262,
+      "title": {
+        "en": "Scramble Over Robin! A Cunning Plan by Sniperking!!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        371,
+        372
+      ],
+      "airDate": {
+        "ja": "2006-04-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    },
+    {
+      "number": 263,
+      "title": {
+        "en": "The Judicial Island! Full View of Enies Lobby!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        373,
+        374
+      ],
+      "airDate": {
+        "ja": "2006-04-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "iceburg",
+        "rob-lucci",
+        "paulie",
+        "kaku"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "merry-declared-unrepairable",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-luffy",
+        "usopp",
+        "kaku"
+      ],
+      "episode": 233,
+      "chapter": 327,
+      "description": {
+        "es": "Galley-La declara que el Going Merry no tiene arreglo."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-usopp",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "usopp"
+      ],
+      "episode": 236,
+      "chapter": 332,
+      "description": {
+        "es": "Duelo por el Going Merry: Luffy derrota a Usopp, que abandona la tripulación."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-franky",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "franky"
+      ],
+      "episode": 238,
+      "chapter": 335,
+      "description": {
+        "es": "Luffy se enfrenta a Franky, el cyborg que escupe fuego."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "cp9-unmasked",
+      "kind": "reveal",
+      "characters": [
+        "rob-lucci",
+        "kaku",
+        "kalifa",
+        "blueno",
+        "iceburg"
+      ],
+      "episode": 243,
+      "chapter": 343,
+      "description": {
+        "es": "Lucci, Kaku, Kalifa y Blueno se revelan como agentes del CP9."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-lucci-galley-la",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "rob-lucci"
+      ],
+      "episode": 246,
+      "chapter": 346,
+      "description": {
+        "es": "Lucci, en forma de leopardo, derrota a Luffy y a Zoro en Galley-La."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "tom-and-franky-past",
+      "kind": "reveal",
+      "characters": [
+        "franky",
+        "tom",
+        "iceburg",
+        "spandam"
+      ],
+      "episode": 250,
+      "chapter": 357,
+      "description": {
+        "es": "Pasado de Franky: Tom carga con la culpa del ataque al tren marino y es condenado."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "robin-surrenders-to-cp9",
+      "kind": "reveal",
+      "characters": [
+        "nico-robin",
+        "spandam"
+      ],
+      "episode": 251,
+      "chapter": 358,
+      "description": {
+        "es": "Robin se entrega al CP9 para proteger a sus compañeros del Buster Call."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-zoro-cut-aqua-laguna",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro"
+      ],
+      "episode": 257,
+      "chapter": 365,
+      "description": {
+        "es": "Luffy y Zoro parten una ola del Aqua Laguna a bordo del Rocketman."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sogeking-debut",
+      "kind": "transformation",
+      "characters": [
+        "usopp"
+      ],
+      "episode": 258,
+      "chapter": 366,
+      "description": {
+        "es": "Usopp se presenta enmascarado como Sogeking."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-vs-wanze",
+      "kind": "battle",
+      "characters": [
+        "vinsmoke-sanji",
+        "wanze"
+      ],
+      "episode": 259,
+      "chapter": 369,
+      "description": {
+        "es": "Sanji derrota a Wanze en el tren marino."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "franky-vs-nero",
+      "kind": "battle",
+      "characters": [
+        "franky",
+        "nero"
+      ],
+      "episode": 260,
+      "chapter": 369,
+      "description": {
+        "es": "Franky vence a Nero en el techo del tren."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "zoro-vs-t-bone",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "t-bone"
+      ],
+      "episode": 261,
+      "chapter": 371,
+      "description": {
+        "es": "Zoro derrota al capitán T-Bone."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[].title.en, episodes[].canon, episodes[].airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Water_7_Arc",
+      "field": "chapterRange, episodeRange, events"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide",
+      "field": "episodes[].adaptsChapters (adaptsChapters reconstruido de memoria sobre One Piece Wiki (Cloudflare bloqueó la descarga); reparto aproximado ±1 capítulo)"
+    }
+  ]
+}

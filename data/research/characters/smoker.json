@@ -1,0 +1,102 @@
+{
+  "slug": "smoker",
+  "name": {
+    "en": "Smoker",
+    "ja": "スモーカー"
+  },
+  "origin": "East Blue",
+  "fruit": "moku-moku-no-mi",
+  "firstAppearance": {
+    "episode": 48,
+    "chapter": 97
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "capitán de la base de Loguetown",
+      "from": {
+        "episode": 52,
+        "chapter": 98
+      },
+      "to": {
+        "episode": 579,
+        "chapter": 655
+      }
+    },
+    {
+      "group": "g-5",
+      "role": "vicealmirante",
+      "from": {
+        "episode": 579,
+        "chapter": 655
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 500000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "smoker-loguetown",
+      "name": {
+        "es": "Smoker, el Cazador Blanco",
+        "en": "Smoker \"White Hunter\"",
+        "ja": "白猟のスモーカー"
+      },
+      "firstAppearance": {
+        "episode": 48,
+        "chapter": 97
+      },
+      "description": {
+        "es": "Capitán de Loguetown que persigue a Luffy hasta Arabasta."
+      },
+      "abilities": [
+        "Moku Moku no Mi",
+        "Jitte de kairoseki"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "smoker-post-timeskip",
+      "name": {
+        "es": "Smoker vicealmirante (G-5)",
+        "en": "Smoker (post-timeskip)",
+        "ja": "スモーカー (2年後)"
+      },
+      "firstAppearance": {
+        "episode": 579,
+        "chapter": 655
+      },
+      "description": {
+        "es": "Vicealmirante de la G-5 en Punk Hazard, con Haki de armadura."
+      },
+      "abilities": [
+        "Moku Moku no Mi",
+        "White Blow",
+        "Haki"
+      ],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Smoker",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Smoker",
+      "field": "bounties[0] (recompensa de la Marina en estrellas: al menos ★★★★★, sin capítulo)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Smoker",
+      "field": "affiliations[0].to (dudoso)"
+    }
+  ]
+}

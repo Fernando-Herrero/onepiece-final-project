@@ -1,0 +1,137 @@
+{
+  "slug": "caesar-retrieval",
+  "sagaSlug": "dressrosa",
+  "order": 3,
+  "title": {
+    "es": "Arco de la Recuperación de Caesar",
+    "en": "Caesar Retrieval Arc"
+  },
+  "summary": {
+    "es": "Relleno: un misterioso pirata secuestra a Caesar del Thousand Sunny y la alianza tiene que recuperarlo antes de llegar a Dressrosa."
+  },
+  "type": "filler",
+  "chapterRange": null,
+  "episodeRange": {
+    "first": 626,
+    "last": 628
+  },
+  "episodes": [
+    {
+      "number": 626,
+      "title": {
+        "en": "Caesar Goes Missing! The Pirate Alliance Makes a Sortie",
+        "ja": "消えたシーザー！海賊同盟出撃"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        699
+      ],
+      "airDate": {
+        "ja": "2013-12-22"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "brook",
+        "kinemon",
+        "nami",
+        "kozuki-momonosuke",
+        "nico-robin",
+        "caesar-clown",
+        "trafalgar-d-water-law",
+        "usopp",
+        "tony-tony-chopper",
+        "franky",
+        "sanji"
+      ]
+    },
+    {
+      "number": 627,
+      "title": {
+        "en": "Luffy Dies at Sea!? The Pirate Alliance Comes Apart",
+        "ja": "ルフィ海に死す!? 海賊同盟崩壊"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2014-01-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "tony-tony-chopper",
+        "caesar-clown"
+      ]
+    },
+    {
+      "number": 628,
+      "title": {
+        "en": "A Major Turnaround! Luffy's Angry Iron Fist Strikes",
+        "ja": "大逆転！炸裂ルフィ怒りの鉄拳"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        699,
+        700
+      ],
+      "airDate": {
+        "ja": "2014-01-12"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "caesar-clown",
+        "franky",
+        "usopp",
+        "sanji",
+        "nami",
+        "nico-robin",
+        "roronoa-zoro",
+        "brook",
+        "kinemon",
+        "donquixote-doflamingo",
+        "kozuki-momonosuke",
+        "sugar"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-defeats-breed",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "breed"
+      ],
+      "episode": 628,
+      "chapter": null,
+      "description": {
+        "es": "Luffy derrota a Breed y la alianza recupera a Caesar."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Dressrosa_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Template:WC",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Template:WhichMangaDate",
+      "field": "chapters.releaseDate"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Caesar_Retrieval_Arc",
+      "field": "arc"
+    }
+  ]
+}

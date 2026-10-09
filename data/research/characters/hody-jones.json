@@ -1,0 +1,93 @@
+{
+  "slug": "hody-jones",
+  "name": {
+    "en": "Hody Jones",
+    "ja": "ホーディ・ジョーンズ"
+  },
+  "origin": "fish-man-island",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 608,
+    "episode": 527
+  },
+  "affiliations": [
+    {
+      "group": "new-fish-man-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 529,
+        "chapter": 609
+      },
+      "to": {
+        "episode": 570,
+        "chapter": 650
+      }
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "hody-jones-new-fish-man",
+      "name": {
+        "es": "Hody Jones",
+        "en": "Hody Jones",
+        "ja": "ホーディ・ジョーンズ"
+      },
+      "firstAppearance": {
+        "episode": 527,
+        "chapter": 608
+      },
+      "description": {
+        "es": "Capitán de los Nuevos Piratas Hombres-pez."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "hody-jones-energy-steroid",
+      "name": {
+        "es": "Hody con Energy Steroid",
+        "en": "Hody (Energy Steroid)",
+        "ja": "ホーディ（E・S）"
+      },
+      "firstAppearance": {
+        "episode": 559,
+        "chapter": 638
+      },
+      "description": {
+        "es": "Sobredosis de esteroides que acentúa sus rasgos de tiburón."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "hody-jones-aged",
+      "name": {
+        "es": "Hody envejecido",
+        "en": "Aged Hody",
+        "ja": "老いたホーディ"
+      },
+      "firstAppearance": {
+        "episode": 570,
+        "chapter": 650
+      },
+      "description": {
+        "es": "Envejece por el abuso de Energy Steroid."
+      },
+      "suggestedRarity": "common"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Hody_Jones",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Hody_Jones",
+      "field": "forms[hody-jones-aged].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Hody_Jones",
+      "field": "affiliations[new-fish-man-pirates].to (dudoso, verificar)"
+    }
+  ]
+}

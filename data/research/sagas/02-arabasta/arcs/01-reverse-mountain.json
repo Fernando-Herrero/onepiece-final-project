@@ -1,0 +1,134 @@
+{
+  "slug": "reverse-mountain",
+  "sagaSlug": "arabasta",
+  "order": 1,
+  "title": {
+    "es": "Reverse Mountain",
+    "en": "Reverse Mountain",
+    "ja": "リヴァース・マウンテン編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 101,
+    "last": 105
+  },
+  "episodeRange": {
+    "first": 62,
+    "last": 63
+  },
+  "episodes": [
+    {
+      "number": 62,
+      "title": {
+        "es": "¿El primer obstáculo? La ballena gigante Laboon",
+        "en": "The First Obstacle? Giant Whale Laboon Appears",
+        "ja": "最初の砦?巨大クジラ・ラブーン現る"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        102,
+        103
+      ],
+      "airDate": {
+        "ja": "2001-03-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "vinsmoke-sanji",
+        "usopp",
+        "laboon",
+        "crocus",
+        "nefertari-vivi",
+        "mr-9"
+      ]
+    },
+    {
+      "number": 63,
+      "title": {
+        "es": "¡Un hombre de promesa! Luffy y la ballena juran encontrarse nuevamente",
+        "en": "A Man's Promise! Luffy and the Whale Vow to Meet Again",
+        "ja": "男の約束！ルフィとクジラ再会の誓い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        104,
+        105
+      ],
+      "airDate": {
+        "ja": "2001-03-21"
+      },
+      "appearances": [
+        "laboon",
+        "crocus",
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "vinsmoke-sanji",
+        "nefertari-vivi",
+        "mr-9"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "enter-grand-line",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji"
+      ],
+      "episode": 62,
+      "chapter": 102,
+      "description": {
+        "es": "El Going Merry sube Reverse Mountain y entra en el Grand Line."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-laboon-promise",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "laboon"
+      ],
+      "episode": 63,
+      "chapter": 104,
+      "description": {
+        "es": "Luffy pelea contra Laboon y le promete volver a combatir; pinta la Jolly Roger en su cabeza."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/it/wiki/Episodio_{n}",
+      "field": "episodes.adaptsChapters (campo capitoli de la wiki italiana)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/es/wiki/Episodio_{n}",
+      "field": "episodes.title.es"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_{n}",
+      "field": "episodes.appearances (Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Reverse_Mountain_Arc",
+      "field": "chapterRange,episodeRange"
+    }
+  ]
+}

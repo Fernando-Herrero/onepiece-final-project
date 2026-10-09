@@ -1,0 +1,108 @@
+{
+  "slug": "gol-d-roger",
+  "name": {
+    "en": "Gol D. Roger",
+    "ja": "ゴール・D・ロジャー"
+  },
+  "origin": "East Blue (Loguetown)",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 1,
+    "chapter": 1
+  },
+  "affiliations": [
+    {
+      "group": "roger-pirates",
+      "role": "capitán",
+      "from": {
+        "episode": 1,
+        "chapter": 1
+      },
+      "to": {
+        "episode": 969,
+        "chapter": 968
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 5564800000,
+      "episode": 958,
+      "chapter": 957,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "gol-d-roger-execution",
+      "name": {
+        "es": "Roger ejecutado",
+        "en": "Roger (execution)",
+        "ja": "処刑台のロジャー"
+      },
+      "firstAppearance": {
+        "episode": 1,
+        "chapter": 1
+      },
+      "description": {
+        "es": "Sus últimas palabras en Loguetown abren la Gran Era Pirata."
+      },
+      "abilities": [],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "gol-d-roger-kamusari",
+      "name": {
+        "es": "Roger: Kamusari",
+        "en": "Roger: Divine Departure",
+        "ja": "神避"
+      },
+      "firstAppearance": {
+        "episode": 966,
+        "chapter": 966
+      },
+      "description": {
+        "es": "Choque con Barbablanca usando Kamusari."
+      },
+      "abilities": [
+        "Kamusari",
+        "Haki del Rey"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "gol-d-roger-pirate-king",
+      "name": {
+        "es": "Roger, Rey de los Piratas",
+        "en": "Pirate King Roger",
+        "ja": "海賊王ロジャー"
+      },
+      "firstAppearance": {
+        "episode": 968,
+        "chapter": 967
+      },
+      "description": {
+        "es": "Llega a Laugh Tale y se ríe de la historia del One Piece."
+      },
+      "abilities": [
+        "Voz de todas las cosas"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Gol_D._Roger",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Gol_D._Roger",
+      "field": "firstAppearance (intro del anime en ep. 1; en flashback: ep. 48)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Gol_D._Roger",
+      "field": "forms[*] (dudoso)"
+    }
+  ]
+}

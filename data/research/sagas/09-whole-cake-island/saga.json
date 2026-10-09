@@ -1,0 +1,39 @@
+{
+  "slug": "whole-cake-island",
+  "order": 9,
+  "title": {
+    "es": "Cuatro Emperadores / Isla Whole Cake",
+    "en": "Four Emperors / Whole Cake Island",
+    "ja": "四皇編 / ホールケーキアイランド編"
+  },
+  "chapterRange": {
+    "first": 802,
+    "last": 908
+  },
+  "episodeRange": {
+    "first": 747,
+    "last": 896
+  },
+  "arcSlugs": [
+    "silver-mine",
+    "zou",
+    "marine-rookie",
+    "whole-cake-island",
+    "levely",
+    "cidre-guild"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Whole_Cake_Island_Saga",
+      "field": "arcSlugs/chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Whole_Cake_Island_Saga",
+      "field": "episodeRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Wano_Country_Saga",
+      "field": "episodeRange.last (Cidre Guild 895-896 se emite dentro de Wano; 890-894 son de Wano)"
+    }
+  ]
+}

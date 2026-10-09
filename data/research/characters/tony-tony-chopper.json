@@ -1,0 +1,167 @@
+{
+  "slug": "tony-tony-chopper",
+  "name": {
+    "en": "Tony Tony Chopper",
+    "ja": "トニートニー・チョッパー"
+  },
+  "origin": "drum-island",
+  "fruit": "hito-hito-no-mi",
+  "firstAppearance": {
+    "chapter": 134,
+    "episode": 81
+  },
+  "affiliations": [
+    {
+      "group": "straw-hat-pirates",
+      "role": "doctor",
+      "from": {
+        "episode": 91,
+        "chapter": 153
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 50,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 100,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 1000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "chopper-brain-point",
+      "name": {
+        "es": "Chopper Brain Point",
+        "en": "Brain Point",
+        "ja": "頭脳強化"
+      },
+      "firstAppearance": {
+        "episode": 81,
+        "chapter": 134
+      },
+      "description": {
+        "es": "Forma híbrida pequeña, su aspecto por defecto."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "chopper-heavy-point",
+      "name": {
+        "es": "Chopper Heavy Point",
+        "en": "Heavy Point",
+        "ja": "重量強化"
+      },
+      "firstAppearance": {
+        "episode": 84,
+        "chapter": 140
+      },
+      "description": {
+        "es": "Forma humana musculosa."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "chopper-rumble-ball",
+      "name": {
+        "es": "Chopper Rumble Ball (Points)",
+        "en": "Rumble Ball Points",
+        "ja": "ランブルボール"
+      },
+      "firstAppearance": {
+        "episode": 88,
+        "chapter": 149
+      },
+      "description": {
+        "es": "Los Rumble Ball desbloquean Jumping, Arm, Horn y Guard Point contra Wapol."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Jumping Point",
+        "Arm Point",
+        "Horn Point",
+        "Guard Point"
+      ]
+    },
+    {
+      "slug": "chopper-monster-point",
+      "name": {
+        "es": "Chopper Monster Point",
+        "en": "Monster Point",
+        "ja": "怪物強化"
+      },
+      "firstAppearance": {
+        "episode": 290,
+        "chapter": 407
+      },
+      "description": {
+        "es": "Gigante descontrolado tras tres Rumble Ball contra Kumadori."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "chopper-post-timeskip",
+      "name": {
+        "es": "Chopper (post-salto temporal)",
+        "en": "Chopper (Post-Timeskip)",
+        "ja": "チョッパー"
+      },
+      "firstAppearance": {
+        "episode": 517,
+        "chapter": 598
+      },
+      "description": {
+        "es": "Regresa de Torino con nuevos puntos sin necesidad de Rumble Ball."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Kung Fu Point",
+        "Horn Point"
+      ]
+    },
+    {
+      "slug": "chopper-monster-point-controlled",
+      "name": {
+        "es": "Chopper Monster Point (controlado)",
+        "en": "Monster Point (controlled)",
+        "ja": "怪物強化"
+      },
+      "firstAppearance": {
+        "episode": 591,
+        "chapter": 665
+      },
+      "description": {
+        "es": "Domina el Monster Point durante tres minutos con un Rumble Ball."
+      },
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper/Abilities_and_Powers",
+      "field": "forms (Monster Point 407/290 y controlado 665/591 inferidos de citas cercanas, verificar)"
+    }
+  ]
+}

@@ -1,0 +1,874 @@
+{
+  "slug": "post-war",
+  "sagaSlug": "summit-war",
+  "order": 6,
+  "title": {
+    "es": "Arco de la Posguerra",
+    "en": "Post-War Arc",
+    "ja": null
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 581,
+    "last": 597
+  },
+  "episodeRange": {
+    "first": 490,
+    "last": 516
+  },
+  "episodes": [
+    {
+      "number": 490,
+      "title": {
+        "es": null,
+        "en": "Powerful Independent Rivals! The Beginning of the \"New Era\"!",
+        "ja": "群雄割拠す! \"新しい時代\"の始まり!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        581
+      ],
+      "airDate": {
+        "ja": "2011-03-20"
+      },
+      "appearances": [
+        "eustass-kid",
+        "marshall-d-teach",
+        "sengoku",
+        "shiryu",
+        "gecko-moria",
+        "donquixote-doflamingo",
+        "boa-hancock",
+        "trafalgar-d-water-law",
+        "emporio-ivankov",
+        "portgas-d-ace",
+        "jinbe",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 491,
+      "title": {
+        "es": null,
+        "en": "Arrival at the Island of Women - Cruel Reality Tortures Luffy",
+        "ja": "女ヶ島上陸 ルフィを責める過酷な現実"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        581,
+        582
+      ],
+      "airDate": {
+        "ja": "2011-03-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "boa-sandersonia",
+        "boa-marigold",
+        "boa-hancock",
+        "emporio-ivankov",
+        "jinbe",
+        "trafalgar-d-water-law",
+        "crocodile",
+        "sakazuki",
+        "portgas-d-ace",
+        "galdino",
+        "monkey-d-garp"
+      ]
+    },
+    {
+      "number": 492,
+      "title": {
+        "es": null,
+        "en": "The Strongest Tag-Team! Luffy and Toriko's Hard Struggle!",
+        "ja": "最強タッグ! 奮闘、ルフィとトリコ!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2011-04-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "franky",
+        "brook",
+        "nami",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 493,
+      "title": {
+        "es": null,
+        "en": "Luffy and Ace - The Story of the Brothers' Meeting!",
+        "ja": "ルフィとエース 兄弟の出会いの物語!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        582,
+        583
+      ],
+      "airDate": {
+        "ja": "2011-04-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "shanks",
+        "monkey-d-garp",
+        "curly-dadan",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 494,
+      "title": {
+        "es": null,
+        "en": "Enter Sabo! The Boy From Grey Terminal",
+        "ja": "サボ登場! 不確かな物の終着駅の少年"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        583,
+        584
+      ],
+      "airDate": {
+        "ja": "2011-04-17"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "sabo"
+      ]
+    },
+    {
+      "number": 495,
+      "title": {
+        "es": null,
+        "en": "I Won't Run - Ace's Desperate Rescue Operation",
+        "ja": "おれは逃げない　エース決死の救出作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        584
+      ],
+      "airDate": {
+        "ja": "2011-04-24"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "sabo",
+        "monkey-d-luffy",
+        "curly-dadan"
+      ]
+    },
+    {
+      "number": 496,
+      "title": {
+        "es": null,
+        "en": "Someday to the Sea! The Three Brat's Sake Cups of Oath!",
+        "ja": "いつか海へ! 三人の悪童ちかいの盃!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        585
+      ],
+      "airDate": {
+        "ja": "2011-05-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "sabo"
+      ]
+    },
+    {
+      "number": 497,
+      "title": {
+        "es": null,
+        "en": "Leaving the Dadan Family!? The Secret Base is Complete!",
+        "ja": "ダダン一家との別れ!? 完成! 秘密基地"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        585
+      ],
+      "airDate": {
+        "ja": "2011-05-08"
+      },
+      "appearances": [
+        "curly-dadan",
+        "sabo",
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "monkey-d-garp"
+      ]
+    },
+    {
+      "number": 498,
+      "title": {
+        "es": null,
+        "en": "Apprentice Luffy!? The Man who Fought the Pirate King!",
+        "ja": "ルフィ弟子入り!?　海賊王と戦った男!"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        584,
+        585
+      ],
+      "airDate": {
+        "ja": "2011-05-15"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "sabo",
+        "monkey-d-luffy",
+        "shanks",
+        "curly-dadan"
+      ]
+    },
+    {
+      "number": 499,
+      "title": {
+        "es": null,
+        "en": "The Battle Against the Big Tiger! Who Will Be the Captain?!",
+        "ja": "ビッグタイガーとの戦い! 誰がキャプテンになるの!?"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2011-05-22"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "sabo",
+        "monkey-d-luffy",
+        "gol-d-roger"
+      ]
+    },
+    {
+      "number": 500,
+      "title": {
+        "es": null,
+        "en": "Stolen Freedom! The Nobles' Trap Draws Near the Three Brothers",
+        "ja": "奪われた自由! 三兄弟に迫る貴族の罠"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        585,
+        586
+      ],
+      "airDate": {
+        "ja": "2011-05-29"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "sabo",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 501,
+      "title": {
+        "es": null,
+        "en": "The Flames Are Lit - The Gray Terminal's Crisis",
+        "ja": "放たれた炎 グレイ・ターミナルの危機"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        586,
+        587
+      ],
+      "airDate": {
+        "ja": "2011-06-05"
+      },
+      "appearances": [
+        "sabo",
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "curly-dadan",
+        "monkey-d-dragon"
+      ]
+    },
+    {
+      "number": 502,
+      "title": {
+        "es": null,
+        "en": "Where Is Freedom? The Boy's Sad Departure",
+        "ja": "自由はどこにある? 少年の悲しき船出"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        587,
+        588
+      ],
+      "airDate": {
+        "ja": "2011-06-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "curly-dadan",
+        "emporio-ivankov",
+        "monkey-d-dragon",
+        "bartholomew-kuma",
+        "sabo"
+      ]
+    },
+    {
+      "number": 503,
+      "title": {
+        "es": null,
+        "en": "I'm Counting On You! A Letter From a Brother!",
+        "ja": "よろしく頼む! 兄弟から届いた手紙!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        588,
+        589
+      ],
+      "airDate": {
+        "ja": "2011-06-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "sabo",
+        "portgas-d-ace",
+        "curly-dadan",
+        "monkey-d-garp",
+        "gol-d-roger"
+      ]
+    },
+    {
+      "number": 504,
+      "title": {
+        "es": null,
+        "en": "To Fulfill the Promise - Separate Departures!",
+        "ja": "約束を果たすため それぞれの旅立ち!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        589
+      ],
+      "airDate": {
+        "ja": "2011-06-26"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "monkey-d-dragon",
+        "emporio-ivankov",
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "sabo",
+        "curly-dadan",
+        "monkey-d-garp",
+        "shanks",
+        "jinbe",
+        "sakazuki"
+      ]
+    },
+    {
+      "number": 505,
+      "title": {
+        "es": null,
+        "en": "I Want to See Them! Luffy's Tearful Scream",
+        "ja": "あいつらに会いてェ! ルフィ涙の叫び"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        590
+      ],
+      "airDate": {
+        "ja": "2011-07-03"
+      },
+      "appearances": [
+        "monkey-d-garp",
+        "curly-dadan",
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "shanks",
+        "edward-newgate",
+        "sengoku",
+        "sakazuki",
+        "gol-d-roger",
+        "buggy",
+        "squard",
+        "jinbe",
+        "dracule-mihawk",
+        "sentomaru",
+        "borsalino",
+        "kuzan",
+        "galdino",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook"
+      ]
+    },
+    {
+      "number": 506,
+      "title": {
+        "es": null,
+        "en": "The Straw Hat Crew Shocked! The Bad News is Received",
+        "ja": "麦わらの一味激震! もたらされた凶報"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2011-07-10"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "dracule-mihawk",
+        "tony-tony-chopper",
+        "edward-newgate",
+        "nami",
+        "usopp",
+        "sanji",
+        "nico-robin",
+        "franky",
+        "brook",
+        "portgas-d-ace",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 507,
+      "title": {
+        "es": null,
+        "en": "Reunion with Dark King Rayleigh - It's Time For Luffy's Decision",
+        "ja": "冥王レイリーとの再会 ルフィ決断の時"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        591
+      ],
+      "airDate": {
+        "ja": "2011-07-17"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "silvers-rayleigh",
+        "camie",
+        "boa-hancock",
+        "boa-marigold",
+        "boa-sandersonia",
+        "jinbe",
+        "monkey-d-luffy",
+        "borsalino",
+        "bartholomew-kuma",
+        "nami",
+        "sanji",
+        "franky",
+        "tony-tony-chopper",
+        "nico-robin",
+        "sentomaru",
+        "usopp",
+        "roronoa-zoro",
+        "brook",
+        "edward-newgate"
+      ]
+    },
+    {
+      "number": 508,
+      "title": {
+        "es": null,
+        "en": "Back to the Captain - Jailbreak from Sky Island and the Incident on the Winter Island",
+        "ja": "船長のもとへ 空島の脱獄と冬島の事件"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        592
+      ],
+      "airDate": {
+        "ja": "2011-07-31"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "silvers-rayleigh",
+        "jinbe",
+        "boa-marigold",
+        "boa-sandersonia",
+        "boa-hancock",
+        "nami",
+        "usopp",
+        "franky",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 509,
+      "title": {
+        "es": null,
+        "en": "Contact! The Great Swordsman Mihawk - Zoro's Struggle of Willpower",
+        "ja": "接触! 大剣豪ミホーク ゾロ意地の死闘"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        592
+      ],
+      "airDate": {
+        "ja": "2011-08-07"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "dracule-mihawk",
+        "gecko-moria",
+        "brook",
+        "monkey-d-luffy",
+        "silvers-rayleigh",
+        "boa-hancock",
+        "boa-sandersonia",
+        "boa-marigold",
+        "jinbe",
+        "usopp",
+        "sanji",
+        "franky",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 510,
+      "title": {
+        "es": null,
+        "en": "Sanji's Suffering - The Queen Returns to His Kingdom!",
+        "ja": "サンジの受難 王国へと帰還した女王!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        591,
+        593
+      ],
+      "airDate": {
+        "ja": "2011-08-14"
+      },
+      "appearances": [
+        "jinbe",
+        "monkey-d-luffy",
+        "silvers-rayleigh",
+        "tony-tony-chopper",
+        "portgas-d-ace",
+        "nico-robin",
+        "sanji",
+        "emporio-ivankov",
+        "brook",
+        "nami",
+        "roronoa-zoro",
+        "franky",
+        "marshall-d-teach",
+        "sengoku",
+        "monkey-d-dragon",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 511,
+      "title": {
+        "es": null,
+        "en": "An Unexpected Return! Luffy, to Marineford!",
+        "ja": "まさかの再上陸! ルフィ海軍本部へ!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        594
+      ],
+      "airDate": {
+        "ja": "2011-08-21"
+      },
+      "appearances": [
+        "usopp",
+        "edward-newgate",
+        "sakazuki",
+        "borsalino",
+        "kuzan",
+        "monkey-d-luffy",
+        "jinbe",
+        "silvers-rayleigh",
+        "marshall-d-teach",
+        "sengoku",
+        "koby",
+        "eustass-kid"
+      ]
+    },
+    {
+      "number": 512,
+      "title": {
+        "es": null,
+        "en": "Delivered to the Crew - The Big News Comes Through!",
+        "ja": "仲間に届け かけめぐる大ニュース!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        593,
+        594
+      ],
+      "airDate": {
+        "ja": "2011-08-28"
+      },
+      "appearances": [
+        "buggy",
+        "monkey-d-dragon",
+        "monkey-d-garp",
+        "galdino",
+        "camie",
+        "hatchan",
+        "bartholomew-kuma",
+        "crocodile",
+        "curly-dadan",
+        "monkey-d-luffy",
+        "silvers-rayleigh",
+        "jinbe",
+        "tony-tony-chopper",
+        "nico-robin",
+        "sanji",
+        "emporio-ivankov",
+        "usopp",
+        "nami",
+        "franky",
+        "brook",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 513,
+      "title": {
+        "es": null,
+        "en": "The Pirates Move Out! The Earth Shattering New World",
+        "ja": "動き出す海賊たち! 驚天動地の新世界"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        595
+      ],
+      "airDate": {
+        "ja": "2011-09-04"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "marshall-d-teach",
+        "shiryu",
+        "sakazuki",
+        "donquixote-doflamingo",
+        "gecko-moria",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "sentomaru",
+        "borsalino",
+        "brook",
+        "sanji",
+        "nami"
+      ]
+    },
+    {
+      "number": 514,
+      "title": {
+        "es": null,
+        "en": "Live Through Hell - Sanji's Fight with Men at Stake",
+        "ja": "地獄を生き抜け サンジ男をかけた勝負"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        595,
+        596
+      ],
+      "airDate": {
+        "ja": "2011-09-11"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "franky",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nico-robin",
+        "emporio-ivankov",
+        "sanji"
+      ]
+    },
+    {
+      "number": 515,
+      "title": {
+        "es": null,
+        "en": "I'll Get Stronger and Stronger! Zoro's Vow to his Captain",
+        "ja": "まだまだ強くなる!ゾロ船長への誓い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        596,
+        597
+      ],
+      "airDate": {
+        "ja": "2011-09-18"
+      },
+      "appearances": [
+        "brook",
+        "gecko-moria",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "dracule-mihawk",
+        "jinbe",
+        "koby",
+        "tony-tony-chopper",
+        "franky",
+        "sanji",
+        "nami",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 516,
+      "title": {
+        "es": null,
+        "en": "Luffy's Training Begins. See You 2 Years later, At The Promised Place",
+        "ja": "ルフィ修行開始　2年後に約束の場所で"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        516,
+        597
+      ],
+      "airDate": {
+        "ja": "2011-09-25"
+      },
+      "appearances": [
+        "jinbe",
+        "monkey-d-luffy",
+        "silvers-rayleigh",
+        "boa-sandersonia",
+        "boa-marigold",
+        "emporio-ivankov",
+        "crocodile",
+        "boa-hancock",
+        "sentomaru",
+        "sakazuki",
+        "portgas-d-ace",
+        "borsalino",
+        "kuzan",
+        "camie",
+        "sengoku",
+        "galdino",
+        "shanks",
+        "monkey-d-garp",
+        "sabo",
+        "roronoa-zoro",
+        "sanji",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "ace-sabo-luffy-sake-oath",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "sabo"
+      ],
+      "episode": 496,
+      "chapter": 585,
+      "description": {
+        "es": "Luffy, Ace y Sabo se juran hermanos con copas de sake."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sabo-believed-dead",
+      "kind": "other",
+      "characters": [
+        "sabo",
+        "portgas-d-ace",
+        "monkey-d-luffy"
+      ],
+      "episode": 503,
+      "chapter": 588,
+      "description": {
+        "es": "Un Dragón Celestial dispara al barco de Sabo y se le da por muerto."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "jinbe-reminds-luffy-of-crew",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "jinbe"
+      ],
+      "episode": 505,
+      "chapter": 590,
+      "description": {
+        "es": "Jinbe hace que Luffy recuerde que aún tiene a sus compañeros."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-3d2y-message",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "silvers-rayleigh",
+        "jinbe"
+      ],
+      "episode": 511,
+      "chapter": 594,
+      "description": {
+        "es": "Luffy vuelve a Marineford y envía el mensaje 3D2Y a su tripulación."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-trains-with-rayleigh",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "silvers-rayleigh"
+      ],
+      "episode": 516,
+      "chapter": 597,
+      "description": {
+        "es": "Empieza el entrenamiento de dos años de Luffy con Rayleigh."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Summit_War_Saga",
+      "field": "episodes.title,episodes.airDate,episodeRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Post-War_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_490",
+      "field": "episodes.adaptsChapters (secciones \"Anime:\" de cada página Chapter_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_385",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

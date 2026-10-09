@@ -1,0 +1,493 @@
+{
+  "slug": "levely",
+  "sagaSlug": "whole-cake-island",
+  "order": 5,
+  "title": {
+    "es": "Levely",
+    "en": "Levely",
+    "ja": "世界会議編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 903,
+    "last": 908
+  },
+  "episodeRange": {
+    "first": 878,
+    "last": 889
+  },
+  "chapters": [
+    {
+      "number": 903,
+      "title": {
+        "en": "Fifth Emperor",
+        "ja": "5番目の皇帝"
+      }
+    },
+    {
+      "number": 904,
+      "title": {
+        "en": "Introducing the Revolutionary Army Commanders",
+        "ja": "革命軍全軍隊長登場"
+      }
+    },
+    {
+      "number": 905,
+      "title": {
+        "en": "A Beautiful World",
+        "ja": "美しい世界"
+      }
+    },
+    {
+      "number": 906,
+      "title": {
+        "en": "The Holy Land Mary Geoise",
+        "ja": "聖地マリージョア"
+      }
+    },
+    {
+      "number": 907,
+      "title": {
+        "en": "The Empty Throne",
+        "ja": "虚の玉座"
+      }
+    },
+    {
+      "number": 908,
+      "title": {
+        "en": "The Levely Begins",
+        "ja": "{{Ruby|世界会議|レヴェリー}}開幕"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 878,
+      "title": {
+        "en": "The World is Stunned - The Fifth Emperor of the Sea Emerges!",
+        "ja": "世界驚愕 第五の海の皇帝現る！"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        903
+      ],
+      "airDate": {
+        "ja": "2019-03-31"
+      },
+      "appearances": [
+        "shanks",
+        "caesar-clown",
+        "monkey-d-luffy",
+        "jinbe",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "brook",
+        "nami",
+        "zeus",
+        "carrot",
+        "charlotte-linlin",
+        "napoleon",
+        "capone-bege",
+        "edward-weevil",
+        "roronoa-zoro",
+        "neptune",
+        "fukaboshi",
+        "shirahoshi",
+        "bartolomeo",
+        "nefertari-vivi",
+        "charlotte-chiffon",
+        "sakazuki"
+      ]
+    },
+    {
+      "number": 879,
+      "title": {
+        "en": "To the Levely - The Straw Hats' Sworn Allies Come Together",
+        "ja": "世界会議へ 集結！麦わら盟友達"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        903
+      ],
+      "airDate": {
+        "ja": "2019-04-07"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "brook",
+        "carrot",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "nami",
+        "sakazuki",
+        "caesar-clown",
+        "vinsmoke-judge",
+        "capone-bege",
+        "edward-weevil",
+        "rebecca",
+        "charlotte-linlin",
+        "napoleon",
+        "jinbe",
+        "kaido",
+        "charlotte-mont-dor",
+        "shanks"
+      ]
+    },
+    {
+      "number": 880,
+      "title": {
+        "en": "Sabo Goes into Action - All the Captains of the Revolutionary Army Appear!",
+        "ja": "サボ動く 革命軍全隊長登場!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        904
+      ],
+      "airDate": {
+        "ja": "2019-04-14"
+      },
+      "appearances": [
+        "brook",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "carrot",
+        "nami",
+        "caesar-clown",
+        "sakazuki",
+        "issho",
+        "monkey-d-dragon",
+        "sabo",
+        "jinbe",
+        "charlotte-linlin",
+        "napoleon",
+        "koala",
+        "capone-bege",
+        "vinsmoke-judge"
+      ]
+    },
+    {
+      "number": 881,
+      "title": {
+        "en": "Going into Action - The Implacable New Fleet Admiral Sakazuki",
+        "ja": "動き出す 執念の新元帥サカズキ"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        905
+      ],
+      "airDate": {
+        "ja": "2019-04-21"
+      },
+      "appearances": [
+        "sakazuki"
+      ]
+    },
+    {
+      "number": 882,
+      "title": {
+        "en": "The Summit War - The Inherited Will of the Pirate King",
+        "ja": "頂上戦争 継がれた海賊王の意思"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        905
+      ],
+      "airDate": {
+        "ja": "2019-04-28"
+      },
+      "appearances": [
+        "capone-bege",
+        "vinsmoke-judge",
+        "napoleon",
+        "sakazuki",
+        "caesar-clown",
+        "neptune",
+        "fukaboshi",
+        "shirahoshi",
+        "issho"
+      ]
+    },
+    {
+      "number": 883,
+      "title": {
+        "en": "One Step Forward for Her Dream - Shirahoshi Goes Out in the Sun!",
+        "ja": "夢の一歩 しらほし太陽の下へ!"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        905
+      ],
+      "airDate": {
+        "ja": "2019-05-05"
+      },
+      "appearances": [
+        "shirahoshi",
+        "fukaboshi",
+        "neptune",
+        "morgans",
+        "sabo",
+        "monkey-d-luffy",
+        "carrot",
+        "nami",
+        "brook",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "koala"
+      ]
+    },
+    {
+      "number": 884,
+      "title": {
+        "en": "I Miss Him - Vivi and Rebecca's Sentiments",
+        "ja": "会いたい ビビとレベッカの想い"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        906
+      ],
+      "airDate": {
+        "ja": "2019-05-12"
+      },
+      "appearances": [
+        "fukaboshi",
+        "neptune",
+        "shirahoshi",
+        "sabo",
+        "nefertari-vivi",
+        "rebecca"
+      ]
+    },
+    {
+      "number": 885,
+      "title": {
+        "en": "In the Dark Recesses of the Holyland - A Mysterious Giant Straw Hat",
+        "ja": "聖地の闇 謎の巨大な麦わら帽子"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        903,
+        904,
+        906
+      ],
+      "airDate": {
+        "ja": "2019-05-19"
+      },
+      "appearances": [
+        "shirahoshi",
+        "rebecca",
+        "nefertari-vivi",
+        "fukaboshi",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "carrot",
+        "bartolomeo",
+        "imu"
+      ]
+    },
+    {
+      "number": 886,
+      "title": {
+        "en": "The Holy Land in Tumult - The Targeted Princess Shirahoshi!",
+        "ja": "聖地騒然 狙われたしらほし姫！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        907
+      ],
+      "airDate": {
+        "ja": "2019-05-26"
+      },
+      "appearances": [
+        "fukaboshi",
+        "shirahoshi",
+        "neptune",
+        "nefertari-vivi",
+        "rebecca"
+      ]
+    },
+    {
+      "number": 887,
+      "title": {
+        "en": "On the Verge - The Two Emperors Targeting Luffy",
+        "ja": "一触即発 ルフィを狙う二人の四皇"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        907
+      ],
+      "airDate": {
+        "ja": "2019-06-02"
+      },
+      "appearances": [
+        "kaido",
+        "charlotte-linlin",
+        "napoleon",
+        "prometheus",
+        "sakazuki",
+        "shanks"
+      ]
+    },
+    {
+      "number": 888,
+      "title": {
+        "en": "Sabo Gets Angry - Tragedy of the Revolutionary Army Officer Kuma",
+        "ja": "サボ怒る 革命軍幹部くまの悲劇"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        908
+      ],
+      "airDate": {
+        "ja": "2019-06-09"
+      },
+      "appearances": [
+        "sabo",
+        "fukaboshi",
+        "neptune",
+        "shirahoshi",
+        "nefertari-vivi",
+        "rebecca",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 889,
+      "title": {
+        "en": "Finally, It Starts - The Conspiracy-filled Levely!",
+        "ja": "遂に開幕 陰謀渦巻く世界会議!"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        908
+      ],
+      "airDate": {
+        "ja": "2019-06-16"
+      },
+      "appearances": [
+        "imu",
+        "monkey-d-luffy",
+        "bartholomew-kuma",
+        "sabo",
+        "vinsmoke-sanji",
+        "carrot",
+        "neptune",
+        "nefertari-cobra",
+        "shirahoshi",
+        "rebecca",
+        "nefertari-vivi"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-fifth-emperor-bounty",
+      "kind": "bounty",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 878,
+      "chapter": 903,
+      "description": {
+        "es": "Recompensa de Luffy: 1.500.000.000 berries; la prensa le llama el Quinto Emperador."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-bounty-330m",
+      "kind": "bounty",
+      "characters": [
+        "vinsmoke-sanji"
+      ],
+      "episode": 878,
+      "chapter": 903,
+      "description": {
+        "es": "Recompensa de Sanji: 330.000.000 berries, vivo o muerto, con apellido Vinsmoke."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-receives-raid-suit",
+      "kind": "other",
+      "characters": [
+        "vinsmoke-sanji",
+        "vinsmoke-niji"
+      ],
+      "episode": 878,
+      "chapter": 903,
+      "description": {
+        "es": "Sanji descubre la raid suit Stealth Black que Niji le dejó en secreto."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "revolutionary-army-commanders",
+      "kind": "reveal",
+      "characters": [
+        "sabo",
+        "koala",
+        "monkey-d-dragon"
+      ],
+      "episode": 880,
+      "chapter": 904,
+      "description": {
+        "es": "Aparecen los comandantes del Ejército Revolucionario."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "imu-revealed",
+      "kind": "reveal",
+      "characters": [
+        "imu"
+      ],
+      "episode": 885,
+      "chapter": 906,
+      "description": {
+        "es": "Aparece Imu ante los Gorosei, junto al sombrero de paja gigante."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "kuma-slave-revealed",
+      "kind": "reveal",
+      "characters": [
+        "bartholomew-kuma",
+        "sabo"
+      ],
+      "episode": 888,
+      "chapter": 908,
+      "description": {
+        "es": "Kuma aparece como esclavo de los Dragones Celestiales."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Levely_Arc",
+      "field": "slug/ranges"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Whole_Cake_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Wano_Country_Saga",
+      "field": "episodes.title (Cidre Guild)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_760",
+      "field": "episodes.adaptsChapters/airDate (infobox de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_903",
+      "field": "events (bounties, raid suit)"
+    }
+  ]
+}

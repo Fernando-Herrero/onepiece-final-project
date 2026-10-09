@@ -1,0 +1,123 @@
+{
+  "slug": "marco",
+  "name": {
+    "en": "Marco",
+    "ja": "マルコ"
+  },
+  "origin": "Isla Sphinx (Nuevo Mundo)",
+  "fruit": "tori-tori-no-mi-model-phoenix",
+  "firstAppearance": {
+    "episode": 151,
+    "chapter": 234
+  },
+  "affiliations": [
+    {
+      "group": "whitebeard-pirates",
+      "role": "comandante de la 1.ª división",
+      "from": {
+        "episode": 316,
+        "chapter": 434
+      },
+      "to": {
+        "episode": 890,
+        "chapter": 909
+      }
+    },
+    {
+      "group": "ninja-pirate-mink-samurai-alliance",
+      "role": "aliado",
+      "from": {
+        "episode": 1013,
+        "chapter": 1000
+      },
+      "to": {
+        "episode": 1085,
+        "chapter": 1057
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 1374000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "marco-commander",
+      "name": {
+        "es": "Marco el Fénix",
+        "en": "Marco the Phoenix",
+        "ja": "不死鳥マルコ"
+      },
+      "firstAppearance": {
+        "episode": 316,
+        "chapter": 434
+      },
+      "description": {
+        "es": "Primer comandante de Barbablanca."
+      },
+      "abilities": [
+        "Tori Tori no Mi, Modelo Fénix"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "marco-phoenix",
+      "name": {
+        "es": "Marco forma fénix",
+        "en": "Marco (Phoenix form)",
+        "ja": "不死鳥形態"
+      },
+      "firstAppearance": {
+        "episode": 464,
+        "chapter": 556
+      },
+      "description": {
+        "es": "Transformación completa en fénix de llamas azules en Marineford."
+      },
+      "abilities": [
+        "Llamas de la resurrección",
+        "Regeneración"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "marco-wano",
+      "name": {
+        "es": "Marco médico (Wano)",
+        "en": "Marco (Wano)",
+        "ja": "ワノ国のマルコ"
+      },
+      "firstAppearance": {
+        "episode": 890,
+        "chapter": 909
+      },
+      "description": {
+        "es": "Médico en la isla Sphinx; se une al asalto a Onigashima."
+      },
+      "abilities": [
+        "Regeneración",
+        "Haki"
+      ],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marco",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marco",
+      "field": "bounties[0] (Vivre Card, sin capítulo)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marco",
+      "field": "forms[marco-phoenix], affiliations[1].from (dudoso)"
+    }
+  ]
+}

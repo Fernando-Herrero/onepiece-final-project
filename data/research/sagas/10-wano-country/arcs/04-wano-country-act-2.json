@@ -1,0 +1,1522 @@
+{
+  "slug": "wano-country-act-2",
+  "sagaSlug": "wano-country",
+  "order": 4,
+  "title": {
+    "es": "País de Wano: Acto 2",
+    "en": "Wano Country Arc: Act 2",
+    "ja": "ワノ国編 第二幕"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 925,
+    "last": 956
+  },
+  "episodeRange": {
+    "first": 917,
+    "last": 957
+  },
+  "episodes": [
+    {
+      "number": 917,
+      "title": {
+        "en": "The Holyland in Tumult! Emperor of the Sea Blackbeard Cackles!",
+        "ja": "聖地激動 不敵に笑う四皇黒ひげ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        925
+      ],
+      "airDate": {
+        "ja": "2020-01-12"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "kaido",
+        "monkey-d-luffy",
+        "eustass-kid",
+        "x-drake",
+        "basil-hawkins",
+        "trafalgar-d-water-law",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 918,
+      "title": {
+        "en": "It's On! The Special Operation to Bring Down Kaido!",
+        "ja": "動き出す 打倒カイドウ大計画!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        925,
+        926
+      ],
+      "airDate": {
+        "ja": "2020-01-19"
+      },
+      "appearances": [
+        "kozuki-hiyori",
+        "inuarashi",
+        "ashura-doji",
+        "kikunojo",
+        "kinemon",
+        "kozuki-momonosuke",
+        "carrot",
+        "kozuki-oden",
+        "nekomamushi",
+        "kurozumi-kanjuro",
+        "raizo",
+        "tama",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "kaido",
+        "eustass-kid",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "franky",
+        "killer",
+        "denjiro",
+        "usopp",
+        "nami",
+        "shinobu",
+        "jack",
+        "king",
+        "queen"
+      ]
+    },
+    {
+      "number": 919,
+      "title": {
+        "en": "Rampage! The Prisoners - Luffy and Kid!",
+        "ja": "大暴れ! 囚人ルフィとキッド!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        926
+      ],
+      "airDate": {
+        "ja": "2020-01-26"
+      },
+      "appearances": [
+        "nami",
+        "shinobu",
+        "vinsmoke-sanji",
+        "hyogoro",
+        "monkey-d-luffy",
+        "eustass-kid",
+        "kawamatsu"
+      ]
+    },
+    {
+      "number": 920,
+      "title": {
+        "en": "A Great Sensation! Sanji's Special Soba!",
+        "ja": "大評判! サンジの十八番そば!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        927,
+        928
+      ],
+      "airDate": {
+        "ja": "2020-02-02"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "usopp",
+        "franky",
+        "nico-robin",
+        "kurozumi-orochi",
+        "denjiro",
+        "kozuki-hiyori",
+        "monkey-d-luffy",
+        "hyogoro",
+        "raizo"
+      ]
+    },
+    {
+      "number": 921,
+      "title": {
+        "en": "Luxurious and Gorgeous! Wano's Most Beautiful Woman - Komurasaki!",
+        "ja": "豪華絢爛 ワノ国一の美女・小紫"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        927,
+        928
+      ],
+      "airDate": {
+        "ja": "2020-02-09"
+      },
+      "appearances": [
+        "kozuki-hiyori",
+        "monkey-d-luffy",
+        "nami",
+        "franky",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "jinbe",
+        "x-drake",
+        "denjiro",
+        "kurozumi-orochi",
+        "usopp"
+      ]
+    },
+    {
+      "number": 922,
+      "title": {
+        "en": "A Tale of Chivalry! Zoro and Tonoyasu's Little Trip!",
+        "ja": "任侠伝! ゾロとトの康二人旅!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        928,
+        929
+      ],
+      "airDate": {
+        "ja": "2020-02-16"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "shimotsuki-yasuie",
+        "shinobu",
+        "nami",
+        "kinemon",
+        "carrot",
+        "franky",
+        "kurozumi-kanjuro",
+        "inuarashi",
+        "kurozumi-orochi",
+        "kaido",
+        "nico-robin",
+        "kozuki-hiyori",
+        "tama",
+        "kozuki-momonosuke",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 923,
+      "title": {
+        "en": "A State of Emergency! Big Mom Closes in!",
+        "ja": "緊急事態 ビッグ・マム大接近!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        928,
+        929,
+        930
+      ],
+      "airDate": {
+        "ja": "2020-02-23"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "shimotsuki-yasuie",
+        "kurozumi-orochi",
+        "nico-robin",
+        "kozuki-hiyori",
+        "vinsmoke-sanji",
+        "trafalgar-d-water-law",
+        "page-one",
+        "x-drake",
+        "basil-hawkins",
+        "denjiro",
+        "monkey-d-luffy",
+        "eustass-kid",
+        "shanks",
+        "nami",
+        "shinobu",
+        "brook",
+        "kaido",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 924,
+      "title": {
+        "en": "The Capital in an Uproar! Another Assassin Targets Sanji!",
+        "ja": "都騒然! サンジ狙う新たな刺客"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        930
+      ],
+      "airDate": {
+        "ja": "2020-03-15"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "kozuki-hiyori",
+        "charlotte-linlin",
+        "kaido",
+        "queen",
+        "king",
+        "denjiro",
+        "monkey-d-luffy",
+        "raizo",
+        "tama",
+        "page-one",
+        "usopp",
+        "franky",
+        "x-drake",
+        "basil-hawkins",
+        "trafalgar-d-water-law",
+        "vinsmoke-sanji",
+        "kinemon",
+        "kikunojo",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 925,
+      "title": {
+        "en": "Dashing! The Righteous Soba Mask!",
+        "ja": "大活躍! 正義のおそばマスク!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        931
+      ],
+      "airDate": {
+        "ja": "2020-03-22"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "franky",
+        "usopp",
+        "page-one",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "nami",
+        "kikunojo",
+        "carrot",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "brook",
+        "monkey-d-luffy",
+        "kurozumi-orochi",
+        "kozuki-hiyori"
+      ]
+    },
+    {
+      "number": 926,
+      "title": {
+        "en": "A Desperate Situation! Orochi's Menacing Oniwabanshu!",
+        "ja": "絶体絶命 脅威のオロチお庭番衆"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        931,
+        932
+      ],
+      "airDate": {
+        "ja": "2020-03-29"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "monkey-d-luffy",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "nico-robin",
+        "denjiro",
+        "kikunojo",
+        "tony-tony-chopper",
+        "tama",
+        "kozuki-momonosuke",
+        "nami",
+        "shinobu",
+        "brook"
+      ]
+    },
+    {
+      "number": 927,
+      "title": {
+        "en": "Pandemonium! The Monster Snake, Shogun Orochi!",
+        "ja": "修羅場! 怒れる大蛇 将軍オロチ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        932,
+        933
+      ],
+      "airDate": {
+        "ja": "2020-04-05"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "kikunojo",
+        "tama",
+        "charlotte-linlin",
+        "kozuki-momonosuke",
+        "nami",
+        "jinbe",
+        "brook",
+        "kurozumi-orochi",
+        "denjiro",
+        "nico-robin",
+        "kozuki-hiyori",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "raizo",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "kozuki-oden",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 928,
+      "title": {
+        "en": "The Flower Falls! The Final Moment of the Most Beautiful Woman in the Land of Wano!",
+        "ja": "花散る! ワノ国一の美女の最期"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        933
+      ],
+      "airDate": {
+        "ja": "2020-04-12"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "kozuki-hiyori",
+        "denjiro",
+        "nico-robin",
+        "brook",
+        "nami",
+        "shinobu",
+        "monkey-d-luffy",
+        "hyogoro",
+        "charlotte-linlin",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "kikunojo",
+        "tama"
+      ]
+    },
+    {
+      "number": 929,
+      "title": {
+        "en": "The Bond Between Prisoners! Luffy and Old Man Hyo!",
+        "ja": "囚人の絆 ルフィとヒョウじい!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        934
+      ],
+      "airDate": {
+        "ja": "2020-04-19"
+      },
+      "appearances": [
+        "kurozumi-kanjuro",
+        "nami",
+        "shinobu",
+        "brook",
+        "nico-robin",
+        "hyogoro",
+        "denjiro",
+        "kurozumi-orochi",
+        "kaido",
+        "kozuki-hiyori",
+        "vinsmoke-sanji",
+        "trafalgar-d-water-law",
+        "usopp",
+        "franky",
+        "eustass-kid",
+        "king",
+        "charlotte-linlin",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "tama",
+        "kikunojo",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "ashura-doji",
+        "shimotsuki-yasuie"
+      ]
+    },
+    {
+      "number": 930,
+      "title": {
+        "en": "A Lead Performer! Queen the Plague Emerges!",
+        "ja": "大看板! 疫災のクイーン現る!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        934,
+        935
+      ],
+      "airDate": {
+        "ja": "2020-06-28"
+      },
+      "appearances": [
+        "raizo",
+        "hyogoro",
+        "monkey-d-luffy",
+        "queen",
+        "kozuki-hiyori"
+      ]
+    },
+    {
+      "number": 931,
+      "title": {
+        "en": "Climb Up! Luffy's Desperate Escape!",
+        "ja": "よじ登れ ルフィ決死の逃走劇!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        935,
+        936
+      ],
+      "airDate": {
+        "ja": "2020-07-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "hyogoro",
+        "queen",
+        "raizo",
+        "shimotsuki-yasuie",
+        "trafalgar-d-water-law",
+        "franky",
+        "usopp",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "nami",
+        "nico-robin",
+        "shinobu",
+        "kurozumi-kanjuro",
+        "kurozumi-orochi",
+        "kawamatsu"
+      ]
+    },
+    {
+      "number": 932,
+      "title": {
+        "en": "Dead or Alive! Queen's Sumo Inferno!",
+        "ja": "生か死か クイーンの大相撲{{Ruby|地獄|インフェルノ}}"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        936
+      ],
+      "airDate": {
+        "ja": "2020-07-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "hyogoro",
+        "queen",
+        "kawamatsu",
+        "nami",
+        "shinobu",
+        "nico-robin",
+        "x-drake",
+        "basil-hawkins",
+        "vinsmoke-sanji",
+        "kaido",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 933,
+      "title": {
+        "en": "Gyukimaru! Zoro Fights a Duel on Bandit's Bridge!",
+        "ja": "牛鬼丸! ゾロおいはぎ橋の決闘"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        937
+      ],
+      "airDate": {
+        "ja": "2020-07-19"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "charlotte-linlin",
+        "kikunojo",
+        "tony-tony-chopper",
+        "tama",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "queen",
+        "hyogoro",
+        "kawamatsu",
+        "kaido",
+        "brook",
+        "kozuki-hiyori",
+        "killer"
+      ]
+    },
+    {
+      "number": 934,
+      "title": {
+        "en": "A Big Turnover! The Three-Sword Style Overcomes Danger!",
+        "ja": "大逆転! 死線を越えた三刀流!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        937,
+        938
+      ],
+      "airDate": {
+        "ja": "2020-07-26"
+      },
+      "appearances": [
+        "killer",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "hyogoro",
+        "queen",
+        "kinemon",
+        "inuarashi",
+        "carrot",
+        "x-drake",
+        "basil-hawkins",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "nami",
+        "shinobu",
+        "shimotsuki-yasuie",
+        "denjiro",
+        "kozuki-hiyori",
+        "kurozumi-orochi",
+        "trafalgar-d-water-law",
+        "franky",
+        "usopp",
+        "kurozumi-kanjuro",
+        "kikunojo",
+        "raizo",
+        "kawamatsu",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 935,
+      "title": {
+        "en": "Zoro, Stunned! The Shocking Identity of the Mysterious Woman!",
+        "ja": "ゾロ驚愕 衝撃! 謎の美女の正体"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        938,
+        939
+      ],
+      "airDate": {
+        "ja": "2020-08-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "hyogoro",
+        "queen",
+        "kawamatsu",
+        "kurozumi-orochi",
+        "kaido",
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "killer"
+      ]
+    },
+    {
+      "number": 936,
+      "title": {
+        "en": "Get the Hang of It! The Land of Wano's Haki - Ryuo!",
+        "ja": "会得せよ ワノ国の覇気・流桜!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        939,
+        940
+      ],
+      "airDate": {
+        "ja": "2020-08-09"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "kinemon",
+        "raizo",
+        "kurozumi-kanjuro",
+        "kikunojo",
+        "kozuki-momonosuke",
+        "kozuki-toki",
+        "kozuki-oden",
+        "kawamatsu",
+        "inuarashi",
+        "nekomamushi",
+        "denjiro",
+        "ashura-doji",
+        "hyogoro",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "shinobu",
+        "shimotsuki-yasuie",
+        "nico-robin",
+        "nami",
+        "franky",
+        "usopp",
+        "vinsmoke-sanji",
+        "queen"
+      ]
+    },
+    {
+      "number": 937,
+      "title": {
+        "en": "Tonoyasu! Ebisu Town's Most Loved!",
+        "ja": "トの康! えびす町一の人気者!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        940
+      ],
+      "airDate": {
+        "ja": "2020-08-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "hyogoro",
+        "queen",
+        "charlotte-linlin",
+        "tony-tony-chopper",
+        "tama",
+        "kozuki-momonosuke",
+        "kikunojo",
+        "nico-robin",
+        "shimotsuki-yasuie",
+        "vinsmoke-sanji",
+        "franky",
+        "kurozumi-kanjuro",
+        "shinobu",
+        "kurozumi-orochi",
+        "usopp",
+        "nami",
+        "kaido",
+        "raizo",
+        "kinemon",
+        "ashura-doji",
+        "inuarashi",
+        "kawamatsu"
+      ]
+    },
+    {
+      "number": 938,
+      "title": {
+        "en": "Shaking the Nation! The Identity of Ushimitsu Kozo The Chivalrous Thief!",
+        "ja": "衝撃走る 義賊丑三つ小僧の正体"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        941
+      ],
+      "airDate": {
+        "ja": "2020-08-23"
+      },
+      "appearances": [
+        "shimotsuki-yasuie",
+        "brook",
+        "kurozumi-orochi",
+        "denjiro",
+        "kozuki-hiyori",
+        "queen",
+        "kaido",
+        "monkey-d-luffy",
+        "hyogoro",
+        "raizo",
+        "ashura-doji",
+        "carrot",
+        "inuarashi",
+        "kinemon",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 939,
+      "title": {
+        "en": "The Straw Hats Run! Save the Captive Tonoyasu!",
+        "ja": "一味疾る! 救え囚われのトの康"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        941,
+        942
+      ],
+      "airDate": {
+        "ja": "2020-08-30"
+      },
+      "appearances": [
+        "kurozumi-orochi",
+        "queen",
+        "monkey-d-luffy",
+        "hyogoro",
+        "shimotsuki-yasuie",
+        "kozuki-oden",
+        "franky",
+        "usopp",
+        "nami",
+        "nico-robin",
+        "vinsmoke-sanji",
+        "kurozumi-kanjuro",
+        "shinobu",
+        "inuarashi",
+        "kinemon",
+        "roronoa-zoro",
+        "brook",
+        "kozuki-hiyori",
+        "x-drake",
+        "basil-hawkins",
+        "kawamatsu"
+      ]
+    },
+    {
+      "number": 940,
+      "title": {
+        "en": "Zoro's Fury! The Truth About the Smile!",
+        "ja": "ゾロの怒り SMILEの真実!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        942,
+        943
+      ],
+      "airDate": {
+        "ja": "2020-09-06"
+      },
+      "appearances": [
+        "shimotsuki-yasuie",
+        "monkey-d-luffy",
+        "hyogoro",
+        "ashura-doji",
+        "kinemon",
+        "inuarashi",
+        "kurozumi-orochi",
+        "shinobu",
+        "kurozumi-kanjuro",
+        "usopp",
+        "nami",
+        "nico-robin",
+        "franky",
+        "kaido",
+        "raizo",
+        "kikunojo",
+        "kozuki-momonosuke",
+        "kozuki-oden",
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "brook",
+        "charlotte-linlin",
+        "tama",
+        "tony-tony-chopper",
+        "kawamatsu",
+        "nekomamushi",
+        "izo",
+        "denjiro"
+      ]
+    },
+    {
+      "number": 941,
+      "title": {
+        "en": "Toko's Tears! Orochi's Pitiless Bullets!",
+        "ja": "トコの涙! オロチ非情の銃弾!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        943
+      ],
+      "airDate": {
+        "ja": "2020-09-13"
+      },
+      "appearances": [
+        "shimotsuki-yasuie",
+        "kozuki-hiyori",
+        "roronoa-zoro",
+        "brook",
+        "shinobu",
+        "kurozumi-kanjuro",
+        "usopp",
+        "nami",
+        "franky",
+        "nico-robin",
+        "vinsmoke-sanji",
+        "kaido",
+        "queen",
+        "monkey-d-luffy",
+        "hyogoro",
+        "raizo",
+        "ashura-doji",
+        "inuarashi",
+        "kinemon",
+        "kurozumi-orochi",
+        "basil-hawkins",
+        "x-drake"
+      ]
+    },
+    {
+      "number": 942,
+      "title": {
+        "en": "The Straw Hats Step In! An Uproarious Deadly Battle at the Execution Ground!",
+        "ja": "一味乱入! 騒然! 処刑場の激闘"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        944
+      ],
+      "airDate": {
+        "ja": "2020-09-20"
+      },
+      "appearances": [
+        "shimotsuki-yasuie",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "kurozumi-orochi",
+        "usopp",
+        "franky",
+        "nico-robin",
+        "nami",
+        "shinobu",
+        "kurozumi-kanjuro",
+        "monkey-d-luffy",
+        "hyogoro",
+        "kozuki-hiyori",
+        "brook",
+        "x-drake",
+        "basil-hawkins",
+        "denjiro",
+        "queen",
+        "killer",
+        "eustass-kid",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 943,
+      "title": {
+        "en": "Luffy's Determination! Win Through the Sumo Inferno!",
+        "ja": "ルフィの決意 破れ大相撲{{Ruby|地獄|インフェルノ}}!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        944,
+        945
+      ],
+      "airDate": {
+        "ja": "2020-09-27"
+      },
+      "appearances": [
+        "x-drake",
+        "vinsmoke-sanji",
+        "usopp",
+        "roronoa-zoro",
+        "denjiro",
+        "nami",
+        "nico-robin",
+        "brook",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "kozuki-hiyori",
+        "killer",
+        "eustass-kid",
+        "hyogoro",
+        "queen",
+        "trafalgar-d-water-law",
+        "basil-hawkins",
+        "page-one",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 944,
+      "title": {
+        "en": "The Storm Has Come! A Raging Big Mom!",
+        "ja": "嵐到来! 大暴れビッグ・マム!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        945
+      ],
+      "airDate": {
+        "ja": "2020-10-04"
+      },
+      "appearances": [
+        "ashura-doji",
+        "inuarashi",
+        "kinemon",
+        "carrot",
+        "shimotsuki-yasuie",
+        "monkey-d-luffy",
+        "queen",
+        "hyogoro",
+        "charlotte-linlin",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "tama",
+        "kikunojo",
+        "king",
+        "killer",
+        "eustass-kid"
+      ]
+    },
+    {
+      "number": 945,
+      "title": {
+        "en": "A Grudge Over Red-bean Soup! Luffy Gets into a Desperate Situation!",
+        "ja": "おしるこの恨み ルフィ絶体絶命"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        946
+      ],
+      "airDate": {
+        "ja": "2020-10-11"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "queen",
+        "tony-tony-chopper",
+        "kikunojo",
+        "monkey-d-luffy",
+        "hyogoro",
+        "eustass-kid",
+        "killer",
+        "kawamatsu",
+        "raizo",
+        "kozuki-momonosuke",
+        "tama"
+      ]
+    },
+    {
+      "number": 946,
+      "title": {
+        "en": "Stop the Emperor of the Sea! Queen's Secret Plan!",
+        "ja": "四皇を止めろ! クイーンの秘策"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        947
+      ],
+      "airDate": {
+        "ja": "2020-10-18"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "monkey-d-luffy",
+        "hyogoro",
+        "brook",
+        "nico-robin",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "usopp",
+        "trafalgar-d-water-law",
+        "nami",
+        "eustass-kid",
+        "killer",
+        "kikunojo",
+        "queen",
+        "kawamatsu"
+      ]
+    },
+    {
+      "number": 947,
+      "title": {
+        "en": "Brutal Ammunition! The Plague Rounds Aim at Luffy!",
+        "ja": "最凶兵器! ルフィを狙う{{Ruby|疫災|エキサイト}}弾"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        947,
+        948
+      ],
+      "airDate": {
+        "ja": "2020-10-25"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "queen",
+        "king",
+        "kikunojo",
+        "tama",
+        "kozuki-momonosuke",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "hyogoro",
+        "kawamatsu",
+        "kurozumi-orochi",
+        "kaido",
+        "shimotsuki-yasuie"
+      ]
+    },
+    {
+      "number": 948,
+      "title": {
+        "en": "Start Fighting Back! Luffy and the Akazaya Samurai!",
+        "ja": "反撃開始! ルフィと赤鞘の侍!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        948,
+        949
+      ],
+      "airDate": {
+        "ja": "2020-11-01"
+      },
+      "appearances": [
+        "raizo",
+        "kawamatsu",
+        "kikunojo",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "hyogoro",
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "charlotte-linlin",
+        "queen",
+        "eustass-kid",
+        "killer"
+      ]
+    },
+    {
+      "number": 949,
+      "title": {
+        "en": "We're Here to Win! Luffy's Desperate Scream!",
+        "ja": "勝ちに来た! ルフィ決死の叫び"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        949
+      ],
+      "airDate": {
+        "ja": "2020-11-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "raizo",
+        "kikunojo",
+        "tony-tony-chopper",
+        "hyogoro",
+        "kawamatsu",
+        "eustass-kid",
+        "killer",
+        "kaido",
+        "queen",
+        "kinemon",
+        "brook",
+        "kurozumi-kanjuro",
+        "tama",
+        "kozuki-momonosuke",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 950,
+      "title": {
+        "en": "Warriors' Dream! Luffy's Conquer of Udon!",
+        "ja": "兵どもが夢! ルフィ兎丼制圧!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        950
+      ],
+      "airDate": {
+        "ja": "2020-11-15"
+      },
+      "appearances": [
+        "hyogoro",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "killer",
+        "eustass-kid",
+        "kaido",
+        "basil-hawkins",
+        "scratchmen-apoo",
+        "ashura-doji",
+        "kinemon",
+        "inuarashi",
+        "kozuki-oden",
+        "raizo",
+        "kawamatsu",
+        "kikunojo",
+        "tama",
+        "kozuki-momonosuke",
+        "kurozumi-orochi",
+        "kurozumi-kanjuro",
+        "nami",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "nico-robin",
+        "franky",
+        "usopp",
+        "brook",
+        "kozuki-hiyori",
+        "kozuki-toki"
+      ]
+    },
+    {
+      "number": 951,
+      "title": {
+        "en": "Orochi's Hunting Party! The Ninja Group vs. Zoro!",
+        "ja": "オロチの追手! 忍者軍団VSゾロ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        950,
+        951
+      ],
+      "airDate": {
+        "ja": "2020-11-22"
+      },
+      "appearances": [
+        "kozuki-hiyori",
+        "roronoa-zoro",
+        "killer",
+        "kurozumi-orochi",
+        "shimotsuki-yasuie",
+        "kozuki-oden",
+        "kozuki-toki",
+        "trafalgar-d-water-law",
+        "vinsmoke-sanji",
+        "shinobu",
+        "franky",
+        "nami",
+        "nico-robin",
+        "usopp",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "hyogoro",
+        "tama",
+        "kikunojo",
+        "basil-hawkins",
+        "x-drake"
+      ]
+    },
+    {
+      "number": 952,
+      "title": {
+        "en": "Tension Rises in Onigashima! Two Emperors of the Sea Meet?!",
+        "ja": "鬼ヶ島緊迫! 遭遇!? 二人の四皇"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        951,
+        952
+      ],
+      "airDate": {
+        "ja": "2020-11-29"
+      },
+      "appearances": [
+        "nami",
+        "kurozumi-kanjuro",
+        "shimotsuki-yasuie",
+        "kurozumi-orochi",
+        "kozuki-oden",
+        "franky",
+        "usopp",
+        "nico-robin",
+        "shinobu",
+        "vinsmoke-sanji",
+        "brook",
+        "inuarashi",
+        "kinemon",
+        "ashura-doji",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "hyogoro",
+        "kawamatsu",
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "charlotte-linlin",
+        "jack",
+        "queen",
+        "king",
+        "kaido"
+      ]
+    },
+    {
+      "number": 953,
+      "title": {
+        "en": "Hiyori's Confession! A Reunion at Bandit's Bridge!",
+        "ja": "日和の告白! おいはぎ橋の再会"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        952,
+        953
+      ],
+      "airDate": {
+        "ja": "2020-12-06"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "kaido",
+        "queen",
+        "tama",
+        "raizo",
+        "kikunojo",
+        "monkey-d-luffy",
+        "hyogoro",
+        "tony-tony-chopper",
+        "kinemon",
+        "inuarashi",
+        "ashura-doji",
+        "franky",
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "kawamatsu"
+      ]
+    },
+    {
+      "number": 954,
+      "title": {
+        "en": "Its Name is Enma! Oden's Great Swords!",
+        "ja": "その名は閻魔! おでんの名刀!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        953
+      ],
+      "airDate": {
+        "ja": "2020-12-13"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "kawamatsu",
+        "kozuki-hiyori",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "raizo",
+        "kinemon",
+        "kozuki-toki",
+        "kozuki-momonosuke",
+        "kaido",
+        "queen",
+        "jack",
+        "sasaki",
+        "page-one",
+        "king",
+        "monkey-d-luffy",
+        "hyogoro",
+        "kozuki-oden"
+      ]
+    },
+    {
+      "number": 955,
+      "title": {
+        "en": "A New Alliance?! Kaido's Army Gathers!",
+        "ja": "新たな同盟!? カイドウ軍大集結"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        954
+      ],
+      "airDate": {
+        "ja": "2020-12-20"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "kozuki-hiyori",
+        "kawamatsu",
+        "kozuki-oden",
+        "kaido",
+        "kozuki-momonosuke",
+        "nico-robin",
+        "usopp",
+        "franky",
+        "nami",
+        "shimotsuki-yasuie",
+        "kurozumi-orochi",
+        "basil-hawkins",
+        "trafalgar-d-water-law",
+        "x-drake",
+        "eustass-kid",
+        "scratchmen-apoo",
+        "killer",
+        "charlotte-linlin",
+        "shanks",
+        "monkey-d-luffy",
+        "hyogoro",
+        "tony-tony-chopper",
+        "kinemon",
+        "brook",
+        "inuarashi",
+        "ashura-doji",
+        "kurozumi-kanjuro",
+        "shinobu",
+        "raizo",
+        "vinsmoke-sanji",
+        "kikunojo",
+        "denjiro",
+        "king",
+        "queen"
+      ]
+    },
+    {
+      "number": 956,
+      "title": {
+        "en": "Ticking Down to the Great Battle! The Straw Hats Go into Combat Mode!",
+        "ja": "迫る決戦! 麦わら一味戦闘態勢"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        955
+      ],
+      "airDate": {
+        "ja": "2020-12-27"
+      },
+      "appearances": [
+        "kozuki-momonosuke",
+        "raizo",
+        "kinemon",
+        "kurozumi-kanjuro",
+        "kikunojo",
+        "ashura-doji",
+        "inuarashi",
+        "kawamatsu",
+        "kozuki-hiyori",
+        "roronoa-zoro",
+        "nami",
+        "brook",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "monkey-d-luffy",
+        "tama",
+        "kozuki-oden",
+        "hyogoro",
+        "franky",
+        "tony-tony-chopper",
+        "shinobu",
+        "carrot",
+        "kurozumi-orochi",
+        "kaido",
+        "usopp",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "killer"
+      ]
+    },
+    {
+      "number": 957,
+      "title": {
+        "en": "Big News! An Incident That Will Affect the Seven Warlords!",
+        "ja": "{{ruby|大|ビッグ}}ニュース! 七武海を襲う事件"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        956
+      ],
+      "airDate": {
+        "ja": "2021-01-10"
+      },
+      "appearances": [
+        "x-drake",
+        "kaido",
+        "charlotte-linlin",
+        "buggy",
+        "trafalgar-d-water-law",
+        "jinbe",
+        "monkey-d-luffy",
+        "edward-newgate",
+        "tony-tony-chopper",
+        "usopp",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "nami",
+        "brook",
+        "franky",
+        "shanks"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "komurasaki-execution-staged",
+      "kind": "reveal",
+      "characters": [
+        "kozuki-hiyori",
+        "kurozumi-orochi"
+      ],
+      "episode": 928,
+      "chapter": 933,
+      "description": {
+        "es": "Orochi \"ejecuta\" a Komurasaki, que resulta ser Kozuki Hiyori."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-learns-ryuo",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "hyogoro"
+      ],
+      "episode": 936,
+      "chapter": 940,
+      "description": {
+        "es": "Hyogoro enseña a Luffy el Ryuo, el Haki de armadura avanzado que golpea sin tocar."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-conquers-udon",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "hyogoro",
+        "charlotte-linlin",
+        "queen"
+      ],
+      "episode": 950,
+      "chapter": 950,
+      "description": {
+        "es": "Luffy toma la prisión de Udon con los presos tras el choque con Big Mom."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "zoro-receives-enma",
+      "kind": "other",
+      "characters": [
+        "roronoa-zoro",
+        "kozuki-hiyori"
+      ],
+      "episode": 954,
+      "chapter": 953,
+      "description": {
+        "es": "Hiyori entrega a Zoro la Enma, espada de Kozuki Oden."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "reverie-shichibukai-abolished",
+      "kind": "reveal",
+      "characters": [],
+      "episode": 957,
+      "chapter": 956,
+      "description": {
+        "es": "Noticias del Levely: se abolen los Siete Señores de la Guerra."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_<n> (infobox Chapters/Airdate/Characters)",
+      "field": "episodes"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc#Acts",
+      "field": "episodeRange (actos oficiales; interludios ep 917 -> acto 2, 957 -> acto 2, 958 -> acto 3; rellenos 895-896, 907, 1029-1030 en arcos aparte)"
+    }
+  ]
+}

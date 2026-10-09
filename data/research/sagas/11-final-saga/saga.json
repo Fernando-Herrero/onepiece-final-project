@@ -1,0 +1,35 @@
+{
+  "slug": "final-saga",
+  "order": 11,
+  "title": {
+    "es": "Saga Final",
+    "en": "Final Saga",
+    "ja": "最終章"
+  },
+  "chapterRange": {
+    "first": 1058,
+    "last": 1194
+  },
+  "episodeRange": {
+    "first": 1086,
+    "last": 1180
+  },
+  "arcSlugs": [
+    "egghead",
+    "elbaph"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Final_Saga",
+      "field": "arcSlugs"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Elbaph_Arc",
+      "field": "chapterRange.last: en curso, último capítulo publicado 1194 (a 09-10-2026)"
+    },
+    {
+      "url": "https://animecorner.me/one-piece-anime-to-continue-in-2027-finished-for-this-year-after-episode-1180/",
+      "field": "episodeRange.last: en curso, último episodio emitido 1180 (27-09-2026)"
+    }
+  ]
+}

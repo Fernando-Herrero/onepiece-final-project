@@ -1,0 +1,91 @@
+{
+  "slug": "cidre-guild",
+  "sagaSlug": "wano-country",
+  "order": 2,
+  "title": {
+    "es": "Gremio de Cidre",
+    "en": "Cidre Guild Arc",
+    "ja": "シードル・ギルド編"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 895,
+    "last": 896
+  },
+  "episodes": [
+    {
+      "number": 895,
+      "title": {
+        "en": "Side Story! The World's Greatest Bounty Hunter, Cidre!",
+        "ja": "特別編! 最強の賞金狩りシードル"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2019-07-28"
+      },
+      "appearances": [
+        "franky",
+        "tony-tony-chopper",
+        "nami",
+        "monkey-d-luffy",
+        "brook",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "buggy",
+        "x-drake",
+        "scratchmen-apoo",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "killer",
+        "basil-hawkins"
+      ]
+    },
+    {
+      "number": 896,
+      "title": {
+        "en": "Side Story! Clash! Luffy vs. the King of Carbonation!",
+        "ja": "特別編! 決戦! ルフィVS炭酸王"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2019-08-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "brook",
+        "nami",
+        "franky",
+        "usopp",
+        "trafalgar-d-water-law",
+        "killer",
+        "nico-robin",
+        "scratchmen-apoo",
+        "basil-hawkins",
+        "x-drake",
+        "eustass-kid"
+      ]
+    }
+  ],
+  "events": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_<n> (infobox Chapters/Airdate/Characters)",
+      "field": "episodes"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

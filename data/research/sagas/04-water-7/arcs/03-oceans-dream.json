@@ -1,0 +1,155 @@
+{
+  "slug": "oceans-dream",
+  "sagaSlug": "water-7",
+  "order": 3,
+  "title": {
+    "es": "Sueño del océano",
+    "en": "Ocean's Dream",
+    "ja": "オーシャンズドリーム編"
+  },
+  "summary": {
+    "es": "Arco de relleno: la tripulación (salvo Luffy) pierde los recuerdos y debe recuperarlos."
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 220,
+    "last": 224
+  },
+  "episodes": [
+    {
+      "number": 220,
+      "title": {
+        "en": "Was It Lost? Stolen? Who Are You?"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-02-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 221,
+      "title": {
+        "en": "A Mysterious Boy With a Horn and Robin's Deduction!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-02-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 222,
+      "title": {
+        "en": "Now, Let's Get Back Our Memories! The Pirate Crew Lands on the Island!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-02-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 223,
+      "title": {
+        "en": "Zoro Bares His Fangs! A Savage Animal Stands in the Way!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-02-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 224,
+      "title": {
+        "en": "The Last Counterattack by the Memory Thief Who Reveals His True Colors!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-03-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "crew-memory-loss",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ],
+      "episode": 220,
+      "chapter": null,
+      "description": {
+        "es": "La tripulación pierde la memoria por culpa del ladrón de recuerdos."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[].title.en, episodes[].canon, episodes[].airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Ocean%27s_Dream_Arc",
+      "field": "chapterRange, episodeRange, events"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide",
+      "field": "episodes[].adaptsChapters (adaptsChapters reconstruido de memoria sobre One Piece Wiki (Cloudflare bloqueó la descarga); reparto aproximado ±1 capítulo)"
+    }
+  ]
+}

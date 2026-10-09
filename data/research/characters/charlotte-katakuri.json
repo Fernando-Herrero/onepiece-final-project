@@ -1,0 +1,101 @@
+{
+  "slug": "charlotte-katakuri",
+  "name": {
+    "en": "Charlotte Katakuri",
+    "ja": "シャーロット・カタクリ"
+  },
+  "origin": null,
+  "fruit": "mochi-mochi-no-mi",
+  "firstAppearance": {
+    "chapter": 860,
+    "episode": 825
+  },
+  "affiliations": [
+    {
+      "group": "big-mom-pirates",
+      "role": "sweet commander",
+      "from": {
+        "episode": 806,
+        "chapter": 843
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 1057000000,
+      "episode": 830,
+      "chapter": 860,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "charlotte-katakuri-sweet-commander",
+      "name": {
+        "es": "Katakuri (Comandante Dulce)",
+        "en": "Katakuri (Sweet Commander)",
+        "ja": "スイート三将星カタクリ"
+      },
+      "firstAppearance": {
+        "episode": 825,
+        "chapter": 860
+      },
+      "description": {
+        "es": "Comandante Dulce con Haki de observación que ve el futuro."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Mochi",
+        "Haki de observación avanzado"
+      ]
+    },
+    {
+      "slug": "charlotte-katakuri-unmasked",
+      "name": {
+        "es": "Katakuri sin bufanda",
+        "en": "Unmasked Katakuri",
+        "ja": "素顔のカタクリ"
+      },
+      "firstAppearance": {
+        "episode": 856,
+        "chapter": 883
+      },
+      "description": {
+        "es": "Muestra su boca y se toma en serio el combate."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "charlotte-katakuri-awakened",
+      "name": {
+        "es": "Katakuri despertado",
+        "en": "Awakened Katakuri",
+        "ja": "カタクリ（覚醒）"
+      },
+      "firstAppearance": {
+        "episode": 858,
+        "chapter": 885
+      },
+      "description": {
+        "es": "Despertar de la Mochi Mochi no Mi: el entorno se vuelve mochi."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Charlotte_Katakuri",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Charlotte_Katakuri",
+      "field": "bounties[1057000000].chapter (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Charlotte_Katakuri",
+      "field": "forms[charlotte-katakuri-awakened].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

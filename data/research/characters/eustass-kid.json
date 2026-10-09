@@ -1,0 +1,133 @@
+{
+  "slug": "eustass-kid",
+  "name": {
+    "en": "Eustass Kid",
+    "ja": "ユースタス・キッド"
+  },
+  "origin": null,
+  "fruit": "jiki-jiki-no-mi",
+  "firstAppearance": {
+    "chapter": 498,
+    "episode": 392
+  },
+  "affiliations": [
+    {
+      "group": "kid-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 392,
+        "chapter": 498
+      },
+      "to": null
+    },
+    {
+      "group": "ninja-pirate-mink-samurai-alliance",
+      "role": "member",
+      "from": {
+        "episode": 1011,
+        "chapter": 1000
+      },
+      "to": {
+        "episode": 1086,
+        "chapter": 1058
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 315000000,
+      "episode": 392,
+      "chapter": 498,
+      "eventSlug": null
+    },
+    {
+      "amount": 470000000,
+      "episode": 603,
+      "chapter": 677,
+      "eventSlug": null
+    },
+    {
+      "amount": 3000000000,
+      "episode": 1080,
+      "chapter": 1053,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "eustass-kid-supernova",
+      "name": {
+        "es": "Eustass Kid (Supernova)",
+        "en": "Eustass Kid (Supernova)",
+        "ja": "ユースタス・キッド（超新星）"
+      },
+      "firstAppearance": {
+        "episode": 392,
+        "chapter": 498
+      },
+      "description": {
+        "es": "Supernova de Sabaody con poderes magnéticos."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Repel",
+        "Punk Gibson"
+      ]
+    },
+    {
+      "slug": "eustass-kid-post-timeskip",
+      "name": {
+        "es": "Eustass Kid (post-timeskip)",
+        "en": "Eustass Kid (post-timeskip)",
+        "ja": "ユースタス・キッド（2年後）"
+      },
+      "firstAppearance": {
+        "episode": 603,
+        "chapter": 677
+      },
+      "description": {
+        "es": "Pierde el brazo izquierdo contra Shanks y lo sustituye por uno metálico."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "eustass-kid-awakened",
+      "name": {
+        "es": "Kid despertado (Damned Punk)",
+        "en": "Awakened Kid (Damned Punk)",
+        "ja": "ユースタス・キッド（覚醒）"
+      },
+      "firstAppearance": {
+        "episode": 1056,
+        "chapter": 1030
+      },
+      "description": {
+        "es": "Despertar de la Jiki Jiki no Mi contra Big Mom."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Damned Punk",
+        "Haki del Rey"
+      ]
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Eustass_Kid",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Eustass_Kid",
+      "field": "affiliations[ninja-pirate-mink-samurai-alliance] (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Eustass_Kid",
+      "field": "forms[eustass-kid-post-timeskip].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Eustass_Kid",
+      "field": "forms[eustass-kid-awakened].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

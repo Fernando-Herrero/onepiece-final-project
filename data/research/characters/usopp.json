@@ -1,0 +1,172 @@
+{
+  "slug": "usopp",
+  "name": {
+    "en": "Usopp",
+    "ja": "ウソップ"
+  },
+  "origin": "syrup-village",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 23,
+    "episode": 8
+  },
+  "affiliations": [
+    {
+      "group": "usopp-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 8,
+        "chapter": 23
+      },
+      "to": {
+        "episode": 18,
+        "chapter": 41
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "sniper",
+      "from": {
+        "episode": 18,
+        "chapter": 41
+      },
+      "to": {
+        "episode": 233,
+        "chapter": 331
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "sniper",
+      "from": {
+        "episode": 323,
+        "chapter": 438
+      },
+      "to": null
+    },
+    {
+      "group": "straw-hat-grand-fleet",
+      "role": "senior-officer",
+      "from": {
+        "episode": 746,
+        "chapter": 800
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 30000000,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 200000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 500000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "usopp-pre-timeskip",
+      "name": {
+        "es": "Usopp (pre-salto temporal)",
+        "en": "Usopp (Pre-Timeskip)",
+        "ja": "ウソップ"
+      },
+      "firstAppearance": {
+        "episode": 8,
+        "chapter": 23
+      },
+      "description": {
+        "es": "Mentiroso de Syrup con tirachinas."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "sogeking",
+      "name": {
+        "es": "Sogeking",
+        "en": "Sogeking",
+        "ja": "そげキング"
+      },
+      "firstAppearance": {
+        "episode": 269,
+        "chapter": 383
+      },
+      "description": {
+        "es": "Alter ego enmascarado, rey de los francotiradores, en Water 7 y Enies Lobby. Su recompensa de 30M se emitió a nombre de Sogeking."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Kabuto"
+      ]
+    },
+    {
+      "slug": "usopp-post-timeskip",
+      "name": {
+        "es": "Usopp (post-salto temporal)",
+        "en": "Usopp (Post-Timeskip)",
+        "ja": "ウソップ"
+      },
+      "firstAppearance": {
+        "episode": 515,
+        "chapter": 596
+      },
+      "description": {
+        "es": "Vuelve de Boin más musculoso y con Pop Greens."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Kabuto",
+        "Pop Green"
+      ]
+    },
+    {
+      "slug": "god-usopp",
+      "name": {
+        "es": "God Usopp",
+        "en": "God Usopp",
+        "ja": "ゴッド・ウソップ"
+      },
+      "firstAppearance": {
+        "episode": 735,
+        "chapter": 792
+      },
+      "description": {
+        "es": "Tras derrotar a Sugar le llaman Dios en Dressrosa; despierta el Haki de Observación."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Haki de Observación"
+      ]
+    }
+  ],
+  "keyEvents": [
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Usopp/History",
+      "field": "forms[sogeking] y affiliations (vuelta en cap. 438/ep 323)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Usopp",
+      "field": "firstAppearance, forms[god-usopp] (cap/ep de memoria, verificar)"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "koby",
+  "name": {
+    "en": "Koby",
+    "ja": "コビー"
+  },
+  "origin": "East Blue",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 1,
+    "chapter": 2
+  },
+  "affiliations": [
+    {
+      "group": "alvida-pirates",
+      "role": "chico de los recados",
+      "from": {
+        "episode": 1,
+        "chapter": 2
+      },
+      "to": {
+        "episode": 1,
+        "chapter": 3
+      }
+    },
+    {
+      "group": "marines",
+      "role": "marine (chico de los recados → capitán)",
+      "from": {
+        "episode": 3,
+        "chapter": 7
+      },
+      "to": null
+    },
+    {
+      "group": "sword",
+      "role": "miembro",
+      "from": {
+        "episode": 1113,
+        "chapter": 1080
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 500000000,
+      "episode": 1113,
+      "chapter": 1080,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "koby-cabin-boy",
+      "name": {
+        "es": "Koby, grumete de Alvida",
+        "en": "Koby (Alvida's cabin boy)",
+        "ja": "アルビダ海賊団のコビー"
+      },
+      "firstAppearance": {
+        "episode": 1,
+        "chapter": 2
+      },
+      "description": {
+        "es": "Primer amigo de Luffy en el viaje."
+      },
+      "abilities": [],
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "koby-water-seven",
+      "name": {
+        "es": "Koby suboficial",
+        "en": "Koby (Master Chief Petty Officer)",
+        "ja": "曹長コビー"
+      },
+      "firstAppearance": {
+        "episode": 314,
+        "chapter": 432
+      },
+      "description": {
+        "es": "Reaparece entrenado por Garp junto a Helmeppo."
+      },
+      "abilities": [
+        "Rokushiki (parcial)"
+      ],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "koby-marineford",
+      "name": {
+        "es": "Koby en Marineford",
+        "en": "Koby (Marineford)",
+        "ja": "頂上戦争のコビー"
+      },
+      "firstAppearance": {
+        "episode": 488,
+        "chapter": 580
+      },
+      "description": {
+        "es": "Su grito detiene la guerra y despierta su Haki de observación."
+      },
+      "abilities": [
+        "Haki de observación"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "koby-honesty-impact",
+      "name": {
+        "es": "Koby, el Héroe de Rocky Port",
+        "en": "Koby: Honesty Impact",
+        "ja": "オネスティ・インパクト"
+      },
+      "firstAppearance": {
+        "episode": 1113,
+        "chapter": 1080
+      },
+      "description": {
+        "es": "Capitán de SWORD; destruye la mano-isla de Pizarro en Hachinosu."
+      },
+      "abilities": [
+        "Honesty Impact",
+        "Haki",
+        "Rokushiki"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Koby",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Koby",
+      "field": "affiliations[0..1] (dudoso)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Koby",
+      "field": "bounties[0] (recompensa de la Marina en estrellas: ★★★★★)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Koby",
+      "field": "forms[koby-marineford] (dudoso)"
+    }
+  ]
+}

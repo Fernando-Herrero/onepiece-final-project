@@ -1,0 +1,116 @@
+{
+  "slug": "bartolomeo",
+  "name": {
+    "en": "Bartolomeo",
+    "ja": "バルトロメオ"
+  },
+  "origin": "East Blue",
+  "fruit": "bari-bari-no-mi",
+  "firstAppearance": {
+    "episode": 633,
+    "chapter": 705
+  },
+  "affiliations": [
+    {
+      "group": "barto-club",
+      "role": "capitán",
+      "from": {
+        "episode": 636,
+        "chapter": 706
+      },
+      "to": null
+    },
+    {
+      "group": "straw-hat-grand-fleet",
+      "role": "capitán del 2.º barco",
+      "from": {
+        "episode": 745,
+        "chapter": 800
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 150000000,
+      "episode": 636,
+      "chapter": 706,
+      "eventSlug": null
+    },
+    {
+      "amount": 200000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "bartolomeo-cannibal",
+      "name": {
+        "es": "Bartolomeo el Caníbal",
+        "en": "\"Cannibal\" Bartolomeo",
+        "ja": "人喰いのバルトロメオ"
+      },
+      "firstAppearance": {
+        "episode": 636,
+        "chapter": 706
+      },
+      "description": {
+        "es": "Superfán de Luffy en el Coliseo Corrida."
+      },
+      "abilities": [
+        "Bari Bari no Mi"
+      ],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "bartolomeo-barrier",
+      "name": {
+        "es": "Bartolomeo: barrera",
+        "en": "Bartolomeo: Barrier",
+        "ja": "バリアボール"
+      },
+      "firstAppearance": {
+        "episode": 674,
+        "chapter": 742
+      },
+      "description": {
+        "es": "Usa sus barreras para proteger a los aliados en Dressrosa."
+      },
+      "abilities": [
+        "Barrier Ball",
+        "Barrier Crash"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "bartolomeo-grand-fleet",
+      "name": {
+        "es": "Bartolomeo, Gran Flota",
+        "en": "Bartolomeo (Grand Fleet)",
+        "ja": "大船団のバルトロメオ"
+      },
+      "firstAppearance": {
+        "episode": 745,
+        "chapter": 800
+      },
+      "description": {
+        "es": "Jura lealtad como 2.º barco de la Gran Flota del Sombrero de Paja."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bartolomeo",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bartolomeo",
+      "field": "forms[bartolomeo-barrier] (dudoso)"
+    }
+  ]
+}

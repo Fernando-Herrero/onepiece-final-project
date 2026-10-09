@@ -1,0 +1,113 @@
+{
+  "slug": "akainu",
+  "name": {
+    "en": "Sakazuki (Akainu)",
+    "ja": "サカズキ（赤犬）"
+  },
+  "origin": null,
+  "fruit": "magu-magu-no-mi",
+  "firstAppearance": {
+    "chapter": 397,
+    "episode": 278
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "admiral",
+      "from": {
+        "episode": 227,
+        "chapter": 319
+      },
+      "to": {
+        "episode": 570,
+        "chapter": 650
+      }
+    },
+    {
+      "group": "marines",
+      "role": "fleet admiral",
+      "from": {
+        "episode": 570,
+        "chapter": 650
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 5000000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "akainu-admiral",
+      "name": {
+        "es": "Almirante Akainu",
+        "en": "Admiral Akainu",
+        "ja": "大将・赤犬"
+      },
+      "firstAppearance": {
+        "episode": 278,
+        "chapter": 397
+      },
+      "description": {
+        "es": "Almirante de la Justicia Absoluta; Logia del magma."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Dai Funka",
+        "Inugami Guren"
+      ]
+    },
+    {
+      "slug": "akainu-marineford",
+      "name": {
+        "es": "Akainu en Marineford",
+        "en": "Akainu at Marineford",
+        "ja": "頂上戦争の赤犬"
+      },
+      "firstAppearance": {
+        "episode": 483,
+        "chapter": 574
+      },
+      "description": {
+        "es": "Mata a Ace y atraviesa a Luffy."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "akainu-fleet-admiral",
+      "name": {
+        "es": "Almirante de Flota Sakazuki",
+        "en": "Fleet Admiral Sakazuki",
+        "ja": "元帥サカズキ"
+      },
+      "firstAppearance": {
+        "episode": 570,
+        "chapter": 650
+      },
+      "description": {
+        "es": "Almirante de Flota tras vencer a Kuzan en Punk Hazard."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sakazuki",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sakazuki",
+      "field": "bounties[5000000000] (solo recompensa especial/no canónica en capítulo) (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sakazuki",
+      "field": "forms[akainu-marineford].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

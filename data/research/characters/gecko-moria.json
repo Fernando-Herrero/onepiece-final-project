@@ -1,0 +1,109 @@
+{
+  "slug": "gecko-moria",
+  "name": {
+    "en": "Gecko Moria",
+    "ja": "ゲッコー・モリア"
+  },
+  "origin": null,
+  "fruit": "kage-kage-no-mi",
+  "firstAppearance": {
+    "chapter": 449,
+    "episode": 343
+  },
+  "affiliations": [
+    {
+      "group": "thriller-bark-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 343,
+        "chapter": 449
+      },
+      "to": null
+    },
+    {
+      "group": "seven-warlords-of-the-sea",
+      "role": "warlord",
+      "from": {
+        "episode": 343,
+        "chapter": 448
+      },
+      "to": {
+        "episode": 490,
+        "chapter": 581
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 320000000,
+      "episode": null,
+      "chapter": 455,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "gecko-moria-thriller-bark",
+      "name": {
+        "es": "Gecko Moria (Thriller Bark)",
+        "en": "Gecko Moria",
+        "ja": "ゲッコー・モリア"
+      },
+      "firstAppearance": {
+        "episode": 343,
+        "chapter": 449
+      },
+      "description": {
+        "es": "Shichibukai que roba sombras para su ejército de zombis."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Brick Bat",
+        "Doppelman"
+      ]
+    },
+    {
+      "slug": "gecko-moria-shadows-asgard",
+      "name": {
+        "es": "Moria Shadow's Asgard",
+        "en": "Shadow's Asgard Moria",
+        "ja": "影の集合地"
+      },
+      "firstAppearance": {
+        "episode": 373,
+        "chapter": 481
+      },
+      "description": {
+        "es": "Absorbe 1000 sombras y se convierte en un gigante."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "gecko-moria-post-timeskip",
+      "name": {
+        "es": "Gecko Moria (post-timeskip)",
+        "en": "Gecko Moria (post-timeskip)",
+        "ja": "ゲッコー・モリア（2年後）"
+      },
+      "firstAppearance": {
+        "episode": 917,
+        "chapter": 925
+      },
+      "description": {
+        "es": "Asalta Hachinosu para rescatar a Absalom."
+      },
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Gecko_Moria",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Gecko_Moria",
+      "field": "bounties[320000000].episode (el anime omitió la cifra) (dudoso, verificar)"
+    }
+  ]
+}

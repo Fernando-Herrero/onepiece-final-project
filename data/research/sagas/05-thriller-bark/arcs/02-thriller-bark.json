@@ -1,0 +1,1738 @@
+{
+  "slug": "thriller-bark",
+  "sagaSlug": "thriller-bark",
+  "order": 2,
+  "title": {
+    "es": "Thriller Bark",
+    "en": "Thriller Bark",
+    "ja": "スリラーバーク編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 442,
+    "last": 489
+  },
+  "episodeRange": {
+    "first": 337,
+    "last": 381
+  },
+  "episodes": [
+    {
+      "number": 337,
+      "title": {
+        "en": "Venture Into the Devil's Sea! The Mysterious Skeleton Floating Through the Fog",
+        "ja": "魔の海突入！霧に浮かぶ謎のガイコツ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        442
+      ],
+      "airDate": {
+        "ja": "2008-01-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook"
+      ]
+    },
+    {
+      "number": 338,
+      "title": {
+        "en": "The Delight of Having Met People! The Gentleman Skeleton's True Colors",
+        "ja": "人に逢えた喜び！ ガイコツ紳士の正体"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        443
+      ],
+      "airDate": {
+        "ja": "2008-01-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook"
+      ]
+    },
+    {
+      "number": 339,
+      "title": {
+        "en": "One Phenomenon After Another! Disembarking at Thriller Bark",
+        "ja": "怪現象ぞくぞく！ スリラーバーク上陸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        443,
+        444
+      ],
+      "airDate": {
+        "ja": "2008-01-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "perona"
+      ]
+    },
+    {
+      "number": 340,
+      "title": {
+        "en": "The Man Called a Genius! Hogback Appears!",
+        "ja": "天才と呼ばれた男！ ホグバック現る！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        445,
+        446
+      ],
+      "airDate": {
+        "ja": "2008-01-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "hogback",
+        "perona"
+      ]
+    },
+    {
+      "number": 341,
+      "title": {
+        "en": "Nami in Big Trouble! The Zombie Mansion and the Invisible Man",
+        "ja": "ナミ大ピンチ！ ゾンビ屋敷と透明人間"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        446,
+        447
+      ],
+      "airDate": {
+        "ja": "2008-02-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "hogback",
+        "perona",
+        "absalom"
+      ]
+    },
+    {
+      "number": 342,
+      "title": {
+        "en": "Mystery of the Zombies! Hogback's Nightmarish Research Laboratory",
+        "ja": "ゾンビの謎！悪夢のホグバック研究所"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        447,
+        448,
+        449
+      ],
+      "airDate": {
+        "ja": "2008-02-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "hogback",
+        "perona",
+        "absalom"
+      ]
+    },
+    {
+      "number": 343,
+      "title": {
+        "en": "His Name is Moria! Trap of the Great Shadow-Stealing Pirate",
+        "ja": "その名はモリア！影を握る大海賊の罠"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        449
+      ],
+      "airDate": {
+        "ja": "2008-02-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom"
+      ]
+    },
+    {
+      "number": 344,
+      "title": {
+        "en": "Feast of the Zombie Song! The Bell of the Night Raid is a Sound of Darkness",
+        "ja": "ゾンビ歌の饗宴！夜討ちの鐘は闇の音"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        450
+      ],
+      "airDate": {
+        "ja": "2008-02-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom"
+      ]
+    },
+    {
+      "number": 345,
+      "title": {
+        "en": "Filled with Animals!? Perona's Wonder Garden",
+        "ja": "動物いっぱい？ペローナの不思議の庭"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        451
+      ],
+      "airDate": {
+        "ja": "2008-03-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom"
+      ]
+    },
+    {
+      "number": 346,
+      "title": {
+        "en": "Disappearing Straw Hat Crew! The Mysterious Swordsman Appears!",
+        "ja": "消える麦わら一味！現れた謎の剣士！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        452
+      ],
+      "airDate": {
+        "ja": "2008-03-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma"
+      ]
+    },
+    {
+      "number": 347,
+      "title": {
+        "en": "Leftover Chivalry! The Traitorous Zombie who Protects Nami",
+        "ja": "残る騎士道！ナミを守る裏切りゾンビ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        453
+      ],
+      "airDate": {
+        "ja": "2008-03-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "lola"
+      ]
+    },
+    {
+      "number": 348,
+      "title": {
+        "en": "Coming from the Sky! That Man is the \"Humming\" Swordsman!",
+        "ja": "空から参上！剣狭ハナウタはあの男！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        454
+      ],
+      "airDate": {
+        "ja": "2008-03-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "lola"
+      ]
+    },
+    {
+      "number": 349,
+      "title": {
+        "en": "Luffy in an Emergency! The Living Place of the Strongest Shadow!",
+        "ja": "ルフィ緊急事態！最強の影の行き先！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        455
+      ],
+      "airDate": {
+        "ja": "2008-03-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "lola"
+      ]
+    },
+    {
+      "number": 350,
+      "title": {
+        "en": "The Warrior Called a Demon!! The Time of Oars' Resurrection",
+        "ja": "魔人と呼ばれた戦士！！オーズ復活の時"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        456
+      ],
+      "airDate": {
+        "ja": "2008-04-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 351,
+      "title": {
+        "en": "Awakening After 500 Years!! Oars Revives!!",
+        "ja": "500年ぶりの目覚め！！オーズ開眼！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        457
+      ],
+      "airDate": {
+        "ja": "2008-04-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 352,
+      "title": {
+        "en": "Conviction Strong Enough to Beg for One's Life!! Brook Protects his Afro",
+        "ja": "信念の命乞い！！アフロを守るブルック"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        458
+      ],
+      "airDate": {
+        "ja": "2008-05-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 353,
+      "title": {
+        "en": "A Man's Oath Never Dies!! To the Friend who Waits Under a Far-Away Sky",
+        "ja": "男の誓いは死なず！！遠い空で待つ友へ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        458,
+        459
+      ],
+      "airDate": {
+        "ja": "2008-05-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 354,
+      "title": {
+        "en": "We will Definitely Meet Again!! Brook and the Cape of the Promise",
+        "ja": "必ず会いに行く！！ブルックと約束の岬"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        459
+      ],
+      "airDate": {
+        "ja": "2008-05-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 355,
+      "title": {
+        "en": "Food, Nami and Shadows!! Luffy's Angry Counterattack",
+        "ja": "メシとナミと影！！ルフィ怒りの大反撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        460
+      ],
+      "airDate": {
+        "ja": "2008-05-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 356,
+      "title": {
+        "en": "Usopp the Strongest? Leave the Negatives to Me",
+        "ja": "ウソップ最強？ネガティブは任せとけ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        461
+      ],
+      "airDate": {
+        "ja": "2008-06-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 357,
+      "title": {
+        "en": "Sudden Death of the General Zombies!! Oars in an Adventurous Mood!!",
+        "ja": "将軍ゾンビ瞬殺！！オーズは冒険気分！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        462
+      ],
+      "airDate": {
+        "ja": "2008-06-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 358,
+      "title": {
+        "en": "Sanji, the Knight of Flames!! Kick Down the False Ceremony",
+        "ja": "炎の騎士サンジ！！蹴り潰せの偽り挙式"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        463
+      ],
+      "airDate": {
+        "ja": "2008-06-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 359,
+      "title": {
+        "en": "Perverted Connection? Sanji's Stolen Dream",
+        "ja": "スケスケの因縁？奪われたサンジの夢"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        463,
+        464
+      ],
+      "airDate": {
+        "ja": "2008-06-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 360,
+      "title": {
+        "en": "Saving Hero! The Enemy is the Invincible Princess",
+        "ja": "助けて英雄！敵は不死身のプリンセス"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        465
+      ],
+      "airDate": {
+        "ja": "2008-06-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 361,
+      "title": {
+        "en": "Perona's Terror!! The U in Uso is the U in Usopp",
+        "ja": "ペローナ恐怖！！嘘のウはウソップのウ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        466
+      ],
+      "airDate": {
+        "ja": "2008-07-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 362,
+      "title": {
+        "en": "Slashes Dancing on the Roof! Finale - Zoro vs. Ryuma",
+        "ja": "屋根に舞う斬撃！決着ゾロVSリューマ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        466,
+        467
+      ],
+      "airDate": {
+        "ja": "2008-07-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "ryuma",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 363,
+      "title": {
+        "en": "Chopper's Rage!! Hogback's Demonic Medical Practice",
+        "ja": "チョッパー激怒！！ホグバック魔の医術"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        468
+      ],
+      "airDate": {
+        "ja": "2008-07-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 364,
+      "title": {
+        "en": "Oars Roars!! Come Out Straw Hat Crew",
+        "ja": "オーズ吼える！！出て来い麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        469
+      ],
+      "airDate": {
+        "ja": "2008-08-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 365,
+      "title": {
+        "en": "The Enemy is Luffy!! The Strongest Zombie vs. the Straw Hat Crew",
+        "ja": "敵はルフィ！！最強ゾンビ対麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        470,
+        471
+      ],
+      "airDate": {
+        "ja": "2008-08-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 366,
+      "title": {
+        "en": "Defeat Absalom!! Nami's Lightning Attack of Friendship!!",
+        "ja": "倒れろアブサロム！！ナミ友情の雷撃！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        471
+      ],
+      "airDate": {
+        "ja": "2008-08-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 367,
+      "title": {
+        "en": "One Down!! Sure Kill Straw Hat Docking?",
+        "ja": "奪えダウン！！必殺麦わらドッキング？"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        472
+      ],
+      "airDate": {
+        "ja": "2008-08-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola"
+      ]
+    },
+    {
+      "number": 368,
+      "title": {
+        "en": "Soundless Invasion!! The Mysterious Visitor: Kuma the Tyrant",
+        "ja": "足音なき襲来！！謎の訪問者•暴君くま"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        473
+      ],
+      "airDate": {
+        "ja": "2008-08-31"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 369,
+      "title": {
+        "en": "Oars Plus Moria - The Greatest Combination of Brains and Brawn",
+        "ja": "オーズ+モリア 力と頭脳の最強合体"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        474
+      ],
+      "airDate": {
+        "ja": "2008-09-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 370,
+      "title": {
+        "en": "A Secret Strategy to Turn the Tables - Nightmare Luffy Appears",
+        "ja": "逆転への秘策 ナイトメア•ルフィ見参"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        475,
+        476
+      ],
+      "airDate": {
+        "ja": "2008-09-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 371,
+      "title": {
+        "en": "The Straw Hat Crew Annihilated - Full-Throttle Kage Kage Abilities",
+        "ja": "壊滅、麦わら一味 カゲカゲの能力全開"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        476,
+        477
+      ],
+      "airDate": {
+        "ja": "2008-09-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 372,
+      "title": {
+        "en": "The Battle for Superiority Starts! - Luffy vs. Luffy",
+        "ja": "超絶バトルスタート！ ルフィVSルフィ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        478,
+        479
+      ],
+      "airDate": {
+        "ja": "2008-09-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 373,
+      "title": {
+        "en": "The Conclusion Arrives! - Deliver the Finishing Blow",
+        "ja": "決着迫る！ たたき込め、とどめの一撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        480,
+        481
+      ],
+      "airDate": {
+        "ja": "2008-10-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "oars",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 374,
+      "title": {
+        "en": "The Bodies Vanish! - The Morning Sun Pierces Through the Nightmare Island!",
+        "ja": "肉体が消える！ 悪夢の島に射す朝日！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        481,
+        482
+      ],
+      "airDate": {
+        "ja": "2008-10-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "gecko-moria",
+        "hogback",
+        "perona",
+        "absalom",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 375,
+      "title": {
+        "en": "The Endless Crisis! Orders to Obliterate the Straw Hat Crew",
+        "ja": "終わらない危機！麦わら一味抹殺指令"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        483
+      ],
+      "airDate": {
+        "ja": "2008-10-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 376,
+      "title": {
+        "en": "Kuma's Nikyu Nikyu Power That Deflect Everything",
+        "ja": "すべてを弾く くまのニキュニキュの能力"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        484
+      ],
+      "airDate": {
+        "ja": "2008-11-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 377,
+      "title": {
+        "en": "My Crewmate's Pain is My Pain, Zoro Fights Prepared to Die",
+        "ja": "仲間の痛みは我が痛み ゾロ決死の戦い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        485
+      ],
+      "airDate": {
+        "ja": "2008-11-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "lola",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 378,
+      "title": {
+        "en": "Promise on a Day Long Ago - The Pirate's Song and a Tiny Whale",
+        "ja": "遠い日の約束 海賊の唄と小さなクジラ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        486,
+        487
+      ],
+      "airDate": {
+        "ja": "2008-11-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "lola",
+        "laboon"
+      ]
+    },
+    {
+      "number": 379,
+      "title": {
+        "en": "Brook's Past - Sad Farewell to the Cheerful Friend",
+        "ja": "ブルックの過去 陽気な仲間悲しき別れ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        487
+      ],
+      "airDate": {
+        "ja": "2008-11-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "lola",
+        "laboon"
+      ]
+    },
+    {
+      "number": 380,
+      "title": {
+        "en": "Bink's Sake - The Song that Connects the Past and Present",
+        "ja": "ビンクスの酒 過去と現在をつなぐ唄"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        488
+      ],
+      "airDate": {
+        "ja": "2008-12-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "lola",
+        "laboon"
+      ]
+    },
+    {
+      "number": 381,
+      "title": {
+        "en": "A New Crewmate! - The Musician \"Humming Brook\"",
+        "ja": "新たな仲間！音楽家・鼻唄のブルック"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        489,
+        490
+      ],
+      "airDate": {
+        "ja": "2008-12-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "lola"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "brook-first-appearance",
+      "kind": "reveal",
+      "characters": [
+        "brook",
+        "monkey-d-luffy"
+      ],
+      "episode": 337,
+      "chapter": 442,
+      "description": {
+        "es": "Los Sombrero de Paja encuentran a Brook, un esqueleto parlante, en un barco fantasma del Triángulo Florian; Luffy le invita a unirse."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "arrival-at-thriller-bark",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "tony-tony-chopper"
+      ],
+      "episode": 339,
+      "chapter": 444,
+      "description": {
+        "es": "El Thousand Sunny queda atrapado en Thriller Bark y Nami, Usopp y Chopper desembarcan en la isla."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "gecko-moria-first-appearance",
+      "kind": "reveal",
+      "characters": [
+        "gecko-moria"
+      ],
+      "episode": 343,
+      "chapter": 449,
+      "description": {
+        "es": "Aparece Gecko Moria, Shichibukai y señor de Thriller Bark, con su poder de robar sombras."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "shadows-stolen",
+      "kind": "other",
+      "characters": [
+        "gecko-moria",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji"
+      ],
+      "episode": 349,
+      "chapter": 455,
+      "description": {
+        "es": "Moria roba las sombras de Luffy, Zoro y Sanji; la de Luffy va al cuerpo de Oars."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "oars-revived",
+      "kind": "transformation",
+      "characters": [
+        "oars",
+        "gecko-moria",
+        "monkey-d-luffy"
+      ],
+      "episode": 351,
+      "chapter": 457,
+      "description": {
+        "es": "Oars, el antiguo gigante demoníaco, despierta con la sombra de Luffy."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "brook-vs-ryuma",
+      "kind": "battle",
+      "characters": [
+        "brook",
+        "ryuma"
+      ],
+      "episode": 352,
+      "chapter": 458,
+      "description": {
+        "es": "Brook se enfrenta al zombi Ryuma, que lleva su sombra, y pierde."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "sanji-vs-absalom",
+      "kind": "battle",
+      "characters": [
+        "vinsmoke-sanji",
+        "absalom"
+      ],
+      "episode": 358,
+      "chapter": 463,
+      "description": {
+        "es": "Sanji interrumpe la boda falsa de Absalom con Nami y lucha contra él."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-vs-perona",
+      "kind": "battle",
+      "characters": [
+        "usopp",
+        "perona"
+      ],
+      "episode": 361,
+      "chapter": 466,
+      "description": {
+        "es": "Usopp, inmune a los Negative Hollows, derrota a Perona."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-vs-ryuma",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "ryuma"
+      ],
+      "episode": 362,
+      "chapter": 467,
+      "description": {
+        "es": "Zoro derrota a Ryuma en el tejado y obtiene la espada Shusui."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "chopper-robin-vs-hogback",
+      "kind": "battle",
+      "characters": [
+        "tony-tony-chopper",
+        "nico-robin",
+        "hogback"
+      ],
+      "episode": 363,
+      "chapter": 468,
+      "description": {
+        "es": "Chopper y Robin derrotan a Hogback y Cindry."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nami-vs-absalom",
+      "kind": "battle",
+      "characters": [
+        "nami",
+        "absalom"
+      ],
+      "episode": 366,
+      "chapter": 471,
+      "description": {
+        "es": "Nami derrota a Absalom con el Thunderbolt Tempo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "straw-hat-docking",
+      "kind": "other",
+      "characters": [
+        "franky",
+        "usopp",
+        "tony-tony-chopper"
+      ],
+      "episode": 367,
+      "chapter": 472,
+      "description": {
+        "es": "Franky, Usopp y Chopper intentan el \"Docking\" de los Sombrero de Paja contra Oars."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "bartholomew-kuma-arrival",
+      "kind": "reveal",
+      "characters": [
+        "bartholomew-kuma"
+      ],
+      "episode": 368,
+      "chapter": 473,
+      "description": {
+        "es": "Bartholomew Kuma, Shichibukai, llega a Thriller Bark."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nightmare-luffy",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "brook"
+      ],
+      "episode": 370,
+      "chapter": 475,
+      "description": {
+        "es": "Luffy absorbe 100 sombras robadas y se convierte en Nightmare Luffy."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-oars",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "oars",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "franky"
+      ],
+      "episode": 372,
+      "chapter": 479,
+      "description": {
+        "es": "Nightmare Luffy y la tripulación derrotan a Oars."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "shadows-asgard",
+      "kind": "transformation",
+      "characters": [
+        "gecko-moria"
+      ],
+      "episode": 373,
+      "chapter": 481,
+      "description": {
+        "es": "Moria absorbe 1000 sombras y se convierte en Shadow's Asgard."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-gecko-moria",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "gecko-moria"
+      ],
+      "episode": 373,
+      "chapter": 481,
+      "description": {
+        "es": "Luffy derrota a Gecko Moria con el Gear Second y Gear Third al amanecer."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-vs-kuma",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "bartholomew-kuma"
+      ],
+      "episode": 375,
+      "chapter": 483,
+      "description": {
+        "es": "Kuma derrota a la tripulación agotada con el Ursus Shock."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nothing-happened",
+      "kind": "other",
+      "characters": [
+        "roronoa-zoro",
+        "bartholomew-kuma",
+        "monkey-d-luffy"
+      ],
+      "episode": 377,
+      "chapter": 485,
+      "description": {
+        "es": "Zoro carga con todo el dolor de Luffy para salvarle: «No ha pasado nada»."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "brook-past-rumbar-pirates",
+      "kind": "reveal",
+      "characters": [
+        "brook",
+        "laboon"
+      ],
+      "episode": 378,
+      "chapter": 486,
+      "description": {
+        "es": "Brook cuenta su pasado con los Piratas Rumbar y la promesa a Laboon."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "binks-sake",
+      "kind": "other",
+      "characters": [
+        "brook",
+        "monkey-d-luffy"
+      ],
+      "episode": 380,
+      "chapter": 488,
+      "description": {
+        "es": "Brook toca el Binks no Sake con los Sombrero de Paja y la gente liberada de Thriller Bark."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "brook-joins-crew",
+      "kind": "recruitment",
+      "characters": [
+        "brook",
+        "monkey-d-luffy"
+      ],
+      "episode": 381,
+      "chapter": 489,
+      "description": {
+        "es": "Brook se une a los Sombrero de Paja como músico."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "brook-bounty-33m",
+      "kind": "bounty",
+      "characters": [
+        "brook"
+      ],
+      "episode": 381,
+      "chapter": 489,
+      "description": {
+        "es": "Se muestra el cartel de recompensa de Brook: 33.000.000 berries."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Thriller_Bark_Arc",
+      "field": "arc"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Thriller_Bark_Saga",
+      "field": "episodes.title/airDate"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_354",
+      "field": "episodes[354,357,360].adaptsChapters (asignado manualmente, sin dato en la ficha)"
+    }
+  ]
+}

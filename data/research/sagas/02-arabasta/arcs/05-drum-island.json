@@ -1,0 +1,590 @@
+{
+  "slug": "drum-island",
+  "sagaSlug": "arabasta",
+  "order": 5,
+  "title": {
+    "es": "Isla de Drum",
+    "en": "Drum Island",
+    "ja": "ドラム島編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 130,
+    "last": 154
+  },
+  "episodeRange": {
+    "first": 78,
+    "last": 91
+  },
+  "episodes": [
+    {
+      "number": 78,
+      "title": {
+        "es": "¿Nami está enferma? ¡Más allá de donde cae la nieve en el océano!",
+        "en": "Nami is Sick? Beyond the Snow that Falls on the Ocean!",
+        "ja": "ナミが病気?海に降る雪の向こうに！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        129,
+        130
+      ],
+      "airDate": {
+        "ja": "2001-08-26"
+      },
+      "appearances": [
+        "brogy",
+        "dorry",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "nefertari-vivi",
+        "karoo",
+        "roronoa-zoro",
+        "usopp",
+        "igaram",
+        "bentham",
+        "crocodile",
+        "chess"
+      ]
+    },
+    {
+      "number": 79,
+      "title": {
+        "es": "¡Emboscada! El Bliking y Wapol el Blik",
+        "en": "Ambush! The Bliking and Wapol the Blik",
+        "ja": "奇襲！ブリキング号とブリキのワポル"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        128,
+        130,
+        131,
+        132
+      ],
+      "airDate": {
+        "ja": "2001-09-02"
+      },
+      "appearances": [
+        "nami",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "chess",
+        "wapol",
+        "karoo",
+        "kuromarimo",
+        "smoker",
+        "tashigi",
+        "dalton"
+      ]
+    },
+    {
+      "number": 80,
+      "title": {
+        "es": "¿Una isla sin médicos? ¡Aventura en el país sin nombre!",
+        "en": "A Doctorless Island? Adventure in the Country Without a Name!",
+        "ja": "医者のいない島?名も無き国の冒険！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        132,
+        133,
+        134
+      ],
+      "airDate": {
+        "ja": "2001-09-09"
+      },
+      "appearances": [
+        "nefertari-vivi",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "vinsmoke-sanji",
+        "karoo",
+        "nami",
+        "dalton",
+        "kureha",
+        "wapol",
+        "chess"
+      ]
+    },
+    {
+      "number": 81,
+      "title": {
+        "es": "¿Es usted feliz? ¡La médica que es llamada bruja!",
+        "en": "Ya Happy? The Doctor Who is Called a Witch!",
+        "ja": "ハッピーかい?魔女と呼ばれた医者！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        134,
+        135
+      ],
+      "airDate": {
+        "ja": "2001-09-16"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "nefertari-vivi",
+        "dalton",
+        "kureha",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "karoo",
+        "wapol",
+        "chess",
+        "kuromarimo"
+      ]
+    },
+    {
+      "number": 82,
+      "title": {
+        "es": "¡La solución de Dalton! El desembarco de las fuerzas de Wapol",
+        "en": "Dalton's Resolve! Wapol's Forces Land",
+        "ja": "ドルトンの覚悟！ワポル軍団島に上陸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        136,
+        137
+      ],
+      "airDate": {
+        "ja": "2001-10-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "dalton",
+        "nefertari-vivi",
+        "usopp",
+        "wapol",
+        "kuromarimo",
+        "chess",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 83,
+      "title": {
+        "es": "¡La isla que vive en la nieve! ¡Ascenso de Drum Rockies!",
+        "en": "Island that Lives in Snow! Ascend The Drum Rockies!",
+        "ja": "雪の住む島！ドラムロッキーを登れ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        138,
+        139,
+        141
+      ],
+      "airDate": {
+        "ja": "2001-10-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "chess",
+        "wapol",
+        "kuromarimo",
+        "nefertari-vivi",
+        "usopp",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "kureha"
+      ]
+    },
+    {
+      "number": 84,
+      "title": {
+        "es": "¡El reno de nariz azul! El secreto de Chopper",
+        "en": "The Blue-Nosed Reindeer! Chopper's Secret",
+        "ja": "トナカイは青っ鼻！チョッパーの秘密"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        139,
+        140
+      ],
+      "airDate": {
+        "ja": "2001-10-21"
+      },
+      "appearances": [
+        "nami",
+        "tony-tony-chopper",
+        "kureha",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "wapol",
+        "kuromarimo",
+        "chess",
+        "nefertari-vivi",
+        "usopp",
+        "roronoa-zoro",
+        "dalton"
+      ]
+    },
+    {
+      "number": 85,
+      "title": {
+        "es": "¡El sueño de un forajido! ¡El curandero Hiriluk!",
+        "en": "Dream of the Outcasts! The Quack Doctor Hiriluk!",
+        "ja": "はみだし者の夢！やぶ医者ヒルルク！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        140,
+        141,
+        142,
+        143
+      ],
+      "airDate": {
+        "ja": "2001-10-28"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "kureha",
+        "hiriluk"
+      ]
+    },
+    {
+      "number": 86,
+      "title": {
+        "es": "¡Los cerezos de Hiriluk y la voluntad heredada!",
+        "en": "Hiriluk's Cherry Blossoms and Inherited Will!",
+        "ja": "ヒルルクの桜と受け継がれゆく意志！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        141,
+        143,
+        144,
+        145
+      ],
+      "airDate": {
+        "ja": "2001-11-04"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "nami",
+        "vinsmoke-sanji",
+        "hiriluk",
+        "kureha",
+        "dalton",
+        "wapol",
+        "kuromarimo",
+        "chess"
+      ]
+    },
+    {
+      "number": 87,
+      "title": {
+        "es": "¡VS el ejército de Wapol! ¡Las habilidades de la Fruta Baku Baku!",
+        "en": "Against Wapol's Army Corps! The Abilities of the Baku Baku no Mi!",
+        "ja": "VSワポル軍団！バクバクの実の能力！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        145,
+        146,
+        147,
+        148
+      ],
+      "airDate": {
+        "ja": "2001-11-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "chess",
+        "wapol",
+        "kuromarimo",
+        "tony-tony-chopper",
+        "kureha",
+        "vinsmoke-sanji",
+        "hiriluk",
+        "dalton",
+        "nami"
+      ]
+    },
+    {
+      "number": 88,
+      "title": {
+        "es": "¡Fruta del diablo de la familia Zoan! Las siete trasformaciones de Chopper",
+        "en": "Zoan Type Devil's Fruit! Chopper's Seven-Level Transformation",
+        "ja": "動物系悪魔の実！チョッパー七段変形"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "airDate": {
+        "ja": "2001-11-18"
+      },
+      "appearances": [
+        "hiriluk",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "wapol",
+        "vinsmoke-sanji",
+        "kureha",
+        "dalton",
+        "nefertari-vivi",
+        "usopp",
+        "roronoa-zoro",
+        "nami"
+      ]
+    },
+    {
+      "number": 89,
+      "title": {
+        "es": "¡Cuando la tiranía del reino acaba! La bandera de la convicción durara por siempre",
+        "en": "When the Kingdom's Rule is Over! The Flag of Conviction Lasts Forever",
+        "ja": "王国の支配終る時！信念の旗は永遠に"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        150,
+        151,
+        152
+      ],
+      "airDate": {
+        "ja": "2001-11-25"
+      },
+      "appearances": [
+        "nami",
+        "wapol",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "dalton",
+        "nefertari-vivi",
+        "usopp",
+        "roronoa-zoro",
+        "kuromarimo",
+        "chess",
+        "kureha",
+        "hiriluk"
+      ]
+    },
+    {
+      "number": 90,
+      "title": {
+        "es": "¡Los cerezos de Hiriluk! El milagro de Drum Rockies",
+        "en": "Hiriluk's Cherry Blossoms! Miracle of the Drum Rockies",
+        "ja": "ヒルルクの桜！ドラムロッキーの奇跡"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        152,
+        153
+      ],
+      "airDate": {
+        "ja": "2001-12-02"
+      },
+      "appearances": [
+        "hiriluk",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "dalton",
+        "nefertari-vivi",
+        "usopp",
+        "roronoa-zoro",
+        "kureha",
+        "vinsmoke-sanji",
+        "nami"
+      ]
+    },
+    {
+      "number": 91,
+      "title": {
+        "es": "¡Adiós, Isla de Drum! ¡Me voy al mar!",
+        "en": "Farewell, Drum Island! I'm Going Out to Sea!",
+        "ja": "さようならドラム島！僕は海へ出る！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        142,
+        154,
+        155
+      ],
+      "airDate": {
+        "ja": "2001-12-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "nami",
+        "karoo",
+        "kureha",
+        "dalton",
+        "wapol",
+        "kuromarimo",
+        "chess",
+        "nefertari-cobra",
+        "chaka",
+        "pell",
+        "igaram",
+        "portgas-d-ace",
+        "crocodile",
+        "daz-bonez",
+        "zala",
+        "bentham",
+        "galdino",
+        "marianne",
+        "babe",
+        "drophy",
+        "gem",
+        "mikita",
+        "miss-monday",
+        "mr-9",
+        "nico-robin"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "chopper-debut",
+      "kind": "reveal",
+      "characters": [
+        "tony-tony-chopper"
+      ],
+      "episode": 81,
+      "chapter": 134,
+      "description": {
+        "es": "Primera aparición de Tony Tony Chopper, el reno de nariz azul."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-sanji-climb-drum-rockies",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami"
+      ],
+      "episode": 83,
+      "chapter": 138,
+      "description": {
+        "es": "Luffy escala las Drum Rockies cargando con Nami y Sanji herido."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "hiriluk-death",
+      "kind": "death",
+      "characters": [
+        "hiriluk",
+        "tony-tony-chopper",
+        "wapol"
+      ],
+      "episode": 86,
+      "chapter": 144,
+      "description": {
+        "es": "Hiriluk se suicida ante Wapol tras beber la seta que Chopper le dio por error."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "chopper-rumble-ball",
+      "kind": "transformation",
+      "characters": [
+        "tony-tony-chopper",
+        "chess",
+        "kuromarimo"
+      ],
+      "episode": 88,
+      "chapter": 148,
+      "description": {
+        "es": "Chopper usa la Rumble Ball y muestra sus siete transformaciones contra Chess y Kuromarimo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-wapol",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "wapol"
+      ],
+      "episode": 89,
+      "chapter": 151,
+      "description": {
+        "es": "Luffy manda a Wapol por los aires con Gomu Gomu no Bazooka y la bandera de Hiriluk ondea en el castillo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "hiriluk-cherry-blossoms",
+      "kind": "other",
+      "characters": [
+        "tony-tony-chopper",
+        "kureha",
+        "hiriluk"
+      ],
+      "episode": 90,
+      "chapter": 153,
+      "description": {
+        "es": "Kureha cumple el sueño de Hiriluk: nieve rosa sobre la isla de Drum."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "chopper-joins-straw-hats",
+      "kind": "recruitment",
+      "characters": [
+        "tony-tony-chopper",
+        "monkey-d-luffy"
+      ],
+      "episode": 91,
+      "chapter": 154,
+      "description": {
+        "es": "Chopper se une a los Sombrero de Paja como médico del barco."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/it/wiki/Episodio_{n}",
+      "field": "episodes.adaptsChapters (campo capitoli de la wiki italiana)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/es/wiki/Episodio_{n}",
+      "field": "episodes.title.es"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_{n}",
+      "field": "episodes.appearances (Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Drum_Island_Arc",
+      "field": "chapterRange,episodeRange"
+    }
+  ]
+}

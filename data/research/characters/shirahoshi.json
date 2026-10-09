@@ -1,0 +1,91 @@
+{
+  "slug": "shirahoshi",
+  "name": {
+    "en": "Shirahoshi",
+    "ja": "しらほし"
+  },
+  "origin": "Isla Gyojin (Reino Ryugu)",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 531,
+    "chapter": 612
+  },
+  "affiliations": [
+    {
+      "group": "ryugu-kingdom",
+      "role": "princesa",
+      "from": {
+        "episode": 531,
+        "chapter": 612
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "shirahoshi-princess",
+      "name": {
+        "es": "Princesa Shirahoshi",
+        "en": "Princess Shirahoshi",
+        "ja": "しらほし姫"
+      },
+      "firstAppearance": {
+        "episode": 531,
+        "chapter": 612
+      },
+      "description": {
+        "es": "Princesa sirena gigante encerrada en la Torre del Caparazón Duro."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "shirahoshi-poseidon",
+      "name": {
+        "es": "Shirahoshi, Poseidón",
+        "en": "Shirahoshi (Poseidon)",
+        "ja": "ポセイドン"
+      },
+      "firstAppearance": {
+        "episode": 567,
+        "chapter": 648
+      },
+      "description": {
+        "es": "Se revela que es el arma ancestral Poseidón, capaz de hablar con los reyes marinos."
+      },
+      "abilities": [
+        "Hablar con reyes marinos"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "shirahoshi-reverie",
+      "name": {
+        "es": "Shirahoshi en la Levely",
+        "en": "Shirahoshi (Reverie)",
+        "ja": "世界会議のしらほし"
+      },
+      "firstAppearance": {
+        "episode": 880,
+        "chapter": 905
+      },
+      "description": {
+        "es": "Viaja a Mary Geoise para la Levely."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Shirahoshi",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Shirahoshi",
+      "field": "forms[shirahoshi-poseidon], forms[shirahoshi-reverie] (dudoso)"
+    }
+  ]
+}

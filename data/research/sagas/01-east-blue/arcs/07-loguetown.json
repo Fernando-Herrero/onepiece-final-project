@@ -1,0 +1,372 @@
+{
+  "slug": "loguetown",
+  "sagaSlug": "east-blue",
+  "order": 7,
+  "title": {
+    "es": "Loguetown",
+    "en": "Loguetown Arc",
+    "ja": "ローグタウン編"
+  },
+  "summary": {
+    "es": "Llega el primer cartel de recompensa de Luffy; en Loguetown Zoro consigue nuevas espadas, Buggy y Alvida intentan ejecutar a Luffy y Smoker lo persigue hasta que Dragon interviene."
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 96,
+    "last": 100
+  },
+  "episodeRange": {
+    "first": 45,
+    "last": 53
+  },
+  "chapters": [
+    {
+      "number": 96,
+      "title": {
+        "en": "Greatest Evil of the East",
+        "ja": "東一番の悪"
+      }
+    },
+    {
+      "number": 97,
+      "title": {
+        "en": "Sandai Kitetsu",
+        "ja": "三代鬼徹"
+      }
+    },
+    {
+      "number": 98,
+      "title": {
+        "en": "Dark Clouds",
+        "ja": "暗雲"
+      }
+    },
+    {
+      "number": 99,
+      "title": {
+        "en": "Luffy Died",
+        "ja": "ルフィが死んだ"
+      }
+    },
+    {
+      "number": 100,
+      "title": {
+        "en": "The Legend Has Begun",
+        "ja": "伝説は始まった"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 45,
+      "title": {
+        "en": "Bounty! Straw Hat Luffy Becomes World Famous!",
+        "ja": "賞金首！麦わらのルフィ世に知れ渡る"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        96
+      ],
+      "airDate": {
+        "ja": "2000-10-25"
+      },
+      "appearances": [
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "buggy",
+        "don-krieg",
+        "arlong",
+        "kaya",
+        "koby",
+        "helmeppo",
+        "morgan",
+        "kuro",
+        "zeff",
+        "carne",
+        "patty",
+        "alvida",
+        "dracule-mihawk",
+        "shanks",
+        "makino"
+      ]
+    },
+    {
+      "number": 48,
+      "title": {
+        "en": "The Town of the Beginning and the End - Arrival at Loguetown",
+        "ja": "始まりと終りの町・ローグタウン上陸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        96,
+        97
+      ],
+      "airDate": {
+        "ja": "2000-11-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "alvida",
+        "smoker",
+        "tashigi",
+        "gol-d-roger"
+      ]
+    },
+    {
+      "number": 49,
+      "title": {
+        "en": "Sandai Kitetsu and Yubashiri! Zoro's New Swords, and the Female Sergeant Major",
+        "ja": "三代鬼徹と雪走！ゾロの新刀と女曹長"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        97
+      ],
+      "airDate": {
+        "ja": "2000-11-22"
+      },
+      "appearances": [
+        "smoker",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "mohji",
+        "buggy",
+        "cabaji",
+        "alvida",
+        "tashigi",
+        "roronoa-zoro",
+        "nami"
+      ]
+    },
+    {
+      "number": 50,
+      "title": {
+        "en": "Usopp vs. Daddy The Father! Showdown at High Noon!",
+        "ja": "ウソップVS子連れのダディ真昼の決闘"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2000-11-29"
+      },
+      "appearances": [
+        "tashigi",
+        "smoker",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "shanks",
+        "kaya",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 51,
+      "title": {
+        "en": "A Burning Culinary Battle? Sanji vs. The Gorgeous Chef",
+        "ja": "炎の料理バトル?サンジVS美人シェフ"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        98
+      ],
+      "airDate": {
+        "ja": "2000-12-06"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "zeff",
+        "carne",
+        "patty",
+        "buggy",
+        "mohji",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "cabaji",
+        "smoker",
+        "alvida"
+      ]
+    },
+    {
+      "number": 52,
+      "title": {
+        "en": "Buggy's Revenge! The Man who Smiles at the Execution Platform!",
+        "ja": "バギーのリベンジ！処刑台で笑う男！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        98,
+        99,
+        100
+      ],
+      "airDate": {
+        "ja": "2000-12-13"
+      },
+      "appearances": [
+        "smoker",
+        "tashigi",
+        "monkey-d-luffy",
+        "alvida",
+        "buggy",
+        "cabaji",
+        "nami",
+        "vinsmoke-sanji",
+        "usopp",
+        "roronoa-zoro",
+        "mohji",
+        "gol-d-roger",
+        "monkey-d-dragon"
+      ]
+    },
+    {
+      "number": 53,
+      "title": {
+        "en": "The Legend Has Begun! Head to the Grand Line",
+        "ja": "伝説は始まった！目指せ偉大なる航路"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        100
+      ],
+      "airDate": {
+        "ja": "2001-01-10"
+      },
+      "appearances": [
+        "monkey-d-dragon",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "cabaji",
+        "alvida",
+        "buggy",
+        "smoker",
+        "nami",
+        "usopp",
+        "mohji",
+        "tashigi"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-first-bounty",
+      "kind": "bounty",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 45,
+      "chapter": 96,
+      "description": {
+        "es": "Luffy recibe su primera recompensa: 30.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-new-swords",
+      "kind": "other",
+      "characters": [
+        "roronoa-zoro",
+        "tashigi"
+      ],
+      "episode": 49,
+      "chapter": 97,
+      "description": {
+        "es": "Zoro obtiene Sandai Kitetsu y Yubashiri."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-smiles-at-execution",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "buggy",
+        "alvida"
+      ],
+      "episode": 52,
+      "chapter": 99,
+      "description": {
+        "es": "Luffy sonríe en el patíbulo de Roger y un rayo lo salva."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-smoker",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "smoker"
+      ],
+      "episode": 53,
+      "chapter": 100,
+      "description": {
+        "es": "Smoker atrapa a Luffy con su Logia."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "dragon-appears",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-dragon",
+        "smoker",
+        "monkey-d-luffy"
+      ],
+      "episode": 53,
+      "chapter": 100,
+      "description": {
+        "es": "Dragon aparece y ayuda a Luffy a huir."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "grand-line-vow",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji"
+      ],
+      "episode": 53,
+      "chapter": 100,
+      "description": {
+        "es": "La tripulación brinda junto al barril antes de entrar en el Grand Line."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Loguetown_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/East_Blue_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_45",
+      "field": "episodes.adaptsChapters,episodes.appearances (rendered Statistics + Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes: 46-47 van en buggy-side-story aunque caen dentro del rango; ep 50-51 anime canon en AFL; 50 marcado filler y 51 mixed (Fandom lo liga al cap. 98)"
+    }
+  ]
+}

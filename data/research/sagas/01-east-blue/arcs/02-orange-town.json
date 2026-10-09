@@ -1,0 +1,353 @@
+{
+  "slug": "orange-town",
+  "sagaSlug": "east-blue",
+  "order": 2,
+  "title": {
+    "es": "Orange Town",
+    "en": "Orange Town Arc",
+    "ja": "オレンジの町編"
+  },
+  "summary": {
+    "es": "Luffy conoce a Nami en Orange Town y se enfrenta a Buggy el Payaso y su banda; se recuerda el pasado de Luffy con Shanks."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 8,
+    "last": 21
+  },
+  "episodeRange": {
+    "first": 4,
+    "last": 8
+  },
+  "chapters": [
+    {
+      "number": 8,
+      "title": {
+        "en": "Introducing Nami",
+        "ja": "ナミ登場"
+      }
+    },
+    {
+      "number": 9,
+      "title": {
+        "en": "Devilish Woman",
+        "ja": "魔性の女"
+      }
+    },
+    {
+      "number": 10,
+      "title": {
+        "en": "Incident at the Tavern",
+        "ja": "酒場の一件"
+      }
+    },
+    {
+      "number": 11,
+      "title": {
+        "en": "Flight",
+        "ja": "敗走"
+      }
+    },
+    {
+      "number": 12,
+      "title": {
+        "en": "Dog",
+        "ja": "犬"
+      }
+    },
+    {
+      "number": 13,
+      "title": {
+        "en": "Treasure",
+        "ja": "宝物"
+      }
+    },
+    {
+      "number": 14,
+      "title": {
+        "en": "Reckless!!",
+        "ja": "無謀っ!!"
+      }
+    },
+    {
+      "number": 15,
+      "title": {
+        "en": "Gong",
+        "ja": "{{Ruby|GONG|ゴング}}"
+      }
+    },
+    {
+      "number": 16,
+      "title": {
+        "en": "Versus!! The Buggy Pirates",
+        "ja": "{{Ruby|VERSUS|バーサス}}!!バギー海賊団"
+      }
+    },
+    {
+      "number": 17,
+      "title": {
+        "en": "Character",
+        "ja": "格"
+      }
+    },
+    {
+      "number": 18,
+      "title": {
+        "en": "The Pirate \"Buggy the Clown\"",
+        "ja": "海賊”道化のバギー”"
+      }
+    },
+    {
+      "number": 19,
+      "title": {
+        "en": "Devil Fruit",
+        "ja": "悪魔の実"
+      }
+    },
+    {
+      "number": 20,
+      "title": {
+        "en": "The Way of the Thief",
+        "ja": "泥棒道"
+      }
+    },
+    {
+      "number": 21,
+      "title": {
+        "en": "Town",
+        "ja": "町"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 4,
+      "title": {
+        "en": "Luffy's Past! The Red-Haired Shanks Appears!",
+        "ja": "ルフィの過去！赤髪のシャンクス登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1,
+        8
+      ],
+      "airDate": {
+        "ja": "1999-12-08"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "shanks",
+        "makino",
+        "buggy"
+      ]
+    },
+    {
+      "number": 5,
+      "title": {
+        "en": "Fear, Mysterious Power! Pirate Clown Captain Buggy!",
+        "ja": "恐怖　謎の力！海賊道化バギー船長！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "airDate": {
+        "ja": "1999-12-15"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "buggy",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 6,
+      "title": {
+        "en": "Desperate Situation! Beast Tamer Mohji vs. Luffy!",
+        "ja": "絶体絶命！猛獣使いモージＶＳルフィ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "airDate": {
+        "ja": "1999-12-29"
+      },
+      "appearances": [
+        "buggy",
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "mohji"
+      ]
+    },
+    {
+      "number": 7,
+      "title": {
+        "en": "Grand Duel! Zoro the Swordsman vs. Cabaji the Acrobat!",
+        "ja": "壮絶決闘！剣豪ゾロＶＳ曲芸のカバジ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "airDate": {
+        "ja": "1999-12-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "mohji",
+        "roronoa-zoro",
+        "nami",
+        "buggy",
+        "cabaji",
+        "shanks"
+      ]
+    },
+    {
+      "number": 8,
+      "title": {
+        "en": "Who Will Win? Showdown Between the True Powers of the Devil Fruit!",
+        "ja": "勝者はどっち？悪魔の実の能力対決！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        19,
+        20,
+        21
+      ],
+      "airDate": {
+        "ja": "1999-12-29"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "cabaji",
+        "monkey-d-luffy",
+        "nami",
+        "buggy",
+        "mohji",
+        "shanks",
+        "usopp"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-eats-gomu-gomu-no-mi",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "shanks"
+      ],
+      "episode": 4,
+      "chapter": 1,
+      "description": {
+        "es": "Luffy come la Gomu Gomu no Mi en el flashback de Villa Foosha."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "shanks-loses-arm",
+      "kind": "other",
+      "characters": [
+        "shanks",
+        "monkey-d-luffy"
+      ],
+      "episode": 4,
+      "chapter": 1,
+      "description": {
+        "es": "Shanks pierde el brazo salvando a Luffy del Rey del Mar y le confía su sombrero de paja."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-mohji",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "mohji"
+      ],
+      "episode": 6,
+      "chapter": 13,
+      "description": {
+        "es": "Luffy derrota a Mohji y a su león Richie."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "zoro-vs-cabaji",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "cabaji"
+      ],
+      "episode": 7,
+      "chapter": 18,
+      "description": {
+        "es": "Zoro, herido, vence a Cabaji."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-buggy",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "nami",
+        "buggy"
+      ],
+      "episode": 8,
+      "chapter": 20,
+      "description": {
+        "es": "Luffy derrota a Buggy y lo manda volando."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nami-allies-with-luffy",
+      "kind": "recruitment",
+      "characters": [
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro"
+      ],
+      "episode": 8,
+      "chapter": 21,
+      "description": {
+        "es": "Nami se alía temporalmente con Luffy y Zoro."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Orange_Town_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/East_Blue_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_4",
+      "field": "episodes.adaptsChapters,episodes.appearances (rendered Statistics + Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

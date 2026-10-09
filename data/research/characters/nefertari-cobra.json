@@ -1,0 +1,79 @@
+{
+  "slug": "nefertari-cobra",
+  "name": {
+    "en": "Nefertari Cobra",
+    "ja": "ネフェルタリ・コブラ"
+  },
+  "origin": "Arabasta",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 91,
+    "chapter": 142
+  },
+  "affiliations": [
+    {
+      "group": "arabasta-kingdom",
+      "role": "rey",
+      "from": {
+        "episode": 92,
+        "chapter": 155
+      },
+      "to": {
+        "episode": 1115,
+        "chapter": 1085
+      }
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "nefertari-cobra-king",
+      "name": {
+        "es": "Rey Cobra",
+        "en": "King Cobra",
+        "ja": "コブラ王"
+      },
+      "firstAppearance": {
+        "episode": 92,
+        "chapter": 155
+      },
+      "description": {
+        "es": "Rey de Arabasta durante la guerra civil provocada por Crocodile."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "nefertari-cobra-reverie",
+      "name": {
+        "es": "Cobra en la Levely",
+        "en": "Cobra (Reverie)",
+        "ja": "世界会議のコブラ"
+      },
+      "firstAppearance": {
+        "episode": 885,
+        "chapter": 908
+      },
+      "description": {
+        "es": "Pregunta a los Gorosei por Nefertari D. Lili."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nefertari_Cobra",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nefertari_Cobra",
+      "field": "affiliations[0].to (muerte en Mary Geoise, dudoso)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nefertari_Cobra",
+      "field": "forms[nefertari-cobra-reverie] (dudoso)"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "slug": "bartholomew-kuma",
+  "name": {
+    "en": "Bartholomew Kuma",
+    "ja": "バーソロミュー・くま"
+  },
+  "origin": "South Blue (Reino Sorbet)",
+  "fruit": "nikyu-nikyu-no-mi",
+  "firstAppearance": {
+    "episode": 151,
+    "chapter": 233
+  },
+  "affiliations": [
+    {
+      "group": "seven-warlords",
+      "role": "Shichibukai",
+      "from": {
+        "episode": 151,
+        "chapter": 233
+      },
+      "to": {
+        "episode": 957,
+        "chapter": 956
+      }
+    },
+    {
+      "group": "revolutionary-army",
+      "role": "oficial",
+      "from": {
+        "episode": 461,
+        "chapter": 552
+      },
+      "to": null
+    },
+    {
+      "group": "pacifista",
+      "role": "prototipo PX-0",
+      "from": {
+        "episode": 468,
+        "chapter": 559
+      },
+      "to": null
+    },
+    {
+      "group": "freedom-fighters",
+      "role": "miembro",
+      "from": {
+        "episode": 1097,
+        "chapter": 1066
+      },
+      "to": {
+        "episode": 1097,
+        "chapter": 1066
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 296000000,
+      "episode": 151,
+      "chapter": 234,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "bartholomew-kuma-tyrant",
+      "name": {
+        "es": "Kuma el Tirano",
+        "en": "\"Tyrant\" Kuma",
+        "ja": "暴君くま"
+      },
+      "firstAppearance": {
+        "episode": 373,
+        "chapter": 473
+      },
+      "description": {
+        "es": "Shichibukai en Thriller Bark; separa a los Sombrero de Paja en Sabaody."
+      },
+      "abilities": [
+        "Nikyu Nikyu no Mi",
+        "Ursus Shock"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "bartholomew-kuma-pacifista",
+      "name": {
+        "es": "Kuma Pacifista",
+        "en": "Kuma (Pacifista)",
+        "ja": "パシフィスタくま"
+      },
+      "firstAppearance": {
+        "episode": 468,
+        "chapter": 559
+      },
+      "description": {
+        "es": "Convertido en arma humana sin voluntad por Vegapunk."
+      },
+      "abilities": [
+        "Rayo láser"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "bartholomew-kuma-young",
+      "name": {
+        "es": "Kuma joven (Libertador)",
+        "en": "Young Kuma",
+        "ja": "若き日のくま"
+      },
+      "firstAppearance": {
+        "episode": 1125,
+        "chapter": 1095
+      },
+      "description": {
+        "es": "Rey de Sorbet y héroe de los libertadores en el flashback de Egghead."
+      },
+      "abilities": [
+        "Pad Ho"
+      ],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bartholomew_Kuma",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bartholomew_Kuma",
+      "field": "affiliations[1].from, affiliations[3], forms[*].firstAppearance (dudoso)"
+    }
+  ]
+}

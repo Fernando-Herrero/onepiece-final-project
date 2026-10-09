@@ -1,0 +1,155 @@
+{
+  "slug": "post-arabasta",
+  "sagaSlug": "arabasta",
+  "order": 7,
+  "title": {
+    "es": "Post-Arabasta",
+    "en": "Post-Arabasta",
+    "ja": null
+  },
+  "type": "filler",
+  "chapterRange": null,
+  "episodeRange": {
+    "first": 131,
+    "last": 135
+  },
+  "episodes": [
+    {
+      "number": 131,
+      "title": {
+        "es": "¡El primer paciente! La anécdota de la Rumble Ball",
+        "en": "The First Patient! Anecdote of the Rumble Ball",
+        "ja": "はじめての患者！ランブルボール秘話"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-11-03"
+      },
+      "appearances": [
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 132,
+      "title": {
+        "es": "¡El motín de la navegante! ¡Por un sueño firme!",
+        "en": "The Navigator's Mutiny! For an Unwavering Dream!",
+        "ja": "航海士の反乱！ゆずれない夢の為に！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-11-10"
+      },
+      "appearances": [
+        "nami",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "usopp",
+        "nico-robin",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 133,
+      "title": {
+        "es": "¡La receta heredada! Sanji, el experto del curry",
+        "en": "Inherited Recipe! Sanji the Curry Iron Chef",
+        "ja": "受け継がれる夢！カレーの鉄人サンジ"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-11-17"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "usopp",
+        "monkey-d-luffy",
+        "nico-robin",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nami"
+      ]
+    },
+    {
+      "number": 134,
+      "title": {
+        "es": "¡La haré florecer! La bola 8-Shaku del varonil Usopp",
+        "en": "I'll Make it Bloom! Manly Usopp's Eight-Shaku Ball",
+        "ja": "咲かせてみせます！男ウソップ八尺玉"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-11-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "usopp",
+        "nico-robin",
+        "tony-tony-chopper",
+        "nami",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 135,
+      "title": {
+        "es": "¡El infame cazador de piratas! El espadachín vagabundo, Zoro",
+        "en": "Infamous Pirate Hunter! The Wandering Swordsman, Zoro!",
+        "ja": "噂の海賊狩り！さすらいの剣士ゾロ！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-12-01"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "usopp",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "nico-robin"
+      ]
+    }
+  ],
+  "events": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/it/wiki/Episodio_{n}",
+      "field": "episodes.adaptsChapters (campo capitoli de la wiki italiana)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/es/wiki/Episodio_{n}",
+      "field": "episodes.title.es"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_{n}",
+      "field": "episodes.appearances (Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Post-Arabasta_Arc",
+      "field": "chapterRange,episodeRange"
+    }
+  ]
+}

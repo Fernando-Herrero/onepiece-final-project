@@ -1,0 +1,97 @@
+{
+  "slug": "caesar-clown",
+  "name": {
+    "en": "Caesar Clown",
+    "ja": "シーザー・クラウン"
+  },
+  "origin": null,
+  "fruit": "gasu-gasu-no-mi",
+  "firstAppearance": {
+    "chapter": 658,
+    "episode": 581
+  },
+  "affiliations": [
+    {
+      "group": "mads",
+      "role": "scientist",
+      "from": {
+        "episode": 589,
+        "chapter": 663
+      },
+      "to": null
+    },
+    {
+      "group": "donquixote-pirates",
+      "role": "subordinate",
+      "from": {
+        "episode": 643,
+        "chapter": 713
+      },
+      "to": {
+        "episode": 735,
+        "chapter": 792
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 300000000,
+      "episode": 589,
+      "chapter": 664,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "caesar-clown-master",
+      "name": {
+        "es": "Master Caesar",
+        "en": "Master Caesar",
+        "ja": "M・シーザー"
+      },
+      "firstAppearance": {
+        "episode": 589,
+        "chapter": 664
+      },
+      "description": {
+        "es": "Científico de Punk Hazard; Logia del gas."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Gastanet",
+        "Shinokuni"
+      ]
+    },
+    {
+      "slug": "caesar-clown-gas-form",
+      "name": {
+        "es": "Caesar forma de gas",
+        "en": "Caesar Gas Form",
+        "ja": "シーザー（ガス）"
+      },
+      "firstAppearance": {
+        "episode": 589,
+        "chapter": 664
+      },
+      "description": {
+        "es": "Se transforma en gas y elimina el oxígeno."
+      },
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Caesar_Clown",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Caesar_Clown",
+      "field": "affiliations[mads].to (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Caesar_Clown",
+      "field": "forms[caesar-clown-gas-form].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

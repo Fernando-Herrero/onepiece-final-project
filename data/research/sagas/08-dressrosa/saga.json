@@ -1,0 +1,33 @@
+{
+  "slug": "dressrosa",
+  "order": 8,
+  "title": {
+    "es": "Saga de Dressrosa",
+    "en": "Dressrosa Saga",
+    "ja": "ドレスローザ編"
+  },
+  "chapterRange": {
+    "first": 655,
+    "last": 801
+  },
+  "episodeRange": {
+    "first": 575,
+    "last": 746
+  },
+  "arcSlugs": [
+    "zs-ambition",
+    "punk-hazard",
+    "caesar-retrieval",
+    "dressrosa"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Dressrosa_Saga",
+      "field": "title,ranges"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Dressrosa_Saga",
+      "field": "arcSlugs,episodeRange"
+    }
+  ]
+}

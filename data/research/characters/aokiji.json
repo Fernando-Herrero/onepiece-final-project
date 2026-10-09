@@ -1,0 +1,102 @@
+{
+  "slug": "aokiji",
+  "name": {
+    "en": "Kuzan (Aokiji)",
+    "ja": "クザン（青キジ）"
+  },
+  "origin": null,
+  "fruit": "hie-hie-no-mi",
+  "firstAppearance": {
+    "chapter": 303,
+    "episode": 225
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "admiral",
+      "from": {
+        "episode": 225,
+        "chapter": 303
+      },
+      "to": {
+        "episode": 570,
+        "chapter": 650
+      }
+    },
+    {
+      "group": "blackbeard-pirates",
+      "role": "titanic captain",
+      "from": {
+        "episode": 736,
+        "chapter": 793
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "aokiji-admiral",
+      "name": {
+        "es": "Almirante Aokiji",
+        "en": "Admiral Aokiji",
+        "ja": "大将・青キジ"
+      },
+      "firstAppearance": {
+        "episode": 225,
+        "chapter": 303
+      },
+      "description": {
+        "es": "Almirante perezoso de la Justicia Holgazana; Logia del hielo."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Ice Age",
+        "Ice Time"
+      ]
+    },
+    {
+      "slug": "aokiji-wanderer",
+      "name": {
+        "es": "Kuzan errante",
+        "en": "Wandering Kuzan",
+        "ja": "放浪のクザン"
+      },
+      "firstAppearance": {
+        "episode": 624,
+        "chapter": 697
+      },
+      "description": {
+        "es": "Ex almirante que recorre el mar en bicicleta."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "aokiji-blackbeard",
+      "name": {
+        "es": "Kuzan (Piratas de Barbanegra)",
+        "en": "Kuzan (Blackbeard Pirates)",
+        "ja": "クザン（黒ひげ海賊団）"
+      },
+      "firstAppearance": {
+        "episode": 1115,
+        "chapter": 1081
+      },
+      "description": {
+        "es": "Capitán del Décimo Barco de Barbanegra."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kuzan",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kuzan",
+      "field": "forms[aokiji-wanderer].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

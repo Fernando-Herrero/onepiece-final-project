@@ -1,0 +1,77 @@
+{
+  "slug": "kizaru",
+  "name": {
+    "en": "Borsalino (Kizaru)",
+    "ja": "ボルサリーノ（黄猿）"
+  },
+  "origin": null,
+  "fruit": "pika-pika-no-mi",
+  "firstAppearance": {
+    "chapter": 504,
+    "episode": 398
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "admiral",
+      "from": {
+        "episode": 398,
+        "chapter": 504
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 3000000000,
+      "episode": 1121,
+      "chapter": 1087,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "kizaru-sabaody",
+      "name": {
+        "es": "Almirante Kizaru",
+        "en": "Admiral Kizaru",
+        "ja": "大将・黄猿"
+      },
+      "firstAppearance": {
+        "episode": 398,
+        "chapter": 504
+      },
+      "description": {
+        "es": "Arrasa a los Mugiwara en Sabaody; Logia de la luz."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Yasakani no Magatama",
+        "Ama no Murakumo"
+      ]
+    },
+    {
+      "slug": "kizaru-egghead",
+      "name": {
+        "es": "Kizaru en Egghead",
+        "en": "Kizaru at Egghead",
+        "ja": "エッグヘッドの黄猿"
+      },
+      "firstAppearance": {
+        "episode": 1124,
+        "chapter": 1090
+      },
+      "description": {
+        "es": "Ataca Egghead con dudas frente a Vegapunk y Sentomaru."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Borsalino",
+      "field": "general"
+    }
+  ]
+}

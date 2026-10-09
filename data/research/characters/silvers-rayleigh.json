@@ -1,0 +1,113 @@
+{
+  "slug": "silvers-rayleigh",
+  "name": {
+    "en": "Silvers Rayleigh",
+    "ja": "シルバーズ・レイリー"
+  },
+  "origin": "desconocido",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 8,
+    "chapter": 19
+  },
+  "affiliations": [
+    {
+      "group": "roger-pirates",
+      "role": "primer oficial",
+      "from": {
+        "episode": 394,
+        "chapter": 500
+      },
+      "to": {
+        "episode": 969,
+        "chapter": 968
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": null,
+      "episode": 404,
+      "chapter": 512,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "silvers-rayleigh-coater",
+      "name": {
+        "es": "Rayleigh, el Rey Oscuro",
+        "en": "Rayleigh \"Dark King\"",
+        "ja": "冥王レイリー"
+      },
+      "firstAppearance": {
+        "episode": 394,
+        "chapter": 500
+      },
+      "description": {
+        "es": "Recubridor en Sabaody; enseña Haki a Luffy durante la elipsis."
+      },
+      "abilities": [
+        "Haki del Rey",
+        "Haki"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "silvers-rayleigh-vs-kizaru",
+      "name": {
+        "es": "Rayleigh contra Kizaru",
+        "en": "Rayleigh vs Kizaru",
+        "ja": "黄猿とレイリー"
+      },
+      "firstAppearance": {
+        "episode": 404,
+        "chapter": 512
+      },
+      "description": {
+        "es": "Frena a Kizaru en Sabaody para cubrir la huida."
+      },
+      "abilities": [
+        "Haki",
+        "Esgrima"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "silvers-rayleigh-young",
+      "name": {
+        "es": "Rayleigh joven",
+        "en": "Young Rayleigh",
+        "ja": "若き日のレイリー"
+      },
+      "firstAppearance": {
+        "episode": 963,
+        "chapter": 964
+      },
+      "description": {
+        "es": "Mano derecha de Roger en la era de los Piratas de Roger."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
+      "field": "bounties[0] (cuantía desconocida)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
+      "field": "firstAppearance (flashback de Buggy; presentación formal en cap. 500, ep. 394)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
+      "field": "forms[silvers-rayleigh-young] (dudoso)"
+    }
+  ]
+}

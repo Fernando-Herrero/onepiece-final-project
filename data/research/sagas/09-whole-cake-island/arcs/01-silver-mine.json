@@ -1,0 +1,146 @@
+{
+  "slug": "silver-mine",
+  "sagaSlug": "whole-cake-island",
+  "order": 1,
+  "title": {
+    "es": "Mina de Plata",
+    "en": "Silver Mine",
+    "ja": "シルバーマイン編"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 747,
+    "last": 750
+  },
+  "episodes": [
+    {
+      "number": 747,
+      "title": {
+        "en": "The Silver Fortress — The Great Adventures of Luffy and Bart",
+        "ja": "銀の要塞 ルフィとバルト大冒険"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2016-06-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "franky",
+        "usopp",
+        "roronoa-zoro",
+        "bartolomeo",
+        "kinemon",
+        "trafalgar-d-water-law",
+        "kurozumi-kanjuro",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 748,
+      "title": {
+        "en": "An Underground Labyrinth — Luffy vs Mine Cart Man",
+        "ja": "地下迷宮 ルフィ対トロッコ人間"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2016-07-03"
+      },
+      "appearances": [
+        "bartolomeo",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 749,
+      "title": {
+        "en": "The Sword Technique Heats Up! Law and Zoro Finally Appear!",
+        "ja": "剣技白熱 ロー・ゾロ遂に見参！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2016-07-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "trafalgar-d-water-law",
+        "kinemon",
+        "roronoa-zoro",
+        "franky",
+        "usopp",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 750,
+      "title": {
+        "en": "A Desperate Situation - Luffy Fights a Battle in Extreme Heat",
+        "ja": "絶対絶命 ルフィ極限の灼熱決戦"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2016-07-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "franky",
+        "usopp",
+        "roronoa-zoro",
+        "kinemon",
+        "trafalgar-d-water-law",
+        "kurozumi-kanjuro",
+        "nico-robin",
+        "koala"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "luffy-bartolomeo-vs-bill",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "bartolomeo",
+        "roronoa-zoro",
+        "trafalgar-d-water-law"
+      ],
+      "episode": 750,
+      "chapter": null,
+      "description": {
+        "es": "Luffy y Bartolomeo derrotan a Bill, líder de la alianza de la Mina de Plata."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Silver_Mine_Arc",
+      "field": "slug/ranges"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Whole_Cake_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Wano_Country_Saga",
+      "field": "episodes.title (Cidre Guild)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_760",
+      "field": "episodes.adaptsChapters/airDate (infobox de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_903",
+      "field": "events (bounties, raid suit)"
+    }
+  ]
+}

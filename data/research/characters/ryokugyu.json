@@ -1,0 +1,77 @@
+{
+  "slug": "ryokugyu",
+  "name": {
+    "en": "Aramaki (Ryokugyu)",
+    "ja": "アラマキ（緑牛）"
+  },
+  "origin": null,
+  "fruit": "mori-mori-no-mi",
+  "firstAppearance": {
+    "chapter": 905,
+    "episode": 882
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "admiral",
+      "from": {
+        "episode": 643,
+        "chapter": 713
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 3000000000,
+      "episode": 1121,
+      "chapter": 1087,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "ryokugyu-admiral",
+      "name": {
+        "es": "Almirante Ryokugyu",
+        "en": "Admiral Ryokugyu",
+        "ja": "大将・緑牛"
+      },
+      "firstAppearance": {
+        "episode": 1080,
+        "chapter": 1053
+      },
+      "description": {
+        "es": "Aparece en Wano tras la derrota de Kaido."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "ryokugyu-forest",
+      "name": {
+        "es": "Ryokugyu forma bosque",
+        "en": "Ryokugyu Forest Form",
+        "ja": "緑牛（森）"
+      },
+      "firstAppearance": {
+        "episode": 1081,
+        "chapter": 1054
+      },
+      "description": {
+        "es": "Logia del bosque que absorbe nutrientes."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Aramaki",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Aramaki",
+      "field": "forms[ryokugyu-forest].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

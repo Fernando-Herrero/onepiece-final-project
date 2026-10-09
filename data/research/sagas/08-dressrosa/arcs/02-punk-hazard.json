@@ -1,0 +1,2012 @@
+{
+  "slug": "punk-hazard",
+  "sagaSlug": "dressrosa",
+  "order": 2,
+  "title": {
+    "es": "Arco de Punk Hazard",
+    "en": "Punk Hazard Arc",
+    "ja": "パンクハザード編"
+  },
+  "summary": {
+    "es": "Tras una llamada de socorro, la tripulación llega a la isla de fuego y hielo de Punk Hazard, donde Caesar Clown experimenta con niños. Luffy forma una alianza pirata con Law para derribar a un Emperador, derrotan a Caesar y lo secuestran, dejando al descubierto a Doflamingo como el traficante que hay detrás."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 655,
+    "last": 699
+  },
+  "episodeRange": {
+    "first": 579,
+    "last": 625
+  },
+  "chapters": [
+    {
+      "number": 655,
+      "title": {
+        "en": "Punk Hazard",
+        "ja": "パンクハザード"
+      },
+      "releaseDate": "2012-02-06"
+    },
+    {
+      "number": 656,
+      "title": {
+        "en": "Adventure on the Burning Island",
+        "ja": "燃える島の冒険"
+      },
+      "releaseDate": "2012-02-13"
+    },
+    {
+      "number": 657,
+      "title": {
+        "en": "Severed Head",
+        "ja": "生首"
+      },
+      "releaseDate": "2012-02-20"
+    },
+    {
+      "number": 658,
+      "title": {
+        "en": "The Biscuits Room",
+        "ja": "ビスケットルーム"
+      },
+      "releaseDate": "2012-03-05"
+    },
+    {
+      "number": 659,
+      "title": {
+        "en": "About My Torso",
+        "ja": "胴体の話"
+      },
+      "releaseDate": "2012-03-12"
+    },
+    {
+      "number": 660,
+      "title": {
+        "en": "Trafalgar Law, Warlord of the Sea",
+        "ja": "〝王下七武海〟トラファルガー・ロー"
+      },
+      "releaseDate": "2012-03-19"
+    },
+    {
+      "number": 661,
+      "title": {
+        "en": "Lakeside Bandits",
+        "ja": "追い剥ぎの出る湖"
+      },
+      "releaseDate": "2012-03-26"
+    },
+    {
+      "number": 662,
+      "title": {
+        "en": "Warlord Law vs. Vice Admiral Smoker",
+        "ja": "七武海ロー{{Ruby|vs.|バーサス}}スモーカー中将"
+      },
+      "releaseDate": "2012-04-02"
+    },
+    {
+      "number": 663,
+      "title": {
+        "en": "CC",
+        "ja": "{{Ruby|C|シー}}{{Ruby|C|シー}}"
+      },
+      "releaseDate": "2012-04-16"
+    },
+    {
+      "number": 664,
+      "title": {
+        "en": "Master Caesar Clown",
+        "ja": "{{Ruby|M|マスター}}・シーザー・クラウン"
+      },
+      "releaseDate": "2012-04-23"
+    },
+    {
+      "number": 665,
+      "title": {
+        "en": "Candy",
+        "ja": "{{Ruby|CANDY|キヤンディ}}"
+      },
+      "releaseDate": "2012-05-07"
+    },
+    {
+      "number": 666,
+      "title": {
+        "en": "Yeti Cool Brothers",
+        "ja": "イエティ {{Ruby|COOL|クール}} {{Ruby|BROTHERS|ブラザーズ}}"
+      },
+      "releaseDate": "2012-05-14"
+    },
+    {
+      "number": 667,
+      "title": {
+        "en": "Cool Fight",
+        "ja": "{{Ruby|COOL|クール}} {{Ruby|FIGHT|ファイト}}"
+      },
+      "releaseDate": "2012-05-21"
+    },
+    {
+      "number": 668,
+      "title": {
+        "en": "Pirate Alliance",
+        "ja": "海賊同盟"
+      },
+      "releaseDate": "2012-05-28"
+    },
+    {
+      "number": 669,
+      "title": {
+        "en": "Commence Operation",
+        "ja": "作戦開始"
+      },
+      "releaseDate": "2012-06-04"
+    },
+    {
+      "number": 670,
+      "title": {
+        "en": "Blizzard with a Chance of Slime",
+        "ja": "吹雪ときどきSlime"
+      },
+      "releaseDate": "2012-06-11"
+    },
+    {
+      "number": 671,
+      "title": {
+        "en": "Gas-Gas Fruit",
+        "ja": "ガスガスの実"
+      },
+      "releaseDate": "2012-06-18"
+    },
+    {
+      "number": 672,
+      "title": {
+        "en": "My Name Is Kin'emon!!",
+        "ja": "拙者!! 名を錦えもんと申す!!"
+      },
+      "releaseDate": "2012-07-02"
+    },
+    {
+      "number": 673,
+      "title": {
+        "en": "Vergo and Joker",
+        "ja": "ヴェルゴとジョーカー"
+      },
+      "releaseDate": "2012-07-09"
+    },
+    {
+      "number": 674,
+      "title": {
+        "en": "The Observers",
+        "ja": "傍観者達"
+      },
+      "releaseDate": "2012-07-14"
+    },
+    {
+      "number": 675,
+      "title": {
+        "en": "I Call It Land of the Dead",
+        "ja": "その名も「シノクニ」"
+      },
+      "releaseDate": "2012-07-30"
+    },
+    {
+      "number": 676,
+      "title": {
+        "en": "The Perfect Weapon of Mass Murder",
+        "ja": "完全なる殺戮兵器"
+      },
+      "releaseDate": "2012-08-06"
+    },
+    {
+      "number": 677,
+      "title": {
+        "en": "Counter Hazard!!",
+        "ja": "{{Ruby|COUNTER|カウンター}} {{Ruby|HAZARD|ハザード}}!!"
+      },
+      "releaseDate": "2012-08-20"
+    },
+    {
+      "number": 678,
+      "title": {
+        "en": "Lobby of Laboratory Building A",
+        "ja": "研究所内{{Ruby|A|エー}}棟ロビー"
+      },
+      "releaseDate": "2012-08-27"
+    },
+    {
+      "number": 679,
+      "title": {
+        "en": "The G-5 Spirit",
+        "ja": "心意気{{Ruby|G|ジー}}-{{Ruby|5|ファイブ}}"
+      },
+      "releaseDate": "2012-09-03"
+    },
+    {
+      "number": 680,
+      "title": {
+        "en": "G-5 Commander Vergo the Bamboo Demon",
+        "ja": "海軍{{Ruby|G|ジー}}-{{Ruby|5|ファイブ}}基地長〝鬼竹のヴェルゴ〟"
+      },
+      "releaseDate": "2012-09-10"
+    },
+    {
+      "number": 681,
+      "title": {
+        "en": "Luffy vs. Master",
+        "ja": "ルフィ{{Ruby|vs.|バーサス}}{{Ruby|M|マスター}}"
+      },
+      "releaseDate": "2012-09-15"
+    },
+    {
+      "number": 682,
+      "title": {
+        "en": "Puppet Master",
+        "ja": "黒幕"
+      },
+      "releaseDate": "2012-09-24"
+    },
+    {
+      "number": 683,
+      "title": {
+        "en": "An Icy Woman",
+        "ja": "氷の様な女"
+      },
+      "releaseDate": "2012-10-06"
+    },
+    {
+      "number": 684,
+      "title": {
+        "en": "Don't Do It, Vegapunk",
+        "ja": "やめるんだベガパンク"
+      },
+      "releaseDate": "2012-10-15"
+    },
+    {
+      "number": 685,
+      "title": {
+        "en": "My Name is Momonosuke",
+        "ja": "モモの助、せっしゃの名にござる!!"
+      },
+      "releaseDate": "2012-10-22"
+    },
+    {
+      "number": 686,
+      "title": {
+        "en": "The Snow-Woman in the Biscuits Room",
+        "ja": "ビスケットルームの雪女"
+      },
+      "releaseDate": "2012-10-29"
+    },
+    {
+      "number": 687,
+      "title": {
+        "en": "Wild Beast",
+        "ja": "猛獣"
+      },
+      "releaseDate": "2012-11-05"
+    },
+    {
+      "number": 688,
+      "title": {
+        "en": "Mocha",
+        "ja": "モチャ"
+      },
+      "releaseDate": "2012-11-12"
+    },
+    {
+      "number": 689,
+      "title": {
+        "en": "The Island That's There but Isn't There",
+        "ja": "ない様である島"
+      },
+      "releaseDate": "2012-11-26"
+    },
+    {
+      "number": 690,
+      "title": {
+        "en": "S.A.D.",
+        "ja": "{{Ruby|S|エス}}{{Ruby|A|エー}}{{Ruby|D|ディー}}"
+      },
+      "releaseDate": "2012-12-03"
+    },
+    {
+      "number": 691,
+      "title": {
+        "en": "King of the Land of the Dead",
+        "ja": "死の国の王"
+      },
+      "releaseDate": "2012-12-10"
+    },
+    {
+      "number": 692,
+      "title": {
+        "en": "Assassins from Dressrosa",
+        "ja": "ドレスローザから来た刺客"
+      },
+      "releaseDate": "2012-12-17"
+    },
+    {
+      "number": 693,
+      "title": {
+        "en": "Die for Me",
+        "ja": "死んでくれ"
+      },
+      "releaseDate": "2012-12-22"
+    },
+    {
+      "number": 694,
+      "title": {
+        "en": "The Most Dangerous Man",
+        "ja": "最も危険な男"
+      },
+      "releaseDate": "2013-01-04"
+    },
+    {
+      "number": 695,
+      "title": {
+        "en": "Leave It to Us!!!",
+        "ja": "任せろ!!!"
+      },
+      "releaseDate": "2013-01-21"
+    },
+    {
+      "number": 696,
+      "title": {
+        "en": "Alignment of Interests",
+        "ja": "利害の一致"
+      },
+      "releaseDate": "2013-01-28"
+    },
+    {
+      "number": 697,
+      "title": {
+        "en": "A Deal",
+        "ja": "取り引き"
+      },
+      "releaseDate": "2013-02-04"
+    },
+    {
+      "number": 698,
+      "title": {
+        "en": "Enter Doflamingo",
+        "ja": "ドフラミンゴ現る"
+      },
+      "releaseDate": "2013-02-09"
+    },
+    {
+      "number": 699,
+      "title": {
+        "en": "Morning Edition",
+        "ja": "朝刊"
+      },
+      "releaseDate": "2013-02-25"
+    }
+  ],
+  "episodes": [
+    {
+      "number": 579,
+      "title": {
+        "en": "Landing! The Burning Island, Punk Hazard",
+        "ja": "上陸！燃える島パンクハザード",
+        "enOfficial": "Arriving! A Burning Island - Punk Hazard!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        655
+      ],
+      "airDate": {
+        "ja": "2013-01-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "usopp",
+        "brook",
+        "franky",
+        "roronoa-zoro",
+        "nami",
+        "sanji",
+        "nico-robin",
+        "tashigi",
+        "smoker"
+      ]
+    },
+    {
+      "number": 580,
+      "title": {
+        "en": "A Scorching Battle! Luffy vs. the Giant Dragon!",
+        "ja": "灼熱の戦い！ルフィVS巨大竜！",
+        "enOfficial": "A Battle in the Heat! Luffy vs. The Giant Dragon!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        655,
+        656
+      ],
+      "airDate": {
+        "ja": "2013-01-13"
+      },
+      "appearances": [
+        "usopp",
+        "nico-robin",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "nami",
+        "franky",
+        "brook",
+        "sanji",
+        "kinemon"
+      ]
+    },
+    {
+      "number": 581,
+      "title": {
+        "en": "The Crew is Confused! The Shocking Beheaded Samurai Appears!",
+        "ja": "一味騒然！衝撃の首だけ侍登場！",
+        "enOfficial": "The Straw Hats Stunned! Enter: A Samurai's Horrifying Severed Head!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        656,
+        657,
+        658
+      ],
+      "airDate": {
+        "ja": "2013-01-20"
+      },
+      "appearances": [
+        "usopp",
+        "nico-robin",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "kinemon",
+        "nami",
+        "tony-tony-chopper",
+        "franky",
+        "brook",
+        "monet",
+        "caesar-clown",
+        "sanji"
+      ]
+    },
+    {
+      "number": 582,
+      "title": {
+        "en": "Shock! The Secret of the Island is Finally Revealed",
+        "ja": "驚愕！遂に明かされる島の秘密",
+        "enOfficial": "Startling! The Secret of the Island is Finally Revealed!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        657,
+        658
+      ],
+      "airDate": {
+        "ja": "2013-01-27"
+      },
+      "appearances": [
+        "kinemon",
+        "tony-tony-chopper",
+        "sanji",
+        "franky",
+        "nami",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "brook",
+        "caesar-clown",
+        "tashigi",
+        "smoker"
+      ]
+    },
+    {
+      "number": 583,
+      "title": {
+        "en": "Save the Children! The Crew Starts to Fight",
+        "ja": "子供達を救え！一味戦闘開始",
+        "enOfficial": "Save the Children! The Straw Hats Start to Fight!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        658,
+        659
+      ],
+      "airDate": {
+        "ja": "2013-02-03"
+      },
+      "appearances": [
+        "nami",
+        "sanji",
+        "kinemon",
+        "franky",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "brook"
+      ]
+    },
+    {
+      "number": 584,
+      "title": {
+        "en": "A Duel of Swordplay - Brook vs. the Mysterious Samurai Torso",
+        "ja": "剣術勝負 ブルックVS謎の胴体侍",
+        "enOfficial": "A Swordplay Showdown! Brook vs. the Mysterious Torso Samurai!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        659
+      ],
+      "airDate": {
+        "ja": "2013-02-10"
+      },
+      "appearances": [
+        "smoker",
+        "tashigi",
+        "monkey-d-luffy",
+        "nico-robin",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "nami",
+        "franky",
+        "sanji",
+        "kinemon",
+        "brook",
+        "caesar-clown",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 585,
+      "title": {
+        "en": "Shichibukai! Trafalgar Law",
+        "ja": "七武海！トラファルガー・ロー",
+        "enOfficial": "The Warlord! Trafalgar Law!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        660
+      ],
+      "airDate": {
+        "ja": "2013-02-17"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "smoker",
+        "tashigi",
+        "tony-tony-chopper",
+        "nami",
+        "sanji",
+        "franky",
+        "kinemon",
+        "roronoa-zoro",
+        "nico-robin",
+        "usopp",
+        "monkey-d-luffy",
+        "brook"
+      ]
+    },
+    {
+      "number": 586,
+      "title": {
+        "en": "A Big Pinch - Luffy Sinks into the Cold Lake",
+        "ja": "大ピンチ ルフィ極寒の湖に沈む",
+        "enOfficial": "In a Real Pinch! Luffy Sinks into the Ice-cold Lake!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        661
+      ],
+      "airDate": {
+        "ja": "2013-03-03"
+      },
+      "appearances": [
+        "usopp",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nico-robin",
+        "kuzan",
+        "brook",
+        "trafalgar-d-water-law",
+        "tashigi",
+        "smoker",
+        "tony-tony-chopper",
+        "franky",
+        "nami",
+        "sanji",
+        "kinemon"
+      ]
+    },
+    {
+      "number": 587,
+      "title": {
+        "en": "Clash! Law vs. Vice Admiral Smoker",
+        "ja": "激突！ローVSスモーカー中将",
+        "enOfficial": "A Collision! Law vs. Vice Admiral Smoker!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        662,
+        663
+      ],
+      "airDate": {
+        "ja": "2013-03-17"
+      },
+      "appearances": [
+        "tashigi",
+        "trafalgar-d-water-law",
+        "smoker",
+        "monkey-d-luffy",
+        "brook",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "caesar-clown",
+        "monet",
+        "sanji",
+        "nami",
+        "tony-tony-chopper",
+        "franky",
+        "kinemon"
+      ]
+    },
+    {
+      "number": 588,
+      "title": {
+        "en": "Reunion after Two Years! Luffy and Law",
+        "ja": "2年ぶりの再会！ルフィとロー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        662,
+        663
+      ],
+      "airDate": {
+        "ja": "2013-03-24"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "smoker",
+        "tashigi",
+        "monkey-d-luffy",
+        "nico-robin",
+        "roronoa-zoro",
+        "usopp",
+        "brook",
+        "nami",
+        "sanji",
+        "tony-tony-chopper",
+        "franky",
+        "kinemon",
+        "caesar-clown"
+      ]
+    },
+    {
+      "number": 589,
+      "title": {
+        "en": "Worst of the World - The Scary Scientist Caesar",
+        "ja": "世界最悪 恐怖の科学者シーザー",
+        "enOfficial": "The Worst in the World! A Scientist of Terror - Caesar!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        664
+      ],
+      "airDate": {
+        "ja": "2013-03-31"
+      },
+      "appearances": [
+        "smoker",
+        "tashigi",
+        "tony-tony-chopper",
+        "franky",
+        "sanji",
+        "caesar-clown",
+        "monet",
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "brook",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 590,
+      "title": {
+        "en": "History's Strongest Collaboration vs. Glutton of the Sea",
+        "ja": "史上最強コラボVS海の大食漢"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2013-04-07"
+      },
+      "appearances": [
+        "brook",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "sanji",
+        "tony-tony-chopper",
+        "nami",
+        "franky",
+        "nico-robin",
+        "usopp"
+      ]
+    },
+    {
+      "number": 591,
+      "title": {
+        "en": "Chopper Enraged - Master's Inhumane Experiments",
+        "ja": "チョッパー激怒 M非道なる実験",
+        "enOfficial": "Chopper's Fury! The Master's Inhumane Experiment!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        665
+      ],
+      "airDate": {
+        "ja": "2013-04-14"
+      },
+      "appearances": [
+        "franky",
+        "tony-tony-chopper",
+        "brook",
+        "nami",
+        "monkey-d-luffy",
+        "sanji",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "caesar-clown",
+        "trafalgar-d-water-law",
+        "monet"
+      ]
+    },
+    {
+      "number": 592,
+      "title": {
+        "en": "To Annihilate the Crew! Legendary Assassins Attack!",
+        "ja": "一味抹殺！伝説の殺し屋来襲！",
+        "enOfficial": "To Annihilate the Straw Hats! Legendary Assassins Descend!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        666
+      ],
+      "airDate": {
+        "ja": "2013-04-21"
+      },
+      "appearances": [
+        "nami",
+        "usopp",
+        "franky",
+        "nico-robin",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "sanji",
+        "brook",
+        "caesar-clown",
+        "trafalgar-d-water-law",
+        "monet"
+      ]
+    },
+    {
+      "number": 593,
+      "title": {
+        "en": "Save Nami! Luffy's Fight on the Snow Mountains",
+        "ja": "ナミを救え！ルフィ雪山の戦い",
+        "enOfficial": "Save Nami! Luffy's Fight on the Snow-Capped Mountains!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        667
+      ],
+      "airDate": {
+        "ja": "2013-04-28"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "usopp",
+        "nico-robin",
+        "monkey-d-luffy",
+        "franky",
+        "caesar-clown",
+        "smoker",
+        "tashigi",
+        "monet",
+        "nami",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 594,
+      "title": {
+        "en": "Formed! The Luffy-Law Pirate Alliance!",
+        "ja": "結成！ルフィ・ロー海賊同盟！",
+        "enOfficial": "Formed! Luffy and Law's Pirate Alliance!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        668
+      ],
+      "airDate": {
+        "ja": "2013-05-05"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "usopp",
+        "nico-robin",
+        "tony-tony-chopper",
+        "franky",
+        "caesar-clown",
+        "tashigi",
+        "smoker",
+        "brook",
+        "sanji",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 595,
+      "title": {
+        "en": "Capture Master - The Pirate Alliance's Operation Begins!",
+        "ja": "Mを捉えろ 海賊同盟作戦開始！",
+        "enOfficial": "Capture M! The Pirate Alliance's Operation Launches!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        669
+      ],
+      "airDate": {
+        "ja": "2013-05-12"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "brook",
+        "sanji",
+        "kinemon",
+        "caesar-clown",
+        "monet",
+        "franky",
+        "monkey-d-luffy",
+        "nami",
+        "nico-robin",
+        "usopp",
+        "smoker",
+        "tashigi",
+        "trafalgar-d-water-law",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 596,
+      "title": {
+        "en": "On the Verge of Annihilation - A Deadly Monster Comes Flying In",
+        "ja": "全滅の危機 死のモンスター飛来",
+        "enOfficial": "On the Verge of Annihilation! A Deadly Monster Comes Flying In!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        670
+      ],
+      "airDate": {
+        "ja": "2013-05-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nico-robin",
+        "franky",
+        "smoker",
+        "tashigi",
+        "trafalgar-d-water-law",
+        "tony-tony-chopper",
+        "nami",
+        "usopp",
+        "roronoa-zoro",
+        "brook",
+        "sanji",
+        "kinemon",
+        "caesar-clown"
+      ]
+    },
+    {
+      "number": 597,
+      "title": {
+        "en": "An Intense Battle - Caesar Exercises His True Ability!",
+        "ja": "大激戦 シーザー真の能力発動！",
+        "enOfficial": "An Intense Battle! Caesar Exercises His True Power!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        671,
+        672
+      ],
+      "airDate": {
+        "ja": "2013-05-26"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "brook",
+        "sanji",
+        "kinemon",
+        "monet",
+        "trafalgar-d-water-law",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "caesar-clown",
+        "franky",
+        "nico-robin",
+        "smoker",
+        "tashigi",
+        "vergo"
+      ]
+    },
+    {
+      "number": 598,
+      "title": {
+        "en": "The Samurai Who Cuts Fire! Foxfire Kin'emon!",
+        "ja": "炎切り裂く侍！狐火の錦えもん！",
+        "enOfficial": "A Samurai Who Can Cut Fire! Foxfire Kin'emon!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        672
+      ],
+      "airDate": {
+        "ja": "2013-06-02"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "vergo",
+        "monet",
+        "caesar-clown",
+        "smoker",
+        "monkey-d-luffy",
+        "franky",
+        "nico-robin",
+        "tashigi",
+        "kinemon",
+        "brook",
+        "roronoa-zoro",
+        "sanji",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 599,
+      "title": {
+        "en": "Shock! The Identity of the Mysterious Man Vergo!",
+        "ja": "衝撃！謎の男ヴェルゴの正体！",
+        "enOfficial": "Shocking! The True Identity of the Mystery Man Vergo!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        673
+      ],
+      "airDate": {
+        "ja": "2013-06-09"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "monet",
+        "vergo",
+        "nami",
+        "usopp",
+        "caesar-clown",
+        "brook",
+        "sanji",
+        "kinemon",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "franky",
+        "nico-robin",
+        "smoker",
+        "tashigi",
+        "donquixote-doflamingo"
+      ]
+    },
+    {
+      "number": 600,
+      "title": {
+        "en": "Protect the Children! Master's Evil Hands Close in",
+        "ja": "子供達を守れ！迫るMの魔の手",
+        "enOfficial": "Save the Children! The Master's Evil Hands Close in!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        674
+      ],
+      "airDate": {
+        "ja": "2013-06-16"
+      },
+      "appearances": [
+        "monet",
+        "vergo",
+        "nico-robin",
+        "tashigi",
+        "smoker",
+        "trafalgar-d-water-law",
+        "franky",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "caesar-clown",
+        "kinemon",
+        "roronoa-zoro",
+        "brook",
+        "sanji",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 601,
+      "title": {
+        "en": "Shaking Up the New World - Caesar's Nightmarish Experiment",
+        "ja": "新世界激震 シーザー悪夢の実験",
+        "enOfficial": "Shaking Up the New World! Caesar's Horrendous Experiment!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        675
+      ],
+      "airDate": {
+        "ja": "2013-06-23"
+      },
+      "appearances": [
+        "caesar-clown",
+        "usopp",
+        "nami",
+        "vergo",
+        "monet",
+        "tashigi",
+        "smoker",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "franky",
+        "kinemon",
+        "roronoa-zoro",
+        "sanji",
+        "brook",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 602,
+      "title": {
+        "en": "History's Worst Weapon of Mass Destruction! Shinokuni",
+        "ja": "史上最悪の殺戮兵器！シノクニ",
+        "enOfficial": "The Deadliest Weapon of Mass Destruction in History! Shinokuni! (Simulcast); The Deadliest Weapon of Mass Destruction in History! Land of the Dead! (DVD)"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        676
+      ],
+      "airDate": {
+        "ja": "2013-06-30"
+      },
+      "appearances": [
+        "caesar-clown",
+        "monet",
+        "vergo",
+        "tashigi",
+        "smoker",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "franky",
+        "brook",
+        "sanji",
+        "roronoa-zoro",
+        "kinemon",
+        "nami",
+        "usopp",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 603,
+      "title": {
+        "en": "The Counterattack Begins! Luffy and Law's Great Escape",
+        "ja": "反撃開始！ルフィ・ロー大脱出",
+        "enOfficial": "Launching the Counter Attack! Luffy and Law's Great Escape!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        677
+      ],
+      "airDate": {
+        "ja": "2013-07-07"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "nico-robin",
+        "tashigi",
+        "smoker",
+        "franky",
+        "caesar-clown",
+        "monet",
+        "kinemon",
+        "roronoa-zoro",
+        "sanji",
+        "brook",
+        "nami",
+        "usopp"
+      ]
+    },
+    {
+      "number": 604,
+      "title": {
+        "en": "Get to Building R! The Pirate Alliance's Great Advance!",
+        "ja": "めざせR棟！海賊同盟快進撃！",
+        "enOfficial": "Get to Building R! The Pirate Alliance's Great Advance!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        678,
+        679
+      ],
+      "airDate": {
+        "ja": "2013-07-14"
+      },
+      "appearances": [
+        "usopp",
+        "roronoa-zoro",
+        "kinemon",
+        "nami",
+        "brook",
+        "sanji",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "caesar-clown",
+        "monet",
+        "vergo",
+        "smoker",
+        "tashigi"
+      ]
+    },
+    {
+      "number": 605,
+      "title": {
+        "en": "Tashigi's Tears - G-5's Desperate Breakthrough Plan",
+        "ja": "たしぎの涙 G5決死の突破作戦",
+        "enOfficial": "Tashigi's Tears! G-5's Desperate Breakthrough Plan!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        679
+      ],
+      "airDate": {
+        "ja": "2013-07-21"
+      },
+      "appearances": [
+        "caesar-clown",
+        "roronoa-zoro",
+        "usopp",
+        "monkey-d-luffy",
+        "smoker",
+        "trafalgar-d-water-law",
+        "vergo",
+        "monet",
+        "tony-tony-chopper",
+        "brook",
+        "sanji",
+        "nami",
+        "kinemon",
+        "tashigi",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 606,
+      "title": {
+        "en": "The Treacherous Vice Admiral! 'Demon Bamboo' Vergo",
+        "ja": "裏切りの中将！鬼竹のヴェルゴ",
+        "enOfficial": "The Treacherous Vice Admiral! Demon Bamboo Vergo!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        680
+      ],
+      "airDate": {
+        "ja": "2013-07-28"
+      },
+      "appearances": [
+        "nico-robin",
+        "brook",
+        "kinemon",
+        "roronoa-zoro",
+        "usopp",
+        "nami",
+        "sanji",
+        "tashigi",
+        "vergo",
+        "smoker",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "caesar-clown",
+        "monet"
+      ]
+    },
+    {
+      "number": 607,
+      "title": {
+        "en": "Heated Fierce Battle - Luffy vs. Caesar",
+        "ja": "白熱の激戦 ルフィVSシーザー",
+        "enOfficial": "A Fierce Battle Gets Heated! Luffy vs. Caesar!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        681
+      ],
+      "airDate": {
+        "ja": "2013-08-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "caesar-clown",
+        "monet",
+        "smoker",
+        "trafalgar-d-water-law",
+        "tashigi",
+        "vergo",
+        "sanji",
+        "usopp",
+        "nico-robin",
+        "roronoa-zoro",
+        "brook",
+        "nami",
+        "kinemon",
+        "donquixote-doflamingo"
+      ]
+    },
+    {
+      "number": 608,
+      "title": {
+        "en": "The Mastermind in the Shadows! Doflamingo Moves!",
+        "ja": "闇の黒幕！ドフラミンゴ動く！",
+        "enOfficial": "A Mastermind Underground! Doflamingo Makes His Move!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        682
+      ],
+      "airDate": {
+        "ja": "2013-08-18"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "sanji",
+        "tashigi",
+        "vergo",
+        "donquixote-doflamingo",
+        "sugar",
+        "monet",
+        "monkey-d-luffy",
+        "caesar-clown",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nami",
+        "kinemon",
+        "nico-robin",
+        "usopp",
+        "brook"
+      ]
+    },
+    {
+      "number": 609,
+      "title": {
+        "en": "Luffy's Freezing to Death!? The Terrifying Snow Woman, Monet!",
+        "ja": "ルフィ凍死!? 恐怖の雪女モネ!",
+        "enOfficial": "Luffy Dies from Exposure?! The Spine-chilling Snow Woman Monet!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        683
+      ],
+      "airDate": {
+        "ja": "2013-08-25"
+      },
+      "appearances": [
+        "vergo",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "monet",
+        "roronoa-zoro",
+        "sanji",
+        "nami",
+        "brook",
+        "usopp",
+        "nico-robin",
+        "tony-tony-chopper",
+        "kinemon",
+        "caesar-clown",
+        "smoker"
+      ]
+    },
+    {
+      "number": 610,
+      "title": {
+        "en": "Clashing Fists! The Battle of Two Vice Admirals",
+        "ja": "ぶつかる拳！二人の中将の戦い",
+        "enOfficial": "Fists Collide! A Battle of the Two Vice Admirals!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        684
+      ],
+      "airDate": {
+        "ja": "2013-09-01"
+      },
+      "appearances": [
+        "usopp",
+        "brook",
+        "nami",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "kinemon",
+        "nico-robin",
+        "monet",
+        "smoker",
+        "vergo",
+        "trafalgar-d-water-law",
+        "sanji",
+        "tashigi",
+        "caesar-clown",
+        "monkey-d-luffy",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 611,
+      "title": {
+        "en": "A Small Dragon! Momonosuke Appears",
+        "ja": "小さなドラゴン！モモの助現る",
+        "enOfficial": "A Small Dragon! Momonosuke Appears!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        685
+      ],
+      "airDate": {
+        "ja": "2013-09-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "kinemon",
+        "nico-robin",
+        "usopp",
+        "roronoa-zoro",
+        "monet",
+        "donquixote-doflamingo",
+        "brook",
+        "smoker",
+        "vergo",
+        "trafalgar-d-water-law",
+        "tashigi",
+        "sanji",
+        "nami",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 612,
+      "title": {
+        "en": "A Deadly Fight in a Blizzard -  The Straw Hats vs. the Snow Woman",
+        "ja": "吹雪の死闘 麦わらの一味VS雪女",
+        "enOfficial": "A Deadly Fight in a Blizzard! The Straw Hats vs. the Snow Woman!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        686
+      ],
+      "airDate": {
+        "ja": "2013-09-15"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "monet",
+        "nico-robin",
+        "tony-tony-chopper",
+        "nami",
+        "caesar-clown",
+        "usopp",
+        "kozuki-momonosuke",
+        "monkey-d-luffy",
+        "sanji",
+        "kinemon",
+        "brook",
+        "tashigi"
+      ]
+    },
+    {
+      "number": 613,
+      "title": {
+        "en": "Secret Technique Blasts! Zoro's Strongest One-Sword Style!",
+        "ja": "奥義炸裂！ゾロ最強の一刀流！",
+        "enOfficial": "Showing Off His Techniques! Zoro's Formidable One-Sword Style!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        687
+      ],
+      "airDate": {
+        "ja": "2013-09-22"
+      },
+      "appearances": [
+        "sanji",
+        "monet",
+        "tashigi",
+        "roronoa-zoro",
+        "usopp",
+        "kinemon",
+        "brook",
+        "nico-robin",
+        "nami",
+        "tony-tony-chopper",
+        "kozuki-momonosuke",
+        "monkey-d-luffy",
+        "caesar-clown"
+      ]
+    },
+    {
+      "number": 614,
+      "title": {
+        "en": "I'll Protect My Friends! Mocha's Desperate Escape",
+        "ja": "友達を守る！モチャ命がけの逃走",
+        "enOfficial": "To Save Her Friends! Mocha Runs at the Risk of Her Life!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        688
+      ],
+      "airDate": {
+        "ja": "2013-09-29"
+      },
+      "appearances": [
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "tashigi",
+        "roronoa-zoro",
+        "sanji",
+        "monkey-d-luffy",
+        "kozuki-momonosuke"
+      ]
+    },
+    {
+      "number": 615,
+      "title": {
+        "en": "Brownbeard in Grief! Luffy's Furious Blow",
+        "ja": "茶ひげ悲痛！ルフィ怒りの一撃",
+        "enOfficial": "Brownbeard in Grief! Luffy Lands a Furious Blow!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        689
+      ],
+      "airDate": {
+        "ja": "2013-10-06"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "tashigi",
+        "sanji",
+        "nico-robin",
+        "nami",
+        "tony-tony-chopper",
+        "kinemon",
+        "brook",
+        "usopp",
+        "caesar-clown",
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "vergo",
+        "donquixote-doflamingo"
+      ]
+    },
+    {
+      "number": 616,
+      "title": {
+        "en": "Shocking Conclusion! Smoker vs. Vergo!",
+        "ja": "衝撃の決着！{{Ruby|白猟|スモーカー}}VSヴェルゴ！",
+        "enOfficial": "A Surprising Outcome! White Chase vs. Vergo! (Simulcast); A Surprising Outcome! White Hunter vs. Vergo! (DVD)"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        690,
+        693
+      ],
+      "airDate": {
+        "ja": "2013-10-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "caesar-clown",
+        "donquixote-doflamingo",
+        "trafalgar-d-water-law",
+        "smoker",
+        "vergo",
+        "roronoa-zoro",
+        "tashigi",
+        "nami",
+        "sanji",
+        "nico-robin",
+        "tony-tony-chopper",
+        "kinemon",
+        "brook",
+        "usopp",
+        "kuzan",
+        "kaido"
+      ]
+    },
+    {
+      "number": 617,
+      "title": {
+        "en": "Caesar's Defeat! The Strongest Grizzly Magnum",
+        "ja": "シーザー撃破！最強の{{Ruby|灰熊銃|グリズリー・マグナム}}",
+        "enOfficial": "Caesar's Defeat! The Powerful Grizzly Magnum!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        691,
+        692
+      ],
+      "airDate": {
+        "ja": "2013-10-20"
+      },
+      "appearances": [
+        "nami",
+        "sanji",
+        "nico-robin",
+        "roronoa-zoro",
+        "tashigi",
+        "trafalgar-d-water-law",
+        "vergo",
+        "smoker",
+        "tony-tony-chopper",
+        "caesar-clown",
+        "monkey-d-luffy",
+        "kozuki-momonosuke",
+        "usopp"
+      ]
+    },
+    {
+      "number": 618,
+      "title": {
+        "en": "Raid! The Assassins from Dressrosa",
+        "ja": "襲来！ドレスローザからの刺客",
+        "enOfficial": "Raid! An Assassin from Dressrosa!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        692
+      ],
+      "airDate": {
+        "ja": "2013-10-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "caesar-clown",
+        "kozuki-momonosuke",
+        "tony-tony-chopper",
+        "usopp",
+        "nami",
+        "brook",
+        "tashigi",
+        "sanji",
+        "roronoa-zoro",
+        "nico-robin",
+        "smoker",
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo",
+        "franky"
+      ]
+    },
+    {
+      "number": 619,
+      "title": {
+        "en": "Running Wild! Invincible General Franky",
+        "ja": "大暴れ！無敵のフランキー将軍"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        693,
+        694
+      ],
+      "airDate": {
+        "ja": "2013-11-03"
+      },
+      "appearances": [
+        "franky",
+        "trafalgar-d-water-law",
+        "smoker",
+        "tashigi",
+        "monkey-d-luffy",
+        "nico-robin",
+        "sanji",
+        "nami",
+        "roronoa-zoro",
+        "caesar-clown",
+        "monet",
+        "kozuki-momonosuke",
+        "brook",
+        "kinemon",
+        "tony-tony-chopper",
+        "usopp",
+        "donquixote-doflamingo",
+        "vergo"
+      ]
+    },
+    {
+      "number": 620,
+      "title": {
+        "en": "A Critical Situation! Punk Hazard Explodes",
+        "ja": "絶体絶命！パンクハザード大爆発"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        694
+      ],
+      "airDate": {
+        "ja": "2013-11-10"
+      },
+      "appearances": [
+        "monet",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "smoker",
+        "tashigi",
+        "brook",
+        "kinemon",
+        "kozuki-momonosuke",
+        "nami",
+        "trafalgar-d-water-law",
+        "franky",
+        "caesar-clown",
+        "usopp",
+        "nico-robin",
+        "sanji",
+        "donquixote-doflamingo",
+        "sugar"
+      ]
+    },
+    {
+      "number": 621,
+      "title": {
+        "en": "Capture Caesar - General Cannon Blasts",
+        "ja": "シーザーを捕獲せよ {{Ruby|将軍砲|ジェネラルキャノン}}炸裂"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        695
+      ],
+      "airDate": {
+        "ja": "2013-11-17"
+      },
+      "appearances": [
+        "franky",
+        "tony-tony-chopper",
+        "nami",
+        "sanji",
+        "brook",
+        "kinemon",
+        "kozuki-momonosuke",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "usopp",
+        "caesar-clown",
+        "nico-robin",
+        "roronoa-zoro",
+        "tashigi",
+        "smoker",
+        "donquixote-doflamingo",
+        "kuzan"
+      ]
+    },
+    {
+      "number": 622,
+      "title": {
+        "en": "A Touching Reunion! Momonosuke and Kin'emon",
+        "ja": "感動の再会！モモの助と錦えもん"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        696
+      ],
+      "airDate": {
+        "ja": "2013-11-24"
+      },
+      "appearances": [
+        "sanji",
+        "brook",
+        "smoker",
+        "monkey-d-luffy",
+        "caesar-clown",
+        "kinemon",
+        "franky",
+        "usopp",
+        "nico-robin",
+        "nami",
+        "tashigi",
+        "tony-tony-chopper",
+        "trafalgar-d-water-law",
+        "kozuki-momonosuke",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 623,
+      "title": {
+        "en": "It's Time to Say Goodbye - Leaving Punk Hazard!",
+        "ja": "惜別の時 パンクハザード出航！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        697
+      ],
+      "airDate": {
+        "ja": "2013-12-01"
+      },
+      "appearances": [
+        "franky",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "smoker",
+        "trafalgar-d-water-law",
+        "nami",
+        "kaido",
+        "tony-tony-chopper",
+        "brook",
+        "usopp",
+        "caesar-clown",
+        "tashigi",
+        "sanji",
+        "nico-robin",
+        "kozuki-momonosuke",
+        "kinemon",
+        "donquixote-doflamingo"
+      ]
+    },
+    {
+      "number": 624,
+      "title": {
+        "en": "The G-5 Wiped Out! Doflamingo's Sudden Attack!",
+        "ja": "G5壊滅！ドフラミンゴ急襲！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        698
+      ],
+      "airDate": {
+        "ja": "2013-12-08"
+      },
+      "appearances": [
+        "usopp",
+        "nico-robin",
+        "sanji",
+        "nami",
+        "monkey-d-luffy",
+        "caesar-clown",
+        "tony-tony-chopper",
+        "franky",
+        "brook",
+        "roronoa-zoro",
+        "trafalgar-d-water-law",
+        "kinemon",
+        "kozuki-momonosuke",
+        "smoker",
+        "donquixote-doflamingo",
+        "kuzan"
+      ]
+    },
+    {
+      "number": 625,
+      "title": {
+        "en": "Intense! Aokiji vs. Doflamingo",
+        "ja": "緊迫！青キジVSドフラミンゴ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        698,
+        699
+      ],
+      "airDate": {
+        "ja": "2013-12-15"
+      },
+      "appearances": [
+        "kuzan",
+        "donquixote-doflamingo",
+        "smoker",
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "nami",
+        "brook",
+        "nico-robin",
+        "kinemon",
+        "kozuki-momonosuke",
+        "tony-tony-chopper",
+        "sanji",
+        "caesar-clown",
+        "franky"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "law-vs-smoker-punk-hazard",
+      "kind": "battle",
+      "characters": [
+        "trafalgar-d-water-law",
+        "smoker"
+      ],
+      "episode": 587,
+      "chapter": 662,
+      "description": {
+        "es": "Law derrota a Smoker e intercambia los cuerpos de Smoker y Tashigi."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-law-pirate-alliance",
+      "kind": "recruitment",
+      "characters": [
+        "monkey-d-luffy",
+        "trafalgar-d-water-law"
+      ],
+      "episode": 594,
+      "chapter": 668,
+      "description": {
+        "es": "Law propone a Luffy una alianza pirata para derribar a un Emperador y Luffy acepta."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "vergo-identity-revealed",
+      "kind": "reveal",
+      "characters": [
+        "vergo",
+        "donquixote-doflamingo"
+      ],
+      "episode": 599,
+      "chapter": 673,
+      "description": {
+        "es": "Se revela que el vicealmirante Vergo es un miembro infiltrado de la familia Donquixote."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "shinokuni-unleashed",
+      "kind": "other",
+      "characters": [
+        "caesar-clown"
+      ],
+      "episode": 602,
+      "chapter": 676,
+      "description": {
+        "es": "Caesar libera el gas letal Shinokuni sobre Punk Hazard."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "zoro-defeats-monet",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "monet"
+      ],
+      "episode": 613,
+      "chapter": 687,
+      "description": {
+        "es": "Zoro derrota a Monet con un solo tajo, dejando que Tashigi la sujete."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "law-defeats-vergo",
+      "kind": "battle",
+      "characters": [
+        "trafalgar-d-water-law",
+        "vergo",
+        "smoker"
+      ],
+      "episode": 616,
+      "chapter": 690,
+      "description": {
+        "es": "Tras vencer Vergo a Smoker, Law lo parte en dos junto con el laboratorio."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-caesar-grizzly-magnum",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "caesar-clown"
+      ],
+      "episode": 617,
+      "chapter": 691,
+      "description": {
+        "es": "Luffy derrota a Caesar con el Gomu Gomu no Grizzly Magnum."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "general-franky-debut",
+      "kind": "transformation",
+      "characters": [
+        "franky"
+      ],
+      "episode": 619,
+      "chapter": 693,
+      "description": {
+        "es": "Franky estrena el robot General Franky."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "law-ultimatum-doflamingo",
+      "kind": "other",
+      "characters": [
+        "trafalgar-d-water-law",
+        "donquixote-doflamingo"
+      ],
+      "episode": 624,
+      "chapter": 698,
+      "description": {
+        "es": "Law exige a Doflamingo que renuncie a ser Shichibukai a cambio de Caesar; Doflamingo ataca a la G-5."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "aokiji-vs-doflamingo",
+      "kind": "battle",
+      "characters": [
+        "kuzan",
+        "donquixote-doflamingo"
+      ],
+      "episode": 625,
+      "chapter": 699,
+      "description": {
+        "es": "Kuzan interviene para frenar a Doflamingo y salvar a Smoker."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Dressrosa_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Template:WC",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Template:WhichMangaDate",
+      "field": "chapters.releaseDate"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Punk_Hazard_Arc",
+      "field": "arc"
+    }
+  ]
+}

@@ -1,0 +1,763 @@
+{
+  "slug": "arlong-park",
+  "sagaSlug": "east-blue",
+  "order": 5,
+  "title": {
+    "es": "Arlong Park",
+    "en": "Arlong Park Arc",
+    "ja": "アーロンパーク編"
+  },
+  "summary": {
+    "es": "En Villa Cocoyashi se revela el pasado de Nami bajo el yugo de Arlong; los Sombrero de Paja derrotan a los Piratas de Arlong y Nami se une oficialmente."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 69,
+    "last": 95
+  },
+  "episodeRange": {
+    "first": 31,
+    "last": 44
+  },
+  "chapters": [
+    {
+      "number": 69,
+      "title": {
+        "en": "Arlong Park",
+        "ja": "アーロンパーク"
+      }
+    },
+    {
+      "number": 70,
+      "title": {
+        "en": "The Great Adventure of Usopp the Man",
+        "ja": "男ウソップ大冒険"
+      }
+    },
+    {
+      "number": 71,
+      "title": {
+        "en": "Lords of All Creation",
+        "ja": "万物の霊長"
+      }
+    },
+    {
+      "number": 72,
+      "title": {
+        "en": "Appropriate",
+        "ja": "分相応"
+      }
+    },
+    {
+      "number": 73,
+      "title": {
+        "en": "The Monster From the \"Grand Line\"",
+        "ja": "\"偉大なる航路\"から来た怪物"
+      }
+    },
+    {
+      "number": 74,
+      "title": {
+        "en": "Business",
+        "ja": "{{ruby|仕事|ビジネス}}"
+      }
+    },
+    {
+      "number": 75,
+      "title": {
+        "en": "Sea Charts and Fish-Man",
+        "ja": "海図と魚人"
+      }
+    },
+    {
+      "number": 76,
+      "title": {
+        "en": "Sleep",
+        "ja": "ねる"
+      }
+    },
+    {
+      "number": 77,
+      "title": {
+        "en": "The First Step Toward a Dream",
+        "ja": "夢の一歩"
+      }
+    },
+    {
+      "number": 78,
+      "title": {
+        "en": "Bell-mère-san",
+        "ja": "ベルメールさん"
+      }
+    },
+    {
+      "number": 79,
+      "title": {
+        "en": "To Live",
+        "ja": "生きる"
+      }
+    },
+    {
+      "number": 80,
+      "title": {
+        "en": "A Crime is a Crime",
+        "ja": "罪は罪"
+      }
+    },
+    {
+      "number": 81,
+      "title": {
+        "en": "Tears",
+        "ja": "涙"
+      }
+    },
+    {
+      "number": 82,
+      "title": {
+        "en": "OK, Let's STAND UP!",
+        "ja": "{{Ruby|OK|オーケー}}, {{Ruby|Let's|レッツ}} {{Ruby|STAND|スタン}} {{Ruby|UP|ダップ}}!"
+      }
+    },
+    {
+      "number": 83,
+      "title": {
+        "en": "Luffy in Black",
+        "ja": "ルフィ {{Ruby|IN|イン}} {{Ruby|BLACK|ブラック}}"
+      }
+    },
+    {
+      "number": 84,
+      "title": {
+        "en": "Zombie",
+        "ja": "ゾンビ"
+      }
+    },
+    {
+      "number": 85,
+      "title": {
+        "en": "Three Sword Style vs. Six Sword Style",
+        "ja": "三刀流対六刀流"
+      }
+    },
+    {
+      "number": 86,
+      "title": {
+        "en": "Chivalry vs. Fish-Man Karate",
+        "ja": "騎士道{{Ruby|VS|バーサス}}魚人空手"
+      }
+    },
+    {
+      "number": 87,
+      "title": {
+        "en": "It's Over!!",
+        "ja": "終わったんだ!!"
+      }
+    },
+    {
+      "number": 88,
+      "title": {
+        "en": "Die!!!",
+        "ja": "死んで!!!"
+      }
+    },
+    {
+      "number": 89,
+      "title": {
+        "en": "Switch",
+        "ja": "交替"
+      }
+    },
+    {
+      "number": 90,
+      "title": {
+        "en": "What Can You Do?",
+        "ja": "何ができる"
+      }
+    },
+    {
+      "number": 91,
+      "title": {
+        "en": "DARTS",
+        "ja": "{{Ruby|DARTS|ダーツ}}"
+      }
+    },
+    {
+      "number": 92,
+      "title": {
+        "en": "Happiness",
+        "ja": "幸せ"
+      }
+    },
+    {
+      "number": 93,
+      "title": {
+        "en": "Going Down",
+        "ja": "下へまいります"
+      }
+    },
+    {
+      "number": 94,
+      "title": {
+        "en": "The Second",
+        "ja": "2人目"
+      }
+    },
+    {
+      "number": 95,
+      "title": {
+        "en": "Spin, Pinwheel",
+        "ja": "まわれ風車"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 31,
+      "title": {
+        "en": "The Most Wicked Man of East Blue, Fishman Pirate Arlong",
+        "ja": "東の海最悪の男！魚人海賊アーロン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        69,
+        70,
+        71
+      ],
+      "airDate": {
+        "ja": "2000-07-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "yosaku",
+        "dracule-mihawk",
+        "nami",
+        "nezumi",
+        "arlong",
+        "chew",
+        "kuroobi",
+        "hatchan",
+        "roronoa-zoro",
+        "johnny",
+        "usopp",
+        "nojiko"
+      ]
+    },
+    {
+      "number": 32,
+      "title": {
+        "en": "The Witch of Cocoyashi Village, Arlong's Female Officer",
+        "ja": "ココヤシ村の魔女！アーロンの女幹部"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "airDate": {
+        "ja": "2000-07-19"
+      },
+      "appearances": [
+        "yosaku",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "usopp",
+        "nojiko",
+        "arlong",
+        "hatchan",
+        "nami",
+        "bell-mere",
+        "roronoa-zoro",
+        "chew",
+        "kuroobi",
+        "genzo"
+      ]
+    },
+    {
+      "number": 33,
+      "title": {
+        "en": "Usopp's Death?! Luffy - Yet To Land?",
+        "ja": "ウソップ死す？！ルフィ上陸はまだ？"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        73,
+        74,
+        75
+      ],
+      "airDate": {
+        "ja": "2000-07-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "yosaku",
+        "vinsmoke-sanji",
+        "arlong",
+        "usopp",
+        "roronoa-zoro",
+        "hatchan",
+        "kuroobi",
+        "chew",
+        "johnny"
+      ]
+    },
+    {
+      "number": 34,
+      "title": {
+        "en": "Reunited! Usopp Tells Nami's True Story",
+        "ja": "全員集結！ウソップが語るナミの真実"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        75,
+        76,
+        77
+      ],
+      "airDate": {
+        "ja": "2000-07-26"
+      },
+      "appearances": [
+        "johnny",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "vinsmoke-sanji",
+        "yosaku",
+        "nojiko",
+        "arlong",
+        "chew",
+        "hatchan",
+        "kuroobi",
+        "usopp",
+        "kuro",
+        "nezumi",
+        "genzo",
+        "bell-mere"
+      ]
+    },
+    {
+      "number": 35,
+      "title": {
+        "en": "The Hidden Past! Female Fighter Bellemere!",
+        "ja": "秘められた過去！女戦士ベルメール！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        77,
+        78
+      ],
+      "airDate": {
+        "ja": "2000-08-02"
+      },
+      "appearances": [
+        "hatchan",
+        "kuroobi",
+        "chew",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nojiko",
+        "usopp",
+        "vinsmoke-sanji",
+        "nami",
+        "genzo",
+        "bell-mere",
+        "arlong"
+      ]
+    },
+    {
+      "number": 36,
+      "title": {
+        "en": "Survive! The Mother Bellemere and Nami's Family!",
+        "ja": "生き抜け！母ベルメールとナミの絆！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        78,
+        79,
+        80
+      ],
+      "airDate": {
+        "ja": "2000-08-09"
+      },
+      "appearances": [
+        "nojiko",
+        "nami",
+        "bell-mere",
+        "genzo",
+        "arlong",
+        "kuroobi",
+        "chew",
+        "hatchan",
+        "yosaku",
+        "johnny",
+        "usopp",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "nezumi"
+      ]
+    },
+    {
+      "number": 37,
+      "title": {
+        "en": "Luffy Stands Up! End of a Broken Promise!",
+        "ja": "ルフィ立つ！裏切られた約束の結末！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        80,
+        81
+      ],
+      "airDate": {
+        "ja": "2000-08-16"
+      },
+      "appearances": [
+        "nami",
+        "arlong",
+        "genzo",
+        "nezumi",
+        "nojiko",
+        "monkey-d-luffy",
+        "hatchan",
+        "kuroobi",
+        "chew",
+        "usopp",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "yosaku",
+        "johnny"
+      ]
+    },
+    {
+      "number": 38,
+      "title": {
+        "en": "Luffy in Trouble! Fishmen vs. Luffy Pirates!",
+        "ja": "ルフィ大ピンチ！魚人VSルフィ海賊団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        82,
+        83
+      ],
+      "airDate": {
+        "ja": "2000-08-23"
+      },
+      "appearances": [
+        "nami",
+        "arlong",
+        "monkey-d-luffy",
+        "kuroobi",
+        "hatchan",
+        "chew",
+        "nojiko",
+        "genzo",
+        "vinsmoke-sanji",
+        "usopp",
+        "roronoa-zoro",
+        "yosaku",
+        "johnny"
+      ]
+    },
+    {
+      "number": 39,
+      "title": {
+        "en": "Luffy Drowning! Zoro vs. Octopus Hatchan!",
+        "ja": "ルフィ水没！ゾロVSタコのはっちゃん"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        84,
+        85,
+        86
+      ],
+      "airDate": {
+        "ja": "2000-08-30"
+      },
+      "appearances": [
+        "johnny",
+        "yosaku",
+        "monkey-d-luffy",
+        "nojiko",
+        "genzo",
+        "roronoa-zoro",
+        "hatchan",
+        "vinsmoke-sanji",
+        "kuroobi",
+        "arlong",
+        "dracule-mihawk",
+        "usopp",
+        "chew",
+        "shimotsuki-kuina",
+        "nami"
+      ]
+    },
+    {
+      "number": 40,
+      "title": {
+        "en": "Proud, Tall Warriors! Dramatic Battle of Sanji and Usopp!",
+        "ja": "誇り高き戦士！激闘サンジとウソップ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        86,
+        87,
+        88
+      ],
+      "airDate": {
+        "ja": "2000-09-06"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "arlong",
+        "kuroobi",
+        "monkey-d-luffy",
+        "genzo",
+        "vinsmoke-sanji",
+        "nojiko",
+        "usopp",
+        "chew",
+        "johnny",
+        "yosaku",
+        "nami"
+      ]
+    },
+    {
+      "number": 41,
+      "title": {
+        "en": "Luffy's Best! Nami's Courage and the Straw Hat",
+        "ja": "ルフィ全開！ナミの決意と麦わら帽子"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        88,
+        89,
+        90
+      ],
+      "airDate": {
+        "ja": "2000-09-13"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "arlong",
+        "nami",
+        "nojiko",
+        "monkey-d-luffy",
+        "johnny",
+        "yosaku",
+        "genzo",
+        "usopp",
+        "hatchan",
+        "dracule-mihawk"
+      ]
+    },
+    {
+      "number": 42,
+      "title": {
+        "en": "Bursting Out! Fishman Arlong, Fearsome Attack From The Sea!",
+        "ja": "炸裂！魚人ア!）ロン海からの猛攻撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        90,
+        91,
+        92
+      ],
+      "airDate": {
+        "ja": "2000-09-27"
+      },
+      "appearances": [
+        "arlong",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "nami",
+        "yosaku",
+        "johnny",
+        "usopp",
+        "nojiko",
+        "genzo"
+      ]
+    },
+    {
+      "number": 43,
+      "title": {
+        "en": "The End of the Fishman Empire! Nami is my Friend!",
+        "ja": "魚人帝国の終わり！ナミは俺の仲間だ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        92,
+        93,
+        94
+      ],
+      "airDate": {
+        "ja": "2000-09-27"
+      },
+      "appearances": [
+        "arlong",
+        "monkey-d-luffy",
+        "yosaku",
+        "johnny",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "nojiko",
+        "genzo",
+        "roronoa-zoro",
+        "nezumi",
+        "bell-mere",
+        "hatchan",
+        "kuroobi",
+        "chew"
+      ]
+    },
+    {
+      "number": 44,
+      "title": {
+        "en": "Setting off with a Smile! Farewell my Hometown, Cocoyashi Village!",
+        "ja": "笑顔の旅立ち！さらば故郷ココヤシ村"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        95
+      ],
+      "airDate": {
+        "ja": "2000-10-11"
+      },
+      "appearances": [
+        "nojiko",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "usopp",
+        "roronoa-zoro",
+        "johnny",
+        "yosaku",
+        "nami",
+        "genzo",
+        "bell-mere"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "bell-mere-death",
+      "kind": "death",
+      "characters": [
+        "bell-mere",
+        "nami",
+        "nojiko",
+        "arlong"
+      ],
+      "episode": 36,
+      "chapter": 79,
+      "description": {
+        "es": "Arlong asesina a Bell-mère ante Nami y Nojiko."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nami-asks-luffy-for-help",
+      "kind": "other",
+      "characters": [
+        "nami",
+        "monkey-d-luffy"
+      ],
+      "episode": 37,
+      "chapter": 81,
+      "description": {
+        "es": "Nami pide ayuda a Luffy y él le pone su sombrero de paja."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-vs-hatchan",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "hatchan"
+      ],
+      "episode": 39,
+      "chapter": 85,
+      "description": {
+        "es": "Zoro vence a Hatchan."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "sanji-vs-kuroobi",
+      "kind": "battle",
+      "characters": [
+        "vinsmoke-sanji",
+        "kuroobi"
+      ],
+      "episode": 40,
+      "chapter": 87,
+      "description": {
+        "es": "Sanji vence a Kuroobi."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "usopp-vs-chew",
+      "kind": "battle",
+      "characters": [
+        "usopp",
+        "chew"
+      ],
+      "episode": 40,
+      "chapter": 88,
+      "description": {
+        "es": "Usopp vence a Chew."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-arlong",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "arlong"
+      ],
+      "episode": 43,
+      "chapter": 93,
+      "description": {
+        "es": "Luffy derrota a Arlong y destruye Arlong Park."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nami-joins-crew",
+      "kind": "recruitment",
+      "characters": [
+        "nami",
+        "monkey-d-luffy"
+      ],
+      "episode": 44,
+      "chapter": 95,
+      "description": {
+        "es": "Nami se une oficialmente a la tripulación."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Arlong_Park_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/East_Blue_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_31",
+      "field": "episodes.adaptsChapters,episodes.appearances (rendered Statistics + Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

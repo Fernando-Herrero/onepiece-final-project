@@ -1,0 +1,2544 @@
+{
+  "slug": "fish-man-island",
+  "sagaSlug": "fish-man-island",
+  "order": 2,
+  "title": {
+    "es": "Isla Gyojin",
+    "en": "Fish-Man Island Arc"
+  },
+  "summary": {
+    "es": "Los Mugiwara llegan a la isla Gyojin, conocen a la princesa Shirahoshi y la historia de Fisher Tiger y la reina Otohime, y derrotan a Hody Jones y los Nuevos Piratas Gyojin. Luffy se enfrenta a Big Mom por teléfono y parten al Nuevo Mundo."
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 603,
+    "last": 653
+  },
+  "chapters": [
+    {
+      "number": 603,
+      "title": {
+        "en": "Keep It In Your Heart",
+        "ja": "心に留めておけ"
+      }
+    },
+    {
+      "number": 604,
+      "title": {
+        "en": "Into the Depths",
+        "ja": "深層へ"
+      }
+    },
+    {
+      "number": 605,
+      "title": {
+        "en": "The Kraken and the Pirates",
+        "ja": "クラーケンと海賊"
+      }
+    },
+    {
+      "number": 606,
+      "title": {
+        "en": "Deep Sea Adventure",
+        "ja": "深海の冒険"
+      }
+    },
+    {
+      "number": 607,
+      "title": {
+        "en": "10,000 Meters Under the Sea",
+        "ja": "海底1万m"
+      }
+    },
+    {
+      "number": 608,
+      "title": {
+        "en": "Underwater Paradise",
+        "ja": "海底の楽園"
+      }
+    },
+    {
+      "number": 609,
+      "title": {
+        "en": "Adventure on Fish-Man Island",
+        "ja": "魚人島の冒険"
+      }
+    },
+    {
+      "number": 610,
+      "title": {
+        "en": "Madam Shyarly, Fortune-Teller",
+        "ja": "占い師マダム・シャーリー"
+      }
+    },
+    {
+      "number": 611,
+      "title": {
+        "en": "Hody Jones",
+        "ja": "ホーディ・ジョーンズ"
+      }
+    },
+    {
+      "number": 612,
+      "title": {
+        "en": "Taken by the Shark They Saved",
+        "ja": "助けたサメに連れられて"
+      }
+    },
+    {
+      "number": 613,
+      "title": {
+        "en": "The Mermaid Princess in Hard-Shell Tower",
+        "ja": "硬殻塔の人魚姫"
+      }
+    },
+    {
+      "number": 614,
+      "title": {
+        "en": "What's Done is Done",
+        "ja": "やっちまったモンはしょうがねェ"
+      }
+    },
+    {
+      "number": 615,
+      "title": {
+        "en": "Mato Mato Curse",
+        "ja": "マトマトの呪い"
+      }
+    },
+    {
+      "number": 616,
+      "title": {
+        "en": "Anniversary for Revenge",
+        "ja": "復讐の記念日"
+      }
+    },
+    {
+      "number": 617,
+      "title": {
+        "en": "Major Incident on Coral Hill",
+        "ja": "サンゴヶ丘で大事件"
+      }
+    },
+    {
+      "number": 618,
+      "title": {
+        "en": "Proposal",
+        "ja": "プロポーズ"
+      }
+    },
+    {
+      "number": 619,
+      "title": {
+        "en": "At the Sea Forest",
+        "ja": "海の森にて"
+      }
+    },
+    {
+      "number": 620,
+      "title": {
+        "en": "The Longed-For Amusement Park",
+        "ja": "憧れの遊園地"
+      }
+    },
+    {
+      "number": 621,
+      "title": {
+        "en": "Otohime and Tiger",
+        "ja": "オトヒメとタイガー"
+      }
+    },
+    {
+      "number": 622,
+      "title": {
+        "en": "The Sun Pirates",
+        "ja": "タイヨウの海賊団"
+      }
+    },
+    {
+      "number": 623,
+      "title": {
+        "en": "Fisher Tiger the Pirate",
+        "ja": "海賊フィッシャー・タイガー"
+      }
+    },
+    {
+      "number": 624,
+      "title": {
+        "en": "Queen Otohime",
+        "ja": "オトヒメ王妃"
+      }
+    },
+    {
+      "number": 625,
+      "title": {
+        "en": "Uninherited Will",
+        "ja": "受け継がない意志"
+      }
+    },
+    {
+      "number": 626,
+      "title": {
+        "en": "The Three Neptune Brothers",
+        "ja": "ネプチューン3兄弟"
+      }
+    },
+    {
+      "number": 627,
+      "title": {
+        "en": "You Have My Gratitude",
+        "ja": "かたじけない"
+      }
+    },
+    {
+      "number": 628,
+      "title": {
+        "en": "Spring Cleaning",
+        "ja": "大掃除"
+      }
+    },
+    {
+      "number": 629,
+      "title": {
+        "en": "Former Warlord in the Way",
+        "ja": "立ち塞がる元七武海"
+      }
+    },
+    {
+      "number": 630,
+      "title": {
+        "en": "Getting Violent",
+        "ja": "暴れ出す"
+      }
+    },
+    {
+      "number": 631,
+      "title": {
+        "en": "Gyoncorde Plaza",
+        "ja": "ギョンコルド広場"
+      }
+    },
+    {
+      "number": 632,
+      "title": {
+        "en": "I Knew",
+        "ja": "知ってた"
+      }
+    },
+    {
+      "number": 633,
+      "title": {
+        "en": "Friend or Foe",
+        "ja": "敵か味方か"
+      }
+    },
+    {
+      "number": 634,
+      "title": {
+        "en": "100,000 vs. 10",
+        "ja": "10万vs.10"
+      }
+    },
+    {
+      "number": 635,
+      "title": {
+        "en": "So Scared I Ran Up to the Sky",
+        "ja": "空を飛ぶ程悍ましい"
+      }
+    },
+    {
+      "number": 636,
+      "title": {
+        "en": "General from Futureland",
+        "ja": "未来国から来た将軍"
+      }
+    },
+    {
+      "number": 637,
+      "title": {
+        "en": "The Ancient Ark",
+        "ja": "古の方舟"
+      }
+    },
+    {
+      "number": 638,
+      "title": {
+        "en": "Escape-Hoshi",
+        "ja": "にげほし"
+      }
+    },
+    {
+      "number": 639,
+      "title": {
+        "en": "Protect Everything",
+        "ja": "全部守る"
+      }
+    },
+    {
+      "number": 640,
+      "title": {
+        "en": "Above Fish-Man Island",
+        "ja": "魚人島直上"
+      }
+    },
+    {
+      "number": 641,
+      "title": {
+        "en": "What Are You?",
+        "ja": "お前は何だ"
+      }
+    },
+    {
+      "number": 642,
+      "title": {
+        "en": "Lost All Face",
+        "ja": "面目など丸潰れ"
+      }
+    },
+    {
+      "number": 643,
+      "title": {
+        "en": "Phantom",
+        "ja": "ファントム"
+      }
+    },
+    {
+      "number": 644,
+      "title": {
+        "en": "To Zero",
+        "ja": "ゼロに"
+      }
+    },
+    {
+      "number": 645,
+      "title": {
+        "en": "Death Is Another Form of Revenge",
+        "ja": "死もまた復讐"
+      }
+    },
+    {
+      "number": 646,
+      "title": {
+        "en": "Frog",
+        "ja": "カエル"
+      }
+    },
+    {
+      "number": 647,
+      "title": {
+        "en": "Stop, Noah",
+        "ja": "止まれノア"
+      }
+    },
+    {
+      "number": 648,
+      "title": {
+        "en": "The Road Toward the Sun",
+        "ja": "タイヨウへと続く道"
+      }
+    },
+    {
+      "number": 649,
+      "title": {
+        "en": "The Dance of Sea Breams and Flounders",
+        "ja": "タイやヒラメの舞い踊り"
+      }
+    },
+    {
+      "number": 650,
+      "title": {
+        "en": "Two Changes to Be Aware Of",
+        "ja": "知っておくべき2つの変化"
+      }
+    },
+    {
+      "number": 651,
+      "title": {
+        "en": "A Voice From the New World",
+        "ja": "新世界からの声"
+      }
+    },
+    {
+      "number": 652,
+      "title": {
+        "en": "Grim Premonitions",
+        "ja": "前途多難の予感"
+      }
+    },
+    {
+      "number": 653,
+      "title": {
+        "en": "The Hero Hat",
+        "ja": "ヒーローの帽子"
+      }
+    }
+  ],
+  "episodeRange": {
+    "first": 523,
+    "last": 574
+  },
+  "episodes": [
+    {
+      "number": 523,
+      "title": {
+        "en": "A Surprising Fact! The Man Who Guarded the Sunny!",
+        "ja": "驚愕の真実 サニー号を守った男"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        603
+      ],
+      "airDate": {
+        "ja": "2011-11-13"
+      },
+      "appearances": [
+        "caribou",
+        "sentomaru",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "silvers-rayleigh",
+        "nico-robin",
+        "franky",
+        "nami",
+        "usopp",
+        "brook",
+        "tony-tony-chopper",
+        "hatchan",
+        "borsalino"
+      ]
+    },
+    {
+      "number": 524,
+      "title": {
+        "en": "Deadly Combat under the Sea! The Demon of the Ocean Strikes!",
+        "ja": "海中の死闘　現れた大海原の悪魔"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        604,
+        605
+      ],
+      "airDate": {
+        "ja": "2011-11-20"
+      },
+      "appearances": [
+        "usopp",
+        "vinsmoke-sanji",
+        "franky",
+        "nami",
+        "brook",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "caribou",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 525,
+      "title": {
+        "en": "Lost in the Deep Sea! The Straw Hats Get Separated!",
+        "ja": "深海で遭難 逸れた麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        605,
+        606
+      ],
+      "airDate": {
+        "ja": "2011-11-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "tony-tony-chopper",
+        "nami",
+        "brook",
+        "franky",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "roronoa-zoro",
+        "caribou",
+        "wadatsumi",
+        "vander-decken-ix"
+      ]
+    },
+    {
+      "number": 526,
+      "title": {
+        "en": "Undersea Volcanic Eruption! Drifting to the Fish-man Island!",
+        "ja": "海底火山噴火！流されて魚人島"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        606,
+        607
+      ],
+      "airDate": {
+        "ja": "2011-12-04"
+      },
+      "appearances": [
+        "wadatsumi",
+        "nami",
+        "usopp",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "vander-decken-ix",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "caribou"
+      ]
+    },
+    {
+      "number": 527,
+      "title": {
+        "en": "Landing at the Fish-Man Island! Beautiful Mermaids!",
+        "ja": "魚人島上陸 うるわしき人魚たち"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        607,
+        608
+      ],
+      "airDate": {
+        "ja": "2011-12-11"
+      },
+      "appearances": [
+        "hyouzou",
+        "monkey-d-luffy",
+        "usopp",
+        "tony-tony-chopper",
+        "brook",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "franky",
+        "nami",
+        "roronoa-zoro",
+        "camie",
+        "hody-jones"
+      ]
+    },
+    {
+      "number": 528,
+      "title": {
+        "en": "Excitement Blow-out! Sanji's Life Under Threat!",
+        "ja": "興奮爆発！サンジ生命の危機！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        608,
+        609
+      ],
+      "airDate": {
+        "ja": "2011-12-18"
+      },
+      "appearances": [
+        "hyouzou",
+        "nami",
+        "franky",
+        "nico-robin",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "usopp",
+        "camie",
+        "monkey-d-luffy",
+        "jinbe",
+        "silvers-rayleigh",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "roronoa-zoro",
+        "fisher-tiger"
+      ]
+    },
+    {
+      "number": 529,
+      "title": {
+        "en": "The Fish-Man Island Will Be Annihilated?! Sharley's Prophecy!",
+        "ja": "魚人島滅亡！？シャーリーの予言"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        609,
+        610
+      ],
+      "airDate": {
+        "ja": "2011-12-25"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "camie",
+        "vinsmoke-sanji",
+        "usopp",
+        "monkey-d-luffy",
+        "hyouzou",
+        "caribou",
+        "shyarly",
+        "brook",
+        "vander-decken-ix",
+        "manboshi",
+        "fukaboshi",
+        "ryuboshi",
+        "nami",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 530,
+      "title": {
+        "en": "The King of the Fish-Man Island! Neptune, the God of the Sea!",
+        "ja": "魚人島の王 海神ネプチューン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        610,
+        611
+      ],
+      "airDate": {
+        "ja": "2012-01-08"
+      },
+      "appearances": [
+        "hyouzou",
+        "hody-jones",
+        "zeo",
+        "dosun",
+        "daruma",
+        "ikaros-much",
+        "usopp",
+        "brook",
+        "monkey-d-luffy",
+        "camie",
+        "nami",
+        "hatchan",
+        "neptune",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 531,
+      "title": {
+        "en": "Ryugu Palace! Taken by the Shark that They Saved!",
+        "ja": "竜宮城！助けた鮫に連れられて"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        611,
+        612
+      ],
+      "airDate": {
+        "ja": "2012-01-15"
+      },
+      "appearances": [
+        "caribou",
+        "brook",
+        "tony-tony-chopper",
+        "usopp",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "nico-robin",
+        "franky",
+        "fukaboshi",
+        "shyarly",
+        "manboshi",
+        "ryuboshi",
+        "camie",
+        "neptune",
+        "shirahoshi"
+      ]
+    },
+    {
+      "number": 532,
+      "title": {
+        "en": "A Coward and a Crybaby! The Princess in the Hard Shell Tower!",
+        "ja": "弱虫で泣き虫！硬殻塔の人魚姫"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        612,
+        613
+      ],
+      "airDate": {
+        "ja": "2012-01-22"
+      },
+      "appearances": [
+        "wadatsumi",
+        "vander-decken-ix",
+        "shirahoshi",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "brook",
+        "camie",
+        "neptune",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "caribou",
+        "shyarly",
+        "ikaros-much",
+        "hody-jones",
+        "daruma",
+        "zeo",
+        "dosun"
+      ]
+    },
+    {
+      "number": 533,
+      "title": {
+        "en": "It's an Emergency! The Ryugu Palace is Occupied!",
+        "ja": "緊急事態発生 占拠された竜宮城"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        613,
+        614
+      ],
+      "airDate": {
+        "ja": "2012-01-29"
+      },
+      "appearances": [
+        "neptune",
+        "roronoa-zoro",
+        "brook",
+        "usopp",
+        "nami",
+        "monkey-d-luffy",
+        "shirahoshi",
+        "camie",
+        "fukaboshi",
+        "manboshi",
+        "ryuboshi",
+        "tony-tony-chopper",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 534,
+      "title": {
+        "en": "The Ryugu Palace in Shock! The Kidnapping of Shirahoshi!",
+        "ja": "竜宮城激震！しらほし誘拐事件"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        614,
+        615
+      ],
+      "airDate": {
+        "ja": "2012-02-05"
+      },
+      "appearances": [
+        "franky",
+        "shirahoshi",
+        "monkey-d-luffy",
+        "brook",
+        "neptune",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "wadatsumi",
+        "ikaros-much",
+        "hody-jones",
+        "daruma",
+        "zeo",
+        "dosun",
+        "hyouzou",
+        "vander-decken-ix",
+        "hatchan",
+        "arlong",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "camie",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 535,
+      "title": {
+        "en": "Hordy's Onslaught! The Retaliatory Plan Set Into Motion!",
+        "ja": "ホーディ襲来 復讐計画の始まり"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        615,
+        616
+      ],
+      "airDate": {
+        "ja": "2012-02-12"
+      },
+      "appearances": [
+        "shirahoshi",
+        "monkey-d-luffy",
+        "hody-jones",
+        "daruma",
+        "zeo",
+        "dosun",
+        "hyouzou",
+        "ikaros-much",
+        "vander-decken-ix",
+        "nico-robin",
+        "neptune",
+        "usopp",
+        "brook",
+        "nami",
+        "camie",
+        "roronoa-zoro",
+        "franky",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 536,
+      "title": {
+        "en": "The Battle in the Ryugu Palace! Zoro vs. Hordy!",
+        "ja": "竜宮城の決戦！ゾロVSホーディ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        616,
+        617
+      ],
+      "airDate": {
+        "ja": "2012-02-19"
+      },
+      "appearances": [
+        "shirahoshi",
+        "monkey-d-luffy",
+        "neptune",
+        "roronoa-zoro",
+        "usopp",
+        "nami",
+        "brook",
+        "camie",
+        "hody-jones",
+        "dosun",
+        "zeo",
+        "ikaros-much",
+        "daruma",
+        "arlong",
+        "franky",
+        "nico-robin",
+        "hatchan",
+        "tony-tony-chopper",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 537,
+      "title": {
+        "en": "Keep Shirahoshi Safe! Decken Close Behind!",
+        "ja": "しらほしを守れ デッケンの追撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        617,
+        618
+      ],
+      "airDate": {
+        "ja": "2012-02-26"
+      },
+      "appearances": [
+        "vander-decken-ix",
+        "shirahoshi",
+        "monkey-d-luffy",
+        "hatchan",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "wadatsumi",
+        "hody-jones",
+        "roronoa-zoro",
+        "camie",
+        "nami",
+        "neptune",
+        "usopp",
+        "brook"
+      ]
+    },
+    {
+      "number": 538,
+      "title": {
+        "en": "The Straw Hats Defeated?! Hordy Gains Control of the Ryugu Palace!",
+        "ja": "一味敗北！？ホーディ竜宮城制圧"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        618,
+        619
+      ],
+      "airDate": {
+        "ja": "2012-03-04"
+      },
+      "appearances": [
+        "hody-jones",
+        "usopp",
+        "roronoa-zoro",
+        "neptune",
+        "brook",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "dosun",
+        "ikaros-much",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "hatchan",
+        "shirahoshi",
+        "vinsmoke-sanji",
+        "franky",
+        "jinbe",
+        "sakazuki",
+        "vander-decken-ix",
+        "nami",
+        "camie",
+        "arlong"
+      ]
+    },
+    {
+      "number": 539,
+      "title": {
+        "en": "The Haunting Ties! Nami and the Fish-Man Pirates!",
+        "ja": "蘇る因縁！ナミと魚人海賊団！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        619,
+        620
+      ],
+      "airDate": {
+        "ja": "2012-03-18"
+      },
+      "appearances": [
+        "nico-robin",
+        "ikaros-much",
+        "daruma",
+        "hyouzou",
+        "zeo",
+        "dosun",
+        "fukaboshi",
+        "otohime",
+        "monkey-d-luffy",
+        "shirahoshi",
+        "caribou",
+        "jinbe",
+        "nami",
+        "camie",
+        "hatchan",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "arlong",
+        "franky",
+        "fisher-tiger",
+        "boa-hancock"
+      ]
+    },
+    {
+      "number": 540,
+      "title": {
+        "en": "A Hero Who Freed the Slaves! An Adventurer Tiger!",
+        "ja": "奴隷解放の英雄 冒険家タイガー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        620,
+        621,
+        622
+      ],
+      "airDate": {
+        "ja": "2012-03-25"
+      },
+      "appearances": [
+        "shirahoshi",
+        "jinbe",
+        "vinsmoke-sanji",
+        "nami",
+        "monkey-d-luffy",
+        "camie",
+        "franky",
+        "hatchan",
+        "tony-tony-chopper",
+        "otohime",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "neptune",
+        "fisher-tiger",
+        "arlong",
+        "boa-hancock"
+      ]
+    },
+    {
+      "number": 541,
+      "title": {
+        "en": "Kizaru Appears! A Trap to Catch Tiger!",
+        "ja": "黄猿登場！タイガーを狙う罠！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        622
+      ],
+      "airDate": {
+        "ja": "2012-04-01"
+      },
+      "appearances": [
+        "hatchan",
+        "tony-tony-chopper",
+        "camie",
+        "monkey-d-luffy",
+        "jinbe",
+        "nami",
+        "vinsmoke-sanji",
+        "shirahoshi",
+        "franky",
+        "neptune",
+        "otohime",
+        "fukaboshi",
+        "manboshi",
+        "ryuboshi",
+        "hody-jones",
+        "dosun",
+        "daruma",
+        "zeo",
+        "ikaros-much",
+        "arlong",
+        "fisher-tiger",
+        "borsalino",
+        "koala"
+      ]
+    },
+    {
+      "number": 542,
+      "title": {
+        "en": "A Team Is Formed! Save Chopper!",
+        "ja": "チーム結成！チョッパーを救え"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2012-04-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "usopp",
+        "vinsmoke-sanji",
+        "franky",
+        "brook",
+        "nami",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 543,
+      "title": {
+        "en": "The Death of the Hero! A Shocking Truth of Tiger!",
+        "ja": "英雄の最期 タイガー衝撃の真実"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        622,
+        623
+      ],
+      "airDate": {
+        "ja": "2012-04-15"
+      },
+      "appearances": [
+        "koala",
+        "hatchan",
+        "fisher-tiger",
+        "arlong",
+        "jinbe",
+        "otohime",
+        "vinsmoke-sanji",
+        "nami",
+        "shirahoshi",
+        "monkey-d-luffy",
+        "camie",
+        "neptune"
+      ]
+    },
+    {
+      "number": 544,
+      "title": {
+        "en": "The Sun Pirates Split! Jimbei vs Arlong!",
+        "ja": "海賊団分裂 ジンベエVSアーロン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        623,
+        624
+      ],
+      "airDate": {
+        "ja": "2012-04-22"
+      },
+      "appearances": [
+        "shirahoshi",
+        "jinbe",
+        "hatchan",
+        "camie",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "franky",
+        "arlong",
+        "borsalino",
+        "neptune",
+        "otohime",
+        "fisher-tiger",
+        "fukaboshi",
+        "manboshi",
+        "ryuboshi",
+        "hody-jones"
+      ]
+    },
+    {
+      "number": 545,
+      "title": {
+        "en": "Shaking Fish-Man Island! A Celestial Dragon Drifts In!",
+        "ja": "揺れる魚人島！漂着した天竜人"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        624,
+        625
+      ],
+      "airDate": {
+        "ja": "2012-04-29"
+      },
+      "appearances": [
+        "jinbe",
+        "shirahoshi",
+        "neptune",
+        "otohime",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "camie",
+        "hatchan",
+        "tony-tony-chopper",
+        "hody-jones",
+        "vander-decken-ix",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "fisher-tiger",
+        "arlong",
+        "franky"
+      ]
+    },
+    {
+      "number": 546,
+      "title": {
+        "en": "A Sudden Tragedy! A Gunshot Shuts Down the Future!",
+        "ja": "突然の悲劇！未来を閉ざす凶弾"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        625,
+        626
+      ],
+      "airDate": {
+        "ja": "2012-05-06"
+      },
+      "appearances": [
+        "shirahoshi",
+        "tony-tony-chopper",
+        "hatchan",
+        "camie",
+        "nami",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "jinbe",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "vander-decken-ix",
+        "otohime",
+        "neptune"
+      ]
+    },
+    {
+      "number": 547,
+      "title": {
+        "en": "Back to the Present! Hordy Makes a Move!",
+        "ja": "再び現在へ！動き出すホーディ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        626,
+        627
+      ],
+      "airDate": {
+        "ja": "2012-05-13"
+      },
+      "appearances": [
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "shirahoshi",
+        "otohime",
+        "jinbe",
+        "hody-jones",
+        "neptune",
+        "nami",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "camie",
+        "hatchan",
+        "tony-tony-chopper",
+        "franky",
+        "fisher-tiger",
+        "arlong",
+        "brook",
+        "roronoa-zoro",
+        "usopp"
+      ]
+    },
+    {
+      "number": 548,
+      "title": {
+        "en": "The Kingdom in Shock! An Order to Execute Neptune Issued!",
+        "ja": "王国激震 ネプチューン処刑指令"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        627,
+        628
+      ],
+      "airDate": {
+        "ja": "2012-05-20"
+      },
+      "appearances": [
+        "otohime",
+        "daruma",
+        "hody-jones",
+        "franky",
+        "shirahoshi",
+        "jinbe",
+        "nami",
+        "vinsmoke-sanji",
+        "hatchan",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "dosun",
+        "camie",
+        "neptune",
+        "usopp",
+        "roronoa-zoro",
+        "brook",
+        "nico-robin",
+        "vander-decken-ix"
+      ]
+    },
+    {
+      "number": 549,
+      "title": {
+        "en": "A Rift Opens Up! Luffy vs. Jimbei!",
+        "ja": "生じた亀裂！ルフィVSジンベエ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        628,
+        629
+      ],
+      "airDate": {
+        "ja": "2012-05-27"
+      },
+      "appearances": [
+        "usopp",
+        "brook",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "jinbe",
+        "shirahoshi",
+        "vinsmoke-sanji",
+        "nami",
+        "camie",
+        "tony-tony-chopper",
+        "hatchan",
+        "nico-robin",
+        "ryuboshi",
+        "manboshi",
+        "fukaboshi",
+        "dosun",
+        "hody-jones",
+        "neptune",
+        "arlong",
+        "fisher-tiger",
+        "otohime",
+        "vander-decken-ix",
+        "sakazuki"
+      ]
+    },
+    {
+      "number": 550,
+      "title": {
+        "en": "Something Has Happened to Hordy! The True Power of the Evil Drug!",
+        "ja": "ホーディの異変 凶薬の真の力！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        629,
+        630
+      ],
+      "airDate": {
+        "ja": "2012-06-03"
+      },
+      "appearances": [
+        "hody-jones",
+        "neptune",
+        "daruma",
+        "otohime",
+        "zeo",
+        "dosun",
+        "ikaros-much",
+        "hyouzou",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "monkey-d-luffy",
+        "jinbe",
+        "shirahoshi",
+        "nami",
+        "camie",
+        "tony-tony-chopper",
+        "hatchan"
+      ]
+    },
+    {
+      "number": 551,
+      "title": {
+        "en": "The Battle is on! At Conchcorde Plaza!",
+        "ja": "決戦始まる ギョンコルド広場！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        630,
+        631
+      ],
+      "airDate": {
+        "ja": "2012-06-10"
+      },
+      "appearances": [
+        "hody-jones",
+        "ikaros-much",
+        "neptune",
+        "otohime",
+        "shyarly",
+        "wadatsumi",
+        "vander-decken-ix",
+        "shirahoshi",
+        "daruma",
+        "hyouzou",
+        "dosun",
+        "zeo",
+        "jinbe",
+        "camie",
+        "hatchan",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "fisher-tiger"
+      ]
+    },
+    {
+      "number": 552,
+      "title": {
+        "en": "Surprising Confession! The Truth Behind the Assassination of Otohime!",
+        "ja": "衝撃の告白 オトヒメ暗殺の真実"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        631,
+        632
+      ],
+      "airDate": {
+        "ja": "2012-06-17"
+      },
+      "appearances": [
+        "jinbe",
+        "shirahoshi",
+        "ikaros-much",
+        "dosun",
+        "daruma",
+        "zeo",
+        "manboshi",
+        "ryuboshi",
+        "fukaboshi",
+        "neptune",
+        "hody-jones",
+        "hyouzou",
+        "shyarly",
+        "monkey-d-luffy",
+        "arlong",
+        "otohime",
+        "wadatsumi",
+        "vander-decken-ix"
+      ]
+    },
+    {
+      "number": 553,
+      "title": {
+        "en": "Shirahoshi's Tears! Luffy Finally Shows Up!",
+        "ja": "しらほしの涙！ルフィ遂に登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        632,
+        633
+      ],
+      "airDate": {
+        "ja": "2012-06-24"
+      },
+      "appearances": [
+        "neptune",
+        "ryuboshi",
+        "fukaboshi",
+        "manboshi",
+        "shirahoshi",
+        "hody-jones",
+        "ikaros-much",
+        "dosun",
+        "hyouzou",
+        "daruma",
+        "zeo",
+        "jinbe",
+        "otohime",
+        "shyarly",
+        "monkey-d-luffy",
+        "nami",
+        "nico-robin",
+        "franky",
+        "tony-tony-chopper",
+        "usopp",
+        "vinsmoke-sanji",
+        "brook",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 554,
+      "title": {
+        "en": "A Big Clash! The Straw Hats vs. A Hundred Thousand Enemies!",
+        "ja": "大激突！麦わら一味VS10万の敵"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        633,
+        634
+      ],
+      "airDate": {
+        "ja": "2012-07-01"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "nami",
+        "tony-tony-chopper",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "brook",
+        "shirahoshi",
+        "jinbe",
+        "ikaros-much",
+        "dosun",
+        "hyouzou",
+        "daruma",
+        "zeo",
+        "shyarly",
+        "camie",
+        "hatchan",
+        "otohime",
+        "hody-jones",
+        "fisher-tiger",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi"
+      ]
+    },
+    {
+      "number": 555,
+      "title": {
+        "en": "Deadly Attacks One After Another! Zoro and Sanji Join the Battle!",
+        "ja": "大技炸裂！ゾロ・サンジ出撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        634,
+        635
+      ],
+      "airDate": {
+        "ja": "2012-07-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "shirahoshi",
+        "jinbe",
+        "ikaros-much",
+        "dosun",
+        "hody-jones",
+        "hyouzou",
+        "daruma",
+        "zeo",
+        "franky",
+        "usopp",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nami",
+        "vinsmoke-sanji",
+        "brook",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 556,
+      "title": {
+        "en": "Unveiled! The Secret Weapons of the Sunny!",
+        "ja": "初披露！サニー号の秘密兵器！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        635,
+        636
+      ],
+      "airDate": {
+        "ja": "2012-07-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "shirahoshi",
+        "jinbe",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "nico-robin",
+        "nami",
+        "franky",
+        "usopp",
+        "tony-tony-chopper",
+        "dosun",
+        "hody-jones",
+        "hyouzou",
+        "daruma",
+        "ikaros-much",
+        "zeo",
+        "brook",
+        "shyarly",
+        "wadatsumi"
+      ]
+    },
+    {
+      "number": 557,
+      "title": {
+        "en": "Iron Pirate! Here Comes General Franky!",
+        "ja": "鉄の海賊！フランキー将軍登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        636,
+        637
+      ],
+      "airDate": {
+        "ja": "2012-07-29"
+      },
+      "appearances": [
+        "daruma",
+        "zeo",
+        "hyouzou",
+        "roronoa-zoro",
+        "brook",
+        "tony-tony-chopper",
+        "usopp",
+        "nami",
+        "franky",
+        "monkey-d-luffy",
+        "nico-robin",
+        "dosun",
+        "ikaros-much",
+        "shirahoshi",
+        "hody-jones",
+        "jinbe",
+        "neptune"
+      ]
+    },
+    {
+      "number": 558,
+      "title": {
+        "en": "The Noah Closing in! The Fish-Man Island Facing Destruction!",
+        "ja": "ノア接近！魚人島壊滅の危機！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        637,
+        638
+      ],
+      "airDate": {
+        "ja": "2012-08-05"
+      },
+      "appearances": [
+        "manboshi",
+        "ryuboshi",
+        "neptune",
+        "fukaboshi",
+        "monkey-d-luffy",
+        "hody-jones",
+        "shirahoshi",
+        "jinbe",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "nami",
+        "franky",
+        "brook",
+        "tony-tony-chopper",
+        "nico-robin",
+        "usopp",
+        "wadatsumi",
+        "zeo",
+        "vander-decken-ix"
+      ]
+    },
+    {
+      "number": 559,
+      "title": {
+        "en": "Hurry up, Luffy! Shirahoshi's Life in Jeopardy!",
+        "ja": "急げルフィ！しらほし絶対絶命"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        638,
+        639
+      ],
+      "airDate": {
+        "ja": "2012-08-12"
+      },
+      "appearances": [
+        "shirahoshi",
+        "vander-decken-ix",
+        "hody-jones",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "jinbe",
+        "fukaboshi",
+        "manboshi",
+        "ryuboshi",
+        "otohime"
+      ]
+    },
+    {
+      "number": 560,
+      "title": {
+        "en": "The Fierce Fight Begins! Luffy vs. Hordy!",
+        "ja": "激闘開始！ルフィVSホーディ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        639,
+        640
+      ],
+      "airDate": {
+        "ja": "2012-08-19"
+      },
+      "appearances": [
+        "vander-decken-ix",
+        "hody-jones",
+        "ryuboshi",
+        "manboshi",
+        "shirahoshi",
+        "fukaboshi",
+        "monkey-d-luffy",
+        "wadatsumi",
+        "usopp",
+        "tony-tony-chopper",
+        "zeo",
+        "jinbe",
+        "nami",
+        "vinsmoke-sanji",
+        "nico-robin",
+        "hyouzou",
+        "roronoa-zoro",
+        "brook",
+        "franky",
+        "neptune",
+        "shyarly",
+        "camie",
+        "hatchan"
+      ]
+    },
+    {
+      "number": 561,
+      "title": {
+        "en": "A Massive Confused Fight! The Straw Hats vs. The New Fish-Man Pirates!",
+        "ja": "大乱戦！一味VS新魚人海賊団！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        640,
+        641
+      ],
+      "airDate": {
+        "ja": "2012-08-26"
+      },
+      "appearances": [
+        "shirahoshi",
+        "fukaboshi",
+        "monkey-d-luffy",
+        "hody-jones",
+        "manboshi",
+        "ryuboshi",
+        "vander-decken-ix",
+        "vinsmoke-sanji",
+        "wadatsumi",
+        "nami",
+        "ikaros-much",
+        "zeo",
+        "brook",
+        "franky",
+        "tony-tony-chopper",
+        "daruma",
+        "usopp",
+        "dosun",
+        "hyouzou",
+        "roronoa-zoro",
+        "shyarly",
+        "jinbe",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 562,
+      "title": {
+        "en": "Luffy Loses the Fight?! Hordy's Long-Awaited Revenge!",
+        "ja": "ルフィ敗北！？ホーディ復讐の時"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        641,
+        642
+      ],
+      "airDate": {
+        "ja": "2012-09-02"
+      },
+      "appearances": [
+        "hody-jones",
+        "monkey-d-luffy",
+        "fukaboshi",
+        "shirahoshi",
+        "vander-decken-ix",
+        "manboshi",
+        "ryuboshi",
+        "neptune"
+      ]
+    },
+    {
+      "number": 563,
+      "title": {
+        "en": "A Shocking Fact! The True Identity of Hordy!",
+        "ja": "衝撃の事実！ホーディの正体！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        642,
+        643
+      ],
+      "airDate": {
+        "ja": "2012-09-09"
+      },
+      "appearances": [
+        "fukaboshi",
+        "wadatsumi",
+        "vinsmoke-sanji",
+        "jinbe",
+        "neptune",
+        "brook",
+        "zeo",
+        "nami",
+        "nico-robin",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "franky",
+        "hody-jones",
+        "shirahoshi",
+        "monkey-d-luffy",
+        "daruma",
+        "dosun",
+        "ikaros-much",
+        "hyouzou"
+      ]
+    },
+    {
+      "number": 564,
+      "title": {
+        "en": "Back to Zero! Earnest Wishes for Luffy!",
+        "ja": "ゼロに！ルフィへの熱き願い！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        643,
+        644
+      ],
+      "airDate": {
+        "ja": "2012-09-16"
+      },
+      "appearances": [
+        "shirahoshi",
+        "hody-jones",
+        "monkey-d-luffy",
+        "dosun",
+        "ikaros-much",
+        "zeo",
+        "daruma",
+        "arlong",
+        "hatchan",
+        "shyarly",
+        "otohime",
+        "neptune",
+        "jinbe",
+        "fukaboshi",
+        "manboshi",
+        "ryuboshi",
+        "camie",
+        "wadatsumi",
+        "nami",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "franky",
+        "roronoa-zoro",
+        "usopp",
+        "nico-robin",
+        "brook",
+        "hyouzou"
+      ]
+    },
+    {
+      "number": 565,
+      "title": {
+        "en": "Luffy's All-Out Attack! Red Hawk Blasts!",
+        "ja": "ルフィ渾身の一撃！火拳銃炸裂"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        644,
+        645
+      ],
+      "airDate": {
+        "ja": "2012-09-23"
+      },
+      "appearances": [
+        "brook",
+        "zeo",
+        "usopp",
+        "roronoa-zoro",
+        "daruma",
+        "monkey-d-luffy",
+        "shirahoshi",
+        "hody-jones",
+        "fukaboshi",
+        "neptune",
+        "dosun",
+        "shyarly",
+        "tony-tony-chopper",
+        "franky",
+        "ikaros-much",
+        "nico-robin",
+        "nami",
+        "wadatsumi",
+        "vinsmoke-sanji",
+        "jinbe",
+        "hyouzou"
+      ]
+    },
+    {
+      "number": 566,
+      "title": {
+        "en": "Coming to an End! The Final Decisive Battle Against Hordy!",
+        "ja": "ついに決着！ホーディ最終決戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        645,
+        646
+      ],
+      "airDate": {
+        "ja": "2012-09-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "hody-jones",
+        "shirahoshi",
+        "fukaboshi",
+        "wadatsumi",
+        "shyarly",
+        "zeo",
+        "brook",
+        "tony-tony-chopper",
+        "dosun",
+        "usopp",
+        "daruma",
+        "ikaros-much",
+        "franky",
+        "hyouzou",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "jinbe",
+        "nico-robin",
+        "nami"
+      ]
+    },
+    {
+      "number": 567,
+      "title": {
+        "en": "Stop, Noah! Desperate Elephant Gatling!",
+        "ja": "止まれノア！決死の象銃乱打！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        646,
+        647
+      ],
+      "airDate": {
+        "ja": "2012-10-07"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "jinbe",
+        "nico-robin",
+        "nami",
+        "usopp",
+        "brook",
+        "daruma",
+        "dosun",
+        "hyouzou",
+        "ikaros-much",
+        "zeo",
+        "franky",
+        "vinsmoke-sanji",
+        "wadatsumi",
+        "hody-jones",
+        "monkey-d-luffy",
+        "shyarly",
+        "neptune",
+        "shirahoshi",
+        "fukaboshi"
+      ]
+    },
+    {
+      "number": 568,
+      "title": {
+        "en": "To the Future! The Path to the Sun!",
+        "ja": "未来へ！タイヨウへと続く道！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        647,
+        648
+      ],
+      "airDate": {
+        "ja": "2012-10-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "shirahoshi",
+        "fukaboshi",
+        "manboshi",
+        "ryuboshi",
+        "neptune",
+        "silvers-rayleigh",
+        "hatchan",
+        "camie",
+        "franky",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "brook",
+        "nami",
+        "nico-robin",
+        "usopp",
+        "tony-tony-chopper",
+        "hody-jones",
+        "vander-decken-ix",
+        "zeo",
+        "dosun",
+        "ikaros-much",
+        "daruma",
+        "hyouzou",
+        "wadatsumi",
+        "fisher-tiger",
+        "arlong",
+        "koala",
+        "otohime",
+        "shyarly"
+      ]
+    },
+    {
+      "number": 569,
+      "title": {
+        "en": "The Secret Revealed! The Truth about the Ancient Weapon!",
+        "ja": "明かされた秘密 古代兵器の真実"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        648,
+        649
+      ],
+      "airDate": {
+        "ja": "2012-10-21"
+      },
+      "appearances": [
+        "hody-jones",
+        "vander-decken-ix",
+        "dosun",
+        "zeo",
+        "neptune",
+        "wadatsumi",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "shirahoshi",
+        "brook",
+        "roronoa-zoro",
+        "usopp",
+        "jinbe",
+        "nico-robin",
+        "tony-tony-chopper",
+        "ikaros-much",
+        "hyouzou",
+        "daruma",
+        "camie",
+        "hatchan",
+        "otohime"
+      ]
+    },
+    {
+      "number": 570,
+      "title": {
+        "en": "The Straw Hats Stunned! The New Fleet Admiral of the Navy!",
+        "ja": "一味驚愕！新たなる海軍元帥！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        649,
+        650
+      ],
+      "airDate": {
+        "ja": "2012-10-28"
+      },
+      "appearances": [
+        "neptune",
+        "nico-robin",
+        "shirahoshi",
+        "franky",
+        "caribou",
+        "monkey-d-luffy",
+        "jinbe",
+        "nami",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "sakazuki",
+        "charlotte-linlin",
+        "camie",
+        "hody-jones",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "hyouzou",
+        "zeo",
+        "dosun",
+        "daruma",
+        "ikaros-much"
+      ]
+    },
+    {
+      "number": 571,
+      "title": {
+        "en": "She Loves Sweets! Big Mom of the Four Emperors!",
+        "ja": "お菓子好き！四皇ビッグ・マム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        650,
+        651
+      ],
+      "airDate": {
+        "ja": "2012-11-04"
+      },
+      "appearances": [
+        "nami",
+        "shirahoshi",
+        "usopp",
+        "brook",
+        "franky",
+        "tony-tony-chopper",
+        "nico-robin",
+        "camie",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "caribou",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 572,
+      "title": {
+        "en": "Many Problems Lie Ahead! A Trap Awaiting in the New World!",
+        "ja": "前途多難 新世界に待ち受ける罠"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        651,
+        652
+      ],
+      "airDate": {
+        "ja": "2012-11-11"
+      },
+      "appearances": [
+        "shirahoshi",
+        "usopp",
+        "tony-tony-chopper",
+        "brook",
+        "nami",
+        "nico-robin",
+        "caribou",
+        "neptune",
+        "jinbe",
+        "charlotte-linlin",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "fukaboshi",
+        "ryuboshi",
+        "manboshi",
+        "franky"
+      ]
+    },
+    {
+      "number": 573,
+      "title": {
+        "en": "Finally Time to Go! Goodbye, Fish-Man Island!",
+        "ja": "ついに出航！さよなら魚人島"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        652,
+        653
+      ],
+      "airDate": {
+        "ja": "2012-11-18"
+      },
+      "appearances": [
+        "shyarly",
+        "camie",
+        "neptune",
+        "ryuboshi",
+        "fukaboshi",
+        "manboshi",
+        "franky",
+        "shirahoshi",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "brook",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "nico-robin",
+        "nami",
+        "hatchan",
+        "jinbe",
+        "silvers-rayleigh"
+      ]
+    },
+    {
+      "number": 574,
+      "title": {
+        "en": "To the New World! Heading for the Ultimate Sea!",
+        "ja": "新世界へ！最強の海をめざして"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        654,
+        655
+      ],
+      "airDate": {
+        "ja": "2012-11-25"
+      },
+      "appearances": [
+        "franky",
+        "monkey-d-luffy",
+        "usopp",
+        "roronoa-zoro",
+        "nami",
+        "tony-tony-chopper",
+        "brook",
+        "vinsmoke-sanji",
+        "nico-robin"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "kraken-surume-tamed",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji"
+      ],
+      "episode": 525,
+      "chapter": 605,
+      "description": {
+        "es": "Luffy, Zoro y Sanji derrotan al kraken y Luffy lo doma con el nombre de Surume."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-nosebleed-mermaid-cove",
+      "kind": "other",
+      "characters": [
+        "vinsmoke-sanji",
+        "tony-tony-chopper"
+      ],
+      "episode": 528,
+      "chapter": 609,
+      "description": {
+        "es": "Sanji casi muere desangrado por la nariz al ver a las sirenas."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "shirahoshi-meets-luffy",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "shirahoshi"
+      ],
+      "episode": 532,
+      "chapter": 613,
+      "description": {
+        "es": "Luffy conoce a la princesa Shirahoshi en la Torre de Cáscara Dura."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-vs-hody-ryugu-palace",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "hody-jones"
+      ],
+      "episode": 536,
+      "chapter": 617,
+      "description": {
+        "es": "Zoro se enfrenta a Hody Jones en el Palacio Ryugu."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "jinbe-reunites-luffy",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "jinbe"
+      ],
+      "episode": 539,
+      "chapter": 619,
+      "description": {
+        "es": "Jinbe se reencuentra con Luffy en el Bosque Marino."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "fisher-tiger-frees-slaves",
+      "kind": "other",
+      "characters": [
+        "fisher-tiger"
+      ],
+      "episode": 540,
+      "chapter": 622,
+      "description": {
+        "es": "Fisher Tiger escala la Red Line, asalta Mary Geoise y libera a los esclavos."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "fisher-tiger-death",
+      "kind": "death",
+      "characters": [
+        "fisher-tiger",
+        "jinbe",
+        "koala"
+      ],
+      "episode": 543,
+      "chapter": 623,
+      "description": {
+        "es": "Fisher Tiger muere tras rechazar la transfusión de sangre humana."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "jinbe-vs-arlong-sun-pirates-split",
+      "kind": "battle",
+      "characters": [
+        "jinbe",
+        "arlong"
+      ],
+      "episode": 544,
+      "chapter": 623,
+      "description": {
+        "es": "Los Piratas del Sol se separan y Jinbe se enfrenta a Arlong."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "otohime-assassination",
+      "kind": "death",
+      "characters": [
+        "otohime",
+        "hody-jones",
+        "neptune",
+        "shirahoshi"
+      ],
+      "episode": 546,
+      "chapter": 626,
+      "description": {
+        "es": "La reina Otohime muere de un disparo; años después se revela que fue Hody."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-jinbe",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "jinbe"
+      ],
+      "episode": 549,
+      "chapter": 629,
+      "description": {
+        "es": "Luffy y Jinbe pelean en el Bosque Marino por el plan para detener a Hody."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "hody-reveals-otohime-murder",
+      "kind": "reveal",
+      "characters": [
+        "hody-jones",
+        "otohime",
+        "fukaboshi"
+      ],
+      "episode": 552,
+      "chapter": 632,
+      "description": {
+        "es": "Hody confiesa ante Gyoncorde que él mató a Otohime."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "straw-hats-vs-100000",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "jinbe"
+      ],
+      "episode": 554,
+      "chapter": 634,
+      "description": {
+        "es": "Los diez se enfrentan a los 100.000 Nuevos Piratas Gyojin en la Plaza Gyoncorde; Luffy derriba a 50.000 con el Haki del Rey."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sunny-gaon-cannon",
+      "kind": "reveal",
+      "characters": [
+        "franky"
+      ],
+      "episode": 556,
+      "chapter": 635,
+      "description": {
+        "es": "Franky estrena las armas secretas del Sunny, incluido el Gaon Cannon."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "general-franky",
+      "kind": "transformation",
+      "characters": [
+        "franky"
+      ],
+      "episode": 557,
+      "chapter": 636,
+      "description": {
+        "es": "Franky estrena el robot General Franky."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-defeats-hyouzou",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "hyouzou"
+      ],
+      "episode": 562,
+      "chapter": 642,
+      "description": {
+        "es": "Zoro derrota a Hyouzou."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "red-hawk-debut",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "hody-jones"
+      ],
+      "episode": 565,
+      "chapter": 645,
+      "description": {
+        "es": "Luffy estrena el Red Hawk, puño de fuego con Haki de Armadura."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-hody",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "hody-jones"
+      ],
+      "episode": 566,
+      "chapter": 646,
+      "description": {
+        "es": "Luffy derrota a Hody Jones."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "elephant-gatling-stops-noah",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "shirahoshi"
+      ],
+      "episode": 567,
+      "chapter": 647,
+      "description": {
+        "es": "Luffy destroza el arca Noah con el Elephant Gatling (Gear Third con Haki)."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "jinbe-blood-transfusion",
+      "kind": "other",
+      "characters": [
+        "jinbe",
+        "monkey-d-luffy"
+      ],
+      "episode": 568,
+      "chapter": 648,
+      "description": {
+        "es": "Jinbe dona sangre a Luffy, rompiendo la ley que separaba a humanos y gyojin."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "shirahoshi-is-poseidon",
+      "kind": "reveal",
+      "characters": [
+        "shirahoshi",
+        "nico-robin",
+        "neptune"
+      ],
+      "episode": 569,
+      "chapter": 649,
+      "description": {
+        "es": "Se revela que Shirahoshi es Poseidón, una de las armas ancestrales."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "akainu-new-fleet-admiral",
+      "kind": "reveal",
+      "characters": [
+        "sakazuki"
+      ],
+      "episode": 570,
+      "chapter": 650,
+      "description": {
+        "es": "Se revela que Akainu es el nuevo Almirante de Flota."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-declares-war-big-mom",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "charlotte-linlin"
+      ],
+      "episode": 572,
+      "chapter": 651,
+      "description": {
+        "es": "Luffy declara la isla Gyojin su territorio y desafía a Big Mom."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Fish-Man_Island_Arc",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Fish-Man_Island_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_517",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_574",
+      "field": "episodes.adaptsChapters: el wiki no expone capitulo por episodio salvo 574; el resto es reparto aproximado por orden argumental"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Fish-Man_Island_Saga",
+      "field": "episodes.airDate 575-578: extrapolado semanalmente desde 574, dudoso"
+    }
+  ]
+}

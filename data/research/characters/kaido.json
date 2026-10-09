@@ -1,0 +1,150 @@
+{
+  "slug": "kaido",
+  "name": {
+    "en": "Kaidou",
+    "ja": "カイドウ"
+  },
+  "origin": null,
+  "fruit": "uo-uo-no-mi-model-seiryu",
+  "firstAppearance": {
+    "chapter": 795,
+    "episode": 739
+  },
+  "affiliations": [
+    {
+      "group": "beasts-pirates",
+      "role": "governor-general",
+      "from": {
+        "episode": 757,
+        "chapter": 808
+      },
+      "to": null
+    },
+    {
+      "group": "rocks-pirates",
+      "role": "member (flashback)",
+      "from": {
+        "episode": 958,
+        "chapter": 957
+      },
+      "to": {
+        "episode": 958,
+        "chapter": 957
+      }
+    },
+    {
+      "group": "four-emperors",
+      "role": "emperor",
+      "from": {
+        "episode": 314,
+        "chapter": 432
+      },
+      "to": {
+        "episode": 1080,
+        "chapter": 1053
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 70000000,
+      "episode": 1076,
+      "chapter": 1049,
+      "eventSlug": null
+    },
+    {
+      "amount": 4611100000,
+      "episode": 958,
+      "chapter": 957,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "kaido-human",
+      "name": {
+        "es": "Kaido de las Bestias",
+        "en": "Kaido of the Beasts",
+        "ja": "百獣のカイドウ"
+      },
+      "firstAppearance": {
+        "episode": 739,
+        "chapter": 795
+      },
+      "description": {
+        "es": "Forma humana: la criatura más fuerte del mundo."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Raimei Hakke",
+        "Haki del Rey"
+      ]
+    },
+    {
+      "slug": "kaido-dragon",
+      "name": {
+        "es": "Kaido forma dragón",
+        "en": "Kaido Dragon Form",
+        "ja": "カイドウ（龍）"
+      },
+      "firstAppearance": {
+        "episode": 912,
+        "chapter": 921
+      },
+      "description": {
+        "es": "Dragón azur oriental gigante (Zoan mítica)."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Bolo Breath"
+      ]
+    },
+    {
+      "slug": "kaido-hybrid",
+      "name": {
+        "es": "Kaido forma híbrida",
+        "en": "Kaido Hybrid Form",
+        "ja": "カイドウ（人獣型）"
+      },
+      "firstAppearance": {
+        "episode": 1049,
+        "chapter": 1025
+      },
+      "description": {
+        "es": "Forma humano-dragón en el tejado de Onigashima."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "kaido-young",
+      "name": {
+        "es": "Kaido joven",
+        "en": "Young Kaido",
+        "ja": "若き日のカイドウ"
+      },
+      "firstAppearance": {
+        "episode": 1076,
+        "chapter": 1049
+      },
+      "description": {
+        "es": "Flashback de su pasado como soldado."
+      },
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kaidou",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kaidou",
+      "field": "forms[kaido-dragon].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Kaidou",
+      "field": "forms[kaido-hybrid].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

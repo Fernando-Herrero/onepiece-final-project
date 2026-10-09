@@ -1,0 +1,80 @@
+{
+  "slug": "uta-past",
+  "sagaSlug": "wano-country",
+  "order": 6,
+  "title": {
+    "es": "El pasado de Uta",
+    "en": "Uta's Past Arc",
+    "ja": "ウタの過去編"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 1029,
+    "last": 1030
+  },
+  "episodes": [
+    {
+      "number": 1029,
+      "title": {
+        "en": "A Faint Memory! Luffy and Red-Haired's Daughter Uta!",
+        "ja": "<small>映画連動エピソード</small><br />淡い記憶 ルフィと赤髪の娘ウタ"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2022-08-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "usopp",
+        "jinbe",
+        "tony-tony-chopper",
+        "nico-robin",
+        "brook",
+        "roronoa-zoro",
+        "franky",
+        "shanks"
+      ]
+    },
+    {
+      "number": 1030,
+      "title": {
+        "en": "A Pledge for the Next Genesis! Luffy and Uta!",
+        "ja": "<small>映画連動エピソード</small><br />新時代の誓い！ルフィとウタ"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2022-08-21"
+      },
+      "appearances": [
+        "shanks",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "usopp",
+        "vinsmoke-sanji",
+        "nami",
+        "nico-robin",
+        "brook",
+        "franky",
+        "tony-tony-chopper",
+        "jinbe"
+      ]
+    }
+  ],
+  "events": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_<n> (infobox Chapters/Airdate/Characters)",
+      "field": "episodes"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

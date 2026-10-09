@@ -1,0 +1,2703 @@
+{
+  "slug": "egghead",
+  "sagaSlug": "final-saga",
+  "order": 1,
+  "title": {
+    "es": "Arco de Egghead",
+    "en": "Egghead Arc",
+    "ja": "未来島エッグヘッド編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 1058,
+    "last": 1125
+  },
+  "episodeRange": {
+    "first": 1086,
+    "last": 1155
+  },
+  "episodes": [
+    {
+      "number": 1086,
+      "title": {
+        "en": "A New Emperor! Buggy the Genius Jester!",
+        "ja": "新皇帝！千両道化のバギー！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1058
+      ],
+      "airDate": {
+        "ja": "2023-12-03"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "usopp",
+        "jinbe",
+        "brook",
+        "franky",
+        "roronoa-zoro",
+        "nico-robin",
+        "sanji",
+        "crocodile",
+        "dracule-mihawk",
+        "buggy"
+      ]
+    },
+    {
+      "number": 1087,
+      "title": {
+        "en": "The War on the Island of Women! A Case Involving Koby the Hero <br/> The War on the Island of Women! A Case Involving Coby the Hero (Home Video)",
+        "ja": "女ヶ島の乱！英雄コビーの一件"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1059
+      ],
+      "airDate": {
+        "ja": "2023-12-10"
+      },
+      "appearances": [
+        "shanks",
+        "boa-hancock"
+      ]
+    },
+    {
+      "number": 1088,
+      "title": {
+        "en": "Luffy's Dream",
+        "ja": "〝ルフィの夢〟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1058,
+        1059,
+        1060
+      ],
+      "airDate": {
+        "ja": "2023-12-17"
+      },
+      "appearances": [
+        "boa-hancock",
+        "silvers-rayleigh",
+        "emporio-ivankov",
+        "monkey-d-dragon",
+        "bartholomew-kuma",
+        "sabo",
+        "monkey-d-luffy",
+        "nico-robin",
+        "usopp",
+        "brook",
+        "sanji",
+        "nami",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "franky",
+        "jinbe",
+        "eustass-kid"
+      ]
+    },
+    {
+      "number": 1089,
+      "title": {
+        "en": "Entering a New Chapter! Luffy and Sabo's Paths!",
+        "ja": "新章突入！ルフィとサボの針路！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1060,
+        1061
+      ],
+      "airDate": {
+        "ja": "2024-01-07"
+      },
+      "appearances": [
+        "jinbe",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "brook",
+        "usopp",
+        "nico-robin",
+        "sanji",
+        "roronoa-zoro",
+        "nami",
+        "franky",
+        "marcus-mars",
+        "jaygarcia-saturn",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "shepherd-ju-peter",
+        "imu",
+        "emporio-ivankov",
+        "monkey-d-dragon",
+        "sabo",
+        "jewelry-bonney"
+      ]
+    },
+    {
+      "number": 1090,
+      "title": {
+        "en": "A New Island! Future Island Egghead",
+        "ja": "新しい島！未来島エッグヘッド"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1061
+      ],
+      "airDate": {
+        "ja": "2024-01-14"
+      },
+      "appearances": [
+        "nami",
+        "usopp",
+        "brook",
+        "nico-robin",
+        "franky",
+        "sanji",
+        "jinbe",
+        "roronoa-zoro",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "jewelry-bonney",
+        "koby",
+        "vegapunk-lilith"
+      ]
+    },
+    {
+      "number": 1091,
+      "title": {
+        "en": "Brimming with the Future! An Adventure on the Island of Science!",
+        "ja": "未来満載！ 科学の国の冒険！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1062
+      ],
+      "airDate": {
+        "ja": "2024-01-21"
+      },
+      "appearances": [
+        "vegapunk-lilith",
+        "franky",
+        "usopp",
+        "sanji",
+        "brook",
+        "nico-robin",
+        "nami",
+        "roronoa-zoro",
+        "vegapunk-shaka",
+        "monkey-d-luffy",
+        "jinbe",
+        "tony-tony-chopper",
+        "jewelry-bonney",
+        "vegapunk-atlas"
+      ]
+    },
+    {
+      "number": 1092,
+      "title": {
+        "en": "Bonney's Lamentation! Darkness Lurking on the Future Island",
+        "ja": "ボニーの慟哭！未来島に潜む闇"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1062,
+        1063
+      ],
+      "airDate": {
+        "ja": "2024-01-28"
+      },
+      "appearances": [
+        "kaku",
+        "stussy",
+        "rob-lucci",
+        "vegapunk-atlas",
+        "jinbe",
+        "monkey-d-luffy",
+        "jewelry-bonney",
+        "tony-tony-chopper",
+        "trafalgar-d-water-law",
+        "marshall-d-teach"
+      ]
+    },
+    {
+      "number": 1093,
+      "title": {
+        "en": "The Winner Takes All! Law vs. Blackbeard!",
+        "ja": "勝者総取り！ローVS黒ひげ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1062,
+        1063,
+        1064
+      ],
+      "airDate": {
+        "ja": "2024-02-11"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "marshall-d-teach",
+        "akainu"
+      ]
+    },
+    {
+      "number": 1094,
+      "title": {
+        "en": "The Mystery Deepens! Egghead Labophase",
+        "ja": "深まる謎！エッグヘッド研究層"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1064,
+        1065
+      ],
+      "airDate": {
+        "ja": "2024-02-18"
+      },
+      "appearances": [
+        "jinbe",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "jewelry-bonney",
+        "vegapunk-lilith",
+        "franky",
+        "usopp",
+        "nami",
+        "sanji",
+        "nico-robin",
+        "roronoa-zoro",
+        "brook",
+        "vegapunk-edison",
+        "vegapunk-shaka",
+        "monkey-d-dragon"
+      ]
+    },
+    {
+      "number": 1095,
+      "title": {
+        "en": "The Brain of a Genius - Six Vegapunks!",
+        "ja": "天才の頭脳 6人のベガパンク！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1065
+      ],
+      "airDate": {
+        "ja": "2024-02-25"
+      },
+      "appearances": [
+        "nami",
+        "sanji",
+        "nico-robin",
+        "usopp",
+        "franky",
+        "vegapunk-edison",
+        "vegapunk-pythagoras",
+        "vegapunk-lilith",
+        "vegapunk-atlas",
+        "vegapunk-york",
+        "vegapunk-shaka",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "jinbe",
+        "jewelry-bonney"
+      ]
+    },
+    {
+      "number": 1096,
+      "title": {
+        "en": "A Forbidden Piece of History! A Theory Concerning a Kingdom",
+        "ja": "禁じられた歴史！ある王国の仮説"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1066
+      ],
+      "airDate": {
+        "ja": "2024-03-03"
+      },
+      "appearances": [
+        "vegapunk-shaka",
+        "nami",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "sanji",
+        "monkey-d-luffy",
+        "vegapunk",
+        "tony-tony-chopper",
+        "jewelry-bonney",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 1097,
+      "title": {
+        "en": "The Will of Ohara! The Inherited Research",
+        "ja": "オハラの意志！受け継がれる研究"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1066,
+        1067
+      ],
+      "airDate": {
+        "ja": "2024-03-17"
+      },
+      "appearances": [
+        "vegapunk",
+        "vegapunk-shaka",
+        "sanji",
+        "nami",
+        "usopp",
+        "franky",
+        "nico-robin",
+        "monkey-d-luffy",
+        "jinbe",
+        "tony-tony-chopper",
+        "jewelry-bonney",
+        "rob-lucci"
+      ]
+    },
+    {
+      "number": 1098,
+      "title": {
+        "en": "The Eccentric Dream of a Genius!",
+        "ja": "奇想天外！天才が想い描く夢！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1067,
+        1068
+      ],
+      "airDate": {
+        "ja": "2024-03-24"
+      },
+      "appearances": [
+        "jinbe",
+        "vegapunk",
+        "tony-tony-chopper",
+        "jewelry-bonney",
+        "monkey-d-luffy",
+        "nico-robin",
+        "sanji",
+        "usopp",
+        "nami",
+        "franky",
+        "vegapunk-shaka",
+        "bartholomew-kuma",
+        "rob-lucci",
+        "stussy",
+        "kaku",
+        "vegapunk-pythagoras",
+        "vegapunk-lilith",
+        "emporio-ivankov",
+        "monkey-d-dragon"
+      ]
+    },
+    {
+      "number": 1099,
+      "title": {
+        "en": "Preparations for Interception! Rob Lucci Strikes!",
+        "ja": "迎撃準備！ロブ・ルッチ襲来！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1068,
+        1069
+      ],
+      "airDate": {
+        "ja": "2024-03-31"
+      },
+      "appearances": [
+        "vegapunk-shaka",
+        "vegapunk-pythagoras",
+        "nami",
+        "franky",
+        "usopp",
+        "sanji",
+        "nico-robin",
+        "stussy",
+        "rob-lucci",
+        "kaku",
+        "jinbe",
+        "monkey-d-luffy",
+        "vegapunk",
+        "tony-tony-chopper",
+        "vegapunk-atlas",
+        "jewelry-bonney"
+      ]
+    },
+    {
+      "number": 1100,
+      "title": {
+        "en": "Powers on a Different Level! Luffy vs. Lucci!",
+        "ja": "異次元の力！ルフィVSルッチ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1069
+      ],
+      "airDate": {
+        "ja": "2024-04-07"
+      },
+      "appearances": [
+        "akainu",
+        "kizaru",
+        "vegapunk-atlas",
+        "jinbe",
+        "tony-tony-chopper",
+        "jewelry-bonney",
+        "monkey-d-luffy",
+        "rob-lucci",
+        "stussy",
+        "kaku",
+        "franky",
+        "nami",
+        "usopp",
+        "sanji",
+        "nico-robin",
+        "vegapunk-shaka",
+        "vegapunk",
+        "vegapunk-pythagoras",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 1101,
+      "title": {
+        "en": "The Strongest Form of Humanity! The Seraphim's Powers!",
+        "ja": "最強の人類！セラフィムの能力！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1070
+      ],
+      "airDate": {
+        "ja": "2024-04-21"
+      },
+      "appearances": [
+        "sentomaru",
+        "monkey-d-luffy",
+        "rob-lucci",
+        "kaku",
+        "stussy",
+        "tony-tony-chopper",
+        "jewelry-bonney",
+        "jinbe",
+        "vegapunk-atlas",
+        "vegapunk",
+        "franky",
+        "vegapunk-pythagoras",
+        "nami",
+        "usopp",
+        "sanji",
+        "nico-robin",
+        "vegapunk-edison"
+      ]
+    },
+    {
+      "number": 1102,
+      "title": {
+        "en": "Sinister Schemes! The Operation to Escape Egghead",
+        "ja": "蠢く陰謀！エッグヘッド脱出作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1070,
+        1071
+      ],
+      "airDate": {
+        "ja": "2024-04-28"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "sentomaru",
+        "kaku",
+        "rob-lucci",
+        "stussy",
+        "vegapunk",
+        "nami",
+        "usopp",
+        "sanji",
+        "nico-robin",
+        "franky",
+        "vegapunk-atlas",
+        "jinbe",
+        "jewelry-bonney",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "vegapunk-shaka",
+        "vegapunk-lilith",
+        "vegapunk-pythagoras",
+        "vegapunk-edison",
+        "vegapunk-york",
+        "roronoa-zoro",
+        "kizaru"
+      ]
+    },
+    {
+      "number": 1103,
+      "title": {
+        "en": "Turn Back My Father! Bonney's Futile Wish!",
+        "ja": "父を戻せ！儚きボニーの願い！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1071,
+        1072
+      ],
+      "airDate": {
+        "ja": "2024-05-05"
+      },
+      "appearances": [
+        "stussy",
+        "rob-lucci",
+        "kaku",
+        "roronoa-zoro",
+        "brook",
+        "vegapunk-pythagoras",
+        "vegapunk-shaka",
+        "vegapunk-lilith",
+        "jinbe",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "sanji",
+        "nami",
+        "nico-robin",
+        "usopp",
+        "franky",
+        "vegapunk",
+        "jewelry-bonney",
+        "bartholomew-kuma",
+        "killer",
+        "eustass-kid",
+        "monkey-d-garp"
+      ]
+    },
+    {
+      "number": 1104,
+      "title": {
+        "en": "A Desperate Situation! The Seraphim's All-out Attack!",
+        "ja": "絶体絶命！セラフィム総攻撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1072,
+        1073
+      ],
+      "airDate": {
+        "ja": "2024-05-12"
+      },
+      "appearances": [
+        "jewelry-bonney",
+        "vegapunk",
+        "bartholomew-kuma",
+        "roronoa-zoro",
+        "kaku",
+        "rob-lucci",
+        "stussy",
+        "brook",
+        "vegapunk-shaka",
+        "nami",
+        "vegapunk-lilith",
+        "vegapunk-edison",
+        "franky",
+        "nico-robin",
+        "jinbe",
+        "usopp",
+        "sanji",
+        "monkey-d-luffy",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 1105,
+      "title": {
+        "en": "A Beautiful Act of Treason! The Spy, Stussy!",
+        "ja": "麗しき反逆！内通者ステューシー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1073
+      ],
+      "airDate": {
+        "ja": "2024-05-19"
+      },
+      "appearances": [
+        "stussy",
+        "rob-lucci",
+        "kaku",
+        "roronoa-zoro",
+        "brook",
+        "vegapunk-shaka",
+        "nico-robin",
+        "nami",
+        "jinbe",
+        "vegapunk-edison",
+        "vegapunk-lilith",
+        "usopp",
+        "vegapunk-pythagoras",
+        "vegapunk-york",
+        "franky",
+        "sanji",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "kizaru",
+        "jaygarcia-saturn"
+      ]
+    },
+    {
+      "number": 1106,
+      "title": {
+        "en": "Trouble Occurs! Seek Dr. Vegapunk!",
+        "ja": "異常発生！探せ！Dr.ベガパンク"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1074
+      ],
+      "airDate": {
+        "ja": "2024-05-26"
+      },
+      "appearances": [
+        "sentomaru",
+        "monkey-d-luffy",
+        "jewelry-bonney",
+        "usopp",
+        "tony-tony-chopper",
+        "vegapunk-shaka",
+        "sanji",
+        "nami",
+        "nico-robin",
+        "franky",
+        "roronoa-zoro",
+        "brook",
+        "stussy",
+        "vegapunk-lilith",
+        "vegapunk-edison",
+        "vegapunk-atlas",
+        "vegapunk-york",
+        "rob-lucci",
+        "kaku",
+        "jinbe",
+        "vegapunk-pythagoras",
+        "nefertari-vivi"
+      ]
+    },
+    {
+      "number": 1107,
+      "title": {
+        "en": "A Shudder! The Evil Hand Creeping Up on the Laboratory",
+        "ja": "戦慄！研究所へ忍び寄る魔の手"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1074,
+        1075
+      ],
+      "airDate": {
+        "ja": "2024-06-02"
+      },
+      "appearances": []
+    },
+    {
+      "number": 1108,
+      "title": {
+        "en": "Incomprehensible! The Seraphim's Rebellion!",
+        "ja": "理解不能！セラフィムの反逆！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1075,
+        1076,
+        1077
+      ],
+      "airDate": {
+        "ja": "2024-06-09"
+      },
+      "appearances": [
+        "franky",
+        "usopp",
+        "roronoa-zoro",
+        "rob-lucci",
+        "kaku",
+        "monkey-d-luffy",
+        "vegapunk",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 1109,
+      "title": {
+        "en": "A Tough Decision! An Unusual United Front!",
+        "ja": "苦渋の決断！異色の共闘戦線！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1076
+      ],
+      "airDate": {
+        "ja": "2024-06-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "rob-lucci",
+        "kaku",
+        "roronoa-zoro",
+        "vegapunk-shaka",
+        "sanji",
+        "stussy",
+        "jinbe",
+        "nami",
+        "brook",
+        "vegapunk-edison",
+        "usopp",
+        "vegapunk-lilith",
+        "vegapunk-pythagoras",
+        "franky",
+        "shanks",
+        "eustass-kid",
+        "dorry",
+        "brogy",
+        "killer"
+      ]
+    },
+    {
+      "number": 1110,
+      "title": {
+        "en": "Survive! Deadly Combat with the Strongest Form of Humanity!",
+        "ja": "生き残れ！最強の人類との死闘"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1077
+      ],
+      "airDate": {
+        "ja": "2024-06-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "rob-lucci",
+        "roronoa-zoro",
+        "kaku",
+        "vegapunk-shaka",
+        "vegapunk-edison",
+        "nami",
+        "brook",
+        "sanji",
+        "vegapunk-lilith",
+        "franky",
+        "usopp",
+        "vegapunk-pythagoras",
+        "vegapunk"
+      ]
+    },
+    {
+      "number": 1111,
+      "title": {
+        "en": "The Second Ohara! The Mastermind's Ambition!",
+        "ja": "オハラの再来！黒幕の野望！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1078
+      ],
+      "airDate": {
+        "ja": "2024-07-07"
+      },
+      "appearances": [
+        "kizaru",
+        "jaygarcia-saturn",
+        "stussy",
+        "jinbe",
+        "sentomaru",
+        "vegapunk-york",
+        "vegapunk",
+        "franky",
+        "vegapunk-pythagoras",
+        "nico-robin",
+        "tony-tony-chopper",
+        "vegapunk-atlas",
+        "sanji",
+        "nami",
+        "vegapunk-edison",
+        "brook",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "rob-lucci",
+        "kaku",
+        "jewelry-bonney"
+      ]
+    },
+    {
+      "number": 1112,
+      "title": {
+        "en": "Clash! Shanks vs. Eustass Kid",
+        "ja": "激突！シャンクスVSユースタス・キッド"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1079
+      ],
+      "airDate": {
+        "ja": "2024-07-14"
+      },
+      "appearances": [
+        "sentomaru",
+        "eustass-kid",
+        "killer",
+        "shanks",
+        "dorry",
+        "brogy"
+      ]
+    },
+    {
+      "number": 1113,
+      "title": {
+        "en": "Run, Koby! A Desperate Escape Strategy! <br/> Run, Coby! A Desperate Escape Strategy! (Home Video)",
+        "ja": "走れコビー！決死の脱出作戦！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1080
+      ],
+      "airDate": {
+        "ja": "2024-07-28"
+      },
+      "appearances": [
+        "koby",
+        "monkey-d-garp"
+      ]
+    },
+    {
+      "number": 1114,
+      "title": {
+        "en": "For the Beloved Pupil - The Fist of Vice Admiral Garp!",
+        "ja": "愛弟子のため ガープ中将の拳骨！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1073,
+        1080,
+        1081
+      ],
+      "airDate": {
+        "ja": "2024-08-04"
+      },
+      "appearances": [
+        "koby",
+        "monkey-d-garp",
+        "kuzan"
+      ]
+    },
+    {
+      "number": 1115,
+      "title": {
+        "en": "The Navy Surprised! The Navy Headquarters' Former Admiral, Kuzan",
+        "ja": "海軍驚愕！元海軍本部大将クザン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1081
+      ],
+      "airDate": {
+        "ja": "2024-08-11"
+      },
+      "appearances": [
+        "marshall-d-teach",
+        "kuzan",
+        "monkey-d-garp",
+        "koby",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 1116,
+      "title": {
+        "en": "Let's Go Get It! Buggy's Big Declaration",
+        "ja": "取りに行こうぜ！バギーの大宣言"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1082
+      ],
+      "airDate": {
+        "ja": "2024-08-18"
+      },
+      "appearances": [
+        "buggy",
+        "crocodile",
+        "dracule-mihawk",
+        "sabo",
+        "monkey-d-dragon",
+        "emporio-ivankov"
+      ]
+    },
+    {
+      "number": 1117,
+      "title": {
+        "en": "Sabo Returns - The Shocking Truth to Be Told!",
+        "ja": "サボの帰還 語られる衝撃の真実！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1083
+      ],
+      "airDate": {
+        "ja": "2024-09-01"
+      },
+      "appearances": [
+        "sabo",
+        "monkey-d-dragon",
+        "emporio-ivankov"
+      ]
+    },
+    {
+      "number": 1118,
+      "title": {
+        "en": "The Holy Land in Tumult! Sai and Leo's Full-Power Blow!",
+        "ja": "聖地騒然！サイとレオ渾身の一撃！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1084
+      ],
+      "airDate": {
+        "ja": "2024-09-08"
+      },
+      "appearances": [
+        "sabo",
+        "jewelry-bonney",
+        "nefertari-cobra",
+        "ethanbaron-v-nusjuro",
+        "topman-warcury",
+        "marcus-mars",
+        "shepherd-ju-peter",
+        "jaygarcia-saturn",
+        "imu",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 1119,
+      "title": {
+        "en": "The Entrusted Message! King Cobra's Resolve",
+        "ja": "託された伝言！コブラ王の覚悟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1085
+      ],
+      "airDate": {
+        "ja": "2024-09-15"
+      },
+      "appearances": [
+        "nefertari-cobra",
+        "topman-warcury",
+        "marcus-mars",
+        "jaygarcia-saturn",
+        "shepherd-ju-peter",
+        "ethanbaron-v-nusjuro",
+        "imu",
+        "sabo",
+        "nefertari-vivi"
+      ]
+    },
+    {
+      "number": 1120,
+      "title": {
+        "en": "The World Is Shaken! The Ruler's Judgment and the Five Elders' Actions!",
+        "ja": "揺らぐ世界！支配者の審判と五老星の始動！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1086
+      ],
+      "airDate": {
+        "ja": "2024-09-22"
+      },
+      "appearances": [
+        "sabo",
+        "emporio-ivankov",
+        "monkey-d-dragon",
+        "figarland-garling"
+      ]
+    },
+    {
+      "number": 1121,
+      "title": {
+        "en": "Garp and Kuzan - A Master and a Pupil's Beliefs Clash",
+        "ja": "ガープとクザン 衝突する師弟の正義"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1087
+      ],
+      "airDate": {
+        "ja": "2024-10-06"
+      },
+      "appearances": [
+        "monkey-d-garp",
+        "kuzan",
+        "koby"
+      ]
+    },
+    {
+      "number": 1122,
+      "title": {
+        "en": "The Last Lesson! Impact Inherited",
+        "ja": "最後の教え！受け継がれた拳骨"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1088
+      ],
+      "airDate": {
+        "ja": "2024-10-13"
+      },
+      "appearances": [
+        "koby",
+        "monkey-d-garp",
+        "kuzan"
+      ]
+    },
+    {
+      "number": 1123,
+      "title": {
+        "en": "The World Shakes! The Straw Hats' Hostage Situation",
+        "ja": "世界震撼！麦わらの一味立てこもり事件"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1089
+      ],
+      "airDate": {
+        "ja": "2025-04-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "imu",
+        "emporio-ivankov",
+        "kizaru",
+        "sentomaru",
+        "vegapunk",
+        "jaygarcia-saturn",
+        "vegapunk-york",
+        "roronoa-zoro",
+        "sanji",
+        "brook",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "usopp",
+        "jinbe",
+        "rob-lucci",
+        "kaku",
+        "jewelry-bonney",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "marcus-mars",
+        "shepherd-ju-peter"
+      ]
+    },
+    {
+      "number": 1124,
+      "title": {
+        "en": "Completely Surrounded! The Operation to Escape Egghead",
+        "ja": "全面包囲！エッグヘッド脱出作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1090
+      ],
+      "airDate": {
+        "ja": "2025-04-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kizaru",
+        "jaygarcia-saturn",
+        "marcus-mars",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "shepherd-ju-peter",
+        "usopp",
+        "vegapunk-york",
+        "jinbe",
+        "roronoa-zoro",
+        "nico-robin",
+        "nami",
+        "nefertari-vivi",
+        "sanji",
+        "vegapunk",
+        "brook",
+        "vegapunk-atlas",
+        "franky",
+        "tony-tony-chopper",
+        "rob-lucci",
+        "kaku",
+        "vegapunk-lilith",
+        "vegapunk-edison",
+        "jewelry-bonney",
+        "stussy",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 1125,
+      "title": {
+        "en": "A Clash of Two Men's Determination! Kizaru and Sentomaru",
+        "ja": "ぶつかる男の覚悟！黄猿と戦桃丸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1091
+      ],
+      "airDate": {
+        "ja": "2025-04-13"
+      },
+      "appearances": [
+        "kizaru",
+        "sentomaru",
+        "usopp",
+        "jinbe",
+        "roronoa-zoro",
+        "nico-robin",
+        "sanji",
+        "brook",
+        "nami",
+        "tony-tony-chopper",
+        "vegapunk-atlas",
+        "vegapunk-edison",
+        "vegapunk",
+        "vegapunk-york",
+        "rob-lucci",
+        "kaku",
+        "stussy",
+        "jaygarcia-saturn",
+        "franky",
+        "vegapunk-lilith",
+        "jewelry-bonney",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1126,
+      "title": {
+        "en": "Looming Despair! Admiral Kizaru's Depressing Mission",
+        "ja": "迫る絶望！大将黄猿の憂鬱な任務"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1092
+      ],
+      "airDate": {
+        "ja": "2025-04-20"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "akainu",
+        "kizaru",
+        "monkey-d-luffy",
+        "franky",
+        "jewelry-bonney",
+        "usopp",
+        "nami",
+        "brook",
+        "vegapunk",
+        "sanji",
+        "jinbe",
+        "tony-tony-chopper",
+        "stussy"
+      ]
+    },
+    {
+      "number": 1127,
+      "title": {
+        "en": "Luffy vs. Kizaru! A Fierce Kaleidoscopic Battle",
+        "ja": "ルフィVS黄猿！変幻自在の大激戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1093
+      ],
+      "airDate": {
+        "ja": "2025-04-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kizaru",
+        "nami",
+        "tony-tony-chopper",
+        "usopp",
+        "vegapunk",
+        "vegapunk-york",
+        "nico-robin",
+        "vegapunk-atlas",
+        "vegapunk-edison",
+        "brook",
+        "kaku",
+        "stussy",
+        "jewelry-bonney",
+        "franky",
+        "vegapunk-lilith",
+        "sanji",
+        "jinbe",
+        "sentomaru",
+        "roronoa-zoro",
+        "rob-lucci",
+        "jaygarcia-saturn"
+      ]
+    },
+    {
+      "number": 1128,
+      "title": {
+        "en": "The Nightmare Strikes - Godhead of Science & Defense, St. Saturn",
+        "ja": "悪夢襲来 科学防衛武神サターン聖"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1094
+      ],
+      "airDate": {
+        "ja": "2025-05-04"
+      },
+      "appearances": [
+        "jaygarcia-saturn",
+        "franky",
+        "vegapunk",
+        "sanji",
+        "jewelry-bonney",
+        "kaku",
+        "nami",
+        "usopp",
+        "stussy",
+        "tony-tony-chopper",
+        "nico-robin",
+        "rob-lucci",
+        "roronoa-zoro",
+        "kizaru",
+        "monkey-d-luffy",
+        "sentomaru",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 1129,
+      "title": {
+        "en": "Kuma's Past - Better Off Dead in This World",
+        "ja": "くまの過去 死んだ方がいい世界"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1095
+      ],
+      "airDate": {
+        "ja": "2025-05-18"
+      },
+      "appearances": [
+        "jaygarcia-saturn",
+        "jewelry-bonney",
+        "vegapunk",
+        "sanji",
+        "franky",
+        "kizaru",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1130,
+      "title": {
+        "en": "A History Erased! God Valley Of Despair",
+        "ja": "消された歴史！絶望のゴッドバレー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1096
+      ],
+      "airDate": {
+        "ja": "2025-05-25"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "emporio-ivankov",
+        "figarland-garling",
+        "jaygarcia-saturn",
+        "monkey-d-garp",
+        "silvers-rayleigh",
+        "scopper-gaban"
+      ]
+    },
+    {
+      "number": 1131,
+      "title": {
+        "en": "A Fleeting Moment of Happiness - Kumachi and Ginny",
+        "ja": "ひとときの幸せ くまちーとジニー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1097
+      ],
+      "airDate": {
+        "ja": "2025-06-01"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "emporio-ivankov",
+        "monkey-d-dragon"
+      ]
+    },
+    {
+      "number": 1132,
+      "title": {
+        "en": "A Pledge to Ginny - Kuma Becomes a Father",
+        "ja": "ジニーへの誓い 父となったくま"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1098
+      ],
+      "airDate": {
+        "ja": "2025-06-08"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "monkey-d-dragon",
+        "emporio-ivankov",
+        "jewelry-bonney",
+        "sabo"
+      ]
+    },
+    {
+      "number": 1133,
+      "title": {
+        "en": "To Save His Daughter - Kuma the Timid Pacifist",
+        "ja": "娘を救え 気弱な〝平和主義者〟くま"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1099
+      ],
+      "airDate": {
+        "ja": "2025-06-15"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "jewelry-bonney",
+        "jaygarcia-saturn",
+        "monkey-d-dragon",
+        "vegapunk",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 1134,
+      "title": {
+        "en": "Cruel Fate - Kuma's Decision as a Father",
+        "ja": "非情なる運命 父くまの決断"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1100
+      ],
+      "airDate": {
+        "ja": "2025-06-29"
+      },
+      "appearances": [
+        "kizaru",
+        "vegapunk",
+        "bartholomew-kuma",
+        "jaygarcia-saturn",
+        "jewelry-bonney",
+        "sentomaru",
+        "nico-robin",
+        "crocodile",
+        "dracule-mihawk",
+        "koby",
+        "jinbe",
+        "marshall-d-teach",
+        "boa-hancock",
+        "monkey-d-dragon",
+        "sabo",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1135,
+      "title": {
+        "en": "To the Sea Where My Father is! The Future Bonney Chooses",
+        "ja": "父のいる海へ！ボニーが選ぶ未来"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1101
+      ],
+      "airDate": {
+        "ja": "2025-07-06"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "monkey-d-luffy",
+        "monkey-d-dragon",
+        "jewelry-bonney",
+        "stussy",
+        "vegapunk",
+        "sabo"
+      ]
+    },
+    {
+      "number": 1136,
+      "title": {
+        "en": "Kuma's Life",
+        "ja": "〝くまの人生〟"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1102
+      ],
+      "airDate": {
+        "ja": "2025-07-13"
+      },
+      "appearances": [
+        "jewelry-bonney",
+        "bartholomew-kuma",
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "sanji",
+        "monkey-d-dragon",
+        "sabo",
+        "jinbe",
+        "vegapunk",
+        "brook",
+        "nico-robin",
+        "franky",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "kizaru",
+        "sentomaru",
+        "silvers-rayleigh",
+        "jaygarcia-saturn"
+      ]
+    },
+    {
+      "number": 1137,
+      "title": {
+        "en": "I'm Sorry, Dad - Bonney's Tears and Kuma's Fist",
+        "ja": "ごめんね、お父さん ボニーの涙とくまの拳"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1103,
+        1104
+      ],
+      "airDate": {
+        "ja": "2025-07-27"
+      },
+      "appearances": [
+        "vegapunk",
+        "jewelry-bonney",
+        "bartholomew-kuma",
+        "monkey-d-luffy",
+        "franky",
+        "jaygarcia-saturn",
+        "sanji",
+        "vegapunk-atlas",
+        "sentomaru",
+        "kizaru",
+        "monkey-d-dragon",
+        "emporio-ivankov"
+      ]
+    },
+    {
+      "number": 1138,
+      "title": {
+        "en": "Thank You, Dad - Bonney and Kuma's Warm Embrace",
+        "ja": "ありがとう、お父さん ボニーとくまの熱き抱擁"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1104
+      ],
+      "airDate": {
+        "ja": "2025-08-03"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "jewelry-bonney",
+        "jaygarcia-saturn",
+        "vegapunk-atlas",
+        "vegapunk",
+        "sanji",
+        "franky",
+        "kizaru",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 1139,
+      "title": {
+        "en": "Destroy Egghead - The Buster Call is Invoked",
+        "ja": "未来島を破壊せよ バスターコール発動"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1105
+      ],
+      "airDate": {
+        "ja": "2025-08-10"
+      },
+      "appearances": [
+        "vegapunk",
+        "jaygarcia-saturn",
+        "kizaru",
+        "vegapunk-atlas",
+        "bartholomew-kuma",
+        "sanji",
+        "franky",
+        "jewelry-bonney",
+        "nami",
+        "tony-tony-chopper",
+        "usopp",
+        "vegapunk-edison",
+        "nico-robin",
+        "roronoa-zoro",
+        "rob-lucci",
+        "jinbe",
+        "brook",
+        "vegapunk-lilith",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 1140,
+      "title": {
+        "en": "An Admired Hero - The Warrior of Liberation Who Saves Bonney",
+        "ja": "憧れのヒーロー ボニーを救う解放の戦士"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1106
+      ],
+      "airDate": {
+        "ja": "2025-08-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vegapunk",
+        "bartholomew-kuma",
+        "jewelry-bonney",
+        "vegapunk-atlas",
+        "franky",
+        "jaygarcia-saturn",
+        "kizaru",
+        "sanji",
+        "dorry",
+        "brogy"
+      ]
+    },
+    {
+      "number": 1141,
+      "title": {
+        "en": "Reliable Reinforcements! Dorry and Brogy Arrive!",
+        "ja": "頼もしき援軍！ドリーとブロギー到着！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1107
+      ],
+      "airDate": {
+        "ja": "2025-08-24"
+      },
+      "appearances": [
+        "brogy",
+        "dorry",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "vegapunk-edison",
+        "vegapunk-lilith",
+        "brook",
+        "roronoa-zoro",
+        "rob-lucci",
+        "jinbe",
+        "jewelry-bonney",
+        "monkey-d-luffy",
+        "vegapunk",
+        "jaygarcia-saturn",
+        "sanji",
+        "franky",
+        "vegapunk-atlas",
+        "bartholomew-kuma",
+        "kizaru"
+      ]
+    },
+    {
+      "number": 1142,
+      "title": {
+        "en": "Come In, World - Vegapunk's Message",
+        "ja": "応答せよ、世界 ベガパンクのメッセージ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1108
+      ],
+      "airDate": {
+        "ja": "2025-09-07"
+      },
+      "appearances": [
+        "jewelry-bonney",
+        "franky",
+        "bartholomew-kuma",
+        "vegapunk-atlas",
+        "brogy",
+        "dorry",
+        "jaygarcia-saturn",
+        "vegapunk",
+        "monkey-d-luffy",
+        "kizaru",
+        "sanji"
+      ]
+    },
+    {
+      "number": 1143,
+      "title": {
+        "en": "Vegapunk's Secret Plan – A Tense Worldwide Broadcast",
+        "ja": "ベガパンクの秘策 緊迫の全世界配信"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1109
+      ],
+      "airDate": {
+        "ja": "2025-09-14"
+      },
+      "appearances": [
+        "vegapunk",
+        "vegapunk-shaka",
+        "sanji",
+        "monkey-d-luffy",
+        "jaygarcia-saturn",
+        "kizaru",
+        "usopp",
+        "nami",
+        "tony-tony-chopper",
+        "vegapunk-edison",
+        "dorry",
+        "brogy",
+        "marcus-mars",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "shepherd-ju-peter",
+        "vegapunk-pythagoras",
+        "nefertari-vivi",
+        "emporio-ivankov",
+        "sabo",
+        "monkey-d-dragon",
+        "jewelry-bonney",
+        "franky",
+        "bartholomew-kuma",
+        "vegapunk-atlas"
+      ]
+    },
+    {
+      "number": 1144,
+      "title": {
+        "en": "The Worst Nightmare - The Five Elders Come Together",
+        "ja": "最凶の悪夢 「五老星」集結"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1110
+      ],
+      "airDate": {
+        "ja": "2025-09-21"
+      },
+      "appearances": [
+        "brogy",
+        "dorry",
+        "vegapunk-atlas",
+        "jewelry-bonney",
+        "franky",
+        "bartholomew-kuma",
+        "monkey-d-luffy",
+        "jaygarcia-saturn",
+        "sanji",
+        "vegapunk",
+        "vegapunk-shaka",
+        "shepherd-ju-peter",
+        "ethanbaron-v-nusjuro",
+        "topman-warcury",
+        "marcus-mars",
+        "nami",
+        "usopp",
+        "nico-robin",
+        "tony-tony-chopper",
+        "vegapunk-lilith",
+        "brook",
+        "jinbe",
+        "roronoa-zoro",
+        "rob-lucci"
+      ]
+    },
+    {
+      "number": 1145,
+      "title": {
+        "en": "Friends Fight Together! Luffy and the Warriors of Elbaph<br/>Friends Fight Together! Luffy and the Warriors of Elbaf (Home Video)",
+        "ja": "友達との共闘！ルフィとエルバフの戦士"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1111
+      ],
+      "airDate": {
+        "ja": "2025-09-28"
+      },
+      "appearances": [
+        "marcus-mars",
+        "jinbe",
+        "roronoa-zoro",
+        "rob-lucci",
+        "sanji",
+        "vegapunk",
+        "kaku",
+        "monkey-d-luffy",
+        "dorry",
+        "brogy",
+        "topman-warcury",
+        "jaygarcia-saturn",
+        "shepherd-ju-peter",
+        "vegapunk-lilith",
+        "tony-tony-chopper",
+        "vegapunk-edison",
+        "usopp",
+        "nami",
+        "brook",
+        "nico-robin",
+        "vegapunk-atlas",
+        "jewelry-bonney",
+        "franky",
+        "bartholomew-kuma",
+        "vegapunk-shaka",
+        "vegapunk-pythagoras",
+        "vegapunk-york",
+        "stussy",
+        "kizaru"
+      ]
+    },
+    {
+      "number": 1146,
+      "title": {
+        "en": "An Imminent Threat - Stussy and Edison's Resolve",
+        "ja": "襲い来る脅威 ステューシーと「想」の決意"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1112
+      ],
+      "airDate": {
+        "ja": "2025-10-19"
+      },
+      "appearances": []
+    },
+    {
+      "number": 1147,
+      "title": {
+        "en": "A Stunning Conclusion - Vegapunk's Great Prediction",
+        "ja": "驚愕の結論 ベガパンクの大予言"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1113
+      ],
+      "airDate": {
+        "ja": "2025-10-26"
+      },
+      "appearances": [
+        "vegapunk",
+        "vegapunk-pythagoras",
+        "vegapunk-shaka",
+        "marcus-mars",
+        "dorry",
+        "monkey-d-luffy",
+        "brogy",
+        "topman-warcury",
+        "shepherd-ju-peter",
+        "ethanbaron-v-nusjuro",
+        "jaygarcia-saturn",
+        "sanji",
+        "jewelry-bonney",
+        "franky",
+        "vegapunk-atlas",
+        "nefertari-vivi",
+        "usopp",
+        "nico-robin",
+        "tony-tony-chopper",
+        "nami",
+        "vegapunk-lilith",
+        "brook",
+        "vegapunk-york"
+      ]
+    },
+    {
+      "number": 1148,
+      "title": {
+        "en": "The Lost History - Joyboy, the First Pirate",
+        "ja": "幻の歴史 はじまりの海賊ジョイボーイ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1114,
+        1115
+      ],
+      "airDate": {
+        "ja": "2025-11-02"
+      },
+      "appearances": [
+        "vegapunk",
+        "akainu",
+        "marcus-mars",
+        "shepherd-ju-peter",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "jaygarcia-saturn",
+        "vegapunk-lilith",
+        "usopp",
+        "brook",
+        "nami",
+        "jewelry-bonney",
+        "monkey-d-luffy",
+        "vegapunk-york",
+        "vegapunk-pythagoras",
+        "vegapunk-shaka",
+        "kuzan",
+        "tony-tony-chopper",
+        "nico-robin",
+        "dorry",
+        "brogy",
+        "imu",
+        "jaguar-d-saul",
+        "vegapunk-edison",
+        "jinbe",
+        "roronoa-zoro",
+        "stussy"
+      ]
+    },
+    {
+      "number": 1149,
+      "title": {
+        "en": "The Void Century - A Revelation About a Sinking World",
+        "ja": "空白の100年 世界沈没の真実"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1115,
+        1116
+      ],
+      "airDate": {
+        "ja": "2025-11-09"
+      },
+      "appearances": [
+        "stussy",
+        "kaku",
+        "vegapunk-edison",
+        "jaygarcia-saturn",
+        "marcus-mars",
+        "jinbe",
+        "roronoa-zoro",
+        "nami",
+        "nico-robin",
+        "tony-tony-chopper",
+        "brook",
+        "vegapunk-lilith",
+        "usopp",
+        "vegapunk-atlas",
+        "vegapunk",
+        "ethanbaron-v-nusjuro",
+        "jewelry-bonney",
+        "sanji",
+        "franky",
+        "sabo",
+        "emporio-ivankov",
+        "monkey-d-dragon",
+        "nefertari-vivi",
+        "shepherd-ju-peter",
+        "topman-warcury",
+        "dorry",
+        "monkey-d-luffy",
+        "brogy",
+        "imu",
+        "nefertari-cobra",
+        "crocodile",
+        "akainu",
+        "vegapunk-york",
+        "silvers-rayleigh"
+      ]
+    },
+    {
+      "number": 1150,
+      "title": {
+        "en": "Get the Ship Moving! The Iron Giant Activates",
+        "ja": "船を出せ！〝鉄の巨人〟始動"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1117,
+        1118
+      ],
+      "airDate": {
+        "ja": "2025-11-16"
+      },
+      "appearances": [
+        "ethanbaron-v-nusjuro",
+        "marcus-mars",
+        "topman-warcury",
+        "shepherd-ju-peter",
+        "jaygarcia-saturn",
+        "koby",
+        "vegapunk",
+        "nami",
+        "brook",
+        "usopp",
+        "tony-tony-chopper",
+        "vegapunk-lilith",
+        "jinbe",
+        "roronoa-zoro",
+        "jewelry-bonney",
+        "sanji",
+        "vegapunk-atlas",
+        "monkey-d-luffy",
+        "dorry",
+        "brogy",
+        "monkey-d-dragon",
+        "sabo",
+        "marshall-d-teach",
+        "nefertari-vivi",
+        "vegapunk-york"
+      ]
+    },
+    {
+      "number": 1151,
+      "title": {
+        "en": "Her and Her Father's Dream! Bonney's Free Future",
+        "ja": "父と描いた夢！ボニーの自由な未来"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1118,
+        1119
+      ],
+      "airDate": {
+        "ja": "2025-11-30"
+      },
+      "appearances": [
+        "topman-warcury",
+        "marcus-mars",
+        "jaygarcia-saturn",
+        "vegapunk-york",
+        "kaku",
+        "stussy",
+        "brogy",
+        "dorry",
+        "monkey-d-luffy",
+        "sanji",
+        "franky",
+        "vegapunk-atlas",
+        "jewelry-bonney",
+        "nami",
+        "jinbe",
+        "vegapunk-lilith",
+        "tony-tony-chopper",
+        "usopp",
+        "bartholomew-kuma",
+        "shepherd-ju-peter",
+        "nefertari-vivi"
+      ]
+    },
+    {
+      "number": 1152,
+      "title": {
+        "en": "Her Father and Mother's Legacy! Bonney's Nika Punch",
+        "ja": "父と母の想い！ボニーの解放の拳"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1120,
+        1121
+      ],
+      "airDate": {
+        "ja": "2025-12-07"
+      },
+      "appearances": [
+        "nico-robin",
+        "jinbe",
+        "roronoa-zoro",
+        "nami",
+        "vegapunk-lilith",
+        "ethanbaron-v-nusjuro",
+        "vegapunk-atlas",
+        "tony-tony-chopper",
+        "usopp",
+        "topman-warcury",
+        "shepherd-ju-peter",
+        "monkey-d-luffy",
+        "sanji",
+        "franky",
+        "brogy",
+        "dorry",
+        "jaygarcia-saturn",
+        "jewelry-bonney",
+        "vegapunk-york",
+        "brook",
+        "vegapunk-pythagoras",
+        "vegapunk-shaka",
+        "nefertari-vivi",
+        "bartholomew-kuma",
+        "sentomaru",
+        "kizaru"
+      ]
+    },
+    {
+      "number": 1153,
+      "title": {
+        "en": "The Upheaval of an Era! The Color of the Supreme King That Leads Luffy <br/>The Upheaval of an Era! The Conqueror's Haki That Leads Luffy (Home Video)",
+        "ja": "時代のうねり！ルフィを導く覇王色"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1121,
+        1122
+      ],
+      "airDate": {
+        "ja": "2025-12-14"
+      },
+      "appearances": [
+        "vegapunk",
+        "topman-warcury",
+        "shepherd-ju-peter",
+        "jewelry-bonney",
+        "monkey-d-luffy",
+        "jaygarcia-saturn",
+        "dorry",
+        "brogy",
+        "bartholomew-kuma",
+        "usopp",
+        "tony-tony-chopper",
+        "jinbe",
+        "nami",
+        "roronoa-zoro",
+        "ethanbaron-v-nusjuro",
+        "silvers-rayleigh",
+        "shanks",
+        "buggy",
+        "dracule-mihawk",
+        "crocodile",
+        "akainu",
+        "monkey-d-dragon",
+        "figarland-shamrock",
+        "imu",
+        "koby",
+        "kuzan",
+        "figarland-garling",
+        "sabo",
+        "marshall-d-teach",
+        "nefertari-vivi",
+        "vegapunk-york",
+        "franky",
+        "sanji",
+        "marcus-mars"
+      ]
+    },
+    {
+      "number": 1154,
+      "title": {
+        "en": "The Truth Behind the Secret Plan - Vegapunk Claims Victory",
+        "ja": "秘策の真相 ベガパンクの勝利宣言"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1123,
+        1124
+      ],
+      "airDate": {
+        "ja": "2025-12-21"
+      },
+      "appearances": [
+        "dorry",
+        "brogy",
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "brook",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "jinbe",
+        "trafalgar-d-water-law",
+        "shanks",
+        "marshall-d-teach",
+        "nico-robin",
+        "nefertari-vivi",
+        "sentomaru",
+        "kizaru",
+        "akainu",
+        "sanji",
+        "jewelry-bonney",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 1155,
+      "title": {
+        "en": "The Promised Horizon - Off to the Long-Awaited Elbaph<br/>The Promised Horizon - Off to the Long-Awaited Elbaf (Home Video)",
+        "ja": "約束の水平線 いざ念願のエルバフへ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        1124,
+        1125,
+        1126
+      ],
+      "airDate": {
+        "ja": "2025-12-28"
+      },
+      "appearances": [
+        "roronoa-zoro",
+        "franky",
+        "jinbe",
+        "rob-lucci",
+        "kaku",
+        "jaygarcia-saturn",
+        "vegapunk-york",
+        "vegapunk-edison",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "marcus-mars",
+        "shepherd-ju-peter",
+        "figarland-garling",
+        "imu",
+        "vegapunk-shaka",
+        "vegapunk-atlas",
+        "vegapunk-pythagoras",
+        "monkey-d-dragon",
+        "sabo",
+        "emporio-ivankov",
+        "vegapunk-lilith",
+        "tony-tony-chopper",
+        "nami",
+        "usopp",
+        "sanji",
+        "brook",
+        "monkey-d-luffy",
+        "dorry",
+        "brogy",
+        "jewelry-bonney",
+        "nico-robin",
+        "bartholomew-kuma",
+        "scopper-gaban"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "cross-guild-bounties",
+      "kind": "bounty",
+      "characters": [
+        "buggy",
+        "dracule-mihawk",
+        "crocodile"
+      ],
+      "episode": 1086,
+      "chapter": 1058,
+      "description": {
+        "es": "Buggy es nombrado Emperador y Cross Guild recibe recompensas: Mihawk 3.590 M, Buggy 3.189 M, Crocodile 1.965 M."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "straw-hat-bounties-post-wano",
+      "kind": "bounty",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "jinbe"
+      ],
+      "episode": 1086,
+      "chapter": 1058,
+      "description": {
+        "es": "Nuevas recompensas tras Wano: Luffy 3.000 M, Zoro 1.111 M, Jinbe 1.100 M, Sanji 1.032 M, Robin 930 M, Usopp 500 M, Franky 394 M, Brook 383 M, Nami 366 M, Chopper 1.000."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "egghead-arrival",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "jinbe",
+        "jewelry-bonney",
+        "vegapunk-lilith"
+      ],
+      "episode": 1089,
+      "chapter": 1061,
+      "description": {
+        "es": "Los Sombrero de Paja llegan a la Isla del Futuro, Egghead."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "law-vs-blackbeard",
+      "kind": "battle",
+      "characters": [
+        "trafalgar-d-water-law",
+        "marshall-d-teach"
+      ],
+      "episode": 1092,
+      "chapter": 1063,
+      "description": {
+        "es": "Barbanegra derrota a Law y a los Piratas Heart en Winner Island."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "six-vegapunks",
+      "kind": "reveal",
+      "characters": [
+        "vegapunk",
+        "vegapunk-shaka",
+        "vegapunk-lilith",
+        "vegapunk-edison",
+        "vegapunk-pythagoras",
+        "vegapunk-atlas",
+        "vegapunk-york"
+      ],
+      "episode": 1094,
+      "chapter": 1065,
+      "description": {
+        "es": "Se revelan los seis satélites de Vegapunk."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "lucci-awakening",
+      "kind": "transformation",
+      "characters": [
+        "rob-lucci"
+      ],
+      "episode": 1099,
+      "chapter": 1069,
+      "description": {
+        "es": "Rob Lucci muestra su fruta Neko Neko Modelo Leopardo despertada."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-lucci-egghead",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "rob-lucci"
+      ],
+      "episode": 1099,
+      "chapter": 1069,
+      "description": {
+        "es": "Luffy en Gear 5 se enfrenta a Lucci despertado."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "stussy-betrayal",
+      "kind": "reveal",
+      "characters": [
+        "stussy",
+        "kaku",
+        "rob-lucci"
+      ],
+      "episode": 1104,
+      "chapter": 1073,
+      "description": {
+        "es": "Stussy derriba a Kaku y Lucci: es espía de Vegapunk."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "york-traitor",
+      "kind": "reveal",
+      "characters": [
+        "vegapunk-york",
+        "vegapunk"
+      ],
+      "episode": 1108,
+      "chapter": 1077,
+      "description": {
+        "es": "York resulta ser la traidora entre los satélites."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "shanks-vs-eustass-kid",
+      "kind": "battle",
+      "characters": [
+        "shanks",
+        "eustass-kid",
+        "killer"
+      ],
+      "episode": 1112,
+      "chapter": 1079,
+      "description": {
+        "es": "Shanks derrota a Kid de un solo golpe (Kamusari) en Elbaph."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "garp-rescues-koby",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ],
+      "episode": 1113,
+      "chapter": 1080,
+      "description": {
+        "es": "Garp asalta Hachinosu para rescatar a Koby."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kuzan-blackbeard-captain",
+      "kind": "reveal",
+      "characters": [
+        "kuzan",
+        "monkey-d-garp"
+      ],
+      "episode": 1114,
+      "chapter": 1081,
+      "description": {
+        "es": "Kuzan aparece como capitán de la décima flota de Barbanegra."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "buggy-one-piece-declaration",
+      "kind": "other",
+      "characters": [
+        "buggy",
+        "crocodile",
+        "dracule-mihawk"
+      ],
+      "episode": 1116,
+      "chapter": 1082,
+      "description": {
+        "es": "Buggy declara que Cross Guild va a por el One Piece."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "cobra-death-imu",
+      "kind": "death",
+      "characters": [
+        "nefertari-cobra",
+        "imu",
+        "sabo"
+      ],
+      "episode": 1119,
+      "chapter": 1085,
+      "description": {
+        "es": "Imu se revela ante Cobra, que muere en Mary Geoise."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "lulusia-destruction",
+      "kind": "reveal",
+      "characters": [
+        "imu",
+        "jaygarcia-saturn",
+        "marcus-mars",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "shepherd-ju-peter"
+      ],
+      "episode": 1120,
+      "chapter": 1086,
+      "description": {
+        "es": "Imu ordena destruir Lulusia con la Mother Flame."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "garp-vs-kuzan",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-garp",
+        "kuzan",
+        "koby"
+      ],
+      "episode": 1121,
+      "chapter": 1087,
+      "description": {
+        "es": "Garp cae ante Kuzan para que Koby escape (última lección)."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kizaru-defeats-sentomaru",
+      "kind": "battle",
+      "characters": [
+        "kizaru",
+        "sentomaru"
+      ],
+      "episode": 1125,
+      "chapter": 1091,
+      "description": {
+        "es": "Kizaru derrota a Sentomaru en Egghead."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-kizaru",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "kizaru"
+      ],
+      "episode": 1127,
+      "chapter": 1093,
+      "description": {
+        "es": "Luffy en Gear 5 se enfrenta a Kizaru."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "saturn-arrives",
+      "kind": "reveal",
+      "characters": [
+        "jaygarcia-saturn"
+      ],
+      "episode": 1128,
+      "chapter": 1094,
+      "description": {
+        "es": "San Jaygarcia Saturn, de los Cinco Ancianos, aparece en Egghead."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "vegapunk-death",
+      "kind": "death",
+      "characters": [
+        "vegapunk",
+        "kizaru"
+      ],
+      "episode": 1128,
+      "chapter": 1094,
+      "description": {
+        "es": "Kizaru hiere de muerte al Vegapunk original."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kuma-past",
+      "kind": "reveal",
+      "characters": [
+        "bartholomew-kuma",
+        "jewelry-bonney",
+        "ginny"
+      ],
+      "episode": 1129,
+      "chapter": 1095,
+      "description": {
+        "es": "Flashback de Kuma: God Valley, Ginny y Bonney."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kuma-vs-saturn",
+      "kind": "battle",
+      "characters": [
+        "bartholomew-kuma",
+        "jaygarcia-saturn",
+        "jewelry-bonney"
+      ],
+      "episode": 1137,
+      "chapter": 1104,
+      "description": {
+        "es": "Kuma golpea a Saturn para salvar a Bonney."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "egghead-buster-call",
+      "kind": "other",
+      "characters": [],
+      "episode": 1139,
+      "chapter": 1105,
+      "description": {
+        "es": "Se invoca un Buster Call sobre Egghead."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "giant-warrior-pirates-arrive",
+      "kind": "other",
+      "characters": [
+        "dorry",
+        "brogy"
+      ],
+      "episode": 1141,
+      "chapter": 1107,
+      "description": {
+        "es": "Dorry y Brogy llegan con los Piratas Guerreros Gigantes."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "vegapunk-broadcast",
+      "kind": "reveal",
+      "characters": [
+        "vegapunk"
+      ],
+      "episode": 1142,
+      "chapter": 1108,
+      "description": {
+        "es": "Empieza la emisión mundial del mensaje de Vegapunk."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "five-elders-transform",
+      "kind": "transformation",
+      "characters": [
+        "jaygarcia-saturn",
+        "marcus-mars",
+        "topman-warcury",
+        "ethanbaron-v-nusjuro",
+        "shepherd-ju-peter"
+      ],
+      "episode": 1144,
+      "chapter": 1110,
+      "description": {
+        "es": "Los Cinco Ancianos llegan a Egghead en sus formas de bestia."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "joy-boy-reveal",
+      "kind": "reveal",
+      "characters": [
+        "vegapunk"
+      ],
+      "episode": 1148,
+      "chapter": 1115,
+      "description": {
+        "es": "Vegapunk habla de Joy Boy y del Siglo Vacío."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "emet-activates",
+      "kind": "other",
+      "characters": [
+        "emet",
+        "monkey-d-luffy"
+      ],
+      "episode": 1150,
+      "chapter": 1117,
+      "description": {
+        "es": "El gigante de hierro Emet se activa."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "bonney-nika",
+      "kind": "transformation",
+      "characters": [
+        "jewelry-bonney"
+      ],
+      "episode": 1152,
+      "chapter": 1121,
+      "description": {
+        "es": "Bonney adopta su forma de Nika del futuro distorsionado."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-conquerors-haki-egghead",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "dorry",
+        "brogy"
+      ],
+      "episode": 1153,
+      "chapter": 1122,
+      "description": {
+        "es": "El Haki del Rey de Luffy, sumado al de los gigantes, noquea a la Marina."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "egghead-escape",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "jinbe",
+        "jewelry-bonney",
+        "vegapunk-lilith",
+        "dorry",
+        "brogy"
+      ],
+      "episode": 1154,
+      "chapter": 1123,
+      "description": {
+        "es": "Los Sombrero de Paja escapan de Egghead rumbo a Elbaph."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Egghead_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_1086",
+      "field": "episodes.adaptsChapters (Episode_N, estadísticas)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/One_Piece_season_21",
+      "field": "episodes.title.en/airDate"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/One_Piece_season_21",
+      "field": "nota: recaps 1092.5–1150.5 (especiales, sin número) excluidos"
+    }
+  ]
+}

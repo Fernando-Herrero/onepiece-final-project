@@ -1,0 +1,102 @@
+{
+  "slug": "sengoku",
+  "name": {
+    "en": "Sengoku",
+    "ja": "センゴク"
+  },
+  "origin": null,
+  "fruit": "hito-hito-no-mi-model-daibutsu",
+  "firstAppearance": {
+    "chapter": 234,
+    "episode": 151
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "fleet admiral",
+      "from": {
+        "episode": 151,
+        "chapter": 234
+      },
+      "to": {
+        "episode": 570,
+        "chapter": 650
+      }
+    },
+    {
+      "group": "marines",
+      "role": "inspector general",
+      "from": {
+        "episode": 570,
+        "chapter": 650
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "sengoku-fleet-admiral",
+      "name": {
+        "es": "Almirante de Flota Sengoku",
+        "en": "Fleet Admiral Sengoku",
+        "ja": "元帥センゴク"
+      },
+      "firstAppearance": {
+        "episode": 151,
+        "chapter": 234
+      },
+      "description": {
+        "es": "Almirante de Flota durante la Guerra de Marineford."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "sengoku-daibutsu",
+      "name": {
+        "es": "Sengoku forma Buda",
+        "en": "Sengoku Buddha Form",
+        "ja": "センゴク（大仏）"
+      },
+      "firstAppearance": {
+        "episode": 481,
+        "chapter": 571
+      },
+      "description": {
+        "es": "Zoan mítica: Buda dorado gigante con ondas de choque."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "sengoku-inspector",
+      "name": {
+        "es": "Sengoku inspector general",
+        "en": "Inspector General Sengoku",
+        "ja": "大目付センゴク"
+      },
+      "firstAppearance": {
+        "episode": 746,
+        "chapter": 801
+      },
+      "description": {
+        "es": "Retirado del cargo, con su cabra y galletas."
+      },
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sengoku",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sengoku",
+      "field": "forms[sengoku-daibutsu].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sengoku",
+      "field": "forms[sengoku-inspector].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

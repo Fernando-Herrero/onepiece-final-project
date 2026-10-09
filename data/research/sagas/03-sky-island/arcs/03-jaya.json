@@ -1,0 +1,414 @@
+{
+  "slug": "jaya",
+  "sagaSlug": "sky-island",
+  "order": 3,
+  "title": {
+    "es": "Jaya",
+    "en": "Jaya",
+    "ja": "ジャヤ編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 218,
+    "last": 236
+  },
+  "episodeRange": {
+    "first": 144,
+    "last": 152
+  },
+  "episodes": [
+    {
+      "number": 144,
+      "title": {
+        "en": "The Log is Taken! Salvage King, Masira!",
+        "ja": "奪われた記録！サルベージ王マシラ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        218,
+        219
+      ],
+      "airDate": {
+        "ja": "2003-02-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "masira"
+      ]
+    },
+    {
+      "number": 145,
+      "title": {
+        "en": "Monsters Appear! Don't Touch the Whitebeard Pirates",
+        "ja": "怪物登場！白ひげ一味には手を出すな"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        220,
+        221
+      ],
+      "airDate": {
+        "ja": "2003-02-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "masira"
+      ]
+    },
+    {
+      "number": 146,
+      "title": {
+        "en": "Stop Dreaming! The City of Ridicule, Mock Town!",
+        "ja": "夢を見るな！嘲りの街モックタウン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        222,
+        223,
+        224
+      ],
+      "airDate": {
+        "ja": "2003-02-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "bellamy",
+        "marshall-d-teach"
+      ]
+    },
+    {
+      "number": 147,
+      "title": {
+        "en": "The Pirate's Summit! The Man Who Talks of Dreams and the King of Underwater Exploration",
+        "ja": "海賊の高み！夢を語る男と海底探索王"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        225,
+        226
+      ],
+      "airDate": {
+        "ja": "2003-03-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "shoujou",
+        "marshall-d-teach",
+        "mont-blanc-cricket"
+      ]
+    },
+    {
+      "number": 148,
+      "title": {
+        "en": "The Legendary Family! 'Liar Noland'",
+        "ja": "伝説の一族！うそつきノーランド"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        227,
+        228
+      ],
+      "airDate": {
+        "ja": "2003-03-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "mont-blanc-cricket",
+        "mont-blanc-noland"
+      ]
+    },
+    {
+      "number": 149,
+      "title": {
+        "en": "Hard Turn to the Clouds! Find the Southbird!",
+        "ja": "雲舵いっぱい！サウスバードを追え！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        229,
+        230
+      ],
+      "airDate": {
+        "ja": "2003-03-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "mont-blanc-cricket"
+      ]
+    },
+    {
+      "number": 150,
+      "title": {
+        "en": "Dreams Don't Come True!? Bellamy vs. The Saruyama Alliance",
+        "ja": "幻想は叶わない!?ベラミーVS猿山連合"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        231,
+        232
+      ],
+      "airDate": {
+        "ja": "2003-04-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "masira",
+        "shoujou",
+        "bellamy",
+        "mont-blanc-cricket"
+      ]
+    },
+    {
+      "number": 151,
+      "title": {
+        "en": "The 100,000,000 Man! The World's Highest Authority and the Pirate Blackbeard",
+        "ja": "一億の男！世界最高権力と海賊黒ひげ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        233,
+        234
+      ],
+      "airDate": {
+        "ja": "2003-04-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "masira",
+        "shoujou",
+        "bellamy",
+        "marshall-d-teach",
+        "mont-blanc-cricket"
+      ]
+    },
+    {
+      "number": 152,
+      "title": {
+        "en": "Sail into the Sky! Ride the Knock-Up Stream",
+        "ja": "船は空をゆく！突き上げる海流に乗れ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        235,
+        236
+      ],
+      "airDate": {
+        "ja": "2003-04-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "masira",
+        "shoujou",
+        "mont-blanc-cricket"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "robin-takes-eternal-pose",
+      "kind": "other",
+      "characters": [
+        "nico-robin",
+        "masira"
+      ],
+      "episode": 145,
+      "chapter": 221,
+      "description": {
+        "es": "Robin consigue un Eternal Pose de Jaya tras el encuentro con Masira."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-zoro-refuse-bellamy",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "bellamy"
+      ],
+      "episode": 146,
+      "chapter": 224,
+      "description": {
+        "es": "Luffy y Zoro se dejan apalear por Bellamy en Mock Town sin devolver un golpe."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-meets-blackbeard",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "marshall-d-teach"
+      ],
+      "episode": 147,
+      "chapter": 225,
+      "description": {
+        "es": "Primer encuentro de Luffy con Barbanegra, que defiende que los sueños de los piratas nunca acaban."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "noland-legend",
+      "kind": "reveal",
+      "characters": [
+        "mont-blanc-cricket",
+        "mont-blanc-noland"
+      ],
+      "episode": 148,
+      "chapter": 227,
+      "description": {
+        "es": "Cricket cuenta la historia de Noland el Mentiroso y la ciudad de oro."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-defeats-bellamy",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "bellamy"
+      ],
+      "episode": 151,
+      "chapter": 233,
+      "description": {
+        "es": "Luffy derrota a Bellamy de un solo puñetazo en Mock Town."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-bounty-100m",
+      "kind": "bounty",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 151,
+      "chapter": 234,
+      "description": {
+        "es": "Llega la nueva recompensa de Luffy: 100.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "zoro-bounty-60m",
+      "kind": "bounty",
+      "characters": [
+        "roronoa-zoro"
+      ],
+      "episode": 151,
+      "chapter": 234,
+      "description": {
+        "es": "Zoro recibe su primera recompensa: 60.000.000 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "blackbeard-warlord-nomination",
+      "kind": "reveal",
+      "characters": [
+        "marshall-d-teach"
+      ],
+      "episode": 151,
+      "chapter": 234,
+      "description": {
+        "es": "Un hombre de Barbanegra se presenta en la reunión de los Shichibukai y propone a su capitán."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "knock-up-stream",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ],
+      "episode": 152,
+      "chapter": 236,
+      "description": {
+        "es": "El Going Merry sube al cielo montado en el Knock Up Stream."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_144",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_144",
+      "field": "episodes.adaptsChapters (interpolado en [144, 145, 146, 147, 148, 150, 151]: la wiki no lo indica)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

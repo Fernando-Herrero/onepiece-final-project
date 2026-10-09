@@ -1,0 +1,220 @@
+{
+  "slug": "roronoa-zoro",
+  "name": {
+    "en": "Roronoa Zoro",
+    "ja": "ロロノア・ゾロ"
+  },
+  "origin": "shimotsuki-village",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 3,
+    "episode": 1
+  },
+  "affiliations": [
+    {
+      "group": "bounty-hunters",
+      "role": "bounty-hunter",
+      "from": {
+        "episode": 1,
+        "chapter": 3
+      },
+      "to": {
+        "episode": 2,
+        "chapter": 5
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "combatant",
+      "from": {
+        "episode": 2,
+        "chapter": 5
+      },
+      "to": null
+    },
+    {
+      "group": "straw-hat-grand-fleet",
+      "role": "senior-officer",
+      "from": {
+        "episode": 746,
+        "chapter": 800
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 60000000,
+      "episode": 128,
+      "chapter": 213,
+      "eventSlug": "alabasta-bounties"
+    },
+    {
+      "amount": 120000000,
+      "episode": 320,
+      "chapter": 435,
+      "eventSlug": "enies-lobby-bounties"
+    },
+    {
+      "amount": 320000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 1111000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "zoro-pre-timeskip",
+      "name": {
+        "es": "Zoro (pre-salto temporal)",
+        "en": "Zoro (Pre-Timeskip)",
+        "ja": "ゾロ"
+      },
+      "firstAppearance": {
+        "episode": 1,
+        "chapter": 3
+      },
+      "description": {
+        "es": "Cazador de piratas con haramaki verde y bandana negra."
+      },
+      "suggestedRarity": "common",
+      "abilities": [
+        "Santoryu"
+      ]
+    },
+    {
+      "slug": "zoro-asura",
+      "name": {
+        "es": "Zoro Asura",
+        "en": "Asura",
+        "ja": "阿修羅"
+      },
+      "firstAppearance": {
+        "episode": 301,
+        "chapter": 417
+      },
+      "description": {
+        "es": "Técnica de nueve espadas (tres cabezas y seis brazos) estrenada contra Kaku en Enies Lobby."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Asura: Ichibugin"
+      ]
+    },
+    {
+      "slug": "zoro-post-timeskip",
+      "name": {
+        "es": "Zoro (post-salto temporal)",
+        "en": "Zoro (Post-Timeskip)",
+        "ja": "ゾロ"
+      },
+      "firstAppearance": {
+        "episode": 517,
+        "chapter": 598
+      },
+      "description": {
+        "es": "Regresa tras entrenar con Mihawk: cicatriz en el ojo izquierdo, Haki de Armadura."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Haki de Armadura",
+        "Shusui",
+        "Sandai Kitetsu",
+        "Wado Ichimonji"
+      ]
+    },
+    {
+      "slug": "zorojuro",
+      "name": {
+        "es": "Zorojuro",
+        "en": "Zorojuro",
+        "ja": "ゾロ十郎"
+      },
+      "firstAppearance": {
+        "episode": 893,
+        "chapter": 912
+      },
+      "description": {
+        "es": "Disfraz de samurái en el País de Wano."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "zoro-enma",
+      "name": {
+        "es": "Zoro con Enma",
+        "en": "Zoro (Enma)",
+        "ja": "閻魔"
+      },
+      "firstAppearance": {
+        "episode": 956,
+        "chapter": 955
+      },
+      "description": {
+        "es": "Recibe Enma, la espada de Oden, que absorbe su Haki."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Enma"
+      ]
+    },
+    {
+      "slug": "zoro-king-of-hell",
+      "name": {
+        "es": "Zoro Rey del Infierno (Haki del Rey)",
+        "en": "King of Hell Three Sword Style",
+        "ja": "三刀流 King of Hell"
+      },
+      "firstAppearance": {
+        "episode": 1027,
+        "chapter": 1010
+      },
+      "description": {
+        "es": "Despierta el Haki del Rey y lo imbuye en sus espadas en el tejado de Onigashima."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Haki del Rey",
+        "Kokujo O Tatsumaki"
+      ]
+    }
+  ],
+  "keyEvents": [
+    "alabasta-bounties",
+    "enies-lobby-bounties",
+    "dressrosa-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_213",
+      "field": "bounties[60000000]"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Roronoa_Zoro/History",
+      "field": "bounties[120000000] (wiki cita ep 318; se usa 320 como en Bounty)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Roronoa_Zoro/Abilities_and_Powers",
+      "field": "forms"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Roronoa_Zoro",
+      "field": "forms[zoro-asura,zorojuro] (cap/ep de memoria, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Roronoa_Zoro",
+      "field": "bounties[1111000000] (ref c1058, ep 1086 u 1088 según cita)"
+    }
+  ]
+}

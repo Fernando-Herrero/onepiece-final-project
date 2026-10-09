@@ -1,0 +1,33 @@
+{
+  "slug": "east-blue",
+  "order": 1,
+  "title": {
+    "es": "Saga del East Blue",
+    "en": "East Blue Saga",
+    "ja": "〝東の海〟編"
+  },
+  "chapterRange": {
+    "first": 1,
+    "last": 100
+  },
+  "episodeRange": {
+    "first": 1,
+    "last": 61
+  },
+  "arcSlugs": [
+    "romance-dawn",
+    "orange-town",
+    "syrup-village",
+    "baratie",
+    "arlong-park",
+    "buggy-side-story",
+    "loguetown",
+    "warship-island"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/East_Blue_Saga",
+      "field": "title,chapterRange,episodeRange,arcSlugs"
+    }
+  ]
+}

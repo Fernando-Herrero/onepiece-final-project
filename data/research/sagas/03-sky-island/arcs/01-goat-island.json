@@ -1,0 +1,117 @@
+{
+  "slug": "goat-island",
+  "sagaSlug": "sky-island",
+  "order": 1,
+  "title": {
+    "es": "Isla de las Cabras",
+    "en": "Goat Island",
+    "ja": "ヤギの島編"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 136,
+    "last": 138
+  },
+  "episodes": [
+    {
+      "number": 136,
+      "title": {
+        "en": "Zenny of Goat Island and the Pirate Ship in the Mountains!",
+        "ja": "ヤギの島のゼニィと山の中の海賊船"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-12-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "zenny"
+      ]
+    },
+    {
+      "number": 137,
+      "title": {
+        "en": "How's That for Profit? Money Lender Zenny's Ambition!",
+        "ja": "儲かりまっか？金貸しゼニィの野望"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-12-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "zenny"
+      ]
+    },
+    {
+      "number": 138,
+      "title": {
+        "en": "Where the Island's Treasure Lies! Zenny Pirates Full Charge!",
+        "ja": "島のお宝の行方！ゼニィ海賊団出撃！"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2002-12-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "zenny"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "zenny-pirates-set-sail",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "zenny"
+      ],
+      "episode": 138,
+      "chapter": null,
+      "description": {
+        "es": "Zenny cumple su sueño y zarpa como pirata en su barco de la montaña."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
+      "field": "episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_136",
+      "field": "episodes.adaptsChapters"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "shanks",
+  "name": {
+    "en": "Shanks",
+    "ja": "シャンクス"
+  },
+  "origin": null,
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 1,
+    "episode": 4
+  },
+  "affiliations": [
+    {
+      "group": "roger-pirates",
+      "role": "apprentice",
+      "from": {
+        "episode": 316,
+        "chapter": 434
+      },
+      "to": {
+        "episode": 316,
+        "chapter": 434
+      }
+    },
+    {
+      "group": "red-hair-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 4,
+        "chapter": 1
+      },
+      "to": null
+    },
+    {
+      "group": "four-emperors",
+      "role": "emperor",
+      "from": {
+        "episode": 314,
+        "chapter": 432
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 1040000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    },
+    {
+      "amount": 4048900000,
+      "episode": 958,
+      "chapter": 957,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "shanks-foosha",
+      "name": {
+        "es": "Shanks en el Pueblo Foosha",
+        "en": "Shanks in Foosha Village",
+        "ja": "フーシャ村のシャンクス"
+      },
+      "firstAppearance": {
+        "episode": 4,
+        "chapter": 1
+      },
+      "description": {
+        "es": "Entrega el sombrero de paja a Luffy y pierde el brazo."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "shanks-marineford",
+      "name": {
+        "es": "Shanks detiene Marineford",
+        "en": "Shanks Ends the War",
+        "ja": "頂上戦争を止めるシャンクス"
+      },
+      "firstAppearance": {
+        "episode": 489,
+        "chapter": 580
+      },
+      "description": {
+        "es": "Llega a Marineford y pone fin a la guerra."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "shanks-kamusari",
+      "name": {
+        "es": "Shanks (Kamusari)",
+        "en": "Shanks (Divine Departure)",
+        "ja": "神避"
+      },
+      "firstAppearance": {
+        "episode": 1112,
+        "chapter": 1079
+      },
+      "description": {
+        "es": "Derrota a Kid con un solo golpe de Haki del Rey."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Haki del Rey"
+      ]
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Shanks",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Shanks",
+      "field": "bounties[1040000000] (solo One Piece Film Red) (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Shanks",
+      "field": "forms[shanks-kamusari].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

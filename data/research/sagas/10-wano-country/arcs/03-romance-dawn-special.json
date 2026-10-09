@@ -1,0 +1,45 @@
+{
+  "slug": "romance-dawn-special",
+  "sagaSlug": "wano-country",
+  "order": 3,
+  "title": {
+    "es": "Especial Romance Dawn",
+    "en": "Romance Dawn (20th Anniversary Special)",
+    "ja": "ROMANCE DAWN"
+  },
+  "type": "filler",
+  "episodeRange": {
+    "first": 907,
+    "last": 907
+  },
+  "episodes": [
+    {
+      "number": 907,
+      "title": {
+        "en": "Romance Dawn",
+        "ja": "{{Ruby|ROMANCE DAWN|ロマンスドーン}}"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2019-10-20"
+      },
+      "appearances": []
+    }
+  ],
+  "events": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_<n> (infobox Chapters/Airdate/Characters)",
+      "field": "episodes"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

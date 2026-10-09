@@ -1,0 +1,846 @@
+{
+  "slug": "sabaody-archipelago",
+  "sagaSlug": "summit-war",
+  "order": 1,
+  "title": {
+    "es": "Arco de Archipiélago Sabaody",
+    "en": "Sabaody Archipelago Arc",
+    "ja": null
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 490,
+    "last": 513
+  },
+  "episodeRange": {
+    "first": 385,
+    "last": 407
+  },
+  "episodes": [
+    {
+      "number": 385,
+      "title": {
+        "es": null,
+        "en": "Arriving at Halfway Through the Grand Line! The Red Line",
+        "ja": "偉大なる航路半周到達！赤い土の大陸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        490
+      ],
+      "airDate": {
+        "ja": "2009-01-18"
+      },
+      "appearances": [
+        "monkey-d-garp",
+        "bartholomew-kuma",
+        "sengoku",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "usopp",
+        "brook",
+        "nami",
+        "sanji",
+        "franky",
+        "roronoa-zoro",
+        "nico-robin",
+        "camie"
+      ]
+    },
+    {
+      "number": 386,
+      "title": {
+        "es": null,
+        "en": "Hatred of the Straw Hat Crew - Enter Iron Mask Duval",
+        "ja": "麦わら一味憎し　鉄仮面のデュバル登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        490,
+        491
+      ],
+      "airDate": {
+        "ja": "2009-01-25"
+      },
+      "appearances": [
+        "nico-robin",
+        "usopp",
+        "nami",
+        "monkey-d-luffy",
+        "brook",
+        "tony-tony-chopper",
+        "franky",
+        "sanji",
+        "camie",
+        "hatchan",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 387,
+      "title": {
+        "es": null,
+        "en": "The Fated Reunion! Save the Imprisoned Fishman",
+        "ja": "因縁の再会！囚われの魚人を救い出せ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        492,
+        493
+      ],
+      "airDate": {
+        "ja": "2009-02-01"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "sanji",
+        "nami",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "usopp",
+        "franky",
+        "brook",
+        "camie",
+        "hatchan"
+      ]
+    },
+    {
+      "number": 388,
+      "title": {
+        "es": null,
+        "en": "Tragedy! The Truth of the Unmasked Duval",
+        "ja": "悲劇！仮面に隠されたデュバルの真実"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        493,
+        494
+      ],
+      "airDate": {
+        "ja": "2009-02-08"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "sanji",
+        "nami",
+        "usopp",
+        "nico-robin",
+        "brook",
+        "franky",
+        "camie",
+        "hatchan",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 389,
+      "title": {
+        "es": null,
+        "en": "Explosion! The Sunny's Super Secret Weapon: Gaon Cannon",
+        "ja": "炸裂！サニー号の超秘密兵器ガオン砲"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        494,
+        495
+      ],
+      "airDate": {
+        "ja": "2009-02-15"
+      },
+      "appearances": [
+        "camie",
+        "roronoa-zoro",
+        "brook",
+        "monkey-d-luffy",
+        "nami",
+        "usopp",
+        "nico-robin",
+        "franky",
+        "sanji",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 390,
+      "title": {
+        "es": null,
+        "en": "Landing to Get to Fishman Island - The Sabaody Archipelago",
+        "ja": "魚人島を目指して上陸　シャボンディ諸島"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        496
+      ],
+      "airDate": {
+        "ja": "2009-02-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "sanji",
+        "usopp",
+        "tony-tony-chopper",
+        "brook",
+        "hatchan",
+        "camie",
+        "nami",
+        "franky",
+        "nico-robin",
+        "roronoa-zoro"
+      ]
+    },
+    {
+      "number": 391,
+      "title": {
+        "es": null,
+        "en": "Tyranny! The Rulers of Sabaody, the Celestial Dragons",
+        "ja": "暴虐！シャボンディの支配者天竜人"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        497
+      ],
+      "airDate": {
+        "ja": "2009-03-01"
+      },
+      "appearances": [
+        "franky",
+        "usopp",
+        "sanji",
+        "nami",
+        "roronoa-zoro",
+        "hatchan",
+        "monkey-d-luffy",
+        "camie",
+        "tony-tony-chopper",
+        "brook",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 392,
+      "title": {
+        "es": null,
+        "en": "New Rivals Gather! The 11 Supernovas",
+        "ja": "新たなライバル集結！11人の超新星"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        498
+      ],
+      "airDate": {
+        "ja": "2009-03-08"
+      },
+      "appearances": [
+        "brook",
+        "tony-tony-chopper",
+        "camie",
+        "hatchan",
+        "eustass-kid",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 393,
+      "title": {
+        "es": null,
+        "en": "The Target is Camie!! The Kidnappers' Evil Draws Near",
+        "ja": "標的はケイミー<nowiki>！！</nowiki>迫る人攫い屋の魔手"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        499
+      ],
+      "airDate": {
+        "ja": "2009-03-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "hatchan",
+        "brook",
+        "camie",
+        "roronoa-zoro",
+        "sanji",
+        "usopp",
+        "franky"
+      ]
+    },
+    {
+      "number": 394,
+      "title": {
+        "es": null,
+        "en": "Rescue Camie - The Dark History of the Archipelago",
+        "ja": "ケイミーを救え 諸島に残る暗黒の歴史"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        500
+      ],
+      "airDate": {
+        "ja": "2009-03-29"
+      },
+      "appearances": [
+        "franky",
+        "usopp",
+        "tony-tony-chopper",
+        "brook",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "hatchan",
+        "nami",
+        "nico-robin",
+        "camie",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "silvers-rayleigh"
+      ]
+    },
+    {
+      "number": 395,
+      "title": {
+        "es": null,
+        "en": "Time Limit - The Human Auction Begins",
+        "ja": "タイムリミット 人間オークション開幕"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        501
+      ],
+      "airDate": {
+        "ja": "2009-04-05"
+      },
+      "appearances": [
+        "silvers-rayleigh",
+        "camie",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "sanji",
+        "nami",
+        "nico-robin",
+        "franky",
+        "tony-tony-chopper",
+        "brook",
+        "monkey-d-luffy",
+        "usopp",
+        "hatchan",
+        "roronoa-zoro",
+        "portgas-d-ace",
+        "edward-newgate"
+      ]
+    },
+    {
+      "number": 396,
+      "title": {
+        "es": null,
+        "en": "The Fist Explodes! Destroy the Auction",
+        "ja": "鉄拳炸裂！オークションをぶっつぶせ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        502
+      ],
+      "airDate": {
+        "ja": "2009-04-12"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "nami",
+        "sanji",
+        "franky",
+        "hatchan",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "brook",
+        "camie",
+        "roronoa-zoro",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 397,
+      "title": {
+        "es": null,
+        "en": "Huge Panic! Struggle in the Auction Hall",
+        "ja": "大パニック！オークション会場の死闘"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        503
+      ],
+      "airDate": {
+        "ja": "2009-04-19"
+      },
+      "appearances": [
+        "franky",
+        "tony-tony-chopper",
+        "sanji",
+        "roronoa-zoro",
+        "nami",
+        "hatchan",
+        "camie",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "silvers-rayleigh",
+        "usopp",
+        "nico-robin",
+        "brook"
+      ]
+    },
+    {
+      "number": 398,
+      "title": {
+        "es": null,
+        "en": "Admiral Kizaru Moves! The Sabaody Archipelago in Chaos",
+        "ja": "大将黄猿動く！騒然シャボンディ諸島"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        504
+      ],
+      "airDate": {
+        "ja": "2009-04-26"
+      },
+      "appearances": [
+        "sengoku",
+        "borsalino",
+        "donquixote-doflamingo",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "roronoa-zoro",
+        "monkey-d-luffy",
+        "usopp",
+        "nami",
+        "sanji",
+        "tony-tony-chopper",
+        "hatchan",
+        "brook",
+        "nico-robin",
+        "silvers-rayleigh",
+        "camie",
+        "franky"
+      ]
+    },
+    {
+      "number": 399,
+      "title": {
+        "es": null,
+        "en": "Break Through the Encirclement! Marines vs. Three Captains",
+        "ja": "包囲網を突破せよ！海軍VS三人の船長"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        505,
+        506
+      ],
+      "airDate": {
+        "ja": "2009-05-03"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "eustass-kid",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "sanji",
+        "brook",
+        "silvers-rayleigh",
+        "hatchan",
+        "nico-robin",
+        "franky",
+        "camie",
+        "nami"
+      ]
+    },
+    {
+      "number": 400,
+      "title": {
+        "es": null,
+        "en": "Roger and Rayleigh - The Pirate King and His Right Hand",
+        "ja": "ロジャーとレイリー　海賊王とその右腕"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        506,
+        507
+      ],
+      "airDate": {
+        "ja": "2009-05-10"
+      },
+      "appearances": [
+        "sanji",
+        "monkey-d-luffy",
+        "camie",
+        "roronoa-zoro",
+        "silvers-rayleigh",
+        "hatchan",
+        "nami",
+        "franky",
+        "tony-tony-chopper",
+        "usopp",
+        "nico-robin",
+        "brook",
+        "gol-d-roger",
+        "buggy",
+        "shanks",
+        "borsalino"
+      ]
+    },
+    {
+      "number": 401,
+      "title": {
+        "es": null,
+        "en": "Impossible to Avoid!? Admiral Kizaru's Speed of Light Kick!!",
+        "ja": "回避不可能！？大将黄猿の光速の蹴り！！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        507,
+        508
+      ],
+      "airDate": {
+        "ja": "2009-05-17"
+      },
+      "appearances": [
+        "nami",
+        "usopp",
+        "monkey-d-luffy",
+        "franky",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "brook",
+        "sanji",
+        "nico-robin",
+        "silvers-rayleigh",
+        "borsalino",
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "bartholomew-kuma",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 402,
+      "title": {
+        "es": null,
+        "en": "Overwhelming! The Marine Combat Weapon Pacifista",
+        "ja": "圧倒的！海軍の戦闘兵器パシフィスタ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        509,
+        510
+      ],
+      "airDate": {
+        "ja": "2009-05-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "franky",
+        "usopp",
+        "brook",
+        "roronoa-zoro",
+        "sanji",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "borsalino",
+        "sentomaru",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 403,
+      "title": {
+        "es": null,
+        "en": "Another Strong Enemy Appears! Broadaxe-Wielding Sentomaru",
+        "ja": "さらなる強敵現る！鉞かついだ戦桃丸"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        510,
+        511
+      ],
+      "airDate": {
+        "ja": "2009-05-31"
+      },
+      "appearances": [
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "nico-robin",
+        "tony-tony-chopper",
+        "franky",
+        "sanji",
+        "monkey-d-luffy",
+        "nami",
+        "brook",
+        "usopp",
+        "roronoa-zoro",
+        "sentomaru",
+        "borsalino"
+      ]
+    },
+    {
+      "number": 404,
+      "title": {
+        "es": null,
+        "en": "Admiral Kizaru's Fierce Attack - The Straw Hat Crew's Desperate Situation!",
+        "ja": "大将黄猿の猛攻 麦わら一味絶体絶命！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        511,
+        512
+      ],
+      "airDate": {
+        "ja": "2009-06-07"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "sentomaru",
+        "monkey-d-luffy",
+        "franky",
+        "nami",
+        "sanji",
+        "borsalino",
+        "roronoa-zoro",
+        "usopp",
+        "brook",
+        "tony-tony-chopper",
+        "nico-robin",
+        "silvers-rayleigh",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 405,
+      "title": {
+        "es": null,
+        "en": "Disappearing Crew - The Final Day of the Straw Hat Crew",
+        "ja": "消された仲間たち 麦わら一味最後の日"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        513
+      ],
+      "airDate": {
+        "ja": "2009-06-14"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "monkey-d-luffy",
+        "nico-robin",
+        "tony-tony-chopper",
+        "sentomaru",
+        "borsalino",
+        "silvers-rayleigh",
+        "nami",
+        "franky",
+        "sanji",
+        "brook",
+        "roronoa-zoro",
+        "dracule-mihawk"
+      ]
+    },
+    {
+      "number": 406,
+      "title": {
+        "es": null,
+        "en": "Special Historical Arc - Boss Luffy Appears Again",
+        "ja": "時代劇特別編 ルフィ親分再び見参"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2009-06-21"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "sanji",
+        "franky",
+        "roronoa-zoro",
+        "nico-robin",
+        "brook"
+      ]
+    },
+    {
+      "number": 407,
+      "title": {
+        "es": null,
+        "en": "Special Historical Arc - Destroy! Thriller Company's Trap",
+        "ja": "時代劇特別編 破れ！スリラー商会の罠"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2009-06-28"
+      },
+      "appearances": [
+        "brook",
+        "franky",
+        "usopp",
+        "nami",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "sanji",
+        "nico-robin",
+        "roronoa-zoro",
+        "camie",
+        "hatchan"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "eleven-supernovas-introduced",
+      "kind": "reveal",
+      "characters": [
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "capone-bege",
+        "jewelry-bonney",
+        "basil-hawkins",
+        "x-drake",
+        "scratchmen-apoo",
+        "urouge",
+        "killer",
+        "monkey-d-luffy",
+        "roronoa-zoro"
+      ],
+      "episode": 392,
+      "chapter": 498,
+      "description": {
+        "es": "Los Once Supernovas coinciden en el archipiélago Sabaody."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-punches-saint-charlos",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "saint-charlos",
+        "camie"
+      ],
+      "episode": 396,
+      "chapter": 502,
+      "description": {
+        "es": "Luffy golpea a un Dragón Celestial en la casa de subastas."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "rayleigh-conquerors-haki-auction-house",
+      "kind": "reveal",
+      "characters": [
+        "silvers-rayleigh"
+      ],
+      "episode": 397,
+      "chapter": 503,
+      "description": {
+        "es": "Rayleigh deja inconscientes a los presentes con el Haki del Rey."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "rayleigh-roger-first-mate",
+      "kind": "reveal",
+      "characters": [
+        "silvers-rayleigh",
+        "gol-d-roger"
+      ],
+      "episode": 399,
+      "chapter": 506,
+      "description": {
+        "es": "Rayleigh cuenta su pasado como segundo de a bordo de Gol D. Roger."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kizaru-vs-supernovas",
+      "kind": "battle",
+      "characters": [
+        "borsalino",
+        "eustass-kid",
+        "trafalgar-d-water-law",
+        "basil-hawkins",
+        "x-drake",
+        "urouge"
+      ],
+      "episode": 402,
+      "chapter": 509,
+      "description": {
+        "es": "Kizaru se enfrenta a cuatro capitanes supernova."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "straw-hats-vs-pacifista",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook"
+      ],
+      "episode": 402,
+      "chapter": 510,
+      "description": {
+        "es": "La tripulación derrota a duras penas a un Pacifista."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "kuma-scatters-straw-hats",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "bartholomew-kuma",
+        "borsalino",
+        "silvers-rayleigh"
+      ],
+      "episode": 405,
+      "chapter": 513,
+      "description": {
+        "es": "Kuma hace desaparecer uno a uno a los Sombrero de Paja."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Summit_War_Saga",
+      "field": "episodes.title,episodes.airDate,episodeRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sabaody_Archipelago_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_490",
+      "field": "episodes.adaptsChapters (secciones \"Anime:\" de cada página Chapter_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_385",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

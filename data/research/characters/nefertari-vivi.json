@@ -1,0 +1,135 @@
+{
+  "slug": "nefertari-vivi",
+  "name": {
+    "en": "Nefertari Vivi",
+    "ja": "ネフェルタリ・ビビ"
+  },
+  "origin": "Arabasta",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 62,
+    "chapter": 103
+  },
+  "affiliations": [
+    {
+      "group": "baroque-works",
+      "role": "Miss Wednesday (agente doble)",
+      "from": {
+        "episode": 62,
+        "chapter": 103
+      },
+      "to": {
+        "episode": 65,
+        "chapter": 110
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "tripulante temporal",
+      "from": {
+        "episode": 67,
+        "chapter": 114
+      },
+      "to": {
+        "episode": 130,
+        "chapter": 216
+      }
+    },
+    {
+      "group": "arabasta-kingdom",
+      "role": "princesa",
+      "from": {
+        "episode": 62,
+        "chapter": 103
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "nefertari-vivi-miss-wednesday",
+      "name": {
+        "es": "Miss Wednesday",
+        "en": "Miss Wednesday",
+        "ja": "ミス・ウェンズデー"
+      },
+      "firstAppearance": {
+        "episode": 62,
+        "chapter": 103
+      },
+      "description": {
+        "es": "Agente de Baroque Works en Whisky Peak."
+      },
+      "abilities": [
+        "Peacock Slasher"
+      ],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "nefertari-vivi-princess",
+      "name": {
+        "es": "Vivi, princesa de Arabasta",
+        "en": "Princess Vivi",
+        "ja": "ビビ王女"
+      },
+      "firstAppearance": {
+        "episode": 64,
+        "chapter": 108
+      },
+      "description": {
+        "es": "Revela su identidad y viaja con los Sombrero de Paja hacia Arabasta."
+      },
+      "abilities": [
+        "Peacock Slasher",
+        "Karoo"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "nefertari-vivi-farewell",
+      "name": {
+        "es": "Vivi: la marca de la amistad",
+        "en": "Vivi (farewell)",
+        "ja": "仲間の印"
+      },
+      "firstAppearance": {
+        "episode": 130,
+        "chapter": 216
+      },
+      "description": {
+        "es": "Despedida de los Sombrero de Paja con el brazo en alto."
+      },
+      "abilities": [],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "nefertari-vivi-reverie",
+      "name": {
+        "es": "Vivi en la Levely",
+        "en": "Vivi (Reverie)",
+        "ja": "世界会議のビビ"
+      },
+      "firstAppearance": {
+        "episode": 880,
+        "chapter": 905
+      },
+      "description": {
+        "es": "Asiste a la Levely tras la elipsis; después desaparece."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nefertari_Vivi",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Nefertari_Vivi",
+      "field": "affiliations[*] y forms[nefertari-vivi-princess], forms[nefertari-vivi-reverie] (dudoso)"
+    }
+  ]
+}

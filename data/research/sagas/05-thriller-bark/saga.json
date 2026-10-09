@@ -1,0 +1,32 @@
+{
+  "slug": "thriller-bark",
+  "order": 5,
+  "title": {
+    "es": "Thriller Bark",
+    "en": "Thriller Bark",
+    "ja": "スリラーバーク編"
+  },
+  "chapterRange": {
+    "first": 442,
+    "last": 489
+  },
+  "episodeRange": {
+    "first": 326,
+    "last": 384
+  },
+  "arcSlugs": [
+    "ice-hunter",
+    "thriller-bark",
+    "spa-island"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Thriller_Bark_Saga",
+      "field": "saga"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Thriller_Bark_Saga",
+      "field": "episodes.title/airDate"
+    }
+  ]
+}

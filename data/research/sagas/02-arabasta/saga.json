@@ -1,0 +1,36 @@
+{
+  "slug": "arabasta",
+  "order": 2,
+  "title": {
+    "es": "Arabasta",
+    "en": "Arabasta",
+    "ja": "アラバスタ編"
+  },
+  "chapterRange": {
+    "first": 101,
+    "last": 217
+  },
+  "episodeRange": {
+    "first": 62,
+    "last": 135
+  },
+  "arcSlugs": [
+    "reverse-mountain",
+    "whisky-peak",
+    "koby-and-helmeppo",
+    "little-garden",
+    "drum-island",
+    "arabasta",
+    "post-arabasta"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Arabasta_Saga",
+      "field": "arcSlugs"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodeRange"
+    }
+  ]
+}

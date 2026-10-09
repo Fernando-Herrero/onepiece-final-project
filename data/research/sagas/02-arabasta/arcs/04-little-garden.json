@@ -1,0 +1,383 @@
+{
+  "slug": "little-garden",
+  "sagaSlug": "arabasta",
+  "order": 4,
+  "title": {
+    "es": "Little Garden",
+    "en": "Little Garden",
+    "ja": "リトルガーデン編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 115,
+    "last": 129
+  },
+  "episodeRange": {
+    "first": 70,
+    "last": 77
+  },
+  "episodes": [
+    {
+      "number": 70,
+      "title": {
+        "es": "¡Isla prehistórica! ¡La sombra que está al acecho en Little Garden!",
+        "en": "Prehistoric Island! The Shadow Lurking in Little Garden!",
+        "ja": "太古の島！リトルガーデンに潜む影！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        115,
+        117
+      ],
+      "airDate": {
+        "ja": "2001-05-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "karoo",
+        "usopp",
+        "nami",
+        "galdino",
+        "marianne",
+        "nico-robin",
+        "brogy"
+      ]
+    },
+    {
+      "number": 71,
+      "title": {
+        "es": "¡El gran duelo! Los gigantes Dorry y Brogy",
+        "en": "Humongous Battle! The Giants Dorry and Brogy!",
+        "ja": "でっかい決闘！巨人ドリーとブロギー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        116,
+        118
+      ],
+      "airDate": {
+        "ja": "2001-06-03"
+      },
+      "appearances": [
+        "brogy",
+        "usopp",
+        "nami",
+        "monkey-d-luffy",
+        "karoo",
+        "nefertari-vivi",
+        "dorry",
+        "vinsmoke-sanji",
+        "roronoa-zoro",
+        "gem",
+        "mikita",
+        "galdino",
+        "marianne"
+      ]
+    },
+    {
+      "number": 72,
+      "title": {
+        "es": "¡La ira de Luffy! ¡Un truco sucio en una batalla sagrada!",
+        "en": "Luffy's Anger! A Dirty Trick in a Sacred Battle",
+        "ja": "ルフィ怒る！聖なる決闘に卑劣な罠"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        117,
+        118
+      ],
+      "airDate": {
+        "ja": "2001-06-17"
+      },
+      "appearances": [
+        "brogy",
+        "dorry",
+        "monkey-d-luffy",
+        "nefertari-vivi",
+        "karoo",
+        "usopp",
+        "nami",
+        "mikita",
+        "gem",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "galdino",
+        "marianne"
+      ]
+    },
+    {
+      "number": 73,
+      "title": {
+        "es": "¡Brogy se lamenta en la victoria! Juicio de Elbaph",
+        "en": "Brogy Wails in Victory! Elbaph's Judgement",
+        "ja": "ブロギー勝利の号泣！エルバフの決着"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        119,
+        120
+      ],
+      "airDate": {
+        "ja": "2001-06-24"
+      },
+      "appearances": [
+        "nami",
+        "usopp",
+        "brogy",
+        "dorry",
+        "monkey-d-luffy",
+        "nefertari-vivi",
+        "karoo",
+        "mikita",
+        "gem",
+        "roronoa-zoro",
+        "galdino",
+        "marianne"
+      ]
+    },
+    {
+      "number": 74,
+      "title": {
+        "es": "¡La vela del demonio! Lágrimas de arrepentimiento y lágrimas de cólera",
+        "en": "The Devil's Candle! Tears of Regret and Tears of Anger",
+        "ja": "魔のキャンドル！無念の涙と怒りの涙"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        121,
+        122
+      ],
+      "airDate": {
+        "ja": "2001-07-15"
+      },
+      "appearances": [
+        "brogy",
+        "galdino",
+        "dorry",
+        "marianne",
+        "nefertari-vivi",
+        "mikita",
+        "karoo",
+        "usopp",
+        "monkey-d-luffy",
+        "gem",
+        "nami",
+        "roronoa-zoro",
+        "igaram"
+      ]
+    },
+    {
+      "number": 75,
+      "title": {
+        "es": "¡Luffy atacado con magia! Colors Trap",
+        "en": "Luffy Attacked by Magic! Colors Trap",
+        "ja": "ルフィを襲う魔力！カラーズトラップ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        123,
+        124
+      ],
+      "airDate": {
+        "ja": "2001-08-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "galdino",
+        "usopp",
+        "karoo",
+        "gem",
+        "mikita",
+        "marianne",
+        "roronoa-zoro",
+        "nami",
+        "nefertari-vivi",
+        "brogy"
+      ]
+    },
+    {
+      "number": 76,
+      "title": {
+        "es": "¡Contraataque crítico! ¡El rápido ingenio de Usopp y Kaenboshi!",
+        "en": "Critical Counterattack! Usopp's Quick Wit and Kaenboshi!",
+        "ja": "いざ反撃！ウソップの機転と火炎星！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        124,
+        125,
+        126
+      ],
+      "airDate": {
+        "ja": "2001-08-19"
+      },
+      "appearances": [
+        "usopp",
+        "gem",
+        "karoo",
+        "monkey-d-luffy",
+        "marianne",
+        "mikita",
+        "vinsmoke-sanji",
+        "nami",
+        "roronoa-zoro",
+        "nefertari-vivi",
+        "brogy",
+        "galdino",
+        "dorry",
+        "crocodile"
+      ]
+    },
+    {
+      "number": 77,
+      "title": {
+        "es": "¡Adiós a la isla de los gigantes! Rumbo a Arabasta",
+        "en": "Farewell to the Giants' Island! On to Arabasta",
+        "ja": "さらば巨人の島！アラバスタを目指せ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        127,
+        128,
+        129
+      ],
+      "airDate": {
+        "ja": "2001-08-19"
+      },
+      "appearances": [
+        "brogy",
+        "nami",
+        "roronoa-zoro",
+        "usopp",
+        "karoo",
+        "monkey-d-luffy",
+        "nefertari-vivi",
+        "dorry",
+        "vinsmoke-sanji",
+        "crocodile",
+        "nico-robin"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "dorry-vs-brogy",
+      "kind": "battle",
+      "characters": [
+        "dorry",
+        "brogy"
+      ],
+      "episode": 71,
+      "chapter": 116,
+      "description": {
+        "es": "El duelo de cien años entre los gigantes Dorry y Brogy, guerreros de Elbaf."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "dorry-beer-sabotage",
+      "kind": "other",
+      "characters": [
+        "dorry",
+        "gem",
+        "mikita"
+      ],
+      "episode": 72,
+      "chapter": 118,
+      "description": {
+        "es": "Baroque Works pone una bomba en la cerveza de Dorry y ensucia el duelo sagrado."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "candle-champion-trap",
+      "kind": "battle",
+      "characters": [
+        "roronoa-zoro",
+        "nami",
+        "nefertari-vivi",
+        "galdino",
+        "marianne"
+      ],
+      "episode": 74,
+      "chapter": 122,
+      "description": {
+        "es": "Mr. 3 atrapa a Zoro, Nami y Vivi en su torta de cera; Zoro se plantea cortarse las piernas."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-kaenboshi-candle-escape",
+      "kind": "battle",
+      "characters": [
+        "usopp",
+        "monkey-d-luffy",
+        "galdino",
+        "marianne"
+      ],
+      "episode": 76,
+      "chapter": 125,
+      "description": {
+        "es": "Usopp prende fuego al montaje de cera con su Kaenboshi y libera a sus compañeros; Luffy derrota a Mr. 3."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "brogy-dorry-elbaf-spear",
+      "kind": "battle",
+      "characters": [
+        "dorry",
+        "brogy",
+        "monkey-d-luffy"
+      ],
+      "episode": 77,
+      "chapter": 127,
+      "description": {
+        "es": "Los gigantes parten al Rey de los Mares que bloquea la ruta con la técnica Elbaf Spear."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "nami-falls-ill",
+      "kind": "other",
+      "characters": [
+        "nami"
+      ],
+      "episode": 77,
+      "chapter": 129,
+      "description": {
+        "es": "Nami cae gravemente enferma, lo que obliga a buscar un médico."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/it/wiki/Episodio_{n}",
+      "field": "episodes.adaptsChapters (campo capitoli de la wiki italiana)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/es/wiki/Episodio_{n}",
+      "field": "episodes.title.es"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_{n}",
+      "field": "episodes.appearances (Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Little_Garden_Arc",
+      "field": "chapterRange,episodeRange"
+    }
+  ]
+}

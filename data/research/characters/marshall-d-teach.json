@@ -1,0 +1,174 @@
+{
+  "slug": "marshall-d-teach",
+  "name": {
+    "en": "Marshall D. Teach",
+    "ja": "マーシャル・D・ティーチ"
+  },
+  "origin": null,
+  "fruit": "yami-yami-no-mi",
+  "firstAppearance": {
+    "chapter": 223,
+    "episode": 146
+  },
+  "affiliations": [
+    {
+      "group": "whitebeard-pirates",
+      "role": "member",
+      "from": {
+        "episode": 146,
+        "chapter": 223
+      },
+      "to": {
+        "episode": 323,
+        "chapter": 440
+      }
+    },
+    {
+      "group": "blackbeard-pirates",
+      "role": "admiral (captain)",
+      "from": {
+        "episode": 146,
+        "chapter": 223
+      },
+      "to": null
+    },
+    {
+      "group": "seven-warlords-of-the-sea",
+      "role": "warlord",
+      "from": {
+        "episode": 369,
+        "chapter": 474
+      },
+      "to": {
+        "episode": 448,
+        "chapter": 543
+      }
+    },
+    {
+      "group": "four-emperors",
+      "role": "emperor",
+      "from": {
+        "episode": 570,
+        "chapter": 650
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 0,
+      "episode": 917,
+      "chapter": 925,
+      "eventSlug": null
+    },
+    {
+      "amount": 2247600000,
+      "episode": 917,
+      "chapter": 925,
+      "eventSlug": null
+    },
+    {
+      "amount": 3996000000,
+      "episode": 1087,
+      "chapter": 1059,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "marshall-d-teach-blackbeard",
+      "name": {
+        "es": "Barbanegra",
+        "en": "Blackbeard",
+        "ja": "黒ひげ"
+      },
+      "firstAppearance": {
+        "episode": 146,
+        "chapter": 223
+      },
+      "description": {
+        "es": "Pirata de Jaya que sueña con ser rey."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "marshall-d-teach-yami",
+      "name": {
+        "es": "Barbanegra (Yami Yami no Mi)",
+        "en": "Blackbeard (Darkness)",
+        "ja": "黒ひげ（ヤミヤミ）"
+      },
+      "firstAppearance": {
+        "episode": 325,
+        "chapter": 441
+      },
+      "description": {
+        "es": "Logia de la oscuridad que anula Akuma no Mi; vence a Ace en Banaro."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Black Hole",
+        "Liberation"
+      ]
+    },
+    {
+      "slug": "marshall-d-teach-two-fruits",
+      "name": {
+        "es": "Barbanegra con dos frutas",
+        "en": "Blackbeard (Two Fruits)",
+        "ja": "黒ひげ（二つの能力）"
+      },
+      "firstAppearance": {
+        "episode": 486,
+        "chapter": 577
+      },
+      "description": {
+        "es": "Roba la Gura Gura no Mi de Barbablanca."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "marshall-d-teach-emperor",
+      "name": {
+        "es": "Emperador Barbanegra",
+        "en": "Emperor Blackbeard",
+        "ja": "四皇・黒ひげ"
+      },
+      "firstAppearance": {
+        "episode": 650,
+        "chapter": 720
+      },
+      "description": {
+        "es": "Aspecto post-timeskip con la barba partida."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+      "field": "affiliations[whitebeard-pirates].to (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+      "field": "affiliations[seven-warlords-of-the-sea].to (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+      "field": "forms[marshall-d-teach-yami].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+      "field": "forms[marshall-d-teach-emperor].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marshall_D._Teach",
+      "field": "bounties[0].chapter (dudoso, verificar)"
+    }
+  ]
+}

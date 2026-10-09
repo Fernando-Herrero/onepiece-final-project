@@ -1,0 +1,162 @@
+{
+  "slug": "jinbe",
+  "name": {
+    "en": "Jinbe",
+    "ja": "ジンベエ"
+  },
+  "origin": "fish-man-island",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 528,
+    "episode": 430
+  },
+  "affiliations": [
+    {
+      "group": "sun-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 430,
+        "chapter": 528
+      },
+      "to": null
+    },
+    {
+      "group": "seven-warlords-of-the-sea",
+      "role": "warlord",
+      "from": {
+        "episode": 430,
+        "chapter": 528
+      },
+      "to": {
+        "episode": 459,
+        "chapter": 550
+      }
+    },
+    {
+      "group": "big-mom-pirates",
+      "role": "ally",
+      "from": {
+        "episode": 790,
+        "chapter": 830
+      },
+      "to": {
+        "episode": 828,
+        "chapter": 858
+      }
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "helmsman",
+      "from": {
+        "episode": 980,
+        "chapter": 976
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 76000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": "sun-pirates-formation"
+    },
+    {
+      "amount": 250000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": "jinbe-warlord-invitation"
+    },
+    {
+      "amount": 438000000,
+      "episode": 879,
+      "chapter": 903,
+      "eventSlug": "whole-cake-island-bounties"
+    },
+    {
+      "amount": 1100000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "jinbe-warlord",
+      "name": {
+        "es": "Jinbe Shichibukai",
+        "en": "Jinbe (Warlord)",
+        "ja": "ジンベエ"
+      },
+      "firstAppearance": {
+        "episode": 430,
+        "chapter": 528
+      },
+      "description": {
+        "es": "Ex-Shichibukai preso en Impel Down que se une a la fuga de Luffy."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Karate de los gyojin"
+      ]
+    },
+    {
+      "slug": "jinbe-sun-pirates",
+      "name": {
+        "es": "Jinbe (Piratas del Sol)",
+        "en": "Jinbe (Sun Pirates)",
+        "ja": "ジンベエ"
+      },
+      "firstAppearance": {
+        "episode": 541,
+        "chapter": 622
+      },
+      "description": {
+        "es": "Joven capitán de los Piratas del Sol en el flashback de la Isla Gyojin."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "jinbe-straw-hat",
+      "name": {
+        "es": "Jinbe Mugiwara",
+        "en": "Jinbe (Straw Hat)",
+        "ja": "ジンベエ"
+      },
+      "firstAppearance": {
+        "episode": 980,
+        "chapter": 976
+      },
+      "description": {
+        "es": "Se une oficialmente como timonel en Wano."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Karate de los gyojin",
+        "Jujutsu de los gyojin"
+      ]
+    }
+  ],
+  "keyEvents": [
+    "whole-cake-island-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Jinbe",
+      "field": "bounties[76000000,250000000] (anteriores a la serie, sin capítulo de revelación conocido)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Jinbe/History",
+      "field": "affiliations"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Jinbe",
+      "field": "firstAppearance (silueta en cap. 233/ep 151; aparición completa 528/430 de memoria), forms[jinbe-sun-pirates] (de memoria, verificar)"
+    }
+  ]
+}

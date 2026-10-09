@@ -1,0 +1,92 @@
+{
+  "slug": "wapol",
+  "name": {
+    "en": "Wapol",
+    "ja": "ワポル"
+  },
+  "origin": null,
+  "fruit": "baku-baku-no-mi",
+  "firstAppearance": {
+    "chapter": 131,
+    "episode": 79
+  },
+  "affiliations": [
+    {
+      "group": "bliking-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 79,
+        "chapter": 131
+      },
+      "to": {
+        "episode": 91,
+        "chapter": 154
+      }
+    },
+    {
+      "group": "drum-kingdom",
+      "role": "king",
+      "from": {
+        "episode": 80,
+        "chapter": 133
+      },
+      "to": {
+        "episode": 91,
+        "chapter": 154
+      }
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "wapol-tin-plate",
+      "name": {
+        "es": "Wapol Hojalata",
+        "en": "Wapol the Tin Plate",
+        "ja": "ブリキのワポル"
+      },
+      "firstAppearance": {
+        "episode": 79,
+        "chapter": 131
+      },
+      "description": {
+        "es": "Rey tirano de Drum que come de todo con la Baku Baku no Mi."
+      },
+      "suggestedRarity": "common",
+      "abilities": [
+        "Baku Baku Factory"
+      ]
+    },
+    {
+      "slug": "wapol-house",
+      "name": {
+        "es": "Wapol House",
+        "en": "Wapol House",
+        "ja": "ワポルハウス"
+      },
+      "firstAppearance": {
+        "episode": 87,
+        "chapter": 147
+      },
+      "description": {
+        "es": "Se come su castillo y se convierte en una casa."
+      },
+      "suggestedRarity": "uncommon"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wapol",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wapol",
+      "field": "forms[wapol-house].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Wapol",
+      "field": "affiliations[*].to (dudoso, verificar)"
+    }
+  ]
+}

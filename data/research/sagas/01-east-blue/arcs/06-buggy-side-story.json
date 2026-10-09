@@ -1,0 +1,139 @@
+{
+  "slug": "buggy-side-story",
+  "sagaSlug": "east-blue",
+  "order": 6,
+  "title": {
+    "es": "Las aventuras de la banda de Buggy",
+    "en": "Buggy's Crew: After the Battle!",
+    "ja": "バギー一味冒険記"
+  },
+  "summary": {
+    "es": "Adaptación de la historia de portada de Buggy: el capitán recupera sus partes y reúne de nuevo a su banda."
+  },
+  "type": "mixed",
+  "chapterRange": null,
+  "episodeRange": {
+    "first": 46,
+    "last": 47
+  },
+  "chapters": [],
+  "episodes": [
+    {
+      "number": 46,
+      "title": {
+        "en": "Following the Straw Hat! Little Buggy's Big Adventure",
+        "ja": "麦わらを追え！小さなバギーの大冒険"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        35,
+        37,
+        39,
+        40,
+        42,
+        43,
+        46,
+        47,
+        48,
+        50,
+        51,
+        53,
+        54
+      ],
+      "airDate": {
+        "ja": "2000-11-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "vinsmoke-sanji",
+        "usopp",
+        "nami",
+        "buggy",
+        "gaimon",
+        "alvida"
+      ]
+    },
+    {
+      "number": 47,
+      "title": {
+        "en": "You've Been Waiting For It! The Return of Captain Buggy!",
+        "ja": "お待ちかね！あぁ復活のバギー船長！"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        36,
+        55,
+        57,
+        58,
+        59,
+        60,
+        62,
+        63,
+        65,
+        66,
+        67,
+        68,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "airDate": {
+        "ja": "2000-11-08"
+      },
+      "appearances": [
+        "buggy",
+        "alvida",
+        "cabaji",
+        "mohji",
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "buggy-revival",
+      "kind": "other",
+      "characters": [
+        "buggy",
+        "mohji",
+        "cabaji",
+        "alvida"
+      ],
+      "episode": 47,
+      "chapter": null,
+      "description": {
+        "es": "Buggy recupera su cuerpo y se alía con Alvida."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Buggy's_Crew:_After_the_Battle!",
+      "field": "chapterRange,episodeRange,type"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/East_Blue_Saga",
+      "field": "episodes.title,episodes.airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_46",
+      "field": "episodes.adaptsChapters,episodes.appearances (rendered Statistics + Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Buggy's_Crew:_After_the_Battle!",
+      "field": "adaptsChapters = capítulos cuya portada adapta (historia de portada, caps. 35-75)"
+    }
+  ]
+}

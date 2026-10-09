@@ -1,0 +1,141 @@
+{
+  "slug": "boa-hancock",
+  "name": {
+    "en": "Boa Hancock",
+    "ja": "ボア・ハンコック"
+  },
+  "origin": "Amazon Lily (Calm Belt)",
+  "fruit": "mero-mero-no-mi",
+  "firstAppearance": {
+    "episode": 409,
+    "chapter": 516
+  },
+  "affiliations": [
+    {
+      "group": "kuja-pirates",
+      "role": "capitana; emperatriz de Amazon Lily",
+      "from": {
+        "episode": 410,
+        "chapter": 516
+      },
+      "to": null
+    },
+    {
+      "group": "seven-warlords",
+      "role": "Shichibukai",
+      "from": {
+        "episode": 410,
+        "chapter": 516
+      },
+      "to": {
+        "episode": 957,
+        "chapter": 956
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 80000000,
+      "episode": 416,
+      "chapter": 522,
+      "eventSlug": null
+    },
+    {
+      "amount": 1659000000,
+      "episode": 1087,
+      "chapter": 1059,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "boa-hancock-empress",
+      "name": {
+        "es": "Hancock, la Emperatriz Pirata",
+        "en": "Pirate Empress Boa Hancock",
+        "ja": "海賊女帝ボア・ハンコック"
+      },
+      "firstAppearance": {
+        "episode": 410,
+        "chapter": 516
+      },
+      "description": {
+        "es": "Emperatriz de Amazon Lily y Shichibukai."
+      },
+      "abilities": [
+        "Mero Mero Mellow",
+        "Slave Arrow",
+        "Pistol Kiss"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "boa-hancock-gorgon",
+      "name": {
+        "es": "Hancock y la marca del Dragón Celestial",
+        "en": "Hancock (Gorgon past)",
+        "ja": "ゴルゴン三姉妹"
+      },
+      "firstAppearance": {
+        "episode": 415,
+        "chapter": 521
+      },
+      "description": {
+        "es": "Revela su pasado como esclava de los Dragones Celestiales."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "boa-hancock-marineford",
+      "name": {
+        "es": "Hancock en Marineford",
+        "en": "Hancock (Marineford)",
+        "ja": "頂上戦争のハンコック"
+      },
+      "firstAppearance": {
+        "episode": 459,
+        "chapter": 550
+      },
+      "description": {
+        "es": "Lucha del lado de Luffy en la Guerra en la Cumbre."
+      },
+      "abilities": [
+        "Perfume Femur",
+        "Slave Arrow"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "boa-hancock-post-timeskip",
+      "name": {
+        "es": "Hancock tras la elipsis",
+        "en": "Hancock (post-timeskip)",
+        "ja": "ハンコック (2年後)"
+      },
+      "firstAppearance": {
+        "episode": 1086,
+        "chapter": 1058
+      },
+      "description": {
+        "es": "Pierde el cargo de Shichibukai y se enfrenta a Barbanegra y la Marina en Amazon Lily."
+      },
+      "abilities": [
+        "Mero Mero no Mi",
+        "Haki del Rey"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Boa_Hancock",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Boa_Hancock",
+      "field": "affiliations[1].to (abolición de los Shichibukai), forms[boa-hancock-gorgon], forms[boa-hancock-marineford], forms[boa-hancock-post-timeskip] (dudoso)"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "slug": "sabo",
+  "name": {
+    "en": "Sabo",
+    "ja": "サボ"
+  },
+  "origin": "East Blue (reino de Goa)",
+  "fruit": "mera-mera-no-mi",
+  "firstAppearance": {
+    "episode": 494,
+    "chapter": 583
+  },
+  "affiliations": [
+    {
+      "group": "goa-kingdom",
+      "role": "noble (desertor)",
+      "from": {
+        "episode": 494,
+        "chapter": 583
+      },
+      "to": {
+        "episode": 497,
+        "chapter": 587
+      }
+    },
+    {
+      "group": "dadan-family",
+      "role": "hermano jurado (infancia)",
+      "from": {
+        "episode": 494,
+        "chapter": 583
+      },
+      "to": {
+        "episode": 497,
+        "chapter": 587
+      }
+    },
+    {
+      "group": "revolutionary-army",
+      "role": "jefe de Estado Mayor",
+      "from": {
+        "episode": 663,
+        "chapter": 731
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 602000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "sabo-child",
+      "name": {
+        "es": "Sabo niño",
+        "en": "Young Sabo",
+        "ja": "幼少期のサボ"
+      },
+      "firstAppearance": {
+        "episode": 494,
+        "chapter": 583
+      },
+      "description": {
+        "es": "Hermano jurado de Ace y Luffy; su barco es atacado por un Dragón Celestial."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "sabo-lucy",
+      "name": {
+        "es": "Sabo disfrazado de Lucy",
+        "en": "Sabo as Lucy",
+        "ja": "ルーシー (サボ)"
+      },
+      "firstAppearance": {
+        "episode": 663,
+        "chapter": 731
+      },
+      "description": {
+        "es": "Toma el disfraz de Lucy para competir por la Mera Mera no Mi en el Coliseo Corrida."
+      },
+      "abilities": [
+        "Ryusoken",
+        "Haki"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "sabo-mera-mera",
+      "name": {
+        "es": "Sabo con la Mera Mera no Mi",
+        "en": "Sabo (Flame-Flame Fruit)",
+        "ja": "メラメラの実のサボ"
+      },
+      "firstAppearance": {
+        "episode": 679,
+        "chapter": 744
+      },
+      "description": {
+        "es": "Come la fruta de Ace y estrena el Hiken en Dressrosa."
+      },
+      "abilities": [
+        "Hiken",
+        "Ryusoken",
+        "Logia de fuego"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "sabo-flame-emperor",
+      "name": {
+        "es": "Sabo Emperador de las Llamas",
+        "en": "\"Flame Emperor\" Sabo",
+        "ja": "炎帝サボ"
+      },
+      "firstAppearance": {
+        "episode": 1081,
+        "chapter": 1054
+      },
+      "description": {
+        "es": "Tras la Levely y el incidente de Lulusia recibe el epíteto 'Emperador de las Llamas'."
+      },
+      "abilities": [
+        "Mera Mera no Mi",
+        "Ryusoken",
+        "Haki"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [
+    "sabo-eats-mera-mera"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sabo",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sabo",
+      "field": "bounties[0] (602M: revelado en revista, sin capítulo)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Sabo",
+      "field": "affiliations[*].to, forms[sabo-lucy], forms[sabo-mera-mera] (dudoso)"
+    }
+  ]
+}

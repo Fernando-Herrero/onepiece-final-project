@@ -1,0 +1,1364 @@
+{
+  "slug": "marineford",
+  "sagaSlug": "summit-war",
+  "order": 5,
+  "title": {
+    "es": "Arco de Marineford",
+    "en": "Marineford Arc",
+    "ja": null
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 550,
+    "last": 580
+  },
+  "episodeRange": {
+    "first": 457,
+    "last": 489
+  },
+  "episodes": [
+    {
+      "number": 457,
+      "title": {
+        "es": null,
+        "en": "Special Retrospective Before Marineford - The Siblings' Vow!",
+        "ja": "海軍本部直前回想特別編 兄弟の誓い！"
+      },
+      "canon": "recap",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2010-06-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "jinbe",
+        "portgas-d-ace",
+        "edward-newgate",
+        "usopp",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "nami",
+        "sanji",
+        "marshall-d-teach",
+        "buggy",
+        "crocodile",
+        "bentham"
+      ]
+    },
+    {
+      "number": 458,
+      "title": {
+        "es": null,
+        "en": "Special Retrospective Before Marineford - Assemble! The Three Admirals",
+        "ja": "海軍本部直前回想特別編 集結! 三大将"
+      },
+      "canon": "recap",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2010-07-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "jinbe",
+        "buggy",
+        "bartholomew-kuma",
+        "gecko-moria",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "boa-hancock",
+        "roronoa-zoro",
+        "brook",
+        "usopp",
+        "sanji",
+        "franky",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "boa-sandersonia",
+        "boa-marigold",
+        "sengoku",
+        "kuzan",
+        "borsalino",
+        "sentomaru",
+        "sakazuki",
+        "portgas-d-ace"
+      ]
+    },
+    {
+      "number": 459,
+      "title": {
+        "es": null,
+        "en": "The Time of the Decisive Battle Draws Near! The Marine's Strongest Battle Formation is Ready!",
+        "ja": "決戦の刻迫る！ 海軍最強の布陣完成！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        549,
+        550,
+        551
+      ],
+      "airDate": {
+        "ja": "2010-07-18"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "monkey-d-garp",
+        "sengoku",
+        "bartholomew-kuma",
+        "gecko-moria",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "boa-hancock",
+        "kuzan",
+        "sakazuki",
+        "borsalino",
+        "monkey-d-luffy",
+        "jinbe",
+        "buggy",
+        "crocodile",
+        "galdino",
+        "koby",
+        "gol-d-roger"
+      ]
+    },
+    {
+      "number": 460,
+      "title": {
+        "es": null,
+        "en": "An Enormous Fleet Appears - Invasion! The Whitebeard Pirates",
+        "ja": "巨大艦隊あらわる　襲来！ 白ひげ海賊団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        551
+      ],
+      "airDate": {
+        "ja": "2010-08-01"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "bartholomew-kuma",
+        "gecko-moria",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "boa-hancock",
+        "sengoku",
+        "borsalino",
+        "sakazuki",
+        "kuzan",
+        "koby",
+        "monkey-d-garp",
+        "gol-d-roger",
+        "curly-dadan",
+        "edward-newgate",
+        "monkey-d-luffy",
+        "galdino",
+        "jinbe",
+        "buggy",
+        "emporio-ivankov",
+        "squard"
+      ]
+    },
+    {
+      "number": 461,
+      "title": {
+        "es": null,
+        "en": "The Beginning of the Battle! Ace and Whitebeard's Past",
+        "ja": "決戦の幕開け！ エースと白ひげの過去"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        551,
+        552
+      ],
+      "airDate": {
+        "ja": "2010-08-08"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "sengoku",
+        "kuzan",
+        "sakazuki",
+        "borsalino",
+        "bartholomew-kuma",
+        "gecko-moria",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "boa-hancock",
+        "edward-newgate",
+        "monkey-d-garp",
+        "koby",
+        "emporio-ivankov",
+        "monkey-d-luffy",
+        "jinbe",
+        "monkey-d-dragon",
+        "gol-d-roger",
+        "shanks",
+        "marshall-d-teach"
+      ]
+    },
+    {
+      "number": 462,
+      "title": {
+        "es": null,
+        "en": "The Power to Destroy the World! The Gura Gura no Mi's Ability",
+        "ja": "世界を滅ぼす力！ グラグラの実の能力"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        552,
+        553
+      ],
+      "airDate": {
+        "ja": "2010-08-15"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "edward-newgate",
+        "marshall-d-teach",
+        "borsalino",
+        "sakazuki",
+        "kuzan",
+        "gecko-moria",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "boa-hancock",
+        "crocodile",
+        "buggy",
+        "galdino",
+        "jinbe",
+        "monkey-d-luffy",
+        "emporio-ivankov",
+        "sengoku",
+        "koby",
+        "bartholomew-kuma",
+        "monkey-d-garp",
+        "squard"
+      ]
+    },
+    {
+      "number": 463,
+      "title": {
+        "es": null,
+        "en": "Burn Everything to Ash! Admiral Akainu's Power",
+        "ja": "すべてを焼き尽くす！ 大将赤犬の能力"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        553,
+        554
+      ],
+      "airDate": {
+        "ja": "2010-08-22"
+      },
+      "appearances": [
+        "edward-newgate",
+        "dracule-mihawk",
+        "portgas-d-ace",
+        "sengoku",
+        "borsalino",
+        "sakazuki",
+        "koby",
+        "monkey-d-luffy",
+        "donquixote-doflamingo",
+        "boa-hancock",
+        "bartholomew-kuma",
+        "gecko-moria"
+      ]
+    },
+    {
+      "number": 464,
+      "title": {
+        "es": null,
+        "en": "The Devil's Descendant! Little Oars Jr. Dashes Off!",
+        "ja": "魔人の子孫！ リトルオーズJr.驀進！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        554,
+        555
+      ],
+      "airDate": {
+        "ja": "2010-08-29"
+      },
+      "appearances": [
+        "bartholomew-kuma",
+        "dracule-mihawk",
+        "boa-hancock",
+        "donquixote-doflamingo",
+        "gecko-moria",
+        "franky",
+        "sanji",
+        "roronoa-zoro",
+        "usopp",
+        "tony-tony-chopper",
+        "nico-robin",
+        "nami",
+        "portgas-d-ace",
+        "sengoku",
+        "edward-newgate",
+        "koby"
+      ]
+    },
+    {
+      "number": 465,
+      "title": {
+        "es": null,
+        "en": "Only the Winner is Justice - Put Into Motion! Sengoku's Plan!",
+        "ja": "勝者だけが正義 発動！センゴクの作戦！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        556
+      ],
+      "airDate": {
+        "ja": "2010-09-05"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "gecko-moria",
+        "koby",
+        "edward-newgate",
+        "sengoku",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "sakazuki",
+        "monkey-d-garp",
+        "monkey-d-luffy",
+        "buggy",
+        "galdino",
+        "crocodile",
+        "jinbe",
+        "emporio-ivankov",
+        "boa-hancock",
+        "bartholomew-kuma",
+        "borsalino",
+        "kuzan"
+      ]
+    },
+    {
+      "number": 466,
+      "title": {
+        "es": null,
+        "en": "The Straw Hat Team Arrives — The Battlefield Grows More Intense",
+        "ja": "麦わらチーム到着 風雲急を告げる戦場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        557
+      ],
+      "airDate": {
+        "ja": "2010-09-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "emporio-ivankov",
+        "buggy",
+        "galdino",
+        "jinbe",
+        "crocodile",
+        "portgas-d-ace",
+        "sengoku",
+        "monkey-d-garp",
+        "dracule-mihawk",
+        "gecko-moria",
+        "boa-hancock",
+        "koby",
+        "kuzan",
+        "bartholomew-kuma",
+        "borsalino",
+        "donquixote-doflamingo",
+        "sakazuki",
+        "edward-newgate",
+        "shanks"
+      ]
+    },
+    {
+      "number": 467,
+      "title": {
+        "es": null,
+        "en": "I'll Save You Even If I Die - Luffy vs. The Marines, The Battle Starts",
+        "ja": "死んでも助ける ルフィVS海軍戦闘開始"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        558
+      ],
+      "airDate": {
+        "ja": "2010-09-19"
+      },
+      "appearances": [
+        "koby",
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "edward-newgate",
+        "buggy",
+        "emporio-ivankov",
+        "galdino",
+        "jinbe",
+        "monkey-d-garp",
+        "sengoku",
+        "borsalino",
+        "bartholomew-kuma",
+        "squard",
+        "sakazuki",
+        "gecko-moria",
+        "boa-hancock",
+        "dracule-mihawk",
+        "donquixote-doflamingo",
+        "monkey-d-dragon"
+      ]
+    },
+    {
+      "number": 468,
+      "title": {
+        "es": null,
+        "en": "Consecutive Battles! Devil Fruit User Army vs. Devil Fruit User Army",
+        "ja": "激戦の連続! 能力者軍団VS能力者軍団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        559
+      ],
+      "airDate": {
+        "ja": "2010-09-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "sengoku",
+        "portgas-d-ace",
+        "monkey-d-garp",
+        "edward-newgate",
+        "buggy",
+        "galdino",
+        "emporio-ivankov",
+        "jinbe",
+        "gecko-moria",
+        "bartholomew-kuma",
+        "monkey-d-dragon",
+        "boa-hancock",
+        "donquixote-doflamingo"
+      ]
+    },
+    {
+      "number": 469,
+      "title": {
+        "es": null,
+        "en": "Kuma Causes Disaster — Iva-san's Angry Attack",
+        "ja": "クマに起きた異変 イワさん怒りの一撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        560
+      ],
+      "airDate": {
+        "ja": "2010-10-03"
+      },
+      "appearances": [
+        "boa-hancock",
+        "monkey-d-luffy",
+        "boa-marigold",
+        "boa-sandersonia",
+        "portgas-d-ace",
+        "emporio-ivankov",
+        "donquixote-doflamingo",
+        "bartholomew-kuma",
+        "roronoa-zoro",
+        "brook",
+        "usopp",
+        "sanji",
+        "franky",
+        "nami",
+        "tony-tony-chopper",
+        "nico-robin",
+        "buggy",
+        "galdino",
+        "crocodile",
+        "edward-newgate",
+        "dracule-mihawk"
+      ]
+    },
+    {
+      "number": 470,
+      "title": {
+        "es": null,
+        "en": "Master Swordsman Mihawk - The Black Sword's Slash Draws Near Luffy",
+        "ja": "剣豪ミホーク ルフィに迫る黒刀の斬撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        561
+      ],
+      "airDate": {
+        "ja": "2010-10-10"
+      },
+      "appearances": [
+        "dracule-mihawk",
+        "monkey-d-luffy",
+        "bartholomew-kuma",
+        "emporio-ivankov",
+        "portgas-d-ace",
+        "jinbe",
+        "koby",
+        "buggy",
+        "galdino",
+        "donquixote-doflamingo",
+        "crocodile",
+        "boa-hancock",
+        "sengoku",
+        "gol-d-roger",
+        "monkey-d-garp",
+        "monkey-d-dragon",
+        "bentham",
+        "magellan",
+        "borsalino",
+        "edward-newgate",
+        "kuzan",
+        "sakazuki",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 471,
+      "title": {
+        "es": null,
+        "en": "The Extermination Operation Begins - The Might of the Pacifista Army",
+        "ja": "殲滅作戦始動 パシフィスタ軍団の威力"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        562
+      ],
+      "airDate": {
+        "ja": "2010-10-17"
+      },
+      "appearances": [
+        "sentomaru",
+        "emporio-ivankov",
+        "bartholomew-kuma",
+        "edward-newgate",
+        "portgas-d-ace",
+        "sengoku",
+        "borsalino",
+        "dracule-mihawk",
+        "monkey-d-luffy",
+        "jinbe",
+        "gecko-moria",
+        "boa-hancock",
+        "buggy",
+        "squard",
+        "sakazuki"
+      ]
+    },
+    {
+      "number": 472,
+      "title": {
+        "es": null,
+        "en": "Akainu's Plot! Whitebeard Entrapped",
+        "ja": "赤犬の謀略! おとしいれられた白ひげ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        563
+      ],
+      "airDate": {
+        "ja": "2010-10-24"
+      },
+      "appearances": [
+        "edward-newgate",
+        "squard",
+        "portgas-d-ace",
+        "dracule-mihawk",
+        "jinbe",
+        "kuzan",
+        "emporio-ivankov",
+        "borsalino",
+        "sentomaru",
+        "donquixote-doflamingo",
+        "sakazuki",
+        "gecko-moria",
+        "buggy",
+        "sengoku",
+        "monkey-d-garp",
+        "monkey-d-luffy",
+        "gol-d-roger",
+        "crocodile"
+      ]
+    },
+    {
+      "number": 473,
+      "title": {
+        "es": null,
+        "en": "The Encirclement Walls Activated! The Whitebeard Pirates Driven Into a Corner!!",
+        "ja": "包囲壁作動! 白ひげ海賊団絶体絶命<nowiki>!!</nowiki>"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        564
+      ],
+      "airDate": {
+        "ja": "2010-10-31"
+      },
+      "appearances": [
+        "edward-newgate",
+        "sengoku",
+        "squard",
+        "monkey-d-luffy",
+        "jinbe",
+        "emporio-ivankov",
+        "portgas-d-ace",
+        "monkey-d-garp",
+        "donquixote-doflamingo",
+        "koby",
+        "borsalino",
+        "sakazuki",
+        "kuzan"
+      ]
+    },
+    {
+      "number": 474,
+      "title": {
+        "es": null,
+        "en": "The Order to Perform the Execution is Given - Break Through the Encircling Wall!",
+        "ja": "処刑執行命令下る 包囲壁を突破せよ!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        565
+      ],
+      "airDate": {
+        "ja": "2010-11-07"
+      },
+      "appearances": [
+        "trafalgar-d-water-law",
+        "eustass-kid",
+        "sakazuki",
+        "monkey-d-luffy",
+        "sengoku",
+        "edward-newgate",
+        "emporio-ivankov",
+        "portgas-d-ace",
+        "monkey-d-garp",
+        "koby",
+        "gecko-moria",
+        "bartholomew-kuma",
+        "jinbe",
+        "borsalino",
+        "kuzan",
+        "squard"
+      ]
+    },
+    {
+      "number": 475,
+      "title": {
+        "es": null,
+        "en": "Rush Into the Final Phase! Whitebeard's Maneuver to Turn the Tides",
+        "ja": "最終局面突入! 白ひげ起死回生の一手"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        566
+      ],
+      "airDate": {
+        "ja": "2010-11-14"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "kuzan",
+        "sakazuki",
+        "borsalino",
+        "koby",
+        "portgas-d-ace",
+        "monkey-d-garp",
+        "sengoku",
+        "edward-newgate",
+        "jinbe",
+        "crocodile",
+        "donquixote-doflamingo",
+        "dracule-mihawk",
+        "boa-hancock",
+        "galdino",
+        "buggy",
+        "gecko-moria",
+        "bartholomew-kuma"
+      ]
+    },
+    {
+      "number": 476,
+      "title": {
+        "es": null,
+        "en": "Luffy's Strength is Exhausted! All-Out War in the Oris Plaza!!",
+        "ja": "ルフィ力尽く! オリス広場の総力戦<nowiki>!!</nowiki>"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        567
+      ],
+      "airDate": {
+        "ja": "2010-11-21"
+      },
+      "appearances": [
+        "emporio-ivankov",
+        "jinbe",
+        "monkey-d-luffy",
+        "sakazuki",
+        "borsalino",
+        "kuzan",
+        "edward-newgate",
+        "portgas-d-ace",
+        "monkey-d-garp",
+        "sengoku",
+        "koby",
+        "sanji",
+        "tony-tony-chopper",
+        "dracule-mihawk",
+        "boa-hancock",
+        "gecko-moria",
+        "sentomaru"
+      ]
+    },
+    {
+      "number": 477,
+      "title": {
+        "es": null,
+        "en": "Power that Reduces One's Life - Tension Hormones Return",
+        "ja": "命を削る力 テンション・ホルモン再び"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        568
+      ],
+      "airDate": {
+        "ja": "2010-11-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "sengoku",
+        "monkey-d-garp",
+        "shiki",
+        "edward-newgate",
+        "sakazuki",
+        "emporio-ivankov",
+        "curly-dadan",
+        "jinbe",
+        "buggy",
+        "borsalino",
+        "kuzan",
+        "koby",
+        "sanji",
+        "tony-tony-chopper",
+        "galdino"
+      ]
+    },
+    {
+      "number": 478,
+      "title": {
+        "es": null,
+        "en": "For a Promise!! Luffy and Koby Clash!",
+        "ja": "約束のために激突!<nowiki>!!</nowiki> ルフィとコビー<nowiki>!!</nowiki>"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        569
+      ],
+      "airDate": {
+        "ja": "2010-12-05"
+      },
+      "appearances": [
+        "sengoku",
+        "portgas-d-ace",
+        "galdino",
+        "monkey-d-luffy",
+        "emporio-ivankov",
+        "koby",
+        "sanji",
+        "tony-tony-chopper",
+        "roronoa-zoro",
+        "boa-hancock",
+        "edward-newgate",
+        "sakazuki",
+        "borsalino",
+        "kuzan",
+        "jinbe",
+        "monkey-d-garp",
+        "squard"
+      ]
+    },
+    {
+      "number": 479,
+      "title": {
+        "es": null,
+        "en": "In Front of the Execution Platform! The Path to Ace is Opened!!",
+        "ja": "処刑台目前! 開かれたエースへの道<nowiki>!!</nowiki>"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        570,
+        571
+      ],
+      "airDate": {
+        "ja": "2010-12-12"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "galdino",
+        "sengoku",
+        "edward-newgate",
+        "sakazuki",
+        "borsalino",
+        "kuzan",
+        "dracule-mihawk",
+        "monkey-d-garp",
+        "emporio-ivankov",
+        "monkey-d-dragon",
+        "jinbe",
+        "crocodile",
+        "boa-hancock",
+        "sentomaru",
+        "buggy"
+      ]
+    },
+    {
+      "number": 480,
+      "title": {
+        "es": null,
+        "en": "The Path they Each Chose - Luffy vs. Garp!",
+        "ja": "それぞれの選んだ道　ルフィVSガープ!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        571
+      ],
+      "airDate": {
+        "ja": "2010-12-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "monkey-d-garp",
+        "portgas-d-ace",
+        "sengoku",
+        "koby",
+        "boa-hancock",
+        "emporio-ivankov",
+        "jinbe",
+        "edward-newgate",
+        "borsalino",
+        "galdino",
+        "buggy",
+        "bentham"
+      ]
+    },
+    {
+      "number": 481,
+      "title": {
+        "es": null,
+        "en": "Ace Freed! Whitebeard's Final Captain's Order!",
+        "ja": "エース救出! 白ひげ最後の船長命令<nowiki>!!</nowiki>"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        572
+      ],
+      "airDate": {
+        "ja": "2010-12-26"
+      },
+      "appearances": [
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "galdino",
+        "emporio-ivankov",
+        "boa-hancock",
+        "koby",
+        "jinbe",
+        "edward-newgate",
+        "kuzan",
+        "buggy",
+        "sengoku",
+        "donquixote-doflamingo",
+        "sakazuki",
+        "squard",
+        "gol-d-roger",
+        "silvers-rayleigh",
+        "shiki",
+        "monkey-d-garp",
+        "shanks",
+        "borsalino"
+      ]
+    },
+    {
+      "number": 482,
+      "title": {
+        "es": null,
+        "en": "The Power that Burns Even Fire - Akainu's Ruthless Pursuit",
+        "ja": "火をも焼き尽くす能力 赤犬非情の追撃"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        573
+      ],
+      "airDate": {
+        "ja": "2011-01-09"
+      },
+      "appearances": [
+        "edward-newgate",
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "galdino",
+        "sengoku",
+        "monkey-d-garp",
+        "buggy",
+        "emporio-ivankov",
+        "jinbe",
+        "sakazuki",
+        "squard",
+        "nami",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 483,
+      "title": {
+        "es": null,
+        "en": "Searching for an Answer - Fire Fist Ace Dies on the Battlefield",
+        "ja": "答えを探して 火拳のエース戦場に死す"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        574
+      ],
+      "airDate": {
+        "ja": "2011-01-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "sakazuki",
+        "jinbe",
+        "kuzan",
+        "borsalino",
+        "monkey-d-garp",
+        "edward-newgate",
+        "buggy",
+        "galdino",
+        "sengoku",
+        "emporio-ivankov",
+        "curly-dadan"
+      ]
+    },
+    {
+      "number": 484,
+      "title": {
+        "es": null,
+        "en": "Marine Headquarters Collapses! Whitebeard's Silent Rage!",
+        "ja": "海軍本部崩壊! 白ひげ言葉なき怒り!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        574,
+        575,
+        576
+      ],
+      "airDate": {
+        "ja": "2011-01-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "portgas-d-ace",
+        "sakazuki",
+        "monkey-d-garp",
+        "gol-d-roger",
+        "jinbe",
+        "edward-newgate",
+        "emporio-ivankov",
+        "sengoku",
+        "boa-hancock",
+        "marshall-d-teach",
+        "shiryu"
+      ]
+    },
+    {
+      "number": 485,
+      "title": {
+        "es": null,
+        "en": "Settling the Score - Whitebeard vs. The Blackbeard Pirates",
+        "ja": "ケジメをつける 白ひげVS黒ひげ海賊団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        576
+      ],
+      "airDate": {
+        "ja": "2011-01-30"
+      },
+      "appearances": [
+        "marshall-d-teach",
+        "shiryu",
+        "sengoku",
+        "edward-newgate",
+        "portgas-d-ace",
+        "squard",
+        "gol-d-roger",
+        "jinbe",
+        "emporio-ivankov",
+        "monkey-d-luffy",
+        "kuzan",
+        "borsalino",
+        "sakazuki",
+        "monkey-d-garp"
+      ]
+    },
+    {
+      "number": 486,
+      "title": {
+        "es": null,
+        "en": "The Start of the Show - Blackbeard's Plot Revealed",
+        "ja": "ショーの開幕 明かされた黒ひげの企み"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        577
+      ],
+      "airDate": {
+        "ja": "2011-02-06"
+      },
+      "appearances": [
+        "edward-newgate",
+        "silvers-rayleigh",
+        "marshall-d-teach",
+        "shiryu",
+        "monkey-d-garp",
+        "sengoku",
+        "donquixote-doflamingo",
+        "crocodile",
+        "gecko-moria",
+        "dracule-mihawk",
+        "jinbe",
+        "monkey-d-luffy",
+        "sakazuki",
+        "buggy",
+        "portgas-d-ace",
+        "boa-hancock",
+        "kuzan",
+        "koby",
+        "emporio-ivankov"
+      ]
+    },
+    {
+      "number": 487,
+      "title": {
+        "es": null,
+        "en": "Akainu's Tenacity! The Fist of Magma Attacks Luffy",
+        "ja": "赤犬の執念! ルフィを襲うマグマの拳"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        578
+      ],
+      "airDate": {
+        "ja": "2011-02-13"
+      },
+      "appearances": [
+        "marshall-d-teach",
+        "sengoku",
+        "shiryu",
+        "borsalino",
+        "emporio-ivankov",
+        "jinbe",
+        "monkey-d-luffy",
+        "sakazuki",
+        "koby",
+        "kuzan",
+        "portgas-d-ace",
+        "crocodile",
+        "buggy",
+        "trafalgar-d-water-law"
+      ]
+    },
+    {
+      "number": 488,
+      "title": {
+        "es": null,
+        "en": "A Desperate Cry - Seconds of Valor that Change Destiny",
+        "ja": "必死の叫び 運命を変える勇気ある数秒"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        579
+      ],
+      "airDate": {
+        "ja": "2011-02-20"
+      },
+      "appearances": [
+        "buggy",
+        "jinbe",
+        "monkey-d-luffy",
+        "trafalgar-d-water-law",
+        "sakazuki",
+        "sengoku",
+        "marshall-d-teach",
+        "koby",
+        "monkey-d-garp",
+        "borsalino",
+        "kuzan",
+        "shanks"
+      ]
+    },
+    {
+      "number": 489,
+      "title": {
+        "es": null,
+        "en": "Enter Shanks! The Ultimate War Ends at Last",
+        "ja": "シャンクス見参! 頂上戦争ついに終結"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        580
+      ],
+      "airDate": {
+        "ja": "2011-03-06"
+      },
+      "appearances": [
+        "shanks",
+        "monkey-d-garp",
+        "sakazuki",
+        "sengoku",
+        "marshall-d-teach",
+        "monkey-d-luffy",
+        "jinbe",
+        "trafalgar-d-water-law",
+        "buggy",
+        "kuzan",
+        "borsalino",
+        "boa-hancock",
+        "dracule-mihawk",
+        "shiryu",
+        "portgas-d-ace",
+        "edward-newgate",
+        "squard",
+        "donquixote-doflamingo",
+        "koby",
+        "gecko-moria",
+        "sentomaru",
+        "crocodile",
+        "bartholomew-kuma"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "ace-parentage-revealed",
+      "kind": "reveal",
+      "characters": [
+        "portgas-d-ace",
+        "gol-d-roger",
+        "sengoku"
+      ],
+      "episode": 459,
+      "chapter": 550,
+      "description": {
+        "es": "Sengoku revela que Ace es hijo de Gol D. Roger."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "whitebeard-arrives-marineford",
+      "kind": "battle",
+      "characters": [
+        "edward-newgate",
+        "marco",
+        "portgas-d-ace"
+      ],
+      "episode": 459,
+      "chapter": 551,
+      "description": {
+        "es": "Barbablanca llega a Marineford con su flota."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-arrives-marineford",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "buggy",
+        "jinbe",
+        "crocodile",
+        "emporio-ivankov",
+        "galdino"
+      ],
+      "episode": 466,
+      "chapter": 557,
+      "description": {
+        "es": "Luffy cae del cielo en Marineford con los fugados de Impel Down."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-mihawk",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "dracule-mihawk"
+      ],
+      "episode": 470,
+      "chapter": 561,
+      "description": {
+        "es": "Mihawk corta el paso a Luffy."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "squard-stabs-whitebeard",
+      "kind": "battle",
+      "characters": [
+        "squard",
+        "edward-newgate"
+      ],
+      "episode": 472,
+      "chapter": 563,
+      "description": {
+        "es": "Squard apuñala a Barbablanca engañado por la Marina."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-conquerors-haki-marineford",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy"
+      ],
+      "episode": 479,
+      "chapter": 570,
+      "description": {
+        "es": "Luffy desata el Haki del Rey en plena guerra."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "ace-freed",
+      "kind": "other",
+      "characters": [
+        "portgas-d-ace",
+        "monkey-d-luffy",
+        "galdino"
+      ],
+      "episode": 479,
+      "chapter": 571,
+      "description": {
+        "es": "Luffy libera a Ace en el patíbulo."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "death-of-portgas-d-ace",
+      "kind": "death",
+      "characters": [
+        "portgas-d-ace",
+        "sakazuki",
+        "monkey-d-luffy"
+      ],
+      "episode": 483,
+      "chapter": 574,
+      "description": {
+        "es": "Akainu mata a Ace, que muere protegiendo a Luffy."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "death-of-edward-newgate",
+      "kind": "death",
+      "characters": [
+        "edward-newgate",
+        "marshall-d-teach"
+      ],
+      "episode": 485,
+      "chapter": 576,
+      "description": {
+        "es": "Barbablanca muere en pie tras proclamar que el One Piece existe."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "blackbeard-steals-gura-gura-no-mi",
+      "kind": "transformation",
+      "characters": [
+        "marshall-d-teach",
+        "edward-newgate"
+      ],
+      "episode": 486,
+      "chapter": 577,
+      "description": {
+        "es": "Barbanegra roba el poder de la Gura Gura no Mi."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "koby-stands-up",
+      "kind": "other",
+      "characters": [
+        "koby",
+        "sakazuki"
+      ],
+      "episode": 488,
+      "chapter": 579,
+      "description": {
+        "es": "Coby planta cara a Akainu para detener la guerra."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "law-rescues-luffy",
+      "kind": "other",
+      "characters": [
+        "trafalgar-d-water-law",
+        "monkey-d-luffy",
+        "jinbe"
+      ],
+      "episode": 488,
+      "chapter": 579,
+      "description": {
+        "es": "Law saca a Luffy de Marineford en su submarino."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "shanks-ends-war",
+      "kind": "other",
+      "characters": [
+        "shanks",
+        "sengoku",
+        "sakazuki"
+      ],
+      "episode": 489,
+      "chapter": 580,
+      "description": {
+        "es": "Shanks llega y pone fin a la guerra."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Summit_War_Saga",
+      "field": "episodes.title,episodes.airDate,episodeRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Marineford_Arc",
+      "field": "chapterRange"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_490",
+      "field": "episodes.adaptsChapters (secciones \"Anime:\" de cada página Chapter_N)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_385",
+      "field": "episodes.appearances (Characters in Order of Appearance de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "don-krieg",
+  "name": {
+    "en": "Don Krieg",
+    "ja": "クリーク"
+  },
+  "origin": null,
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 45,
+    "episode": 21
+  },
+  "affiliations": [
+    {
+      "group": "krieg-pirates",
+      "role": "admiral",
+      "from": {
+        "episode": 21,
+        "chapter": 45
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 17000000,
+      "episode": 45,
+      "chapter": 96,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "don-krieg-armor",
+      "name": {
+        "es": "Don Krieg con armadura",
+        "en": "Don Krieg (Armor)",
+        "ja": "首領・クリーク"
+      },
+      "firstAppearance": {
+        "episode": 21,
+        "chapter": 45
+      },
+      "description": {
+        "es": "Almirante pirata del East Blue con armadura llena de armas."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "MH5",
+        "Daisensō"
+      ]
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Don_Krieg",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Don_Krieg",
+      "field": "firstAppearance.episode (dudoso, verificar)"
+    }
+  ]
+}

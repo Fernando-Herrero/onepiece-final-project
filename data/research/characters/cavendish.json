@@ -1,0 +1,99 @@
+{
+  "slug": "cavendish",
+  "name": {
+    "en": "Cavendish",
+    "ja": "キャベンディッシュ"
+  },
+  "origin": "Reino Bourgeois",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 632,
+    "chapter": 704
+  },
+  "affiliations": [
+    {
+      "group": "beautiful-pirates",
+      "role": "capitán",
+      "from": {
+        "episode": 634,
+        "chapter": 704
+      },
+      "to": null
+    },
+    {
+      "group": "straw-hat-grand-fleet",
+      "role": "capitán del 1.er barco",
+      "from": {
+        "episode": 745,
+        "chapter": 800
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 280000000,
+      "episode": 634,
+      "chapter": 704,
+      "eventSlug": null
+    },
+    {
+      "amount": 330000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "cavendish-white-horse",
+      "name": {
+        "es": "Cavendish del Caballo Blanco",
+        "en": "\"Cavendish of the White Horse\"",
+        "ja": "白馬のキャベンディッシュ"
+      },
+      "firstAppearance": {
+        "episode": 634,
+        "chapter": 704
+      },
+      "description": {
+        "es": "Pirata narcisista que compite en el Coliseo Corrida."
+      },
+      "abilities": [
+        "Durandal",
+        "Esgrima"
+      ],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "cavendish-hakuba",
+      "name": {
+        "es": "Hakuba",
+        "en": "Hakuba",
+        "ja": "ハクバ"
+      },
+      "firstAppearance": {
+        "episode": 652,
+        "chapter": 721
+      },
+      "description": {
+        "es": "Su alter ego asesino que actúa mientras duerme."
+      },
+      "abilities": [
+        "Velocidad sobrehumana"
+      ],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Cavendish",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Cavendish",
+      "field": "forms[cavendish-hakuba] (dudoso)"
+    }
+  ]
+}

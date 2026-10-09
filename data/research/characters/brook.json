@@ -1,0 +1,125 @@
+{
+  "slug": "brook",
+  "name": {
+    "en": "Brook",
+    "ja": "ブルック"
+  },
+  "origin": "west-blue",
+  "fruit": "yomi-yomi-no-mi",
+  "firstAppearance": {
+    "chapter": 442,
+    "episode": 337
+  },
+  "affiliations": [
+    {
+      "group": "rumbar-pirates",
+      "role": "captain",
+      "from": null,
+      "to": null
+    },
+    {
+      "group": "straw-hat-pirates",
+      "role": "musician",
+      "from": {
+        "episode": 381,
+        "chapter": 489
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 33000000,
+      "episode": 519,
+      "chapter": 600,
+      "eventSlug": "brook-bounty-confirmed"
+    },
+    {
+      "amount": 83000000,
+      "episode": 746,
+      "chapter": 801,
+      "eventSlug": "dressrosa-bounties"
+    },
+    {
+      "amount": 383000000,
+      "episode": 1088,
+      "chapter": 1058,
+      "eventSlug": "wano-bounties"
+    }
+  ],
+  "forms": [
+    {
+      "slug": "brook-pre-timeskip",
+      "name": {
+        "es": "Brook (pre-salto temporal)",
+        "en": "Brook (Pre-Timeskip)",
+        "ja": "ブルック"
+      },
+      "firstAppearance": {
+        "episode": 337,
+        "chapter": 442
+      },
+      "description": {
+        "es": "Esqueleto con afro, superviviente del Rumbar Pirates."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "soul-king-brook",
+      "name": {
+        "es": "Soul King Brook",
+        "en": "Soul King",
+        "ja": "ソウルキング"
+      },
+      "firstAppearance": {
+        "episode": 516,
+        "chapter": 597
+      },
+      "description": {
+        "es": "Estrella del rock tras dos años de gira; regreso en concierto en Sabaody."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Soul Solid"
+      ]
+    },
+    {
+      "slug": "brook-soul",
+      "name": {
+        "es": "Brook (alma separada)",
+        "en": "Brook (Soul Form)",
+        "ja": "魂"
+      },
+      "firstAppearance": {
+        "episode": 565,
+        "chapter": 643
+      },
+      "description": {
+        "es": "Separa su alma del cuerpo y la proyecta fuera de él."
+      },
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [
+    "dressrosa-bounties",
+    "wano-bounties"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Bounty",
+      "field": "bounties"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_600",
+      "field": "bounties[33000000]"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Brook/Abilities_and_Powers",
+      "field": "forms[brook-soul] (cita 643/565)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Brook",
+      "field": "forms[soul-king-brook] (cap/ep de memoria, verificar); affiliations[rumbar-pirates] es pasado, sin fechas de serie"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "foxys-return",
+  "sagaSlug": "water-7",
+  "order": 4,
+  "title": {
+    "es": "El regreso de Foxy",
+    "en": "Foxy's Return",
+    "ja": "フォクシー帰還編"
+  },
+  "summary": {
+    "es": "Relleno breve: Foxy vuelve a cruzarse con los Sombrero de Paja antes de la aparición de Aokiji."
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 319,
+    "last": 319
+  },
+  "episodeRange": {
+    "first": 225,
+    "last": 226
+  },
+  "episodes": [
+    {
+      "number": 225,
+      "title": {
+        "en": "Proud Man! Silver Fox Foxy!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2005-03-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 226,
+      "title": {
+        "en": "The Guy Who's the Closest To Invincible? And the Most Dangerous Man!"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        319
+      ],
+      "airDate": {
+        "ja": "2005-03-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "kuzan"
+      ]
+    }
+  ],
+  "events": [],
+  "sources": [
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[].title.en, episodes[].canon, episodes[].airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Foxy%27s_Return_Arc",
+      "field": "chapterRange, episodeRange, events"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide",
+      "field": "episodes[].adaptsChapters (adaptsChapters reconstruido de memoria sobre One Piece Wiki (Cloudflare bloqueó la descarga); reparto aproximado ±1 capítulo)"
+    }
+  ]
+}

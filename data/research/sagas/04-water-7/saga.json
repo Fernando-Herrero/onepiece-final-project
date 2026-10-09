@@ -1,0 +1,37 @@
+{
+  "slug": "water-7",
+  "order": 4,
+  "title": {
+    "es": "Water 7",
+    "en": "Water 7",
+    "ja": "ウォーターセブン編"
+  },
+  "chapterRange": {
+    "first": 303,
+    "last": 441
+  },
+  "episodeRange": {
+    "first": 196,
+    "last": 335
+  },
+  "arcSlugs": [
+    "g-8",
+    "long-ring-long-land",
+    "oceans-dream",
+    "foxys-return",
+    "water-7",
+    "enies-lobby",
+    "post-enies-lobby",
+    "ice-hunter"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Water_7_Saga",
+      "field": "chapterRange, arcSlugs"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodeRange (incluye G-8 196-206 e Ice Hunter 326-335 por petición; la Wiki los sitúa en Skypiea y Thriller Bark)"
+    }
+  ]
+}

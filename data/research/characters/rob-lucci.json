@@ -1,0 +1,130 @@
+{
+  "slug": "rob-lucci",
+  "name": {
+    "en": "Rob Lucci",
+    "ja": "ロブ・ルッチ"
+  },
+  "origin": null,
+  "fruit": "neko-neko-no-mi-model-leopard",
+  "firstAppearance": {
+    "chapter": 323,
+    "episode": 230
+  },
+  "affiliations": [
+    {
+      "group": "galley-la-company",
+      "role": "shipwright (undercover)",
+      "from": {
+        "episode": 230,
+        "chapter": 323
+      },
+      "to": {
+        "episode": 243,
+        "chapter": 345
+      }
+    },
+    {
+      "group": "cp9",
+      "role": "agent",
+      "from": {
+        "episode": 243,
+        "chapter": 345
+      },
+      "to": {
+        "episode": 312,
+        "chapter": 427
+      }
+    },
+    {
+      "group": "cp0",
+      "role": "agent",
+      "from": {
+        "episode": 746,
+        "chapter": 801
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "rob-lucci-galley-la",
+      "name": {
+        "es": "Lucci (Galley-La)",
+        "en": "Lucci (Galley-La)",
+        "ja": "ルッチ（ガレーラ）"
+      },
+      "firstAppearance": {
+        "episode": 230,
+        "chapter": 323
+      },
+      "description": {
+        "es": "Carpintero de Galley-La con la paloma Hattori."
+      },
+      "suggestedRarity": "common"
+    },
+    {
+      "slug": "rob-lucci-cp9",
+      "name": {
+        "es": "Rob Lucci (CP9)",
+        "en": "Rob Lucci (CP9)",
+        "ja": "ロブ・ルッチ（CP9）"
+      },
+      "firstAppearance": {
+        "episode": 243,
+        "chapter": 345
+      },
+      "description": {
+        "es": "Agente más fuerte del CP9, maestro del Rokushiki."
+      },
+      "suggestedRarity": "rare",
+      "abilities": [
+        "Rokushiki",
+        "Rokuogan"
+      ]
+    },
+    {
+      "slug": "rob-lucci-leopard",
+      "name": {
+        "es": "Lucci forma híbrida leopardo",
+        "en": "Lucci Leopard Hybrid",
+        "ja": "ルッチ（人獣型）"
+      },
+      "firstAppearance": {
+        "episode": 246,
+        "chapter": 349
+      },
+      "description": {
+        "es": "Forma humano-leopardo de la Neko Neko no Mi."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "rob-lucci-awakened",
+      "name": {
+        "es": "Lucci despertado",
+        "en": "Awakened Lucci",
+        "ja": "ルッチ（覚醒）"
+      },
+      "firstAppearance": {
+        "episode": 1100,
+        "chapter": 1069
+      },
+      "description": {
+        "es": "Despertar de su Zoan en Egghead."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Rob_Lucci",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Rob_Lucci",
+      "field": "affiliations[cp9].to (dudoso, verificar)"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "slug": "edward-newgate",
+  "name": {
+    "en": "Edward Newgate",
+    "ja": "エドワード・ニューゲート"
+  },
+  "origin": null,
+  "fruit": "gura-gura-no-mi",
+  "firstAppearance": {
+    "chapter": 234,
+    "episode": 151
+  },
+  "affiliations": [
+    {
+      "group": "whitebeard-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 151,
+        "chapter": 234
+      },
+      "to": {
+        "episode": 485,
+        "chapter": 576
+      }
+    },
+    {
+      "group": "rocks-pirates",
+      "role": "member (flashback)",
+      "from": {
+        "episode": 958,
+        "chapter": 957
+      },
+      "to": {
+        "episode": 958,
+        "chapter": 957
+      }
+    },
+    {
+      "group": "four-emperors",
+      "role": "emperor",
+      "from": {
+        "episode": 314,
+        "chapter": 432
+      },
+      "to": {
+        "episode": 485,
+        "chapter": 576
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 5046000000,
+      "episode": 958,
+      "chapter": 957,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "edward-newgate-whitebeard",
+      "name": {
+        "es": "Barbablanca",
+        "en": "Whitebeard",
+        "ja": "白ひげ"
+      },
+      "firstAppearance": {
+        "episode": 151,
+        "chapter": 234
+      },
+      "description": {
+        "es": "El hombre más fuerte del mundo, Yonko."
+      },
+      "suggestedRarity": "legendary",
+      "abilities": [
+        "Gura Gura no Mi"
+      ]
+    },
+    {
+      "slug": "edward-newgate-marineford",
+      "name": {
+        "es": "Barbablanca en Marineford",
+        "en": "Whitebeard at Marineford",
+        "ja": "頂上戦争の白ひげ"
+      },
+      "firstAppearance": {
+        "episode": 459,
+        "chapter": 550
+      },
+      "description": {
+        "es": "Parte el mar y la isla para salvar a Ace."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "edward-newgate-final-stand",
+      "name": {
+        "es": "Barbablanca muere en pie",
+        "en": "Whitebeard's Last Stand",
+        "ja": "仁王立ちの白ひげ"
+      },
+      "firstAppearance": {
+        "episode": 485,
+        "chapter": 576
+      },
+      "description": {
+        "es": "Muere de pie sin una sola herida en la espalda."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Edward_Newgate",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Edward_Newgate",
+      "field": "forms[edward-newgate-marineford].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

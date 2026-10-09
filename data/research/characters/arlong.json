@@ -1,0 +1,96 @@
+{
+  "slug": "arlong",
+  "name": {
+    "en": "Arlong",
+    "ja": "アーロン"
+  },
+  "origin": "fish-man-island",
+  "fruit": null,
+  "firstAppearance": {
+    "chapter": 69,
+    "episode": 31
+  },
+  "affiliations": [
+    {
+      "group": "arlong-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 31,
+        "chapter": 69
+      },
+      "to": {
+        "episode": 44,
+        "chapter": 95
+      }
+    },
+    {
+      "group": "sun-pirates",
+      "role": "member",
+      "from": {
+        "episode": 541,
+        "chapter": 620
+      },
+      "to": {
+        "episode": 544,
+        "chapter": 624
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 20000000,
+      "episode": 31,
+      "chapter": 69,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "arlong-saw",
+      "name": {
+        "es": "Arlong el Sierra",
+        "en": "Arlong the Saw",
+        "ja": "ノコギリのアーロン"
+      },
+      "firstAppearance": {
+        "episode": 31,
+        "chapter": 69
+      },
+      "description": {
+        "es": "Hombre-pez tiburón sierra, señor de Arlong Park."
+      },
+      "suggestedRarity": "uncommon",
+      "abilities": [
+        "Shark On Darts",
+        "Tooth Gum"
+      ]
+    },
+    {
+      "slug": "arlong-kiribachi",
+      "name": {
+        "es": "Arlong con Kiribachi",
+        "en": "Arlong with Kiribachi",
+        "ja": "キリバチのアーロン"
+      },
+      "firstAppearance": {
+        "episode": 42,
+        "chapter": 92
+      },
+      "description": {
+        "es": "Desenvaina la Kiribachi en el combate final contra Luffy."
+      },
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Arlong",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Arlong",
+      "field": "forms[arlong-kiribachi].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

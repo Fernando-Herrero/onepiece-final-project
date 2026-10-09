@@ -1,0 +1,122 @@
+{
+  "slug": "carrot",
+  "name": {
+    "en": "Carrot",
+    "ja": "キャロット"
+  },
+  "origin": "Zou (Ducado de Mokomo)",
+  "fruit": null,
+  "firstAppearance": {
+    "episode": 753,
+    "chapter": 804
+  },
+  "affiliations": [
+    {
+      "group": "inuarashi-musketeer-squad",
+      "role": "mosquetera",
+      "from": {
+        "episode": 758,
+        "chapter": 809
+      },
+      "to": {
+        "episode": 1148,
+        "chapter": 1115
+      }
+    },
+    {
+      "group": "ninja-pirate-mink-samurai-alliance",
+      "role": "aliada",
+      "from": {
+        "episode": 770,
+        "chapter": 818
+      },
+      "to": {
+        "episode": 1085,
+        "chapter": 1057
+      }
+    },
+    {
+      "group": "mokomo-dukedom",
+      "role": "gobernante",
+      "from": {
+        "episode": 1148,
+        "chapter": 1115
+      },
+      "to": null
+    }
+  ],
+  "bounties": [],
+  "forms": [
+    {
+      "slug": "carrot-mink",
+      "name": {
+        "es": "Carrot la mink coneja",
+        "en": "Carrot",
+        "ja": "キャロット"
+      },
+      "firstAppearance": {
+        "episode": 753,
+        "chapter": 804
+      },
+      "description": {
+        "es": "Mink guerrera de Zou que se cuela con los Sombrero de Paja."
+      },
+      "abilities": [
+        "Electro"
+      ],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "carrot-sulong",
+      "name": {
+        "es": "Carrot Sulong",
+        "en": "Carrot (Sulong)",
+        "ja": "月の獅子 キャロット"
+      },
+      "firstAppearance": {
+        "episode": 876,
+        "chapter": 895
+      },
+      "description": {
+        "es": "Transformación Sulong bajo la luna llena para frenar a la flota de Big Mom."
+      },
+      "abilities": [
+        "Sulong",
+        "Electro"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "carrot-ruler",
+      "name": {
+        "es": "Carrot, gobernante de Mokomo",
+        "en": "Carrot (Ruler)",
+        "ja": "モコモ公国の王キャロット"
+      },
+      "firstAppearance": {
+        "episode": 1148,
+        "chapter": 1115
+      },
+      "description": {
+        "es": "Nuevo atuendo como gobernante del Ducado de Mokomo."
+      },
+      "abilities": [],
+      "suggestedRarity": "rare"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Carrot",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Carrot",
+      "field": "forms[carrot-sulong] (dudoso)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Carrot",
+      "field": "affiliations[0].to, affiliations[1].from (dudoso)"
+    }
+  ]
+}

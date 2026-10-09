@@ -1,0 +1,184 @@
+{
+  "slug": "portgas-d-ace",
+  "name": {
+    "en": "Portgas D. Ace",
+    "ja": "ポートガス・D・エース"
+  },
+  "origin": "East Blue (Isla Dawn), nacido en South Blue",
+  "fruit": "mera-mera-no-mi",
+  "firstAppearance": {
+    "episode": 91,
+    "chapter": 154
+  },
+  "affiliations": [
+    {
+      "group": "dadan-family",
+      "role": "hermano jurado (infancia)",
+      "from": {
+        "episode": 494,
+        "chapter": 582
+      },
+      "to": {
+        "episode": 494,
+        "chapter": 582
+      }
+    },
+    {
+      "group": "spade-pirates",
+      "role": "capitán",
+      "from": {
+        "episode": 460,
+        "chapter": 551
+      },
+      "to": {
+        "episode": 461,
+        "chapter": 552
+      }
+    },
+    {
+      "group": "whitebeard-pirates",
+      "role": "comandante de la 2.ª división",
+      "from": {
+        "episode": 94,
+        "chapter": 157
+      },
+      "to": {
+        "episode": 483,
+        "chapter": 574
+      }
+    },
+    {
+      "group": "impel-down",
+      "role": "prisionero",
+      "from": {
+        "episode": 430,
+        "chapter": 531
+      },
+      "to": {
+        "episode": 483,
+        "chapter": 574
+      }
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 550000000,
+      "episode": null,
+      "chapter": null,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "portgas-d-ace-fire-fist",
+      "name": {
+        "es": "Ace Puño de Fuego",
+        "en": "\"Fire Fist\" Ace",
+        "ja": "火拳のエース"
+      },
+      "firstAppearance": {
+        "episode": 91,
+        "chapter": 154
+      },
+      "description": {
+        "es": "Comandante de Barbablanca con la Mera Mera no Mi; llega a Arabasta buscando a Barbanegra."
+      },
+      "abilities": [
+        "Hiken",
+        "Logia de fuego"
+      ],
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "portgas-d-ace-hiken",
+      "name": {
+        "es": "Ace: Hiken",
+        "en": "Ace: Fire Fist (technique)",
+        "ja": "火拳"
+      },
+      "firstAppearance": {
+        "episode": 95,
+        "chapter": 159
+      },
+      "description": {
+        "es": "Destruye en solitario la flota de Baroque Works con su técnica insignia."
+      },
+      "abilities": [
+        "Hiken"
+      ],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "portgas-d-ace-dai-enkai",
+      "name": {
+        "es": "Ace: Dai Enkai Entei",
+        "en": "Ace: Great Flame Commandment: Flame Emperor",
+        "ja": "大炎戒 炎帝"
+      },
+      "firstAppearance": {
+        "episode": 325,
+        "chapter": 440
+      },
+      "description": {
+        "es": "Duelo contra Barbanegra en la isla Banaro con su ataque más poderoso."
+      },
+      "abilities": [
+        "Dai Enkai Entei"
+      ],
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "portgas-d-ace-child",
+      "name": {
+        "es": "Ace niño",
+        "en": "Young Ace",
+        "ja": "幼少期のエース"
+      },
+      "firstAppearance": {
+        "episode": 494,
+        "chapter": 582
+      },
+      "description": {
+        "es": "Infancia en el monte Corvo con Luffy y Sabo; sake de hermanos."
+      },
+      "abilities": [],
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "portgas-d-ace-marineford",
+      "name": {
+        "es": "Ace en Marineford",
+        "en": "Ace (Marineford)",
+        "ja": "頂上戦争のエース"
+      },
+      "firstAppearance": {
+        "episode": 459,
+        "chapter": 550
+      },
+      "description": {
+        "es": "En el cadalso de Marineford; muere protegiendo a Luffy de Akainu."
+      },
+      "abilities": [
+        "Haki del Rey latente"
+      ],
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [
+    "ace-death"
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+      "field": "bounties[0] (cartel de 550M: fuente OP10/Vivre Card, sin capítulo canónico)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+      "field": "affiliations[0], affiliations[3].from, forms[portgas-d-ace-child], forms[portgas-d-ace-marineford] (dudoso)"
+    }
+  ]
+}

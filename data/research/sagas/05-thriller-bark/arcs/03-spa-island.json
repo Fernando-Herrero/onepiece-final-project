@@ -1,0 +1,119 @@
+{
+  "slug": "spa-island",
+  "sagaSlug": "thriller-bark",
+  "order": 3,
+  "title": {
+    "es": "Spa Island",
+    "en": "Spa Island",
+    "ja": "スパアイランド編"
+  },
+  "type": "filler",
+  "chapterRange": null,
+  "episodeRange": {
+    "first": 382,
+    "last": 384
+  },
+  "episodes": [
+    {
+      "number": 382,
+      "title": {
+        "en": "Noro Noro Menace - Return of Foxy the Silver Fox",
+        "ja": "ノロノロの脅威 銀狐のフォクシー再び"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2008-12-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "foxy"
+      ]
+    },
+    {
+      "number": 383,
+      "title": {
+        "en": "The Great Treasure Contest! Collapse! Spa Island",
+        "ja": "お宝大争奪戦！ 崩壊！スパアイランド号"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2008-12-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook",
+        "foxy"
+      ]
+    },
+    {
+      "number": 384,
+      "title": {
+        "en": "Brook's Hard Struggle - The Difficult Path to Becoming a True Crewmate?",
+        "ja": "ブルック大奮闘 真の仲間への道険し？"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2009-01-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "brook"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "foxy-returns",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "foxy"
+      ],
+      "episode": 382,
+      "chapter": null,
+      "description": {
+        "es": "Foxy reaparece en Spa Island y vuelve a enfrentarse a Luffy (relleno)."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Spa_Island_Arc",
+      "field": "arc"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Thriller_Bark_Saga",
+      "field": "episodes.title/airDate"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    }
+  ]
+}

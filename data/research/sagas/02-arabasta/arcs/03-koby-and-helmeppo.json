@@ -1,0 +1,115 @@
+{
+  "slug": "koby-and-helmeppo",
+  "sagaSlug": "arabasta",
+  "order": 3,
+  "title": {
+    "es": "Koby y Helmeppo",
+    "en": "Koby and Helmeppo",
+    "ja": "コビメッポ奮闘日記"
+  },
+  "type": "mixed",
+  "chapterRange": null,
+  "episodeRange": {
+    "first": 68,
+    "last": 69
+  },
+  "episodes": [
+    {
+      "number": 68,
+      "title": {
+        "es": "¡No te rindas, Koby! Diario de las luchas de Kobymeppo  en la Marina",
+        "en": "Try Hard, Koby! Diary of Koby-Meppo's Marine Struggles",
+        "ja": "頑張れコビー！コビメッポ海軍奮闘記"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-05-13"
+      },
+      "appearances": [
+        "nami",
+        "nefertari-vivi",
+        "monkey-d-luffy",
+        "karoo",
+        "vinsmoke-sanji",
+        "usopp",
+        "roronoa-zoro",
+        "koby",
+        "helmeppo",
+        "monkey-d-garp"
+      ]
+    },
+    {
+      "number": 69,
+      "title": {
+        "es": "¡La determinación de Kobymeppo! Orgullo paterno del Vicealmirante Garp",
+        "en": "Koby-Meppo's Determination! Vice Admiral Garp's Fatherly Pride",
+        "ja": "コビメッポの決意！ガープ中将の親心"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2001-05-20"
+      },
+      "appearances": [
+        "usopp",
+        "karoo",
+        "roronoa-zoro",
+        "nami",
+        "nefertari-vivi",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "koby",
+        "helmeppo",
+        "monkey-d-garp"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "garp-trains-koby-helmeppo",
+      "kind": "other",
+      "characters": [
+        "koby",
+        "helmeppo",
+        "monkey-d-garp"
+      ],
+      "episode": 69,
+      "chapter": null,
+      "description": {
+        "es": "El vicealmirante Garp se lleva a Koby y Helmeppo para entrenarlos (adaptación de la miniserie de portadas)."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Arabasta_Saga",
+      "field": "episodes.title,airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/it/wiki/Episodio_{n}",
+      "field": "episodes.adaptsChapters (campo capitoli de la wiki italiana)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/es/wiki/Episodio_{n}",
+      "field": "episodes.title.es"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_{n}",
+      "field": "episodes.appearances (Characters in Order of Appearance)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Diary_of_Koby-Meppo",
+      "field": "type (adapta la miniserie de portadas, caps. 83-119)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Koby_and_Helmeppo_Arc",
+      "field": "chapterRange,episodeRange"
+    }
+  ]
+}

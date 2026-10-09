@@ -1,0 +1,73 @@
+{
+  "slug": "fujitora",
+  "name": {
+    "en": "Issho (Fujitora)",
+    "ja": "イッショウ（藤虎）"
+  },
+  "origin": null,
+  "fruit": "zushi-zushi-no-mi",
+  "firstAppearance": {
+    "chapter": 701,
+    "episode": 630
+  },
+  "affiliations": [
+    {
+      "group": "marines",
+      "role": "admiral",
+      "from": {
+        "episode": 629,
+        "chapter": 700
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 3000000000,
+      "episode": 1121,
+      "chapter": 1087,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "fujitora-admiral",
+      "name": {
+        "es": "Almirante Fujitora",
+        "en": "Admiral Fujitora",
+        "ja": "大将・藤虎"
+      },
+      "firstAppearance": {
+        "episode": 630,
+        "chapter": 701
+      },
+      "description": {
+        "es": "Almirante ciego que controla la gravedad."
+      },
+      "suggestedRarity": "legendary"
+    },
+    {
+      "slug": "fujitora-meteor",
+      "name": {
+        "es": "Fujitora invoca un meteorito",
+        "en": "Fujitora's Meteor",
+        "ja": "藤虎の隕石"
+      },
+      "firstAppearance": {
+        "episode": 687,
+        "chapter": 751
+      },
+      "description": {
+        "es": "Hace caer meteoritos sobre Dressrosa."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Issho",
+      "field": "general"
+    }
+  ]
+}

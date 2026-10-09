@@ -1,0 +1,165 @@
+{
+  "slug": "buggy",
+  "name": {
+    "en": "Buggy",
+    "ja": "バギー"
+  },
+  "origin": null,
+  "fruit": "bara-bara-no-mi",
+  "firstAppearance": {
+    "chapter": 9,
+    "episode": 4
+  },
+  "affiliations": [
+    {
+      "group": "buggy-pirates",
+      "role": "captain",
+      "from": {
+        "episode": 4,
+        "chapter": 8
+      },
+      "to": null
+    },
+    {
+      "group": "seven-warlords-of-the-sea",
+      "role": "warlord",
+      "from": {
+        "episode": 629,
+        "chapter": 700
+      },
+      "to": {
+        "episode": 957,
+        "chapter": 956
+      }
+    },
+    {
+      "group": "buggys-delivery",
+      "role": "chairman",
+      "from": {
+        "episode": 752,
+        "chapter": 803
+      },
+      "to": {
+        "episode": 1083,
+        "chapter": 1056
+      }
+    },
+    {
+      "group": "cross-guild",
+      "role": "figurehead-president",
+      "from": {
+        "episode": 1083,
+        "chapter": 1056
+      },
+      "to": null
+    },
+    {
+      "group": "four-emperors",
+      "role": "emperor",
+      "from": {
+        "episode": 1080,
+        "chapter": 1053
+      },
+      "to": null
+    }
+  ],
+  "bounties": [
+    {
+      "amount": 15000000,
+      "episode": 45,
+      "chapter": 96,
+      "eventSlug": null
+    },
+    {
+      "amount": 3189000000,
+      "episode": 1086,
+      "chapter": 1058,
+      "eventSlug": null
+    }
+  ],
+  "forms": [
+    {
+      "slug": "buggy-orange-town",
+      "name": {
+        "es": "Buggy el Payaso",
+        "en": "Buggy the Clown",
+        "ja": "道化のバギー"
+      },
+      "firstAppearance": {
+        "episode": 4,
+        "chapter": 9
+      },
+      "description": {
+        "es": "Capitán de los Piratas de Buggy en Orange Town; Bara Bara no Mi."
+      },
+      "suggestedRarity": "common",
+      "abilities": [
+        "Bara Bara Festival",
+        "Bara Bara Ho"
+      ]
+    },
+    {
+      "slug": "buggy-impel-down",
+      "name": {
+        "es": "Buggy (Impel Down)",
+        "en": "Buggy (Impel Down)",
+        "ja": "バギー（インペルダウン）"
+      },
+      "firstAppearance": {
+        "episode": 430,
+        "chapter": 529
+      },
+      "description": {
+        "es": "Uniforme de preso y coleta durante la fuga de Impel Down y Marineford."
+      },
+      "suggestedRarity": "uncommon"
+    },
+    {
+      "slug": "buggy-star-clown",
+      "name": {
+        "es": "Buggy el Payaso Estrella",
+        "en": "Buggy the Star Clown",
+        "ja": "千両道化のバギー"
+      },
+      "firstAppearance": {
+        "episode": 629,
+        "chapter": 700
+      },
+      "description": {
+        "es": "Aspecto post-timeskip como Shichibukai, con capa y sombrero de tricornio."
+      },
+      "suggestedRarity": "rare"
+    },
+    {
+      "slug": "buggy-emperor",
+      "name": {
+        "es": "Emperador Buggy",
+        "en": "Emperor Buggy",
+        "ja": "四皇バギー"
+      },
+      "firstAppearance": {
+        "episode": 1086,
+        "chapter": 1058
+      },
+      "description": {
+        "es": "Presidente nominal de Cross Guild y Yonko."
+      },
+      "suggestedRarity": "legendary"
+    }
+  ],
+  "keyEvents": [],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Buggy",
+      "field": "general"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Buggy",
+      "field": "forms[buggy-impel-down].firstAppearance (dudoso, verificar)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Buggy",
+      "field": "forms[buggy-star-clown].firstAppearance (dudoso, verificar)"
+    }
+  ]
+}

@@ -1,0 +1,3901 @@
+{
+  "slug": "whole-cake-island",
+  "sagaSlug": "whole-cake-island",
+  "order": 4,
+  "title": {
+    "es": "Isla Whole Cake",
+    "en": "Whole Cake Island",
+    "ja": "ホールケーキアイランド編"
+  },
+  "type": "canon",
+  "chapterRange": {
+    "first": 825,
+    "last": 902
+  },
+  "episodeRange": {
+    "first": 783,
+    "last": 877
+  },
+  "chapters": [
+    {
+      "number": 825,
+      "title": {
+        "en": "The WENP's Comic Strip",
+        "ja": "世経の絵物語"
+      }
+    },
+    {
+      "number": 826,
+      "title": {
+        "en": "0 and 4",
+        "ja": "0と4"
+      }
+    },
+    {
+      "number": 827,
+      "title": {
+        "en": "Totto Land",
+        "ja": "トットランド"
+      }
+    },
+    {
+      "number": 828,
+      "title": {
+        "en": "1 and 2",
+        "ja": "1と2"
+      }
+    },
+    {
+      "number": 829,
+      "title": {
+        "en": "Emperor of the Sea, Charlotte Linlin",
+        "ja": "海賊「四皇」シャーロット・リンリン"
+      }
+    },
+    {
+      "number": 830,
+      "title": {
+        "en": "A Man You Can Bet On",
+        "ja": "賭けられる男"
+      }
+    },
+    {
+      "number": 831,
+      "title": {
+        "en": "Adventure in the Mysterious Forest",
+        "ja": "不思議な森の冒険"
+      }
+    },
+    {
+      "number": 832,
+      "title": {
+        "en": "Germa Kingdom",
+        "ja": "ジェルマ王国"
+      }
+    },
+    {
+      "number": 833,
+      "title": {
+        "en": "Vinsmoke Judge",
+        "ja": "ヴィンスモーク・ジャッジ"
+      }
+    },
+    {
+      "number": 834,
+      "title": {
+        "en": "My Dream",
+        "ja": "おれの夢"
+      }
+    },
+    {
+      "number": 835,
+      "title": {
+        "en": "The Nation of Souls",
+        "ja": "魂の国"
+      }
+    },
+    {
+      "number": 836,
+      "title": {
+        "en": "The Vivre Card Lola Gave",
+        "ja": "ローラがくれた{{Ruby|命の紙|ビブルカード}}"
+      }
+    },
+    {
+      "number": 837,
+      "title": {
+        "en": "Luffy vs. Commander Cracker",
+        "ja": "ルフィ{{Ruby|vs.|バーサス}}将星クラッカー"
+      }
+    },
+    {
+      "number": 838,
+      "title": {
+        "en": "Choniki",
+        "ja": "チョニキ"
+      }
+    },
+    {
+      "number": 839,
+      "title": {
+        "en": "I Owe You My Life",
+        "ja": "くそお世話になりました (Volume)<br/>クソお世話になりました (Magazine)"
+      }
+    },
+    {
+      "number": 840,
+      "title": {
+        "en": "The Iron Mask",
+        "ja": "鉄仮面"
+      }
+    },
+    {
+      "number": 841,
+      "title": {
+        "en": "To the East Blue",
+        "ja": "“{{Ruby|東の海|イーストブルー}}”へ"
+      }
+    },
+    {
+      "number": 842,
+      "title": {
+        "en": "The Power of a Full Stomach",
+        "ja": "満腹の力"
+      }
+    },
+    {
+      "number": 843,
+      "title": {
+        "en": "Vinsmoke Sanji",
+        "ja": "ヴィンスモーク・サンジ"
+      }
+    },
+    {
+      "number": 844,
+      "title": {
+        "en": "Luffy vs. Sanji",
+        "ja": "ルフィ{{Ruby|vs.|バーサス}}サンジ (Volume)<br/>ルフィ{{Ruby|VS|バーサス}}サンジ (Magazine)"
+      }
+    },
+    {
+      "number": 845,
+      "title": {
+        "en": "Forces of Rage",
+        "ja": "怒りの軍団"
+      }
+    },
+    {
+      "number": 846,
+      "title": {
+        "en": "Tamago Security",
+        "ja": "タマゴの警備"
+      }
+    },
+    {
+      "number": 847,
+      "title": {
+        "en": "Luffy and Big Mom",
+        "ja": "ルフィとビッグ・マム"
+      }
+    },
+    {
+      "number": 848,
+      "title": {
+        "en": "Goodbye",
+        "ja": "さよなら"
+      }
+    },
+    {
+      "number": 849,
+      "title": {
+        "en": "Choniki in the Land of Mirrors",
+        "ja": "鏡の国のチョニキ"
+      }
+    },
+    {
+      "number": 850,
+      "title": {
+        "en": "A Ray of Light",
+        "ja": "一筋の光"
+      }
+    },
+    {
+      "number": 851,
+      "title": {
+        "en": "Moist Cigarette",
+        "ja": "シケモク"
+      }
+    },
+    {
+      "number": 852,
+      "title": {
+        "en": "Germa's Failure",
+        "ja": "ジェルマの失敗作"
+      }
+    },
+    {
+      "number": 853,
+      "title": {
+        "en": "Not Here",
+        "ja": "ここじゃねェ"
+      }
+    },
+    {
+      "number": 854,
+      "title": {
+        "en": "What Are You Doing?",
+        "ja": "何やってんだ"
+      }
+    },
+    {
+      "number": 855,
+      "title": {
+        "en": "Gugyurururu!!!",
+        "ja": "ぐぎゅるるる!!!"
+      }
+    },
+    {
+      "number": 856,
+      "title": {
+        "en": "Liar",
+        "ja": "ウソつき"
+      }
+    },
+    {
+      "number": 857,
+      "title": {
+        "en": "Rook",
+        "ja": "ルーク"
+      }
+    },
+    {
+      "number": 858,
+      "title": {
+        "en": "Meeting",
+        "ja": "会議"
+      }
+    },
+    {
+      "number": 859,
+      "title": {
+        "en": "Emperor Assassination Plan",
+        "ja": "四皇暗殺作戦"
+      }
+    },
+    {
+      "number": 860,
+      "title": {
+        "en": "10:00 Opening of the Banquet",
+        "ja": "10:00 開宴"
+      }
+    },
+    {
+      "number": 861,
+      "title": {
+        "en": "Good Actor",
+        "ja": "演技派"
+      }
+    },
+    {
+      "number": 862,
+      "title": {
+        "en": "The Intelligent Ones",
+        "ja": "頭脳派"
+      }
+    },
+    {
+      "number": 863,
+      "title": {
+        "en": "The Honorable",
+        "ja": "義侠派"
+      }
+    },
+    {
+      "number": 864,
+      "title": {
+        "en": "The Vinsmoke Massacre Plot",
+        "ja": "ヴィンスモーク家皆殺し計画"
+      }
+    },
+    {
+      "number": 865,
+      "title": {
+        "en": "Hey, Mother",
+        "ja": "ねぇマザー"
+      }
+    },
+    {
+      "number": 866,
+      "title": {
+        "en": "Natural Born Destroyer",
+        "ja": "{{Ruby|NATURAL|ナチュラル}} {{Ruby|BORN|ボーン}} {{Ruby|DESTROYER|デストロイヤー}}"
+      }
+    },
+    {
+      "number": 867,
+      "title": {
+        "en": "Happy Birthday",
+        "ja": "{{Ruby|HAPPY|ハッピー}} {{Ruby|BIRTHDAY|バースデー}}"
+      }
+    },
+    {
+      "number": 868,
+      "title": {
+        "en": "KX Launcher",
+        "ja": "{{Ruby|K|ケー}}{{Ruby|X|エックス}}ランチャー"
+      }
+    },
+    {
+      "number": 869,
+      "title": {
+        "en": "Under Siege",
+        "ja": "籠城"
+      }
+    },
+    {
+      "number": 870,
+      "title": {
+        "en": "Parting",
+        "ja": "訣別"
+      }
+    },
+    {
+      "number": 871,
+      "title": {
+        "en": "You Can Do It, Caesar!!",
+        "ja": "がんばれシーザー!!"
+      }
+    },
+    {
+      "number": 872,
+      "title": {
+        "en": "Thick and Fluffy",
+        "ja": "とろふわ"
+      }
+    },
+    {
+      "number": 873,
+      "title": {
+        "en": "Trapped Like Sweets in a Cage",
+        "ja": "八方塞菓子"
+      }
+    },
+    {
+      "number": 874,
+      "title": {
+        "en": "Be My Servant",
+        "ja": "私のしもべになりなさい"
+      }
+    },
+    {
+      "number": 875,
+      "title": {
+        "en": "A Woman's Honor",
+        "ja": "女の仁義"
+      }
+    },
+    {
+      "number": 876,
+      "title": {
+        "en": "Pudding Coincidentally Appears!!",
+        "ja": "プリン、偶然現る!!"
+      }
+    },
+    {
+      "number": 877,
+      "title": {
+        "en": "Not Sweet",
+        "ja": "甘くない"
+      }
+    },
+    {
+      "number": 878,
+      "title": {
+        "en": "Captain Pedro of the Mink Tribe Guardians",
+        "ja": "ミンク族 {{Ruby|侠客団|ガーディアンズ}} 団長ペドロ"
+      }
+    },
+    {
+      "number": 879,
+      "title": {
+        "en": "One of Big Mom's \"3 Sweet Commanders\", Katakuri",
+        "ja": "ビッグ・マム「スイート3将星」 カタクリ"
+      }
+    },
+    {
+      "number": 880,
+      "title": {
+        "en": "Zero Escape",
+        "ja": "退路{{Ruby|0|ゼロ}}"
+      }
+    },
+    {
+      "number": 881,
+      "title": {
+        "en": "Wave Room",
+        "ja": "波の部屋"
+      }
+    },
+    {
+      "number": 882,
+      "title": {
+        "en": "Beyond the Emperor's Expectations",
+        "ja": "四皇の想定外"
+      }
+    },
+    {
+      "number": 883,
+      "title": {
+        "en": "Merienda",
+        "ja": "{{Ruby|おやつの時間|メリエンダ}}"
+      }
+    },
+    {
+      "number": 884,
+      "title": {
+        "en": "Who Is That?",
+        "ja": "誰だ"
+      }
+    },
+    {
+      "number": 885,
+      "title": {
+        "en": "It's Brûlée!!!",
+        "ja": "ブリュレだよっ!!!"
+      }
+    },
+    {
+      "number": 886,
+      "title": {
+        "en": "Way of Life",
+        "ja": "生き様でちゅよ"
+      }
+    },
+    {
+      "number": 887,
+      "title": {
+        "en": "Somewhere Someone is Wishing for Your Happiness",
+        "ja": "どこかで誰かが君の幸せを願ってる"
+      }
+    },
+    {
+      "number": 888,
+      "title": {
+        "en": "Lion",
+        "ja": "獅子"
+      }
+    },
+    {
+      "number": 889,
+      "title": {
+        "en": "Unfamiliar Mama",
+        "ja": "未知のママ"
+      }
+    },
+    {
+      "number": 890,
+      "title": {
+        "en": "Big Mom on the Ship",
+        "ja": "船の上のビッグ・マム"
+      }
+    },
+    {
+      "number": 891,
+      "title": {
+        "en": "They Believe in Me",
+        "ja": "信じられてる"
+      }
+    },
+    {
+      "number": 892,
+      "title": {
+        "en": "Recognized as Strong Opponents",
+        "ja": "強敵認定"
+      }
+    },
+    {
+      "number": 893,
+      "title": {
+        "en": "Flampe, 36th Daughter of Charlotte",
+        "ja": "{{Ruby|C|シャーロット}}家36女フランペ"
+      }
+    },
+    {
+      "number": 894,
+      "title": {
+        "en": "12:05",
+        "ja": "0時5分"
+      }
+    },
+    {
+      "number": 895,
+      "title": {
+        "en": "Luffy the Pirate vs. Commander Katakuri",
+        "ja": "海賊ルフィ{{Ruby|vs.|バーサス}}将星カタクリ"
+      }
+    },
+    {
+      "number": 896,
+      "title": {
+        "en": "The Last Request",
+        "ja": "最後のお願い"
+      }
+    },
+    {
+      "number": 897,
+      "title": {
+        "en": "Pekoms' Cacao Island Escape Plan",
+        "ja": "ペコムズのカカオ島脱出作戦"
+      }
+    },
+    {
+      "number": 898,
+      "title": {
+        "en": "We'll Definitely Return",
+        "ja": "必ず戻る"
+      }
+    },
+    {
+      "number": 899,
+      "title": {
+        "en": "The Final Fortress",
+        "ja": "最後の砦"
+      }
+    },
+    {
+      "number": 900,
+      "title": {
+        "en": "Bad End Musical",
+        "ja": "{{Ruby|BADEND|バッドエンド}} {{Ruby|MUSICAL|ミュージカル}}"
+      }
+    },
+    {
+      "number": 901,
+      "title": {
+        "en": "Even If You Die, Don't Die!!!",
+        "ja": "死んでも死ぬなよ!!!"
+      }
+    },
+    {
+      "number": 902,
+      "title": {
+        "en": "End Roll",
+        "ja": "{{Ruby|END|エンド}} {{Ruby|ROLL|ロール}}"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "number": 783,
+      "title": {
+        "en": "Sanji’s Homecoming! Into Big Mom’s Territory!",
+        "ja": "サンジ 帰郷 ビッグ・マムの海域へ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        825
+      ],
+      "airDate": {
+        "ja": "2017-04-09"
+      },
+      "appearances": [
+        "pekoms",
+        "tony-tony-chopper",
+        "brook",
+        "carrot",
+        "pedro",
+        "nami",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "tamago",
+        "franky",
+        "roronoa-zoro",
+        "nico-robin",
+        "usopp",
+        "charlotte-pudding",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju",
+        "vinsmoke-ichiji",
+        "caesar-clown",
+        "charlotte-chiffon"
+      ]
+    },
+    {
+      "number": 784,
+      "title": {
+        "en": "0 and 4 — A Confrontation with Germa 66!",
+        "ja": "0と4 遭遇！ジェルマ66"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        825,
+        826
+      ],
+      "airDate": {
+        "ja": "2017-04-16"
+      },
+      "appearances": [
+        "brook",
+        "pedro",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "pekoms",
+        "nami",
+        "carrot",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju"
+      ]
+    },
+    {
+      "number": 785,
+      "title": {
+        "en": "The Deadly Poison Crisis — Luffy and Reiju!",
+        "ja": "猛毒の危機 ルフィとレイジュ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        826,
+        827
+      ],
+      "airDate": {
+        "ja": "2017-04-23"
+      },
+      "appearances": [
+        "vinsmoke-reiju",
+        "pekoms",
+        "carrot",
+        "brook",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "nami",
+        "vinsmoke-yonji",
+        "pedro",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 786,
+      "title": {
+        "en": "Totto Land! Emperor \"Big Mom\" Appears",
+        "ja": "万国！ 四皇ビッグ・マム登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        827
+      ],
+      "airDate": {
+        "ja": "2017-04-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "pekoms",
+        "nami",
+        "carrot",
+        "brook",
+        "pedro",
+        "charlotte-pudding",
+        "charlotte-linlin",
+        "prometheus",
+        "zeus",
+        "napoleon"
+      ]
+    },
+    {
+      "number": 787,
+      "title": {
+        "en": "The Emperor’s Daughter — Sanji’s Fiancée \"Pudding\"",
+        "ja": "四皇の娘 サンジの婚約者 プリン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        828
+      ],
+      "airDate": {
+        "ja": "2017-05-07"
+      },
+      "appearances": [
+        "charlotte-pudding",
+        "brook",
+        "tony-tony-chopper",
+        "pedro",
+        "nami",
+        "monkey-d-luffy",
+        "carrot",
+        "vinsmoke-sanji",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji"
+      ]
+    },
+    {
+      "number": 788,
+      "title": {
+        "en": "A Massive Attack! Mom's Hunger Pangs",
+        "ja": "大進撃! 食いわずらいのマム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        828,
+        829
+      ],
+      "airDate": {
+        "ja": "2017-05-14"
+      },
+      "appearances": [
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-judge",
+        "nami",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "brook",
+        "pedro",
+        "carrot",
+        "zeus",
+        "prometheus",
+        "charlotte-linlin",
+        "napoleon",
+        "tamago"
+      ]
+    },
+    {
+      "number": 789,
+      "title": {
+        "en": "The Capital Crumbles!? Big Mom and Jinbe",
+        "ja": "首都崩壊！？ ビッグ・マムとジンベエ"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        829
+      ],
+      "airDate": {
+        "ja": "2017-05-21"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "tamago",
+        "charlotte-mont-dor",
+        "jinbe",
+        "monkey-d-luffy",
+        "nami",
+        "carrot",
+        "brook",
+        "pedro",
+        "tony-tony-chopper"
+      ]
+    },
+    {
+      "number": 790,
+      "title": {
+        "en": "The Emperor's Castle — Arrival on Whole Cake Island",
+        "ja": "四皇の城 ホールケーキアイランド到着"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        830
+      ],
+      "airDate": {
+        "ja": "2017-05-28"
+      },
+      "appearances": [
+        "charlotte-mont-dor",
+        "charlotte-linlin",
+        "jinbe",
+        "monkey-d-luffy",
+        "napoleon",
+        "tony-tony-chopper",
+        "brook",
+        "nami",
+        "pedro",
+        "carrot",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 791,
+      "title": {
+        "en": "The Forest of Sweets! Luffy vs. Luffy",
+        "ja": "お菓子な森！ルフィＶＳルフィ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        831
+      ],
+      "airDate": {
+        "ja": "2017-06-04"
+      },
+      "appearances": [
+        "nami",
+        "tony-tony-chopper",
+        "carrot",
+        "brook",
+        "pedro",
+        "monkey-d-luffy",
+        "franky",
+        "charlotte-brulee"
+      ]
+    },
+    {
+      "number": 792,
+      "title": {
+        "en": "Mom's Assassin - Luffy and the Seducing Woods!",
+        "ja": "マムの刺客 ルフィと誘惑の森!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        831,
+        832
+      ],
+      "airDate": {
+        "ja": "2017-06-11"
+      },
+      "appearances": [
+        "nami",
+        "carrot",
+        "tony-tony-chopper",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "monkey-d-luffy",
+        "charlotte-brulee"
+      ]
+    },
+    {
+      "number": 793,
+      "title": {
+        "en": "The Seafaring Nation — Judge the King of Germa",
+        "ja": "海遊国家 ジェルマの王ジャッジ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        832,
+        833
+      ],
+      "airDate": {
+        "ja": "2017-06-18"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "vinsmoke-judge",
+        "monkey-d-luffy",
+        "vinsmoke-yonji"
+      ]
+    },
+    {
+      "number": 794,
+      "title": {
+        "en": "A Showdown Between Father and Son — Judge vs. Sanji",
+        "ja": "父子対決 ジャッジVSサンジ！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        833,
+        834
+      ],
+      "airDate": {
+        "ja": "2017-06-25"
+      },
+      "appearances": [
+        "vinsmoke-judge",
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "monkey-d-luffy",
+        "brook",
+        "pedro",
+        "jinbe",
+        "tony-tony-chopper",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "nami",
+        "carrot",
+        "charlotte-pudding"
+      ]
+    },
+    {
+      "number": 795,
+      "title": {
+        "en": "Great Ambition — Big Mom and Caesar",
+        "ja": "巨大な野望 ビッグ・マムとシーザー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        834
+      ],
+      "airDate": {
+        "ja": "2017-07-02"
+      },
+      "appearances": [
+        "pedro",
+        "brook",
+        "monkey-d-luffy",
+        "charlotte-pudding",
+        "tamago",
+        "carrot",
+        "capone-bege",
+        "charlotte-chiffon",
+        "pekoms",
+        "charlotte-linlin",
+        "caesar-clown",
+        "charlotte-perospero"
+      ]
+    },
+    {
+      "number": 796,
+      "title": {
+        "en": "Kingdom of Souls — Mom’s Fearsome Power!",
+        "ja": "魂の国 マムの恐るべき能力！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        835
+      ],
+      "airDate": {
+        "ja": "2017-07-09"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "nami",
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "charlotte-cracker"
+      ]
+    },
+    {
+      "number": 797,
+      "title": {
+        "en": "A Top Executive! One of the Three Commanders \"Cracker\" Appears",
+        "ja": "大幹部！三将星クラッカー登場"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        835,
+        836
+      ],
+      "airDate": {
+        "ja": "2017-07-16"
+      },
+      "appearances": [
+        "charlotte-cracker",
+        "nami",
+        "tony-tony-chopper",
+        "carrot",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "charlotte-brulee",
+        "vinsmoke-judge",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju"
+      ]
+    },
+    {
+      "number": 798,
+      "title": {
+        "en": "An Enemy With 800 Million Bounty — Luffy vs. Thousand Arms Cracker",
+        "ja": "8億の敵 ルフィVS千手のクラッカー"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        836,
+        837
+      ],
+      "airDate": {
+        "ja": "2017-07-23"
+      },
+      "appearances": [
+        "charlotte-cracker",
+        "monkey-d-luffy",
+        "nami",
+        "charlotte-brulee",
+        "eustass-kid",
+        "capone-bege",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 799,
+      "title": {
+        "en": "Full Force Showdown — Gear Fourth vs. Bisu Bisu Ability",
+        "ja": "全力勝負 ギア 4VSビスビスの能力"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        837,
+        838
+      ],
+      "airDate": {
+        "ja": "2017-07-30"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-judge",
+        "monkey-d-luffy",
+        "charlotte-cracker",
+        "brook",
+        "pedro",
+        "carrot",
+        "tony-tony-chopper",
+        "nami"
+      ]
+    },
+    {
+      "number": 800,
+      "title": {
+        "en": "1 and 2 — Assemble! The Vinsmoke Family",
+        "ja": "1と2 集結！ヴィンスモーク家"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        838,
+        839
+      ],
+      "airDate": {
+        "ja": "2017-08-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-cracker",
+        "nami",
+        "charlotte-linlin",
+        "carrot",
+        "tony-tony-chopper",
+        "brook",
+        "pedro",
+        "napoleon",
+        "vinsmoke-yonji",
+        "vinsmoke-judge",
+        "vinsmoke-reiju",
+        "vinsmoke-sanji",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji"
+      ]
+    },
+    {
+      "number": 801,
+      "title": {
+        "en": "The Benefactor's Life! Sanji and Owner Zeff!",
+        "ja": "恩人の命  サンジと料理長 ゼフ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        839
+      ],
+      "airDate": {
+        "ja": "2017-08-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-cracker",
+        "vinsmoke-judge",
+        "vinsmoke-niji",
+        "vinsmoke-sanji",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju",
+        "vinsmoke-ichiji"
+      ]
+    },
+    {
+      "number": 802,
+      "title": {
+        "en": "An Angry Sanji! The Secret of Germa 66!",
+        "ja": "怒りのサンジ ジェルマ66の秘密"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        839,
+        840
+      ],
+      "airDate": {
+        "ja": "2017-08-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "charlotte-cracker",
+        "charlotte-brulee",
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji"
+      ]
+    },
+    {
+      "number": 803,
+      "title": {
+        "en": "The Past that He Let Go of! Vinsmoke Sanji!",
+        "ja": "捨てた過去 ヴィンスモーク・サンジ"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        840
+      ],
+      "airDate": {
+        "ja": "2017-08-27"
+      },
+      "appearances": [
+        "nami",
+        "charlotte-cracker",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji"
+      ]
+    },
+    {
+      "number": 804,
+      "title": {
+        "en": "To East Blue - Sanji's Decision to Set Sail",
+        "ja": "東の海へ サンジ決意の船出"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        841
+      ],
+      "airDate": {
+        "ja": "2017-09-03"
+      },
+      "appearances": [
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 805,
+      "title": {
+        "en": "A Battle of Limits - Luffy and the Infinite Biscuits!",
+        "ja": "限界勝負 ルフィと無限ビスケット"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        841,
+        842
+      ],
+      "airDate": {
+        "ja": "2017-09-17"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji",
+        "vinsmoke-reiju",
+        "vinsmoke-judge",
+        "nami",
+        "monkey-d-luffy",
+        "charlotte-cracker",
+        "charlotte-brulee",
+        "tony-tony-chopper",
+        "carrot"
+      ]
+    },
+    {
+      "number": 806,
+      "title": {
+        "en": "Power of Fullness - New Gear Fourth Tankman!",
+        "ja": "満腹の力 新ギア４タンクマン！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        842,
+        843
+      ],
+      "airDate": {
+        "ja": "2017-09-24"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "monkey-d-luffy",
+        "charlotte-cracker",
+        "nami",
+        "charlotte-linlin",
+        "charlotte-mont-dor",
+        "zeus",
+        "prometheus",
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-brulee",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "vinsmoke-ichiji",
+        "vinsmoke-judge"
+      ]
+    },
+    {
+      "number": 807,
+      "title": {
+        "en": "Saddest Duel - Luffy vs. Sanji Part 1",
+        "ja": "哀しき決闘 ルフィVSサンジ"
+      },
+      "canon": "mixed",
+      "adaptsChapters": [
+        843
+      ],
+      "airDate": {
+        "ja": "2017-10-01"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "nami",
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-brulee",
+        "vinsmoke-yonji",
+        "vinsmoke-judge",
+        "vinsmoke-niji",
+        "vinsmoke-ichiji",
+        "vinsmoke-reiju"
+      ]
+    },
+    {
+      "number": 808,
+      "title": {
+        "en": "Saddest Duel - Luffy vs. Sanji Part 2",
+        "ja": "哀しき決闘 ルフィVSサンジ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        843,
+        844
+      ],
+      "airDate": {
+        "ja": "2017-10-01"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "vinsmoke-judge",
+        "vinsmoke-reiju",
+        "monkey-d-luffy",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "nami",
+        "vinsmoke-ichiji"
+      ]
+    },
+    {
+      "number": 809,
+      "title": {
+        "en": "A Storm of Revenge! An Enraged Army Comes to Attack!",
+        "ja": "復讐の嵐 怒りの軍団襲来！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        845
+      ],
+      "airDate": {
+        "ja": "2017-10-15"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "zeus",
+        "prometheus",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "vinsmoke-sanji",
+        "vinsmoke-judge",
+        "charlotte-mont-dor",
+        "vinsmoke-reiju",
+        "tamago",
+        "vinsmoke-ichiji",
+        "charlotte-pudding"
+      ]
+    },
+    {
+      "number": 810,
+      "title": {
+        "en": "The End of the Adventure - Sanji's Resolute Proposal",
+        "ja": "冒険の終わり サンジ決意のプロポーズ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        845
+      ],
+      "airDate": {
+        "ja": "2017-10-22"
+      },
+      "appearances": [
+        "nami",
+        "monkey-d-luffy",
+        "charlotte-mont-dor",
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "charlotte-linlin",
+        "carrot",
+        "tony-tony-chopper",
+        "charlotte-brulee"
+      ]
+    },
+    {
+      "number": 811,
+      "title": {
+        "en": "I'll Wait Here - Luffy vs. the Enraged Army",
+        "ja": "ここで待つ ルフィVS怒りの軍団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        846
+      ],
+      "airDate": {
+        "ja": "2017-10-29"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "charlotte-mont-dor",
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-brulee",
+        "vinsmoke-sanji",
+        "charlotte-linlin"
+      ]
+    },
+    {
+      "number": 812,
+      "title": {
+        "en": "Infiltration Inside the Castle - Steal the Road Poneglyph",
+        "ja": "城内  潜入 奪え！ロード歴史の本文"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        846,
+        847
+      ],
+      "airDate": {
+        "ja": "2017-11-05"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "nami",
+        "monkey-d-luffy",
+        "charlotte-mont-dor",
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-brulee",
+        "brook",
+        "tamago",
+        "charlotte-smoothie",
+        "pedro",
+        "charlotte-linlin",
+        "kaido",
+        "shanks",
+        "vinsmoke-judge",
+        "vinsmoke-niji",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju",
+        "charlotte-perospero"
+      ]
+    },
+    {
+      "number": 813,
+      "title": {
+        "en": "Face-to-face - Luffy and Big Mom",
+        "ja": "因縁の対面 ルフィとビッグ・マム！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        847,
+        848
+      ],
+      "airDate": {
+        "ja": "2017-11-12"
+      },
+      "appearances": [
+        "charlotte-mont-dor",
+        "charlotte-perospero",
+        "monkey-d-luffy",
+        "nami",
+        "charlotte-linlin",
+        "zeus",
+        "napoleon",
+        "vinsmoke-sanji",
+        "tamago",
+        "charlotte-smoothie",
+        "pedro",
+        "charlotte-pudding",
+        "brook"
+      ]
+    },
+    {
+      "number": 814,
+      "title": {
+        "en": "Shout of the Soul - Brook and Pedro's Lightning Operation",
+        "ja": "魂の叫び ブルック＆ペドロ電撃作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        848,
+        849
+      ],
+      "airDate": {
+        "ja": "2017-11-19"
+      },
+      "appearances": [
+        "pedro",
+        "tamago",
+        "charlotte-smoothie",
+        "brook",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "charlotte-brulee",
+        "carrot",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "nami"
+      ]
+    },
+    {
+      "number": 815,
+      "title": {
+        "en": "Farewell — Pudding’s Tears of Resolve",
+        "ja": "さよなら プリン涙の決意"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        848,
+        849
+      ],
+      "airDate": {
+        "ja": "2017-11-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "charlotte-pudding",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji",
+        "vinsmoke-judge",
+        "vinsmoke-niji",
+        "vinsmoke-sanji",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-brulee",
+        "carrot",
+        "tony-tony-chopper",
+        "brook",
+        "charlotte-smoothie",
+        "vinsmoke-reiju",
+        "pedro",
+        "tamago"
+      ]
+    },
+    {
+      "number": 816,
+      "title": {
+        "en": "The History of the Left Eye - Pedro vs. Baron Tamago",
+        "ja": "左眼の因縁 ペドロVSタマゴ男爵"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        850
+      ],
+      "airDate": {
+        "ja": "2017-12-03"
+      },
+      "appearances": [
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-brulee",
+        "charlotte-linlin",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-reiju",
+        "charlotte-pudding",
+        "napoleon",
+        "brook",
+        "zeus",
+        "prometheus",
+        "pedro",
+        "tamago"
+      ]
+    },
+    {
+      "number": 817,
+      "title": {
+        "en": "Moist Cigarette! The Night Before Sanji's Wedding!",
+        "ja": "シケモク サンジの結婚前夜"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        850,
+        851
+      ],
+      "airDate": {
+        "ja": "2017-12-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "vinsmoke-reiju",
+        "vinsmoke-judge",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-niji"
+      ]
+    },
+    {
+      "number": 818,
+      "title": {
+        "en": "The Undaunted Soul - Brook vs. Big Mom",
+        "ja": "不屈の魂 ブルックVSビック・マム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        851
+      ],
+      "airDate": {
+        "ja": "2017-12-17"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "charlotte-pudding",
+        "charlotte-linlin",
+        "napoleon",
+        "vinsmoke-judge",
+        "brook",
+        "prometheus",
+        "zeus",
+        "tony-tony-chopper",
+        "charlotte-brulee",
+        "carrot",
+        "monkey-d-luffy",
+        "nami",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 819,
+      "title": {
+        "en": "Sora's Wish! Germa's Failure - Sanji!",
+        "ja": "母の願い ジェルマの失敗作サンジ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        852
+      ],
+      "airDate": {
+        "ja": "2017-12-24"
+      },
+      "appearances": [
+        "vinsmoke-reiju",
+        "vinsmoke-sanji",
+        "nami",
+        "monkey-d-luffy",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 820,
+      "title": {
+        "en": "Sanji is Back - Luffy’s Great Flat-out Run Counterattack",
+        "ja": "サンジの元へ ルフィ逆襲の大激走"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        852,
+        853
+      ],
+      "airDate": {
+        "ja": "2018-01-07"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "zeff",
+        "pedro",
+        "tamago",
+        "brook",
+        "charlotte-linlin",
+        "napoleon",
+        "prometheus",
+        "zeus",
+        "charlotte-smoothie",
+        "charlotte-pudding"
+      ]
+    },
+    {
+      "number": 821,
+      "title": {
+        "en": "The Chateau in Turmoil! Luffy, to the Rendezvous!",
+        "ja": "城内動乱 ルフィ約束の場所へ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        853,
+        854
+      ],
+      "airDate": {
+        "ja": "2018-01-14"
+      },
+      "appearances": [
+        "tamago",
+        "pedro",
+        "carrot",
+        "tony-tony-chopper",
+        "charlotte-brulee",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "brook",
+        "vinsmoke-reiju",
+        "roronoa-zoro",
+        "nico-robin",
+        "usopp",
+        "franky",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 822,
+      "title": {
+        "en": "The Decision to Part! Sanji and the Straw Hat Bento",
+        "ja": "別れの決意 サンジと麦わら弁当"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        854
+      ],
+      "airDate": {
+        "ja": "2018-01-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "jinbe",
+        "nami",
+        "charlotte-brulee",
+        "pedro",
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-linlin",
+        "brook",
+        "prometheus",
+        "napoleon",
+        "zeus",
+        "charlotte-pudding",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju",
+        "vinsmoke-judge",
+        "vinsmoke-sanji",
+        "charlotte-mont-dor",
+        "tamago"
+      ]
+    },
+    {
+      "number": 823,
+      "title": {
+        "en": "The Emperor Rolls Over - The Great Brook Rescue Mission!",
+        "ja": "四皇の寝返り ブルック救出大作戦！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        855
+      ],
+      "airDate": {
+        "ja": "2018-01-28"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "jinbe",
+        "charlotte-brulee",
+        "pedro",
+        "tony-tony-chopper",
+        "nami",
+        "carrot",
+        "brook",
+        "charlotte-linlin",
+        "zeus",
+        "napoleon",
+        "prometheus",
+        "monkey-d-luffy"
+      ]
+    },
+    {
+      "number": 824,
+      "title": {
+        "en": "The Rendezvous! Luffy, a One-on-One at His Limit!",
+        "ja": "約束の場所 ルフィ限界の一騎打ち"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        855,
+        856
+      ],
+      "airDate": {
+        "ja": "2018-02-04"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "brook",
+        "nami",
+        "pedro",
+        "tony-tony-chopper",
+        "carrot",
+        "jinbe",
+        "charlotte-brulee",
+        "charlotte-linlin",
+        "charlotte-smoothie",
+        "vinsmoke-judge",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "charlotte-mont-dor",
+        "vinsmoke-reiju"
+      ]
+    },
+    {
+      "number": 825,
+      "title": {
+        "en": "Liar - Luffy and Sanji",
+        "ja": "ウソつき ルフィとサンジ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        856
+      ],
+      "airDate": {
+        "ja": "2018-02-11"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "charlotte-pudding",
+        "charlotte-linlin",
+        "roronoa-zoro",
+        "nami",
+        "charlotte-katakuri"
+      ]
+    },
+    {
+      "number": 826,
+      "title": {
+        "en": "Sanji Returns — Crash It! The Tea Party from Hell",
+        "ja": "サンジ復活 壊せ！地獄のお茶会"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        857
+      ],
+      "airDate": {
+        "ja": "2018-02-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "brook",
+        "pedro",
+        "jinbe",
+        "carrot",
+        "charlotte-brulee",
+        "tony-tony-chopper",
+        "charlotte-katakuri",
+        "charlotte-smoothie",
+        "charlotte-perospero",
+        "charlotte-daifuku",
+        "charlotte-oven",
+        "caesar-clown"
+      ]
+    },
+    {
+      "number": 827,
+      "title": {
+        "en": "A Secret Meeting! Luffy vs. The Fire Tank Pirates",
+        "ja": "密会！ルフィVSファイアタンク海賊団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        857,
+        858
+      ],
+      "airDate": {
+        "ja": "2018-03-04"
+      },
+      "appearances": [
+        "nami",
+        "pedro",
+        "carrot",
+        "brook",
+        "tony-tony-chopper",
+        "jinbe",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "charlotte-brulee",
+        "capone-bege",
+        "caesar-clown",
+        "pekoms",
+        "charlotte-chiffon",
+        "charlotte-oven"
+      ]
+    },
+    {
+      "number": 828,
+      "title": {
+        "en": "The Deadly Pact! Luffy & Bege's Allied Forces",
+        "ja": "死の協定 ルフィ&ベッジ連合軍"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        858,
+        859
+      ],
+      "airDate": {
+        "ja": "2018-03-18"
+      },
+      "appearances": [
+        "jinbe",
+        "carrot",
+        "nami",
+        "monkey-d-luffy",
+        "tony-tony-chopper",
+        "vinsmoke-sanji",
+        "pedro",
+        "capone-bege",
+        "charlotte-chiffon",
+        "caesar-clown",
+        "morgans",
+        "charlotte-smoothie",
+        "charlotte-katakuri"
+      ]
+    },
+    {
+      "number": 829,
+      "title": {
+        "en": "Luffy’s Secret Plan — Just Before the Curtain Rises! The Conspired Wedding Ceremony",
+        "ja": "ルフィ暗躍 開演直前！陰謀の結婚式"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        859,
+        860
+      ],
+      "airDate": {
+        "ja": "2018-03-25"
+      },
+      "appearances": [
+        "charlotte-chiffon",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "pedro",
+        "brook",
+        "carrot",
+        "caesar-clown",
+        "jinbe",
+        "capone-bege",
+        "charlotte-pudding",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-brulee",
+        "charlotte-mont-dor",
+        "vinsmoke-niji",
+        "vinsmoke-judge",
+        "vinsmoke-ichiji",
+        "prometheus",
+        "zeus",
+        "pekoms",
+        "fukaboshi",
+        "neptune",
+        "shirahoshi",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju"
+      ]
+    },
+    {
+      "number": 830,
+      "title": {
+        "en": "Family Gathering — The Curtain Rises! The Tea Party from Hell",
+        "ja": "家族集結 開宴! 地獄のお茶会"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        860
+      ],
+      "airDate": {
+        "ja": "2018-04-01"
+      },
+      "appearances": [
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "vinsmoke-niji",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-judge",
+        "capone-bege",
+        "carrot",
+        "tony-tony-chopper",
+        "brook",
+        "pedro",
+        "jinbe",
+        "monkey-d-luffy",
+        "nami",
+        "charlotte-linlin",
+        "morgans",
+        "charlotte-perospero",
+        "charlotte-katakuri",
+        "charlotte-smoothie",
+        "charlotte-oven",
+        "charlotte-daifuku",
+        "prometheus",
+        "zeus",
+        "napoleon",
+        "charlotte-mont-dor"
+      ]
+    },
+    {
+      "number": 831,
+      "title": {
+        "en": "The Pretend Couple! Enter Sanji ♡ Pudding",
+        "ja": "仮面夫婦 サンジ♡プリン入場！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        861
+      ],
+      "airDate": {
+        "ja": "2018-04-08"
+      },
+      "appearances": [
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "capone-bege",
+        "monkey-d-luffy",
+        "nami",
+        "charlotte-perospero",
+        "charlotte-katakuri",
+        "charlotte-smoothie",
+        "charlotte-daifuku",
+        "charlotte-oven",
+        "charlotte-linlin",
+        "napoleon",
+        "morgans",
+        "caesar-clown",
+        "tony-tony-chopper",
+        "brook",
+        "pedro",
+        "carrot",
+        "charlotte-brulee",
+        "jinbe",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji",
+        "vinsmoke-reiju",
+        "vinsmoke-judge",
+        "prometheus",
+        "zeus"
+      ]
+    },
+    {
+      "number": 832,
+      "title": {
+        "en": "The Kiss of Death! The Emperor Assassination Plan Begins!",
+        "ja": "死のキス - 四皇暗殺作戦開始!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        862
+      ],
+      "airDate": {
+        "ja": "2018-04-15"
+      },
+      "appearances": [
+        "capone-bege",
+        "jinbe",
+        "caesar-clown",
+        "charlotte-brulee",
+        "monkey-d-luffy",
+        "nami",
+        "carrot",
+        "pedro",
+        "tony-tony-chopper",
+        "brook",
+        "zeus",
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "vinsmoke-ichiji",
+        "vinsmoke-judge",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "charlotte-katakuri",
+        "charlotte-smoothie",
+        "vinsmoke-reiju",
+        "charlotte-daifuku",
+        "charlotte-linlin",
+        "napoleon",
+        "morgans",
+        "charlotte-mont-dor",
+        "charlotte-oven",
+        "charlotte-perospero"
+      ]
+    },
+    {
+      "number": 833,
+      "title": {
+        "en": "Offering up a Sake Cup! Chivalrous Jinbe repays his debt!",
+        "ja": "盃返上! 侠客ジンベエの落とし前"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        863
+      ],
+      "airDate": {
+        "ja": "2018-04-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "capone-bege",
+        "tony-tony-chopper",
+        "charlotte-brulee",
+        "charlotte-linlin",
+        "napoleon",
+        "morgans",
+        "brook",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "charlotte-daifuku",
+        "charlotte-oven",
+        "vinsmoke-reiju",
+        "vinsmoke-ichiji",
+        "charlotte-mont-dor",
+        "charlotte-smoothie",
+        "caesar-clown",
+        "carrot",
+        "nami",
+        "pedro",
+        "jinbe",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "vinsmoke-judge",
+        "zeus",
+        "prometheus",
+        "charlotte-katakuri",
+        "charlotte-perospero"
+      ]
+    },
+    {
+      "number": 834,
+      "title": {
+        "en": "The Mission Failed!? Big Mom Pirates Counterattack!",
+        "ja": "作戦失敗!? 反撃のビッグ・マム海賊団"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        864
+      ],
+      "airDate": {
+        "ja": "2018-04-29"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "prometheus",
+        "jinbe",
+        "monkey-d-luffy",
+        "brook",
+        "charlotte-perospero",
+        "morgans",
+        "charlotte-smoothie",
+        "charlotte-mont-dor",
+        "tony-tony-chopper",
+        "nami",
+        "carrot",
+        "capone-bege",
+        "zeus",
+        "vinsmoke-judge",
+        "vinsmoke-niji",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju",
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "charlotte-daifuku",
+        "charlotte-brulee",
+        "caesar-clown",
+        "charlotte-oven",
+        "pedro",
+        "charlotte-katakuri"
+      ]
+    },
+    {
+      "number": 835,
+      "title": {
+        "en": "Run Sanji! SOS Germa 66!",
+        "ja": "走れサンジ SOS!ジェルマ66"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        865
+      ],
+      "airDate": {
+        "ja": "2018-05-06"
+      },
+      "appearances": [
+        "vinsmoke-judge",
+        "charlotte-mont-dor",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-reiju",
+        "vinsmoke-yonji",
+        "charlotte-perospero",
+        "vinsmoke-sanji",
+        "charlotte-daifuku",
+        "caesar-clown",
+        "charlotte-brulee",
+        "charlotte-linlin",
+        "napoleon",
+        "monkey-d-luffy",
+        "capone-bege",
+        "brook",
+        "charlotte-katakuri",
+        "pedro",
+        "jinbe",
+        "charlotte-smoothie",
+        "charlotte-oven",
+        "vinsmoke-sora",
+        "carrot",
+        "nami",
+        "tony-tony-chopper",
+        "morgans"
+      ]
+    },
+    {
+      "number": 836,
+      "title": {
+        "en": "The Mystery of Mama - The Island of Giants and the Little Beast",
+        "ja": "マムの秘密 巨人の島と小さな怪物"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        866
+      ],
+      "airDate": {
+        "ja": "2018-05-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "napoleon"
+      ]
+    },
+    {
+      "number": 837,
+      "title": {
+        "en": "Mama's Birthday - The Day that Carmel has disappeared",
+        "ja": "マム誕生 カルメルが消えた日"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        867
+      ],
+      "airDate": {
+        "ja": "2018-05-20"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-oven",
+        "charlotte-katakuri",
+        "charlotte-smoothie",
+        "capone-bege",
+        "monkey-d-luffy",
+        "pedro"
+      ]
+    },
+    {
+      "number": 838,
+      "title": {
+        "en": "Launchers Explosion! Big Mom Assassination Moment",
+        "ja": "兵器炸裂! ビッグ·マム暗殺の瞬間"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        868
+      ],
+      "airDate": {
+        "ja": "2018-05-27"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "capone-bege",
+        "monkey-d-luffy",
+        "nami",
+        "carrot",
+        "vinsmoke-ichiji",
+        "vinsmoke-sanji",
+        "vinsmoke-judge",
+        "tony-tony-chopper",
+        "vinsmoke-reiju",
+        "vinsmoke-niji",
+        "pedro",
+        "jinbe",
+        "brook",
+        "charlotte-pudding",
+        "morgans",
+        "caesar-clown",
+        "charlotte-brulee",
+        "charlotte-katakuri",
+        "charlotte-oven",
+        "charlotte-smoothie",
+        "charlotte-daifuku",
+        "charlotte-perospero",
+        "charlotte-mont-dor"
+      ]
+    },
+    {
+      "number": 839,
+      "title": {
+        "en": "Evil Army - Transformation! Germa 66",
+        "ja": "悪の軍団 変身!ジェルマ66"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        868,
+        869
+      ],
+      "airDate": {
+        "ja": "2018-06-03"
+      },
+      "appearances": [
+        "capone-bege",
+        "monkey-d-luffy",
+        "jinbe",
+        "brook",
+        "pedro",
+        "charlotte-katakuri",
+        "charlotte-smoothie",
+        "charlotte-oven",
+        "charlotte-daifuku",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-mont-dor",
+        "nami",
+        "tony-tony-chopper",
+        "carrot",
+        "morgans",
+        "caesar-clown",
+        "charlotte-brulee",
+        "vinsmoke-sanji",
+        "vinsmoke-reiju",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-judge",
+        "charlotte-perospero",
+        "charlotte-pudding",
+        "charlotte-chiffon"
+      ]
+    },
+    {
+      "number": 840,
+      "title": {
+        "en": "Cutting the Father-Son Relationship! Sanji and Judge!",
+        "ja": "父子の訣別 サンジとジャッジ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        869,
+        870
+      ],
+      "airDate": {
+        "ja": "2018-06-10"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-katakuri",
+        "charlotte-oven",
+        "charlotte-smoothie",
+        "charlotte-daifuku",
+        "charlotte-perospero",
+        "charlotte-brulee",
+        "charlotte-mont-dor",
+        "capone-bege",
+        "charlotte-chiffon",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "carrot",
+        "nami",
+        "pedro",
+        "jinbe",
+        "brook",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-judge",
+        "vinsmoke-yonji",
+        "vinsmoke-reiju",
+        "caesar-clown",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 841,
+      "title": {
+        "en": "Tea Party Escape - Luffy VS Big Mom",
+        "ja": "茶会脱出!ルフィVSビガ·マム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        870,
+        871
+      ],
+      "airDate": {
+        "ja": "2018-06-17"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-reiju",
+        "caesar-clown",
+        "vinsmoke-judge",
+        "capone-bege",
+        "vinsmoke-yonji",
+        "charlotte-smoothie",
+        "charlotte-mont-dor",
+        "charlotte-oven",
+        "charlotte-katakuri",
+        "charlotte-perospero",
+        "prometheus",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "nami",
+        "brook",
+        "zeus",
+        "morgans",
+        "kaido"
+      ]
+    },
+    {
+      "number": 842,
+      "title": {
+        "en": "Execution Starts - Luffy Allied Army Annihilation !?",
+        "ja": "処刑開始!ルフィ連合軍全滅!?"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        871,
+        872
+      ],
+      "airDate": {
+        "ja": "2018-06-24"
+      },
+      "appearances": [
+        "vinsmoke-judge",
+        "vinsmoke-reiju",
+        "charlotte-linlin",
+        "napoleon",
+        "vinsmoke-sanji",
+        "zeus",
+        "prometheus",
+        "capone-bege",
+        "caesar-clown",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "charlotte-katakuri",
+        "vinsmoke-ichiji",
+        "charlotte-mont-dor",
+        "nami",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "charlotte-daifuku",
+        "charlotte-smoothie",
+        "charlotte-oven",
+        "brook",
+        "jinbe",
+        "carrot",
+        "charlotte-brulee",
+        "pedro",
+        "charlotte-chiffon",
+        "morgans",
+        "tamago",
+        "charlotte-perospero"
+      ]
+    },
+    {
+      "number": 843,
+      "title": {
+        "en": "The Castle Collapsed - Straw Hat Pirates Begins Great Escape",
+        "ja": "巨城崩壞麦わら一味大脱走開始"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        872,
+        873
+      ],
+      "airDate": {
+        "ja": "2018-07-01"
+      },
+      "appearances": [
+        "charlotte-oven",
+        "charlotte-daifuku",
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-brulee",
+        "charlotte-katakuri",
+        "morgans",
+        "charlotte-perospero",
+        "charlotte-mont-dor",
+        "caesar-clown",
+        "capone-bege",
+        "tony-tony-chopper",
+        "nami",
+        "jinbe",
+        "brook",
+        "carrot",
+        "vinsmoke-reiju",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-judge",
+        "vinsmoke-niji",
+        "zeus",
+        "charlotte-smoothie",
+        "pedro",
+        "charlotte-chiffon",
+        "tamago",
+        "pekoms"
+      ]
+    },
+    {
+      "number": 844,
+      "title": {
+        "en": "The Spear of Elbaph - Onslaught! The Flying Big Mom",
+        "ja": "巨人の槍 強襲! 空翔るビッグ·マム"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        873,
+        874
+      ],
+      "airDate": {
+        "ja": "2018-07-08"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-daifuku",
+        "charlotte-oven",
+        "charlotte-mont-dor",
+        "charlotte-smoothie",
+        "charlotte-katakuri",
+        "charlotte-perospero",
+        "pekoms",
+        "monkey-d-luffy",
+        "nami",
+        "pedro",
+        "carrot",
+        "jinbe",
+        "vinsmoke-sanji",
+        "tamago",
+        "charlotte-brulee",
+        "zeus",
+        "prometheus",
+        "charlotte-pudding",
+        "charlotte-chiffon",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-reiju",
+        "vinsmoke-yonji"
+      ]
+    },
+    {
+      "number": 845,
+      "title": {
+        "en": "Pudding’s Resolve Blazes - The Seducing Woods",
+        "ja": "プリンの決意 大炎上! 誘惑の森"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        874
+      ],
+      "airDate": {
+        "ja": "2018-07-15"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "nami",
+        "monkey-d-luffy",
+        "pedro",
+        "carrot",
+        "jinbe",
+        "zeus",
+        "charlotte-linlin",
+        "napoleon",
+        "prometheus",
+        "vinsmoke-niji",
+        "vinsmoke-yonji",
+        "vinsmoke-ichiji",
+        "charlotte-perospero",
+        "charlotte-daifuku",
+        "charlotte-brulee",
+        "charlotte-mont-dor",
+        "tamago",
+        "charlotte-katakuri",
+        "capone-bege",
+        "charlotte-pudding",
+        "charlotte-chiffon"
+      ]
+    },
+    {
+      "number": 846,
+      "title": {
+        "en": "The Thunder’s Counterattack - Nami and the Stormy Zeus",
+        "ja": "反撃の雷 ナミと雷雲ゼウス"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        875
+      ],
+      "airDate": {
+        "ja": "2018-07-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "pedro",
+        "jinbe",
+        "carrot",
+        "charlotte-linlin",
+        "napoleon",
+        "tony-tony-chopper",
+        "brook",
+        "zeus",
+        "prometheus"
+      ]
+    },
+    {
+      "number": 847,
+      "title": {
+        "en": "A Coincidental Reunion - Sanji and the Evil Pudding in Love",
+        "ja": "偶然の再会 サンジと恋する悪プリン"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        875,
+        876
+      ],
+      "airDate": {
+        "ja": "2018-07-29"
+      },
+      "appearances": [
+        "brook",
+        "tony-tony-chopper",
+        "charlotte-perospero",
+        "charlotte-katakuri",
+        "zeus",
+        "jinbe",
+        "monkey-d-luffy",
+        "nami",
+        "vinsmoke-sanji",
+        "carrot",
+        "pedro",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-pudding",
+        "charlotte-chiffon"
+      ]
+    },
+    {
+      "number": 848,
+      "title": {
+        "en": "Protecting the Sunny - Fierce Battle! Chopper and Brook",
+        "ja": "サニーを守れ 奮戦！チョッパー&ブルック"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        876,
+        877
+      ],
+      "airDate": {
+        "ja": "2018-08-05"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "vinsmoke-sanji",
+        "napoleon",
+        "charlotte-pudding",
+        "charlotte-chiffon",
+        "nami",
+        "jinbe",
+        "carrot",
+        "monkey-d-luffy",
+        "pedro",
+        "tony-tony-chopper",
+        "brook",
+        "charlotte-katakuri",
+        "charlotte-perospero",
+        "zeus",
+        "prometheus"
+      ]
+    },
+    {
+      "number": 849,
+      "title": {
+        "en": "Before the Dawn - Guardians Leader Pedro",
+        "ja": "夜明け前 俠客団団長ペドロ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        877,
+        878
+      ],
+      "airDate": {
+        "ja": "2018-08-12"
+      },
+      "appearances": [
+        "charlotte-perospero",
+        "jinbe",
+        "monkey-d-luffy",
+        "pedro",
+        "nami",
+        "carrot",
+        "charlotte-katakuri",
+        "charlotte-linlin",
+        "napoleon",
+        "tony-tony-chopper",
+        "brook",
+        "charlotte-mont-dor",
+        "tamago"
+      ]
+    },
+    {
+      "number": 850,
+      "title": {
+        "en": "I Will Definitely Return! Luffy’s Life-Risking Departure",
+        "ja": "必ず戻る ルフィ命がけの出航！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        878
+      ],
+      "airDate": {
+        "ja": "2018-08-19"
+      },
+      "appearances": [
+        "nami",
+        "carrot",
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-linlin",
+        "napoleon",
+        "tony-tony-chopper",
+        "brook",
+        "jinbe",
+        "franky",
+        "charlotte-brulee",
+        "charlotte-perospero"
+      ]
+    },
+    {
+      "number": 851,
+      "title": {
+        "en": "The Man with a Bounty of Billion - The Strongest Sweet Commander, Katakuri",
+        "ja": "10億の男 最強の3将星カタクリ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        879
+      ],
+      "airDate": {
+        "ja": "2018-08-26"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "charlotte-brulee",
+        "charlotte-linlin",
+        "napoleon",
+        "brook",
+        "tony-tony-chopper",
+        "nami",
+        "carrot",
+        "jinbe",
+        "charlotte-perospero",
+        "prometheus",
+        "zeus",
+        "charlotte-chiffon",
+        "vinsmoke-sanji",
+        "charlotte-pudding"
+      ]
+    },
+    {
+      "number": 852,
+      "title": {
+        "en": "A Hard Battle Starts - Luffy vs. Katakuri",
+        "ja": "激闘開幕 ルフィVSカタクリ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        879,
+        880
+      ],
+      "airDate": {
+        "ja": "2018-09-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-pudding",
+        "charlotte-chiffon",
+        "vinsmoke-sanji",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "carrot",
+        "brook",
+        "tony-tony-chopper",
+        "jinbe",
+        "nami",
+        "charlotte-smoothie",
+        "charlotte-oven",
+        "charlotte-mont-dor",
+        "charlotte-brulee"
+      ]
+    },
+    {
+      "number": 853,
+      "title": {
+        "en": "The Green Room - An Invincible Helmsman, Jinbe",
+        "ja": "波の部屋 無敵の操舵手ジンベエ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        880,
+        881
+      ],
+      "airDate": {
+        "ja": "2018-09-16"
+      },
+      "appearances": [
+        "charlotte-brulee",
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "tony-tony-chopper",
+        "carrot",
+        "nami",
+        "jinbe",
+        "brook",
+        "charlotte-pudding",
+        "charlotte-chiffon",
+        "vinsmoke-sanji"
+      ]
+    },
+    {
+      "number": 854,
+      "title": {
+        "en": "The Menacing Mogura — Luffy’s Silent Fight!",
+        "ja": "土竜の脅威 ルフィ沈黙の戦い"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        881,
+        882
+      ],
+      "airDate": {
+        "ja": "2018-09-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-brulee",
+        "nami",
+        "carrot",
+        "tony-tony-chopper",
+        "brook",
+        "jinbe",
+        "charlotte-mont-dor",
+        "tamago",
+        "charlotte-linlin",
+        "napoleon",
+        "vinsmoke-yonji",
+        "charlotte-perospero"
+      ]
+    },
+    {
+      "number": 855,
+      "title": {
+        "en": "The End of the Deadly Battle!? Katakuri's Awakening in Anger",
+        "ja": "死闘決着！？ カタクリ怒りの覚醒"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        882,
+        883
+      ],
+      "airDate": {
+        "ja": "2018-09-30"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "pekoms",
+        "charlotte-mont-dor",
+        "tamago",
+        "capone-bege",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-reiju",
+        "vinsmoke-yonji"
+      ]
+    },
+    {
+      "number": 856,
+      "title": {
+        "en": "The Forbidden Secret - Katakuri's Merienda",
+        "ja": "禁断の秘密 カタクリのおやつの時間"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        883
+      ],
+      "airDate": {
+        "ja": "2018-10-07"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "charlotte-chiffon",
+        "charlotte-oven"
+      ]
+    },
+    {
+      "number": 857,
+      "title": {
+        "en": "Luffy Fights Back - The Invincible Katakuri's Weak Point!",
+        "ja": "ルフィ反撃 無敵カタクリの弱点"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        884
+      ],
+      "airDate": {
+        "ja": "2018-10-14"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "charlotte-brulee",
+        "vinsmoke-sanji",
+        "charlotte-chiffon",
+        "charlotte-pudding",
+        "charlotte-linlin",
+        "nami",
+        "tony-tony-chopper",
+        "carrot",
+        "jinbe",
+        "brook",
+        "napoleon",
+        "charlotte-perospero",
+        "charlotte-oven"
+      ]
+    },
+    {
+      "number": 858,
+      "title": {
+        "en": "Another Crisis! Gear Fourth vs. Muso Donuts",
+        "ja": "危機再び！ギア4vs無双ドーナツ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        884,
+        885
+      ],
+      "airDate": {
+        "ja": "2018-10-21"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "charlotte-mont-dor",
+        "pekoms",
+        "tamago",
+        "capone-bege",
+        "tony-tony-chopper",
+        "carrot",
+        "brook",
+        "jinbe",
+        "nami",
+        "charlotte-brulee",
+        "charlotte-daifuku",
+        "charlotte-smoothie",
+        "charlotte-chiffon"
+      ]
+    },
+    {
+      "number": 859,
+      "title": {
+        "en": "The Rebellious Daughter, Chiffon - Sanji's Big Plan for Transporting the Cake",
+        "ja": "反逆の娘サンジのケーキ輸送大作戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        885,
+        886
+      ],
+      "airDate": {
+        "ja": "2018-10-28"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "monkey-d-luffy",
+        "charlotte-brulee",
+        "charlotte-perospero",
+        "vinsmoke-sanji",
+        "charlotte-chiffon",
+        "charlotte-pudding",
+        "charlotte-oven",
+        "capone-bege"
+      ]
+    },
+    {
+      "number": 860,
+      "title": {
+        "en": "A Man's Way of Life - Bege and Luffy's Determination as Captains",
+        "ja": "男の生き様 ベッジとルフィ船長の決意"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        886,
+        887
+      ],
+      "airDate": {
+        "ja": "2018-11-04"
+      },
+      "appearances": [
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "monkey-d-luffy",
+        "charlotte-brulee",
+        "charlotte-katakuri",
+        "charlotte-oven",
+        "charlotte-chiffon",
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "capone-bege",
+        "tony-tony-chopper",
+        "nami",
+        "jinbe",
+        "brook",
+        "carrot",
+        "tamago",
+        "charlotte-mont-dor"
+      ]
+    },
+    {
+      "number": 861,
+      "title": {
+        "en": "The Cake Sank?! Sanji and Bege's Getaway Battle!",
+        "ja": "ケーキ沈没！？ サンジ&ベッジ逃亡戦"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        887,
+        888
+      ],
+      "airDate": {
+        "ja": "2018-11-11"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "capone-bege",
+        "vinsmoke-sanji",
+        "charlotte-chiffon",
+        "charlotte-pudding",
+        "charlotte-oven",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "brook",
+        "nami",
+        "tony-tony-chopper",
+        "carrot",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 862,
+      "title": {
+        "en": "Sulong - Carrot's Big Mystic Transformation",
+        "ja": "月の獅子 キャロット神秘の大変身"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        888,
+        889
+      ],
+      "airDate": {
+        "ja": "2018-11-18"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "jinbe",
+        "tony-tony-chopper",
+        "carrot",
+        "brook",
+        "nami",
+        "charlotte-daifuku",
+        "charlotte-smoothie"
+      ]
+    },
+    {
+      "number": 863,
+      "title": {
+        "en": "Break Through - The Straw Hats' Mighty Sea Battle!",
+        "ja": "突破せよ 麦わらの一味大海戦！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        889,
+        890
+      ],
+      "airDate": {
+        "ja": "2018-11-25"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "jinbe",
+        "charlotte-smoothie",
+        "vinsmoke-sanji",
+        "capone-bege",
+        "charlotte-pudding",
+        "charlotte-chiffon",
+        "zeus",
+        "prometheus",
+        "tony-tony-chopper",
+        "nami",
+        "carrot",
+        "brook",
+        "charlotte-daifuku"
+      ]
+    },
+    {
+      "number": 864,
+      "title": {
+        "en": "Finally, They Clash - Emperor vs. Straw Hats",
+        "ja": "遂に激突 四皇VS麦わらの一味"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        890
+      ],
+      "airDate": {
+        "ja": "2018-12-09"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "charlotte-perospero",
+        "zeus",
+        "carrot",
+        "charlotte-linlin",
+        "brook",
+        "prometheus",
+        "napoleon",
+        "jinbe",
+        "tony-tony-chopper",
+        "nami",
+        "charlotte-daifuku",
+        "charlotte-smoothie"
+      ]
+    },
+    {
+      "number": 865,
+      "title": {
+        "en": "Dark King's Direct Precepts - The Battle Against Katakuri Turns Around",
+        "ja": "冥王直伝 カタクリ戦 大逆転開始"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        890,
+        891,
+        894
+      ],
+      "airDate": {
+        "ja": "2018-12-16"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "tamago",
+        "charlotte-mont-dor",
+        "morgans",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "charlotte-oven",
+        "charlotte-daifuku",
+        "prometheus",
+        "zeus",
+        "nami",
+        "tony-tony-chopper",
+        "brook",
+        "jinbe"
+      ]
+    },
+    {
+      "number": 866,
+      "title": {
+        "en": "Finally He Returns - Sanji, the Man Who'll Stop the Emperor",
+        "ja": "遂に帰還 四皇を止める男サンジ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        891,
+        892
+      ],
+      "airDate": {
+        "ja": "2018-12-23"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "charlotte-chiffon",
+        "capone-bege",
+        "prometheus",
+        "charlotte-linlin",
+        "napoleon",
+        "nami",
+        "jinbe",
+        "brook",
+        "tony-tony-chopper",
+        "charlotte-perospero",
+        "carrot",
+        "charlotte-smoothie"
+      ]
+    },
+    {
+      "number": 867,
+      "title": {
+        "en": "Lurking in the Darkness - An Assassin Targeting Luffy!",
+        "ja": "闇に潜む ルフィを襲う暗殺者！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        892,
+        893
+      ],
+      "airDate": {
+        "ja": "2019-01-06"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "charlotte-mont-dor",
+        "tamago",
+        "morgans",
+        "charlotte-perospero",
+        "capone-bege",
+        "charlotte-smoothie",
+        "prometheus",
+        "napoleon",
+        "charlotte-linlin",
+        "nami",
+        "tony-tony-chopper",
+        "jinbe",
+        "vinsmoke-sanji",
+        "brook",
+        "charlotte-chiffon",
+        "charlotte-pudding",
+        "charlotte-oven"
+      ]
+    },
+    {
+      "number": 868,
+      "title": {
+        "en": "One Man's Determination - Katakuri's Deadly Big Fight",
+        "ja": "男の覚悟 カタクリ命がけ大勝負"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        893,
+        894
+      ],
+      "airDate": {
+        "ja": "2019-01-13"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "prometheus",
+        "capone-bege",
+        "charlotte-chiffon",
+        "charlotte-linlin",
+        "napoleon",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "tony-tony-chopper",
+        "nami",
+        "brook",
+        "jinbe",
+        "carrot",
+        "charlotte-smoothie"
+      ]
+    },
+    {
+      "number": 869,
+      "title": {
+        "en": "Wake Up - Kenbunshoku Able to Top The Strongest!",
+        "ja": "目覚めろ 最強を越える見聞色"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        894
+      ],
+      "airDate": {
+        "ja": "2019-01-20"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "charlotte-katakuri",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "charlotte-oven"
+      ]
+    },
+    {
+      "number": 870,
+      "title": {
+        "en": "A Fist of Divine Speed - Another Gear Fourth Application Activated!",
+        "ja": "神速の拳 新たなるギア4発動！"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        895
+      ],
+      "airDate": {
+        "ja": "2019-01-27"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "charlotte-pudding",
+        "vinsmoke-sanji",
+        "charlotte-oven"
+      ]
+    },
+    {
+      "number": 871,
+      "title": {
+        "en": "Finally, It's Over - The Climax of the Intense Fight against Katakuri",
+        "ja": "遂に終結 壮絶カタクリ戦の行方"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        896,
+        902
+      ],
+      "airDate": {
+        "ja": "2019-02-03"
+      },
+      "appearances": [
+        "charlotte-katakuri",
+        "monkey-d-luffy",
+        "charlotte-brulee",
+        "charlotte-oven",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "morgans",
+        "tamago",
+        "charlotte-mont-dor",
+        "charlotte-linlin",
+        "prometheus",
+        "napoleon",
+        "capone-bege",
+        "charlotte-chiffon",
+        "brook",
+        "carrot",
+        "charlotte-smoothie",
+        "jinbe",
+        "nami",
+        "tony-tony-chopper",
+        "pekoms"
+      ]
+    },
+    {
+      "number": 872,
+      "title": {
+        "en": "A Desperate Situation - The Iron-Tight Entrapment of Luffy!",
+        "ja": "絶体絶命 鉄壁のルフィ包囲網!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        897
+      ],
+      "airDate": {
+        "ja": "2019-02-10"
+      },
+      "appearances": [
+        "charlotte-oven",
+        "tony-tony-chopper",
+        "nami",
+        "brook",
+        "jinbe",
+        "charlotte-smoothie",
+        "carrot",
+        "charlotte-mont-dor",
+        "vinsmoke-sanji",
+        "pekoms",
+        "charlotte-brulee",
+        "monkey-d-luffy",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-reiju",
+        "vinsmoke-yonji",
+        "vinsmoke-judge"
+      ]
+    },
+    {
+      "number": 873,
+      "title": {
+        "en": "Pulling Back from the Brink - The Formidable Reinforcements Germa!",
+        "ja": "起死回生 最強の援軍ジェルマ!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        898
+      ],
+      "airDate": {
+        "ja": "2019-02-17"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "vinsmoke-reiju",
+        "charlotte-oven",
+        "charlotte-mont-dor",
+        "tamago",
+        "vinsmoke-judge",
+        "charlotte-smoothie",
+        "charlotte-daifuku",
+        "jinbe",
+        "nami",
+        "brook",
+        "tony-tony-chopper",
+        "carrot",
+        "charlotte-brulee",
+        "vinsmoke-sora"
+      ]
+    },
+    {
+      "number": 874,
+      "title": {
+        "en": "The Last Hope - The Sun Pirates Emerge",
+        "ja": "最後の砦 タイヨウの海賊団現る"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        899
+      ],
+      "airDate": {
+        "ja": "2019-02-24"
+      },
+      "appearances": [
+        "vinsmoke-sanji",
+        "monkey-d-luffy",
+        "carrot",
+        "nami",
+        "tony-tony-chopper",
+        "brook",
+        "jinbe",
+        "charlotte-smoothie",
+        "prometheus",
+        "charlotte-linlin",
+        "capone-bege",
+        "napoleon",
+        "charlotte-chiffon",
+        "tamago",
+        "charlotte-mont-dor",
+        "charlotte-perospero",
+        "charlotte-daifuku",
+        "vinsmoke-judge"
+      ]
+    },
+    {
+      "number": 875,
+      "title": {
+        "en": "A Captivating Flavor - Sanji's Cake of Happiness",
+        "ja": "魅惑の味 幸せのサンジのケーキ"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        900
+      ],
+      "airDate": {
+        "ja": "2019-03-03"
+      },
+      "appearances": [
+        "prometheus",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-chiffon",
+        "capone-bege",
+        "charlotte-perospero",
+        "tamago",
+        "charlotte-mont-dor",
+        "vinsmoke-sanji",
+        "charlotte-pudding",
+        "jinbe",
+        "nami",
+        "tony-tony-chopper",
+        "brook",
+        "charlotte-smoothie",
+        "charlotte-daifuku",
+        "monkey-d-luffy",
+        "vinsmoke-niji",
+        "vinsmoke-ichiji",
+        "vinsmoke-reiju",
+        "vinsmoke-yonji",
+        "charlotte-oven",
+        "charlotte-brulee",
+        "vinsmoke-judge",
+        "carrot"
+      ]
+    },
+    {
+      "number": 876,
+      "title": {
+        "en": "The Man of Humanity and Justice - Jinbe, a Desperate Massive Ocean Current",
+        "ja": "仁義の漢 ジンベエ決死の大海流"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        901
+      ],
+      "airDate": {
+        "ja": "2019-03-17"
+      },
+      "appearances": [
+        "charlotte-smoothie",
+        "charlotte-daifuku",
+        "charlotte-mont-dor",
+        "tamago",
+        "charlotte-linlin",
+        "charlotte-perospero",
+        "napoleon",
+        "prometheus",
+        "nami",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "jinbe",
+        "carrot",
+        "brook",
+        "charlotte-oven",
+        "capone-bege",
+        "charlotte-chiffon",
+        "morgans",
+        "trafalgar-d-water-law",
+        "basil-hawkins",
+        "x-drake",
+        "eustass-kid",
+        "killer"
+      ]
+    },
+    {
+      "number": 877,
+      "title": {
+        "en": "The Parting Time - Pudding's Last Wish",
+        "ja": "惜別の時 プリン最後の“お願い„"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        902
+      ],
+      "airDate": {
+        "ja": "2019-03-24"
+      },
+      "appearances": [
+        "nami",
+        "brook",
+        "vinsmoke-sanji",
+        "carrot",
+        "tony-tony-chopper",
+        "monkey-d-luffy",
+        "charlotte-linlin",
+        "napoleon",
+        "charlotte-perospero",
+        "vinsmoke-judge",
+        "charlotte-pudding",
+        "jinbe",
+        "charlotte-mont-dor",
+        "tamago",
+        "charlotte-smoothie",
+        "charlotte-daifuku",
+        "charlotte-oven",
+        "vinsmoke-ichiji",
+        "vinsmoke-yonji",
+        "vinsmoke-niji",
+        "vinsmoke-reiju",
+        "charlotte-brulee",
+        "charlotte-katakuri",
+        "zeff"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "big-mom-introduced",
+      "kind": "reveal",
+      "characters": [
+        "charlotte-linlin"
+      ],
+      "episode": 786,
+      "chapter": 827,
+      "description": {
+        "es": "Primera aparición en pantalla de la Emperatriz Big Mom en Totto Land."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-vs-cracker",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "charlotte-cracker",
+        "nami"
+      ],
+      "episode": 797,
+      "chapter": 836,
+      "description": {
+        "es": "Luffy combate durante horas contra Charlotte Cracker y sus soldados de galleta."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "gear-4-tankman",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "charlotte-cracker"
+      ],
+      "episode": 806,
+      "chapter": 843,
+      "description": {
+        "es": "Tras atiborrarse de galletas, Luffy activa Gear 4 Tankman y derrota a Cracker."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-sanji",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji"
+      ],
+      "episode": 807,
+      "chapter": 843,
+      "description": {
+        "es": "Sanji golpea a Luffy para alejarlo; Luffy se niega a defenderse y promete esperarle."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "pudding-third-eye-revealed",
+      "kind": "reveal",
+      "characters": [
+        "charlotte-pudding",
+        "vinsmoke-sanji"
+      ],
+      "episode": 815,
+      "chapter": 848,
+      "description": {
+        "es": "Pudding revela su tercer ojo y el plan para asesinar a los Vinsmoke en la boda."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-past-revealed",
+      "kind": "reveal",
+      "characters": [
+        "vinsmoke-sanji",
+        "vinsmoke-sora",
+        "vinsmoke-reiju"
+      ],
+      "episode": 819,
+      "chapter": 852,
+      "description": {
+        "es": "Flashback de la infancia de Sanji en Germa y del sacrificio de su madre Sora."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "luffy-waits-sanji-returns",
+      "kind": "other",
+      "characters": [
+        "monkey-d-luffy",
+        "vinsmoke-sanji"
+      ],
+      "episode": 825,
+      "chapter": 856,
+      "description": {
+        "es": "Sanji vuelve al punto de encuentro y regresa con Luffy."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "jinbe-leaves-big-mom-pirates",
+      "kind": "other",
+      "characters": [
+        "jinbe",
+        "charlotte-linlin"
+      ],
+      "episode": 833,
+      "chapter": 863,
+      "description": {
+        "es": "Jinbe devuelve su copa a Big Mom y abandona su tripulación."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "tea-party-assassination-attempt",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "capone-bege",
+        "charlotte-linlin",
+        "jinbe"
+      ],
+      "episode": 838,
+      "chapter": 868,
+      "description": {
+        "es": "El cuadro de Mother Caramel se rompe y Big Mom pierde el control durante la merienda."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "germa-66-transform",
+      "kind": "transformation",
+      "characters": [
+        "vinsmoke-judge",
+        "vinsmoke-reiju",
+        "vinsmoke-ichiji",
+        "vinsmoke-niji",
+        "vinsmoke-yonji"
+      ],
+      "episode": 839,
+      "chapter": 869,
+      "description": {
+        "es": "Los Vinsmoke se ponen sus raid suits y rescatan a la alianza de Luffy."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "big-mom-backstory",
+      "kind": "reveal",
+      "characters": [
+        "charlotte-linlin"
+      ],
+      "episode": 836,
+      "chapter": 866,
+      "description": {
+        "es": "Pasado de Linlin en Elbaf y desaparición de Mother Caramel."
+      },
+      "cardWorthy": false
+    },
+    {
+      "slug": "pedro-sacrifice",
+      "kind": "death",
+      "characters": [
+        "pedro",
+        "charlotte-perospero",
+        "tony-tony-chopper",
+        "carrot"
+      ],
+      "episode": 849,
+      "chapter": 878,
+      "description": {
+        "es": "Pedro se inmola para abrir paso al Thousand Sunny."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-katakuri",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "charlotte-katakuri"
+      ],
+      "episode": 852,
+      "chapter": 880,
+      "description": {
+        "es": "Comienza el duelo en el Mundo Espejo entre Luffy y Katakuri."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "katakuri-awakening",
+      "kind": "transformation",
+      "characters": [
+        "charlotte-katakuri",
+        "monkey-d-luffy"
+      ],
+      "episode": 855,
+      "chapter": 882,
+      "description": {
+        "es": "Katakuri despierta su Mochi Mochi no Mi."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "carrot-sulong",
+      "kind": "transformation",
+      "characters": [
+        "carrot",
+        "charlotte-perospero"
+      ],
+      "episode": 862,
+      "chapter": 889,
+      "description": {
+        "es": "Carrot adopta la forma Sulong bajo la luna llena."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-future-sight-observation-haki",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "charlotte-katakuri"
+      ],
+      "episode": 869,
+      "chapter": 894,
+      "description": {
+        "es": "Luffy alcanza el Haki de observación que ve el futuro inmediato."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "gear-4-snakeman",
+      "kind": "transformation",
+      "characters": [
+        "monkey-d-luffy",
+        "charlotte-katakuri"
+      ],
+      "episode": 870,
+      "chapter": 895,
+      "description": {
+        "es": "Luffy estrena Gear 4 Snakeman, forma de velocidad con golpes de trayectoria cambiante."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-defeats-katakuri",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "charlotte-katakuri"
+      ],
+      "episode": 871,
+      "chapter": 896,
+      "description": {
+        "es": "Luffy derrota a Katakuri, que reconoce su caída."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "sanji-cake-calms-big-mom",
+      "kind": "other",
+      "characters": [
+        "vinsmoke-sanji",
+        "charlotte-linlin",
+        "charlotte-pudding"
+      ],
+      "episode": 875,
+      "chapter": 900,
+      "description": {
+        "es": "La tarta de Sanji y Pudding cura el ataque de hambre de Big Mom."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "jinbe-holds-back-big-mom",
+      "kind": "battle",
+      "characters": [
+        "jinbe",
+        "charlotte-linlin"
+      ],
+      "episode": 876,
+      "chapter": 901,
+      "description": {
+        "es": "Jinbe y los Piratas del Sol cubren la huida del Sunny."
+      },
+      "cardWorthy": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://onepiece.fandom.com/wiki/Whole_Cake_Island_Arc",
+      "field": "slug/ranges"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Whole_Cake_Island_Saga",
+      "field": "episodes.title"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Wano_Country_Saga",
+      "field": "episodes.title (Cidre Guild)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_760",
+      "field": "episodes.adaptsChapters/airDate (infobox de cada Episode_N)"
+    },
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes.canon"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_903",
+      "field": "events (bounties, raid suit)"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_895",
+      "field": "events.gear-4-snakeman"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Chapter_894",
+      "field": "events.luffy-future-sight-observation-haki"
+    }
+  ]
+}
