@@ -191,7 +191,6 @@ export function createOptimisticPost(
     isDeleted: false,
     isRetweet: false,
     isReply: false,
-    isPinned: false,
     language: 'es',
     likes: [],
     bookmarks: [],

@@ -1,11 +1,16 @@
 import type { GetServerSideProps } from 'next';
 
-import CardsPageContent from '@/features/cards/page-content/cards.page-content';
+import { DashboardPlaceholderPageContent } from '@/features/dashboard/page-content/placeholder.page-content';
 import { withDashboardLayout } from '@/features/dashboard/with-dashboard-layout';
 import { getDashboardPageProps } from '@/integrations/auth/server';
 
 function DashboardCardsPage() {
-  return <CardsPageContent />;
+  return (
+    <DashboardPlaceholderPageContent
+      titleKey="dashboard.pages.cards.title"
+      bodyKey="dashboard.pages.cards.body"
+    />
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = getDashboardPageProps;

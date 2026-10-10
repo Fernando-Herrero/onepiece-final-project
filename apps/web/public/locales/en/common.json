@@ -58,25 +58,6 @@
       "jimbe": "Jinbe"
     }
   },
-  "cards": {
-    "meta_title": "Cards — LogPose",
-    "title": "Versioned collection",
-    "subtitle": "Each character has multiple cards tied to specific story moments.",
-    "loading": "Loading…",
-    "error": "Could not load the gallery",
-    "characters_heading": "Characters ({{count}})",
-    "versions_heading": "{{name}} versions",
-    "versions_placeholder": "Versions",
-    "select_character": "Select a character",
-    "unlock_label": "Unlock: {{kind}} #{{id}}",
-    "bounty": "Bounty: {{value}} Berries",
-    "rarity": {
-      "common": "Common",
-      "uncommon": "Uncommon",
-      "rare": "Rare",
-      "legendary": "Legendary"
-    }
-  },
   "characters": {
     "meta_title": "Characters — LogPose",
     "luffy_text": "The fearless captain with a huge heart and an even bigger dream: to become the Pirate King. His rubber powers allow him to stretch and withstand blows that would be fatal to anyone else. Always optimistic and brave.",
@@ -158,6 +139,10 @@
       "settings": {
         "title": "Settings",
         "body": "Coming soon: privacy, language and account."
+      },
+      "cards": {
+        "title": "Cards",
+        "body": "Coming soon: your collection of cards unlocked by watching the series."
       }
     }
   },

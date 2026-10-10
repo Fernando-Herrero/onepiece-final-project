@@ -7,13 +7,15 @@ type DashboardPlaceholderPageContentProps = {
     | 'dashboard.pages.community.title'
     | 'dashboard.pages.search.title'
     | 'dashboard.pages.notifications.title'
-    | 'dashboard.pages.settings.title';
+    | 'dashboard.pages.settings.title'
+    | 'dashboard.pages.cards.title';
   bodyKey:
     | 'dashboard.pages.profile.body'
     | 'dashboard.pages.community.body'
     | 'dashboard.pages.search.body'
     | 'dashboard.pages.notifications.body'
-    | 'dashboard.pages.settings.body';
+    | 'dashboard.pages.settings.body'
+    | 'dashboard.pages.cards.body';
 };
 
 export function DashboardPlaceholderPageContent({

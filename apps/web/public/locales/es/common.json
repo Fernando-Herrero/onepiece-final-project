@@ -58,25 +58,6 @@
       "jimbe": "Jinbe"
     }
   },
-  "cards": {
-    "meta_title": "Cartas — LogPose",
-    "title": "Colección versionada",
-    "subtitle": "Cada personaje tiene varias cartas ancladas a momentos concretos de la historia.",
-    "loading": "Cargando…",
-    "error": "No se pudo cargar la galería",
-    "characters_heading": "Personajes ({{count}})",
-    "versions_heading": "Versiones de {{name}}",
-    "versions_placeholder": "Versiones",
-    "select_character": "Selecciona un personaje",
-    "unlock_label": "Desbloqueo: {{kind}} #{{id}}",
-    "bounty": "Recompensa: {{value}} Berries",
-    "rarity": {
-      "common": "Común",
-      "uncommon": "Poco común",
-      "rare": "Rara",
-      "legendary": "Legendaria"
-    }
-  },
   "characters": {
     "meta_title": "Personajes — LogPose",
     "luffy_text": "El intrépido capitán con un corazón enorme y un sueño gigante: convertirse en el Rey de los Piratas. Su poder de goma le permite estirarse y resistir golpes que serían mortales para cualquier otro. Siempre optimista y valiente.",
@@ -158,6 +139,10 @@
       "settings": {
         "title": "Ajustes",
         "body": "Próximamente: privacidad, idioma y cuenta."
+      },
+      "cards": {
+        "title": "Cartas",
+        "body": "Próximamente: tu colección de cartas desbloqueadas viendo la serie."
       }
     }
   },

@@ -23,7 +23,6 @@ export type PostDocument = {
   isRetweet: boolean;
   retweetOf?: ObjectId;
   isReply: boolean;
-  isPinned: boolean;
   language: string;
   likes: ObjectId[];
   bookmarks: ObjectId[];
@@ -46,12 +45,6 @@ export const PUBLIC_POST_FILTER = {
   visibility: 'public' as const,
   isDeleted: false,
 };
-
-/**
- * Límite de caracteres del texto según si el autor está verificado.
- * Reexportado desde contracts — fuente de verdad compartida con web.
- */
-export { getPostTextMaxLength as getTextMaxLength };
 
 /**
  * Valida longitud del texto antes de crear/actualizar un post.
@@ -92,7 +85,6 @@ export function serializePost(
     isRetweet: post.isRetweet,
     retweetOf: post.retweetOf?.toString(),
     isReply: post.isReply,
-    isPinned: post.isPinned,
     language: post.language,
     likes: post.likes.map(String),
     bookmarks: post.bookmarks.map(String),

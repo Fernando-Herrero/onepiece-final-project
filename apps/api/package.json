@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "build": "nest build",
-    "build-catalog": "node scripts/build-catalog.mjs",
     "dev": "nest start --watch",
     "format": "prettier --write \"**/*.{ts,tsx,md,json,html}\"",
     "format-check": "prettier --check \"**/*.{ts,tsx,md,json,html}\"",
@@ -22,7 +21,6 @@
     "@nestjs/core": "catalog:",
     "@nestjs/platform-express": "catalog:",
     "@nestjs/terminus": "catalog:",
-    "@orpc/contract": "catalog:",
     "@orpc/nest": "catalog:",
     "@orpc/openapi": "catalog:",
     "@orpc/server": "catalog:",

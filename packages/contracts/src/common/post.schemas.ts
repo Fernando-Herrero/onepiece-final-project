@@ -25,7 +25,6 @@ const postFieldsSchema = z.object({
     .max(POST_MAX_IMAGES, `Máximo ${POST_MAX_IMAGES} imágenes`)
     .optional(),
   visibility: postVisibilitySchema.optional(),
-  isPinned: z.boolean().optional(),
 });
 
 export const createPostSchema = postFieldsSchema.strict();
@@ -53,7 +52,6 @@ export const postPublicSchema = z.object({
   isRetweet: z.boolean(),
   retweetOf: z.string().optional(),
   isReply: z.boolean(),
-  isPinned: z.boolean(),
   language: z.string(),
   likes: z.array(z.string()),
   bookmarks: z.array(z.string()),

@@ -7,7 +7,6 @@ const config = [
       'dist/',
       'node_modules/',
       '.turbo/',
-      'scripts/',
       '*.config.js',
       '*.config.mjs',
       '*.config.cjs',
