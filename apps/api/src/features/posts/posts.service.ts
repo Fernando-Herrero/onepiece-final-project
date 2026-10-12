@@ -14,6 +14,7 @@ import {
   assertTextLength,
   collectRetweetCheckIds,
   encodePostCursor,
+  serializePost,
   serializePostsWithAuthors,
 } from './posts.mappers.js';
 import { PostsPersistence } from './posts.persistence.js';
@@ -80,13 +81,7 @@ export class PostsService {
       language: 'es',
     });
 
-    const [serialized] = await serializePostsWithAuthors(
-      [post],
-      this.usersPersistence,
-      userId,
-    );
-
-    return serialized;
+    return serializePost(post, user, userId);
   }
 
   async toggleLike(postId: string, userId: string) {
@@ -242,6 +237,7 @@ export class PostsService {
       actorId,
     );
 
-    return serialized;
+    // Sin `originalPostsById` no se descarta ningún post: siempre hay uno.
+    return serialized!;
   }
 }

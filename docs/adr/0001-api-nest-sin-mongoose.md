@@ -4,7 +4,7 @@ Sustituye a la decisión del 2026-06-13 de quedarse en Express.
 
 ## Decisión
 
-`apps/api` es NestJS 11 con `@orpc/nest` (`@Implement` del contrato) y `@jperezmart/nest-mongodb` sobre el driver `mongodb`, sin Mongoose. Los schemas Zod de `packages/contracts` son la única fuente de validación: no hay schemas de Mongoose ni `ValidationPipe` en los procedures, y el controller valida la salida con `parseOrThrow(schema, data)`.
+`apps/api` es NestJS 11 con `@orpc/nest` (`@Implement` del contrato) y `@jperezmart/nest-mongodb` sobre el driver `mongodb`, sin Mongoose. Los schemas Zod de `packages/contracts` son la única fuente de validación: no hay schemas de Mongoose ni `ValidationPipe` en los procedures. La salida la valida oRPC contra el contrato (ADR 0005).
 
 ## Por qué
 

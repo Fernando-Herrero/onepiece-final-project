@@ -3,9 +3,8 @@ import './integrations/orpc/orpc-context.js';
 import { MongoModule } from '@jperezmart/nest-mongodb';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { APP_FILTER, REQUEST } from '@nestjs/core';
-import { onError, ORPCModule } from '@orpc/nest';
-import type { Request } from 'express';
+import { APP_FILTER } from '@nestjs/core';
+import { ORPCModule } from '@orpc/nest';
 
 import { AuthModule } from './features/auth/auth.module.js';
 import { HealthModule } from './features/health/health.module.js';
@@ -15,8 +14,8 @@ import { UploadModule } from './features/upload/upload.module.js';
 import { UsersModule } from './features/users/users.module.js';
 import { ServerEnv, validateEnv } from './integrations/env/server.js';
 import { AllExceptionsFilter } from './integrations/http/all-exceptions.filter.js';
+import { orpcModuleOptions } from './integrations/orpc/orpc.config.js';
 import { OrpcDocsController } from './integrations/orpc/orpc-docs.controller.js';
-import { logOrpcError } from './integrations/orpc/orpc-error-logger.js';
 
 const mode = process.env.NODE_ENV ?? 'development';
 
@@ -27,13 +26,7 @@ const mode = process.env.NODE_ENV ?? 'development';
       envFilePath: [`.env.${mode}.local`, `.env.${mode}`, '.env.local', '.env'],
       validate: validateEnv,
     }),
-    ORPCModule.forRootAsync({
-      useFactory: (request: Request) => ({
-        context: { request },
-        interceptors: [onError(logOrpcError)],
-      }),
-      inject: [REQUEST],
-    }),
+    ORPCModule.forRootAsync(orpcModuleOptions),
     MongoModule.forRootAsync({
       inject: [ConfigService],
       useFactory: (config: ConfigService<ServerEnv, true>) => ({

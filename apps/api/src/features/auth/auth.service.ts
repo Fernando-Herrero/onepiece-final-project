@@ -3,6 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
 import type { Response } from 'express';
+import { MongoServerError } from 'mongodb';
 
 import { serializeUser, type UserDocument } from '../users/user.mappers.js';
 import { UsersPersistence } from '../users/users.persistence.js';
@@ -35,41 +36,48 @@ export class AuthService {
   ) {
     const hashedPassword = await bcrypt.hash(input.password, 10);
 
-    const newUser = await this.usersPersistence.insert({
-      username: input.username,
-      firstName: input.firstName,
-      lastName: input.lastName,
-      email: input.email,
-      password: hashedPassword,
-      avatar: input.avatar,
-      displayName: input.displayName,
-      bio: input.bio,
-      coverImage: input.coverImage,
-      phoneNumber: input.phoneNumber,
-      address: input.address,
-      privacy: input.privacy ?? {
-        showPosts: true,
-        showLikes: true,
-        showBookmarked: true,
-        showComments: true,
-      },
-      preferences: DEFAULT_USER_PREFERENCES,
-      role: 'user',
-      verified: false,
-      isActive: true,
-      experience: 0,
-      serieProgress: { saga: 0, arc: 0, episode: 0 },
-      unlockedCards: {
-        characters: [],
-        items: [],
-        fruits: [],
-        swords: [],
-        boats: [],
-      },
-      completedEpisodes: [],
-      followers: [],
-      following: [],
-    });
+    const newUser = await this.usersPersistence
+      .insert({
+        username: input.username,
+        firstName: input.firstName,
+        lastName: input.lastName,
+        email: input.email,
+        password: hashedPassword,
+        avatar: input.avatar,
+        displayName: input.displayName,
+        bio: input.bio,
+        coverImage: input.coverImage,
+        phoneNumber: input.phoneNumber,
+        address: input.address,
+        privacy: input.privacy ?? {
+          showPosts: true,
+          showLikes: true,
+          showBookmarked: true,
+          showComments: true,
+        },
+        preferences: DEFAULT_USER_PREFERENCES,
+        role: 'user',
+        verified: false,
+        isActive: true,
+        experience: 0,
+        serieProgress: { saga: 0, arc: 0, episode: 0 },
+        unlockedCards: {
+          characters: [],
+          items: [],
+          fruits: [],
+          swords: [],
+          boats: [],
+        },
+        completedEpisodes: [],
+        followers: [],
+        following: [],
+      })
+      .catch((error: unknown) => {
+        if (error instanceof MongoServerError && error.code === 11000) {
+          throw new ORPCError('DUPLICATE_ACCOUNT');
+        }
+        throw error;
+      });
 
     const session = { user: serializeUser(newUser) };
 

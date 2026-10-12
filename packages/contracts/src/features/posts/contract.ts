@@ -1,5 +1,6 @@
 import { oc } from '@orpc/contract';
-import { z } from 'zod';
+
+import { commonErrors } from '../../common/errors.js';
 import {
   createPostSchema,
   postPublicSchema,
@@ -16,14 +17,7 @@ import {
 } from './schemas.js';
 
 export const postsErrors = {
-  UNAUTHORIZED: {
-    status: 401,
-    message: 'Not authorized, no user found',
-  },
-  FORBIDDEN: {
-    status: 403,
-    message: 'Forbidden',
-  },
+  ...commonErrors,
   POST_NOT_FOUND: {
     status: 404,
     message: 'Post no encontrado',

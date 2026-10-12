@@ -10,14 +10,13 @@ import {
   loginSchema,
 } from './schemas.js';
 
+import { commonErrors } from '../../common/errors.js';
+
 export const authErrors = {
+  ...commonErrors,
   INVALID_CREDENTIALS: {
     status: 401,
     message: 'Invalid email or password',
-  },
-  UNAUTHORIZED: {
-    status: 401,
-    message: 'Not authorized, no user found',
   },
   ACCOUNT_INACTIVE: {
     status: 403,

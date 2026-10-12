@@ -125,8 +125,8 @@ packages/contracts  →  *.controller.ts  →  *.service.ts  →  *.persistence.
 | -------------------------------- | ---------------------------------------------------------------------------------------------- |
 | Un procedure                     | Un método `@Implement` en controller                                                           |
 | Input                            | Zod en contrato — **no** `ValidationPipe` en el mismo handler                                  |
-| Output                           | `.output()` en contrato + `parseOrThrow` en controller si aplica                               |
-| Errores negocio                  | `.errors()` + `handleXError(error, errors)` o `errors.CODIGO()`                                |
+| Output                           | `.output()` en contrato; lo valida oRPC (ADR 0005)                                             |
+| Errores negocio                  | `.errors()` en contrato + `new ORPCError('CODIGO')` en servicio (ADR 0005)                     |
 | Errores inesperados              | `AllExceptionsFilter` global                                                                   |
 | Auth oRPC                        | `requireUser(context.request)` — no Guards Nest duplicados                                     |
 | Rutas estáticas antes de `/{id}` | En controller: `list`, `ranking` **antes** de `getById` (evita que `/ranking` matchee como id) |
@@ -136,9 +136,10 @@ packages/contracts  →  *.controller.ts  →  *.service.ts  →  *.persistence.
 
 ### Archivos de integración oRPC
 
-- `integrations/orpc/parse-or-throw.ts` — validar salida contra schema Zod
-- `integrations/orpc/contract-output-invalid.ts` — fallo de contrato (bug interno)
-- `features/<feature>/<feature>.errors.ts` — mapeo Mongo / dominio → `errors.*`
+- `integrations/orpc/contract-errors.interceptor.ts` — `ORPCError` del servicio → error del contrato
+- `integrations/orpc/orpc.config.ts` — config de `ORPCModule`; la usan la app y los tests de integración
+
+Todos los `@orpc/*` van en el catálogo con la **misma versión exacta**: `@orpc/nest` fija la suya de `@orpc/server`, y dos copias son dos clases `ORPCError` que `instanceof` no reconoce entre sí. El pre-commit lo vigila con `pnpm dedupe --check`.
 
 ### Cliente web
 
