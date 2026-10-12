@@ -9,6 +9,12 @@ pnpm install --frozen-lockfile || (
     false;
 )
 
+# Una sola versión de cada paquete: dos copias de una librería son dos clases distintas para `instanceof`
+pnpm dedupe --check || (
+    echo '👯 Hay dependencias duplicadas que se pueden unificar. Ejecuta "pnpm dedupe" y vuelve a intentarlo.';
+    false;
+)
+
 # Formato
 pnpm format-check ||
 (

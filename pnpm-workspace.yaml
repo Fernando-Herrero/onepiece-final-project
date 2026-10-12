@@ -10,12 +10,12 @@ allowBuilds:
     "@nestjs/core": true
 
 catalog:
-    "@orpc/client": ^1.14.0
-    "@orpc/contract": ^1.14.0
-    "@orpc/openapi-client": ^1.14.0
-    "@orpc/openapi": ^1.14.0
-    "@orpc/server": ^1.14.0
-    "@orpc/zod": ^1.14.0
+    "@orpc/client": 1.15.5
+    "@orpc/contract": 1.15.5
+    "@orpc/openapi-client": 1.15.5
+    "@orpc/openapi": 1.15.5
+    "@orpc/server": 1.15.5
+    "@orpc/zod": 1.15.5
     turbo: ^2.9.18
     typescript: ^5.9.3
     vitest: ^4.1.11
@@ -41,7 +41,7 @@ catalog:
     globals: ^16.2.0
     "@tanstack/eslint-plugin-query": ^5.81.2
     "@next/eslint-plugin-next": ^16.2.4
-    "@orpc/nest": ^1.14.0
+    "@orpc/nest": 1.15.5
     "@nestjs/common": ^11.0.0
     "@nestjs/core": ^11.0.0
     "@nestjs/platform-express": ^11.0.0
