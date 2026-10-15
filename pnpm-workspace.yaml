@@ -8,6 +8,7 @@ allowBuilds:
     sharp: true
     unrs-resolver: true
     "@nestjs/core": true
+    mongodb-memory-server: false
 
 catalog:
     "@orpc/client": 1.15.5

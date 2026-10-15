@@ -6,6 +6,7 @@ import { ORPCError } from '@orpc/server';
 import { ObjectId, type WithId } from 'mongodb';
 import * as z from 'zod/v4';
 
+import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
 import {
@@ -312,10 +313,14 @@ export class UsersService {
       throw new ORPCError('FORBIDDEN');
     }
 
-    const updatedUser = await this.usersPersistence.updateById(
-      targetUserId,
-      body,
-    );
+    const updatedUser = await this.usersPersistence
+      .updateById(targetUserId, body)
+      .catch((error: unknown) => {
+        if (isDuplicateKeyError(error)) {
+          throw new ORPCError('USERNAME_TAKEN');
+        }
+        throw error;
+      });
 
     if (!updatedUser) {
       throw new ORPCError('USER_NOT_FOUND');

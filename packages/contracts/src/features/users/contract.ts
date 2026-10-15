@@ -23,6 +23,10 @@ export const usersErrors = {
     status: 404,
     message: 'Usuario no encontrado',
   },
+  USERNAME_TAKEN: {
+    status: 409,
+    message: 'Username already taken',
+  },
   PRIVACY_DENIED: {
     status: 403,
     message: 'Privacy settings prevent access',

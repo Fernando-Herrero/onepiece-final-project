@@ -3,8 +3,8 @@ import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
 import type { Response } from 'express';
-import { MongoServerError } from 'mongodb';
 
+import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
 import { serializeUser, type UserDocument } from '../users/user.mappers.js';
 import { UsersPersistence } from '../users/users.persistence.js';
 import { clearSessionCookie, setSessionCookie } from './auth.cookies.js';
@@ -73,7 +73,7 @@ export class AuthService {
         following: [],
       })
       .catch((error: unknown) => {
-        if (error instanceof MongoServerError && error.code === 11000) {
+        if (isDuplicateKeyError(error)) {
           throw new ORPCError('DUPLICATE_ACCOUNT');
         }
         throw error;
