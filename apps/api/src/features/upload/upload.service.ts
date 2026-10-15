@@ -35,7 +35,7 @@ export class UploadService {
   assertCloudinaryReady() {
     if (!this.configured) {
       throw new ServiceUnavailableException(
-        'Cloudinary no está configurado. Añade CLOUDINARY_* en apps/api/.env',
+        'Cloudinary is not configured. Add CLOUDINARY_* to apps/api/.env',
       );
     }
   }
@@ -44,7 +44,7 @@ export class UploadService {
     this.assertCloudinaryReady();
 
     if (!files?.length) {
-      throw new BadRequestException('Debes enviar al menos una imagen');
+      throw new BadRequestException('At least one image is required');
     }
 
     const imageUrls = files
@@ -54,7 +54,7 @@ export class UploadService {
       );
 
     if (imageUrls.length === 0) {
-      throw new BadRequestException('No se pudieron procesar las imágenes');
+      throw new BadRequestException('Could not process the images');
     }
 
     return { imageUrls };

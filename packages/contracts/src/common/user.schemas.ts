@@ -79,23 +79,11 @@ export const unlockedCardsSchema = z.object({
 });
 
 const profileFieldsSchema = z.object({
-  username: z
-    .string()
-    .trim()
-    .min(3, 'El username debe tener al menos 3 caracteres'),
-  firstName: z
-    .string()
-    .trim()
-    .min(2, 'El nombre debe tener al menos 2 caracteres'),
-  lastName: z
-    .string()
-    .trim()
-    .min(2, 'El apellido debe tener al menos 2 caracteres'),
+  username: z.string().trim().min(3),
+  firstName: z.string().trim().min(2),
+  lastName: z.string().trim().min(2),
   displayName: z.string().trim().optional(),
-  bio: z
-    .string()
-    .max(2000, 'La bio no puede superar 2000 caracteres')
-    .optional(),
+  bio: z.string().max(2000).optional(),
   avatar: avatarPathSchema.optional(),
   coverImage: z.string().optional(),
   phoneNumber: z.string().optional(),
@@ -105,14 +93,9 @@ const profileFieldsSchema = z.object({
 
 export const createUserSchema = profileFieldsSchema
   .extend({
-    email: z.email('Email no válido'),
-    password: z
-      .string()
-      .min(6, 'La contraseña debe tener al menos 6 caracteres'),
-    avatar: z
-      .string()
-      .min(1, 'Debes seleccionar un avatar')
-      .pipe(registerAvatarPathSchema),
+    email: z.email(),
+    password: z.string().min(6),
+    avatar: z.string().min(1).pipe(registerAvatarPathSchema),
   })
   .strict();
 
@@ -120,7 +103,7 @@ export const updateUserSchema = profileFieldsSchema
   .partial()
   .strict()
   .refine(data => Object.keys(data).length > 0, {
-    message: 'Debes enviar al menos un campo para actualizar',
+    message: 'At least one field is required',
   });
 
 export const userIdParamsSchema = mongoIdParamsSchema();

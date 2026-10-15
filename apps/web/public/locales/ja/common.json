@@ -149,7 +149,8 @@
   "errors": {
     "title": "問題が発生しました",
     "retry": "再試行",
-    "back_home": "ホームに戻る"
+    "back_home": "ホームに戻る",
+    "message": "このセクションを読み込めませんでした。"
   },
   "faq": {
     "meta_title": "FAQ — LogPose",
@@ -596,5 +597,13 @@
       "wiki_title": "One Piece Wiki",
       "wiki_text": "アーク、サガ、キャラクターを調べられる百科事典。"
     }
+  },
+  "validation": {
+    "required": "この項目は必須です",
+    "too_short": "{{minimum}}文字以上で入力してください",
+    "too_long": "{{maximum}}文字以内で入力してください",
+    "invalid_email": "メールアドレスが正しくありません",
+    "passwords_mismatch": "パスワードが一致しません",
+    "invalid": "値が正しくありません"
   }
 }

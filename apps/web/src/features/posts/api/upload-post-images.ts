@@ -23,8 +23,8 @@ export async function uploadPostImages(files: File[]): Promise<string[]> {
   if (!response.ok) {
     const message =
       response.status === 503
-        ? 'Cloudinary no está configurado en la API'
-        : 'No se pudieron subir las imágenes';
+        ? 'Cloudinary is not configured in the API'
+        : 'Could not upload the images';
     throw new Error(message);
   }
 

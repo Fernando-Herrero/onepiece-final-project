@@ -149,7 +149,8 @@
   "errors": {
     "title": "Something went wrong",
     "retry": "Retry",
-    "back_home": "Back to home"
+    "back_home": "Back to home",
+    "message": "This section could not be loaded."
   },
   "faq": {
     "meta_title": "FAQ — LogPose",
@@ -596,5 +597,13 @@
       "wiki_title": "One Piece Wiki",
       "wiki_text": "Series encyclopedia for arcs, sagas and characters."
     }
+  },
+  "validation": {
+    "required": "This field is required",
+    "too_short": "Must be at least {{minimum}} characters",
+    "too_long": "Cannot exceed {{maximum}} characters",
+    "invalid_email": "Invalid email",
+    "passwords_mismatch": "Passwords do not match",
+    "invalid": "Invalid value"
   }
 }

@@ -48,13 +48,13 @@ export const PUBLIC_POST_FILTER = {
 
 /**
  * Valida longitud del texto antes de crear/actualizar un post.
- * Devuelve mensaje de error en español o `null` si es válido.
+ * Devuelve el mensaje de error o `null` si es válido.
  * La API Nest usará esto en `create`/`update` (fases posteriores).
  */
 export function assertTextLength(text: string, verified: boolean) {
   const max = getPostTextMaxLength(verified);
   if (text.length > max) {
-    return `El texto no puede superar ${max} caracteres`;
+    return `Text cannot exceed ${max} characters`;
   }
   return null;
 }

@@ -6,6 +6,7 @@ import {
   useRegisterMutation,
 } from '@/features/auth/api/use-auth';
 import { useAppForm } from '@/features/auth/form/auth-form';
+import { getFieldErrorMessage } from '@/features/auth/form/field-error-message';
 import { registerFormSchema } from '@/features/auth/register-form.schema';
 import {
   AuthFormShell,
@@ -130,7 +131,7 @@ export function RegisterFormComponent() {
                 onChange={value => field.handleChange(value)}
                 error={
                   submissionAttempts > 0
-                    ? field.state.meta.errors[0]?.message
+                    ? getFieldErrorMessage(field.state.meta.errors[0], t)
                     : undefined
                 }
               />

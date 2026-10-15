@@ -3,16 +3,13 @@ import type { FallbackProps } from 'react-error-boundary';
 
 import { PageError } from '@/components/error-boundary/page-error';
 
-export function QueryErrorFallback({
-  error,
-  resetErrorBoundary,
-}: FallbackProps) {
+export function QueryErrorFallback({ resetErrorBoundary }: FallbackProps) {
   const { t } = useTranslation();
 
   return (
     <PageError
       title={t('errors.title')}
-      message={error instanceof Error ? error.message : String(error)}
+      message={t('errors.message')}
       onRetry={resetErrorBoundary}
       retryText={t('errors.retry')}
     />

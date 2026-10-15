@@ -48,7 +48,7 @@ export const updatePreferencesSchema = z
   })
   .strict()
   .refine(data => Object.keys(data).length > 0, {
-    message: 'Debes enviar al menos un grupo de preferencias',
+    message: 'At least one preferences group is required',
   });
 
 export const updatePreferencesInputSchema = userIdParamsSchema.extend({

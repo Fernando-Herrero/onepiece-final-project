@@ -52,7 +52,7 @@ export function createPostImageMulterOptions(): multer.Options {
         return;
       }
 
-      callback(new Error('Solo se permiten archivos de imagen'));
+      callback(new Error('Only image files are allowed'));
     },
     limits: {
       fileSize: POST_IMAGE_MAX_BYTES,

@@ -145,6 +145,7 @@ Todos los `@orpc/*` van en el catálogo con la **misma versión exacta**: `@orpc
 
 - `OpenAPILink` + `credentials: 'include'` (cookies sesión)
 - Errores de mutación: `getOrpcErrorCode(error)` en `integrations/orpc/orpc-error.ts`
+- Idioma: los `message` del contrato, de Zod y de las excepciones son para desarrolladores y van en inglés. Lo que ve el usuario sale de i18n por `code`: `getFieldErrorMessage` para los errores de campo y `auth.errors.*` para los del contrato. Nunca se pinta un `message`.
 - Query: `queryOptions` manual + `profile.keys` (válido); valorar `.queryOptions()` del cliente oRPC en fases futuras
 
 ---

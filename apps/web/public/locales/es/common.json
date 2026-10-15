@@ -149,7 +149,8 @@
   "errors": {
     "title": "Algo salió mal",
     "retry": "Reintentar",
-    "back_home": "Volver al inicio"
+    "back_home": "Volver al inicio",
+    "message": "No se ha podido cargar esta sección."
   },
   "faq": {
     "meta_title": "FAQ — LogPose",
@@ -596,5 +597,13 @@
       "wiki_title": "One Piece Wiki",
       "wiki_text": "Enciclopedia de la serie para consultar arcos, sagas y personajes."
     }
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "too_short": "Debe tener al menos {{minimum}} caracteres",
+    "too_long": "No puede superar {{maximum}} caracteres",
+    "invalid_email": "Email no válido",
+    "passwords_mismatch": "Las contraseñas no coinciden",
+    "invalid": "Valor no válido"
   }
 }

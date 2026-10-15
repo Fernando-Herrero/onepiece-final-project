@@ -19,11 +19,8 @@ export const POST_MAX_IMAGES = 4;
 export const POST_IMAGE_MAX_BYTES = 10 * 1024 * 1024;
 
 const postFieldsSchema = z.object({
-  text: z.string().trim().min(1, 'El texto es obligatorio'),
-  images: z
-    .array(z.string().url('URL de imagen no válida'))
-    .max(POST_MAX_IMAGES, `Máximo ${POST_MAX_IMAGES} imágenes`)
-    .optional(),
+  text: z.string().trim().min(1),
+  images: z.array(z.string().url()).max(POST_MAX_IMAGES).optional(),
   visibility: postVisibilitySchema.optional(),
 });
 
@@ -38,7 +35,7 @@ export const updatePostSchema = postFieldsSchema
   .partial()
   .strict()
   .refine(data => Object.keys(data).length > 0, {
-    message: 'Debes enviar al menos un campo para actualizar',
+    message: 'At least one field is required',
   });
 
 export const postPublicSchema = z.object({

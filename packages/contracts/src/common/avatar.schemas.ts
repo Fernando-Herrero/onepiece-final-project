@@ -69,7 +69,7 @@ export const AVATAR_OPTIONS: AvatarOption[] = AVATAR_CHARACTER_IDS.map(id => ({
 
 export const avatarPathSchema = z.enum(
   AVATAR_OPTIONS.map(option => option.path) as [string, ...string[]],
-  { message: 'Avatar no válido' },
+  { message: 'Invalid avatar' },
 );
 
 export const registerAvatarPathSchema = z.enum(
@@ -77,7 +77,7 @@ export const registerAvatarPathSchema = z.enum(
     string,
     ...string[],
   ],
-  { message: 'Avatar no válido para registro' },
+  { message: 'Avatar not available at registration' },
 );
 
 /**

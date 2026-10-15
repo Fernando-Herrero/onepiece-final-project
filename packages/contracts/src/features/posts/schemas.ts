@@ -10,7 +10,7 @@ export const postIdParamsSchema = mongoIdParamsSchema();
 
 export const shareTokenParamsSchema = z.object({
   params: z.object({
-    shareToken: z.uuid('Token de compartir no válido'),
+    shareToken: z.uuid(),
   }),
 });
 

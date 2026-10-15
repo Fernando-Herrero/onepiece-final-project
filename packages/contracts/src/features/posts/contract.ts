@@ -20,7 +20,7 @@ export const postsErrors = {
   ...commonErrors,
   POST_NOT_FOUND: {
     status: 404,
-    message: 'Post no encontrado',
+    message: 'Post not found',
   },
 } as const;
 

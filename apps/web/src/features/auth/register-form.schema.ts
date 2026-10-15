@@ -2,15 +2,14 @@ import { createUserSchema } from '@logpose/contracts/features/auth/schemas';
 import * as z from 'zod/v4';
 
 const registerFormBaseSchema = createUserSchema.extend({
-  confirmPassword: z
-    .string()
-    .min(6, 'La contraseña debe tener al menos 6 caracteres'),
+  confirmPassword: z.string().min(6),
 });
 
 export const registerFormSchema = registerFormBaseSchema.refine(
   data => data.password === data.confirmPassword,
   {
-    message: 'Las contraseñas no coinciden',
+    message: 'Passwords do not match',
+    params: { i18n: 'passwords_mismatch' },
     path: ['confirmPassword'],
   },
 );

@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next/pages';
 import { type ChangeEvent, useState } from 'react';
 
 import { useFieldContext } from '@/features/auth/form/auth-form';
+import { getFieldErrorMessage } from '@/features/auth/form/field-error-message';
 
 const authFieldClassName =
   'bg-[#05070d]/50 text-[#f4ede1] placeholder:text-[#f4ede1]/40 border-[#f4ede1]/20';
@@ -29,7 +30,9 @@ export function Field({
   const [passwordVisible, setPasswordVisible] = useState(false);
   const field = useFieldContext<string>();
   const showErrors = field.form.state.submissionAttempts > 0;
-  const errorMsg = showErrors ? field.state.meta.errors[0]?.message : undefined;
+  const errorMsg = showErrors
+    ? getFieldErrorMessage(field.state.meta.errors[0], t)
+    : undefined;
   const inputType =
     type === 'password' && passwordToggle
       ? passwordVisible

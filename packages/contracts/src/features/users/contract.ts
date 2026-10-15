@@ -21,7 +21,7 @@ export const usersErrors = {
   ...commonErrors,
   USER_NOT_FOUND: {
     status: 404,
-    message: 'Usuario no encontrado',
+    message: 'User not found',
   },
   USERNAME_TAKEN: {
     status: 409,
@@ -33,15 +33,15 @@ export const usersErrors = {
   },
   CANNOT_FOLLOW_SELF: {
     status: 400,
-    message: 'No puedes seguirte a ti mismo',
+    message: 'Cannot follow yourself',
   },
   ALREADY_FOLLOWING: {
     status: 400,
-    message: 'Ya sigues a este usuario',
+    message: 'Already following this user',
   },
   NOT_FOLLOWING: {
     status: 400,
-    message: 'No sigues a este usuario',
+    message: 'Not following this user',
   },
 } as const;
 
