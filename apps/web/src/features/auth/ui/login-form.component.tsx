@@ -74,8 +74,8 @@ export function LoginFormComponent() {
         )}
       </form.AppField>
 
-      <form.Subscribe selector={state => [state.isSubmitting, state.canSubmit]}>
-        {([isSubmitting, canSubmit]) => (
+      <form.Subscribe selector={state => state.isSubmitting}>
+        {isSubmitting => (
           <AuthSubmitButton
             label={t('auth.submit_login')}
             pendingLabel={
@@ -84,7 +84,7 @@ export function LoginFormComponent() {
                 : t('auth.submit_login_pending')
             }
             pending={isSubmitting || isBusy}
-            disabled={!canSubmit || isSubmitting || isBusy}
+            disabled={isSubmitting || isBusy}
           />
         )}
       </form.Subscribe>

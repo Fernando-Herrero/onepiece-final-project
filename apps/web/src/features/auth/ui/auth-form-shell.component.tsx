@@ -28,6 +28,7 @@ export function AuthFormShell({
 }: AuthFormShellProps) {
   return (
     <form
+      noValidate
       className={`${authFormCardClassName} ${maxWidthClass}`}
       onSubmit={event => {
         event.preventDefault();

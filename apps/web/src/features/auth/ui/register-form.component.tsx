@@ -140,8 +140,8 @@ export function RegisterFormComponent() {
         )}
       </form.Field>
 
-      <form.Subscribe selector={state => [state.isSubmitting, state.canSubmit]}>
-        {([isSubmitting, canSubmit]) => (
+      <form.Subscribe selector={state => state.isSubmitting}>
+        {isSubmitting => (
           <AuthSubmitButton
             label={t('auth.submit_register')}
             pendingLabel={
@@ -150,7 +150,7 @@ export function RegisterFormComponent() {
                 : t('auth.submit_register_pending')
             }
             pending={isSubmitting || isBusy}
-            disabled={!canSubmit || isSubmitting || isBusy}
+            disabled={isSubmitting || isBusy}
           />
         )}
       </form.Subscribe>
