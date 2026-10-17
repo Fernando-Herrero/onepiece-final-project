@@ -5,6 +5,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import turboPlugin from 'eslint-plugin-turbo';
+import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -16,6 +17,7 @@ const config = defineConfig([
     plugins: {
       turbo: turboPlugin,
       'simple-import-sort': simpleImportSort,
+      'unused-imports': unusedImports,
       import: importPlugin,
     },
     languageOptions: {
@@ -35,7 +37,9 @@ const config = defineConfig([
       'simple-import-sort/exports': 'error',
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': [
+      '@typescript-eslint/no-unused-vars': 'off',
+      'unused-imports/no-unused-imports': 'error',
+      'unused-imports/no-unused-vars': [
         'error',
         {
           argsIgnorePattern: '^_',

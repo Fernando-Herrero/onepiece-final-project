@@ -20,6 +20,7 @@
         "eslint-plugin-react-hooks": "catalog:",
         "eslint-plugin-simple-import-sort": "catalog:",
         "eslint-plugin-turbo": "catalog:",
+        "eslint-plugin-unused-imports": "catalog:",
         "globals": "catalog:",
         "typescript-eslint": "catalog:"
     }

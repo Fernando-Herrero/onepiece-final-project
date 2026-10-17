@@ -51,6 +51,7 @@
     "eslint-config-prettier": "catalog:",
     "eslint-plugin-simple-import-sort": "catalog:",
     "eslint-plugin-turbo": "catalog:",
+    "eslint-plugin-unused-imports": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:"

@@ -87,6 +87,9 @@ catalogs:
     eslint-plugin-turbo:
       specifier: ^2.9.12
       version: 2.9.18
+    eslint-plugin-unused-imports:
+      specifier: ^4.4.1
+      version: 4.4.1
     globals:
       specifier: ^16.2.0
       version: 16.4.0
@@ -388,6 +391,9 @@ importers:
       eslint-plugin-turbo:
         specifier: 'catalog:'
         version: 2.9.18(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.18)
+      eslint-plugin-unused-imports:
+        specifier: 'catalog:'
+        version: 4.4.1(@typescript-eslint/eslint-plugin@8.61.0(@typescript-eslint/parser@8.61.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))
       prettier:
         specifier: 'catalog:'
         version: 3.8.4
@@ -449,6 +455,9 @@ importers:
       eslint-plugin-turbo:
         specifier: 'catalog:'
         version: 2.9.18(eslint@9.39.4(jiti@2.7.0))(turbo@2.9.18)
+      eslint-plugin-unused-imports:
+        specifier: 'catalog:'
+        version: 4.4.1(@typescript-eslint/eslint-plugin@8.61.0(@typescript-eslint/parser@8.61.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))
       globals:
         specifier: 'catalog:'
         version: 16.4.0
@@ -3465,6 +3474,15 @@ packages:
     peerDependencies:
       eslint: '>6.6.0'
       turbo: '>2.0.0'
+
+  eslint-plugin-unused-imports@4.4.1:
+    resolution: {integrity: sha512-oZGYUz1X3sRMGUB+0cZyK2VcvRX5lm/vB56PgNNcU+7ficUCKm66oZWKUubXWnOuPjQ8PvmXtCViXBMONPe7tQ==}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^8.0.0-0 || ^7.0.0 || ^6.0.0 || ^5.0.0
+      eslint: ^10.0.0 || ^9.0.0 || ^8.0.0
+    peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
 
   eslint-scope@5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -8856,6 +8874,12 @@ snapshots:
       dotenv: 16.0.3
       eslint: 9.39.4(jiti@2.7.0)
       turbo: 2.9.18
+
+  eslint-plugin-unused-imports@4.4.1(@typescript-eslint/eslint-plugin@8.61.0(@typescript-eslint/parser@8.61.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)):
+    dependencies:
+      eslint: 9.39.4(jiti@2.7.0)
+    optionalDependencies:
+      '@typescript-eslint/eslint-plugin': 8.61.0(@typescript-eslint/parser@8.61.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
 
   eslint-scope@5.1.1:
     dependencies:
