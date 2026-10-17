@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
 import { APP_GUARD } from '@nestjs/core';
 
-import { UsersDataModule } from '../users/users-data.module.js';
+import { UsersPersistenceModule } from '../users/users-persistence.module.js';
 import { AuthController } from './auth.controller.js';
 import { AuthService } from './auth.service.js';
 import { AuthSessionService } from './auth-session.service.js';
 import { SessionGuard } from './session.guard.js';
 
 @Module({
-  imports: [UsersDataModule],
+  imports: [UsersPersistenceModule],
   controllers: [AuthController],
   providers: [
     AuthSessionService,
