@@ -1,6 +1,4 @@
-import { z } from 'zod';
-
-import type { serieProgressSchema } from './user.schemas.js';
+import * as z from 'zod/v4';
 
 export const AVATAR_CHARACTER_IDS = [
   'luffy',

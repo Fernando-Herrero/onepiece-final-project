@@ -428,6 +428,9 @@ importers:
       '@logpose/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.4(jiti@2.7.0)
       prettier:
         specifier: 'catalog:'
         version: 3.8.4

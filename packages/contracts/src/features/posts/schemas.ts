@@ -1,4 +1,5 @@
-import { z } from 'zod';
+import * as z from 'zod/v4';
+
 import { mongoIdParamsSchema } from '../../common/id.schemas.js';
 import {
   POST_FEED_PAGE_SIZE,
