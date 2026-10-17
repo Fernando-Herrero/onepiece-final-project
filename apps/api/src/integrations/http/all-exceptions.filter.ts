@@ -35,11 +35,7 @@ export class AllExceptionsFilter implements ExceptionFilter {
       this.config.get('NODE_ENV', { infer: true }) === 'production';
 
     if (isOrpcError) {
-      response.status(status).json({
-        statusCode: status,
-        code: exception.code,
-        message: exception.message,
-      });
+      response.status(status).json(exception.toJSON());
       return;
     }
 

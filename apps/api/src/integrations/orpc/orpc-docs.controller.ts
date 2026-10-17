@@ -1,4 +1,4 @@
-import { implementedContract } from '@logpose/contracts/implemented-contract';
+import { contract } from '@logpose/contracts/contract';
 import { Controller, Get, Header, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { OpenAPIGenerator } from '@orpc/openapi';
@@ -72,7 +72,7 @@ export class OrpcDocsController {
   spec() {
     this.assertDocsEnabled();
 
-    return generator.generate(implementedContract, {
+    return generator.generate(contract, {
       info: {
         title: 'LogPose API (Nest)',
         version: '1.0.0',

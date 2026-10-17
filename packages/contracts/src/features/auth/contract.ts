@@ -1,4 +1,5 @@
 import { oc } from '@orpc/contract';
+
 import {
   createUserSchema,
   userPublicSchema,
@@ -10,10 +11,7 @@ import {
   loginSchema,
 } from './schemas.js';
 
-import { commonErrors } from '../../common/errors.js';
-
 export const authErrors = {
-  ...commonErrors,
   INVALID_CREDENTIALS: {
     status: 401,
     message: 'Invalid email or password',

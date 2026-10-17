@@ -1,6 +1,5 @@
 import { oc } from '@orpc/contract';
 
-import { commonErrors } from '../../common/errors.js';
 import {
   createPostSchema,
   postPublicSchema,
@@ -17,7 +16,6 @@ import {
 } from './schemas.js';
 
 export const postsErrors = {
-  ...commonErrors,
   POST_NOT_FOUND: {
     status: 404,
     message: 'Post not found',

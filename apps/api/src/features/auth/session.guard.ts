@@ -1,3 +1,4 @@
+import { commonErrors } from '@logpose/contracts/common/errors';
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { ORPCError } from '@orpc/server';
@@ -35,7 +36,11 @@ export class SessionGuard implements CanActivate {
     }
 
     if (!user) {
-      throw new ORPCError('UNAUTHORIZED');
+      // Fuera de oRPC no hay `errors`: se crea el definido a mano (lo declara el contrato raíz).
+      throw new ORPCError('UNAUTHORIZED', {
+        defined: true,
+        ...commonErrors.UNAUTHORIZED,
+      });
     }
 
     return true;

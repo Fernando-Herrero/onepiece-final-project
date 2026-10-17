@@ -1,6 +1,6 @@
 import { oc } from '@orpc/contract';
-import { z } from 'zod';
-import { commonErrors } from '../../common/errors.js';
+import * as z from 'zod/v4';
+
 import { postPublicSchema } from '../../common/post.schemas.js';
 import {
   userIdParamsSchema,
@@ -18,7 +18,6 @@ import {
 } from './schemas.js';
 
 export const usersErrors = {
-  ...commonErrors,
   USER_NOT_FOUND: {
     status: 404,
     message: 'User not found',
