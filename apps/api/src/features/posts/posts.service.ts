@@ -8,6 +8,7 @@ import { ORPCError } from '@orpc/server';
 import { ObjectId } from 'mongodb';
 import type * as z from 'zod/v4';
 
+import { accessTo, type UserViewer, type Viewer } from '../auth/access.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
 import { UsersPersistence } from '../users/users.persistence.js';
 import {
@@ -30,7 +31,7 @@ export class PostsService {
     private readonly notificationsPersistence: NotificationsPersistence,
   ) {}
 
-  async list(input: ListPostsInput, viewerId?: string) {
+  async list(input: ListPostsInput, viewer: Viewer) {
     const limit = input.limit ?? POST_FEED_PAGE_SIZE;
     const rows = await this.postsPersistence.findPublicFeedPage(
       limit,
@@ -39,16 +40,17 @@ export class PostsService {
     const hasMore = rows.length > limit;
     const page = hasMore ? rows.slice(0, limit) : rows;
     const originalPostsById = await this.loadOriginalPostsMap(page);
-    const retweetedOriginalIds = viewerId
-      ? await this.postsPersistence.findRetweetedOriginalIds(
-          viewerId,
-          collectRetweetCheckIds(page),
-        )
-      : undefined;
+    const retweetedOriginalIds =
+      viewer.kind === 'user'
+        ? await this.postsPersistence.findRetweetedOriginalIds(
+            viewer.id,
+            collectRetweetCheckIds(page),
+          )
+        : undefined;
     const posts = await serializePostsWithAuthors(
       page,
       this.usersPersistence,
-      viewerId,
+      viewer,
       retweetedOriginalIds,
       originalPostsById,
     );
@@ -60,8 +62,8 @@ export class PostsService {
     };
   }
 
-  async create(userId: string, body: CreatePostBody) {
-    const user = await this.usersPersistence.findById(userId);
+  async create(viewer: UserViewer, body: CreatePostBody) {
+    const user = await this.usersPersistence.findById(viewer.id);
 
     if (!user) {
       throw new ORPCError('UNAUTHORIZED');
@@ -74,14 +76,14 @@ export class PostsService {
 
     const post = await this.postsPersistence.insert({
       text: body.text.trim(),
-      userId: new ObjectId(userId),
+      userId: new ObjectId(viewer.id),
       images: body.images,
       visibility: body.visibility ?? 'public',
       shareToken: randomUUID(),
       language: 'es',
     });
 
-    return serializePost(post, user, userId);
+    return serializePost(post, user, viewer);
   }
 
   async toggleLike(postId: string, userId: string) {
@@ -138,7 +140,7 @@ export class PostsService {
     };
   }
 
-  async toggleRetweet(postId: string, userId: string) {
+  async toggleRetweet(postId: string, viewer: UserViewer) {
     const original = await this.postsPersistence.findActiveById(postId);
 
     if (!original) {
@@ -149,7 +151,7 @@ export class PostsService {
       throw new ORPCError('FORBIDDEN');
     }
 
-    const result = await this.postsPersistence.toggleRetweet(postId, userId);
+    const result = await this.postsPersistence.toggleRetweet(postId, viewer.id);
 
     if (!result) {
       throw new ORPCError('POST_NOT_FOUND');
@@ -162,7 +164,7 @@ export class PostsService {
       const [retweetPost] = await serializePostsWithAuthors(
         [result.retweetPost],
         this.usersPersistence,
-        userId,
+        viewer,
         new Set([postId]),
         originalPostsById,
       );
@@ -205,23 +207,14 @@ export class PostsService {
     return new Map(originals.map(post => [post._id.toString(), post]));
   }
 
-  async delete(postId: string, actorId: string) {
+  async delete(postId: string, viewer: UserViewer) {
     const post = await this.postsPersistence.findActiveById(postId);
 
     if (!post) {
       throw new ORPCError('POST_NOT_FOUND');
     }
 
-    const actor = await this.usersPersistence.findById(actorId);
-
-    if (!actor) {
-      throw new ORPCError('UNAUTHORIZED');
-    }
-
-    const isOwner = post.userId.toString() === actorId;
-    const isAdmin = actor.role === 'admin';
-
-    if (!isOwner && !isAdmin) {
+    if (accessTo(viewer, post.userId.toString()) !== 'full') {
       throw new ORPCError('FORBIDDEN');
     }
 
@@ -234,7 +227,7 @@ export class PostsService {
     const [serialized] = await serializePostsWithAuthors(
       [deleted],
       this.usersPersistence,
-      actorId,
+      viewer,
     );
 
     // Sin `originalPostsById` no se descarta ningún post: siempre hay uno.

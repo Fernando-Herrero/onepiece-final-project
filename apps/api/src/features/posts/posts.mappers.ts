@@ -2,6 +2,7 @@ import { getPostTextMaxLength } from '@logpose/contracts/common/post.schemas';
 import { ORPCError } from '@orpc/server';
 import { ObjectId, type WithId } from 'mongodb';
 
+import type { Viewer } from '../auth/access.js';
 import {
   serializeAuthorEmbed,
   type UserDocument,
@@ -65,13 +66,13 @@ export function assertTextLength(text: string, verified: boolean) {
  * - `userId` pasa de ObjectId a embed del autor (`serializeAuthorEmbed`).
  * - Arrays de ObjectId (`likes`, `bookmarks`, `retweets`) → strings.
  * - Fechas → ISO string para JSON.
- * - Si hay `viewerId` (sesión JWT), añade `userLiked` y `userBookmarked`
- *   comparando ese id con los arrays del documento.
+ * - Si el viewer tiene sesión, añade `userLiked` y `userBookmarked`
+ *   comparando su id con los arrays del documento.
  */
 export function serializePost(
   post: WithId<PostDocument>,
   author: WithId<UserDocument>,
-  viewerId?: string,
+  viewer: Viewer,
   retweetedOriginalIds?: Set<string>,
 ) {
   return {
@@ -97,10 +98,12 @@ export function serializePost(
     retweets: post.retweets.map(String),
     createdAt: post.createdAt?.toISOString(),
     updatedAt: post.updatedAt?.toISOString(),
-    ...(viewerId
+    ...(viewer.kind === 'user'
       ? {
-          userLiked: post.likes.some(id => id.toString() === viewerId),
-          userBookmarked: post.bookmarks.some(id => id.toString() === viewerId),
+          userLiked: post.likes.some(id => id.toString() === viewer.id),
+          userBookmarked: post.bookmarks.some(
+            id => id.toString() === viewer.id,
+          ),
           ...(retweetedOriginalIds
             ? {
                 userRetweeted: retweetedOriginalIds.has(post._id.toString()),
@@ -150,7 +153,7 @@ function applyOriginalInteractionStats(
   serialized: ReturnType<typeof serializePost>,
   original: WithId<PostDocument>,
   originalAuthor: WithId<UserDocument>,
-  viewerId?: string,
+  viewer: Viewer,
   retweetedOriginalIds?: Set<string>,
 ) {
   const originalId = original._id.toString();
@@ -162,11 +165,11 @@ function applyOriginalInteractionStats(
     bookmarksCount: original.bookmarksCount,
     retweetsCount: original.retweetsCount,
     commentsCount: original.commentsCount,
-    ...(viewerId
+    ...(viewer.kind === 'user'
       ? {
-          userLiked: original.likes.some(id => id.toString() === viewerId),
+          userLiked: original.likes.some(id => id.toString() === viewer.id),
           userBookmarked: original.bookmarks.some(
-            id => id.toString() === viewerId,
+            id => id.toString() === viewer.id,
           ),
           ...(retweetedOriginalIds
             ? { userRetweeted: retweetedOriginalIds.has(originalId) }
@@ -190,7 +193,7 @@ function applyOriginalInteractionStats(
 export async function serializePostsWithAuthors(
   posts: WithId<PostDocument>[],
   usersPersistence: UsersPersistence,
-  viewerId?: string,
+  viewer: Viewer,
   retweetedOriginalIds?: Set<string>,
   originalPostsById?: Map<string, WithId<PostDocument>>,
 ) {
@@ -228,7 +231,7 @@ export async function serializePostsWithAuthors(
     const serialized = serializePost(
       post,
       author,
-      viewerId,
+      viewer,
       retweetedOriginalIds,
     );
 
@@ -253,7 +256,7 @@ export async function serializePostsWithAuthors(
       serialized,
       original,
       originalAuthor,
-      viewerId,
+      viewer,
       retweetedOriginalIds,
     );
   });

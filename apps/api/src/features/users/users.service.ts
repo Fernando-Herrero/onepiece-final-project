@@ -7,6 +7,13 @@ import { ObjectId, type WithId } from 'mongodb';
 import * as z from 'zod/v4';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
+import {
+  accessTo,
+  canSeeTab,
+  type PrivacyKey,
+  type UserViewer,
+  type Viewer,
+} from '../auth/access.js';
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
 import {
@@ -19,12 +26,10 @@ import {
   serializeUser,
   serializeUserRankingEntry,
   serializeUserSummary,
-  type UserDocument,
   withPreferenceDefaults,
 } from './user.mappers.js';
 import { UsersPersistence } from './users.persistence.js';
 
-type PrivacyKey = keyof UserDocument['privacy'];
 type UpdateUserBody = z.infer<typeof updateUserSchema>;
 type UpdatePreferencesBody = z.infer<typeof updatePreferencesSchema>;
 
@@ -48,66 +53,22 @@ export class UsersService {
     return user;
   }
 
-  /**
-   * Respeta privacidad del perfil para un tab concreto (posts, likes…).
-   * El propio usuario y los admin siempre pueden ver; el resto depende de user.privacy.
-   */
+  /** Lanza PRIVACY_DENIED si el viewer no puede ver esa pestaña del perfil. */
   private async assertVisibleUser(
     userId: string,
     privacyKey: PrivacyKey,
-    viewerId?: string,
+    viewer: Viewer,
   ) {
     const user = await this.requireUser(userId);
 
-    if (viewerId === userId) {
-      return;
-    }
-
-    if (viewerId) {
-      const role = await this.usersPersistence.findRoleById(viewerId);
-      if (role === 'admin') {
-        return;
-      }
-    }
-
-    if (user.privacy[privacyKey] === false) {
+    if (!canSeeTab(viewer, user, privacyKey)) {
       throw new ORPCError('PRIVACY_DENIED');
-    }
-  }
-
-  /** Solo el dueño del perfil o un admin pueden modificar/eliminar ese usuario. */
-  private async assertOwnerOrAdmin(targetUserId: string, viewerId: string) {
-    if (targetUserId === viewerId) {
-      return;
-    }
-
-    const role = await this.usersPersistence.findRoleById(viewerId);
-
-    if (!role) {
-      throw new ORPCError('UNAUTHORIZED');
-    }
-
-    if (role !== 'admin') {
-      throw new ORPCError('FORBIDDEN');
-    }
-  }
-
-  /** Exige rol admin; usado en listado de usuarios. */
-  private async assertAdmin(viewerId: string) {
-    const role = await this.usersPersistence.findRoleById(viewerId);
-
-    if (!role) {
-      throw new ORPCError('UNAUTHORIZED');
-    }
-
-    if (role !== 'admin') {
-      throw new ORPCError('FORBIDDEN');
     }
   }
 
   private async serializePostsForViewer(
     posts: WithId<PostDocument>[],
-    viewerId?: string,
+    viewer: Viewer,
   ) {
     const originalIds = [
       ...new Set(
@@ -125,55 +86,56 @@ export class UsersService {
     const originalPostsById = new Map(
       originals.map(post => [post._id.toString(), post]),
     );
-    const retweetedOriginalIds = viewerId
-      ? await this.postsPersistence.findRetweetedOriginalIds(
-          viewerId,
-          collectRetweetCheckIds(posts),
-        )
-      : undefined;
+    const retweetedOriginalIds =
+      viewer.kind === 'user'
+        ? await this.postsPersistence.findRetweetedOriginalIds(
+            viewer.id,
+            collectRetweetCheckIds(posts),
+          )
+        : undefined;
 
     return serializePostsWithAuthors(
       posts,
       this.usersPersistence,
-      viewerId,
+      viewer,
       retweetedOriginalIds,
       originalPostsById,
     );
   }
 
   /** Posts publicados por el perfil; respeta showPosts si el viewer no es el dueño. */
-  async getPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showPosts', viewerId);
+  async getPosts(profileUserId: string, viewer: Viewer) {
+    await this.assertVisibleUser(profileUserId, 'showPosts', viewer);
 
     const posts = await this.postsPersistence.findPublicByUserId(profileUserId);
-    return this.serializePostsForViewer(posts, viewerId);
+    return this.serializePostsForViewer(posts, viewer);
   }
 
   /** Posts que el perfil ha marcado con like; respeta showLikes. */
-  async getLikedPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showLikes', viewerId);
+  async getLikedPosts(profileUserId: string, viewer: Viewer) {
+    await this.assertVisibleUser(profileUserId, 'showLikes', viewer);
 
     const posts = await this.postsPersistence.findLikedByUserId(profileUserId);
-    return this.serializePostsForViewer(posts, viewerId);
+    return this.serializePostsForViewer(posts, viewer);
   }
 
   /** Posts guardados en bookmarks del perfil; respeta showBookmarked. */
-  async getBookmarkedPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showBookmarked', viewerId);
+  async getBookmarkedPosts(profileUserId: string, viewer: Viewer) {
+    await this.assertVisibleUser(profileUserId, 'showBookmarked', viewer);
 
     const posts =
       await this.postsPersistence.findBookmarkedByUserId(profileUserId);
-    return this.serializePostsForViewer(posts, viewerId);
+    return this.serializePostsForViewer(posts, viewer);
   }
 
   /** Posts en los que el perfil ha comentado; respeta showComments. */
-  async getCommentedPosts(profileUserId: string, viewerId?: string) {
-    await this.assertVisibleUser(profileUserId, 'showComments', viewerId);
+  async getCommentedPosts(profileUserId: string, viewer: Viewer) {
+    await this.assertVisibleUser(profileUserId, 'showComments', viewer);
 
     const postIds =
       await this.commentsPersistence.distinctPostIdsByAuthor(profileUserId);
     const posts = await this.postsPersistence.findByIds(postIds);
-    return this.serializePostsForViewer(posts, viewerId);
+    return this.serializePostsForViewer(posts, viewer);
   }
 
   /** Perfil público completo por id (userPublic). */
@@ -301,8 +263,10 @@ export class UsersService {
   }
 
   /** Actualiza campos del perfil; valida avatar desbloqueado según progreso de serie. */
-  async update(targetUserId: string, viewerId: string, body: UpdateUserBody) {
-    await this.assertOwnerOrAdmin(targetUserId, viewerId);
+  async update(targetUserId: string, viewer: UserViewer, body: UpdateUserBody) {
+    if (accessTo(viewer, targetUserId) !== 'full') {
+      throw new ORPCError('FORBIDDEN');
+    }
 
     const user = await this.requireUser(targetUserId);
 
@@ -330,8 +294,10 @@ export class UsersService {
   }
 
   /** Listado de todos los usuarios (solo admin). */
-  async list(viewerId: string) {
-    await this.assertAdmin(viewerId);
+  async list(viewer: UserViewer) {
+    if (viewer.role !== 'admin') {
+      throw new ORPCError('FORBIDDEN');
+    }
 
     const users = await this.usersPersistence.findAll();
     return users.map(serializeUserSummary);
@@ -341,8 +307,10 @@ export class UsersService {
    * Borra cuenta y datos relacionados (posts y comentarios).
    * Solo el propio usuario o un admin.
    */
-  async delete(targetUserId: string, viewerId: string) {
-    await this.assertOwnerOrAdmin(targetUserId, viewerId);
+  async delete(targetUserId: string, viewer: UserViewer) {
+    if (accessTo(viewer, targetUserId) !== 'full') {
+      throw new ORPCError('FORBIDDEN');
+    }
 
     const user = await this.requireUser(targetUserId);
 
@@ -367,21 +335,23 @@ export class UsersService {
    * `verified` no puede viajar por `update` (updateUserSchema es strict sobre
    * campos de perfil), de ahí el endpoint dedicado.
    */
-  async verify(targetUserId: string, viewerId: string) {
-    return this.setVerified(targetUserId, viewerId, true);
+  async verify(targetUserId: string, viewer: UserViewer) {
+    return this.setVerified(targetUserId, viewer, true);
   }
 
   /** Cancela premium y retira la insignia. */
-  async unverify(targetUserId: string, viewerId: string) {
-    return this.setVerified(targetUserId, viewerId, false);
+  async unverify(targetUserId: string, viewer: UserViewer) {
+    return this.setVerified(targetUserId, viewer, false);
   }
 
   private async setVerified(
     targetUserId: string,
-    viewerId: string,
+    viewer: UserViewer,
     verified: boolean,
   ) {
-    await this.assertOwnerOrAdmin(targetUserId, viewerId);
+    if (accessTo(viewer, targetUserId) !== 'full') {
+      throw new ORPCError('FORBIDDEN');
+    }
     await this.requireUser(targetUserId);
 
     const updated = await this.usersPersistence.updateById(targetUserId, {
@@ -404,10 +374,12 @@ export class UsersService {
    */
   async updatePreferences(
     targetUserId: string,
-    viewerId: string,
+    viewer: UserViewer,
     body: UpdatePreferencesBody,
   ) {
-    await this.assertOwnerOrAdmin(targetUserId, viewerId);
+    if (accessTo(viewer, targetUserId) !== 'full') {
+      throw new ORPCError('FORBIDDEN');
+    }
 
     const user = await this.requireUser(targetUserId);
     const current = withPreferenceDefaults(user.preferences);

@@ -5,7 +5,6 @@ import { ConfigService } from '@nestjs/config';
 import jwt from 'jsonwebtoken';
 
 import type { ServerEnv } from '../../integrations/env/server.js';
-import type { SessionUser } from '../../integrations/orpc/orpc-context.js';
 import {
   getSessionTokenFromCookieHeader,
   SESSION_MAX_AGE_SEC,
@@ -19,7 +18,7 @@ export class AuthSessionService {
     return this.config.getOrThrow('JWT_SECRET', { infer: true });
   }
 
-  getOptionalUser(headers: IncomingHttpHeaders): SessionUser | undefined {
+  getUserId(headers: IncomingHttpHeaders): string | undefined {
     const token = getSessionTokenFromCookieHeader(headers.cookie);
 
     if (!token) {
@@ -38,7 +37,7 @@ export class AuthSessionService {
         return undefined;
       }
 
-      return { id: sub };
+      return sub;
     } catch {
       return undefined;
     }

@@ -3,7 +3,7 @@ import { Implement, implement } from '@orpc/nest';
 import type { Response } from 'express';
 
 import { contract } from '../../integrations/orpc/orpc.contract.js';
-import { requireUser } from '../../integrations/orpc/orpc-context.js';
+import { requireViewer } from '../../integrations/orpc/orpc-context.js';
 import { AuthService } from './auth.service.js';
 import { Public } from './public.decorator.js';
 
@@ -23,7 +23,7 @@ export class AuthController {
   register() {
     return implement(contract.auth.register).handler(
       ({ input, context, errors }) => {
-        if (context.request.user) {
+        if (context.request.viewer.kind === 'user') {
           throw errors.ALREADY_AUTHENTICATED();
         }
 
@@ -40,7 +40,7 @@ export class AuthController {
   login() {
     return implement(contract.auth.login).handler(
       ({ input, context, errors }) => {
-        if (context.request.user) {
+        if (context.request.viewer.kind === 'user') {
           throw errors.ALREADY_AUTHENTICATED();
         }
 
@@ -55,7 +55,7 @@ export class AuthController {
   @Implement(contract.auth.me)
   me() {
     return implement(contract.auth.me).handler(({ context }) =>
-      this.authService.getMe(requireUser(context.request).id),
+      this.authService.getMe(requireViewer(context.request).id),
     );
   }
 
@@ -63,7 +63,10 @@ export class AuthController {
   changePassword() {
     return implement(contract.auth.changePassword).handler(
       ({ input, context }) =>
-        this.authService.changePassword(requireUser(context.request).id, input),
+        this.authService.changePassword(
+          requireViewer(context.request).id,
+          input,
+        ),
     );
   }
 

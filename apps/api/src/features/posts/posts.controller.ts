@@ -2,7 +2,7 @@ import { Controller } from '@nestjs/common';
 import { Implement, implement } from '@orpc/nest';
 
 import { contract } from '../../integrations/orpc/orpc.contract.js';
-import { requireUser } from '../../integrations/orpc/orpc-context.js';
+import { requireViewer } from '../../integrations/orpc/orpc-context.js';
 import { Public } from '../auth/public.decorator.js';
 import { PostsService } from './posts.service.js';
 
@@ -14,7 +14,7 @@ export class PostsController {
   @Implement(contract.posts.list)
   list() {
     return implement(contract.posts.list).handler(({ input, context }) =>
-      this.postsService.list(input, context.request.user?.id),
+      this.postsService.list(input, context.request.viewer),
     );
   }
 
@@ -23,7 +23,7 @@ export class PostsController {
     return implement(contract.posts.toggleLike).handler(({ input, context }) =>
       this.postsService.toggleLike(
         input.params.id,
-        requireUser(context.request).id,
+        requireViewer(context.request).id,
       ),
     );
   }
@@ -34,7 +34,7 @@ export class PostsController {
       ({ input, context }) =>
         this.postsService.toggleBookmark(
           input.params.id,
-          requireUser(context.request).id,
+          requireViewer(context.request).id,
         ),
     );
   }
@@ -45,7 +45,7 @@ export class PostsController {
       ({ input, context }) =>
         this.postsService.toggleRetweet(
           input.params.id,
-          requireUser(context.request).id,
+          requireViewer(context.request),
         ),
     );
   }
@@ -53,17 +53,14 @@ export class PostsController {
   @Implement(contract.posts.create)
   create() {
     return implement(contract.posts.create).handler(({ input, context }) =>
-      this.postsService.create(requireUser(context.request).id, input),
+      this.postsService.create(requireViewer(context.request), input),
     );
   }
 
   @Implement(contract.posts.delete)
   delete() {
     return implement(contract.posts.delete).handler(({ input, context }) =>
-      this.postsService.delete(
-        input.params.id,
-        requireUser(context.request).id,
-      ),
+      this.postsService.delete(input.params.id, requireViewer(context.request)),
     );
   }
 }

@@ -2,7 +2,7 @@ import { Controller } from '@nestjs/common';
 import { Implement, implement } from '@orpc/nest';
 
 import { contract } from '../../integrations/orpc/orpc.contract.js';
-import { requireUser } from '../../integrations/orpc/orpc-context.js';
+import { requireViewer } from '../../integrations/orpc/orpc-context.js';
 import { Public } from '../auth/public.decorator.js';
 import { UsersService } from './users.service.js';
 
@@ -14,7 +14,7 @@ export class UsersController {
   @Implement(contract.users.list)
   list() {
     return implement(contract.users.list).handler(({ context }) =>
-      this.usersService.list(requireUser(context.request).id),
+      this.usersService.list(requireViewer(context.request)),
     );
   }
 
@@ -53,7 +53,7 @@ export class UsersController {
   @Implement(contract.users.getPosts)
   getPosts() {
     return implement(contract.users.getPosts).handler(({ input, context }) =>
-      this.usersService.getPosts(input.params.id, context.request.user?.id),
+      this.usersService.getPosts(input.params.id, context.request.viewer),
     );
   }
 
@@ -64,7 +64,7 @@ export class UsersController {
       ({ input, context }) =>
         this.usersService.getLikedPosts(
           input.params.id,
-          context.request.user?.id,
+          context.request.viewer,
         ),
     );
   }
@@ -76,7 +76,7 @@ export class UsersController {
       ({ input, context }) =>
         this.usersService.getBookmarkedPosts(
           input.params.id,
-          context.request.user?.id,
+          context.request.viewer,
         ),
     );
   }
@@ -88,7 +88,7 @@ export class UsersController {
       ({ input, context }) =>
         this.usersService.getCommentedPosts(
           input.params.id,
-          context.request.user?.id,
+          context.request.viewer,
         ),
     );
   }
@@ -105,7 +105,7 @@ export class UsersController {
   follow() {
     return implement(contract.users.follow).handler(({ input, context }) =>
       this.usersService.follow(
-        requireUser(context.request).id,
+        requireViewer(context.request).id,
         input.params.id,
       ),
     );
@@ -115,7 +115,7 @@ export class UsersController {
   unfollow() {
     return implement(contract.users.unfollow).handler(({ input, context }) =>
       this.usersService.unfollow(
-        requireUser(context.request).id,
+        requireViewer(context.request).id,
         input.params.id,
       ),
     );
@@ -126,7 +126,7 @@ export class UsersController {
     return implement(contract.users.update).handler(({ input, context }) =>
       this.usersService.update(
         input.params.id,
-        requireUser(context.request).id,
+        requireViewer(context.request),
         input.body,
       ),
     );
@@ -135,10 +135,7 @@ export class UsersController {
   @Implement(contract.users.delete)
   deleteUser() {
     return implement(contract.users.delete).handler(({ input, context }) =>
-      this.usersService.delete(
-        input.params.id,
-        requireUser(context.request).id,
-      ),
+      this.usersService.delete(input.params.id, requireViewer(context.request)),
     );
   }
 
@@ -148,7 +145,7 @@ export class UsersController {
       ({ input, context }) =>
         this.usersService.updatePreferences(
           input.params.id,
-          requireUser(context.request).id,
+          requireViewer(context.request),
           input.body,
         ),
     );
@@ -157,10 +154,7 @@ export class UsersController {
   @Implement(contract.users.verify)
   verify() {
     return implement(contract.users.verify).handler(({ input, context }) =>
-      this.usersService.verify(
-        input.params.id,
-        requireUser(context.request).id,
-      ),
+      this.usersService.verify(input.params.id, requireViewer(context.request)),
     );
   }
 
@@ -169,7 +163,7 @@ export class UsersController {
     return implement(contract.users.unverify).handler(({ input, context }) =>
       this.usersService.unverify(
         input.params.id,
-        requireUser(context.request).id,
+        requireViewer(context.request),
       ),
     );
   }
