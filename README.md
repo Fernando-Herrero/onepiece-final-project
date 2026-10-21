@@ -1,50 +1,43 @@
 # One Piece LogPose
 
-Aplicación web para fans de **One Piece**: seguir el progreso del anime/manga, coleccionar cartas de personajes y elementos del universo, participar en una comunidad y desbloquear logros a medida que avanzas en la serie.
+Aplicación web para fans de **One Piece**: seguir la serie episodio a episodio, compartir posts con otros fans y, más adelante, coleccionar cartas que se desbloquean con el progreso.
 
-## Qué incluye
+## Qué funciona hoy
 
-- **Progreso de serie** — capítulos, arcos y sagas; XP y niveles según lo que vas viendo
-- **Colección de cartas** — personajes, frutas del diablo, espadas, barcos, objetos…
-- **Comunidad** — publicaciones, comentarios, perfiles y seguimiento entre usuarios
-- **Gamificación** — logros, notificaciones y recompensas ligadas al progreso
+- Registro e inicio de sesión con cookie.
+- Serie por sagas, arcos y episodios (los episodios, por ahora, solo de East Blue).
+- Comunidad: posts con imágenes, likes, guardados y retweets, con visibilidad pública, para seguidores o privada.
+- Perfiles con seguimiento y ajustes de privacidad, accesibilidad y premium (pago simulado).
 
-## Arquitectura
+Pendiente: progreso con XP, cartas, comentarios, notificaciones, búsqueda y panel de admin.
 
-Monorepo con tipado compartido entre frontend y backend:
+## Estructura
 
 ```
-apps/web/          → interfaz (Next.js, puerto 3000)
-apps/api/          → API (NestJS 11, puerto 4000)
-packages/contracts → contratos oRPC + schemas Zod
+apps/web/            → Next.js 16 (Pages Router), Tailwind 4, Radix Themes y TanStack Query. Puerto 3000
+apps/api/            → NestJS 11 con @orpc/nest y MongoDB. Puerto 4000
+packages/contracts/  → contratos oRPC y schemas Zod que comparten las dos apps
 ```
 
-El cliente web consume la API a través de contratos tipados (oRPC + TanStack Query), sin duplicar tipos ni validaciones.
+La web llama a la API con un cliente oRPC tipado desde `packages/contracts`, así que los tipos y la validación de cada endpoint se escriben una vez.
 
-## Tecnologías
+## Arrancar en local
 
-| Capa      | Stack                                                         |
-| --------- | ------------------------------------------------------------- |
-| Frontend  | Next.js 16, React 19, Tailwind CSS 4, TanStack Query          |
-| Backend   | NestJS 11, `@orpc/nest`, MongoDB (`@jperezmart/nest-mongodb`) |
-| Contratos | oRPC, Zod                                                     |
-| Monorepo  | pnpm, Turbo                                                   |
-
-## Inicio rápido
-
-Requisitos: Node 24.16.0, pnpm 11.6 (recomendado [mise](https://mise.jdx.dev) + `.node-version` en la raíz).
+Requisitos: Node 24.16.0 (`.node-version`), pnpm 11.6 y un MongoDB accesible.
 
 ```bash
+cp apps/api/.env.example apps/api/.env
 pnpm install
 pnpm dev
 ```
 
-- **Web:** http://localhost:3000
-- **API health:** http://localhost:4000/api/health/ → `{ "status": "ok", "service": "@logpose/api" }`
-- **API Swagger:** http://localhost:4000/api/orpc
+- Web: http://localhost:3000
+- API: http://localhost:4000/api/health/ y Swagger en http://localhost:4000/api/orpc
 
-Otros comandos útiles: `pnpm build`, `pnpm lint`, `pnpm type-check`, `pnpm format`.
+Las imágenes de los posts necesitan las claves de Cloudinary en `apps/api/.env`. Otros scripts: `pnpm build`, `pnpm test`, `pnpm lint`, `pnpm type-check` y `pnpm format`.
 
-## Origen del proyecto
+## Documentación
 
-LogPose v3 migra y unifica dos proyectos anteriores (SPA en Vite + API Express separada) en este monorepo, con contratos compartidos entre la API (Nest) y la web (oRPC).
+- [GLOSSARY.md](GLOSSARY.md): vocabulario del dominio.
+- [docs/CONVENTIONS.md](docs/CONVENTIONS.md): convenciones de código, de Radix UI y de la API Nest.
+- [docs/adr/](docs/adr/): decisiones de arquitectura con su porqué.
