@@ -3,12 +3,12 @@ import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
 import { Injectable } from '@nestjs/common';
 import { type Collection, type Filter, ObjectId, type WithId } from 'mongodb';
 
-import {
-  decodePostCursor,
-  type PostDocument,
-  PUBLIC_POST_FILTER,
-} from './posts.mappers.js';
+import { decodePostCursor, type PostDocument } from './posts.mappers.js';
 
+/**
+ * Los métodos de lectura reciben `visible` (`visiblePostsFilter`): un post que
+ * el viewer no puede ver no se lista, no se cuenta y no se toca.
+ */
 @Injectable()
 export class PostsPersistence {
   constructor(
@@ -16,61 +16,79 @@ export class PostsPersistence {
     private readonly posts: Collection<PostDocument>,
   ) {}
 
-  countByUserId(userId: string) {
+  countByUserId(userId: string, visible: Filter<PostDocument>) {
     return this.posts.countDocuments({
+      ...visible,
       userId: new ObjectId(userId),
       isDeleted: false,
     });
   }
 
-  countLikedByUserId(userId: string) {
+  countLikedByUserId(userId: string, visible: Filter<PostDocument>) {
     return this.posts.countDocuments({
+      ...visible,
       likes: new ObjectId(userId),
       isDeleted: false,
     });
   }
 
-  countBookmarkedByUserId(userId: string) {
+  countBookmarkedByUserId(userId: string, visible: Filter<PostDocument>) {
     return this.posts.countDocuments({
+      ...visible,
       bookmarks: new ObjectId(userId),
       isDeleted: false,
     });
   }
 
-  findPublicByUserId(userId: string) {
+  async findVisibleIds(ids: ObjectId[], visible: Filter<PostDocument>) {
+    const rows = await this.posts
+      .find(
+        { ...visible, _id: { $in: ids }, isDeleted: false },
+        { projection: { _id: 1 } },
+      )
+      .toArray();
+
+    return rows.map(row => row._id);
+  }
+
+  findByUserId(userId: string, visible: Filter<PostDocument>) {
     return this.posts
       .find({
+        ...visible,
         userId: new ObjectId(userId),
-        ...PUBLIC_POST_FILTER,
+        isDeleted: false,
       })
       .toArray();
   }
 
-  findLikedByUserId(userId: string) {
+  findLikedByUserId(userId: string, visible: Filter<PostDocument>) {
     return this.posts
       .find({
+        ...visible,
         likes: new ObjectId(userId),
         isDeleted: false,
       })
       .toArray();
   }
 
-  findBookmarkedByUserId(userId: string) {
+  findBookmarkedByUserId(userId: string, visible: Filter<PostDocument>) {
     return this.posts
       .find({
+        ...visible,
         bookmarks: new ObjectId(userId),
         isDeleted: false,
       })
       .toArray();
   }
 
-  findByIds(ids: ObjectId[]) {
+  findByIds(ids: ObjectId[], visible: Filter<PostDocument>) {
     if (ids.length === 0) {
       return Promise.resolve([] as WithId<PostDocument>[]);
     }
 
     return this.posts
       .find({
+        ...visible,
         _id: { $in: ids },
         isDeleted: false,
       })
@@ -101,19 +119,24 @@ export class PostsPersistence {
     return this.posts.deleteMany({ retweetOf: { $in: postIds } });
   }
 
-  findPublicFeedPage(limit = POST_FEED_PAGE_SIZE, cursor?: string) {
-    const filter: Filter<PostDocument> = { ...PUBLIC_POST_FILTER };
+  findFeedPage(
+    visible: Filter<PostDocument>,
+    limit = POST_FEED_PAGE_SIZE,
+    cursor?: string,
+  ) {
     const decoded = cursor ? decodePostCursor(cursor) : null;
+    const page: Filter<PostDocument> = decoded
+      ? {
+          $or: [
+            { createdAt: { $lt: decoded.createdAt } },
+            { createdAt: decoded.createdAt, _id: { $lt: decoded.id } },
+          ],
+        }
+      : {};
 
-    if (decoded) {
-      filter.$or = [
-        { createdAt: { $lt: decoded.createdAt } },
-        { createdAt: decoded.createdAt, _id: { $lt: decoded.id } },
-      ];
-    }
-
+    // `$and` y no spread: `visible` y `page` pueden traer los dos un `$or`.
     return this.posts
-      .find(filter)
+      .find({ $and: [visible, page], isDeleted: false })
       .sort({ createdAt: -1, _id: -1 })
       .limit(limit + 1)
       .toArray();
@@ -126,43 +149,58 @@ export class PostsPersistence {
     });
   }
 
+  findVisibleById(id: string, visible: Filter<PostDocument>) {
+    return this.posts.findOne({
+      ...visible,
+      _id: new ObjectId(id),
+      isDeleted: false,
+    });
+  }
+
   /**
-   * Añade o quita `userId` del array `likes` o `bookmarks` y ajusta el contador denormalizado.
-   * Devuelve el post actualizado y si el usuario ya tenía el flag antes del toggle.
+   * Añade o quita `userId` del array `likes` o `bookmarks` y ajusta el contador
+   * denormalizado. Sin leer antes: el primer `findOneAndUpdate` solo casa si el
+   * usuario no está y lo añade; si no casa, el segundo lo quita. Cada uno es
+   * atómico, así que dos toggles a la vez no dejan el contador descuadrado.
+   * Si tampoco casa el segundo, otro toggle lo quitó entre medias y se vuelve
+   * a añadir una vez; si aún no casa, el post no existe o no se ve.
+   * Devuelve el post actualizado y si el usuario ya tenía el flag antes.
    */
   async toggleUserField(
     postId: string,
     userId: string,
     field: 'likes' | 'bookmarks',
+    visible: Filter<PostDocument>,
   ) {
-    const post = await this.findActiveById(postId);
-    if (!post) {
-      return null;
+    const user = new ObjectId(userId);
+    const countField = field === 'likes' ? 'likesCount' : 'bookmarksCount';
+    const post = { ...visible, _id: new ObjectId(postId), isDeleted: false };
+    const add = () =>
+      this.posts.findOneAndUpdate(
+        { ...post, [field]: { $ne: user } },
+        { $addToSet: { [field]: user }, $inc: { [countField]: 1 } },
+        { returnDocument: 'after' },
+      );
+
+    const added = await add();
+
+    if (added) {
+      return { post: added, alreadyHad: false };
     }
 
-    const userObjectId = new ObjectId(userId);
-    const countField = field === 'likes' ? 'likesCount' : 'bookmarksCount';
-    const alreadyHad = post[field].some(id => id.equals(userObjectId));
-
-    const updated = await this.posts.findOneAndUpdate(
-      { _id: new ObjectId(postId), isDeleted: false },
-      alreadyHad
-        ? {
-            $pull: { [field]: userObjectId },
-            $inc: { [countField]: -1 },
-          }
-        : {
-            $addToSet: { [field]: userObjectId },
-            $inc: { [countField]: 1 },
-          },
+    const removed = await this.posts.findOneAndUpdate(
+      { ...post, [field]: user },
+      { $pull: { [field]: user }, $inc: { [countField]: -1 } },
       { returnDocument: 'after' },
     );
 
-    if (!updated) {
-      return null;
+    if (removed) {
+      return { post: removed, alreadyHad: true };
     }
 
-    return { post: updated, alreadyHad };
+    const readded = await add();
+
+    return readded ? { post: readded, alreadyHad: false } : null;
   }
 
   /**

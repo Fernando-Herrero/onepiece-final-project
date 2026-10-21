@@ -6,8 +6,12 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
 import type { Viewer } from '../auth/access.js';
-import { CommentsPersistence } from '../comments/comments.persistence.js';
+import {
+  type CommentDocument,
+  CommentsPersistence,
+} from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
+import type { PostDocument } from '../posts/posts.mappers.js';
 import { PostsPersistence } from '../posts/posts.persistence.js';
 import type { UserDocument } from './user.mappers.js';
 import { UsersPersistence } from './users.persistence.js';
@@ -185,5 +189,332 @@ describe('UsersService.getById', () => {
       phoneNumber: '600000000',
       address: 'Foosha Village',
     });
+  });
+});
+
+describe('UsersService.getPosts', () => {
+  let frankyId: string;
+  let publicId: string;
+  let privateId: string;
+
+  beforeAll(async () => {
+    const postsPersistence = new PostsPersistence(
+      client.db('test').collection('posts'),
+    );
+    const franky = await usersPersistence.insert(newUser('franky'));
+    frankyId = franky._id.toString();
+    publicId = (
+      await postsPersistence.insert({
+        text: 'franky public',
+        userId: franky._id,
+        visibility: 'public',
+        language: 'es',
+      })
+    )._id.toString();
+    privateId = (
+      await postsPersistence.insert({
+        text: 'franky private',
+        userId: franky._id,
+        visibility: 'private',
+        language: 'es',
+      })
+    )._id.toString();
+  });
+
+  const tabIds = async (viewer: Viewer) =>
+    (await service.getPosts(frankyId, viewer)).map(post => post._id);
+
+  it('un anónimo ve los públicos pero no los privados', async () => {
+    const ids = await tabIds({ kind: 'anonymous' });
+
+    expect(ids).toContain(publicId);
+    expect(ids).not.toContain(privateId);
+  });
+
+  it('el dueño ve también sus posts privados', async () => {
+    const ids = await tabIds({ kind: 'user', id: frankyId, role: 'user' });
+
+    expect(ids).toContain(publicId);
+    expect(ids).toContain(privateId);
+  });
+
+  it('un admin ve también los posts privados', async () => {
+    const ids = await tabIds({
+      kind: 'user',
+      id: new ObjectId().toString(),
+      role: 'admin',
+    });
+
+    expect(ids).toContain(publicId);
+    expect(ids).toContain(privateId);
+  });
+
+  it('ningún post de la pestaña lleva likes ni bookmarks', async () => {
+    const posts = await service.getPosts(frankyId, { kind: 'anonymous' });
+
+    expect(posts.length).toBeGreaterThan(0);
+    posts.forEach(post => {
+      expect(post).not.toHaveProperty('likes');
+      expect(post).not.toHaveProperty('bookmarks');
+    });
+  });
+});
+
+describe('UsersService.getStats', () => {
+  let brookId: string;
+
+  beforeAll(async () => {
+    const postsPersistence = new PostsPersistence(
+      client.db('test').collection('posts'),
+    );
+    const brook = await usersPersistence.insert({
+      ...newUser('brook'),
+      privacy: {
+        showPosts: true,
+        showLikes: false,
+        showBookmarked: true,
+        showComments: true,
+      },
+    });
+    brookId = brook._id.toString();
+    await postsPersistence.insert({
+      text: 'brook public',
+      userId: brook._id,
+      visibility: 'public',
+      language: 'es',
+    });
+    await postsPersistence.insert({
+      text: 'brook private',
+      userId: brook._id,
+      visibility: 'private',
+      language: 'es',
+    });
+  });
+
+  const owner = (): Viewer => ({ kind: 'user', id: brookId, role: 'user' });
+  const admin = (): Viewer => ({
+    kind: 'user',
+    id: new ObjectId().toString(),
+    role: 'admin',
+  });
+
+  it('con showLikes en false, un anónimo no recibe la clave likedPosts', async () => {
+    const stats = await service.getStats(brookId, { kind: 'anonymous' });
+
+    expect(stats).not.toHaveProperty('likedPosts');
+  });
+
+  it('con showLikes en false, el dueño recibe likedPosts', async () => {
+    await expect(service.getStats(brookId, owner())).resolves.toHaveProperty(
+      'likedPosts',
+      0,
+    );
+  });
+
+  it('con showLikes en false, un admin recibe likedPosts', async () => {
+    await expect(service.getStats(brookId, admin())).resolves.toHaveProperty(
+      'likedPosts',
+      0,
+    );
+  });
+
+  it('un anónimo cuenta en myPosts solo el post público', async () => {
+    await expect(
+      service.getStats(brookId, { kind: 'anonymous' }),
+    ).resolves.toMatchObject({ myPosts: 1 });
+  });
+
+  it('el dueño cuenta en myPosts también su post privado', async () => {
+    await expect(service.getStats(brookId, owner())).resolves.toMatchObject({
+      myPosts: 2,
+    });
+  });
+});
+
+/**
+ * El perfil P da like, guarda y comenta tres posts de O (público, privado y
+ * para seguidores). F sigue a O; X no.
+ */
+async function seedProfileActivity(
+  prefix: string,
+  privacy: UserDocument['privacy'] = newUser(prefix).privacy,
+) {
+  const db = client.db('test');
+  const postsPersistence = new PostsPersistence(db.collection('posts'));
+  const comments = db.collection<CommentDocument>('comments');
+  const profile = await usersPersistence.insert({
+    ...newUser(`${prefix}_profile`),
+    privacy,
+  });
+  const owner = await usersPersistence.insert(newUser(`${prefix}_owner`));
+  const follower = await usersPersistence.insert(newUser(`${prefix}_follower`));
+  const other = await usersPersistence.insert(newUser(`${prefix}_other`));
+  await usersPersistence.addFollow(
+    follower._id.toString(),
+    owner._id.toString(),
+  );
+
+  const post = async (visibility: PostDocument['visibility']) =>
+    (
+      await postsPersistence.insert({
+        text: `${prefix} ${visibility}`,
+        userId: owner._id,
+        visibility,
+        language: 'es',
+      })
+    )._id.toString();
+  const comment = (postId: string) =>
+    comments.insertOne({
+      _id: new ObjectId(),
+      postId: new ObjectId(postId),
+      author: profile._id,
+      text: 'hola',
+      images: [],
+      likes: [],
+      likesCount: 0,
+      repliesCount: 0,
+      isReply: false,
+      hashtags: [],
+      mentions: [],
+      isDeleted: false,
+      source: 'web',
+      language: 'es',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    });
+
+  return {
+    profileId: profile._id.toString(),
+    followerId: follower._id.toString(),
+    otherId: other._id.toString(),
+    publicId: await post('public'),
+    privateId: await post('private'),
+    followersId: await post('followers'),
+    comment,
+    like: (postId: string) =>
+      postsPersistence.toggleUserField(
+        postId,
+        profile._id.toString(),
+        'likes',
+        {},
+      ),
+    bookmark: (postId: string) =>
+      postsPersistence.toggleUserField(
+        postId,
+        profile._id.toString(),
+        'bookmarks',
+        {},
+      ),
+  };
+}
+
+const userViewer = (id: string): Viewer => ({ kind: 'user', id, role: 'user' });
+const adminViewer = (): Viewer => ({
+  kind: 'user',
+  id: new ObjectId().toString(),
+  role: 'admin',
+});
+
+describe('UsersService, pestañas con posts ajenos privados y para seguidores', () => {
+  let seed: Awaited<ReturnType<typeof seedProfileActivity>>;
+
+  beforeAll(async () => {
+    seed = await seedProfileActivity('tabs');
+    for (const id of [seed.publicId, seed.privateId, seed.followersId]) {
+      await seed.like(id);
+      await seed.bookmark(id);
+      await seed.comment(id);
+    }
+  });
+
+  const tabs = [
+    ['likes', 'getLikedPosts'],
+    ['guardados', 'getBookmarkedPosts'],
+    ['comentados', 'getCommentedPosts'],
+  ] as const;
+
+  describe.each(tabs)('pestaña de %s', (_name, method) => {
+    const ids = async (viewer: Viewer) =>
+      (await service[method](seed.profileId, viewer)).map(post => post._id);
+
+    it('un anónimo solo ve el post público', async () => {
+      await expect(ids({ kind: 'anonymous' })).resolves.toEqual([
+        seed.publicId,
+      ]);
+    });
+
+    it('un usuario que no sigue al dueño solo ve el post público', async () => {
+      await expect(ids(userViewer(seed.otherId))).resolves.toEqual([
+        seed.publicId,
+      ]);
+    });
+
+    it('un seguidor del dueño ve también el post para seguidores', async () => {
+      await expect(ids(userViewer(seed.followerId))).resolves.toEqual(
+        expect.arrayContaining([seed.publicId, seed.followersId]),
+      );
+      await expect(ids(userViewer(seed.followerId))).resolves.toHaveLength(2);
+    });
+
+    it('un admin ve los tres', async () => {
+      await expect(ids(adminViewer())).resolves.toEqual(
+        expect.arrayContaining([
+          seed.publicId,
+          seed.privateId,
+          seed.followersId,
+        ]),
+      );
+      await expect(ids(adminViewer())).resolves.toHaveLength(3);
+    });
+  });
+});
+
+describe('UsersService.getStats con showComments en false', () => {
+  let seed: Awaited<ReturnType<typeof seedProfileActivity>>;
+
+  beforeAll(async () => {
+    seed = await seedProfileActivity('nocomments', {
+      showPosts: true,
+      showLikes: true,
+      showBookmarked: true,
+      showComments: false,
+    });
+    await seed.comment(seed.publicId);
+  });
+
+  it('un anónimo no recibe commentedPosts ni totalComments', async () => {
+    const stats = await service.getStats(seed.profileId, { kind: 'anonymous' });
+
+    expect(stats).not.toHaveProperty('commentedPosts');
+    expect(stats).not.toHaveProperty('totalComments');
+  });
+
+  it('el dueño del perfil sí los recibe', async () => {
+    await expect(
+      service.getStats(seed.profileId, userViewer(seed.profileId)),
+    ).resolves.toMatchObject({ commentedPosts: 1, totalComments: 1 });
+  });
+});
+
+describe('UsersService.getStats, totalComments y lo que no ves', () => {
+  let seed: Awaited<ReturnType<typeof seedProfileActivity>>;
+
+  beforeAll(async () => {
+    seed = await seedProfileActivity('comments');
+    await seed.comment(seed.privateId);
+    await seed.comment(seed.privateId);
+    await seed.comment(seed.publicId);
+  });
+
+  it('un anónimo recibe totalComments 1 y commentedPosts 1', async () => {
+    await expect(
+      service.getStats(seed.profileId, { kind: 'anonymous' }),
+    ).resolves.toMatchObject({ totalComments: 1, commentedPosts: 1 });
+  });
+
+  it('un admin recibe totalComments 3 y commentedPosts 2', async () => {
+    await expect(
+      service.getStats(seed.profileId, adminViewer()),
+    ).resolves.toMatchObject({ totalComments: 3, commentedPosts: 2 });
   });
 });

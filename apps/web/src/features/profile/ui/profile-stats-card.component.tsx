@@ -37,7 +37,7 @@ export function ProfileStatsCard({ userId }: ProfileStatsCardProps) {
               {item.label}
             </Text>
             <Text as="span" size="2" weight="bold" className="text-[#f2d9a8]">
-              {item.value}
+              {item.value ?? t('profile.stats_hidden')}
             </Text>
           </Flex>
         ))}

@@ -404,6 +404,7 @@
     "my_stats": "Mis estadísticas",
     "stats_title": "Estadísticas",
     "stats_error": "No se pudieron cargar las estadísticas",
+    "stats_hidden": "Oculto",
     "my_posts": "Posts propios",
     "stats_posts": "Posts publicados",
     "liked_posts": "Me gusta",

@@ -192,8 +192,6 @@ export function createOptimisticPost(
     isRetweet: false,
     isReply: false,
     language: 'es',
-    likes: [],
-    bookmarks: [],
     likesCount: 0,
     bookmarksCount: 0,
     commentsCount: 0,

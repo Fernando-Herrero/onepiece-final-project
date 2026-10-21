@@ -10,12 +10,13 @@ import {
   userProfileSchema,
 } from '../../common/user.schemas.js';
 
+/** Un contador cuya pestaña oculta `privacy` al viewer no viene. */
 export const userStatsSchema = z.object({
-  myPosts: z.number(),
-  likedPosts: z.number(),
-  bookmarkedPosts: z.number(),
-  commentedPosts: z.number(),
-  totalComments: z.number(),
+  myPosts: z.number().optional(),
+  likedPosts: z.number().optional(),
+  bookmarkedPosts: z.number().optional(),
+  commentedPosts: z.number().optional(),
+  totalComments: z.number().optional(),
 });
 
 export const userRankingEntrySchema = z.object({

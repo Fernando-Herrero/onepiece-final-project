@@ -23,7 +23,7 @@ export class PostsController {
     return implement(contract.posts.toggleLike).handler(({ input, context }) =>
       this.postsService.toggleLike(
         input.params.id,
-        requireViewer(context.request).id,
+        requireViewer(context.request),
       ),
     );
   }
@@ -34,7 +34,7 @@ export class PostsController {
       ({ input, context }) =>
         this.postsService.toggleBookmark(
           input.params.id,
-          requireViewer(context.request).id,
+          requireViewer(context.request),
         ),
     );
   }

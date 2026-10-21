@@ -3,7 +3,7 @@ import { updateUserSchema } from '@logpose/contracts/common/user.schemas';
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
-import { ObjectId, type WithId } from 'mongodb';
+import { type Filter, ObjectId, type WithId } from 'mongodb';
 import * as z from 'zod/v4';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
@@ -13,6 +13,7 @@ import {
   type PrivacyKey,
   type UserViewer,
   type Viewer,
+  visiblePostsFilter,
 } from '../auth/access.js';
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
@@ -70,6 +71,7 @@ export class UsersService {
   private async serializePostsForViewer(
     posts: WithId<PostDocument>[],
     viewer: Viewer,
+    visible: Filter<PostDocument>,
   ) {
     const originalIds = [
       ...new Set(
@@ -82,6 +84,7 @@ export class UsersService {
       originalIds.length > 0
         ? await this.postsPersistence.findByIds(
             originalIds.map(id => new ObjectId(id)),
+            visible,
           )
         : [];
     const originalPostsById = new Map(
@@ -107,36 +110,48 @@ export class UsersService {
   /** Posts publicados por el perfil; respeta showPosts si el viewer no es el dueño. */
   async getPosts(profileUserId: string, viewer: Viewer) {
     await this.assertVisibleUser(profileUserId, 'showPosts', viewer);
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
 
-    const posts = await this.postsPersistence.findPublicByUserId(profileUserId);
-    return this.serializePostsForViewer(posts, viewer);
+    const posts = await this.postsPersistence.findByUserId(
+      profileUserId,
+      visible,
+    );
+    return this.serializePostsForViewer(posts, viewer, visible);
   }
 
   /** Posts que el perfil ha marcado con like; respeta showLikes. */
   async getLikedPosts(profileUserId: string, viewer: Viewer) {
     await this.assertVisibleUser(profileUserId, 'showLikes', viewer);
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
 
-    const posts = await this.postsPersistence.findLikedByUserId(profileUserId);
-    return this.serializePostsForViewer(posts, viewer);
+    const posts = await this.postsPersistence.findLikedByUserId(
+      profileUserId,
+      visible,
+    );
+    return this.serializePostsForViewer(posts, viewer, visible);
   }
 
   /** Posts guardados en bookmarks del perfil; respeta showBookmarked. */
   async getBookmarkedPosts(profileUserId: string, viewer: Viewer) {
     await this.assertVisibleUser(profileUserId, 'showBookmarked', viewer);
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
 
-    const posts =
-      await this.postsPersistence.findBookmarkedByUserId(profileUserId);
-    return this.serializePostsForViewer(posts, viewer);
+    const posts = await this.postsPersistence.findBookmarkedByUserId(
+      profileUserId,
+      visible,
+    );
+    return this.serializePostsForViewer(posts, viewer, visible);
   }
 
   /** Posts en los que el perfil ha comentado; respeta showComments. */
   async getCommentedPosts(profileUserId: string, viewer: Viewer) {
     await this.assertVisibleUser(profileUserId, 'showComments', viewer);
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
 
     const postIds =
       await this.commentsPersistence.distinctPostIdsByAuthor(profileUserId);
-    const posts = await this.postsPersistence.findByIds(postIds);
-    return this.serializePostsForViewer(posts, viewer);
+    const posts = await this.postsPersistence.findByIds(postIds, visible);
+    return this.serializePostsForViewer(posts, viewer, visible);
   }
 
   async getById(userId: string, viewer: Viewer) {
@@ -147,30 +162,47 @@ export class UsersService {
       : { access: 'public' as const, ...serializeUserProfile(user) };
   }
 
-  /** Contadores de actividad del perfil: posts, likes, bookmarks y comentarios. */
-  async getStats(userId: string) {
-    await this.requireUser(userId);
+  /**
+   * Contadores de actividad del perfil: posts, likes, bookmarks y comentarios.
+   * Cada uno cuenta lo mismo que lista su pestaña, y si `privacy` la oculta al
+   * viewer, su clave no viene (`showComments` cubre los dos de comentarios).
+   */
+  async getStats(userId: string, viewer: Viewer) {
+    const user = await this.requireUser(userId);
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
+    const shows = (privacyKey: PrivacyKey) =>
+      canSeeTab(viewer, user, privacyKey);
 
-    const [
-      myPosts,
-      likedPosts,
-      bookmarkedPosts,
-      commentedPostIds,
-      totalComments,
-    ] = await Promise.all([
-      this.postsPersistence.countByUserId(userId),
-      this.postsPersistence.countLikedByUserId(userId),
-      this.postsPersistence.countBookmarkedByUserId(userId),
-      this.commentsPersistence.distinctPostIdsByAuthor(userId),
-      this.commentsPersistence.countByAuthor(userId),
+    const [myPosts, likedPosts, bookmarkedPosts, comments] = await Promise.all([
+      shows('showPosts')
+        ? this.postsPersistence.countByUserId(userId, visible)
+        : null,
+      shows('showLikes')
+        ? this.postsPersistence.countLikedByUserId(userId, visible)
+        : null,
+      shows('showBookmarked')
+        ? this.postsPersistence.countBookmarkedByUserId(userId, visible)
+        : null,
+      // Los dos de comentarios solo miran los posts comentados que el viewer ve.
+      shows('showComments')
+        ? this.commentsPersistence
+            .distinctPostIdsByAuthor(userId)
+            .then(ids => this.postsPersistence.findVisibleIds(ids, visible))
+            .then(async postIds => ({
+              commentedPosts: postIds.length,
+              totalComments: await this.commentsPersistence.countByAuthor(
+                userId,
+                postIds,
+              ),
+            }))
+        : null,
     ]);
 
     return {
-      myPosts,
-      likedPosts,
-      bookmarkedPosts,
-      commentedPosts: commentedPostIds.length,
-      totalComments,
+      ...(myPosts !== null && { myPosts }),
+      ...(likedPosts !== null && { likedPosts }),
+      ...(bookmarkedPosts !== null && { bookmarkedPosts }),
+      ...comments,
     };
   }
 

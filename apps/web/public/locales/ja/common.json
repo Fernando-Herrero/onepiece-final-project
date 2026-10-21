@@ -404,6 +404,7 @@
     "my_stats": "私の統計",
     "stats_title": "統計",
     "stats_error": "統計を読み込めませんでした",
+    "stats_hidden": "非公開",
     "my_posts": "自分の投稿",
     "stats_posts": "公開投稿",
     "liked_posts": "いいね",

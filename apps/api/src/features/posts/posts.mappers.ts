@@ -39,15 +39,6 @@ export type PostDocument = {
 };
 
 /**
- * Filtro reutilizable para posts visibles en feed y listados públicos.
- * Excluye borrados lógicos y todo lo que no sea `visibility: 'public'`.
- */
-export const PUBLIC_POST_FILTER = {
-  visibility: 'public' as const,
-  isDeleted: false,
-};
-
-/**
  * Valida longitud del texto antes de crear/actualizar un post.
  * Devuelve el mensaje de error o `null` si es válido.
  * La API Nest usará esto en `create`/`update` (fases posteriores).
@@ -64,7 +55,8 @@ export function assertTextLength(text: string, verified: boolean) {
  * Convierte un documento Mongo + autor ya resuelto en la forma `postPublicSchema`.
  *
  * - `userId` pasa de ObjectId a embed del autor (`serializeAuthorEmbed`).
- * - Arrays de ObjectId (`likes`, `bookmarks`, `retweets`) → strings.
+ * - `retweets` (ObjectId) → strings. `likes` y `bookmarks` no salen: dirían
+ *   quién ha dado like o guardado; basta con los contadores y los flags.
  * - Fechas → ISO string para JSON.
  * - Si el viewer tiene sesión, añade `userLiked` y `userBookmarked`
  *   comparando su id con los arrays del documento.
@@ -87,8 +79,6 @@ export function serializePost(
     retweetOf: post.retweetOf?.toString(),
     isReply: post.isReply,
     language: post.language,
-    likes: post.likes.map(String),
-    bookmarks: post.bookmarks.map(String),
     likesCount: post.likesCount,
     bookmarksCount: post.bookmarksCount,
     commentsCount: post.commentsCount,

@@ -39,6 +39,15 @@ export class UsersPersistence implements OnModuleInit {
     return doc?.role ?? null;
   }
 
+  async findFollowingIds(id: string): Promise<ObjectId[]> {
+    const doc = await this.users.findOne(
+      { _id: new ObjectId(id) },
+      { projection: { following: 1 } },
+    );
+
+    return doc?.following ?? [];
+  }
+
   async findByIds(ids: ObjectId[]): Promise<WithId<UserDocument>[]> {
     if (ids.length === 0) {
       return [];

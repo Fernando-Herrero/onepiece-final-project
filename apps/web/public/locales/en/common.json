@@ -404,6 +404,7 @@
     "my_stats": "My stats",
     "stats_title": "Statistics",
     "stats_error": "Could not load stats",
+    "stats_hidden": "Hidden",
     "my_posts": "My posts",
     "stats_posts": "Published posts",
     "liked_posts": "Likes",

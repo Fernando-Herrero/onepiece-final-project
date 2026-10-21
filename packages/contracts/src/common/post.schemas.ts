@@ -50,8 +50,6 @@ export const postPublicSchema = z.object({
   retweetOf: z.string().optional(),
   isReply: z.boolean(),
   language: z.string(),
-  likes: z.array(z.string()),
-  bookmarks: z.array(z.string()),
   likesCount: z.number(),
   bookmarksCount: z.number(),
   commentsCount: z.number(),

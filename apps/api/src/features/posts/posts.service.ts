@@ -5,16 +5,22 @@ import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
 import type { listPostsInputSchema } from '@logpose/contracts/features/posts/schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
-import { ObjectId } from 'mongodb';
+import { type Filter, ObjectId, type WithId } from 'mongodb';
 import type * as z from 'zod/v4';
 
-import { accessTo, type UserViewer, type Viewer } from '../auth/access.js';
+import {
+  accessTo,
+  type UserViewer,
+  type Viewer,
+  visiblePostsFilter,
+} from '../auth/access.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
 import { UsersPersistence } from '../users/users.persistence.js';
 import {
   assertTextLength,
   collectRetweetCheckIds,
   encodePostCursor,
+  type PostDocument,
   serializePost,
   serializePostsWithAuthors,
 } from './posts.mappers.js';
@@ -33,13 +39,15 @@ export class PostsService {
 
   async list(input: ListPostsInput, viewer: Viewer) {
     const limit = input.limit ?? POST_FEED_PAGE_SIZE;
-    const rows = await this.postsPersistence.findPublicFeedPage(
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
+    const rows = await this.postsPersistence.findFeedPage(
+      visible,
       limit,
       input.cursor,
     );
     const hasMore = rows.length > limit;
     const page = hasMore ? rows.slice(0, limit) : rows;
-    const originalPostsById = await this.loadOriginalPostsMap(page);
+    const originalPostsById = await this.loadOriginalPostsMap(page, visible);
     const retweetedOriginalIds =
       viewer.kind === 'user'
         ? await this.postsPersistence.findRetweetedOriginalIds(
@@ -86,11 +94,12 @@ export class PostsService {
     return serializePost(post, user, viewer);
   }
 
-  async toggleLike(postId: string, userId: string) {
+  async toggleLike(postId: string, viewer: UserViewer) {
     const result = await this.postsPersistence.toggleUserField(
       postId,
-      userId,
+      viewer.id,
       'likes',
+      await visiblePostsFilter(viewer, this.usersPersistence),
     );
 
     if (!result) {
@@ -100,8 +109,12 @@ export class PostsService {
     const liked = !result.alreadyHad;
     const ownerId = result.post.userId.toString();
 
-    if (liked && ownerId !== userId) {
-      await this.notificationsPersistence.createLike(ownerId, userId, postId);
+    if (liked && ownerId !== viewer.id) {
+      await this.notificationsPersistence.createLike(
+        ownerId,
+        viewer.id,
+        postId,
+      );
     }
 
     return {
@@ -111,11 +124,12 @@ export class PostsService {
     };
   }
 
-  async toggleBookmark(postId: string, userId: string) {
+  async toggleBookmark(postId: string, viewer: UserViewer) {
     const result = await this.postsPersistence.toggleUserField(
       postId,
-      userId,
+      viewer.id,
       'bookmarks',
+      await visiblePostsFilter(viewer, this.usersPersistence),
     );
 
     if (!result) {
@@ -125,10 +139,10 @@ export class PostsService {
     const bookmarked = !result.alreadyHad;
     const ownerId = result.post.userId.toString();
 
-    if (bookmarked && ownerId !== userId) {
+    if (bookmarked && ownerId !== viewer.id) {
       await this.notificationsPersistence.createBookmark(
         ownerId,
-        userId,
+        viewer.id,
         postId,
       );
     }
@@ -141,13 +155,17 @@ export class PostsService {
   }
 
   async toggleRetweet(postId: string, viewer: UserViewer) {
-    const original = await this.postsPersistence.findActiveById(postId);
+    const original = await this.postsPersistence.findVisibleById(
+      postId,
+      await visiblePostsFilter(viewer, this.usersPersistence),
+    );
 
     if (!original) {
       throw new ORPCError('POST_NOT_FOUND');
     }
 
-    if (original.isRetweet) {
+    // El retweet es un post público con el texto del original: solo de lo público.
+    if (original.isRetweet || original.visibility !== 'public') {
       throw new ORPCError('FORBIDDEN');
     }
 
@@ -186,7 +204,8 @@ export class PostsService {
   }
 
   private async loadOriginalPostsMap(
-    posts: Awaited<ReturnType<PostsPersistence['findPublicFeedPage']>>,
+    posts: WithId<PostDocument>[],
+    visible: Filter<PostDocument>,
   ) {
     const originalIds = [
       ...new Set(
@@ -202,13 +221,17 @@ export class PostsService {
 
     const originals = await this.postsPersistence.findByIds(
       originalIds.map(id => new ObjectId(id)),
+      visible,
     );
 
     return new Map(originals.map(post => [post._id.toString(), post]));
   }
 
   async delete(postId: string, viewer: UserViewer) {
-    const post = await this.postsPersistence.findActiveById(postId);
+    const post = await this.postsPersistence.findVisibleById(
+      postId,
+      await visiblePostsFilter(viewer, this.usersPersistence),
+    );
 
     if (!post) {
       throw new ORPCError('POST_NOT_FOUND');

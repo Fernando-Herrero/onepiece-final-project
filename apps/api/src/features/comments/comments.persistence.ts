@@ -36,9 +36,10 @@ export class CommentsPersistence {
     });
   }
 
-  countByAuthor(authorId: string) {
+  countByAuthor(authorId: string, postIds: ObjectId[]) {
     return this.comments.countDocuments({
       author: new ObjectId(authorId),
+      postId: { $in: postIds },
       isDeleted: false,
     });
   }

@@ -28,8 +28,8 @@ export class UsersController {
   @Public()
   @Implement(contract.users.getStats)
   getStats() {
-    return implement(contract.users.getStats).handler(({ input }) =>
-      this.usersService.getStats(input.params.id),
+    return implement(contract.users.getStats).handler(({ input, context }) =>
+      this.usersService.getStats(input.params.id, context.request.viewer),
     );
   }
 
