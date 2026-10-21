@@ -80,7 +80,7 @@ export const registerAvatarPathSchema = z.enum(
 
 /**
  * Minimum serie progress per unlockable avatar.
- * Fill when B3 (completeEpisode server-side) ships — see docs/MIGRATION.md § Avatares.
+ * Empty until serie progress is computed server-side.
  */
 export const AVATAR_PROGRESS_UNLOCK_RULES = {} as Partial<
   Record<AvatarProgressUnlockCharacterId, SerieProgress>

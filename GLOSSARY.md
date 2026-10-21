@@ -1,6 +1,6 @@
 # Glosario
 
-Vocabulario de LogPose. El nombre en `código` es el del contrato (`packages/contracts`).
+Vocabulario de LogPose. El nombre en `código` es el del contrato (`packages/contracts`); lo que aún no existe lleva «sin implementar».
 
 ## Serie
 
@@ -14,37 +14,37 @@ Tramo de una saga con su rango de episodios. `isFiller` marca los de relleno.
 Episodio del anime. Es el eje de la cronología: el progreso y los desbloqueos se anclan a episodios, no a capítulos del manga.
 
 **Canon / relleno**:
-Si un episodio adapta el manga (`canon`), no lo adapta (`filler`) o mezcla ambos (`mixed`).
+Si un episodio adapta el manga (`canon`), no lo adapta (`filler`), mezcla ambos (`mixed`) o resume (`recap`). Hoy el contrato solo tiene `isFiller` en `Arc`; los cuatro valores están en `data/research` y llegan al contrato al normalizar esos datos.
 
 **Progreso de la serie** (`serieProgress`):
-Hasta dónde ha llegado el usuario, como `{ saga, arc, episode }`. Desbloquea avatares (`avatar.schemas.ts`).
+Hasta dónde ha llegado el usuario, como `{ saga, arc, episode }`. Desbloqueará avatares (`AVATAR_PROGRESS_UNLOCK_RULES`, vacío hasta que el progreso se calcule en el servidor).
 
 ## Cartas y progresión
 
 **Character**:
-Entidad estable del personaje; agrupa sus cartas.
+Entidad estable del personaje; agrupa sus cartas. Sin implementar.
 
 **Card**:
-Coleccionable concreto anclado a un momento de la historia (Luffy Gear 5), no el personaje genérico. Todas las categorías (`character`, `item`, `fruit`, `sword`, `boat`) son `Card`.
+Coleccionable concreto anclado a un momento de la historia (Luffy Gear 5), no el personaje genérico. Todas las categorías (`character`, `item`, `fruit`, `sword`, `boat`) son `Card`. Sin implementar.
 _Evitar_: versión (a secas), personaje.
 
 **UnlockRule**:
-Regla del servidor que dice qué otorga un episodio, arco o evento.
+Regla del servidor que dice qué otorga un episodio, arco o evento. Sin implementar.
 
 **Recompensa** (`Reward`):
-Lo que otorga una `UnlockRule`: XP, berries y cartas.
+Lo que otorga una `UnlockRule`: XP, berries y cartas. Sin implementar.
 
 **XP** (`experience`):
 Experiencia del usuario; ordena el ranking. Cada episodio fija la que da (`episode.experience`).
 
 **Berries**:
-Moneda blanda del juego.
+Moneda blanda del juego. Sin implementar.
 
 **Logro** (`Achievement`):
 Reto con una condición (completar un arco, reunir N cartas) y su recompensa. Sin implementar.
 
 **rankingScore**:
-Puntuación materializada para el leaderboard: combina nivel, colección, rareza y logros.
+Puntuación materializada que ordenará el leaderboard combinando nivel, colección, rareza y logros. Sin implementar: hoy el ranking ordena por `experience`.
 
 **Server-authoritative**:
 El servidor decide y aplica las recompensas; el cliente solo informa de lo que ha hecho. Decidido, sin implementar.

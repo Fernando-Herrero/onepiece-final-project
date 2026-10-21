@@ -1,7 +1,5 @@
 # oRPC valida la salida y traduce los errores del contrato en un solo sitio
 
-Sustituye la regla de `parseOrThrow` del ADR 0001.
-
 ## Decisión
 
 - **Salida:** la valida oRPC contra el `.output()` del contrato. Los controllers devuelven lo que da el servicio, sin `parseOrThrow`.
