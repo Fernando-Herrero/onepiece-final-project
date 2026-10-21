@@ -1,0 +1,3 @@
+# Premium es un pago simulado que verifica la cuenta
+
+`/dashboard/settings/premium` pide una tarjeta y la valida solo en el navegador (número, caducidad y CVV, `card/use-card-validation.ts`), sin enviarla ni guardarla. Después llama a `users.verify`, que pone `verified: true` y hace aparecer `VerifiedBadge` junto al `@usuario`; `users.unverify` lo quita. Solo el dueño o un admin pueden llamarlos (`accessTo`), y son endpoints aparte porque `verified` no cabe en `users.update`, cuyo schema solo admite campos del perfil. El motivo de simular el pago no quedó registrado. Consecuencia: cualquier usuario puede verificarse a sí mismo, así que la insignia no acredita nada; un pago real necesitaría un proveedor y que `verify` dejara de poder llamarse desde el cliente.

@@ -1,0 +1,3 @@
+# Radix UI Themes es la base de componentes de la web
+
+Los componentes de la web parten de Radix UI Themes (`@radix-ui/themes`, montado en `integrations/radix-themes/radix-themes.provider.tsx`): `Box`, `Flex` y `Grid` para el layout, `Text` y `Heading` para el texto, y `Button`, `Card` o `Avatar` cuando cubren el caso. Tailwind y los componentes propios entran solo donde Radix no llega, y la identidad visual (fuentes y paleta de One Piece) va encima de Radix. Se eligió para que el dashboard sea coherente con menos CSS a medida; la arquitectura de referencia usa MUI, que no se copia. El uso concreto está en [`CONVENTIONS.md`](../CONVENTIONS.md#ui--radix--tailwind).

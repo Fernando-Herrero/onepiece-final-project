@@ -1,0 +1,3 @@
+# La landing no anima en móvil ni en pantallas táctiles
+
+`isMotionDisabled()` (`features/landing/motion/landing-motion.ts`) devuelve `true` con `(prefers-reduced-motion: reduce), (max-width: 767px), (pointer: coarse)` o con `data-reduce-motion` ([ADR 0014](0014-accesibilidad-con-data-attributes.md)), y entonces no se montan ni el scroll suave de Lenis ni las animaciones de GSAP. Con las mismas media queries, `globals.css` quita el grano animado, el brillo de las tarjetas y el `backdrop-filter`. Se decidió tras el primer despliegue en Vercel, donde la landing iba lenta en móvil. Consecuencia: cada animación nueva tiene que pasar por `isMotionDisabled()`, o se saltará esta regla.

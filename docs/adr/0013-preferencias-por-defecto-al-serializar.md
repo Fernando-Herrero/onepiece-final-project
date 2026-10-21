@@ -1,0 +1,3 @@
+# Las preferencias que faltan se rellenan al serializar
+
+`preferences` es opcional en `UserDocument`, porque los usuarios creados antes de que existiera no lo tienen en Mongo. `withPreferenceDefaults` (`user.mappers.ts`) lo completa grupo a grupo (`notifications`, `timeline`, `accessibility`) con `DEFAULT_USER_PREFERENCES` al serializar; sin eso, esos usuarios romperían `sessionUserSchema`. El registro ya guarda los valores por defecto, y `users.updatePreferences` mezcla por grupo lo que llega con lo guardado. No hay migración de datos: un valor por defecto nuevo llega a todos sin tocar Mongo, a cambio de que el documento no diga qué preferencias tiene de verdad el usuario.

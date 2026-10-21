@@ -1,0 +1,3 @@
+# Los textos de la serie viven en los locales de la web
+
+Los JSON de `apps/api/src/data/serie/` llevan los datos de juego (ids, relaciones, `experience`, `achievements`), y sus textos no son los que se pintan. Los nombres y descripciones de sagas, arcos y episodios salen de `apps/web/public/locales/{es,en,ja}/serie.json`, por id, y los genera `apps/web/scripts/build-serie-locales.mjs` a partir de esos JSON. Los textos heredados mezclaban idiomas; así la serie se traduce con el mismo i18n que el resto de la web, y la API no necesita saber el idioma. Consecuencia: cada cambio en los datos de la serie obliga a volver a lanzar el script.

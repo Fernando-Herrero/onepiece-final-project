@@ -1,0 +1,3 @@
+# Las preferencias de accesibilidad se aplican con atributos `data-*` en `<html>`
+
+`useApplyAccessibilityPreferences` (`features/settings/use-apply-accessibility.ts`), montado una vez en `DashboardLayout`, escribe `data-font-scale`, `data-high-contrast` y `data-reduce-motion` en `<html>` a partir de las preferencias de la sesión. De esos atributos cuelgan las reglas de `globals.css` (tamaño de letra, contraste del texto secundario, corte de animaciones y transiciones), y `isMotionDisabled()` también lee `data-reduce-motion`. Así ningún componente lee las preferencias: el CSS llega a todo, incluidos Radix y las animaciones de GSAP ya aplicadas. Como el hook vive en el dashboard, en la landing pública, donde no hay sesión, no se aplican.
