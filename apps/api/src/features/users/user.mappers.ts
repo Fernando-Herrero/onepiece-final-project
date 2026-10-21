@@ -1,13 +1,17 @@
 import {
   DEFAULT_USER_PREFERENCES,
+  type privacySchema,
+  type serieProgressSchema,
+  type unlockedCardsSchema,
   type userPreferencesSchema,
+  type userRoleSchema,
 } from '@logpose/contracts/common/user.schemas';
 import type { ObjectId, WithId } from 'mongodb';
 import type * as z from 'zod/v4';
 
 export type UserPreferences = z.infer<typeof userPreferencesSchema>;
 
-export type UserRole = 'user' | 'admin';
+export type UserRole = z.infer<typeof userRoleSchema>;
 
 export type UserDocument = {
   _id: ObjectId;
@@ -26,25 +30,10 @@ export type UserDocument = {
   verified: boolean;
   isActive: boolean;
   experience: number;
-  serieProgress: {
-    saga: number;
-    arc: number;
-    episode: number;
-  };
-  unlockedCards: {
-    characters: number[];
-    items: number[];
-    fruits: number[];
-    swords: number[];
-    boats: number[];
-  };
+  serieProgress: z.infer<typeof serieProgressSchema>;
+  unlockedCards: z.infer<typeof unlockedCardsSchema>;
   completedEpisodes: number[];
-  privacy: {
-    showPosts: boolean;
-    showLikes: boolean;
-    showBookmarked: boolean;
-    showComments: boolean;
-  };
+  privacy: z.infer<typeof privacySchema>;
   /** Opcional en Mongo: los usuarios creados antes de settings no lo tienen. */
   preferences?: UserPreferences;
   followers: ObjectId[];

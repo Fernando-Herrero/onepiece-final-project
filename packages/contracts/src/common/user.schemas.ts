@@ -64,6 +64,13 @@ export const DEFAULT_USER_PREFERENCES: z.infer<typeof userPreferencesSchema> = {
   },
 };
 
+export const DEFAULT_PRIVACY: z.infer<typeof privacySchema> = {
+  showPosts: true,
+  showLikes: true,
+  showBookmarked: true,
+  showComments: true,
+};
+
 export const serieProgressSchema = z.object({
   saga: z.number(),
   arc: z.number(),

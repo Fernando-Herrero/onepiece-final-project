@@ -16,6 +16,10 @@ type NotificationDocument = {
   updatedAt?: Date;
 };
 
+type NewNotification =
+  | { type: 'follow'; to: string; from: string }
+  | { type: 'like' | 'bookmark'; to: string; from: string; postId: string };
+
 @Injectable()
 export class NotificationsPersistence {
   constructor(
@@ -23,59 +27,24 @@ export class NotificationsPersistence {
     private readonly notifications: Collection<NotificationDocument>,
   ) {}
 
-  async createFollow(to: string, from: string) {
-    if (to === from) {
-      return null;
+  /** Nadie se notifica a sí mismo: si `to` y `from` coinciden, no se crea. */
+  async create(notification: NewNotification) {
+    if (notification.to === notification.from) {
+      return;
     }
 
     const now = new Date();
-    const result = await this.notifications.insertOne({
-      type: 'follow',
-      to: new ObjectId(to),
-      from: new ObjectId(from),
+    await this.notifications.insertOne({
+      _id: new ObjectId(),
+      type: notification.type,
+      to: new ObjectId(notification.to),
+      from: new ObjectId(notification.from),
+      ...(notification.type === 'follow'
+        ? {}
+        : { postId: new ObjectId(notification.postId) }),
       read: false,
       createdAt: now,
       updatedAt: now,
-    } as NotificationDocument);
-
-    return result.insertedId;
-  }
-
-  async createLike(to: string, from: string, postId: string) {
-    if (to === from) {
-      return null;
-    }
-
-    const now = new Date();
-    const result = await this.notifications.insertOne({
-      type: 'like',
-      to: new ObjectId(to),
-      from: new ObjectId(from),
-      postId: new ObjectId(postId),
-      read: false,
-      createdAt: now,
-      updatedAt: now,
-    } as NotificationDocument);
-
-    return result.insertedId;
-  }
-
-  async createBookmark(to: string, from: string, postId: string) {
-    if (to === from) {
-      return null;
-    }
-
-    const now = new Date();
-    const result = await this.notifications.insertOne({
-      type: 'bookmark',
-      to: new ObjectId(to),
-      from: new ObjectId(from),
-      postId: new ObjectId(postId),
-      read: false,
-      createdAt: now,
-      updatedAt: now,
-    } as NotificationDocument);
-
-    return result.insertedId;
+    });
   }
 }

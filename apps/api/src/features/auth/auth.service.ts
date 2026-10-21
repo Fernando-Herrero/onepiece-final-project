@@ -1,14 +1,16 @@
-import { DEFAULT_USER_PREFERENCES } from '@logpose/contracts/common/user.schemas';
+import {
+  type createUserSchema,
+  DEFAULT_PRIVACY,
+  DEFAULT_USER_PREFERENCES,
+} from '@logpose/contracts/common/user.schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
 import type { Response } from 'express';
+import type * as z from 'zod/v4';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
-import {
-  serializeSessionUser,
-  type UserDocument,
-} from '../users/user.mappers.js';
+import { serializeSessionUser } from '../users/user.mappers.js';
 import { UsersPersistence } from '../users/users.persistence.js';
 import { clearSessionCookie, setSessionCookie } from './auth.cookies.js';
 import { AuthSessionService } from './auth-session.service.js';
@@ -20,23 +22,7 @@ export class AuthService {
     private readonly usersPersistence: UsersPersistence,
   ) {}
 
-  async register(
-    input: {
-      username: string;
-      firstName: string;
-      lastName: string;
-      email: string;
-      password: string;
-      avatar: string;
-      displayName?: string;
-      bio?: string;
-      coverImage?: string;
-      phoneNumber?: string;
-      address?: string;
-      privacy?: UserDocument['privacy'];
-    },
-    res: Response,
-  ) {
+  async register(input: z.infer<typeof createUserSchema>, res: Response) {
     const hashedPassword = await bcrypt.hash(input.password, 10);
 
     const newUser = await this.usersPersistence
@@ -52,12 +38,7 @@ export class AuthService {
         coverImage: input.coverImage,
         phoneNumber: input.phoneNumber,
         address: input.address,
-        privacy: input.privacy ?? {
-          showPosts: true,
-          showLikes: true,
-          showBookmarked: true,
-          showComments: true,
-        },
+        privacy: input.privacy ?? DEFAULT_PRIVACY,
         preferences: DEFAULT_USER_PREFERENCES,
         role: 'user',
         verified: false,

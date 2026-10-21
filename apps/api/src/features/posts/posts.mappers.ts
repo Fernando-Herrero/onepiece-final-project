@@ -1,6 +1,10 @@
-import { getPostTextMaxLength } from '@logpose/contracts/common/post.schemas';
+import {
+  getPostTextMaxLength,
+  type postVisibilitySchema,
+} from '@logpose/contracts/common/post.schemas';
 import { ORPCError } from '@orpc/server';
-import { ObjectId, type WithId } from 'mongodb';
+import { type Filter, ObjectId, type WithId } from 'mongodb';
+import type * as z from 'zod/v4';
 
 import type { Viewer } from '../auth/access.js';
 import {
@@ -8,6 +12,7 @@ import {
   type UserDocument,
 } from '../users/user.mappers.js';
 import type { UsersPersistence } from '../users/users.persistence.js';
+import type { PostsPersistence } from './posts.persistence.js';
 
 /**
  * Forma del documento Mongo en la colección `posts`.
@@ -18,7 +23,7 @@ export type PostDocument = {
   text: string;
   userId: ObjectId;
   images?: string[];
-  visibility: 'public' | 'private' | 'followers';
+  visibility: z.infer<typeof postVisibilitySchema>;
   isDeleted: boolean;
   shareToken?: string;
   isRetweet: boolean;
@@ -52,14 +57,42 @@ export function assertTextLength(text: string, verified: boolean) {
 }
 
 /**
+ * Contadores del post y, si el viewer tiene sesión, si le ha dado like, lo ha
+ * guardado o (si se pasa el set) lo ha retuiteado. Un retweet se pinta con
+ * los del original.
+ */
+function interactionStats(
+  post: WithId<PostDocument>,
+  viewer: Viewer,
+  retweetedOriginalIds?: Set<string>,
+) {
+  return {
+    likesCount: post.likesCount,
+    bookmarksCount: post.bookmarksCount,
+    commentsCount: post.commentsCount,
+    retweetsCount: post.retweetsCount,
+    ...(viewer.kind === 'user'
+      ? {
+          userLiked: post.likes.some(id => id.toString() === viewer.id),
+          userBookmarked: post.bookmarks.some(
+            id => id.toString() === viewer.id,
+          ),
+          ...(retweetedOriginalIds
+            ? { userRetweeted: retweetedOriginalIds.has(post._id.toString()) }
+            : {}),
+        }
+      : {}),
+  };
+}
+
+/**
  * Convierte un documento Mongo + autor ya resuelto en la forma `postPublicSchema`.
  *
  * - `userId` pasa de ObjectId a embed del autor (`serializeAuthorEmbed`).
  * - `retweets` (ObjectId) → strings. `likes` y `bookmarks` no salen: dirían
  *   quién ha dado like o guardado; basta con los contadores y los flags.
  * - Fechas → ISO string para JSON.
- * - Si el viewer tiene sesión, añade `userLiked` y `userBookmarked`
- *   comparando su id con los arrays del documento.
+ * - Contadores y flags del viewer: `interactionStats`.
  */
 export function serializePost(
   post: WithId<PostDocument>,
@@ -79,28 +112,12 @@ export function serializePost(
     retweetOf: post.retweetOf?.toString(),
     isReply: post.isReply,
     language: post.language,
-    likesCount: post.likesCount,
-    bookmarksCount: post.bookmarksCount,
-    commentsCount: post.commentsCount,
-    retweetsCount: post.retweetsCount,
     hashtags: post.hashtags,
     mentions: post.mentions,
     retweets: post.retweets.map(String),
     createdAt: post.createdAt?.toISOString(),
     updatedAt: post.updatedAt?.toISOString(),
-    ...(viewer.kind === 'user'
-      ? {
-          userLiked: post.likes.some(id => id.toString() === viewer.id),
-          userBookmarked: post.bookmarks.some(
-            id => id.toString() === viewer.id,
-          ),
-          ...(retweetedOriginalIds
-            ? {
-                userRetweeted: retweetedOriginalIds.has(post._id.toString()),
-              }
-            : {}),
-        }
-      : {}),
+    ...interactionStats(post, viewer, retweetedOriginalIds),
   };
 }
 
@@ -130,126 +147,79 @@ export function decodePostCursor(cursor: string) {
   return { createdAt, id: new ObjectId(id) };
 }
 
-/** Ids para comprobar si el viewer retweeteó (original, no el wrapper). */
-export function collectRetweetCheckIds(posts: WithId<PostDocument>[]) {
-  return posts.map(post =>
-    post.isRetweet && post.retweetOf
-      ? post.retweetOf.toString()
-      : post._id.toString(),
-  );
-}
-
-function applyOriginalInteractionStats(
-  serialized: ReturnType<typeof serializePost>,
-  original: WithId<PostDocument>,
-  originalAuthor: WithId<UserDocument>,
-  viewer: Viewer,
-  retweetedOriginalIds?: Set<string>,
-) {
-  const originalId = original._id.toString();
-
-  return {
-    ...serialized,
-    originalAuthor: serializeAuthorEmbed(originalAuthor),
-    likesCount: original.likesCount,
-    bookmarksCount: original.bookmarksCount,
-    retweetsCount: original.retweetsCount,
-    commentsCount: original.commentsCount,
-    ...(viewer.kind === 'user'
-      ? {
-          userLiked: original.likes.some(id => id.toString() === viewer.id),
-          userBookmarked: original.bookmarks.some(
-            id => id.toString() === viewer.id,
-          ),
-          ...(retweetedOriginalIds
-            ? { userRetweeted: retweetedOriginalIds.has(originalId) }
-            : {}),
-        }
-      : {}),
-  };
+/** El original que envuelve un retweet; `undefined` si el post no lo es. */
+function originalIdOf(post: WithId<PostDocument>) {
+  return post.isRetweet ? post.retweetOf : undefined;
 }
 
 /**
- * Enriquece una lista de posts con datos del autor y flags del viewer.
- *
- * Flujo (evita N+1 queries por post):
- * 1. Extrae ids de autor únicos (retweeter + autores originales).
- * 2. Una sola lectura batch en `usersPersistence.findByIds`.
- * 3. Por cada post, empareja autor y llama a `serializePost`.
- *
- * Si `originalPostsById` incluye el original de un retweet, añade `originalAuthor`
- * y sincroniza contadores/interacciones del post original en la card.
+ * Serializa una lista de posts para el viewer con tres lecturas en lote (sin
+ * N+1): los originales de los retweets, cuáles ha retuiteado el viewer y los
+ * autores. Un retweet sale con el autor y las interacciones de su original.
  */
-export async function serializePostsWithAuthors(
+export async function serializePostsForViewer(
   posts: WithId<PostDocument>[],
-  usersPersistence: UsersPersistence,
   viewer: Viewer,
-  retweetedOriginalIds?: Set<string>,
-  originalPostsById?: Map<string, WithId<PostDocument>>,
+  visible: Filter<PostDocument>,
+  persistence: { posts: PostsPersistence; users: UsersPersistence },
 ) {
-  if (posts.length === 0) {
-    return [];
-  }
-
-  const authorIds = new Set(posts.map(post => post.userId.toString()));
-
-  for (const post of posts) {
-    if (!post.isRetweet || !post.retweetOf || !originalPostsById) {
-      continue;
-    }
-
-    const original = originalPostsById.get(post.retweetOf.toString());
-    if (original) {
-      authorIds.add(original.userId.toString());
-    }
-  }
-
-  const authors = await usersPersistence.findByIds(
-    [...authorIds].map(id => new ObjectId(id)),
+  const originals = await persistence.posts.findByIds(
+    posts.map(originalIdOf).filter(id => id !== undefined),
+    visible,
+  );
+  const retweetedOriginalIds =
+    viewer.kind === 'user'
+      ? await persistence.posts.findRetweetedOriginalIds(
+          viewer.id,
+          posts.map(post => (originalIdOf(post) ?? post._id).toString()),
+        )
+      : undefined;
+  const authors = await persistence.users.findByIds(
+    [...posts, ...originals].map(post => post.userId),
+  );
+  const originalById = new Map(
+    originals.map(original => [original._id.toString(), original]),
   );
   const authorById = new Map(
     authors.map(author => [author._id.toString(), author]),
   );
-
-  const serializedOrDropped = posts.map(post => {
+  const authorOf = (post: WithId<PostDocument>) => {
     const author = authorById.get(post.userId.toString());
 
     if (!author) {
       throw new ORPCError('USER_NOT_FOUND');
     }
 
-    const serialized = serializePost(
-      post,
-      author,
-      viewer,
-      retweetedOriginalIds,
-    );
+    return author;
+  };
 
-    if (!post.isRetweet || !post.retweetOf || !originalPostsById) {
-      return serialized;
-    }
+  return posts
+    .map(post => {
+      const serialized = serializePost(
+        post,
+        authorOf(post),
+        viewer,
+        retweetedOriginalIds,
+      );
+      const originalId = originalIdOf(post);
 
-    const original = originalPostsById.get(post.retweetOf.toString());
-    if (!original) {
-      // El original ya no está (borrado, o huérfano si la cascada de
-      // softDeleteById no llegó a completarse): no mostramos la copia
-      // congelada del wrapper, se descarta como si nunca hubiera existido.
-      return null;
-    }
+      if (!originalId) {
+        return serialized;
+      }
 
-    const originalAuthor = authorById.get(original.userId.toString());
-    if (!originalAuthor) {
-      throw new ORPCError('USER_NOT_FOUND');
-    }
+      const original = originalById.get(originalId.toString());
 
-    return applyOriginalInteractionStats(
-      serialized,
-      original,
-      originalAuthor,
-      viewer,
-      retweetedOriginalIds,
-    );
-  });
+      if (!original) {
+        // Borrado, huérfano (la cascada de `softDeleteById` no llegó a
+        // completarse) o no visible: el envoltorio no sale.
+        return null;
+      }
 
-  return serializedOrDropped.filter(post => post !== null);
+      return {
+        ...serialized,
+        originalAuthor: serializeAuthorEmbed(authorOf(original)),
+        ...interactionStats(original, viewer, retweetedOriginalIds),
+      };
+    })
+    .filter(post => post !== null);
 }

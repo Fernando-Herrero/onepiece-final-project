@@ -518,3 +518,58 @@ describe('UsersService.getStats, totalComments y lo que no ves', () => {
     ).resolves.toMatchObject({ totalComments: 3, commentedPosts: 2 });
   });
 });
+
+describe('UsersService.getPosts, retweets', () => {
+  let authorId: string;
+  let retweeterId: string;
+  let originalId: string;
+
+  beforeAll(async () => {
+    const postsPersistence = new PostsPersistence(
+      client.db('test').collection('posts'),
+    );
+    const author = await usersPersistence.insert(newUser('rtab_author'));
+    const retweeter = await usersPersistence.insert(newUser('rtab_retweeter'));
+    const liker1 = await usersPersistence.insert(newUser('rtab_liker1'));
+    const liker2 = await usersPersistence.insert(newUser('rtab_liker2'));
+    authorId = author._id.toString();
+    retweeterId = retweeter._id.toString();
+    originalId = (
+      await postsPersistence.insert({
+        text: 'rtab original',
+        userId: author._id,
+        visibility: 'public',
+        language: 'es',
+      })
+    )._id.toString();
+    for (const liker of [liker1, liker2]) {
+      await postsPersistence.toggleUserField(
+        originalId,
+        liker._id.toString(),
+        'likes',
+        {},
+      );
+    }
+    await postsPersistence.toggleRetweet(originalId, retweeterId);
+  });
+
+  it('el envoltorio sale con el autor original y los contadores del original', async () => {
+    const posts = await service.getPosts(retweeterId, userViewer(retweeterId));
+
+    expect(posts.find(post => post.retweetOf === originalId)).toMatchObject({
+      isRetweet: true,
+      originalAuthor: { username: 'rtab_author' },
+      likesCount: 2,
+      retweetsCount: 1,
+      userRetweeted: true,
+    });
+  });
+
+  it('para otro viewer, userRetweeted es false', async () => {
+    const posts = await service.getPosts(retweeterId, userViewer(authorId));
+
+    expect(posts.find(post => post.retweetOf === originalId)).toMatchObject({
+      userRetweeted: false,
+    });
+  });
+});

@@ -5,6 +5,12 @@ import { type Collection, type Filter, ObjectId, type WithId } from 'mongodb';
 
 import { decodePostCursor, type PostDocument } from './posts.mappers.js';
 
+type NewPost = Pick<
+  PostDocument,
+  'text' | 'userId' | 'images' | 'visibility' | 'language'
+> &
+  Partial<Pick<PostDocument, 'shareToken' | 'retweetOf'>>;
+
 /**
  * Los métodos de lectura reciben `visible` (`visiblePostsFilter`): un post que
  * el viewer no puede ver no se lista, no se cuenta y no se toca.
@@ -109,7 +115,7 @@ export class PostsPersistence {
    * Retweets ajenos de estos posts. Al borrar una cuenta se llama antes de
    * `deleteByUserId`: sin esto, los retweets que OTRA gente hizo de sus posts
    * quedan huérfanos (`retweetOf` apuntando a nada) — invisibles gracias al
-   * filtro en `serializePostsWithAuthors`, pero acumulándose sin límite.
+   * filtro en `serializePostsForViewer`, pero acumulándose sin límite.
    */
   deleteRetweetsOf(postIds: ObjectId[]) {
     if (postIds.length === 0) {
@@ -292,39 +298,21 @@ export class PostsPersistence {
       };
     }
 
-    const now = new Date();
-    const retweetPost: PostDocument = {
-      _id: new ObjectId(),
+    const retweetPost = await this.insert({
       text: original.text,
       userId: new ObjectId(userId),
-      images: original.images ?? [],
+      images: original.images,
       visibility: 'public',
-      isDeleted: false,
-      isRetweet: true,
-      retweetOf: new ObjectId(originalId),
-      isReply: false,
       language: original.language,
-      likes: [],
-      bookmarks: [],
-      likesCount: 0,
-      bookmarksCount: 0,
-      commentsCount: 0,
-      retweetsCount: 0,
-      hashtags: [],
-      mentions: [],
-      retweets: [],
-      createdAt: now,
-      updatedAt: now,
-    };
-
-    await this.posts.insertOne(retweetPost);
+      retweetOf: original._id,
+    });
 
     const updated = await this.posts.findOneAndUpdate(
       { _id: new ObjectId(originalId), isDeleted: false },
       {
         $addToSet: { retweets: retweetPost._id },
         $inc: { retweetsCount: 1 },
-        $set: { updatedAt: now },
+        $set: { updatedAt: new Date() },
       },
       { returnDocument: 'after' },
     );
@@ -337,25 +325,16 @@ export class PostsPersistence {
     return { original: updated, retweeted: true as const, retweetPost };
   }
 
-  /** Inserta un post nuevo; devuelve el documento persistido con `_id`. */
-  async insert(
-    data: Pick<
-      PostDocument,
-      'text' | 'userId' | 'images' | 'visibility' | 'shareToken' | 'language'
-    >,
-  ) {
+  /** Único constructor de posts: el resto de campos empieza vacío. */
+  async insert(data: NewPost) {
     const now = new Date();
     const document: PostDocument = {
+      ...data,
       _id: new ObjectId(),
-      text: data.text,
-      userId: data.userId,
       images: data.images ?? [],
-      visibility: data.visibility,
       isDeleted: false,
-      shareToken: data.shareToken,
-      isRetweet: false,
+      isRetweet: data.retweetOf !== undefined,
       isReply: false,
-      language: data.language,
       likes: [],
       bookmarks: [],
       likesCount: 0,

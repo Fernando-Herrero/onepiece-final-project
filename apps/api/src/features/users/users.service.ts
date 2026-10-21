@@ -3,7 +3,7 @@ import { updateUserSchema } from '@logpose/contracts/common/user.schemas';
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
-import { type Filter, ObjectId, type WithId } from 'mongodb';
+import { ObjectId } from 'mongodb';
 import * as z from 'zod/v4';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
@@ -17,11 +17,7 @@ import {
 } from '../auth/access.js';
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
-import {
-  collectRetweetCheckIds,
-  type PostDocument,
-  serializePostsWithAuthors,
-} from '../posts/posts.mappers.js';
+import { serializePostsForViewer } from '../posts/posts.mappers.js';
 import { PostsPersistence } from '../posts/posts.persistence.js';
 import {
   serializeSessionUser,
@@ -68,45 +64,6 @@ export class UsersService {
     }
   }
 
-  private async serializePostsForViewer(
-    posts: WithId<PostDocument>[],
-    viewer: Viewer,
-    visible: Filter<PostDocument>,
-  ) {
-    const originalIds = [
-      ...new Set(
-        posts
-          .filter(post => post.isRetweet && post.retweetOf)
-          .map(post => post.retweetOf!.toString()),
-      ),
-    ];
-    const originals =
-      originalIds.length > 0
-        ? await this.postsPersistence.findByIds(
-            originalIds.map(id => new ObjectId(id)),
-            visible,
-          )
-        : [];
-    const originalPostsById = new Map(
-      originals.map(post => [post._id.toString(), post]),
-    );
-    const retweetedOriginalIds =
-      viewer.kind === 'user'
-        ? await this.postsPersistence.findRetweetedOriginalIds(
-            viewer.id,
-            collectRetweetCheckIds(posts),
-          )
-        : undefined;
-
-    return serializePostsWithAuthors(
-      posts,
-      this.usersPersistence,
-      viewer,
-      retweetedOriginalIds,
-      originalPostsById,
-    );
-  }
-
   /** Posts publicados por el perfil; respeta showPosts si el viewer no es el dueño. */
   async getPosts(profileUserId: string, viewer: Viewer) {
     await this.assertVisibleUser(profileUserId, 'showPosts', viewer);
@@ -116,7 +73,10 @@ export class UsersService {
       profileUserId,
       visible,
     );
-    return this.serializePostsForViewer(posts, viewer, visible);
+    return serializePostsForViewer(posts, viewer, visible, {
+      posts: this.postsPersistence,
+      users: this.usersPersistence,
+    });
   }
 
   /** Posts que el perfil ha marcado con like; respeta showLikes. */
@@ -128,7 +88,10 @@ export class UsersService {
       profileUserId,
       visible,
     );
-    return this.serializePostsForViewer(posts, viewer, visible);
+    return serializePostsForViewer(posts, viewer, visible, {
+      posts: this.postsPersistence,
+      users: this.usersPersistence,
+    });
   }
 
   /** Posts guardados en bookmarks del perfil; respeta showBookmarked. */
@@ -140,7 +103,10 @@ export class UsersService {
       profileUserId,
       visible,
     );
-    return this.serializePostsForViewer(posts, viewer, visible);
+    return serializePostsForViewer(posts, viewer, visible, {
+      posts: this.postsPersistence,
+      users: this.usersPersistence,
+    });
   }
 
   /** Posts en los que el perfil ha comentado; respeta showComments. */
@@ -151,7 +117,10 @@ export class UsersService {
     const postIds =
       await this.commentsPersistence.distinctPostIdsByAuthor(profileUserId);
     const posts = await this.postsPersistence.findByIds(postIds, visible);
-    return this.serializePostsForViewer(posts, viewer, visible);
+    return serializePostsForViewer(posts, viewer, visible, {
+      posts: this.postsPersistence,
+      users: this.usersPersistence,
+    });
   }
 
   async getById(userId: string, viewer: Viewer) {
@@ -253,7 +222,11 @@ export class UsersService {
     const updatedViewer = await this.usersPersistence.findById(viewerId);
     const updatedTarget = await this.usersPersistence.findById(targetUserId);
 
-    await this.notificationsPersistence.createFollow(targetUserId, viewerId);
+    await this.notificationsPersistence.create({
+      type: 'follow',
+      to: targetUserId,
+      from: viewerId,
+    });
 
     return {
       message: `Ahora sigues a @${target.username}`,

@@ -5,7 +5,7 @@ import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
 import type { listPostsInputSchema } from '@logpose/contracts/features/posts/schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
-import { type Filter, ObjectId, type WithId } from 'mongodb';
+import { ObjectId } from 'mongodb';
 import type * as z from 'zod/v4';
 
 import {
@@ -18,11 +18,9 @@ import { NotificationsPersistence } from '../notifications/notifications.persist
 import { UsersPersistence } from '../users/users.persistence.js';
 import {
   assertTextLength,
-  collectRetweetCheckIds,
   encodePostCursor,
-  type PostDocument,
   serializePost,
-  serializePostsWithAuthors,
+  serializePostsForViewer,
 } from './posts.mappers.js';
 import { PostsPersistence } from './posts.persistence.js';
 
@@ -47,21 +45,10 @@ export class PostsService {
     );
     const hasMore = rows.length > limit;
     const page = hasMore ? rows.slice(0, limit) : rows;
-    const originalPostsById = await this.loadOriginalPostsMap(page, visible);
-    const retweetedOriginalIds =
-      viewer.kind === 'user'
-        ? await this.postsPersistence.findRetweetedOriginalIds(
-            viewer.id,
-            collectRetweetCheckIds(page),
-          )
-        : undefined;
-    const posts = await serializePostsWithAuthors(
-      page,
-      this.usersPersistence,
-      viewer,
-      retweetedOriginalIds,
-      originalPostsById,
-    );
+    const posts = await serializePostsForViewer(page, viewer, visible, {
+      posts: this.postsPersistence,
+      users: this.usersPersistence,
+    });
     const lastRow = page.at(-1);
 
     return {
@@ -107,14 +94,14 @@ export class PostsService {
     }
 
     const liked = !result.alreadyHad;
-    const ownerId = result.post.userId.toString();
 
-    if (liked && ownerId !== viewer.id) {
-      await this.notificationsPersistence.createLike(
-        ownerId,
-        viewer.id,
+    if (liked) {
+      await this.notificationsPersistence.create({
+        type: 'like',
+        to: result.post.userId.toString(),
+        from: viewer.id,
         postId,
-      );
+      });
     }
 
     return {
@@ -137,14 +124,14 @@ export class PostsService {
     }
 
     const bookmarked = !result.alreadyHad;
-    const ownerId = result.post.userId.toString();
 
-    if (bookmarked && ownerId !== viewer.id) {
-      await this.notificationsPersistence.createBookmark(
-        ownerId,
-        viewer.id,
+    if (bookmarked) {
+      await this.notificationsPersistence.create({
+        type: 'bookmark',
+        to: result.post.userId.toString(),
+        from: viewer.id,
         postId,
-      );
+      });
     }
 
     return {
@@ -155,9 +142,10 @@ export class PostsService {
   }
 
   async toggleRetweet(postId: string, viewer: UserViewer) {
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
     const original = await this.postsPersistence.findVisibleById(
       postId,
-      await visiblePostsFilter(viewer, this.usersPersistence),
+      visible,
     );
 
     if (!original) {
@@ -176,15 +164,11 @@ export class PostsService {
     }
 
     if (result.retweeted) {
-      const originalPostsById = new Map([
-        [result.original._id.toString(), result.original],
-      ]);
-      const [retweetPost] = await serializePostsWithAuthors(
+      const [retweetPost] = await serializePostsForViewer(
         [result.retweetPost],
-        this.usersPersistence,
         viewer,
-        new Set([postId]),
-        originalPostsById,
+        visible,
+        { posts: this.postsPersistence, users: this.usersPersistence },
       );
 
       return {
@@ -203,35 +187,9 @@ export class PostsService {
     };
   }
 
-  private async loadOriginalPostsMap(
-    posts: WithId<PostDocument>[],
-    visible: Filter<PostDocument>,
-  ) {
-    const originalIds = [
-      ...new Set(
-        posts
-          .filter(post => post.isRetweet && post.retweetOf)
-          .map(post => post.retweetOf!.toString()),
-      ),
-    ];
-
-    if (originalIds.length === 0) {
-      return new Map();
-    }
-
-    const originals = await this.postsPersistence.findByIds(
-      originalIds.map(id => new ObjectId(id)),
-      visible,
-    );
-
-    return new Map(originals.map(post => [post._id.toString(), post]));
-  }
-
   async delete(postId: string, viewer: UserViewer) {
-    const post = await this.postsPersistence.findVisibleById(
-      postId,
-      await visiblePostsFilter(viewer, this.usersPersistence),
-    );
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
+    const post = await this.postsPersistence.findVisibleById(postId, visible);
 
     if (!post) {
       throw new ORPCError('POST_NOT_FOUND');
@@ -247,13 +205,15 @@ export class PostsService {
       throw new ORPCError('POST_NOT_FOUND');
     }
 
-    const [serialized] = await serializePostsWithAuthors(
+    const [serialized] = await serializePostsForViewer(
       [deleted],
-      this.usersPersistence,
       viewer,
+      visible,
+      { posts: this.postsPersistence, users: this.usersPersistence },
     );
 
-    // Sin `originalPostsById` no se descarta ningún post: siempre hay uno.
+    // Un retweet solo envuelve un original público y vivo (`toggleRetweet` y la
+    // cascada de `softDeleteById`), así que nunca se descarta.
     return serialized!;
   }
 }

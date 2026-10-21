@@ -425,3 +425,126 @@ describe('PostsService.list con cursor', () => {
     ]);
   });
 });
+
+describe('PostsService, retweet de un post público', () => {
+  let seed: Awaited<ReturnType<typeof seedOwnerWithPosts>>;
+  let retweeterId: string;
+
+  beforeAll(async () => {
+    seed = await seedOwnerWithPosts('rtcard');
+    retweeterId = seed.otherId;
+    // Dos likes ajenos al original: el seguidor y el propio dueño.
+    await service.toggleLike(seed.publicId, userViewer(seed.followerId));
+    await service.toggleLike(seed.publicId, userViewer(seed.ownerId));
+    await service.toggleRetweet(seed.publicId, userViewer(retweeterId));
+  });
+
+  const wrapper = async (viewer: Viewer) =>
+    (await feed(viewer)).posts.find(
+      post => post.isRetweet && post.retweetOf === seed.publicId,
+    );
+
+  it('sale en el feed con el autor original y los contadores del original', async () => {
+    await expect(wrapper(userViewer(seed.ownerId))).resolves.toMatchObject({
+      isRetweet: true,
+      retweetOf: seed.publicId,
+      originalAuthor: { username: 'rtcard_owner' },
+      likesCount: 2,
+      retweetsCount: 1,
+    });
+  });
+
+  it('userLiked refleja el like del viewer sobre el original', async () => {
+    await expect(wrapper(userViewer(seed.followerId))).resolves.toMatchObject({
+      userLiked: true,
+    });
+    await expect(wrapper(userViewer(retweeterId))).resolves.toMatchObject({
+      userLiked: false,
+    });
+  });
+
+  it('userRetweeted es true para quien retuiteó y false para los demás', async () => {
+    await expect(wrapper(userViewer(retweeterId))).resolves.toMatchObject({
+      userRetweeted: true,
+    });
+    await expect(wrapper(userViewer(seed.followerId))).resolves.toMatchObject({
+      userRetweeted: false,
+    });
+  });
+});
+
+describe('PostsService.toggleRetweet, respuesta', () => {
+  it('retuitear devuelve el retweet y deshacerlo devuelve su id', async () => {
+    const seed = await seedOwnerWithPosts('rttoggle');
+    const viewer = userViewer(seed.otherId);
+
+    const done = await service.toggleRetweet(seed.publicId, viewer);
+
+    expect(done).toMatchObject({
+      retweeted: true,
+      userRetweeted: true,
+      retweetsCount: 1,
+      retweetPost: {
+        retweetOf: seed.publicId,
+        originalAuthor: { username: 'rttoggle_owner' },
+      },
+    });
+
+    const undone = await service.toggleRetweet(seed.publicId, viewer);
+
+    expect(undone).toMatchObject({
+      retweeted: false,
+      retweetsCount: 0,
+      removedRetweetPostId: (done as { retweetPost: { _id: string } })
+        .retweetPost._id,
+    });
+  });
+});
+
+describe('PostsService, notificaciones de like y bookmark', () => {
+  const notificationsOf = (postId: string) =>
+    db
+      .collection('notifications')
+      .find({ postId: new ObjectId(postId) })
+      .toArray();
+
+  it('el like de otro usuario crea una notificación para el dueño', async () => {
+    const seed = await seedOwnerWithPosts('notiflike');
+
+    await service.toggleLike(seed.publicId, userViewer(seed.otherId));
+
+    const notifications = await notificationsOf(seed.publicId);
+    expect(notifications).toHaveLength(1);
+    expect(notifications[0]).toMatchObject({ type: 'like', read: false });
+    expect(String(notifications[0]!.to)).toBe(seed.ownerId);
+    expect(String(notifications[0]!.from)).toBe(seed.otherId);
+  });
+
+  it('el like del dueño a su propio post no crea notificación', async () => {
+    const seed = await seedOwnerWithPosts('notiflikeown');
+
+    await service.toggleLike(seed.publicId, userViewer(seed.ownerId));
+
+    await expect(notificationsOf(seed.publicId)).resolves.toHaveLength(0);
+  });
+
+  it('el bookmark de otro usuario crea una notificación para el dueño', async () => {
+    const seed = await seedOwnerWithPosts('notifbook');
+
+    await service.toggleBookmark(seed.publicId, userViewer(seed.otherId));
+
+    const notifications = await notificationsOf(seed.publicId);
+    expect(notifications).toHaveLength(1);
+    expect(notifications[0]).toMatchObject({ type: 'bookmark', read: false });
+    expect(String(notifications[0]!.to)).toBe(seed.ownerId);
+    expect(String(notifications[0]!.from)).toBe(seed.otherId);
+  });
+
+  it('el bookmark del dueño a su propio post no crea notificación', async () => {
+    const seed = await seedOwnerWithPosts('notifbookown');
+
+    await service.toggleBookmark(seed.publicId, userViewer(seed.ownerId));
+
+    await expect(notificationsOf(seed.publicId)).resolves.toHaveLength(0);
+  });
+});
