@@ -4,14 +4,14 @@ import { useState } from 'react';
 
 import { useSaveProfileField } from '@/features/profile/api/use-profile';
 import { getUserDisplayName } from '@/features/profile/profile.constants';
-import type { ProfileViewMoreUser } from '@/features/profile/profile.types';
+import type { ProfileUser } from '@/features/profile/profile.types';
 import { ProfileEditableField } from '@/features/profile/ui/profile-editable-field.component';
 import { ProfileReadonlyRow } from '@/features/profile/ui/profile-readonly-row.component';
 
 type EditableField = 'address' | 'phoneNumber';
 
 type ProfileViewMoreProps = {
-  user: ProfileViewMoreUser;
+  user: ProfileUser;
   isOwner?: boolean;
 };
 
@@ -20,13 +20,9 @@ export function ProfileViewMore({
   isOwner = true,
 }: ProfileViewMoreProps) {
   const { t, i18n } = useTranslation();
-  const { save, isSaving } = useSaveProfileField(user._id);
   const [open, setOpen] = useState(false);
-  const [editingField, setEditingField] = useState<EditableField | null>(null);
 
   const fullName = user.fullName?.trim() || getUserDisplayName(user);
-  const address = user.address?.trim() ?? '';
-  const phoneNumber = user.phoneNumber?.trim() ?? '';
   const createdAtLabel = user.createdAt
     ? new Date(user.createdAt).toLocaleDateString(i18n.language)
     : '';
@@ -61,73 +57,9 @@ export function ProfileViewMore({
             value={fullName}
           />
 
-          {isOwner ? (
-            <ProfileReadonlyRow
-              label={t('profile.email_label')}
-              value={user.email}
-              emptyText={t('profile.empty_email')}
-            />
+          {user.access === 'full' ? (
+            <ProfilePrivateRows user={user} isOwner={isOwner} />
           ) : null}
-
-          {isOwner ? (
-            <Flex direction="column" gap="1">
-              <Text as="span" size="1" color="gray">
-                {t('profile.address_label')}
-              </Text>
-              <ProfileEditableField
-                value={address}
-                emptyText={t('profile.input_address')}
-                placeholder={t('profile.input_address')}
-                isEditing={editingField === 'address'}
-                isSaving={isSaving('address')}
-                onStartEdit={() => setEditingField('address')}
-                onCancel={() => setEditingField(null)}
-                onSave={value =>
-                  void save(
-                    { address: value.trim() || undefined },
-                    'address',
-                    () => setEditingField(null),
-                  )
-                }
-              />
-            </Flex>
-          ) : (
-            <ProfileReadonlyRow
-              label={t('profile.address_label')}
-              value={address}
-              emptyText={t('profile.empty_address_other')}
-            />
-          )}
-
-          {isOwner ? (
-            <Flex direction="column" gap="1">
-              <Text as="span" size="1" color="gray">
-                {t('profile.phone_label')}
-              </Text>
-              <ProfileEditableField
-                value={phoneNumber}
-                emptyText={t('profile.phone_placeholder')}
-                placeholder={t('profile.phone_placeholder')}
-                isEditing={editingField === 'phoneNumber'}
-                isSaving={isSaving('phoneNumber')}
-                onStartEdit={() => setEditingField('phoneNumber')}
-                onCancel={() => setEditingField(null)}
-                onSave={value =>
-                  void save(
-                    { phoneNumber: value.trim() || undefined },
-                    'phoneNumber',
-                    () => setEditingField(null),
-                  )
-                }
-              />
-            </Flex>
-          ) : (
-            <ProfileReadonlyRow
-              label={t('profile.phone_label')}
-              value={phoneNumber}
-              emptyText={t('profile.empty_phone_other')}
-            />
-          )}
 
           <ProfileReadonlyRow
             label={t('profile.created_at_label')}
@@ -136,5 +68,88 @@ export function ProfileViewMore({
         </Flex>
       ) : null}
     </Card>
+  );
+}
+
+type ProfilePrivateRowsProps = {
+  user: Extract<ProfileUser, { access: 'full' }>;
+  isOwner: boolean;
+};
+
+/** Solo llegan con `access: 'full'`; editables únicamente para el dueño. */
+function ProfilePrivateRows({ user, isOwner }: ProfilePrivateRowsProps) {
+  const { t } = useTranslation();
+  const { save, isSaving } = useSaveProfileField(user._id);
+  const [editingField, setEditingField] = useState<EditableField | null>(null);
+
+  const address = user.address?.trim() ?? '';
+  const phoneNumber = user.phoneNumber?.trim() ?? '';
+
+  return (
+    <>
+      <ProfileReadonlyRow
+        label={t('profile.email_label')}
+        value={user.email}
+        emptyText={t('profile.empty_email')}
+      />
+
+      {isOwner ? (
+        <Flex direction="column" gap="1">
+          <Text as="span" size="1" color="gray">
+            {t('profile.address_label')}
+          </Text>
+          <ProfileEditableField
+            value={address}
+            emptyText={t('profile.input_address')}
+            placeholder={t('profile.input_address')}
+            isEditing={editingField === 'address'}
+            isSaving={isSaving('address')}
+            onStartEdit={() => setEditingField('address')}
+            onCancel={() => setEditingField(null)}
+            onSave={value =>
+              void save({ address: value.trim() || undefined }, 'address', () =>
+                setEditingField(null),
+              )
+            }
+          />
+        </Flex>
+      ) : (
+        <ProfileReadonlyRow
+          label={t('profile.address_label')}
+          value={address}
+          emptyText={t('profile.empty_address_other')}
+        />
+      )}
+
+      {isOwner ? (
+        <Flex direction="column" gap="1">
+          <Text as="span" size="1" color="gray">
+            {t('profile.phone_label')}
+          </Text>
+          <ProfileEditableField
+            value={phoneNumber}
+            emptyText={t('profile.phone_placeholder')}
+            placeholder={t('profile.phone_placeholder')}
+            isEditing={editingField === 'phoneNumber'}
+            isSaving={isSaving('phoneNumber')}
+            onStartEdit={() => setEditingField('phoneNumber')}
+            onCancel={() => setEditingField(null)}
+            onSave={value =>
+              void save(
+                { phoneNumber: value.trim() || undefined },
+                'phoneNumber',
+                () => setEditingField(null),
+              )
+            }
+          />
+        </Flex>
+      ) : (
+        <ProfileReadonlyRow
+          label={t('profile.phone_label')}
+          value={phoneNumber}
+          emptyText={t('profile.empty_phone_other')}
+        />
+      )}
+    </>
   );
 }

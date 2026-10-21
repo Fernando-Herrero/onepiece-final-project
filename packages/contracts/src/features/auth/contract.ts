@@ -2,7 +2,7 @@ import { oc } from '@orpc/contract';
 
 import {
   createUserSchema,
-  userPublicSchema,
+  sessionUserSchema,
 } from '../../common/user.schemas.js';
 import {
   authMessageSchema,
@@ -69,7 +69,7 @@ export const authContract = oc
         description: 'Get current authenticated user',
       })
       .errors(authErrors)
-      .output(userPublicSchema),
+      .output(sessionUserSchema),
 
     changePassword: oc
       .route({

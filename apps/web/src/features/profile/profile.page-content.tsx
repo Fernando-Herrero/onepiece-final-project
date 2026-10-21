@@ -168,5 +168,11 @@ export default function ProfilePageContent({
     return null;
   }
 
-  return <ProfilePageBody user={sessionUser} isOwner isFollowing={false} />;
+  return (
+    <ProfilePageBody
+      user={{ access: 'full', ...sessionUser }}
+      isOwner
+      isFollowing={false}
+    />
+  );
 }

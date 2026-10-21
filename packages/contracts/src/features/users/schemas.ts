@@ -3,10 +3,11 @@ import * as z from 'zod/v4';
 import {
   accessibilityPreferencesSchema,
   notificationPreferencesSchema,
+  sessionUserSchema,
   timelinePreferencesSchema,
   updateUserSchema,
   userIdParamsSchema,
-  userPublicSchema,
+  userProfileSchema,
 } from '../../common/user.schemas.js';
 
 export const userStatsSchema = z.object({
@@ -29,15 +30,21 @@ export const userRankingEntrySchema = z.object({
   experience: z.number(),
 });
 
+/** `full` para uno mismo y el admin, `public` para el resto (ADR 0006). */
+export const userByIdOutputSchema = z.discriminatedUnion('access', [
+  sessionUserSchema.extend({ access: z.literal('full') }),
+  userProfileSchema.extend({ access: z.literal('public') }),
+]);
+
 export const deleteUserOutputSchema = z.object({
   ok: z.literal(true),
-  removed: userPublicSchema,
+  removed: sessionUserSchema,
 });
 
 /** Salida de verify/unverify: devuelve el usuario ya actualizado para refrescar la sesión. */
 export const verifyUserOutputSchema = z.object({
   ok: z.literal(true),
-  user: userPublicSchema,
+  user: sessionUserSchema,
 });
 
 /** Cada grupo es opcional: se hace merge parcial sobre las preferencias guardadas. */

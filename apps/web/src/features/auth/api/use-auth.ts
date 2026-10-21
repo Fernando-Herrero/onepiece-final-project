@@ -1,4 +1,4 @@
-import { userPublicSchema } from '@logpose/contracts/common/user.schemas';
+import { sessionUserSchema } from '@logpose/contracts/common/user.schemas';
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
 import { type InferClientErrorUnion, isDefinedError } from '@orpc/client';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
@@ -14,7 +14,7 @@ import { client } from '@/integrations/orpc/orpc.client';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
 type AuthClientError = InferClientErrorUnion<typeof client.auth>;
-type AuthUser = z.infer<typeof userPublicSchema>;
+type AuthUser = z.infer<typeof sessionUserSchema>;
 type UpdatePreferencesBody = z.infer<typeof updatePreferencesSchema>;
 
 export function getAuthErrorMessage(error: unknown, t: TFunction): string {

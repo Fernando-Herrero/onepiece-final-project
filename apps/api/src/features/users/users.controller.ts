@@ -96,8 +96,8 @@ export class UsersController {
   @Public()
   @Implement(contract.users.getById)
   getById() {
-    return implement(contract.users.getById).handler(({ input }) =>
-      this.usersService.getById(input.params.id),
+    return implement(contract.users.getById).handler(({ input, context }) =>
+      this.usersService.getById(input.params.id, context.request.viewer),
     );
   }
 

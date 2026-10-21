@@ -56,7 +56,7 @@ export type UserDocument = {
 /**
  * Rellena las preferencias que falten con los valores por defecto, grupo a grupo.
  * Sin esto, un usuario antiguo (sin `preferences` en Mongo) rompería
- * `userPublicSchema` al serializar.
+ * `sessionUserSchema` al serializar.
  */
 export function withPreferenceDefaults(
   preferences: Partial<UserPreferences> | undefined,
@@ -90,19 +90,16 @@ function fullName(
   return doc.displayName || doc.username;
 }
 
-export function serializeUser(user: WithId<UserDocument>) {
+export function serializeUserProfile(user: WithId<UserDocument>) {
   return {
     _id: user._id.toString(),
     username: user.username,
     firstName: user.firstName,
     lastName: user.lastName,
-    email: user.email,
     displayName: user.displayName ?? undefined,
     bio: user.bio ?? undefined,
-    phoneNumber: user.phoneNumber ?? undefined,
     avatar: user.avatar,
     coverImage: user.coverImage ?? undefined,
-    address: user.address ?? undefined,
     role: user.role,
     verified: user.verified,
     isActive: user.isActive,
@@ -110,12 +107,21 @@ export function serializeUser(user: WithId<UserDocument>) {
     serieProgress: user.serieProgress,
     unlockedCards: user.unlockedCards,
     privacy: user.privacy,
-    preferences: withPreferenceDefaults(user.preferences),
     followers: user.followers.map(String),
     following: user.following.map(String),
     createdAt: user.createdAt?.toISOString(),
     updatedAt: user.updatedAt?.toISOString(),
     fullName: fullName(user),
+  };
+}
+
+export function serializeSessionUser(user: WithId<UserDocument>) {
+  return {
+    ...serializeUserProfile(user),
+    email: user.email,
+    phoneNumber: user.phoneNumber ?? undefined,
+    address: user.address ?? undefined,
+    preferences: withPreferenceDefaults(user.preferences),
   };
 }
 
@@ -129,7 +135,6 @@ export function serializeUserSummary(user: WithId<UserDocument>) {
     displayName: user.displayName ?? undefined,
     verified: user.verified,
     bio: user.bio ?? undefined,
-    privacy: user.privacy,
     role: user.role,
     isActive: user.isActive,
   };

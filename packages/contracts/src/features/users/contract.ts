@@ -3,8 +3,8 @@ import * as z from 'zod/v4';
 
 import { postPublicSchema } from '../../common/post.schemas.js';
 import {
+  sessionUserSchema,
   userIdParamsSchema,
-  userPublicSchema,
   userSummarySchema,
 } from '../../common/user.schemas.js';
 import {
@@ -12,6 +12,7 @@ import {
   followOutputSchema,
   updatePreferencesInputSchema,
   updateUserInputSchema,
+  userByIdOutputSchema,
   userRankingEntrySchema,
   userStatsSchema,
   verifyUserOutputSchema,
@@ -153,7 +154,7 @@ export const usersContract = oc
       })
       .input(updatePreferencesInputSchema)
       .errors(usersErrors)
-      .output(userPublicSchema),
+      .output(sessionUserSchema),
 
     verify: oc
       .route({
@@ -186,7 +187,7 @@ export const usersContract = oc
       })
       .input(userIdParamsSchema)
       .errors(usersErrors)
-      .output(userPublicSchema),
+      .output(userByIdOutputSchema),
 
     update: oc
       .route({
@@ -197,7 +198,7 @@ export const usersContract = oc
       })
       .input(updateUserInputSchema)
       .errors(usersErrors)
-      .output(userPublicSchema),
+      .output(sessionUserSchema),
 
     delete: oc
       .route({

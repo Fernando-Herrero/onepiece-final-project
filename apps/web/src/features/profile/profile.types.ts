@@ -1,29 +1,15 @@
 import type {
   privacySchema,
   updateUserSchema,
-  userPublicSchema,
 } from '@logpose/contracts/common/user.schemas';
+import type { userByIdOutputSchema } from '@logpose/contracts/features/users/schemas';
 import type * as z from 'zod/v4';
 
 export type ProfilePostsTab = 'posts' | 'liked' | 'bookmarked' | 'comments';
 
 export type ProfilePrivacy = z.infer<typeof privacySchema>;
 
-export type ProfileUser = z.infer<typeof userPublicSchema>;
-
-export type ProfileViewMoreUser = Pick<
-  ProfileUser,
-  | '_id'
-  | 'username'
-  | 'firstName'
-  | 'lastName'
-  | 'fullName'
-  | 'email'
-  | 'address'
-  | 'phoneNumber'
-  | 'createdAt'
-  | 'displayName'
->;
+export type ProfileUser = z.infer<typeof userByIdOutputSchema>;
 
 export type UpdateProfileBody = Pick<
   z.infer<typeof updateUserSchema>,

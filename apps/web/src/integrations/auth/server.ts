@@ -2,7 +2,7 @@
  * Helpers de auth para `getServerSideProps` en páginas del dashboard.
  * Valida la sesión contra la API Nest en SSR, rellena TanStack Query y aplica redirects.
  */
-import { userPublicSchema } from '@logpose/contracts/common/user.schemas';
+import { sessionUserSchema } from '@logpose/contracts/common/user.schemas';
 import { dehydrate, QueryClient } from '@tanstack/react-query';
 import type { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 import type * as z from 'zod/v4';
@@ -18,7 +18,7 @@ import {
 const API_INTERNAL_URL =
   process.env.API_INTERNAL_URL ?? 'http://localhost:4000';
 
-type SessionUser = z.infer<typeof userPublicSchema>;
+type SessionUser = z.infer<typeof sessionUserSchema>;
 
 /** Llama a `/api/auth/me` reenviando las cookies del request; devuelve null si no hay sesión válida. */
 async function fetchSessionUser(
@@ -39,7 +39,7 @@ async function fetchSessionUser(
       return null;
     }
 
-    const parsed = userPublicSchema.safeParse(await response.json());
+    const parsed = sessionUserSchema.safeParse(await response.json());
 
     return parsed.success ? parsed.data : null;
   } catch {

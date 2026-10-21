@@ -127,3 +127,63 @@ describe('UsersService, pestaña privada del perfil', () => {
     await expect(service.getLikedPosts(robinId, admin)).resolves.toEqual([]);
   });
 });
+
+describe('UsersService.getById', () => {
+  let namiId: string;
+  let otherId: string;
+
+  beforeAll(async () => {
+    const nami = await usersPersistence.insert({
+      ...newUser('nami'),
+      phoneNumber: '600000000',
+      address: 'Foosha Village',
+    });
+    namiId = nami._id.toString();
+    otherId = (await usersPersistence.insert(newUser('usopp')))._id.toString();
+  });
+
+  const privateKeys = ['email', 'phoneNumber', 'address', 'preferences'];
+
+  it('un anónimo recibe el perfil público, sin datos privados', async () => {
+    const result = await service.getById(namiId, { kind: 'anonymous' });
+
+    expect(result).toMatchObject({ access: 'public', username: 'nami' });
+    privateKeys.forEach(key => expect(result).not.toHaveProperty(key));
+  });
+
+  it('otro usuario normal recibe el perfil público, sin datos privados', async () => {
+    const viewer: Viewer = { kind: 'user', id: otherId, role: 'user' };
+
+    const result = await service.getById(namiId, viewer);
+
+    expect(result).toMatchObject({ access: 'public', username: 'nami' });
+    privateKeys.forEach(key => expect(result).not.toHaveProperty(key));
+  });
+
+  it('el dueño recibe el perfil completo', async () => {
+    const viewer: Viewer = { kind: 'user', id: namiId, role: 'user' };
+
+    await expect(service.getById(namiId, viewer)).resolves.toMatchObject({
+      access: 'full',
+      email: 'nami@logpose.test',
+      phoneNumber: '600000000',
+      address: 'Foosha Village',
+    });
+  });
+
+  it('un admin recibe el perfil completo', async () => {
+    // El admin no existe en Mongo: el rol viaja en el viewer.
+    const admin: Viewer = {
+      kind: 'user',
+      id: new ObjectId().toString(),
+      role: 'admin',
+    };
+
+    await expect(service.getById(namiId, admin)).resolves.toMatchObject({
+      access: 'full',
+      email: 'nami@logpose.test',
+      phoneNumber: '600000000',
+      address: 'Foosha Village',
+    });
+  });
+});

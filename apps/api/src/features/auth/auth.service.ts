@@ -5,7 +5,10 @@ import bcrypt from 'bcrypt';
 import type { Response } from 'express';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
-import { serializeUser, type UserDocument } from '../users/user.mappers.js';
+import {
+  serializeSessionUser,
+  type UserDocument,
+} from '../users/user.mappers.js';
 import { UsersPersistence } from '../users/users.persistence.js';
 import { clearSessionCookie, setSessionCookie } from './auth.cookies.js';
 import { AuthSessionService } from './auth-session.service.js';
@@ -79,7 +82,7 @@ export class AuthService {
         throw error;
       });
 
-    const session = { user: serializeUser(newUser) };
+    const session = { user: serializeSessionUser(newUser) };
 
     setSessionCookie(res, this.authSession.signToken(newUser._id.toString()));
 
@@ -102,7 +105,7 @@ export class AuthService {
 
     setSessionCookie(res, this.authSession.signToken(user._id.toString()));
 
-    return { user: serializeUser(user) };
+    return { user: serializeSessionUser(user) };
   }
 
   async getMe(userId: string) {
@@ -112,7 +115,7 @@ export class AuthService {
       throw new ORPCError('USER_NOT_FOUND');
     }
 
-    return serializeUser(user);
+    return serializeSessionUser(user);
   }
 
   async changePassword(

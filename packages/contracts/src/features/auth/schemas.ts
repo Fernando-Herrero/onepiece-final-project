@@ -2,7 +2,7 @@ import * as z from 'zod/v4';
 
 import {
   createUserSchema,
-  userPublicSchema,
+  sessionUserSchema,
 } from '../../common/user.schemas.js';
 
 export { createUserSchema };
@@ -31,7 +31,7 @@ export const changePasswordSchema = z
   });
 
 export const authSessionSchema = z.object({
-  user: userPublicSchema,
+  user: sessionUserSchema,
 });
 
 export const authMessageSchema = z.object({

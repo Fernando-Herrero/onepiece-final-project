@@ -117,23 +117,20 @@ export const userSummarySchema = z.object({
   displayName: z.string().optional(),
   verified: z.boolean(),
   bio: z.string().optional(),
-  privacy: privacySchema,
   role: userRoleSchema,
   isActive: z.boolean(),
 });
 
-export const userPublicSchema = z.object({
+/** Lo que ve cualquiera de un perfil (ADR 0006). */
+export const userProfileSchema = z.object({
   _id: z.string(),
   username: z.string(),
   firstName: z.string(),
   lastName: z.string(),
-  email: z.string(),
   displayName: z.string().optional(),
   bio: z.string().optional(),
-  phoneNumber: z.string().optional(),
   avatar: z.string().optional(),
   coverImage: z.string().optional(),
-  address: z.string().optional(),
   role: userRoleSchema,
   verified: z.boolean(),
   isActive: z.boolean(),
@@ -141,10 +138,17 @@ export const userPublicSchema = z.object({
   serieProgress: serieProgressSchema,
   unlockedCards: unlockedCardsSchema,
   privacy: privacySchema,
-  preferences: userPreferencesSchema,
   followers: z.array(z.string()),
   following: z.array(z.string()),
   createdAt: z.string().optional(),
   updatedAt: z.string().optional(),
   fullName: z.string().optional(),
+});
+
+/** Perfil más datos privados: solo para uno mismo y el admin. */
+export const sessionUserSchema = userProfileSchema.extend({
+  email: z.string(),
+  phoneNumber: z.string().optional(),
+  address: z.string().optional(),
+  preferences: userPreferencesSchema,
 });

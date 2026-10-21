@@ -23,7 +23,8 @@ import {
 } from '../posts/posts.mappers.js';
 import { PostsPersistence } from '../posts/posts.persistence.js';
 import {
-  serializeUser,
+  serializeSessionUser,
+  serializeUserProfile,
   serializeUserRankingEntry,
   serializeUserSummary,
   withPreferenceDefaults,
@@ -138,11 +139,12 @@ export class UsersService {
     return this.serializePostsForViewer(posts, viewer);
   }
 
-  /** Perfil público completo por id (userPublic). */
-  async getById(userId: string) {
+  async getById(userId: string, viewer: Viewer) {
     const user = await this.requireUser(userId);
 
-    return serializeUser(user);
+    return accessTo(viewer, userId) === 'full'
+      ? { access: 'full' as const, ...serializeSessionUser(user) }
+      : { access: 'public' as const, ...serializeUserProfile(user) };
   }
 
   /** Contadores de actividad del perfil: posts, likes, bookmarks y comentarios. */
@@ -290,7 +292,7 @@ export class UsersService {
       throw new ORPCError('USER_NOT_FOUND');
     }
 
-    return serializeUser(updatedUser);
+    return serializeSessionUser(updatedUser);
   }
 
   /** Listado de todos los usuarios (solo admin). */
@@ -326,7 +328,7 @@ export class UsersService {
 
     return {
       ok: true as const,
-      removed: serializeUser(user),
+      removed: serializeSessionUser(user),
     };
   }
 
@@ -364,7 +366,7 @@ export class UsersService {
 
     return {
       ok: true as const,
-      user: serializeUser(updated),
+      user: serializeSessionUser(updated),
     };
   }
 
@@ -396,6 +398,6 @@ export class UsersService {
       throw new ORPCError('USER_NOT_FOUND');
     }
 
-    return serializeUser(updated);
+    return serializeSessionUser(updated);
   }
 }
