@@ -78,7 +78,7 @@ No migrar todo a `next/image` de golpe: aplicar la tabla en código nuevo y al t
 | Datos de API              | TanStack Query + oRPC client |
 | Formularios simples       | `useState` local             |
 | UI global (modal, device) | Context ligero               |
-| Auth session              | Query `me` + token storage   |
+| Auth session              | Query `me` + cookie httpOnly |
 
 **No usar Context para:** posts, users, notifications, profile data.
 
@@ -119,6 +119,18 @@ packages/contracts  →  *.controller.ts  →  *.service.ts  →  *.persistence.
    Zod/oc              @Implement            negocio            @InjectCollection
 ```
 
+```text
+features/<name>/
+├── <name>.module.ts                # importa los módulos de persistencia que usa
+├── <name>.controller.ts            # un @Implement por procedure
+├── <name>.service.ts               # reglas de negocio; lanza ORPCError('CODIGO')
+├── <name>.mappers.ts               # tipos del documento y serializers puros
+├── <name>.persistence.ts           # solo Mongo
+└── <name>-persistence.module.ts    # MongoModule.forFeature(['<colección>']) + exporta el *Persistence
+```
+
+Cada colección se registra una sola vez, en el `*-persistence.module.ts` de su feature. Otra feature que la necesite importa ese módulo (`PostsModule` importa `UsersPersistenceModule`), no vuelve a declararla.
+
 ### Reglas (referencia)
 
 | Tema                             | Patrón                                                                                         |
@@ -127,17 +139,24 @@ packages/contracts  →  *.controller.ts  →  *.service.ts  →  *.persistence.
 | Input                            | Zod en contrato — **no** `ValidationPipe` en el mismo handler                                  |
 | Output                           | `.output()` en contrato; lo valida oRPC (ADR 0005)                                             |
 | Errores negocio                  | `.errors()` en contrato + `new ORPCError('CODIGO')` en servicio (ADR 0005)                     |
-| Errores inesperados              | `AllExceptionsFilter` global                                                                   |
-| Auth oRPC                        | `requireUser(context.request)` — no Guards Nest duplicados                                     |
+| Errores inesperados              | `AllExceptionsFilter` global (`APP_FILTER`) y `onError(logOrpcError)` en `ORPCModule`          |
+| Auth oRPC                        | `SessionGuard` global deja `request.viewer`; ver abajo — sin Guards ni middlewares por handler |
 | Rutas estáticas antes de `/{id}` | En controller: `list`, `ranking` **antes** de `getById` (evita que `/ranking` matchee como id) |
-| Mongo                            | `@jperezmart/nest-mongodb` — **sin Mongoose**                                                  |
-| Índices                          | `onModuleInit()` en `*Persistence`                                                             |
-| Serializers                      | `*.model.ts` o funciones puras — no en persistence                                             |
+| Mongo                            | `@jperezmart/nest-mongodb` — **sin Mongoose**; consultas solo en `*Persistence`                |
+| Índices                          | `onModuleInit()` en `*Persistence`, no en el constructor                                       |
+| Serializers                      | Funciones puras en `*.mappers.ts` — no en persistence                                          |
+| Prefijo                          | Todas las rutas cuelgan de `/api`                                                              |
+
+**Auth en un handler** ([ADR 0004](adr/0004-auth-propia-rol-simple.md)): el guard resuelve el `Viewer` en cada petición. Un handler protegido lo lee con `requireViewer(context.request)`, que devuelve el viewer `user` ya estrechado. Uno abierto lleva `@Public()` y pasa `context.request.viewer` (que puede ser `anonymous`) al servicio, que decide qué ve con las reglas de `features/auth/access.ts`.
+
+**Persistencia:** `insertOne` devuelve solo el id; si hace falta el documento, `findOne({ _id: insertedId })`. Las referencias y los arrays de ids van como `ObjectId` de `mongodb`.
 
 ### Archivos de integración oRPC
 
+- `integrations/orpc/orpc-context.ts` — tipo del contexto (`request.viewer`) y `requireViewer`
 - `integrations/orpc/contract-errors.interceptor.ts` — `ORPCError` del servicio → error del contrato
 - `integrations/orpc/orpc.config.ts` — config de `ORPCModule`; la usan la app y los tests de integración
+- `integrations/orpc/orpc-docs.controller.ts` — Swagger en `/api/orpc` y la spec en `/api/orpc/spec.json`
 
 Todos los `@orpc/*` van en el catálogo con la **misma versión exacta**: `@orpc/nest` fija la suya de `@orpc/server`, y dos copias son dos clases `ORPCError` que `instanceof` no reconoce entre sí. El pre-commit lo vigila con `pnpm dedupe --check`.
 
