@@ -8,7 +8,10 @@ import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 import { toast } from 'sonner';
 
-import { authKeys } from '@/features/auth/api/auth.keys';
+import {
+  getSessionUser,
+  useSessionUserWriter,
+} from '@/features/auth/api/session-user';
 import { profileKeys } from '@/features/profile/api/profile.keys';
 import type {
   ProfilePostsTab,
@@ -46,7 +49,7 @@ export function useProfilePosts(userId: string, tab: ProfilePostsTab) {
 }
 
 export function useUpdateProfileMutation() {
-  const queryClient = useQueryClient();
+  const writeSessionUser = useSessionUserWriter();
 
   return useMutation({
     mutationFn: (input: { userId: string; body: UpdateProfileBody }) =>
@@ -54,9 +57,7 @@ export function useUpdateProfileMutation() {
         params: { id: input.userId },
         body: input.body,
       }),
-    onSuccess: user => {
-      queryClient.setQueryData(authKeys.me(), user);
-    },
+    onSuccess: user => writeSessionUser(user),
   });
 }
 
@@ -91,58 +92,42 @@ export function useSaveProfileField(userId: string) {
 
 export function useFollowUserMutation() {
   const queryClient = useQueryClient();
+  const writeSessionUser = useSessionUserWriter();
   const { t } = useTranslation();
 
   return useMutation({
     mutationFn: (targetUserId: string) =>
       client.users.follow({ params: { id: targetUserId } }),
     onSuccess: (_result, targetUserId) => {
-      queryClient.setQueryData(
-        authKeys.me(),
-        (old: ProfileUser | undefined) => {
-          if (!old || old.following.includes(targetUserId)) {
-            return old;
-          }
+      const sessionUser = getSessionUser(queryClient);
 
-          return {
-            ...old,
-            following: [...old.following, targetUserId],
-          };
-        },
-      );
+      if (sessionUser && !sessionUser.following.includes(targetUserId)) {
+        writeSessionUser({
+          ...sessionUser,
+          following: [...sessionUser.following, targetUserId],
+        });
+      }
 
       queryClient.setQueryData(
         profileKeys.byId(targetUserId),
         (old: ProfileUser | undefined) => {
-          if (!old) {
-            return old;
-          }
-
-          const viewerId = queryClient.getQueryData<ProfileUser>(
-            authKeys.me(),
-          )?._id;
-
-          if (!viewerId || old.followers.includes(viewerId)) {
+          if (!old || !sessionUser || old.followers.includes(sessionUser._id)) {
             return old;
           }
 
           return {
             ...old,
-            followers: [...old.followers, viewerId],
+            followers: [...old.followers, sessionUser._id],
           };
         },
       );
 
-      const viewerId = queryClient.getQueryData<ProfileUser>(
-        authKeys.me(),
-      )?._id;
-
       void queryClient.invalidateQueries({
         queryKey: profileKeys.followers(targetUserId),
       });
-      if (viewerId) {
+      if (sessionUser) {
         void queryClient.invalidateQueries({
-          queryKey: profileKeys.following(viewerId),
+          queryKey: profileKeys.following(sessionUser._id),
         });
       }
 
@@ -163,58 +148,42 @@ export function useFollowUserMutation() {
 
 export function useUnfollowUserMutation() {
   const queryClient = useQueryClient();
+  const writeSessionUser = useSessionUserWriter();
   const { t } = useTranslation();
 
   return useMutation({
     mutationFn: (targetUserId: string) =>
       client.users.unfollow({ params: { id: targetUserId } }),
     onSuccess: (_result, targetUserId) => {
-      queryClient.setQueryData(
-        authKeys.me(),
-        (old: ProfileUser | undefined) => {
-          if (!old) {
-            return old;
-          }
+      const sessionUser = getSessionUser(queryClient);
 
-          return {
-            ...old,
-            following: old.following.filter(id => id !== targetUserId),
-          };
-        },
-      );
+      if (sessionUser) {
+        writeSessionUser({
+          ...sessionUser,
+          following: sessionUser.following.filter(id => id !== targetUserId),
+        });
+      }
 
       queryClient.setQueryData(
         profileKeys.byId(targetUserId),
         (old: ProfileUser | undefined) => {
-          if (!old) {
-            return old;
-          }
-
-          const viewerId = queryClient.getQueryData<ProfileUser>(
-            authKeys.me(),
-          )?._id;
-
-          if (!viewerId) {
+          if (!old || !sessionUser) {
             return old;
           }
 
           return {
             ...old,
-            followers: old.followers.filter(id => id !== viewerId),
+            followers: old.followers.filter(id => id !== sessionUser._id),
           };
         },
       );
 
-      const viewerId = queryClient.getQueryData<ProfileUser>(
-        authKeys.me(),
-      )?._id;
-
       void queryClient.invalidateQueries({
         queryKey: profileKeys.followers(targetUserId),
       });
-      if (viewerId) {
+      if (sessionUser) {
         void queryClient.invalidateQueries({
-          queryKey: profileKeys.following(viewerId),
+          queryKey: profileKeys.following(sessionUser._id),
         });
       }
 

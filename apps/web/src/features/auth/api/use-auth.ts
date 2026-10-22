@@ -1,6 +1,4 @@
-import { sessionUserSchema } from '@logpose/contracts/common/user.schemas';
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
-import { type InferClientErrorUnion, isDefinedError } from '@orpc/client';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import type { TFunction } from 'i18next';
 import { useRouter } from 'next/router';
@@ -8,51 +6,41 @@ import { useEffect, useState } from 'react';
 import type * as z from 'zod/v4';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
+import {
+  type SessionUser,
+  useSessionUserWriter,
+} from '@/features/auth/api/session-user';
 import { getAuthenticatedHomePath } from '@/features/auth/auth-routes';
 import type { RegisterFormValues } from '@/features/auth/register-form.schema';
 import { client } from '@/integrations/orpc/orpc.client';
+import { getOrpcErrorCode } from '@/integrations/orpc/orpc-error';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
 
-type AuthClientError = InferClientErrorUnion<typeof client.auth>;
-type AuthUser = z.infer<typeof sessionUserSchema>;
 type UpdatePreferencesBody = z.infer<typeof updatePreferencesSchema>;
 
 export function getAuthErrorMessage(error: unknown, t: TFunction): string {
-  const typedError = error as AuthClientError;
-
-  if (isDefinedError(typedError)) {
-    switch (typedError.code) {
-      case 'DUPLICATE_ACCOUNT':
-        return t('auth.errors.DUPLICATE_ACCOUNT');
-      case 'ALREADY_AUTHENTICATED':
-        return t('auth.errors.ALREADY_AUTHENTICATED');
-      case 'INVALID_CREDENTIALS':
-        return t('auth.errors.INVALID_CREDENTIALS');
-      case 'UNAUTHORIZED':
-        return t('auth.errors.UNAUTHORIZED');
-      case 'ACCOUNT_INACTIVE':
-        return t('auth.errors.ACCOUNT_INACTIVE');
-      case 'USER_NOT_FOUND':
-        return t('auth.errors.USER_NOT_FOUND');
-      case 'INVALID_CURRENT_PASSWORD':
-        return t('auth.errors.INVALID_CURRENT_PASSWORD');
-    }
+  switch (getOrpcErrorCode(error)) {
+    case 'DUPLICATE_ACCOUNT':
+      return t('auth.errors.DUPLICATE_ACCOUNT');
+    case 'ALREADY_AUTHENTICATED':
+      return t('auth.errors.ALREADY_AUTHENTICATED');
+    case 'INVALID_CREDENTIALS':
+      return t('auth.errors.INVALID_CREDENTIALS');
+    case 'UNAUTHORIZED':
+      return t('auth.errors.UNAUTHORIZED');
+    case 'ACCOUNT_INACTIVE':
+      return t('auth.errors.ACCOUNT_INACTIVE');
+    case 'USER_NOT_FOUND':
+      return t('auth.errors.USER_NOT_FOUND');
+    case 'INVALID_CURRENT_PASSWORD':
+      return t('auth.errors.INVALID_CURRENT_PASSWORD');
   }
 
   return t('auth.generic_error');
 }
 
-export function useMeQuery() {
-  const router = useRouter();
-
-  return useQuery({
-    ...allQueriesOptions.auth.me(),
-    enabled: router.pathname.startsWith('/dashboard'),
-  });
-}
-
 function useAuthSubmitFlow() {
-  const queryClient = useQueryClient();
+  const writeSessionUser = useSessionUserWriter();
   const router = useRouter();
   const [isRedirecting, setIsRedirecting] = useState(false);
 
@@ -78,8 +66,8 @@ function useAuthSubmitFlow() {
     };
   }, [isRedirecting, router.events]);
 
-  const onSuccess = (data: { user: AuthUser }) => {
-    queryClient.setQueryData(authKeys.me(), data.user);
+  const onSuccess = (data: { user: SessionUser }) => {
+    writeSessionUser(data.user);
     setIsRedirecting(true);
     void router.push(getAuthenticatedHomePath(data.user));
   };
@@ -139,19 +127,6 @@ export function useDeleteAccountMutation() {
   });
 }
 
-/**
- * Escribe el usuario devuelto directamente en la caché de sesión en lugar de
- * invalidar: la respuesta ya trae el usuario completo, así el badge de
- * verificado y las preferencias se reflejan sin un refetch extra.
- */
-function useSessionUserWriter() {
-  const queryClient = useQueryClient();
-
-  return (user: AuthUser) => {
-    queryClient.setQueryData(authKeys.me(), user);
-  };
-}
-
 export function useVerifyAccountMutation() {
   const writeSessionUser = useSessionUserWriter();
 
@@ -194,16 +169,17 @@ const SESSION_INVALID_ERROR_CODES = new Set([
 ]);
 
 function isSessionInvalidError(error: unknown): boolean {
-  const typedError = error as AuthClientError;
+  const code = getOrpcErrorCode(error);
 
-  return (
-    isDefinedError(typedError) &&
-    SESSION_INVALID_ERROR_CODES.has(typedError.code)
-  );
+  return code !== undefined && SESSION_INVALID_ERROR_CODES.has(code);
 }
 
 export function useAuthSession() {
-  const meQuery = useMeQuery();
+  const router = useRouter();
+  const meQuery = useQuery({
+    ...allQueriesOptions.auth.me(),
+    enabled: router.pathname.startsWith('/dashboard'),
+  });
   const user = meQuery.data;
   const isAdmin = user?.role === 'admin';
 

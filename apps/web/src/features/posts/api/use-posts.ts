@@ -6,10 +6,9 @@ import {
 import { useTranslation } from 'next-i18next/pages';
 import { toast } from 'sonner';
 
+import { getSessionUser } from '@/features/auth/api/session-user';
 import {
   createOptimisticPost,
-  getSessionUser,
-  getSessionUserId,
   invalidateProfilePostQueries,
   patchPostInCaches,
   type PostsFeedInfiniteData,
@@ -101,7 +100,7 @@ export function useCreatePostMutation() {
         prependPostToFeed(queryClient, post);
       }
 
-      const userId = getSessionUserId(queryClient);
+      const userId = getSessionUser(queryClient)?._id;
       if (userId) {
         invalidateProfilePostQueries(queryClient, userId, ['posts']);
       }
@@ -124,7 +123,7 @@ export function useDeletePostMutation() {
     onSuccess: (_post, postId) => {
       removePostFromCaches(queryClient, postId);
 
-      const userId = getSessionUserId(queryClient);
+      const userId = getSessionUser(queryClient)?._id;
       if (userId) {
         invalidateProfilePostQueries(queryClient, userId, [
           'posts',
@@ -205,7 +204,7 @@ function useTogglePostFieldMutation<
         [boolKey]: result[boolKey],
       } as Partial<PostPublic>);
 
-      const userId = getSessionUserId(queryClient);
+      const userId = getSessionUser(queryClient)?._id;
       if (userId) {
         invalidateProfilePostQueries(queryClient, userId, [invalidateTab]);
       }
@@ -292,7 +291,7 @@ export function useTogglePostRetweetMutation() {
         removePostFromCaches(queryClient, result.removedRetweetPostId);
       }
 
-      const userId = getSessionUserId(queryClient);
+      const userId = getSessionUser(queryClient)?._id;
       if (userId) {
         invalidateProfilePostQueries(queryClient, userId, ['posts']);
       }

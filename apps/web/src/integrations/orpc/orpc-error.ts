@@ -10,7 +10,7 @@ import { client } from '@/integrations/orpc/orpc.client';
 type OrpcClientError = InferClientErrorUnion<typeof client>;
 
 /** Devuelve el `code` del error oRPC si es un defined error; si no, `undefined`. */
-export function getOrpcErrorCode(error: unknown): string | undefined {
+export function getOrpcErrorCode(error: unknown) {
   const typedError = error as OrpcClientError;
 
   if (!isDefinedError(typedError)) {

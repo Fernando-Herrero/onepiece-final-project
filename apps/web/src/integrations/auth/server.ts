@@ -5,9 +5,9 @@
 import { sessionUserSchema } from '@logpose/contracts/common/user.schemas';
 import { dehydrate, QueryClient } from '@tanstack/react-query';
 import type { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
-import type * as z from 'zod/v4';
 
 import { authKeys } from '@/features/auth/api/auth.keys';
+import type { SessionUser } from '@/features/auth/api/session-user';
 import { getAuthenticatedHomePath } from '@/features/auth/auth-routes';
 import {
   getDashboardI18nProps,
@@ -17,8 +17,6 @@ import {
 /** URL directa a la API en SSR (no pasa por el proxy de Next en dev). */
 const API_INTERNAL_URL =
   process.env.API_INTERNAL_URL ?? 'http://localhost:4000';
-
-type SessionUser = z.infer<typeof sessionUserSchema>;
 
 /** Llama a `/api/auth/me` reenviando las cookies del request; devuelve null si no hay sesión válida. */
 async function fetchSessionUser(

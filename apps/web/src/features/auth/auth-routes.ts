@@ -1,8 +1,5 @@
-import type { sessionUserSchema } from '@logpose/contracts/common/user.schemas';
-import type * as z from 'zod/v4';
+import type { SessionUser } from '@/features/auth/api/session-user';
 
-type AuthUser = z.infer<typeof sessionUserSchema>;
-
-export function getAuthenticatedHomePath(user: AuthUser) {
+export function getAuthenticatedHomePath(user: SessionUser) {
   return user.role === 'admin' ? '/dashboard/admin' : '/dashboard/profile';
 }

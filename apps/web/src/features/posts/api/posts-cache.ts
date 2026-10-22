@@ -2,26 +2,17 @@ import type { postPageSchema } from '@logpose/contracts/common/post.schemas';
 import type { InfiniteData, QueryClient } from '@tanstack/react-query';
 import type * as z from 'zod/v4';
 
-import { authKeys } from '@/features/auth/api/auth.keys';
+import type { SessionUser } from '@/features/auth/api/session-user';
 import { postsKeys } from '@/features/posts/api/posts.keys';
 import type { PostPublic } from '@/features/posts/posts.types';
 import { profileKeys } from '@/features/profile/api/profile.keys';
 import type { ProfilePostsTab } from '@/features/profile/profile.types';
-import type { ProfileUser } from '@/features/profile/profile.types';
 
 export type PostsFeedPage = z.infer<typeof postPageSchema>;
 export type PostsFeedInfiniteData = InfiniteData<
   PostsFeedPage,
   string | undefined
 >;
-
-export function getSessionUserId(queryClient: QueryClient) {
-  return queryClient.getQueryData<ProfileUser>(authKeys.me())?._id;
-}
-
-export function getSessionUser(queryClient: QueryClient) {
-  return queryClient.getQueryData<ProfileUser>(authKeys.me());
-}
 
 function mapPostsInInfiniteFeed(
   queryClient: QueryClient,
@@ -155,7 +146,7 @@ export function invalidateProfilePostQueries(
 }
 
 export function createOptimisticPost(
-  user: ProfileUser,
+  user: SessionUser,
   text: string,
   images?: string[],
 ): PostPublic {

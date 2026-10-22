@@ -15,7 +15,7 @@ import { Suspense, useEffect, useRef, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 
 import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
-import { useMeQuery } from '@/features/auth/api/use-auth';
+import { useAuthSession } from '@/features/auth/api/use-auth';
 import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { useSuspenseSerieSagas } from '@/features/serie/api/use-serie';
 import {
@@ -75,13 +75,13 @@ function SerieSagaListSkeleton() {
 
 export default function SeriePageContent() {
   const { t } = useTranslation();
-  const meQuery = useMeQuery();
+  const { user } = useAuthSession();
   const heroRef = useRef<HTMLDivElement>(null);
   const [openSagaIds, setOpenSagaIds] = useState<Record<number, boolean>>({});
   const [openArcIds, setOpenArcIds] = useState<Record<number, boolean>>({});
 
-  const progress = meQuery.data?.serieProgress ?? DEFAULT_SERIE_PROGRESS;
-  const experience = meQuery.data?.experience ?? 0;
+  const progress = user?.serieProgress ?? DEFAULT_SERIE_PROGRESS;
+  const experience = user?.experience ?? 0;
   const xpPercent = getSerieXpPercent(experience);
 
   useEffect(() => {
