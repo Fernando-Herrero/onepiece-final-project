@@ -1,11 +1,11 @@
 import { Flex, Spinner, Text } from '@radix-ui/themes';
-import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
 import { useSerieArcs } from '@/features/serie/api/use-serie';
 import type { SerieProgress, SerieSaga } from '@/features/serie/serie.types';
 import { SerieAccordion } from '@/features/serie/ui/serie-accordion.component';
 import { SerieArcBlock } from '@/features/serie/ui/serie-arc-block.component';
+import { useLocale } from '@/integrations/next-i18next/use-locale';
 
 type SerieSagaBlockProps = {
   saga: SerieSaga;
@@ -25,7 +25,7 @@ export function SerieSagaBlock({
   progress,
 }: SerieSagaBlockProps) {
   const { t } = useTranslation(['common', 'serie']);
-  const router = useRouter();
+  const locale = useLocale();
   const arcsQuery = useSerieArcs(saga.id, { enabled: isOpen });
 
   return (
@@ -35,7 +35,7 @@ export function SerieSagaBlock({
         ns: 'serie',
         defaultValue: saga.name,
       })}
-      subtitle={router.locale === 'ja' ? undefined : saga.titleJa}
+      subtitle={locale === 'ja' ? undefined : saga.titleJa}
       meta={t('serie.saga_meta', {
         arcs: saga.arcNames.length,
         episodes: saga.totalEpisodes,

@@ -2,13 +2,8 @@ import { Flex, Select, Text } from '@radix-ui/themes';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 
-export const LOCALES = ['es', 'en', 'ja'] as const;
-
-export const LOCALE_FLAGS: Record<(typeof LOCALES)[number], string> = {
-  es: '🇪🇸',
-  en: '🇬🇧',
-  ja: '🇯🇵',
-};
+import { LOCALE_FLAGS, LOCALES } from '@/integrations/next-i18next/constants';
+import { useLocale } from '@/integrations/next-i18next/use-locale';
 
 type LandingLocaleToggleComponentProps = {
   compactLabel?: boolean;
@@ -19,7 +14,7 @@ export function LandingLocaleToggleComponent({
 }: LandingLocaleToggleComponentProps) {
   const router = useRouter();
   const { t } = useTranslation();
-  const activeLocale = (router.locale ?? 'es') as (typeof LOCALES)[number];
+  const activeLocale = useLocale();
   const triggerLabel = compactLabel
     ? activeLocale.toUpperCase()
     : t(`landing.locales.${activeLocale}`);

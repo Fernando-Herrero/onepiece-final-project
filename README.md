@@ -27,6 +27,7 @@ Requisitos: Node 24.16.0 (`.node-version`), pnpm 11.6 y un MongoDB en replica se
 
 ```bash
 cp apps/api/.env.example apps/api/.env
+cp apps/web/.env.example apps/web/.env.local
 pnpm install
 pnpm dev
 ```

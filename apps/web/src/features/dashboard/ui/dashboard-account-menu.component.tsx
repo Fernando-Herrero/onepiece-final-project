@@ -14,17 +14,16 @@ import {
   DEFAULT_AVATAR_SRC,
   resolveAvatarSrc,
 } from '@/features/avatar/avatar.constants';
-import {
-  LOCALE_FLAGS,
-  LOCALES,
-} from '@/features/landing/ui/landing-locale-toggle.component';
 import { getUserDisplayName } from '@/features/profile/profile.constants';
+import { LOCALE_FLAGS, LOCALES } from '@/integrations/next-i18next/constants';
+import { useLocale } from '@/integrations/next-i18next/use-locale';
 
 export function DashboardAccountMenu() {
   const router = useRouter();
   const { t } = useTranslation();
   const { user } = useAuthSession();
   const logout = useLogoutMutation();
+  const activeLocale = useLocale();
   const [avatarLoadError, setAvatarLoadError] = useState(false);
 
   if (!user) {
@@ -35,7 +34,6 @@ export function DashboardAccountMenu() {
   const avatarSrc = avatarLoadError
     ? DEFAULT_AVATAR_SRC
     : resolveAvatarSrc(user.avatar);
-  const activeLocale = (router.locale ?? 'es') as (typeof LOCALES)[number];
 
   function handleLocaleChange(locale: string) {
     void router.push(router.pathname, router.asPath, { locale, scroll: false });

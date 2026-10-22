@@ -9,14 +9,11 @@ import type { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 import { authKeys } from '@/features/auth/api/auth.keys';
 import type { SessionUser } from '@/features/auth/api/session-user';
 import { getAuthenticatedHomePath } from '@/features/auth/auth-routes';
+import { env } from '@/integrations/env/server.mjs';
 import {
   getDashboardI18nProps,
   getDefaultI18nProps,
 } from '@/integrations/i18n/server';
-
-/** URL directa a la API en SSR (no pasa por el proxy de Next en dev). */
-const API_INTERNAL_URL =
-  process.env.API_INTERNAL_URL ?? 'http://localhost:4000';
 
 /** Llama a `/api/auth/me` reenviando las cookies del request; devuelve null si no hay sesión válida. */
 async function fetchSessionUser(
@@ -29,7 +26,7 @@ async function fetchSessionUser(
   }
 
   try {
-    const response = await fetch(`${API_INTERNAL_URL}/api/auth/me`, {
+    const response = await fetch(`${env.API_INTERNAL_URL}/api/auth/me`, {
       headers: { cookie },
     });
 

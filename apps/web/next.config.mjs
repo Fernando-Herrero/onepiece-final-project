@@ -2,6 +2,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import nextI18nConfig from './next-i18next.config.js';
+import { env } from './src/integrations/env/server.mjs';
 
 const appDir = path.dirname(fileURLToPath(import.meta.url));
 const monorepoRoot = path.join(appDir, '..', '..');
@@ -34,17 +35,11 @@ const nextConfig = {
   },
 
   async rewrites() {
-    const apiUrl =
-      process.env.API_INTERNAL_URL ??
-      (process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : null);
-
-    if (!apiUrl) return [];
-
     return {
       beforeFiles: [
         {
           source: '/api/:path*',
-          destination: `${apiUrl}/api/:path*`,
+          destination: `${env.API_INTERNAL_URL}/api/:path*`,
         },
       ],
     };
