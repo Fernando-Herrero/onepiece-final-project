@@ -103,6 +103,32 @@ export function useSetFollowingMutation() {
   const writeSessionUser = useSessionUserWriter();
   const { t } = useTranslation();
 
+  function applyFollowing({ targetUserId, following }: SetFollowingVariables) {
+    const sessionUser = getSessionUser(queryClient);
+
+    if (sessionUser) {
+      writeSessionUser({
+        ...sessionUser,
+        following: withId(sessionUser.following, targetUserId, following),
+      });
+      queryClient.setQueryData(
+        profileKeys.byId(targetUserId),
+        (old: ProfileUser | undefined) =>
+          old && {
+            ...old,
+            followers: withId(old.followers, sessionUser._id, following),
+          },
+      );
+      void queryClient.invalidateQueries({
+        queryKey: profileKeys.following(sessionUser._id),
+      });
+    }
+
+    void queryClient.invalidateQueries({
+      queryKey: profileKeys.followers(targetUserId),
+    });
+  }
+
   return useMutation({
     mutationFn: ({ targetUserId, following }: SetFollowingVariables) => {
       const input = { params: { id: targetUserId } };
@@ -110,41 +136,24 @@ export function useSetFollowingMutation() {
         ? client.users.follow(input)
         : client.users.unfollow(input);
     },
-    onSuccess: (_result, { targetUserId, following }) => {
-      const sessionUser = getSessionUser(queryClient);
-
-      if (sessionUser) {
-        writeSessionUser({
-          ...sessionUser,
-          following: withId(sessionUser.following, targetUserId, following),
-        });
-        queryClient.setQueryData(
-          profileKeys.byId(targetUserId),
-          (old: ProfileUser | undefined) =>
-            old && {
-              ...old,
-              followers: withId(old.followers, sessionUser._id, following),
-            },
-        );
-        void queryClient.invalidateQueries({
-          queryKey: profileKeys.following(sessionUser._id),
-        });
-      }
-
-      void queryClient.invalidateQueries({
-        queryKey: profileKeys.followers(targetUserId),
-      });
-
+    onSuccess: (_result, variables) => {
+      applyFollowing(variables);
       toast.success(
-        t(following ? 'profile.follow_success' : 'profile.unfollow_success'),
+        t(
+          variables.following
+            ? 'profile.follow_success'
+            : 'profile.unfollow_success',
+        ),
       );
     },
-    onError: (error, { following }) => {
+    onError: (error, variables) => {
       const code = getOrpcErrorCode(error);
 
-      // Ya estaba en el estado pedido: la sesión iba por detrás, no es un fallo.
-      if (code === (following ? 'ALREADY_FOLLOWING' : 'NOT_FOLLOWING')) {
-        toast.message(t('profile.follow_error'));
+      // Ya estaba en el estado pedido: la sesión iba por detrás y se pone al día.
+      if (
+        code === (variables.following ? 'ALREADY_FOLLOWING' : 'NOT_FOLLOWING')
+      ) {
+        applyFollowing(variables);
         return;
       }
 
