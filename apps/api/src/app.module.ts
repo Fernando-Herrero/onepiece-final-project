@@ -14,6 +14,7 @@ import { UploadModule } from './features/upload/upload.module.js';
 import { UsersModule } from './features/users/users.module.js';
 import { ServerEnv, validateEnv } from './integrations/env/server.js';
 import { AllExceptionsFilter } from './integrations/http/all-exceptions.filter.js';
+import { mongoClientOptions } from './integrations/mongodb/mongodb.config.js';
 import { orpcModuleOptions } from './integrations/orpc/orpc.config.js';
 import { OrpcDocsController } from './integrations/orpc/orpc-docs.controller.js';
 
@@ -32,6 +33,7 @@ const mode = process.env.NODE_ENV ?? 'development';
       useFactory: (config: ConfigService<ServerEnv, true>) => ({
         uri: config.get('MONGODB_URI', { infer: true }),
         dbName: config.get('MONGODB_DBNAME', { infer: true }),
+        ...mongoClientOptions,
       }),
     }),
     AuthModule,

@@ -106,7 +106,15 @@ export const createUserSchema = profileFieldsSchema
   })
   .strict();
 
+/** `null` vacía el campo (semántica de JSON Merge Patch): la API lo quita del documento. */
 export const updateUserSchema = profileFieldsSchema
+  .extend({
+    displayName: profileFieldsSchema.shape.displayName.nullable(),
+    bio: profileFieldsSchema.shape.bio.nullable(),
+    coverImage: profileFieldsSchema.shape.coverImage.nullable(),
+    phoneNumber: profileFieldsSchema.shape.phoneNumber.nullable(),
+    address: profileFieldsSchema.shape.address.nullable(),
+  })
   .partial()
   .strict()
   .refine(data => Object.keys(data).length > 0, {

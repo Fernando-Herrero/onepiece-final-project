@@ -6,6 +6,7 @@ import { type Db, MongoClient, ObjectId } from 'mongodb';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
+import { mongoClientOptions } from '../../integrations/mongodb/mongodb.config.js';
 import type { Viewer } from '../auth/access.js';
 import { SessionsPersistence } from '../auth/sessions.persistence.js';
 import {
@@ -59,7 +60,7 @@ let service: UsersService;
 
 beforeAll(async () => {
   mongod = await MongoMemoryServer.create();
-  client = await MongoClient.connect(mongod.getUri());
+  client = await MongoClient.connect(mongod.getUri(), mongoClientOptions);
   db = client.db('test');
 
   usersPersistence = new UsersPersistence(db.collection('users'));
@@ -90,6 +91,23 @@ describe('UsersService.update', () => {
     await expect(
       service.update(zoroId, viewer, { username: luffy.username }),
     ).rejects.toMatchObject({ code: 'USERNAME_TAKEN' });
+  });
+
+  it('null quita el campo del documento y deja los demás', async () => {
+    const vivi = await usersPersistence.insert({
+      ...newUser('vivi'),
+      displayName: 'Miss Wednesday',
+      bio: 'Princesa',
+    });
+    const viviId = vivi._id.toString();
+    const viewer: Viewer = { kind: 'user', id: viviId, role: 'user' };
+
+    const updated = await service.update(viviId, viewer, { displayName: null });
+    const stored = await db.collection('users').findOne({ _id: vivi._id });
+
+    expect(updated.displayName).toBeUndefined();
+    expect(stored).not.toHaveProperty('displayName');
+    expect(stored).toMatchObject({ bio: 'Princesa' });
   });
 });
 

@@ -87,7 +87,7 @@ export function ProfileIdentityCard({
 
   function saveCover() {
     void saveProfileField(
-      { coverImage: coverDraft.trim() || undefined },
+      { coverImage: coverDraft.trim() || null },
       'coverImage',
     );
   }
@@ -273,7 +273,7 @@ export function ProfileIdentityCard({
                 onCancel={() => setEditingField(null)}
                 onSave={value =>
                   void saveProfileField(
-                    { displayName: value.trim() || undefined },
+                    { displayName: value.trim() || null },
                     'displayName',
                   )
                 }
@@ -311,7 +311,7 @@ export function ProfileIdentityCard({
               onStartEdit={() => setEditingField('bio')}
               onCancel={() => setEditingField(null)}
               onSave={value =>
-                void saveProfileField({ bio: value.trim() || undefined }, 'bio')
+                void saveProfileField({ bio: value.trim() || null }, 'bio')
               }
             />
           ) : (

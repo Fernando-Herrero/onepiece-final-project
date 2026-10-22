@@ -17,6 +17,7 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
 import { AllExceptionsFilter } from '../../integrations/http/all-exceptions.filter.js';
+import { mongoClientOptions } from '../../integrations/mongodb/mongodb.config.js';
 import { orpcModuleOptions } from '../../integrations/orpc/orpc.config.js';
 import { contract } from '../../integrations/orpc/orpc.contract.js';
 import { AuthModule } from './auth.module.js';
@@ -150,7 +151,10 @@ beforeAll(async () => {
         load: [() => ({ NODE_ENV: 'test' })],
       }),
       ORPCModule.forRootAsync(orpcModuleOptions),
-      MongoModule.forRoot(mongod.getUri(), { dbName: 'test' }),
+      MongoModule.forRoot(mongod.getUri(), {
+        dbName: 'test',
+        ...mongoClientOptions,
+      }),
       AuthModule,
     ],
     providers: [{ provide: APP_FILTER, useClass: AllExceptionsFilter }],
@@ -161,7 +165,7 @@ beforeAll(async () => {
   baseUrl = await app.getUrl();
 
   // Cliente aparte para leer y manipular la base sin pasar por la API.
-  mongo = await MongoClient.connect(mongod.getUri());
+  mongo = await MongoClient.connect(mongod.getUri(), mongoClientOptions);
   db = mongo.db('test');
 });
 

@@ -77,13 +77,26 @@ export class UsersPersistence implements OnModuleInit {
     return inserted;
   }
 
+  /** Una clave a `null` se quita del documento: un campo vacío no se guarda como `null`. */
   async updateById(
     id: string,
-    update: Partial<UserDocument>,
+    update: { [K in keyof UserDocument]?: UserDocument[K] | null },
   ): Promise<WithId<UserDocument> | null> {
+    const entries = Object.entries(update);
+
     await this.users.updateOne(
       { _id: new ObjectId(id) },
-      { $set: { ...update, updatedAt: new Date() } },
+      {
+        $set: {
+          ...Object.fromEntries(entries.filter(([, value]) => value !== null)),
+          updatedAt: new Date(),
+        },
+        $unset: Object.fromEntries(
+          entries
+            .filter(([, value]) => value === null)
+            .map(([key]) => [key, '']),
+        ),
+      },
     );
 
     return this.findById(id);

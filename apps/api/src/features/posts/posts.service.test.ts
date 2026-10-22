@@ -5,6 +5,7 @@ import { type Db, MongoClient, ObjectId } from 'mongodb';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
+import { mongoClientOptions } from '../../integrations/mongodb/mongodb.config.js';
 import type { UserViewer, Viewer } from '../auth/access.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
 import type { UserDocument } from '../users/user.mappers.js';
@@ -67,7 +68,7 @@ let service: PostsService;
 
 beforeAll(async () => {
   mongod = await MongoMemoryServer.create();
-  client = await MongoClient.connect(mongod.getUri());
+  client = await MongoClient.connect(mongod.getUri(), mongoClientOptions);
   db = client.db('test');
 
   usersPersistence = new UsersPersistence(db.collection('users'));

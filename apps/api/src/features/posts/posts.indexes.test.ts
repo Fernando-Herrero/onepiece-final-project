@@ -8,6 +8,7 @@ import { type Db, MongoClient, ObjectId } from 'mongodb';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
 
+import { mongoClientOptions } from '../../integrations/mongodb/mongodb.config.js';
 import type { Viewer } from '../auth/access.js';
 import { NotificationsPersistenceModule } from '../notifications/notifications-persistence.module.js';
 import type { UserDocument } from '../users/user.mappers.js';
@@ -66,7 +67,10 @@ beforeAll(async () => {
   // Módulos reales: `init()` dispara los `onModuleInit` de las persistencias.
   moduleRef = await Test.createTestingModule({
     imports: [
-      MongoModule.forRoot(mongod.getUri(), { dbName: 'test' }),
+      MongoModule.forRoot(mongod.getUri(), {
+        dbName: 'test',
+        ...mongoClientOptions,
+      }),
       PostsPersistenceModule,
       UsersPersistenceModule,
       NotificationsPersistenceModule,
@@ -100,7 +104,7 @@ beforeAll(async () => {
   }
 
   // Cliente aparte solo para el profiler: no toca el código bajo prueba.
-  client = await MongoClient.connect(mongod.getUri());
+  client = await MongoClient.connect(mongod.getUri(), mongoClientOptions);
   db = client.db('test');
 });
 

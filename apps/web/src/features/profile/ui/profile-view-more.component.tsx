@@ -107,7 +107,7 @@ function ProfilePrivateRows({ user, isOwner }: ProfilePrivateRowsProps) {
             onStartEdit={() => setEditingField('address')}
             onCancel={() => setEditingField(null)}
             onSave={value =>
-              void save({ address: value.trim() || undefined }, 'address', () =>
+              void save({ address: value.trim() || null }, 'address', () =>
                 setEditingField(null),
               )
             }
@@ -136,7 +136,7 @@ function ProfilePrivateRows({ user, isOwner }: ProfilePrivateRowsProps) {
             onCancel={() => setEditingField(null)}
             onSave={value =>
               void save(
-                { phoneNumber: value.trim() || undefined },
+                { phoneNumber: value.trim() || null },
                 'phoneNumber',
                 () => setEditingField(null),
               )

@@ -16,6 +16,7 @@ import {
   it,
 } from 'vitest';
 
+import { mongoClientOptions } from '../../integrations/mongodb/mongodb.config.js';
 import type { UserViewer } from '../auth/access.js';
 import type { CommentDocument } from '../comments/comments.persistence.js';
 import type { PostDocument } from '../posts/posts.mappers.js';
@@ -371,7 +372,10 @@ beforeAll(async () => {
   // Módulos reales: `init()` dispara los `onModuleInit` (índices).
   moduleRef = await Test.createTestingModule({
     imports: [
-      MongoModule.forRoot(replSet.getUri(), { dbName: DB_NAME }),
+      MongoModule.forRoot(replSet.getUri(), {
+        dbName: DB_NAME,
+        ...mongoClientOptions,
+      }),
       UsersModule,
       PostsModule,
     ],
@@ -382,7 +386,7 @@ beforeAll(async () => {
   postsService = moduleRef.get(PostsService);
 
   // Cliente aparte para sembrar y leer la base sin pasar por el código bajo prueba.
-  client = await MongoClient.connect(replSet.getUri());
+  client = await MongoClient.connect(replSet.getUri(), mongoClientOptions);
   db = client.db(DB_NAME);
 }, 120_000);
 
