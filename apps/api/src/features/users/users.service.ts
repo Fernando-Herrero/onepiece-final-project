@@ -3,7 +3,6 @@ import { updateUserSchema } from '@logpose/contracts/common/user.schemas';
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
-import { ObjectId } from 'mongodb';
 import * as z from 'zod/v4';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
@@ -197,73 +196,57 @@ export class UsersService {
     return following.map(serializeUserSummary);
   }
 
-  /** El viewer sigue al target; actualiza grafos y crea notificación de follow. */
-  async follow(viewerId: string, targetUserId: string) {
-    if (targetUserId === viewerId) {
-      throw new ORPCError('CANNOT_FOLLOW_SELF');
-    }
-
-    const target = await this.requireUser(targetUserId);
-
-    const viewer = await this.usersPersistence.findById(viewerId);
-
-    if (!viewer) {
-      throw new ORPCError('UNAUTHORIZED');
-    }
-
-    const targetObjectId = new ObjectId(targetUserId);
-
-    if (viewer.following.some(id => id.equals(targetObjectId))) {
-      throw new ORPCError('ALREADY_FOLLOWING');
-    }
-
-    await this.usersPersistence.addFollow(viewerId, targetUserId);
-
-    const updatedViewer = await this.usersPersistence.findById(viewerId);
-    const updatedTarget = await this.usersPersistence.findById(targetUserId);
-
-    await this.notificationsPersistence.create({
-      type: 'follow',
-      to: targetUserId,
-      from: viewerId,
-    });
-
-    return {
-      message: `Ahora sigues a @${target.username}`,
-      following: true,
-      followersCount: updatedTarget?.followers.length ?? 0,
-      followingCount: updatedViewer?.following.length ?? 0,
-    };
+  /** El viewer sigue al target; crea la notificación de follow. */
+  follow(viewerId: string, targetUserId: string) {
+    return this.setFollowing(viewerId, targetUserId, true);
   }
 
-  /** El viewer deja de seguir al target y devuelve contadores actualizados. */
-  async unfollow(viewerId: string, targetUserId: string) {
+  unfollow(viewerId: string, targetUserId: string) {
+    return this.setFollowing(viewerId, targetUserId, false);
+  }
+
+  /** Lleva el follow al estado pedido y devuelve los contadores actualizados. */
+  private async setFollowing(
+    viewerId: string,
+    targetUserId: string,
+    following: boolean,
+  ) {
     if (targetUserId === viewerId) {
       throw new ORPCError('CANNOT_FOLLOW_SELF');
     }
 
     const target = await this.requireUser(targetUserId);
-
     const viewer = await this.usersPersistence.findById(viewerId);
 
     if (!viewer) {
       throw new ORPCError('UNAUTHORIZED');
     }
 
-    const targetObjectId = new ObjectId(targetUserId);
+    const isFollowing = viewer.following.some(id => id.equals(targetUserId));
 
-    if (!viewer.following.some(id => id.equals(targetObjectId))) {
-      throw new ORPCError('NOT_FOLLOWING');
+    if (isFollowing === following) {
+      throw new ORPCError(following ? 'ALREADY_FOLLOWING' : 'NOT_FOLLOWING');
     }
 
-    await this.usersPersistence.removeFollow(viewerId, targetUserId);
+    if (following) {
+      await this.usersPersistence.addFollow(viewerId, targetUserId);
+      await this.notificationsPersistence.create({
+        type: 'follow',
+        to: targetUserId,
+        from: viewerId,
+      });
+    } else {
+      await this.usersPersistence.removeFollow(viewerId, targetUserId);
+    }
 
     const updatedViewer = await this.usersPersistence.findById(viewerId);
     const updatedTarget = await this.usersPersistence.findById(targetUserId);
 
     return {
-      message: `Ya no sigues a @${target.username}`,
-      following: false,
+      message: following
+        ? `Ahora sigues a @${target.username}`
+        : `Ya no sigues a @${target.username}`,
+      following,
       followersCount: updatedTarget?.followers.length ?? 0,
       followingCount: updatedViewer?.following.length ?? 0,
     };

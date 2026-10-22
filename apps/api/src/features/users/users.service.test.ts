@@ -51,13 +51,14 @@ const newUser = (username: string): Omit<UserDocument, '_id'> => ({
 
 let mongod: MongoMemoryServer;
 let client: MongoClient;
+let db: Db;
 let usersPersistence: UsersPersistence;
 let service: UsersService;
 
 beforeAll(async () => {
   mongod = await MongoMemoryServer.create();
   client = await MongoClient.connect(mongod.getUri());
-  const db: Db = client.db('test');
+  db = client.db('test');
 
   usersPersistence = new UsersPersistence(db.collection('users'));
   await usersPersistence.onModuleInit();
@@ -572,4 +573,114 @@ describe('UsersService.getPosts, retweets', () => {
       userRetweeted: false,
     });
   });
+});
+
+describe('UsersService.follow y unfollow', () => {
+  const create = async (username: string) =>
+    (await usersPersistence.insert(newUser(username)))._id;
+  const notificationsOf = (to: ObjectId, from: ObjectId) =>
+    db.collection('notifications').find({ type: 'follow', to, from }).toArray();
+
+  it('follow: A sigue a B y devuelve contadores y mensaje', async () => {
+    const a = await create('fol_a1');
+    const b = await create('fol_b1');
+
+    await expect(service.follow(a.toString(), b.toString())).resolves.toEqual({
+      message: 'Ahora sigues a @fol_b1',
+      following: true,
+      followersCount: 1,
+      followingCount: 1,
+    });
+  });
+
+  it('follow: B queda en following de A y A en followers de B', async () => {
+    const a = await create('fol_a2');
+    const b = await create('fol_b2');
+
+    await service.follow(a.toString(), b.toString());
+
+    const storedA = await usersPersistence.findById(a.toString());
+    const storedB = await usersPersistence.findById(b.toString());
+    expect(storedA?.following).toEqual([b]);
+    expect(storedB?.followers).toEqual([a]);
+  });
+
+  it('follow: crea una notificación de follow para B desde A', async () => {
+    const a = await create('fol_a3');
+    const b = await create('fol_b3');
+
+    await service.follow(a.toString(), b.toString());
+
+    await expect(notificationsOf(b, a)).resolves.toHaveLength(1);
+  });
+
+  it('follow: seguir a quien ya sigues lanza ALREADY_FOLLOWING', async () => {
+    const a = await create('fol_a4');
+    const b = await create('fol_b4');
+    await service.follow(a.toString(), b.toString());
+
+    await expect(
+      service.follow(a.toString(), b.toString()),
+    ).rejects.toMatchObject({ code: 'ALREADY_FOLLOWING' });
+  });
+
+  it('unfollow: A deja de seguir a B y devuelve contadores a 0 y mensaje', async () => {
+    const a = await create('fol_a5');
+    const b = await create('fol_b5');
+    await service.follow(a.toString(), b.toString());
+
+    await expect(service.unfollow(a.toString(), b.toString())).resolves.toEqual(
+      {
+        message: 'Ya no sigues a @fol_b5',
+        following: false,
+        followersCount: 0,
+        followingCount: 0,
+      },
+    );
+    const storedA = await usersPersistence.findById(a.toString());
+    const storedB = await usersPersistence.findById(b.toString());
+    expect(storedA?.following).toEqual([]);
+    expect(storedB?.followers).toEqual([]);
+  });
+
+  it('unfollow: no crea una notificación nueva', async () => {
+    const a = await create('fol_a6');
+    const b = await create('fol_b6');
+    await service.follow(a.toString(), b.toString());
+
+    await service.unfollow(a.toString(), b.toString());
+
+    await expect(notificationsOf(b, a)).resolves.toHaveLength(1);
+  });
+
+  it('unfollow: dejar de seguir a quien no sigues lanza NOT_FOLLOWING', async () => {
+    const a = await create('fol_a7');
+    const b = await create('fol_b7');
+
+    await expect(
+      service.unfollow(a.toString(), b.toString()),
+    ).rejects.toMatchObject({ code: 'NOT_FOLLOWING' });
+  });
+
+  it.each(['follow', 'unfollow'] as const)(
+    '%s: uno mismo lanza CANNOT_FOLLOW_SELF',
+    async method => {
+      const a = (await create(`fol_self_${method}`)).toString();
+
+      await expect(service[method](a, a)).rejects.toMatchObject({
+        code: 'CANNOT_FOLLOW_SELF',
+      });
+    },
+  );
+
+  it.each(['follow', 'unfollow'] as const)(
+    '%s: un target inexistente lanza USER_NOT_FOUND',
+    async method => {
+      const a = (await create(`fol_ghost_${method}`)).toString();
+
+      await expect(
+        service[method](a, new ObjectId().toString()),
+      ).rejects.toMatchObject({ code: 'USER_NOT_FOUND' });
+    },
+  );
 });

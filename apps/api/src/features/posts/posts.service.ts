@@ -82,40 +82,39 @@ export class PostsService {
   }
 
   async toggleLike(postId: string, viewer: UserViewer) {
-    const result = await this.postsPersistence.toggleUserField(
-      postId,
-      viewer.id,
-      'likes',
-      await visiblePostsFilter(viewer, this.usersPersistence),
-    );
-
-    if (!result) {
-      throw new ORPCError('POST_NOT_FOUND');
-    }
-
-    const liked = !result.alreadyHad;
-
-    if (liked) {
-      await this.notificationsPersistence.create({
-        type: 'like',
-        to: result.post.userId.toString(),
-        from: viewer.id,
-        postId,
-      });
-    }
+    const { active, post } = await this.toggleField(postId, viewer, 'likes');
 
     return {
-      liked,
-      likesCount: Math.max(0, result.post.likesCount),
-      userLiked: liked,
+      liked: active,
+      likesCount: Math.max(0, post.likesCount),
+      userLiked: active,
     };
   }
 
   async toggleBookmark(postId: string, viewer: UserViewer) {
+    const { active, post } = await this.toggleField(
+      postId,
+      viewer,
+      'bookmarks',
+    );
+
+    return {
+      bookmarked: active,
+      bookmarksCount: Math.max(0, post.bookmarksCount),
+      userBookmarked: active,
+    };
+  }
+
+  /** Like y guardado: el mismo toggle atómico y la misma notificación al añadir. */
+  private async toggleField(
+    postId: string,
+    viewer: UserViewer,
+    field: 'likes' | 'bookmarks',
+  ) {
     const result = await this.postsPersistence.toggleUserField(
       postId,
       viewer.id,
-      'bookmarks',
+      field,
       await visiblePostsFilter(viewer, this.usersPersistence),
     );
 
@@ -123,22 +122,18 @@ export class PostsService {
       throw new ORPCError('POST_NOT_FOUND');
     }
 
-    const bookmarked = !result.alreadyHad;
+    const active = !result.alreadyHad;
 
-    if (bookmarked) {
+    if (active) {
       await this.notificationsPersistence.create({
-        type: 'bookmark',
+        type: field === 'likes' ? 'like' : 'bookmark',
         to: result.post.userId.toString(),
         from: viewer.id,
         postId,
       });
     }
 
-    return {
-      bookmarked,
-      bookmarksCount: Math.max(0, result.post.bookmarksCount),
-      userBookmarked: bookmarked,
-    };
+    return { active, post: result.post };
   }
 
   async toggleRetweet(postId: string, viewer: UserViewer) {
