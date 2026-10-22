@@ -14,7 +14,7 @@ import {
   patchPostInCaches,
   prependPostToFeed,
   removePostFromCaches,
-  replaceOptimisticPostInFeed,
+  replacePostInCaches,
   revokeOptimisticImageUrls,
   togglePostInCaches,
 } from '@/features/posts/api/posts-cache';
@@ -85,7 +85,7 @@ export function useCreatePostMutation() {
       revokeOptimisticImageUrls(context.optimisticImageUrls);
 
       if (context.optimisticId) {
-        replaceOptimisticPostInFeed(queryClient, context.optimisticId, post);
+        replacePostInCaches(queryClient, context.optimisticId, post);
       } else {
         prependPostToFeed(queryClient, post);
       }
@@ -155,10 +155,14 @@ function useTogglePostFieldMutation<
     mutationFn,
     onMutate: async (postId: string) => {
       await cancelPostPages(queryClient);
-      togglePostInCaches(queryClient, postId, boolKey, countKey);
+      return {
+        previous: togglePostInCaches(queryClient, postId, boolKey, countKey),
+      };
     },
-    onError: (_error, postId) => {
-      togglePostInCaches(queryClient, postId, boolKey, countKey);
+    onError: (_error, postId, context) => {
+      if (context?.previous) {
+        patchPostInCaches(queryClient, postId, context.previous);
+      }
     },
     onSuccess: (result, postId) => {
       patchPostInCaches(queryClient, postId, {

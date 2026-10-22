@@ -7,7 +7,7 @@ import {
   type PostsFeedInfiniteData,
   prependPostToFeed,
   removePostFromCaches,
-  replaceOptimisticPostInFeed,
+  replacePostInCaches,
   togglePostInCaches,
 } from '@/features/posts/api/posts-cache';
 import type { PostPublic } from '@/features/posts/posts.types';
@@ -157,20 +157,53 @@ describe('togglePostInCaches', () => {
     });
   });
 
-  it('aplicarlo dos veces deja las cachés como estaban', () => {
+  it('devuelve los campos de antes, que patchPostInCaches restaura', () => {
     const queryClient = setup(
       makePost('p1', { userLiked: false, likesCount: 3 }),
-      makeRetweet('rt1', 'p1', { userLiked: true, likesCount: 3 }),
+      makeRetweet('rt1', 'p1', { userLiked: false, likesCount: 3 }),
       makePost('p2', { userLiked: true, likesCount: 9 }),
     );
     const before = allKeys.map(key =>
       structuredClone(postsAt(queryClient, key)),
     );
 
-    togglePostInCaches(queryClient, 'p1', 'userLiked', 'likesCount');
-    togglePostInCaches(queryClient, 'p1', 'userLiked', 'likesCount');
+    const previous = togglePostInCaches(
+      queryClient,
+      'p1',
+      'userLiked',
+      'likesCount',
+    );
+    expect(previous).toEqual({ userLiked: false, likesCount: 3 });
+    patchPostInCaches(queryClient, 'p1', previous ?? {});
 
     expect(allKeys.map(key => postsAt(queryClient, key))).toEqual(before);
+  });
+
+  it('restaura lo de antes aunque un refetch haya llegado entre medias', () => {
+    const queryClient = setup(
+      makePost('p1', { userLiked: false, likesCount: 3 }),
+    );
+
+    const previous = togglePostInCaches(
+      queryClient,
+      'p1',
+      'userLiked',
+      'likesCount',
+    );
+    for (const key of allKeys) {
+      queryClient.setQueryData(
+        key,
+        makeCache(makePost('p1', { userLiked: false, likesCount: 3 })),
+      );
+    }
+    patchPostInCaches(queryClient, 'p1', previous ?? {});
+
+    for (const key of allKeys) {
+      expect(postsAt(queryClient, key)[0]).toMatchObject({
+        userLiked: false,
+        likesCount: 3,
+      });
+    }
   });
 
   it('no crea consultas que no existían', () => {
@@ -255,11 +288,11 @@ describe('prependPostToFeed', () => {
   });
 });
 
-describe('replaceOptimisticPostInFeed', () => {
+describe('replacePostInCaches', () => {
   it('cambia el optimista por el post del servidor', () => {
     const queryClient = setup(makePost('optimistic-1'), makePost('p1'));
 
-    replaceOptimisticPostInFeed(
+    replacePostInCaches(
       queryClient,
       'optimistic-1',
       makePost('server-1', { text: 'del servidor' }),
@@ -276,11 +309,7 @@ describe('replaceOptimisticPostInFeed', () => {
   it('no crea consultas que no existían', () => {
     const queryClient = new QueryClient();
 
-    replaceOptimisticPostInFeed(
-      queryClient,
-      'optimistic-1',
-      makePost('server-1'),
-    );
+    replacePostInCaches(queryClient, 'optimistic-1', makePost('server-1'));
 
     expect(queryClient.getQueryCache().getAll()).toHaveLength(0);
   });

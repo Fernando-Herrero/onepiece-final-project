@@ -8,7 +8,7 @@ import type { PostPublic } from '@/features/posts/posts.types';
 import { profileKeys } from '@/features/profile/api/profile.keys';
 import type { ProfilePostsTab } from '@/features/profile/profile.types';
 
-export type PostsFeedPage = z.infer<typeof postPageSchema>;
+type PostsFeedPage = z.infer<typeof postPageSchema>;
 export type PostsFeedInfiniteData = InfiniteData<
   PostsFeedPage,
   string | undefined
@@ -66,14 +66,18 @@ export function patchPostInCaches(
   mapInteractionPosts(queryClient, postId, post => ({ ...post, ...patch }));
 }
 
-/** Aplicarlo dos veces deja la caché como estaba: así se revierte si falla. */
+/** Devuelve lo que había: si la mutación falla, se restaura con `patchPostInCaches`. */
 export function togglePostInCaches(
   queryClient: QueryClient,
   postId: string,
   boolKey: 'userLiked' | 'userBookmarked' | 'userRetweeted',
   countKey: 'likesCount' | 'bookmarksCount' | 'retweetsCount',
 ) {
+  let previous: Partial<PostPublic> | undefined;
+
   mapInteractionPosts(queryClient, postId, post => {
+    // Original y envoltorios llevan los mismos valores (la API pinta el retweet con su original).
+    previous ??= { [boolKey]: post[boolKey], [countKey]: post[countKey] };
     const active = !post[boolKey];
 
     return {
@@ -82,6 +86,8 @@ export function togglePostInCaches(
       [countKey]: Math.max(0, post[countKey] + (active ? 1 : -1)),
     };
   });
+
+  return previous;
 }
 
 export function prependPostToFeed(queryClient: QueryClient, post: PostPublic) {
@@ -109,7 +115,7 @@ export function prependPostToFeed(queryClient: QueryClient, post: PostPublic) {
   });
 }
 
-export function replaceOptimisticPostInFeed(
+export function replacePostInCaches(
   queryClient: QueryClient,
   optimisticId: string,
   post: PostPublic,
