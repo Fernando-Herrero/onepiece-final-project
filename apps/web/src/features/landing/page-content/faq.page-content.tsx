@@ -16,7 +16,7 @@ export default function FaqPageContent() {
           as="h1"
           size="7"
           mb="6"
-          className="font-one-piece font-bold tracking-wide text-[#f2d9a8]"
+          className="font-one-piece text-highlight font-bold tracking-wide"
         >
           {t('landing.nav.faq')}
         </Heading>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 const authFormCardClassName =
-  'relative flex w-full flex-col gap-4 overflow-hidden rounded-xl border border-[#f2d9a8]/30 bg-linear-to-br from-[#1b2742]/85 via-[#101a30]/95 to-[#0b1120] p-7 shadow-[0_0_48px_rgba(242,217,168,0.1),0_28px_64px_rgba(0,0,0,0.55)] backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-[#f2d9a8]/70 before:to-transparent';
+  'relative flex w-full flex-col gap-4 overflow-hidden rounded-xl border border-highlight/30 bg-linear-to-br from-[#1b2742]/85 via-[#101a30]/95 to-page p-7 shadow-[0_0_48px_--alpha(var(--color-highlight)/10%),0_28px_64px_rgba(0,0,0,0.55)] backdrop-blur-md before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-highlight/70 before:to-transparent';
 
 type AuthFormShellProps = {
   title: string;
@@ -39,7 +39,7 @@ export function AuthFormShell({
         as="h1"
         size="5"
         align="center"
-        className="font-one-piece tracking-wide text-[#f2d9a8]"
+        className="font-one-piece text-highlight tracking-wide"
       >
         {title}
       </Heading>
@@ -52,11 +52,11 @@ export function AuthFormShell({
         </Text>
       ) : null}
 
-      <Text as="p" size="2" align="center" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" align="center" className="text-foreground/75">
         {footerText}{' '}
         <RadixLink
           asChild
-          className="text-[#f2d9a8] underline hover:text-[#f4ede1]"
+          className="text-highlight hover:text-foreground underline"
         >
           <Link href={footerLinkHref}>{footerLinkText}</Link>
         </RadixLink>

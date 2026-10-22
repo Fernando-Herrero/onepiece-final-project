@@ -65,7 +65,7 @@ export function ProfileAvatarPickerOverlay({
     <Flex
       align="center"
       justify="center"
-      className="fixed inset-0 z-50 bg-[#05070d]/85 p-4"
+      className="bg-deep/85 fixed inset-0 z-50 p-4"
       role="dialog"
       aria-modal="true"
       aria-label={t('avatar.change_title')}
@@ -76,7 +76,7 @@ export function ProfileAvatarPickerOverlay({
       }}
     >
       <Card
-        className="relative max-h-[90vh] w-full max-w-md overflow-y-auto border border-[#f2d9a8]/15 bg-[#0b1120]/95 p-6"
+        className="border-highlight/15 bg-page/95 relative max-h-[90vh] w-full max-w-md overflow-y-auto border p-6"
         onClick={event => event.stopPropagation()}
       >
         <IconButton

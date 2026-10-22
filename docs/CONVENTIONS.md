@@ -52,6 +52,7 @@ pages/<ruta>.page.tsx              → thin: routing + getServerSideProps + getL
 - Usar Radix **siempre que cubra el caso** sin perder funcionalidad importante. Preferir `Box`/`Flex` frente a `div`/`span` para layout; `Text`/`Heading` para copy; `Avatar` para fotos de perfil con fallback.
 - Componentes custom + Tailwind solo cuando Radix no lo dé: `<picture>` multi-breakpoint, flip de carta, acordeón serie, banners con URL externa arbitraria, hover swap en avatar picker.
 - Mantener identidad visual legacy (fuentes One Piece, paleta naranja/crema) **encima** de Radix, no sustituirla por un look genérico de backoffice.
+- Colores: los tokens por rol de `@theme` en `globals.css` (`bg-deep`, `bg-page`, `text-foreground`, `text-highlight`), nunca hex arbitrarios; en CSS, `var(--color-…)` y `--alpha()`. No usar nombres que ya define Radix (`surface`, `panel`, `background`, `overlay`) ni sus escalas. Tarjeta y baldosa interior: utilidades `card` y `tile`.
 
 ### Imágenes — `next/image` vs `<img>`
 

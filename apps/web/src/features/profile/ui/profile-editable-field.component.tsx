@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next/pages';
 import { type KeyboardEvent, useState } from 'react';
 
 export const profileFieldClassName =
-  'bg-[#05070d]/50 text-[#f4ede1] placeholder:text-[#f4ede1]/40 border-[#f4ede1]/20';
+  'bg-deep/50 text-foreground placeholder:text-foreground/40 border-foreground/20';
 
 type ProfileEditableFieldProps = {
   value: string;
@@ -110,7 +110,7 @@ export function ProfileEditableField({
       variant="ghost"
       color="gray"
       highContrast={hasValue}
-      className="group h-auto w-full max-w-full cursor-pointer justify-between rounded-md border border-transparent px-2 py-1 text-left hover:border-[#f2d9a8]/20 hover:bg-[#f2d9a8]/5 active:bg-[#f2d9a8]/8"
+      className="group hover:border-highlight/20 hover:bg-highlight/5 active:bg-highlight/8 h-auto w-full max-w-full cursor-pointer justify-between rounded-md border border-transparent px-2 py-1 text-left"
       onClick={startEdit}
     >
       {hasValue ? (
@@ -118,7 +118,7 @@ export function ProfileEditableField({
           as="span"
           size={prominent ? '5' : '2'}
           weight={prominent ? 'bold' : 'regular'}
-          className={prominent ? 'text-[#f4ede1]' : 'text-[#f4ede1]/85'}
+          className={prominent ? 'text-foreground' : 'text-foreground/85'}
         >
           {value.trim()}
         </Text>
@@ -126,7 +126,7 @@ export function ProfileEditableField({
         <Text
           as="span"
           size={prominent ? '3' : '2'}
-          className="text-[#f4ede1]/50 italic"
+          className="text-foreground/50 italic"
         >
           {emptyText}
         </Text>
@@ -135,7 +135,7 @@ export function ProfileEditableField({
       <Text
         as="span"
         size="1"
-        className="shrink-0 text-[#f2d9a8]/0 transition group-hover:text-[#f2d9a8]/70"
+        className="text-highlight/0 group-hover:text-highlight/70 shrink-0 transition"
         aria-hidden
       >
         ✎

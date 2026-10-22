@@ -28,7 +28,7 @@ export function ProfileViewMore({
     : '';
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+    <Card className="card p-4">
       <Button
         type="button"
         variant="ghost"
@@ -37,7 +37,7 @@ export function ProfileViewMore({
         className="flex h-auto w-full cursor-pointer justify-between p-0 hover:bg-transparent active:bg-transparent"
         onClick={() => setOpen(current => !current)}
       >
-        <Text as="span" size="2" weight="medium" className="text-[#f2d9a8]">
+        <Text as="span" size="2" weight="medium" className="text-highlight">
           {open ? t('profile.view_less') : t('profile.view_more')}
         </Text>
         <Text as="span" size="2" color="gray" aria-hidden>

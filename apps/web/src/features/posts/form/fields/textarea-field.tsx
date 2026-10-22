@@ -5,7 +5,7 @@ import { getFieldErrorMessage } from '@/components/form/field-error-message';
 import { useFieldContext } from '@/features/posts/form/post-form';
 
 const postFieldClassName =
-  'min-h-24 resize-y border-[#f2d9a8]/20 bg-[#05070d]/60 text-[#f4ede1]';
+  'min-h-24 resize-y border-highlight/20 bg-deep/60 text-foreground';
 
 type TextAreaFieldProps = {
   label: string;
@@ -29,7 +29,7 @@ export function TextAreaField({
 
   return (
     <label className="flex flex-col gap-1">
-      <Text as="span" size="2" weight="medium" className="text-[#f2d9a8]">
+      <Text as="span" size="2" weight="medium" className="text-highlight">
         {label}
       </Text>
       <TextArea

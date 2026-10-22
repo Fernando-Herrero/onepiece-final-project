@@ -91,9 +91,7 @@ export function DashboardSearchBar() {
         role="search"
         onSubmit={handleSubmit}
         className={`hidden items-center rounded-full border transition-colors md:flex ${
-          isOpen
-            ? 'border-[#f2d9a8]/25 bg-[#05070d]/60 pl-3'
-            : 'border-transparent'
+          isOpen ? 'border-highlight/25 bg-deep/60 pl-3' : 'border-transparent'
         }`}
       >
         <input
@@ -104,7 +102,7 @@ export function DashboardSearchBar() {
           aria-hidden={!isOpen}
           placeholder={t('dashboard.topbar.search_placeholder')}
           aria-label={t('dashboard.nav.search')}
-          className={`bg-transparent text-sm text-[#f4ede1] transition-[width,opacity] duration-200 ease-out outline-none placeholder:text-[#f4ede1]/40 ${
+          className={`text-foreground placeholder:text-foreground/40 bg-transparent text-sm transition-[width,opacity] duration-200 ease-out outline-none ${
             isOpen ? 'w-40 opacity-100' : 'w-0 opacity-0'
           }`}
           onChange={event => setQuery(event.target.value)}

@@ -76,7 +76,7 @@ function ProfilePostList({
         as="p"
         size="2"
         align="center"
-        className="py-8 text-[#f4ede1]/50 italic"
+        className="text-foreground/50 py-8 italic"
       >
         {t(PROFILE_POSTS_EMPTY_MESSAGE_KEY[tab])}
       </Text>
@@ -158,15 +158,15 @@ export function ProfilePostsTabs({
       : 'mask-[linear-gradient(to_right,transparent_0%,black_12%,black_88%,transparent_100%)]';
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+    <Card className="card p-4">
       <Flex align="start" justify="between" gap="3" mb="4" wrap="wrap">
-        <Heading as="h2" size="3" className="text-[#f2d9a8]">
+        <Heading as="h2" size="3" className="text-highlight">
           {t('profile.activity_title')}
         </Heading>
         {isOwner ? (
           <Link
             href="/dashboard/settings/privacy"
-            className="text-xs text-[#f2d9a8]/75 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
+            className="text-highlight/75 hover:text-highlight text-xs underline-offset-2 transition hover:underline"
           >
             {t('profile.activity_manage_visibility')}
           </Link>
@@ -188,7 +188,7 @@ export function ProfilePostsTabs({
               setActiveTab(value as ProfilePostsTab);
             }
           }}
-          className="profile-posts-segmented w-max min-w-full border border-[#f2d9a8]/15 [&_.rt-SegmentedControlItem]:shrink-0 [&_.rt-SegmentedControlItem]:whitespace-nowrap"
+          className="profile-posts-segmented border-highlight/15 w-max min-w-full border [&_.rt-SegmentedControlItem]:shrink-0 [&_.rt-SegmentedControlItem]:whitespace-nowrap"
         >
           {tabs.map(tab => (
             <SegmentedControl.Item
@@ -206,13 +206,13 @@ export function ProfilePostsTabs({
 
       {isActiveTabPrivate ? (
         <Flex direction="column" align="center" gap="2" className="py-8">
-          <Text as="p" size="2" align="center" className="text-[#f4ede1]/50">
+          <Text as="p" size="2" align="center" className="text-foreground/50">
             {t(privateMessage)}
           </Text>
           {isOwner ? (
             <Link
               href="/dashboard/settings"
-              className="text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+              className="text-highlight/80 hover:text-highlight text-sm underline-offset-2 hover:underline"
             >
               {t('profile.activity_private_settings_link')}
             </Link>

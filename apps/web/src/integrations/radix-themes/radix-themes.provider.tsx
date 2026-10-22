@@ -10,7 +10,7 @@ export default function RadixThemesProvider({ children }: PropsWithChildren) {
       radius="large"
       scaling="100%"
       hasBackground={false}
-      className="min-h-screen bg-[#05070d] text-[#f4ede1]"
+      className="bg-deep text-foreground min-h-screen"
     >
       {children}
     </Theme>

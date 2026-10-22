@@ -47,7 +47,7 @@ export function CreatePostModal({
     <Flex
       align="center"
       justify="center"
-      className="community-modal-backdrop fixed inset-0 z-50 bg-[#05070d]/82 p-4 backdrop-blur-md motion-safe:animate-[community-backdrop-in_0.35s_ease-out_both]"
+      className="community-modal-backdrop bg-deep/82 fixed inset-0 z-50 p-4 backdrop-blur-md motion-safe:animate-[community-backdrop-in_0.35s_ease-out_both]"
       role="dialog"
       aria-modal="true"
       aria-label={t('posts.create_modal_title')}
@@ -58,15 +58,15 @@ export function CreatePostModal({
       }}
     >
       <Card
-        className="community-modal-panel relative max-h-[min(90vh,720px)] w-full max-w-lg overflow-y-auto border border-[#f2d9a8]/20 bg-[#0b1120]/95 p-5 shadow-[0_24px_80px_rgb(0_0_0/0.55)] motion-safe:animate-[community-modal-in_0.45s_cubic-bezier(0.16,1,0.3,1)_both] sm:p-6"
+        className="community-modal-panel border-highlight/20 bg-page/95 relative max-h-[min(90vh,720px)] w-full max-w-lg overflow-y-auto border p-5 shadow-[0_24px_80px_rgb(0_0_0/0.55)] motion-safe:animate-[community-modal-in_0.45s_cubic-bezier(0.16,1,0.3,1)_both] sm:p-6"
         onClick={event => event.stopPropagation()}
       >
         <Flex align="start" justify="between" gap="3" mb="4">
           <Flex direction="column" gap="1">
-            <Heading as="h2" size="4" className="text-[#f2d9a8]">
+            <Heading as="h2" size="4" className="text-highlight">
               {t('posts.create_modal_title')}
             </Heading>
-            <Text as="p" size="1" color="gray" className="text-[#f4ede1]/60">
+            <Text as="p" size="1" color="gray" className="text-foreground/60">
               {t('posts.create_modal_subtitle')}
             </Text>
           </Flex>

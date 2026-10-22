@@ -129,11 +129,11 @@ export default function SettingsPageContent() {
         as="h1"
         size="6"
         mb="2"
-        className="font-one-piece tracking-wide text-[#f2d9a8]"
+        className="font-one-piece text-highlight tracking-wide"
       >
         {t('dashboard.pages.settings.title')}
       </Heading>
-      <Text as="p" size="2" mb="6" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" mb="6" className="text-foreground/75">
         {t('settings.subtitle')}
       </Text>
 
@@ -141,12 +141,12 @@ export default function SettingsPageContent() {
         {SETTINGS_MENU.map(item => {
           const isActive = 'href' in item;
           const cardClassName =
-            'settings-hub-card flex h-full min-h-32 flex-col gap-3 border border-[#f2d9a8]/12 bg-linear-to-br from-[#1b2742]/50 to-[#0b1120]/70 p-4 backdrop-blur-sm transition-[border-color,box-shadow] duration-300';
+            'settings-hub-card flex h-full min-h-32 flex-col gap-3 border border-highlight/12 bg-linear-to-br from-[#1b2742]/50 to-page/70 p-4 backdrop-blur-sm transition-[border-color,box-shadow] duration-300';
 
           const content = (
             <>
               <Flex align="start" justify="between" gap="3">
-                <Box className="rounded-lg border border-[#f2d9a8]/15 bg-[#05070d]/40 p-2 text-[#f2d9a8]">
+                <Box className="border-highlight/15 bg-deep/40 text-highlight rounded-lg border p-2">
                   <SettingsMenuIcon name={item.icon} />
                 </Box>
                 {!isActive ? (
@@ -163,14 +163,14 @@ export default function SettingsPageContent() {
               <Heading
                 as="h2"
                 size="3"
-                className="font-road-captain tracking-wide text-[#f2d9a8]/90"
+                className="font-road-captain text-highlight/90 tracking-wide"
               >
                 {t(item.titleKey)}
               </Heading>
               <Text
                 as="p"
                 size="2"
-                className="leading-relaxed text-[#f4ede1]/65"
+                className="text-foreground/65 leading-relaxed"
               >
                 {t(item.textKey)}
               </Text>
@@ -184,7 +184,7 @@ export default function SettingsPageContent() {
                 asChild
                 onMouseMove={tilt.onMouseMove}
                 onMouseLeave={tilt.onMouseLeave}
-                className={`${cardClassName} cursor-pointer hover:border-[#f2d9a8]/40 hover:shadow-[0_20px_50px_rgba(0,0,0,0.45)]`}
+                className={`${cardClassName} hover:border-highlight/40 cursor-pointer hover:shadow-[0_20px_50px_rgba(0,0,0,0.45)]`}
               >
                 <Link href={item.href}>{content}</Link>
               </Card>

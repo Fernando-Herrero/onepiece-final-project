@@ -65,11 +65,11 @@ export default function NotFoundPageContent() {
           <Heading
             as="h1"
             size="8"
-            className="font-one-piece tracking-wide text-[#f2d9a8] md:text-5xl"
+            className="font-one-piece text-highlight tracking-wide md:text-5xl"
           >
             {t('not_found.title')}
           </Heading>
-          <Text as="p" size="4" className="text-[#f4ede1]/90 md:text-2xl">
+          <Text as="p" size="4" className="text-foreground/90 md:text-2xl">
             {t('not_found.message')}
           </Text>
         </Flex>

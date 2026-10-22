@@ -38,14 +38,14 @@ export function SerieEpisodeCard({
   return (
     <Box asChild>
       <li>
-        <Card className="border border-white/10 bg-[#05070d]/55 p-3 shadow-sm transition-colors duration-300 hover:border-[#f2d9a8]/25 hover:bg-[#05070d]/75">
+        <Card className="bg-deep/55 hover:border-highlight/25 hover:bg-deep/75 border border-white/10 p-3 shadow-sm transition-colors duration-300">
           <Flex direction="column" gap="2">
             <Flex align="start" gap="2">
               <Text
                 as="p"
                 size="1"
                 weight="bold"
-                className="font-road-captain shrink-0 text-[#f2d9a8]"
+                className="font-road-captain text-highlight shrink-0"
               >
                 {t('serie.episode_number', { number: episodeId })}
               </Text>
@@ -53,7 +53,7 @@ export function SerieEpisodeCard({
                 as="p"
                 size="2"
                 weight="medium"
-                className="min-w-0 text-[#f4ede1]"
+                className="text-foreground min-w-0"
               >
                 {t(`episodes.${episodeId}.name`, {
                   ns: 'serie',
@@ -66,7 +66,7 @@ export function SerieEpisodeCard({
               <Text
                 as="p"
                 size="1"
-                className="min-w-0 flex-1 text-[#f4ede1]/75"
+                className="text-foreground/75 min-w-0 flex-1"
               >
                 {t(`episodes.${episodeId}.description`, {
                   ns: 'serie',
@@ -91,7 +91,7 @@ export function SerieEpisodeCard({
                   variant="ghost"
                   size="1"
                   highContrast
-                  className="h-auto cursor-pointer px-1 text-[#f2d9a8]/80 hover:text-[#f2d9a8]"
+                  className="text-highlight/80 hover:text-highlight h-auto cursor-pointer px-1"
                   onClick={() => setPreviewRewards(open => !open)}
                 >
                   {previewRewards
@@ -113,7 +113,7 @@ export function SerieEpisodeCard({
                       size="1"
                       weight="bold"
                       mb="2"
-                      className="text-[#f2d9a8] underline decoration-[#f2d9a8]/40"
+                      className="text-highlight decoration-highlight/40 underline"
                     >
                       {t('serie.achievements_heading')}
                     </Text>
@@ -130,12 +130,12 @@ export function SerieEpisodeCard({
                             key={key}
                             as="p"
                             size="1"
-                            className="text-[#f4ede1]/80"
+                            className="text-foreground/80"
                           >
                             <Text
                               as="span"
                               weight="medium"
-                              className="text-[#f4ede1]"
+                              className="text-foreground"
                             >
                               {t(labelKey)}:
                             </Text>{' '}

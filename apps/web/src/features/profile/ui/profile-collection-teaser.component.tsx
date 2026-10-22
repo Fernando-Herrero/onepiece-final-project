@@ -28,27 +28,27 @@ export function ProfileCollectionTeaser({
   })).filter(item => item.count > 0);
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+    <Card className="card p-4">
       <Flex align="center" justify="between" gap="3" mb="4">
-        <Heading as="h2" size="3" className="text-[#f2d9a8]">
+        <Heading as="h2" size="3" className="text-highlight">
           {t('profile.collection_title')}
         </Heading>
         {isOwner ? (
           <Link
             href="/dashboard/cards"
-            className="text-xs text-[#f2d9a8]/80 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
+            className="text-highlight/80 hover:text-highlight text-xs underline-offset-2 transition hover:underline"
           >
             {t('profile.collection_view_all')}
           </Link>
         ) : null}
       </Flex>
 
-      <Text as="p" size="2" mb="3" className="text-[#f4ede1]/85">
+      <Text as="p" size="2" mb="3" className="text-foreground/85">
         {t('profile.collection_total', { count: totalUnlocked })}
       </Text>
 
       {breakdown.length === 0 ? (
-        <Text as="p" size="2" className="text-[#f4ede1]/50 italic">
+        <Text as="p" size="2" className="text-foreground/50 italic">
           {t(
             isOwner
               ? 'profile.collection_empty'
@@ -63,12 +63,12 @@ export function ProfileCollectionTeaser({
               align="center"
               justify="between"
               gap="3"
-              className="rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2"
+              className="tile"
             >
-              <Text as="span" size="2" className="text-[#f4ede1]/85">
+              <Text as="span" size="2" className="text-foreground/85">
                 {item.label}
               </Text>
-              <Text as="span" size="2" weight="bold" className="text-[#f2d9a8]">
+              <Text as="span" size="2" weight="bold" className="text-highlight">
                 {item.count}
               </Text>
             </Flex>

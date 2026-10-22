@@ -32,7 +32,7 @@ export default function SettingsNotificationsPageContent() {
       <Flex direction="column" gap="4">
         {NOTIFICATION_TOGGLES.map(toggle => (
           <Flex key={toggle.key} align="center" justify="between" gap="4">
-            <Text as="label" size="2" className="text-[#f4ede1]/85">
+            <Text as="label" size="2" className="text-foreground/85">
               {t(toggle.labelKey)}
             </Text>
             <Switch

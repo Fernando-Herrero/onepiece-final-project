@@ -41,10 +41,10 @@ export default function SettingsPrivacyPageContent() {
   }
 
   return (
-    <Card className="mx-auto max-w-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both]">
+    <Card className="card mx-auto max-w-xl p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both]">
       <Link
         href="/dashboard/settings"
-        className="mb-4 inline-flex items-center gap-1 text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+        className="text-highlight/80 hover:text-highlight mb-4 inline-flex items-center gap-1 text-sm underline-offset-2 hover:underline"
       >
         <Icon.CaretLeft aria-hidden />
         {t('settings.back')}
@@ -54,22 +54,22 @@ export default function SettingsPrivacyPageContent() {
         as="h1"
         size="6"
         mb="2"
-        className="font-one-piece text-[#f2d9a8]"
+        className="font-one-piece text-highlight"
       >
         {t('settings.title_privacy')}
       </Heading>
-      <Text as="p" size="2" mb="5" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" mb="5" className="text-foreground/75">
         {t('settings.privacy.description')}
       </Text>
 
       <Flex direction="column" gap="4">
-        <Text as="p" size="3" weight="medium" className="text-[#f2d9a8]/90">
+        <Text as="p" size="3" weight="medium" className="text-highlight/90">
           {t('settings.privacy.title')}
         </Text>
 
         {PROFILE_POSTS_TAB_CONFIG.map(tab => (
           <Flex key={tab.privacyKey} align="center" justify="between" gap="4">
-            <Text as="label" size="2" className="text-[#f4ede1]/85">
+            <Text as="label" size="2" className="text-foreground/85">
               {t(tab.labelKey)}
             </Text>
             <Switch

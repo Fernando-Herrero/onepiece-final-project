@@ -40,11 +40,11 @@ export function PostCardHeader({
         align="center"
         gap="1"
         wrap="wrap"
-        className="min-w-0 flex-1 text-[#f4ede1]/55"
+        className="text-foreground/55 min-w-0 flex-1"
       >
         <Link
           href={profileHref}
-          className="flex max-w-[45%] items-center gap-1 truncate text-[#f2d9a8] underline-offset-2 hover:underline"
+          className="text-highlight flex max-w-[45%] items-center gap-1 truncate underline-offset-2 hover:underline"
         >
           <Text as="span" size="2" weight="medium" className="truncate">
             {authorName}
@@ -65,7 +65,7 @@ export function PostCardHeader({
             <time
               dateTime={post.createdAt}
               title={fullDateLabel}
-              className="shrink-0 text-xs text-[#f4ede1]/55"
+              className="text-foreground/55 shrink-0 text-xs"
             >
               {relativeTimeLabel}
             </time>

@@ -19,11 +19,11 @@ export function ProfileReadonlyRow({
         {label}
       </Text>
       {display ? (
-        <Text as="p" size="2" className="text-[#f4ede1]/85">
+        <Text as="p" size="2" className="text-foreground/85">
           {display}
         </Text>
       ) : (
-        <Text as="p" size="2" className="text-[#f4ede1]/50 italic">
+        <Text as="p" size="2" className="text-foreground/50 italic">
           {emptyText ?? '—'}
         </Text>
       )}

@@ -7,7 +7,7 @@ import { getFieldErrorMessage } from '@/components/form/field-error-message';
 import { useFieldContext } from '@/features/auth/form/auth-form';
 
 const authFieldClassName =
-  'bg-[#05070d]/50 text-[#f4ede1] placeholder:text-[#f4ede1]/40 border-[#f4ede1]/20';
+  'bg-deep/50 text-foreground placeholder:text-foreground/40 border-foreground/20';
 
 type FieldProps = {
   label: string;
@@ -42,7 +42,7 @@ export function Field({
 
   return (
     <label className="flex flex-col gap-1">
-      <Text as="span" size="2" className="text-[#f4ede1]/85">
+      <Text as="span" size="2" className="text-foreground/85">
         {label}
       </Text>
       <TextField.Root

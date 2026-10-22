@@ -57,7 +57,7 @@ export function ContactForm({
 
   if (submitted) {
     return (
-      <Card size="3" className="w-full max-w-md border border-[#f2d9a8]/25">
+      <Card size="3" className="border-highlight/25 w-full max-w-md border">
         <Text as="p" size="3" className="leading-relaxed">
           {t('contact.success_message')}
         </Text>
@@ -76,14 +76,14 @@ export function ContactForm({
   return (
     <Card
       size="3"
-      className="w-full max-w-md border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/55 to-[#0b1120]/65"
+      className="border-foreground/10 to-page/65 w-full max-w-md border bg-linear-to-br from-[#1b2742]/55"
     >
       <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
         <Heading
           as={titleAs}
           size="5"
           align="center"
-          className="font-one-piece text-[#f2d9a8]"
+          className="font-one-piece text-highlight"
         >
           {t('contact.title')}
         </Heading>

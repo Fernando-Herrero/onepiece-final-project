@@ -20,8 +20,8 @@ export function ProfileStatsCard({ userId }: ProfileStatsCardProps) {
   ];
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
-      <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
+    <Card className="card p-4">
+      <Heading as="h2" size="3" mb="4" className="text-highlight">
         {t('profile.stats_title')}
       </Heading>
       <Flex direction="column" gap="2">
@@ -31,12 +31,12 @@ export function ProfileStatsCard({ userId }: ProfileStatsCardProps) {
             align="center"
             justify="between"
             gap="3"
-            className="rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2"
+            className="tile"
           >
-            <Text as="span" size="2" className="text-[#f4ede1]/85">
+            <Text as="span" size="2" className="text-foreground/85">
               {item.label}
             </Text>
-            <Text as="span" size="2" weight="bold" className="text-[#f2d9a8]">
+            <Text as="span" size="2" weight="bold" className="text-highlight">
               {item.value ?? t('profile.stats_hidden')}
             </Text>
           </Flex>
@@ -50,8 +50,8 @@ export function ProfileStatsCardSkeleton() {
   const { t } = useTranslation();
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
-      <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
+    <Card className="card p-4">
+      <Heading as="h2" size="3" mb="4" className="text-highlight">
         {t('profile.stats_title')}
       </Heading>
       <Flex direction="column" gap="2">
@@ -61,7 +61,7 @@ export function ProfileStatsCardSkeleton() {
             align="center"
             justify="between"
             gap="3"
-            className="rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2"
+            className="tile"
           >
             <Skeleton height="16px" width="45%" />
             <Skeleton height="16px" width="32px" />

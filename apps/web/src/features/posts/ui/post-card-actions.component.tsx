@@ -51,11 +51,11 @@ export function PostCardActions({
   }
 
   const actionButtonClassName =
-    'flex items-center gap-1 text-[#f4ede1]/70 transition hover:text-[#f2d9a8] disabled:opacity-50';
+    'flex items-center gap-1 text-foreground/70 transition hover:text-highlight disabled:opacity-50';
 
   return (
     <Flex align="center" gap="4" mt="1">
-      <Flex align="center" gap="1" className="text-[#f4ede1]/50">
+      <Flex align="center" gap="1" className="text-foreground/50">
         <Icon.Comment aria-hidden />
         <Text as="span" size="1">
           {post.commentsCount}

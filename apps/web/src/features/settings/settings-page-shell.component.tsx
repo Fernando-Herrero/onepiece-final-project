@@ -30,13 +30,13 @@ export function SettingsPageShell({
 
   return (
     <Card
-      className={`mx-auto border border-[#f2d9a8]/15 bg-[#05070d]/50 p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both] ${
+      className={`card mx-auto p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both] ${
         wide ? 'max-w-5xl' : 'max-w-xl'
       }`}
     >
       <Link
         href={backHref}
-        className="mb-4 inline-flex items-center gap-1 text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+        className="text-highlight/80 hover:text-highlight mb-4 inline-flex items-center gap-1 text-sm underline-offset-2 hover:underline"
       >
         <Icon.CaretLeft aria-hidden />
         {t(backLabelKey)}
@@ -46,11 +46,11 @@ export function SettingsPageShell({
         as="h1"
         size="6"
         mb="2"
-        className="font-one-piece text-[#f2d9a8]"
+        className="font-one-piece text-highlight"
       >
         {t(titleKey)}
       </Heading>
-      <Text as="p" size="2" mb="5" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" mb="5" className="text-foreground/75">
         {t(descriptionKey)}
       </Text>
 

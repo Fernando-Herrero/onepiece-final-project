@@ -40,7 +40,7 @@ function CommunityFeed({
         as="p"
         size="2"
         align="center"
-        className="py-12 text-[#f4ede1]/50 italic"
+        className="text-foreground/50 py-12 italic"
       >
         {t('community.empty')}
       </Text>
@@ -91,11 +91,11 @@ export default function CommunityPageContent() {
         as="h1"
         size="6"
         mb="2"
-        className="font-one-piece tracking-wide text-[#f2d9a8]"
+        className="font-one-piece text-highlight tracking-wide"
       >
         {t('community.title')}
       </Heading>
-      <Text as="p" size="2" color="gray" mb="6" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" color="gray" mb="6" className="text-foreground/75">
         {t('community.subtitle')}
       </Text>
 

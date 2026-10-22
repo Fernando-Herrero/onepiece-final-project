@@ -83,7 +83,7 @@ export function LandingCtaComponent() {
   return (
     <section
       ref={sectionRef}
-      className="relative z-10 overflow-hidden bg-[#05070d] px-6 pt-[clamp(4rem,10vh,7rem)] pb-[clamp(6rem,14vh,10rem)] text-center"
+      className="bg-deep relative z-10 overflow-hidden px-6 pt-[clamp(4rem,10vh,7rem)] pb-[clamp(6rem,14vh,10rem)] text-center"
     >
       <div
         aria-hidden="true"
@@ -97,7 +97,7 @@ export function LandingCtaComponent() {
         size="8"
         align="center"
         mb="6"
-        className="font-one-piece tracking-wide text-[#f2d9a8] [text-shadow:0_0_36px_rgba(220,150,70,0.3)]"
+        className="font-one-piece text-highlight tracking-wide [text-shadow:0_0_36px_rgba(220,150,70,0.3)]"
       >
         {t('landing.cta_title')}
       </Heading>

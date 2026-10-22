@@ -32,7 +32,7 @@ export function PostImagePicker({
   return (
     <Flex direction="column" gap="2">
       <Flex align="center" justify="between" gap="3" wrap="wrap">
-        <Text as="span" size="2" weight="medium" className="text-[#f2d9a8]">
+        <Text as="span" size="2" weight="medium" className="text-highlight">
           {t('posts.create_images_label')}
         </Text>
         <Text as="span" size="1" color="gray">
@@ -77,7 +77,7 @@ export function PostImagePicker({
           {pendingImages.map(item => (
             <div
               key={item.previewUrl}
-              className="group relative size-20 overflow-hidden rounded-xl border border-[#f2d9a8]/20 bg-[#05070d]/60 motion-safe:animate-[community-image-in_0.35s_ease-out_both]"
+              className="group border-highlight/20 bg-deep/60 relative size-20 overflow-hidden rounded-xl border motion-safe:animate-[community-image-in_0.35s_ease-out_both]"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

@@ -24,10 +24,7 @@ export function LandingPublicLayout({
   useSmoothScroll();
 
   return (
-    <Flex
-      direction="column"
-      className="min-h-screen bg-[#05070d] text-[#f4ede1]"
-    >
+    <Flex direction="column" className="bg-deep text-foreground min-h-screen">
       <Head>
         <title>{title}</title>
         {description ? <meta name="description" content={description} /> : null}

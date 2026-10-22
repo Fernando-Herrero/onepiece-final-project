@@ -26,13 +26,13 @@ export function DashboardTopBar({ sectionLabel }: DashboardTopBarProps) {
       align="center"
       justify={{ initial: 'end', md: 'between' }}
       px="4"
-      className="h-14 shrink-0 border-b border-[#f2d9a8]/15 bg-[#05070d] backdrop-blur-md"
+      className="border-highlight/15 bg-deep h-14 shrink-0 border-b backdrop-blur-md"
     >
       <header>
         <Text
           size="2"
           weight="medium"
-          className="hidden text-[#f4ede1]/90 md:block"
+          className="text-foreground/90 hidden md:block"
         >
           LogPose / {sectionLabel}
         </Text>

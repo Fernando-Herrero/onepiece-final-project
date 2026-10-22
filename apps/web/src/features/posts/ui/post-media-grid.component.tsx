@@ -6,7 +6,7 @@ type PostMediaGridProps = {
 
 export function PostMediaGrid({ images, blurred = false }: PostMediaGridProps) {
   const items = images.slice(0, 4);
-  const shellClassName = `overflow-hidden rounded-2xl border border-[#f2d9a8]/10 bg-[#05070d]/50${
+  const shellClassName = `overflow-hidden rounded-2xl border border-highlight/10 bg-deep/50${
     blurred ? ' post-media--blurred' : ''
   }`;
 
@@ -73,7 +73,7 @@ function PostMediaImage({
   className: string;
 }) {
   return (
-    <div className="overflow-hidden bg-[#05070d]/80">
+    <div className="bg-deep/80 overflow-hidden">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt="" className={className} loading="lazy" />
     </div>

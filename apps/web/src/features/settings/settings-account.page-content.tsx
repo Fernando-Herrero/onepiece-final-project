@@ -40,10 +40,10 @@ export default function SettingsAccountPageContent() {
     confirmEmail.trim().toLowerCase() === user.email.toLowerCase();
 
   return (
-    <Card className="mx-auto max-w-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both]">
+    <Card className="card mx-auto max-w-xl p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both]">
       <Link
         href="/dashboard/settings"
-        className="mb-4 inline-flex items-center gap-1 text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+        className="text-highlight/80 hover:text-highlight mb-4 inline-flex items-center gap-1 text-sm underline-offset-2 hover:underline"
       >
         <Icon.CaretLeft aria-hidden />
         {t('settings.back')}
@@ -53,11 +53,11 @@ export default function SettingsAccountPageContent() {
         as="h1"
         size="6"
         mb="2"
-        className="font-one-piece text-[#f2d9a8]"
+        className="font-one-piece text-highlight"
       >
         {t('settings.title_security')}
       </Heading>
-      <Text as="p" size="2" mb="5" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" mb="5" className="text-foreground/75">
         {t('settings.text_security')}
       </Text>
 
@@ -69,7 +69,7 @@ export default function SettingsAccountPageContent() {
         <Text as="p" size="3" weight="medium" className="text-red-400">
           {t('settings.danger_zone.title')}
         </Text>
-        <Text as="p" size="2" className="text-[#f4ede1]/75">
+        <Text as="p" size="2" className="text-foreground/75">
           {t('settings.danger_zone.description')}
         </Text>
 
@@ -88,7 +88,7 @@ export default function SettingsAccountPageContent() {
             </AlertDialog.Description>
 
             <Flex direction="column" gap="2" mt="4">
-              <Text as="label" size="2" className="text-[#f4ede1]/85">
+              <Text as="label" size="2" className="text-foreground/85">
                 {t('settings.danger_zone.confirm_email_label', {
                   email: user.email,
                 })}

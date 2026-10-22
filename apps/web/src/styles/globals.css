@@ -10,7 +10,7 @@
 .profile-posts-segmented.rt-SegmentedControlRoot {
   --segmented-control-indicator-background-color: var(--orange-9);
   color: var(--gray-11);
-  background-color: rgb(5 7 13 / 0.6);
+  background-color: --alpha(var(--color-deep) / 60%);
   background-image: none;
 }
 
@@ -26,7 +26,7 @@
 
 .profile-xp-progress.rt-ProgressRoot {
   --progress-indicator-background-color: var(--orange-9);
-  background-color: rgb(242 217 168 / 0.12);
+  background-color: --alpha(var(--color-highlight) / 12%);
 }
 
 @keyframes profile-fade-up {
@@ -100,16 +100,16 @@
 
 .community-create-fab-ring {
   animation: community-fab-pulse 2.8s ease-in-out infinite;
-  box-shadow: 0 0 0 0 rgb(242 217 168 / 0.35);
+  box-shadow: 0 0 0 0 --alpha(var(--color-highlight) / 35%);
 }
 
 @keyframes community-fab-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgb(242 217 168 / 0.18);
+    box-shadow: 0 0 0 0 --alpha(var(--color-highlight) / 18%);
   }
   50% {
-    box-shadow: 0 0 0 10px rgb(242 217 168 / 0);
+    box-shadow: 0 0 0 10px --alpha(var(--color-highlight) / 0%);
   }
 }
 
@@ -118,6 +118,20 @@
   --font-family-road-captain: 'RoadCaptain', sans-serif;
   --font-one-piece: var(--font-family-one-piece);
   --font-road-captain: var(--font-family-road-captain);
+
+  /* Colores por rol: un tema claro solo redefine estas variables. */
+  --color-deep: #05070d;
+  --color-page: #0b1120;
+  --color-foreground: #f4ede1;
+  --color-highlight: #f2d9a8;
+}
+
+@utility card {
+  @apply border-highlight/15 bg-deep/50 border;
+}
+
+@utility tile {
+  @apply border-highlight/10 bg-deep/40 rounded-md border px-3 py-2;
 }
 
 @font-face {
@@ -173,8 +187,13 @@ html {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(120% 80% at 50% 18%, #1b2742 0%, #0b1120 45%, #05070d 100%),
-    linear-gradient(180deg, #060912 0%, #0a0f1c 60%, #05070d 100%);
+    radial-gradient(
+      120% 80% at 50% 18%,
+      #1b2742 0%,
+      var(--color-page) 45%,
+      var(--color-deep) 100%
+    ),
+    linear-gradient(180deg, #060912 0%, #0a0f1c 60%, var(--color-deep) 100%);
 }
 
 .landing-mask {
@@ -224,14 +243,14 @@ html {
     radial-gradient(
       75% 60% at 50% 42%,
       transparent 40%,
-      rgba(5, 7, 13, 0.85) 100%
+      --alpha(var(--color-deep) / 85%) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(5, 7, 13, 0.4) 0%,
+      --alpha(var(--color-deep) / 40%) 0%,
       transparent 22%,
       transparent 70%,
-      rgba(5, 7, 13, 0.92) 100%
+      --alpha(var(--color-deep) / 92%) 100%
     );
 }
 
@@ -266,11 +285,11 @@ html {
   line-height: 0.9;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #f2d9a8;
+  color: var(--color-highlight);
   opacity: 0;
   text-shadow:
     0 2px 0 #2a1c12,
-    0 0 24px rgba(242, 217, 168, 0.45),
+    0 0 24px --alpha(var(--color-highlight) / 45%),
     0 0 60px rgba(220, 150, 70, 0.35);
 }
 
@@ -286,7 +305,7 @@ html {
   letter-spacing: 0.35em;
   text-transform: uppercase;
   text-align: center;
-  color: rgba(244, 237, 225, 0.75);
+  color: --alpha(var(--color-foreground) / 75%);
   opacity: 0;
   white-space: nowrap;
 }
@@ -305,7 +324,7 @@ html {
   font-size: clamp(0.95rem, 2.4vw, 1.15rem);
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: rgba(244, 237, 225, 0.85);
+  color: --alpha(var(--color-foreground) / 85%);
   text-shadow:
     0 1px 12px rgba(0, 0, 0, 0.6),
     0 0 20px rgba(0, 0, 0, 0.45);
@@ -323,9 +342,9 @@ html {
   pointer-events: none;
   background: radial-gradient(
     ellipse at center,
-    rgba(5, 7, 13, 0.6) 0%,
-    rgba(5, 7, 13, 0.32) 38%,
-    rgba(5, 7, 13, 0) 72%
+    --alpha(var(--color-deep) / 60%) 0%,
+    --alpha(var(--color-deep) / 32%) 38%,
+    --alpha(var(--color-deep) / 0%) 72%
   );
 }
 
@@ -537,19 +556,15 @@ html[data-font-scale='lg'] {
 }
 
 /* Sube el contraste del texto secundario, que en el tema pirata va muy velado. */
-html[data-high-contrast='true'] {
-  --logpose-text-muted: rgb(244 237 225 / 0.95);
-}
-
-html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/50),
-html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/65),
-html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/75),
-html[data-high-contrast='true'] :where(.text-\[\#f4ede1\]\/85) {
-  color: var(--logpose-text-muted);
+html[data-high-contrast='true'] :where(.text-foreground\/50),
+html[data-high-contrast='true'] :where(.text-foreground\/65),
+html[data-high-contrast='true'] :where(.text-foreground\/75),
+html[data-high-contrast='true'] :where(.text-foreground\/85) {
+  color: --alpha(var(--color-foreground) / 95%);
 }
 
 html[data-high-contrast='true'] :where(.rt-Card, .rt-BaseCard) {
-  border-color: rgb(242 217 168 / 0.45);
+  border-color: --alpha(var(--color-highlight) / 45%);
 }
 
 /* Corta animaciones y transiciones, incluidas las de GSAP ya aplicadas. */

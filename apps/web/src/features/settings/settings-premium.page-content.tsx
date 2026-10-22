@@ -78,17 +78,17 @@ export default function SettingsPremiumPageContent() {
   }
 
   return (
-    <Card className="mx-auto max-w-xl border border-[#f2d9a8]/15 bg-[#05070d]/50 p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both]">
+    <Card className="card mx-auto max-w-xl p-6 motion-safe:animate-[profile-fade-up_0.45s_ease-out_both]">
       <Link
         href="/dashboard/settings"
-        className="mb-4 inline-flex items-center gap-1 text-sm text-[#f2d9a8]/80 underline-offset-2 hover:text-[#f2d9a8] hover:underline"
+        className="text-highlight/80 hover:text-highlight mb-4 inline-flex items-center gap-1 text-sm underline-offset-2 hover:underline"
       >
         <Icon.CaretLeft aria-hidden />
         {t('settings.back')}
       </Link>
 
       <Flex align="center" gap="2" mb="2">
-        <Heading as="h1" size="6" className="font-one-piece text-[#f2d9a8]">
+        <Heading as="h1" size="6" className="font-one-piece text-highlight">
           {t('settings.title_premium')}
         </Heading>
         {sessionUser.verified ? (
@@ -98,7 +98,7 @@ export default function SettingsPremiumPageContent() {
         ) : null}
       </Flex>
 
-      <Text as="p" size="2" mb="5" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" mb="5" className="text-foreground/75">
         {sessionUser.verified
           ? t('settings.premium.active_description')
           : t('settings.premium.description')}
@@ -110,19 +110,19 @@ export default function SettingsPremiumPageContent() {
             key={perk.id}
             gap="3"
             align="start"
-            className="rounded-lg border border-[#f2d9a8]/12 bg-[#1b2742]/30 p-3"
+            className="border-highlight/12 rounded-lg border bg-[#1b2742]/30 p-3"
           >
-            <span className="mt-0.5 text-[#f2d9a8]">{perk.icon}</span>
+            <span className="text-highlight mt-0.5">{perk.icon}</span>
             <Flex direction="column" gap="1">
               <Text
                 as="p"
                 size="2"
                 weight="medium"
-                className="text-[#f2d9a8]/90"
+                className="text-highlight/90"
               >
                 {t(perk.titleKey)}
               </Text>
-              <Text as="p" size="2" className="text-[#f4ede1]/65">
+              <Text as="p" size="2" className="text-foreground/65">
                 {t(perk.textKey, { max: POST_TEXT_MAX_LENGTH_VERIFIED })}
               </Text>
             </Flex>

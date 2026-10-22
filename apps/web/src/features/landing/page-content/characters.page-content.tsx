@@ -62,7 +62,7 @@ export default function CharactersPageContent() {
             size="7"
             mb="2"
             align="center"
-            className="font-one-piece tracking-wide text-[#f2d9a8]"
+            className="font-one-piece text-highlight tracking-wide"
           >
             {t('landing.nav.characters')}
           </Heading>
@@ -87,7 +87,7 @@ export default function CharactersPageContent() {
         {visibleCount < CREW.length ? (
           <Card
             size="3"
-            className="mt-4 max-w-md border border-[#f4ede1]/10 bg-[#0b1120]/80 text-center backdrop-blur-sm"
+            className="border-foreground/10 bg-page/80 mt-4 max-w-md border text-center backdrop-blur-sm"
           >
             <Flex direction="column" align="center" gap="3" p="4">
               <Text as="p" size="3" color="gray" className="leading-relaxed">

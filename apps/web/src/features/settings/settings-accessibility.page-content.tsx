@@ -25,10 +25,10 @@ export default function SettingsAccessibilityPageContent() {
       <Flex direction="column" gap="5">
         <Flex align="center" justify="between" gap="4">
           <Flex direction="column" gap="1">
-            <Text as="p" size="2" className="text-[#f4ede1]/85">
+            <Text as="p" size="2" className="text-foreground/85">
               {t('settings.accessibility.language')}
             </Text>
-            <Text as="p" size="1" className="text-[#f4ede1]/50">
+            <Text as="p" size="1" className="text-foreground/50">
               {t('settings.accessibility.language_hint')}
             </Text>
           </Flex>
@@ -36,7 +36,7 @@ export default function SettingsAccessibilityPageContent() {
         </Flex>
 
         <Flex direction="column" gap="2">
-          <Text as="p" size="2" className="text-[#f4ede1]/85">
+          <Text as="p" size="2" className="text-foreground/85">
             {t('settings.accessibility.font_scale')}
           </Text>
           <SegmentedControl.Root
@@ -59,10 +59,10 @@ export default function SettingsAccessibilityPageContent() {
 
         <Flex align="start" justify="between" gap="4">
           <Flex direction="column" gap="1">
-            <Text as="label" size="2" className="text-[#f4ede1]/85">
+            <Text as="label" size="2" className="text-foreground/85">
               {t('settings.accessibility.reduce_motion')}
             </Text>
-            <Text as="p" size="1" className="text-[#f4ede1]/50">
+            <Text as="p" size="1" className="text-foreground/50">
               {t('settings.accessibility.reduce_motion_hint')}
             </Text>
           </Flex>
@@ -77,10 +77,10 @@ export default function SettingsAccessibilityPageContent() {
 
         <Flex align="start" justify="between" gap="4">
           <Flex direction="column" gap="1">
-            <Text as="label" size="2" className="text-[#f4ede1]/85">
+            <Text as="label" size="2" className="text-foreground/85">
               {t('settings.accessibility.high_contrast')}
             </Text>
-            <Text as="p" size="1" className="text-[#f4ede1]/50">
+            <Text as="p" size="1" className="text-foreground/50">
               {t('settings.accessibility.high_contrast_hint')}
             </Text>
           </Flex>

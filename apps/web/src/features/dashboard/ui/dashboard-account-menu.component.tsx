@@ -55,7 +55,7 @@ export function DashboardAccountMenu() {
             fallback={displayName.slice(0, 1).toUpperCase()}
             size="2"
             radius="full"
-            className="border border-[#f2d9a8]/20"
+            className="border-highlight/20 border"
             onLoadingStatusChange={status => {
               if (status === 'error') {
                 setAvatarLoadError(true);
@@ -72,7 +72,7 @@ export function DashboardAccountMenu() {
               <Text
                 size="2"
                 weight="medium"
-                className="truncate text-[#f4ede1]"
+                className="text-foreground truncate"
               >
                 {displayName}
               </Text>

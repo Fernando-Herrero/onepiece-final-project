@@ -72,14 +72,14 @@ export default function SettingsResourcesPageContent() {
         {RESOURCES.map(resource => {
           const body = (
             <Flex gap="3" align="start">
-              <span className="mt-0.5 text-[#f2d9a8]">{resource.icon}</span>
+              <span className="text-highlight mt-0.5">{resource.icon}</span>
               <Flex direction="column" gap="1" className="min-w-0">
                 <Flex align="center" gap="2">
                   <Text
                     as="p"
                     size="2"
                     weight="medium"
-                    className="text-[#f2d9a8]/90"
+                    className="text-highlight/90"
                   >
                     {t(resource.titleKey)}
                   </Text>
@@ -89,7 +89,7 @@ export default function SettingsResourcesPageContent() {
                     </Badge>
                   ) : null}
                 </Flex>
-                <Text as="p" size="2" className="text-[#f4ede1]/65">
+                <Text as="p" size="2" className="text-foreground/65">
                   {t(resource.textKey)}
                 </Text>
               </Flex>
@@ -100,7 +100,7 @@ export default function SettingsResourcesPageContent() {
             <Card
               key={resource.id}
               asChild
-              className="border border-[#f2d9a8]/12 bg-[#1b2742]/30 p-3 transition-colors hover:border-[#f2d9a8]/35"
+              className="border-highlight/12 hover:border-highlight/35 border bg-[#1b2742]/30 p-3 transition-colors"
             >
               {resource.external ? (
                 <a

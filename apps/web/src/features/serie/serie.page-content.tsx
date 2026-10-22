@@ -118,7 +118,7 @@ export default function SeriePageContent() {
     <Box className="mx-auto max-w-3xl pb-24 lg:max-w-4xl">
       <Card
         ref={heroRef}
-        className="relative mb-8 overflow-hidden rounded-3xl border border-[#f2d9a8]/15 bg-transparent p-0 opacity-0 shadow-none"
+        className="border-highlight/15 relative mb-8 overflow-hidden rounded-3xl border bg-transparent p-0 opacity-0 shadow-none"
       >
         <Box className="absolute inset-0 -z-20">
           <Image
@@ -133,7 +133,7 @@ export default function SeriePageContent() {
         </Box>
         <Box
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[radial-gradient(90%_80%_at_50%_20%,rgba(242,217,168,0.12)_0%,rgba(5,7,13,0.55)_45%,rgba(5,7,13,0.95)_100%)]"
+          className="absolute inset-0 -z-10 bg-[radial-gradient(90%_80%_at_50%_20%,--alpha(var(--color-highlight)/12%)_0%,--alpha(var(--color-deep)/55%)_45%,--alpha(var(--color-deep)/95%)_100%)]"
         />
         <Box className="landing-grain -z-10" aria-hidden="true" />
 
@@ -141,30 +141,30 @@ export default function SeriePageContent() {
           <Text
             as="p"
             size="1"
-            className="font-road-captain mb-3 tracking-[0.35em] text-[#f2d9a8]/70 uppercase"
+            className="font-road-captain text-highlight/70 mb-3 tracking-[0.35em] uppercase"
           >
             {t('serie.hero_eyebrow')}
           </Text>
           <Heading
             as="h1"
-            className="font-one-piece text-[clamp(2rem,6vw,3.5rem)] leading-[0.95] tracking-wide text-[#f2d9a8] [text-shadow:0_2px_0_#2a1c12,0_0_36px_rgba(220,150,70,0.28)]"
+            className="font-one-piece text-highlight text-[clamp(2rem,6vw,3.5rem)] leading-[0.95] tracking-wide [text-shadow:0_2px_0_#2a1c12,0_0_36px_rgba(220,150,70,0.28)]"
           >
             {t('serie.title')}
           </Heading>
           <Text
             as="p"
             size="2"
-            className="mt-4 max-w-xl leading-relaxed text-[#f4ede1]/80"
+            className="text-foreground/80 mt-4 max-w-xl leading-relaxed"
           >
             {t('serie.subtitle')}
           </Text>
 
           <Box className="mt-8 max-w-md">
             <Flex align="center" justify="between" gap="3" mb="2">
-              <Text as="p" size="1" className="text-[#f4ede1]/70">
+              <Text as="p" size="1" className="text-foreground/70">
                 {t('serie.progress_label')}
               </Text>
-              <Text as="p" size="1" weight="medium" className="text-[#f2d9a8]">
+              <Text as="p" size="1" weight="medium" className="text-highlight">
                 {experience.toLocaleString()} /{' '}
                 {SERIE_TOTAL_XP.toLocaleString()} XP
               </Text>

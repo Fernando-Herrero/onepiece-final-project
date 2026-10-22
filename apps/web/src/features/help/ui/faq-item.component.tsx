@@ -14,7 +14,7 @@ export function FaqItem({ question, answer }: FaqItemProps) {
 
   return (
     <Card
-      className="faq-item group rounded-lg border border-[#f4ede1]/10 bg-[#0b1120]/60 backdrop-blur-sm transition-colors hover:border-[#f2d9a8]/25"
+      className="faq-item group border-foreground/10 bg-page/60 hover:border-highlight/25 rounded-lg border backdrop-blur-sm transition-colors"
       data-open={open || undefined}
     >
       <Button
@@ -23,14 +23,14 @@ export function FaqItem({ question, answer }: FaqItemProps) {
         highContrast
         aria-expanded={open}
         onClick={() => setOpen(value => !value)}
-        className="font-road-captain h-auto w-full max-w-full min-w-0 cursor-pointer justify-between gap-3 px-4 py-3 text-left text-lg font-bold tracking-wide text-[#f2d9a8]/90"
+        className="font-road-captain text-highlight/90 h-auto w-full max-w-full min-w-0 cursor-pointer justify-between gap-3 px-4 py-3 text-left text-lg font-bold tracking-wide"
       >
         <Text as="span" className="min-w-0 flex-1 text-left">
           {question}
         </Text>
         <Box
           aria-hidden="true"
-          className="shrink-0 text-[#f4ede1]/50 transition-transform duration-300 ease-in-out group-data-open:rotate-180 motion-reduce:transition-none"
+          className="text-foreground/50 shrink-0 transition-transform duration-300 ease-in-out group-data-open:rotate-180 motion-reduce:transition-none"
         >
           <Icon.CaretDown />
         </Box>

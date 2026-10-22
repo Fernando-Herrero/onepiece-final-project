@@ -83,7 +83,7 @@ export function FeatureCardsComponent() {
     <section
       id="features"
       ref={sectionRef}
-      className="relative z-10 bg-linear-to-b from-[#05070d] via-[#080d18] to-[#05070d] px-6 py-[clamp(5rem,12vh,10rem)] pb-[clamp(7rem,16vh,12rem)]"
+      className="from-deep to-deep relative z-10 bg-linear-to-b via-[#080d18] px-6 py-[clamp(5rem,12vh,10rem)] pb-[clamp(7rem,16vh,12rem)]"
     >
       <Flex
         ref={headRef}
@@ -96,7 +96,7 @@ export function FeatureCardsComponent() {
           as="h2"
           size="8"
           align="center"
-          className="font-one-piece tracking-wide text-[#f2d9a8]"
+          className="font-one-piece text-highlight tracking-wide"
         >
           {t('landing.features_title')}
         </Heading>
@@ -124,14 +124,14 @@ export function FeatureCardsComponent() {
             size="3"
             onMouseMove={tilt.onMouseMove}
             onMouseLeave={tilt.onMouseLeave}
-            className="landing-card landing-card-shine max-w-68 flex-[1_1_16rem] border border-[#f4ede1]/10 bg-linear-to-br from-[#1b2742]/55 to-[#0b1120]/65 backdrop-blur-sm transition-[border-color,box-shadow] duration-300 hover:border-[#f2d9a8]/35 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
+            className="landing-card landing-card-shine border-foreground/10 to-page/65 hover:border-highlight/35 max-w-68 flex-[1_1_16rem] border bg-linear-to-br from-[#1b2742]/55 backdrop-blur-sm transition-[border-color,box-shadow] duration-300 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
           >
             <Flex direction="column" gap="3">
               <Text size="6">{emoji}</Text>
               <Heading
                 as="h3"
                 size="4"
-                className="font-road-captain text-xl font-bold tracking-wide text-[#f2d9a8]/90"
+                className="font-road-captain text-highlight/90 text-xl font-bold tracking-wide"
               >
                 {t(`landing.cards.${key}.title`)}
               </Heading>

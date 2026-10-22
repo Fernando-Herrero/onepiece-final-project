@@ -56,7 +56,7 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
           highContrast
           aria-label={t('posts.menu_label')}
           disabled={isBusy}
-          className="cursor-pointer text-[#f4ede1]/60 hover:text-[#f2d9a8]"
+          className="text-foreground/60 hover:text-highlight cursor-pointer"
         >
           <DotsThreeIcon size={20} weight="bold" aria-hidden />
         </IconButton>

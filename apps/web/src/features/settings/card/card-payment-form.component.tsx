@@ -185,7 +185,7 @@ export function CardPaymentForm({
           </Flex>
         </Flex>
 
-        <Text size="1" className="text-[#f4ede1]/50">
+        <Text size="1" className="text-foreground/50">
           {t('settings.premium.fake_notice')}
         </Text>
 

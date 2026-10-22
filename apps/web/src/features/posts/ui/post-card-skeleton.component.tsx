@@ -2,7 +2,7 @@ import { Card, Flex, Skeleton } from '@radix-ui/themes';
 
 export function PostCardSkeleton() {
   return (
-    <Card className="border border-[#f2d9a8]/10 bg-[#05070d]/40 p-4">
+    <Card className="border-highlight/10 bg-deep/40 border p-4">
       <Flex gap="3" align="start">
         <Skeleton
           width="32px"

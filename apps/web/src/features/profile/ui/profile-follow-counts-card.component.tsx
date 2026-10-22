@@ -39,14 +39,14 @@ function ProfileFollowUserRow({ user }: { user: UserSummary }) {
   return (
     <Link
       href={`/dashboard/users/${user._id}`}
-      className="flex items-center gap-3 rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2 transition-colors hover:border-[#f2d9a8]/25"
+      className="tile hover:border-highlight/25 flex items-center gap-3 transition-colors"
     >
       <Avatar
         src={avatarSrc}
         fallback={name.slice(0, 1).toUpperCase()}
         size="2"
         radius="full"
-        className="shrink-0 border border-[#f2d9a8]/20"
+        className="border-highlight/20 shrink-0 border"
       />
       <Flex direction="column" gap="0" className="min-w-0 flex-1">
         <Flex align="center" gap="1" className="min-w-0">
@@ -54,7 +54,7 @@ function ProfileFollowUserRow({ user }: { user: UserSummary }) {
             as="span"
             size="2"
             weight="medium"
-            className="truncate text-[#f4ede1]"
+            className="text-foreground truncate"
           >
             {name}
           </Text>
@@ -65,7 +65,7 @@ function ProfileFollowUserRow({ user }: { user: UserSummary }) {
         </Text>
       </Flex>
       <Box
-        className={`size-2 shrink-0 rounded-full border border-[#0b1120] ${
+        className={`border-page size-2 shrink-0 rounded-full border ${
           user.isActive ? 'bg-green-400' : 'bg-red-400'
         }`}
         aria-hidden
@@ -80,7 +80,7 @@ function ProfileFollowersList({ userId }: { userId: string }) {
 
   if (users.length === 0) {
     return (
-      <Text as="p" size="2" className="py-2 text-[#f4ede1]/50 italic">
+      <Text as="p" size="2" className="text-foreground/50 py-2 italic">
         {t('profile.follow_list_empty_followers')}
       </Text>
     );
@@ -101,7 +101,7 @@ function ProfileFollowingList({ userId }: { userId: string }) {
 
   if (users.length === 0) {
     return (
-      <Text as="p" size="2" className="py-2 text-[#f4ede1]/50 italic">
+      <Text as="p" size="2" className="text-foreground/50 py-2 italic">
         {t('profile.follow_list_empty_following')}
       </Text>
     );
@@ -120,12 +120,7 @@ function ProfileFollowListSkeleton() {
   return (
     <Flex direction="column" gap="2">
       {Array.from({ length: 3 }, (_, index) => (
-        <Flex
-          key={index}
-          align="center"
-          gap="3"
-          className="rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2"
-        >
+        <Flex key={index} align="center" gap="3" className="tile">
           <Skeleton height="32px" width="32px" className="rounded-full" />
           <Flex direction="column" gap="1" className="flex-1">
             <Skeleton height="14px" width="60%" />
@@ -151,8 +146,8 @@ export function ProfileFollowCountsCard({
   ];
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
-      <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
+    <Card className="card p-4">
+      <Heading as="h2" size="3" mb="4" className="text-highlight">
         {t('profile.follow_title')}
       </Heading>
       <Flex gap="3">
@@ -170,8 +165,8 @@ export function ProfileFollowCountsCard({
               aria-controls={`profile-follow-list-${item.kind}`}
               className={`h-auto flex-1 cursor-pointer flex-col items-center gap-1 px-3 py-3 ${
                 isActive
-                  ? 'border-[#f2d9a8]/40 bg-[#f2d9a8]/10'
-                  : 'border-[#f2d9a8]/10 bg-[#05070d]/40 hover:border-[#f2d9a8]/25'
+                  ? 'border-highlight/40 bg-highlight/10'
+                  : 'border-highlight/10 bg-deep/40 hover:border-highlight/25'
               }`}
               onClick={() =>
                 setExpandedList(current =>
@@ -179,7 +174,7 @@ export function ProfileFollowCountsCard({
                 )
               }
             >
-              <Text as="span" size="5" weight="bold" className="text-[#f2d9a8]">
+              <Text as="span" size="5" weight="bold" className="text-highlight">
                 {item.value}
               </Text>
               <Text as="span" size="1" color="gray" align="center">
@@ -193,7 +188,7 @@ export function ProfileFollowCountsCard({
       {expandedList ? (
         <Box
           id={`profile-follow-list-${expandedList}`}
-          className="mt-4 border-t border-[#f2d9a8]/10 pt-4 motion-safe:animate-[profile-fade-up_0.5s_ease-out_both]"
+          className="border-highlight/10 mt-4 border-t pt-4 motion-safe:animate-[profile-fade-up_0.5s_ease-out_both]"
         >
           <Suspense fallback={<ProfileFollowListSkeleton />}>
             {expandedList === 'followers' ? (

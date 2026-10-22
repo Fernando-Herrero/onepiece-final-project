@@ -7,7 +7,7 @@ const MOBILE_HEADER_OFFSET =
   'calc(2.25rem + 3rem + env(safe-area-inset-top, 0px))';
 
 const MOBILE_NAV_LINK_CLASS =
-  'font-road-captain block w-full rounded-lg px-3 py-3 text-center text-lg font-medium tracking-[0.12em] text-[#f4ede1]/90 uppercase transition-colors hover:bg-white/5 hover:text-[#f2d9a8]';
+  'font-road-captain block w-full rounded-lg px-3 py-3 text-center text-lg font-medium tracking-[0.12em] text-foreground/90 uppercase transition-colors hover:bg-white/5 hover:text-highlight';
 
 type MobileNavItem = {
   href: string;
@@ -73,7 +73,7 @@ export function LandingMobileMenuPanel({
         open
           ? 'visible translate-x-0 opacity-100'
           : 'pointer-events-none invisible translate-x-full opacity-0'
-      } bg-linear-to-br from-[#05070d] via-[#0b1120] to-[#1b2742]/90 backdrop-blur-md`}
+      } from-deep via-page bg-linear-to-br to-[#1b2742]/90 backdrop-blur-md`}
       aria-hidden={!open}
     >
       <Flex
@@ -151,22 +151,22 @@ export function LandingMenuToggleButton({
       }
       className={`relative z-60 -m-0.5 h-10 w-10 shrink-0 rounded-full p-0 md:hidden ${
         open
-          ? 'border border-[#f2d9a8]/50 bg-[#05070d]/90 shadow-[0_0_20px_rgba(0,0,0,0.45)] hover:bg-[#05070d]'
+          ? 'border-highlight/50 bg-deep/90 hover:bg-deep border shadow-[0_0_20px_rgba(0,0,0,0.45)]'
           : 'hover:bg-white/10'
       }`}
     >
       <span
         className={`absolute block h-0.5 rounded-full transition-all duration-300 ease-out ${
           open
-            ? 'w-4 rotate-45 bg-[#f2d9a8]'
-            : 'w-6 -translate-y-1 rotate-0 bg-[#f4ede1]'
+            ? 'bg-highlight w-4 rotate-45'
+            : 'bg-foreground w-6 -translate-y-1 rotate-0'
         }`}
       />
       <span
         className={`absolute block h-0.5 rounded-full transition-all duration-300 ease-out ${
           open
-            ? 'w-4 -rotate-45 bg-[#f2d9a8]'
-            : 'w-6 translate-y-1 rotate-0 bg-[#f4ede1]'
+            ? 'bg-highlight w-4 -rotate-45'
+            : 'bg-foreground w-6 translate-y-1 rotate-0'
         }`}
       />
     </Button>

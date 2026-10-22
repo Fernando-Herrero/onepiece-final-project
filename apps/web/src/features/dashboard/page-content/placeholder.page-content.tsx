@@ -15,16 +15,16 @@ export function DashboardPlaceholderPageContent({
   const { t } = useTranslation();
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-6">
+    <Card className="card p-6">
       <Heading
         as="h1"
         size="6"
         mb="3"
-        className="font-one-piece text-[#f2d9a8]"
+        className="font-one-piece text-highlight"
       >
         {t(titleKey)}
       </Heading>
-      <Text as="p" size="2" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" className="text-foreground/75">
         {t(bodyKey)}
       </Text>
     </Card>

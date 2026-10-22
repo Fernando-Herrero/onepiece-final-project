@@ -23,15 +23,15 @@ export function DashboardNavSidebar({
   const navItems = getDashboardNavItems(isAdmin);
 
   return (
-    <aside className="flex h-full w-55 shrink-0 flex-col border-r border-[#f2d9a8]/15 bg-[#05070d] text-[#f4ede1]">
+    <aside className="border-highlight/15 bg-deep text-foreground flex h-full w-55 shrink-0 flex-col border-r">
       <Flex
         align="center"
         px="4"
-        className="h-14 shrink-0 border-b border-[#f2d9a8]/15"
+        className="border-highlight/15 h-14 shrink-0 border-b"
       >
         <Link
           href="/dashboard/profile"
-          className="font-one-piece text-lg text-[#f2d9a8] no-underline hover:text-[#f2d9a8]"
+          className="font-one-piece text-highlight hover:text-highlight text-lg no-underline"
         >
           LOGPOSE
         </Link>
@@ -52,7 +52,7 @@ export function DashboardNavSidebar({
         gap="2"
         px="3"
         py="3"
-        className="border-t border-[#f2d9a8]/15"
+        className="border-highlight/15 border-t"
       >
         <Flex justify="end">
           <IconButton

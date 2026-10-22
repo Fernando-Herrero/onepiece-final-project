@@ -47,17 +47,17 @@ function ProfileRankingRow({
   return (
     <Link
       href={`/dashboard/users/${entry._id}`}
-      className={`flex items-center gap-3 rounded-md border px-3 py-2 transition-colors hover:border-[#f2d9a8]/25 ${
+      className={`hover:border-highlight/25 flex items-center gap-3 rounded-md border px-3 py-2 transition-colors ${
         isCurrentUser
-          ? 'border-[#f2d9a8]/40 bg-[#f2d9a8]/10'
-          : 'border-[#f2d9a8]/10 bg-[#05070d]/40'
+          ? 'border-highlight/40 bg-highlight/10'
+          : 'border-highlight/10 bg-deep/40'
       }`}
     >
       <Text
         as="span"
         size="1"
         weight="bold"
-        className="w-5 shrink-0 text-center text-[#f2d9a8]/70"
+        className="text-highlight/70 w-5 shrink-0 text-center"
       >
         {rank}
       </Text>
@@ -68,7 +68,7 @@ function ProfileRankingRow({
           fallback={name.slice(0, 1).toUpperCase()}
           size="2"
           radius="full"
-          className="border border-[#f2d9a8]/20"
+          className="border-highlight/20 border"
           onLoadingStatusChange={status => {
             if (status === 'error') {
               setAvatarLoadError(true);
@@ -77,7 +77,7 @@ function ProfileRankingRow({
         />
         <Box
           position="absolute"
-          className={`right-0 bottom-0 size-2 rounded-full border border-[#0b1120] ${
+          className={`border-page right-0 bottom-0 size-2 rounded-full border ${
             entry.isActive ? 'bg-green-400' : 'bg-red-400'
           }`}
           aria-hidden
@@ -89,11 +89,11 @@ function ProfileRankingRow({
           as="span"
           size="2"
           weight="medium"
-          className="truncate text-[#f4ede1]"
+          className="text-foreground truncate"
         >
           {name}
           {isCurrentUser ? (
-            <Text as="span" size="1" className="ml-1.5 text-[#f2d9a8]">
+            <Text as="span" size="1" className="text-highlight ml-1.5">
               ({t('profile.ranking_you')})
             </Text>
           ) : null}
@@ -111,7 +111,7 @@ function ProfileRankingRow({
             as="span"
             size="1"
             weight="bold"
-            className="shrink-0 text-[#f2d9a8]"
+            className="text-highlight shrink-0"
           >
             {t('profile.experience', { value: entry.experience })}
           </Text>
@@ -128,13 +128,13 @@ export function ProfileRankingSidebar({
   const { data: ranking } = useProfileRanking();
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
-      <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
+    <Card className="card p-4">
+      <Heading as="h2" size="3" mb="4" className="text-highlight">
         {t('profile.sidebar_ranking_title')}
       </Heading>
 
       {ranking.length === 0 ? (
-        <Text as="p" size="2" color="gray" className="text-[#f4ede1]/60">
+        <Text as="p" size="2" color="gray" className="text-foreground/60">
           {t('profile.sidebar_ranking_empty')}
         </Text>
       ) : (
@@ -157,18 +157,13 @@ export function ProfileRankingSidebarSkeleton() {
   const { t } = useTranslation();
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
-      <Heading as="h2" size="3" mb="4" className="text-[#f2d9a8]">
+    <Card className="card p-4">
+      <Heading as="h2" size="3" mb="4" className="text-highlight">
         {t('profile.sidebar_ranking_title')}
       </Heading>
       <Flex direction="column" gap="2">
         {Array.from({ length: 6 }, (_, index) => (
-          <Flex
-            key={index}
-            align="center"
-            gap="3"
-            className="rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2"
-          >
+          <Flex key={index} align="center" gap="3" className="tile">
             <Skeleton height="14px" width="20px" />
             <Skeleton height="32px" width="32px" className="rounded-full" />
             <Flex direction="column" gap="1" className="flex-1">

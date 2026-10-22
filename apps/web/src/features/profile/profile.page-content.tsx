@@ -41,13 +41,13 @@ function ProfilePageBody({ user, isOwner, isFollowing }: ProfilePageBodyProps) {
         as="h1"
         size="6"
         mb="2"
-        className="font-one-piece tracking-wide text-[#f2d9a8]"
+        className="font-one-piece text-highlight tracking-wide"
       >
         {isOwner
           ? t('profile.title')
           : t('profile.user_profile_title', { username: user.username })}
       </Heading>
-      <Text as="p" size="2" color="gray" mb="6" className="text-[#f4ede1]/75">
+      <Text as="p" size="2" color="gray" mb="6" className="text-foreground/75">
         {isOwner ? t('profile.subtitle') : t('profile.user_profile_subtitle')}
       </Text>
 

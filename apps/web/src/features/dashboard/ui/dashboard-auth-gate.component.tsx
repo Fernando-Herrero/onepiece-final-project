@@ -27,7 +27,7 @@ export function DashboardAuthGate({ children }: PropsWithChildren) {
         justify="center"
         direction="column"
         gap="3"
-        className="min-h-dvh flex-1 bg-[#0b1120]"
+        className="bg-page min-h-dvh flex-1"
       >
         <Spinner size="3" />
         <Text size="2" color="gray">
@@ -48,9 +48,9 @@ export function DashboardAuthGate({ children }: PropsWithChildren) {
         justify="center"
         direction="column"
         gap="2"
-        className="min-h-dvh flex-1 bg-[#0b1120] px-4"
+        className="bg-page min-h-dvh flex-1 px-4"
       >
-        <Text size="3" weight="medium" className="text-[#f2d9a8]">
+        <Text size="3" weight="medium" className="text-highlight">
           {t('dashboard.auth.error_title')}
         </Text>
         <Text size="2" color="gray" align="center">

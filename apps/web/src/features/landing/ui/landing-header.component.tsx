@@ -16,7 +16,7 @@ import {
 let headerIntroPlayed = false;
 
 const NAV_LINK_CLASS =
-  '-m-0.5 relative inline-flex shrink-0 cursor-pointer items-center px-1 py-1.5 font-road-captain font-bold text-sm uppercase tracking-[0.12em] text-[#f4ede1]/85 transition-colors hover:text-[#f2d9a8] after:absolute after:inset-x-1 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-[#f2d9a8]/70 after:transition-transform after:duration-300 hover:after:scale-x-100';
+  '-m-0.5 relative inline-flex shrink-0 cursor-pointer items-center px-1 py-1.5 font-road-captain font-bold text-sm uppercase tracking-[0.12em] text-foreground/85 transition-colors hover:text-highlight after:absolute after:inset-x-1 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-highlight/70 after:transition-transform after:duration-300 hover:after:scale-x-100';
 
 export function LandingHeaderComponent() {
   const { t } = useTranslation();
@@ -65,7 +65,7 @@ export function LandingHeaderComponent() {
         ref={headerRef}
         className={`fixed inset-x-0 top-0 z-50 py-3 transition-all duration-500 max-md:pt-[max(0.75rem,env(safe-area-inset-top))] ${
           solidHeader
-            ? 'border-b border-white/10 bg-[#05070d]/90 backdrop-blur-md'
+            ? 'bg-deep/90 border-b border-white/10 backdrop-blur-md'
             : 'bg-transparent md:py-6'
         }`}
       >

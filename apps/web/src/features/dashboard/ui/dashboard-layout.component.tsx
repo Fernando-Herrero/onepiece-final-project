@@ -26,7 +26,7 @@ export function DashboardLayout({ children }: PropsWithChildren) {
 
   return (
     <DashboardAuthGate>
-      <Flex direction="row" className="h-dvh min-h-0 bg-[#0b1120]">
+      <Flex direction="row" className="bg-page h-dvh min-h-0">
         <Box
           className={`shrink-0 overflow-hidden transition-[width] duration-200 ${
             navExpanded ? 'w-[220px]' : 'w-14'

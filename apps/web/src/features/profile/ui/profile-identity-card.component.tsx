@@ -94,17 +94,17 @@ export function ProfileIdentityCard({
 
   return (
     <>
-      <Card className="overflow-hidden border border-[#f2d9a8]/15 bg-[#05070d]/50 p-0">
+      <Card className="card overflow-hidden p-0">
         <Box
           position="relative"
-          className="group h-36 w-full overflow-hidden bg-linear-to-r from-[#1a0f05] via-[#3d2010] to-[#0b1120] sm:h-40 lg:h-44"
+          className="group to-page h-36 w-full overflow-hidden bg-linear-to-r from-[#1a0f05] via-[#3d2010] sm:h-40 lg:h-44"
         >
           {isOwner && isEditingCover ? (
             <Flex
               direction="column"
               gap="2"
               justify="center"
-              className="absolute inset-0 bg-[#0b1120]/92 p-4"
+              className="bg-page/92 absolute inset-0 p-4"
             >
               <TextField.Root
                 className={profileFieldClassName}
@@ -157,7 +157,7 @@ export function ProfileIdentityCard({
                     onError={() => setCoverLoadError(true)}
                   />
                   <Box
-                    className="pointer-events-none absolute inset-0 bg-linear-to-t from-[#0b1120]/70 via-[#3d2010]/20 to-[#1a0f05]/30"
+                    className="from-page/70 pointer-events-none absolute inset-0 bg-linear-to-t via-[#3d2010]/20 to-[#1a0f05]/30"
                     aria-hidden
                   />
                 </>
@@ -167,7 +167,7 @@ export function ProfileIdentityCard({
                   justify="center"
                   className="absolute inset-0 px-6 text-center"
                 >
-                  <Text as="p" size="2" className="text-[#f4ede1]/45 italic">
+                  <Text as="p" size="2" className="text-foreground/45 italic">
                     {t('profile.cover_empty_hint')}
                   </Text>
                 </Flex>
@@ -177,13 +177,13 @@ export function ProfileIdentityCard({
                   <Flex
                     align="center"
                     justify="center"
-                    className="pointer-events-none absolute inset-0 z-10 bg-[#0b1120]/0 opacity-0 transition duration-200 group-hover:bg-[#0b1120]/50 group-hover:opacity-100"
+                    className="bg-page/0 group-hover:bg-page/50 pointer-events-none absolute inset-0 z-10 opacity-0 transition duration-200 group-hover:opacity-100"
                   >
                     <Text
                       as="span"
                       size="2"
                       weight="medium"
-                      className="text-[#f2d9a8]"
+                      className="text-highlight"
                     >
                       {t('profile.change_cover_img')}
                     </Text>
@@ -223,7 +223,7 @@ export function ProfileIdentityCard({
                     fallback={avatarFallback}
                     size="6"
                     radius="full"
-                    className="border-4 border-[#0b1120]"
+                    className="border-page border-4"
                     onLoadingStatusChange={status => {
                       if (status === 'error') {
                         setAvatarLoadError(true);
@@ -239,7 +239,7 @@ export function ProfileIdentityCard({
                 fallback={avatarFallback}
                 size="6"
                 radius="full"
-                className="border-4 border-[#0b1120]"
+                className="border-page border-4"
                 onLoadingStatusChange={status => {
                   if (status === 'error') {
                     setAvatarLoadError(true);
@@ -249,7 +249,7 @@ export function ProfileIdentityCard({
             )}
             <Box
               position="absolute"
-              className={`right-0.5 bottom-0.5 size-4 rounded-full border-[3px] border-[#0b1120] shadow-[0_0_0_1px_rgba(242,217,168,0.35)] ${
+              className={`border-page right-0.5 bottom-0.5 size-4 rounded-full border-[3px] shadow-[0_0_0_1px_--alpha(var(--color-highlight)/35%)] ${
                 user.isActive ? 'bg-green-400' : 'bg-red-400'
               }`}
               aria-label={
@@ -285,8 +285,8 @@ export function ProfileIdentityCard({
                 weight="bold"
                 className={
                   displayName
-                    ? 'text-[#f4ede1]'
-                    : 'text-base font-normal text-[#f4ede1]/50 italic'
+                    ? 'text-foreground'
+                    : 'text-foreground/50 text-base font-normal italic'
                 }
               >
                 {displayName || t('profile.empty_displayname_other')}
@@ -318,7 +318,9 @@ export function ProfileIdentityCard({
             <Text
               as="p"
               size="2"
-              className={bio ? 'text-[#f4ede1]/85' : 'text-[#f4ede1]/50 italic'}
+              className={
+                bio ? 'text-foreground/85' : 'text-foreground/50 italic'
+              }
             >
               {bio || t('profile.empty_bio_other')}
             </Text>

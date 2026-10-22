@@ -54,7 +54,7 @@ export function PostCard({
   return (
     <Card
       asChild
-      className={`border border-[#f2d9a8]/10 bg-[#05070d]/40 transition-opacity ${
+      className={`border-highlight/10 bg-deep/40 border transition-opacity ${
         isCompact ? 'post-card--compact p-2.5' : 'p-4'
       } ${isPending ? 'opacity-85' : ''}`}
     >
@@ -63,7 +63,7 @@ export function PostCard({
           <Flex
             align="center"
             gap="1"
-            className="mb-2 text-xs text-[#f4ede1]/55"
+            className="text-foreground/55 mb-2 text-xs"
           >
             <Icon.Repeat className="shrink-0 text-green-400/80" aria-hidden />
             {user?._id === post.userId._id ? (
@@ -74,7 +74,7 @@ export function PostCard({
               <Text as="span" size="1">
                 <Link
                   href={retweeterHref}
-                  className="font-medium text-[#f2d9a8]/90 underline-offset-2 hover:underline"
+                  className="text-highlight/90 font-medium underline-offset-2 hover:underline"
                 >
                   {retweeterName}
                 </Link>{' '}
@@ -91,7 +91,7 @@ export function PostCard({
               fallback={authorName.slice(0, 1).toUpperCase()}
               size={{ initial: '2', sm: '4' }}
               radius="full"
-              className="border border-[#f2d9a8]/20"
+              className="border-highlight/20 border"
               onLoadingStatusChange={status => {
                 if (status === 'error') {
                   setAvatarLoadError(true);
@@ -113,7 +113,7 @@ export function PostCard({
             <Text
               as="p"
               size="2"
-              className="whitespace-pre-wrap text-[#f4ede1]/90"
+              className="text-foreground/90 whitespace-pre-wrap"
             >
               {post.text}
             </Text>

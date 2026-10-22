@@ -44,15 +44,15 @@ export function ProfileProgressCard({
     : [];
 
   return (
-    <Card className="border border-[#f2d9a8]/15 bg-[#05070d]/50 p-4">
+    <Card className="card p-4">
       <Flex align="center" justify="between" gap="3" mb="4">
-        <Heading as="h2" size="3" className="text-[#f2d9a8]">
+        <Heading as="h2" size="3" className="text-highlight">
           {t('profile.progress_card_title')}
         </Heading>
         {isOwner ? (
           <Link
             href="/dashboard/serie"
-            className="text-xs text-[#f2d9a8]/80 underline-offset-2 transition hover:text-[#f2d9a8] hover:underline"
+            className="text-highlight/80 hover:text-highlight text-xs underline-offset-2 transition hover:underline"
           >
             {t('profile.progress_view_serie')}
           </Link>
@@ -67,7 +67,7 @@ export function ProfileProgressCard({
                 key={item.label}
                 direction="column"
                 gap="1"
-                className="min-w-28 flex-1 rounded-md border border-[#f2d9a8]/10 bg-[#05070d]/40 px-3 py-2"
+                className="tile min-w-28 flex-1"
               >
                 <Text as="span" size="1" color="gray">
                   {item.label}
@@ -76,7 +76,7 @@ export function ProfileProgressCard({
                   as="span"
                   size="2"
                   weight="medium"
-                  className="text-[#f4ede1]"
+                  className="text-foreground"
                 >
                   {item.value}
                 </Text>
@@ -86,10 +86,10 @@ export function ProfileProgressCard({
 
           <Flex direction="column" gap="2">
             <Flex align="center" justify="between" gap="3">
-              <Text as="span" size="2" className="text-[#f4ede1]/85">
+              <Text as="span" size="2" className="text-foreground/85">
                 {t('profile.progress_xp_label')}
               </Text>
-              <Text as="span" size="2" weight="bold" className="text-[#f2d9a8]">
+              <Text as="span" size="2" weight="bold" className="text-highlight">
                 {t('profile.experience', { value: user.experience })}
               </Text>
             </Flex>
@@ -107,7 +107,7 @@ export function ProfileProgressCard({
           </Flex>
         </Flex>
       ) : (
-        <Text as="p" size="2" className="text-[#f4ede1]/50 italic">
+        <Text as="p" size="2" className="text-foreground/50 italic">
           {t(
             isOwner ? 'profile.progress_empty' : 'profile.progress_empty_other',
           )}

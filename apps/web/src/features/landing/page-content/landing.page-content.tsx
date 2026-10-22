@@ -15,7 +15,7 @@ export default function LandingPageContent() {
   useSmoothScroll();
 
   return (
-    <Box className="landing scroll-smooth bg-[#05070d] text-[#f4ede1]">
+    <Box className="landing bg-deep text-foreground scroll-smooth">
       <Head>
         <title>{t('landing.meta_title')}</title>
         <meta name="description" content={t('landing.meta_description')} />

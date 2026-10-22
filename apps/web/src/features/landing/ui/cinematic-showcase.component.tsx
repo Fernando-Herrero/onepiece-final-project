@@ -69,7 +69,7 @@ export function CinematicShowcaseComponent() {
   return (
     <section
       ref={sectionRef}
-      className="relative z-10 flex min-h-[88vh] items-center overflow-hidden bg-[#05070d]"
+      className="bg-deep relative z-10 flex min-h-[88vh] items-center overflow-hidden"
     >
       <div ref={bgRef} className="absolute inset-0 -z-20 will-change-transform">
         <Image
@@ -84,7 +84,7 @@ export function CinematicShowcaseComponent() {
 
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[radial-gradient(80%_70%_at_50%_50%,rgba(5,7,13,0.25)_0%,rgba(5,7,13,0.78)_60%,#05070d_100%),linear-gradient(180deg,#05070d_0%,transparent_18%,transparent_82%,#05070d_100%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(80%_70%_at_50%_50%,--alpha(var(--color-deep)/25%)_0%,--alpha(var(--color-deep)/78%)_60%,var(--color-deep)_100%),linear-gradient(180deg,var(--color-deep)_0%,transparent_18%,transparent_82%,var(--color-deep)_100%)]"
       />
       <div className="landing-grain -z-10" aria-hidden="true" />
 
@@ -95,20 +95,20 @@ export function CinematicShowcaseComponent() {
         <Text
           as="p"
           size="1"
-          className="font-road-captain mb-5 tracking-[0.4em] text-[#f2d9a8]/70 uppercase"
+          className="font-road-captain text-highlight/70 mb-5 tracking-[0.4em] uppercase"
         >
           {t('landing.showcase.eyebrow')}
         </Text>
         <Heading
           as="h2"
-          className="font-one-piece text-[clamp(2.4rem,7vw,5.5rem)] leading-[0.95] tracking-wide text-[#f2d9a8] [text-shadow:0_2px_0_#2a1c12,0_0_40px_rgba(220,150,70,0.3)]"
+          className="font-one-piece text-highlight text-[clamp(2.4rem,7vw,5.5rem)] leading-[0.95] tracking-wide [text-shadow:0_2px_0_#2a1c12,0_0_40px_rgba(220,150,70,0.3)]"
         >
           {t('landing.showcase.title')}
         </Heading>
         <Text
           as="p"
           size="3"
-          className="mx-auto mt-7 max-w-xl leading-relaxed text-[#f4ede1]/80 md:text-lg"
+          className="text-foreground/80 mx-auto mt-7 max-w-xl leading-relaxed md:text-lg"
         >
           {t('landing.showcase.text')}
         </Text>

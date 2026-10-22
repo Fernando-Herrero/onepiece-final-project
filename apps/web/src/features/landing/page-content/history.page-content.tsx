@@ -91,13 +91,13 @@ export default function HistoryPageContent() {
 
   return (
     <LandingPublicLayout title={t('history.meta_title')}>
-      <Card className="rounded-xl border border-dashed border-[#a64242]/50 bg-[#0b1120]/40 p-6 shadow-lg">
+      <Card className="bg-page/40 rounded-xl border border-dashed border-[#a64242]/50 p-6 shadow-lg">
         <Reveal>
           <Heading
             as="h1"
             size="7"
             mb="6"
-            className="font-one-piece tracking-wide text-[#f2d9a8]"
+            className="font-one-piece text-highlight tracking-wide"
           >
             {t('landing.nav.history')}
           </Heading>
@@ -109,7 +109,7 @@ export default function HistoryPageContent() {
               <Heading
                 as="h2"
                 size="4"
-                className="font-road-captain text-[#f2d9a8]/90 underline"
+                className="font-road-captain text-highlight/90 underline"
               >
                 {t(`history.${item.section}`)}
               </Heading>

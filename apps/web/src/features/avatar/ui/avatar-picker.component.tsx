@@ -37,7 +37,7 @@ export function AvatarPickerComponent({
       mt="4"
     >
       <Flex direction="column" gap="1" align="center">
-        <Text as="p" size="2" weight="medium" className="text-[#f4ede1]/90">
+        <Text as="p" size="2" weight="medium" className="text-foreground/90">
           {t('avatar.pick_title')}
         </Text>
         <Text as="p" size="1" color="gray">
@@ -93,7 +93,7 @@ export function AvatarPickerComponent({
                 as="span"
                 size="1"
                 weight="bold"
-                className={`text-[#f2d9a8] ${selected ? 'pt-1' : ''}`}
+                className={`text-highlight ${selected ? 'pt-1' : ''}`}
               >
                 {t(`avatar.characters.${option.id}`)}
               </Text>

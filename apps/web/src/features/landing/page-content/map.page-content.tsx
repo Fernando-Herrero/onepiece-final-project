@@ -15,7 +15,7 @@ export default function MapPageContent() {
           size="7"
           mb="6"
           align="center"
-          className="font-one-piece tracking-wide text-[#f2d9a8]"
+          className="font-one-piece text-highlight tracking-wide"
         >
           {t('landing.nav.map')}
         </Heading>

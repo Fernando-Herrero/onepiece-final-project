@@ -39,10 +39,10 @@ export default function SettingsTimelinePageContent() {
         {TIMELINE_TOGGLES.map(toggle => (
           <Flex key={toggle.key} align="start" justify="between" gap="4">
             <Flex direction="column" gap="1">
-              <Text as="label" size="2" className="text-[#f4ede1]/85">
+              <Text as="label" size="2" className="text-foreground/85">
                 {t(toggle.labelKey)}
               </Text>
-              <Text as="p" size="1" className="text-[#f4ede1]/50">
+              <Text as="p" size="1" className="text-foreground/50">
                 {t(toggle.hintKey)}
               </Text>
             </Flex>
