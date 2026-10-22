@@ -18,9 +18,8 @@ import {
   resolveAvatarSrc,
 } from '@/features/avatar/avatar.constants';
 import {
-  useFollowUserMutation,
   useSaveProfileField,
-  useUnfollowUserMutation,
+  useSetFollowingMutation,
 } from '@/features/profile/api/use-profile';
 import type {
   ProfileUser,
@@ -54,8 +53,7 @@ export function ProfileIdentityCard({
 }: ProfileIdentityCardProps) {
   const { t } = useTranslation();
   const { save, isSaving } = useSaveProfileField(user._id);
-  const followUser = useFollowUserMutation();
-  const unfollowUser = useUnfollowUserMutation();
+  const setFollowing = useSetFollowingMutation();
   const [coverLoadError, setCoverLoadError] = useState(false);
   const [avatarLoadError, setAvatarLoadError] = useState(false);
   const [editingField, setEditingField] = useState<EditableField | null>(null);
@@ -332,17 +330,15 @@ export function ProfileIdentityCard({
               size="2"
               color={isFollowing ? 'gray' : 'orange'}
               variant={isFollowing ? 'soft' : 'solid'}
-              disabled={followUser.isPending || unfollowUser.isPending}
-              onClick={() => {
-                if (isFollowing) {
-                  void unfollowUser.mutateAsync(user._id);
-                  return;
-                }
-
-                void followUser.mutateAsync(user._id);
-              }}
+              disabled={setFollowing.isPending}
+              onClick={() =>
+                setFollowing.mutate({
+                  targetUserId: user._id,
+                  following: !isFollowing,
+                })
+              }
             >
-              {followUser.isPending || unfollowUser.isPending
+              {setFollowing.isPending
                 ? t('profile.saving')
                 : isFollowing
                   ? t('profile.unfollow_button')

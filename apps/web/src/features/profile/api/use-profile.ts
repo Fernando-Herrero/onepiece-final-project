@@ -90,114 +90,65 @@ export function useSaveProfileField(userId: string) {
   return { save, isSaving };
 }
 
-export function useFollowUserMutation() {
+type SetFollowingVariables = { targetUserId: string; following: boolean };
+
+/** `ids` con `id` dentro o fuera según `included`, sin duplicarlo. */
+function withId(ids: string[], id: string, included: boolean) {
+  const rest = ids.filter(item => item !== id);
+  return included ? [...rest, id] : rest;
+}
+
+export function useSetFollowingMutation() {
   const queryClient = useQueryClient();
   const writeSessionUser = useSessionUserWriter();
   const { t } = useTranslation();
 
   return useMutation({
-    mutationFn: (targetUserId: string) =>
-      client.users.follow({ params: { id: targetUserId } }),
-    onSuccess: (_result, targetUserId) => {
+    mutationFn: ({ targetUserId, following }: SetFollowingVariables) => {
+      const input = { params: { id: targetUserId } };
+      return following
+        ? client.users.follow(input)
+        : client.users.unfollow(input);
+    },
+    onSuccess: (_result, { targetUserId, following }) => {
       const sessionUser = getSessionUser(queryClient);
 
-      if (sessionUser && !sessionUser.following.includes(targetUserId)) {
+      if (sessionUser) {
         writeSessionUser({
           ...sessionUser,
-          following: [...sessionUser.following, targetUserId],
+          following: withId(sessionUser.following, targetUserId, following),
         });
-      }
-
-      queryClient.setQueryData(
-        profileKeys.byId(targetUserId),
-        (old: ProfileUser | undefined) => {
-          if (!old || !sessionUser || old.followers.includes(sessionUser._id)) {
-            return old;
-          }
-
-          return {
-            ...old,
-            followers: [...old.followers, sessionUser._id],
-          };
-        },
-      );
-
-      void queryClient.invalidateQueries({
-        queryKey: profileKeys.followers(targetUserId),
-      });
-      if (sessionUser) {
+        queryClient.setQueryData(
+          profileKeys.byId(targetUserId),
+          (old: ProfileUser | undefined) =>
+            old && {
+              ...old,
+              followers: withId(old.followers, sessionUser._id, following),
+            },
+        );
         void queryClient.invalidateQueries({
           queryKey: profileKeys.following(sessionUser._id),
         });
       }
 
-      toast.success(t('profile.follow_success'));
+      void queryClient.invalidateQueries({
+        queryKey: profileKeys.followers(targetUserId),
+      });
+
+      toast.success(
+        t(following ? 'profile.follow_success' : 'profile.unfollow_success'),
+      );
     },
-    onError: error => {
+    onError: (error, { following }) => {
       const code = getOrpcErrorCode(error);
 
-      if (code === 'ALREADY_FOLLOWING') {
+      // Ya estaba en el estado pedido: la sesión iba por detrás, no es un fallo.
+      if (code === (following ? 'ALREADY_FOLLOWING' : 'NOT_FOLLOWING')) {
         toast.message(t('profile.follow_error'));
         return;
       }
 
       toast.error(t('profile.follow_error'));
-    },
-  });
-}
-
-export function useUnfollowUserMutation() {
-  const queryClient = useQueryClient();
-  const writeSessionUser = useSessionUserWriter();
-  const { t } = useTranslation();
-
-  return useMutation({
-    mutationFn: (targetUserId: string) =>
-      client.users.unfollow({ params: { id: targetUserId } }),
-    onSuccess: (_result, targetUserId) => {
-      const sessionUser = getSessionUser(queryClient);
-
-      if (sessionUser) {
-        writeSessionUser({
-          ...sessionUser,
-          following: sessionUser.following.filter(id => id !== targetUserId),
-        });
-      }
-
-      queryClient.setQueryData(
-        profileKeys.byId(targetUserId),
-        (old: ProfileUser | undefined) => {
-          if (!old || !sessionUser) {
-            return old;
-          }
-
-          return {
-            ...old,
-            followers: old.followers.filter(id => id !== sessionUser._id),
-          };
-        },
-      );
-
-      void queryClient.invalidateQueries({
-        queryKey: profileKeys.followers(targetUserId),
-      });
-      if (sessionUser) {
-        void queryClient.invalidateQueries({
-          queryKey: profileKeys.following(sessionUser._id),
-        });
-      }
-
-      toast.success(t('profile.unfollow_success'));
-    },
-    onError: error => {
-      const code = getOrpcErrorCode(error);
-
-      if (code === 'NOT_FOLLOWING') {
-        toast.message(t('profile.unfollow_error'));
-        return;
-      }
-
-      toast.error(t('profile.unfollow_error'));
     },
   });
 }

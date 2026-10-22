@@ -340,7 +340,6 @@
     "follow_success": "You are now following this pirate",
     "unfollow_success": "You unfollowed this pirate",
     "follow_error": "Could not update follow status",
-    "unfollow_error": "Could not update follow status",
     "empty_bio": "You haven't written a bio yet.",
     "empty_bio_other": "This nakama hasn't written a bio yet.",
     "empty_displayname": "Choose the name you want to display",

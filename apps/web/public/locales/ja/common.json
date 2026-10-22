@@ -340,7 +340,6 @@
     "follow_success": "この海賊をフォローしました",
     "unfollow_success": "フォローを解除しました",
     "follow_error": "フォロー状態を更新できませんでした",
-    "unfollow_error": "フォロー状態を更新できませんでした",
     "empty_bio": "まだ自己紹介が書かれていません。",
     "empty_bio_other": "この仲間はまだ自己紹介を書いていません。",
     "empty_displayname": "表示する名前を選んでください",

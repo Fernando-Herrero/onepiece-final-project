@@ -5,10 +5,7 @@ import { useTranslation } from 'next-i18next/pages';
 
 import { useAuthSession } from '@/features/auth/api/use-auth';
 import type { PostPublic } from '@/features/posts/posts.types';
-import {
-  useFollowUserMutation,
-  useUnfollowUserMutation,
-} from '@/features/profile/api/use-profile';
+import { useSetFollowingMutation } from '@/features/profile/api/use-profile';
 
 type PostCardMenuProps = {
   post: PostPublic;
@@ -18,8 +15,7 @@ type PostCardMenuProps = {
 export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
   const { t } = useTranslation();
   const { user, isAdmin } = useAuthSession();
-  const followUser = useFollowUserMutation();
-  const unfollowUser = useUnfollowUserMutation();
+  const setFollowing = useSetFollowingMutation();
 
   if (!user) {
     return null;
@@ -35,7 +31,7 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
   const canDelete =
     !post.isRetweet && (user._id === post.userId._id || isAdmin);
   const showAuthorActions = !isContentAuthor;
-  const isBusy = followUser.isPending || unfollowUser.isPending;
+  const isBusy = setFollowing.isPending;
 
   if (!showAuthorActions && !(canDelete && onDeletePost)) {
     return null;
@@ -47,15 +43,6 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
     }
 
     onDeletePost(post._id);
-  }
-
-  function handleFollowToggle() {
-    if (isFollowing) {
-      unfollowUser.mutate(contentAuthorId);
-      return;
-    }
-
-    followUser.mutate(contentAuthorId);
   }
 
   return (
@@ -84,7 +71,12 @@ export function PostCardMenu({ post, onDeletePost }: PostCardMenuProps) {
             </DropdownMenu.Item>
             <DropdownMenu.Item
               disabled={isBusy}
-              onSelect={() => handleFollowToggle()}
+              onSelect={() =>
+                setFollowing.mutate({
+                  targetUserId: contentAuthorId,
+                  following: !isFollowing,
+                })
+              }
             >
               {isFollowing ? t('posts.menu_unfollow') : t('posts.menu_follow')}
             </DropdownMenu.Item>
