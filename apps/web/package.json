@@ -9,6 +9,7 @@
     "format-check": "prettier --check \"**/*.{ts,tsx,md,json,html}\"",
     "lint": "eslint . --max-warnings 0",
     "start": "next start",
+    "test": "vitest run",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
@@ -54,6 +55,7 @@
     "eslint-plugin-unused-imports": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:",
-    "typescript-eslint": "catalog:"
+    "typescript-eslint": "catalog:",
+    "vitest": "catalog:"
   }
 }

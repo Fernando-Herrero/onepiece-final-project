@@ -8,15 +8,15 @@ import { toast } from 'sonner';
 
 import { getSessionUser } from '@/features/auth/api/session-user';
 import {
+  cancelPostPages,
   createOptimisticPost,
   invalidateProfilePostQueries,
   patchPostInCaches,
-  type PostsFeedInfiniteData,
   prependPostToFeed,
-  removeOptimisticPostFromFeed,
   removePostFromCaches,
   replaceOptimisticPostInFeed,
   revokeOptimisticImageUrls,
+  togglePostInCaches,
 } from '@/features/posts/api/posts-cache';
 import { uploadPostImages } from '@/features/posts/api/upload-post-images';
 import type { PostPublic } from '@/features/posts/posts.types';
@@ -32,10 +32,6 @@ type CreatePostVariables = {
 export type { CreatePostVariables };
 
 const feedQueryKey = allQueriesOptions.posts.feedInfinite().queryKey;
-
-function matchesInteractionPost(post: PostPublic, postId: string) {
-  return post._id === postId || (post.isRetweet && post.retweetOf === postId);
-}
 
 export function usePostsFeedInfinite() {
   return useSuspenseInfiniteQuery(allQueriesOptions.posts.feedInfinite());
@@ -53,8 +49,6 @@ export function useCreatePostMutation() {
     onMutate: async body => {
       await queryClient.cancelQueries({ queryKey: feedQueryKey });
 
-      const previousFeed =
-        queryClient.getQueryData<PostsFeedInfiniteData>(feedQueryKey);
       const user = getSessionUser(queryClient);
 
       if (user) {
@@ -68,14 +62,12 @@ export function useCreatePostMutation() {
         );
         prependPostToFeed(queryClient, optimisticPost);
         return {
-          previousFeed,
           optimisticId: optimisticPost._id,
           optimisticImageUrls,
         };
       }
 
       return {
-        previousFeed,
         optimisticId: null,
         optimisticImageUrls: undefined,
       };
@@ -83,10 +75,8 @@ export function useCreatePostMutation() {
     onError: (_error, _body, context) => {
       revokeOptimisticImageUrls(context?.optimisticImageUrls);
 
-      if (context?.previousFeed) {
-        queryClient.setQueryData(feedQueryKey, context.previousFeed);
-      } else if (context?.optimisticId) {
-        removeOptimisticPostFromFeed(queryClient, context.optimisticId);
+      if (context?.optimisticId) {
+        removePostFromCaches(queryClient, context.optimisticId);
       }
 
       toast.error(t('posts.create_error'));
@@ -138,71 +128,44 @@ export function useDeletePostMutation() {
 }
 
 type ToggleFieldResult<
-  BoolKey extends 'userLiked' | 'userBookmarked',
-  CountKey extends 'likesCount' | 'bookmarksCount',
+  BoolKey extends 'userLiked' | 'userBookmarked' | 'userRetweeted',
+  CountKey extends 'likesCount' | 'bookmarksCount' | 'retweetsCount',
 > = Record<BoolKey, boolean> & Record<CountKey, number>;
 
 function useTogglePostFieldMutation<
-  BoolKey extends 'userLiked' | 'userBookmarked',
-  CountKey extends 'likesCount' | 'bookmarksCount',
+  BoolKey extends 'userLiked' | 'userBookmarked' | 'userRetweeted',
+  CountKey extends 'likesCount' | 'bookmarksCount' | 'retweetsCount',
+  Result extends ToggleFieldResult<BoolKey, CountKey>,
 >({
   mutationFn,
   boolKey,
   countKey,
   invalidateTab,
+  onToggled,
 }: {
-  mutationFn: (postId: string) => Promise<ToggleFieldResult<BoolKey, CountKey>>;
+  mutationFn: (postId: string) => Promise<Result>;
   boolKey: BoolKey;
   countKey: CountKey;
   invalidateTab: ProfilePostsTab;
+  onToggled?: (result: Result) => void;
 }) {
   const queryClient = useQueryClient();
 
   return useMutation({
     mutationFn,
     onMutate: async (postId: string) => {
-      await queryClient.cancelQueries({ queryKey: feedQueryKey });
-
-      const previousFeed =
-        queryClient.getQueryData<PostsFeedInfiniteData>(feedQueryKey);
-
-      queryClient.setQueryData<PostsFeedInfiniteData>(feedQueryKey, old => {
-        if (!old) {
-          return old;
-        }
-
-        return {
-          ...old,
-          pages: old.pages.map(page => ({
-            ...page,
-            posts: page.posts.map(post => {
-              if (!matchesInteractionPost(post, postId)) {
-                return post;
-              }
-
-              const active = !(post[boolKey] ?? false);
-              return {
-                ...post,
-                [boolKey]: active,
-                [countKey]: Math.max(0, post[countKey] + (active ? 1 : -1)),
-              } as PostPublic;
-            }),
-          })),
-        };
-      });
-
-      return { previousFeed };
+      await cancelPostPages(queryClient);
+      togglePostInCaches(queryClient, postId, boolKey, countKey);
     },
-    onError: (_error, _postId, context) => {
-      if (context?.previousFeed) {
-        queryClient.setQueryData(feedQueryKey, context.previousFeed);
-      }
+    onError: (_error, postId) => {
+      togglePostInCaches(queryClient, postId, boolKey, countKey);
     },
     onSuccess: (result, postId) => {
       patchPostInCaches(queryClient, postId, {
         [countKey]: result[countKey],
         [boolKey]: result[boolKey],
       } as Partial<PostPublic>);
+      onToggled?.(result);
 
       const userId = getSessionUser(queryClient)?._id;
       if (userId) {
@@ -235,65 +198,17 @@ export function useTogglePostBookmarkMutation() {
 export function useTogglePostRetweetMutation() {
   const queryClient = useQueryClient();
 
-  return useMutation({
+  return useTogglePostFieldMutation({
     mutationFn: (postId: string) =>
       client.posts.toggleRetweet({ params: { id: postId } }),
-    onMutate: async (postId: string) => {
-      await queryClient.cancelQueries({ queryKey: feedQueryKey });
-
-      const previousFeed =
-        queryClient.getQueryData<PostsFeedInfiniteData>(feedQueryKey);
-
-      queryClient.setQueryData<PostsFeedInfiniteData>(feedQueryKey, old => {
-        if (!old) {
-          return old;
-        }
-
-        return {
-          ...old,
-          pages: old.pages.map(page => ({
-            ...page,
-            posts: page.posts.map(post => {
-              if (!matchesInteractionPost(post, postId)) {
-                return post;
-              }
-
-              const active = !(post.userRetweeted ?? false);
-              return {
-                ...post,
-                userRetweeted: active,
-                retweetsCount: Math.max(
-                  0,
-                  post.retweetsCount + (active ? 1 : -1),
-                ),
-              };
-            }),
-          })),
-        };
-      });
-
-      return { previousFeed };
-    },
-    onError: (_error, _postId, context) => {
-      if (context?.previousFeed) {
-        queryClient.setQueryData(feedQueryKey, context.previousFeed);
-      }
-    },
-    onSuccess: (result, originalPostId) => {
-      patchPostInCaches(queryClient, originalPostId, {
-        retweetsCount: result.retweetsCount,
-        userRetweeted: result.userRetweeted,
-      });
-
+    boolKey: 'userRetweeted',
+    countKey: 'retweetsCount',
+    invalidateTab: 'posts',
+    onToggled: result => {
       if (result.retweeted && result.retweetPost) {
         prependPostToFeed(queryClient, result.retweetPost);
       } else if (result.removedRetweetPostId) {
         removePostFromCaches(queryClient, result.removedRetweetPostId);
-      }
-
-      const userId = getSessionUser(queryClient)?._id;
-      if (userId) {
-        invalidateProfilePostQueries(queryClient, userId, ['posts']);
       }
     },
   });

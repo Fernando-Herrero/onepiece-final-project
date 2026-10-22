@@ -14,31 +14,14 @@ export type PostsFeedInfiniteData = InfiniteData<
   string | undefined
 >;
 
-function mapPostsInInfiniteFeed(
-  queryClient: QueryClient,
-  mapper: (post: PostPublic) => PostPublic,
-) {
-  queryClient.setQueryData<PostsFeedInfiniteData>(postsKeys.feed(), old => {
-    if (!old) {
-      return old;
-    }
-
-    return {
-      ...old,
-      pages: old.pages.map(page => ({
-        ...page,
-        posts: page.posts.map(mapper),
-      })),
-    };
-  });
-}
+const postPagesKeys = [postsKeys.feed(), profileKeys.postsTabs()];
 
 /** Feed y pestañas del perfil guardan lo mismo: páginas `{ posts, nextCursor }`. */
 function mapPostPages(
   queryClient: QueryClient,
   mapPosts: (posts: PostPublic[]) => PostPublic[],
 ) {
-  for (const queryKey of [postsKeys.feed(), profileKeys.postsTabs()]) {
+  for (const queryKey of postPagesKeys) {
     queryClient.setQueriesData<PostsFeedInfiniteData>(
       { queryKey },
       old =>
@@ -53,24 +36,52 @@ function mapPostPages(
   }
 }
 
+/** Para un update optimista: que una lectura en vuelo no lo pise al llegar. */
+export function cancelPostPages(queryClient: QueryClient) {
+  return Promise.all(
+    postPagesKeys.map(queryKey => queryClient.cancelQueries({ queryKey })),
+  );
+}
+
+/** Un retweet enseña los contadores de su original: se actualizan juntos. */
+function mapInteractionPosts(
+  queryClient: QueryClient,
+  postId: string,
+  mapper: (post: PostPublic) => PostPublic,
+) {
+  mapPostPages(queryClient, posts =>
+    posts.map(post =>
+      post._id === postId || (post.isRetweet && post.retweetOf === postId)
+        ? mapper(post)
+        : post,
+    ),
+  );
+}
+
 export function patchPostInCaches(
   queryClient: QueryClient,
   postId: string,
   patch: Partial<PostPublic>,
 ) {
-  mapPostPages(queryClient, posts =>
-    posts.map(post => {
-      if (post._id === postId) {
-        return { ...post, ...patch };
-      }
+  mapInteractionPosts(queryClient, postId, post => ({ ...post, ...patch }));
+}
 
-      if (post.isRetweet && post.retweetOf === postId) {
-        return { ...post, ...patch };
-      }
+/** Aplicarlo dos veces deja la caché como estaba: así se revierte si falla. */
+export function togglePostInCaches(
+  queryClient: QueryClient,
+  postId: string,
+  boolKey: 'userLiked' | 'userBookmarked' | 'userRetweeted',
+  countKey: 'likesCount' | 'bookmarksCount' | 'retweetsCount',
+) {
+  mapInteractionPosts(queryClient, postId, post => {
+    const active = !post[boolKey];
 
-      return post;
-    }),
-  );
+    return {
+      ...post,
+      [boolKey]: active,
+      [countKey]: Math.max(0, post[countKey] + (active ? 1 : -1)),
+    };
+  });
 }
 
 export function prependPostToFeed(queryClient: QueryClient, post: PostPublic) {
@@ -103,28 +114,9 @@ export function replaceOptimisticPostInFeed(
   optimisticId: string,
   post: PostPublic,
 ) {
-  mapPostsInInfiniteFeed(queryClient, item =>
-    item._id === optimisticId ? post : item,
+  mapPostPages(queryClient, posts =>
+    posts.map(item => (item._id === optimisticId ? post : item)),
   );
-}
-
-export function removeOptimisticPostFromFeed(
-  queryClient: QueryClient,
-  optimisticId: string,
-) {
-  queryClient.setQueryData<PostsFeedInfiniteData>(postsKeys.feed(), old => {
-    if (!old) {
-      return old;
-    }
-
-    return {
-      ...old,
-      pages: old.pages.map(page => ({
-        ...page,
-        posts: page.posts.filter(post => post._id !== optimisticId),
-      })),
-    };
-  });
 }
 
 export function removePostFromCaches(queryClient: QueryClient, postId: string) {
