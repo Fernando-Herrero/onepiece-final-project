@@ -1,5 +1,5 @@
 import { InjectCollection } from '@jperezmart/nest-mongodb';
-import { Injectable } from '@nestjs/common';
+import { Injectable, type OnModuleInit } from '@nestjs/common';
 import { type Collection, ObjectId } from 'mongodb';
 
 export type CommentDocument = {
@@ -23,11 +23,18 @@ export type CommentDocument = {
 };
 
 @Injectable()
-export class CommentsPersistence {
+export class CommentsPersistence implements OnModuleInit {
   constructor(
     @InjectCollection('comments')
     private readonly comments: Collection<CommentDocument>,
   ) {}
+
+  async onModuleInit() {
+    await this.comments.createIndexes([
+      { key: { author: 1, postId: 1 } },
+      { key: { postId: 1 } },
+    ]);
+  }
 
   distinctPostIdsByAuthor(authorId: string) {
     return this.comments.distinct('postId', {

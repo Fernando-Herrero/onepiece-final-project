@@ -1,6 +1,6 @@
 import { InjectCollection } from '@jperezmart/nest-mongodb';
 import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
-import { Injectable } from '@nestjs/common';
+import { Injectable, type OnModuleInit } from '@nestjs/common';
 import { type Collection, type Filter, ObjectId, type WithId } from 'mongodb';
 
 import { decodePostCursor, type PostDocument } from './posts.mappers.js';
@@ -16,11 +16,22 @@ type NewPost = Pick<
  * el viewer no puede ver no se lista, no se cuenta y no se toca.
  */
 @Injectable()
-export class PostsPersistence {
+export class PostsPersistence implements OnModuleInit {
   constructor(
     @InjectCollection('posts')
     private readonly posts: Collection<PostDocument>,
   ) {}
+
+  async onModuleInit() {
+    await this.posts.createIndexes([
+      // Sin `visibility` delante: el filtro del admin y del usuario no la fija.
+      { key: { isDeleted: 1, createdAt: -1, _id: -1 } },
+      { key: { userId: 1, createdAt: -1, _id: -1 } },
+      { key: { likes: 1, createdAt: -1, _id: -1 } },
+      { key: { bookmarks: 1, createdAt: -1, _id: -1 } },
+      { key: { retweetOf: 1 } },
+    ]);
+  }
 
   countByUserId(userId: string, visible: Filter<PostDocument>) {
     return this.posts.countDocuments({
