@@ -1,15 +1,15 @@
-import { Heading, Section, Text } from '@radix-ui/themes';
 import type { GetServerSideProps } from 'next';
 
+import { DashboardPlaceholderPageContent } from '@/features/dashboard/page-content/placeholder.page-content';
 import { withDashboardLayout } from '@/features/dashboard/with-dashboard-layout';
 import { getAdminDashboardPageProps } from '@/integrations/auth/server';
 
 function AdminDashboardPage() {
   return (
-    <Section className="p-6">
-      <Heading size="6">Admin</Heading>
-      <Text color="gray">Panel de moderación — smoke test.</Text>
-    </Section>
+    <DashboardPlaceholderPageContent
+      titleKey="dashboard.pages.admin.title"
+      bodyKey="dashboard.pages.admin.body"
+    />
   );
 }
 

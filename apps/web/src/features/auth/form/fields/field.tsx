@@ -3,8 +3,8 @@ import { IconButton, Text, TextField } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { type ChangeEvent, useState } from 'react';
 
+import { getFieldErrorMessage } from '@/components/form/field-error-message';
 import { useFieldContext } from '@/features/auth/form/auth-form';
-import { getFieldErrorMessage } from '@/features/auth/form/field-error-message';
 
 const authFieldClassName =
   'bg-[#05070d]/50 text-[#f4ede1] placeholder:text-[#f4ede1]/40 border-[#f4ede1]/20';

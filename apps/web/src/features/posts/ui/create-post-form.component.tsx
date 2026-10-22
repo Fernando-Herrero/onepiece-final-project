@@ -39,11 +39,7 @@ export function CreatePostForm({
   const maxLength = user ? getPostTextMaxLength(user.verified) : 280;
 
   const createPostFormSchema = z.object({
-    text: z
-      .string()
-      .trim()
-      .min(1, t('posts.create_validation_error'))
-      .max(maxLength, t('posts.create_max_length_error', { max: maxLength })),
+    text: z.string().trim().min(1).max(maxLength),
   });
 
   const form = usePostForm({

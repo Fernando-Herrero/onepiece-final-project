@@ -120,14 +120,6 @@
       "logout": "ログアウト"
     },
     "pages": {
-      "profile": {
-        "title": "プロフィール",
-        "body": "近日公開：アバター、進捗、フォロワー、プロフィール編集。"
-      },
-      "community": {
-        "title": "コミュニティ",
-        "body": "近日公開：投稿フィード、いいね、コメント。"
-      },
       "search": {
         "title": "検索",
         "body": "近日公開：ユーザーと投稿の検索。"
@@ -137,12 +129,15 @@
         "body": "近日公開：アクティビティ通知とメンション。"
       },
       "settings": {
-        "title": "設定",
-        "body": "近日公開：プライバシー、言語、アカウント。"
+        "title": "設定"
       },
       "cards": {
         "title": "カード",
         "body": "近日公開：シリーズを見て解放したカードのコレクション。"
+      },
+      "admin": {
+        "title": "管理",
+        "body": "近日公開：モデレーションパネル。"
       }
     }
   },
@@ -307,8 +302,6 @@
     "create_submit": "投稿",
     "create_submit_pending": "投稿中…",
     "create_char_count": "{{count}} / {{max}}",
-    "create_validation_error": "投稿する前にテキストを入力してください",
-    "create_max_length_error": "最大 {{max}} 文字",
     "create_error": "投稿を作成できませんでした",
     "create_success": "投稿を作成しました",
     "pending_publish": "投稿中…",

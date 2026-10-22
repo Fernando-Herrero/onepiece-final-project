@@ -1,5 +1,7 @@
 import { Text, TextArea } from '@radix-ui/themes';
+import { useTranslation } from 'next-i18next/pages';
 
+import { getFieldErrorMessage } from '@/components/form/field-error-message';
 import { useFieldContext } from '@/features/posts/form/post-form';
 
 const postFieldClassName =
@@ -18,9 +20,12 @@ export function TextAreaField({
   maxLength,
   rows = 4,
 }: TextAreaFieldProps) {
+  const { t } = useTranslation();
   const field = useFieldContext<string>();
   const showErrors = field.form.state.submissionAttempts > 0;
-  const errorMsg = showErrors ? field.state.meta.errors[0]?.message : undefined;
+  const errorMsg = showErrors
+    ? getFieldErrorMessage(field.state.meta.errors[0], t)
+    : undefined;
 
   return (
     <label className="flex flex-col gap-1">

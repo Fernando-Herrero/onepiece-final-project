@@ -1,12 +1,12 @@
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
+import { getFieldErrorMessage } from '@/components/form/field-error-message';
 import {
   getAuthErrorMessage,
   useRegisterMutation,
 } from '@/features/auth/api/use-auth';
 import { useAppForm } from '@/features/auth/form/auth-form';
-import { getFieldErrorMessage } from '@/features/auth/form/field-error-message';
 import { registerFormSchema } from '@/features/auth/register-form.schema';
 import {
   AuthFormShell,

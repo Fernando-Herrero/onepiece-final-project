@@ -120,14 +120,6 @@
       "logout": "Salir"
     },
     "pages": {
-      "profile": {
-        "title": "Tu perfil",
-        "body": "Próximamente: avatar, progreso, seguidores y edición de perfil."
-      },
-      "community": {
-        "title": "Comunidad",
-        "body": "Próximamente: feed de posts, likes y comentarios."
-      },
       "search": {
         "title": "Buscar",
         "body": "Próximamente: búsqueda de usuarios y publicaciones."
@@ -137,12 +129,15 @@
         "body": "Próximamente: alertas de actividad y menciones."
       },
       "settings": {
-        "title": "Ajustes",
-        "body": "Próximamente: privacidad, idioma y cuenta."
+        "title": "Ajustes"
       },
       "cards": {
         "title": "Cartas",
         "body": "Próximamente: tu colección de cartas desbloqueadas viendo la serie."
+      },
+      "admin": {
+        "title": "Administración",
+        "body": "Próximamente: panel de moderación."
       }
     }
   },
@@ -307,8 +302,6 @@
     "create_submit": "Publicar",
     "create_submit_pending": "Publicando…",
     "create_char_count": "{{count}} / {{max}}",
-    "create_validation_error": "Escribe algo antes de publicar",
-    "create_max_length_error": "Máximo {{max}} caracteres",
     "create_error": "No se pudo crear la publicación",
     "create_success": "Publicación creada",
     "pending_publish": "Publicando…",

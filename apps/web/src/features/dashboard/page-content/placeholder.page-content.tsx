@@ -1,21 +1,11 @@
 import { Card, Heading, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 
+import type { TranslationKey } from '@/integrations/next-i18next/translation-key';
+
 type DashboardPlaceholderPageContentProps = {
-  titleKey:
-    | 'dashboard.pages.profile.title'
-    | 'dashboard.pages.community.title'
-    | 'dashboard.pages.search.title'
-    | 'dashboard.pages.notifications.title'
-    | 'dashboard.pages.settings.title'
-    | 'dashboard.pages.cards.title';
-  bodyKey:
-    | 'dashboard.pages.profile.body'
-    | 'dashboard.pages.community.body'
-    | 'dashboard.pages.search.body'
-    | 'dashboard.pages.notifications.body'
-    | 'dashboard.pages.settings.body'
-    | 'dashboard.pages.cards.body';
+  titleKey: TranslationKey;
+  bodyKey: TranslationKey;
 };
 
 export function DashboardPlaceholderPageContent({
