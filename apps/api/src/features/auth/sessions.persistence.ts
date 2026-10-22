@@ -1,6 +1,6 @@
 import { InjectCollection } from '@jperezmart/nest-mongodb';
 import { Injectable, type OnModuleInit } from '@nestjs/common';
-import { type Collection, ObjectId } from 'mongodb';
+import { type ClientSession, type Collection, ObjectId } from 'mongodb';
 
 type SessionDocument = {
   /** SHA-256 del token de la cookie: un volcado de la colección no sirve como cookie. */
@@ -49,7 +49,10 @@ export class SessionsPersistence implements OnModuleInit {
     await this.sessions.deleteOne({ _id: id });
   }
 
-  async deleteByUser(userId: string) {
-    await this.sessions.deleteMany({ userId: new ObjectId(userId) });
+  async deleteByUser(userId: string, session?: ClientSession) {
+    await this.sessions.deleteMany(
+      { userId: new ObjectId(userId) },
+      { session },
+    );
   }
 }

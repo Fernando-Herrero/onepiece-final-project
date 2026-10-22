@@ -1,7 +1,13 @@
 import { InjectCollection } from '@jperezmart/nest-mongodb';
 import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
 import { Injectable, type OnModuleInit } from '@nestjs/common';
-import { type Collection, type Filter, ObjectId, type WithId } from 'mongodb';
+import {
+  type ClientSession,
+  type Collection,
+  type Filter,
+  ObjectId,
+  type WithId,
+} from 'mongodb';
 
 import { decodePostCursor, type PostDocument } from './posts.mappers.js';
 
@@ -112,28 +118,68 @@ export class PostsPersistence implements OnModuleInit {
       .toArray();
   }
 
-  findIdsByUserId(userId: string) {
-    return this.posts
-      .find({ userId: new ObjectId(userId) }, { projection: { _id: 1 } })
-      .toArray();
-  }
-
-  deleteByUserId(userId: string) {
-    return this.posts.deleteMany({ userId: new ObjectId(userId) });
-  }
-
   /**
-   * Retweets ajenos de estos posts. Al borrar una cuenta se llama antes de
-   * `deleteByUserId`: sin esto, los retweets que OTRA gente hizo de sus posts
-   * quedan huérfanos (`retweetOf` apuntando a nada) — invisibles gracias al
-   * filtro en `serializePostsForViewer`, pero acumulándose sin límite.
+   * Borra sus posts (originales y retweets) y los retweets ajenos de sus
+   * originales, y quita su rastro de los posts ajenos: likes, bookmarks y
+   * retweets, con sus contadores. Devuelve los ids de sus posts.
    */
-  deleteRetweetsOf(postIds: ObjectId[]) {
-    if (postIds.length === 0) {
-      return Promise.resolve({ deletedCount: 0 });
+  async deleteByUser(userId: string, session: ClientSession) {
+    const user = new ObjectId(userId);
+    const own = await this.posts
+      .find({ userId: user }, { projection: { retweetOf: 1 }, session })
+      .toArray();
+    const ownIds = own.map(post => post._id);
+
+    // Solo los originales que aún listan su retweet: los deshechos ya salieron.
+    await this.posts.updateMany(
+      {
+        _id: { $in: own.flatMap(post => post.retweetOf ?? []) },
+        retweets: { $in: ownIds },
+      },
+      {
+        $pullAll: { retweets: ownIds },
+        $inc: { retweetsCount: -1 },
+        $set: { updatedAt: new Date() },
+      },
+      { session },
+    );
+    await this.posts.updateMany(
+      { likes: user },
+      { $pull: { likes: user }, $inc: { likesCount: -1 } },
+      { session },
+    );
+    await this.posts.updateMany(
+      { bookmarks: user },
+      { $pull: { bookmarks: user }, $inc: { bookmarksCount: -1 } },
+      { session },
+    );
+    await this.posts.deleteMany(
+      { $or: [{ userId: user }, { retweetOf: { $in: ownIds } }] },
+      { session },
+    );
+
+    return ownIds;
+  }
+
+  /** Fija `commentsCount` de cada post al recuento que le llega. */
+  async syncCommentsCount(
+    counts: { postId: ObjectId; count: number }[],
+    session: ClientSession,
+  ) {
+    // `bulkWrite` lanza con la lista vacía.
+    if (counts.length === 0) {
+      return;
     }
 
-    return this.posts.deleteMany({ retweetOf: { $in: postIds } });
+    await this.posts.bulkWrite(
+      counts.map(({ postId, count }) => ({
+        updateOne: {
+          filter: { _id: postId },
+          update: { $set: { commentsCount: count } },
+        },
+      })),
+      { session },
+    );
   }
 
   findFeedPage(

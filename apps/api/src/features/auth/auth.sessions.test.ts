@@ -293,6 +293,29 @@ describe('Sesiones opacas en Mongo por HTTP', () => {
     await expectUnauthorized(clientWith(token).auth.me());
   });
 
+  it.each([
+    ['sin cookie', undefined],
+    ['con una cookie cuya sesión ya no existe', 'token-de-una-sesion-borrada'],
+  ])(
+    'logout %s responde con éxito y borra la cookie de sesión',
+    async (_case, token) => {
+      await expect(clientWith(token).auth.logout()).resolves.toBeDefined();
+
+      // Borrar la cookie es reenviarla vacía y ya caducada.
+      const cookie = requireSessionCookie();
+      expect(cookie.token).toBe('');
+      if (cookie.maxAge !== undefined) {
+        expect(Number(cookie.maxAge)).toBeLessThanOrEqual(0);
+      } else {
+        expect(
+          cookie.expires,
+          'la cookie debía llevar Max-Age o Expires',
+        ).toBeDefined();
+        expect(new Date(cookie.expires!).getTime()).toBeLessThan(Date.now());
+      }
+    },
+  );
+
   it('una cuenta desactivada recibe UNAUTHORIZED con una cookie que antes funcionaba', async () => {
     const { userId, token } = await register('franky');
     await expect(clientWith(token).auth.me()).resolves.toBeDefined();

@@ -71,6 +71,8 @@ export class AuthController {
     );
   }
 
+  // Público: tras borrar la cuenta, la web llama aquí sin sesión para limpiar la cookie.
+  @Public()
   @Implement(contract.auth.logout)
   logout() {
     return implement(contract.auth.logout).handler(({ context }) =>

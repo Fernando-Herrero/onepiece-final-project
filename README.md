@@ -23,7 +23,7 @@ La web llama a la API con un cliente oRPC tipado desde `packages/contracts`, as√
 
 ## Arrancar en local
 
-Requisitos: Node 24.16.0 (`.node-version`), pnpm 11.6 y un MongoDB accesible.
+Requisitos: Node 24.16.0 (`.node-version`), pnpm 11.6 y un MongoDB en replica set, porque borrar una cuenta usa una transacci√≥n. Atlas ya lo es; en local, `mongod --replSet rs0` y una vez `rs.initiate()` en mongosh.
 
 ```bash
 cp apps/api/.env.example apps/api/.env

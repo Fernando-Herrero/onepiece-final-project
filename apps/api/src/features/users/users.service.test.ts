@@ -1,11 +1,13 @@
 import 'reflect-metadata';
 
+import { MongoTransactionService } from '@jperezmart/nest-mongodb';
 import { DEFAULT_USER_PREFERENCES } from '@logpose/contracts/common/user.schemas';
 import { type Db, MongoClient, ObjectId } from 'mongodb';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
 import type { Viewer } from '../auth/access.js';
+import { SessionsPersistence } from '../auth/sessions.persistence.js';
 import {
   type CommentDocument,
   CommentsPersistence,
@@ -67,6 +69,8 @@ beforeAll(async () => {
     new PostsPersistence(db.collection('posts')),
     new CommentsPersistence(db.collection('comments')),
     new NotificationsPersistence(db.collection('notifications')),
+    new SessionsPersistence(db.collection('sessions')),
+    new MongoTransactionService(client),
   );
 });
 

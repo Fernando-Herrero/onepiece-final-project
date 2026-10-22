@@ -1,3 +1,4 @@
+import { MongoTransactionService } from '@jperezmart/nest-mongodb';
 import { isAvatarPathSelectable } from '@logpose/contracts/common/avatar.schemas';
 import { updateUserSchema } from '@logpose/contracts/common/user.schemas';
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
@@ -14,6 +15,7 @@ import {
   type Viewer,
   visiblePostsFilter,
 } from '../auth/access.js';
+import { SessionsPersistence } from '../auth/sessions.persistence.js';
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
 import { serializePostsForViewer } from '../posts/posts.mappers.js';
@@ -37,6 +39,8 @@ export class UsersService {
     private readonly postsPersistence: PostsPersistence,
     private readonly commentsPersistence: CommentsPersistence,
     private readonly notificationsPersistence: NotificationsPersistence,
+    private readonly sessionsPersistence: SessionsPersistence,
+    private readonly transactions: MongoTransactionService,
   ) {}
 
   /** Comprueba que el usuario existe en Mongo; lanza USER_NOT_FOUND si no. */
@@ -294,8 +298,8 @@ export class UsersService {
   }
 
   /**
-   * Borra cuenta y datos relacionados (posts y comentarios).
-   * Solo el propio usuario o un admin.
+   * Borra la cuenta y todo lo que cuelga de ella en una transacción: si una
+   * escritura falla, no queda nada a medias. Solo el propio usuario o un admin.
    */
   async delete(targetUserId: string, viewer: UserViewer) {
     if (accessTo(viewer, targetUserId) !== 'full') {
@@ -304,15 +308,25 @@ export class UsersService {
 
     const user = await this.requireUser(targetUserId);
 
-    const userId = user._id.toString();
-    const userPosts = await this.postsPersistence.findIdsByUserId(userId);
-    const postIds = userPosts.map(post => post._id);
-
-    await this.commentsPersistence.deleteByPostIds(postIds);
-    await this.commentsPersistence.deleteByAuthor(userId);
-    await this.postsPersistence.deleteRetweetsOf(postIds);
-    await this.postsPersistence.deleteByUserId(userId);
-    await this.usersPersistence.deleteById(userId);
+    await this.transactions.withTransaction(async session => {
+      const postIds = await this.postsPersistence.deleteByUser(
+        targetUserId,
+        session,
+      );
+      const touchedPostIds = await this.commentsPersistence.deleteByUser(
+        targetUserId,
+        postIds,
+        session,
+      );
+      const commentCounts = await this.commentsPersistence.countActiveByPost(
+        touchedPostIds,
+        session,
+      );
+      await this.postsPersistence.syncCommentsCount(commentCounts, session);
+      await this.notificationsPersistence.deleteByUser(targetUserId, session);
+      await this.sessionsPersistence.deleteByUser(targetUserId, session);
+      await this.usersPersistence.deleteWithFollows(targetUserId, session);
+    });
 
     return {
       ok: true as const,

@@ -1,6 +1,11 @@
 import { InjectCollection } from '@jperezmart/nest-mongodb';
 import { Injectable, type OnModuleInit } from '@nestjs/common';
-import { type Collection, ObjectId, type WithId } from 'mongodb';
+import {
+  type ClientSession,
+  type Collection,
+  ObjectId,
+  type WithId,
+} from 'mongodb';
 
 import type { UserDocument } from './user.mappers.js';
 
@@ -137,7 +142,19 @@ export class UsersPersistence implements OnModuleInit {
     );
   }
 
-  async deleteById(id: string): Promise<void> {
-    await this.users.deleteOne({ _id: new ObjectId(id) });
+  /** Borra el usuario y lo saca de `followers` y `following` de los demás. */
+  async deleteWithFollows(id: string, session: ClientSession): Promise<void> {
+    const user = new ObjectId(id);
+
+    // simplificación: sin índice en esos arrays, recorre users; vale hasta miles.
+    await this.users.updateMany(
+      { $or: [{ followers: user }, { following: user }] },
+      {
+        $pull: { followers: user, following: user },
+        $set: { updatedAt: new Date() },
+      },
+      { session },
+    );
+    await this.users.deleteOne({ _id: user }, { session });
   }
 }
