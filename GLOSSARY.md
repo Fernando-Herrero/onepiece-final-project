@@ -71,6 +71,9 @@ Usuario premium: insignia junto al nombre y posts más largos. El pago es simula
 **Viewer**:
 Quién hace la petición: anónimo, o usuario con su rol. Lo resuelve `SessionGuard` una vez por petición ([ADR 0004](docs/adr/0004-auth-propia-rol-simple.md)).
 
+**Sesión** (`sessions`):
+Login abierto en un navegador: un token aleatorio en la cookie y su hash en Mongo. Dura 30 días desde el último uso y se revoca al cerrar sesión o cambiar la contraseña ([ADR 0016](docs/adr/0016-sesiones-opacas-en-mongo.md)).
+
 **Rol** (`role`):
 `user` o `admin`, leído de la base de datos. El admin ve todo de todos.
 

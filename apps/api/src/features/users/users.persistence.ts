@@ -2,7 +2,7 @@ import { InjectCollection } from '@jperezmart/nest-mongodb';
 import { Injectable, type OnModuleInit } from '@nestjs/common';
 import { type Collection, ObjectId, type WithId } from 'mongodb';
 
-import type { UserDocument, UserRole } from './user.mappers.js';
+import type { UserDocument } from './user.mappers.js';
 
 @Injectable()
 export class UsersPersistence implements OnModuleInit {
@@ -30,13 +30,11 @@ export class UsersPersistence implements OnModuleInit {
     );
   }
 
-  async findRoleById(id: string): Promise<UserRole | null> {
-    const doc = await this.users.findOne(
+  findAccessById(id: string) {
+    return this.users.findOne<Pick<UserDocument, 'role' | 'isActive'>>(
       { _id: new ObjectId(id) },
-      { projection: { role: 1 } },
+      { projection: { role: 1, isActive: 1 } },
     );
-
-    return doc?.role ?? null;
   }
 
   async findFollowingIds(id: string): Promise<ObjectId[]> {

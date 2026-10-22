@@ -6,13 +6,12 @@ import {
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import bcrypt from 'bcrypt';
-import type { Response } from 'express';
+import type { Request, Response } from 'express';
 import type * as z from 'zod/v4';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
 import { serializeSessionUser } from '../users/user.mappers.js';
 import { UsersPersistence } from '../users/users.persistence.js';
-import { clearSessionCookie, setSessionCookie } from './auth.cookies.js';
 import { AuthSessionService } from './auth-session.service.js';
 
 @Injectable()
@@ -63,11 +62,9 @@ export class AuthService {
         throw error;
       });
 
-    const session = { user: serializeSessionUser(newUser) };
+    await this.authSession.open(newUser._id.toString(), res);
 
-    setSessionCookie(res, this.authSession.signToken(newUser._id.toString()));
-
-    return session;
+    return { user: serializeSessionUser(newUser) };
   }
 
   async login(input: { email: string; password: string }, res: Response) {
@@ -84,7 +81,7 @@ export class AuthService {
       throw new ORPCError('ACCOUNT_INACTIVE');
     }
 
-    setSessionCookie(res, this.authSession.signToken(user._id.toString()));
+    await this.authSession.open(user._id.toString(), res);
 
     return { user: serializeSessionUser(user) };
   }
@@ -102,6 +99,7 @@ export class AuthService {
   async changePassword(
     userId: string,
     input: { currentPassword: string; newPassword: string },
+    res: Response,
   ) {
     const user = await this.usersPersistence.findById(userId);
 
@@ -122,12 +120,13 @@ export class AuthService {
       userId,
       await bcrypt.hash(input.newPassword, 10),
     );
+    await this.authSession.rotate(userId, res);
 
     return { message: 'Password changed successfully' };
   }
 
-  logout(res: Response) {
-    clearSessionCookie(res);
+  async logout(req: Request, res: Response) {
+    await this.authSession.close(req, res);
     return { message: 'Logout successful' };
   }
 }

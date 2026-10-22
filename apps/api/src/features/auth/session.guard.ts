@@ -2,7 +2,7 @@ import { commonErrors } from '@logpose/contracts/common/errors';
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { ORPCError } from '@orpc/server';
-import type { Request } from 'express';
+import type { Request, Response } from 'express';
 
 import { UsersPersistence } from '../users/users.persistence.js';
 import type { Viewer } from './access.js';
@@ -23,11 +23,13 @@ export class SessionGuard implements CanActivate {
       context.getClass(),
     ]);
 
-    const request = context
-      .switchToHttp()
-      .getRequest<Request & { viewer: Viewer }>();
+    const http = context.switchToHttp();
+    const request = http.getRequest<Request & { viewer: Viewer }>();
 
-    request.viewer = await this.resolveViewer(request);
+    request.viewer = await this.resolveViewer(
+      request,
+      http.getResponse<Response>(),
+    );
 
     if (isPublic || request.viewer.kind === 'user') {
       return true;
@@ -40,11 +42,16 @@ export class SessionGuard implements CanActivate {
     });
   }
 
-  /** Rol leído de Mongo en cada petición (ADR 0004); sin cuenta, anónimo. */
-  private async resolveViewer(request: Request): Promise<Viewer> {
-    const id = this.authSession.getUserId(request.headers);
-    const role = id ? await this.usersPersistence.findRoleById(id) : null;
+  /** Rol y estado leídos de Mongo en cada petición (ADR 0004); sin sesión o con la cuenta desactivada o borrada, anónimo. */
+  private async resolveViewer(
+    request: Request,
+    response: Response,
+  ): Promise<Viewer> {
+    const id = await this.authSession.resolve(request, response);
+    const access = id ? await this.usersPersistence.findAccessById(id) : null;
 
-    return id && role ? { kind: 'user', id, role } : { kind: 'anonymous' };
+    return id && access?.isActive
+      ? { kind: 'user', id, role: access.role }
+      : { kind: 'anonymous' };
   }
 }

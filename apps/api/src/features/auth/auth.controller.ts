@@ -66,6 +66,7 @@ export class AuthController {
         this.authService.changePassword(
           requireViewer(context.request).id,
           input,
+          this.response(context.request.res),
         ),
     );
   }
@@ -73,7 +74,10 @@ export class AuthController {
   @Implement(contract.auth.logout)
   logout() {
     return implement(contract.auth.logout).handler(({ context }) =>
-      this.authService.logout(this.response(context.request.res)),
+      this.authService.logout(
+        context.request,
+        this.response(context.request.res),
+      ),
     );
   }
 }
