@@ -1,8 +1,9 @@
 import { randomUUID } from 'node:crypto';
 
-import type { createPostSchema } from '@logpose/contracts/common/post.schemas';
-import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
-import type { listPostsInputSchema } from '@logpose/contracts/features/posts/schemas';
+import type {
+  createPostSchema,
+  PostPageQuery,
+} from '@logpose/contracts/common/post.schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
 import { ObjectId } from 'mongodb';
@@ -18,14 +19,12 @@ import { NotificationsPersistence } from '../notifications/notifications.persist
 import { UsersPersistence } from '../users/users.persistence.js';
 import {
   assertTextLength,
-  encodePostCursor,
   serializePost,
   serializePostsForViewer,
 } from './posts.mappers.js';
 import { PostsPersistence } from './posts.persistence.js';
 
 type CreatePostBody = z.infer<typeof createPostSchema>;
-type ListPostsInput = z.infer<typeof listPostsInputSchema>;
 
 @Injectable()
 export class PostsService {
@@ -35,25 +34,16 @@ export class PostsService {
     private readonly notificationsPersistence: NotificationsPersistence,
   ) {}
 
-  async list(input: ListPostsInput, viewer: Viewer) {
-    const limit = input.limit ?? POST_FEED_PAGE_SIZE;
+  async list(query: PostPageQuery, viewer: Viewer) {
     const visible = await visiblePostsFilter(viewer, this.usersPersistence);
-    const rows = await this.postsPersistence.findFeedPage(
-      visible,
-      limit,
-      input.cursor,
-    );
-    const hasMore = rows.length > limit;
-    const page = hasMore ? rows.slice(0, limit) : rows;
-    const posts = await serializePostsForViewer(page, viewer, visible, {
-      posts: this.postsPersistence,
-      users: this.usersPersistence,
-    });
-    const lastRow = page.at(-1);
+    const page = await this.postsPersistence.findPage({}, visible, query);
 
     return {
-      posts,
-      nextCursor: hasMore && lastRow ? encodePostCursor(lastRow) : null,
+      ...page,
+      posts: await serializePostsForViewer(page.posts, viewer, visible, {
+        posts: this.postsPersistence,
+        users: this.usersPersistence,
+      }),
     };
   }
 

@@ -634,7 +634,7 @@ describe('lecturas de quien interactuó con la cuenta borrada', () => {
       await deleteBuggy();
 
       await expect(
-        usersService[tab](id.toString(), viewerOf(id)),
+        usersService[tab](id.toString(), viewerOf(id), {}),
       ).resolves.toBeDefined();
     },
   );

@@ -1,7 +1,7 @@
 import { oc } from '@orpc/contract';
 import * as z from 'zod/v4';
 
-import { postPublicSchema } from '../../common/post.schemas.js';
+import { postPageSchema } from '../../common/post.schemas.js';
 import {
   sessionUserSchema,
   userIdParamsSchema,
@@ -13,6 +13,7 @@ import {
   updatePreferencesInputSchema,
   updateUserInputSchema,
   userByIdOutputSchema,
+  userPostPageInputSchema,
   userRankingEntrySchema,
   userStatsSchema,
   verifyUserOutputSchema,
@@ -107,9 +108,9 @@ export const usersContract = oc
         inputStructure: 'detailed',
         description: 'List public posts by a user',
       })
-      .input(userIdParamsSchema)
+      .input(userPostPageInputSchema)
       .errors(usersErrors)
-      .output(z.array(postPublicSchema)),
+      .output(postPageSchema),
 
     getLikedPosts: oc
       .route({
@@ -118,9 +119,9 @@ export const usersContract = oc
         inputStructure: 'detailed',
         description: 'List posts liked by a user',
       })
-      .input(userIdParamsSchema)
+      .input(userPostPageInputSchema)
       .errors(usersErrors)
-      .output(z.array(postPublicSchema)),
+      .output(postPageSchema),
 
     getBookmarkedPosts: oc
       .route({
@@ -129,9 +130,9 @@ export const usersContract = oc
         inputStructure: 'detailed',
         description: 'List posts bookmarked by a user',
       })
-      .input(userIdParamsSchema)
+      .input(userPostPageInputSchema)
       .errors(usersErrors)
-      .output(z.array(postPublicSchema)),
+      .output(postPageSchema),
 
     getCommentedPosts: oc
       .route({
@@ -140,9 +141,9 @@ export const usersContract = oc
         inputStructure: 'detailed',
         description: 'List posts commented by a user',
       })
-      .input(userIdParamsSchema)
+      .input(userPostPageInputSchema)
       .errors(usersErrors)
-      .output(z.array(postPublicSchema)),
+      .output(postPageSchema),
 
     updatePreferences: oc
       .route({

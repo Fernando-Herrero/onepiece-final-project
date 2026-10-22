@@ -2,11 +2,11 @@ import { oc } from '@orpc/contract';
 
 import {
   createPostSchema,
+  postPageQuerySchema,
+  postPageSchema,
   postPublicSchema,
 } from '../../common/post.schemas.js';
 import {
-  listPostsInputSchema,
-  listPostsOutputSchema,
   postIdParamsSchema,
   shareTokenParamsSchema,
   toggleBookmarkOutputSchema,
@@ -32,9 +32,9 @@ export const postsContract = oc
         path: '/',
         description: 'List public posts (cursor pagination)',
       })
-      .input(listPostsInputSchema)
+      .input(postPageQuerySchema)
       .errors(postsErrors)
-      .output(listPostsOutputSchema),
+      .output(postPageSchema),
 
     getByShareToken: oc
       .route({

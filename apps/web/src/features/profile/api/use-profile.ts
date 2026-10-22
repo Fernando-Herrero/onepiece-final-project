@@ -1,6 +1,7 @@
 import {
   useMutation,
   useQueryClient,
+  useSuspenseInfiniteQuery,
   useSuspenseQuery,
 } from '@tanstack/react-query';
 import { useTranslation } from 'next-i18next/pages';
@@ -39,7 +40,9 @@ export function useProfileFollowing(userId: string) {
 }
 
 export function useProfilePosts(userId: string, tab: ProfilePostsTab) {
-  return useSuspenseQuery(allQueriesOptions.profile.postsTab(userId, tab));
+  return useSuspenseInfiniteQuery(
+    allQueriesOptions.profile.postsTab(userId, tab),
+  );
 }
 
 export function useUpdateProfileMutation() {

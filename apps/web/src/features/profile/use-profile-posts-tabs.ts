@@ -13,7 +13,7 @@ import type {
 /**
  * La privacidad de actividad solo protege de visitantes externos: el dueño
  * del perfil y los admin siempre ven todas las pestañas, igual que ya hace
- * la API en `assertVisibleUser`.
+ * la API en `canSeeTab`.
  */
 export function useProfilePostsTabs(
   privacy: ProfilePrivacy,

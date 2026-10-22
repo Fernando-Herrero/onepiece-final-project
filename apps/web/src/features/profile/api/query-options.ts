@@ -1,4 +1,5 @@
-import { queryOptions } from '@tanstack/react-query';
+import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
+import { infiniteQueryOptions, queryOptions } from '@tanstack/react-query';
 
 import { profileKeys } from '@/features/profile/api/profile.keys';
 import type { ProfilePostsTab } from '@/features/profile/profile.types';
@@ -48,10 +49,13 @@ export const getProfileQueriesOptions = (client: OrpcClient) => ({
     }),
 
   postsTab: (userId: string, tab: ProfilePostsTab) =>
-    queryOptions({
+    infiniteQueryOptions({
       queryKey: profileKeys.postsTab(userId, tab),
-      queryFn: () => {
-        const input = { params: { id: userId } };
+      queryFn: ({ pageParam }) => {
+        const input = {
+          params: { id: userId },
+          query: { limit: POST_FEED_PAGE_SIZE, cursor: pageParam },
+        };
 
         switch (tab) {
           case 'posts':
@@ -64,5 +68,7 @@ export const getProfileQueriesOptions = (client: OrpcClient) => ({
             return client.users.getCommentedPosts(input);
         }
       },
+      initialPageParam: undefined as string | undefined,
+      getNextPageParam: lastPage => lastPage.nextCursor ?? undefined,
     }),
 });

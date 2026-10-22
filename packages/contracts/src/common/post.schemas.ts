@@ -65,3 +65,15 @@ export const postPublicSchema = z.object({
   /** Autor del post original cuando `isRetweet` es true (UX estilo Twitter). */
   originalAuthor: postAuthorSchema.optional(),
 });
+
+export const postPageQuerySchema = z.object({
+  limit: z.coerce.number().int().min(1).max(50).optional(),
+  cursor: z.string().optional(),
+});
+
+export type PostPageQuery = z.infer<typeof postPageQuerySchema>;
+
+export const postPageSchema = z.object({
+  posts: z.array(postPublicSchema),
+  nextCursor: z.string().nullable(),
+});

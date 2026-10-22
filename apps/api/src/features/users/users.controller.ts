@@ -53,7 +53,11 @@ export class UsersController {
   @Implement(contract.users.getPosts)
   getPosts() {
     return implement(contract.users.getPosts).handler(({ input, context }) =>
-      this.usersService.getPosts(input.params.id, context.request.viewer),
+      this.usersService.getPosts(
+        input.params.id,
+        context.request.viewer,
+        input.query,
+      ),
     );
   }
 
@@ -65,6 +69,7 @@ export class UsersController {
         this.usersService.getLikedPosts(
           input.params.id,
           context.request.viewer,
+          input.query,
         ),
     );
   }
@@ -77,6 +82,7 @@ export class UsersController {
         this.usersService.getBookmarkedPosts(
           input.params.id,
           context.request.viewer,
+          input.query,
         ),
     );
   }
@@ -89,6 +95,7 @@ export class UsersController {
         this.usersService.getCommentedPosts(
           input.params.id,
           context.request.viewer,
+          input.query,
         ),
     );
   }

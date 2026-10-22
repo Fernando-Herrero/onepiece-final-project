@@ -1,5 +1,8 @@
 import { InjectCollection } from '@jperezmart/nest-mongodb';
-import { POST_FEED_PAGE_SIZE } from '@logpose/contracts/common/post.schemas';
+import {
+  POST_FEED_PAGE_SIZE,
+  type PostPageQuery,
+} from '@logpose/contracts/common/post.schemas';
 import { Injectable, type OnModuleInit } from '@nestjs/common';
 import {
   type ClientSession,
@@ -9,7 +12,11 @@ import {
   type WithId,
 } from 'mongodb';
 
-import { decodePostCursor, type PostDocument } from './posts.mappers.js';
+import {
+  decodePostCursor,
+  encodePostCursor,
+  type PostDocument,
+} from './posts.mappers.js';
 
 type NewPost = Pick<
   PostDocument,
@@ -39,26 +46,9 @@ export class PostsPersistence implements OnModuleInit {
     ]);
   }
 
-  countByUserId(userId: string, visible: Filter<PostDocument>) {
+  count(filter: Filter<PostDocument>, visible: Filter<PostDocument>) {
     return this.posts.countDocuments({
-      ...visible,
-      userId: new ObjectId(userId),
-      isDeleted: false,
-    });
-  }
-
-  countLikedByUserId(userId: string, visible: Filter<PostDocument>) {
-    return this.posts.countDocuments({
-      ...visible,
-      likes: new ObjectId(userId),
-      isDeleted: false,
-    });
-  }
-
-  countBookmarkedByUserId(userId: string, visible: Filter<PostDocument>) {
-    return this.posts.countDocuments({
-      ...visible,
-      bookmarks: new ObjectId(userId),
+      $and: [filter, visible],
       isDeleted: false,
     });
   }
@@ -72,36 +62,6 @@ export class PostsPersistence implements OnModuleInit {
       .toArray();
 
     return rows.map(row => row._id);
-  }
-
-  findByUserId(userId: string, visible: Filter<PostDocument>) {
-    return this.posts
-      .find({
-        ...visible,
-        userId: new ObjectId(userId),
-        isDeleted: false,
-      })
-      .toArray();
-  }
-
-  findLikedByUserId(userId: string, visible: Filter<PostDocument>) {
-    return this.posts
-      .find({
-        ...visible,
-        likes: new ObjectId(userId),
-        isDeleted: false,
-      })
-      .toArray();
-  }
-
-  findBookmarkedByUserId(userId: string, visible: Filter<PostDocument>) {
-    return this.posts
-      .find({
-        ...visible,
-        bookmarks: new ObjectId(userId),
-        isDeleted: false,
-      })
-      .toArray();
   }
 
   findByIds(ids: ObjectId[], visible: Filter<PostDocument>) {
@@ -182,13 +142,17 @@ export class PostsPersistence implements OnModuleInit {
     );
   }
 
-  findFeedPage(
+  /**
+   * Una página de `filter` del más nuevo al más viejo. El cursor es el último
+   * post de la página anterior (`createdAt|_id`).
+   */
+  async findPage(
+    filter: Filter<PostDocument>,
     visible: Filter<PostDocument>,
-    limit = POST_FEED_PAGE_SIZE,
-    cursor?: string,
+    { limit = POST_FEED_PAGE_SIZE, cursor }: PostPageQuery,
   ) {
     const decoded = cursor ? decodePostCursor(cursor) : null;
-    const page: Filter<PostDocument> = decoded
+    const after: Filter<PostDocument> = decoded
       ? {
           $or: [
             { createdAt: { $lt: decoded.createdAt } },
@@ -197,12 +161,20 @@ export class PostsPersistence implements OnModuleInit {
         }
       : {};
 
-    // `$and` y no spread: `visible` y `page` pueden traer los dos un `$or`.
-    return this.posts
-      .find({ $and: [visible, page], isDeleted: false })
+    // `$and` y no spread: `visible` y `after` pueden traer los dos un `$or`.
+    const rows = await this.posts
+      .find({ $and: [filter, visible, after], isDeleted: false })
       .sort({ createdAt: -1, _id: -1 })
       .limit(limit + 1)
       .toArray();
+    // La fila de sobra solo dice si hay otra página.
+    const posts = rows.slice(0, limit);
+    const last = posts.at(-1);
+
+    return {
+      posts,
+      nextCursor: rows.length > limit && last ? encodePostCursor(last) : null,
+    };
   }
 
   findActiveById(id: string) {

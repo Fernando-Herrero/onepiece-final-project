@@ -39,7 +39,8 @@ function ProfilePostList({
   tab: ProfilePostsTab;
 }) {
   const { t } = useTranslation();
-  const { data: posts } = useProfilePosts(userId, tab);
+  const { data } = useProfilePosts(userId, tab);
+  const posts = data.pages.flatMap(page => page.posts);
   const deletePost = useDeletePostMutation();
 
   if (posts.length === 0) {

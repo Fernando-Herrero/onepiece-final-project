@@ -1,5 +1,6 @@
 import * as z from 'zod/v4';
 
+import { postPageQuerySchema } from '../../common/post.schemas.js';
 import {
   accessibilityPreferencesSchema,
   notificationPreferencesSchema,
@@ -59,6 +60,10 @@ export const updatePreferencesSchema = z
   .refine(data => Object.keys(data).length > 0, {
     message: 'At least one preferences group is required',
   });
+
+export const userPostPageInputSchema = userIdParamsSchema.extend({
+  query: postPageQuerySchema,
+});
 
 export const updatePreferencesInputSchema = userIdParamsSchema.extend({
   body: updatePreferencesSchema,

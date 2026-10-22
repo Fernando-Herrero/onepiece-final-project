@@ -1,4 +1,4 @@
-import type { listPostsOutputSchema } from '@logpose/contracts/features/posts/schemas';
+import type { postPageSchema } from '@logpose/contracts/common/post.schemas';
 import type { InfiniteData, QueryClient } from '@tanstack/react-query';
 import type * as z from 'zod/v4';
 
@@ -9,7 +9,7 @@ import { profileKeys } from '@/features/profile/api/profile.keys';
 import type { ProfilePostsTab } from '@/features/profile/profile.types';
 import type { ProfileUser } from '@/features/profile/profile.types';
 
-export type PostsFeedPage = z.infer<typeof listPostsOutputSchema>;
+export type PostsFeedPage = z.infer<typeof postPageSchema>;
 export type PostsFeedInfiniteData = InfiniteData<
   PostsFeedPage,
   string | undefined
@@ -42,37 +42,43 @@ function mapPostsInInfiniteFeed(
   });
 }
 
+/** Feed y pestañas del perfil guardan lo mismo: páginas `{ posts, nextCursor }`. */
+function mapPostPages(
+  queryClient: QueryClient,
+  mapPosts: (posts: PostPublic[]) => PostPublic[],
+) {
+  for (const queryKey of [postsKeys.feed(), profileKeys.postsTabs()]) {
+    queryClient.setQueriesData<PostsFeedInfiniteData>(
+      { queryKey },
+      old =>
+        old && {
+          ...old,
+          pages: old.pages.map(page => ({
+            ...page,
+            posts: mapPosts(page.posts),
+          })),
+        },
+    );
+  }
+}
+
 export function patchPostInCaches(
   queryClient: QueryClient,
   postId: string,
   patch: Partial<PostPublic>,
 ) {
-  patchPostsMatching(queryClient, post => {
-    if (post._id === postId) {
-      return { ...post, ...patch };
-    }
+  mapPostPages(queryClient, posts =>
+    posts.map(post => {
+      if (post._id === postId) {
+        return { ...post, ...patch };
+      }
 
-    if (post.isRetweet && post.retweetOf === postId) {
-      return { ...post, ...patch };
-    }
+      if (post.isRetweet && post.retweetOf === postId) {
+        return { ...post, ...patch };
+      }
 
-    return post;
-  });
-}
-
-function patchPostsMatching(
-  queryClient: QueryClient,
-  mapper: (post: PostPublic) => PostPublic,
-) {
-  mapPostsInInfiniteFeed(queryClient, mapper);
-
-  queryClient.setQueriesData<PostPublic[]>(
-    {
-      predicate: query =>
-        query.queryKey[0] === profileKeys.all[0] &&
-        query.queryKey[1] === 'posts-tab',
-    },
-    old => old?.map(mapper),
+      return post;
+    }),
   );
 }
 
@@ -131,28 +137,7 @@ export function removeOptimisticPostFromFeed(
 }
 
 export function removePostFromCaches(queryClient: QueryClient, postId: string) {
-  queryClient.setQueryData<PostsFeedInfiniteData>(postsKeys.feed(), old => {
-    if (!old) {
-      return old;
-    }
-
-    return {
-      ...old,
-      pages: old.pages.map(page => ({
-        ...page,
-        posts: page.posts.filter(post => post._id !== postId),
-      })),
-    };
-  });
-
-  queryClient.setQueriesData<PostPublic[]>(
-    {
-      predicate: query =>
-        query.queryKey[0] === profileKeys.all[0] &&
-        query.queryKey[1] === 'posts-tab',
-    },
-    old => old?.filter(post => post._id !== postId),
-  );
+  mapPostPages(queryClient, posts => posts.filter(post => post._id !== postId));
 }
 
 export function invalidateProfilePostQueries(

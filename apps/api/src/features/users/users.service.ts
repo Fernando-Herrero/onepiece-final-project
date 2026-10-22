@@ -1,9 +1,11 @@
 import { MongoTransactionService } from '@jperezmart/nest-mongodb';
 import { isAvatarPathSelectable } from '@logpose/contracts/common/avatar.schemas';
+import type { PostPageQuery } from '@logpose/contracts/common/post.schemas';
 import { updateUserSchema } from '@logpose/contracts/common/user.schemas';
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
 import { Injectable } from '@nestjs/common';
 import { ORPCError } from '@orpc/server';
+import { type Filter, ObjectId } from 'mongodb';
 import * as z from 'zod/v4';
 
 import { isDuplicateKeyError } from '../../integrations/mongodb/duplicate-key-error.js';
@@ -18,7 +20,10 @@ import {
 import { SessionsPersistence } from '../auth/sessions.persistence.js';
 import { CommentsPersistence } from '../comments/comments.persistence.js';
 import { NotificationsPersistence } from '../notifications/notifications.persistence.js';
-import { serializePostsForViewer } from '../posts/posts.mappers.js';
+import {
+  type PostDocument,
+  serializePostsForViewer,
+} from '../posts/posts.mappers.js';
 import { PostsPersistence } from '../posts/posts.persistence.js';
 import {
   serializeSessionUser,
@@ -31,6 +36,13 @@ import { UsersPersistence } from './users.persistence.js';
 
 type UpdateUserBody = z.infer<typeof updateUserSchema>;
 type UpdatePreferencesBody = z.infer<typeof updatePreferencesSchema>;
+
+/** Qué posts lista y cuenta cada pestaña del perfil; comentados va aparte (pide un `distinct`). */
+const tabFilters = {
+  posts: (userId: string) => ({ userId: new ObjectId(userId) }),
+  liked: (userId: string) => ({ likes: new ObjectId(userId) }),
+  bookmarked: (userId: string) => ({ bookmarks: new ObjectId(userId) }),
+};
 
 @Injectable()
 export class UsersService {
@@ -54,75 +66,85 @@ export class UsersService {
     return user;
   }
 
-  /** Lanza PRIVACY_DENIED si el viewer no puede ver esa pestaña del perfil. */
-  private async assertVisibleUser(
-    userId: string,
-    privacyKey: PrivacyKey,
+  /**
+   * Una página de una pestaña del perfil. Lanza PRIVACY_DENIED si `privacy`
+   * oculta la pestaña al viewer.
+   */
+  private async getTabPage(
+    profileUserId: string,
     viewer: Viewer,
+    query: PostPageQuery,
+    privacyKey: PrivacyKey,
+    filter: Filter<PostDocument>,
   ) {
-    const user = await this.requireUser(userId);
+    const user = await this.requireUser(profileUserId);
 
     if (!canSeeTab(viewer, user, privacyKey)) {
       throw new ORPCError('PRIVACY_DENIED');
     }
+
+    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
+    const page = await this.postsPersistence.findPage(filter, visible, query);
+
+    return {
+      ...page,
+      posts: await serializePostsForViewer(page.posts, viewer, visible, {
+        posts: this.postsPersistence,
+        users: this.usersPersistence,
+      }),
+    };
   }
 
   /** Posts publicados por el perfil; respeta showPosts si el viewer no es el dueño. */
-  async getPosts(profileUserId: string, viewer: Viewer) {
-    await this.assertVisibleUser(profileUserId, 'showPosts', viewer);
-    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
-
-    const posts = await this.postsPersistence.findByUserId(
+  getPosts(profileUserId: string, viewer: Viewer, query: PostPageQuery) {
+    return this.getTabPage(
       profileUserId,
-      visible,
+      viewer,
+      query,
+      'showPosts',
+      tabFilters.posts(profileUserId),
     );
-    return serializePostsForViewer(posts, viewer, visible, {
-      posts: this.postsPersistence,
-      users: this.usersPersistence,
-    });
   }
 
   /** Posts que el perfil ha marcado con like; respeta showLikes. */
-  async getLikedPosts(profileUserId: string, viewer: Viewer) {
-    await this.assertVisibleUser(profileUserId, 'showLikes', viewer);
-    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
-
-    const posts = await this.postsPersistence.findLikedByUserId(
+  getLikedPosts(profileUserId: string, viewer: Viewer, query: PostPageQuery) {
+    return this.getTabPage(
       profileUserId,
-      visible,
+      viewer,
+      query,
+      'showLikes',
+      tabFilters.liked(profileUserId),
     );
-    return serializePostsForViewer(posts, viewer, visible, {
-      posts: this.postsPersistence,
-      users: this.usersPersistence,
-    });
   }
 
   /** Posts guardados en bookmarks del perfil; respeta showBookmarked. */
-  async getBookmarkedPosts(profileUserId: string, viewer: Viewer) {
-    await this.assertVisibleUser(profileUserId, 'showBookmarked', viewer);
-    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
-
-    const posts = await this.postsPersistence.findBookmarkedByUserId(
+  getBookmarkedPosts(
+    profileUserId: string,
+    viewer: Viewer,
+    query: PostPageQuery,
+  ) {
+    return this.getTabPage(
       profileUserId,
-      visible,
+      viewer,
+      query,
+      'showBookmarked',
+      tabFilters.bookmarked(profileUserId),
     );
-    return serializePostsForViewer(posts, viewer, visible, {
-      posts: this.postsPersistence,
-      users: this.usersPersistence,
-    });
   }
 
   /** Posts en los que el perfil ha comentado; respeta showComments. */
-  async getCommentedPosts(profileUserId: string, viewer: Viewer) {
-    await this.assertVisibleUser(profileUserId, 'showComments', viewer);
-    const visible = await visiblePostsFilter(viewer, this.usersPersistence);
-
+  async getCommentedPosts(
+    profileUserId: string,
+    viewer: Viewer,
+    query: PostPageQuery,
+  ) {
     const postIds =
       await this.commentsPersistence.distinctPostIdsByAuthor(profileUserId);
-    const posts = await this.postsPersistence.findByIds(postIds, visible);
-    return serializePostsForViewer(posts, viewer, visible, {
-      posts: this.postsPersistence,
-      users: this.usersPersistence,
+
+    // Sin índice para `_id: $in` + este orden: Mongo ordena en memoria los
+    // comentados del perfil; vale mientras sean cientos.
+    return this.getTabPage(profileUserId, viewer, query, 'showComments', {
+      _id: { $in: postIds },
     });
   }
 
@@ -147,13 +169,13 @@ export class UsersService {
 
     const [myPosts, likedPosts, bookmarkedPosts, comments] = await Promise.all([
       shows('showPosts')
-        ? this.postsPersistence.countByUserId(userId, visible)
+        ? this.postsPersistence.count(tabFilters.posts(userId), visible)
         : null,
       shows('showLikes')
-        ? this.postsPersistence.countLikedByUserId(userId, visible)
+        ? this.postsPersistence.count(tabFilters.liked(userId), visible)
         : null,
       shows('showBookmarked')
-        ? this.postsPersistence.countBookmarkedByUserId(userId, visible)
+        ? this.postsPersistence.count(tabFilters.bookmarked(userId), visible)
         : null,
       // Los dos de comentarios solo miran los posts comentados que el viewer ve.
       shows('showComments')

@@ -111,18 +111,22 @@ describe('UsersService, pestaña privada del perfil', () => {
 
   it('un anónimo recibe PRIVACY_DENIED', async () => {
     await expect(
-      service.getLikedPosts(robinId, { kind: 'anonymous' }),
+      service.getLikedPosts(robinId, { kind: 'anonymous' }, {}),
     ).rejects.toMatchObject({ code: 'PRIVACY_DENIED' });
   });
 
   it('el dueño ve la lista, vacía sin posts', async () => {
     await expect(
-      service.getLikedPosts(robinId, {
-        kind: 'user',
-        id: robinId,
-        role: 'user',
-      }),
-    ).resolves.toEqual([]);
+      service.getLikedPosts(
+        robinId,
+        {
+          kind: 'user',
+          id: robinId,
+          role: 'user',
+        },
+        {},
+      ),
+    ).resolves.toEqual({ posts: [], nextCursor: null });
   });
 
   it('un admin ve la lista, vacía sin posts', async () => {
@@ -133,7 +137,10 @@ describe('UsersService, pestaña privada del perfil', () => {
       role: 'admin',
     };
 
-    await expect(service.getLikedPosts(robinId, admin)).resolves.toEqual([]);
+    await expect(service.getLikedPosts(robinId, admin, {})).resolves.toEqual({
+      posts: [],
+      nextCursor: null,
+    });
   });
 });
 
@@ -227,7 +234,7 @@ describe('UsersService.getPosts', () => {
   });
 
   const tabIds = async (viewer: Viewer) =>
-    (await service.getPosts(frankyId, viewer)).map(post => post._id);
+    (await service.getPosts(frankyId, viewer, {})).posts.map(post => post._id);
 
   it('un anónimo ve los públicos pero no los privados', async () => {
     const ids = await tabIds({ kind: 'anonymous' });
@@ -255,7 +262,11 @@ describe('UsersService.getPosts', () => {
   });
 
   it('ningún post de la pestaña lleva likes ni bookmarks', async () => {
-    const posts = await service.getPosts(frankyId, { kind: 'anonymous' });
+    const { posts } = await service.getPosts(
+      frankyId,
+      { kind: 'anonymous' },
+      {},
+    );
 
     expect(posts.length).toBeGreaterThan(0);
     posts.forEach(post => {
@@ -440,7 +451,9 @@ describe('UsersService, pestañas con posts ajenos privados y para seguidores', 
 
   describe.each(tabs)('pestaña de %s', (_name, method) => {
     const ids = async (viewer: Viewer) =>
-      (await service[method](seed.profileId, viewer)).map(post => post._id);
+      (await service[method](seed.profileId, viewer, {})).posts.map(
+        post => post._id,
+      );
 
     it('un anónimo solo ve el post público', async () => {
       await expect(ids({ kind: 'anonymous' })).resolves.toEqual([
@@ -559,7 +572,11 @@ describe('UsersService.getPosts, retweets', () => {
   });
 
   it('el envoltorio sale con el autor original y los contadores del original', async () => {
-    const posts = await service.getPosts(retweeterId, userViewer(retweeterId));
+    const { posts } = await service.getPosts(
+      retweeterId,
+      userViewer(retweeterId),
+      {},
+    );
 
     expect(posts.find(post => post.retweetOf === originalId)).toMatchObject({
       isRetweet: true,
@@ -571,7 +588,11 @@ describe('UsersService.getPosts, retweets', () => {
   });
 
   it('para otro viewer, userRetweeted es false', async () => {
-    const posts = await service.getPosts(retweeterId, userViewer(authorId));
+    const { posts } = await service.getPosts(
+      retweeterId,
+      userViewer(authorId),
+      {},
+    );
 
     expect(posts.find(post => post.retweetOf === originalId)).toMatchObject({
       userRetweeted: false,
@@ -687,4 +708,122 @@ describe('UsersService.follow y unfollow', () => {
       ).rejects.toMatchObject({ code: 'USER_NOT_FOUND' });
     },
   );
+});
+
+describe('UsersService, paginación por cursor de las pestañas del perfil', () => {
+  const tabs = [
+    ['posts', 'getPosts'],
+    ['likes', 'getLikedPosts'],
+    ['guardados', 'getBookmarkedPosts'],
+    ['comentados', 'getCommentedPosts'],
+  ] as const;
+
+  let profileId: string;
+  let viewerId: string;
+
+  // Cuatro posts del perfil, a propósito sin insertar en orden cronológico. El
+  // privado cae entre el más nuevo y el del medio: si ocupara hueco, la primera
+  // página de 2 saldría con un solo post.
+  beforeAll(async () => {
+    const posts = db.collection<PostDocument>('posts');
+    const comments = db.collection<CommentDocument>('comments');
+    const postsPersistence = new PostsPersistence(posts);
+    const profile = await usersPersistence.insert(newUser('pag_profile'));
+    const viewer = await usersPersistence.insert(newUser('pag_viewer'));
+    profileId = profile._id.toString();
+    viewerId = viewer._id.toString();
+
+    const seed = async (
+      text: string,
+      visibility: 'public' | 'private',
+      createdAt: string,
+    ) => {
+      const post = await postsPersistence.insert({
+        text,
+        userId: profile._id,
+        visibility,
+        language: 'es',
+      });
+      await posts.updateOne(
+        { _id: post._id },
+        { $set: { createdAt: new Date(createdAt) } },
+      );
+      // Likes, guardados y comentarios en el mismo orden de inserción (no cronológico).
+      await postsPersistence.toggleUserField(
+        post._id.toString(),
+        profileId,
+        'likes',
+        {},
+      );
+      await postsPersistence.toggleUserField(
+        post._id.toString(),
+        profileId,
+        'bookmarks',
+        {},
+      );
+      await comments.insertOne({
+        _id: new ObjectId(),
+        postId: post._id,
+        author: profile._id,
+        text: 'hola',
+        images: [],
+        likes: [],
+        likesCount: 0,
+        repliesCount: 0,
+        isReply: false,
+        hashtags: [],
+        mentions: [],
+        isDeleted: false,
+        source: 'web',
+        language: 'es',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      });
+    };
+
+    await seed('pag medio', 'public', '2024-03-02T10:00:00Z');
+    await seed('pag viejo', 'public', '2024-03-01T10:00:00Z');
+    await seed('pag privado', 'private', '2024-03-03T10:00:00Z');
+    await seed('pag nuevo', 'public', '2024-03-04T10:00:00Z');
+  });
+
+  describe.each(tabs)('pestaña de %s', (_name, method) => {
+    it('la primera página trae los 2 más nuevos y un nextCursor', async () => {
+      const page = await service[method](profileId, userViewer(viewerId), {
+        limit: 2,
+      });
+
+      expect(page.posts.map(post => post.text)).toEqual([
+        'pag nuevo',
+        'pag medio',
+      ]);
+      expect(page.nextCursor).toEqual(expect.any(String));
+    });
+
+    it('con el cursor llega el que falta, sin repetidos y sin nextCursor', async () => {
+      const first = await service[method](profileId, userViewer(viewerId), {
+        limit: 2,
+      });
+      const second = await service[method](profileId, userViewer(viewerId), {
+        limit: 2,
+        cursor: first.nextCursor ?? undefined,
+      });
+
+      expect(second.posts.map(post => post.text)).toEqual(['pag viejo']);
+      expect(second.nextCursor).toBeNull();
+    });
+
+    it('sin límite que parta la lista, devuelve los visibles sin el privado y nextCursor null', async () => {
+      const page = await service[method](profileId, userViewer(viewerId), {
+        limit: 10,
+      });
+
+      expect(page.posts.map(post => post.text)).toEqual([
+        'pag nuevo',
+        'pag medio',
+        'pag viejo',
+      ]);
+      expect(page.nextCursor).toBeNull();
+    });
+  });
 });

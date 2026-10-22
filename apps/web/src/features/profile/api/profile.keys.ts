@@ -9,6 +9,7 @@ export const profileKeys = {
     [...profileKeys.all, 'followers', userId] as const,
   following: (userId: string) =>
     [...profileKeys.all, 'following', userId] as const,
+  postsTabs: () => [...profileKeys.all, 'posts-tab'] as const,
   postsTab: (userId: string, tab: ProfilePostsTab) =>
-    [...profileKeys.all, 'posts-tab', tab, userId] as const,
+    [...profileKeys.postsTabs(), tab, userId] as const,
 };
