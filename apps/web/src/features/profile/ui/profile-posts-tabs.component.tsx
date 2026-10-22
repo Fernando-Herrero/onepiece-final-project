@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Card,
   Flex,
   Heading,
@@ -8,7 +9,7 @@ import {
 } from '@radix-ui/themes';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
-import { Suspense } from 'react';
+import { Suspense, useEffect, useRef } from 'react';
 
 import { useAuthSession } from '@/features/auth/api/use-auth';
 import { useDeletePostMutation } from '@/features/posts/api/use-posts';
@@ -39,9 +40,35 @@ function ProfilePostList({
   tab: ProfilePostsTab;
 }) {
   const { t } = useTranslation();
-  const { data } = useProfilePosts(userId, tab);
+  const {
+    data,
+    fetchNextPage,
+    hasNextPage,
+    isFetching,
+    isFetchingNextPage,
+    isFetchNextPageError,
+  } = useProfilePosts(userId, tab);
   const posts = data.pages.flatMap(page => page.posts);
   const deletePost = useDeletePostMutation();
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
+  // isFetching y no isFetchingNextPage: pedir página cancela una revalidación
+  // en curso. Rehacerlo al terminar cada petición relanza la notificación
+  // inicial del observer: si el centinela sigue a la vista, encadena la siguiente.
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel || !hasNextPage || isFetching || isFetchNextPageError) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry?.isIntersecting) {
+        void fetchNextPage();
+      }
+    });
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [fetchNextPage, hasNextPage, isFetching, isFetchNextPageError]);
 
   if (posts.length === 0) {
     return (
@@ -77,6 +104,26 @@ function ProfilePostList({
           />
         </Box>
       ))}
+      {hasNextPage ? (
+        <Box ref={sentinelRef} className="shrink-0">
+          {isFetchingNextPage ? (
+            <PostFeedSkeleton count={1} />
+          ) : isFetchNextPageError ? (
+            <Flex justify="center" py="2">
+              <Button
+                type="button"
+                variant="soft"
+                color="gray"
+                highContrast
+                className="cursor-pointer"
+                onClick={() => void fetchNextPage()}
+              >
+                {t('errors.retry')}
+              </Button>
+            </Flex>
+          ) : null}
+        </Box>
+      ) : null}
     </Flex>
   );
 }
