@@ -1,7 +1,7 @@
 import { gsap } from 'gsap';
 import { type MouseEvent as ReactMouseEvent, useRef } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+import { isMotionDisabled } from '@/integrations/gsap/motion';
 
 export function useTilt(max = 7) {
   const reducedRef = useRef<boolean | null>(null);

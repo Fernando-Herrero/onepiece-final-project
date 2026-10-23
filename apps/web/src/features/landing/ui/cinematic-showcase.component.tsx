@@ -3,9 +3,9 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+import { useGsapMotion } from '@/integrations/gsap/motion';
 
 export function CinematicShowcaseComponent() {
   const { t } = useTranslation();
@@ -13,58 +13,47 @@ export function CinematicShowcaseComponent() {
   const bgRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
+  useGsapMotion(() => {
     const items = contentRef.current?.children;
 
-    if (isMotionDisabled()) {
-      if (items) gsap.set(items, { autoAlpha: 1, y: 0, clipPath: 'none' });
-      return;
-    }
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        bgRef.current,
-        { yPercent: -10, scale: 1.2 },
-        {
-          yPercent: 10,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: true,
-          },
-        },
-      );
-
-      if (items) {
-        gsap.set(items, {
-          autoAlpha: 0,
-          y: 44,
-          clipPath: 'inset(0 0 100% 0)',
-        });
-
-        ScrollTrigger.create({
+    gsap.fromTo(
+      bgRef.current,
+      { yPercent: -10, scale: 1.2 },
+      {
+        yPercent: 10,
+        ease: 'none',
+        scrollTrigger: {
           trigger: sectionRef.current,
-          start: 'top 68%',
-          once: true,
-          onEnter: () =>
-            gsap.to(items, {
-              autoAlpha: 1,
-              y: 0,
-              clipPath: 'inset(0 0 0% 0)',
-              duration: 0.9,
-              stagger: 0.14,
-              ease: 'power3.out',
-            }),
-        });
-      }
-    }, sectionRef);
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      },
+    );
 
-    return () => ctx.revert();
-  }, []);
+    if (items) {
+      gsap.set(items, {
+        autoAlpha: 0,
+        y: 44,
+        clipPath: 'inset(0 0 100% 0)',
+      });
+
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: 'top 68%',
+        once: true,
+        onEnter: () =>
+          gsap.to(items, {
+            autoAlpha: 1,
+            y: 0,
+            clipPath: 'inset(0 0 0% 0)',
+            duration: 0.9,
+            stagger: 0.14,
+            ease: 'power3.out',
+          }),
+      });
+    }
+  }, sectionRef);
 
   return (
     <section

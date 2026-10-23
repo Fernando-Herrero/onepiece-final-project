@@ -11,12 +11,11 @@ import {
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
-import { Suspense, useEffect, useRef, useState } from 'react';
+import { Suspense, useRef, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 
 import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
 import { useAuthSession } from '@/features/auth/api/use-auth';
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { useSuspenseSerieSagas } from '@/features/serie/api/use-serie';
 import {
   DEFAULT_SERIE_PROGRESS,
@@ -25,6 +24,7 @@ import {
 import { getSerieXpPercent } from '@/features/serie/serie.selectors';
 import type { SerieProgress } from '@/features/serie/serie.types';
 import { SerieSagaBlock } from '@/features/serie/ui/serie-saga-block.component';
+import { useGsapMotion } from '@/integrations/gsap/motion';
 
 type SerieSagaListProps = {
   progress: SerieProgress;
@@ -84,21 +84,13 @@ export default function SeriePageContent() {
   const experience = user?.experience ?? 0;
   const xpPercent = getSerieXpPercent(experience);
 
-  useEffect(() => {
-    if (isMotionDisabled() || !heroRef.current) {
-      return;
-    }
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        heroRef.current,
-        { autoAlpha: 0, y: 28 },
-        { autoAlpha: 1, y: 0, duration: 0.85, ease: 'power3.out' },
-      );
-    }, heroRef);
-
-    return () => ctx.revert();
-  }, []);
+  useGsapMotion(() => {
+    gsap.fromTo(
+      heroRef.current,
+      { autoAlpha: 0, y: 28 },
+      { autoAlpha: 1, y: 0, duration: 0.85, ease: 'power3.out' },
+    );
+  }, heroRef);
 
   const toggleSaga = (sagaId: number) => {
     setOpenSagaIds(current => ({

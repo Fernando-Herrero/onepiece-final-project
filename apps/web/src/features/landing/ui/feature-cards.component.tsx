@@ -2,10 +2,10 @@ import { Card, Flex, Heading, Text } from '@radix-ui/themes';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'next-i18next/pages';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { useTilt } from '@/features/landing/motion/use-tilt';
+import { useGsapMotion } from '@/integrations/gsap/motion';
 
 const FEATURES = [
   { emoji: '🎯', key: 'dashboard' },
@@ -23,61 +23,46 @@ export function FeatureCardsComponent() {
   const gridRef = useRef<HTMLDivElement>(null);
   const tilt = useTilt();
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  useGsapMotion(() => {
+    const cards = gsap.utils.toArray<HTMLElement>('.landing-card');
 
-    if (isMotionDisabled()) {
-      gsap.set('.landing-card', { autoAlpha: 1, y: 0, scale: 1 });
-      const headChildren = headRef.current?.children;
-      if (headChildren) {
-        gsap.set(headChildren, { autoAlpha: 1, y: 0 });
-      }
-      return;
+    gsap.set(cards, { autoAlpha: 0, y: 80, scale: 0.94 });
+
+    const headChildren = headRef.current?.children;
+    if (headChildren) {
+      gsap.set(headChildren, { autoAlpha: 0, y: 40 });
     }
 
-    const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray<HTMLElement>('.landing-card');
+    ScrollTrigger.create({
+      trigger: headRef.current,
+      start: 'top 85%',
+      onEnter: () => {
+        if (!headChildren) return;
+        gsap.to(headChildren, {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.1,
+          ease: 'power3.out',
+        });
+      },
+      once: true,
+    });
 
-      gsap.set(cards, { autoAlpha: 0, y: 80, scale: 0.94 });
-
-      const headChildren = headRef.current?.children;
-      if (headChildren) {
-        gsap.set(headChildren, { autoAlpha: 0, y: 40 });
-      }
-
-      ScrollTrigger.create({
-        trigger: headRef.current,
-        start: 'top 85%',
-        onEnter: () => {
-          if (!headChildren) return;
-          gsap.to(headChildren, {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.8,
-            stagger: 0.1,
-            ease: 'power3.out',
-          });
-        },
-        once: true,
-      });
-
-      ScrollTrigger.batch(cards, {
-        start: 'top 88%',
-        onEnter: batch =>
-          gsap.to(batch, {
-            autoAlpha: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.7,
-            ease: 'power3.out',
-            stagger: 0.08,
-            overwrite: true,
-          }),
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
+    ScrollTrigger.batch(cards, {
+      start: 'top 88%',
+      onEnter: batch =>
+        gsap.to(batch, {
+          autoAlpha: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.7,
+          ease: 'power3.out',
+          stagger: 0.08,
+          overwrite: true,
+        }),
+    });
+  }, sectionRef);
 
   return (
     <section

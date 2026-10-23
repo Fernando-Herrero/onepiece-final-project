@@ -3,19 +3,18 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
-import { type MouseEvent as ReactMouseEvent, useEffect, useRef } from 'react';
+import { type MouseEvent as ReactMouseEvent, useRef } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+import { isMotionDisabled, useGsapMotion } from '@/integrations/gsap/motion';
 
 export function LandingCtaComponent() {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const actionsRef = useRef<HTMLDivElement>(null);
-  const reduceMotionRef = useRef(false);
 
   const magnetize = (event: ReactMouseEvent<HTMLAnchorElement>) => {
-    if (reduceMotionRef.current) return;
+    if (isMotionDisabled()) return;
     const el = event.currentTarget;
     const rect = el.getBoundingClientRect();
     const mx = event.clientX - (rect.left + rect.width / 2);
@@ -37,48 +36,38 @@ export function LandingCtaComponent() {
     });
   };
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  useGsapMotion(() => {
+    gsap.set(titleRef.current, { autoAlpha: 0, y: 50 });
 
-    reduceMotionRef.current = isMotionDisabled();
+    const actionButtons = actionsRef.current?.children;
+    if (actionButtons) {
+      gsap.set(actionButtons, { autoAlpha: 0, y: 50 });
+    }
 
-    if (reduceMotionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      gsap.set(titleRef.current, { autoAlpha: 0, y: 50 });
-
-      const actionButtons = actionsRef.current?.children;
-      if (actionButtons) {
-        gsap.set(actionButtons, { autoAlpha: 0, y: 50 });
-      }
-
-      ScrollTrigger.create({
-        trigger: sectionRef.current,
-        start: 'top 82%',
-        onEnter: () => {
-          gsap.to(titleRef.current, {
+    ScrollTrigger.create({
+      trigger: sectionRef.current,
+      start: 'top 82%',
+      onEnter: () => {
+        gsap.to(titleRef.current, {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.7,
+          ease: 'power3.out',
+        });
+        if (actionButtons) {
+          gsap.to(actionButtons, {
             autoAlpha: 1,
             y: 0,
-            duration: 0.7,
+            duration: 0.6,
+            stagger: 0.12,
             ease: 'power3.out',
+            delay: 0.15,
           });
-          if (actionButtons) {
-            gsap.to(actionButtons, {
-              autoAlpha: 1,
-              y: 0,
-              duration: 0.6,
-              stagger: 0.12,
-              ease: 'power3.out',
-              delay: 0.15,
-            });
-          }
-        },
-        once: true,
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
+        }
+      },
+      once: true,
+    });
+  }, sectionRef);
 
   return (
     <section

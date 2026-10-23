@@ -1,9 +1,8 @@
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'next-i18next/pages';
-import { type Ref, useEffect, useRef } from 'react';
+import { type Ref, useRef } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+import { useGsapMotion } from '@/integrations/gsap/motion';
 
 const MASK_SCALE = 8;
 
@@ -33,7 +32,9 @@ export function HeroMaskComponent() {
   const taglineRef = useRef<HTMLParagraphElement>(null);
   const scrollCueRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  // Mobile/touch: the static hero is rendered entirely in CSS, so it paints
+  // on first frame and useGsapMotion skips the animation.
+  useGsapMotion(() => {
     const hero = heroRef.current;
     const mask = maskRef.current;
     const maskImg = maskImgRef.current;
@@ -56,12 +57,6 @@ export function HeroMaskComponent() {
       return;
     }
 
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Mobile/touch: the static hero is rendered entirely in CSS, so it paints
-    // on first frame without waiting for this effect. Nothing to animate here.
-    if (isMotionDisabled()) return;
-
     gsap.fromTo(
       scrollCue,
       { autoAlpha: 0, y: 20, filter: 'blur(10px)' },
@@ -75,79 +70,75 @@ export function HeroMaskComponent() {
       },
     );
 
-    const ctx = gsap.context(() => {
-      const proxy = { s: MASK_SCALE };
+    const proxy = { s: MASK_SCALE };
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: hero,
-          start: 'top top',
-          end: '+=1800',
-          scrub: 1,
-          pin: true,
-          anticipatePin: 1,
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: hero,
+        start: 'top top',
+        end: '+=1800',
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+      },
+    });
+
+    tl.to(
+      proxy,
+      {
+        s: 1,
+        duration: 1,
+        ease: 'power2.inOut',
+        onUpdate: () => {
+          gsap.set(mask, { scale: proxy.s });
+          gsap.set(maskImg, { scale: 1 / proxy.s });
         },
-      });
+      },
+      0,
+    );
 
-      tl.to(
-        proxy,
-        {
-          s: 1,
-          duration: 1,
-          ease: 'power2.inOut',
-          onUpdate: () => {
-            gsap.set(mask, { scale: proxy.s });
-            gsap.set(maskImg, { scale: 1 / proxy.s });
-          },
-        },
-        0,
-      );
+    tl.to(scrollCue, { autoAlpha: 0, duration: 0.12, ease: 'power1.out' }, 0);
 
-      tl.to(scrollCue, { autoAlpha: 0, duration: 0.12, ease: 'power1.out' }, 0);
+    tl.fromTo(
+      veil,
+      { autoAlpha: 1 },
+      { autoAlpha: 0, duration: 0.42, ease: 'power1.inOut' },
+      0.12,
+    );
 
-      tl.fromTo(
-        veil,
-        { autoAlpha: 1 },
-        { autoAlpha: 0, duration: 0.42, ease: 'power1.inOut' },
-        0.12,
-      );
+    tl.to(
+      vignette,
+      { autoAlpha: 0.7, duration: 0.4, ease: 'power1.out' },
+      0.22,
+    );
 
-      tl.to(
-        vignette,
-        { autoAlpha: 0.7, duration: 0.4, ease: 'power1.out' },
-        0.22,
-      );
+    gsap.set(title, { clipPath: 'inset(0 0 100% 0)', y: 28 });
 
-      gsap.set(title, { clipPath: 'inset(0 0 100% 0)', y: 28 });
+    tl.to(
+      title,
+      {
+        autoAlpha: 1,
+        clipPath: 'inset(0 0 0% 0)',
+        y: 0,
+        duration: 0.42,
+        ease: 'power3.out',
+      },
+      0.55,
+    );
 
-      tl.to(
-        title,
-        {
-          autoAlpha: 1,
-          clipPath: 'inset(0 0 0% 0)',
-          y: 0,
-          duration: 0.42,
-          ease: 'power3.out',
-        },
-        0.55,
-      );
-
-      tl.fromTo(
-        tagline,
-        { autoAlpha: 0, y: 28, filter: 'blur(8px)' },
-        {
-          autoAlpha: 1,
-          y: 0,
-          filter: 'blur(0px)',
-          duration: 0.34,
-          ease: 'power2.out',
-        },
-        0.7,
-      );
-    }, hero);
-
-    return () => ctx.revert();
-  }, []);
+    tl.fromTo(
+      tagline,
+      { autoAlpha: 0, y: 28, filter: 'blur(8px)' },
+      {
+        autoAlpha: 1,
+        y: 0,
+        filter: 'blur(0px)',
+        duration: 0.34,
+        ease: 'power2.out',
+      },
+      0.7,
+    );
+  }, heroRef);
 
   return (
     <section ref={heroRef} className="landing-hero">

@@ -3,13 +3,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 import { useEffect } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+import { isMotionDisabled } from '@/integrations/gsap/motion';
 
 export function useSmoothScroll() {
   useEffect(() => {
     if (isMotionDisabled()) return;
-
-    gsap.registerPlugin(ScrollTrigger);
 
     const lenis = new Lenis({
       duration: 1.15,

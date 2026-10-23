@@ -2,11 +2,11 @@ import { Badge, Box, Card, Flex, Grid, Heading, Text } from '@radix-ui/themes';
 import { gsap } from 'gsap';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next/pages';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 import { Icon } from '@/components/icons/icon';
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { useTilt } from '@/features/landing/motion/use-tilt';
+import { useGsapMotion } from '@/integrations/gsap/motion';
 
 const SETTINGS_MENU = [
   {
@@ -96,32 +96,18 @@ export default function SettingsPageContent() {
   const sectionRef = useRef<HTMLElement>(null);
   const tilt = useTilt();
 
-  useEffect(() => {
-    const cards =
-      sectionRef.current?.querySelectorAll<HTMLElement>('.settings-hub-card');
-    if (!cards?.length) {
-      return;
-    }
-
-    if (isMotionDisabled()) {
-      gsap.set(cards, { autoAlpha: 1, y: 0, scale: 1 });
-      return;
-    }
-
-    const ctx = gsap.context(() => {
-      gsap.set(cards, { autoAlpha: 0, y: 40, scale: 0.96 });
-      gsap.to(cards, {
-        autoAlpha: 1,
-        y: 0,
-        scale: 1,
-        duration: 0.65,
-        stagger: 0.07,
-        ease: 'power3.out',
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
+  useGsapMotion(() => {
+    const cards = gsap.utils.toArray<HTMLElement>('.settings-hub-card');
+    gsap.set(cards, { autoAlpha: 0, y: 40, scale: 0.96 });
+    gsap.to(cards, {
+      autoAlpha: 1,
+      y: 0,
+      scale: 1,
+      duration: 0.65,
+      stagger: 0.07,
+      ease: 'power3.out',
+    });
+  }, sectionRef);
 
   return (
     <section ref={sectionRef} className="mx-auto max-w-3xl">

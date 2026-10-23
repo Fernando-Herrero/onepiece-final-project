@@ -1,9 +1,9 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import type { ReactNode } from 'react';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
+import { useGsapMotion } from '@/integrations/gsap/motion';
 
 type RevealProps = {
   children: ReactNode;
@@ -20,33 +20,23 @@ export function Reveal({
 }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useGsapMotion(() => {
     const el = ref.current;
-    if (!el) return;
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    if (isMotionDisabled()) return;
-
-    const ctx = gsap.context(() => {
-      gsap.set(el, { autoAlpha: 0, y });
-      ScrollTrigger.create({
-        trigger: el,
-        start: 'top 88%',
-        once: true,
-        onEnter: () =>
-          gsap.to(el, {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.8,
-            delay,
-            ease: 'power3.out',
-          }),
-      });
-    }, ref);
-
-    return () => ctx.revert();
-  }, [delay, y]);
+    gsap.set(el, { autoAlpha: 0, y });
+    ScrollTrigger.create({
+      trigger: el,
+      start: 'top 88%',
+      once: true,
+      onEnter: () =>
+        gsap.to(el, {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.8,
+          delay,
+          ease: 'power3.out',
+        }),
+    });
+  }, ref);
 
   return (
     <div ref={ref} className={className}>

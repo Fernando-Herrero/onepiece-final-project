@@ -6,12 +6,12 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next/pages';
 import { useEffect, useRef, useState } from 'react';
 
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { LandingLocaleToggleComponent } from '@/features/landing/ui/landing-locale-toggle.component';
 import {
   LandingMenuToggleButton,
   LandingMobileMenuPanel,
 } from '@/features/landing/ui/landing-mobile-menu.component';
+import { isMotionDisabled } from '@/integrations/gsap/motion';
 
 let headerIntroPlayed = false;
 

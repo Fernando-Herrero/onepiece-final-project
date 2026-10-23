@@ -3,13 +3,13 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next/pages';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { CREW } from '@/features/help/help.constants';
-import { isMotionDisabled } from '@/features/landing/motion/landing-motion';
 import { CharacterCardComponent } from '@/features/landing/ui/character-card.component';
 import { LandingPublicLayout } from '@/features/landing/ui/landing-public-layout.component';
 import { Reveal } from '@/features/landing/ui/reveal.component';
+import { useGsapMotion } from '@/integrations/gsap/motion';
 
 const INITIAL_VISIBLE = 5;
 
@@ -19,32 +19,24 @@ export default function CharactersPageContent() {
   const visibleCrew = CREW.slice(0, visibleCount);
   const sectionRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  useGsapMotion(() => {
+    const cards = gsap.utils.toArray<HTMLElement>('.landing-card');
+    gsap.set(cards, { autoAlpha: 0, y: 60, scale: 0.96 });
 
-    if (isMotionDisabled()) return;
-
-    const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray<HTMLElement>('.landing-card');
-      gsap.set(cards, { autoAlpha: 0, y: 60, scale: 0.96 });
-
-      ScrollTrigger.batch(cards, {
-        start: 'top 90%',
-        onEnter: batch =>
-          gsap.to(batch, {
-            autoAlpha: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.7,
-            ease: 'power3.out',
-            stagger: 0.08,
-            overwrite: true,
-          }),
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
+    ScrollTrigger.batch(cards, {
+      start: 'top 90%',
+      onEnter: batch =>
+        gsap.to(batch, {
+          autoAlpha: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.7,
+          ease: 'power3.out',
+          stagger: 0.08,
+          overwrite: true,
+        }),
+    });
+  }, sectionRef);
 
   return (
     <LandingPublicLayout title={t('characters.meta_title')} wide>
