@@ -11,15 +11,15 @@ import {
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
-import { SERIE_ACHIEVEMENT_TYPES } from '@/features/serie/serie.constants';
-import type { SerieEpisodeAchievements } from '@/features/serie/serie.types';
+import { SERIE_REWARD_TYPES } from '@/features/serie/serie.constants';
+import type { SerieEpisodeRewards } from '@/features/serie/serie.types';
 
 type SerieEpisodeCardProps = {
   episodeId: number;
   name: string;
   description: string;
   experience: number;
-  achievements: SerieEpisodeAchievements;
+  rewards: SerieEpisodeRewards;
   watched: boolean;
 };
 
@@ -28,7 +28,7 @@ export function SerieEpisodeCard({
   name,
   description,
   experience,
-  achievements,
+  rewards,
   watched,
 }: SerieEpisodeCardProps) {
   const { t } = useTranslation(['common', 'serie']);
@@ -115,12 +115,12 @@ export function SerieEpisodeCard({
                       mb="2"
                       className="text-highlight decoration-highlight/40 underline"
                     >
-                      {t('serie.achievements_heading')}
+                      {t('serie.rewards_heading')}
                     </Text>
 
                     <Flex direction="column" gap="1">
-                      {SERIE_ACHIEVEMENT_TYPES.map(({ key, labelKey }) => {
-                        const ids = achievements[key];
+                      {SERIE_REWARD_TYPES.map(({ key, labelKey }) => {
+                        const ids = rewards[key];
                         if (!ids.length) {
                           return null;
                         }

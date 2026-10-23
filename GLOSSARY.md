@@ -95,5 +95,5 @@ _Evitar_: v2 a secas.
 **`experience` / XP**:
 Lo mismo. En el código, `experience`; en la interfaz y en los docs, XP.
 
-**`achievements` / logro**:
-En `episodeSchema`, `achievements` son las cartas que da un episodio, no logros. Pasará a llamarse `rewards`, y «logro» queda para `Achievement`.
+**`rewards` / `Reward`**:
+`episode.rewards` son solo las cartas que da un episodio, por categoría; la XP va aparte en `experience`. `Reward` (XP, berries y cartas) llega con `UnlockRule`. «Logro» queda para `Achievement`.

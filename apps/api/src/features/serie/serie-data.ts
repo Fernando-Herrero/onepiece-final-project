@@ -30,7 +30,7 @@ export type Episode = {
   description: string;
   arc: string;
   experience: number;
-  achievements: {
+  rewards: {
     characters: number[];
     items: number[];
     fruits: number[];

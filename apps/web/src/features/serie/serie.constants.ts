@@ -1,5 +1,5 @@
 import type {
-  SerieEpisodeAchievements,
+  SerieEpisodeRewards,
   SerieProgress,
 } from '@/features/serie/serie.types';
 
@@ -12,14 +12,14 @@ export const DEFAULT_SERIE_PROGRESS: SerieProgress = {
   episode: 0,
 };
 
-export const SERIE_ACHIEVEMENT_TYPES = [
+export const SERIE_REWARD_TYPES = [
   { key: 'characters', labelKey: 'profile.collection_characters' },
   { key: 'items', labelKey: 'profile.collection_items' },
   { key: 'fruits', labelKey: 'profile.collection_fruits' },
   { key: 'swords', labelKey: 'profile.collection_swords' },
   { key: 'boats', labelKey: 'profile.collection_boats' },
 ] as const satisfies ReadonlyArray<{
-  key: keyof SerieEpisodeAchievements;
+  key: keyof SerieEpisodeRewards;
   labelKey:
     | 'profile.collection_characters'
     | 'profile.collection_items'

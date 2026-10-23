@@ -74,7 +74,7 @@ export function SerieArcBlock({
                 name={episode.name}
                 description={episode.description}
                 experience={episode.experience}
-                achievements={episode.achievements}
+                rewards={episode.rewards}
                 watched={isEpisodeWatched(episode.id, sagaId, arc.id, progress)}
               />
             ))}

@@ -30,7 +30,7 @@ export const episodeSchema = z.object({
   description: z.string(),
   arc: z.string(),
   experience: z.number().int().nonnegative(),
-  achievements: unlockedCardsSchema,
+  rewards: unlockedCardsSchema,
 });
 
 export const sagaListOutputSchema = z.object({
