@@ -1,388 +1,157 @@
-import {
-  Avatar,
-  Badge,
-  Box,
-  Button,
-  Card,
-  Flex,
-  Text,
-  TextField,
-  Tooltip,
-} from '@radix-ui/themes';
+import { Badge, Card, Flex, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
 
 import { VerifiedBadge } from '@/components/verified-badge/verified-badge.component';
-import {
-  DEFAULT_AVATAR_SRC,
-  resolveAvatarSrc,
-} from '@/features/avatar/avatar.constants';
-import {
-  useSaveProfileField,
-  useSetFollowingMutation,
-} from '@/features/profile/api/use-profile';
+import { resolveAvatarSrc } from '@/features/avatar/avatar.constants';
+import { useSaveProfileField } from '@/features/profile/api/use-profile';
 import type {
   ProfileUser,
   UpdateProfileBody,
 } from '@/features/profile/profile.types';
-import { ProfileAvatarPickerOverlay } from '@/features/profile/ui/profile-avatar-picker-overlay.component';
-import {
-  ProfileEditableField,
-  profileFieldClassName,
-} from '@/features/profile/ui/profile-editable-field.component';
+import { ProfileAvatar } from '@/features/profile/ui/profile-avatar.component';
+import { ProfileCover } from '@/features/profile/ui/profile-cover.component';
+import { ProfileEditableField } from '@/features/profile/ui/profile-editable-field.component';
+import { ProfileFollowButton } from '@/features/profile/ui/profile-follow-button.component';
 
 import { ProfileViewMore } from './profile-view-more.component';
-
-const avatarFallback = (
-  // eslint-disable-next-line @next/next/no-img-element
-  <img src={DEFAULT_AVATAR_SRC} alt="" className="size-full object-cover" />
-);
 
 type EditableField = 'displayName' | 'bio' | 'coverImage';
 
 type ProfileIdentityCardProps = {
   user: ProfileUser;
-  isOwner?: boolean;
-  isFollowing?: boolean;
+  isOwner: boolean;
+  isFollowing: boolean;
 };
 
 export function ProfileIdentityCard({
   user,
-  isOwner = true,
-  isFollowing = false,
+  isOwner,
+  isFollowing,
 }: ProfileIdentityCardProps) {
   const { t } = useTranslation();
   const { save, isSaving } = useSaveProfileField(user._id);
-  const setFollowing = useSetFollowingMutation();
-  const [coverLoadError, setCoverLoadError] = useState(false);
-  const [avatarLoadError, setAvatarLoadError] = useState(false);
   const [editingField, setEditingField] = useState<EditableField | null>(null);
-  const [coverDraft, setCoverDraft] = useState('');
-  const [avatarPickerOpen, setAvatarPickerOpen] = useState(false);
 
   const displayName = user.displayName?.trim() ?? '';
   const bio = user.bio?.trim() ?? '';
   const coverImage = user.coverImage?.trim() ?? '';
-  const hasCoverImage = !!coverImage && !coverLoadError;
-  const isEditingCover = editingField === 'coverImage';
-  const resolvedAvatar = resolveAvatarSrc(user.avatar);
-  const avatarSrc = avatarLoadError ? DEFAULT_AVATAR_SRC : resolvedAvatar;
 
-  async function saveProfileField(
-    body: UpdateProfileBody,
-    field: EditableField,
-  ) {
-    await save(body, field, () => {
-      setEditingField(null);
-      if ('coverImage' in body) {
-        setCoverLoadError(false);
-      }
-    });
-  }
-
-  function startCoverEdit() {
-    setCoverDraft(coverImage);
-    setEditingField('coverImage');
-  }
-
-  function saveCover() {
-    void saveProfileField(
-      { coverImage: coverDraft.trim() || null },
-      'coverImage',
-    );
+  function saveProfileField(body: UpdateProfileBody, field: EditableField) {
+    void save(body, field, () => setEditingField(null));
   }
 
   return (
-    <>
-      <Card className="card overflow-hidden p-0">
-        <Box
-          position="relative"
-          className="group to-page h-36 w-full overflow-hidden bg-linear-to-r from-[#1a0f05] via-[#3d2010] sm:h-40 lg:h-44"
-        >
-          {isOwner && isEditingCover ? (
-            <Flex
-              direction="column"
-              gap="2"
-              justify="center"
-              className="bg-page/92 absolute inset-0 p-4"
-            >
-              <TextField.Root
-                className={profileFieldClassName}
-                value={coverDraft}
-                placeholder={t('profile.input_cover_image')}
-                autoFocus
-                onChange={event => setCoverDraft(event.target.value)}
-                onKeyDown={event => {
-                  if (event.key === 'Enter') {
-                    saveCover();
-                  }
-                  if (event.key === 'Escape') {
-                    setEditingField(null);
-                  }
-                }}
-              />
-              <Flex gap="2" justify="end">
-                <Button
-                  type="button"
-                  size="1"
-                  color="orange"
-                  disabled={isSaving('coverImage')}
-                  onClick={saveCover}
-                >
-                  {isSaving('coverImage')
-                    ? t('profile.saving')
-                    : t('profile.save_button')}
-                </Button>
-                <Button
-                  type="button"
-                  size="1"
-                  variant="soft"
-                  color="gray"
-                  disabled={isSaving('coverImage')}
-                  onClick={() => setEditingField(null)}
-                >
-                  {t('profile.cancel')}
-                </Button>
-              </Flex>
-            </Flex>
-          ) : (
-            <>
-              {hasCoverImage ? (
-                <>
-                  {/* eslint-disable-next-line @next/next/no-img-element -- cover URL libre del usuario */}
-                  <img
-                    src={coverImage}
-                    alt=""
-                    className="h-full w-full object-cover opacity-80"
-                    onError={() => setCoverLoadError(true)}
-                  />
-                  <Box
-                    className="from-page/70 pointer-events-none absolute inset-0 bg-linear-to-t via-[#3d2010]/20 to-[#1a0f05]/30"
-                    aria-hidden
-                  />
-                </>
-              ) : isOwner ? (
-                <Flex
-                  align="center"
-                  justify="center"
-                  className="absolute inset-0 px-6 text-center"
-                >
-                  <Text as="p" size="2" className="text-foreground/45 italic">
-                    {t('profile.cover_empty_hint')}
-                  </Text>
-                </Flex>
-              ) : null}
-              {isOwner ? (
-                <>
-                  <Flex
-                    align="center"
-                    justify="center"
-                    className="bg-page/0 group-hover:bg-page/50 pointer-events-none absolute inset-0 z-10 opacity-0 transition duration-200 group-hover:opacity-100"
-                  >
-                    <Text
-                      as="span"
-                      size="2"
-                      weight="medium"
-                      className="text-highlight"
-                    >
-                      {t('profile.change_cover_img')}
-                    </Text>
-                  </Flex>
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    color="gray"
-                    aria-label={t('profile.change_cover_img')}
-                    className="absolute inset-0 z-20 h-full w-full cursor-pointer rounded-none hover:bg-transparent active:bg-transparent"
-                    onClick={startCoverEdit}
-                  />
-                </>
-              ) : null}
-            </>
-          )}
-        </Box>
+    <Card className="card overflow-hidden p-0">
+      {/* `key`: con otra URL, ProfileCover vuelve a montarse y olvida el error de carga. */}
+      <ProfileCover
+        key={coverImage}
+        value={coverImage}
+        isOwner={isOwner}
+        isEditing={editingField === 'coverImage'}
+        isSaving={isSaving('coverImage')}
+        onStartEdit={() => setEditingField('coverImage')}
+        onCancel={() => setEditingField(null)}
+        onSave={value =>
+          saveProfileField({ coverImage: value.trim() || null }, 'coverImage')
+        }
+      />
 
-        <Flex direction="column" gap="3" className="relative px-5 pt-0 pb-5">
-          <Box position="relative" className="z-50 -mt-10 w-fit">
-            {isOwner ? (
-              <Tooltip content={t('profile.change_avatar')}>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  color="gray"
-                  aria-label={t('profile.change_avatar')}
-                  className="h-auto cursor-pointer rounded-full p-0 hover:bg-transparent active:bg-transparent"
-                  onClick={() => {
-                    setAvatarLoadError(false);
-                    setAvatarPickerOpen(true);
-                  }}
-                >
-                  <Avatar
-                    key={resolvedAvatar}
-                    src={avatarSrc}
-                    fallback={avatarFallback}
-                    size="6"
-                    radius="full"
-                    className="border-page border-4"
-                    onLoadingStatusChange={status => {
-                      if (status === 'error') {
-                        setAvatarLoadError(true);
-                      }
-                    }}
-                  />
-                </Button>
-              </Tooltip>
-            ) : (
-              <Avatar
-                key={resolvedAvatar}
-                src={avatarSrc}
-                fallback={avatarFallback}
-                size="6"
-                radius="full"
-                className="border-page border-4"
-                onLoadingStatusChange={status => {
-                  if (status === 'error') {
-                    setAvatarLoadError(true);
-                  }
-                }}
-              />
-            )}
-            <Box
-              position="absolute"
-              className={`border-page right-0.5 bottom-0.5 size-4 rounded-full border-[3px] shadow-[0_0_0_1px_--alpha(var(--color-highlight)/35%)] ${
-                user.isActive ? 'bg-green-400' : 'bg-red-400'
-              }`}
-              aria-label={
-                user.isActive
-                  ? t('profile.status_online')
-                  : t('profile.status_offline')
-              }
-            />
-          </Box>
+      <Flex direction="column" gap="3" className="relative px-5 pt-0 pb-5">
+        <ProfileAvatar
+          key={resolveAvatarSrc(user.avatar)}
+          user={user}
+          isOwner={isOwner}
+        />
 
-          <Flex direction="column" gap="1" align="start">
-            {isOwner ? (
-              <ProfileEditableField
-                value={displayName}
-                emptyText={t('profile.empty_displayname')}
-                placeholder={t('profile.display_name_placeholder')}
-                prominent
-                isEditing={editingField === 'displayName'}
-                isSaving={isSaving('displayName')}
-                onStartEdit={() => setEditingField('displayName')}
-                onCancel={() => setEditingField(null)}
-                onSave={value =>
-                  void saveProfileField(
-                    { displayName: value.trim() || null },
-                    'displayName',
-                  )
-                }
-              />
-            ) : (
-              <Text
-                as="p"
-                size="5"
-                weight="bold"
-                className={
-                  displayName
-                    ? 'text-foreground'
-                    : 'text-foreground/50 text-base font-normal italic'
-                }
-              >
-                {displayName || t('profile.empty_displayname_other')}
-              </Text>
-            )}
-            <Flex align="center" gap="1">
-              <Text as="p" size="2" color="gray">
-                @{user.username}
-              </Text>
-              <VerifiedBadge verified={user.verified} />
-            </Flex>
-          </Flex>
-
+        <Flex direction="column" gap="1" align="start">
           {isOwner ? (
             <ProfileEditableField
-              value={bio}
-              emptyText={t('profile.empty_bio')}
-              placeholder={t('profile.bio_placeholder')}
-              multiline
-              isEditing={editingField === 'bio'}
-              isSaving={isSaving('bio')}
-              onStartEdit={() => setEditingField('bio')}
+              value={displayName}
+              emptyText={t('profile.empty_displayname')}
+              placeholder={t('profile.display_name_placeholder')}
+              prominent
+              isEditing={editingField === 'displayName'}
+              isSaving={isSaving('displayName')}
+              onStartEdit={() => setEditingField('displayName')}
               onCancel={() => setEditingField(null)}
               onSave={value =>
-                void saveProfileField({ bio: value.trim() || null }, 'bio')
+                saveProfileField(
+                  { displayName: value.trim() || null },
+                  'displayName',
+                )
               }
             />
           ) : (
             <Text
               as="p"
-              size="2"
+              size="5"
+              weight="bold"
               className={
-                bio ? 'text-foreground/85' : 'text-foreground/50 italic'
+                displayName
+                  ? 'text-foreground'
+                  : 'text-foreground/50 text-base font-normal italic'
               }
             >
-              {bio || t('profile.empty_bio_other')}
+              {displayName || t('profile.empty_displayname_other')}
             </Text>
           )}
-
-          {!isOwner ? (
-            <Button
-              type="button"
-              size="2"
-              color={isFollowing ? 'gray' : 'orange'}
-              variant={isFollowing ? 'soft' : 'solid'}
-              disabled={setFollowing.isPending}
-              onClick={() =>
-                setFollowing.mutate({
-                  targetUserId: user._id,
-                  following: !isFollowing,
-                })
-              }
-            >
-              {setFollowing.isPending
-                ? t('profile.saving')
-                : isFollowing
-                  ? t('profile.unfollow_button')
-                  : t('profile.follow_button')}
-            </Button>
-          ) : null}
-
-          <ProfileViewMore user={user} isOwner={isOwner} />
-
-          <Flex gap="2" wrap="wrap">
-            <Badge color="orange" variant="soft">
-              {t(`profile.role.${user.role}`)}
-            </Badge>
-            {user.verified ? (
-              <Badge color="green" variant="soft">
-                {t('profile.verified')}
-              </Badge>
-            ) : (
-              <Badge color="brown" variant="soft">
-                {t('profile.not_verified')}
-              </Badge>
-            )}
-            <Badge color="gold" variant="soft">
-              {t('profile.experience', { value: user.experience })}
-            </Badge>
+          <Flex align="center" gap="1">
+            <Text as="p" size="2" color="gray">
+              @{user.username}
+            </Text>
+            <VerifiedBadge verified={user.verified} />
           </Flex>
         </Flex>
-      </Card>
 
-      {isOwner && avatarPickerOpen ? (
-        <ProfileAvatarPickerOverlay
-          key={resolvedAvatar}
-          userId={user._id}
-          currentAvatar={resolvedAvatar}
-          serieProgress={user.serieProgress}
-          onClose={() => setAvatarPickerOpen(false)}
-          onSaved={() => {
-            setAvatarLoadError(false);
-            setAvatarPickerOpen(false);
-          }}
-        />
-      ) : null}
-    </>
+        {isOwner ? (
+          <ProfileEditableField
+            value={bio}
+            emptyText={t('profile.empty_bio')}
+            placeholder={t('profile.bio_placeholder')}
+            multiline
+            isEditing={editingField === 'bio'}
+            isSaving={isSaving('bio')}
+            onStartEdit={() => setEditingField('bio')}
+            onCancel={() => setEditingField(null)}
+            onSave={value =>
+              saveProfileField({ bio: value.trim() || null }, 'bio')
+            }
+          />
+        ) : (
+          <Text
+            as="p"
+            size="2"
+            className={bio ? 'text-foreground/85' : 'text-foreground/50 italic'}
+          >
+            {bio || t('profile.empty_bio_other')}
+          </Text>
+        )}
+
+        {!isOwner ? (
+          <ProfileFollowButton userId={user._id} isFollowing={isFollowing} />
+        ) : null}
+
+        <ProfileViewMore user={user} isOwner={isOwner} />
+
+        <Flex gap="2" wrap="wrap">
+          <Badge color="orange" variant="soft">
+            {t(`profile.role.${user.role}`)}
+          </Badge>
+          {user.verified ? (
+            <Badge color="green" variant="soft">
+              {t('profile.verified')}
+            </Badge>
+          ) : (
+            <Badge color="brown" variant="soft">
+              {t('profile.not_verified')}
+            </Badge>
+          )}
+          <Badge color="gold" variant="soft">
+            {t('profile.experience', { value: user.experience })}
+          </Badge>
+        </Flex>
+      </Flex>
+    </Card>
   );
 }
