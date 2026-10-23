@@ -540,7 +540,7 @@ layer-backed blur y will-change idle. El movimiento JS se omite mediante `isMoti
 
 /* ---------------------------------------------------------------------------
  * Preferencias de accesibilidad (ajustes › accesibilidad).
- * `useApplyAccessibilityPreferences` escribe estos data-attributes en <html>.
+ * El script de `_document` y `applyAccessibilityPreferences` escriben estos data-attributes en <html>.
  * ------------------------------------------------------------------------- */
 
 html[data-font-scale='sm'] {
@@ -575,6 +575,15 @@ html[data-reduce-motion='true'] *::after {
   animation-iteration-count: 1 !important;
   transition-duration: 0.001ms !important;
   scroll-behavior: auto !important;
+}
+
+/* Sin GSAP, el texto del hero se queda en su opacidad inicial. */
+html[data-reduce-motion='true'] :is(.landing-title, .landing-tagline) {
+  opacity: 1;
+}
+
+html[data-reduce-motion='true'] .landing-scroll-cue {
+  display: none;
 }
 
 /* Timeline › modo compacto y difuminar multimedia. */

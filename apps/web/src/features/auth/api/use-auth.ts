@@ -12,6 +12,7 @@ import {
 } from '@/features/auth/api/session-user';
 import { getAuthenticatedHomePath } from '@/features/auth/auth-routes';
 import type { RegisterFormValues } from '@/features/auth/register-form.schema';
+import { applyAccessibilityPreferences } from '@/features/settings/use-apply-accessibility';
 import { client } from '@/integrations/orpc/orpc.client';
 import { getOrpcErrorCode } from '@/integrations/orpc/orpc-error';
 import { allQueriesOptions } from '@/integrations/tanstack-query/queries-options';
@@ -111,6 +112,7 @@ export function useLogoutMutation() {
       await queryClient.cancelQueries({ queryKey: authKeys.all });
       await router.push('/login');
       queryClient.removeQueries({ queryKey: authKeys.all });
+      applyAccessibilityPreferences(null);
     },
   });
 }

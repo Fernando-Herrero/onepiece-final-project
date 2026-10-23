@@ -6,9 +6,12 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { type PropsWithChildren, useEffect } from 'react';
 import { Toaster } from 'sonner';
 
+import { useApplyAccessibilityPreferences } from '@/features/settings/use-apply-accessibility';
 import RadixThemesProvider from '@/integrations/radix-themes/radix-themes.provider';
 
 export default function NoSSRProviders({ children }: PropsWithChildren) {
+  useApplyAccessibilityPreferences();
+
   /** Limpieza legacy v2: auth v3 usa cookies HTTP-only, no `localStorage.token`. */
   useEffect(() => {
     if (typeof window === 'undefined') {

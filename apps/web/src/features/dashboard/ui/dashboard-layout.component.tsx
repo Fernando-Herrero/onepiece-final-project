@@ -12,14 +12,11 @@ import { DashboardNavRail } from '@/features/dashboard/ui/dashboard-nav-rail.com
 import { DashboardNavSidebar } from '@/features/dashboard/ui/dashboard-nav-sidebar.component';
 import { DashboardTopBar } from '@/features/dashboard/ui/dashboard-top-bar.component';
 import { useNavExpanded } from '@/features/dashboard/use-nav-expanded';
-import { useApplyAccessibilityPreferences } from '@/features/settings/use-apply-accessibility';
 
 export function DashboardLayout({ children }: PropsWithChildren) {
   const router = useRouter();
   const { t } = useTranslation();
   const { navExpanded, toggleNavExpanded } = useNavExpanded();
-
-  useApplyAccessibilityPreferences();
 
   const activeTab = getDashboardActiveTab(router.pathname);
   const sectionLabel = t(getDashboardSectionLabelKey(router.pathname));

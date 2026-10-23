@@ -6,8 +6,8 @@ import type { RefObject } from 'react';
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export function isMotionDisabled(): boolean {
-  // Preferencia explícita del usuario (ajustes › accesibilidad), escrita en
-  // <html data-reduce-motion> por `useApplyAccessibilityPreferences`.
+  // Preferencia explícita del usuario (ajustes › accesibilidad) en <html data-reduce-motion>,
+  // que el script de `_document` aplica antes de montar y `applyAccessibilityPreferences` mantiene.
   if (document.documentElement.dataset.reduceMotion === 'true') {
     return true;
   }

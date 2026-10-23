@@ -110,7 +110,7 @@ export default function SeriePageContent() {
     <Box className="mx-auto max-w-3xl pb-24 lg:max-w-4xl">
       <Card
         ref={heroRef}
-        className="border-highlight/15 relative mb-8 overflow-hidden rounded-3xl border bg-transparent p-0 opacity-0 shadow-none"
+        className="border-highlight/15 relative mb-8 overflow-hidden rounded-3xl border bg-transparent p-0 shadow-none"
       >
         <Box className="absolute inset-0 -z-20">
           <Image
