@@ -26,7 +26,7 @@ export const AVATAR_STARTER_CHARACTER_IDS = [
 export type AvatarStarterCharacterId =
   (typeof AVATAR_STARTER_CHARACTER_IDS)[number];
 
-/** Unlocked via `serieProgress` (dashboard profile only). */
+/** Unlocked via `lastWatchedEpisode` (dashboard profile only). */
 export const AVATAR_PROGRESS_UNLOCK_CHARACTER_IDS = [
   'chopper',
   'robin',
@@ -36,12 +36,6 @@ export const AVATAR_PROGRESS_UNLOCK_CHARACTER_IDS = [
 
 export type AvatarProgressUnlockCharacterId =
   (typeof AVATAR_PROGRESS_UNLOCK_CHARACTER_IDS)[number];
-
-export type SerieProgress = {
-  saga: number;
-  arc: number;
-  episode: number;
-};
 
 export type AvatarOption = {
   id: AvatarCharacterId;
@@ -79,41 +73,28 @@ export const registerAvatarPathSchema = z.enum(
 );
 
 /**
- * Minimum serie progress per unlockable avatar.
+ * Minimum last watched episode per unlockable avatar.
  * Empty until serie progress is computed server-side.
  */
-export const AVATAR_PROGRESS_UNLOCK_RULES = {} as Partial<
-  Record<AvatarProgressUnlockCharacterId, SerieProgress>
->;
-
-function isSerieProgressAtLeast(
-  current: SerieProgress,
-  required: SerieProgress,
-): boolean {
-  if (current.saga !== required.saga) {
-    return current.saga > required.saga;
-  }
-  if (current.arc !== required.arc) {
-    return current.arc > required.arc;
-  }
-  return current.episode >= required.episode;
-}
+export const AVATAR_PROGRESS_UNLOCK_RULES: Partial<
+  Record<AvatarProgressUnlockCharacterId, number>
+> = {};
 
 export function getProgressUnlockedAvatarIds(
-  serieProgress: SerieProgress,
+  lastWatchedEpisode: number,
 ): AvatarProgressUnlockCharacterId[] {
   return AVATAR_PROGRESS_UNLOCK_CHARACTER_IDS.filter(id => {
     const rule = AVATAR_PROGRESS_UNLOCK_RULES[id];
-    return rule !== undefined && isSerieProgressAtLeast(serieProgress, rule);
+    return rule !== undefined && lastWatchedEpisode >= rule;
   });
 }
 
 export function getSelectableAvatarIds(
-  serieProgress: SerieProgress,
+  lastWatchedEpisode: number,
 ): AvatarCharacterId[] {
   return [
     ...AVATAR_STARTER_CHARACTER_IDS,
-    ...getProgressUnlockedAvatarIds(serieProgress),
+    ...getProgressUnlockedAvatarIds(lastWatchedEpisode),
   ];
 }
 
@@ -126,10 +107,10 @@ export function getRegisterAvatarPickerOptions(): AvatarOption[] {
 }
 
 export function getProfileAvatarPickerOptions(
-  serieProgress: SerieProgress,
+  lastWatchedEpisode: number,
   currentAvatarPath?: string,
 ): AvatarOption[] {
-  const ids = new Set(getSelectableAvatarIds(serieProgress));
+  const ids = new Set(getSelectableAvatarIds(lastWatchedEpisode));
 
   if (currentAvatarPath) {
     const current = AVATAR_OPTIONS.find(
@@ -145,10 +126,11 @@ export function getProfileAvatarPickerOptions(
 
 export function isAvatarPathSelectable(
   path: string,
-  serieProgress: SerieProgress,
+  lastWatchedEpisode: number,
   currentAvatarPath?: string,
 ): boolean {
-  return getProfileAvatarPickerOptions(serieProgress, currentAvatarPath).some(
-    option => option.path === path,
-  );
+  return getProfileAvatarPickerOptions(
+    lastWatchedEpisode,
+    currentAvatarPath,
+  ).some(option => option.path === path);
 }

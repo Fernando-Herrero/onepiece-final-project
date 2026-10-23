@@ -1,7 +1,6 @@
 import {
   DEFAULT_USER_PREFERENCES,
   type privacySchema,
-  type serieProgressSchema,
   type unlockedCardsSchema,
   type userPreferencesSchema,
   type userRoleSchema,
@@ -30,9 +29,8 @@ export type UserDocument = {
   verified: boolean;
   isActive: boolean;
   experience: number;
-  serieProgress: z.infer<typeof serieProgressSchema>;
+  lastWatchedEpisode: number;
   unlockedCards: z.infer<typeof unlockedCardsSchema>;
-  completedEpisodes: number[];
   privacy: z.infer<typeof privacySchema>;
   /** Opcional en Mongo: los usuarios creados antes de settings no lo tienen. */
   preferences?: UserPreferences;
@@ -93,7 +91,7 @@ export function serializeUserProfile(user: WithId<UserDocument>) {
     verified: user.verified,
     isActive: user.isActive,
     experience: user.experience,
-    serieProgress: user.serieProgress,
+    lastWatchedEpisode: user.lastWatchedEpisode,
     unlockedCards: user.unlockedCards,
     privacy: user.privacy,
     followers: user.followers.map(String),

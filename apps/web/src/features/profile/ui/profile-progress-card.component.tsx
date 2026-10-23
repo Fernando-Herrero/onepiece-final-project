@@ -15,33 +15,8 @@ export function ProfileProgressCard({
   user,
   isOwner = true,
 }: ProfileProgressCardProps) {
-  const { t } = useTranslation(['common', 'serie']);
-  const { saga, arc, episode } = user.serieProgress;
-  const hasSerieProgress = saga > 0 && arc > 0 && episode > 0;
+  const { t } = useTranslation();
   const xpPercent = getSerieXpPercent(user.experience);
-
-  const progressItems = hasSerieProgress
-    ? [
-        {
-          label: t('profile.progress_saga_label'),
-          value: t(`sagas.${saga}.name`, {
-            ns: 'serie',
-            defaultValue: t('profile.progress_saga_fallback', { id: saga }),
-          }),
-        },
-        {
-          label: t('profile.progress_arc_label'),
-          value: t(`arcs.${arc}.name`, {
-            ns: 'serie',
-            defaultValue: t('profile.progress_arc_fallback', { id: arc }),
-          }),
-        },
-        {
-          label: t('profile.progress_episode_label'),
-          value: t('serie.episode_number', { number: episode }),
-        },
-      ]
-    : [];
 
   return (
     <Card className="card p-4">
@@ -59,29 +34,20 @@ export function ProfileProgressCard({
         ) : null}
       </Flex>
 
-      {hasSerieProgress ? (
+      {user.lastWatchedEpisode > 0 ? (
         <Flex direction="column" gap="3">
-          <Flex gap="2" wrap="wrap">
-            {progressItems.map(item => (
-              <Flex
-                key={item.label}
-                direction="column"
-                gap="1"
-                className="tile min-w-28 flex-1"
-              >
-                <Text as="span" size="1" color="gray">
-                  {item.label}
-                </Text>
-                <Text
-                  as="span"
-                  size="2"
-                  weight="medium"
-                  className="text-foreground"
-                >
-                  {item.value}
-                </Text>
-              </Flex>
-            ))}
+          <Flex direction="column" gap="1" className="tile">
+            <Text as="span" size="1" color="gray">
+              {t('profile.progress_episode_label')}
+            </Text>
+            <Text
+              as="span"
+              size="2"
+              weight="medium"
+              className="text-foreground"
+            >
+              {t('serie.episode_number', { number: user.lastWatchedEpisode })}
+            </Text>
           </Flex>
 
           <Flex direction="column" gap="2">

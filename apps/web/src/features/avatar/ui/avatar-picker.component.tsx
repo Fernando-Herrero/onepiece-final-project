@@ -1,7 +1,6 @@
 import {
   getProfileAvatarPickerOptions,
   getRegisterAvatarPickerOptions,
-  type SerieProgress,
 } from '@logpose/contracts/common/avatar.schemas';
 import { Box, Button, Flex, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
@@ -10,22 +9,22 @@ type AvatarPickerComponentProps = {
   value: string;
   onChange: (path: string) => void;
   error?: string;
-  /** Register: omit. Profile: pass user serieProgress (+ current avatar preserved internally). */
-  serieProgress?: SerieProgress;
+  /** Register: omit. Profile: pass the user's lastWatchedEpisode (+ current avatar preserved internally). */
+  lastWatchedEpisode?: number;
 };
 
 export function AvatarPickerComponent({
   value,
   onChange,
   error,
-  serieProgress,
+  lastWatchedEpisode,
 }: AvatarPickerComponentProps) {
   const { t } = useTranslation();
 
   const options =
-    serieProgress === undefined
+    lastWatchedEpisode === undefined
       ? getRegisterAvatarPickerOptions()
-      : getProfileAvatarPickerOptions(serieProgress, value);
+      : getProfileAvatarPickerOptions(lastWatchedEpisode, value);
 
   return (
     <Flex

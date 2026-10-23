@@ -17,17 +17,13 @@ import { ErrorBoundary } from 'react-error-boundary';
 import { QueryErrorFallback } from '@/components/error-boundary/query-error-fallback';
 import { useAuthSession } from '@/features/auth/api/use-auth';
 import { useSuspenseSerieSagas } from '@/features/serie/api/use-serie';
-import {
-  DEFAULT_SERIE_PROGRESS,
-  SERIE_TOTAL_XP,
-} from '@/features/serie/serie.constants';
+import { SERIE_TOTAL_XP } from '@/features/serie/serie.constants';
 import { getSerieXpPercent } from '@/features/serie/serie.selectors';
-import type { SerieProgress } from '@/features/serie/serie.types';
 import { SerieSagaBlock } from '@/features/serie/ui/serie-saga-block.component';
 import { useGsapMotion } from '@/integrations/gsap/motion';
 
 type SerieSagaListProps = {
-  progress: SerieProgress;
+  lastWatchedEpisode: number;
   openSagaIds: Record<number, boolean>;
   onToggleSaga: (sagaId: number) => void;
   openArcIds: Record<number, boolean>;
@@ -35,7 +31,7 @@ type SerieSagaListProps = {
 };
 
 function SerieSagaList({
-  progress,
+  lastWatchedEpisode,
   openSagaIds,
   onToggleSaga,
   openArcIds,
@@ -53,7 +49,7 @@ function SerieSagaList({
           onToggle={() => onToggleSaga(saga.id)}
           openArcIds={openArcIds}
           onToggleArc={onToggleArc}
-          progress={progress}
+          lastWatchedEpisode={lastWatchedEpisode}
         />
       ))}
     </Flex>
@@ -80,7 +76,7 @@ export default function SeriePageContent() {
   const [openSagaIds, setOpenSagaIds] = useState<Record<number, boolean>>({});
   const [openArcIds, setOpenArcIds] = useState<Record<number, boolean>>({});
 
-  const progress = user?.serieProgress ?? DEFAULT_SERIE_PROGRESS;
+  const lastWatchedEpisode = user?.lastWatchedEpisode ?? 0;
   const experience = user?.experience ?? 0;
   const xpPercent = getSerieXpPercent(experience);
 
@@ -182,7 +178,7 @@ export default function SeriePageContent() {
       <ErrorBoundary FallbackComponent={QueryErrorFallback}>
         <Suspense fallback={<SerieSagaListSkeleton />}>
           <SerieSagaList
-            progress={progress}
+            lastWatchedEpisode={lastWatchedEpisode}
             openSagaIds={openSagaIds}
             onToggleSaga={toggleSaga}
             openArcIds={openArcIds}

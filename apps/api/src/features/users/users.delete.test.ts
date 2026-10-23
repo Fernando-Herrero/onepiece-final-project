@@ -65,7 +65,7 @@ const newUser = (
   verified: false,
   isActive: true,
   experience: 0,
-  serieProgress: { saga: 0, arc: 0, episode: 0 },
+  lastWatchedEpisode: 0,
   unlockedCards: {
     characters: [],
     items: [],
@@ -73,7 +73,6 @@ const newUser = (
     swords: [],
     boats: [],
   },
-  completedEpisodes: [],
   createdAt: new Date('2026-01-01T00:00:00Z'),
   updatedAt: new Date('2026-01-01T00:00:00Z'),
   ...follows,

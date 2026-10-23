@@ -288,7 +288,7 @@ export class UsersService {
 
     if (
       body.avatar !== undefined &&
-      !isAvatarPathSelectable(body.avatar, user.serieProgress, user.avatar)
+      !isAvatarPathSelectable(body.avatar, user.lastWatchedEpisode, user.avatar)
     ) {
       throw new ORPCError('FORBIDDEN');
     }

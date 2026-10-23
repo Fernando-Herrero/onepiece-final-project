@@ -2,25 +2,22 @@ import { Badge, Box, Flex, Spinner, Text } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 
 import { useSerieEpisodes } from '@/features/serie/api/use-serie';
-import { isEpisodeWatched } from '@/features/serie/serie.selectors';
-import type { SerieArc, SerieProgress } from '@/features/serie/serie.types';
+import type { SerieArc } from '@/features/serie/serie.types';
 import { SerieAccordion } from '@/features/serie/ui/serie-accordion.component';
 import { SerieEpisodeCard } from '@/features/serie/ui/serie-episode-card.component';
 
 type SerieArcBlockProps = {
   arc: SerieArc;
-  sagaId: number;
   isOpen: boolean;
   onToggle: () => void;
-  progress: SerieProgress;
+  lastWatchedEpisode: number;
 };
 
 export function SerieArcBlock({
   arc,
-  sagaId,
   isOpen,
   onToggle,
-  progress,
+  lastWatchedEpisode,
 }: SerieArcBlockProps) {
   const { t } = useTranslation(['common', 'serie']);
   const episodesQuery = useSerieEpisodes(arc.id, { enabled: isOpen });
@@ -75,7 +72,7 @@ export function SerieArcBlock({
                 description={episode.description}
                 experience={episode.experience}
                 rewards={episode.rewards}
-                watched={isEpisodeWatched(episode.id, sagaId, arc.id, progress)}
+                watched={episode.id <= lastWatchedEpisode}
               />
             ))}
           </ul>

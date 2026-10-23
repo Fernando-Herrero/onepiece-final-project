@@ -33,7 +33,7 @@ const newUser = (username: string): Omit<UserDocument, '_id'> => ({
   verified: false,
   isActive: true,
   experience: 0,
-  serieProgress: { saga: 0, arc: 0, episode: 0 },
+  lastWatchedEpisode: 0,
   unlockedCards: {
     characters: [],
     items: [],
@@ -41,7 +41,6 @@ const newUser = (username: string): Omit<UserDocument, '_id'> => ({
     swords: [],
     boats: [],
   },
-  completedEpisodes: [],
   followers: [],
   following: [],
 });

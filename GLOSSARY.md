@@ -16,8 +16,8 @@ Episodio del anime. Es el eje de la cronología: el progreso y los desbloqueos s
 **Canon / relleno**:
 Si un episodio adapta el manga (`canon`), no lo adapta (`filler`), mezcla ambos (`mixed`) o resume (`recap`). Hoy el contrato solo tiene `isFiller` en `Arc`; los cuatro valores están en `data/research` y llegan al contrato al normalizar esos datos.
 
-**Progreso de la serie** (`serieProgress`):
-Hasta dónde ha llegado el usuario, como `{ saga, arc, episode }`. Desbloqueará avatares (`AVATAR_PROGRESS_UNLOCK_RULES`, vacío hasta que el progreso se calcule en el servidor).
+**Progreso de la serie** (`lastWatchedEpisode`):
+Número del último episodio visto (0 = ninguno); un episodio está visto si su número no lo supera. Saga y arco salen del episodio. Desbloqueará avatares por número de episodio (`AVATAR_PROGRESS_UNLOCK_RULES`, vacío hasta que el progreso se calcule en el servidor).
 
 ## Cartas y progresión
 

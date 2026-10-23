@@ -1,4 +1,3 @@
-import type { SerieProgress } from '@logpose/contracts/common/avatar.schemas';
 import { Button, Dialog, Flex } from '@radix-ui/themes';
 import { useTranslation } from 'next-i18next/pages';
 import { useState } from 'react';
@@ -10,7 +9,7 @@ import { useUpdateProfileMutation } from '@/features/profile/api/use-profile';
 type ProfileAvatarPickerProps = {
   userId: string;
   currentAvatar: string;
-  serieProgress: SerieProgress;
+  lastWatchedEpisode: number;
   onClose: () => void;
 };
 
@@ -18,7 +17,7 @@ type ProfileAvatarPickerProps = {
 export function ProfileAvatarPicker({
   userId,
   currentAvatar,
-  serieProgress,
+  lastWatchedEpisode,
   onClose,
 }: ProfileAvatarPickerProps) {
   const { t } = useTranslation();
@@ -50,7 +49,7 @@ export function ProfileAvatarPicker({
       </Dialog.Title>
       <AvatarPickerComponent
         value={selectedAvatar}
-        serieProgress={serieProgress}
+        lastWatchedEpisode={lastWatchedEpisode}
         onChange={setSelectedAvatar}
       />
 

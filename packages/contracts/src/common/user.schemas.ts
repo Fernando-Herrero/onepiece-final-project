@@ -71,12 +71,6 @@ export const DEFAULT_PRIVACY: z.infer<typeof privacySchema> = {
   showComments: true,
 };
 
-export const serieProgressSchema = z.object({
-  saga: z.number(),
-  arc: z.number(),
-  episode: z.number(),
-});
-
 export const unlockedCardsSchema = z.object({
   characters: z.array(z.number()),
   items: z.array(z.number()),
@@ -150,7 +144,7 @@ export const userProfileSchema = z.object({
   verified: z.boolean(),
   isActive: z.boolean(),
   experience: z.number(),
-  serieProgress: serieProgressSchema,
+  lastWatchedEpisode: z.number().int().nonnegative(),
   unlockedCards: unlockedCardsSchema,
   privacy: privacySchema,
   followers: z.array(z.string()),

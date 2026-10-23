@@ -1,16 +1,7 @@
-import type {
-  SerieEpisodeRewards,
-  SerieProgress,
-} from '@/features/serie/serie.types';
+import type { SerieEpisodeRewards } from '@/features/serie/serie.types';
 
 /** Suma XP de `apps/api/src/data/serie/episodes.json` (semilla actual). */
 export const SERIE_TOTAL_XP = 8900;
-
-export const DEFAULT_SERIE_PROGRESS: SerieProgress = {
-  saga: 0,
-  arc: 0,
-  episode: 0,
-};
 
 export const SERIE_REWARD_TYPES = [
   { key: 'characters', labelKey: 'profile.collection_characters' },

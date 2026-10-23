@@ -43,7 +43,7 @@ export class AuthService {
         verified: false,
         isActive: true,
         experience: 0,
-        serieProgress: { saga: 0, arc: 0, episode: 0 },
+        lastWatchedEpisode: 0,
         unlockedCards: {
           characters: [],
           items: [],
@@ -51,7 +51,6 @@ export class AuthService {
           swords: [],
           boats: [],
         },
-        completedEpisodes: [],
         followers: [],
         following: [],
       })

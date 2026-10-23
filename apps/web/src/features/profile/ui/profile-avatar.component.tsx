@@ -62,7 +62,7 @@ export function ProfileAvatar({ user, isOwner }: ProfileAvatarProps) {
             <ProfileAvatarPicker
               userId={user._id}
               currentAvatar={resolvedAvatar}
-              serieProgress={user.serieProgress}
+              lastWatchedEpisode={user.lastWatchedEpisode}
               onClose={() => setPickerOpen(false)}
             />
           </Dialog.Content>
