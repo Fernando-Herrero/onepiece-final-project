@@ -15,18 +15,14 @@ import { SERIE_REWARD_TYPES } from '@/features/serie/serie.constants';
 import type { SerieEpisodeRewards } from '@/features/serie/serie.types';
 
 type SerieEpisodeCardProps = {
-  episodeId: number;
-  name: string;
-  description: string;
+  episodeNumber: number;
   experience: number;
   rewards: SerieEpisodeRewards;
   watched: boolean;
 };
 
 export function SerieEpisodeCard({
-  episodeId,
-  name,
-  description,
+  episodeNumber,
   experience,
   rewards,
   watched,
@@ -34,6 +30,7 @@ export function SerieEpisodeCard({
   const { t } = useTranslation(['common', 'serie']);
   const [previewRewards, setPreviewRewards] = useState(false);
   const showRewards = watched || previewRewards;
+  const hasRewards = Object.values(rewards).some(ids => ids.length > 0);
 
   return (
     <Box asChild>
@@ -47,7 +44,7 @@ export function SerieEpisodeCard({
                 weight="bold"
                 className="font-road-captain text-highlight shrink-0"
               >
-                {t('serie.episode_number', { number: episodeId })}
+                {t('serie.episode_number', { number: episodeNumber })}
               </Text>
               <Text
                 as="p"
@@ -55,9 +52,9 @@ export function SerieEpisodeCard({
                 weight="medium"
                 className="text-foreground min-w-0"
               >
-                {t(`episodes.${episodeId}.name`, {
+                {t(`episodes.${episodeNumber}.name`, {
                   ns: 'serie',
-                  defaultValue: name,
+                  defaultValue: '',
                 })}
               </Text>
             </Flex>
@@ -68,9 +65,9 @@ export function SerieEpisodeCard({
                 size="1"
                 className="text-foreground/75 min-w-0 flex-1"
               >
-                {t(`episodes.${episodeId}.description`, {
+                {t(`episodes.${episodeNumber}.description`, {
                   ns: 'serie',
-                  defaultValue: description,
+                  defaultValue: '',
                 })}
               </Text>
 
@@ -85,7 +82,7 @@ export function SerieEpisodeCard({
               <Badge color="orange" variant="soft" size="1">
                 {t('serie.episode_xp', { xp: experience })}
               </Badge>
-              {!watched ? (
+              {!watched && hasRewards ? (
                 <Button
                   type="button"
                   variant="ghost"
@@ -101,53 +98,55 @@ export function SerieEpisodeCard({
               ) : null}
             </Flex>
 
-            <Card
-              className="faq-item border-0 bg-black/25 p-0 shadow-none"
-              data-open={showRewards || undefined}
-            >
-              <Box className="faq-panel">
-                <Box className="faq-panel-inner">
-                  <Box className="p-3">
-                    <Text
-                      as="p"
-                      size="1"
-                      weight="bold"
-                      mb="2"
-                      className="text-highlight decoration-highlight/40 underline"
-                    >
-                      {t('serie.rewards_heading')}
-                    </Text>
+            {hasRewards ? (
+              <Card
+                className="faq-item border-0 bg-black/25 p-0 shadow-none"
+                data-open={showRewards || undefined}
+              >
+                <Box className="faq-panel">
+                  <Box className="faq-panel-inner">
+                    <Box className="p-3">
+                      <Text
+                        as="p"
+                        size="1"
+                        weight="bold"
+                        mb="2"
+                        className="text-highlight decoration-highlight/40 underline"
+                      >
+                        {t('serie.rewards_heading')}
+                      </Text>
 
-                    <Flex direction="column" gap="1">
-                      {SERIE_REWARD_TYPES.map(({ key, labelKey }) => {
-                        const ids = rewards[key];
-                        if (!ids.length) {
-                          return null;
-                        }
+                      <Flex direction="column" gap="1">
+                        {SERIE_REWARD_TYPES.map(({ key, labelKey }) => {
+                          const ids = rewards[key];
+                          if (!ids.length) {
+                            return null;
+                          }
 
-                        return (
-                          <Text
-                            key={key}
-                            as="p"
-                            size="1"
-                            className="text-foreground/80"
-                          >
+                          return (
                             <Text
-                              as="span"
-                              weight="medium"
-                              className="text-foreground"
+                              key={key}
+                              as="p"
+                              size="1"
+                              className="text-foreground/80"
                             >
-                              {t(labelKey)}:
-                            </Text>{' '}
-                            {ids.join(', ')}
-                          </Text>
-                        );
-                      })}
-                    </Flex>
+                              <Text
+                                as="span"
+                                weight="medium"
+                                className="text-foreground"
+                              >
+                                {t(labelKey)}:
+                              </Text>{' '}
+                              {ids.join(', ')}
+                            </Text>
+                          );
+                        })}
+                      </Flex>
+                    </Box>
                   </Box>
                 </Box>
-              </Box>
-            </Card>
+              </Card>
+            ) : null}
           </Flex>
         </Card>
       </li>

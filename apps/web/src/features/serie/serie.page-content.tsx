@@ -23,19 +23,19 @@ import { SerieSagaBlock } from '@/features/serie/ui/serie-saga-block.component';
 import { useGsapMotion } from '@/integrations/gsap/motion';
 
 type SerieSagaListProps = {
+  openSagaSlugs: Record<string, boolean>;
+  onToggleSaga: (sagaSlug: string) => void;
+  openArcSlugs: Record<string, boolean>;
+  onToggleArc: (arcSlug: string) => void;
   lastWatchedEpisode: number;
-  openSagaIds: Record<number, boolean>;
-  onToggleSaga: (sagaId: number) => void;
-  openArcIds: Record<number, boolean>;
-  onToggleArc: (arcId: number) => void;
 };
 
 function SerieSagaList({
-  lastWatchedEpisode,
-  openSagaIds,
+  openSagaSlugs,
   onToggleSaga,
-  openArcIds,
+  openArcSlugs,
   onToggleArc,
+  lastWatchedEpisode,
 }: SerieSagaListProps) {
   const { data } = useSuspenseSerieSagas();
 
@@ -43,11 +43,11 @@ function SerieSagaList({
     <Flex direction="column" gap="3">
       {data.sagas.map(saga => (
         <SerieSagaBlock
-          key={saga.id}
+          key={saga.slug}
           saga={saga}
-          isOpen={openSagaIds[saga.id] ?? false}
-          onToggle={() => onToggleSaga(saga.id)}
-          openArcIds={openArcIds}
+          isOpen={openSagaSlugs[saga.slug] ?? false}
+          onToggle={() => onToggleSaga(saga.slug)}
+          openArcSlugs={openArcSlugs}
           onToggleArc={onToggleArc}
           lastWatchedEpisode={lastWatchedEpisode}
         />
@@ -73,8 +73,10 @@ export default function SeriePageContent() {
   const { t } = useTranslation();
   const { user } = useAuthSession();
   const heroRef = useRef<HTMLDivElement>(null);
-  const [openSagaIds, setOpenSagaIds] = useState<Record<number, boolean>>({});
-  const [openArcIds, setOpenArcIds] = useState<Record<number, boolean>>({});
+  const [openSagaSlugs, setOpenSagaSlugs] = useState<Record<string, boolean>>(
+    {},
+  );
+  const [openArcSlugs, setOpenArcSlugs] = useState<Record<string, boolean>>({});
 
   const lastWatchedEpisode = user?.lastWatchedEpisode ?? 0;
   const experience = user?.experience ?? 0;
@@ -88,17 +90,17 @@ export default function SeriePageContent() {
     );
   }, heroRef);
 
-  const toggleSaga = (sagaId: number) => {
-    setOpenSagaIds(current => ({
+  const toggleSaga = (sagaSlug: string) => {
+    setOpenSagaSlugs(current => ({
       ...current,
-      [sagaId]: !current[sagaId],
+      [sagaSlug]: !current[sagaSlug],
     }));
   };
 
-  const toggleArc = (arcId: number) => {
-    setOpenArcIds(current => ({
+  const toggleArc = (arcSlug: string) => {
+    setOpenArcSlugs(current => ({
       ...current,
-      [arcId]: !current[arcId],
+      [arcSlug]: !current[arcSlug],
     }));
   };
 
@@ -179,9 +181,9 @@ export default function SeriePageContent() {
         <Suspense fallback={<SerieSagaListSkeleton />}>
           <SerieSagaList
             lastWatchedEpisode={lastWatchedEpisode}
-            openSagaIds={openSagaIds}
+            openSagaSlugs={openSagaSlugs}
             onToggleSaga={toggleSaga}
-            openArcIds={openArcIds}
+            openArcSlugs={openArcSlugs}
             onToggleArc={toggleArc}
           />
         </Suspense>

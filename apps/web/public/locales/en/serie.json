@@ -1,208 +1,263 @@
 {
+  "sagas": {
+    "east-blue": {
+      "name": "East Blue",
+      "nameJa": "イーストブルー編"
+    },
+    "arabasta": {
+      "name": "Alabasta",
+      "nameJa": "アラバスタ編"
+    },
+    "sky-island": {
+      "name": "Sky Island",
+      "nameJa": "空島編"
+    },
+    "water-7": {
+      "name": "Water 7",
+      "nameJa": "ウォーターセブン編"
+    },
+    "thriller-bark": {
+      "name": "Thriller Bark",
+      "nameJa": "スリラーバーク編"
+    },
+    "summit-war": {
+      "name": "Summit War",
+      "nameJa": "頂上戦争編"
+    },
+    "fish-man-island": {
+      "name": "Fishman Island",
+      "nameJa": "魚人島編"
+    },
+    "dressrosa": {
+      "name": "Dressrosa",
+      "nameJa": "ドレスローザ編"
+    },
+    "whole-cake-island": {
+      "name": "Whole Cake Island",
+      "nameJa": "ホールケーキアイランド編"
+    },
+    "wano-country": {
+      "name": "Wano Country",
+      "nameJa": "ワノ国編"
+    },
+    "final-saga": {
+      "name": "Final Saga",
+      "nameJa": "最終章"
+    }
+  },
   "arcs": {
-    "1": {
+    "romance-dawn": {
       "name": "Romance Dawn",
       "description": "Luffy begins his journey, becomes a pirate, and forms the initial crew while facing their first challenges."
     },
-    "2": {
+    "orange-town": {
       "name": "Orange Town",
       "description": "Luffy and Zoro arrive at Orange Town, meet Nami, and fight to free the town from Buggy the Clown."
     },
-    "3": {
+    "syrup-village": {
       "name": "Syrup Village",
       "description": "The crew searches for a ship and meets Usopp while facing the Black Cat Pirates."
     },
-    "4": {
+    "baratie": {
       "name": "Baratie",
       "description": "The group visits a floating restaurant seeking a cook; Sanji joins and conflict with Don Krieg erupts."
     },
-    "5": {
+    "arlong-park": {
       "name": "Arlong Park",
       "description": "Nami's past is revealed as they confront Arlong's rule over her homeland."
     },
-    "6": {
-      "name": "Buggy Side Story (Filler)",
+    "buggy-side-story": {
+      "name": "Buggy Side Story",
       "description": "Side story showing Buggy and his crew with lighthearted and humorous moments."
     },
-    "7": {
+    "loguetown": {
       "name": "Loguetown",
       "description": "Last stop before the Grand Line: Loguetown brings confrontations before the great voyage."
     },
-    "8": {
-      "name": "Warship Island (Filler)",
+    "warship-island": {
+      "name": "Warship Island",
       "description": "Filler arc where Luffy and his crew help a mysterious girl while facing pirates and hidden secrets."
     },
-    "9": {
+    "reverse-mountain": {
       "name": "Reverse Mountain/Laboon",
       "description": "The crew enters the Grand Line, faces the currents, and discovers Laboon, a giant whale with a mysterious bond."
     },
-    "10": {
+    "whisky-peak": {
       "name": "Whisky Peak",
       "description": "The Straw Hats arrive at a festive town hiding dangerous secrets and unexpected enemies."
     },
-    "11": {
-      "name": "Koby and Helmeppo (Filler)",
+    "koby-and-helmeppo": {
+      "name": "Koby and Helmeppo",
       "description": "Short arc focused on Koby and Helmeppo, showing their development as marines."
     },
-    "12": {
+    "little-garden": {
       "name": "Little Garden",
       "description": "The crew explores a prehistoric island with two warrior giants and enormous creatures."
     },
-    "13": {
+    "drum-island": {
       "name": "Drum Island",
       "description": "The Straw Hats seek a doctor on a frozen island, facing illness and local mysteries."
     },
-    "14": {
+    "arabasta": {
       "name": "Alabasta",
       "description": "Luffy and company help Vivi and the kingdom of Alabasta stop a war provoked by Crocodile."
     },
-    "15": {
+    "post-arabasta": {
       "name": "Post-Alabasta",
       "description": "The crew reflects on Alabasta and prepares for the next stage of the Grand Line."
     },
-    "16": {
-      "name": "Goat Island (Filler)",
+    "goat-island": {
+      "name": "Goat Island",
       "description": "Filler arc on a quiet island inhabited by goats with comic situations."
     },
-    "17": {
-      "name": "Ruluka Island (Filler)",
+    "ruluka-island": {
+      "name": "Ruluka Island",
       "description": "Filler following the Straw Hats on a mysterious island with peculiar inhabitants."
     },
-    "18": {
+    "jaya": {
       "name": "Jaya",
       "description": "The crew reaches Jaya, discovering New World secrets and clues about ancient civilizations."
     },
-    "19": {
+    "skypiea": {
       "name": "Skypiea",
       "description": "The Straw Hats ascend to the sky island, facing divine conflicts and ancestral trials."
     },
-    "20": {
-      "name": "G-8 (Filler)",
+    "g-8": {
+      "name": "G-8",
       "description": "Filler set in a heavily guarded marine base where the crew infiltrates and faces challenges."
     },
-    "21": {
+    "long-ring-long-land": {
       "name": "Long Ring Long Land",
       "description": "The crew faces Foxy in a game of challenges and tricks testing wit and endurance."
     },
-    "22": {
-      "name": "Ocean's Dream (Filler)",
+    "oceans-dream": {
+      "name": "Ocean's Dream",
       "description": "Filler where the crew temporarily loses memory with comic adventures."
     },
-    "23": {
-      "name": "Foxy's Return (Filler)",
+    "foxys-return": {
+      "name": "Foxy's Return",
       "description": "Filler showing Foxy’s return and a new showdown with the crew."
     },
-    "24": {
+    "water-7": {
       "name": "Water 7",
       "description": "The crew arrives at Water 7, facing political tensions while seeking a new ship."
     },
-    "25": {
+    "enies-lobby": {
       "name": "Enies Lobby",
       "description": "A bold rescue mission against the World Government; the crew faces powerful enemies."
     },
-    "26": {
+    "post-enies-lobby": {
       "name": "Post-Enies Lobby",
       "description": "After Enies Lobby, the crew recovers and prepares for the next stage."
     },
-    "27": {
-      "name": "Ice Hunter (Filler)",
+    "ice-hunter": {
+      "name": "Ice Hunter",
       "description": "Filler where the crew faces bounty hunters during their travels."
     },
-    "28": {
+    "thriller-bark": {
       "name": "Thriller Bark",
       "description": "The Straw Hats reach a mysterious island of ghosts and zombies facing supernatural dangers."
     },
-    "29": {
-      "name": "Spa Island (Filler)",
+    "spa-island": {
+      "name": "Spa Island",
       "description": "Short filler where the crew visits a spa island with lighthearted situations."
     },
-    "30": {
+    "sabaody-archipelago": {
       "name": "Sabaody Archipelago",
       "description": "Gateway to the New World: the Straw Hats face powerful forces and natural barriers."
     },
-    "31": {
+    "amazon-lily": {
       "name": "Amazon Lily",
       "description": "Luffy reaches an island of warrior women while searching for Ace."
     },
-    "32": {
+    "impel-down": {
       "name": "Impel Down",
       "description": "Luffy tries to infiltrate the most feared prison to save a loved one."
     },
-    "33": {
-      "name": "Little East Blue (Filler)",
+    "little-east-blue": {
+      "name": "Little East Blue",
       "description": "Filler where the crew recalls past adventures before reuniting for new challenges."
     },
-    "34": {
+    "marineford": {
       "name": "Marineford",
       "description": "An epic battle between pirates, marines, and allies that changes the world."
     },
-    "35": {
+    "post-war": {
       "name": "Post-War",
       "description": "The world after Marineford, with wounds, losses, and new directions for the crew."
     },
-    "36": {
+    "return-to-sabaody": {
       "name": "Return to Sabaody",
       "description": "After the time skip, the Straw Hats return to Sabaody to reunite and resume their journey."
     },
-    "37": {
+    "fish-man-island": {
       "name": "Fish-Man Island",
       "description": "Undersea exploration, forgotten cultures, and confrontations revealing deep truths."
     },
-    "38": {
-      "name": "Z's Ambition (Filler)",
+    "zs-ambition": {
+      "name": "Z's Ambition",
       "description": "Filler where the crew faces a mysterious villain while heading to the New World."
     },
-    "39": {
+    "punk-hazard": {
       "name": "Punk Hazard",
       "description": "The crew reaches an island split between fire and ice, facing dangerous experiments."
     },
-    "40": {
-      "name": "Caesar Retrieval (Filler)",
+    "caesar-retrieval": {
+      "name": "Caesar Retrieval",
       "description": "Filler where the Straw Hats try to rescue Caesar Clown amid comic obstacles."
     },
-    "41": {
+    "dressrosa": {
       "name": "Dressrosa",
       "description": "Fight against a corrupt lord who manipulated an entire kingdom."
     },
-    "42": {
-      "name": "Silver Mine (Filler)",
+    "silver-mine": {
+      "name": "Silver Mine",
       "description": "Filler where the crew faces thieves and traps in a mine."
     },
-    "43": {
+    "zou": {
       "name": "Zou",
       "description": "The crew reaches the elephant island, discovers Poneglyph secrets, and prepares for new challenges."
     },
-    "44": {
-      "name": "Marine Rookie (Filler)",
+    "marine-rookie": {
+      "name": "Marine Rookie",
       "description": "Filler where the Straw Hats infiltrate a minor marine base."
     },
-    "45": {
+    "whole-cake-island": {
       "name": "Whole Cake Island",
       "description": "Sanji is separated and the crew enters Big Mom’s territory facing deadly challenges."
     },
-    "46": {
+    "levely": {
       "name": "Levely",
       "description": "World congress where great powers gather amid rising political tensions."
     },
-    "47": {
+    "wano-country-act-1": {
       "name": "Wano Country (Part 1)",
       "description": "The crew arrives at Wano, an isolated samurai country, and discovers its traditions."
     },
-    "48": {
-      "name": "Cidre Guild (Filler)",
+    "cidre-guild": {
+      "name": "Cidre Guild",
       "description": "Filler where the crew faces a group of criminals in the New World."
     },
-    "49": {
+    "romance-dawn-special": {
+      "name": "Romance Dawn (20th Anniversary Special)"
+    },
+    "wano-country-act-2": {
       "name": "Wano Country (Part 2)",
       "description": "The crew continues fighting the Shogun’s allies and plans to defeat the main enemy."
     },
-    "50": {
-      "name": "Uta's Past (Filler)",
-      "description": "Filler exploring Uta’s memories and past before current Wano events."
-    },
-    "51": {
+    "wano-country-act-3": {
       "name": "Wano Country (Part 3)",
       "description": "The final battle in Wano intensifies with epic confrontations and crucial revelations."
+    },
+    "uta-past": {
+      "name": "Uta's Past",
+      "description": "Filler exploring Uta’s memories and past before current Wano events."
+    },
+    "egghead": {
+      "name": "Egghead Arc"
+    },
+    "elbaph": {
+      "name": "Elbaph Arc"
     }
   },
   "episodes": {
@@ -449,38 +504,3363 @@
     "61": {
       "name": "An Angry Showdown! Cross the Red Line!",
       "description": "Final East Blue episode. The Straw Hats bid farewell to Apis and cross the Red Line into the Grand Line."
-    }
-  },
-  "sagas": {
-    "1": {
-      "name": "East Blue"
     },
-    "2": {
-      "name": "Alabasta"
+    "62": {
+      "name": "The First Obstacle? Giant Whale Laboon Appears"
     },
-    "3": {
-      "name": "Sky Island"
+    "63": {
+      "name": "A Man's Promise! Luffy and the Whale Vow to Meet Again"
     },
-    "4": {
-      "name": "Water 7"
+    "64": {
+      "name": "A Pirate-Loving Town? Arrival at Whisky Peak"
     },
-    "5": {
-      "name": "Thriller Bark Saga"
+    "65": {
+      "name": "Exploding Santoryu! Zoro vs. Baroque Works!"
     },
-    "6": {
-      "name": "Summit War Saga"
+    "66": {
+      "name": "A Serious Fight! Luffy vs. Zoro: the Baffling Duel!"
     },
-    "7": {
-      "name": "Fishman Island"
+    "67": {
+      "name": "Deliver Princess Vivi! Luffy Pirates Depart"
     },
-    "8": {
-      "name": "Dressrosa"
+    "68": {
+      "name": "Try Hard, Koby! Diary of Koby-Meppo's Marine Struggles"
     },
-    "9": {
-      "name": "Whole Cake Island"
+    "69": {
+      "name": "Koby-Meppo's Determination! Vice Admiral Garp's Fatherly Pride"
     },
-    "10": {
-      "name": "Wano Country"
+    "70": {
+      "name": "Prehistoric Island! The Shadow Lurking in Little Garden!"
+    },
+    "71": {
+      "name": "Humongous Battle! The Giants Dorry and Brogy!"
+    },
+    "72": {
+      "name": "Luffy's Anger! A Dirty Trick in a Sacred Battle"
+    },
+    "73": {
+      "name": "Brogy Wails in Victory! Elbaph's Judgement"
+    },
+    "74": {
+      "name": "The Devil's Candle! Tears of Regret and Tears of Anger"
+    },
+    "75": {
+      "name": "Luffy Attacked by Magic! Colors Trap"
+    },
+    "76": {
+      "name": "Critical Counterattack! Usopp's Quick Wit and Kaenboshi!"
+    },
+    "77": {
+      "name": "Farewell to the Giants' Island! On to Arabasta"
+    },
+    "78": {
+      "name": "Nami is Sick? Beyond the Snow that Falls on the Ocean!"
+    },
+    "79": {
+      "name": "Ambush! The Bliking and Wapol the Blik"
+    },
+    "80": {
+      "name": "A Doctorless Island? Adventure in the Country Without a Name!"
+    },
+    "81": {
+      "name": "Ya Happy? The Doctor Who is Called a Witch!"
+    },
+    "82": {
+      "name": "Dalton's Resolve! Wapol's Forces Land"
+    },
+    "83": {
+      "name": "Island that Lives in Snow! Ascend The Drum Rockies!"
+    },
+    "84": {
+      "name": "The Blue-Nosed Reindeer! Chopper's Secret"
+    },
+    "85": {
+      "name": "Dream of the Outcasts! The Quack Doctor Hiriluk!"
+    },
+    "86": {
+      "name": "Hiriluk's Cherry Blossoms and Inherited Will!"
+    },
+    "87": {
+      "name": "Against Wapol's Army Corps! The Abilities of the Baku Baku no Mi!"
+    },
+    "88": {
+      "name": "Zoan Type Devil's Fruit! Chopper's Seven-Level Transformation"
+    },
+    "89": {
+      "name": "When the Kingdom's Rule is Over! The Flag of Conviction Lasts Forever"
+    },
+    "90": {
+      "name": "Hiriluk's Cherry Blossoms! Miracle of the Drum Rockies"
+    },
+    "91": {
+      "name": "Farewell, Drum Island! I'm Going Out to Sea!"
+    },
+    "92": {
+      "name": "The Hero of Arabasta and the Ballerina on Deck"
+    },
+    "93": {
+      "name": "Coming to the Desert Kingdom! The Rain-Calling Powder and the Rebel Army"
+    },
+    "94": {
+      "name": "Reunion of the Powerful! His Name is Fire Fist Ace"
+    },
+    "95": {
+      "name": "Ace and Luffy! Warm Memories and Brotherly Bonds"
+    },
+    "96": {
+      "name": "The Green City, Erumalu and the Kung Fu Dugongs!"
+    },
+    "97": {
+      "name": "Adventure in the Country of Sand! The Demons that Live in the Scorching Earth"
+    },
+    "98": {
+      "name": "Here Come the Desert Pirates! The Men Who Live Free"
+    },
+    "99": {
+      "name": "Spirit of the Fakes! Heart of the Rebel Army, Kamyu!"
+    },
+    "100": {
+      "name": "Rebel Warrior Koza! The Dream Sworn to Vivi!"
+    },
+    "101": {
+      "name": "Heat Haze Duel! Ace vs. Scorpion Man"
+    },
+    "102": {
+      "name": "Ruins and Lost Ways! Vivi, Her Friends, and the Country's Form"
+    },
+    "103": {
+      "name": "At Spiders Cafe - The Enemy Ringleaders Meet at 8 o'clock"
+    },
+    "104": {
+      "name": "Luffy vs. Vivi! A Tearful Vow for Comrades"
+    },
+    "105": {
+      "name": "The Arabasta War Front! City of Dreams, Rainbase"
+    },
+    "106": {
+      "name": "Trap in a Desperate Situation! Breaking Into Rain Dinners"
+    },
+    "107": {
+      "name": "Operation Utopia Commences! The Wave of Rebellion Begins to Move"
+    },
+    "108": {
+      "name": "The Fearsome Bananawani and Mr. Prince"
+    },
+    "109": {
+      "name": "The Key to Turning the Tide and a Great Escape! Doru Doru Ball!"
+    },
+    "110": {
+      "name": "Merciless Fight to the Death! Luffy vs. Crocodile"
+    },
+    "111": {
+      "name": "The Miracle Sprint! Arabasta the Animal Land"
+    },
+    "112": {
+      "name": "Rebel Army vs. Royal Army! The Battle will be in Alubarna!"
+    },
+    "113": {
+      "name": "Alubarna is Crying! Fierce Fight of Captain Karoo!"
+    },
+    "114": {
+      "name": "Swear on Your Crewmate's Dream! Battle at Molehill 4th Avenue"
+    },
+    "115": {
+      "name": "Today's Grand Performance! Mane Mane Montage!"
+    },
+    "116": {
+      "name": "Transforming Into Nami! Bon Kurei's Hard-Hitting Ballet Kenpo"
+    },
+    "117": {
+      "name": "Nami's Whirlwind Warning! Clima-Tact Explosion"
+    },
+    "118": {
+      "name": "Secret of the Royal Family! The Ancient Weapon, Pluton"
+    },
+    "119": {
+      "name": "Essence of a Mighty Sword! The Power to Cut Steel and the Breath of All Things"
+    },
+    "120": {
+      "name": "The Battle is Over! Koza Flies the White Flag"
+    },
+    "121": {
+      "name": "Vivi's Voice Goes Unheard! A Hero Descends!"
+    },
+    "122": {
+      "name": "Sand Crocodile and Water Luffy! Death Match: Round 2"
+    },
+    "123": {
+      "name": "Smells Like Croc! Run to the Tomb of the Royal Family, Luffy!"
+    },
+    "124": {
+      "name": "The Nightmare Draws Near! Secret Base of the Suna Suna Clan"
+    },
+    "125": {
+      "name": "Magnificent Wings! My Name is Pell, Guardian Spirit of the Kingdom"
+    },
+    "126": {
+      "name": "I Will Surpass You! Rain Falls on Arabasta!"
+    },
+    "127": {
+      "name": "A Farewell to Arms! Pirates and a Little Justice"
+    },
+    "128": {
+      "name": "The Pirates' Banquet and Operation Escape Arabasta!"
+    },
+    "129": {
+      "name": "Everything Began That Day! Vivi Tells of Her Adventures!"
+    },
+    "130": {
+      "name": "Beware Her Scent! The Seventh One is Nico Robin!"
+    },
+    "131": {
+      "name": "The First Patient! Anecdote of the Rumble Ball"
+    },
+    "132": {
+      "name": "The Navigator's Mutiny! For an Unwavering Dream!"
+    },
+    "133": {
+      "name": "Inherited Recipe! Sanji the Curry Iron Chef"
+    },
+    "134": {
+      "name": "I'll Make it Bloom! Manly Usopp's Eight-Shaku Ball"
+    },
+    "135": {
+      "name": "Infamous Pirate Hunter! The Wandering Swordsman, Zoro!"
+    },
+    "136": {
+      "name": "Zenny of Goat Island and the Pirate Ship in the Mountains!"
+    },
+    "137": {
+      "name": "How's That for Profit? Money Lender Zenny's Ambition!"
+    },
+    "138": {
+      "name": "Where the Island's Treasure Lies! Zenny Pirates Full Charge!"
+    },
+    "139": {
+      "name": "Legend of the Rainbow Mist! Ruluka Island and the Old Man Henzo"
+    },
+    "140": {
+      "name": "Inhabitants of Neverland! The Pumpkin Pirates!"
+    },
+    "141": {
+      "name": "A Longing for Home! The Inescapable Pirate Graveyard!"
+    },
+    "142": {
+      "name": "Frantic Struggle! Wetton's Plans and the Rainbow Tower!"
+    },
+    "143": {
+      "name": "And Then the Legend Begins! To the End of the Rainbow!"
+    },
+    "144": {
+      "name": "The Log is Taken! Salvage King, Masira!"
+    },
+    "145": {
+      "name": "Monsters Appear! Don't Touch the Whitebeard Pirates"
+    },
+    "146": {
+      "name": "Stop Dreaming! The City of Ridicule, Mock Town!"
+    },
+    "147": {
+      "name": "The Pirate's Summit! The Man Who Talks of Dreams and the King of Underwater Exploration"
+    },
+    "148": {
+      "name": "The Legendary Family! 'Liar Noland'"
+    },
+    "149": {
+      "name": "Hard Turn to the Clouds! Find the Southbird!"
+    },
+    "150": {
+      "name": "Dreams Don't Come True!? Bellamy vs. The Saruyama Alliance"
+    },
+    "151": {
+      "name": "The 100,000,000 Man! The World's Highest Authority and the Pirate Blackbeard"
+    },
+    "152": {
+      "name": "Sail into the Sky! Ride the Knock-Up Stream"
+    },
+    "153": {
+      "name": "This is the Sea of the Sky! The Knight of the Sky and Heaven's Gate"
+    },
+    "154": {
+      "name": "Godland Skypiea! The Angels of the Cloud Beach"
+    },
+    "155": {
+      "name": "Sacred Ground! The Island Where God Resides and Heaven's Judgement!"
+    },
+    "156": {
+      "name": "Criminals Already!? Skypiea's Upholders of the Law"
+    },
+    "157": {
+      "name": "Can we Escape!? God's Ordeals are Set in Motion!"
+    },
+    "158": {
+      "name": "Trap on Lovely Street! Almighty God Enel"
+    },
+    "159": {
+      "name": "Go Forth, Little Crow! To the Sacrificial Altar"
+    },
+    "160": {
+      "name": "Survival Rate: 10%! Priest Satori with the Power of Mantra!"
+    },
+    "161": {
+      "name": "Peril of the Ordeal of Balls! Fight to the Death in the Lost Forest"
+    },
+    "162": {
+      "name": "Chopper's in Danger! Former God vs. Priest Shura"
+    },
+    "163": {
+      "name": "Ever Mysterious! Ordeal of String and Ordeal of Love!?"
+    },
+    "164": {
+      "name": "Light the Fire of Shandia! Wyper the Warrior"
+    },
+    "165": {
+      "name": "Floating Land of Gold, Jaya! To God's Shrine!"
+    },
+    "166": {
+      "name": "Eve of Gold Festival! Feelings Toward 'Vearth'!"
+    },
+    "167": {
+      "name": "God Enel Appears!! Aubade to the Survivors"
+    },
+    "168": {
+      "name": "The Python Strikes! The Survival Game Begins"
+    },
+    "169": {
+      "name": "The Life-Threatening Reject! War Demon Wyper's Resolve"
+    },
+    "170": {
+      "name": "Fierce Sky Battle! Pirate Zoro vs. Fighter Braham"
+    },
+    "171": {
+      "name": "Howling Burn Bazooka!! Luffy vs. War Demon Wyper"
+    },
+    "172": {
+      "name": "Ordeal of Swamp! Chopper vs. Priest Gedatsu!!"
+    },
+    "173": {
+      "name": "The Invincible Ability! Enel's True Nature Revealed"
+    },
+    "174": {
+      "name": "The Vanished City! The Magnificent Ruins of Shandora!!"
+    },
+    "175": {
+      "name": "Chance of Survival: 0%!! Chopper vs. Priest Ohm"
+    },
+    "176": {
+      "name": "Climb Giant Jack!! Showdown in the Upper Ruins"
+    },
+    "177": {
+      "name": "Ultimate Test of the Ordeal of Iron! The White-Barbed Death Match!!"
+    },
+    "178": {
+      "name": "Gushing Blade Attack! Zoro vs. Priest Ohm!!"
+    },
+    "179": {
+      "name": "The Upper Ruins Crumble! The Quintet Finale!!"
+    },
+    "180": {
+      "name": "Battle in the Ancient Ruins! God Enel's Desire!!"
+    },
+    "181": {
+      "name": "Ambitions of Fairy Vearth - The Ark, Maxim!!"
+    },
+    "182": {
+      "name": "Finally Clashing! Pirate Luffy vs. God Enel!!"
+    },
+    "183": {
+      "name": "Maxim Rises! The Start of Deathpiea!!"
+    },
+    "184": {
+      "name": "Luffy's Fall! God's Judgement and Nami's Desire!!"
+    },
+    "185": {
+      "name": "Two People Awaken! A Rescue in Front of Burning Love!!"
+    },
+    "186": {
+      "name": "Capriccio to Destruction! The Impending Doom of Sky Island!!"
+    },
+    "187": {
+      "name": "Guidance from the Sound of a Bell! The Great Warrior and Tales of an Explorer"
+    },
+    "188": {
+      "name": "Released from Disgrace! The Tears of the Great Warrior!!"
+    },
+    "189": {
+      "name": "Eternal Friendship! The Bell of Oath Echoes Throughout the Giant Ocean!!"
+    },
+    "190": {
+      "name": "The Destruction of Angel Island! Terror of the Descending Raigo!!"
+    },
+    "191": {
+      "name": "Chop Down Giant Jack! The Last Hope of Escaping"
+    },
+    "192": {
+      "name": "The Miracle in God's Country! A Love Song Heard by Angels"
+    },
+    "193": {
+      "name": "The War Draws to a Close! Ringing Far and Wide, the Proud Fantasia"
+    },
+    "194": {
+      "name": "I Have Come Here! The Weaving of the Poneglyphs"
+    },
+    "195": {
+      "name": "Now Heading Towards the Blue Sea!! Memories of an Interwoven Finale"
+    },
+    "196": {
+      "name": "Emergency Official Announcement! Notorious Pirate Ship Infiltration!"
+    },
+    "197": {
+      "name": "Sanji the Cook! Showing His Real Worth at the Marine Dining-room!"
+    },
+    "198": {
+      "name": "Zoro's Imprisonment and Chopper's Emergency Operation!"
+    },
+    "199": {
+      "name": "The Search of the Approaching Marines! The Second Person Who Was Captured!"
+    },
+    "200": {
+      "name": "Luffy and Sanji's Desperate Decision! Large Rescue Maneuvers!"
+    },
+    "201": {
+      "name": "Hot Blood Special Unit Participation! Bridge Offensive and Defensive Battle!"
+    },
+    "202": {
+      "name": "Breaking Through the Siege! The Going Merry is Recovered"
+    },
+    "203": {
+      "name": "The Missing Pirate Ship! 2nd Round Assault on the Fortress"
+    },
+    "204": {
+      "name": "The Gold Recovery Plan and the Waver Recovery Plan!"
+    },
+    "205": {
+      "name": "Catch Them All in One Net! Jonathan's Secret Scheme!"
+    },
+    "206": {
+      "name": "So Long, Marine Base! The Final Battle for Freedom"
+    },
+    "207": {
+      "name": "Great Adventure in Long Ring Long Land!"
+    },
+    "208": {
+      "name": "A Davy Back With the Foxy Pirates!"
+    },
+    "209": {
+      "name": "Round 1! One Lap of the Donut Race!"
+    },
+    "210": {
+      "name": "Silver Fox Foxy! The Merciless Interference!"
+    },
+    "211": {
+      "name": "Round 2! Shoot It Into the Groggy Ring!"
+    },
+    "212": {
+      "name": "A Barrage of Red Cards in Groggy Ring!"
+    },
+    "213": {
+      "name": "Round 3! The Round-and-Round Roller Race!"
+    },
+    "214": {
+      "name": "A Seriously Heated Race! Into the Final Round!"
+    },
+    "215": {
+      "name": "Screaming-Hot Bombardment! Pirate Dodgeball!"
+    },
+    "216": {
+      "name": "Showdown on the Cliff! Red Light, Green Light!"
+    },
+    "217": {
+      "name": "The Captains Square Off! The Final Combat Round!"
+    },
+    "218": {
+      "name": "Full-Blast Slow-Slow Onslaught vs. Invulnerable Luffy!"
+    },
+    "219": {
+      "name": "Epic, Heated Combat! The Fateful Final Conclusion!"
+    },
+    "220": {
+      "name": "Was It Lost? Stolen? Who Are You?"
+    },
+    "221": {
+      "name": "A Mysterious Boy With a Horn and Robin's Deduction!"
+    },
+    "222": {
+      "name": "Now, Let's Get Back Our Memories! The Pirate Crew Lands on the Island!"
+    },
+    "223": {
+      "name": "Zoro Bares His Fangs! A Savage Animal Stands in the Way!"
+    },
+    "224": {
+      "name": "The Last Counterattack by the Memory Thief Who Reveals His True Colors!"
+    },
+    "225": {
+      "name": "Proud Man! Silver Fox Foxy!"
+    },
+    "226": {
+      "name": "The Guy Who's the Closest To Invincible? And the Most Dangerous Man!"
+    },
+    "227": {
+      "name": "Navy Headquarters Admiral Aokiji! The Ferocity of an Ultimate Powerhouse!"
+    },
+    "228": {
+      "name": "Duel Between Rubber and Ice! Luffy vs. Aokiji!"
+    },
+    "229": {
+      "name": "The Dashing Sea Train and the City of Water: Water Seven!"
+    },
+    "230": {
+      "name": "Adventure in the City on the Water! Head to the Mammoth Shipbuilding Plant!"
+    },
+    "231": {
+      "name": "The Franky Family and Iceburg!"
+    },
+    "232": {
+      "name": "Galley-La Company! A Grand Sight: Dock #1!"
+    },
+    "233": {
+      "name": "Pirate Abduction Incident! A Pirate Ship That Can Only Await Her End!"
+    },
+    "234": {
+      "name": "Rescuing Our Friend! Raid on the Franky House!"
+    },
+    "235": {
+      "name": "Big Fight Under the Moon! The Pirate Flag Flutters With Sorrow!"
+    },
+    "236": {
+      "name": "Luffy vs. Usopp! Collision of Two Men's Pride!"
+    },
+    "237": {
+      "name": "Severe Shock Hits the City of Water! Iceburg Targeted!"
+    },
+    "238": {
+      "name": "Gum-Gum Human vs. Fire-Breathing Cyborg!"
+    },
+    "239": {
+      "name": "The Straw Hat Pirates Are the Culprits? The Protectors of the City of Water!"
+    },
+    "240": {
+      "name": "Eternal Farewell? Nico Robin: The Woman Who Draws Darkness!"
+    },
+    "241": {
+      "name": "Capture Robin! The Determination of the Straw Hats!"
+    },
+    "242": {
+      "name": "Cannon Fire Is the Signal! CP9 Goes Into Action!"
+    },
+    "243": {
+      "name": "CP9 Takes Off Their Masks! Their Shocking True Faces!"
+    },
+    "244": {
+      "name": "Secret Bond! Iceburg and Franky!"
+    },
+    "245": {
+      "name": "Come Back, Robin! Showdown With CP9!"
+    },
+    "246": {
+      "name": "The Straw Hat Pirates Annihilated? The Menace of the Leopard Model!"
+    },
+    "247": {
+      "name": "The Man Who Is Loved Even by His Ship! Usopp's Tears!"
+    },
+    "248": {
+      "name": "Franky's Past! The Day the Sea Train First Ran"
+    },
+    "249": {
+      "name": "Spandam's Scheme! The Day the Sea Train Shook"
+    },
+    "250": {
+      "name": "The End of the Legendary Man! The Day the Sea Train Cried!"
+    },
+    "251": {
+      "name": "The Truth Behind Her Betrayal! Robin’s Sorrowful Decision!"
+    },
+    "252": {
+      "name": "The Steam Whistle Forces Friends Apart! The Sea Train Starts To Run"
+    },
+    "253": {
+      "name": "Sanji Barges In! Sea Train Battle in the Storm!"
+    },
+    "254": {
+      "name": "Nami's Soul Cries Out! Straw Hat Luffy Makes a Comeback!"
+    },
+    "255": {
+      "name": "Another Sea Train? Rocketman Charges Forth!"
+    },
+    "256": {
+      "name": "Rescue Our Friends! A Bond Among Foes Sworn With Fists!"
+    },
+    "257": {
+      "name": "Smash the Wave! Luffy and Zoro Use the Strongest Combo!"
+    },
+    "258": {
+      "name": "A Mysterious Man Appears?! His Name Is Sniperking!"
+    },
+    "259": {
+      "name": "Showdown Between Cooks! Sanji vs. Ramen Kenpo"
+    },
+    "260": {
+      "name": "Rooftop Duel! Franky vs. Nero"
+    },
+    "261": {
+      "name": "Clash! Demon-Slasher Zoro vs. Ship-Slasher T-Bone!"
+    },
+    "262": {
+      "name": "Scramble Over Robin! A Cunning Plan by Sniperking!!"
+    },
+    "263": {
+      "name": "The Judicial Island! Full View of Enies Lobby!"
+    },
+    "264": {
+      "name": "Landing Operations Start! Charge in, Straw Hats!"
+    },
+    "265": {
+      "name": "Luffy Cuts Through! Big Showdown on the Judicial Island!"
+    },
+    "266": {
+      "name": "Battle Against Giants! Open the Second Gate!"
+    },
+    "267": {
+      "name": "Find a Way Out! Rocketman Takes Flight!"
+    },
+    "268": {
+      "name": "Catch up With Luffy! The Straw Hats' All-Out Battle"
+    },
+    "269": {
+      "name": "Robin Betrayed! The Motive of the World Government!"
+    },
+    "270": {
+      "name": "Give Robin Back! Luffy vs. Blueno!"
+    },
+    "271": {
+      "name": "Don’t Stop! Hoist the Counterattack Signal!"
+    },
+    "272": {
+      "name": "Almost to Luffy! Gather at the Courthouse Plaza!"
+    },
+    "273": {
+      "name": "Everything Is To Protect My Friends! Second Gear Activated!"
+    },
+    "274": {
+      "name": "Give Us Your Answer, Robin! The Straw Hats' Outcry!"
+    },
+    "275": {
+      "name": "Robin's Past! The Girl Was Called a Devil!"
+    },
+    "276": {
+      "name": "Fated Mother and Daughter! The Mother's Name Is Olvia!"
+    },
+    "277": {
+      "name": "The Tragedy of Ohara! The Terror of the Buster Call!"
+    },
+    "278": {
+      "name": "Say You Want To Live! We Are Your Friends!!"
+    },
+    "279": {
+      "name": "Jump Towards the Falls! Luffy’s Feelings!"
+    },
+    "280": {
+      "name": "The Ways of Men! Zoro's Techniques, Usopp's Dream!"
+    },
+    "281": {
+      "name": "A Bond of Friendship Woven by Tears! Nami's World Map!"
+    },
+    "282": {
+      "name": "Parting Builds a Man's Character! Sanji and Chopper!"
+    },
+    "283": {
+      "name": "Everything Is for Her Friends! Robin in the Darkness!"
+    },
+    "284": {
+      "name": "I'm Not Gonna Hand Over the Blueprints! Franky's Decision!"
+    },
+    "285": {
+      "name": "Obtain the Five Keys! The Straw Hat Pirates vs. CP9!"
+    },
+    "286": {
+      "name": "Devil Fruit Powers! Kaku and Jabra Transform!"
+    },
+    "287": {
+      "name": "I Won't Kick Even if It Costs Me My Life! Sanji's Chivalry!"
+    },
+    "288": {
+      "name": "Fukurou's Miscalculation! My Cola Is the Water of Life!"
+    },
+    "289": {
+      "name": "Zoro Busts Out a New Technique! The Sword's Name Is Sniperking?"
+    },
+    "290": {
+      "name": "Uncontrollable! Chopper's Forbidden Rumble!"
+    },
+    "291": {
+      "name": "Boss Luffy Returns! Is It a Dream or Reality? Lottery Ruckus!"
+    },
+    "292": {
+      "name": "A Big Rice Cake Tossing Race at the Castle! Red Nose's Plot!"
+    },
+    "293": {
+      "name": "Bubble Master Kalifa! The Soap Trap Closes in on Nami!"
+    },
+    "294": {
+      "name": "Resounding Bad News! The Buster Call Invoked!"
+    },
+    "295": {
+      "name": "Five Namis? Nami Strikes Back With Mirages!"
+    },
+    "296": {
+      "name": "Nami's Decision! Fire at the Out-of-Control Chopper!"
+    },
+    "297": {
+      "name": "Hunter Sanji Makes an Entrance? Elegy for a Lying Wolf!"
+    },
+    "298": {
+      "name": "Fiery Kicks! Sanji's Full Course of Foot Techniques!"
+    },
+    "299": {
+      "name": "Fierce Sword Attacks! Zoro vs. Kaku, Powerful Sword Fighting Showdown!"
+    },
+    "300": {
+      "name": "Demon God Zoro! An Incarnation of Asura Born From Fighting Spirit!"
+    },
+    "301": {
+      "name": "Spandam Frightened! The Hero on the Tower of Law!"
+    },
+    "302": {
+      "name": "Robin Freed! Luffy vs. Lucci, Showdown Between Leaders!"
+    },
+    "303": {
+      "name": "Boss Luffy Is the Culprit? Track Down the Missing Great Cherry Tree!"
+    },
+    "304": {
+      "name": "I Can't Protect Anyone Unless I Win! Third Gear Activated!"
+    },
+    "305": {
+      "name": "Shivering Past! Dark Justice and Rob Lucci!"
+    },
+    "306": {
+      "name": "A Mysterious Mermaid Appears? As Consciousness Fades Away..."
+    },
+    "307": {
+      "name": "Cannon Fire Sinks the Island! Franky's Lamentation!"
+    },
+    "308": {
+      "name": "Wait for Luffy! Mortal Combat on the Bridge of Hesitation!"
+    },
+    "309": {
+      "name": "Fists Full of Emotion! Luffy Unleashes Gatling With All His Might!"
+    },
+    "310": {
+      "name": "From the Sea, a Friend Arrives! The Straw Hats Share the Strongest Bond!"
+    },
+    "311": {
+      "name": "Everyone Makes a Great Escape! The Road to Victory Is for the Pirates!"
+    },
+    "312": {
+      "name": "Thank You, Merry! Snow Falls Over the Parting Sea!"
+    },
+    "313": {
+      "name": "Peace Interrupted! A Navy Vice Admiral With a Fist of Love!"
+    },
+    "314": {
+      "name": "The Strongest Family? Luffy's Father Revealed!"
+    },
+    "315": {
+      "name": "Its Name Is the New World! The Fate of the Grand Line!"
+    },
+    "316": {
+      "name": "Shanks Makes a Move! The Linchpin to the Reckless Era!"
+    },
+    "317": {
+      "name": "The Girl in Search of Her Yagara! Great Search in the City of Water!"
+    },
+    "318": {
+      "name": "Mothers Are Strong! Zoro's Hectic Household Chores!"
+    },
+    "319": {
+      "name": "Sanji's Shock! Mysterious Old Man and His Super Yummy Cooking!"
+    },
+    "320": {
+      "name": "Everyone Finally Has a Bounty! A Pirate Group Worth Over 600 Million!"
+    },
+    "321": {
+      "name": "The King of Animals That Overlooks the Sea! The Dream Ship Magnificently Completed!"
+    },
+    "322": {
+      "name": "Goodbye My Dear Underlings! Franky Departs!"
+    },
+    "323": {
+      "name": "Departing the City of Water! Usopp Mans up and Brings Closure to the Duel!"
+    },
+    "324": {
+      "name": "Wanted Posters Make It Around the World! Celebrations in Their Hometowns as the Ship Moves Forward!"
+    },
+    "325": {
+      "name": "The Most Heinous Power! Blackbeard’s Darkness Attacks Ace!"
+    },
+    "326": {
+      "name": "Mysterious Party of Pirates! The Sunny and a Dangerous Trap"
+    },
+    "327": {
+      "name": "Sunny in a Pinch! Roar, Secret Superspeed Mecha"
+    },
+    "328": {
+      "name": "The Dream Sinking in the New World! The Pirate of Despair, Puzzle"
+    },
+    "329": {
+      "name": "The Assassins Attack! The Great Battle Above the Ice Begins"
+    },
+    "330": {
+      "name": "The Hard Fights of the Straw Hat Crew! The Pirate Soul Banking it All on the Flag!"
+    },
+    "331": {
+      "name": "Hot Full Throttle! The Twins' Magnetic Power Draws Near"
+    },
+    "332": {
+      "name": "The Great Chaos Mansion! The Angry Don and the Imprisoned Crew"
+    },
+    "333": {
+      "name": "The Phoenix Returns! The Dream of the Pirate Flag Sworn to a Friend"
+    },
+    "334": {
+      "name": "The Super Final Atsu Atsu Battle! Luffy vs. the Scortching Don"
+    },
+    "335": {
+      "name": "Waiting in the New World! Farewell to the Courageous Pirates"
+    },
+    "336": {
+      "name": "Chopper Man Departs! Protect the TV Station by the Shore"
+    },
+    "337": {
+      "name": "Venture Into the Devil's Sea! The Mysterious Skeleton Floating Through the Fog"
+    },
+    "338": {
+      "name": "The Delight of Having Met People! The Gentleman Skeleton's True Colors"
+    },
+    "339": {
+      "name": "One Phenomenon After Another! Disembarking at Thriller Bark"
+    },
+    "340": {
+      "name": "The Man Called a Genius! Hogback Appears!"
+    },
+    "341": {
+      "name": "Nami in Big Trouble! The Zombie Mansion and the Invisible Man"
+    },
+    "342": {
+      "name": "Mystery of the Zombies! Hogback's Nightmarish Research Laboratory"
+    },
+    "343": {
+      "name": "His Name is Moria! Trap of the Great Shadow-Stealing Pirate"
+    },
+    "344": {
+      "name": "Feast of the Zombie Song! The Bell of the Night Raid is a Sound of Darkness"
+    },
+    "345": {
+      "name": "Filled with Animals!? Perona's Wonder Garden"
+    },
+    "346": {
+      "name": "Disappearing Straw Hat Crew! The Mysterious Swordsman Appears!"
+    },
+    "347": {
+      "name": "Leftover Chivalry! The Traitorous Zombie who Protects Nami"
+    },
+    "348": {
+      "name": "Coming from the Sky! That Man is the \"Humming\" Swordsman!"
+    },
+    "349": {
+      "name": "Luffy in an Emergency! The Living Place of the Strongest Shadow!"
+    },
+    "350": {
+      "name": "The Warrior Called a Demon!! The Time of Oars' Resurrection"
+    },
+    "351": {
+      "name": "Awakening After 500 Years!! Oars Revives!!"
+    },
+    "352": {
+      "name": "Conviction Strong Enough to Beg for One's Life!! Brook Protects his Afro"
+    },
+    "353": {
+      "name": "A Man's Oath Never Dies!! To the Friend who Waits Under a Far-Away Sky"
+    },
+    "354": {
+      "name": "We will Definitely Meet Again!! Brook and the Cape of the Promise"
+    },
+    "355": {
+      "name": "Food, Nami and Shadows!! Luffy's Angry Counterattack"
+    },
+    "356": {
+      "name": "Usopp the Strongest? Leave the Negatives to Me"
+    },
+    "357": {
+      "name": "Sudden Death of the General Zombies!! Oars in an Adventurous Mood!!"
+    },
+    "358": {
+      "name": "Sanji, the Knight of Flames!! Kick Down the False Ceremony"
+    },
+    "359": {
+      "name": "Perverted Connection? Sanji's Stolen Dream"
+    },
+    "360": {
+      "name": "Saving Hero! The Enemy is the Invincible Princess"
+    },
+    "361": {
+      "name": "Perona's Terror!! The U in Uso is the U in Usopp"
+    },
+    "362": {
+      "name": "Slashes Dancing on the Roof! Finale - Zoro vs. Ryuma"
+    },
+    "363": {
+      "name": "Chopper's Rage!! Hogback's Demonic Medical Practice"
+    },
+    "364": {
+      "name": "Oars Roars!! Come Out Straw Hat Crew"
+    },
+    "365": {
+      "name": "The Enemy is Luffy!! The Strongest Zombie vs. the Straw Hat Crew"
+    },
+    "366": {
+      "name": "Defeat Absalom!! Nami's Lightning Attack of Friendship!!"
+    },
+    "367": {
+      "name": "One Down!! Sure Kill Straw Hat Docking?"
+    },
+    "368": {
+      "name": "Soundless Invasion!! The Mysterious Visitor: Kuma the Tyrant"
+    },
+    "369": {
+      "name": "Oars Plus Moria - The Greatest Combination of Brains and Brawn"
+    },
+    "370": {
+      "name": "A Secret Strategy to Turn the Tables - Nightmare Luffy Appears"
+    },
+    "371": {
+      "name": "The Straw Hat Crew Annihilated - Full-Throttle Kage Kage Abilities"
+    },
+    "372": {
+      "name": "The Battle for Superiority Starts! - Luffy vs. Luffy"
+    },
+    "373": {
+      "name": "The Conclusion Arrives! - Deliver the Finishing Blow"
+    },
+    "374": {
+      "name": "The Bodies Vanish! - The Morning Sun Pierces Through the Nightmare Island!"
+    },
+    "375": {
+      "name": "The Endless Crisis! Orders to Obliterate the Straw Hat Crew"
+    },
+    "376": {
+      "name": "Kuma's Nikyu Nikyu Power That Deflect Everything"
+    },
+    "377": {
+      "name": "My Crewmate's Pain is My Pain, Zoro Fights Prepared to Die"
+    },
+    "378": {
+      "name": "Promise on a Day Long Ago - The Pirate's Song and a Tiny Whale"
+    },
+    "379": {
+      "name": "Brook's Past - Sad Farewell to the Cheerful Friend"
+    },
+    "380": {
+      "name": "Bink's Sake - The Song that Connects the Past and Present"
+    },
+    "381": {
+      "name": "A New Crewmate! - The Musician \"Humming Brook\""
+    },
+    "382": {
+      "name": "Noro Noro Menace - Return of Foxy the Silver Fox"
+    },
+    "383": {
+      "name": "The Great Treasure Contest! Collapse! Spa Island"
+    },
+    "384": {
+      "name": "Brook's Hard Struggle - The Difficult Path to Becoming a True Crewmate?"
+    },
+    "385": {
+      "name": "Arriving at Halfway Through the Grand Line! The Red Line"
+    },
+    "386": {
+      "name": "Hatred of the Straw Hat Crew - Enter Iron Mask Duval"
+    },
+    "387": {
+      "name": "The Fated Reunion! Save the Imprisoned Fishman"
+    },
+    "388": {
+      "name": "Tragedy! The Truth of the Unmasked Duval"
+    },
+    "389": {
+      "name": "Explosion! The Sunny's Super Secret Weapon: Gaon Cannon"
+    },
+    "390": {
+      "name": "Landing to Get to Fishman Island - The Sabaody Archipelago"
+    },
+    "391": {
+      "name": "Tyranny! The Rulers of Sabaody, the Celestial Dragons"
+    },
+    "392": {
+      "name": "New Rivals Gather! The 11 Supernovas"
+    },
+    "393": {
+      "name": "The Target is Camie!! The Kidnappers' Evil Draws Near"
+    },
+    "394": {
+      "name": "Rescue Camie - The Dark History of the Archipelago"
+    },
+    "395": {
+      "name": "Time Limit - The Human Auction Begins"
+    },
+    "396": {
+      "name": "The Fist Explodes! Destroy the Auction"
+    },
+    "397": {
+      "name": "Huge Panic! Struggle in the Auction Hall"
+    },
+    "398": {
+      "name": "Admiral Kizaru Moves! The Sabaody Archipelago in Chaos"
+    },
+    "399": {
+      "name": "Break Through the Encirclement! Marines vs. Three Captains"
+    },
+    "400": {
+      "name": "Roger and Rayleigh - The Pirate King and His Right Hand"
+    },
+    "401": {
+      "name": "Impossible to Avoid!? Admiral Kizaru's Speed of Light Kick!!"
+    },
+    "402": {
+      "name": "Overwhelming! The Marine Combat Weapon Pacifista"
+    },
+    "403": {
+      "name": "Another Strong Enemy Appears! Broadaxe-Wielding Sentomaru"
+    },
+    "404": {
+      "name": "Admiral Kizaru's Fierce Attack - The Straw Hat Crew's Desperate Situation!"
+    },
+    "405": {
+      "name": "Disappearing Crew - The Final Day of the Straw Hat Crew"
+    },
+    "406": {
+      "name": "Special Historical Arc - Boss Luffy Appears Again"
+    },
+    "407": {
+      "name": "Special Historical Arc - Destroy! Thriller Company's Trap"
+    },
+    "408": {
+      "name": "Landing! No-Boys-Allowed Island Amazon Lily"
+    },
+    "409": {
+      "name": "Hurry! Back to the Crew - Adventure on the Isle of Women"
+    },
+    "410": {
+      "name": "Everyone's Drunk on Love! Pirate Empress Hancock"
+    },
+    "411": {
+      "name": "The Secret Hidden on Their Backs - Luffy Encounters the Snake Princess"
+    },
+    "412": {
+      "name": "The Heartless Judgment! Marguerite Turned to Stone!!"
+    },
+    "413": {
+      "name": "Luffy's Hard Trial! The Power of the Snake Sisters' Haki!!"
+    },
+    "414": {
+      "name": "Battle with Full-Powered Abilities!! Gomu Gomu vs. Hebi Hebi"
+    },
+    "415": {
+      "name": "Hancock's Confession - The Sisters' Disgusting Past"
+    },
+    "416": {
+      "name": "Rescue Ace! The New Destination is the Great Prison"
+    },
+    "417": {
+      "name": "Love is a Hurricane! Hancock in Love"
+    },
+    "418": {
+      "name": "The Crewmates' Whereabouts - Weather Science and Karakuri Island"
+    },
+    "419": {
+      "name": "The Crewmates' Whereabouts - The Island of Giant Birds and the Pink Paradise!"
+    },
+    "420": {
+      "name": "The Crewmates' Whereabouts - The Bridge that Connects Islands and Man-Eating Plants"
+    },
+    "421": {
+      "name": " The Crewmates' Whereabouts - The Negative Princess and the Devil King!"
+    },
+    "422": {
+      "name": "A deadly Infiltration! The Underwater Prison Impel Down!"
+    },
+    "423": {
+      "name": "Reunion in Hell!? The User of the Bara Bara No Mi!"
+    },
+    "424": {
+      "name": "Break through Crimson Hell! Buggys great Uproar Plan"
+    },
+    "425": {
+      "name": "The Prison's strongest Man! Introduction of the Poison-Man Magellan"
+    },
+    "426": {
+      "name": "Movie-connected Special: The 'Gold Lion's' Ambition Moves Forward"
+    },
+    "427": {
+      "name": "Movie-connected Special: 'Little East Blue' is Targeted"
+    },
+    "428": {
+      "name": "Movie-connected Special: The Amigo Pirate Crew's Vicious Assault"
+    },
+    "429": {
+      "name": "Movie-connected Special: The Decisive Battle! Luffy vs. Largo"
+    },
+    "430": {
+      "name": "The Imprisoned Royal Shichibukai! Jinbe, Knight of the Sea"
+    },
+    "431": {
+      "name": "The Trap of Chief Guard Saldeath - Level 3 Starvation Hell"
+    },
+    "432": {
+      "name": "The Liberated Swan! Reunion! Bon Kurei"
+    },
+    "433": {
+      "name": "Chief Warden Magellan Moves - The Net to Trap Straw Hat Is Complete!"
+    },
+    "434": {
+      "name": "Preparations for War! A Decisive Battle in Level 4 - Blazing Hell"
+    },
+    "435": {
+      "name": "Magellan's Strength! Bon Kurei Flees Before His Enemy"
+    },
+    "436": {
+      "name": "The Fight Finished! Luffy's Final Life Risking Attack"
+    },
+    "437": {
+      "name": "Because He's My Friend - Bon Kurei's Do-or-Die Rescue"
+    },
+    "438": {
+      "name": "Paradise in Hell - Impel Down Level 5.5"
+    },
+    "439": {
+      "name": "Luffy's Treatment Begins - Iva's Miraculous Power!!"
+    },
+    "440": {
+      "name": "Believe in Miracles! Bon Kurei Cheers From His Heart"
+    },
+    "441": {
+      "name": "Luffy Revives! Iva-san's Jailbreak Plan Begins!!"
+    },
+    "442": {
+      "name": "Ace's Convoy Starts - The Offense and Defense of the Lowest Level, Level 6!"
+    },
+    "443": {
+      "name": "The Strongest Team is Formed - Shake Impel Down to it's Core!"
+    },
+    "444": {
+      "name": "Even More Chaos! Blackbeard Teach Invades"
+    },
+    "445": {
+      "name": "A Dangerous Meeting! Blackbeard and Shiryu of the Rain"
+    },
+    "446": {
+      "name": "His Spirit Won't Break! Hannyabal Goes All Out"
+    },
+    "447": {
+      "name": "The Jet Pistol of Rage - Luffy vs. Blackbeard"
+    },
+    "448": {
+      "name": "Stop Magellan! Iva-san Unleashes His Secret Attack"
+    },
+    "449": {
+      "name": "Magellan's Clever Scheme! The Jailbreak Plan is Obstructed"
+    },
+    "450": {
+      "name": "The Jailbreak Team Driven Into a Corner - Forbidden Move 'Venom Demon'"
+    },
+    "451": {
+      "name": "Cause the Last Miracle - Breaking Through the Gate of Justice"
+    },
+    "452": {
+      "name": "The Destination is Marine Headquarters - The Ship Sets Out to Rescue Ace!"
+    },
+    "453": {
+      "name": "The Crewmates' Whereabouts - Weatheria Report and Cyborg Animals"
+    },
+    "454": {
+      "name": "The Crewmates' Whereabouts - Giant Bird Chicks and a Pink Showdown"
+    },
+    "455": {
+      "name": "The Crewmates' Whereabouts - The Revolutionary Army and the Forest of Gluttony's Trap!"
+    },
+    "456": {
+      "name": "The Crewmates' Whereabouts - The Giant Gravestone and Panties of Gratitude"
+    },
+    "457": {
+      "name": "Special Retrospective Before Marineford - The Siblings' Vow!"
+    },
+    "458": {
+      "name": "Special Retrospective Before Marineford - Assemble! The Three Admirals"
+    },
+    "459": {
+      "name": "The Time of the Decisive Battle Draws Near! The Marine's Strongest Battle Formation is Ready!"
+    },
+    "460": {
+      "name": "An Enormous Fleet Appears - Invasion! The Whitebeard Pirates"
+    },
+    "461": {
+      "name": "The Beginning of the Battle! Ace and Whitebeard's Past"
+    },
+    "462": {
+      "name": "The Power to Destroy the World! The Gura Gura no Mi's Ability"
+    },
+    "463": {
+      "name": "Burn Everything to Ash! Admiral Akainu's Power"
+    },
+    "464": {
+      "name": "The Devil's Descendant! Little Oars Jr. Dashes Off!"
+    },
+    "465": {
+      "name": "Only the Winner is Justice - Put Into Motion! Sengoku's Plan!"
+    },
+    "466": {
+      "name": "The Straw Hat Team Arrives — The Battlefield Grows More Intense"
+    },
+    "467": {
+      "name": "I'll Save You Even If I Die - Luffy vs. The Marines, The Battle Starts"
+    },
+    "468": {
+      "name": "Consecutive Battles! Devil Fruit User Army vs. Devil Fruit User Army"
+    },
+    "469": {
+      "name": "Kuma Causes Disaster — Iva-san's Angry Attack"
+    },
+    "470": {
+      "name": "Master Swordsman Mihawk - The Black Sword's Slash Draws Near Luffy"
+    },
+    "471": {
+      "name": "The Extermination Operation Begins - The Might of the Pacifista Army"
+    },
+    "472": {
+      "name": "Akainu's Plot! Whitebeard Entrapped"
+    },
+    "473": {
+      "name": "The Encirclement Walls Activated! The Whitebeard Pirates Driven Into a Corner!!"
+    },
+    "474": {
+      "name": "The Order to Perform the Execution is Given - Break Through the Encircling Wall!"
+    },
+    "475": {
+      "name": "Rush Into the Final Phase! Whitebeard's Maneuver to Turn the Tides"
+    },
+    "476": {
+      "name": "Luffy's Strength is Exhausted! All-Out War in the Oris Plaza!!"
+    },
+    "477": {
+      "name": "Power that Reduces One's Life - Tension Hormones Return"
+    },
+    "478": {
+      "name": "For a Promise!! Luffy and Koby Clash!"
+    },
+    "479": {
+      "name": "In Front of the Execution Platform! The Path to Ace is Opened!!"
+    },
+    "480": {
+      "name": "The Path they Each Chose - Luffy vs. Garp!"
+    },
+    "481": {
+      "name": "Ace Freed! Whitebeard's Final Captain's Order!"
+    },
+    "482": {
+      "name": "The Power that Burns Even Fire - Akainu's Ruthless Pursuit"
+    },
+    "483": {
+      "name": "Searching for an Answer - Fire Fist Ace Dies on the Battlefield"
+    },
+    "484": {
+      "name": "Marine Headquarters Collapses! Whitebeard's Silent Rage!"
+    },
+    "485": {
+      "name": "Settling the Score - Whitebeard vs. The Blackbeard Pirates"
+    },
+    "486": {
+      "name": "The Start of the Show - Blackbeard's Plot Revealed"
+    },
+    "487": {
+      "name": "Akainu's Tenacity! The Fist of Magma Attacks Luffy"
+    },
+    "488": {
+      "name": "A Desperate Cry - Seconds of Valor that Change Destiny"
+    },
+    "489": {
+      "name": "Enter Shanks! The Ultimate War Ends at Last"
+    },
+    "490": {
+      "name": "Powerful Independent Rivals! The Beginning of the \"New Era\"!"
+    },
+    "491": {
+      "name": "Arrival at the Island of Women - Cruel Reality Tortures Luffy"
+    },
+    "492": {
+      "name": "The Strongest Tag-Team! Luffy and Toriko's Hard Struggle!"
+    },
+    "493": {
+      "name": "Luffy and Ace - The Story of the Brothers' Meeting!"
+    },
+    "494": {
+      "name": "Enter Sabo! The Boy From Grey Terminal"
+    },
+    "495": {
+      "name": "I Won't Run - Ace's Desperate Rescue Operation"
+    },
+    "496": {
+      "name": "Someday to the Sea! The Three Brat's Sake Cups of Oath!"
+    },
+    "497": {
+      "name": "Leaving the Dadan Family!? The Secret Base is Complete!"
+    },
+    "498": {
+      "name": "Apprentice Luffy!? The Man who Fought the Pirate King!"
+    },
+    "499": {
+      "name": "The Battle Against the Big Tiger! Who Will Be the Captain?!"
+    },
+    "500": {
+      "name": "Stolen Freedom! The Nobles' Trap Draws Near the Three Brothers"
+    },
+    "501": {
+      "name": "The Flames Are Lit - The Gray Terminal's Crisis"
+    },
+    "502": {
+      "name": "Where Is Freedom? The Boy's Sad Departure"
+    },
+    "503": {
+      "name": "I'm Counting On You! A Letter From a Brother!"
+    },
+    "504": {
+      "name": "To Fulfill the Promise - Separate Departures!"
+    },
+    "505": {
+      "name": "I Want to See Them! Luffy's Tearful Scream"
+    },
+    "506": {
+      "name": "The Straw Hat Crew Shocked! The Bad News is Received"
+    },
+    "507": {
+      "name": "Reunion with Dark King Rayleigh - It's Time For Luffy's Decision"
+    },
+    "508": {
+      "name": "Back to the Captain - Jailbreak from Sky Island and the Incident on the Winter Island"
+    },
+    "509": {
+      "name": "Contact! The Great Swordsman Mihawk - Zoro's Struggle of Willpower"
+    },
+    "510": {
+      "name": "Sanji's Suffering - The Queen Returns to His Kingdom!"
+    },
+    "511": {
+      "name": "An Unexpected Return! Luffy, to Marineford!"
+    },
+    "512": {
+      "name": "Delivered to the Crew - The Big News Comes Through!"
+    },
+    "513": {
+      "name": "The Pirates Move Out! The Earth Shattering New World"
+    },
+    "514": {
+      "name": "Live Through Hell - Sanji's Fight with Men at Stake"
+    },
+    "515": {
+      "name": "I'll Get Stronger and Stronger! Zoro's Vow to his Captain"
+    },
+    "516": {
+      "name": "Luffy's Training Begins. See You 2 Years later, At The Promised Place"
+    },
+    "517": {
+      "name": "The Beginning of The New Chapter! The Straw Hats Reunited!"
+    },
+    "518": {
+      "name": "An Explosive Situation! Luffy vs. Fake Luffy!"
+    },
+    "519": {
+      "name": "The Navy Has Set Out! The Straw Hats in Danger!"
+    },
+    "520": {
+      "name": "Big Guns Assembled! The Danger of the Fake Straw Hats!"
+    },
+    "521": {
+      "name": "The Battle is on! Show Them What You Got From Training!"
+    },
+    "522": {
+      "name": "Everyone Together! Luffy, Setting Out for the New World!"
+    },
+    "523": {
+      "name": "A Surprising Fact! The Man Who Guarded the Sunny!"
+    },
+    "524": {
+      "name": "Deadly Combat under the Sea! The Demon of the Ocean Strikes!"
+    },
+    "525": {
+      "name": "Lost in the Deep Sea! The Straw Hats Get Separated!"
+    },
+    "526": {
+      "name": "Undersea Volcanic Eruption! Drifting to the Fish-man Island!"
+    },
+    "527": {
+      "name": "Landing at the Fish-Man Island! Beautiful Mermaids!"
+    },
+    "528": {
+      "name": "Excitement Blow-out! Sanji's Life Under Threat!"
+    },
+    "529": {
+      "name": "The Fish-Man Island Will Be Annihilated?! Sharley's Prophecy!"
+    },
+    "530": {
+      "name": "The King of the Fish-Man Island! Neptune, the God of the Sea!"
+    },
+    "531": {
+      "name": "Ryugu Palace! Taken by the Shark that They Saved!"
+    },
+    "532": {
+      "name": "A Coward and a Crybaby! The Princess in the Hard Shell Tower!"
+    },
+    "533": {
+      "name": "It's an Emergency! The Ryugu Palace is Occupied!"
+    },
+    "534": {
+      "name": "The Ryugu Palace in Shock! The Kidnapping of Shirahoshi!"
+    },
+    "535": {
+      "name": "Hordy's Onslaught! The Retaliatory Plan Set Into Motion!"
+    },
+    "536": {
+      "name": "The Battle in the Ryugu Palace! Zoro vs. Hordy!"
+    },
+    "537": {
+      "name": "Keep Shirahoshi Safe! Decken Close Behind!"
+    },
+    "538": {
+      "name": "The Straw Hats Defeated?! Hordy Gains Control of the Ryugu Palace!"
+    },
+    "539": {
+      "name": "The Haunting Ties! Nami and the Fish-Man Pirates!"
+    },
+    "540": {
+      "name": "A Hero Who Freed the Slaves! An Adventurer Tiger!"
+    },
+    "541": {
+      "name": "Kizaru Appears! A Trap to Catch Tiger!"
+    },
+    "542": {
+      "name": "A Team Is Formed! Save Chopper!"
+    },
+    "543": {
+      "name": "The Death of the Hero! A Shocking Truth of Tiger!"
+    },
+    "544": {
+      "name": "The Sun Pirates Split! Jimbei vs Arlong!"
+    },
+    "545": {
+      "name": "Shaking Fish-Man Island! A Celestial Dragon Drifts In!"
+    },
+    "546": {
+      "name": "A Sudden Tragedy! A Gunshot Shuts Down the Future!"
+    },
+    "547": {
+      "name": "Back to the Present! Hordy Makes a Move!"
+    },
+    "548": {
+      "name": "The Kingdom in Shock! An Order to Execute Neptune Issued!"
+    },
+    "549": {
+      "name": "A Rift Opens Up! Luffy vs. Jimbei!"
+    },
+    "550": {
+      "name": "Something Has Happened to Hordy! The True Power of the Evil Drug!"
+    },
+    "551": {
+      "name": "The Battle is on! At Conchcorde Plaza!"
+    },
+    "552": {
+      "name": "Surprising Confession! The Truth Behind the Assassination of Otohime!"
+    },
+    "553": {
+      "name": "Shirahoshi's Tears! Luffy Finally Shows Up!"
+    },
+    "554": {
+      "name": "A Big Clash! The Straw Hats vs. A Hundred Thousand Enemies!"
+    },
+    "555": {
+      "name": "Deadly Attacks One After Another! Zoro and Sanji Join the Battle!"
+    },
+    "556": {
+      "name": "Unveiled! The Secret Weapons of the Sunny!"
+    },
+    "557": {
+      "name": "Iron Pirate! Here Comes General Franky!"
+    },
+    "558": {
+      "name": "The Noah Closing in! The Fish-Man Island Facing Destruction!"
+    },
+    "559": {
+      "name": "Hurry up, Luffy! Shirahoshi's Life in Jeopardy!"
+    },
+    "560": {
+      "name": "The Fierce Fight Begins! Luffy vs. Hordy!"
+    },
+    "561": {
+      "name": "A Massive Confused Fight! The Straw Hats vs. The New Fish-Man Pirates!"
+    },
+    "562": {
+      "name": "Luffy Loses the Fight?! Hordy's Long-Awaited Revenge!"
+    },
+    "563": {
+      "name": "A Shocking Fact! The True Identity of Hordy!"
+    },
+    "564": {
+      "name": "Back to Zero! Earnest Wishes for Luffy!"
+    },
+    "565": {
+      "name": "Luffy's All-Out Attack! Red Hawk Blasts!"
+    },
+    "566": {
+      "name": "Coming to an End! The Final Decisive Battle Against Hordy!"
+    },
+    "567": {
+      "name": "Stop, Noah! Desperate Elephant Gatling!"
+    },
+    "568": {
+      "name": "To the Future! The Path to the Sun!"
+    },
+    "569": {
+      "name": "The Secret Revealed! The Truth about the Ancient Weapon!"
+    },
+    "570": {
+      "name": "The Straw Hats Stunned! The New Fleet Admiral of the Navy!"
+    },
+    "571": {
+      "name": "She Loves Sweets! Big Mom of the Four Emperors!"
+    },
+    "572": {
+      "name": "Many Problems Lie Ahead! A Trap Awaiting in the New World!"
+    },
+    "573": {
+      "name": "Finally Time to Go! Goodbye, Fish-Man Island!"
+    },
+    "574": {
+      "name": "To the New World! Heading for the Ultimate Sea!"
+    },
+    "575": {
+      "name": "Z's Ambition Arc - The Little Giant Lily!"
+    },
+    "576": {
+      "name": "Z's Ambition Arc - The Mysterious Strongest Army Appears!"
+    },
+    "577": {
+      "name": "Z's Ambition Arc - A Desperate Big Escape Strategy!"
+    },
+    "578": {
+      "name": "Z's Ambition Arc - Luffy vs. Shuzo!"
+    },
+    "579": {
+      "name": "Landing! The Burning Island, Punk Hazard"
+    },
+    "580": {
+      "name": "A Scorching Battle! Luffy vs. the Giant Dragon!"
+    },
+    "581": {
+      "name": "The Crew is Confused! The Shocking Beheaded Samurai Appears!"
+    },
+    "582": {
+      "name": "Shock! The Secret of the Island is Finally Revealed"
+    },
+    "583": {
+      "name": "Save the Children! The Crew Starts to Fight"
+    },
+    "584": {
+      "name": "A Duel of Swordplay - Brook vs. the Mysterious Samurai Torso"
+    },
+    "585": {
+      "name": "Shichibukai! Trafalgar Law"
+    },
+    "586": {
+      "name": "A Big Pinch - Luffy Sinks into the Cold Lake"
+    },
+    "587": {
+      "name": "Clash! Law vs. Vice Admiral Smoker"
+    },
+    "588": {
+      "name": "Reunion after Two Years! Luffy and Law"
+    },
+    "589": {
+      "name": "Worst of the World - The Scary Scientist Caesar"
+    },
+    "590": {
+      "name": "History's Strongest Collaboration vs. Glutton of the Sea"
+    },
+    "591": {
+      "name": "Chopper Enraged - Master's Inhumane Experiments"
+    },
+    "592": {
+      "name": "To Annihilate the Crew! Legendary Assassins Attack!"
+    },
+    "593": {
+      "name": "Save Nami! Luffy's Fight on the Snow Mountains"
+    },
+    "594": {
+      "name": "Formed! The Luffy-Law Pirate Alliance!"
+    },
+    "595": {
+      "name": "Capture Master - The Pirate Alliance's Operation Begins!"
+    },
+    "596": {
+      "name": "On the Verge of Annihilation - A Deadly Monster Comes Flying In"
+    },
+    "597": {
+      "name": "An Intense Battle - Caesar Exercises His True Ability!"
+    },
+    "598": {
+      "name": "The Samurai Who Cuts Fire! Foxfire Kin'emon!"
+    },
+    "599": {
+      "name": "Shock! The Identity of the Mysterious Man Vergo!"
+    },
+    "600": {
+      "name": "Protect the Children! Master's Evil Hands Close in"
+    },
+    "601": {
+      "name": "Shaking Up the New World - Caesar's Nightmarish Experiment"
+    },
+    "602": {
+      "name": "History's Worst Weapon of Mass Destruction! Shinokuni"
+    },
+    "603": {
+      "name": "The Counterattack Begins! Luffy and Law's Great Escape"
+    },
+    "604": {
+      "name": "Get to Building R! The Pirate Alliance's Great Advance!"
+    },
+    "605": {
+      "name": "Tashigi's Tears - G-5's Desperate Breakthrough Plan"
+    },
+    "606": {
+      "name": "The Treacherous Vice Admiral! 'Demon Bamboo' Vergo"
+    },
+    "607": {
+      "name": "Heated Fierce Battle - Luffy vs. Caesar"
+    },
+    "608": {
+      "name": "The Mastermind in the Shadows! Doflamingo Moves!"
+    },
+    "609": {
+      "name": "Luffy's Freezing to Death!? The Terrifying Snow Woman, Monet!"
+    },
+    "610": {
+      "name": "Clashing Fists! The Battle of Two Vice Admirals"
+    },
+    "611": {
+      "name": "A Small Dragon! Momonosuke Appears"
+    },
+    "612": {
+      "name": "A Deadly Fight in a Blizzard -  The Straw Hats vs. the Snow Woman"
+    },
+    "613": {
+      "name": "Secret Technique Blasts! Zoro's Strongest One-Sword Style!"
+    },
+    "614": {
+      "name": "I'll Protect My Friends! Mocha's Desperate Escape"
+    },
+    "615": {
+      "name": "Brownbeard in Grief! Luffy's Furious Blow"
+    },
+    "616": {
+      "name": "Shocking Conclusion! Smoker vs. Vergo!"
+    },
+    "617": {
+      "name": "Caesar's Defeat! The Strongest Grizzly Magnum"
+    },
+    "618": {
+      "name": "Raid! The Assassins from Dressrosa"
+    },
+    "619": {
+      "name": "Running Wild! Invincible General Franky"
+    },
+    "620": {
+      "name": "A Critical Situation! Punk Hazard Explodes"
+    },
+    "621": {
+      "name": "Capture Caesar - General Cannon Blasts"
+    },
+    "622": {
+      "name": "A Touching Reunion! Momonosuke and Kin'emon"
+    },
+    "623": {
+      "name": "It's Time to Say Goodbye - Leaving Punk Hazard!"
+    },
+    "624": {
+      "name": "The G-5 Wiped Out! Doflamingo's Sudden Attack!"
+    },
+    "625": {
+      "name": "Intense! Aokiji vs. Doflamingo"
+    },
+    "626": {
+      "name": "Caesar Goes Missing! The Pirate Alliance Makes a Sortie"
+    },
+    "627": {
+      "name": "Luffy Dies at Sea!? The Pirate Alliance Comes Apart"
+    },
+    "628": {
+      "name": "A Major Turnaround! Luffy's Angry Iron Fist Strikes"
+    },
+    "629": {
+      "name": "Startling! The Big News Shakes Up the New World"
+    },
+    "630": {
+      "name": "Adventure! The Country of Love and Passion, Dressrosa"
+    },
+    "631": {
+      "name": "Full of Enthusiasm - Corrida Colosseum"
+    },
+    "632": {
+      "name": "A Dangerous Love - Dancing Girl Violet"
+    },
+    "633": {
+      "name": "A Formidable, Unknown Warrior! Lucy Appears"
+    },
+    "634": {
+      "name": "The Pirate Prince Cavendish"
+    },
+    "635": {
+      "name": "The Fateful Reunion - Bellamy the Hyena"
+    },
+    "636": {
+      "name": "Supernova! Bartolomeo the Cannibal"
+    },
+    "637": {
+      "name": "Big Names Duke It Out! The Heated Block B Battle!"
+    },
+    "638": {
+      "name": "A Deadly Blow! The Astonishing King Punch"
+    },
+    "639": {
+      "name": "The Fighting Fish Strike! Break through the Deadly Iron Bridge"
+    },
+    "640": {
+      "name": "Adventure! The Island of Fairies, Green Bit"
+    },
+    "641": {
+      "name": "The Unknown World - The Tontatta Kingdom"
+    },
+    "642": {
+      "name": "The Stratagem of the Century - Doflamingo Makes His Move!"
+    },
+    "643": {
+      "name": "Shaking Heaven and Earth! Admiral Fujitora's Power"
+    },
+    "644": {
+      "name": "A Blow of Anger! A Giant vs. Lucy"
+    },
+    "645": {
+      "name": "Destruction Cannon Blasts! Lucy in Trouble"
+    },
+    "646": {
+      "name": "The Legendary Pirate - Don Chinjao!"
+    },
+    "647": {
+      "name": "Light and Shadow - Darkness behind Dressrosa!"
+    },
+    "648": {
+      "name": "Making a Sortie - The Legendary Hero Usoland"
+    },
+    "649": {
+      "name": "The Fierce Battle Coming to the End - Lucy vs. Chinjao"
+    },
+    "650": {
+      "name": "Luffy and the Gladiator of Fate - Rebecca"
+    },
+    "651": {
+      "name": "Protect You to the End! Rebecca and the Toy Soldier"
+    },
+    "652": {
+      "name": "The Last and Bloodiest Block - Block D Battle Begins"
+    },
+    "653": {
+      "name": "A Decisive Battle! Giolla vs. the Straw Hats"
+    },
+    "654": {
+      "name": "Beautiful Sword! Cavendish of the White Horse"
+    },
+    "655": {
+      "name": "A Big Clash! Sanji vs. Doflamingo"
+    },
+    "656": {
+      "name": "Rebecca's Special Attack! Back-to-the-Water Sword Dance"
+    },
+    "657": {
+      "name": "The Most Violent Fighter! Logan vs. Rebecca"
+    },
+    "658": {
+      "name": "A Big Surprise! A True Identity of the Toy Soldier!"
+    },
+    "659": {
+      "name": "A Horrible Past! The Secret of Dressrosa"
+    },
+    "660": {
+      "name": "A Nightmare! The Tragic Night of Dressrosa"
+    },
+    "661": {
+      "name": "A Showdown Between the Warlords - Law vs. Doflamingo"
+    },
+    "662": {
+      "name": "Two Great Rivals Meet Each Other! Straw Hat and Heavenly Yaksha"
+    },
+    "663": {
+      "name": "Luffy Astonished - The Man Who Inherits Ace's Will"
+    },
+    "664": {
+      "name": "Operation SOP Starts - Usoland Charges Forth"
+    },
+    "665": {
+      "name": "A Burning Passion - Rebecca vs. Suleiman"
+    },
+    "666": {
+      "name": "Winner Decided!? A Surprising Result of Block D"
+    },
+    "667": {
+      "name": "The Admiral's Decision — Fujitora vs. Doflamingo"
+    },
+    "668": {
+      "name": "The Final Round Starts - Diamante the Hero Shows Up"
+    },
+    "669": {
+      "name": "A Moving Castle! Executive Officer Pica Rises Up"
+    },
+    "670": {
+      "name": "Dragon Claw Strikes! Lucy's Intimidating Attack!"
+    },
+    "671": {
+      "name": "Defeat Sugar - The Dwarf Soldiers Charge!"
+    },
+    "672": {
+      "name": "The Last Light — The Secret of Our Commander!"
+    },
+    "673": {
+      "name": "The Rupture Human — Gladius Blows Up Big Time!"
+    },
+    "674": {
+      "name": "Liar Usoland on the Run!"
+    },
+    "675": {
+      "name": "A Fateful Encounter — Kyros and King Riku"
+    },
+    "676": {
+      "name": "The Operation Failed! Hero Usoland Dies!?"
+    },
+    "677": {
+      "name": "The Legend is Back! Kyros' All-out Blow"
+    },
+    "678": {
+      "name": "The Fire Fist Strikes! The Power of the Mera Mera no Mi Returns"
+    },
+    "679": {
+      "name": "Dashing onto the Scene - The Chief of Staff of the Revolutionary Army, Sabo!"
+    },
+    "680": {
+      "name": "The Devil's Trap — A Dressrosa Extermination Plan"
+    },
+    "681": {
+      "name": "The 500 Million Man — The Target is Usoland!"
+    },
+    "682": {
+      "name": "Breaking through Enemy Lines - Luffy and Zoro Launch the Counter-Attack"
+    },
+    "683": {
+      "name": "With a Rumbling of the Ground - The God of Destruction, Giant Pica Descends"
+    },
+    "684": {
+      "name": "Gathering into a Powerful Front! Luffy and a Group of Brutal Warriors!"
+    },
+    "685": {
+      "name": "Steady Progress! Luffy's Army vs. Pica!"
+    },
+    "686": {
+      "name": "A Shocking Confession! Law's Soulful Vow!"
+    },
+    "687": {
+      "name": "A Big Collision! Chief of Staff Sabo vs. Admiral Fujitora"
+    },
+    "688": {
+      "name": "A Desperate Situation - Luffy Gets Caught in a Trap!"
+    },
+    "689": {
+      "name": "A Great Escape! Luffy's Tide-turning Elephant Gun"
+    },
+    "690": {
+      "name": "A United Front - Luffy's Breakthrough to the Victory"
+    },
+    "691": {
+      "name": "The Second Samurai — Evening Shower Kanjuro Appears"
+    },
+    "692": {
+      "name": "A Hard-Fought Battle Against Pica - Zoro's Deadly Attack!"
+    },
+    "693": {
+      "name": "The Little People's Princess - Captive Mansherry"
+    },
+    "694": {
+      "name": "Invincible! A Gruesome Army of Headcracker Dolls"
+    },
+    "695": {
+      "name": "Risking Their Lives! Luffy is the Trump Card for Victory"
+    },
+    "696": {
+      "name": "A Tearful Reunion — Rebecca and Kyros!"
+    },
+    "697": {
+      "name": "One Shot One Kill - The Man Who Will Save Dressrosa"
+    },
+    "698": {
+      "name": "Anger Erupts - Luffy and Law's Ultimate Stratagem"
+    },
+    "699": {
+      "name": "A Noble Family - The True Identity of Doflamingo!"
+    },
+    "700": {
+      "name": "The Ultimate Power - The Secret of the Ope Ope no Mi!"
+    },
+    "701": {
+      "name": "Sad Memories - Law the Boy from the White City!"
+    },
+    "702": {
+      "name": "A Celestial Dragon! Doffy's Stormy Past"
+    },
+    "703": {
+      "name": "A Rocky Road - Law and Corazon's Journey of Life"
+    },
+    "704": {
+      "name": "The Time is Ticking Down! Seize the Ope Ope no Mi!"
+    },
+    "705": {
+      "name": "The Moment of Resolution - Corazon's Farewell Smile!"
+    },
+    "706": {
+      "name": "Advance, Law - The Kindhearted Man's Final Fight!"
+    },
+    "707": {
+      "name": "To Be Free! Law's Injection Shot Blasts"
+    },
+    "708": {
+      "name": "An Intense Battle - Law vs. Doflamingo"
+    },
+    "709": {
+      "name": "A Decisive Battle Against the Executives - Proud Hajrudin"
+    },
+    "710": {
+      "name": "The Battle of Love - The New Leader Sai vs. Baby 5"
+    },
+    "711": {
+      "name": "The Man's Pride - Bellamy's Last Charge!"
+    },
+    "712": {
+      "name": "Storm and Stress - Hakuba vs. Dellinger"
+    },
+    "713": {
+      "name": "Bari-Bari - Homage God Fist Strikes!"
+    },
+    "714": {
+      "name": "The Healing Princess — Save Mansherry!"
+    },
+    "715": {
+      "name": "The Manly Duel — Senor's Elegy of Love"
+    },
+    "716": {
+      "name": "Stardust of Death - Diamante's Storm of Vicious Attacks"
+    },
+    "717": {
+      "name": "Trueno Bastardo! Kyros' Furious Strike!"
+    },
+    "718": {
+      "name": "Moving Across the Ground! The Giant Statue Pica's Surprise Maneuver!"
+    },
+    "719": {
+      "name": "A Decisive Battle in Midair - Zoro's New Special Secret Technique Blasts!"
+    },
+    "720": {
+      "name": "So Long! Bellamy's Farewell Blow!"
+    },
+    "721": {
+      "name": "Law Dies - Luffy's Raging Onslaught!"
+    },
+    "722": {
+      "name": "A Blade of Tenacity - The Gamma Knife Counterattack!"
+    },
+    "723": {
+      "name": "A Collision of Haki - Luffy vs. Doflamingo"
+    },
+    "724": {
+      "name": "Unassailable - The Stunning Secret of Trebol"
+    },
+    "725": {
+      "name": "Anger Erupts - I Will Take Everything upon Myself"
+    },
+    "726": {
+      "name": "Gear 4! The Phenomenal Boundman!"
+    },
+    "727": {
+      "name": "A Massive Counterattack! Doflamingo's Awakening!"
+    },
+    "728": {
+      "name": "Luffy! An All-Out Leo Bazooka!"
+    },
+    "729": {
+      "name": "Kaen Ryuo - Protect Luffy's Life"
+    },
+    "730": {
+      "name": "Tears of Miracles - Mansherry's Fight!"
+    },
+    "731": {
+      "name": "As Long as We Breathe - Stop the Deadly Birdcage!"
+    },
+    "732": {
+      "name": "Dead or Alive — A Fateful Countdown"
+    },
+    "733": {
+      "name": "Attack on a Celestial - Luffy's King Kong Gun of Anger"
+    },
+    "734": {
+      "name": "To Be Free! Dressrosa's Delight!"
+    },
+    "735": {
+      "name": "The Unheard-of - Admiral Fujitora's Surprising Decision!"
+    },
+    "736": {
+      "name": "Sending a Shock Wave - The Worst Generation Goes Into Action!"
+    },
+    "737": {
+      "name": "The Birth of the Legend - The Adventures of the Revolutionary Warrior Sabo!"
+    },
+    "738": {
+      "name": "The Brothers' Bond - The Untold Story Behind Luffy and Sabo's Reunion"
+    },
+    "739": {
+      "name": "The Strongest Creature - Emperor - Kaidou of the Beasts"
+    },
+    "740": {
+      "name": "Fujitora Takes Action - The Complete Siege of the Straw Hats"
+    },
+    "741": {
+      "name": "A State of Emergency - Rebecca Is Kidnapped!"
+    },
+    "742": {
+      "name": "The Bond Between Father and Daughter - Kyros and Rebecca!"
+    },
+    "743": {
+      "name": "Men's Pride - Luffy vs. Fujitora, Head-to-Head"
+    },
+    "744": {
+      "name": "No Way Out - Admiral Fujitora's Ruthless Pursuit!"
+    },
+    "745": {
+      "name": "Sons' Cups - Straw Hat Fleet is Formed!"
+    },
+    "746": {
+      "name": "The Numerous Rivals Struggle Amongst Themselves - The Raging Monsters of the New World"
+    },
+    "747": {
+      "name": "The Silver Fortress — The Great Adventures of Luffy and Bart"
+    },
+    "748": {
+      "name": "An Underground Labyrinth — Luffy vs Mine Cart Man"
+    },
+    "749": {
+      "name": "The Sword Technique Heats Up! Law and Zoro Finally Appear!"
+    },
+    "750": {
+      "name": "A Desperate Situation - Luffy Fights a Battle in Extreme Heat"
+    },
+    "751": {
+      "name": "The Start of a New Adventure - Arrival at the Mysterious Island, 'Zou'!"
+    },
+    "752": {
+      "name": "The New Warlord - Son of the Legendary Whitebeard Arrives"
+    },
+    "753": {
+      "name": "A Deadly Elephant Climb - A Great Adventure on the Back of the Giant Elephant!"
+    },
+    "754": {
+      "name": "Battle Starts! Luffy vs. the Mink Tribe!"
+    },
+    "755": {
+      "name": "Garchu! The Straw Hat Crew Reunites"
+    },
+    "756": {
+      "name": "The Counterattack Begins! The Curly Hat Pirates moves out!"
+    },
+    "757": {
+      "name": "An Incoming Threat - Jack of the Beasts Pirates!"
+    },
+    "758": {
+      "name": "Ruler of Day - Enter Duke Inuarashi!"
+    },
+    "759": {
+      "name": "Ruler of Night - Nekomamushi Appears"
+    },
+    "760": {
+      "name": "Destruction of the Capital - Curly Hat Pirates Arrive on Land!"
+    },
+    "761": {
+      "name": "Race Against Time - The Bond of the Minks and the Crew!"
+    },
+    "762": {
+      "name": "The Rascal Returns Home - Emperor Big Mom's Assassin"
+    },
+    "763": {
+      "name": "The Truth Behind His Disappearance - Sanji's Shocking Invitation"
+    },
+    "764": {
+      "name": "To My Buds! Sanji's Farewell Note!"
+    },
+    "765": {
+      "name": "Let's Go See Master Nekomamushi"
+    },
+    "766": {
+      "name": "Luffy's Decision - Sanji on the Brink of Quitting!"
+    },
+    "767": {
+      "name": "A Volatile Situation - The Dog and the Cat and the Samurai!"
+    },
+    "768": {
+      "name": "The Third One! Raizo of the Mist, the Ninja, Appears!"
+    },
+    "769": {
+      "name": "A Red Stone! A Guide to the One Piece"
+    },
+    "770": {
+      "name": "The Secret of Wano Country — The Kouzuki Clan and the Poneglyph"
+    },
+    "771": {
+      "name": "A Man’s Vow — Luffy and Kouzuki Momonosuke"
+    },
+    "772": {
+      "name": "The Legendary Journey! The Dog and the Cat and the Pirate King!"
+    },
+    "773": {
+      "name": "Returning Nightmare - Assault of the Invulnerable Jack"
+    },
+    "774": {
+      "name": "Defensive Battle of Zou - Luffy and Zunisha!"
+    },
+    "775": {
+      "name": "Save the Giant Elephant - The Straw Hats Rescue Operation!"
+    },
+    "776": {
+      "name": "Descending the Elephant — Setting Sail for Sanji’s Retrieval!"
+    },
+    "777": {
+      "name": "To the Levely - Princess Vivi and Princess Shirahoshi"
+    },
+    "778": {
+      "name": "To the Levely - Rebecca and the Sakura Kingdom"
+    },
+    "779": {
+      "name": "Kaido Returns - The Worst Generation Threatened!"
+    },
+    "780": {
+      "name": "A Hungry Front - Luffy and the Marine Rookies!"
+    },
+    "781": {
+      "name": "The Persistent Trio — The Great Pursuit for the Straw Hats!"
+    },
+    "782": {
+      "name": "Fist of the Devil — Showdown! Luffy vs. Grount"
+    },
+    "783": {
+      "name": "Sanji’s Homecoming! Into Big Mom’s Territory!"
+    },
+    "784": {
+      "name": "0 and 4 — A Confrontation with Germa 66!"
+    },
+    "785": {
+      "name": "The Deadly Poison Crisis — Luffy and Reiju!"
+    },
+    "786": {
+      "name": "Totto Land! Emperor \"Big Mom\" Appears"
+    },
+    "787": {
+      "name": "The Emperor’s Daughter — Sanji’s Fiancée \"Pudding\""
+    },
+    "788": {
+      "name": "A Massive Attack! Mom's Hunger Pangs"
+    },
+    "789": {
+      "name": "The Capital Crumbles!? Big Mom and Jinbe"
+    },
+    "790": {
+      "name": "The Emperor's Castle — Arrival on Whole Cake Island"
+    },
+    "791": {
+      "name": "The Forest of Sweets! Luffy vs. Luffy"
+    },
+    "792": {
+      "name": "Mom's Assassin - Luffy and the Seducing Woods!"
+    },
+    "793": {
+      "name": "The Seafaring Nation — Judge the King of Germa"
+    },
+    "794": {
+      "name": "A Showdown Between Father and Son — Judge vs. Sanji"
+    },
+    "795": {
+      "name": "Great Ambition — Big Mom and Caesar"
+    },
+    "796": {
+      "name": "Kingdom of Souls — Mom’s Fearsome Power!"
+    },
+    "797": {
+      "name": "A Top Executive! One of the Three Commanders \"Cracker\" Appears"
+    },
+    "798": {
+      "name": "An Enemy With 800 Million Bounty — Luffy vs. Thousand Arms Cracker"
+    },
+    "799": {
+      "name": "Full Force Showdown — Gear Fourth vs. Bisu Bisu Ability"
+    },
+    "800": {
+      "name": "1 and 2 — Assemble! The Vinsmoke Family"
+    },
+    "801": {
+      "name": "The Benefactor's Life! Sanji and Owner Zeff!"
+    },
+    "802": {
+      "name": "An Angry Sanji! The Secret of Germa 66!"
+    },
+    "803": {
+      "name": "The Past that He Let Go of! Vinsmoke Sanji!"
+    },
+    "804": {
+      "name": "To East Blue - Sanji's Decision to Set Sail"
+    },
+    "805": {
+      "name": "A Battle of Limits - Luffy and the Infinite Biscuits!"
+    },
+    "806": {
+      "name": "Power of Fullness - New Gear Fourth Tankman!"
+    },
+    "807": {
+      "name": "Saddest Duel - Luffy vs. Sanji Part 1"
+    },
+    "808": {
+      "name": "Saddest Duel - Luffy vs. Sanji Part 2"
+    },
+    "809": {
+      "name": "A Storm of Revenge! An Enraged Army Comes to Attack!"
+    },
+    "810": {
+      "name": "The End of the Adventure - Sanji's Resolute Proposal"
+    },
+    "811": {
+      "name": "I'll Wait Here - Luffy vs. the Enraged Army"
+    },
+    "812": {
+      "name": "Infiltration Inside the Castle - Steal the Road Poneglyph"
+    },
+    "813": {
+      "name": "Face-to-face - Luffy and Big Mom"
+    },
+    "814": {
+      "name": "Shout of the Soul - Brook and Pedro's Lightning Operation"
+    },
+    "815": {
+      "name": "Farewell — Pudding’s Tears of Resolve"
+    },
+    "816": {
+      "name": "The History of the Left Eye - Pedro vs. Baron Tamago"
+    },
+    "817": {
+      "name": "Moist Cigarette! The Night Before Sanji's Wedding!"
+    },
+    "818": {
+      "name": "The Undaunted Soul - Brook vs. Big Mom"
+    },
+    "819": {
+      "name": "Sora's Wish! Germa's Failure - Sanji!"
+    },
+    "820": {
+      "name": "Sanji is Back - Luffy’s Great Flat-out Run Counterattack"
+    },
+    "821": {
+      "name": "The Chateau in Turmoil! Luffy, to the Rendezvous!"
+    },
+    "822": {
+      "name": "The Decision to Part! Sanji and the Straw Hat Bento"
+    },
+    "823": {
+      "name": "The Emperor Rolls Over - The Great Brook Rescue Mission!"
+    },
+    "824": {
+      "name": "The Rendezvous! Luffy, a One-on-One at His Limit!"
+    },
+    "825": {
+      "name": "Liar - Luffy and Sanji"
+    },
+    "826": {
+      "name": "Sanji Returns — Crash It! The Tea Party from Hell"
+    },
+    "827": {
+      "name": "A Secret Meeting! Luffy vs. The Fire Tank Pirates"
+    },
+    "828": {
+      "name": "The Deadly Pact! Luffy & Bege's Allied Forces"
+    },
+    "829": {
+      "name": "Luffy’s Secret Plan — Just Before the Curtain Rises! The Conspired Wedding Ceremony"
+    },
+    "830": {
+      "name": "Family Gathering — The Curtain Rises! The Tea Party from Hell"
+    },
+    "831": {
+      "name": "The Pretend Couple! Enter Sanji ♡ Pudding"
+    },
+    "832": {
+      "name": "The Kiss of Death! The Emperor Assassination Plan Begins!"
+    },
+    "833": {
+      "name": "Offering up a Sake Cup! Chivalrous Jinbe repays his debt!"
+    },
+    "834": {
+      "name": "The Mission Failed!? Big Mom Pirates Counterattack!"
+    },
+    "835": {
+      "name": "Run Sanji! SOS Germa 66!"
+    },
+    "836": {
+      "name": "The Mystery of Mama - The Island of Giants and the Little Beast"
+    },
+    "837": {
+      "name": "Mama's Birthday - The Day that Carmel has disappeared"
+    },
+    "838": {
+      "name": "Launchers Explosion! Big Mom Assassination Moment"
+    },
+    "839": {
+      "name": "Evil Army - Transformation! Germa 66"
+    },
+    "840": {
+      "name": "Cutting the Father-Son Relationship! Sanji and Judge!"
+    },
+    "841": {
+      "name": "Tea Party Escape - Luffy VS Big Mom"
+    },
+    "842": {
+      "name": "Execution Starts - Luffy Allied Army Annihilation !?"
+    },
+    "843": {
+      "name": "The Castle Collapsed - Straw Hat Pirates Begins Great Escape"
+    },
+    "844": {
+      "name": "The Spear of Elbaph - Onslaught! The Flying Big Mom"
+    },
+    "845": {
+      "name": "Pudding’s Resolve Blazes - The Seducing Woods"
+    },
+    "846": {
+      "name": "The Thunder’s Counterattack - Nami and the Stormy Zeus"
+    },
+    "847": {
+      "name": "A Coincidental Reunion - Sanji and the Evil Pudding in Love"
+    },
+    "848": {
+      "name": "Protecting the Sunny - Fierce Battle! Chopper and Brook"
+    },
+    "849": {
+      "name": "Before the Dawn - Guardians Leader Pedro"
+    },
+    "850": {
+      "name": "I Will Definitely Return! Luffy’s Life-Risking Departure"
+    },
+    "851": {
+      "name": "The Man with a Bounty of Billion - The Strongest Sweet Commander, Katakuri"
+    },
+    "852": {
+      "name": "A Hard Battle Starts - Luffy vs. Katakuri"
+    },
+    "853": {
+      "name": "The Green Room - An Invincible Helmsman, Jinbe"
+    },
+    "854": {
+      "name": "The Menacing Mogura — Luffy’s Silent Fight!"
+    },
+    "855": {
+      "name": "The End of the Deadly Battle!? Katakuri's Awakening in Anger"
+    },
+    "856": {
+      "name": "The Forbidden Secret - Katakuri's Merienda"
+    },
+    "857": {
+      "name": "Luffy Fights Back - The Invincible Katakuri's Weak Point!"
+    },
+    "858": {
+      "name": "Another Crisis! Gear Fourth vs. Muso Donuts"
+    },
+    "859": {
+      "name": "The Rebellious Daughter, Chiffon - Sanji's Big Plan for Transporting the Cake"
+    },
+    "860": {
+      "name": "A Man's Way of Life - Bege and Luffy's Determination as Captains"
+    },
+    "861": {
+      "name": "The Cake Sank?! Sanji and Bege's Getaway Battle!"
+    },
+    "862": {
+      "name": "Sulong - Carrot's Big Mystic Transformation"
+    },
+    "863": {
+      "name": "Break Through - The Straw Hats' Mighty Sea Battle!"
+    },
+    "864": {
+      "name": "Finally, They Clash - Emperor vs. Straw Hats"
+    },
+    "865": {
+      "name": "Dark King's Direct Precepts - The Battle Against Katakuri Turns Around"
+    },
+    "866": {
+      "name": "Finally He Returns - Sanji, the Man Who'll Stop the Emperor"
+    },
+    "867": {
+      "name": "Lurking in the Darkness - An Assassin Targeting Luffy!"
+    },
+    "868": {
+      "name": "One Man's Determination - Katakuri's Deadly Big Fight"
+    },
+    "869": {
+      "name": "Wake Up - Kenbunshoku Able to Top The Strongest!"
+    },
+    "870": {
+      "name": "A Fist of Divine Speed - Another Gear Fourth Application Activated!"
+    },
+    "871": {
+      "name": "Finally, It's Over - The Climax of the Intense Fight against Katakuri"
+    },
+    "872": {
+      "name": "A Desperate Situation - The Iron-Tight Entrapment of Luffy!"
+    },
+    "873": {
+      "name": "Pulling Back from the Brink - The Formidable Reinforcements Germa!"
+    },
+    "874": {
+      "name": "The Last Hope - The Sun Pirates Emerge"
+    },
+    "875": {
+      "name": "A Captivating Flavor - Sanji's Cake of Happiness"
+    },
+    "876": {
+      "name": "The Man of Humanity and Justice - Jinbe, a Desperate Massive Ocean Current"
+    },
+    "877": {
+      "name": "The Parting Time - Pudding's Last Wish"
+    },
+    "878": {
+      "name": "The World is Stunned - The Fifth Emperor of the Sea Emerges!"
+    },
+    "879": {
+      "name": "To the Levely - The Straw Hats' Sworn Allies Come Together"
+    },
+    "880": {
+      "name": "Sabo Goes into Action - All the Captains of the Revolutionary Army Appear!"
+    },
+    "881": {
+      "name": "Going into Action - The Implacable New Fleet Admiral Sakazuki"
+    },
+    "882": {
+      "name": "The Summit War - The Inherited Will of the Pirate King"
+    },
+    "883": {
+      "name": "One Step Forward for Her Dream - Shirahoshi Goes Out in the Sun!"
+    },
+    "884": {
+      "name": "I Miss Him - Vivi and Rebecca's Sentiments"
+    },
+    "885": {
+      "name": "In the Dark Recesses of the Holyland - A Mysterious Giant Straw Hat"
+    },
+    "886": {
+      "name": "The Holy Land in Tumult - The Targeted Princess Shirahoshi!"
+    },
+    "887": {
+      "name": "On the Verge - The Two Emperors Targeting Luffy"
+    },
+    "888": {
+      "name": "Sabo Gets Angry - Tragedy of the Revolutionary Army Officer Kuma"
+    },
+    "889": {
+      "name": "Finally, It Starts - The Conspiracy-filled Levely!"
+    },
+    "890": {
+      "name": "Marco! The Keeper of Whitebeard's Last Memento!"
+    },
+    "891": {
+      "name": "Climbing Up a Waterfall! A Great Journey Through the Land of Wano's Sea Zone!"
+    },
+    "892": {
+      "name": "The Land of Wano! To the Samurai Country where Cherry Blossoms Flutter!"
+    },
+    "893": {
+      "name": "Otama Appears! Luffy vs. Kaido's Army!"
+    },
+    "894": {
+      "name": "He'll Come! The Legend of Ace in the Land of Wano!"
+    },
+    "895": {
+      "name": "Side Story! The World's Greatest Bounty Hunter, Cidre!"
+    },
+    "896": {
+      "name": "Side Story! Clash! Luffy vs. the King of Carbonation!"
+    },
+    "897": {
+      "name": "Save Otama! Straw Hat, Bounding through the Wasteland!"
+    },
+    "898": {
+      "name": "The Headliner! Hawkins the Magician Appears!"
+    },
+    "899": {
+      "name": "Defeat is Inevitable! The Strawman's Fierce Attack!"
+    },
+    "900": {
+      "name": "The Greatest Day of My Life! Otama and Her Sweet Red-bean Soup!"
+    },
+    "901": {
+      "name": "Charging into the Enemy's Territory! Bakura Town - Where Officials Thrive!"
+    },
+    "902": {
+      "name": "The Yokozuna Appears! The Invincible Urashima Goes After Okiku!"
+    },
+    "903": {
+      "name": "A Climatic Sumo Battle! Straw Hat vs. the Strongest Ever Yokozuna!"
+    },
+    "904": {
+      "name": "Luffy Rages! Rescue Otama from Danger!"
+    },
+    "905": {
+      "name": "Taking Back Otama! A Fierce Fight Against Holed'em!"
+    },
+    "906": {
+      "name": "Duel! The Magician and the Surgeon of Death!"
+    },
+    "907": {
+      "name": "Romance Dawn"
+    },
+    "908": {
+      "name": "The Coming of the Treasure Ship! Luffytaro Returns the Favor!"
+    },
+    "909": {
+      "name": "Mysterious Grave Markers! A Reunion at the Ruins of Oden Castle!"
+    },
+    "910": {
+      "name": "A Legendary Samurai! The Man Who Roger Admired!"
+    },
+    "911": {
+      "name": "Bringing Down the Emperor of the Sea! A Secret Raid Operation Begins!"
+    },
+    "912": {
+      "name": "The Strongest Man in the World! Shutenmaru, the Thieves Brigade Chief!"
+    },
+    "913": {
+      "name": "Everyone is Annihilated! Kaido's Furious Blast Breath!"
+    },
+    "914": {
+      "name": "Finally Clashing! The Ferocious Luffy vs. Kaido!"
+    },
+    "915": {
+      "name": "Destructive! One Shot, One Kill - Thunder Bagua!"
+    },
+    "916": {
+      "name": "A Living Hell! Luffy, Humiliated in the Great Mine!"
+    },
+    "917": {
+      "name": "The Holyland in Tumult! Emperor of the Sea Blackbeard Cackles!"
+    },
+    "918": {
+      "name": "It's On! The Special Operation to Bring Down Kaido!"
+    },
+    "919": {
+      "name": "Rampage! The Prisoners - Luffy and Kid!"
+    },
+    "920": {
+      "name": "A Great Sensation! Sanji's Special Soba!"
+    },
+    "921": {
+      "name": "Luxurious and Gorgeous! Wano's Most Beautiful Woman - Komurasaki!"
+    },
+    "922": {
+      "name": "A Tale of Chivalry! Zoro and Tonoyasu's Little Trip!"
+    },
+    "923": {
+      "name": "A State of Emergency! Big Mom Closes in!"
+    },
+    "924": {
+      "name": "The Capital in an Uproar! Another Assassin Targets Sanji!"
+    },
+    "925": {
+      "name": "Dashing! The Righteous Soba Mask!"
+    },
+    "926": {
+      "name": "A Desperate Situation! Orochi's Menacing Oniwabanshu!"
+    },
+    "927": {
+      "name": "Pandemonium! The Monster Snake, Shogun Orochi!"
+    },
+    "928": {
+      "name": "The Flower Falls! The Final Moment of the Most Beautiful Woman in the Land of Wano!"
+    },
+    "929": {
+      "name": "The Bond Between Prisoners! Luffy and Old Man Hyo!"
+    },
+    "930": {
+      "name": "A Lead Performer! Queen the Plague Emerges!"
+    },
+    "931": {
+      "name": "Climb Up! Luffy's Desperate Escape!"
+    },
+    "932": {
+      "name": "Dead or Alive! Queen's Sumo Inferno!"
+    },
+    "933": {
+      "name": "Gyukimaru! Zoro Fights a Duel on Bandit's Bridge!"
+    },
+    "934": {
+      "name": "A Big Turnover! The Three-Sword Style Overcomes Danger!"
+    },
+    "935": {
+      "name": "Zoro, Stunned! The Shocking Identity of the Mysterious Woman!"
+    },
+    "936": {
+      "name": "Get the Hang of It! The Land of Wano's Haki - Ryuo!"
+    },
+    "937": {
+      "name": "Tonoyasu! Ebisu Town's Most Loved!"
+    },
+    "938": {
+      "name": "Shaking the Nation! The Identity of Ushimitsu Kozo The Chivalrous Thief!"
+    },
+    "939": {
+      "name": "The Straw Hats Run! Save the Captive Tonoyasu!"
+    },
+    "940": {
+      "name": "Zoro's Fury! The Truth About the Smile!"
+    },
+    "941": {
+      "name": "Toko's Tears! Orochi's Pitiless Bullets!"
+    },
+    "942": {
+      "name": "The Straw Hats Step In! An Uproarious Deadly Battle at the Execution Ground!"
+    },
+    "943": {
+      "name": "Luffy's Determination! Win Through the Sumo Inferno!"
+    },
+    "944": {
+      "name": "The Storm Has Come! A Raging Big Mom!"
+    },
+    "945": {
+      "name": "A Grudge Over Red-bean Soup! Luffy Gets into a Desperate Situation!"
+    },
+    "946": {
+      "name": "Stop the Emperor of the Sea! Queen's Secret Plan!"
+    },
+    "947": {
+      "name": "Brutal Ammunition! The Plague Rounds Aim at Luffy!"
+    },
+    "948": {
+      "name": "Start Fighting Back! Luffy and the Akazaya Samurai!"
+    },
+    "949": {
+      "name": "We're Here to Win! Luffy's Desperate Scream!"
+    },
+    "950": {
+      "name": "Warriors' Dream! Luffy's Conquer of Udon!"
+    },
+    "951": {
+      "name": "Orochi's Hunting Party! The Ninja Group vs. Zoro!"
+    },
+    "952": {
+      "name": "Tension Rises in Onigashima! Two Emperors of the Sea Meet?!"
+    },
+    "953": {
+      "name": "Hiyori's Confession! A Reunion at Bandit's Bridge!"
+    },
+    "954": {
+      "name": "Its Name is Enma! Oden's Great Swords!"
+    },
+    "955": {
+      "name": "A New Alliance?! Kaido's Army Gathers!"
+    },
+    "956": {
+      "name": "Ticking Down to the Great Battle! The Straw Hats Go into Combat Mode!"
+    },
+    "957": {
+      "name": "Big News! An Incident That Will Affect the Seven Warlords!"
+    },
+    "958": {
+      "name": "A Legendary Battle! Garp and Roger!"
+    },
+    "959": {
+      "name": "The Rendezvous Port! The Land of Wano Act Three Begins!"
+    },
+    "960": {
+      "name": "The Number-One Samurai in the Land of Wano! Here comes Kozuki Oden!"
+    },
+    "961": {
+      "name": "Tearfully Swearing Allegiance! Oden and Kin'emon!"
+    },
+    "962": {
+      "name": "Changing Destiny! The Whitebeard Pirates Cast Ashore!"
+    },
+    "963": {
+      "name": "Oden's Determination! Whitebeard's Test!"
+    },
+    "964": {
+      "name": "Whitebeard's Little Brother! Oden's Great Adventure!"
+    },
+    "965": {
+      "name": "Crossing Swords! Roger and Whitebeard!"
+    },
+    "966": {
+      "name": "Roger's Wish! A New Journey!"
+    },
+    "967": {
+      "name": "Devoting His Life! Roger's Adventure!"
+    },
+    "968": {
+      "name": "The King of the Pirates is Born! Arriving at the Last Island!"
+    },
+    "969": {
+      "name": "To the Land of Wano! The Roger Pirates Disband!"
+    },
+    "970": {
+      "name": "Sad News! The Opening of the Great Pirate Era!"
+    },
+    "971": {
+      "name": "Raid! Oden and the Akazaya Nine!"
+    },
+    "972": {
+      "name": "The End of the Battle! Oden vs. Kaido!"
+    },
+    "973": {
+      "name": "Boiled to Death! Oden's One-hour Struggle!"
+    },
+    "974": {
+      "name": "Oden Wouldn't Be Oden If It Wasn't Boiled!"
+    },
+    "975": {
+      "name": "The Castle on Fire! The Fate of the Kozuki Clan!"
+    },
+    "976": {
+      "name": "Back to the Present Day! 20 Years Later!"
+    },
+    "977": {
+      "name": "The Sea Is For Pirates! Raid! To Onigashima!"
+    },
+    "978": {
+      "name": "The Worst Generation Charges in! The Battle of the Stormy Sea!"
+    },
+    "979": {
+      "name": "Good Luck?! Leader Kin'emon's Plot!"
+    },
+    "980": {
+      "name": "A Tearful Promise! The Kidnapped Momonosuke!"
+    },
+    "981": {
+      "name": "A New Member! 'First Son of the Sea' Jimbei!"
+    },
+    "982": {
+      "name": "Kaido's Trump Card! The Tobi Roppo Appear!"
+    },
+    "983": {
+      "name": "The Samurai Warriors' Earnestness! The Straw Hats Land at Onigashima!"
+    },
+    "984": {
+      "name": "Luffy Goes Out of Control?! Sneaking into Kaido's Banquet!"
+    },
+    "985": {
+      "name": "Thinking of Otama! Luffy's Furious Strike!"
+    },
+    "986": {
+      "name": "Fighting Music! An Ability That Harms Luffy!"
+    },
+    "987": {
+      "name": "His Dream Broken?! The Trap That Lures Sanji!"
+    },
+    "988": {
+      "name": "Reinforcements Arrive! The Commander of the Whitebeard Pirates!"
+    },
+    "989": {
+      "name": "The Pact Between Men! The Fierce Fighting of Brachio Tank!"
+    },
+    "990": {
+      "name": "Thunder Bagua! Here Comes Kaido's Son!"
+    },
+    "991": {
+      "name": "Enemy or Ally? Luffy and Yamato!"
+    },
+    "992": {
+      "name": "Desire to be Oden! Yamato's Dream!"
+    },
+    "993": {
+      "name": "Explosive?! The Handcuffs that Shackle Yamato's Freedom!"
+    },
+    "994": {
+      "name": "The Akazaya Face-off! Kikunojo vs. Kanjuro!"
+    },
+    "995": {
+      "name": "Raid! Inheriting Oden's Will"
+    },
+    "996": {
+      "name": "Onigashima in Tumult! Luffy's All-Out War Begins!"
+    },
+    "997": {
+      "name": "The Battle Under the Moon! The Berserker, Sulong the Moon Lion!"
+    },
+    "998": {
+      "name": "Zeus' Treason?! The Cornered Nami!"
+    },
+    "999": {
+      "name": "I'll Protect You! Yamato Meets Momonosuke!"
+    },
+    "1000": {
+      "name": "Overwhelming Strength! The Straw Hats Come Together!"
+    },
+    "1001": {
+      "name": "A Risky Invitation! A Plot to Eliminate Queen!"
+    },
+    "1002": {
+      "name": "A New Rivalry! Nami and Ulti!"
+    },
+    "1003": {
+      "name": "A Heroic Blade! Akazaya vs. Kaido, Again Once More!"
+    },
+    "1004": {
+      "name": "An Inherited Technique! Unleashing Oden's Secret Swordplay!"
+    },
+    "1005": {
+      "name": "The Power of Ice Oni! A New Version of the Plague Rounds!"
+    },
+    "1006": {
+      "name": "I Won't Forgive Him! Chopper's Determination!"
+    },
+    "1007": {
+      "name": "Zoro's Pursuit! Ice Oni Tag!"
+    },
+    "1008": {
+      "name": "Nami's Surrender?! Ulti's Fierce Headbutt!"
+    },
+    "1009": {
+      "name": "Sasaki's Onslaught! Armored Division vs. Yamato!"
+    },
+    "1010": {
+      "name": "Eliminate the Ice Oni! Chopper's Fire Trick!"
+    },
+    "1011": {
+      "name": "It's Not Okay! The Spider lures Sanji!"
+    },
+    "1012": {
+      "name": "A Turnaround Move! The Flames of Marco the Phoenix!"
+    },
+    "1013": {
+      "name": "Yamato's Past! The Man Who Came for an Emperor of the Sea!"
+    },
+    "1014": {
+      "name": "Marco's Tears! The Bond of the Whitebeard Pirates!"
+    },
+    "1015": {
+      "name": "Straw Hat Luffy! The Man Who Will Become the King of the Pirates!"
+    },
+    "1016": {
+      "name": "The Battle of the Monsters! The Three Stubborn Captains!"
+    },
+    "1017": {
+      "name": "A Barrage of Powerful Techniques! The Fierce Attacks of the Worst Generation!"
+    },
+    "1018": {
+      "name": "Kaido Laughs! The Emperors of the Sea vs. New Generation!"
+    },
+    "1019": {
+      "name": "Otama's Secret Plan! Operation Kibi Dango!"
+    },
+    "1020": {
+      "name": "Sanji's Scream! An SOS Echoes Over the Island!"
+    },
+    "1021": {
+      "name": "Spank Strikes! Sanji's Woman-trouble!"
+    },
+    "1022": {
+      "name": "No Regrets! Luffy and Boss, a Master-Disciple Bond!"
+    },
+    "1023": {
+      "name": "All Set! Chopperhage Nebulizer!"
+    },
+    "1024": {
+      "name": "Oden Appears! The Confused Hearts of the Akazaya Members!"
+    },
+    "1025": {
+      "name": "The Worst Generation Gets Wiped Out?! The Emperors' Deadly Attack!"
+    },
+    "1026": {
+      "name": "The Supernovas Strike Back! The Mission to Tear Apart the Emperors!"
+    },
+    "1027": {
+      "name": "Defend Luffy! Zoro and Law's Sword Technique!"
+    },
+    "1028": {
+      "name": "Surpass the Emperor of the Sea! Luffy Strikes Back with an Iron Fist!"
+    },
+    "1029": {
+      "name": "A Faint Memory! Luffy and Red-Haired's Daughter Uta!"
+    },
+    "1030": {
+      "name": "A Pledge for the Next Genesis! Luffy and Uta!"
+    },
+    "1031": {
+      "name": "Nami Screams - A Deadly Death Race!"
+    },
+    "1032": {
+      "name": "The Dawn of the Land of Wano - The All-Out Battle Heats Up!"
+    },
+    "1033": {
+      "name": "The Conclusion! Luffy, Accelerating Fist of the Supreme King"
+    },
+    "1034": {
+      "name": "Luffy Defeated! The Straw Hats in Jeopardy?!"
+    },
+    "1035": {
+      "name": "The Animal Kingdom Pirates Trample Down! The End of the Kozuki Clan!"
+    },
+    "1036": {
+      "name": "Fight Against the Dark Night - The Commander-in-Chief of the Land of Wano Sounds Off"
+    },
+    "1037": {
+      "name": "Believe in Luffy! The Alliance's Counterattack Begins!"
+    },
+    "1038": {
+      "name": "Nami's Lethal Attack! Otama's Desperate Challenge!"
+    },
+    "1039": {
+      "name": "A Dramatic Increase of Allies! Straw Hats Fight Back!"
+    },
+    "1040": {
+      "name": "The Pride of a Helmsman - The Enraged Jimbei!"
+    },
+    "1041": {
+      "name": "Showdown Battles of the Monsters! Yamato and Franky"
+    },
+    "1042": {
+      "name": "The Predator's Trap - Black Maria's Temptation"
+    },
+    "1043": {
+      "name": "Slash the Nightmare - Brook Draws His Freezing Sword!"
+    },
+    "1044": {
+      "name": "Clutch! A Demon Incarnate, Robin!"
+    },
+    "1045": {
+      "name": "A Spell! Kid and Zoro Facing Threats!"
+    },
+    "1046": {
+      "name": "Taking a Chance! The Two Arms Go into Battle!"
+    },
+    "1047": {
+      "name": "Ascend to the Dawn! A Pink Dragon Gets Agitated"
+    },
+    "1048": {
+      "name": "For the Future! Yamato and the Great Swordsmen's Pledge"
+    },
+    "1049": {
+      "name": "Luffy Soars! Revenge Against the King of the Beasts"
+    },
+    "1050": {
+      "name": "Two Dragons Face Off! Momonosuke's Determination!"
+    },
+    "1051": {
+      "name": "A Legend All Over Again! Luffy's Fist Roars in the Sky!"
+    },
+    "1052": {
+      "name": "The Situation Has Grown Tense! The End of Onigashima!"
+    },
+    "1053": {
+      "name": "Sanji's Mutation? The Two Arms in Crisis!"
+    },
+    "1054": {
+      "name": "Death to Your Partner! Killer's Deadly Gamble!"
+    },
+    "1055": {
+      "name": "A Shadowy Figure Pulls the Strings! Onigashima in Flames"
+    },
+    "1056": {
+      "name": "A Countercharge! Law and Kid's Return-Attack Combination"
+    },
+    "1057": {
+      "name": "For Luffy ? Sanji and Zoro's Oath"
+    },
+    "1058": {
+      "name": "The Onslaught of Kazenbo - Orochi's Evil Clutches Close in"
+    },
+    "1059": {
+      "name": "Zoro Faces Adversity - A Monster! King the Wildfire"
+    },
+    "1060": {
+      "name": "The Secret of Enma! The Cursed Sword Entrusted to Zoro"
+    },
+    "1061": {
+      "name": "The Strike of an Ifrit! Sanji vs. Queen"
+    },
+    "1062": {
+      "name": "The Three-Sword Style of the Supreme King! Zoro vs. King"
+    },
+    "1063": {
+      "name": "Luffy is on the Move! A Turning Point to a New Era!"
+    },
+    "1064": {
+      "name": "Drunken Dragon Bagua! The Lawless Dragon Closing in on Luffy"
+    },
+    "1065": {
+      "name": "The Destruction of the Alliance?! Fire up, the Will of the New Generation!"
+    },
+    "1066": {
+      "name": "Here Comes Main Act! Powerful Techniques of Shockwave and Magnetism"
+    },
+    "1067": {
+      "name": "To the New Era! Settled! The Determination of the Brats"
+    },
+    "1068": {
+      "name": "Moon Princess Echoes! The Final Phase of the Land of Wano!"
+    },
+    "1069": {
+      "name": "There is Only One Winner - Luffy vs. Kaido"
+    },
+    "1070": {
+      "name": "Luffy Is Defeated?! The Determination of Those Left Behind"
+    },
+    "1071": {
+      "name": "Luffy's Peak - Attained! Gear Five"
+    },
+    "1072": {
+      "name": "The Ridiculous Power! Gear Five in Full Play"
+    },
+    "1073": {
+      "name": "No Way Out! A Hellish Scene on Onigashima"
+    },
+    "1074": {
+      "name": "I Trust Momo - Luffy's Final Powerful Technique!"
+    },
+    "1075": {
+      "name": "20 Years Worth of Prayers! Take Back the Land of Wano"
+    },
+    "1076": {
+      "name": "The World That Luffy Wants!"
+    },
+    "1077": {
+      "name": "The Curtain Falls! The Winner, Straw Hat Luffy!"
+    },
+    "1078": {
+      "name": "He Returns! The Shogun of the Land of Wano, Kouzuki Momonosuke"
+    },
+    "1079": {
+      "name": "The Morning Comes! Luffy and the Others Rest!"
+    },
+    "1080": {
+      "name": "A Celebration Banquet! The New Emperors of the Sea!"
+    },
+    "1081": {
+      "name": "The World Will Burn! The Onslaught of a Navy Admiral!"
+    },
+    "1082": {
+      "name": "The Coming of the New Era! The Red-Haired's Imperial Rage"
+    },
+    "1083": {
+      "name": "The World That Moves On! A New Organization, Cross Guild"
+    },
+    "1084": {
+      "name": "Time to Depart - The Land of Wano and the Straw Hats"
+    },
+    "1085": {
+      "name": "The Last Curtain! Luffy and Momonosuke's Vow"
+    },
+    "1086": {
+      "name": "A New Emperor! Buggy the Genius Jester!"
+    },
+    "1087": {
+      "name": "The War on the Island of Women! A Case Involving Koby the Hero <br/> The War on the Island of Women! A Case Involving Coby the Hero (Home Video)"
+    },
+    "1088": {
+      "name": "Luffy's Dream"
+    },
+    "1089": {
+      "name": "Entering a New Chapter! Luffy and Sabo's Paths!"
+    },
+    "1090": {
+      "name": "A New Island! Future Island Egghead"
+    },
+    "1091": {
+      "name": "Brimming with the Future! An Adventure on the Island of Science!"
+    },
+    "1092": {
+      "name": "Bonney's Lamentation! Darkness Lurking on the Future Island"
+    },
+    "1093": {
+      "name": "The Winner Takes All! Law vs. Blackbeard!"
+    },
+    "1094": {
+      "name": "The Mystery Deepens! Egghead Labophase"
+    },
+    "1095": {
+      "name": "The Brain of a Genius - Six Vegapunks!"
+    },
+    "1096": {
+      "name": "A Forbidden Piece of History! A Theory Concerning a Kingdom"
+    },
+    "1097": {
+      "name": "The Will of Ohara! The Inherited Research"
+    },
+    "1098": {
+      "name": "The Eccentric Dream of a Genius!"
+    },
+    "1099": {
+      "name": "Preparations for Interception! Rob Lucci Strikes!"
+    },
+    "1100": {
+      "name": "Powers on a Different Level! Luffy vs. Lucci!"
+    },
+    "1101": {
+      "name": "The Strongest Form of Humanity! The Seraphim's Powers!"
+    },
+    "1102": {
+      "name": "Sinister Schemes! The Operation to Escape Egghead"
+    },
+    "1103": {
+      "name": "Turn Back My Father! Bonney's Futile Wish!"
+    },
+    "1104": {
+      "name": "A Desperate Situation! The Seraphim's All-out Attack!"
+    },
+    "1105": {
+      "name": "A Beautiful Act of Treason! The Spy, Stussy!"
+    },
+    "1106": {
+      "name": "Trouble Occurs! Seek Dr. Vegapunk!"
+    },
+    "1107": {
+      "name": "A Shudder! The Evil Hand Creeping Up on the Laboratory"
+    },
+    "1108": {
+      "name": "Incomprehensible! The Seraphim's Rebellion!"
+    },
+    "1109": {
+      "name": "A Tough Decision! An Unusual United Front!"
+    },
+    "1110": {
+      "name": "Survive! Deadly Combat with the Strongest Form of Humanity!"
+    },
+    "1111": {
+      "name": "The Second Ohara! The Mastermind's Ambition!"
+    },
+    "1112": {
+      "name": "Clash! Shanks vs. Eustass Kid"
+    },
+    "1113": {
+      "name": "Run, Koby! A Desperate Escape Strategy! <br/> Run, Coby! A Desperate Escape Strategy! (Home Video)"
+    },
+    "1114": {
+      "name": "For the Beloved Pupil - The Fist of Vice Admiral Garp!"
+    },
+    "1115": {
+      "name": "The Navy Surprised! The Navy Headquarters' Former Admiral, Kuzan"
+    },
+    "1116": {
+      "name": "Let's Go Get It! Buggy's Big Declaration"
+    },
+    "1117": {
+      "name": "Sabo Returns - The Shocking Truth to Be Told!"
+    },
+    "1118": {
+      "name": "The Holy Land in Tumult! Sai and Leo's Full-Power Blow!"
+    },
+    "1119": {
+      "name": "The Entrusted Message! King Cobra's Resolve"
+    },
+    "1120": {
+      "name": "The World Is Shaken! The Ruler's Judgment and the Five Elders' Actions!"
+    },
+    "1121": {
+      "name": "Garp and Kuzan - A Master and a Pupil's Beliefs Clash"
+    },
+    "1122": {
+      "name": "The Last Lesson! Impact Inherited"
+    },
+    "1123": {
+      "name": "The World Shakes! The Straw Hats' Hostage Situation"
+    },
+    "1124": {
+      "name": "Completely Surrounded! The Operation to Escape Egghead"
+    },
+    "1125": {
+      "name": "A Clash of Two Men's Determination! Kizaru and Sentomaru"
+    },
+    "1126": {
+      "name": "Looming Despair! Admiral Kizaru's Depressing Mission"
+    },
+    "1127": {
+      "name": "Luffy vs. Kizaru! A Fierce Kaleidoscopic Battle"
+    },
+    "1128": {
+      "name": "The Nightmare Strikes - Godhead of Science & Defense, St. Saturn"
+    },
+    "1129": {
+      "name": "Kuma's Past - Better Off Dead in This World"
+    },
+    "1130": {
+      "name": "A History Erased! God Valley Of Despair"
+    },
+    "1131": {
+      "name": "A Fleeting Moment of Happiness - Kumachi and Ginny"
+    },
+    "1132": {
+      "name": "A Pledge to Ginny - Kuma Becomes a Father"
+    },
+    "1133": {
+      "name": "To Save His Daughter - Kuma the Timid Pacifist"
+    },
+    "1134": {
+      "name": "Cruel Fate - Kuma's Decision as a Father"
+    },
+    "1135": {
+      "name": "To the Sea Where My Father is! The Future Bonney Chooses"
+    },
+    "1136": {
+      "name": "Kuma's Life"
+    },
+    "1137": {
+      "name": "I'm Sorry, Dad - Bonney's Tears and Kuma's Fist"
+    },
+    "1138": {
+      "name": "Thank You, Dad - Bonney and Kuma's Warm Embrace"
+    },
+    "1139": {
+      "name": "Destroy Egghead - The Buster Call is Invoked"
+    },
+    "1140": {
+      "name": "An Admired Hero - The Warrior of Liberation Who Saves Bonney"
+    },
+    "1141": {
+      "name": "Reliable Reinforcements! Dorry and Brogy Arrive!"
+    },
+    "1142": {
+      "name": "Come In, World - Vegapunk's Message"
+    },
+    "1143": {
+      "name": "Vegapunk's Secret Plan – A Tense Worldwide Broadcast"
+    },
+    "1144": {
+      "name": "The Worst Nightmare - The Five Elders Come Together"
+    },
+    "1145": {
+      "name": "Friends Fight Together! Luffy and the Warriors of Elbaph<br/>Friends Fight Together! Luffy and the Warriors of Elbaf (Home Video)"
+    },
+    "1146": {
+      "name": "An Imminent Threat - Stussy and Edison's Resolve"
+    },
+    "1147": {
+      "name": "A Stunning Conclusion - Vegapunk's Great Prediction"
+    },
+    "1148": {
+      "name": "The Lost History - Joyboy, the First Pirate"
+    },
+    "1149": {
+      "name": "The Void Century - A Revelation About a Sinking World"
+    },
+    "1150": {
+      "name": "Get the Ship Moving! The Iron Giant Activates"
+    },
+    "1151": {
+      "name": "Her and Her Father's Dream! Bonney's Free Future"
+    },
+    "1152": {
+      "name": "Her Father and Mother's Legacy! Bonney's Nika Punch"
+    },
+    "1153": {
+      "name": "The Upheaval of an Era! The Color of the Supreme King That Leads Luffy <br/>The Upheaval of an Era! The Conqueror's Haki That Leads Luffy (Home Video)"
+    },
+    "1154": {
+      "name": "The Truth Behind the Secret Plan - Vegapunk Claims Victory"
+    },
+    "1155": {
+      "name": "The Promised Horizon - Off to the Long-Awaited Elbaph<br/>The Promised Horizon - Off to the Long-Awaited Elbaf (Home Video)"
+    },
+    "1156": {
+      "name": "The Long-Sought Elbaph! The Big Reunion Banquet"
+    },
+    "1157": {
+      "name": "Nami in a Fix! An Adventure in Block Kingdom"
+    },
+    "1158": {
+      "name": "A Quest in the Land of Mystery! The Secret of the Sun God"
+    },
+    "1159": {
+      "name": "Destroy the Miniature Garden - Escape Block Kingdom"
+    },
+    "1160": {
+      "name": "An Encounter on a Snowfield - Loki, the Accursed Prince"
+    },
+    "1161": {
+      "name": "A Dangerous Deal! Loki of the Underworld and Luffy"
+    },
+    "1162": {
+      "name": "A Gargantuan Wave of Emotion - The Dreamlike Scenery of Elbaph"
+    },
+    "1163": {
+      "name": "I Want You to Praise Me - The Reunion of Robin and Saul"
+    },
+    "1164": {
+      "name": "Saul's Resolve - The Inherited Will of Ohara"
+    },
+    "1165": {
+      "name": "A Welcome with Friends' Cups and Intruders Seeking Loki"
+    },
+    "1166": {
+      "name": "Encountering Loki - Gunko of the Knights of God"
+    },
+    "1167": {
+      "name": "Shamrock Appears - Commander of the Knights of God"
+    },
+    "1168": {
+      "name": "Ancient History - The Harley Passed Down by Elbaph"
+    },
+    "1169": {
+      "name": "The Legend Lurking in Elbaph - The Identity of the Mountain-Eater"
+    },
+    "1170": {
+      "name": "Get the Key! Luffy vs. Scopper Gaban"
+    },
+    "1171": {
+      "name": "The Heinous Sinner - Loki of the Underworld Freed?!"
+    },
+    "1172": {
+      "name": "Monsters Appear in Elbaph - 'What I Fear Most'"
+    },
+    "1173": {
+      "name": "A Nightmarish Game - The Dark Plot of the Knights of God"
+    },
+    "1174": {
+      "name": "Save the Children! The Elbaph Warriors Rise Up"
+    },
+    "1175": {
+      "name": "Elbaph in Flames! Jinbe's Shoulder Throw Explodes!"
+    },
+    "1176": {
+      "name": "The Threat of the Arrow-Arrow Fruit - Gunko vs. the Straw Hats"
+    },
+    "1177": {
+      "name": "A Despicable Hostage Game - Sommers's Brazen Demands"
+    },
+    "1178": {
+      "name": "Protect History and the Future - Robin and Gaban Go on the Attack"
+    },
+    "1179": {
+      "name": "One Do-or-Die Second - Gaban vs. the Knights of God"
+    },
+    "1180": {
+      "name": "Elbaph in Despair - Diabolical Covenant, 'Domi Reversi'"
     }
   }
 }

@@ -6,10 +6,10 @@ import {
   sagaListOutputSchema,
 } from '../../common/serie.schemas.js';
 import {
-  arcIdParamsSchema,
-  episodeIdParamsSchema,
+  arcSlugParamsSchema,
+  episodeNumberParamsSchema,
   episodeOutputSchema,
-  sagaIdParamsSchema,
+  sagaSlugParamsSchema,
 } from './schemas.js';
 
 export const serieErrors = {
@@ -42,33 +42,33 @@ export const serieContract = oc
     listArcsBySaga: oc
       .route({
         method: 'GET',
-        path: '/sagas/{sagaId}/arcs',
+        path: '/sagas/{sagaSlug}/arcs',
         inputStructure: 'detailed',
         description: 'List arcs for a saga',
       })
-      .input(sagaIdParamsSchema)
+      .input(sagaSlugParamsSchema)
       .errors(serieErrors)
       .output(arcListOutputSchema),
 
     listEpisodesByArc: oc
       .route({
         method: 'GET',
-        path: '/arcs/{arcId}/episodes',
+        path: '/arcs/{arcSlug}/episodes',
         inputStructure: 'detailed',
         description: 'List episodes for an arc',
       })
-      .input(arcIdParamsSchema)
+      .input(arcSlugParamsSchema)
       .errors(serieErrors)
       .output(episodeListOutputSchema),
 
     getEpisode: oc
       .route({
         method: 'GET',
-        path: '/episodes/{episodeId}',
+        path: '/episodes/{episodeNumber}',
         inputStructure: 'detailed',
         description: 'Get episode detail with rewards metadata',
       })
-      .input(episodeIdParamsSchema)
+      .input(episodeNumberParamsSchema)
       .errors(serieErrors)
       .output(episodeOutputSchema),
   });

@@ -11,8 +11,8 @@ type SerieSagaBlockProps = {
   saga: SerieSaga;
   isOpen: boolean;
   onToggle: () => void;
-  openArcIds: Record<number, boolean>;
-  onToggleArc: (arcId: number) => void;
+  openArcSlugs: Record<string, boolean>;
+  onToggleArc: (arcSlug: string) => void;
   lastWatchedEpisode: number;
 };
 
@@ -20,24 +20,28 @@ export function SerieSagaBlock({
   saga,
   isOpen,
   onToggle,
-  openArcIds,
+  openArcSlugs,
   onToggleArc,
   lastWatchedEpisode,
 }: SerieSagaBlockProps) {
   const { t } = useTranslation(['common', 'serie']);
   const locale = useLocale();
-  const arcsQuery = useSerieArcs(saga.id, { enabled: isOpen });
+  const arcsQuery = useSerieArcs(saga.slug, { enabled: isOpen });
 
   return (
     <SerieAccordion
       variant="saga"
-      title={t(`sagas.${saga.id}.name`, {
+      title={t(`sagas.${saga.slug}.name`, {
         ns: 'serie',
-        defaultValue: saga.name,
+        defaultValue: '',
       })}
-      subtitle={locale === 'ja' ? undefined : saga.titleJa}
+      subtitle={
+        locale === 'ja'
+          ? undefined
+          : t(`sagas.${saga.slug}.nameJa`, { ns: 'serie', defaultValue: '' })
+      }
       meta={t('serie.saga_meta', {
-        arcs: saga.arcNames.length,
+        arcs: saga.totalArcs,
         episodes: saga.totalEpisodes,
       })}
       isOpen={isOpen}
@@ -61,10 +65,10 @@ export function SerieSagaBlock({
       {isOpen && arcsQuery.data
         ? arcsQuery.data.arcs.map(arc => (
             <SerieArcBlock
-              key={arc.id}
+              key={arc.slug}
               arc={arc}
-              isOpen={openArcIds[arc.id] ?? false}
-              onToggle={() => onToggleArc(arc.id)}
+              isOpen={openArcSlugs[arc.slug] ?? false}
+              onToggle={() => onToggleArc(arc.slug)}
               lastWatchedEpisode={lastWatchedEpisode}
             />
           ))

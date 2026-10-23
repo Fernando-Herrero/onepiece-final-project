@@ -10,17 +10,15 @@ export const getSerieQueriesOptions = (client: OrpcClient) => ({
       queryFn: () => client.serie.listSagas(),
     }),
 
-  arcsBySaga: (sagaId: number) =>
+  arcsBySaga: (sagaSlug: string) =>
     queryOptions({
-      queryKey: serieKeys.arcs(sagaId),
-      queryFn: () => client.serie.listArcsBySaga({ params: { sagaId } }),
-      enabled: sagaId > 0,
+      queryKey: serieKeys.arcs(sagaSlug),
+      queryFn: () => client.serie.listArcsBySaga({ params: { sagaSlug } }),
     }),
 
-  episodesByArc: (arcId: number) =>
+  episodesByArc: (arcSlug: string) =>
     queryOptions({
-      queryKey: serieKeys.episodes(arcId),
-      queryFn: () => client.serie.listEpisodesByArc({ params: { arcId } }),
-      enabled: arcId > 0,
+      queryKey: serieKeys.episodes(arcSlug),
+      queryFn: () => client.serie.listEpisodesByArc({ params: { arcSlug } }),
     }),
 });

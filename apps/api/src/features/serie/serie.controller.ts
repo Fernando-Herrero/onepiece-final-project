@@ -20,21 +20,21 @@ export class SerieController {
   @Implement(contract.serie.listArcsBySaga)
   listArcsBySaga() {
     return implement(contract.serie.listArcsBySaga).handler(({ input }) =>
-      this.serieService.listArcsBySaga(input.params.sagaId),
+      this.serieService.listArcsBySaga(input.params.sagaSlug),
     );
   }
 
   @Implement(contract.serie.listEpisodesByArc)
   listEpisodesByArc() {
     return implement(contract.serie.listEpisodesByArc).handler(({ input }) =>
-      this.serieService.listEpisodesByArc(input.params.arcId),
+      this.serieService.listEpisodesByArc(input.params.arcSlug),
     );
   }
 
   @Implement(contract.serie.getEpisode)
   getEpisode() {
     return implement(contract.serie.getEpisode).handler(({ input }) =>
-      this.serieService.getEpisode(input.params.episodeId),
+      this.serieService.getEpisode(input.params.episodeNumber),
     );
   }
 }

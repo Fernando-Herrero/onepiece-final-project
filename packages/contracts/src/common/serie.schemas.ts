@@ -3,32 +3,21 @@ import * as z from 'zod/v4';
 import { unlockedCardsSchema } from './user.schemas.js';
 
 export const sagaSchema = z.object({
-  id: z.number().int().positive(),
-  name: z.string(),
-  titleJa: z.string(),
+  slug: z.string(),
+  totalArcs: z.number().int().nonnegative(),
   totalEpisodes: z.number().int().nonnegative(),
-  firstArc: z.number().int().positive(),
-  lastArc: z.number().int().positive(),
-  arcNames: z.array(z.string()),
 });
 
 export const arcSchema = z.object({
-  id: z.number().int().positive(),
-  name: z.string(),
-  description: z.string(),
-  saga: z.string(),
-  sagaId: z.number().int().positive(),
+  slug: z.string(),
+  sagaSlug: z.string(),
+  type: z.enum(['canon', 'filler', 'mixed']),
   totalEpisodes: z.number().int().nonnegative(),
-  isFiller: z.boolean(),
-  firstEpisode: z.number().int().positive(),
-  lastEpisode: z.number().int().positive(),
 });
 
 export const episodeSchema = z.object({
-  id: z.number().int().positive(),
-  name: z.string(),
-  description: z.string(),
-  arc: z.string(),
+  number: z.number().int().positive(),
+  arcSlug: z.string(),
   experience: z.number().int().nonnegative(),
   rewards: unlockedCardsSchema,
 });
@@ -39,13 +28,13 @@ export const sagaListOutputSchema = z.object({
 });
 
 export const arcListOutputSchema = z.object({
-  sagaId: z.number().int().positive(),
+  sagaSlug: z.string(),
   arcs: z.array(arcSchema),
   total: z.number().int().nonnegative(),
 });
 
 export const episodeListOutputSchema = z.object({
-  arcId: z.number().int().positive(),
+  arcSlug: z.string(),
   episodes: z.array(episodeSchema),
   total: z.number().int().nonnegative(),
 });

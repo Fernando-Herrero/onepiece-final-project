@@ -20,21 +20,21 @@ export function SerieArcBlock({
   lastWatchedEpisode,
 }: SerieArcBlockProps) {
   const { t } = useTranslation(['common', 'serie']);
-  const episodesQuery = useSerieEpisodes(arc.id, { enabled: isOpen });
+  const episodesQuery = useSerieEpisodes(arc.slug, { enabled: isOpen });
 
   return (
     <SerieAccordion
       variant="arc"
-      title={t(`arcs.${arc.id}.name`, { ns: 'serie', defaultValue: arc.name })}
-      subtitle={t(`arcs.${arc.id}.description`, {
+      title={t(`arcs.${arc.slug}.name`, { ns: 'serie', defaultValue: '' })}
+      subtitle={t(`arcs.${arc.slug}.description`, {
         ns: 'serie',
-        defaultValue: arc.description,
+        defaultValue: '',
       })}
       meta={t('serie.arc_meta', { episodes: arc.totalEpisodes })}
       isOpen={isOpen}
       onToggle={onToggle}
     >
-      {arc.isFiller ? (
+      {arc.type === 'filler' ? (
         <Badge color="orange" variant="soft" size="1">
           {t('serie.filler')}
         </Badge>
@@ -66,13 +66,11 @@ export function SerieArcBlock({
           <ul className="m-0 flex list-none flex-col gap-2 p-0">
             {episodesQuery.data.episodes.map(episode => (
               <SerieEpisodeCard
-                key={episode.id}
-                episodeId={episode.id}
-                name={episode.name}
-                description={episode.description}
+                key={episode.number}
+                episodeNumber={episode.number}
                 experience={episode.experience}
                 rewards={episode.rewards}
-                watched={episode.id <= lastWatchedEpisode}
+                watched={episode.number <= lastWatchedEpisode}
               />
             ))}
           </ul>

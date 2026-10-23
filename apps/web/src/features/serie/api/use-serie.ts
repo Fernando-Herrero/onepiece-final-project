@@ -17,16 +17,16 @@ export function useSerieSagas(options?: SerieQueryOptions) {
   });
 }
 
-export function useSerieArcs(sagaId: number, options?: SerieQueryOptions) {
+export function useSerieArcs(sagaSlug: string, options?: SerieQueryOptions) {
   return useQuery({
-    ...allQueriesOptions.serie.arcsBySaga(sagaId),
-    enabled: options?.enabled ?? sagaId > 0,
+    ...allQueriesOptions.serie.arcsBySaga(sagaSlug),
+    enabled: options?.enabled,
   });
 }
 
-export function useSerieEpisodes(arcId: number, options?: SerieQueryOptions) {
+export function useSerieEpisodes(arcSlug: string, options?: SerieQueryOptions) {
   return useQuery({
-    ...allQueriesOptions.serie.episodesByArc(arcId),
-    enabled: options?.enabled ?? arcId > 0,
+    ...allQueriesOptions.serie.episodesByArc(arcSlug),
+    enabled: options?.enabled,
   });
 }

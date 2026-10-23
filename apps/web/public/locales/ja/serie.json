@@ -1,486 +1,3866 @@
 {
+  "sagas": {
+    "east-blue": {
+      "name": "イーストブルー編",
+      "nameJa": "イーストブルー編"
+    },
+    "arabasta": {
+      "name": "アラバスタ編",
+      "nameJa": "アラバスタ編"
+    },
+    "sky-island": {
+      "name": "空島編",
+      "nameJa": "空島編"
+    },
+    "water-7": {
+      "name": "ウォーターセブン編",
+      "nameJa": "ウォーターセブン編"
+    },
+    "thriller-bark": {
+      "name": "スリラーバーク編",
+      "nameJa": "スリラーバーク編"
+    },
+    "summit-war": {
+      "name": "頂上戦争編",
+      "nameJa": "頂上戦争編"
+    },
+    "fish-man-island": {
+      "name": "魚人島編",
+      "nameJa": "魚人島編"
+    },
+    "dressrosa": {
+      "name": "ドレスローザ編",
+      "nameJa": "ドレスローザ編"
+    },
+    "whole-cake-island": {
+      "name": "ホールケーキアイランド編",
+      "nameJa": "ホールケーキアイランド編"
+    },
+    "wano-country": {
+      "name": "ワノ国編",
+      "nameJa": "ワノ国編"
+    },
+    "final-saga": {
+      "name": "最終章",
+      "nameJa": "最終章"
+    }
+  },
   "arcs": {
-    "1": {
-      "name": "Romance Dawn",
+    "romance-dawn": {
+      "name": "ロマンス・ドーン編",
       "description": "ルフィが旅を始め、海賊となり、最初の仲間と共に初の試練に立ち向かう。"
     },
-    "2": {
-      "name": "Orange Town",
+    "orange-town": {
+      "name": "オレンジの町編",
       "description": "ルフィとゾロがオレンジの町に到着し、ナミと出会い、バギーから町を解放する。"
     },
-    "3": {
-      "name": "Syrup Village",
+    "syrup-village": {
+      "name": "シロップ村編",
       "description": "仲間たちが船を探し、ウソップと出会い、クロネコの海賊団と対峙する。"
     },
-    "4": {
-      "name": "Baratie",
+    "baratie": {
+      "name": "海上レストラン編",
       "description": "浮遊レストランでコックを探し、サンジが加わり、クリークとの争いが起きる。"
     },
-    "5": {
-      "name": "Arlong Park",
+    "arlong-park": {
+      "name": "アーロンパーク編",
       "description": "ナミの過去が明かされ、アーロンの支配と対峙する。"
     },
-    "6": {
-      "name": "Buggy Side Story (Filler)",
+    "buggy-side-story": {
+      "name": "バギー一味冒険記",
       "description": "バギーと一味のサイドストーリー。軽快でユーモラスな展開。"
     },
-    "7": {
-      "name": "Loguetown",
+    "loguetown": {
+      "name": "ローグタウン編",
       "description": "グランドライン前の最後の寄港地ローグタウンでの対決。"
     },
-    "8": {
-      "name": "Warship Island (Filler)",
+    "warship-island": {
+      "name": "軍艦島編",
       "description": "謎の少女を助けながら海賊と秘密に立ち向かうフィラー編。"
     },
-    "9": {
-      "name": "Reverse Mountain/Laboon",
+    "reverse-mountain": {
+      "name": "リヴァース・マウンテン編",
       "description": "グランドライン入り、ラブーンとの出会い。"
     },
-    "10": {
-      "name": "Whisky Peak",
+    "whisky-peak": {
+      "name": "ウイスキーピーク編",
       "description": "祝祭的な町に隠された危険と敵。"
     },
-    "11": {
-      "name": "Koby and Helmeppo (Filler)",
+    "koby-and-helmeppo": {
+      "name": "コビメッポ奮闘日記",
       "description": "コビーとヘルメッポの成長を描く短編。"
     },
-    "12": {
-      "name": "Little Garden",
+    "little-garden": {
+      "name": "リトルガーデン編",
       "description": "先史時代の島と巨人の戦士たち。"
     },
-    "13": {
-      "name": "Drum Island",
+    "drum-island": {
+      "name": "ドラム島編",
       "description": "氷の島で医者を探す旅。"
     },
-    "14": {
-      "name": "Alabasta",
+    "arabasta": {
+      "name": "アラバスタ編",
       "description": "アラバスタでクロコダイルの陰謀を止める。"
     },
-    "15": {
+    "post-arabasta": {
       "name": "Post-Alabasta",
       "description": "アラバスタ後の休息と次の航路へ。"
     },
-    "16": {
-      "name": "Goat Island (Filler)",
+    "goat-island": {
+      "name": "ヤギの島編",
       "description": "ヤギの島フィラー。"
     },
-    "17": {
-      "name": "Ruluka Island (Filler)",
+    "ruluka-island": {
+      "name": "ルルカ島編",
       "description": "ルルカ島フィラー。"
     },
-    "18": {
-      "name": "Jaya",
+    "jaya": {
+      "name": "ジャヤ編",
       "description": "ジャヤ島到着、空の島への手がかり。"
     },
-    "19": {
-      "name": "Skypiea",
+    "skypiea": {
+      "name": "空島スカイピア編",
       "description": "スカイピア編、神々との戦い。"
     },
-    "20": {
-      "name": "G-8 (Filler)",
+    "g-8": {
+      "name": "G-8編",
       "description": "G-8基地フィラー。"
     },
-    "21": {
-      "name": "Long Ring Long Land",
+    "long-ring-long-land": {
+      "name": "ロングリングロングランド編",
       "description": "フォクシーとのデーヴィ・バック・ファイト。"
     },
-    "22": {
-      "name": "Ocean's Dream (Filler)",
+    "oceans-dream": {
+      "name": "オーシャンズドリーム編",
       "description": "記憶喪失フィラー。"
     },
-    "23": {
-      "name": "Foxy's Return (Filler)",
+    "foxys-return": {
+      "name": "フォクシー帰還編",
       "description": "フォクシー再登場フィラー。"
     },
-    "24": {
-      "name": "Water 7",
+    "water-7": {
+      "name": "ウォーターセブン編",
       "description": "ウォーターセブン、新たな船と対立。"
     },
-    "25": {
-      "name": "Enies Lobby",
+    "enies-lobby": {
+      "name": "エニエス・ロビー編",
       "description": "エニエス・ロビー救出作戦。"
     },
-    "26": {
-      "name": "Post-Enies Lobby",
+    "post-enies-lobby": {
+      "name": "エニエス・ロビー後編",
       "description": "エニエス・ロビー後の休息。"
     },
-    "27": {
-      "name": "Ice Hunter (Filler)",
+    "ice-hunter": {
+      "name": "アイスハンター編",
       "description": "アイスハンター編フィラー。"
     },
-    "28": {
-      "name": "Thriller Bark",
+    "thriller-bark": {
+      "name": "スリラーバーク編",
       "description": "スリラーバーク、モリアとの戦い。"
     },
-    "29": {
-      "name": "Spa Island (Filler)",
+    "spa-island": {
+      "name": "スパアイランド編",
       "description": "スパ島フィラー。"
     },
-    "30": {
+    "sabaody-archipelago": {
       "name": "Sabaody Archipelago",
       "description": "シャボンディ諸島、新世界への入口。"
     },
-    "31": {
+    "amazon-lily": {
       "name": "Amazon Lily",
       "description": "アマゾン・リリー、エースを探すルフィ。"
     },
-    "32": {
+    "impel-down": {
       "name": "Impel Down",
       "description": "インペルダウン潜入。"
     },
-    "33": {
-      "name": "Little East Blue (Filler)",
+    "little-east-blue": {
+      "name": "Little East Blue",
       "description": "リトルイーストブルー編フィラー。"
     },
-    "34": {
+    "marineford": {
       "name": "Marineford",
       "description": "マリンフォード頂上戦争。"
     },
-    "35": {
+    "post-war": {
       "name": "Post-War",
       "description": "戦争後の世界と仲間たち。"
     },
-    "36": {
+    "return-to-sabaody": {
       "name": "Return to Sabaody",
       "description": "2年後、シャボンディ再集結。"
     },
-    "37": {
+    "fish-man-island": {
       "name": "Fish-Man Island",
       "description": "魚人島、海底の文化と真実。"
     },
-    "38": {
-      "name": "Z's Ambition (Filler)",
+    "zs-ambition": {
+      "name": "Zの野望編",
       "description": "Zの野望編フィラー。"
     },
-    "39": {
-      "name": "Punk Hazard",
+    "punk-hazard": {
+      "name": "パンクハザード編",
       "description": "パンクハザード、火と氷の島。"
     },
-    "40": {
-      "name": "Caesar Retrieval (Filler)",
+    "caesar-retrieval": {
+      "name": "Caesar Retrieval",
       "description": "シーザー奪還フィラー。"
     },
-    "41": {
-      "name": "Dressrosa",
+    "dressrosa": {
+      "name": "ドレスローザ編",
       "description": "ドレスローザ、ドフラミンゴとの戦い。"
     },
-    "42": {
-      "name": "Silver Mine (Filler)",
+    "silver-mine": {
+      "name": "シルバーマイン編",
       "description": "シルバーマイン編フィラー。"
     },
-    "43": {
-      "name": "Zou",
+    "zou": {
+      "name": "ゾウ編",
       "description": "ゾウ、歴史の texto と新たな試練。"
     },
-    "44": {
-      "name": "Marine Rookie (Filler)",
+    "marine-rookie": {
+      "name": "海軍超新星編",
       "description": "海軍ルーキー編フィラー。"
     },
-    "45": {
-      "name": "Whole Cake Island",
+    "whole-cake-island": {
+      "name": "ホールケーキアイランド編",
       "description": "ホールケーキアイランド、サンジとビッグ・マム。"
     },
-    "46": {
-      "name": "Levely",
+    "levely": {
+      "name": "世界会議編",
       "description": "世界会議レヴェリー。"
     },
-    "47": {
-      "name": "Wano Country (Part 1)",
+    "wano-country-act-1": {
+      "name": "ワノ国編 第一幕",
       "description": "ワノ国到着（前編）。"
     },
-    "48": {
-      "name": "Cidre Guild (Filler)",
+    "cidre-guild": {
+      "name": "シードル・ギルド編",
       "description": "シードルギルド編フィラー。"
     },
-    "49": {
-      "name": "Wano Country (Part 2)",
+    "romance-dawn-special": {
+      "name": "ROMANCE DAWN"
+    },
+    "wano-country-act-2": {
+      "name": "ワノ国編 第二幕",
       "description": "ワノ国編（中編）。"
     },
-    "50": {
-      "name": "Uta's Past (Filler)",
+    "wano-country-act-3": {
+      "name": "ワノ国編 第三幕",
+      "description": "ワノ国決戦（後編）。"
+    },
+    "uta-past": {
+      "name": "ウタの過去編",
       "description": "ウタの過去編フィラー。"
     },
-    "51": {
-      "name": "Wano Country (Part 3)",
-      "description": "ワノ国決戦（後編）。"
+    "egghead": {
+      "name": "未来島エッグヘッド編"
+    },
+    "elbaph": {
+      "name": "エルバフ編"
     }
   },
   "episodes": {
     "1": {
-      "name": "I'm Luffy! The Man Who's Gonna Be King of the Pirates!",
+      "name": "俺はルフィ！海賊王になる男だ！",
       "description": "海の真ん中の樽から現れた謎の少年。アルビダの海賊に襲われた客船で、海軍を目指すコビーと出会う。"
     },
     "2": {
-      "name": "Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!",
+      "name": "大剣豪現る！海賊狩りロロノア・ゾロ",
       "description": "ルフィとコビーがシェルタウンで、モーガン大佐の囚人となったロロノア・ゾロと出会う。"
     },
     "3": {
-      "name": "Morgan vs. Luffy! Who's This Beautiful Young Woman?",
+      "name": "モーガンVSルフィ！謎の美少女は誰？",
       "description": "ルフィとゾロが暴君モーガン大佐と対峙。謎の女が影から戦いを見守る。"
     },
     "4": {
-      "name": "Luffy's Past! The Red-Haired Shanks Appears!",
+      "name": "ルフィの過去！赤髪のシャンクス登場",
       "description": "シャンクスとの幼少期のフラッシュバックでルフィの能力と麦わら帽子の由来が明かされる。一行はオレンジの町へ。"
     },
     "5": {
-      "name": "A Terrifying Mysterious Power! Captain Buggy, the Clown Pirate!",
+      "name": "恐怖　謎の力！海賊道化バギー船長！",
       "description": "悪魔の実の能力者バギーとオレンジの町を舞台にした戦い。"
     },
     "6": {
-      "name": "Desperate Situation! Beast Tamer Mohji vs. Luffy!",
+      "name": "絶体絶命！猛獣使いモージＶＳルフィ！",
       "description": "ルフィが忠犬と店を守るため、猛獣使いモージとライオンのリッチーと戦う。"
     },
     "7": {
-      "name": "Epic Showdown! Swordsman Zoro vs. Acrobat Cabaji!",
+      "name": "壮絶決闘！剣豪ゾロＶＳ曲芸のカバジ！",
       "description": "負傷したゾロがバギー一味のアクロバットキャバジと剣術勝負。"
     },
     "8": {
-      "name": "Who's the Lucky One? The Devil Fruit Power Showdown!",
+      "name": "勝者はどっち？悪魔の実の能力対決！",
       "description": "ルフィ対バギー最終決戦。悪魔の実の力が激突し、町の運命が決まる。"
     },
     "9": {
-      "name": "The Honorable Liar? Captain Usopp!",
+      "name": "正義のうそつき?キャプテンウソップ",
       "description": "シロップ村で船を探す一行が、子供たちに空想話を語るウソップと出会う。"
     },
     "10": {
-      "name": "The Weirdest Guy Ever! Jango the Hypnotist!",
+      "name": "史上最強の変な奴！催眠術師ジャンゴ",
       "description": "催眠術師ジャンゴ登場。カヤの執事をめぐる陰謀が明らかに。"
     },
     "11": {
-      "name": "Expose the Plot! Pirate Butler, Captain Kuro!",
+      "name": "陰謀を暴け！海賊執事キャプテンクロ",
       "description": "クラハドールが「百計のクロ」だったと判明。ウソップが暗殺計画を知る。"
     },
     "12": {
-      "name": "Clash with the Black Cat Pirates! The Great Battle on the Slope!",
+      "name": "激突！クロネコ海賊団坂道の大攻防！",
       "description": "北の坂での決戦開始。麦わらの一味とウソップ対クロネコの海賊団。"
     },
     "13": {
-      "name": "The Terrifying Duo! Meowban Brothers vs. Zoro!",
+      "name": "恐怖の二人組！ニャーバン兄弟VSゾロ",
       "description": "ゾロ対シャムとブチ。ルフィたちも残りの海賊と戦う。"
     },
     "14": {
-      "name": "Luffy Back in Action! Miss Kaya's Desperate Resistance!",
+      "name": "ルフィ復活！カヤお嬢様の決死の抵抗",
       "description": "ルフィがジャンゴの催眠から回復。カヤが脅威に抵抗。"
     },
     "15": {
-      "name": "Beat Kuro! Usopp the Man's Tearful Resolve!",
+      "name": "クロを倒せ！男ウソップ涙の決意！",
       "description": "ウソップが恐れと向き合い、クロとの最終対決へ。"
     },
     "16": {
-      "name": "Protect Kaya! The Usopp Pirates' Great Efforts!",
+      "name": "カヤを守れ！ウソップ海賊団大活躍！",
       "description": "ウソップの仲間たちがカヤを守る。"
     },
     "17": {
-      "name": "Anger Explosion! Kuro vs. Luffy! How It Ends!",
+      "name": "怒り爆発！クロVSルフィ決着の行方！",
       "description": "ルフィ対クロ最終決戦で村とカヤの運命が決まる。"
     },
     "18": {
-      "name": "You're the Weird One! Jango vs. Usopp!",
+      "name": "あんたが珍獣！ガイモンと奇妙な仲間",
       "description": "ウソップ対ジャンゴ。狙撃手としての実力を示す。"
     },
     "19": {
-      "name": "The Three-Sword Style's Past! Zoro and Kuina's Vow!",
+      "name": "三刀流の過去！ゾロとくいなの誓い！",
       "description": "ゾロと幼馴染クイナの誓い。三刀流を志した理由。"
     },
     "20": {
-      "name": "Famous Cook! Sanji of the Sea Restaurant!",
+      "name": "名物コック！海上レストランのサンジ",
       "description": "海上レストラン「バラティエ」でサンジと出会う。"
     },
     "21": {
-      "name": "Unwelcome Customer! Sanji's Food and Ghin's Debt!",
+      "name": "招かれざる客！サンジの飯とギンの恩",
       "description": "空腹のギンがバラティエの「誰でも食べさせる」理念を試す。"
     },
     "22": {
-      "name": "The Strongest Pirate Fleet! Commodore Don Krieg!",
+      "name": "最強の海賊艦隊！提督ドン・クリーク",
       "description": "東の海最大の海賊艦隊、ドン・クリークがバラティエを狙う。"
     },
     "23": {
-      "name": "Protect Baratie! The Great Pirate, Red Foot Zeff!",
+      "name": "守れバラティエ！大海賊・赫足のゼフ",
       "description": "ゼフの「赤足」時代とサンジとの過去が明かされる。"
     },
     "24": {
-      "name": "Hawk-Eye Mihawk! The Great Swordsman vs. Pirate Hunter Zoro!",
+      "name": "鷹の目のミホーク！剣豪ゾロ海に散る",
       "description": "世界最強の剣士ミホークがゾロとの決闘を求めて来る。"
     },
     "25": {
-      "name": "The Emerge of the Deadly Weapon! Zoro's New Special Attack!",
+      "name": "必殺足技炸裂！サンジVS鉄壁のパール",
       "description": "絶体絶命のゾロが新技を放つ。"
     },
     "26": {
-      "name": "Zoro's Vow to His Captain! I'll Never Lose Again!",
+      "name": "ゼフとサンジの夢　幻のオールブルー",
       "description": "ミホークに敗れたゾロがルフィに誓う「二度と負けない」。"
     },
     "27": {
-      "name": "Cool-headed, Cold-hearted Demon! Pirate Fleet Chief Commander Ghin!",
+      "name": "冷徹非情の鬼人　海賊艦隊総隊長ギン",
       "description": "ギンがクリークへの忠義とサンジへの恩義の間で揺れる。"
     },
     "28": {
-      "name": "I Won't Die! Fierce Battle, Luffy vs. Krieg!",
+      "name": "死なねェよ!激闘ルフィVSクリーク!",
       "description": "ルフィ対クリーク決戦。ギンが毒ガスからルフィを救う。"
     },
     "29": {
-      "name": "The Conclusion of the Deadly Battle! A Spear of Blind Determination!",
+      "name": "死闘の決着！腹にくくった１本の槍！",
       "description": "ルフィのゴムゴムのバズーカでクリークを倒すクライマックス。"
     },
     "30": {
-      "name": "Set Sail! The Seafaring Cook Sets off With Luffy!",
+      "name": "旅立ち！海のコックはルフィとともに",
       "description": "サンジがオールブルーを目指し一味に加わる。"
     },
     "31": {
-      "name": "The Worst Man in the Eastern Seas! Fishman Pirate Arlong!",
+      "name": "東の海最悪の男！魚人海賊アーロン！",
       "description": "ナミがメリー号を持ち去る。ジョニーとヨサクがアーロンの情報を持つ。"
     },
     "32": {
-      "name": "Witch of Cocoyashi Village! Arlong's Female Leader!",
+      "name": "ココヤシ村の魔女！アーロンの女幹部",
       "description": "ゾロとウソップがココヤシ村でナミの正体を知る。"
     },
     "33": {
-      "name": "Usopp Dead?! When is Luffy Going to Make Landfall?!",
+      "name": "ウソップ死す？！ルフィ上陸はまだ？",
       "description": "ウソップがアーロンに敗北。ルフィとサンジが向かう。"
     },
     "34": {
-      "name": "Everyone's Gathered! Usopp Speaks the Truth About Nami!",
+      "name": "全員集結！ウソップが語るナミの真実",
       "description": "ウソップがナミの過去とアーロンとの関係を明かす。"
     },
     "35": {
-      "name": "Untold Past! Female Warrior Bellemere!",
+      "name": "秘められた過去！女戦士ベルメール！",
       "description": "ベルメールとナミ、ノジコのフラッシュバック。"
     },
     "36": {
-      "name": "Survive! Mother Bellemere and Nami's Bond!",
+      "name": "生き抜け！母ベルメールとナミの絆！",
       "description": "アーロンがベルメールを殺し、ナミが村を救うために働く。"
     },
     "37": {
-      "name": "Luffy Rises! Result of the Broken Promise!",
+      "name": "ルフィ立つ！裏切られた約束の結末！",
       "description": "ネズミ軍曹の策略でナミが助けを求める。ルフィが麦わら帽子を渡す。"
     },
     "38": {
-      "name": "Luffy in Big Trouble! Fishmen vs. the Luffy Pirates!",
+      "name": "ルフィ大ピンチ！魚人VSルフィ海賊団",
       "description": "アーロンパークでの戦い開始。ルフィが水の中に閉じ込められる。"
     },
     "39": {
-      "name": "Luffy Submerged! Zoro vs. Hatchan the Octopus!",
+      "name": "ルフィ水没！ゾロVSタコのはっちゃん",
       "description": "ゾロ対六刀流のハッチアン。"
     },
     "40": {
-      "name": "Proud Warriors! Sanji and Usopp's Fierce Battles!",
+      "name": "誇り高き戦士！激闘サンジとウソップ",
       "description": "サンジ対クロオビ、ウソップ対チュウ。"
     },
     "41": {
-      "name": "Luffy at Full Power! Nami's Determination and the Straw Hat!",
+      "name": "ルフィ全開！ナミの決意と麦わら帽子",
       "description": "ゲンゾとノジコがルフィを救う。ナミが生きる決意。"
     },
     "42": {
-      "name": "Explosion! Fishman Arlong's Fierce Assault From the Sea!",
+      "name": "炸裂！魚人ア!）ロン海からの猛攻撃！",
       "description": "アーロンの本気の魚人パワー。"
     },
     "43": {
-      "name": "End of the Fishman Empire! Nami's My Friend!",
+      "name": "魚人帝国の終わり！ナミは俺の仲間だ！",
       "description": "ルフィがアーロンを倒し「お前は仲間だ」と宣言。"
     },
     "44": {
-      "name": "Departure! Farewell to the Brave Cocoyashi Village!",
+      "name": "笑顔の旅立ち！さらば故郷ココヤシ村",
       "description": "ナミが故郷を離れ navigator として正式加入。"
     },
     "45": {
-      "name": "Bounty! Straw Hat Luffy Becomes Known to the World!",
+      "name": "賞金首！麦わらのルフィ世に知れ渡る",
       "description": "ルフィ初懸賞金3000万ベリー。"
     },
     "46": {
-      "name": "Chase Straw Hat! Little Buggy's Big Adventure!",
+      "name": "麦わらを追え！小さなバギーの大冒険",
       "description": "バギーの復讐を描くスペシャル。"
     },
     "47": {
-      "name": "You've Been Waiting For It! The Return of Captain Buggy!",
+      "name": "お待ちかね！あぁ復活のバギー船長！",
       "description": "バギー再登場、一味再建を目指す。"
     },
     "48": {
-      "name": "The Town of the Beginning and the End! Landfall at Logue Town!",
+      "name": "始まりと終りの町・ローグタウン上陸",
       "description": "ローグタウン到着。ロジャーが生まれ、処刑された町。"
     },
     "49": {
-      "name": "Kitetsu III and Yubashiri! Zoro's New Swords and the Woman Sergeant Major!",
+      "name": "三代鬼徹と雪走！ゾロの新刀と女曹長",
       "description": "ゾロが三代鬼徹と雪走を手に入れ、タシギと出会う。"
     },
     "50": {
-      "name": "Usopp vs. Daddy the Father! Showdown at High Noon!",
+      "name": "ウソップVS子連れのダディ真昼の決闘",
       "description": "ウソップ対狙撃手ダディの正午の決闘。"
     },
     "51": {
-      "name": "Fiery Cooking Battle? Sanji vs. the Beautiful Chef!",
+      "name": "炎の料理バトル?サンジVS美人シェフ",
       "description": "サンジ対美女シェフカルメンの料理勝負。"
     },
     "52": {
-      "name": "Buggy's Revenge! The Man Who Smiles On the Execution Platform!",
+      "name": "バギーのリベンジ！処刑台で笑う男！",
       "description": "バギーが処刑台でルフィを狙う。嵐がルフィを救う。"
     },
     "53": {
-      "name": "The Legend Has Started! Head for the Grand Line!",
+      "name": "伝説は始まった！目指せ偉大なる航路",
       "description": "スモーカーから逃れグランドラインへ。"
     },
     "54": {
-      "name": "Precursor to a New Adventure! Apis, a Mysterious Girl!",
+      "name": "新たなる冒険の予感！謎の少女アピス",
       "description": "謎の少女アピスを助ける。"
     },
     "55": {
-      "name": "Miraculous Creature! Apis's Secret and the Legendary Island!",
+      "name": "奇跡の生物！アピスの秘密と伝説の島",
       "description": "千年竜リュウジとの交流。伝説の島を目指す。"
     },
     "56": {
-      "name": "Eric Attacks! Great Escape from Warship Island!",
+      "name": "エリック出撃！軍艦島からの大脱出！",
       "description": "エリックが軍艦島を襲撃。"
     },
     "57": {
-      "name": "Lone Island in a Distant Sea! The Legendary Lost Island!",
+      "name": "絶海の孤島！伝説のロストアイランド",
       "description": "失われた島への旅が続く。"
     },
     "58": {
-      "name": "Duel in the Ruins! Tense Zoro vs. Eric!",
+      "name": "廃墟の決闘！緊迫のゾロ対エリック！",
       "description": "ゾロ対エリック、遺跡での決闘。"
     },
     "59": {
-      "name": "Luffy, Completely Surrounded! Admiral Nelson's Secret Strategy!",
+      "name": "ルフィ完全包囲！提督ネルソンの秘策",
       "description": "ネルソン提督の作戦でルフィが包囲される。"
     },
     "60": {
-      "name": "Those Who Soar in the Open Sky! Revival of the 1000 Year Legend!",
+      "name": "大空を舞うもの！蘇る千年の伝説！",
       "description": "千年竜たちが再び空を翔ける。"
     },
     "61": {
-      "name": "An Angry Showdown! Cross the Red Line!",
+      "name": "怒りの決着！赤い大陸を乗り越えろ！",
       "description": "東の海編最終回。赤い土の大陸を越えグランドラインへ。"
-    }
-  },
-  "sagas": {
-    "1": {
-      "name": "イーストブルー編"
     },
-    "2": {
-      "name": "アラバスタ編"
+    "62": {
+      "name": "最初の砦?巨大クジラ・ラブーン現る"
     },
-    "3": {
-      "name": "空島編"
+    "63": {
+      "name": "男の約束！ルフィとクジラ再会の誓い"
     },
-    "4": {
-      "name": "ウォーターセブン編"
+    "64": {
+      "name": "海賊歓迎の町?ウイスキーピーク上陸"
     },
-    "5": {
-      "name": "スリラーバーク編"
+    "65": {
+      "name": "炸裂三刀流！ゾロVSバロックワークス"
     },
-    "6": {
-      "name": "頂上戦争編"
+    "66": {
+      "name": "真剣勝負！ルフィVSゾロ謎の大決闘！"
     },
-    "7": {
-      "name": "魚人島編"
+    "67": {
+      "name": "王女ビビを届けろ！ルフィ海賊団出航"
     },
-    "8": {
-      "name": "ドレスローザ編"
+    "68": {
+      "name": "頑張れコビー！コビメッポ海軍奮闘記"
     },
-    "9": {
-      "name": "ホールケーキアイランド編"
+    "69": {
+      "name": "コビメッポの決意！ガープ中将の親心"
     },
-    "10": {
-      "name": "ワノ国編"
+    "70": {
+      "name": "太古の島！リトルガーデンに潜む影！"
+    },
+    "71": {
+      "name": "でっかい決闘！巨人ドリーとブロギー"
+    },
+    "72": {
+      "name": "ルフィ怒る！聖なる決闘に卑劣な罠"
+    },
+    "73": {
+      "name": "ブロギー勝利の号泣！エルバフの決着"
+    },
+    "74": {
+      "name": "魔のキャンドル！無念の涙と怒りの涙"
+    },
+    "75": {
+      "name": "ルフィを襲う魔力！カラーズトラップ"
+    },
+    "76": {
+      "name": "いざ反撃！ウソップの機転と火炎星！"
+    },
+    "77": {
+      "name": "さらば巨人の島！アラバスタを目指せ"
+    },
+    "78": {
+      "name": "ナミが病気?海に降る雪の向こうに！"
+    },
+    "79": {
+      "name": "奇襲！ブリキング号とブリキのワポル"
+    },
+    "80": {
+      "name": "医者のいない島?名も無き国の冒険！"
+    },
+    "81": {
+      "name": "ハッピーかい?魔女と呼ばれた医者！"
+    },
+    "82": {
+      "name": "ドルトンの覚悟！ワポル軍団島に上陸"
+    },
+    "83": {
+      "name": "雪の住む島！ドラムロッキーを登れ！"
+    },
+    "84": {
+      "name": "トナカイは青っ鼻！チョッパーの秘密"
+    },
+    "85": {
+      "name": "はみだし者の夢！やぶ医者ヒルルク！"
+    },
+    "86": {
+      "name": "ヒルルクの桜と受け継がれゆく意志！"
+    },
+    "87": {
+      "name": "VSワポル軍団！バクバクの実の能力！"
+    },
+    "88": {
+      "name": "動物系悪魔の実！チョッパー七段変形"
+    },
+    "89": {
+      "name": "王国の支配終る時！信念の旗は永遠に"
+    },
+    "90": {
+      "name": "ヒルルクの桜！ドラムロッキーの奇跡"
+    },
+    "91": {
+      "name": "さようならドラム島！僕は海へ出る！"
+    },
+    "92": {
+      "name": "アラバスタの英雄と船上のバレリーナ"
+    },
+    "93": {
+      "name": "いざ砂漠の国へ！雨を呼ぶ粉と反乱軍"
+    },
+    "94": {
+      "name": "豪傑達の再会！奴の名は火拳のエース"
+    },
+    "95": {
+      "name": "エースとルフィ！熱き想いと兄弟の絆"
+    },
+    "96": {
+      "name": "緑の町エルマルとクンフージュゴン！"
+    },
+    "97": {
+      "name": "砂の国の冒険！炎熱の大地に棲む魔物"
+    },
+    "98": {
+      "name": "砂漠の海賊団登場！自由に生きる男達"
+    },
+    "99": {
+      "name": "ニセモノの意地！心の反乱軍カミュ!"
+    },
+    "100": {
+      "name": "反乱軍戦士コーザ！ビビに誓った夢！"
+    },
+    "101": {
+      "name": "陽炎の決闘！エースVS男スコーピオン"
+    },
+    "102": {
+      "name": "遺跡と迷子！ビビと仲間と国のかたち"
+    },
+    "103": {
+      "name": "スパイダーズカフェに8時敵幹部集合"
+    },
+    "104": {
+      "name": "ルフィVSビビ!仲間に賭ける涙の誓い"
+    },
+    "105": {
+      "name": "アラバスタ戦線！夢の町レインベース"
+    },
+    "106": {
+      "name": "絶体絶命の罠!レインディナーズ突入"
+    },
+    "107": {
+      "name": "ユートピア作戦発動!動き出した反乱"
+    },
+    "108": {
+      "name": "恐怖のバナナワニとミスタープリンス"
+    },
+    "109": {
+      "name": "逆転大脱出への鍵！ドルドルボール！"
+    },
+    "110": {
+      "name": "情無用の死闘！ルフィVSクロコダイル"
+    },
+    "111": {
+      "name": "奇跡への疾走！アラバスタ動物ランド"
+    },
+    "112": {
+      "name": "反乱軍VS国王軍！決戦はアルバーナ！"
+    },
+    "113": {
+      "name": "嘆きのアルバーナ!激闘カルー隊長!"
+    },
+    "114": {
+      "name": "仲間の夢に誓う！決闘モグラ塚4番街"
+    },
+    "115": {
+      "name": "本日大公開！マネマネモンタージュ！"
+    },
+    "116": {
+      "name": "ナミに変身！ボンクレ－連発バレエ拳法"
+    },
+    "117": {
+      "name": "ナミの旋風注意報！クリマタクト炸裂"
+    },
+    "118": {
+      "name": "王家に伝わる秘密！古代兵器プルトン"
+    },
+    "119": {
+      "name": "豪剣の極意！鋼鉄を斬る力と物の呼吸"
+    },
+    "120": {
+      "name": "戦いは終わった！コーザが掲げた白い旗"
+    },
+    "121": {
+      "name": "ビビの声の行方！英雄は舞い降りた！"
+    },
+    "122": {
+      "name": "砂ワニと水ルフィ！決闘第2ラウンド"
+    },
+    "123": {
+      "name": "ワニっぽい！王家の墓へ走れルフィ！"
+    },
+    "124": {
+      "name": "悪夢の時迫る！ここは砂砂団秘密基地"
+    },
+    "125": {
+      "name": "偉大なる翼！我が名は国の守護神ペル"
+    },
+    "126": {
+      "name": "越えていく！アラバスタに雨が降る！"
+    },
+    "127": {
+      "name": "武器よさらば！海賊といくつかの正義"
+    },
+    "128": {
+      "name": "海賊たちの宴とアラバスタ脱出作戦!"
+    },
+    "129": {
+      "name": "始まりはあの日!ビビが語る冒険譚"
+    },
+    "130": {
+      "name": "危険な香り！七人目はニコ・ロビン！"
+    },
+    "131": {
+      "name": "はじめての患者！ランブルボール秘話"
+    },
+    "132": {
+      "name": "航海士の反乱！ゆずれない夢の為に！"
+    },
+    "133": {
+      "name": "受け継がれる夢！カレーの鉄人サンジ"
+    },
+    "134": {
+      "name": "咲かせてみせます！男ウソップ八尺玉"
+    },
+    "135": {
+      "name": "噂の海賊狩り！さすらいの剣士ゾロ！"
+    },
+    "136": {
+      "name": "ヤギの島のゼニィと山の中の海賊船"
+    },
+    "137": {
+      "name": "儲かりまっか？金貸しゼニィの野望"
+    },
+    "138": {
+      "name": "島のお宝の行方！ゼニィ海賊団出撃！"
+    },
+    "139": {
+      "name": "虹色の霧伝説！ルルカ島の老人ヘンゾ"
+    },
+    "140": {
+      "name": "永遠の国の住人！パンプキン海賊団！"
+    },
+    "141": {
+      "name": "故郷への想い！脱出不能の海賊墓場！"
+    },
+    "142": {
+      "name": "乱戦必至！ウエットンの野望と虹の塔"
+    },
+    "143": {
+      "name": "そして伝説が始まる！いざ虹の彼方へ"
+    },
+    "144": {
+      "name": "奪われた記録！サルベージ王マシラ！"
+    },
+    "145": {
+      "name": "怪物登場！白ひげ一味には手を出すな"
+    },
+    "146": {
+      "name": "夢を見るな！嘲りの街モックタウン！"
+    },
+    "147": {
+      "name": "海賊の高み！夢を語る男と海底探索王"
+    },
+    "148": {
+      "name": "伝説の一族！うそつきノーランド"
+    },
+    "149": {
+      "name": "雲舵いっぱい！サウスバードを追え！"
+    },
+    "150": {
+      "name": "幻想は叶わない!?ベラミーVS猿山連合"
+    },
+    "151": {
+      "name": "一億の男！世界最高権力と海賊黒ひげ"
+    },
+    "152": {
+      "name": "船は空をゆく！突き上げる海流に乗れ"
+    },
+    "153": {
+      "name": "ここは空の海！空の騎士と天国の門"
+    },
+    "154": {
+      "name": "神の国スカイピア！雲の渚の天使たち"
+    },
+    "155": {
+      "name": "禁断の聖地！神の住む島と天の裁き！"
+    },
+    "156": {
+      "name": "早くも犯罪者！？スカイピアの法の番人"
+    },
+    "157": {
+      "name": "脱出なるか！？動きはじめた神の試練！"
+    },
+    "158": {
+      "name": "ラブリー通りの罠！全能なる神エネル"
+    },
+    "159": {
+      "name": "すすめカラス丸！生贄の祭壇を目指せ"
+    },
+    "160": {
+      "name": "生存率10%！心綱使いの神官サトリ"
+    },
+    "161": {
+      "name": "「玉の試練」の脅威！迷いの森の死闘"
+    },
+    "162": {
+      "name": "チョッパー危うし！元神VS神官シュラ"
+    },
+    "163": {
+      "name": "摩訶不思議！紐の試練と恋の試練！？"
+    },
+    "164": {
+      "name": "シャンドラの灯を燈せ！戦士ワイパー"
+    },
+    "165": {
+      "name": "天空の黄金郷ジャヤ！目指せ神の社"
+    },
+    "166": {
+      "name": "黄金前夜祭!「ヴァース」への想い!"
+    },
+    "167": {
+      "name": "神・エネル登場!! 生き残りへの夜明曲"
+    },
+    "168": {
+      "name": "牙むく大蛇!遂に始まる生き残り合戦"
+    },
+    "169": {
+      "name": "捨て身の排撃!『戦鬼』ワイパーの覚悟"
+    },
+    "170": {
+      "name": "空中の激戦!海賊ゾロVS戦士ブラハム"
+    },
+    "171": {
+      "name": "唸る燃焼砲!! ルフィVS戦鬼ワイパー"
+    },
+    "172": {
+      "name": "沼の試練! チョッパーVS神官ゲダツ!!"
+    },
+    "173": {
+      "name": "無敵の能力！明かされるエネルの正体"
+    },
+    "174": {
+      "name": "幻の都！雄大なるシャンドラの遺跡！！"
+    },
+    "175": {
+      "name": "生存率0%！！チョッパーVS神官オーム"
+    },
+    "176": {
+      "name": "\"巨大豆蔓”を登れ！！上層遺跡の死闘"
+    },
+    "177": {
+      "name": "鉄の試練の真骨頂！白荊デスマッチ！！"
+    },
+    "178": {
+      "name": "ほとばしる斬撃！ゾロVS神官オーム！！"
+    },
+    "179": {
+      "name": "崩れゆく上層遺跡！終曲への五重奏！！"
+    },
+    "180": {
+      "name": "古代遺跡の対決！神・エネルの目的！！"
+    },
+    "181": {
+      "name": "限りない大地への野望方舟マクシム！！"
+    },
+    "182": {
+      "name": "遂に激突！海賊ルフィVS神・エネル！！"
+    },
+    "183": {
+      "name": "マクシム浮上！動き始めたデスピア！！"
+    },
+    "184": {
+      "name": "ルフィ落下！神の裁きとナミの望み！！"
+    },
+    "185": {
+      "name": "目覚めた二人！燃える恋の救出前線！！"
+    },
+    "186": {
+      "name": "絶望への狂想曲迫り来る空島の消滅！！"
+    },
+    "187": {
+      "name": "鐘の音の導き！大戦士と探検家の物語"
+    },
+    "188": {
+      "name": "呪縛からの解放！大戦士が流した涙！！"
+    },
+    "189": {
+      "name": "永遠の親友！大海原に響く誓いの鐘！！"
+    },
+    "190": {
+      "name": "エンジェル島消滅！雷迎降臨の恐怖！！"
+    },
+    "191": {
+      "name": "巨大豆蔓を倒せ！脱出への最後の望み"
+    },
+    "192": {
+      "name": "神の国の奇跡！天使に届いた島の歌声"
+    },
+    "193": {
+      "name": "戦いの終焉！遠く響く誇り高き幻想曲"
+    },
+    "194": {
+      "name": "我ここに至る！歴史の本文が紡ぐもの"
+    },
+    "195": {
+      "name": "いざ青海へ！！想いが織りなす最終楽章"
+    },
+    "196": {
+      "name": "非常事態発令！悪名高き海賊船潜入！"
+    },
+    "197": {
+      "name": "料理人サンジ！海軍食堂で真価発揮！"
+    },
+    "198": {
+      "name": "囚われたゾロとチョッパー緊急執刀！"
+    },
+    "199": {
+      "name": "迫る海軍の捜査網！囚われた二人目！"
+    },
+    "200": {
+      "name": "決死のルフィとサンジ！救出大作戦！"
+    },
+    "201": {
+      "name": "熱血特別部隊参戦！ブリッジ攻防戦！"
+    },
+    "202": {
+      "name": "包囲網突破！奪還ゴーイングメリー号"
+    },
+    "203": {
+      "name": "消えた海賊船！要塞攻防第2ラウンド"
+    },
+    "204": {
+      "name": "黄金奪還作戦とウエイバー回収作戦!"
+    },
+    "205": {
+      "name": "一網打尽計画！ジョナサン自信の秘策"
+    },
+    "206": {
+      "name": "さらば海軍要塞！脱出への最後の攻防"
+    },
+    "207": {
+      "name": "Great Adventure in Long Ring Long Land!"
+    },
+    "208": {
+      "name": "A Davy Back With the Foxy Pirates!"
+    },
+    "209": {
+      "name": "Round 1! One Lap of the Donut Race!"
+    },
+    "210": {
+      "name": "Silver Fox Foxy! The Merciless Interference!"
+    },
+    "211": {
+      "name": "Round 2! Shoot It Into the Groggy Ring!"
+    },
+    "212": {
+      "name": "A Barrage of Red Cards in Groggy Ring!"
+    },
+    "213": {
+      "name": "Round 3! The Round-and-Round Roller Race!"
+    },
+    "214": {
+      "name": "A Seriously Heated Race! Into the Final Round!"
+    },
+    "215": {
+      "name": "Screaming-Hot Bombardment! Pirate Dodgeball!"
+    },
+    "216": {
+      "name": "Showdown on the Cliff! Red Light, Green Light!"
+    },
+    "217": {
+      "name": "The Captains Square Off! The Final Combat Round!"
+    },
+    "218": {
+      "name": "Full-Blast Slow-Slow Onslaught vs. Invulnerable Luffy!"
+    },
+    "219": {
+      "name": "Epic, Heated Combat! The Fateful Final Conclusion!"
+    },
+    "220": {
+      "name": "Was It Lost? Stolen? Who Are You?"
+    },
+    "221": {
+      "name": "A Mysterious Boy With a Horn and Robin's Deduction!"
+    },
+    "222": {
+      "name": "Now, Let's Get Back Our Memories! The Pirate Crew Lands on the Island!"
+    },
+    "223": {
+      "name": "Zoro Bares His Fangs! A Savage Animal Stands in the Way!"
+    },
+    "224": {
+      "name": "The Last Counterattack by the Memory Thief Who Reveals His True Colors!"
+    },
+    "225": {
+      "name": "Proud Man! Silver Fox Foxy!"
+    },
+    "226": {
+      "name": "The Guy Who's the Closest To Invincible? And the Most Dangerous Man!"
+    },
+    "227": {
+      "name": "Navy Headquarters Admiral Aokiji! The Ferocity of an Ultimate Powerhouse!"
+    },
+    "228": {
+      "name": "Duel Between Rubber and Ice! Luffy vs. Aokiji!"
+    },
+    "229": {
+      "name": "The Dashing Sea Train and the City of Water: Water Seven!"
+    },
+    "230": {
+      "name": "Adventure in the City on the Water! Head to the Mammoth Shipbuilding Plant!"
+    },
+    "231": {
+      "name": "The Franky Family and Iceburg!"
+    },
+    "232": {
+      "name": "Galley-La Company! A Grand Sight: Dock #1!"
+    },
+    "233": {
+      "name": "Pirate Abduction Incident! A Pirate Ship That Can Only Await Her End!"
+    },
+    "234": {
+      "name": "Rescuing Our Friend! Raid on the Franky House!"
+    },
+    "235": {
+      "name": "Big Fight Under the Moon! The Pirate Flag Flutters With Sorrow!"
+    },
+    "236": {
+      "name": "Luffy vs. Usopp! Collision of Two Men's Pride!"
+    },
+    "237": {
+      "name": "Severe Shock Hits the City of Water! Iceburg Targeted!"
+    },
+    "238": {
+      "name": "Gum-Gum Human vs. Fire-Breathing Cyborg!"
+    },
+    "239": {
+      "name": "The Straw Hat Pirates Are the Culprits? The Protectors of the City of Water!"
+    },
+    "240": {
+      "name": "Eternal Farewell? Nico Robin: The Woman Who Draws Darkness!"
+    },
+    "241": {
+      "name": "Capture Robin! The Determination of the Straw Hats!"
+    },
+    "242": {
+      "name": "Cannon Fire Is the Signal! CP9 Goes Into Action!"
+    },
+    "243": {
+      "name": "CP9 Takes Off Their Masks! Their Shocking True Faces!"
+    },
+    "244": {
+      "name": "Secret Bond! Iceburg and Franky!"
+    },
+    "245": {
+      "name": "Come Back, Robin! Showdown With CP9!"
+    },
+    "246": {
+      "name": "The Straw Hat Pirates Annihilated? The Menace of the Leopard Model!"
+    },
+    "247": {
+      "name": "The Man Who Is Loved Even by His Ship! Usopp's Tears!"
+    },
+    "248": {
+      "name": "Franky's Past! The Day the Sea Train First Ran"
+    },
+    "249": {
+      "name": "Spandam's Scheme! The Day the Sea Train Shook"
+    },
+    "250": {
+      "name": "The End of the Legendary Man! The Day the Sea Train Cried!"
+    },
+    "251": {
+      "name": "The Truth Behind Her Betrayal! Robin’s Sorrowful Decision!"
+    },
+    "252": {
+      "name": "The Steam Whistle Forces Friends Apart! The Sea Train Starts To Run"
+    },
+    "253": {
+      "name": "Sanji Barges In! Sea Train Battle in the Storm!"
+    },
+    "254": {
+      "name": "Nami's Soul Cries Out! Straw Hat Luffy Makes a Comeback!"
+    },
+    "255": {
+      "name": "Another Sea Train? Rocketman Charges Forth!"
+    },
+    "256": {
+      "name": "Rescue Our Friends! A Bond Among Foes Sworn With Fists!"
+    },
+    "257": {
+      "name": "Smash the Wave! Luffy and Zoro Use the Strongest Combo!"
+    },
+    "258": {
+      "name": "A Mysterious Man Appears?! His Name Is Sniperking!"
+    },
+    "259": {
+      "name": "Showdown Between Cooks! Sanji vs. Ramen Kenpo"
+    },
+    "260": {
+      "name": "Rooftop Duel! Franky vs. Nero"
+    },
+    "261": {
+      "name": "Clash! Demon-Slasher Zoro vs. Ship-Slasher T-Bone!"
+    },
+    "262": {
+      "name": "Scramble Over Robin! A Cunning Plan by Sniperking!!"
+    },
+    "263": {
+      "name": "The Judicial Island! Full View of Enies Lobby!"
+    },
+    "264": {
+      "name": "Landing Operations Start! Charge in, Straw Hats!"
+    },
+    "265": {
+      "name": "Luffy Cuts Through! Big Showdown on the Judicial Island!"
+    },
+    "266": {
+      "name": "Battle Against Giants! Open the Second Gate!"
+    },
+    "267": {
+      "name": "Find a Way Out! Rocketman Takes Flight!"
+    },
+    "268": {
+      "name": "Catch up With Luffy! The Straw Hats' All-Out Battle"
+    },
+    "269": {
+      "name": "Robin Betrayed! The Motive of the World Government!"
+    },
+    "270": {
+      "name": "Give Robin Back! Luffy vs. Blueno!"
+    },
+    "271": {
+      "name": "Don’t Stop! Hoist the Counterattack Signal!"
+    },
+    "272": {
+      "name": "Almost to Luffy! Gather at the Courthouse Plaza!"
+    },
+    "273": {
+      "name": "Everything Is To Protect My Friends! Second Gear Activated!"
+    },
+    "274": {
+      "name": "Give Us Your Answer, Robin! The Straw Hats' Outcry!"
+    },
+    "275": {
+      "name": "Robin's Past! The Girl Was Called a Devil!"
+    },
+    "276": {
+      "name": "Fated Mother and Daughter! The Mother's Name Is Olvia!"
+    },
+    "277": {
+      "name": "The Tragedy of Ohara! The Terror of the Buster Call!"
+    },
+    "278": {
+      "name": "Say You Want To Live! We Are Your Friends!!"
+    },
+    "279": {
+      "name": "Jump Towards the Falls! Luffy’s Feelings!"
+    },
+    "280": {
+      "name": "The Ways of Men! Zoro's Techniques, Usopp's Dream!"
+    },
+    "281": {
+      "name": "A Bond of Friendship Woven by Tears! Nami's World Map!"
+    },
+    "282": {
+      "name": "Parting Builds a Man's Character! Sanji and Chopper!"
+    },
+    "283": {
+      "name": "Everything Is for Her Friends! Robin in the Darkness!"
+    },
+    "284": {
+      "name": "I'm Not Gonna Hand Over the Blueprints! Franky's Decision!"
+    },
+    "285": {
+      "name": "Obtain the Five Keys! The Straw Hat Pirates vs. CP9!"
+    },
+    "286": {
+      "name": "Devil Fruit Powers! Kaku and Jabra Transform!"
+    },
+    "287": {
+      "name": "I Won't Kick Even if It Costs Me My Life! Sanji's Chivalry!"
+    },
+    "288": {
+      "name": "Fukurou's Miscalculation! My Cola Is the Water of Life!"
+    },
+    "289": {
+      "name": "Zoro Busts Out a New Technique! The Sword's Name Is Sniperking?"
+    },
+    "290": {
+      "name": "Uncontrollable! Chopper's Forbidden Rumble!"
+    },
+    "291": {
+      "name": "Boss Luffy Returns! Is It a Dream or Reality? Lottery Ruckus!"
+    },
+    "292": {
+      "name": "A Big Rice Cake Tossing Race at the Castle! Red Nose's Plot!"
+    },
+    "293": {
+      "name": "Bubble Master Kalifa! The Soap Trap Closes in on Nami!"
+    },
+    "294": {
+      "name": "Resounding Bad News! The Buster Call Invoked!"
+    },
+    "295": {
+      "name": "Five Namis? Nami Strikes Back With Mirages!"
+    },
+    "296": {
+      "name": "Nami's Decision! Fire at the Out-of-Control Chopper!"
+    },
+    "297": {
+      "name": "Hunter Sanji Makes an Entrance? Elegy for a Lying Wolf!"
+    },
+    "298": {
+      "name": "Fiery Kicks! Sanji's Full Course of Foot Techniques!"
+    },
+    "299": {
+      "name": "Fierce Sword Attacks! Zoro vs. Kaku, Powerful Sword Fighting Showdown!"
+    },
+    "300": {
+      "name": "Demon God Zoro! An Incarnation of Asura Born From Fighting Spirit!"
+    },
+    "301": {
+      "name": "Spandam Frightened! The Hero on the Tower of Law!"
+    },
+    "302": {
+      "name": "Robin Freed! Luffy vs. Lucci, Showdown Between Leaders!"
+    },
+    "303": {
+      "name": "Boss Luffy Is the Culprit? Track Down the Missing Great Cherry Tree!"
+    },
+    "304": {
+      "name": "I Can't Protect Anyone Unless I Win! Third Gear Activated!"
+    },
+    "305": {
+      "name": "Shivering Past! Dark Justice and Rob Lucci!"
+    },
+    "306": {
+      "name": "A Mysterious Mermaid Appears? As Consciousness Fades Away..."
+    },
+    "307": {
+      "name": "Cannon Fire Sinks the Island! Franky's Lamentation!"
+    },
+    "308": {
+      "name": "Wait for Luffy! Mortal Combat on the Bridge of Hesitation!"
+    },
+    "309": {
+      "name": "Fists Full of Emotion! Luffy Unleashes Gatling With All His Might!"
+    },
+    "310": {
+      "name": "From the Sea, a Friend Arrives! The Straw Hats Share the Strongest Bond!"
+    },
+    "311": {
+      "name": "Everyone Makes a Great Escape! The Road to Victory Is for the Pirates!"
+    },
+    "312": {
+      "name": "Thank You, Merry! Snow Falls Over the Parting Sea!"
+    },
+    "313": {
+      "name": "Peace Interrupted! A Navy Vice Admiral With a Fist of Love!"
+    },
+    "314": {
+      "name": "The Strongest Family? Luffy's Father Revealed!"
+    },
+    "315": {
+      "name": "Its Name Is the New World! The Fate of the Grand Line!"
+    },
+    "316": {
+      "name": "Shanks Makes a Move! The Linchpin to the Reckless Era!"
+    },
+    "317": {
+      "name": "The Girl in Search of Her Yagara! Great Search in the City of Water!"
+    },
+    "318": {
+      "name": "Mothers Are Strong! Zoro's Hectic Household Chores!"
+    },
+    "319": {
+      "name": "Sanji's Shock! Mysterious Old Man and His Super Yummy Cooking!"
+    },
+    "320": {
+      "name": "Everyone Finally Has a Bounty! A Pirate Group Worth Over 600 Million!"
+    },
+    "321": {
+      "name": "The King of Animals That Overlooks the Sea! The Dream Ship Magnificently Completed!"
+    },
+    "322": {
+      "name": "Goodbye My Dear Underlings! Franky Departs!"
+    },
+    "323": {
+      "name": "Departing the City of Water! Usopp Mans up and Brings Closure to the Duel!"
+    },
+    "324": {
+      "name": "Wanted Posters Make It Around the World! Celebrations in Their Hometowns as the Ship Moves Forward!"
+    },
+    "325": {
+      "name": "The Most Heinous Power! Blackbeard’s Darkness Attacks Ace!"
+    },
+    "326": {
+      "name": "謎の海賊ご一行！サニー号と危険な罠"
+    },
+    "327": {
+      "name": "サニー号ピンチ！唸れ超速の秘密メカ"
+    },
+    "328": {
+      "name": "新世界に沈む夢！失意の海賊パズール"
+    },
+    "329": {
+      "name": "襲い来る刺客たち！氷上大バトル開始"
+    },
+    "330": {
+      "name": "大苦戦麦わら一味！旗にかける海賊魂"
+    },
+    "331": {
+      "name": "暑苦しさ全開！迫る双子の磁力パワー"
+    },
+    "332": {
+      "name": "大混乱の館！怒るドンと囚われの一味"
+    },
+    "333": {
+      "name": "不死鳥ふたたび！友に誓う海賊旗の夢"
+    },
+    "334": {
+      "name": "アツアツ超決戦！ルフィvs灼熱のドン"
+    },
+    "335": {
+      "name": "新世界で待つ！勇ましき海賊との別れ"
+    },
+    "336": {
+      "name": "出動チョッパーマン！守れ渚のＴＶ局"
+    },
+    "337": {
+      "name": "魔の海突入！霧に浮かぶ謎のガイコツ"
+    },
+    "338": {
+      "name": "人に逢えた喜び！ ガイコツ紳士の正体"
+    },
+    "339": {
+      "name": "怪現象ぞくぞく！ スリラーバーク上陸"
+    },
+    "340": {
+      "name": "天才と呼ばれた男！ ホグバック現る！"
+    },
+    "341": {
+      "name": "ナミ大ピンチ！ ゾンビ屋敷と透明人間"
+    },
+    "342": {
+      "name": "ゾンビの謎！悪夢のホグバック研究所"
+    },
+    "343": {
+      "name": "その名はモリア！影を握る大海賊の罠"
+    },
+    "344": {
+      "name": "ゾンビ歌の饗宴！夜討ちの鐘は闇の音"
+    },
+    "345": {
+      "name": "動物いっぱい？ペローナの不思議の庭"
+    },
+    "346": {
+      "name": "消える麦わら一味！現れた謎の剣士！"
+    },
+    "347": {
+      "name": "残る騎士道！ナミを守る裏切りゾンビ"
+    },
+    "348": {
+      "name": "空から参上！剣狭ハナウタはあの男！"
+    },
+    "349": {
+      "name": "ルフィ緊急事態！最強の影の行き先！"
+    },
+    "350": {
+      "name": "魔人と呼ばれた戦士！！オーズ復活の時"
+    },
+    "351": {
+      "name": "500年ぶりの目覚め！！オーズ開眼！！"
+    },
+    "352": {
+      "name": "信念の命乞い！！アフロを守るブルック"
+    },
+    "353": {
+      "name": "男の誓いは死なず！！遠い空で待つ友へ"
+    },
+    "354": {
+      "name": "必ず会いに行く！！ブルックと約束の岬"
+    },
+    "355": {
+      "name": "メシとナミと影！！ルフィ怒りの大反撃"
+    },
+    "356": {
+      "name": "ウソップ最強？ネガティブは任せとけ"
+    },
+    "357": {
+      "name": "将軍ゾンビ瞬殺！！オーズは冒険気分！！"
+    },
+    "358": {
+      "name": "炎の騎士サンジ！！蹴り潰せの偽り挙式"
+    },
+    "359": {
+      "name": "スケスケの因縁？奪われたサンジの夢"
+    },
+    "360": {
+      "name": "助けて英雄！敵は不死身のプリンセス"
+    },
+    "361": {
+      "name": "ペローナ恐怖！！嘘のウはウソップのウ"
+    },
+    "362": {
+      "name": "屋根に舞う斬撃！決着ゾロVSリューマ"
+    },
+    "363": {
+      "name": "チョッパー激怒！！ホグバック魔の医術"
+    },
+    "364": {
+      "name": "オーズ吼える！！出て来い麦わらの一味"
+    },
+    "365": {
+      "name": "敵はルフィ！！最強ゾンビ対麦わらの一味"
+    },
+    "366": {
+      "name": "倒れろアブサロム！！ナミ友情の雷撃！！"
+    },
+    "367": {
+      "name": "奪えダウン！！必殺麦わらドッキング？"
+    },
+    "368": {
+      "name": "足音なき襲来！！謎の訪問者•暴君くま"
+    },
+    "369": {
+      "name": "オーズ+モリア 力と頭脳の最強合体"
+    },
+    "370": {
+      "name": "逆転への秘策 ナイトメア•ルフィ見参"
+    },
+    "371": {
+      "name": "壊滅、麦わら一味 カゲカゲの能力全開"
+    },
+    "372": {
+      "name": "超絶バトルスタート！ ルフィVSルフィ"
+    },
+    "373": {
+      "name": "決着迫る！ たたき込め、とどめの一撃"
+    },
+    "374": {
+      "name": "肉体が消える！ 悪夢の島に射す朝日！"
+    },
+    "375": {
+      "name": "終わらない危機！麦わら一味抹殺指令"
+    },
+    "376": {
+      "name": "すべてを弾く くまのニキュニキュの能力"
+    },
+    "377": {
+      "name": "仲間の痛みは我が痛み ゾロ決死の戦い"
+    },
+    "378": {
+      "name": "遠い日の約束 海賊の唄と小さなクジラ"
+    },
+    "379": {
+      "name": "ブルックの過去 陽気な仲間悲しき別れ"
+    },
+    "380": {
+      "name": "ビンクスの酒 過去と現在をつなぐ唄"
+    },
+    "381": {
+      "name": "新たな仲間！音楽家・鼻唄のブルック"
+    },
+    "382": {
+      "name": "ノロノロの脅威 銀狐のフォクシー再び"
+    },
+    "383": {
+      "name": "お宝大争奪戦！ 崩壊！スパアイランド号"
+    },
+    "384": {
+      "name": "ブルック大奮闘 真の仲間への道険し？"
+    },
+    "385": {
+      "name": "偉大なる航路半周到達！赤い土の大陸"
+    },
+    "386": {
+      "name": "麦わら一味憎し　鉄仮面のデュバル登場"
+    },
+    "387": {
+      "name": "因縁の再会！囚われの魚人を救い出せ"
+    },
+    "388": {
+      "name": "悲劇！仮面に隠されたデュバルの真実"
+    },
+    "389": {
+      "name": "炸裂！サニー号の超秘密兵器ガオン砲"
+    },
+    "390": {
+      "name": "魚人島を目指して上陸　シャボンディ諸島"
+    },
+    "391": {
+      "name": "暴虐！シャボンディの支配者天竜人"
+    },
+    "392": {
+      "name": "新たなライバル集結！11人の超新星"
+    },
+    "393": {
+      "name": "標的はケイミー<nowiki>！！</nowiki>迫る人攫い屋の魔手"
+    },
+    "394": {
+      "name": "ケイミーを救え 諸島に残る暗黒の歴史"
+    },
+    "395": {
+      "name": "タイムリミット 人間オークション開幕"
+    },
+    "396": {
+      "name": "鉄拳炸裂！オークションをぶっつぶせ"
+    },
+    "397": {
+      "name": "大パニック！オークション会場の死闘"
+    },
+    "398": {
+      "name": "大将黄猿動く！騒然シャボンディ諸島"
+    },
+    "399": {
+      "name": "包囲網を突破せよ！海軍VS三人の船長"
+    },
+    "400": {
+      "name": "ロジャーとレイリー　海賊王とその右腕"
+    },
+    "401": {
+      "name": "回避不可能！？大将黄猿の光速の蹴り！！"
+    },
+    "402": {
+      "name": "圧倒的！海軍の戦闘兵器パシフィスタ"
+    },
+    "403": {
+      "name": "さらなる強敵現る！鉞かついだ戦桃丸"
+    },
+    "404": {
+      "name": "大将黄猿の猛攻 麦わら一味絶体絶命！"
+    },
+    "405": {
+      "name": "消された仲間たち 麦わら一味最後の日"
+    },
+    "406": {
+      "name": "時代劇特別編 ルフィ親分再び見参"
+    },
+    "407": {
+      "name": "時代劇特別編 破れ！スリラー商会の罠"
+    },
+    "408": {
+      "name": "上陸！男子禁制の島アマゾン・リリー"
+    },
+    "409": {
+      "name": "急げ！仲間のもとへ 女ヶ島の冒険"
+    },
+    "410": {
+      "name": "みんなメロメロ！海賊女帝ハンコック"
+    },
+    "411": {
+      "name": "背中に隠された秘密 遭遇ルフィと蛇姫"
+    },
+    "412": {
+      "name": "非情の裁き！石にされたマーガレット！！"
+    },
+    "413": {
+      "name": "ルフィ第苦戦！ヘビ姉妹の覇気の力！！"
+    },
+    "414": {
+      "name": "能力全開バトル！！ゴムゴムVSヘビヘビ"
+    },
+    "415": {
+      "name": "ハンコックの告白　姉妹の忌まわしき過去"
+    },
+    "416": {
+      "name": "エースを救え！新たな目的地は大監獄"
+    },
+    "417": {
+      "name": "恋はハリケーン！メロメロハンコック"
+    },
+    "418": {
+      "name": "仲間達の行方　天候の科学とからくり島"
+    },
+    "419": {
+      "name": "仲間達の行方　巨鳥の島と桃色の楽園"
+    },
+    "420": {
+      "name": "仲間達の行方　島をつなぐ橋と食人植物"
+    },
+    "421": {
+      "name": "仲間達の行方！ネガティブ王女と悪魔王！"
+    },
+    "422": {
+      "name": "決死の潜入！海底監獄インペルダウン"
+    },
+    "423": {
+      "name": "地獄で再会！？バラバラの実の能力者！"
+    },
+    "424": {
+      "name": "破れ！紅蓮地獄　バギーのド派手大作戦"
+    },
+    "425": {
+      "name": "監獄最強の男！毒人間・マゼラン登場"
+    },
+    "426": {
+      "name": "映画連動特別編　動き出す金獅子の野望"
+    },
+    "427": {
+      "name": "映画連動特別編　狙われた小さな東の海"
+    },
+    "428": {
+      "name": "映画連動特別編　アミーゴ海賊団の猛攻"
+    },
+    "429": {
+      "name": "映画連動特別編　決戦！ルフィVSラルゴ"
+    },
+    "430": {
+      "name": "囚われの王下七武海！海侠のジンベエ"
+    },
+    "431": {
+      "name": "牢番長サルデスの罠　LV3・飢餓地獄"
+    },
+    "432": {
+      "name": "解き放たれた白鳥！再会！ボン・クレー"
+    },
+    "433": {
+      "name": "署長マゼラン動く 完成！麦わら包囲網"
+    },
+    "434": {
+      "name": "全戦力集結！ LV4·焦熱地獄の決戦"
+    },
+    "435": {
+      "name": "マゼラン強し！ボン・クレー敵前逃亡"
+    },
+    "436": {
+      "name": "雌雄決す！捨て身のルフィ最後の一撃"
+    },
+    "437": {
+      "name": "友達だから　ボン・クレー決死の救出行"
+    },
+    "438": {
+      "name": "地獄に楽園 インペルダウンLV5.5"
+    },
+    "439": {
+      "name": "ルフィ治療開始 イワさん奇跡の能力！！"
+    },
+    "440": {
+      "name": "奇跡を信じて！ボン・クレー魂の声援"
+    },
+    "441": {
+      "name": "ルフィ復活！イワさん脱獄計画始動！！"
+    },
+    "442": {
+      "name": "エース護送開始 最下層LV6の攻防！"
+    },
+    "443": {
+      "name": "最強チーム結成 震撼！インペルダウン"
+    },
+    "444": {
+      "name": "さらなる混乱！黒ひげ・ティーチ襲来"
+    },
+    "445": {
+      "name": "危険な出会い！黒ひげと雨のシリュウ"
+    },
+    "446": {
+      "name": "意地でも倒れぬ！本気のハンニャバル"
+    },
+    "447": {
+      "name": "怒りのJETピストル　ルフィVS黒ひげ"
+    },
+    "448": {
+      "name": "マゼランを止めろ！イワさん奥義炸裂"
+    },
+    "449": {
+      "name": "マゼランの奇策！はばまれた脱獄計画"
+    },
+    "450": {
+      "name": "脱獄チーム絶体絶命 禁じ手\"毒の巨兵\""
+    },
+    "451": {
+      "name": "起こせ最後の奇跡 正義の門を突破せよ"
+    },
+    "452": {
+      "name": "目指せ海軍本部 エース救出への船出！"
+    },
+    "453": {
+      "name": "仲間達の行方 空島リポートと改造動物"
+    },
+    "454": {
+      "name": "仲間達の行方 巨鳥のヒナと桃色の対決"
+    },
+    "455": {
+      "name": "仲間達の行方 革命軍と暴食の森の罠！"
+    },
+    "456": {
+      "name": "仲間達の行方 巨大な墓標とパンツの恩"
+    },
+    "457": {
+      "name": "海軍本部直前回想特別編 兄弟の誓い！"
+    },
+    "458": {
+      "name": "海軍本部直前回想特別編 集結! 三大将"
+    },
+    "459": {
+      "name": "決戦の刻迫る！ 海軍最強の布陣完成！"
+    },
+    "460": {
+      "name": "巨大艦隊あらわる　襲来！ 白ひげ海賊団"
+    },
+    "461": {
+      "name": "決戦の幕開け！ エースと白ひげの過去"
+    },
+    "462": {
+      "name": "世界を滅ぼす力！ グラグラの実の能力"
+    },
+    "463": {
+      "name": "すべてを焼き尽くす！ 大将赤犬の能力"
+    },
+    "464": {
+      "name": "魔人の子孫！ リトルオーズJr.驀進！"
+    },
+    "465": {
+      "name": "勝者だけが正義 発動！センゴクの作戦！"
+    },
+    "466": {
+      "name": "麦わらチーム到着 風雲急を告げる戦場"
+    },
+    "467": {
+      "name": "死んでも助ける ルフィVS海軍戦闘開始"
+    },
+    "468": {
+      "name": "激戦の連続! 能力者軍団VS能力者軍団"
+    },
+    "469": {
+      "name": "クマに起きた異変 イワさん怒りの一撃"
+    },
+    "470": {
+      "name": "剣豪ミホーク ルフィに迫る黒刀の斬撃"
+    },
+    "471": {
+      "name": "殲滅作戦始動 パシフィスタ軍団の威力"
+    },
+    "472": {
+      "name": "赤犬の謀略! おとしいれられた白ひげ"
+    },
+    "473": {
+      "name": "包囲壁作動! 白ひげ海賊団絶体絶命<nowiki>!!</nowiki>"
+    },
+    "474": {
+      "name": "処刑執行命令下る 包囲壁を突破せよ!"
+    },
+    "475": {
+      "name": "最終局面突入! 白ひげ起死回生の一手"
+    },
+    "476": {
+      "name": "ルフィ力尽く! オリス広場の総力戦<nowiki>!!</nowiki>"
+    },
+    "477": {
+      "name": "命を削る力 テンション・ホルモン再び"
+    },
+    "478": {
+      "name": "約束のために激突!<nowiki>!!</nowiki> ルフィとコビー<nowiki>!!</nowiki>"
+    },
+    "479": {
+      "name": "処刑台目前! 開かれたエースへの道<nowiki>!!</nowiki>"
+    },
+    "480": {
+      "name": "それぞれの選んだ道　ルフィVSガープ!"
+    },
+    "481": {
+      "name": "エース救出! 白ひげ最後の船長命令<nowiki>!!</nowiki>"
+    },
+    "482": {
+      "name": "火をも焼き尽くす能力 赤犬非情の追撃"
+    },
+    "483": {
+      "name": "答えを探して 火拳のエース戦場に死す"
+    },
+    "484": {
+      "name": "海軍本部崩壊! 白ひげ言葉なき怒り!"
+    },
+    "485": {
+      "name": "ケジメをつける 白ひげVS黒ひげ海賊団"
+    },
+    "486": {
+      "name": "ショーの開幕 明かされた黒ひげの企み"
+    },
+    "487": {
+      "name": "赤犬の執念! ルフィを襲うマグマの拳"
+    },
+    "488": {
+      "name": "必死の叫び 運命を変える勇気ある数秒"
+    },
+    "489": {
+      "name": "シャンクス見参! 頂上戦争ついに終結"
+    },
+    "490": {
+      "name": "群雄割拠す! \"新しい時代\"の始まり!"
+    },
+    "491": {
+      "name": "女ヶ島上陸 ルフィを責める過酷な現実"
+    },
+    "492": {
+      "name": "最強タッグ! 奮闘、ルフィとトリコ!"
+    },
+    "493": {
+      "name": "ルフィとエース 兄弟の出会いの物語!"
+    },
+    "494": {
+      "name": "サボ登場! 不確かな物の終着駅の少年"
+    },
+    "495": {
+      "name": "おれは逃げない　エース決死の救出作戦"
+    },
+    "496": {
+      "name": "いつか海へ! 三人の悪童ちかいの盃!"
+    },
+    "497": {
+      "name": "ダダン一家との別れ!? 完成! 秘密基地"
+    },
+    "498": {
+      "name": "ルフィ弟子入り!?　海賊王と戦った男!"
+    },
+    "499": {
+      "name": "ビッグタイガーとの戦い! 誰がキャプテンになるの!?"
+    },
+    "500": {
+      "name": "奪われた自由! 三兄弟に迫る貴族の罠"
+    },
+    "501": {
+      "name": "放たれた炎 グレイ・ターミナルの危機"
+    },
+    "502": {
+      "name": "自由はどこにある? 少年の悲しき船出"
+    },
+    "503": {
+      "name": "よろしく頼む! 兄弟から届いた手紙!"
+    },
+    "504": {
+      "name": "約束を果たすため それぞれの旅立ち!"
+    },
+    "505": {
+      "name": "あいつらに会いてェ! ルフィ涙の叫び"
+    },
+    "506": {
+      "name": "麦わらの一味激震! もたらされた凶報"
+    },
+    "507": {
+      "name": "冥王レイリーとの再会 ルフィ決断の時"
+    },
+    "508": {
+      "name": "船長のもとへ 空島の脱獄と冬島の事件"
+    },
+    "509": {
+      "name": "接触! 大剣豪ミホーク ゾロ意地の死闘"
+    },
+    "510": {
+      "name": "サンジの受難 王国へと帰還した女王!"
+    },
+    "511": {
+      "name": "まさかの再上陸! ルフィ海軍本部へ!"
+    },
+    "512": {
+      "name": "仲間に届け かけめぐる大ニュース!"
+    },
+    "513": {
+      "name": "動き出す海賊たち! 驚天動地の新世界"
+    },
+    "514": {
+      "name": "地獄を生き抜け サンジ男をかけた勝負"
+    },
+    "515": {
+      "name": "まだまだ強くなる!ゾロ船長への誓い"
+    },
+    "516": {
+      "name": "ルフィ修行開始　2年後に約束の場所で"
+    },
+    "517": {
+      "name": "新章開幕 再集結！麦わらの一味"
+    },
+    "518": {
+      "name": "一触即発！ルフィVSニセルフィ"
+    },
+    "519": {
+      "name": "海軍出動 狙われた麦わらの一味"
+    },
+    "520": {
+      "name": "大物集結 ニセ麦わら一味の脅威"
+    },
+    "521": {
+      "name": "戦闘開始！見せろ修行の成果！"
+    },
+    "522": {
+      "name": "全員集合 ルフィ新世界への船出"
+    },
+    "523": {
+      "name": "驚愕の真実 サニー号を守った男"
+    },
+    "524": {
+      "name": "海中の死闘　現れた大海原の悪魔"
+    },
+    "525": {
+      "name": "深海で遭難 逸れた麦わらの一味"
+    },
+    "526": {
+      "name": "海底火山噴火！流されて魚人島"
+    },
+    "527": {
+      "name": "魚人島上陸 うるわしき人魚たち"
+    },
+    "528": {
+      "name": "興奮爆発！サンジ生命の危機！"
+    },
+    "529": {
+      "name": "魚人島滅亡！？シャーリーの予言"
+    },
+    "530": {
+      "name": "魚人島の王 海神ネプチューン！"
+    },
+    "531": {
+      "name": "竜宮城！助けた鮫に連れられて"
+    },
+    "532": {
+      "name": "弱虫で泣き虫！硬殻塔の人魚姫"
+    },
+    "533": {
+      "name": "緊急事態発生 占拠された竜宮城"
+    },
+    "534": {
+      "name": "竜宮城激震！しらほし誘拐事件"
+    },
+    "535": {
+      "name": "ホーディ襲来 復讐計画の始まり"
+    },
+    "536": {
+      "name": "竜宮城の決戦！ゾロVSホーディ"
+    },
+    "537": {
+      "name": "しらほしを守れ デッケンの追撃"
+    },
+    "538": {
+      "name": "一味敗北！？ホーディ竜宮城制圧"
+    },
+    "539": {
+      "name": "蘇る因縁！ナミと魚人海賊団！"
+    },
+    "540": {
+      "name": "奴隷解放の英雄 冒険家タイガー"
+    },
+    "541": {
+      "name": "黄猿登場！タイガーを狙う罠！"
+    },
+    "542": {
+      "name": "チーム結成！チョッパーを救え"
+    },
+    "543": {
+      "name": "英雄の最期 タイガー衝撃の真実"
+    },
+    "544": {
+      "name": "海賊団分裂 ジンベエVSアーロン"
+    },
+    "545": {
+      "name": "揺れる魚人島！漂着した天竜人"
+    },
+    "546": {
+      "name": "突然の悲劇！未来を閉ざす凶弾"
+    },
+    "547": {
+      "name": "再び現在へ！動き出すホーディ"
+    },
+    "548": {
+      "name": "王国激震 ネプチューン処刑指令"
+    },
+    "549": {
+      "name": "生じた亀裂！ルフィVSジンベエ"
+    },
+    "550": {
+      "name": "ホーディの異変 凶薬の真の力！"
+    },
+    "551": {
+      "name": "決戦始まる ギョンコルド広場！"
+    },
+    "552": {
+      "name": "衝撃の告白 オトヒメ暗殺の真実"
+    },
+    "553": {
+      "name": "しらほしの涙！ルフィ遂に登場"
+    },
+    "554": {
+      "name": "大激突！麦わら一味VS10万の敵"
+    },
+    "555": {
+      "name": "大技炸裂！ゾロ・サンジ出撃！"
+    },
+    "556": {
+      "name": "初披露！サニー号の秘密兵器！"
+    },
+    "557": {
+      "name": "鉄の海賊！フランキー将軍登場"
+    },
+    "558": {
+      "name": "ノア接近！魚人島壊滅の危機！"
+    },
+    "559": {
+      "name": "急げルフィ！しらほし絶対絶命"
+    },
+    "560": {
+      "name": "激闘開始！ルフィVSホーディ！"
+    },
+    "561": {
+      "name": "大乱戦！一味VS新魚人海賊団！"
+    },
+    "562": {
+      "name": "ルフィ敗北！？ホーディ復讐の時"
+    },
+    "563": {
+      "name": "衝撃の事実！ホーディの正体！"
+    },
+    "564": {
+      "name": "ゼロに！ルフィへの熱き願い！"
+    },
+    "565": {
+      "name": "ルフィ渾身の一撃！火拳銃炸裂"
+    },
+    "566": {
+      "name": "ついに決着！ホーディ最終決戦"
+    },
+    "567": {
+      "name": "止まれノア！決死の象銃乱打！"
+    },
+    "568": {
+      "name": "未来へ！タイヨウへと続く道！"
+    },
+    "569": {
+      "name": "明かされた秘密 古代兵器の真実"
+    },
+    "570": {
+      "name": "一味驚愕！新たなる海軍元帥！"
+    },
+    "571": {
+      "name": "お菓子好き！四皇ビッグ・マム"
+    },
+    "572": {
+      "name": "前途多難 新世界に待ち受ける罠"
+    },
+    "573": {
+      "name": "ついに出航！さよなら魚人島"
+    },
+    "574": {
+      "name": "新世界へ！最強の海をめざして"
+    },
+    "575": {
+      "name": "Zの野望編 小さな巨人リリー！"
+    },
+    "576": {
+      "name": "Zの野望編 謎の最強軍団登場！"
+    },
+    "577": {
+      "name": "Zの野望編 決死の大脱出作戦！"
+    },
+    "578": {
+      "name": "Zの野望編 ルフィVSシューゾ！"
+    },
+    "579": {
+      "name": "上陸！燃える島パンクハザード"
+    },
+    "580": {
+      "name": "灼熱の戦い！ルフィVS巨大竜！"
+    },
+    "581": {
+      "name": "一味騒然！衝撃の首だけ侍登場！"
+    },
+    "582": {
+      "name": "驚愕！遂に明かされる島の秘密"
+    },
+    "583": {
+      "name": "子供達を救え！一味戦闘開始"
+    },
+    "584": {
+      "name": "剣術勝負 ブルックVS謎の胴体侍"
+    },
+    "585": {
+      "name": "七武海！トラファルガー・ロー"
+    },
+    "586": {
+      "name": "大ピンチ ルフィ極寒の湖に沈む"
+    },
+    "587": {
+      "name": "激突！ローVSスモーカー中将"
+    },
+    "588": {
+      "name": "2年ぶりの再会！ルフィとロー"
+    },
+    "589": {
+      "name": "世界最悪 恐怖の科学者シーザー"
+    },
+    "590": {
+      "name": "史上最強コラボVS海の大食漢"
+    },
+    "591": {
+      "name": "チョッパー激怒 M非道なる実験"
+    },
+    "592": {
+      "name": "一味抹殺！伝説の殺し屋来襲！"
+    },
+    "593": {
+      "name": "ナミを救え！ルフィ雪山の戦い"
+    },
+    "594": {
+      "name": "結成！ルフィ・ロー海賊同盟！"
+    },
+    "595": {
+      "name": "Mを捉えろ 海賊同盟作戦開始！"
+    },
+    "596": {
+      "name": "全滅の危機 死のモンスター飛来"
+    },
+    "597": {
+      "name": "大激戦 シーザー真の能力発動！"
+    },
+    "598": {
+      "name": "炎切り裂く侍！狐火の錦えもん！"
+    },
+    "599": {
+      "name": "衝撃！謎の男ヴェルゴの正体！"
+    },
+    "600": {
+      "name": "子供達を守れ！迫るMの魔の手"
+    },
+    "601": {
+      "name": "新世界激震 シーザー悪夢の実験"
+    },
+    "602": {
+      "name": "史上最悪の殺戮兵器！シノクニ"
+    },
+    "603": {
+      "name": "反撃開始！ルフィ・ロー大脱出"
+    },
+    "604": {
+      "name": "めざせR棟！海賊同盟快進撃！"
+    },
+    "605": {
+      "name": "たしぎの涙 G5決死の突破作戦"
+    },
+    "606": {
+      "name": "裏切りの中将！鬼竹のヴェルゴ"
+    },
+    "607": {
+      "name": "白熱の激戦 ルフィVSシーザー"
+    },
+    "608": {
+      "name": "闇の黒幕！ドフラミンゴ動く！"
+    },
+    "609": {
+      "name": "ルフィ凍死!? 恐怖の雪女モネ!"
+    },
+    "610": {
+      "name": "ぶつかる拳！二人の中将の戦い"
+    },
+    "611": {
+      "name": "小さなドラゴン！モモの助現る"
+    },
+    "612": {
+      "name": "吹雪の死闘 麦わらの一味VS雪女"
+    },
+    "613": {
+      "name": "奥義炸裂！ゾロ最強の一刀流！"
+    },
+    "614": {
+      "name": "友達を守る！モチャ命がけの逃走"
+    },
+    "615": {
+      "name": "茶ひげ悲痛！ルフィ怒りの一撃"
+    },
+    "616": {
+      "name": "衝撃の決着！{{Ruby|白猟|スモーカー}}VSヴェルゴ！"
+    },
+    "617": {
+      "name": "シーザー撃破！最強の{{Ruby|灰熊銃|グリズリー・マグナム}}"
+    },
+    "618": {
+      "name": "襲来！ドレスローザからの刺客"
+    },
+    "619": {
+      "name": "大暴れ！無敵のフランキー将軍"
+    },
+    "620": {
+      "name": "絶体絶命！パンクハザード大爆発"
+    },
+    "621": {
+      "name": "シーザーを捕獲せよ {{Ruby|将軍砲|ジェネラルキャノン}}炸裂"
+    },
+    "622": {
+      "name": "感動の再会！モモの助と錦えもん"
+    },
+    "623": {
+      "name": "惜別の時 パンクハザード出航！"
+    },
+    "624": {
+      "name": "G5壊滅！ドフラミンゴ急襲！"
+    },
+    "625": {
+      "name": "緊迫！青キジVSドフラミンゴ"
+    },
+    "626": {
+      "name": "消えたシーザー！海賊同盟出撃"
+    },
+    "627": {
+      "name": "ルフィ海に死す!? 海賊同盟崩壊"
+    },
+    "628": {
+      "name": "大逆転！炸裂ルフィ怒りの鉄拳"
+    },
+    "629": {
+      "name": "激震！新世界動かす大ニュース"
+    },
+    "630": {
+      "name": "冒険！愛と情熱の国ドレスローザ"
+    },
+    "631": {
+      "name": "熱狂渦巻く コリーダコロシアム"
+    },
+    "632": {
+      "name": "危険な恋 踊り娘ヴァイオレット"
+    },
+    "633": {
+      "name": "最強の無名戦士！ルーシー登場"
+    },
+    "634": {
+      "name": "海賊貴公子 キャベンディッシュ"
+    },
+    "635": {
+      "name": "運命の再会 ハイエナのベラミー"
+    },
+    "636": {
+      "name": "超新星！人食いのバルトロメオ"
+    },
+    "637": {
+      "name": "群雄割拠！白熱のBブロック！"
+    },
+    "638": {
+      "name": "一撃必殺！驚異のキング・パンチ"
+    },
+    "639": {
+      "name": "闘魚襲来！死の鉄橋を突破せよ"
+    },
+    "640": {
+      "name": "冒険！妖精の島グリーンビット"
+    },
+    "641": {
+      "name": "知られざる世界 トンタッタ王国"
+    },
+    "642": {
+      "name": "世紀の謀略 ドフラミンゴ動く！"
+    },
+    "643": {
+      "name": "天地ゆるがす！大将藤虎の実力"
+    },
+    "644": {
+      "name": "怒りの一撃！巨人VSルーシー"
+    },
+    "645": {
+      "name": "破壊砲炸裂！ルーシー危機一髪"
+    },
+    "646": {
+      "name": "伝説の海賊 {{Ruby|首領|ドン}}・チンジャオ！"
+    },
+    "647": {
+      "name": "光と影 ドレスローザに潜む闇！"
+    },
+    "648": {
+      "name": "出撃 伝説のヒーローウソランド"
+    },
+    "649": {
+      "name": "激戦決着 ルーシーVSチンジャオ"
+    },
+    "650": {
+      "name": "ルフィと宿命の剣闘士レベッカ"
+    },
+    "651": {
+      "name": "守り抜く！レベッカとおもちゃの兵隊"
+    },
+    "652": {
+      "name": "最後の超激戦区 Dブロック開戦"
+    },
+    "653": {
+      "name": "決戦！ジョーラVS麦わらの一味"
+    },
+    "654": {
+      "name": "美剣！白馬のキャベンディッシュ"
+    },
+    "655": {
+      "name": "大激突！サンジVSドフラミンゴ"
+    },
+    "656": {
+      "name": "レベッカ必殺剣！背水の剣舞"
+    },
+    "657": {
+      "name": "最凶の戦士！ローガンVSレベッカ"
+    },
+    "658": {
+      "name": "衝撃！おもちゃの兵隊の正体！"
+    },
+    "659": {
+      "name": "戦慄の過去！ドレスローザの秘密"
+    },
+    "660": {
+      "name": "悪夢！ドレスローザ悲劇の一夜"
+    },
+    "661": {
+      "name": "七武海対決 ローVSドフラミンゴ"
+    },
+    "662": {
+      "name": "両雄相まみえる！麦わらと天夜叉"
+    },
+    "663": {
+      "name": "ルフィ驚愕 エースの意志を継ぐ男"
+    },
+    "664": {
+      "name": "SOP作戦開始　ウソランド突撃"
+    },
+    "665": {
+      "name": "熱き思い レベッカVSスレイマン"
+    },
+    "666": {
+      "name": "勝者決定!? Dブロック衝撃の結末"
+    },
+    "667": {
+      "name": "大将の決断 藤虎VSドフラミンゴ"
+    },
+    "668": {
+      "name": "決勝開始 英雄ディアマンテ登場"
+    },
+    "669": {
+      "name": "動く城！最高幹部ピーカ出現"
+    },
+    "670": {
+      "name": "竜の爪炸裂！ルーシー脅威の一撃！"
+    },
+    "671": {
+      "name": "打倒シュガー 小人の兵隊突撃！"
+    },
+    "672": {
+      "name": "最後の光 我らが隊長の秘密！"
+    },
+    "673": {
+      "name": "{{Ruby|破裂|パンク}}人間 グラディウス大爆発！"
+    },
+    "674": {
+      "name": "ウソつき ウソランド逃走中！"
+    },
+    "675": {
+      "name": "運命の出会い キュロスとリク王"
+    },
+    "676": {
+      "name": "作戦失敗! 英雄ウソランド死す!?"
+    },
+    "677": {
+      "name": "伝説復活！キュロス渾身の一撃"
+    },
+    "678": {
+      "name": "火拳炸裂！復活メラメラの実の力"
+    },
+    "679": {
+      "name": "颯爽登場 革命軍参謀総長サボ！"
+    },
+    "680": {
+      "name": "悪魔の罠 ドレスローザ殲滅作戦"
+    },
+    "681": {
+      "name": "五億の男 狙われたウソランド！"
+    },
+    "682": {
+      "name": "敵陣突破 ルフィ・ゾロ反撃開始"
+    },
+    "683": {
+      "name": "大地鳴動 破壊神巨大ピーカ降臨"
+    },
+    "684": {
+      "name": "大集結！ルフィと凶悪戦士軍団"
+    },
+    "685": {
+      "name": "快進撃！ルフィ軍団VSピーカ！"
+    },
+    "686": {
+      "name": "衝撃告白！ロー熱き魂の誓い！"
+    },
+    "687": {
+      "name": "大激突！参謀総長サボVS大将藤虎"
+    },
+    "688": {
+      "name": "絶体絶命 罠にかかったルフィ！"
+    },
+    "689": {
+      "name": "大脱出！ルフィ起死回生の{{Ruby|象銃|エレファントガン}}"
+    },
+    "690": {
+      "name": "共同戦線 ルフィ勝利への突破口"
+    },
+    "691": {
+      "name": "二人目の侍 夕立ちカン十郎登場"
+    },
+    "692": {
+      "name": "激闘ピーカ戦 ゾロ必殺の一撃！"
+    },
+    "693": {
+      "name": "小人の姫 囚われのマンシェリー"
+    },
+    "694": {
+      "name": "不死身！恐怖の頭割り人形軍団"
+    },
+    "695": {
+      "name": "命かけて！ルフィは勝利の切り札"
+    },
+    "696": {
+      "name": "涙の再会 レベッカとキュロス！"
+    },
+    "697": {
+      "name": "一撃必殺 ドレスローザを救う男"
+    },
+    "698": {
+      "name": "怒り爆発 ルフィ・ロー最強の秘策"
+    },
+    "699": {
+      "name": "気高き一族 ドフラミンゴの正体！"
+    },
+    "700": {
+      "name": "究極の力 オペオペの実の秘密！"
+    },
+    "701": {
+      "name": "悲しき記憶 白い町の少年ロー！"
+    },
+    "702": {
+      "name": "天竜人！ドフィの壮絶なる過去"
+    },
+    "703": {
+      "name": "苦難の道 ローとコラソン命の旅"
+    },
+    "704": {
+      "name": "時迫る！オペオペの実を奪え！"
+    },
+    "705": {
+      "name": "覚悟の時 コラソン別れの笑顔！"
+    },
+    "706": {
+      "name": "行けロー 優しき男最期の戦い！"
+    },
+    "707": {
+      "name": "自由へ！ロー{{Ruby|注射|インジェクション}}ショット炸裂"
+    },
+    "708": {
+      "name": "熱き闘い ローVSドフラミンゴ"
+    },
+    "709": {
+      "name": "幹部決戦 誇り高きハイルディン"
+    },
+    "710": {
+      "name": "愛の決戦 新棟梁サイVSベビー5"
+    },
+    "711": {
+      "name": "男の意地 ベラミー最期の突撃！"
+    },
+    "712": {
+      "name": "疾風怒濤 ハクバVSデリンジャー"
+    },
+    "713": {
+      "name": "バリバリ オマージュ神拳発動！"
+    },
+    "714": {
+      "name": "癒しの姫 マンシェリーを救え！"
+    },
+    "715": {
+      "name": "男の決闘　セニョール愛の挽歌"
+    },
+    "716": {
+      "name": "死の星屑 ディアマンテ猛攻の嵐"
+    },
+    "717": {
+      "name": "{{Ruby|雷の破壊剣|トゥルエノバスタード}}！キュロス怒りの一撃！"
+    },
+    "718": {
+      "name": "大地横断 巨像ピーカ奇襲作戦！"
+    },
+    "719": {
+      "name": "空中決戦 ゾロ新必殺奥義炸裂！"
+    },
+    "720": {
+      "name": "あばよ！ベラミー別れの一撃！"
+    },
+    "721": {
+      "name": "ロー死す ルフィ憤怒の猛攻撃！"
+    },
+    "722": {
+      "name": "執念の刃 逆襲のガンマナイフ！"
+    },
+    "723": {
+      "name": "覇気激突 ルフィVSドフラミンゴ"
+    },
+    "724": {
+      "name": "攻撃不能 トレーボル衝撃の秘密"
+    },
+    "725": {
+      "name": "怒り爆発 おれが全部引き受ける"
+    },
+    "726": {
+      "name": "ギア4！驚異のバウンドマン！"
+    },
+    "727": {
+      "name": "大逆襲！ドフラミンゴの覚醒！"
+    },
+    "728": {
+      "name": "ルフィ！渾身の獅子バズーカ！"
+    },
+    "729": {
+      "name": "火炎竜王 ルフィの命を守りぬけ"
+    },
+    "730": {
+      "name": "奇跡の涙 マンシェリーの戦い！"
+    },
+    "731": {
+      "name": "命の限り 死の鳥カゴを止めろ！"
+    },
+    "732": {
+      "name": "生か死か 運命のカウントダウン"
+    },
+    "733": {
+      "name": "天を討つ ルフィ怒りの{{Ruby|大猿王銃|キングコングガン}}"
+    },
+    "734": {
+      "name": "自由へ！喜びのドレスローザ！"
+    },
+    "735": {
+      "name": "前代未聞 大将藤虎衝撃の決断！"
+    },
+    "736": {
+      "name": "激震走る 動き出す最悪の世代！"
+    },
+    "737": {
+      "name": "伝説誕生 革命戦士サボの冒険！"
+    },
+    "738": {
+      "name": "兄弟の絆 ルフィ・サボ再会秘話"
+    },
+    "739": {
+      "name": "最強の生物 四皇・百獣のカイドウ"
+    },
+    "740": {
+      "name": "藤虎動く 麦わらの一味完全包囲網"
+    },
+    "741": {
+      "name": "非常事態 さらわれたレベッカ！"
+    },
+    "742": {
+      "name": "父娘の絆 キュロスとレベッカ！"
+    },
+    "743": {
+      "name": "男の意地 ルフィVS藤虎真向勝負"
+    },
+    "744": {
+      "name": "逃場無し 大将藤虎非情の追撃！"
+    },
+    "745": {
+      "name": "子分の盃 結成！麦わら大船団！"
+    },
+    "746": {
+      "name": "群雄割拠 荒狂う新世界の怪物達"
+    },
+    "747": {
+      "name": "銀の要塞 ルフィとバルト大冒険"
+    },
+    "748": {
+      "name": "地下迷宮 ルフィ対トロッコ人間"
+    },
+    "749": {
+      "name": "剣技白熱 ロー・ゾロ遂に見参！"
+    },
+    "750": {
+      "name": "絶対絶命 ルフィ極限の灼熱決戦"
+    },
+    "751": {
+      "name": "冒険開幕 幻の島「ゾウ」到着！"
+    },
+    "752": {
+      "name": "新七武海 伝説・白ひげの息子登場"
+    },
+    "753": {
+      "name": "決死の登象 巨象の背の大冒険!"
+    },
+    "754": {
+      "name": "戦闘開始 ルフィＶＳミンク族！"
+    },
+    "755": {
+      "name": "ガルチュー！麦わらの一味再集結"
+    },
+    "756": {
+      "name": "反撃開始  ぐるわらの一味大活躍！"
+    },
+    "757": {
+      "name": "脅威襲来 百獣海賊団ジャック！"
+    },
+    "758": {
+      "name": "昼の王 イヌアラシ公爵登場！"
+    },
+    "759": {
+      "name": "夜の王 ネコマムシの旦那見参"
+    },
+    "760": {
+      "name": "首都壊滅 ぐるわらの一味上陸！"
+    },
+    "761": {
+      "name": "刻限迫る ミンク族と一味の絆！"
+    },
+    "762": {
+      "name": "悪童帰郷 四皇ビッグマムの刺客"
+    },
+    "763": {
+      "name": "失踪の真実 サンジ驚愕の招待状"
+    },
+    "764": {
+      "name": "野郎共へ サンジ別れの置手紙"
+    },
+    "765": {
+      "name": "ネコマムシの旦那に会いに行こう"
+    },
+    "766": {
+      "name": "ルフィ決断 サンジ脱退の危機！"
+    },
+    "767": {
+      "name": "一触即発 イヌとネコと侍！"
+    },
+    "768": {
+      "name": "三人目! 忍者・霧の雷ぞう登場！"
+    },
+    "769": {
+      "name": "赤い石! “ひとつなぎの大秘宝”への道標"
+    },
+    "770": {
+      "name": "ワノ国の秘密 光月家と歴史の本文"
+    },
+    "771": {
+      "name": "男の誓い ルフィと光月モモの助"
+    },
+    "772": {
+      "name": "伝説の航海 イヌとネコと海賊王！"
+    },
+    "773": {
+      "name": "悪夢再び 不死身のジャック強襲"
+    },
+    "774": {
+      "name": "ゾウ防衛戦 ルフィとズニーシャ！"
+    },
+    "775": {
+      "name": "巨象を救え 麦わら救急大作戦!"
+    },
+    "776": {
+      "name": "別れの下象 サンジ奪還の船出！"
+    },
+    "777": {
+      "name": "世界会議へ 王女ビビとしらほし姫"
+    },
+    "778": {
+      "name": "世界会議へ レベッカとサクラ王国"
+    },
+    "779": {
+      "name": "カイドウ再び 脅威迫る最悪の世代！"
+    },
+    "780": {
+      "name": "空腹戦線 ルフィと海軍超新星!"
+    },
+    "781": {
+      "name": "執念の３人 麦わら一味大追撃戦！"
+    },
+    "782": {
+      "name": "悪魔の拳 決戦！ルフィVSグラント"
+    },
+    "783": {
+      "name": "サンジ 帰郷 ビッグ・マムの海域へ！"
+    },
+    "784": {
+      "name": "0と4 遭遇！ジェルマ66"
+    },
+    "785": {
+      "name": "猛毒の危機 ルフィとレイジュ！"
+    },
+    "786": {
+      "name": "万国！ 四皇ビッグ・マム登場"
+    },
+    "787": {
+      "name": "四皇の娘 サンジの婚約者 プリン"
+    },
+    "788": {
+      "name": "大進撃! 食いわずらいのマム"
+    },
+    "789": {
+      "name": "首都崩壊！？ ビッグ・マムとジンベエ"
+    },
+    "790": {
+      "name": "四皇の城 ホールケーキアイランド到着"
+    },
+    "791": {
+      "name": "お菓子な森！ルフィＶＳルフィ"
+    },
+    "792": {
+      "name": "マムの刺客 ルフィと誘惑の森!"
+    },
+    "793": {
+      "name": "海遊国家 ジェルマの王ジャッジ"
+    },
+    "794": {
+      "name": "父子対決 ジャッジVSサンジ！"
+    },
+    "795": {
+      "name": "巨大な野望 ビッグ・マムとシーザー"
+    },
+    "796": {
+      "name": "魂の国 マムの恐るべき能力！"
+    },
+    "797": {
+      "name": "大幹部！三将星クラッカー登場"
+    },
+    "798": {
+      "name": "8億の敵 ルフィVS千手のクラッカー"
+    },
+    "799": {
+      "name": "全力勝負 ギア 4VSビスビスの能力"
+    },
+    "800": {
+      "name": "1と2 集結！ヴィンスモーク家"
+    },
+    "801": {
+      "name": "恩人の命  サンジと料理長 ゼフ"
+    },
+    "802": {
+      "name": "怒りのサンジ ジェルマ66の秘密"
+    },
+    "803": {
+      "name": "捨てた過去 ヴィンスモーク・サンジ"
+    },
+    "804": {
+      "name": "東の海へ サンジ決意の船出"
+    },
+    "805": {
+      "name": "限界勝負 ルフィと無限ビスケット"
+    },
+    "806": {
+      "name": "満腹の力 新ギア４タンクマン！"
+    },
+    "807": {
+      "name": "哀しき決闘 ルフィVSサンジ"
+    },
+    "808": {
+      "name": "哀しき決闘 ルフィVSサンジ"
+    },
+    "809": {
+      "name": "復讐の嵐 怒りの軍団襲来！"
+    },
+    "810": {
+      "name": "冒険の終わり サンジ決意のプロポーズ"
+    },
+    "811": {
+      "name": "ここで待つ ルフィVS怒りの軍団"
+    },
+    "812": {
+      "name": "城内  潜入 奪え！ロード歴史の本文"
+    },
+    "813": {
+      "name": "因縁の対面 ルフィとビッグ・マム！"
+    },
+    "814": {
+      "name": "魂の叫び ブルック＆ペドロ電撃作戦"
+    },
+    "815": {
+      "name": "さよなら プリン涙の決意"
+    },
+    "816": {
+      "name": "左眼の因縁 ペドロVSタマゴ男爵"
+    },
+    "817": {
+      "name": "シケモク サンジの結婚前夜"
+    },
+    "818": {
+      "name": "不屈の魂 ブルックVSビック・マム"
+    },
+    "819": {
+      "name": "母の願い ジェルマの失敗作サンジ"
+    },
+    "820": {
+      "name": "サンジの元へ ルフィ逆襲の大激走"
+    },
+    "821": {
+      "name": "城内動乱 ルフィ約束の場所へ"
+    },
+    "822": {
+      "name": "別れの決意 サンジと麦わら弁当"
+    },
+    "823": {
+      "name": "四皇の寝返り ブルック救出大作戦！"
+    },
+    "824": {
+      "name": "約束の場所 ルフィ限界の一騎打ち"
+    },
+    "825": {
+      "name": "ウソつき ルフィとサンジ"
+    },
+    "826": {
+      "name": "サンジ復活 壊せ！地獄のお茶会"
+    },
+    "827": {
+      "name": "密会！ルフィVSファイアタンク海賊団"
+    },
+    "828": {
+      "name": "死の協定 ルフィ&ベッジ連合軍"
+    },
+    "829": {
+      "name": "ルフィ暗躍 開演直前！陰謀の結婚式"
+    },
+    "830": {
+      "name": "家族集結 開宴! 地獄のお茶会"
+    },
+    "831": {
+      "name": "仮面夫婦 サンジ♡プリン入場！"
+    },
+    "832": {
+      "name": "死のキス - 四皇暗殺作戦開始!"
+    },
+    "833": {
+      "name": "盃返上! 侠客ジンベエの落とし前"
+    },
+    "834": {
+      "name": "作戦失敗!? 反撃のビッグ・マム海賊団"
+    },
+    "835": {
+      "name": "走れサンジ SOS!ジェルマ66"
+    },
+    "836": {
+      "name": "マムの秘密 巨人の島と小さな怪物"
+    },
+    "837": {
+      "name": "マム誕生 カルメルが消えた日"
+    },
+    "838": {
+      "name": "兵器炸裂! ビッグ·マム暗殺の瞬間"
+    },
+    "839": {
+      "name": "悪の軍団 変身!ジェルマ66"
+    },
+    "840": {
+      "name": "父子の訣別 サンジとジャッジ"
+    },
+    "841": {
+      "name": "茶会脱出!ルフィVSビガ·マム"
+    },
+    "842": {
+      "name": "処刑開始!ルフィ連合軍全滅!?"
+    },
+    "843": {
+      "name": "巨城崩壞麦わら一味大脱走開始"
+    },
+    "844": {
+      "name": "巨人の槍 強襲! 空翔るビッグ·マム"
+    },
+    "845": {
+      "name": "プリンの決意 大炎上! 誘惑の森"
+    },
+    "846": {
+      "name": "反撃の雷 ナミと雷雲ゼウス"
+    },
+    "847": {
+      "name": "偶然の再会 サンジと恋する悪プリン"
+    },
+    "848": {
+      "name": "サニーを守れ 奮戦！チョッパー&ブルック"
+    },
+    "849": {
+      "name": "夜明け前 俠客団団長ペドロ"
+    },
+    "850": {
+      "name": "必ず戻る ルフィ命がけの出航！"
+    },
+    "851": {
+      "name": "10億の男 最強の3将星カタクリ"
+    },
+    "852": {
+      "name": "激闘開幕 ルフィVSカタクリ"
+    },
+    "853": {
+      "name": "波の部屋 無敵の操舵手ジンベエ"
+    },
+    "854": {
+      "name": "土竜の脅威 ルフィ沈黙の戦い"
+    },
+    "855": {
+      "name": "死闘決着！？ カタクリ怒りの覚醒"
+    },
+    "856": {
+      "name": "禁断の秘密 カタクリのおやつの時間"
+    },
+    "857": {
+      "name": "ルフィ反撃 無敵カタクリの弱点"
+    },
+    "858": {
+      "name": "危機再び！ギア4vs無双ドーナツ"
+    },
+    "859": {
+      "name": "反逆の娘サンジのケーキ輸送大作戦"
+    },
+    "860": {
+      "name": "男の生き様 ベッジとルフィ船長の決意"
+    },
+    "861": {
+      "name": "ケーキ沈没！？ サンジ&ベッジ逃亡戦"
+    },
+    "862": {
+      "name": "月の獅子 キャロット神秘の大変身"
+    },
+    "863": {
+      "name": "突破せよ 麦わらの一味大海戦！"
+    },
+    "864": {
+      "name": "遂に激突 四皇VS麦わらの一味"
+    },
+    "865": {
+      "name": "冥王直伝 カタクリ戦 大逆転開始"
+    },
+    "866": {
+      "name": "遂に帰還 四皇を止める男サンジ"
+    },
+    "867": {
+      "name": "闇に潜む ルフィを襲う暗殺者！"
+    },
+    "868": {
+      "name": "男の覚悟 カタクリ命がけ大勝負"
+    },
+    "869": {
+      "name": "目覚めろ 最強を越える見聞色"
+    },
+    "870": {
+      "name": "神速の拳 新たなるギア4発動！"
+    },
+    "871": {
+      "name": "遂に終結 壮絶カタクリ戦の行方"
+    },
+    "872": {
+      "name": "絶体絶命 鉄壁のルフィ包囲網!"
+    },
+    "873": {
+      "name": "起死回生 最強の援軍ジェルマ!"
+    },
+    "874": {
+      "name": "最後の砦 タイヨウの海賊団現る"
+    },
+    "875": {
+      "name": "魅惑の味 幸せのサンジのケーキ"
+    },
+    "876": {
+      "name": "仁義の漢 ジンベエ決死の大海流"
+    },
+    "877": {
+      "name": "惜別の時 プリン最後の“お願い„"
+    },
+    "878": {
+      "name": "世界驚愕 第五の海の皇帝現る！"
+    },
+    "879": {
+      "name": "世界会議へ 集結！麦わら盟友達"
+    },
+    "880": {
+      "name": "サボ動く 革命軍全隊長登場!"
+    },
+    "881": {
+      "name": "動き出す 執念の新元帥サカズキ"
+    },
+    "882": {
+      "name": "頂上戦争 継がれた海賊王の意思"
+    },
+    "883": {
+      "name": "夢の一歩 しらほし太陽の下へ!"
+    },
+    "884": {
+      "name": "会いたい ビビとレベッカの想い"
+    },
+    "885": {
+      "name": "聖地の闇 謎の巨大な麦わら帽子"
+    },
+    "886": {
+      "name": "聖地騒然 狙われたしらほし姫！"
+    },
+    "887": {
+      "name": "一触即発 ルフィを狙う二人の四皇"
+    },
+    "888": {
+      "name": "サボ怒る 革命軍幹部くまの悲劇"
+    },
+    "889": {
+      "name": "遂に開幕 陰謀渦巻く世界会議!"
+    },
+    "890": {
+      "name": "マルコ! 白ひげの形見の守護者"
+    },
+    "891": {
+      "name": "滝登り! ワノ国の海域大航海!"
+    },
+    "892": {
+      "name": "ワノ国! 桜舞うサムライの国へ"
+    },
+    "893": {
+      "name": "お玉登場 ルフィVSカイドウ軍!"
+    },
+    "894": {
+      "name": "必ず来る ワノ国のエース伝説!"
+    },
+    "895": {
+      "name": "特別編! 最強の賞金狩りシードル"
+    },
+    "896": {
+      "name": "特別編! 決戦! ルフィVS炭酸王"
+    },
+    "897": {
+      "name": "お玉救え 麦わら荒野を駆ける!"
+    },
+    "898": {
+      "name": "真打ち! 魔術師ホーキンス登場"
+    },
+    "899": {
+      "name": "敗北確定 ストローマンの猛攻!"
+    },
+    "900": {
+      "name": "最高の日 お玉初めてのおしるこ"
+    },
+    "901": {
+      "name": "敵陣突入 役人はびこる博羅町!"
+    },
+    "902": {
+      "name": "横綱登場 お菊狙う無敵の浦島!"
+    },
+    "903": {
+      "name": "相撲決戦 麦わらVS最強の横綱!"
+    },
+    "904": {
+      "name": "ルフィ激怒 ピンチのお玉を救え!"
+    },
+    "905": {
+      "name": "お玉奪還 激闘! ホールデム戦!"
+    },
+    "906": {
+      "name": "一騎打ち 魔術師と死の外科医!"
+    },
+    "907": {
+      "name": "{{Ruby|ROMANCE DAWN|ロマンスドーン}}"
+    },
+    "908": {
+      "name": "宝船到来 ルフィ太郎の恩返し!"
+    },
+    "909": {
+      "name": "謎の墓標 おでん城跡での再会!"
+    },
+    "910": {
+      "name": "伝説の侍 ロジャーが惚れた男!"
+    },
+    "911": {
+      "name": "打倒四皇 極秘討ち入り作戦発動"
+    },
+    "912": {
+      "name": "最強の男 盗賊団棟梁・酒天丸!"
+    },
+    "913": {
+      "name": "全員消滅 カイドウ怒りのボロブレス!"
+    },
+    "914": {
+      "name": "遂に激突 猛攻ルフィVSカイドウ"
+    },
+    "915": {
+      "name": "破壊的! 一撃必殺の雷鳴八卦!"
+    },
+    "916": {
+      "name": "生き地獄 ルフィ屈辱の大採掘場"
+    },
+    "917": {
+      "name": "聖地激動 不敵に笑う四皇黒ひげ"
+    },
+    "918": {
+      "name": "動き出す 打倒カイドウ大計画!"
+    },
+    "919": {
+      "name": "大暴れ! 囚人ルフィとキッド!"
+    },
+    "920": {
+      "name": "大評判! サンジの十八番そば!"
+    },
+    "921": {
+      "name": "豪華絢爛 ワノ国一の美女・小紫"
+    },
+    "922": {
+      "name": "任侠伝! ゾロとトの康二人旅!"
+    },
+    "923": {
+      "name": "緊急事態 ビッグ・マム大接近!"
+    },
+    "924": {
+      "name": "都騒然! サンジ狙う新たな刺客"
+    },
+    "925": {
+      "name": "大活躍! 正義のおそばマスク!"
+    },
+    "926": {
+      "name": "絶体絶命 脅威のオロチお庭番衆"
+    },
+    "927": {
+      "name": "修羅場! 怒れる大蛇 将軍オロチ"
+    },
+    "928": {
+      "name": "花散る! ワノ国一の美女の最期"
+    },
+    "929": {
+      "name": "囚人の絆 ルフィとヒョウじい!"
+    },
+    "930": {
+      "name": "大看板! 疫災のクイーン現る!"
+    },
+    "931": {
+      "name": "よじ登れ ルフィ決死の逃走劇!"
+    },
+    "932": {
+      "name": "生か死か クイーンの大相撲{{Ruby|地獄|インフェルノ}}"
+    },
+    "933": {
+      "name": "牛鬼丸! ゾロおいはぎ橋の決闘"
+    },
+    "934": {
+      "name": "大逆転! 死線を越えた三刀流!"
+    },
+    "935": {
+      "name": "ゾロ驚愕 衝撃! 謎の美女の正体"
+    },
+    "936": {
+      "name": "会得せよ ワノ国の覇気・流桜!"
+    },
+    "937": {
+      "name": "トの康! えびす町一の人気者!"
+    },
+    "938": {
+      "name": "衝撃走る 義賊丑三つ小僧の正体"
+    },
+    "939": {
+      "name": "一味疾る! 救え囚われのトの康"
+    },
+    "940": {
+      "name": "ゾロの怒り SMILEの真実!"
+    },
+    "941": {
+      "name": "トコの涙! オロチ非情の銃弾!"
+    },
+    "942": {
+      "name": "一味乱入! 騒然! 処刑場の激闘"
+    },
+    "943": {
+      "name": "ルフィの決意 破れ大相撲{{Ruby|地獄|インフェルノ}}!"
+    },
+    "944": {
+      "name": "嵐到来! 大暴れビッグ・マム!"
+    },
+    "945": {
+      "name": "おしるこの恨み ルフィ絶体絶命"
+    },
+    "946": {
+      "name": "四皇を止めろ! クイーンの秘策"
+    },
+    "947": {
+      "name": "最凶兵器! ルフィを狙う{{Ruby|疫災|エキサイト}}弾"
+    },
+    "948": {
+      "name": "反撃開始! ルフィと赤鞘の侍!"
+    },
+    "949": {
+      "name": "勝ちに来た! ルフィ決死の叫び"
+    },
+    "950": {
+      "name": "兵どもが夢! ルフィ兎丼制圧!"
+    },
+    "951": {
+      "name": "オロチの追手! 忍者軍団VSゾロ"
+    },
+    "952": {
+      "name": "鬼ヶ島緊迫! 遭遇!? 二人の四皇"
+    },
+    "953": {
+      "name": "日和の告白! おいはぎ橋の再会"
+    },
+    "954": {
+      "name": "その名は閻魔! おでんの名刀!"
+    },
+    "955": {
+      "name": "新たな同盟!? カイドウ軍大集結"
+    },
+    "956": {
+      "name": "迫る決戦! 麦わら一味戦闘態勢"
+    },
+    "957": {
+      "name": "{{ruby|大|ビッグ}}ニュース! 七武海を襲う事件"
+    },
+    "958": {
+      "name": "伝説の戦い! ガープとロジャー"
+    },
+    "959": {
+      "name": "約束の港! ワノ国編第三幕開幕"
+    },
+    "960": {
+      "name": "ワノ国一の侍! 光月おでん登場"
+    },
+    "961": {
+      "name": "涙の弟子入り おでんと錦えもん"
+    },
+    "962": {
+      "name": "動く運命 漂着! 白ひげ海賊団!"
+    },
+    "963": {
+      "name": "おでんの決意! 白ひげの試練!"
+    },
+    "964": {
+      "name": "白ひげの弟! おでんの大冒険!"
+    },
+    "965": {
+      "name": "交える刃! ロジャーと白ひげ!"
+    },
+    "966": {
+      "name": "ロジャーの願い! 新たな旅立ち"
+    },
+    "967": {
+      "name": "生涯をかけて! ロジャーの冒険"
+    },
+    "968": {
+      "name": "海賊王誕生 到達! \"最後の島\""
+    },
+    "969": {
+      "name": "ワノ国へ！ロジャー海賊団解散"
+    },
+    "970": {
+      "name": "悲しき知らせ 大海賊時代幕開け"
+    },
+    "971": {
+      "name": "討ち入り！おでんと赤鞘九人男"
+    },
+    "972": {
+      "name": "決着の時！おでんVSカイドウ！"
+    },
+    "973": {
+      "name": "釜茹での刑 おでん決死の一時間"
+    },
+    "974": {
+      "name": "\"煮えてなんぼのおでんに候\""
+    },
+    "975": {
+      "name": "燃える城！光月の一族の運命！"
+    },
+    "976": {
+      "name": "再び現在！二十年の時をこえて"
+    },
+    "977": {
+      "name": "海は海賊！討入り！いざ鬼ヶ島"
+    },
+    "978": {
+      "name": "最悪の世代進撃！嵐の海の戦い"
+    },
+    "979": {
+      "name": "強運！？リーダー錦えもんの一計"
+    },
+    "980": {
+      "name": "涙の約束！さらわれたモモの助"
+    },
+    "981": {
+      "name": "新たな仲間！海侠のジンベエ！"
+    },
+    "982": {
+      "name": "カイドウの切り札 飛び六胞登場"
+    },
+    "983": {
+      "name": "侍たちの本気！一味鬼ヶ島上陸"
+    },
+    "984": {
+      "name": "ルフィ暴走！？潜入カイドウの宴"
+    },
+    "985": {
+      "name": "お玉への思い ルフィ怒りの一撃"
+    },
+    "986": {
+      "name": "戦う{{Ruby|音楽|ミュージック}}！ルフィを襲う能力！"
+    },
+    "987": {
+      "name": "夢やぶれる！？サンジを誘う罠！"
+    },
+    "988": {
+      "name": "援軍到着！白ひげ海賊団隊長！"
+    },
+    "989": {
+      "name": "漢の誓い！激闘ブラキオタンク"
+    },
+    "990": {
+      "name": "雷鳴八卦！登場カイドウの息子"
+    },
+    "991": {
+      "name": "敵か？味方か？ルフィとヤマト"
+    },
+    "992": {
+      "name": "おでんになりたい ヤマトの思い"
+    },
+    "993": {
+      "name": "爆発！？ヤマトの自由を縛る錠！"
+    },
+    "994": {
+      "name": "赤鞘一騎打ち 菊之丞VSカン十郎"
+    },
+    "995": {
+      "name": "討入り！受け継ぐおでんの意志"
+    },
+    "996": {
+      "name": "鬼ヶ島激動 ルフィ全面戦争開始"
+    },
+    "997": {
+      "name": "月下の戦い 狂戦士“{{Ruby|月の獅子|スーロン}}”"
+    },
+    "998": {
+      "name": "ゼウスの反逆！？ナミ絶体絶命！"
+    },
+    "999": {
+      "name": "君を守る 邂逅ヤマトとモモの助"
+    },
+    "1000": {
+      "name": "圧倒的戦力！麦わらの一味集結"
+    },
+    "1001": {
+      "name": "危険な誘い！クイーン抹殺計画"
+    },
+    "1002": {
+      "name": "新たな因縁！ナミとうるティ！"
+    },
+    "1003": {
+      "name": "悲壮の刃！赤鞘VSカイドウ再び"
+    },
+    "1004": {
+      "name": "受け継ぎし技 炸裂おでんの秘剣"
+    },
+    "1005": {
+      "name": "「氷鬼」の威力！新たな{{Ruby|疫災|エキサイト}}弾"
+    },
+    "1006": {
+      "name": "許さねェ！チョッパーの決意！"
+    },
+    "1007": {
+      "name": "ゾロの追撃！氷鬼in鬼ゴッコ"
+    },
+    "1008": {
+      "name": "ナミ降伏！？うるティの猛頭突き"
+    },
+    "1009": {
+      "name": "ササキの猛攻 装甲部隊VSヤマト"
+    },
+    "1010": {
+      "name": "氷鬼を破れ チョッパーの火策！"
+    },
+    "1011": {
+      "name": "よかねェよ！！サンジを誘う蜘蛛"
+    },
+    "1012": {
+      "name": "逆転の一手！不死鳥マルコの炎"
+    },
+    "1013": {
+      "name": "ヤマトの過去 四皇の首を狙う男"
+    },
+    "1014": {
+      "name": "マルコの涙！白ひげ海賊団の絆"
+    },
+    "1015": {
+      "name": "麦わらのルフィ 海賊王になる男"
+    },
+    "1016": {
+      "name": "怪物決戦！意地張りあう三船長"
+    },
+    "1017": {
+      "name": "大技連発！最悪の世代の猛攻！"
+    },
+    "1018": {
+      "name": "笑うカイドウ！四皇VS新世代！"
+    },
+    "1019": {
+      "name": "お玉の秘策！きびだんご大作戦"
+    },
+    "1020": {
+      "name": "サンジ絶叫！島中に響くSOS"
+    },
+    "1021": {
+      "name": "スパンク炸裂！サンジの女難！"
+    },
+    "1022": {
+      "name": "悔いなし ルフィと親分師弟の絆"
+    },
+    "1023": {
+      "name": "準備OK！チョパファージ{{ruby|霧砲|ネブライザー}}"
+    },
+    "1024": {
+      "name": "おでん現る！揺れる赤鞘の心！"
+    },
+    "1025": {
+      "name": "最悪の世代全滅！？四皇の大技！"
+    },
+    "1026": {
+      "name": "超新星反撃！四皇分解作戦"
+    },
+    "1027": {
+      "name": "ルフィを守れ！ゾロとローの剣技"
+    },
+    "1028": {
+      "name": "四皇を超えろ ルフィ反撃の鉄拳"
+    },
+    "1029": {
+      "name": "<small>映画連動エピソード</small><br />淡い記憶 ルフィと赤髪の娘ウタ"
+    },
+    "1030": {
+      "name": "<small>映画連動エピソード</small><br />新時代の誓い！ルフィとウタ"
+    },
+    "1031": {
+      "name": "ナミ絶叫 絶体絶命デスレース！"
+    },
+    "1032": {
+      "name": "ワノ国の夜明け 全面対決激化！"
+    },
+    "1033": {
+      "name": "決着！ルフィ加速する覇王の拳"
+    },
+    "1034": {
+      "name": "ルフィ敗北！麦わらの一味窮地!?"
+    },
+    "1035": {
+      "name": "百獣蹂躙！光月家の終焉！"
+    },
+    "1036": {
+      "name": "闇夜に抗え ワノ国総大将吠える"
+    },
+    "1037": {
+      "name": "ルフィを信じろ！同盟反撃開始！"
+    },
+    "1038": {
+      "name": "ナミ必殺！お玉決死の大一番！"
+    },
+    "1039": {
+      "name": "味方激増！麦わらの一味逆襲！"
+    },
+    "1040": {
+      "name": "操舵手の誇り 怒りのジンベエ！"
+    },
+    "1041": {
+      "name": "怪獣大決戦！ヤマトとフランキー"
+    },
+    "1042": {
+      "name": "捕食者の罠 ブラックマリアの誘惑"
+    },
+    "1043": {
+      "name": "悪夢を斬る ブルックの氷の抜刀！"
+    },
+    "1044": {
+      "name": "クラッチ！悪魔の化身 ロビン！"
+    },
+    "1045": {
+      "name": "呪縛！迫る脅威 キッドとゾロ！"
+    },
+    "1046": {
+      "name": "一か八かの大勝負！両翼出陣！"
+    },
+    "1047": {
+      "name": "夜明けへと昇れ！桃色の龍猛る"
+    },
+    "1048": {
+      "name": "未来へ！ヤマトと大剣豪の誓い"
+    },
+    "1049": {
+      "name": "ルフィ飛翔！百獣へのリベンジ"
+    },
+    "1050": {
+      "name": "双龍相搏つ！モモの助の覚悟！"
+    },
+    "1051": {
+      "name": "伝説の再来！天に轟くルフィの拳"
+    },
+    "1052": {
+      "name": "風雲急を告げる！鬼ヶ島の末路！"
+    },
+    "1053": {
+      "name": "サンジの異変 両翼黄色信号！"
+    },
+    "1054": {
+      "name": "相棒に死を！キラー決死の大博打"
+    },
+    "1055": {
+      "name": "闇の者の暗躍！鬼ヶ島炎上"
+    },
+    "1056": {
+      "name": "逆襲！ローとキッドの反撃同盟"
+    },
+    "1057": {
+      "name": "ルフィの為に サンジとゾロの誓い"
+    },
+    "1058": {
+      "name": "火前坊襲来 迫るオロチの魔の手"
+    },
+    "1059": {
+      "name": "逆境のゾロ 怪物！火災のキング"
+    },
+    "1060": {
+      "name": "閻魔の秘密！ゾロに託されし妖刀"
+    },
+    "1061": {
+      "name": "魔神の一撃！サンジVSクイーン"
+    },
+    "1062": {
+      "name": "覇王の三刀流！ゾロVSキング"
+    },
+    "1063": {
+      "name": "ルフィ躍動！新時代の分岐点！"
+    },
+    "1064": {
+      "name": "酒龍八卦！ルフィに迫る無法の龍"
+    },
+    "1065": {
+      "name": "同盟壊滅！？燃えろ新世代の意志！"
+    },
+    "1066": {
+      "name": "大トリ来る！波動と磁気の大技"
+    },
+    "1067": {
+      "name": "新時代へ！決着！ガキ共の覚悟"
+    },
+    "1068": {
+      "name": "月姫が響く！ワノ国最終局面！"
+    },
+    "1069": {
+      "name": "勝者はひとり ルフィVSカイドウ"
+    },
+    "1070": {
+      "name": "ルフィ敗北！？残された者の覚悟"
+    },
+    "1071": {
+      "name": "ルフィの最高地点 到達！〝ギア5〟"
+    },
+    "1072": {
+      "name": "ふざけた能力！躍動するギア5"
+    },
+    "1073": {
+      "name": "逃げ場なし！地獄絵図の鬼ヶ島"
+    },
+    "1074": {
+      "name": "モモを信じる ルフィ最後の大技！"
+    },
+    "1075": {
+      "name": "二十年の祈り！ワノ国を取り戻せ"
+    },
+    "1076": {
+      "name": "ルフィの目指す世界！"
+    },
+    "1077": {
+      "name": "幕引き！勝者 麦わらのルフィ！"
+    },
+    "1078": {
+      "name": "帰還！ワノ国将軍 光月モモの助"
+    },
+    "1079": {
+      "name": "朝が来た！ルフィ達の休息！"
+    },
+    "1080": {
+      "name": "祝祭の宴！新しき海の皇帝達！"
+    },
+    "1081": {
+      "name": "世界が燃える！海軍大将襲来！"
+    },
+    "1082": {
+      "name": "新時代到来！赤髪の皇帝の怒り"
+    },
+    "1083": {
+      "name": "動く世界！新組織クロスギルド"
+    },
+    "1084": {
+      "name": "旅立ちの時 ワノ国と麦わらの一味"
+    },
+    "1085": {
+      "name": "終幕！ルフィとモモの助の誓い"
+    },
+    "1086": {
+      "name": "新皇帝！千両道化のバギー！"
+    },
+    "1087": {
+      "name": "女ヶ島の乱！英雄コビーの一件"
+    },
+    "1088": {
+      "name": "〝ルフィの夢〟"
+    },
+    "1089": {
+      "name": "新章突入！ルフィとサボの針路！"
+    },
+    "1090": {
+      "name": "新しい島！未来島エッグヘッド"
+    },
+    "1091": {
+      "name": "未来満載！ 科学の国の冒険！"
+    },
+    "1092": {
+      "name": "ボニーの慟哭！未来島に潜む闇"
+    },
+    "1093": {
+      "name": "勝者総取り！ローVS黒ひげ！"
+    },
+    "1094": {
+      "name": "深まる謎！エッグヘッド研究層"
+    },
+    "1095": {
+      "name": "天才の頭脳 6人のベガパンク！"
+    },
+    "1096": {
+      "name": "禁じられた歴史！ある王国の仮説"
+    },
+    "1097": {
+      "name": "オハラの意志！受け継がれる研究"
+    },
+    "1098": {
+      "name": "奇想天外！天才が想い描く夢！"
+    },
+    "1099": {
+      "name": "迎撃準備！ロブ・ルッチ襲来！"
+    },
+    "1100": {
+      "name": "異次元の力！ルフィVSルッチ！"
+    },
+    "1101": {
+      "name": "最強の人類！セラフィムの能力！"
+    },
+    "1102": {
+      "name": "蠢く陰謀！エッグヘッド脱出作戦"
+    },
+    "1103": {
+      "name": "父を戻せ！儚きボニーの願い！"
+    },
+    "1104": {
+      "name": "絶体絶命！セラフィム総攻撃！"
+    },
+    "1105": {
+      "name": "麗しき反逆！内通者ステューシー"
+    },
+    "1106": {
+      "name": "異常発生！探せ！Dr.ベガパンク"
+    },
+    "1107": {
+      "name": "戦慄！研究所へ忍び寄る魔の手"
+    },
+    "1108": {
+      "name": "理解不能！セラフィムの反逆！"
+    },
+    "1109": {
+      "name": "苦渋の決断！異色の共闘戦線！"
+    },
+    "1110": {
+      "name": "生き残れ！最強の人類との死闘"
+    },
+    "1111": {
+      "name": "オハラの再来！黒幕の野望！"
+    },
+    "1112": {
+      "name": "激突！シャンクスVSユースタス・キッド"
+    },
+    "1113": {
+      "name": "走れコビー！決死の脱出作戦！"
+    },
+    "1114": {
+      "name": "愛弟子のため ガープ中将の拳骨！"
+    },
+    "1115": {
+      "name": "海軍驚愕！元海軍本部大将クザン"
+    },
+    "1116": {
+      "name": "取りに行こうぜ！バギーの大宣言"
+    },
+    "1117": {
+      "name": "サボの帰還 語られる衝撃の真実！"
+    },
+    "1118": {
+      "name": "聖地騒然！サイとレオ渾身の一撃！"
+    },
+    "1119": {
+      "name": "託された伝言！コブラ王の覚悟"
+    },
+    "1120": {
+      "name": "揺らぐ世界！支配者の審判と五老星の始動！"
+    },
+    "1121": {
+      "name": "ガープとクザン 衝突する師弟の正義"
+    },
+    "1122": {
+      "name": "最後の教え！受け継がれた拳骨"
+    },
+    "1123": {
+      "name": "世界震撼！麦わらの一味立てこもり事件"
+    },
+    "1124": {
+      "name": "全面包囲！エッグヘッド脱出作戦"
+    },
+    "1125": {
+      "name": "ぶつかる男の覚悟！黄猿と戦桃丸"
+    },
+    "1126": {
+      "name": "迫る絶望！大将黄猿の憂鬱な任務"
+    },
+    "1127": {
+      "name": "ルフィVS黄猿！変幻自在の大激戦"
+    },
+    "1128": {
+      "name": "悪夢襲来 科学防衛武神サターン聖"
+    },
+    "1129": {
+      "name": "くまの過去 死んだ方がいい世界"
+    },
+    "1130": {
+      "name": "消された歴史！絶望のゴッドバレー"
+    },
+    "1131": {
+      "name": "ひとときの幸せ くまちーとジニー"
+    },
+    "1132": {
+      "name": "ジニーへの誓い 父となったくま"
+    },
+    "1133": {
+      "name": "娘を救え 気弱な〝平和主義者〟くま"
+    },
+    "1134": {
+      "name": "非情なる運命 父くまの決断"
+    },
+    "1135": {
+      "name": "父のいる海へ！ボニーが選ぶ未来"
+    },
+    "1136": {
+      "name": "〝くまの人生〟"
+    },
+    "1137": {
+      "name": "ごめんね、お父さん ボニーの涙とくまの拳"
+    },
+    "1138": {
+      "name": "ありがとう、お父さん ボニーとくまの熱き抱擁"
+    },
+    "1139": {
+      "name": "未来島を破壊せよ バスターコール発動"
+    },
+    "1140": {
+      "name": "憧れのヒーロー ボニーを救う解放の戦士"
+    },
+    "1141": {
+      "name": "頼もしき援軍！ドリーとブロギー到着！"
+    },
+    "1142": {
+      "name": "応答せよ、世界 ベガパンクのメッセージ"
+    },
+    "1143": {
+      "name": "ベガパンクの秘策 緊迫の全世界配信"
+    },
+    "1144": {
+      "name": "最凶の悪夢 「五老星」集結"
+    },
+    "1145": {
+      "name": "友達との共闘！ルフィとエルバフの戦士"
+    },
+    "1146": {
+      "name": "襲い来る脅威 ステューシーと「想」の決意"
+    },
+    "1147": {
+      "name": "驚愕の結論 ベガパンクの大予言"
+    },
+    "1148": {
+      "name": "幻の歴史 はじまりの海賊ジョイボーイ"
+    },
+    "1149": {
+      "name": "空白の100年 世界沈没の真実"
+    },
+    "1150": {
+      "name": "船を出せ！〝鉄の巨人〟始動"
+    },
+    "1151": {
+      "name": "父と描いた夢！ボニーの自由な未来"
+    },
+    "1152": {
+      "name": "父と母の想い！ボニーの解放の拳"
+    },
+    "1153": {
+      "name": "時代のうねり！ルフィを導く覇王色"
+    },
+    "1154": {
+      "name": "秘策の真相 ベガパンクの勝利宣言"
+    },
+    "1155": {
+      "name": "約束の水平線 いざ念願のエルバフへ！"
+    },
+    "1156": {
+      "name": "憧れのエルバフ！再会のでっけェ宴"
+    },
+    "1157": {
+      "name": "ナミ困惑！ブロックの国の冒険"
+    },
+    "1158": {
+      "name": "謎の国の探索！太陽神の秘密"
+    },
+    "1159": {
+      "name": "箱庭をブッ壊せ 脱出！ブロックの国"
+    },
+    "1160": {
+      "name": "雪原の邂逅 呪いの王子ロキ"
+    },
+    "1161": {
+      "name": "危険な取引！冥界のロキとルフィ"
+    },
+    "1162": {
+      "name": "巨大な感動 夢の絶景エルバフ"
+    },
+    "1163": {
+      "name": "褒めてほしい ロビンとサウロの再会"
+    },
+    "1164": {
+      "name": "サウロの想い 受け継がれたオハラの意志"
+    },
+    "1165": {
+      "name": "歓迎の〝友の盃〟とロキを探す侵入者"
+    },
+    "1166": {
+      "name": "ロキとの遭遇 神の騎士団 軍子"
+    },
+    "1167": {
+      "name": "神の騎士団 団長 シャムロック登場"
+    },
+    "1168": {
+      "name": "太古の歴史 エルバフが語り継ぐ〝神典〟"
+    },
+    "1169": {
+      "name": "エルバフに潜む伝説 〝山喰らい〟の正体"
+    },
+    "1170": {
+      "name": "鍵を奪え！ルフィVSスコッパー・ギャバン"
+    },
+    "1171": {
+      "name": "エルバフの大罪人 冥界のロキ解放!?"
+    },
+    "1172": {
+      "name": "怪物出現 エルバフを襲う〝こわいもの〟"
+    },
+    "1173": {
+      "name": "悪夢のゲーム 神の騎士団の陰謀"
+    },
+    "1174": {
+      "name": "子供達を救え！エルバフの戦士出撃"
+    },
+    "1175": {
+      "name": "エルバフ炎上 炸裂！ジンベエの一本背負い"
+    },
+    "1176": {
+      "name": "アロアロの実の脅威 軍子VS麦わらの一味"
+    },
+    "1177": {
+      "name": "卑劣な人質ゲーム ソマーズの不敵な脅迫"
+    },
+    "1178": {
+      "name": "歴史と未来を守れ ロビンとギャバン出撃"
+    },
+    "1179": {
+      "name": "決死の一秒 ギャバンVS神の騎士団"
+    },
+    "1180": {
+      "name": "絶望のエルバフ 悪魔の契約〝黒転支配〟"
     }
   }
 }

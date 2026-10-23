@@ -5,16 +5,19 @@ Vocabulario de LogPose. El nombre en `código` es el del contrato (`packages/con
 ## Serie
 
 **Saga**:
-Bloque mayor de la historia (East Blue, Arabasta…); agrupa arcos.
+Bloque mayor de la historia (East Blue, Arabasta…); agrupa arcos. Se identifica por su `slug`.
 
 **Arco** (`Arc`):
-Tramo de una saga con su rango de episodios. `isFiller` marca los de relleno.
+Tramo de una saga, identificado por su `slug`; su `type` dice si es canon, relleno o mixto.
 
 **Episodio** (`Episode`):
-Episodio del anime. Es el eje de la cronología: el progreso y los desbloqueos se anclan a episodios, no a capítulos del manga.
+Episodio del anime, identificado por su número (`number`). Es el eje de la cronología: el progreso y los desbloqueos se anclan a episodios, no a capítulos del manga.
 
 **Canon / relleno**:
-Si un episodio adapta el manga (`canon`), no lo adapta (`filler`), mezcla ambos (`mixed`) o resume (`recap`). Hoy el contrato solo tiene `isFiller` en `Arc`; los cuatro valores están en `data/research` y llegan al contrato al normalizar esos datos.
+Si un episodio adapta el manga (`canon`), no lo adapta (`filler`), mezcla ambos (`mixed`) o resume (`recap`). El arco lleva los tres primeros (`type`) y la web solo marca como relleno `filler`; `recap` solo está en los episodios de research.
+
+**Research** (`data/research/`):
+Fuente única de la serie: sagas, arcos y episodios con sus textos en es/en/ja. De ella salen los datos de la API y los locales de la web ([ADR 0018](docs/adr/0018-datos-de-la-serie-desde-research.md)).
 
 **Progreso de la serie** (`lastWatchedEpisode`):
 Número del último episodio visto (0 = ninguno); un episodio está visto si su número no lo supera. Saga y arco salen del episodio. Desbloqueará avatares por número de episodio (`AVATAR_PROGRESS_UNLOCK_RULES`, vacío hasta que el progreso se calcule en el servidor).
@@ -26,6 +29,7 @@ Entidad estable del personaje; agrupa sus cartas. Sin implementar.
 
 **Card**:
 Coleccionable concreto anclado a un momento de la historia (Luffy Gear 5), no el personaje genérico. Todas las categorías (`character`, `item`, `fruit`, `sword`, `boat`) son `Card`. Sin implementar.
+Regla de variante: una carta = un cambio visual anclado a un episodio (una transformación, una etapa como niño o tras el salto temporal, un disfraz con nombre propio en el arco). Un hito de poder sin cambio visual no es carta.
 _Evitar_: versión (a secas), personaje.
 
 **UnlockRule**:

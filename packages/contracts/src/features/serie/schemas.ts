@@ -2,21 +2,17 @@ import * as z from 'zod/v4';
 
 import { episodeSchema } from '../../common/serie.schemas.js';
 
-export const sagaIdParamsSchema = z.object({
-  params: z.object({
-    sagaId: z.coerce.number().int().positive(),
-  }),
+export const sagaSlugParamsSchema = z.object({
+  params: z.object({ sagaSlug: z.string() }),
 });
 
-export const arcIdParamsSchema = z.object({
-  params: z.object({
-    arcId: z.coerce.number().int().positive(),
-  }),
+export const arcSlugParamsSchema = z.object({
+  params: z.object({ arcSlug: z.string() }),
 });
 
-export const episodeIdParamsSchema = z.object({
+export const episodeNumberParamsSchema = z.object({
   params: z.object({
-    episodeId: z.coerce.number().int().positive(),
+    episodeNumber: z.coerce.number().int().positive(),
   }),
 });
 

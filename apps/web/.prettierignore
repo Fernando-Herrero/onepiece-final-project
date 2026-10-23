@@ -5,3 +5,6 @@ dist
 
 # Generado por Next en cada build ("This file should not be edited")
 next-env.d.ts
+
+# Generados por el normalizador de research (apps/api/src/scripts/normalize-research.ts)
+public/locales/*/serie.json

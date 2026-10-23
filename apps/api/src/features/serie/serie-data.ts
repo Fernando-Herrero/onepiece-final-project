@@ -2,42 +2,16 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export type Saga = {
-  id: number;
-  name: string;
-  titleJa: string;
-  totalEpisodes: number;
-  firstArc: number;
-  lastArc: number;
-  arcNames: string[];
-};
+import type {
+  arcSchema,
+  episodeSchema,
+  sagaSchema,
+} from '@logpose/contracts/common/serie.schemas';
+import type * as z from 'zod/v4';
 
-export type Arc = {
-  id: number;
-  name: string;
-  description: string;
-  saga: string;
-  sagaId: number;
-  totalEpisodes: number;
-  isFiller: boolean;
-  firstEpisode: number;
-  lastEpisode: number;
-};
-
-export type Episode = {
-  id: number;
-  name: string;
-  description: string;
-  arc: string;
-  experience: number;
-  rewards: {
-    characters: number[];
-    items: number[];
-    fruits: number[];
-    swords: number[];
-    boats: number[];
-  };
-};
+type Saga = z.infer<typeof sagaSchema>;
+type Arc = z.infer<typeof arcSchema>;
+type Episode = z.infer<typeof episodeSchema>;
 
 const serieDir = path.join(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -77,30 +51,22 @@ export function getEpisodesData() {
   return episodesCache;
 }
 
-export function getSagaById(sagaId: number) {
-  return getSagasData().find(saga => saga.id === sagaId);
+export function getSagaBySlug(sagaSlug: string) {
+  return getSagasData().find(saga => saga.slug === sagaSlug);
 }
 
-export function getArcById(arcId: number) {
-  return getArcsData().find(arc => arc.id === arcId);
+export function getArcBySlug(arcSlug: string) {
+  return getArcsData().find(arc => arc.slug === arcSlug);
 }
 
-export function getEpisodeById(episodeId: number) {
-  return getEpisodesData().find(episode => episode.id === episodeId);
+export function getEpisodeByNumber(episodeNumber: number) {
+  return getEpisodesData().find(episode => episode.number === episodeNumber);
 }
 
-export function getArcsBySagaId(sagaId: number) {
-  return getArcsData().filter(arc => arc.sagaId === sagaId);
+export function getArcsBySagaSlug(sagaSlug: string) {
+  return getArcsData().filter(arc => arc.sagaSlug === sagaSlug);
 }
 
-export function getEpisodesByArcId(arcId: number) {
-  const arc = getArcById(arcId);
-
-  if (!arc) {
-    return null;
-  }
-
-  return getEpisodesData().filter(
-    episode => episode.id >= arc.firstEpisode && episode.id <= arc.lastEpisode,
-  );
+export function getEpisodesByArcSlug(arcSlug: string) {
+  return getEpisodesData().filter(episode => episode.arcSlug === arcSlug);
 }

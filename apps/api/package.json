@@ -9,6 +9,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md,json,html}\"",
     "format-check": "prettier --check \"**/*.{ts,tsx,md,json,html}\"",
     "lint": "eslint . --max-warnings 0",
+    "normalize-research": "node src/scripts/normalize-research.ts",
     "start": "node dist/main.js",
     "test": "vitest run --passWithNoTests",
     "type-check": "tsc --noEmit"
