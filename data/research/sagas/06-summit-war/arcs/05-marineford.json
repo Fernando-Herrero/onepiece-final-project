@@ -3,9 +3,14 @@
   "sagaSlug": "summit-war",
   "order": 5,
   "title": {
-    "es": "Arco de Marineford",
-    "en": "Marineford Arc",
+    "es": "Marineford",
+    "en": "Marineford",
     "ja": null
+  },
+  "summary": {
+    "es": "Una batalla épica entre piratas, marines y fuerzas aliadas culmina en eventos que cambian el mundo.",
+    "en": "An epic battle between pirates, marines, and allies that changes the world.",
+    "ja": "マリンフォード頂上戦争。"
   },
   "type": "mixed",
   "chapterRange": {

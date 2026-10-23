@@ -1,14 +1,16 @@
 {
   "slug": "water-7",
   "sagaSlug": "water-7",
-  "order": 5,
+  "order": 4,
   "title": {
     "es": "Water 7",
     "en": "Water 7",
     "ja": "ウォーターセブン編"
   },
   "summary": {
-    "es": "En la ciudad de los astilleros, el Going Merry es desahuciado, Usopp deja la tripulación y Robin desaparece con el CP9."
+    "es": "La tripulación llega a la ciudad portuaria de Water 7, donde enfrentan tensiones políticas y problemas internos mientras buscan un nuevo barco.",
+    "en": "The crew arrives at Water 7, facing political tensions while seeking a new ship.",
+    "ja": "ウォーターセブン、新たな船と対立。"
   },
   "type": "canon",
   "chapterRange": {

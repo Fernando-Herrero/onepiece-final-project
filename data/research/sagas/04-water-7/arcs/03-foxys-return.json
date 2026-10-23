@@ -1,14 +1,16 @@
 {
   "slug": "foxys-return",
   "sagaSlug": "water-7",
-  "order": 4,
+  "order": 3,
   "title": {
-    "es": "El regreso de Foxy",
+    "es": "Foxy's Return",
     "en": "Foxy's Return",
     "ja": "フォクシー帰還編"
   },
   "summary": {
-    "es": "Relleno breve: Foxy vuelve a cruzarse con los Sombrero de Paja antes de la aparición de Aokiji."
+    "es": "Filler que muestra el regreso de Foxy y un nuevo enfrentamiento con la tripulación en desafíos de ingenio.",
+    "en": "Filler showing Foxy’s return and a new showdown with the crew.",
+    "ja": "フォクシー再登場フィラー。"
   },
   "type": "mixed",
   "chapterRange": {

@@ -3,9 +3,14 @@
   "sagaSlug": "summit-war",
   "order": 6,
   "title": {
-    "es": "Arco de la Posguerra",
-    "en": "Post-War Arc",
+    "es": "Post-guerra",
+    "en": "Post-War",
     "ja": null
+  },
+  "summary": {
+    "es": "El mundo tras Marineford, con heridos, pérdidas y nuevas direcciones para la tripulación.",
+    "en": "The world after Marineford, with wounds, losses, and new directions for the crew.",
+    "ja": "戦争後の世界と仲間たち。"
   },
   "type": "mixed",
   "chapterRange": {

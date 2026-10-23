@@ -2,7 +2,7 @@
   "slug": "wano-country",
   "order": 10,
   "title": {
-    "es": "País de Wano",
+    "es": "Wano",
     "en": "Wano Country",
     "ja": "ワノ国編"
   },
@@ -14,14 +14,6 @@
     "first": 890,
     "last": 1085
   },
-  "arcSlugs": [
-    "wano-country-act-1",
-    "cidre-guild",
-    "romance-dawn-special",
-    "wano-country-act-2",
-    "wano-country-act-3",
-    "uta-past"
-  ],
   "sources": [
     {
       "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc",
@@ -29,11 +21,11 @@
     },
     {
       "url": "https://onepiece.fandom.com/wiki/Wano_Country_Arc#Acts",
-      "field": "arcSlugs"
+      "field": "arcs.sagaSlug"
     },
     {
       "url": "https://www.animefillerlist.com/shows/one-piece",
-      "field": "arcSlugs (rellenos)"
+      "field": "arcs.sagaSlug (rellenos)"
     }
   ]
 }

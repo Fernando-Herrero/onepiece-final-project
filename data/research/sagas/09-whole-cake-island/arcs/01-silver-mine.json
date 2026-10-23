@@ -3,9 +3,14 @@
   "sagaSlug": "whole-cake-island",
   "order": 1,
   "title": {
-    "es": "Mina de Plata",
+    "es": "Mina de plata",
     "en": "Silver Mine",
     "ja": "シルバーマイン編"
+  },
+  "summary": {
+    "es": "Filler donde la tripulación se enfrenta a ladrones y trampas en una mina mientras buscan provisiones y aventuras.",
+    "en": "Filler where the crew faces thieves and traps in a mine.",
+    "ja": "シルバーマイン編フィラー。"
   },
   "type": "filler",
   "episodeRange": {

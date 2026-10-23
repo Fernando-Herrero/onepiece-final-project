@@ -3,7 +3,7 @@
   "order": 7,
   "title": {
     "es": "Isla Gyojin",
-    "en": "Fish-Man Island Saga",
+    "en": "Fishman Island",
     "ja": "魚人島編"
   },
   "chapterRange": {
@@ -12,13 +12,8 @@
   },
   "episodeRange": {
     "first": 517,
-    "last": 578
+    "last": 574
   },
-  "arcSlugs": [
-    "return-to-sabaody",
-    "fish-man-island",
-    "zs-ambition"
-  ],
   "sources": [
     {
       "url": "https://onepiece.fandom.com/wiki/Fish-Man_Island_Saga",

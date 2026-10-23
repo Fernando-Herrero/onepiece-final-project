@@ -3,9 +3,14 @@
   "sagaSlug": "sky-island",
   "order": 1,
   "title": {
-    "es": "Isla de las Cabras",
+    "es": "Isla Goat",
     "en": "Goat Island",
     "ja": "ヤギの島編"
+  },
+  "summary": {
+    "es": "Un arco filler donde la tripulación visita una isla tranquila habitada por cabras y se generan situaciones cómicas y ligeras.",
+    "en": "Filler arc on a quiet island inhabited by goats with comic situations.",
+    "ja": "ヤギの島フィラー。"
   },
   "type": "filler",
   "episodeRange": {

@@ -1,0 +1,469 @@
+{
+  "slug": "post-enies-lobby",
+  "sagaSlug": "water-7",
+  "order": 6,
+  "title": {
+    "es": "Post-Enies Lobby",
+    "en": "Post-Enies Lobby",
+    "ja": "エニエス・ロビー後編"
+  },
+  "summary": {
+    "es": "Tras los eventos en Enies Lobby, la tripulación reflexiona, se recupera y se prepara para la siguiente etapa del viaje.",
+    "en": "After Enies Lobby, the crew recovers and prepares for the next stage.",
+    "ja": "エニエス・ロビー後の休息。"
+  },
+  "type": "mixed",
+  "chapterRange": {
+    "first": 431,
+    "last": 441
+  },
+  "episodeRange": {
+    "first": 313,
+    "last": 325
+  },
+  "episodes": [
+    {
+      "number": 313,
+      "title": {
+        "en": "Peace Interrupted! A Navy Vice Admiral With a Fist of Love!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        431,
+        432
+      ],
+      "airDate": {
+        "ja": "2007-06-10"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 314,
+      "title": {
+        "en": "The Strongest Family? Luffy's Father Revealed!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        432,
+        433
+      ],
+      "airDate": {
+        "ja": "2007-06-17"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 315,
+      "title": {
+        "en": "Its Name Is the New World! The Fate of the Grand Line!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        433,
+        434
+      ],
+      "airDate": {
+        "ja": "2007-06-24"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 316,
+      "title": {
+        "en": "Shanks Makes a Move! The Linchpin to the Reckless Era!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        434
+      ],
+      "airDate": {
+        "ja": "2007-07-01"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "shanks",
+        "edward-newgate"
+      ]
+    },
+    {
+      "number": 317,
+      "title": {
+        "en": "The Girl in Search of Her Yagara! Great Search in the City of Water!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-07-08"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 318,
+      "title": {
+        "en": "Mothers Are Strong! Zoro's Hectic Household Chores!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-07-15"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 319,
+      "title": {
+        "en": "Sanji's Shock! Mysterious Old Man and His Super Yummy Cooking!"
+      },
+      "canon": "filler",
+      "adaptsChapters": [],
+      "airDate": {
+        "ja": "2007-07-22"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin"
+      ]
+    },
+    {
+      "number": 320,
+      "title": {
+        "en": "Everyone Finally Has a Bounty! A Pirate Group Worth Over 600 Million!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        435
+      ],
+      "airDate": {
+        "ja": "2007-08-19"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 321,
+      "title": {
+        "en": "The King of Animals That Overlooks the Sea! The Dream Ship Magnificently Completed!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        436
+      ],
+      "airDate": {
+        "ja": "2007-08-26"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 322,
+      "title": {
+        "en": "Goodbye My Dear Underlings! Franky Departs!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        437
+      ],
+      "airDate": {
+        "ja": "2007-09-02"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 323,
+      "title": {
+        "en": "Departing the City of Water! Usopp Mans up and Brings Closure to the Duel!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        437,
+        438
+      ],
+      "airDate": {
+        "ja": "2007-09-09"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 324,
+      "title": {
+        "en": "Wanted Posters Make It Around the World! Celebrations in Their Hometowns as the Ship Moves Forward!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        439,
+        440
+      ],
+      "airDate": {
+        "ja": "2007-09-16"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "monkey-d-garp",
+        "koby",
+        "helmeppo"
+      ]
+    },
+    {
+      "number": 325,
+      "title": {
+        "en": "The Most Heinous Power! Blackbeard’s Darkness Attacks Ace!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        440,
+        441
+      ],
+      "airDate": {
+        "ja": "2007-09-23"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky",
+        "portgas-d-ace",
+        "marshall-d-teach"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "slug": "garp-reveals-dragon",
+      "kind": "reveal",
+      "characters": [
+        "monkey-d-luffy",
+        "monkey-d-garp"
+      ],
+      "episode": 314,
+      "chapter": 432,
+      "description": {
+        "es": "Garp revela que es el abuelo de Luffy y que su padre es Monkey D. Dragon."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "shanks-meets-whitebeard",
+      "kind": "other",
+      "characters": [
+        "shanks",
+        "edward-newgate"
+      ],
+      "episode": 316,
+      "chapter": 434,
+      "description": {
+        "es": "Shanks visita a Barbablanca para advertirle de Barbanegra."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "straw-hats-new-bounties",
+      "kind": "bounty",
+      "characters": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "franky"
+      ],
+      "episode": 320,
+      "chapter": 435,
+      "description": {
+        "es": "Nuevas recompensas: Luffy 300 millones, Zoro 120, Robin 80, Sanji 77, Sogeking 30, Franky 44, Nami 16, Chopper 50 berries."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "thousand-sunny-completed",
+      "kind": "other",
+      "characters": [
+        "franky",
+        "iceburg"
+      ],
+      "episode": 321,
+      "chapter": 436,
+      "description": {
+        "es": "Franky termina el Thousand Sunny."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "franky-joins",
+      "kind": "recruitment",
+      "characters": [
+        "franky",
+        "monkey-d-luffy"
+      ],
+      "episode": 322,
+      "chapter": 437,
+      "description": {
+        "es": "Franky se une a los Sombrero de Paja como carpintero."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "usopp-returns",
+      "kind": "recruitment",
+      "characters": [
+        "usopp",
+        "monkey-d-luffy"
+      ],
+      "episode": 323,
+      "chapter": 438,
+      "description": {
+        "es": "Usopp pide perdón y vuelve a la tripulación."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "ace-vs-blackbeard",
+      "kind": "battle",
+      "characters": [
+        "portgas-d-ace",
+        "marshall-d-teach"
+      ],
+      "episode": 325,
+      "chapter": 441,
+      "description": {
+        "es": "Ace se enfrenta a Barbanegra en Banaro."
+      },
+      "cardWorthy": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.animefillerlist.com/shows/one-piece",
+      "field": "episodes[].title.en, episodes[].canon, episodes[].airDate"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Post-Enies_Lobby_Arc",
+      "field": "chapterRange, episodeRange, events"
+    },
+    {
+      "url": "https://onepiece.fandom.com/wiki/Episode_Guide",
+      "field": "episodes[].adaptsChapters (adaptsChapters reconstruido de memoria sobre One Piece Wiki (Cloudflare bloqueó la descarga); reparto aproximado ±1 capítulo)"
+    }
+  ]
+}

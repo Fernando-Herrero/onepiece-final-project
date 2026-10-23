@@ -3,9 +3,14 @@
   "sagaSlug": "summit-war",
   "order": 4,
   "title": {
-    "es": "Arco de Little East Blue",
-    "en": "Little East Blue Arc",
+    "es": "Little East Blue",
+    "en": "Little East Blue",
     "ja": null
+  },
+  "summary": {
+    "es": "Filler donde la tripulación recuerda y revive breves aventuras pasadas antes de reunirse para nuevos desafíos.",
+    "en": "Filler where the crew recalls past adventures before reuniting for new challenges.",
+    "ja": "リトルイーストブルー編フィラー。"
   },
   "type": "filler",
   "chapterRange": null,

@@ -3,9 +3,14 @@
   "sagaSlug": "whole-cake-island",
   "order": 4,
   "title": {
-    "es": "Isla Whole Cake",
+    "es": "Whole Cake Island",
     "en": "Whole Cake Island",
     "ja": "ホールケーキアイランド編"
+  },
+  "summary": {
+    "es": "Sanji es separado de la tripulación y los Sombrero de Paja se adentran en territorio de Big Mom, enfrentando alianzas peligrosas y desafíos mortales.",
+    "en": "Sanji is separated and the crew enters Big Mom’s territory facing deadly challenges.",
+    "ja": "ホールケーキアイランド、サンジとビッグ・マム。"
   },
   "type": "canon",
   "chapterRange": {

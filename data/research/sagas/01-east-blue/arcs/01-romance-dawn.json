@@ -4,11 +4,13 @@
   "order": 1,
   "title": {
     "es": "Romance Dawn",
-    "en": "Romance Dawn Arc",
+    "en": "Romance Dawn",
     "ja": "ロマンス・ドーン編"
   },
   "summary": {
-    "es": "Luffy zarpa, derrota a Alvida, conoce a Koby y recluta a Zoro tras vencer al capitán Morgan en Shells Town."
+    "es": "Luffy empieza su viaje, se convierte en pirata y forma la tripulación inicial enfrentando sus primeros desafíos.",
+    "en": "Luffy begins his journey, becomes a pirate, and forms the initial crew while facing their first challenges.",
+    "ja": "ルフィが旅を始め、海賊となり、最初の仲間と共に初の試練に立ち向かう。"
   },
   "type": "canon",
   "chapterRange": {
@@ -74,8 +76,13 @@
     {
       "number": 1,
       "title": {
-        "en": "I'm Luffy! The Man Who Will Become the Pirate King!",
+        "en": "I'm Luffy! The Man Who's Gonna Be King of the Pirates!",
         "ja": "俺はルフィ！海賊王になる男だ！"
+      },
+      "summary": {
+        "es": "Un misterioso joven emerge de un barril en medio del océano. Cuando un crucero es atacado por los piratas de Alvida, conoce a un chico llamado Coby que sueña con ser marine.",
+        "en": "A mysterious young man emerges from a barrel in the middle of the ocean. When a cruise ship is attacked by Alvida's pirates, he meets Coby, who dreams of becoming a marine.",
+        "ja": "海の真ん中の樽から現れた謎の少年。アルビダの海賊に襲われた客船で、海軍を目指すコビーと出会う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -95,8 +102,13 @@
     {
       "number": 2,
       "title": {
-        "en": "The Great Swordsman Appears! Pirate Hunter Roronoa Zoro",
+        "en": "Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!",
         "ja": "大剣豪現る！海賊狩りロロノア・ゾロ"
+      },
+      "summary": {
+        "es": "Luffy y Coby llegan a Shell Town donde conocen al famoso cazador de piratas Roronoa Zoro, quien está atado como prisionero del corrupto Capitán Morgan.",
+        "en": "Luffy and Coby reach Shell Town and meet the famous pirate hunter Roronoa Zoro, held prisoner by the corrupt Captain Morgan.",
+        "ja": "ルフィとコビーがシェルタウンで、モーガン大佐の囚人となったロロノア・ゾロと出会う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -120,8 +132,13 @@
     {
       "number": 3,
       "title": {
-        "en": "Morgan vs. Luffy! Who's This Mysterious Beautiful Young Girl?",
+        "en": "Morgan vs. Luffy! Who's This Beautiful Young Woman?",
         "ja": "モーガンVSルフィ！謎の美少女は誰？"
+      },
+      "summary": {
+        "es": "Luffy y Zoro enfrentan al tiránico Capitán Morgan en Shell Town. Una misteriosa ladrona observa la batalla desde las sombras.",
+        "en": "Luffy and Zoro face the tyrannical Captain Morgan in Shell Town. A mysterious thief watches the battle from the shadows.",
+        "ja": "ルフィとゾロが暴君モーガン大佐と対峙。謎の女が影から戦いを見守る。"
       },
       "canon": "canon",
       "adaptsChapters": [

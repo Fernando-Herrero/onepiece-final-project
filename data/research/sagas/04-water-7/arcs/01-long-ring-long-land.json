@@ -1,37 +1,39 @@
 {
-  "slug": "post-enies-lobby",
+  "slug": "long-ring-long-land",
   "sagaSlug": "water-7",
-  "order": 7,
+  "order": 1,
   "title": {
-    "es": "Post-Enies Lobby",
-    "en": "Post-Enies Lobby",
-    "ja": "エニエス・ロビー後編"
+    "es": "Long Ring Long Land",
+    "en": "Long Ring Long Land",
+    "ja": "ロングリングロングランド編"
   },
   "summary": {
-    "es": "Garp visita a Luffy, se reparten nuevas recompensas, nace el Thousand Sunny y Franky y Usopp se unen."
+    "es": "La tripulación se enfrenta a Foxy en un juego de retos y engaños que pone a prueba su ingenio y resistencia.",
+    "en": "The crew faces Foxy in a game of challenges and tricks testing wit and endurance.",
+    "ja": "フォクシーとのデーヴィ・バック・ファイト。"
   },
   "type": "mixed",
   "chapterRange": {
-    "first": 431,
-    "last": 441
+    "first": 303,
+    "last": 321
   },
   "episodeRange": {
-    "first": 313,
-    "last": 325
+    "first": 207,
+    "last": 228
   },
   "episodes": [
     {
-      "number": 313,
+      "number": 207,
       "title": {
-        "en": "Peace Interrupted! A Navy Vice Admiral With a Fist of Love!"
+        "en": "Great Adventure in Long Ring Long Land!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        431,
-        432
+        303,
+        304
       ],
       "airDate": {
-        "ja": "2007-06-10"
+        "ja": "2004-10-31"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -41,24 +43,20 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 314,
+      "number": 208,
       "title": {
-        "en": "The Strongest Family? Luffy's Father Revealed!"
+        "en": "A Davy Back With the Foxy Pirates!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        432,
-        433
+        305
       ],
       "airDate": {
-        "ja": "2007-06-17"
+        "ja": "2004-11-07"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -68,24 +66,21 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 315,
+      "number": 209,
       "title": {
-        "en": "Its Name Is the New World! The Fate of the Grand Line!"
+        "en": "Round 1! One Lap of the Donut Race!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        433,
-        434
+        306,
+        307
       ],
       "airDate": {
-        "ja": "2007-06-24"
+        "ja": "2004-11-14"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -95,23 +90,21 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 316,
+      "number": 210,
       "title": {
-        "en": "Shanks Makes a Move! The Linchpin to the Reckless Era!"
+        "en": "Silver Fox Foxy! The Merciless Interference!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        434
+        307,
+        308
       ],
       "airDate": {
-        "ja": "2007-07-01"
+        "ja": "2004-11-21"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -121,19 +114,66 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "shanks",
-        "edward-newgate"
+        "foxy"
       ]
     },
     {
-      "number": 317,
+      "number": 211,
       "title": {
-        "en": "The Girl in Search of Her Yagara! Great Search in the City of Water!"
+        "en": "Round 2! Shoot It Into the Groggy Ring!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        308,
+        309
+      ],
+      "airDate": {
+        "ja": "2004-11-28"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 212,
+      "title": {
+        "en": "A Barrage of Red Cards in Groggy Ring!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        309,
+        310
+      ],
+      "airDate": {
+        "ja": "2004-12-05"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "foxy"
+      ]
+    },
+    {
+      "number": 213,
+      "title": {
+        "en": "Round 3! The Round-and-Round Roller Race!"
       },
       "canon": "filler",
       "adaptsChapters": [],
       "airDate": {
-        "ja": "2007-07-08"
+        "ja": "2004-12-12"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -142,18 +182,19 @@
         "usopp",
         "vinsmoke-sanji",
         "tony-tony-chopper",
-        "nico-robin"
+        "nico-robin",
+        "foxy"
       ]
     },
     {
-      "number": 318,
+      "number": 214,
       "title": {
-        "en": "Mothers Are Strong! Zoro's Hectic Household Chores!"
+        "en": "A Seriously Heated Race! Into the Final Round!"
       },
       "canon": "filler",
       "adaptsChapters": [],
       "airDate": {
-        "ja": "2007-07-15"
+        "ja": "2004-12-19"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -162,40 +203,19 @@
         "usopp",
         "vinsmoke-sanji",
         "tony-tony-chopper",
-        "nico-robin"
+        "nico-robin",
+        "foxy"
       ]
     },
     {
-      "number": 319,
+      "number": 215,
       "title": {
-        "en": "Sanji's Shock! Mysterious Old Man and His Super Yummy Cooking!"
+        "en": "Screaming-Hot Bombardment! Pirate Dodgeball!"
       },
       "canon": "filler",
       "adaptsChapters": [],
       "airDate": {
-        "ja": "2007-07-22"
-      },
-      "appearances": [
-        "monkey-d-luffy",
-        "roronoa-zoro",
-        "nami",
-        "usopp",
-        "vinsmoke-sanji",
-        "tony-tony-chopper",
-        "nico-robin"
-      ]
-    },
-    {
-      "number": 320,
-      "title": {
-        "en": "Everyone Finally Has a Bounty! A Pirate Group Worth Over 600 Million!"
-      },
-      "canon": "canon",
-      "adaptsChapters": [
-        435
-      ],
-      "airDate": {
-        "ja": "2007-08-19"
+        "ja": "2005-01-09"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -205,23 +225,18 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 321,
+      "number": 216,
       "title": {
-        "en": "The King of Animals That Overlooks the Sea! The Dream Ship Magnificently Completed!"
+        "en": "Showdown on the Cliff! Red Light, Green Light!"
       },
-      "canon": "canon",
-      "adaptsChapters": [
-        436
-      ],
+      "canon": "filler",
+      "adaptsChapters": [],
       "airDate": {
-        "ja": "2007-08-26"
+        "ja": "2005-01-09"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -231,23 +246,21 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 322,
+      "number": 217,
       "title": {
-        "en": "Goodbye My Dear Underlings! Franky Departs!"
+        "en": "The Captains Square Off! The Final Combat Round!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        437
+        311,
+        312
       ],
       "airDate": {
-        "ja": "2007-09-02"
+        "ja": "2005-01-16"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -257,24 +270,22 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 323,
+      "number": 218,
       "title": {
-        "en": "Departing the City of Water! Usopp Mans up and Brings Closure to the Duel!"
+        "en": "Full-Blast Slow-Slow Onslaught vs. Invulnerable Luffy!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        437,
-        438
+        313,
+        314,
+        315
       ],
       "airDate": {
-        "ja": "2007-09-09"
+        "ja": "2005-01-23"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -284,24 +295,22 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 324,
+      "number": 219,
       "title": {
-        "en": "Wanted Posters Make It Around the World! Celebrations in Their Hometowns as the Ship Moves Forward!"
+        "en": "Epic, Heated Combat! The Fateful Final Conclusion!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        439,
-        440
+        316,
+        317,
+        318
       ],
       "airDate": {
-        "ja": "2007-09-16"
+        "ja": "2005-01-30"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -311,24 +320,21 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "monkey-d-garp",
-        "koby",
-        "helmeppo"
+        "foxy"
       ]
     },
     {
-      "number": 325,
+      "number": 227,
       "title": {
-        "en": "The Most Heinous Power! Blackbeard’s Darkness Attacks Ace!"
+        "en": "Navy Headquarters Admiral Aokiji! The Ferocity of an Ultimate Powerhouse!"
       },
       "canon": "canon",
       "adaptsChapters": [
-        440,
-        441
+        319,
+        320
       ],
       "airDate": {
-        "ja": "2007-09-23"
+        "ja": "2005-03-27"
       },
       "appearances": [
         "monkey-d-luffy",
@@ -338,114 +344,94 @@
         "vinsmoke-sanji",
         "tony-tony-chopper",
         "nico-robin",
-        "franky",
-        "portgas-d-ace",
-        "marshall-d-teach"
+        "kuzan"
+      ]
+    },
+    {
+      "number": 228,
+      "title": {
+        "en": "Duel Between Rubber and Ice! Luffy vs. Aokiji!"
+      },
+      "canon": "canon",
+      "adaptsChapters": [
+        320,
+        321
+      ],
+      "airDate": {
+        "ja": "2005-03-27"
+      },
+      "appearances": [
+        "monkey-d-luffy",
+        "roronoa-zoro",
+        "nami",
+        "usopp",
+        "vinsmoke-sanji",
+        "tony-tony-chopper",
+        "nico-robin",
+        "kuzan"
       ]
     }
   ],
   "events": [
     {
-      "slug": "garp-reveals-dragon",
-      "kind": "reveal",
-      "characters": [
-        "monkey-d-luffy",
-        "monkey-d-garp"
-      ],
-      "episode": 314,
-      "chapter": 432,
-      "description": {
-        "es": "Garp revela que es el abuelo de Luffy y que su padre es Monkey D. Dragon."
-      },
-      "cardWorthy": true
-    },
-    {
-      "slug": "shanks-meets-whitebeard",
+      "slug": "davy-back-fight",
       "kind": "other",
-      "characters": [
-        "shanks",
-        "edward-newgate"
-      ],
-      "episode": 316,
-      "chapter": 434,
-      "description": {
-        "es": "Shanks visita a Barbablanca para advertirle de Barbanegra."
-      },
-      "cardWorthy": true
-    },
-    {
-      "slug": "straw-hats-new-bounties",
-      "kind": "bounty",
       "characters": [
         "monkey-d-luffy",
         "roronoa-zoro",
-        "nami",
-        "usopp",
         "vinsmoke-sanji",
+        "usopp",
         "tony-tony-chopper",
-        "nico-robin",
-        "franky"
+        "nami",
+        "foxy"
       ],
-      "episode": 320,
-      "chapter": 435,
+      "episode": 208,
+      "chapter": 305,
       "description": {
-        "es": "Nuevas recompensas: Luffy 300 millones, Zoro 120, Robin 80, Sanji 77, Sogeking 30, Franky 44, Nami 16, Chopper 50 berries."
+        "es": "Foxy desafía a los Sombrero de Paja a un Davy Back Fight."
       },
-      "cardWorthy": true
+      "cardWorthy": false
     },
     {
-      "slug": "thousand-sunny-completed",
+      "slug": "chopper-taken-by-foxy",
       "kind": "other",
       "characters": [
-        "franky",
-        "iceburg"
+        "tony-tony-chopper",
+        "foxy"
       ],
-      "episode": 321,
-      "chapter": 436,
+      "episode": 210,
+      "chapter": 308,
       "description": {
-        "es": "Franky termina el Thousand Sunny."
+        "es": "Foxy gana la Donut Race y se lleva a Chopper."
       },
-      "cardWorthy": true
+      "cardWorthy": false
     },
     {
-      "slug": "franky-joins",
-      "kind": "recruitment",
-      "characters": [
-        "franky",
-        "monkey-d-luffy"
-      ],
-      "episode": 322,
-      "chapter": 437,
-      "description": {
-        "es": "Franky se une a los Sombrero de Paja como carpintero."
-      },
-      "cardWorthy": true
-    },
-    {
-      "slug": "usopp-returns",
-      "kind": "recruitment",
-      "characters": [
-        "usopp",
-        "monkey-d-luffy"
-      ],
-      "episode": 323,
-      "chapter": 438,
-      "description": {
-        "es": "Usopp pide perdón y vuelve a la tripulación."
-      },
-      "cardWorthy": true
-    },
-    {
-      "slug": "ace-vs-blackbeard",
+      "slug": "luffy-vs-foxy",
       "kind": "battle",
       "characters": [
-        "portgas-d-ace",
-        "marshall-d-teach"
+        "monkey-d-luffy",
+        "foxy"
       ],
-      "episode": 325,
-      "chapter": 441,
+      "episode": 219,
+      "chapter": 317,
       "description": {
-        "es": "Ace se enfrenta a Barbanegra en Banaro."
+        "es": "Combate final del Davy Back Fight: Luffy vence a Foxy pese al Noro Noro."
+      },
+      "cardWorthy": true
+    },
+    {
+      "slug": "luffy-vs-aokiji",
+      "kind": "battle",
+      "characters": [
+        "monkey-d-luffy",
+        "kuzan",
+        "nico-robin"
+      ],
+      "episode": 228,
+      "chapter": 321,
+      "description": {
+        "es": "El almirante Aokiji congela a Robin y derrota a Luffy en un uno contra uno."
       },
       "cardWorthy": true
     }
@@ -456,7 +442,7 @@
       "field": "episodes[].title.en, episodes[].canon, episodes[].airDate"
     },
     {
-      "url": "https://onepiece.fandom.com/wiki/Post-Enies_Lobby_Arc",
+      "url": "https://onepiece.fandom.com/wiki/Long_Ring_Long_Land_Arc",
       "field": "chapterRange, episodeRange, events"
     },
     {

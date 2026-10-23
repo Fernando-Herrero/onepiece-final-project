@@ -3,9 +3,14 @@
   "sagaSlug": "wano-country",
   "order": 2,
   "title": {
-    "es": "Gremio de Cidre",
-    "en": "Cidre Guild Arc",
+    "es": "Cidre Guild",
+    "en": "Cidre Guild",
     "ja": "シードル・ギルド編"
+  },
+  "summary": {
+    "es": "Filler donde la tripulación se enfrenta a un grupo de delincuentes mientras continúan sus aventuras en el Nuevo Mundo.",
+    "en": "Filler where the crew faces a group of criminals in the New World.",
+    "ja": "シードルギルド編フィラー。"
   },
   "type": "filler",
   "episodeRange": {

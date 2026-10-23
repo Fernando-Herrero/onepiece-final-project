@@ -3,12 +3,14 @@
   "sagaSlug": "east-blue",
   "order": 8,
   "title": {
-    "es": "Isla Buque de Guerra",
-    "en": "Warship Island Arc",
+    "es": "Isla Warship",
+    "en": "Warship Island",
     "ja": "軍艦島編"
   },
   "summary": {
-    "es": "Relleno: los Sombrero de Paja protegen a Apis y al dragón milenario Ryuji de la Marina hasta llegar a la Isla Perdida."
+    "es": "Una historia filler donde Luffy y su tripulación ayudan a una chica misteriosa mientras enfrentan piratas y secretos ocultos.",
+    "en": "Filler arc where Luffy and his crew help a mysterious girl while facing pirates and hidden secrets.",
+    "ja": "謎の少女を助けながら海賊と秘密に立ち向かうフィラー編。"
   },
   "type": "filler",
   "chapterRange": null,
@@ -21,8 +23,13 @@
     {
       "number": 54,
       "title": {
-        "en": "Foreboding of a New Adventure! The Puzzling Girl, Apis",
+        "en": "Precursor to a New Adventure! Apis, a Mysterious Girl!",
         "ja": "新たなる冒険の予感！謎の少女アピス"
+      },
+      "summary": {
+        "es": "Los Sombreros de Paja rescatan a una niña llamada Apis que tiene poderes misteriosos. Ella puede hablar con los animales y huye de la Marina.",
+        "en": "The Straw Hats rescue Apis, a mysterious girl who can talk to animals and is fleeing the Marines.",
+        "ja": "謎の少女アピスを助ける。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -42,8 +49,13 @@
     {
       "number": 55,
       "title": {
-        "en": "The Holy Beast! Apis' Secret and the Legendary Island",
+        "en": "Miraculous Creature! Apis's Secret and the Legendary Island!",
         "ja": "奇跡の生物！アピスの秘密と伝説の島"
+      },
+      "summary": {
+        "es": "Apis revela que puede comunicarse con un dragón milenario llamado Ryuji. Los piratas y la Marina buscan la isla legendaria donde viven los dragones.",
+        "en": "Apis reveals she can communicate with millennium dragon Ryuji. Pirates and Marines seek the legendary dragon island.",
+        "ja": "千年竜リュウジとの交流。伝説の島を目指す。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -63,8 +75,13 @@
     {
       "number": 56,
       "title": {
-        "en": "Eric's Raid! Great Escape from Warship Island!",
+        "en": "Eric Attacks! Great Escape from Warship Island!",
         "ja": "エリック出撃！軍艦島からの大脱出！"
+      },
+      "summary": {
+        "es": "Eric ataca Warship Island buscando la Dragonite. Los Sombreros de Paja ayudan a los aldeanos a evacuar mientras protegen a Apis y al dragón anciano.",
+        "en": "Eric attacks Warship Island seeking Dragonite. The Straw Hats help villagers evacuate while protecting Apis and the elder dragon.",
+        "ja": "エリックが軍艦島を襲撃。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -84,8 +101,13 @@
     {
       "number": 57,
       "title": {
-        "en": "Lone Island in a Distant Sea! The Legendary Lost Island",
+        "en": "Lone Island in a Distant Sea! The Legendary Lost Island!",
         "ja": "絶海の孤島！伝説のロストアイランド"
+      },
+      "summary": {
+        "es": "La búsqueda de Lost Island continúa mientras el grupo navega por mares peligrosos. Ryuji los guía hacia su hogar ancestral donde pueden vivir los dragones milenarios.",
+        "en": "The search for Lost Island continues as Ryuji guides them toward the ancestral home of millennium dragons.",
+        "ja": "失われた島への旅が続く。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -105,8 +127,13 @@
     {
       "number": 58,
       "title": {
-        "en": "Duel in the Ruins! Strained Zoro vs. Eric",
+        "en": "Duel in the Ruins! Tense Zoro vs. Eric!",
         "ja": "廃墟の決闘！緊迫のゾロ対エリック！"
+      },
+      "summary": {
+        "es": "Zoro se enfrenta a Eric en las ruinas de Lost Island. Eric usa su poder de las hoces de viento contra las técnicas de espada de Zoro en una batalla intensa.",
+        "en": "Zoro faces Eric in the ruins of Lost Island in an intense blade versus wind-scythe battle.",
+        "ja": "ゾロ対エリック、遺跡での決闘。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -126,8 +153,13 @@
     {
       "number": 59,
       "title": {
-        "en": "Luffy, Completely Surrounded! Admiral Nelson's Secret Plan",
+        "en": "Luffy, Completely Surrounded! Admiral Nelson's Secret Strategy!",
         "ja": "ルフィ完全包囲！提督ネルソンの秘策"
+      },
+      "summary": {
+        "es": "Luffy cae en una trampa de Nelson y queda rodeado por la flota de la Marina. El almirante Nelson revela su plan para capturar tanto a los piratas como al dragón.",
+        "en": "Luffy falls into Nelson's trap surrounded by the Marine fleet as Admiral Nelson reveals his plan.",
+        "ja": "ネルソン提督の作戦でルフィが包囲される。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -147,8 +179,13 @@
     {
       "number": 60,
       "title": {
-        "en": "Those Who Soar in the Open Skies! Revival of the 1000 Year Legend",
+        "en": "Those Who Soar in the Open Sky! Revival of the 1000 Year Legend!",
         "ja": "大空を舞うもの！蘇る千年の伝説！"
+      },
+      "summary": {
+        "es": "Ryuji encuentra a sus compañeros dragones en Lost Island y recupera su vitalidad. Los dragones milenarios vuelan juntos una vez más, reviviendo la antigua leyenda.",
+        "en": "Ryuji finds fellow dragons on Lost Island and regains vitality as millennium dragons fly together once more.",
+        "ja": "千年竜たちが再び空を翔ける。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -168,8 +205,13 @@
     {
       "number": 61,
       "title": {
-        "en": "Angry Finale! Cross the Red Line!",
+        "en": "An Angry Showdown! Cross the Red Line!",
         "ja": "怒りの決着！赤い大陸を乗り越えろ！"
+      },
+      "summary": {
+        "es": "Episodio final de la saga East Blue. Los Sombreros de Paja se despiden de Apis y cruzan la Red Line para entrar al Grand Line, marcando el inicio de su gran aventura.",
+        "en": "Final East Blue episode. The Straw Hats bid farewell to Apis and cross the Red Line into the Grand Line.",
+        "ja": "東の海編最終回。赤い土の大陸を越えグランドラインへ。"
       },
       "canon": "mixed",
       "adaptsChapters": [

@@ -4,10 +4,12 @@
   "order": 1,
   "title": {
     "es": "Regreso a Sabaody",
-    "en": "Return to Sabaody Arc"
+    "en": "Return to Sabaody"
   },
   "summary": {
-    "es": "Dos años después de Marineford, los Mugiwara se reencuentran en el archipiélago Sabaody con sus nuevas formas, se enfrentan a la tripulación falsa de los Sombrero de Paja y a los Pacifista, y parten hacia el Nuevo Mundo con el Sunny recubierto."
+    "es": "Después del salto de tiempo, los Sombrero de Paja regresan a Sabaody para reencontrarse y retomar su viaje.",
+    "en": "After the time skip, the Straw Hats return to Sabaody to reunite and resume their journey.",
+    "ja": "2年後、シャボンディ再集結。"
   },
   "type": "canon",
   "chapterRange": {

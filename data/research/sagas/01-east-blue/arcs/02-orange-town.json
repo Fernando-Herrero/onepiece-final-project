@@ -4,11 +4,13 @@
   "order": 2,
   "title": {
     "es": "Orange Town",
-    "en": "Orange Town Arc",
+    "en": "Orange Town",
     "ja": "オレンジの町編"
   },
   "summary": {
-    "es": "Luffy conoce a Nami en Orange Town y se enfrenta a Buggy el Payaso y su banda; se recuerda el pasado de Luffy con Shanks."
+    "es": "Luffy y Zoro llegan a Orange Town, conocen a Nami y luchan para liberar el pueblo de Buggy el Payaso.",
+    "en": "Luffy and Zoro arrive at Orange Town, meet Nami, and fight to free the town from Buggy the Clown.",
+    "ja": "ルフィとゾロがオレンジの町に到着し、ナミと出会い、バギーから町を解放する。"
   },
   "type": "canon",
   "chapterRange": {
@@ -126,6 +128,11 @@
         "en": "Luffy's Past! The Red-Haired Shanks Appears!",
         "ja": "ルフィの過去！赤髪のシャンクス登場"
       },
+      "summary": {
+        "es": "Se revela cómo Luffy obtuvo sus poderes y su sombrero de paja a través de un flashback de su infancia con el pirata Shanks. La tripulación llega a Orange Town.",
+        "en": "A flashback reveals how Luffy gained his powers and straw hat through his childhood with Shanks. The crew reaches Orange Town.",
+        "ja": "シャンクスとの幼少期のフラッシュバックでルフィの能力と麦わら帽子の由来が明かされる。一行はオレンジの町へ。"
+      },
       "canon": "canon",
       "adaptsChapters": [
         1,
@@ -146,8 +153,13 @@
     {
       "number": 5,
       "title": {
-        "en": "Fear, Mysterious Power! Pirate Clown Captain Buggy!",
+        "en": "A Terrifying Mysterious Power! Captain Buggy, the Clown Pirate!",
         "ja": "恐怖　謎の力！海賊道化バギー船長！"
+      },
+      "summary": {
+        "es": "La tripulación se enfrenta a Buggy el Payaso, un peligroso pirata con poderes de fruta del diablo que aterroriza Orange Town.",
+        "en": "The crew faces Buggy the Clown, a dangerous Devil Fruit pirate terrorizing Orange Town.",
+        "ja": "悪魔の実の能力者バギーとオレンジの町を舞台にした戦い。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -172,6 +184,11 @@
         "en": "Desperate Situation! Beast Tamer Mohji vs. Luffy!",
         "ja": "絶体絶命！猛獣使いモージＶＳルフィ！"
       },
+      "summary": {
+        "es": "Luffy protege a un perro fiel y su tienda de comida para mascotas enfrentándose al domador de bestias Mohji y su león Richie.",
+        "en": "Luffy protects a loyal dog and its pet food shop while fighting beast tamer Mohji and his lion Richie.",
+        "ja": "ルフィが忠犬と店を守るため、猛獣使いモージとライオンのリッチーと戦う。"
+      },
       "canon": "canon",
       "adaptsChapters": [
         11,
@@ -194,8 +211,13 @@
     {
       "number": 7,
       "title": {
-        "en": "Grand Duel! Zoro the Swordsman vs. Cabaji the Acrobat!",
+        "en": "Epic Showdown! Swordsman Zoro vs. Acrobat Cabaji!",
         "ja": "壮絶決闘！剣豪ゾロＶＳ曲芸のカバジ！"
+      },
+      "summary": {
+        "es": "Zoro demuestra su habilidad como espadachín enfrentándose al acróbata Cabaji de los piratas de Buggy a pesar de estar herido.",
+        "en": "Zoro proves his swordsmanship against acrobat Cabaji of Buggy's crew despite being injured.",
+        "ja": "負傷したゾロがバギー一味のアクロバットキャバジと剣術勝負。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -220,8 +242,13 @@
     {
       "number": 8,
       "title": {
-        "en": "Who Will Win? Showdown Between the True Powers of the Devil Fruit!",
+        "en": "Who's the Lucky One? The Devil Fruit Power Showdown!",
         "ja": "勝者はどっち？悪魔の実の能力対決！"
+      },
+      "summary": {
+        "es": "Enfrentamiento final entre Luffy y Buggy. Los poderes de las frutas del diablo chocan mientras el destino de Orange Town se decide.",
+        "en": "Final showdown between Luffy and Buggy as Devil Fruit powers clash and Orange Town's fate is decided.",
+        "ja": "ルフィ対バギー最終決戦。悪魔の実の力が激突し、町の運命が決まる。"
       },
       "canon": "canon",
       "adaptsChapters": [

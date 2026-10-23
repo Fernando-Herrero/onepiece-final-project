@@ -3,9 +3,14 @@
   "sagaSlug": "wano-country",
   "order": 1,
   "title": {
-    "es": "País de Wano: Acto 1",
-    "en": "Wano Country Arc: Act 1",
+    "es": "Wano (parte 1)",
+    "en": "Wano Country (Part 1)",
     "ja": "ワノ国編 第一幕"
+  },
+  "summary": {
+    "es": "La tripulación llega a Wano, un país aislado de samuráis, y empieza a descubrir sus tradiciones y conflictos internos.",
+    "en": "The crew arrives at Wano, an isolated samurai country, and discovers its traditions.",
+    "ja": "ワノ国到着（前編）。"
   },
   "type": "canon",
   "chapterRange": {

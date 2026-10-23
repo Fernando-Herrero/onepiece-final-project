@@ -3,9 +3,14 @@
   "sagaSlug": "arabasta",
   "order": 6,
   "title": {
-    "es": "Arabasta",
-    "en": "Arabasta",
+    "es": "Alabasta",
+    "en": "Alabasta",
     "ja": "アラバスタ編"
+  },
+  "summary": {
+    "es": "Luffy y compañía ayudan a Vivi y al reino de Alabasta a detener una guerra provocada por Crocodile y sus subordinados.",
+    "en": "Luffy and company help Vivi and the kingdom of Alabasta stop a war provoked by Crocodile.",
+    "ja": "アラバスタでクロコダイルの陰謀を止める。"
   },
   "type": "canon",
   "chapterRange": {

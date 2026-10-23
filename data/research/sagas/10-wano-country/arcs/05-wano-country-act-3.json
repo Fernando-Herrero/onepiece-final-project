@@ -3,9 +3,14 @@
   "sagaSlug": "wano-country",
   "order": 5,
   "title": {
-    "es": "País de Wano: Acto 3",
-    "en": "Wano Country Arc: Act 3",
+    "es": "Wano (parte 3)",
+    "en": "Wano Country (Part 3)",
     "ja": "ワノ国編 第三幕"
+  },
+  "summary": {
+    "es": "La batalla final en Wano se intensifica, con enfrentamientos épicos y revelaciones cruciales que definirán el futuro del país y la tripulación.",
+    "en": "The final battle in Wano intensifies with epic confrontations and crucial revelations.",
+    "ja": "ワノ国決戦（後編）。"
   },
   "type": "canon",
   "chapterRange": {

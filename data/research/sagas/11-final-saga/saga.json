@@ -14,14 +14,10 @@
     "first": 1086,
     "last": 1180
   },
-  "arcSlugs": [
-    "egghead",
-    "elbaph"
-  ],
   "sources": [
     {
       "url": "https://onepiece.fandom.com/wiki/Final_Saga",
-      "field": "arcSlugs"
+      "field": "arcs.sagaSlug"
     },
     {
       "url": "https://onepiece.fandom.com/wiki/Elbaph_Arc",

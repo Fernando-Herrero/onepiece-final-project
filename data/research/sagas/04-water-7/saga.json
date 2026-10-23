@@ -11,23 +11,13 @@
     "last": 441
   },
   "episodeRange": {
-    "first": 196,
-    "last": 335
+    "first": 207,
+    "last": 325
   },
-  "arcSlugs": [
-    "g-8",
-    "long-ring-long-land",
-    "oceans-dream",
-    "foxys-return",
-    "water-7",
-    "enies-lobby",
-    "post-enies-lobby",
-    "ice-hunter"
-  ],
   "sources": [
     {
       "url": "https://onepiece.fandom.com/wiki/Water_7_Saga",
-      "field": "chapterRange, arcSlugs"
+      "field": "chapterRange, arcs.sagaSlug"
     },
     {
       "url": "https://www.animefillerlist.com/shows/one-piece",

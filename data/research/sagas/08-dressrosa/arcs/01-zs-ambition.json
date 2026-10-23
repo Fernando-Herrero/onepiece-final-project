@@ -3,12 +3,14 @@
   "sagaSlug": "dressrosa",
   "order": 1,
   "title": {
-    "es": "Arco de la Ambición de Z",
-    "en": "Z's Ambition Arc",
+    "es": "Ambición de Z",
+    "en": "Z's Ambition",
     "ja": "Zの野望編"
   },
   "summary": {
-    "es": "Relleno previo a One Piece Film: Z. En el mar de Maubeugemour, los Sombrero de Paja ayudan a la pequeña gigante Lily a rescatar a su padre y se enfrentan a Shuzo, antiguo alumno de Z."
+    "es": "Filler donde la tripulación enfrenta la amenaza de un misterioso villano mientras continúan su viaje hacia el Nuevo Mundo.",
+    "en": "Filler where the crew faces a mysterious villain while heading to the New World.",
+    "ja": "Zの野望編フィラー。"
   },
   "type": "filler",
   "chapterRange": null,

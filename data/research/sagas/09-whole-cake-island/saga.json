@@ -2,9 +2,9 @@
   "slug": "whole-cake-island",
   "order": 9,
   "title": {
-    "es": "Cuatro Emperadores / Isla Whole Cake",
-    "en": "Four Emperors / Whole Cake Island",
-    "ja": "四皇編 / ホールケーキアイランド編"
+    "es": "Whole Cake Island",
+    "en": "Whole Cake Island",
+    "ja": "ホールケーキアイランド編"
   },
   "chapterRange": {
     "first": 802,
@@ -12,20 +12,12 @@
   },
   "episodeRange": {
     "first": 747,
-    "last": 896
+    "last": 889
   },
-  "arcSlugs": [
-    "silver-mine",
-    "zou",
-    "marine-rookie",
-    "whole-cake-island",
-    "levely",
-    "cidre-guild"
-  ],
   "sources": [
     {
       "url": "https://onepiece.fandom.com/wiki/Whole_Cake_Island_Saga",
-      "field": "arcSlugs/chapterRange"
+      "field": "arcs.sagaSlug/chapterRange"
     },
     {
       "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Whole_Cake_Island_Saga",

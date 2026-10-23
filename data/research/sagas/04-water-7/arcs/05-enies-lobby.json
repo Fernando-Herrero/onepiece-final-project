@@ -1,14 +1,16 @@
 {
   "slug": "enies-lobby",
   "sagaSlug": "water-7",
-  "order": 6,
+  "order": 5,
   "title": {
     "es": "Enies Lobby",
     "en": "Enies Lobby",
     "ja": "エニエス・ロビー編"
   },
   "summary": {
-    "es": "Los Sombrero de Paja asaltan la isla judicial para rescatar a Robin del CP9."
+    "es": "Una misión de rescate audaz contra el gobierno mundial; la tripulación enfrenta enemigos poderosos y sus miedos más profundos.",
+    "en": "A bold rescue mission against the World Government; the crew faces powerful enemies.",
+    "ja": "エニエス・ロビー救出作戦。"
   },
   "type": "mixed",
   "chapterRange": {

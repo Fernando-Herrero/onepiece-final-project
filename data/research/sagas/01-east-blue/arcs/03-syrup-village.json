@@ -3,12 +3,14 @@
   "sagaSlug": "east-blue",
   "order": 3,
   "title": {
-    "es": "Villa Syrup",
-    "en": "Syrup Village Arc",
+    "es": "Syrup Village",
+    "en": "Syrup Village",
     "ja": "シロップ村編"
   },
   "summary": {
-    "es": "En Villa Syrup, Usopp descubre el plan del capitán Kuro para asesinar a Kaya; Luffy y los suyos frenan a los Piratas del Gato Negro y Usopp se une a la tripulación."
+    "es": "La tripulación busca un barco y conoce a Usopp mientras enfrentan a los piratas Black Cat.",
+    "en": "The crew searches for a ship and meets Usopp while facing the Black Cat Pirates.",
+    "ja": "仲間たちが船を探し、ウソップと出会い、クロネコの海賊団と対峙する。"
   },
   "type": "canon",
   "chapterRange": {
@@ -165,8 +167,13 @@
     {
       "number": 9,
       "title": {
-        "en": "Honorable Liar? Captain Usopp",
+        "en": "The Honorable Liar? Captain Usopp!",
         "ja": "正義のうそつき?キャプテンウソップ"
+      },
+      "summary": {
+        "es": "La tripulación llega a Syrup Village buscando un barco. Conocen a Usopp, un joven mentiroso que cuenta historias fantasiosas a los niños del pueblo.",
+        "en": "The crew reaches Syrup Village seeking a ship and meets Usopp, a young liar telling fantastical stories to the village children.",
+        "ja": "シロップ村で船を探す一行が、子供たちに空想話を語るウソップと出会う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -189,8 +196,13 @@
     {
       "number": 10,
       "title": {
-        "en": "The World's Strongest Weirdo! Jango the Hypnotist!",
+        "en": "The Weirdest Guy Ever! Jango the Hypnotist!",
         "ja": "史上最強の変な奴！催眠術師ジャンゴ"
+      },
+      "summary": {
+        "es": "Un extraño hipnotizador llamado Jango llega al pueblo. Se revela una conspiración que involucra al mayordomo de Kaya y un plan siniestro.",
+        "en": "A strange hypnotist named Jango arrives. A conspiracy involving Kaya's butler and a sinister plan is revealed.",
+        "ja": "催眠術師ジャンゴ登場。カヤの執事をめぐる陰謀が明らかに。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -214,8 +226,13 @@
     {
       "number": 11,
       "title": {
-        "en": "Revealing the Conspiracy! The Pirate Caretaker, Captain Kuro!",
+        "en": "Expose the Plot! Pirate Butler, Captain Kuro!",
         "ja": "陰謀を暴け！海賊執事キャプテンクロ"
+      },
+      "summary": {
+        "es": "Se revela que Klahadore es en realidad el temido Capitán Kuro. Usopp descubre el plan para asesinar a Kaya y robar su fortuna.",
+        "en": "Klahadore is revealed to be the feared Captain Kuro. Usopp discovers the plan to kill Kaya and steal her fortune.",
+        "ja": "クラハドールが「百計のクロ」だったと判明。ウソップが暗殺計画を知る。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -238,8 +255,13 @@
     {
       "number": 12,
       "title": {
-        "en": "Battle! The Black Cat Pirate Crew. Battle on the Slope!",
+        "en": "Clash with the Black Cat Pirates! The Great Battle on the Slope!",
         "ja": "激突！クロネコ海賊団坂道の大攻防！"
+      },
+      "summary": {
+        "es": "Comienza la batalla decisiva en la pendiente norte. Los Sombrero de Paja y Usopp se enfrentan a los Piratas del Gato Negro.",
+        "en": "The decisive battle begins on the north slope as the Straw Hats and Usopp face the Black Cat Pirates.",
+        "ja": "北の坂での決戦開始。麦わらの一味とウソップ対クロネコの海賊団。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -263,8 +285,13 @@
     {
       "number": 13,
       "title": {
-        "en": "The Terrifying Duo! Nyaban Brothers vs. Zoro",
+        "en": "The Terrifying Duo! Meowban Brothers vs. Zoro!",
         "ja": "恐怖の二人組！ニャーバン兄弟VSゾロ"
+      },
+      "summary": {
+        "es": "Zoro se enfrenta a los hermanos felinos Sham y Buchi mientras Luffy y los demás luchan contra el resto de la tripulación pirata.",
+        "en": "Zoro fights the Meowban Brothers Sham and Buchi while Luffy and the others battle the rest of the pirate crew.",
+        "ja": "ゾロ対シャムとブチ。ルフィたちも残りの海賊と戦う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -288,8 +315,13 @@
     {
       "number": 14,
       "title": {
-        "en": "Luffy's Revival! Miss Kaya's Life and Death Confrontation",
+        "en": "Luffy Back in Action! Miss Kaya's Desperate Resistance!",
         "ja": "ルフィ復活！カヤお嬢様の決死の抵抗"
+      },
+      "summary": {
+        "es": "Luffy se recupera de la hipnosis de Jango. Kaya intenta resistir las amenazas mientras la batalla se intensifica.",
+        "en": "Luffy recovers from Jango's hypnosis. Kaya tries to resist threats as the battle intensifies.",
+        "ja": "ルフィがジャンゴの催眠から回復。カヤが脅威に抵抗。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -312,8 +344,13 @@
     {
       "number": 15,
       "title": {
-        "en": "Defeat Kuro! Usopp's Tear-filled Determination!",
+        "en": "Beat Kuro! Usopp the Man's Tearful Resolve!",
         "ja": "クロを倒せ！男ウソップ涙の決意！"
+      },
+      "summary": {
+        "es": "Usopp encuentra el valor para enfrentar sus miedos y defender el pueblo. Se prepara para la confrontación final con Kuro.",
+        "en": "Usopp finds courage to face his fears and defend the village, preparing for the final confrontation with Kuro.",
+        "ja": "ウソップが恐れと向き合い、クロとの最終対決へ。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -338,8 +375,13 @@
     {
       "number": 16,
       "title": {
-        "en": "Protect Kaya! Usopp Pirate Gang Takes Action!",
+        "en": "Protect Kaya! The Usopp Pirates' Great Efforts!",
         "ja": "カヤを守れ！ウソップ海賊団大活躍！"
+      },
+      "summary": {
+        "es": "Los amigos de Usopp (Onion, Pepper y Carrot) hacen todo lo posible por proteger a Kaya de los invasores piratas.",
+        "en": "Usopp's friends Onion, Pepper, and Carrot do everything to protect Kaya from the invading pirates.",
+        "ja": "ウソップの仲間たちがカヤを守る。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -363,8 +405,13 @@
     {
       "number": 17,
       "title": {
-        "en": "Completely Infuriated! Kuro vs. Luffy, Final Battle!",
+        "en": "Anger Explosion! Kuro vs. Luffy! How It Ends!",
         "ja": "怒り爆発！クロVSルフィ決着の行方！"
+      },
+      "summary": {
+        "es": "La confrontación final entre Luffy y el Capitán Kuro determina el destino del pueblo y la seguridad de Kaya.",
+        "en": "The final confrontation between Luffy and Captain Kuro decides the village's fate and Kaya's safety.",
+        "ja": "ルフィ対クロ最終決戦で村とカヤの運命が決まる。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -388,8 +435,13 @@
     {
       "number": 18,
       "title": {
-        "en": "You Are a Special Animal! Gaimon and His Bizarre Friends",
+        "en": "You're the Weird One! Jango vs. Usopp!",
         "ja": "あんたが珍獣！ガイモンと奇妙な仲間"
+      },
+      "summary": {
+        "es": "Enfrentamiento final entre Usopp y Jango. Usopp demuestra su valor y habilidad como tirador en una batalla decisiva.",
+        "en": "Final showdown between Usopp and Jango as Usopp proves his marksmanship in a decisive battle.",
+        "ja": "ウソップ対ジャンゴ。狙撃手としての実力を示す。"
       },
       "canon": "canon",
       "adaptsChapters": [

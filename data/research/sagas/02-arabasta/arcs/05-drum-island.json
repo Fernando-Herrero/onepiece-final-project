@@ -3,9 +3,14 @@
   "sagaSlug": "arabasta",
   "order": 5,
   "title": {
-    "es": "Isla de Drum",
+    "es": "Drum Island",
     "en": "Drum Island",
     "ja": "ドラム島編"
+  },
+  "summary": {
+    "es": "Los Sombrero de Paja buscan un médico en una isla helada, enfrentando enfermedades y misterios locales.",
+    "en": "The Straw Hats seek a doctor on a frozen island, facing illness and local mysteries.",
+    "ja": "氷の島で医者を探す旅。"
   },
   "type": "canon",
   "chapterRange": {

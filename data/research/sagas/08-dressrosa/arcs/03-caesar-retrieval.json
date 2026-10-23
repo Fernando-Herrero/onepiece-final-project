@@ -3,11 +3,13 @@
   "sagaSlug": "dressrosa",
   "order": 3,
   "title": {
-    "es": "Arco de la Recuperación de Caesar",
-    "en": "Caesar Retrieval Arc"
+    "es": "Rescate de Caesar",
+    "en": "Caesar Retrieval"
   },
   "summary": {
-    "es": "Relleno: un misterioso pirata secuestra a Caesar del Thousand Sunny y la alianza tiene que recuperarlo antes de llegar a Dressrosa."
+    "es": "Filler donde los Sombrero de Paja buscan rescatar a Caesar Clown mientras enfrentan obstáculos cómicos y peligros moderados.",
+    "en": "Filler where the Straw Hats try to rescue Caesar Clown amid comic obstacles.",
+    "ja": "シーザー奪還フィラー。"
   },
   "type": "filler",
   "chapterRange": null,

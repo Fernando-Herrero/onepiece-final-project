@@ -4,11 +4,13 @@
   "order": 5,
   "title": {
     "es": "Arlong Park",
-    "en": "Arlong Park Arc",
+    "en": "Arlong Park",
     "ja": "アーロンパーク編"
   },
   "summary": {
-    "es": "En Villa Cocoyashi se revela el pasado de Nami bajo el yugo de Arlong; los Sombrero de Paja derrotan a los Piratas de Arlong y Nami se une oficialmente."
+    "es": "El pasado de Nami se revela al enfrentarse al dominio de Arlong en su isla natal.",
+    "en": "Nami's past is revealed as they confront Arlong's rule over her homeland.",
+    "ja": "ナミの過去が明かされ、アーロンの支配と対峙する。"
   },
   "type": "canon",
   "chapterRange": {
@@ -214,8 +216,13 @@
     {
       "number": 31,
       "title": {
-        "en": "The Most Wicked Man of East Blue, Fishman Pirate Arlong",
+        "en": "The Worst Man in the Eastern Seas! Fishman Pirate Arlong!",
         "ja": "東の海最悪の男！魚人海賊アーロン！"
+      },
+      "summary": {
+        "es": "La tripulación descubre que Nami se ha ido llevándose el Going Merry. Johnny y Yosaku llegan con noticias sobre Nami y los piratas hombres-pez liderados por el temible Arlong.",
+        "en": "The crew learns Nami left with the Going Merry. Johnny and Yosaku bring news of Nami and the fish-man pirates led by Arlong.",
+        "ja": "ナミがメリー号を持ち去る。ジョニーとヨサクがアーロンの情報を持つ。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -246,8 +253,13 @@
     {
       "number": 32,
       "title": {
-        "en": "The Witch of Cocoyashi Village, Arlong's Female Officer",
+        "en": "Witch of Cocoyashi Village! Arlong's Female Leader!",
         "ja": "ココヤシ村の魔女！アーロンの女幹部"
+      },
+      "summary": {
+        "es": "Zoro y Usopp siguen a Nami hasta su aldea natal. Descubren que ella trabaja para los piratas hombres-pez y es conocida como la 'bruja' que dibuja mapas para Arlong.",
+        "en": "Zoro and Usopp follow Nami to her hometown and discover she works for the fish-men as the \"witch\" who draws maps for Arlong.",
+        "ja": "ゾロとウソップがココヤシ村でナミの正体を知る。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -278,8 +290,13 @@
     {
       "number": 33,
       "title": {
-        "en": "Usopp's Death?! Luffy - Yet To Land?",
+        "en": "Usopp Dead?! When is Luffy Going to Make Landfall?!",
         "ja": "ウソップ死す？！ルフィ上陸はまだ？"
+      },
+      "summary": {
+        "es": "Usopp es derrotado por Arlong y sus hombres. Mientras tanto, Luffy y Sanji navegan hacia Cocoyashi con Yosaku como guía, sin saber la verdadera situación.",
+        "en": "Usopp is defeated by Arlong's men while Luffy and Sanji sail toward Cocoyashi guided by Yosaku.",
+        "ja": "ウソップがアーロンに敗北。ルフィとサンジが向かう。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -306,8 +323,13 @@
     {
       "number": 34,
       "title": {
-        "en": "Reunited! Usopp Tells Nami's True Story",
+        "en": "Everyone's Gathered! Usopp Speaks the Truth About Nami!",
         "ja": "全員集結！ウソップが語るナミの真実"
+      },
+      "summary": {
+        "es": "Usopp revela a Luffy y Sanji la trágica historia de Nami y por qué trabaja para Arlong. La tripulación se reúne para conocer la verdad sobre su navegante.",
+        "en": "Usopp reveals Nami's tragic story and why she works for Arlong. The crew gathers to learn the truth about their navigator.",
+        "ja": "ウソップがナミの過去とアーロンとの関係を明かす。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -340,8 +362,13 @@
     {
       "number": 35,
       "title": {
-        "en": "The Hidden Past! Female Fighter Bellemere!",
+        "en": "Untold Past! Female Warrior Bellemere!",
         "ja": "秘められた過去！女戦士ベルメール！"
+      },
+      "summary": {
+        "es": "Flashback que revela el pasado de Nami: cómo Bell-mère, una marine retirada, la encontró como bebé y la crió junto a Nojiko en Cocoyashi Village.",
+        "en": "Flashback revealing Nami's past: how retired marine Bell-mère found her as a baby and raised her with Nojiko.",
+        "ja": "ベルメールとナミ、ノジコのフラッシュバック。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -369,8 +396,13 @@
     {
       "number": 36,
       "title": {
-        "en": "Survive! The Mother Bellemere and Nami's Family!",
+        "en": "Survive! Mother Bellemere and Nami's Bond!",
         "ja": "生き抜け！母ベルメールとナミの絆！"
+      },
+      "summary": {
+        "es": "Continúa el flashback mostrando cómo Arlong llegó al pueblo y asesinó a Bell-mère. Nami acepta trabajar para él para salvar a los aldeanos y comprar su libertad.",
+        "en": "The flashback continues as Arlong arrives, kills Bell-mère, and Nami agrees to work for him to save the villagers.",
+        "ja": "アーロンがベルメールを殺し、ナミが村を救うために働く。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -401,8 +433,13 @@
     {
       "number": 37,
       "title": {
-        "en": "Luffy Stands Up! End of a Broken Promise!",
+        "en": "Luffy Rises! Result of the Broken Promise!",
         "ja": "ルフィ立つ！裏切られた約束の結末！"
+      },
+      "summary": {
+        "es": "Arlong rompe su promesa con Nami usando al corrupto marine Nezumi. Cuando Nami finalmente pide ayuda, Luffy le da su sombrero de paja y promete derrotar a Arlong.",
+        "en": "Arlong breaks his promise using corrupt marine Nezumi. When Nami finally asks for help, Luffy gives her his straw hat.",
+        "ja": "ネズミ軍曹の策略でナミが助けを求める。ルフィが麦わら帽子を渡す。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -432,8 +469,13 @@
     {
       "number": 38,
       "title": {
-        "en": "Luffy in Trouble! Fishmen vs. Luffy Pirates!",
+        "en": "Luffy in Big Trouble! Fishmen vs. the Luffy Pirates!",
         "ja": "ルフィ大ピンチ！魚人VSルフィ海賊団"
+      },
+      "summary": {
+        "es": "Comienza la batalla en Arlong Park. Los Sombreros de Paja enfrentan a los piratas hombres-pez mientras Luffy queda atrapado bajo el agua por la piscina del parque.",
+        "en": "Battle begins at Arlong Park as the Straw Hats face fish-man pirates while Luffy is trapped underwater.",
+        "ja": "アーロンパークでの戦い開始。ルフィが水の中に閉じ込められる。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -462,8 +504,13 @@
     {
       "number": 39,
       "title": {
-        "en": "Luffy Drowning! Zoro vs. Octopus Hatchan!",
+        "en": "Luffy Submerged! Zoro vs. Hatchan the Octopus!",
         "ja": "ルフィ水没！ゾロVSタコのはっちゃん"
+      },
+      "summary": {
+        "es": "Zoro se enfrenta al espadachín pulpo Hatchan en un duelo de seis espadas contra tres. Mientras tanto, Luffy permanece atrapado bajo el agua.",
+        "en": "Zoro faces octopus swordsman Hatchan in a six-sword versus three duel while Luffy remains trapped underwater.",
+        "ja": "ゾロ対六刀流のハッチアン。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -495,8 +542,13 @@
     {
       "number": 40,
       "title": {
-        "en": "Proud, Tall Warriors! Dramatic Battle of Sanji and Usopp!",
+        "en": "Proud Warriors! Sanji and Usopp's Fierce Battles!",
         "ja": "誇り高き戦士！激闘サンジとウソップ"
+      },
+      "summary": {
+        "es": "Sanji lucha contra Kuroobi en el agua, demostrando su habilidad de combate acuático, mientras Usopp se enfrenta al karateka Chu con su honda y su ingenio.",
+        "en": "Sanji fights Kuroobi in the water while Usopp faces karateka Chu with his slingshot and wit.",
+        "ja": "サンジ対クロオビ、ウソップ対チュウ。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -525,8 +577,13 @@
     {
       "number": 41,
       "title": {
-        "en": "Luffy's Best! Nami's Courage and the Straw Hat",
+        "en": "Luffy at Full Power! Nami's Determination and the Straw Hat!",
         "ja": "ルフィ全開！ナミの決意と麦わら帽子"
+      },
+      "summary": {
+        "es": "Genzo y Nojiko salvan a Luffy del agua. Nami finalmente se enfrenta a su pasado y declara que quiere seguir viviendo, inspirando a Luffy para la batalla final.",
+        "en": "Genzo and Nojiko save Luffy from the water. Nami confronts her past and declares she wants to keep living.",
+        "ja": "ゲンゾとノジコがルフィを救う。ナミが生きる決意。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -555,8 +612,13 @@
     {
       "number": 42,
       "title": {
-        "en": "Bursting Out! Fishman Arlong, Fearsome Attack From The Sea!",
+        "en": "Explosion! Fishman Arlong's Fierce Assault From the Sea!",
         "ja": "炸裂！魚人ア!）ロン海からの猛攻撃！"
+      },
+      "summary": {
+        "es": "Arlong demuestra su verdadero poder como hombre-pez, mostrando su fuerza sobrehumana y sus afilados dientes de tiburón en la batalla contra Luffy.",
+        "en": "Arlong shows his true fish-man power with superhuman strength and shark teeth against Luffy.",
+        "ja": "アーロンの本気の魚人パワー。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -583,8 +645,13 @@
     {
       "number": 43,
       "title": {
-        "en": "The End of the Fishman Empire! Nami is my Friend!",
+        "en": "End of the Fishman Empire! Nami's My Friend!",
         "ja": "魚人帝国の終わり！ナミは俺の仲間だ！"
+      },
+      "summary": {
+        "es": "Luffy destruye la habitación donde Nami fue forzada a dibujar mapas, proclamando que ella es su nakama. Con su Gomu Gomu no Ono, derrota a Arlong y destruye Arlong Park.",
+        "en": "Luffy destroys the room where Nami was forced to draw maps, proclaiming she is his nakama, and defeats Arlong.",
+        "ja": "ルフィがアーロンを倒し「お前は仲間だ」と宣言。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -616,8 +683,13 @@
     {
       "number": 44,
       "title": {
-        "en": "Setting off with a Smile! Farewell my Hometown, Cocoyashi Village!",
+        "en": "Departure! Farewell to the Brave Cocoyashi Village!",
         "ja": "笑顔の旅立ち！さらば故郷ココヤシ村"
+      },
+      "summary": {
+        "es": "Los aldeanos celebran su libertad. Nami se despide oficialmente de su pueblo natal y de Nojiko para unirse definitivamente a los Sombreros de Paja como su navegante.",
+        "en": "The villagers celebrate freedom. Nami officially leaves her hometown and joins the Straw Hats as navigator.",
+        "ja": "ナミが故郷を離れ navigator として正式加入。"
       },
       "canon": "canon",
       "adaptsChapters": [

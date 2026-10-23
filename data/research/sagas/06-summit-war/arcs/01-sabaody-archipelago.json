@@ -3,9 +3,14 @@
   "sagaSlug": "summit-war",
   "order": 1,
   "title": {
-    "es": "Arco de Archipiélago Sabaody",
-    "en": "Sabaody Archipelago Arc",
+    "es": "Sabaody Archipelago",
+    "en": "Sabaody Archipelago",
     "ja": null
+  },
+  "summary": {
+    "es": "La antesala del Nuevo Mundo: los Sombrero de Paja enfrentan fuerzas poderosas y barreras naturales.",
+    "en": "Gateway to the New World: the Straw Hats face powerful forces and natural barriers.",
+    "ja": "シャボンディ諸島、新世界への入口。"
   },
   "type": "mixed",
   "chapterRange": {

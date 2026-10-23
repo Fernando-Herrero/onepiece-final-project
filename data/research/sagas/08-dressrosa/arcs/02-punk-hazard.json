@@ -3,12 +3,14 @@
   "sagaSlug": "dressrosa",
   "order": 2,
   "title": {
-    "es": "Arco de Punk Hazard",
-    "en": "Punk Hazard Arc",
+    "es": "Punk Hazard",
+    "en": "Punk Hazard",
     "ja": "パンクハザード編"
   },
   "summary": {
-    "es": "Tras una llamada de socorro, la tripulación llega a la isla de fuego y hielo de Punk Hazard, donde Caesar Clown experimenta con niños. Luffy forma una alianza pirata con Law para derribar a un Emperador, derrotan a Caesar y lo secuestran, dejando al descubierto a Doflamingo como el traficante que hay detrás."
+    "es": "La tripulación llega a una isla dividida entre fuego y hielo, enfrentando experimentos peligrosos y alianzas inesperadas.",
+    "en": "The crew reaches an island split between fire and ice, facing dangerous experiments.",
+    "ja": "パンクハザード、火と氷の島。"
   },
   "type": "canon",
   "chapterRange": {

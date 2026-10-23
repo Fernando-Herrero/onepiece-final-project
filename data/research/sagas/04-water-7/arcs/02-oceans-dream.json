@@ -1,14 +1,16 @@
 {
   "slug": "oceans-dream",
   "sagaSlug": "water-7",
-  "order": 3,
+  "order": 2,
   "title": {
-    "es": "Sueño del océano",
+    "es": "Ocean's Dream",
     "en": "Ocean's Dream",
     "ja": "オーシャンズドリーム編"
   },
   "summary": {
-    "es": "Arco de relleno: la tripulación (salvo Luffy) pierde los recuerdos y debe recuperarlos."
+    "es": "Filler donde la tripulación pierde temporalmente la memoria y se desarrollan aventuras cómicas y ligeras.",
+    "en": "Filler where the crew temporarily loses memory with comic adventures.",
+    "ja": "記憶喪失フィラー。"
   },
   "type": "filler",
   "episodeRange": {

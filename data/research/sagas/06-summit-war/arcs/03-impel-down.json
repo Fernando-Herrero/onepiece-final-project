@@ -3,9 +3,14 @@
   "sagaSlug": "summit-war",
   "order": 3,
   "title": {
-    "es": "Arco de Impel Down",
-    "en": "Impel Down Arc",
+    "es": "Impel Down",
+    "en": "Impel Down",
     "ja": null
+  },
+  "summary": {
+    "es": "Luffy intenta infiltrarse en la prisión más temida para salvar a un ser querido.",
+    "en": "Luffy tries to infiltrate the most feared prison to save a loved one.",
+    "ja": "インペルダウン潜入。"
   },
   "type": "mixed",
   "chapterRange": {

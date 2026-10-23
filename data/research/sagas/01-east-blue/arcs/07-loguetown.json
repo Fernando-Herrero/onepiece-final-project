@@ -4,11 +4,13 @@
   "order": 7,
   "title": {
     "es": "Loguetown",
-    "en": "Loguetown Arc",
+    "en": "Loguetown",
     "ja": "ローグタウン編"
   },
   "summary": {
-    "es": "Llega el primer cartel de recompensa de Luffy; en Loguetown Zoro consigue nuevas espadas, Buggy y Alvida intentan ejecutar a Luffy y Smoker lo persigue hasta que Dragon interviene."
+    "es": "Última parada antes de la Grand Line: Loguetown es lugar de confrontaciones previas al gran viaje.",
+    "en": "Last stop before the Grand Line: Loguetown brings confrontations before the great voyage.",
+    "ja": "グランドライン前の最後の寄港地ローグタウンでの対決。"
   },
   "type": "mixed",
   "chapterRange": {
@@ -60,8 +62,13 @@
     {
       "number": 45,
       "title": {
-        "en": "Bounty! Straw Hat Luffy Becomes World Famous!",
+        "en": "Bounty! Straw Hat Luffy Becomes Known to the World!",
         "ja": "賞金首！麦わらのルフィ世に知れ渡る"
+      },
+      "summary": {
+        "es": "El marine corrupto Nezumi informa sobre Luffy a la Marina. Se emite la primera recompensa de Luffy: 30,000,000 de berries, convirtiéndolo oficialmente en un pirata buscado.",
+        "en": "Corrupt marine Nezumi reports Luffy. His first bounty of 30,000,000 berries makes him an officially wanted pirate.",
+        "ja": "ルフィ初懸賞金3000万ベリー。"
       },
       "canon": "mixed",
       "adaptsChapters": [
@@ -96,8 +103,13 @@
     {
       "number": 48,
       "title": {
-        "en": "The Town of the Beginning and the End - Arrival at Loguetown",
+        "en": "The Town of the Beginning and the End! Landfall at Logue Town!",
         "ja": "始まりと終りの町・ローグタウン上陸"
+      },
+      "summary": {
+        "es": "Los Sombreros de Paja llegan a Logue Town, el lugar donde nació y murió el Rey Pirata Gol D. Roger. Es su última parada antes del Grand Line.",
+        "en": "The Straw Hats reach Logue Town, where Pirate King Gol D. Roger was born and executed — their last stop before the Grand Line.",
+        "ja": "ローグタウン到着。ロジャーが生まれ、処刑された町。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -122,8 +134,13 @@
     {
       "number": 49,
       "title": {
-        "en": "Sandai Kitetsu and Yubashiri! Zoro's New Swords, and the Female Sergeant Major",
+        "en": "Kitetsu III and Yubashiri! Zoro's New Swords and the Woman Sergeant Major!",
         "ja": "三代鬼徹と雪走！ゾロの新刀と女曹長"
+      },
+      "summary": {
+        "es": "Zoro busca nuevas katanas en Logue Town y conoce a Tashigi, quien se parece mucho a su amiga fallecida Kuina. Obtiene dos espadas: Sandai Kitetsu y Yubashiri.",
+        "en": "Zoro seeks new katanas in Logue Town, meets Tashigi, and obtains Sandai Kitetsu and Yubashiri.",
+        "ja": "ゾロが三代鬼徹と雪走を手に入れ、タシギと出会う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -148,8 +165,13 @@
     {
       "number": 50,
       "title": {
-        "en": "Usopp vs. Daddy The Father! Showdown at High Noon!",
+        "en": "Usopp vs. Daddy the Father! Showdown at High Noon!",
         "ja": "ウソップVS子連れのダディ真昼の決闘"
+      },
+      "summary": {
+        "es": "Usopp se enfrenta a Daddy Masterson, un famoso francotirador, en un duelo al mediodía. Demuestra sus habilidades como tirador en una intensa competencia.",
+        "en": "Usopp faces famous sharpshooter Daddy Masterson in a high-noon duel.",
+        "ja": "ウソップ対狙撃手ダディの正午の決闘。"
       },
       "canon": "filler",
       "adaptsChapters": [],
@@ -171,8 +193,13 @@
     {
       "number": 51,
       "title": {
-        "en": "A Burning Culinary Battle? Sanji vs. The Gorgeous Chef",
+        "en": "Fiery Cooking Battle? Sanji vs. the Beautiful Chef!",
         "ja": "炎の料理バトル?サンジVS美人シェフ"
+      },
+      "summary": {
+        "es": "Sanji participa en una competencia culinaria contra Carmen, una hermosa chef. La competencia se convierte en una batalla de habilidades gastronómicas.",
+        "en": "Sanji competes in a cooking battle against beautiful chef Carmen.",
+        "ja": "サンジ対美女シェフカルメンの料理勝負。"
       },
       "canon": "mixed",
       "adaptsChapters": [
@@ -200,8 +227,13 @@
     {
       "number": 52,
       "title": {
-        "en": "Buggy's Revenge! The Man who Smiles at the Execution Platform!",
+        "en": "Buggy's Revenge! The Man Who Smiles On the Execution Platform!",
         "ja": "バギーのリベンジ！処刑台で笑う男！"
+      },
+      "summary": {
+        "es": "Buggy intenta ejecutar públicamente a Luffy en la misma plataforma donde murió Roger. Una tormenta misteriosa salva a Luffy, recordando la ejecución del Rey Pirata.",
+        "en": "Buggy tries to publicly execute Luffy on the same platform where Roger died. A mysterious storm saves Luffy.",
+        "ja": "バギーが処刑台でルフィを狙う。嵐がルフィを救う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -231,8 +263,13 @@
     {
       "number": 53,
       "title": {
-        "en": "The Legend Has Begun! Head to the Grand Line",
+        "en": "The Legend Has Started! Head for the Grand Line!",
         "ja": "伝説は始まった！目指せ偉大なる航路"
+      },
+      "summary": {
+        "es": "Los Sombreros de Paja escapan de Logue Town mientras Smoker los persigue. Con determinación renovada, se dirigen hacia el Grand Line para cumplir sus sueños.",
+        "en": "The Straw Hats escape Logue Town as Smoker pursues them, heading toward the Grand Line.",
+        "ja": "スモーカーから逃れグランドラインへ。"
       },
       "canon": "canon",
       "adaptsChapters": [

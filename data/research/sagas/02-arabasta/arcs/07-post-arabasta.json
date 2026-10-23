@@ -3,9 +3,14 @@
   "sagaSlug": "arabasta",
   "order": 7,
   "title": {
-    "es": "Post-Arabasta",
-    "en": "Post-Arabasta",
+    "es": "Post-Alabasta",
+    "en": "Post-Alabasta",
     "ja": null
+  },
+  "summary": {
+    "es": "La tripulación reflexiona sobre lo ocurrido en Alabasta y prepara su siguiente etapa en la Grand Line.",
+    "en": "The crew reflects on Alabasta and prepares for the next stage of the Grand Line.",
+    "ja": "アラバスタ後の休息と次の航路へ。"
   },
   "type": "filler",
   "chapterRange": null,

@@ -3,12 +3,14 @@
   "sagaSlug": "east-blue",
   "order": 6,
   "title": {
-    "es": "Las aventuras de la banda de Buggy",
-    "en": "Buggy's Crew: After the Battle!",
+    "es": "Historia de Buggy",
+    "en": "Buggy Side Story",
     "ja": "バギー一味冒険記"
   },
   "summary": {
-    "es": "Adaptación de la historia de portada de Buggy: el capitán recupera sus partes y reúne de nuevo a su banda."
+    "es": "Pequeña historia paralela donde se muestran eventos de Buggy y su tripulación, con momentos ligeros y humorísticos.",
+    "en": "Side story showing Buggy and his crew with lighthearted and humorous moments.",
+    "ja": "バギーと一味のサイドストーリー。軽快でユーモラスな展開。"
   },
   "type": "mixed",
   "chapterRange": null,
@@ -21,8 +23,13 @@
     {
       "number": 46,
       "title": {
-        "en": "Following the Straw Hat! Little Buggy's Big Adventure",
+        "en": "Chase Straw Hat! Little Buggy's Big Adventure!",
         "ja": "麦わらを追え！小さなバギーの大冒険"
+      },
+      "summary": {
+        "es": "Episodio especial que sigue las aventuras de Buggy después de su derrota. Buggy busca venganza contra Luffy mientras vive diversas desventuras.",
+        "en": "Special episode following Buggy's adventures after his defeat as he seeks revenge against Luffy.",
+        "ja": "バギーの復讐を描くスペシャル。"
       },
       "canon": "mixed",
       "adaptsChapters": [
@@ -59,6 +66,11 @@
       "title": {
         "en": "You've Been Waiting For It! The Return of Captain Buggy!",
         "ja": "お待ちかね！あぁ復活のバギー船長！"
+      },
+      "summary": {
+        "es": "Continuación de las aventuras de Buggy. El payaso pirata continúa su búsqueda de venganza mientras intenta reconstruir su tripulación.",
+        "en": "Buggy's adventures continue as the clown pirate seeks revenge while rebuilding his crew.",
+        "ja": "バギー再登場、一味再建を目指す。"
       },
       "canon": "mixed",
       "adaptsChapters": [

@@ -3,9 +3,14 @@
   "sagaSlug": "wano-country",
   "order": 6,
   "title": {
-    "es": "El pasado de Uta",
-    "en": "Uta's Past Arc",
+    "es": "Pasado de Uta",
+    "en": "Uta's Past",
     "ja": "ウタの過去編"
+  },
+  "summary": {
+    "es": "Filler que explora los recuerdos y la historia de Uta, revelando su pasado antes de los eventos actuales en Wano.",
+    "en": "Filler exploring Uta’s memories and past before current Wano events.",
+    "ja": "ウタの過去編フィラー。"
   },
   "type": "filler",
   "episodeRange": {

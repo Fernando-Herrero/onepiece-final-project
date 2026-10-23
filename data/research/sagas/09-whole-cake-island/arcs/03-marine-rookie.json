@@ -3,9 +3,14 @@
   "sagaSlug": "whole-cake-island",
   "order": 3,
   "title": {
-    "es": "Novatos de la Marina",
+    "es": "Marine Rookie",
     "en": "Marine Rookie",
     "ja": "海軍超新星編"
+  },
+  "summary": {
+    "es": "Filler donde los Sombrero de Paja se infiltran en una base marina de poca relevancia y enfrentan situaciones cómicas.",
+    "en": "Filler where the Straw Hats infiltrate a minor marine base.",
+    "ja": "海軍ルーキー編フィラー。"
   },
   "type": "filler",
   "episodeRange": {

@@ -2,9 +2,9 @@
   "slug": "summit-war",
   "order": 6,
   "title": {
-    "es": "Saga de la Guerra en la Cumbre",
-    "en": "Summit War Saga",
-    "ja": "〝頂上戦争〟編"
+    "es": "Guerra de la cumbre",
+    "en": "Summit War",
+    "ja": "頂上戦争編"
   },
   "chapterRange": {
     "first": 490,
@@ -14,18 +14,10 @@
     "first": 385,
     "last": 516
   },
-  "arcSlugs": [
-    "sabaody-archipelago",
-    "amazon-lily",
-    "impel-down",
-    "little-east-blue",
-    "marineford",
-    "post-war"
-  ],
   "sources": [
     {
       "url": "https://onepiece.fandom.com/wiki/Summit_War_Saga",
-      "field": "title,arcSlugs"
+      "field": "title,arcs.sagaSlug"
     },
     {
       "url": "https://web.archive.org/web/20110417021706/http://www.j-onepiece.com/chapter06/menu.html",

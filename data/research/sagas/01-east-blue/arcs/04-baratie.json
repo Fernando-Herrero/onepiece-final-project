@@ -4,11 +4,13 @@
   "order": 4,
   "title": {
     "es": "Baratie",
-    "en": "Baratie Arc",
+    "en": "Baratie",
     "ja": "海上レストラン編"
   },
   "summary": {
-    "es": "En el restaurante flotante Baratie, Zoro cae ante Mihawk, Luffy se enfrenta a Don Krieg y Sanji se une a la tripulación tras despedirse de Zeff."
+    "es": "El grupo visita un restaurante flotante en busca de un cocinero, Sanji se une, y surge conflicto con Don Krieg.",
+    "en": "The group visits a floating restaurant seeking a cook; Sanji joins and conflict with Don Krieg erupts.",
+    "ja": "浮遊レストランでコックを探し、サンジが加わり、クリークとの争いが起きる。"
   },
   "type": "canon",
   "chapterRange": {
@@ -214,8 +216,13 @@
     {
       "number": 19,
       "title": {
-        "en": "Past of the Three Swords! The Promise Between Zoro and Kuina!",
+        "en": "The Three-Sword Style's Past! Zoro and Kuina's Vow!",
         "ja": "三刀流の過去！ゾロとくいなの誓い！"
+      },
+      "summary": {
+        "es": "Flashback del pasado de Zoro y su promesa con su amiga de la infancia Kuina, revelando por qué se convirtió en espadachín.",
+        "en": "Flashback to Zoro's past and his vow with childhood friend Kuina, revealing why he became a swordsman.",
+        "ja": "ゾロと幼馴染クイナの誓い。三刀流を志した理由。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -238,8 +245,13 @@
     {
       "number": 20,
       "title": {
-        "en": "The Famous Cook! Sanji of the Floating Restaurant",
+        "en": "Famous Cook! Sanji of the Sea Restaurant!",
         "ja": "名物コック！海上レストランのサンジ"
+      },
+      "summary": {
+        "es": "La tripulación llega al restaurante flotante Baratie donde conocen a Sanji, un cocinero con sueños de encontrar el All Blue.",
+        "en": "The crew reaches the floating restaurant Baratie and meets Sanji, a cook dreaming of finding the All Blue.",
+        "ja": "海上レストラン「バラティエ」でサンジと出会う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -263,8 +275,13 @@
     {
       "number": 21,
       "title": {
-        "en": "An Unexpected Guest! Sanji's Food and Gin's Grace",
+        "en": "Unwelcome Customer! Sanji's Food and Ghin's Debt!",
         "ja": "招かれざる客！サンジの飯とギンの恩"
+      },
+      "summary": {
+        "es": "Un pirata hambriento llamado Gin pone a prueba los principios del Baratie sobre alimentar a cualquier persona necesitada.",
+        "en": "A hungry pirate named Gin tests Baratie's principle of feeding anyone in need.",
+        "ja": "空腹のギンがバラティエの「誰でも食べさせる」理念を試す。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -290,8 +307,13 @@
     {
       "number": 22,
       "title": {
-        "en": "The Greatest Pirate Fleet: Captain Don Krieg",
+        "en": "The Strongest Pirate Fleet! Commodore Don Krieg!",
         "ja": "最強の海賊艦隊！提督ドン・クリーク"
+      },
+      "summary": {
+        "es": "Don Krieg, líder de la flota pirata más grande del East Blue, llega al Baratie con intenciones de conquistar el restaurante.",
+        "en": "Don Krieg, leader of the East Blue's largest pirate fleet, arrives at Baratie intending to conquer the restaurant.",
+        "ja": "東の海最大の海賊艦隊、ドン・クリークがバラティエを狙う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -317,8 +339,13 @@
     {
       "number": 23,
       "title": {
-        "en": "Protect Baratie! The Great Pirate: Zeff the Red Leg",
+        "en": "Protect Baratie! The Great Pirate, Red Foot Zeff!",
         "ja": "守れバラティエ！大海賊・赫足のゼフ"
+      },
+      "summary": {
+        "es": "Se revela el pasado de Zeff como el pirata 'Pie Rojo' y su conexión con Sanji a través de una tragedia en el mar.",
+        "en": "Zeff's past as the pirate Red Leg and his connection to Sanji through a tragedy at sea is revealed.",
+        "ja": "ゼフの「赤足」時代とサンジとの過去が明かされる。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -347,8 +374,13 @@
     {
       "number": 24,
       "title": {
-        "en": "Hawk Eyes Mihawk! Swordsman Zoro Falls into the Sea!",
+        "en": "Hawk-Eye Mihawk! The Great Swordsman vs. Pirate Hunter Zoro!",
         "ja": "鷹の目のミホーク！剣豪ゾロ海に散る"
+      },
+      "summary": {
+        "es": "Dracule Mihawk, el espadachín más fuerte del mundo, llega al Baratie buscando a Zoro para un duelo épico.",
+        "en": "Dracule Mihawk, the world's strongest swordsman, arrives at Baratie seeking Zoro for an epic duel.",
+        "ja": "世界最強の剣士ミホークがゾロとの決闘を求めて来る。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -378,8 +410,13 @@
     {
       "number": 25,
       "title": {
-        "en": "The Emergence of the Superb Kicking Skill: Sanji vs. the Iron Wall Pearl",
+        "en": "The Emerge of the Deadly Weapon! Zoro's New Special Attack!",
         "ja": "必殺足技炸裂！サンジVS鉄壁のパール"
+      },
+      "summary": {
+        "es": "Zoro desata una nueva técnica especial en su batalla desesperada contra el espadachín más poderoso del mundo.",
+        "en": "Zoro unleashes a new special technique in his desperate battle against the world's most powerful swordsman.",
+        "ja": "絶体絶命のゾロが新技を放つ。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -406,8 +443,13 @@
     {
       "number": 26,
       "title": {
-        "en": "Zeff and Sanji's Ambition: The Sea of Dreams - All Blue",
+        "en": "Zoro's Vow to His Captain! I'll Never Lose Again!",
         "ja": "ゼフとサンジの夢　幻のオールブルー"
+      },
+      "summary": {
+        "es": "Después de su aplastante derrota ante Mihawk, Zoro hace una promesa solemne a Luffy que definirá su futuro.",
+        "en": "After his crushing defeat by Mihawk, Zoro makes a solemn promise to Luffy that will define his future.",
+        "ja": "ミホークに敗れたゾロがルフィに誓う「二度と負けない」。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -432,8 +474,13 @@
     {
       "number": 27,
       "title": {
-        "en": "The Coldhearted Demon: Pirate Fleet Battle Commander Gin",
+        "en": "Cool-headed, Cold-hearted Demon! Pirate Fleet Chief Commander Ghin!",
         "ja": "冷徹非情の鬼人　海賊艦隊総隊長ギン"
+      },
+      "summary": {
+        "es": "Gin se debate entre su lealtad a Don Krieg y su deuda de gratitud hacia Sanji, creando un conflicto interno.",
+        "en": "Gin struggles between loyalty to Don Krieg and gratitude toward Sanji.",
+        "ja": "ギンがクリークへの忠義とサンジへの恩義の間で揺れる。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -459,8 +506,13 @@
     {
       "number": 28,
       "title": {
-        "en": "I Won't Die! Conclusion: Luffy vs. Krieg",
+        "en": "I Won't Die! Fierce Battle, Luffy vs. Krieg!",
         "ja": "死なねェよ!激闘ルフィVSクリーク!"
+      },
+      "summary": {
+        "es": "Comienza la batalla decisiva entre Luffy y Don Krieg mientras Gin se sacrifica para salvar a Luffy del gas venenoso.",
+        "en": "The decisive battle between Luffy and Don Krieg begins while Gin sacrifices himself to save Luffy from poison gas.",
+        "ja": "ルフィ対クリーク決戦。ギンが毒ガスからルフィを救う。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -484,8 +536,13 @@
     {
       "number": 29,
       "title": {
-        "en": "Outcome of a Deadly Battle! The Inner Spear!",
+        "en": "The Conclusion of the Deadly Battle! A Spear of Blind Determination!",
         "ja": "死闘の決着！腹にくくった１本の槍！"
+      },
+      "summary": {
+        "es": "La batalla final entre Luffy y Don Krieg llega a su clímax. Con el poder de su determinación y su Gomu Gomu no Bazooka, Luffy derrota al almirante de la gran flota pirata.",
+        "en": "The final battle between Luffy and Don Krieg reaches its climax with Luffy's Gomu Gomu no Bazooka.",
+        "ja": "ルフィのゴムゴムのバズーカでクリークを倒すクライマックス。"
       },
       "canon": "canon",
       "adaptsChapters": [
@@ -515,8 +572,13 @@
     {
       "number": 30,
       "title": {
-        "en": "Departure! Sea Chef and Luffy Travel Together!",
+        "en": "Set Sail! The Seafaring Cook Sets off With Luffy!",
         "ja": "旅立ち！海のコックはルフィとともに"
+      },
+      "summary": {
+        "es": "Después de la batalla, Sanji decide unirse a la tripulación de Luffy para cumplir su sueño de encontrar el All Blue. Se despide del Baratie y de Zeff con una emotiva partida.",
+        "en": "After the battle, Sanji joins Luffy's crew to pursue his All Blue dream and bids an emotional farewell to Baratie and Zeff.",
+        "ja": "サンジがオールブルーを目指し一味に加わる。"
       },
       "canon": "canon",
       "adaptsChapters": [

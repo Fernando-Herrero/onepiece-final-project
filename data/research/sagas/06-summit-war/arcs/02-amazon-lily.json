@@ -3,9 +3,14 @@
   "sagaSlug": "summit-war",
   "order": 2,
   "title": {
-    "es": "Arco de Amazon Lily",
-    "en": "Amazon Lily Arc",
+    "es": "Amazon Lily",
+    "en": "Amazon Lily",
     "ja": null
+  },
+  "summary": {
+    "es": "Luffy llega a una isla de mujeres guerreras y descubre más del mundo mientras busca a Ace.",
+    "en": "Luffy reaches an island of warrior women while searching for Ace.",
+    "ja": "アマゾン・リリー、エースを探すルフィ。"
   },
   "type": "canon",
   "chapterRange": {

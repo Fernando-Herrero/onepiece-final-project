@@ -3,9 +3,14 @@
   "sagaSlug": "wano-country",
   "order": 4,
   "title": {
-    "es": "País de Wano: Acto 2",
-    "en": "Wano Country Arc: Act 2",
+    "es": "Wano (parte 2)",
+    "en": "Wano Country (Part 2)",
     "ja": "ワノ国編 第二幕"
+  },
+  "summary": {
+    "es": "La tripulación continúa su lucha contra los aliados del Shogun y empieza a formar estrategias para derrotar al enemigo principal.",
+    "en": "The crew continues fighting the Shogun’s allies and plans to defeat the main enemy.",
+    "ja": "ワノ国編（中編）。"
   },
   "type": "canon",
   "chapterRange": {

@@ -3,12 +3,14 @@
   "sagaSlug": "dressrosa",
   "order": 4,
   "title": {
-    "es": "Arco de Dressrosa",
-    "en": "Dressrosa Arc",
+    "es": "Dressrosa",
+    "en": "Dressrosa",
     "ja": "ドレスローザ編"
   },
   "summary": {
-    "es": "La alianza llega a Dressrosa para acabar con la fábrica de SMILE de Doflamingo. Luffy entra en el torneo del Coliseo Corrida por el Mera Mera no Mi, que acaba en manos de Sabo; Usopp derrota a Sugar y libera a los juguetes, y tras la Jaula de Doflamingo, Luffy lo vence con el Gear 4. La Gran Flota de los Sombrero de Paja se forma y llegan nuevas recompensas."
+    "es": "Lucha contra un señor corrupto que ha manipulado un reino entero, con muchos aliados nuevos y sacrificios.",
+    "en": "Fight against a corrupt lord who manipulated an entire kingdom.",
+    "ja": "ドレスローザ、ドフラミンゴとの戦い。"
   },
   "type": "canon",
   "chapterRange": {

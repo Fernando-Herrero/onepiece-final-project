@@ -3,9 +3,14 @@
   "sagaSlug": "arabasta",
   "order": 1,
   "title": {
-    "es": "Reverse Mountain",
-    "en": "Reverse Mountain",
+    "es": "Reverse Mountain / Laboon",
+    "en": "Reverse Mountain/Laboon",
     "ja": "リヴァース・マウンテン編"
+  },
+  "summary": {
+    "es": "La tripulación entra a la Grand Line enfrentando corrientes y descubre a Laboon, una ballena gigante con un misterioso vínculo.",
+    "en": "The crew enters the Grand Line, faces the currents, and discovers Laboon, a giant whale with a mysterious bond.",
+    "ja": "グランドライン入り、ラブーンとの出会い。"
   },
   "type": "canon",
   "chapterRange": {

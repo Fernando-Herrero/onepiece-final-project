@@ -2,7 +2,7 @@
   "slug": "sky-island",
   "order": 3,
   "title": {
-    "es": "Isla del Cielo",
+    "es": "Isla del cielo",
     "en": "Sky Island",
     "ja": "空島編"
   },
@@ -14,17 +14,10 @@
     "first": 136,
     "last": 206
   },
-  "arcSlugs": [
-    "goat-island",
-    "ruluka-island",
-    "jaya",
-    "skypiea",
-    "g-8"
-  ],
   "sources": [
     {
       "url": "https://onepiece.fandom.com/wiki/Sky_Island_Saga",
-      "field": "arcSlugs"
+      "field": "arcs.sagaSlug"
     },
     {
       "url": "https://onepiece.fandom.com/wiki/Episode_Guide/Sky_Island_Saga",
