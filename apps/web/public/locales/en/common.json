@@ -26,6 +26,7 @@
     "session_active": "Signed in — @{{username}} ({{email}})",
     "form_invalid": "Please check the form fields",
     "generic_error": "Something went wrong",
+    "network_error": "Can't reach the server. Check your connection",
     "show_password": "Show password",
     "hide_password": "Hide password",
     "errors": {

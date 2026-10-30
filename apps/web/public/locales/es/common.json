@@ -26,6 +26,7 @@
     "session_active": "Sesión activa — @{{username}} ({{email}})",
     "form_invalid": "Revisa los campos del formulario",
     "generic_error": "Ha ocurrido un error",
+    "network_error": "No se puede conectar con el servidor. Revisa tu conexión",
     "show_password": "Mostrar contraseña",
     "hide_password": "Ocultar contraseña",
     "errors": {

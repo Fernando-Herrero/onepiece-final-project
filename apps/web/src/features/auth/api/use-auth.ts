@@ -1,4 +1,5 @@
 import type { updatePreferencesSchema } from '@logpose/contracts/features/users/schemas';
+import { ORPCError } from '@orpc/client';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import type { TFunction } from 'i18next';
 import { useRouter } from 'next/router';
@@ -35,6 +36,11 @@ export function getAuthErrorMessage(error: unknown, t: TFunction): string {
       return t('auth.errors.USER_NOT_FOUND');
     case 'INVALID_CURRENT_PASSWORD':
       return t('auth.errors.INVALID_CURRENT_PASSWORD');
+  }
+
+  // Sin respuesta HTTP (sin red o sin servidor web): `fetch` lanza antes de que oRPC cree un ORPCError.
+  if (!(error instanceof ORPCError)) {
+    return t('auth.network_error');
   }
 
   return t('auth.generic_error');

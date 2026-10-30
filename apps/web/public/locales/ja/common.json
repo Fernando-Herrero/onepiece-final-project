@@ -26,6 +26,7 @@
     "session_active": "ログイン中 — @{{username}} ({{email}})",
     "form_invalid": "フォームの項目を確認してください",
     "generic_error": "エラーが発生しました",
+    "network_error": "サーバーに接続できません。接続を確認してください",
     "show_password": "パスワードを表示",
     "hide_password": "パスワードを非表示",
     "errors": {
